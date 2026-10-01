@@ -1,0 +1,197 @@
+====================================================================================================
+TRAJECTORY G3 SEARCH — reprogramming + mouse aging (no downloads yet)  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO GENE SELECTION: every gene in the Phase-1 matrix enters every model with a weight.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+seed=20260914  (search only; no model is fit)
+
+[GEO] fetching SOFT GSE276656
+  Title:    Gene expression + ATAC multiome profiling of mPFC engram cells after OSK partial reprogramming
+  Organism: Mus musculus
+  Type:     Expression profiling by high throughput sequencing; Genome binding/occupancy profiling by high throughput sequencing
+  N samples:20  PubMed: 41672073
+  brain=True  OSK/Yamanaka=True  sc/sn=True
+  Summary:  Counteracting cognitive decline is an important goal in regenerative medicine. Recently, partial cellular reprogramming has emerged as a promising strategy to restore cellular function and promote tissue regeneration, but whether this approach can also reverse cognitive frailty is not known. In old mice and mouse models of Alzheimerâs Disease (AD) engram cells responsible for memory formation ar
+  Design:   mPFC nuclei from 10 month old WT, APP/PS1 and APP/PS1+OSK mice were isolated by  Fluorescence-activated nuclear sorting (FANS)  and analyzed using 10X multiome sequencing (snRNAseq + snATACseq)
+  Suppl (1):
+    ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE276nnn/GSE276656/suppl/GSE276656_RAW.tar
+
+[GEO] fetching SOFT GSE224438
+  Title:    Single-cell gene expression of the subventricular zone (SVZ) neurogenic niche after partial reprogramming
+  Organism: Mus musculus
+  Type:     Expression profiling by high throughput sequencing
+  N samples:10  PubMed: 38553564
+  brain=True  OSK/Yamanaka=True  sc/sn=True
+  Summary:  Partial reprogramming has the potential to reverse age-related decline in some tissues. Its impact on the cell types within the aging brain, particularly the subventricular zone neurogenic niche, is unknown.
+  Design:   Partial reprogramming was induced in the whole body of old mice, or induced specifically in the SVZ of old mice. SVZ cells were isolated from old mice after partial reprogramming, as well as young and old controls, and analyzed by single-cell RNA-sequencing.
+  Suppl (1):
+    ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE224nnn/GSE224438/suppl/GSE224438_RAW.tar
+
+[GEO] fetching SOFT GSE271794
+  Title:    Single-cell gene expression of neocortex after transient Yamanaka factor expression during brain development
+  Organism: Mus musculus
+  Type:     Expression profiling by high throughput sequencing
+  N samples:4  PubMed: 39426381
+  brain=True  OSK/Yamanaka=True  sc/sn=True
+  Summary:  Yamanaka factors (YFs) can reverse some aging features in mammalian tissues, but their effects on the brain remain largely unexplored. Here, we used single cell RNA sequecing (scRNA-seq) to analyze the effects of YFs induction during cortical development.
+  Design:   We used the conditional inducible-four factors (i4F) mouse line, which allows the induction of YFs in a Tet-ON system. This line was crossed with a Cre-dependent floxed rtTA and the nervous system-specific Nestin-Cre (Nes) mouse line. In this mouse model (i4F-Nes), YF expression was induced by administering doxycycline from E10.5 to E14.5. The rostral region of the mouse neocortex was collected at
+  Suppl (1):
+    ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE271nnn/GSE271794/suppl/GSE271794_RAW.tar
+
+[GEO search] human_brain_OSK_sc
+  QUERY: (OSK[All Fields] OR OSKM[All Fields] OR Yamanaka[All Fields] OR "partial reprogramming"[All Fields]) AND (brain[All Fields] OR cortex[All Fields] OR DLPFC[All Fields] OR neuron[All Fields] OR glia[All Fields]) AND ("single-cell"[All Fields] OR scRNA[All Fields] OR snRNA[All Fields] OR multiome[All Fields]) AND "Homo sapiens"[Organism] AND gse[Entry Type]
+  GEO returned 3 records (showing up to 3)
+  GSE254389   n=18  2024/02/02  | NEUROD1 efficiently converts peripheral blood cells into neurons with partial reprogramming by pluripotency fa
+  GSE197709   n=10  2022/09/26  | Systems analysis of de novo mutations in congenital heart diseases identified a protein network in the hypopla
+  GSE50206    n=184  2014/04/24  | Induction of pluripotency in human somatic cells via a primitive streak-like state
+
+[GEO search] human_OSK_sc_any_tissue
+  QUERY: (OSK[All Fields] OR OSKM[All Fields] OR "partial reprogramming"[All Fields]) AND ("single-cell"[All Fields] OR scRNA[All Fields] OR snRNA[All Fields]) AND "Homo sapiens"[Organism] AND gse[Entry Type]
+  GEO returned 25 records (showing up to 25)
+  GSE311523   n=5  2026/08/18  | Pseudouridylation of 7SK orchestrates human somatic cell reprogramming into iPSCs [WGBS]
+  GSE310964   n=8  2026/08/18  | Pseudouridylation of 7SK orchestrates human somatic cell reprogramming into iPSCs [ATAC]
+  GSE310818   n=81  2026/08/18  | Pseudouridylation of 7SK orchestrates human somatic cell reprogramming into iPSCs [RNA-Seq]
+  GSE310770   n=47  2026/08/18  | Pseudouridylation of 7SK orchestrates human somatic cell reprogramming into iPSCs [BID]
+  GSE310678   n=20  2026/08/18  | Pseudouridylation of 7SK orchestrates human somatic cell reprogramming into iPSCs [CUT&Tag]
+  GSE310677   n=6  2026/08/18  | Pseudouridylation of 7SK orchestrates human somatic cell reprogramming into iPSCs [smallRNA-Seq]
+  GSE300477   n=1  2025/08/26  | A Single-Short Partial Reprogramming of the Endothelial Cells in vivo decreases Blood Pressure and Vascular Co
+  GSE297234   n=8  2025/08/14  | Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]
+  GSE254389   n=18  2024/02/02  | NEUROD1 efficiently converts peripheral blood cells into neurons with partial reprogramming by pluripotency fa
+  GSE242423   n=9  2023/09/06  | Transcription factor stoichiometry, motif affinity and syntax regulate single-cell chromatin dynamics during f
+  GSE242421   n=9  2023/09/06  | Transcription factor stoichiometry, motif affinity and syntax regulate single-cell chromatin dynamics during f
+  GSE242419   n=2  2023/09/06  | Transcription factor stoichiometry, motif affinity and syntax regulate single-cell chromatin dynamics during f
+  GSE139275   n=3  2020/10/22  | Transiently enhanced multi-drug resistance by epigenetic mechanism from reprogrammed cancer cell model
+  GSE122460   n=2  2020/08/17  | Determination of dynamic changes in chromatin accessibility during cellular reprogramming [10X D8 CD13]
+  GSE118258   n=6  2020/08/17  | Determination of dynamic changes in chromatin accessibility during cellular reprogramming [scRNA-seq 10x]
+  GSE114367   n=8  2020/08/17  | Determination of dynamic changes in chromatin accessibility during cellular reprogramming [ChIP-seq]
+  GSE106251   n=192  2020/08/17  | Determination of dynamic changes in chromatin accessibility during cellular reprogramming [scRNA-seq]
+  GSE100344   n=480  2020/08/17  | Determination of dynamic changes in chromatin accessibility during cellular reprogramming [scRNA]
+  GSE85580    n=480  2020/08/17  | Determination of dynamic changes in chromatin accessibilty during cellular reprogramming [scATAC]
+  GSE90014    n=192  2018/04/10  | Proliferation pause as an early blockade of human cellular reprogramming toward pluripotency [single cell RNA-
+  GSE95021    n=1513  2018/02/09  | Coupling shRNA screens with single-cell RNA-Seq identifies mechanisms regulating senescence during reprogrammi
+  GSE95020    n=376  2018/02/09  | Coupling shRNA screening with single-cell RNA-Seq identifies mechanisms regulating senescence during reprogram
+  GSE94980    n=620  2018/02/09  | Single-cell RNA-Sequencing of IMR90 fibroblasts bypassing reprogramming-induced senescence
+  GSE94979    n=460  2018/02/09  | Single-cell RNA Sequencing as a tool for simultaneous shRNA detection and transcriptome analysis in the contex
+  GSE50206    n=184  2014/04/24  | Induction of pluripotency in human somatic cells via a primitive streak-like state
+
+[GEO search] mouse_brain_aging_sc
+  QUERY: (aging[Title] OR ageing[Title] OR "aged brain"[All Fields] OR "aging brain"[All Fields]) AND (brain[All Fields] OR cortex[All Fields] OR prefrontal[All Fields] OR hippocampus[All Fields]) AND ("single-cell"[All Fields] OR scRNA[All Fields] OR snRNA[All Fields]) AND "Mus musculus"[Organism] AND gse[Entry Type]
+  GEO returned 99 records (showing up to 40)
+  GSE327682   n=6  2026/09/01  | Aging Drives Region-Specific Metabolic Changes in Gut Muscularis Macrophages
+  GSE285471   n=24  2026/08/08  | APOE genotype modifies the gene signature of microglial and astrocytic responses to aging
+  GSE303038   n=8  2026/07/19  | Single-Cell Multiomic Profiling of the Mouse Hippocampus During Ageing and Memory Formation
+  GSE297916   n=4  2026/06/01  | Youth-associated protein TIMP2 regulates microglial state and function in healthy and aged mice [snRNA-seq]
+  GSE331489   n=725  2026/05/31  | A global view of cell-type-specific temporal dynamics in mammalian aging [II]
+  GSE331488   n=771  2026/05/31  | A global view of cell-type-specific temporal dynamics in mammalian aging [I]
+  GSE269061   n=5  2026/03/11  | LIVER EXERCISE FACTOR REVERSES AGING AND ALZHEIMER’S-RELATED MEMORY LOSS BY TARGETING BRAIN VASCULATURE
+  GSE304010   n=74  2026/02/09  | A transcriptomic microglia taxonomy across mouse and human pathologies
+  GSE313770   n=108  2025/12/18  | Single-cell multi-omic and multi-region atlas of the Aging Male Mouse Brain
+  GSE290806   n=12  2025/12/06  | Spatial and single-cell transcriptomics reveal the reorganization of cerebellar microglia with aging
+  GSE220548   n=15  2025/09/10  | Human iPSC-Derived Mononuclear Phagocytes Improve Cognition and Neural Health across Multiple Mouse Models of 
+  GSE239316   n=24  2025/07/25  | Single-cell transcriptomic analysis reveals that inflammation drives the unfolded protein response during endo
+  GSE273038   n=2  2025/07/08  | Spatiotemporal profiling reveals the impact of caloric restriction in the aging mammalian brain
+  GSE299835   n=4  2025/06/27  | Fundamental mechanisms causing pituitary stem cell aging in mice and humans
+  GSE289038   n=111  2025/05/13  | Extracellular vesicles from antler blastema progenitor cells reverse bone loss and improve aging-related pheno
+  GSE294772   n=142  2025/05/02  | Single-Cell Epigenomics Uncovers Heterochromatin Instability and Transcription Factor Dysfunction during Mouse
+  GSE292803   n=108  2025/04/30  | Single-cell multi-omic and multi-region atlas of the Aging Mouse Brain
+  GSE274695   n=175  2025/03/21  | Aging promotes reactivation of the Barr body at distal chromosome regions
+  GSE283362   n=2  2025/03/07  | Microglia activation orchestrates CXCL10-mediated CD8+ T cell recruitment to promote aging-related white matte
+  GSE275954   n=11  2025/03/07  | Microglia activation orchestrates CXCL10-mediated CD8+ T cell recruitment to promote aging-related white matte
+  GSE232782   n=2  2025/01/13  | Single-cell transcriptomic profling of the aging mouse choroid plexus
+  GSE261494   n=12  2025/01/09  | Ifi27l2a regulates the microglial inflammation in the context of aging and stroke
+  GSE268463   n=7  2024/12/06  | SenMayo transcriptomic senescence panel highlights glial cells in the ageing mouse and human retina
+  GSE277702   n=12  2024/11/01  | Decoding Aging in the Heart via Single Cell Dual Omics of Non-Cardiomyocytes
+  GSE277701   n=6  2024/11/01  | Decoding Aging in the Heart via Single Cell Dual Omics of Non-Cardiomyocytes (scATAC-Seq)
+  GSE277700   n=6  2024/11/01  | Decoding Aging in the Heart via Single Cell Dual Omics of Non-Cardiomyocytes (scRNA-Seq)
+  GSE261459   n=49  2024/07/29  | Single cell RNA sequencing of aging neural progenitors reveals loss of excitatory neuron potential and a popul
+  GSE261458   n=9  2024/07/29  | Single cell RNA sequencing of aging neural progenitors reveals loss of excitatory neuron potential and a popul
+  GSE261457   n=40  2024/07/29  | Single cell RNA sequencing of aging neural progenitors reveals loss of excitatory neuron potential and a popul
+  GSE211340   n=6  2024/07/04  | Microglia aging advances through intermediate states that drive inflammatory activation and cognitive decline
+  GSE190007   n=8  2024/07/04  | Microglia aging progresses through functional intermediate steps.
+  GSE179698   n=12  2024/07/04  | Microglia aging progresses through functional intermediate steps III
+  GSE179611   n=47  2024/07/04  | Microglia aging progresses through functional intermediate steps II
+  GSE179358   n=4  2024/07/04  | Microglia aging progresses through functional intermediate steps
+  GSE233363   n=20  2024/07/02  | Multimodal transcriptomics reveal neurogenic aging trajectories and age-related regional inflammation in the d
+  GSE261402   n=4  2024/06/26  | Single-cell transcriptional analysis of kidney from aging mice with podocyte specific RARRES1 overexpression
+  GSE267529   n=20  2024/06/05  | Microglia undergo sex-dimorphic transcriptional and metabolic rewiring during aging
+  GSE230451   n=8  2024/04/30  | Single-nucleus transcriptomic sequencing and cross integration comparison of multiple species revealed new cel
+  GSE173679   n=4059  2024/04/30  | Orchestrating endothelial cell fate regulation and function during multiple organs’ development, stress and ag
+  GSE253754   n=1  2024/04/01  | Single-cell multiplex chromatin and RNA interactions in aging human brain
+
+[GEO search] mouse_brain_OSK_sc
+  QUERY: (OSK[All Fields] OR OSKM[All Fields] OR Yamanaka[All Fields] OR "partial reprogramming"[All Fields]) AND (brain[All Fields] OR cortex[All Fields] OR SVZ[All Fields] OR neuron[All Fields]) AND ("single-cell"[All Fields] OR scRNA[All Fields] OR snRNA[All Fields] OR multiome[All Fields]) AND "Mus musculus"[Organism] AND gse[Entry Type]
+  GEO returned 13 records (showing up to 13)
+  GSE325478   n=18  2026/04/02  | Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mech
+  GSE325477   n=17  2026/04/02  | Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mech
+  GSE307031   n=6  2025/09/05  | Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mech
+  GSE271794   n=4  2025/08/20  | Single-cell gene expression of neocortex after transient Yamanaka factor expression during brain development
+  GSE224438   n=10  2024/02/04  | Single-cell gene expression of the subventricular zone (SVZ) neurogenic niche after partial reprogramming
+  GSE252050   n=16  2024/01/31  | Genetic background variation impacts microglial heterogeneity and disease progression in amyotrophic lateral s
+  GSE204828   n=8  2023/05/25  | Comprehensive analysis of cellular senescence in the central nervous system revealed microglial senescence and
+  GSE181800   n=10  2022/05/06  | Cellular identity loss occurring during both iPS cells generation and malignant transformation can be followed
+  GSE181799   n=12  2022/05/06  | Cellular identity loss occurring during both iPS cells generation and malignant transformation can be followed
+  GSE181796   n=4  2022/05/06  | Chromatin accessibility after 5 days of reprogramming and transformation
+  GSE181451   n=8  2022/05/06  | Cellular identity loss occurring during both iPS cells generation and malignant transformation can be followed
+  GSE137050   n=59  2022/05/06  | The comparative roadmaps of reprogramming and transformation unveiled that cellular plasticity is broadly cont
+  GSE50206    n=184  2014/04/24  | Induction of pluripotency in human somatic cells via a primitive streak-like state
+
+[GEO] SOFT for additional human-brain-ish OSK hits (3)
+
+[GEO] fetching SOFT GSE254389
+  Title:    NEUROD1 efficiently converts peripheral blood cells into neurons with partial reprogramming by pluripotency factors
+  Organism: Homo sapiens
+  Type:     Expression profiling by high throughput sequencing
+  N samples:18  PubMed: none listed
+  brain=True  OSK/Yamanaka=True  sc/sn=True
+  Summary:  The direct reprogramming of cells has tremendous potential in in vitro neurological studies. Previous attempts to convert blood cells into induced neurons have presented several challenges, necessitating the development of a less invasive, efficient, rapid, and convenient approach. The current study introduces an optimized method for converting somatic cells into neurons using a nonsurgical approa
+  Design:   Human T cell-derive induced-neuron. Two different induction method. Each three replicate.
+  Suppl (1):
+    ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE254nnn/GSE254389/suppl/GSE254389_transcript-FPKM_202401.txt.gz
+
+[GEO] fetching SOFT GSE197709
+  Title:    Systems analysis of de novo mutations in congenital heart diseases identified a protein network in the hypoplastic left heart syndrome
+  Organism: Homo sapiens
+  Type:     Expression profiling by high throughput sequencing
+  N samples:10  PubMed: 36167075
+  brain=True  OSK/Yamanaka=False  sc/sn=True
+  Summary:  Congenital heart diseases (CHD) are a class of birth defects affecting ~1% of live births. These conditions are hallmarked by extreme genetic heterogeneity, and therefore, despite a strong genetic component, only a very handful of at-risk loci in CHD have been identified. We herein introduced systems analyses to uncover the hidden organization on biological networks of genomic mutations in CHD, an
+  Design:   iPSC-CMs mRNA profiles of wild type (WT) and four knockout genes (ASH2L, RBBP5, TEAD2, TLK1)
+  Suppl (1):
+    ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE197nnn/GSE197709/suppl/GSE197709_TPM.txt.gz
+
+[GEO] fetching SOFT GSE50206
+  Title:    Induction of pluripotency in human somatic cells via a primitive streak-like state
+  Organism: Homo sapiens; Mus musculus
+  Type:     Expression profiling by array
+  N samples:184  PubMed: 24759836
+  brain=False  OSK/Yamanaka=True  sc/sn=False
+  Summary:  During mammalian embryonic development, the primitive streak is initiates the differentiation of pluripotent epiblast cells into germ layers. Pluripotency can be reacquired in committed somatic cells using a combination of handful transcription factors, such as OCT3/4, SOX2, KLF4 and c-MYC (hereafter referred to as OSKM), albeit with low efficiency . Here we   show that, during the OSKM-induced re
+  Design:   Human differentiated progeny derived from pluripotent stem cells, N=13  Human undifferentiated pluripotent stem cells, N=6  Transgenic ESC line, N=6  Human tissues, N=29  Human tissue-derived cells, N=20  Human nascent reprogrammed cells, N=95 Mouse cells, N=12
+  Suppl (1):
+    ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE50nnn/GSE50206/suppl/GSE50206_RAW.tar
+
+[CXG] fetching curation API /datasets (all organisms; filter Mus musculus + brain)
+  2226 datasets returned
+  Mus musculus + brain + RNA assay: 32
+
+[CXG] top mouse brain RNA datasets by numeric age span (OSK titles excluded):
+                          dataset_id                                                                                                           title  n_donors  cell_count  age_min  age_max  age_span  h5ad_bytes
+0e1c7067-8833-4f54-8847-ad7d33d09c10                         Transcriptional profiling of murine oligodendrocyte precursor cells across the lifespan        20       38807 0.076923 2.000000  1.923077   701924593
+f16a8f4d-bc97-43c5-a2f6-bbda952e4c5c                              All - A single-cell transcriptomic atlas characterizes ageing tissues in the mouse        44      356213 0.076923 1.666667  1.589744  6028485327
+3bbb6cf9-72b9-41be-b568-656de6eb18b5                                                                                 BrainAgingSpatialAtlas_snRNAseq         4       79667 0.076923 1.666667  1.589744  2532195193
+58b01044-c5e5-4b0f-8a2d-6ebf951e01ff                                                            A scRNA-seq atlas of immune cells at the CNS borders        51      130908 0.166667 1.666667  1.500000  1049314127
+98e5ea9f-16d6-47ec-a529-686e76515e39                 All - A single-cell transcriptomic atlas characterizes ageing tissues in the mouse - Smart-seq2        21      110824 0.250000 1.666667  1.416667  2548190251
+c08f8441-4a10-4748-872a-e70c0bcccdba Brain myeloid cells - A single-cell transcriptomic atlas characterizes ageing tissues in the mouse - Smart-seq2        14       13417 0.250000 1.666667  1.416667   222512107
+66ff82b4-9380-469c-bc4b-cfa08eacd325          Brain non-myeloid cells - A single-cell transcriptomic atlas characterizes ageing tissues in the mouse        14        7249 0.250000 1.666667  1.416667   168674850
+cb5efdb0-f91c-4cbd-9ad4-9d4fa41c572d                                                      Excitatory neurons integrated with 10X sequencing MOp data       155       94243 0.096154 0.666667  0.570513   984057839
+42ff5b55-b848-4f4c-b7cb-b8aac107841c                                                MGE-derived interneurons integrated with 10X sequencing MOp data       169       12644 0.096154 0.557692  0.461538   141824328
+9bb9596d-f23f-4558-912f-d4dc7d52721b                                                CGE-derived interneurons integrated with 10X sequencing MOp data        94       15755 0.115385 0.557692  0.442308   138051029
+812fa7bd-db15-4357-b2c9-efc8e1eb0450                                       Single-cell RNA-seq for all cortical & hippocampal regions (SMART-Seq v4)       529       73347 0.134615 0.288462  0.153846  2157493145
+28c696bb-9549-434b-9340-dc745a846f9a                                          Shared and distinct transcriptomic cell types across neocortical areas       346       22375 0.134615 0.230769  0.096154  1349514683
+
+[CXG] human OSK/Yamanaka title scan (re-check)
+  human OSK/Yamanaka title matches: 0
+
+[G3 search] wrote results/trajectory/g3_search_*
+[G3 search] done.

@@ -1,0 +1,14 @@
+Written **before any T-C boosting fit**, 2026-09-18. No threshold in this block is re-tuned after numbers exist.
+
+On GTEx cultured fibroblasts only (the Stage 1 cohort and preprocessing, unchanged: `SMAFRZE==RNASEQ`, `SMTSD == "Cells - Cultured fibroblasts"`, gene filter ≥6 counts in ≥20% of samples, TMM/edgeR log2-CPM `prior.count=2`, per-gene z-score on training rows only). D1 n is too small; excluded from B1↔C1 transfer and from within-site CV, stated, not silently dropped.
+
+Fit `sklearn.ensemble.HistGradientBoostingRegressor`. Hyperparameters by inner grouped CV on training folds only (outer folds unchanged: within-site `SMNABTCH`-grouped; transfer is B1→C1 and C1→B1). Inner-CV selection metric is Spearman ρ on the inner held-out batches; the selected hyperparameter tuple is frozen for that train split before any permutation of that split.
+
+Report within-site ρ and **B1→C1 / C1→B1 transfer ρ** with the same donor-level permutation null (n_perm=200, seed `20260914`) and donor-bootstrap 95% CI (B=200, seed `20260918`), side by side with the ridge numbers from `results/fibro/stage1_cv.csv` and `results/fibro/stage1_transfer.csv`. Uncalibrated R² reported, never a gate.
+
+This is a **diagnostic, not a replacement**. A nonlinear model yields a score, not a direction; the project's plane, angles, and "age movement per unit identity loss" criterion all require a direction, so a nonlinear model cannot be substituted into Stage 2 without discarding the geometry. Do not rescore GSE297234 with boosting.
+
+**Pre-registered reading:**
+- boosting transfer ρ within the ridge bootstrap CI (both directions) → linearity is not the limiting factor; ridge stays.
+- boosting transfer ρ materially above the ridge CI (upper bound exceeded in both directions) → the linear direction is leaving signal on the table. Report the gap. Do not rerun Stage 2 with boosting. A direction-preserving nonlinear extension (e.g. a kernel or autoencoder latent with a linear age axis inside it) would be the next design question.
+- boosting transfer ρ below ridge → note it and move on.

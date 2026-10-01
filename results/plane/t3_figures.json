@@ -1,0 +1,21 @@
+{
+ "figures": {
+  "GM00731": "<repo>\\results\\plane\\figures\\plane_GM00731.png",
+  "GM23815": "<repo>\\results\\plane\\figures\\plane_GM23815.png"
+ },
+ "identity": "pluri_primary",
+ "instruments": [
+  "frozen_ruler",
+  "md_score",
+  "age_up_minus_age_down"
+ ],
+ "trajectory": [
+  "Fibroblast",
+  "PartialReprog",
+  "EarlyPluripotency",
+  "Pluripotency"
+ ],
+ "NonReprog": "NonReprog",
+ "xlim": "shared identity axis within donor",
+ "ylim": "per instrument"
+}

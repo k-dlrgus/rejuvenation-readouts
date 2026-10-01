@@ -1,0 +1,100 @@
+{
+ "reading": {
+  "key": "ruler_stronger_age_in_ge2",
+  "text": "\u0394\u03c1 CI excludes zero in favour of the ruler in 2 of 3 named cohorts. MD and/or their aging signature predict donor age materially worse than the ruler on independent fibroblast cohorts.",
+  "n_favour_ruler": 2,
+  "n_scored": 2,
+  "per_cohort": [
+   {
+    "cohort": "CELLxGENE a19d1667-a7b5-4556-9e5f-f9bfa690c0f1",
+    "scored": true,
+    "favours_ruler": true,
+    "favours_other": false,
+    "all_ci_include_zero": false,
+    "contrasts": [
+     {
+      "tag": "cxg_ruler_minus_MD",
+      "n_donors": 93,
+      "n_boot": 200,
+      "seed": 20260918,
+      "rho_ruler": 0.45512666633316906,
+      "rho_other": 0.2534037480038296,
+      "delta_rho": 0.20172291832933947,
+      "delta_ci_lo": 0.005755702956966147,
+      "delta_ci_hi": 0.44042949765765654,
+      "excludes_zero": true,
+      "favours": "ruler",
+      "note": "\u0394\u03c1 = \u03c1_ruler \u2212 \u03c1_other; paired donor bootstrap. Overlapping separate CIs are not the claim.",
+      "cohort": "CELLxGENE a19d1667-a7b5-4556-9e5f-f9bfa690c0f1",
+      "other": "MD_AddModuleScore"
+     },
+     {
+      "tag": "cxg_ruler_minus_S3",
+      "n_donors": 93,
+      "n_boot": 200,
+      "seed": 20260918,
+      "rho_ruler": 0.45512666633316906,
+      "rho_other": 0.16061436371993473,
+      "delta_rho": 0.29451230261323436,
+      "delta_ci_lo": 0.10702354725911561,
+      "delta_ci_hi": 0.48707353752319016,
+      "excludes_zero": true,
+      "favours": "ruler",
+      "note": "\u0394\u03c1 = \u03c1_ruler \u2212 \u03c1_other; paired donor bootstrap. Overlapping separate CIs are not the claim.",
+      "cohort": "CELLxGENE a19d1667-a7b5-4556-9e5f-f9bfa690c0f1",
+      "other": "age_up_minus_age_down"
+     }
+    ]
+   },
+   {
+    "cohort": "GSE226189 bulk",
+    "scored": true,
+    "favours_ruler": true,
+    "favours_other": false,
+    "all_ci_include_zero": false,
+    "contrasts": [
+     {
+      "tag": "gse226189_ruler_minus_MD",
+      "n_donors": 82,
+      "n_boot": 200,
+      "seed": 20260918,
+      "rho_ruler": 0.5486680204481721,
+      "rho_other": 0.08196535059865816,
+      "delta_rho": 0.4667026698495139,
+      "delta_ci_lo": 0.238787945597333,
+      "delta_ci_hi": 0.6957578197697852,
+      "excludes_zero": true,
+      "favours": "ruler",
+      "note": "\u0394\u03c1 = \u03c1_ruler \u2212 \u03c1_other; paired donor bootstrap. Overlapping separate CIs are not the claim.",
+      "cohort": "GSE226189 bulk",
+      "other": "MD_AddModuleScore"
+     },
+     {
+      "tag": "gse226189_ruler_minus_S3",
+      "n_donors": 82,
+      "n_boot": 200,
+      "seed": 20260918,
+      "rho_ruler": 0.5486680204481721,
+      "rho_other": 0.037372802345502165,
+      "delta_rho": 0.51129521810267,
+      "delta_ci_lo": 0.24819062904898104,
+      "delta_ci_hi": 0.7720164199723213,
+      "excludes_zero": true,
+      "favours": "ruler",
+      "note": "\u0394\u03c1 = \u03c1_ruler \u2212 \u03c1_other; paired donor bootstrap. Overlapping separate CIs are not the claim.",
+      "cohort": "GSE226189 bulk",
+      "other": "age_up_minus_age_down"
+     }
+    ]
+   },
+   {
+    "cohort": "GSE113957 bulk FPKM ranks",
+    "scored": false
+   }
+  ]
+ },
+ "n_instrument_rows": 7,
+ "n_delta_rows": 4,
+ "seed": 20260914,
+ "boot": 20260918
+}

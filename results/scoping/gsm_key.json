@@ -1,0 +1,687 @@
+{
+  "GSM9612229": {
+    "title": "M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 5d-ON/2d-OFF, Rep2",
+    "source": "AG12657",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "cell line: AG12657",
+      "cell type: Fibroblast",
+      "genotype: mTagBFP2",
+      "treatment: Dox_1000ng/mL, 5d-ON/2d-OFF",
+      "batch: LIB092645"
+    ],
+    "description": [
+      "Library name: S413",
+      "Donor age 55, Passage 11"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "Cells were lysed using the Monarch DNA/RNA Protection Reagent (NEB T2011) and stored at -80\u00b0C until RNA extraction. Total RNA was extrqacted using the Monarch Total RNA Miniprep kit (NEB T2010). Mouse tissues were processed by Novogene.",
+    "growth_protocol": "NHDFs were maintained in low-glucose DMEM supplemented with 15% fetal bovine serum (FBS) and 1% Pen-strep (P/S) in humidified atmosphere with 5% CO2 and 5% O2, at 37C. iPSCs were maintained in mTESR+supplement in humidified atmosphre with 5% CO2 at 37C.",
+    "series_id": [
+      "GSE325735"
+    ]
+  },
+  "GSM9611685": {
+    "title": "M65 line with Dox-inducible KAT7 transgene, Dox_1000ng/mL, P10, Rep2",
+    "source": "AG06294A",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "cell line: AG06294A",
+      "cell type: Fibroblast",
+      "genotype: KAT7",
+      "treatment: Dox_1000ng/mL, 3days",
+      "batch: LIB052667"
+    ],
+    "description": [
+      "Library name: B30",
+      "Donor age 65, Passage 10"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "Cells were lysed using the Monarch DNA/RNA Protection Reagent (NEB T2011) and stored at -80\u00b0C until RNA extraction. Total RNA was extrqacted using the Monarch Total RNA Miniprep kit (NEB T2010). Mouse tissues were processed by Novogene.",
+    "growth_protocol": "NHDFs were maintained in low-glucose DMEM supplemented with 15% fetal bovine serum (FBS) and 1% Pen-strep (P/S) in humidified atmosphere with 5% CO2 and 5% O2, at 37C. iPSCs were maintained in mTESR+supplement in humidified atmosphre with 5% CO2 at 37C.",
+    "series_id": [
+      "GSE325735"
+    ]
+  },
+  "GSM9612146": {
+    "title": "M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P15, 1d-ON/16d-OFF, Rep1",
+    "source": "AG16359",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "cell line: AG16359",
+      "cell type: Fibroblast",
+      "genotype: SRSF1",
+      "treatment: Dox_1000ng/mL, 1d-ON/16d-OFF",
+      "batch: LIB058979"
+    ],
+    "description": [
+      "Library name: S330",
+      "Donor age 79, Passage 15, Batch 6"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "Cells were lysed using the Monarch DNA/RNA Protection Reagent (NEB T2011) and stored at -80\u00b0C until RNA extraction. Total RNA was extrqacted using the Monarch Total RNA Miniprep kit (NEB T2010). Mouse tissues were processed by Novogene.",
+    "growth_protocol": "NHDFs were maintained in low-glucose DMEM supplemented with 15% fetal bovine serum (FBS) and 1% Pen-strep (P/S) in humidified atmosphere with 5% CO2 and 5% O2, at 37C. iPSCs were maintained in mTESR+supplement in humidified atmosphre with 5% CO2 at 37C.",
+    "series_id": [
+      "GSE325735"
+    ]
+  },
+  "GSM9611436": {
+    "title": "M94 WT line, No Rapa",
+    "source": "AG08433C",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "cell line: AG08433C",
+      "cell type: Fibroblast",
+      "genotype: WT",
+      "treatment: NT",
+      "batch: LIB048130"
+    ],
+    "description": [
+      "Library name: S15",
+      "Donor age 94, Passage 4"
+    ],
+    "molecule": [
+      "total RNA"
+    ],
+    "extract_protocol": "Cells were lysed using the Monarch DNA/RNA Protection Reagent (NEB T2011) and stored at -80\u00b0C until RNA extraction. Total RNA was extrqacted using the Monarch Total RNA Miniprep kit (NEB T2010). Mouse tissues were processed by Novogene.",
+    "growth_protocol": "NHDFs were maintained in low-glucose DMEM supplemented with 15% fetal bovine serum (FBS) and 1% Pen-strep (P/S) in humidified atmosphere with 5% CO2 and 5% O2, at 37C. iPSCs were maintained in mTESR+supplement in humidified atmosphre with 5% CO2 at 37C.",
+    "series_id": [
+      "GSE325735"
+    ]
+  },
+  "GSM9612063": {
+    "title": "M68 line with Dox-inducible SIRT1 transgene, Dox_2000ng/mL, P12, Rep2",
+    "source": "AG13369",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "cell line: AG13369",
+      "cell type: Fibroblast",
+      "genotype: SIRT1",
+      "treatment: Dox_2000ng/mL, 3days",
+      "batch: LIB054839"
+    ],
+    "description": [
+      "Library name: S247",
+      "Donor age 68, Passage 12"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "Cells were lysed using the Monarch DNA/RNA Protection Reagent (NEB T2011) and stored at -80\u00b0C until RNA extraction. Total RNA was extrqacted using the Monarch Total RNA Miniprep kit (NEB T2010). Mouse tissues were processed by Novogene.",
+    "growth_protocol": "NHDFs were maintained in low-glucose DMEM supplemented with 15% fetal bovine serum (FBS) and 1% Pen-strep (P/S) in humidified atmosphere with 5% CO2 and 5% O2, at 37C. iPSCs were maintained in mTESR+supplement in humidified atmosphre with 5% CO2 at 37C.",
+    "series_id": [
+      "GSE325735"
+    ]
+  },
+  "GSM9612266": {
+    "title": "Brain from systemic AAV8-SRSF1, Dox_200mg/kg, Mouse#19",
+    "source": "Brain",
+    "organism": "Mus musculus",
+    "characteristics": [
+      "tissue: Brain",
+      "genotype: SRSF1",
+      "treatment: Dox_200mg/kg, 1wk-ON/1wk-OFF",
+      "batch: LIB083102"
+    ],
+    "description": [
+      "Library name: S459",
+      "Age at death 818 days, RIN-7.2"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "Cells were lysed using the Monarch DNA/RNA Protection Reagent (NEB T2011) and stored at -80\u00b0C until RNA extraction. Total RNA was extrqacted using the Monarch Total RNA Miniprep kit (NEB T2010). Mouse tissues were processed by Novogene.",
+    "growth_protocol": "NHDFs were maintained in low-glucose DMEM supplemented with 15% fetal bovine serum (FBS) and 1% Pen-strep (P/S) in humidified atmosphere with 5% CO2 and 5% O2, at 37C. iPSCs were maintained in mTESR+supplement in humidified atmosphre with 5% CO2 at 37C.",
+    "series_id": [
+      "GSE325735"
+    ]
+  },
+  "GSM9611461": {
+    "title": "M66 WT iPSC line (isogenic with S39)",
+    "source": "AG07141",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "cell line: AG07141",
+      "cell type: iPSC",
+      "genotype: WT",
+      "treatment: NT",
+      "batch: LIB050518"
+    ],
+    "description": [
+      "Library name: S40",
+      "Donor age 66, Passage 2"
+    ],
+    "molecule": [
+      "total RNA"
+    ],
+    "extract_protocol": "Cells were lysed using the Monarch DNA/RNA Protection Reagent (NEB T2011) and stored at -80\u00b0C until RNA extraction. Total RNA was extrqacted using the Monarch Total RNA Miniprep kit (NEB T2010). Mouse tissues were processed by Novogene.",
+    "growth_protocol": "NHDFs were maintained in low-glucose DMEM supplemented with 15% fetal bovine serum (FBS) and 1% Pen-strep (P/S) in humidified atmosphere with 5% CO2 and 5% O2, at 37C. iPSCs were maintained in mTESR+supplement in humidified atmosphre with 5% CO2 at 37C.",
+    "series_id": [
+      "GSE325735"
+    ]
+  },
+  "GSM8986586": {
+    "title": "GM00731, Sendai OSKM, day 0",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: GM00731",
+      "cell type: Fibroblast",
+      "genotype: WT",
+      "treatment: Sendai OSKM, day 0",
+      "batch: 1"
+    ],
+    "description": [
+      "Library name: GM00731_D0",
+      "10x Genomics 3' GEX v3.1"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "Cells were dissociated using TrypLE, filtered through 40-\u03bcm cell strainers, resuspended in 0.04% BSA in PBS, counted, and adjusted to 1200 cells/\u03bcL. Cells were loaded onto Chromium X on Chromium Next GEM Chip G (10x Genomics).",
+    "growth_protocol": "Human dermal fibroblasts from a healthy 96-year old male donor (GM00731, Coriell) and a healthy 22-year old male donor (GM23815, Coriell) were cultured in fibroblast medium (Dulbecco\u2019s Modified Eagle Medium (ThermoFisher) with 10% fetal bovine serum (Omega Scientific), 1\u00d7 non-essential amino acids solution (ThermoFisher), 1\u00d7 GlutaMAX supplement (ThermoFisher), 0.5\u00d7 penicillin-streptomycin, and 0.0007% \u03b2-mercaptoethanol (Sigma)) in a 5% O2 incubator.",
+    "series_id": [
+      "GSE297234"
+    ]
+  },
+  "GSM8986587": {
+    "title": "GM00731, Sendai OSKM, day 3",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: GM00731",
+      "cell type: Fibroblast",
+      "genotype: WT",
+      "treatment: Sendai OSKM, day 3",
+      "batch: 1"
+    ],
+    "description": [
+      "Library name: GM00731_D3",
+      "10x Genomics 3' GEX v3.1"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "Cells were dissociated using TrypLE, filtered through 40-\u03bcm cell strainers, resuspended in 0.04% BSA in PBS, counted, and adjusted to 1200 cells/\u03bcL. Cells were loaded onto Chromium X on Chromium Next GEM Chip G (10x Genomics).",
+    "growth_protocol": "Human dermal fibroblasts from a healthy 96-year old male donor (GM00731, Coriell) and a healthy 22-year old male donor (GM23815, Coriell) were cultured in fibroblast medium (Dulbecco\u2019s Modified Eagle Medium (ThermoFisher) with 10% fetal bovine serum (Omega Scientific), 1\u00d7 non-essential amino acids solution (ThermoFisher), 1\u00d7 GlutaMAX supplement (ThermoFisher), 0.5\u00d7 penicillin-streptomycin, and 0.0007% \u03b2-mercaptoethanol (Sigma)) in a 5% O2 incubator.",
+    "series_id": [
+      "GSE297234"
+    ]
+  },
+  "GSM8986588": {
+    "title": "GM00731, Sendai OSKM, day 7",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: GM00731",
+      "cell type: Fibroblast",
+      "genotype: WT",
+      "treatment: Sendai OSKM, day 7",
+      "batch: 1"
+    ],
+    "description": [
+      "Library name: GM00731_D7",
+      "10x Genomics 3' GEX v3.1"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "Cells were dissociated using TrypLE, filtered through 40-\u03bcm cell strainers, resuspended in 0.04% BSA in PBS, counted, and adjusted to 1200 cells/\u03bcL. Cells were loaded onto Chromium X on Chromium Next GEM Chip G (10x Genomics).",
+    "growth_protocol": "Human dermal fibroblasts from a healthy 96-year old male donor (GM00731, Coriell) and a healthy 22-year old male donor (GM23815, Coriell) were cultured in fibroblast medium (Dulbecco\u2019s Modified Eagle Medium (ThermoFisher) with 10% fetal bovine serum (Omega Scientific), 1\u00d7 non-essential amino acids solution (ThermoFisher), 1\u00d7 GlutaMAX supplement (ThermoFisher), 0.5\u00d7 penicillin-streptomycin, and 0.0007% \u03b2-mercaptoethanol (Sigma)) in a 5% O2 incubator.",
+    "series_id": [
+      "GSE297234"
+    ]
+  },
+  "GSM8986589": {
+    "title": "GM00731, Sendai OSKM, day 10",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: GM00731",
+      "cell type: Fibroblast",
+      "genotype: WT",
+      "treatment: Sendai OSKM, day 10",
+      "batch: 1"
+    ],
+    "description": [
+      "Library name: GM00731_D10",
+      "10x Genomics 3' GEX v3.1"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "Cells were dissociated using TrypLE, filtered through 40-\u03bcm cell strainers, resuspended in 0.04% BSA in PBS, counted, and adjusted to 1200 cells/\u03bcL. Cells were loaded onto Chromium X on Chromium Next GEM Chip G (10x Genomics).",
+    "growth_protocol": "Human dermal fibroblasts from a healthy 96-year old male donor (GM00731, Coriell) and a healthy 22-year old male donor (GM23815, Coriell) were cultured in fibroblast medium (Dulbecco\u2019s Modified Eagle Medium (ThermoFisher) with 10% fetal bovine serum (Omega Scientific), 1\u00d7 non-essential amino acids solution (ThermoFisher), 1\u00d7 GlutaMAX supplement (ThermoFisher), 0.5\u00d7 penicillin-streptomycin, and 0.0007% \u03b2-mercaptoethanol (Sigma)) in a 5% O2 incubator.",
+    "series_id": [
+      "GSE297234"
+    ]
+  },
+  "GSM8986590": {
+    "title": "GM23815, Sendai OSKM, day 0",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: GM23815",
+      "cell type: Fibroblast",
+      "genotype: WT",
+      "treatment: Sendai OSKM, day 0",
+      "batch: 1"
+    ],
+    "description": [
+      "Library name: GM23815_D0",
+      "10x Genomics 3' GEX v3.1"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "Cells were dissociated using TrypLE, filtered through 40-\u03bcm cell strainers, resuspended in 0.04% BSA in PBS, counted, and adjusted to 1200 cells/\u03bcL. Cells were loaded onto Chromium X on Chromium Next GEM Chip G (10x Genomics).",
+    "growth_protocol": "Human dermal fibroblasts from a healthy 96-year old male donor (GM00731, Coriell) and a healthy 22-year old male donor (GM23815, Coriell) were cultured in fibroblast medium (Dulbecco\u2019s Modified Eagle Medium (ThermoFisher) with 10% fetal bovine serum (Omega Scientific), 1\u00d7 non-essential amino acids solution (ThermoFisher), 1\u00d7 GlutaMAX supplement (ThermoFisher), 0.5\u00d7 penicillin-streptomycin, and 0.0007% \u03b2-mercaptoethanol (Sigma)) in a 5% O2 incubator.",
+    "series_id": [
+      "GSE297234"
+    ]
+  },
+  "GSM8986591": {
+    "title": "GM23815, Sendai OSKM, day 3",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: GM23815",
+      "cell type: Fibroblast",
+      "genotype: WT",
+      "treatment: Sendai OSKM, day 3",
+      "batch: 1"
+    ],
+    "description": [
+      "Library name: GM23815_D3",
+      "10x Genomics 3' GEX v3.1"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "Cells were dissociated using TrypLE, filtered through 40-\u03bcm cell strainers, resuspended in 0.04% BSA in PBS, counted, and adjusted to 1200 cells/\u03bcL. Cells were loaded onto Chromium X on Chromium Next GEM Chip G (10x Genomics).",
+    "growth_protocol": "Human dermal fibroblasts from a healthy 96-year old male donor (GM00731, Coriell) and a healthy 22-year old male donor (GM23815, Coriell) were cultured in fibroblast medium (Dulbecco\u2019s Modified Eagle Medium (ThermoFisher) with 10% fetal bovine serum (Omega Scientific), 1\u00d7 non-essential amino acids solution (ThermoFisher), 1\u00d7 GlutaMAX supplement (ThermoFisher), 0.5\u00d7 penicillin-streptomycin, and 0.0007% \u03b2-mercaptoethanol (Sigma)) in a 5% O2 incubator.",
+    "series_id": [
+      "GSE297234"
+    ]
+  },
+  "GSM8986592": {
+    "title": "GM23815, Sendai OSKM, day 7",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: GM23815",
+      "cell type: Fibroblast",
+      "genotype: WT",
+      "treatment: Sendai OSKM, day 7",
+      "batch: 1"
+    ],
+    "description": [
+      "Library name: GM23815_D7",
+      "10x Genomics 3' GEX v3.1"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "Cells were dissociated using TrypLE, filtered through 40-\u03bcm cell strainers, resuspended in 0.04% BSA in PBS, counted, and adjusted to 1200 cells/\u03bcL. Cells were loaded onto Chromium X on Chromium Next GEM Chip G (10x Genomics).",
+    "growth_protocol": "Human dermal fibroblasts from a healthy 96-year old male donor (GM00731, Coriell) and a healthy 22-year old male donor (GM23815, Coriell) were cultured in fibroblast medium (Dulbecco\u2019s Modified Eagle Medium (ThermoFisher) with 10% fetal bovine serum (Omega Scientific), 1\u00d7 non-essential amino acids solution (ThermoFisher), 1\u00d7 GlutaMAX supplement (ThermoFisher), 0.5\u00d7 penicillin-streptomycin, and 0.0007% \u03b2-mercaptoethanol (Sigma)) in a 5% O2 incubator.",
+    "series_id": [
+      "GSE297234"
+    ]
+  },
+  "GSM8986593": {
+    "title": "GM23815, Sendai OSKM, day 10",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: GM23815",
+      "cell type: Fibroblast",
+      "genotype: WT",
+      "treatment: Sendai OSKM, day 10",
+      "batch: 1"
+    ],
+    "description": [
+      "Library name: GM23815_D10",
+      "10x Genomics 3' GEX v3.1"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "Cells were dissociated using TrypLE, filtered through 40-\u03bcm cell strainers, resuspended in 0.04% BSA in PBS, counted, and adjusted to 1200 cells/\u03bcL. Cells were loaded onto Chromium X on Chromium Next GEM Chip G (10x Genomics).",
+    "growth_protocol": "Human dermal fibroblasts from a healthy 96-year old male donor (GM00731, Coriell) and a healthy 22-year old male donor (GM23815, Coriell) were cultured in fibroblast medium (Dulbecco\u2019s Modified Eagle Medium (ThermoFisher) with 10% fetal bovine serum (Omega Scientific), 1\u00d7 non-essential amino acids solution (ThermoFisher), 1\u00d7 GlutaMAX supplement (ThermoFisher), 0.5\u00d7 penicillin-streptomycin, and 0.0007% \u03b2-mercaptoethanol (Sigma)) in a 5% O2 incubator.",
+    "series_id": [
+      "GSE297234"
+    ]
+  },
+  "GSM5391793": {
+    "title": "O1_Fib",
+    "source": "Fibroblast",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "cell type: Fibroblast",
+      "length of reprogramming phase (days): 0",
+      "donor age (years): 53"
+    ],
+    "description": [],
+    "molecule": [
+      "total RNA"
+    ],
+    "extract_protocol": "RNA was extracted from cell samples with the RNeasy mini kit (Qiagen) by following the manufacturer\u2019s instructions.",
+    "growth_protocol": "Dermal fibroblasts from middle age donors (38-53 years old) were purchased from Lonza. For lentiviral iPSC reprogramming, fibroblasts were expanded in fibroblast medium (DMEM-F12, 10% FBS, 1X Glutamax, 1X MEM-NEAA, 1X beta-mercaptoethanol, 0.2X Penicillin/Streptomycin, 16 ng/ml FGF2) before being spinfected with tetO-GFP-hOKMS and M2rtTA lentiviruses, where 10% virus supernatant and 8 \u00b5g/ml polybrene was added to the cells before centrifugation at 1000 rpm for 60 minutes at 32\u00b0C. Reprogramming was initiated 24 hours after lentiviral transduction by introducing doxycycline (2 \u00b5g/ml) to the media. Media was changed daily throughout the experiment subsequently. On day 2 of reprogramming, cells were flow sorted for viable GFP positive cells and then cultured on gelatine coated plates. On day 7 of reprogramming, cells were replated onto irradiated mouse embryonic fibroblasts (iMEFs) and on day 8 of reprogramming, the medium was switched to hES medium (DMEM-F12, 20% KSR, 1X Glutamax, 1X MEM-NEAA, 1X beta-mercaptoethanol, 0.2X Penicillin/Streptomycin, 8 ng/ml FGF2). For transient reprogramming, cells were flow sorted at day 10, 13, 15 or 17 of reprogramming for the CD13+ SSEA4- and CD13- SSEA4+ populations. These cells were then replated on iMEFs in fibroblast medium without doxycycline and subsequently maintained like fibroblasts without iMEFs.",
+    "series_id": [
+      "GSE165177",
+      "GSE165180"
+    ]
+  },
+  "GSM5391824": {
+    "title": "O2_transiently_reprogrammed_10days_exp2",
+    "source": "Fibroblast",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "cell type: Transiently reprogrammed fibroblast",
+      "length of reprogramming phase (days): 10",
+      "donor age (years): 53"
+    ],
+    "description": [],
+    "molecule": [
+      "total RNA"
+    ],
+    "extract_protocol": "RNA was extracted from cell samples with the RNeasy mini kit (Qiagen) by following the manufacturer\u2019s instructions.",
+    "growth_protocol": "Dermal fibroblasts from middle age donors (38-53 years old) were purchased from Lonza. For lentiviral iPSC reprogramming, fibroblasts were expanded in fibroblast medium (DMEM-F12, 10% FBS, 1X Glutamax, 1X MEM-NEAA, 1X beta-mercaptoethanol, 0.2X Penicillin/Streptomycin, 16 ng/ml FGF2) before being spinfected with tetO-GFP-hOKMS and M2rtTA lentiviruses, where 10% virus supernatant and 8 \u00b5g/ml polybrene was added to the cells before centrifugation at 1000 rpm for 60 minutes at 32\u00b0C. Reprogramming was initiated 24 hours after lentiviral transduction by introducing doxycycline (2 \u00b5g/ml) to the media. Media was changed daily throughout the experiment subsequently. On day 2 of reprogramming, cells were flow sorted for viable GFP positive cells and then cultured on gelatine coated plates. On day 7 of reprogramming, cells were replated onto irradiated mouse embryonic fibroblasts (iMEFs) and on day 8 of reprogramming, the medium was switched to hES medium (DMEM-F12, 20% KSR, 1X Glutamax, 1X MEM-NEAA, 1X beta-mercaptoethanol, 0.2X Penicillin/Streptomycin, 8 ng/ml FGF2). For transient reprogramming, cells were flow sorted at day 10, 13, 15 or 17 of reprogramming for the CD13+ SSEA4- and CD13- SSEA4+ populations. These cells were then replated on iMEFs in fibroblast medium without doxycycline and subsequently maintained like fibroblasts without iMEFs.",
+    "series_id": [
+      "GSE165177",
+      "GSE165180"
+    ]
+  },
+  "GSM5391847": {
+    "title": "O3_transiently_reprogrammed_10days_exp2",
+    "source": "Fibroblast",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "cell type: Transiently reprogrammed fibroblast",
+      "length of reprogramming phase (days): 10",
+      "donor age (years): 38"
+    ],
+    "description": [],
+    "molecule": [
+      "total RNA"
+    ],
+    "extract_protocol": "RNA was extracted from cell samples with the RNeasy mini kit (Qiagen) by following the manufacturer\u2019s instructions.",
+    "growth_protocol": "Dermal fibroblasts from middle age donors (38-53 years old) were purchased from Lonza. For lentiviral iPSC reprogramming, fibroblasts were expanded in fibroblast medium (DMEM-F12, 10% FBS, 1X Glutamax, 1X MEM-NEAA, 1X beta-mercaptoethanol, 0.2X Penicillin/Streptomycin, 16 ng/ml FGF2) before being spinfected with tetO-GFP-hOKMS and M2rtTA lentiviruses, where 10% virus supernatant and 8 \u00b5g/ml polybrene was added to the cells before centrifugation at 1000 rpm for 60 minutes at 32\u00b0C. Reprogramming was initiated 24 hours after lentiviral transduction by introducing doxycycline (2 \u00b5g/ml) to the media. Media was changed daily throughout the experiment subsequently. On day 2 of reprogramming, cells were flow sorted for viable GFP positive cells and then cultured on gelatine coated plates. On day 7 of reprogramming, cells were replated onto irradiated mouse embryonic fibroblasts (iMEFs) and on day 8 of reprogramming, the medium was switched to hES medium (DMEM-F12, 20% KSR, 1X Glutamax, 1X MEM-NEAA, 1X beta-mercaptoethanol, 0.2X Penicillin/Streptomycin, 8 ng/ml FGF2). For transient reprogramming, cells were flow sorted at day 10, 13, 15 or 17 of reprogramming for the CD13+ SSEA4- and CD13- SSEA4+ populations. These cells were then replated on iMEFs in fibroblast medium without doxycycline and subsequently maintained like fibroblasts without iMEFs.",
+    "series_id": [
+      "GSE165177",
+      "GSE165180"
+    ]
+  },
+  "GSM4227385": {
+    "title": "Person 1 SkinFibroblasts Normal",
+    "source": "Person 1 SkinFibroblasts Normal",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "individual: 1",
+      "age: 61",
+      "cell type: skin fibroblasts",
+      "treatmentstatus: Normal",
+      "Sex: Male",
+      "dnamage: 60.71511227",
+      "dnamageskinbloodclock: 48.64121993"
+    ],
+    "description": [],
+    "molecule": [
+      "genomic DNA"
+    ],
+    "extract_protocol": "Genomic DNA of whole blood samples",
+    "growth_protocol": null,
+    "series_id": [
+      "GSE142439"
+    ]
+  },
+  "GSM9222992": {
+    "title": "Human dermal fibroblast, old, age 64, female",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: Primary",
+      "cell type: Dermal fibroblast",
+      "group: old",
+      "age: 64",
+      "Sex: female"
+    ],
+    "description": [
+      "Library name: TM17_CKC14_O_CTRL"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "RNA was extracted using the RNeasy Mini Kit (Qiagen, 74104), according to the manufacturer\u2019s instructions.",
+    "growth_protocol": "Cells were cultured in DMEM (Gibco, 11965092) supplemented with 10% fetal bovine serum (Corning, 45000-736), 1% non-essential amino acids (Gibco, 11140050) and 1% GlutaMAX (Gibco, 35050061) at 37 \u00b0C, 5% CO\u2082, and ambient O\u2082.",
+    "series_id": [
+      "GSE307377"
+    ]
+  },
+  "GSM9222993": {
+    "title": "Human dermal fibroblast, young, age 33, male",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: Primary",
+      "cell type: Dermal fibroblast",
+      "group: young",
+      "age: 33",
+      "Sex: male"
+    ],
+    "description": [
+      "Library name: TM18_CKC15_Y_CTRL"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "RNA was extracted using the RNeasy Mini Kit (Qiagen, 74104), according to the manufacturer\u2019s instructions.",
+    "growth_protocol": "Cells were cultured in DMEM (Gibco, 11965092) supplemented with 10% fetal bovine serum (Corning, 45000-736), 1% non-essential amino acids (Gibco, 11140050) and 1% GlutaMAX (Gibco, 35050061) at 37 \u00b0C, 5% CO\u2082, and ambient O\u2082.",
+    "series_id": [
+      "GSE307377"
+    ]
+  },
+  "GSM9222990": {
+    "title": "Human dermal fibroblast, old, age 69, female",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: Primary",
+      "cell type: Dermal fibroblast",
+      "group: old",
+      "age: 69",
+      "Sex: female"
+    ],
+    "description": [
+      "Library name: TM15_CKC7_O_CTRL"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "RNA was extracted using the RNeasy Mini Kit (Qiagen, 74104), according to the manufacturer\u2019s instructions.",
+    "growth_protocol": "Cells were cultured in DMEM (Gibco, 11965092) supplemented with 10% fetal bovine serum (Corning, 45000-736), 1% non-essential amino acids (Gibco, 11140050) and 1% GlutaMAX (Gibco, 35050061) at 37 \u00b0C, 5% CO\u2082, and ambient O\u2082.",
+    "series_id": [
+      "GSE307377"
+    ]
+  },
+  "GSM9222987": {
+    "title": "Human dermal fibroblast, young, age 26, female",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: Primary",
+      "cell type: Dermal fibroblast",
+      "group: young",
+      "age: 26",
+      "Sex: female"
+    ],
+    "description": [
+      "Library name: TM2_CKC4_Y_CTRL"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "RNA was extracted using the RNeasy Mini Kit (Qiagen, 74104), according to the manufacturer\u2019s instructions.",
+    "growth_protocol": "Cells were cultured in DMEM (Gibco, 11965092) supplemented with 10% fetal bovine serum (Corning, 45000-736), 1% non-essential amino acids (Gibco, 11140050) and 1% GlutaMAX (Gibco, 35050061) at 37 \u00b0C, 5% CO\u2082, and ambient O\u2082.",
+    "series_id": [
+      "GSE307377"
+    ]
+  },
+  "GSM9222991": {
+    "title": "Human dermal fibroblast, young, age 23, male",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: Primary",
+      "cell type: Dermal fibroblast",
+      "group: young",
+      "age: 23",
+      "Sex: male"
+    ],
+    "description": [
+      "Library name: TM16_CKC8_Y_CTRL"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "RNA was extracted using the RNeasy Mini Kit (Qiagen, 74104), according to the manufacturer\u2019s instructions.",
+    "growth_protocol": "Cells were cultured in DMEM (Gibco, 11965092) supplemented with 10% fetal bovine serum (Corning, 45000-736), 1% non-essential amino acids (Gibco, 11140050) and 1% GlutaMAX (Gibco, 35050061) at 37 \u00b0C, 5% CO\u2082, and ambient O\u2082.",
+    "series_id": [
+      "GSE307377"
+    ]
+  },
+  "GSM9222988": {
+    "title": "Human dermal fibroblast, old, age 72, male",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: Primary",
+      "cell type: Dermal fibroblast",
+      "group: old",
+      "age: 72",
+      "Sex: male"
+    ],
+    "description": [
+      "Library name: TM3_CKC5_O_CTRL"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "RNA was extracted using the RNeasy Mini Kit (Qiagen, 74104), according to the manufacturer\u2019s instructions.",
+    "growth_protocol": "Cells were cultured in DMEM (Gibco, 11965092) supplemented with 10% fetal bovine serum (Corning, 45000-736), 1% non-essential amino acids (Gibco, 11140050) and 1% GlutaMAX (Gibco, 35050061) at 37 \u00b0C, 5% CO\u2082, and ambient O\u2082.",
+    "series_id": [
+      "GSE307377"
+    ]
+  },
+  "GSM9222994": {
+    "title": "Human dermal fibroblast, old, age 64, male",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: Primary",
+      "cell type: Dermal fibroblast",
+      "group: old",
+      "age: 64",
+      "Sex: male"
+    ],
+    "description": [
+      "Library name: TM19_CKC16_O_CTRL"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "RNA was extracted using the RNeasy Mini Kit (Qiagen, 74104), according to the manufacturer\u2019s instructions.",
+    "growth_protocol": "Cells were cultured in DMEM (Gibco, 11965092) supplemented with 10% fetal bovine serum (Corning, 45000-736), 1% non-essential amino acids (Gibco, 11140050) and 1% GlutaMAX (Gibco, 35050061) at 37 \u00b0C, 5% CO\u2082, and ambient O\u2082.",
+    "series_id": [
+      "GSE307377"
+    ]
+  },
+  "GSM9222986": {
+    "title": "Human dermal fibroblast, young, age 23, female",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: Primary",
+      "cell type: Dermal fibroblast",
+      "group: young",
+      "age: 23",
+      "Sex: female"
+    ],
+    "description": [
+      "Library name: TM1_CKC3_Y_CTRL"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "RNA was extracted using the RNeasy Mini Kit (Qiagen, 74104), according to the manufacturer\u2019s instructions.",
+    "growth_protocol": "Cells were cultured in DMEM (Gibco, 11965092) supplemented with 10% fetal bovine serum (Corning, 45000-736), 1% non-essential amino acids (Gibco, 11140050) and 1% GlutaMAX (Gibco, 35050061) at 37 \u00b0C, 5% CO\u2082, and ambient O\u2082.",
+    "series_id": [
+      "GSE307377"
+    ]
+  },
+  "GSM9222989": {
+    "title": "Human dermal fibroblast, old, age 70, female",
+    "source": "Skin",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "tissue: Skin",
+      "cell line: Primary",
+      "cell type: Dermal fibroblast",
+      "group: old",
+      "age: 70",
+      "Sex: female"
+    ],
+    "description": [
+      "Library name: TM4_CKC6_O_CTRL"
+    ],
+    "molecule": [
+      "polyA RNA"
+    ],
+    "extract_protocol": "RNA was extracted using the RNeasy Mini Kit (Qiagen, 74104), according to the manufacturer\u2019s instructions.",
+    "growth_protocol": "Cells were cultured in DMEM (Gibco, 11965092) supplemented with 10% fetal bovine serum (Corning, 45000-736), 1% non-essential amino acids (Gibco, 11140050) and 1% GlutaMAX (Gibco, 35050061) at 37 \u00b0C, 5% CO\u2082, and ambient O\u2082.",
+    "series_id": [
+      "GSE307377"
+    ]
+  },
+  "GSM7067633": {
+    "title": "SKIN_AGE72_M_GR4_Gt084",
+    "source": "primary skin fibroblasts",
+    "organism": "Homo sapiens",
+    "characteristics": [
+      "cell type: primary skin fibroblasts",
+      "Sex: Male",
+      "age (years): 72"
+    ],
+    "description": [],
+    "molecule": [
+      "total RNA"
+    ],
+    "extract_protocol": "After expansion, total RNA was isolated using the Direct-zolTM RNA MiniPrep kit (Zymo Research) following the manufacturer\u2019s instruction.",
+    "growth_protocol": "Punch skin biopsies were obtained from the inner axilla of 82 healthy GESTALT participants. Skin biopsies were minced into smaller pieces and distributed into 3 wells of 6-well collagen-coated plates to establish the human dermal fibroblast cultures.",
+    "series_id": [
+      "GSE226189"
+    ]
+  }
+}

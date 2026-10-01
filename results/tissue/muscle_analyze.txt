@@ -1,0 +1,82 @@
+====================================================================================================
+TISSUE ANALYZE  name=muscle  seed=20260914  dataset_id=15d374d6-0dfd-4d8e-ade7-81f73dc921ee
+  title=Skeletal_muscle  tissue=skeletal muscle
+  local=<repo>\data\raw\tissue\muscle\1cb67ec8-c9e3-4d4a-ba23-a1a8ef3f8450.h5ad  size=1,443,090,454
+====================================================================================================
+
+==========================================================================================
+PEEK muscle
+  source: <repo>\data\raw\tissue\muscle\1cb67ec8-c9e3-4d4a-ba23-a1a8ef3f8450.h5ad
+==========================================================================================
+  matrix X shape=(201575, 49042)
+  obs columns (23): ['Dataset', 'donor_id', 'suspension_type', 'Original_annotation', 'CellHint_harmonised_group', 'Curated_annotation', 'assay_ontology_term_id', 'cell_type_ontology_term_id', 'development_stage_ontology_term_id', 'disease_ontology_term_id', 'is_primary_data', 'self_reported_ethnicity_ontology_term_id', 'sex_ontology_term_id', 'tissue_type', 'tissue_ontology_term_id', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid']
+  donor_id: n=201,575  nunique=32  top=[('HM23', 22081), ('TSP2', 16347), ('HM21', 14685), ('HM22', 13829), ('HM4', 11169), ('HM9', 10814), ('HM2', 8790), ('TSP14', 8383), ('HM6', 7887), ('HM1', 7228), ('HM7', 6508), ('HM5', 6176)]
+  development_stage: n=201,575  nunique=22  top=[('21-year-old stage', 24634), ('90-year-old stage', 22081), ('75-year-old stage', 16504), ('61-year-old stage', 16347), ('79-year-old stage', 14979), ('22-year-old stage', 14685), ('70-year-old stage', 12525), ('72-year-old stage', 12351), ('59-year-old stage', 12143), ('76-year-old stage', 8790), ('82-year-old stage', 7887), ('20-year-old stage', 6176)]
+  sex: n=201,575  nunique=3  top=[('unknown', 143051), ('female', 33142), ('male', 25382)]
+  cell_type: n=201,575  nunique=19  top=[('fast muscle cell', 64428), ('slow muscle cell', 44450), ('mesenchymal stem cell', 28275), ('skeletal muscle satellite stem cell', 13531), ('capillary endothelial cell', 11215), ('fibroblast', 8847), ('mural cell', 7317), ('cell of skeletal muscle', 4732), ('vein endothelial cell', 4727), ('secondary lymphoid organ macrophage', 4633), ('macrophage', 3364), ('lymphocyte', 3299)]
+  assay: n=201,575  nunique=5  top=[("10x 5' v1", 143051), ("10x 3' v3", 38935), ("10x 3' v2", 8815), ("10x 5' transcription profiling", 5732), ('Smart-seq2', 5042)]
+  tissue: n=201,575  nunique=5  top=[('skeletal muscle organ, vertebrate', 170841), ('rectus abdominis muscle', 11897), ('muscle of pelvic diaphragm', 7814), ('muscle of abdomen', 6142), ('muscle tissue', 4881)]
+  suspension_type: n=201,575  nunique=2  top=[('nucleus', 143051), ('cell', 58524)]
+  disease: n=201,575  nunique=1  top=[('normal', 201575)]
+  is_primary_data: n=201,575  nunique=2  top=[(True, 165109), (False, 36466)]
+  assay_ontology_term_id: n=201,575  nunique=5  top=[('EFO:0011025', 143051), ('EFO:0009922', 38935), ('EFO:0009899', 8815), ('EFO:0030004', 5732), ('EFO:0008931', 5042)]
+  tissue_ontology_term_id: n=201,575  nunique=5  top=[('UBERON:0014892', 170841), ('UBERON:0002382', 11897), ('UBERON:0008612', 7814), ('UBERON:0002378', 6142), ('UBERON:0002385', 4881)]
+  donors: 32  age min=19.0 max=90.0 nunique_age=21  cells/donor median=5402 (min 230, max 22081)
+  candidate batch-like columns present: ['assay', 'assay_ontology_term_id', 'suspension_type', 'tissue', 'tissue_ontology_term_id']
+[load] 201,575 cells; obs cols=['Dataset', 'donor_id', 'suspension_type', 'Original_annotation', 'CellHint_harmonised_group', 'Curated_annotation', 'assay_ontology_term_id', 'cell_type_ontology_term_id', 'development_stage_ontology_term_id', 'disease_ontology_term_id', 'is_primary_data', 'self_reported_ethnicity_ontology_term_id', 'sex_ontology_term_id', 'tissue_type', 'tissue_ontology_term_id', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid', '_pos']
+[filter] is_primary_data==True                               cells 201,575 -> 165,109 (removed 36,466)
+[filter] cells with numeric donor age                          cells 165,109 -> 165,109 (removed 0)
+[filter] adult cells (age >= 18)                         cells 165,109 -> 165,109 (removed 0)
+[donors] 27 adult donors; age 19–90 (nunique=18, span=71 y); cells/donor median 5084
+
+[T2] donor-level batch-column audit:
+                 column  n_levels  n_levels_ge2_donors  frac_donors_in_shared  aliased_with_donor  looks_technical  usable
+                  assay         3                    3                    1.0               False             True    True
+        suspension_type         2                    2                    1.0               False             True    True
+                Dataset         2                    2                    1.0               False             True    True
+                 tissue         1                    1                    1.0               False             True   False
+            age_nunique         1                    1                    1.0               False            False   False
+                disease         1                    1                    1.0               False            False   False
+self_reported_ethnicity         1                    1                    1.0               False            False   False
+[T2] selected batch column: assay
+[T2] R2(age ~ C(batch=assay)) = 0.067   n_batches=3  donors/batch: median 7.0 (min 3, max 17)
+
+[pseudobulk] min_cells=20  min_donors_per_type=9
+[filter] pseudobulks of adult analysis donors                  groups 214 -> 214 (removed 0)
+[filter] cell types with >= 9 adult donors            groups 214 -> 214  types 13 -> 13  dropped={}
+[filter] genes with CPM>1 in >= 10% of pseudobulks   genes  49,042 -> 15,205  (removed 33,837)
+[filter] donors with at least one retained pseudobulk          donors 27 -> 27
+[filter] cells of analysis donors                              cells 165,109 -> 165,109 (removed 0)
+[filter] cell types kept as composition categories (mean prop>=0.005, donors>=9): 12 kept, 4 collapsed to 'other' (2,283 cells, 1.38%) dropped=['adipocyte', 'erythroid lineage cell', 'mast cell', 'pericyte']
+cells/donor for composition: median 5084 (min 230, max 22081); CLR dim=13
+[T2] R2(log mean UMI/cell ~ C(batch)) = 0.642
+[T2] corr(age, depth): pooled r=+0.112; between-batch r=+0.471 (n=3 batches); within-batch r=-0.144
+
+====================================================================================================
+[T3] batch-grouped CV: composition vs within-cell-type expression
+====================================================================================================
+  n_donors=27 n_batches=3 n_outer=3 n_repeats=3  within-batch metric ON
+building per-type kernels:
+   capillary endothelial cell               n=  25 batches=3
+   cell of skeletal muscle                  n=  19 batches=3
+   fast muscle cell                         n=  19 batches=2
+   fibroblast                               n=  10 batches=2
+   lymphocyte                               n=   9 batches=2
+   macrophage                               n=  10 batches=2
+   mast cell                                n=  11 batches=1
+   mesenchymal stem cell                    n=  17 batches=1
+   mural cell                               n=  26 batches=3
+   secondary lymphoid organ macrophage      n=  17 batches=1
+   skeletal muscle satellite stem cell      n=  24 batches=3
+   slow muscle cell                         n=  17 batches=1
+   vein endothelial cell                    n=  10 batches=2
+   repeat 0: comp R2w=+0.032  expr R2w=+0.009  comp naive=-0.156  expr naive=-0.143
+   repeat 1: comp R2w=+0.032  expr R2w=+0.009  comp naive=-0.156  expr naive=-0.143
+   repeat 2: comp R2w=+0.032  expr R2w=+0.009  comp naive=-0.156  expr naive=-0.143
+  composition (CLR, 13 categories): within-batch R2=+0.032 [0.023066246511599164, 0.346452361119137] {+0.032,+0.032}  naive R2=-0.156 [-2.698,-0.099]
+  expression: all 13 cell types jointly: within-batch R2=+0.009 [0.005685295264985402, 0.07410348417280943] {+0.009,+0.009}  naive R2=-0.143 [-2.492,-0.110]
+
+[T3] muscle: composition R2=+0.032  expression R2=+0.009  expr/comp=+0.273  metric=within_batch
+     blood reference: composition 0.493  expression 0.482  expr/comp=0.978
+
+[muscle] done.

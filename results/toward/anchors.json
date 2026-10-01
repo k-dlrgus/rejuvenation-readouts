@@ -1,0 +1,18 @@
+{
+ "n_young": 113,
+ "n_old": 231,
+ "n_middle": 308,
+ "bin_n": {
+  "20-29": 60,
+  "30-39": 53,
+  "40-49": 106,
+  "50-59": 202,
+  "60-69": 210,
+  "70-79": 21
+ },
+ "n_young_expected": 113,
+ "n_old_expected": 231,
+ "axis_norm": 32.28394904985961,
+ "n_genes": 23485,
+ "path": "<repo>\\results\\toward\\anchors.npz"
+}

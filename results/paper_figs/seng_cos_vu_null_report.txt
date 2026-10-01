@@ -1,0 +1,3 @@
+[PD32] max |v - results/seng/axes.npz v|=0.00e+00
+[PD32] cos(v,u) stored=-0.0402729376959 recomputed=-0.0402729376959 |diff|=3.47e-17; p stored=1 recomputed=1 |diff|=0.00e+00; ||v|| |diff|=1.42e-14; null mean=-0.00111 sd=0.00635 n_null_ge_obs=200
+[PD26] cos(v,u) stored=-0.00598780510568 recomputed=-0.00598780510568 |diff|=6.94e-18; p stored=0.73631840796 recomputed=0.73631840796 |diff|=0.00e+00; ||v|| |diff|=0.00e+00; null mean=-0.00084 sd=0.00690 n_null_ge_obs=147

@@ -1,0 +1,84 @@
+## Pre-registration (written before the joint clustering and before any statistic)
+
+Frozen copy: results/relabel_check/PREREG.flag. Not rewritten after this point.
+
+### What Step 0 found (done before this block)
+
+Lu et al. deposited two Seurat objects as GEO GSE297234 supplementary files
+(GSE297234_HFIB_COMBINED_SEVOSKM.rds, GSE297234_GM00731_SEVOSKM.rds; the third file is the
+10x RAW tar we already use). The paper has no separate data-availability paragraph; its key
+resources table points to GEO GSE297234. The combined object (both donors, 53,454 cells, active
+assay SCT) has a per-cell `cell_state` column with 16 sub-states (Fib_1-3, ParRep_1/2/4 and
+ParRepr_3, EarPlu_1-3, Plu_1-2, NonRep_1-4). These are Lu et al.'s published per-cell labels.
+The GM00731-only object has cluster letters but no `cell_state`. Cell names are
+`<line>_D<day>_<barcode>`, which match our (cell_line, day, barcode).
+Disclosure: before writing this block I tabulated Lu's cell_state x sample cell counts (counts
+only; no expression, score or distance was computed with any new label).
+
+### Labellings
+
+- OLD: md2 labels (per-donor Louvain, results/md2/t2_cluster_labels_*.csv).
+- JOINT (primary; answers the question asked): all cells of both donors in one matrix, md2
+  Louvain pipeline unchanged: Gene Expression features; cells with >500 detected genes; genes
+  detected in >=5 cells of the merged matrix; LogNormalize (scale 1e4); 3000 HVGs by the md2
+  quadratic log-mean/log-variance rule; each HVG regressed on percent-mito and z-scored;
+  50 PCs (randomized, random_state 20260914); SNN k=20, prune 1/15; networkx Louvain
+  resolution 0.8, seed 20260914. Labels: md2 AddModuleScore state signatures
+  (results/md2/genesets.json; nbin 24, ctrl 100, seed 20260914) computed on the joint matrix
+  (one set of expression bins over both donors), then src/md2_task2.py::_label_clusters
+  (each joint cluster gets the state with the highest mean score over all its cells).
+  Row order: aged libraries (day 0, 3, 7, 10) then young.
+- LU (second labelling): Lu's `cell_state` collapsed by prefix: Fib_ -> Fibroblast,
+  ParRep_/ParRepr_ -> PartialReprog, EarPlu_ -> EarlyPluripotency, Plu_ -> Pluripotency,
+  NonRep_ -> NonReprog. Our cells absent from Lu's object are unlabelled and belong to no
+  state.
+
+Donors are pooled only to cluster and label. Every statistic stays per donor.
+
+### Memory deviation and its gate
+
+The unchanged code (src/md2_cluster.py::louvain_one_donor) needs several full float64 copies
+of the merged matrix and does not fit in this machine's memory for ~56k cells. The joint run
+therefore uses a streamed version meant to perform the same arithmetic in the same order
+(per-gene means accumulated row by row in the same order scipy uses; per-cell steps done per
+donor; the HVG block residualized in column blocks). No cell or gene is subsampled.
+Gate: the same streamed code is first run on GM00731 alone and must reproduce md2 exactly
+(identical cluster of every cell in results/md2/cluster_labels_louvain_GM00731.csv, identical
+state scores in data/processed/md2/louvain_state_GM00731.npz, identical labels in
+results/md2/t2_cluster_labels_GM00731.csv). If it does not, the joint run is not done and I
+stop and report.
+
+### Statistics (per donor, same functions and seeds)
+
+a. MD score per state (src/newstory.py Part A joint scoring): the per-cell joint MD scores in
+   results/newstory/partA_cell_scores.npz do not depend on labels and are reused; state means
+   and bootstrap CIs (B=200, Generator(20260918), donors then states in fixed order) are
+   recomputed with the new masks. Reported: aged day-0 Fibroblast, aged PartialReprog, young
+   day-0 Fibroblast, drop / gap.
+b. Same-platform test (src/genespace_run.py sections 2 and bootstrap, FULL and MD spaces):
+   O, Y = half A of day-0 Fibroblast cells of the aged and young donor; S = aged PartialReprog;
+   S_rev = young PartialReprog. Forward progress, change in distance (delta), final / start
+   distance, reverse progress, asymmetry (forward minus reverse progress) with its 95%
+   percentile bootstrap interval (B=200, Generator(20260918), O and Y frozen), and the mixture
+   control (genespace_run.mixture_gate: progress non-decreasing in f = 0, 0.10, 0.25, 0.50;
+   progress CI at f=0.50 excludes 0 and contains the point; delta at f=0.50 < 0).
+   Split rule: if the set of day-0 Fibroblast cells of either donor differs from the old one,
+   the half-split is redone with same_run.split_half(seed 20260914) on the new set (the
+   mixtures are rebuilt from the new halves with the same seed), and this is stated.
+c. GTEx test (src/toward_run.py donor panel, genespace_run.gtex_point_block, FULL space,
+   aged PartialReprog): cosine, change in distance to young GTEx, change in distance to old.
+
+Harness check before any new-label number: the same code is run with the OLD labels and must
+reproduce the stored values (results/newstory/partA_*.csv, results/genespace/same_stats.csv,
+same_posctrl.csv, gtex_stats.csv; points and CI bounds) to within 1e-9. If not, stop.
+
+### Decision rule (verbatim)
+
+"The conclusion holds if, in both the full and MD gene spaces, the aged PartialReprog cells end farther from the young target (change in distance > 0), the mixture control passes, and the forward-minus-reverse asymmetry interval excludes 0."
+
+Applied to each labelling separately (JOINT is the answer to the question; LU is reported
+alongside, not averaged). "Full" and "MD" are the FULL (23,485 ruler genes) and MD (205
+genes) spaces of src/genespace_run.py; "change in distance" is the forward delta; the
+interval is the 95% percentile bootstrap interval. If a state needed by the rule is missing
+or too small for the code to run, the rule is counted as not met for that labelling.
+How far numbers moved is reported descriptively (old, new, difference); no threshold.

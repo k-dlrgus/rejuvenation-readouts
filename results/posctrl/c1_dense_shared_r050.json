@@ -1,0 +1,58 @@
+{
+ "cell": "c1_dense_shared_r050",
+ "regime": "dense_shared",
+ "target_r2": 0.5,
+ "beta": 0.34711538643104906,
+ "cal": {
+  "beta": 0.34711538643104906,
+  "cheap_then_full_r2": 0.5097057772331364,
+  "target_r2": 0.5,
+  "cal_seed": 20260916,
+  "in_band": true,
+  "history": [
+   {
+    "beta": 0.5553558768662349,
+    "full_fold_r2": 0.7822660079654395
+   },
+   {
+    "beta": 0.29299301041857984,
+    "full_fold_r2": 0.39818854006930604
+   },
+   {
+    "beta": 0.34711538643104906,
+    "full_fold_r2": 0.5097057772331364
+   }
+  ],
+  "n_extra": 2
+ },
+ "b_reduced": true,
+ "n_boot": 10,
+ "n_perm": 10,
+ "achieved_within_site_r2": 0.5097057772331364,
+ "within_site_null": -0.14138283487623649,
+ "boot_median_angle": 36.21824273532739,
+ "recovery_angle": 49.831452157934436,
+ "loso_r2": 0.09952068643337378,
+ "loso_null": -1.6824406335551696,
+ "transfer_H_to_M": 0.3087454711771438,
+ "transfer_M_to_H": -0.004080027381451634,
+ "transfer_H_to_M_null": -1.474069884908141,
+ "transfer_M_to_H_null": -1.6725931649177501,
+ "young_old_balanced": 80.55488349564683,
+ "young_old_within_H": 83.59440360323086,
+ "young_old_within_M": 85.82760323125183,
+ "pass_angle": false,
+ "pass_transfer": false,
+ "pass_transfer_any": true,
+ "pass_transfer_primary": false,
+ "angle_vs_sex_ref": -5.081757264672611,
+ "pass_both": false,
+ "support_frac": null,
+ "elapsed_s": 242.24861788749695,
+ "path": "<repo>\\results\\posctrl\\c1_dense_shared_r050.json",
+ "cal_achieved_before_battery": 0.5097057772331364,
+ "sex_angle_ref": 41.3,
+ "complete": true,
+ "seed": 20260914,
+ "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11"
+}

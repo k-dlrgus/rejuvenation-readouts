@@ -1,0 +1,3099 @@
+{
+  "joung_subseries": {
+    "GSE217460": {
+      "title": "A Transcription Factor Atlas of Directed Differentiation [SHAREseq_210322_TFAtlas]",
+      "overall_design": "hESCs were transduced with a library of 3,550 transcription factor ORFs and cultured for 7 days before single-cell RNA-seq",
+      "summary": "SHARE-seq single-cell RNA-seq data profiling hESCs overexpressing transcription factors",
+      "n_sample_ids": 48,
+      "type": [
+        "Expression profiling by high throughput sequencing",
+        "Other"
+      ]
+    },
+    "GSE216479": {
+      "title": "A Transcription Factor Atlas of Directed Differentiation [bulk RNA-seq]",
+      "overall_design": "Candidate transcription factors and DYRK1A perturbations were introduced into pluripotent stem cells for 7 days before RNA-seq",
+      "summary": "Bulk RNA-seq data for candidate transcription factors and DYRK1A perturbations",
+      "n_sample_ids": 62,
+      "type": [
+        "Expression profiling by high throughput sequencing"
+      ]
+    },
+    "GSE216595": {
+      "title": "A Transcription Factor Atlas of Directed Differentiation [10XscRNA_180124_perturb]",
+      "overall_design": "hESCs were transduced with a library of 90 transcription factor ORFs and cultured for 7 days before single-cell RNA-seq",
+      "summary": "10X single-cell RNA-seq data profiling hESCs overexpressing transcription factors",
+      "n_sample_ids": 9,
+      "type": [
+        "Expression profiling by high throughput sequencing",
+        "Other"
+      ]
+    },
+    "GSE219000": {
+      "title": "A Transcription Factor Atlas of Directed Differentiation [190830_cardiomyocyte]",
+      "overall_design": "hESCs were differentiated into cardiomyocytes by overexpressing EOMES, transduced with a library of 80 transcription factor ORFs, and cultured for 4 weeks before flow cytometry",
+      "summary": "Transcription factor overexpression screen in cardiomyocytes for differentiation into atrial, ventricular, or mature cardiomyocytes",
+      "n_sample_ids": 12,
+      "type": [
+        "Other"
+      ]
+    },
+    "GSE219058": {
+      "title": "A Transcription Factor Atlas of Directed Differentiation [191225_astrocyte]",
+      "overall_design": "hESCs were differentiated into neural progenitors by overexpressing RFX4 with dual SMAD inhibition, transduced with a library of 54 transcription factor ORFs, and cultured for 7 days before flow cytometry",
+      "summary": "Transcription factor overexpression screen in neural progenitors for astrocyte differentiation",
+      "n_sample_ids": 4,
+      "type": [
+        "Other"
+      ]
+    },
+    "GSE216463": {
+      "title": "A Transcription Factor Atlas of Directed Differentiation [10XscRNA_200209_NP]",
+      "overall_design": "Induced neural progenitors were differentiated from hESCs using RFX4 overexpression combined with dual SMAD inhibition, embryoid body, and dual SMAD inhibition before single-cell RNA-seq",
+      "summary": "10X single-cell RNA-seq data comparing induced neural progenitors produced by different methods",
+      "n_sample_ids": 6,
+      "type": [
+        "Expression profiling by high throughput sequencing"
+      ]
+    },
+    "GSE216601": {
+      "title": "A Transcription Factor Atlas of Directed Differentiation [10XscRNA_180525_CM]",
+      "overall_design": "Induced cardiomyocytes were differentiated from hESCs by overexpressing EOMES or by small molecule inhibition of GSK and WNT before single-cell RNA-seq",
+      "summary": "10X single-cell RNA-seq data profiling induced cardiomyocytes",
+      "n_sample_ids": 4,
+      "type": [
+        "Expression profiling by high throughput sequencing"
+      ]
+    },
+    "GSE216602": {
+      "title": "A Transcription Factor Atlas of Directed Differentiation [10XscRNA_180726_TFd56]",
+      "overall_design": "Induced neural progenitors were differentiated from hESCs by overexpressing transcription factors and spontaneously differentiating before single-cell RNA-seq",
+      "summary": "10X single-cell RNA-seq data profiling spontaneously differentiated cells from induced neural progenitors produced by overexpressing transcription factors",
+      "n_sample_ids": 8,
+      "type": [
+        "Expression profiling by high throughput sequencing"
+      ]
+    }
+  },
+  "gtex": {
+    "subject_phenotypes": {
+      "url": "https://storage.googleapis.com/adult-gtex/annotations/v10/metadata-files/GTEx_Analysis_v10_Annotations_SubjectPhenotypesDS.txt",
+      "final_url": "https://storage.googleapis.com/adult-gtex/annotations/v10/metadata-files/GTEx_Analysis_v10_Annotations_SubjectPhenotypesDS.txt",
+      "status": 200,
+      "content_type": "text/plain",
+      "content_length": "20292",
+      "head": "SUBJID\tSEX\tAGE\tDTHHRDY\nGTEX-1117F\t2\t60-69\t4\nGTEX-111CU\t1\t50-59\t0\nGTEX-111FC\t1\t60-69\t1\nGTEX-111VG\t1\t60-69\t3\nGTEX-111YS\t1\t60-69\t0\nGTEX-1122O\t2\t60-69\t0\nGTEX-1128S\t2\t60-69\t2\nGTEX-113IC\t1\t60-69\t\nGTEX-113JC\t2\t50-59\t2\nGTEX-117XS\t1\t60-69\t2\nGTEX-117YW\t1\t50-59\t3\nGTEX-117YX\t1\t50-59\t0\nGTEX-1192W\t1\t60-69\t2\nGTEX-1192X\t1\t50-59\t4\nGTEX-11DXW\t1\t40-49\t2\nGTEX-11DXX\t2\t60-69\t0\nGTEX-11DXY\t1\t60-69\t2\nGTEX-11DXZ\t1\t50-59\t0\nGTEX-11DYG\t1\t60-69\t2\nGTEX-11DZ1\t1\t50-59\t4\nGTEX-11EI6\t1\t60-69\t4\nGTEX-11EM3\t2\t20-29\t0\nGTEX-11EMC\t2\t60-69\t2\nGTEX-11EQ8\t1\t60-69\t4\nGTEX-11EQ9\t1\t30-39\t2\nGTEX-11GS4\t1\t60-69\t2\nGTEX-11GSO\t1\t60-69\t2\nGTEX-11GSP\t2\t60-69\t2\nGTEX-11H98\t1\t50-59\t2\nGTEX-11I78\t2\t50-59\t0\nGTEX-11ILO\t2\t40-49\t0\nGTEX-11LCK\t1\t30-39\t0\nGTEX-11NSD\t1\t20-29\t0\nGTEX-11NUK\t1\t50-59\t2\nGTEX-11NV4\t1\t60-69\t2\nGTEX-11O72\t1\t40-49\t2\nGTEX-11OC5\t1\t60-69\t2\nG"
+    },
+    "sample_attributes": {
+      "url": "https://storage.googleapis.com/adult-gtex/annotations/v10/metadata-files/GTEx_Analysis_v10_Annotations_SampleAttributesDS.txt",
+      "final_url": "https://storage.googleapis.com/adult-gtex/annotations/v10/metadata-files/GTEx_Analysis_v10_Annotations_SampleAttributesDS.txt",
+      "status": 200,
+      "content_type": "text/plain",
+      "content_length": "38497961",
+      "head": "SAMPID\tSMATSSCR\tSMCENTER\tSMPTHNTS\tSMRIN\tSMTS\tSMTSD\tSMUBRID\tSMTSISCH\tSMTSPAX\tSMNABTCH\tSMNABTCHT\tSMNABTCHD\tSMGEBTCH\tSMGEBTCHD\tSMGEBTCHT\tANALYTE_TYPE\tSMAFRZE\tSMGTC\tSMRDTTL\tSMALTTL\tSMALTALG\tSMSUPALG\tSMRDLGTH\tSMVQCFL\tSMLMAPQ\tSMUMPRD\tSMUNPDRD\tSMMPPD\tSMMAPRT\tSMMPPDUN\tSMUNMPRT\tSMMPDP\tSMDPMPRT\tSMMPPDXG\tSMMPDPXG\tSMDPRTXG\tSMCHMRD\tSMCHMRT\tSMMPPDPR\tSMMPHQRD\tSMMPHQRT\tSMMPLQRD\tSMSPLTRT\tSME1MPRD\tSME2MPRD\tSME1MPRT\tSME2MPRT\tSME1MMB\tSME2MMB\tSME1TTLB\tSME2TTLB\tSME1MMRT\tSME2MMRT\tSMTTLMM\tSMTTLB\tSMBSMMRT\tSMESTLBS\tSMEXNCRD\tSMEXNCRT\tSMEXPEFF\tSMNTRNRD\tSMNTRNRT\tSMNTRARD\tSMNTRART\tSMNTERRD\tSMNTERRT\tSMAMBRD\tSMAMBRT\tSMNTEXC\tSMDSCRT\tSMEXNCRTHQ\tSMNTRNRTHQ\tSMNTRARTHQ\tSMNTERRTHQ\tSMAMBRTHQ\tSME1SNSE\tSME2SNSE\tSME1ANTI\tSME2ANTI\tSME1PCTS\tSME2PCTS\tSMGNSDTC\tSMRRNARD\tSMRRNART\tSMMFLGTH\tSMSFLGTH\tSMMDFLGTH\tSMSMFLGTH\tSMFGCMN\tSMFGCSD\tSMF"
+    },
+    "portal_adult_metadata": {
+      "url": "https://gtexportal.org/home/downloads/adult-gtex/metadata",
+      "final_url": "https://gtexportal.org/home/downloads/adult-gtex/metadata",
+      "status": 200,
+      "content_type": "text/html",
+      "content_length": "8757",
+      "head": "<!doctype html><html lang=\"en\"><head><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n        })(window,document,'script','dataLayer','GTM-N8C54NS');</script><title>GTEx Portal</title><meta charset=\"utf-8\"><meta name=\"gtex-version\" content=\"cl362\n\"><meta name=\"gtex-build-date\" content=\"8/26/2026, 2:53:07 PM\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta name=\"keywords\" content=\"GTEx, genotype tissue expression, eQTL, transcriptome, gene expression, human, multi-tissue, human transcriptome, human gen"
+    },
+    "dbgap": {
+      "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000424.v10.p1",
+      "final_url": "https://dbgap.ncbi.nlm.nih.gov/home/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": "62081",
+      "head": "<!DOCTYPE html>\n\n\n\n\n\n\n\n<html lang=\"en\" >\n<head >\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n\n    <!-- Mobile properties -->\n    <meta name=\"HandheldFriendly\" content=\"True\">\n    <meta name=\"MobileOptimized\" content=\"320\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\n    <script src=\"/static/js/uswds-init.min.js\"></script>\n    <script>\n      var baseUrl = \"https://dbgap.ncbi.nlm.nih.gov/beta/\";\n      var apiBaseUrl = \"https://dbgap.ncbi.nlm.nih.gov/beta/api/\";\n      var searchUrl = \"https://dbgap.ncbi.nlm.nih.gov/beta/search/\";\n      var csrfToken = \"a8rcTNFBU3XL6uiVklAjAgb8hY78147LAe8l2wpzmLo1EgetrWoN01jG7VhwVVfw\";\n    </script>\n\n    \n      <link\n          rel=\"stylesheet\"\n          type=\"text/css\"\n          href=\"/st"
+    }
+  },
+  "sra": {
+    "PRJNA598923": {
+      "accession": "PRJNA598923",
+      "bioproject_esearch": {
+        "count": "1",
+        "retmax": "1",
+        "retstart": "0",
+        "idlist": [
+          "598923"
+        ],
+        "translationset": [],
+        "translationstack": [
+          {
+            "term": "PRJNA598923[All Fields]",
+            "field": "All Fields",
+            "count": "1",
+            "explode": "N"
+          },
+          "GROUP"
+        ],
+        "querytranslation": "PRJNA598923[All Fields]"
+      },
+      "esummary": {
+        "header": {
+          "type": "esummary",
+          "version": "0.3"
+        },
+        "result": {
+          "uids": [
+            "598923"
+          ],
+          "598923": {
+            "uid": "598923",
+            "taxid": "",
+            "project_id": 598923,
+            "project_acc": "PRJNA598923",
+            "project_type": "Primary submission",
+            "project_data_type": "Raw sequence reads",
+            "sort_by_projecttype": 672848,
+            "sort_by_datatype": 659999,
+            "sort_by_organism": 1024052,
+            "project_subtype": "",
+            "project_target_scope": "Multispecies",
+            "project_target_material": "Genome",
+            "project_target_capture": "Whole",
+            "project_methodtype": "Sequencing",
+            "project_method": "",
+            "project_objectives_list": [
+              {
+                "project_objectivestype": "Raw Sequence Reads",
+                "project_objectives": ""
+              }
+            ],
+            "registration_date": "2020/01/04 00:00",
+            "project_name": "",
+            "project_title": "Young, Aged and Treated Samples",
+            "project_description": "This is the raw rna seq data for aged, young and transiently reprogrammed fibroblast and endothelial cell samples",
+            "keyword": "",
+            "relevance_agricultural": "",
+            "relevance_medical": "",
+            "relevance_industrial": "",
+            "relevance_environmental": "",
+            "relevance_evolution": "",
+            "relevance_model": "",
+            "relevance_other": "",
+            "organism_name": "",
+            "organism_strain": "",
+            "organism_label": "",
+            "sequencing_status": "SRA/Trace",
+            "submitter_organization": "Stanford University",
+            "submitter_organization_list": [
+              "Stanford University"
+            ],
+            "supergroup": ""
+          }
+        }
+      },
+      "sra_esearch": {
+        "count": "18",
+        "retmax": "5",
+        "retstart": "0",
+        "idlist": [
+          "9804923",
+          "9804922",
+          "9804921",
+          "9804920",
+          "9804919"
+        ],
+        "translationset": [],
+        "translationstack": [
+          {
+            "term": "PRJNA598923[All Fields]",
+            "field": "All Fields",
+            "count": "18",
+            "explode": "N"
+          },
+          "GROUP"
+        ],
+        "querytranslation": "PRJNA598923[All Fields]"
+      }
+    },
+    "PRJNA1108254": {
+      "accession": "PRJNA1108254",
+      "bioproject_esearch": {
+        "count": "1",
+        "retmax": "1",
+        "retstart": "0",
+        "idlist": [
+          "1108254"
+        ],
+        "translationset": [],
+        "translationstack": [
+          {
+            "term": "PRJNA1108254[All Fields]",
+            "field": "All Fields",
+            "count": "1",
+            "explode": "N"
+          },
+          "GROUP"
+        ],
+        "querytranslation": "PRJNA1108254[All Fields]"
+      },
+      "esummary": {
+        "header": {
+          "type": "esummary",
+          "version": "0.3"
+        },
+        "result": {
+          "uids": [
+            "1108254"
+          ],
+          "1108254": {
+            "uid": "1108254",
+            "taxid": "",
+            "project_id": 1108254,
+            "project_acc": "PRJNA1108254",
+            "project_type": "Primary submission",
+            "project_data_type": "Raw sequence reads",
+            "sort_by_projecttype": 291851,
+            "sort_by_datatype": 264481,
+            "sort_by_organism": 876876,
+            "project_subtype": "",
+            "project_target_scope": "Multispecies",
+            "project_target_material": "Genome",
+            "project_target_capture": "Whole",
+            "project_methodtype": "Sequencing",
+            "project_method": "",
+            "project_objectives_list": [
+              {
+                "project_objectivestype": "Raw Sequence Reads",
+                "project_objectives": ""
+              }
+            ],
+            "registration_date": "2024/05/06 00:00",
+            "project_name": "",
+            "project_title": "Recapitulating fibroblast transcriptional states using comprehensive transcription factor perturbations",
+            "project_description": "Cell atlas projects have revealed recurrent transcriptional states across tissues and diseases, but the regulatory mechanisms governing these states remain largely unclear. To investigate whether these states can be recapitulated in vitro, we systematically perturbed 1,836 transcription factors using CRISPRa Perturb-seq in primary fibroblasts and retinal pigment epithelial cells, enabled by a droplet overloading approach that achieves high multiplexing. We observed that CRISPRa activated most transcription factors within a physiological range, that epigenetic features predicted which genes are activatable, and that the protospacer's seed region could drive off-target effects. Perturbations recapitulated gene expression programs resembling in vivo fibroblast states, including universal and inflammatory states, and nominated KLF4 and KLF5 as key regulators of the universal state. Our findings suggest that recurrent transcriptional states reflect gene expression programs that can be elicited via perturbation, opening the door to engineering clinically relevant states for ex vivo study.",
+            "keyword": "",
+            "relevance_agricultural": "",
+            "relevance_medical": "",
+            "relevance_industrial": "",
+            "relevance_environmental": "",
+            "relevance_evolution": "",
+            "relevance_model": "",
+            "relevance_other": "",
+            "organism_name": "",
+            "organism_strain": "",
+            "organism_label": "",
+            "sequencing_status": "SRA/Trace",
+            "submitter_organization": "Memorial Sloan Kettering Cancer Center",
+            "submitter_organization_list": [
+              "Memorial Sloan Kettering Cancer Center"
+            ],
+            "supergroup": ""
+          }
+        }
+      },
+      "sra_esearch": {
+        "count": "1090",
+        "retmax": "5",
+        "retstart": "0",
+        "idlist": [
+          "33607991",
+          "33607990",
+          "33607989",
+          "33607988",
+          "33607987"
+        ],
+        "translationset": [],
+        "translationstack": [
+          {
+            "term": "PRJNA1108254[All Fields]",
+            "field": "All Fields",
+            "count": "1090",
+            "explode": "N"
+          },
+          "GROUP"
+        ],
+        "querytranslation": "PRJNA1108254[All Fields]"
+      }
+    },
+    "PRJNA1263211": {
+      "accession": "PRJNA1263211",
+      "bioproject_esearch": {
+        "count": "1",
+        "retmax": "1",
+        "retstart": "0",
+        "idlist": [
+          "1263211"
+        ],
+        "translationset": [],
+        "translationstack": [
+          {
+            "term": "PRJNA1263211[All Fields]",
+            "field": "All Fields",
+            "count": "1",
+            "explode": "N"
+          },
+          "GROUP"
+        ],
+        "querytranslation": "PRJNA1263211[All Fields]"
+      },
+      "esummary": {
+        "header": {
+          "type": "esummary",
+          "version": "0.3"
+        },
+        "result": {
+          "uids": [
+            "1263211"
+          ],
+          "1263211": {
+            "uid": "1263211",
+            "taxid": 9606,
+            "project_id": 1263211,
+            "project_acc": "PRJNA1263211",
+            "project_type": "Primary submission",
+            "project_data_type": "Transcriptome or Gene expression",
+            "sort_by_projecttype": 192286,
+            "sort_by_datatype": 160764,
+            "sort_by_organism": 223008,
+            "project_subtype": "",
+            "project_target_scope": "Multiisolate",
+            "project_target_material": "Transcriptome",
+            "project_target_capture": "Whole",
+            "project_methodtype": "Sequencing",
+            "project_method": "",
+            "project_objectives_list": [
+              {
+                "project_objectivestype": "Expression",
+                "project_objectives": ""
+              }
+            ],
+            "registration_date": "2025/05/15 00:00",
+            "project_name": "Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]",
+            "project_title": "Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]",
+            "project_description": "The loss of cellular and tissue identity is a hallmark of aging and numerous diseases, but the underlying mechanisms are not well understood. Our analysis of gene expression data from over 40 human tissues and 20 diseases reveals a pervasive upregulation of mesenchymal genes across multiple cell types, along with an altered composition of stromal cell populations, denoting a \u201cmesenchymal drift\u201d (MD). Increased MD correlates with disease progression, reduced patient survival, and an elevated mortality risk, whereas suppression of key MD transcription factors leads to epigenetic rejuvenation. Notably, Yamanaka factor-induced partial reprogramming can markedly reduce MD before dedifferentiation and gain of pluripotency, rejuvenating the aging transcriptome at the cellular and tissue levels. These findings provide mechanistic insight into the underlying beneficial effects of partial reprogramming and offer a framework for developing interventions to reverse age-related diseases using the partial reprogramming approach. Overall design: 10x Genomics scRNA-seq of human fibroblasts from a young (GM23815, 22yr) and aged donor (GM00731, 96yr) treated with Sendai virus OSKM for up to 10 days.",
+            "keyword": "",
+            "relevance_agricultural": "",
+            "relevance_medical": "Yes",
+            "relevance_industrial": "",
+            "relevance_environmental": "",
+            "relevance_evolution": "",
+            "relevance_model": "",
+            "relevance_other": "",
+            "organism_name": "Homo sapiens",
+            "organism_strain": "",
+            "organism_label": "",
+            "sequencing_status": "SRA/Trace",
+            "submitter_organization": "Altos Labs",
+            "submitter_organization_list": [
+              "Altos Labs"
+            ],
+            "supergroup": "Eukaryotes"
+          }
+        }
+      },
+      "sra_esearch": {
+        "count": "8",
+        "retmax": "5",
+        "retstart": "0",
+        "idlist": [
+          "38661437",
+          "38661436",
+          "38661435",
+          "38661434",
+          "38661433"
+        ],
+        "translationset": [],
+        "translationstack": [
+          {
+            "term": "PRJNA1263211[All Fields]",
+            "field": "All Fields",
+            "count": "8",
+            "explode": "N"
+          },
+          "GROUP"
+        ],
+        "querytranslation": "PRJNA1263211[All Fields]"
+      }
+    }
+  },
+  "cxg_skin": [
+    {
+      "dataset_id": "98b68224-956d-45dd-9eca-538747578af8",
+      "title": "A single-cell atlas identifies oncogenic transcriptional programs and immune escape mechanisms in CTCL",
+      "n_cells": 1533956,
+      "collection_id": "be2285ed-d27d-4249-97a2-9b23ea924413",
+      "tissues": [
+        "dermis",
+        "skin epidermis",
+        "skin of body"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v2",
+          "ontology_term_id": "EFO:0009899"
+        },
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        },
+        {
+          "label": "10x 5' transcription profiling",
+          "ontology_term_id": "EFO:0030004"
+        },
+        {
+          "label": "10x 5' v1",
+          "ontology_term_id": "EFO:0011025"
+        },
+        {
+          "label": "10x 5' v2",
+          "ontology_term_id": "EFO:0009900"
+        },
+        {
+          "label": "10x GEM-X Flex v1",
+          "ontology_term_id": "EFO:0920088"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "b0ef440b-e303-4ad2-ada8-ce13336280ba",
+      "title": "Multi-modal skin atlas identifies a multicellular immune-stromal community associated with altered cornification and specific T cell expansion in atopic dermatitis (Atopic Dermatitis Atlas)",
+      "n_cells": 280518,
+      "collection_id": "5e143645-177c-45b6-952d-48770e29a54b",
+      "tissues": [
+        "skin of body"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v2",
+          "ontology_term_id": "EFO:0009899"
+        },
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "dc7ba810-2668-4182-abcc-d97d25f9310c",
+      "title": "Skin",
+      "n_cells": 25333,
+      "collection_id": "a137437b-d284-4a27-b1e9-36958a8f92c1",
+      "tissues": [
+        "skin of body"
+      ],
+      "organism": [
+        {
+          "label": "Microcebus murinus",
+          "ontology_term_id": "NCBITaxon:30608"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v2",
+          "ontology_term_id": "EFO:0009899"
+        },
+        {
+          "label": "Smart-seq2",
+          "ontology_term_id": "EFO:0008931"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "a392ab34-9016-4f48-b45d-5b3a9cfa39fe",
+      "title": "LCA complete",
+      "n_cells": 244081,
+      "collection_id": "a137437b-d284-4a27-b1e9-36958a8f92c1",
+      "tissues": [
+        "adipose tissue",
+        "aorta",
+        "blood",
+        "bone element",
+        "bone marrow",
+        "brainstem",
+        "brown adipose tissue",
+        "cardiac muscle tissue",
+        "cerebral cortex",
+        "colon",
+        "diaphragm",
+        "epithelium of tongue"
+      ],
+      "organism": [
+        {
+          "label": "Microcebus murinus",
+          "ontology_term_id": "NCBITaxon:30608"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v2",
+          "ontology_term_id": "EFO:0009899"
+        },
+        {
+          "label": "Smart-seq2",
+          "ontology_term_id": "EFO:0008931"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "b796f27e-e191-4f2d-b40c-e6ac58163b4e",
+      "title": "adult human skin cells of health and psoriasis vulgaris",
+      "n_cells": 24126,
+      "collection_id": "b1fd6a09-eb76-44ca-822d-68318548094c",
+      "tissues": [
+        "skin of body"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "batch_condition",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "8e948521-3c3d-4e92-9ff1-3add0e069e41",
+      "title": "Fibroblasts",
+      "n_cells": 71657,
+      "collection_id": "7d66d871-091f-4602-9f42-85f86d2853e0",
+      "tissues": [
+        "brain meninx",
+        "forebrain meninges",
+        "meninx"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "batch_condition",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "bcd4103c-afdc-4233-af6e-554589d70cd3",
+      "title": "Developmental Zebrafish Atlas",
+      "n_cells": 1220178,
+      "collection_id": "4ea9a90e-1dad-4c67-b1e3-8488ab7dc269",
+      "tissues": [
+        "adenohypophysis",
+        "anterior lateral plate mesoderm",
+        "anterior segment of eyeball",
+        "blood",
+        "blood island",
+        "blood vessel endothelium",
+        "brain",
+        "bulbus arteriosus",
+        "cerebellum",
+        "cleithrum",
+        "cloaca",
+        "corpuscles of Stannius"
+      ],
+      "organism": [
+        {
+          "label": "Danio rerio",
+          "ontology_term_id": "NCBITaxon:7955"
+        }
+      ],
+      "assay": [
+        {
+          "label": "sci-RNA-seq3",
+          "ontology_term_id": "EFO:0030028"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "batch_condition",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "2817d82d-fb5f-4f07-9432-511d9bad065a",
+      "title": "Sub UMAP of the epidermis",
+      "n_cells": 295691,
+      "collection_id": "4ea9a90e-1dad-4c67-b1e3-8488ab7dc269",
+      "tissues": [
+        "cloaca",
+        "ectoderm-derived structure",
+        "head",
+        "integument",
+        "multicellular anatomical structure",
+        "periderm",
+        "skin epidermis",
+        "taste bud"
+      ],
+      "organism": [
+        {
+          "label": "Danio rerio",
+          "ontology_term_id": "NCBITaxon:7955"
+        }
+      ],
+      "assay": [
+        {
+          "label": "sci-RNA-seq3",
+          "ontology_term_id": "EFO:0030028"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "batch_condition",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "1b350d0a-4535-4879-beb6-1142f3f94947",
+      "title": "Immune aging project - all cells",
+      "n_cells": 1281499,
+      "collection_id": "cc431242-35ea-41e1-a100-41e0dec2665b",
+      "tissues": [
+        "blood",
+        "bone marrow",
+        "colonic epithelium",
+        "epithelial lining fluid",
+        "inguinal lymph node",
+        "jejunal epithelium",
+        "jejunum lamina propria",
+        "lamina propria of mucosa of colon",
+        "liver",
+        "lung",
+        "mesenteric lymph node",
+        "skin of body"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        },
+        {
+          "label": "10x 5' v2",
+          "ontology_term_id": "EFO:0009900"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "af33f944-ab2f-4b80-a17e-49c13e03b01d",
+      "title": "Fibroblasts from human cardiac tissue with myocarditis and healthy controls",
+      "n_cells": 26027,
+      "collection_id": "328d71f0-0ed7-4518-966f-be6bd0797324",
+      "tissues": [
+        "apex of heart",
+        "heart left ventricle"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v2",
+          "ontology_term_id": "EFO:0009899"
+        },
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "62527b1a-826c-423d-b123-e495846979a9",
+      "title": "snRNA-seq of human optic nerve and optic nerve head - fibroblasts",
+      "n_cells": 118925,
+      "collection_id": "05e3d0fc-c9dd-4f14-9163-2b242b3bb5c2",
+      "tissues": [
+        "cranial nerve II",
+        "optic disc"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "7b20c613-9add-43d1-87e9-defd3d9b9f8c",
+      "title": "Integrated cancer cell-specific single-cell RNA-seq datasets of immune checkpoint blockade-treated patients",
+      "n_cells": 355941,
+      "collection_id": "61e422dd-c9cd-460e-9b91-72d9517348ef",
+      "tissues": [
+        "arm skin",
+        "brain",
+        "breast",
+        "kidney",
+        "liver",
+        "nose skin",
+        "skin of body",
+        "skin of calf",
+        "skin of cheek",
+        "skin of external ear",
+        "skin of forehead",
+        "skin of knee"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v2",
+          "ontology_term_id": "EFO:0009899"
+        },
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        },
+        {
+          "label": "10x 5' transcription profiling",
+          "ontology_term_id": "EFO:0030004"
+        },
+        {
+          "label": "Smart-seq2",
+          "ontology_term_id": "EFO:0008931"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "93a3b257-359b-4266-b23f-64875d37a9e3",
+      "title": "thymus scRNA-seq atlas - fibroblast subset",
+      "n_cells": 20779,
+      "collection_id": "fc19ae6c-d7c1-4dce-b703-62c5d52061b4",
+      "tissues": [
+        "thymus"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v2",
+          "ontology_term_id": "EFO:0009899"
+        },
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        },
+        {
+          "label": "10x 5' v1",
+          "ontology_term_id": "EFO:0011025"
+        },
+        {
+          "label": "10x 5' v2",
+          "ontology_term_id": "EFO:0009900"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "a77176ec-96c8-4448-a3e7-b56940bdfab6",
+      "title": "Diffuse large B cell lymphoma (DLBCL) 6 patients archival FFPE samples profiling with Chromium FLEX",
+      "n_cells": 39713,
+      "collection_id": "bd552f76-1f1b-43a3-b9ee-0aace57e90d6",
+      "tissues": [
+        "arm skin",
+        "bronchus",
+        "cervical lymph node",
+        "duodenum",
+        "external iliac lymph node",
+        "stomach"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x Next GEM Flex v1",
+          "ontology_term_id": "EFO:0920087"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "34f5307e-7b4d-4a48-b68f-2ba844c6414b",
+      "title": "Frozen samples (single nucleus)",
+      "n_cells": 394534,
+      "collection_id": "a96133de-e951-4e2d-ace6-59db8b3bfb1d",
+      "tissues": [
+        "axilla",
+        "bone spine",
+        "brain",
+        "breast",
+        "chest wall",
+        "liver",
+        "skin epidermis"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v2",
+          "ontology_term_id": "EFO:0009899"
+        },
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "ea251de5-c764-4f7c-add0-8141b1061faf",
+      "title": "ClassFibroblast",
+      "n_cells": 19161,
+      "collection_id": "4d8fed08-2d6d-4692-b5ea-464f1d072077",
+      "tissues": [
+        "basal forebrain",
+        "brain",
+        "cerebellar peduncular complex",
+        "cerebellum",
+        "cerebral subcortex",
+        "cortex",
+        "dorsal plus ventral thalamus",
+        "forebrain",
+        "head",
+        "hindbrain",
+        "hippocampal formation",
+        "hypothalamus"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v2",
+          "ontology_term_id": "EFO:0009899"
+        },
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "batch_condition",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "b617ee1b-f8c8-4de9-b82b-e803ab93550d",
+      "title": "A multi-tissue single-cell tumor microenvironment atlas",
+      "n_cells": 391963,
+      "collection_id": "3f7c572c-cd73-4b51-a313-207c7f20f188",
+      "tissues": [
+        "blood",
+        "breast",
+        "colorectum",
+        "liver",
+        "lung",
+        "ovary",
+        "skin epidermis",
+        "uvea"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v1",
+          "ontology_term_id": "EFO:0009901"
+        },
+        {
+          "label": "10x 3' v2",
+          "ontology_term_id": "EFO:0009899"
+        },
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        },
+        {
+          "label": "10x 5' v2",
+          "ontology_term_id": "EFO:0009900"
+        },
+        {
+          "label": "Smart-seq2",
+          "ontology_term_id": "EFO:0008931"
+        },
+        {
+          "label": "inDrop",
+          "ontology_term_id": "EFO:0008780"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "1851b6ab-2386-40a1-8c2a-b7cd895b889e",
+      "title": "Fibroblasts and Schwann cells",
+      "n_cells": 20611,
+      "collection_id": "2d40e6a7-f2fd-49ba-9db9-6b97e4c6dad5",
+      "tissues": [
+        "intercostal muscle"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v2",
+          "ontology_term_id": "EFO:0009899"
+        },
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "b2dd6bc9-36ed-4cd4-a2b3-51f6a2386afa",
+      "title": "Mouse dermal fibroblast atlas",
+      "n_cells": 46549,
+      "collection_id": "3c4f0970-7614-43de-beb7-6128b3cb74ed",
+      "tissues": [
+        "skin of back",
+        "skin of body"
+      ],
+      "organism": [
+        {
+          "label": "Mus musculus",
+          "ontology_term_id": "NCBITaxon:10090"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v1",
+          "ontology_term_id": "EFO:0009901"
+        },
+        {
+          "label": "10x 3' v2",
+          "ontology_term_id": "EFO:0009899"
+        },
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "a19d1667-a7b5-4556-9e5f-f9bfa690c0f1",
+      "title": "Human dermal fibroblast atlas",
+      "n_cells": 108440,
+      "collection_id": "3c4f0970-7614-43de-beb7-6128b3cb74ed",
+      "tissues": [
+        "hindlimb skin",
+        "inguinal region skin",
+        "lower leg skin",
+        "skin of abdomen",
+        "skin of back",
+        "skin of body",
+        "skin of cheek",
+        "skin of chest",
+        "skin of face",
+        "skin of forearm",
+        "skin of hip",
+        "skin of leg"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v1",
+          "ontology_term_id": "EFO:0009901"
+        },
+        {
+          "label": "10x 3' v2",
+          "ontology_term_id": "EFO:0009899"
+        },
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        },
+        {
+          "label": "10x 5' v1",
+          "ontology_term_id": "EFO:0011025"
+        },
+        {
+          "label": "MARS-seq",
+          "ontology_term_id": "EFO:0008796"
+        },
+        {
+          "label": "Seq-Well S3",
+          "ontology_term_id": "EFO:0030019"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "ef9a2058-513b-44f7-9057-06c0df86f2a3",
+      "title": "Visium spatial - bcc_face_forehead_A",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "skin of forehead"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "e7c5ba7e-4be0-4696-af50-a07d0dc7aac5",
+      "title": "BCC and Normal - scRNA-seq data",
+      "n_cells": 152189,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "arm skin",
+        "nose skin",
+        "skin of abdomen",
+        "skin of cheek",
+        "skin of external ear",
+        "skin of forehead",
+        "skin of temple"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "10x 3' v1",
+          "ontology_term_id": "EFO:0009901"
+        },
+        {
+          "label": "10x 3' v2",
+          "ontology_term_id": "EFO:0009899"
+        },
+        {
+          "label": "10x 3' v3",
+          "ontology_term_id": "EFO:0009922"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "dee75ca4-8348-471e-bbeb-e2143209e3d0",
+      "title": "Visium spatial - face_forehead_A_a",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "skin of forehead"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "dce10ba0-1548-4f2f-9959-77d1090bf196",
+      "title": "Visium spatial - face_temple_B_b",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "skin of temple"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "da22c90e-3db0-449a-b926-94410031b1d1",
+      "title": "Visium spatial - face_glabella_A",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "glabella skin"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "d7d70622-5dd8-4eae-8a6c-5036e78c48d1",
+      "title": "Visium spatial - bcc_face_cheek_B",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "skin of cheek"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "d465e08b-b391-425f-9f15-bd3eff4681f7",
+      "title": "Visium spatial - bcc_face_forehead_B",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "skin of forehead"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "c68e6ac8-c4d8-4869-ba08-9d157e4c06f8",
+      "title": "Visium spatial - face_temple1b",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "skin of temple"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "b336b422-91ca-42b2-81a2-5c5a20ceefd7",
+      "title": "Visium spatial - body_thigh_A",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "upper leg skin"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "a7059a06-16ff-462f-a3ec-938054a81479",
+      "title": "Visium spatial - body_back_A_b",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "skin of back"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "9acc2ac1-6acf-4ad3-a8c1-8bffff235e16",
+      "title": "Visium spatial - face_scalp_A",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "skin of scalp"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "8f8821bf-6033-49fd-b638-44e0a18f4bf8",
+      "title": "Visium spatial - face_forehead_A_b",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "skin of forehead"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "838d7116-78d2-4336-985d-e8fd1f3fa9d4",
+      "title": "Visium spatial - face_forehead_B",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "skin of forehead"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "6ee287a4-5339-47c6-87d7-115101fca4e1",
+      "title": "Visium spatial - bcc_face_nose_B",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "nose skin"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "6e9e3264-02e1-455a-840b-4fbcee132ae7",
+      "title": "Visium spatial - body_breast_A",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "skin of breast"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "663747ff-d8e4-4f5f-a5ed-a63c4332cb05",
+      "title": "Visium spatial - face_cheek_A",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "skin of cheek"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "5ed0e8de-27e5-4dd6-b8a9-adb3d86eaf9d",
+      "title": "Visium spatial - bcc_face_nose_C",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "nose skin"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "4e6e0a5d-28f7-4792-a43b-7c3aa50d0265",
+      "title": "Visium spatial - bcc_face_nose_A",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "nose skin"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "4754ff7d-dd0a-4eff-b50c-ee9c7d4bd613",
+      "title": "Visium spatial - face_cheek_B",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "skin of cheek"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    },
+    {
+      "dataset_id": "43d268e8-1859-4ce7-ba75-e7e4f5a76e1d",
+      "title": "Visium spatial - bcc_face_cheek_A",
+      "n_cells": 4992,
+      "collection_id": "34f12de7-c5e5-4813-a136-832677f98ac8",
+      "tissues": [
+        "skin of cheek"
+      ],
+      "organism": [
+        {
+          "label": "Homo sapiens",
+          "ontology_term_id": "NCBITaxon:9606"
+        }
+      ],
+      "assay": [
+        {
+          "label": "Visium Spatial Gene Expression V1",
+          "ontology_term_id": "EFO:0022857"
+        }
+      ],
+      "keys": [
+        "assay",
+        "assets",
+        "cell_count",
+        "cell_type",
+        "citation",
+        "collection_doi",
+        "collection_doi_label",
+        "collection_id",
+        "collection_name",
+        "collection_version_id",
+        "dataset_id",
+        "dataset_version_id",
+        "development_stage",
+        "disease",
+        "donor_id",
+        "explorer_url",
+        "genetic_perturbation_strategy",
+        "is_pre_analysis",
+        "is_primary_data",
+        "mean_genes_per_cell",
+        "organism",
+        "perturbation_types",
+        "primary_cell_count",
+        "processing_status",
+        "published_at",
+        "revised_at",
+        "revision_of_collection",
+        "revision_of_dataset",
+        "schema_version",
+        "self_reported_ethnicity",
+        "sex",
+        "spatial",
+        "suspension_type",
+        "tissue",
+        "title",
+        "tombstone",
+        "visibility",
+        "x_approximate_distribution"
+      ]
+    }
+  ],
+  "cxg_n_datasets_total": 2226,
+  "cxg_n_skinish": 96
+}

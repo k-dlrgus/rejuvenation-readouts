@@ -1,0 +1,32 @@
+{
+ "scheme": "loso",
+ "site_strat_r2": -0.2600393753250141,
+ "pooled_r2": 0.02679233646592355,
+ "null_mean": -1.643209706589794,
+ "null_p95": -1.2349655840979143,
+ "p": 0.047619047619047616,
+ "n_perm": 20,
+ "per_type_r2": {
+  "GABAergic neuron": -0.5777107138841718,
+  "L2/3 intratelencephalic projecting glutamatergic neuron": 0.6644635072934776,
+  "L2/3-6 intratelencephalic projecting glutamatergic neuron": 0.49857785786519987,
+  "L5/6 near-projecting glutamatergic neuron": -0.2407591577337811,
+  "L6 corticothalamic-projecting glutamatergic cortical neuron": -0.3875206472104157,
+  "L6 intratelencephalic projecting glutamatergic neuron": -0.2793195929162471,
+  "L6b glutamatergic neuron of the primary motor cortex": -0.6548693951086347,
+  "VIP GABAergic interneuron": 0.19594076281247846,
+  "astrocyte": 0.02714105181362031,
+  "endothelial cell": -1.0566806228195746,
+  "lamp5 GABAergic interneuron": -0.11295492202497859,
+  "microglial cell": -0.6673086454916153,
+  "oligodendrocyte": 0.5271935960240957,
+  "oligodendrocyte precursor cell": 0.001411062705090449,
+  "pericyte": -0.9478894480139982,
+  "perivascular macrophage": -0.9619888840413634,
+  "pvalb GABAergic interneuron": 0.17252034074869804,
+  "smooth muscle cell": -1.0193482815628188,
+  "sst GABAergic interneuron": 0.026130796290692204,
+  "vascular leptomeningeal cell": -0.9594897531277766
+ },
+ "null_usable": true
+}

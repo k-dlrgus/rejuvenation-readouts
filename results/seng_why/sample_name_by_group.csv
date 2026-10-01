@@ -1,0 +1,8 @@
+SampleName,role,pd_or_kind,n_cells
+0,WT,PD14,581
+1,WT,PD26,1880
+2,WT,PD32,4348
+3,CRA,CRA,12264
+3,CRI,CRI,12346
+3,NT,NT,2145
+3,unassigned,unassigned,2950

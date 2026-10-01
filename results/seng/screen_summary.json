@@ -1,0 +1,49 @@
+{
+ "by_modality": {
+  "CRA": {
+   "n": 167,
+   "rho_prolif": 0.8280530161707566,
+   "rho_p": 2.555194777148361e-43,
+   "n_cos_q": 0,
+   "n_cos_q_and_positive": 0,
+   "n_toward_young": 0,
+   "n_toward_among_cos_q": 0
+  },
+  "CRI": {
+   "n": 173,
+   "rho_prolif": 0.8620017521821158,
+   "rho_p": 2.459930106453295e-52,
+   "n_cos_q": 25,
+   "n_cos_q_and_positive": 25,
+   "n_toward_young": 0,
+   "n_toward_among_cos_q": 0
+  }
+ },
+ "flags": [
+  "screen_tracks_proliferation",
+  "passage_axis_not_donor_age",
+  "pipeline_disagrees"
+ ],
+ "reproduction_pass": false,
+ "n_repro": 1,
+ "cos_v_p": {
+  "CRA": 0.5667444435453722,
+  "CRI": 0.6337418620832961
+ },
+ "cos_v_u": -0.04027293769593313,
+ "p_n1": 1.0,
+ "beats_n1": false,
+ "identity_genes_present": [
+  "COL1A1",
+  "COL1A2",
+  "FN1",
+  "LUM",
+  "PDGFRA",
+  "PDGFRB",
+  "POSTN",
+  "PRRX1",
+  "SERPINH1",
+  "VIM"
+ ],
+ "identity_genes_missing": []
+}

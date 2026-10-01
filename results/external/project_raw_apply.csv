@@ -1,0 +1,21 @@
+kind,celltype,n,ok,intercept,slope
+raw,GABAergic neuron,0,False,,
+raw,L2/3 intratelencephalic projecting glutamatergic neuron,0,False,,
+raw,L2/3-6 intratelencephalic projecting glutamatergic neuron,89,True,52.446511773379726,2.7974028123022014
+raw,L5/6 near-projecting glutamatergic neuron,0,False,,
+raw,L6 corticothalamic-projecting glutamatergic cortical neuron,0,False,,
+raw,L6 intratelencephalic projecting glutamatergic neuron,0,False,,
+raw,L6b glutamatergic neuron of the primary motor cortex,0,False,,
+raw,VIP GABAergic interneuron,88,True,52.566820284196,2.933330976532514
+raw,astrocyte,0,False,,
+raw,endothelial cell,0,False,,
+raw,lamp5 GABAergic interneuron,88,True,52.336585420808134,2.4551141534470426
+raw,microglial cell,87,True,52.71689492855781,1.7105450563848934
+raw,oligodendrocyte,86,True,52.594827481498434,3.3690953071804137
+raw,oligodendrocyte precursor cell,87,True,52.7155171917262,2.384926747717399
+raw,pericyte,0,False,,
+raw,perivascular macrophage,0,False,,
+raw,pvalb GABAergic interneuron,88,True,52.382775127184296,3.0739283518801908
+raw,smooth muscle cell,0,False,,
+raw,sst GABAergic interneuron,88,True,51.94660198495259,2.4500155652633024
+raw,vascular leptomeningeal cell,77,True,47.25925926591166,0.888589401197953

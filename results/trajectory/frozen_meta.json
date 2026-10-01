@@ -1,0 +1,234 @@
+{
+ "n_genes": 25526,
+ "n_types": 20,
+ "n_identity_axes": 19,
+ "types": [
+  "GABAergic neuron",
+  "L2/3 intratelencephalic projecting glutamatergic neuron",
+  "L2/3-6 intratelencephalic projecting glutamatergic neuron",
+  "L5/6 near-projecting glutamatergic neuron",
+  "L6 corticothalamic-projecting glutamatergic cortical neuron",
+  "L6 intratelencephalic projecting glutamatergic neuron",
+  "L6b glutamatergic neuron of the primary motor cortex",
+  "VIP GABAergic interneuron",
+  "astrocyte",
+  "endothelial cell",
+  "lamp5 GABAergic interneuron",
+  "microglial cell",
+  "oligodendrocyte",
+  "oligodendrocyte precursor cell",
+  "pericyte",
+  "perivascular macrophage",
+  "pvalb GABAergic interneuron",
+  "smooth muscle cell",
+  "sst GABAergic interneuron",
+  "vascular leptomeningeal cell"
+ ],
+ "centroid_types": [
+  "GABAergic neuron",
+  "L2/3 intratelencephalic projecting glutamatergic neuron",
+  "L2/3-6 intratelencephalic projecting glutamatergic neuron",
+  "L5/6 near-projecting glutamatergic neuron",
+  "L6 corticothalamic-projecting glutamatergic cortical neuron",
+  "L6 intratelencephalic projecting glutamatergic neuron",
+  "L6b glutamatergic neuron of the primary motor cortex",
+  "VIP GABAergic interneuron",
+  "astrocyte",
+  "endothelial cell",
+  "lamp5 GABAergic interneuron",
+  "microglial cell",
+  "oligodendrocyte",
+  "oligodendrocyte precursor cell",
+  "pericyte",
+  "perivascular macrophage",
+  "pvalb GABAergic interneuron",
+  "smooth muscle cell",
+  "sst GABAergic interneuron",
+  "vascular leptomeningeal cell"
+ ],
+ "per_type": [
+  {
+   "celltype": "GABAergic neuron",
+   "n": 179,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.4479005226729778,
+   "pls_intercept": 53.133126916128305,
+   "pls_slope": 0.21601977892685026
+  },
+  {
+   "celltype": "L2/3 intratelencephalic projecting glutamatergic neuron",
+   "n": 220,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.452205666652364,
+   "pls_intercept": 57.227948525385905,
+   "pls_slope": 0.2144754878411356
+  },
+  {
+   "celltype": "L2/3-6 intratelencephalic projecting glutamatergic neuron",
+   "n": 215,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.3274624230079994,
+   "pls_intercept": 55.898870978485064,
+   "pls_slope": 0.2339863490977967
+  },
+  {
+   "celltype": "L5/6 near-projecting glutamatergic neuron",
+   "n": 124,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.0232370212647024,
+   "pls_intercept": 55.42304660518525,
+   "pls_slope": 0.2788395865330064
+  },
+  {
+   "celltype": "L6 corticothalamic-projecting glutamatergic cortical neuron",
+   "n": 153,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.1002508798534079,
+   "pls_intercept": 58.790659565378995,
+   "pls_slope": 0.3866699210337108
+  },
+  {
+   "celltype": "L6 intratelencephalic projecting glutamatergic neuron",
+   "n": 150,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.1499548789386265,
+   "pls_intercept": 60.70939776189675,
+   "pls_slope": 0.31410363081040465
+  },
+  {
+   "celltype": "L6b glutamatergic neuron of the primary motor cortex",
+   "n": 109,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 0.9610499087718907,
+   "pls_intercept": 57.756516319786044,
+   "pls_slope": 0.39323199638974315
+  },
+  {
+   "celltype": "VIP GABAergic interneuron",
+   "n": 217,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.5435210506974086,
+   "pls_intercept": 55.115908343432245,
+   "pls_slope": 0.18391809911581306
+  },
+  {
+   "celltype": "astrocyte",
+   "n": 229,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.62998536800705,
+   "pls_intercept": 43.83689520487307,
+   "pls_slope": 0.648647675988891
+  },
+  {
+   "celltype": "endothelial cell",
+   "n": 160,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.3257983880868092,
+   "pls_intercept": 36.39428443908337,
+   "pls_slope": 0.2931791875386412
+  },
+  {
+   "celltype": "lamp5 GABAergic interneuron",
+   "n": 205,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.571144401441856,
+   "pls_intercept": 54.24702055614488,
+   "pls_slope": 0.1881028641317754
+  },
+  {
+   "celltype": "microglial cell",
+   "n": 219,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.540932830529336,
+   "pls_intercept": 43.78226851761959,
+   "pls_slope": 0.3829308046700269
+  },
+  {
+   "celltype": "oligodendrocyte",
+   "n": 232,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.770509959844415,
+   "pls_intercept": 32.221661162723734,
+   "pls_slope": 0.7588616229082487
+  },
+  {
+   "celltype": "oligodendrocyte precursor cell",
+   "n": 232,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.4360315215833066,
+   "pls_intercept": 51.807602654029715,
+   "pls_slope": 0.4762366936188563
+  },
+  {
+   "celltype": "pericyte",
+   "n": 136,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.1979232093136385,
+   "pls_intercept": 38.485191372153075,
+   "pls_slope": 0.5163622034174733
+  },
+  {
+   "celltype": "perivascular macrophage",
+   "n": 31,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 0.6906402412945976,
+   "pls_intercept": 46.71659829926659,
+   "pls_slope": 0.46497241791569655
+  },
+  {
+   "celltype": "pvalb GABAergic interneuron",
+   "n": 209,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.6044775045043147,
+   "pls_intercept": 54.90698882657235,
+   "pls_slope": 0.15470218460751828
+  },
+  {
+   "celltype": "smooth muscle cell",
+   "n": 16,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 0.40287397950688536,
+   "pls_intercept": 46.258032591033114,
+   "pls_slope": 0.24039283755442858
+  },
+  {
+   "celltype": "sst GABAergic interneuron",
+   "n": 206,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.3959611206472184,
+   "pls_intercept": 51.23262440398479,
+   "pls_slope": 0.2411679733861953
+  },
+  {
+   "celltype": "vascular leptomeningeal cell",
+   "n": 81,
+   "ok": true,
+   "ridge_alpha": 0.01,
+   "ridge_norm": 1.0563661830452282,
+   "pls_intercept": 43.559500224038786,
+   "pls_slope": 0.6279417333109237
+  }
+ ],
+ "seed": 20260914,
+ "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11",
+ "note": "Frozen on the full 233-donor Phase-1 cohort AFTER CV evaluation. Not used to score G1."
+}

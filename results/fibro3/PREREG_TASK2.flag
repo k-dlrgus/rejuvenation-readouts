@@ -1,0 +1,7 @@
+Written **before any Task 2 distance or correlation**, 2026-09-18.
+
+Report-only, no gate. Per donor × cluster × timepoint with n ≥ 20, report extrapolation distance to the GTEx fibroblast training distribution: PCA k=50 nearest-neighbour Euclidean and Mahalanobis, same measures as FINDINGS_FIBRO2.md. Missing overlap genes at z=0. Frozen ruler used as-is.
+
+Then Spearman ρ, across all donor × cluster × timepoint rows with n ≥ 20, between each distance and frozen age score. Donor-level permutation is not the unit here (the unit is a cluster×timepoint pseudobulk). Permutation null: shuffle age scores, n_perm=200, seed `20260914`. Bootstrap 95% percentile CI on the rows, B=200, seed `20260918`. Per-donor ρ is reported and is not averaged. Uncalibrated R² reported, never a gate.
+
+If age score rises with distance from the training distribution, the ruler is being read outside its calibrated region and the d10 value is an extrapolation artifact rather than a measurement. State this as an observation with its correlation and CI. It is not a gate and does not overturn any verdict.

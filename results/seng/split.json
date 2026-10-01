@@ -1,0 +1,12 @@
+{
+ "early_pd": "PD14",
+ "late_pd": "PD32",
+ "n_early": 581,
+ "n_early_a": 290,
+ "n_early_b": 291,
+ "n_late": 4348,
+ "n_late_a": 2174,
+ "n_late_b": 2174,
+ "seed": 20260914,
+ "late_determined": false
+}

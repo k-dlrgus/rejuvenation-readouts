@@ -1,0 +1,12 @@
+K562 cells with shRNA targeting SRF gene cultured with no doxycycline (uninduced - UI), rep1.
+K562 cells with shRNA targeting SRF gene cultured with doxycycline for 48 hours (48 hr), rep1.
+K562 cells with shRNA targeting SRF gene cultured with no doxycycline (uninduced - UI), rep2.
+K562 cells with shRNA targeting SRF gene cultured with doxycycline for 48 hours (48 hr), rep2.
+K562 cells with shRNA targeting EGR1 gene cultured with no doxycycline (uninduced - UI), rep1.
+K562 cells with shRNA targeting EGR1 gene cultured with doxycycline for 72 hours (72 hr), rep1.
+K562 cells with shRNA targeting EGR1 gene cultured with no doxycycline (uninduced - UI), rep2.
+K562 cells with shRNA targeting EGR1 gene cultured with doxycycline for 72 hours (72 hr), rep2.
+K562 cells with shRNA targeting ATF3 gene cultured with no doxycycline (uninduced - UI), rep1.
+K562 cells with shRNA targeting ATF3 gene cultured with doxycycline for 24 hours (24 hr), rep1.
+K562 cells with shRNA targeting ATF3 gene cultured with no doxycycline (uninduced - UI), rep2.
+K562 cells with shRNA targeting ATF3 gene cultured with doxycycline for 24 hours (24 hr), rep2.

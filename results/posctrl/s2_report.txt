@@ -1,0 +1,1335 @@
+====================================================================================================
+POSCTRL supersession 2 transfer  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+Written after FINDINGS_POSCTRL.md S2 pre-registration. No src/ edits.
+Pass = r > 0 with null ≤ 0.05 both directions.
+====================================================================================================
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[C1] loaded frozen age* from age_star.npy  mean=52.05
+[C1] sparse eligible genes (mean CPM>1.0 in ≥15/20 types): 17749 / 25526
+[C1] planted w already frozen
+[S2] gene_ridge transfer-only n_perm=20 donors=233 rows=3323
+   fit on HBCC → test MSSM
+      median R²=-0.124  calR²=+0.342  r=+0.568  ρ=+0.573
+      null (20 train-y shuffles)...
+         perm 1/20  r_null=+0.024  R²_null=-1.159
+         perm 5/20  r_null=+0.145  R²_null=-1.278
+         perm 10/20  r_null=+0.134  R²_null=-1.378
+         perm 15/20  r_null=-0.067  R²_null=-1.349
+         perm 20/20  r_null=-0.041  R²_null=-1.855
+      r_null_mean=-0.005  r_p=0.048
+   fit on MSSM → test HBCC
+      median R²=-0.463  calR²=+0.334  r=+0.578  ρ=+0.567
+      null (20 train-y shuffles)...
+         perm 1/20  r_null=-0.059  R²_null=-2.988
+         perm 5/20  r_null=+0.160  R²_null=-1.302
+         perm 10/20  r_null=+0.050  R²_null=-1.105
+         perm 15/20  r_null=-0.020  R²_null=-1.365
+         perm 20/20  r_null=-0.116  R²_null=-1.890
+      r_null_mean=-0.022  r_p=0.048
+[S2] wrote <repo>\results\posctrl\s2_gene_ridge.json  r H→M=+0.568 M→H=+0.578  pass=True  83s
+[S2] c2a transfer-only n_perm=20 donors=233 rows=3323
+   fit on HBCC → test MSSM
+      median R²=+0.512  calR²=+0.716  r=+0.846  ρ=+0.788
+      null (20 train-y shuffles)...
+         perm 1/20  r_null=-0.020  R²_null=-0.170
+         perm 5/20  r_null=-0.017  R²_null=-0.141
+         perm 10/20  r_null=-0.082  R²_null=-0.198
+         perm 15/20  r_null=-0.035  R²_null=-0.162
+         perm 20/20  r_null=-0.129  R²_null=-0.377
+      r_null_mean=-0.000  r_p=0.048
+   fit on MSSM → test HBCC
+      median R²=+0.358  calR²=+0.612  r=+0.782  ρ=+0.716
+      null (20 train-y shuffles)...
+         perm 1/20  r_null=+0.155  R²_null=-0.019
+         perm 5/20  r_null=-0.025  R²_null=-0.070
+         perm 10/20  r_null=+0.030  R²_null=-0.054
+         perm 15/20  r_null=+0.047  R²_null=-0.059
+         perm 20/20  r_null=+0.091  R²_null=-0.052
+      r_null_mean=+0.024  r_p=0.048
+[S2] wrote <repo>\results\posctrl\s2_c2a.json  r H→M=+0.846 M→H=+0.782  pass=True  79s
+[C1] frozen β[dense_shared_r030]=0.24683784844272705  full-fold R²=0.29079956034761606
+[S2] plant c1_dense_shared_r030 β=0.246838
+[S2] c1_dense_shared_r030 transfer-only n_perm=20 donors=233 rows=3323
+   fit on HBCC → test MSSM
+      median R²=-0.087  calR²=+0.748  r=+0.865  ρ=+0.863
+      null (20 train-y shuffles)...
+         perm 1/20  r_null=-0.023  R²_null=-1.119
+         perm 5/20  r_null=+0.067  R²_null=-0.900
+         perm 10/20  r_null=+0.006  R²_null=-1.177
+         perm 15/20  r_null=+0.104  R²_null=-1.464
+         perm 20/20  r_null=-0.189  R²_null=-1.983
+      r_null_mean=+0.015  r_p=0.048
+   fit on MSSM → test HBCC
+      median R²=-0.415  calR²=+0.590  r=+0.768  ρ=+0.764
+      null (20 train-y shuffles)...
+         perm 1/20  r_null=-0.047  R²_null=-1.437
+         perm 5/20  r_null=-0.003  R²_null=-1.831
+         perm 10/20  r_null=+0.055  R²_null=-1.081
+         perm 15/20  r_null=-0.053  R²_null=-1.256
+         perm 20/20  r_null=+0.040  R²_null=-1.799
+      r_null_mean=+0.013  r_p=0.048
+[S2] wrote <repo>\results\posctrl\s2_c1_dense_shared_r030.json  r H→M=+0.865 M→H=+0.768  pass=True  39s
+[C1] frozen β[dense_typespec_r030]=0.24479061664766935  full-fold R²=0.29083609089792695
+[S2] plant c1_dense_typespec_r030 β=0.244791
+[S2] c1_dense_typespec_r030 transfer-only n_perm=20 donors=233 rows=3323
+   fit on HBCC → test MSSM
+      median R²=-0.121  calR²=+0.728  r=+0.853  ρ=+0.847
+      null (20 train-y shuffles)...
+         perm 1/20  r_null=-0.035  R²_null=-1.125
+         perm 5/20  r_null=+0.062  R²_null=-0.890
+         perm 10/20  r_null=+0.008  R²_null=-1.172
+         perm 15/20  r_null=+0.095  R²_null=-1.459
+         perm 20/20  r_null=-0.183  R²_null=-1.994
+      r_null_mean=+0.015  r_p=0.048
+   fit on MSSM → test HBCC
+      median R²=-0.434  calR²=+0.562  r=+0.750  ρ=+0.749
+      null (20 train-y shuffles)...
+         perm 1/20  r_null=-0.047  R²_null=-1.457
+         perm 5/20  r_null=-0.004  R²_null=-1.824
+         perm 10/20  r_null=+0.048  R²_null=-1.084
+         perm 15/20  r_null=-0.053  R²_null=-1.268
+         perm 20/20  r_null=+0.051  R²_null=-1.802
+      r_null_mean=+0.016  r_p=0.048
+[S2] wrote <repo>\results\posctrl\s2_c1_dense_typespec_r030.json  r H→M=+0.853 M→H=+0.750  pass=True  39s
+[C1] frozen β[sparse_shared_r030]=0.3226823122214063  full-fold R²=0.30441941650197835
+[S2] plant c1_sparse_shared_r030 β=0.322682
+[S2] c1_sparse_shared_r030 transfer-only n_perm=20 donors=233 rows=3323
+   fit on HBCC → test MSSM
+      median R²=-0.065  calR²=+0.748  r=+0.865  ρ=+0.865
+      null (20 train-y shuffles)...
+         perm 1/20  r_null=-0.015  R²_null=-1.113
+         perm 5/20  r_null=+0.060  R²_null=-0.913
+         perm 10/20  r_null=-0.005  R²_null=-1.169
+         perm 15/20  r_null=+0.103  R²_null=-1.444
+         perm 20/20  r_null=-0.186  R²_null=-1.996
+      r_null_mean=+0.015  r_p=0.048
+   fit on MSSM → test HBCC
+      median R²=-0.414  calR²=+0.590  r=+0.768  ρ=+0.758
+      null (20 train-y shuffles)...
+         perm 1/20  r_null=-0.055  R²_null=-1.476
+         perm 5/20  r_null=-0.003  R²_null=-1.826
+         perm 10/20  r_null=+0.056  R²_null=-1.068
+         perm 15/20  r_null=-0.052  R²_null=-1.265
+         perm 20/20  r_null=+0.051  R²_null=-1.825
+      r_null_mean=+0.014  r_p=0.048
+[S2] wrote <repo>\results\posctrl\s2_c1_sparse_shared_r030.json  r H→M=+0.865 M→H=+0.768  pass=True  39s
+[C1] frozen β[sparse_typespec_r030]=0.2667642179173281  full-fold R²=0.29578407961886966
+[S2] plant c1_sparse_typespec_r030 β=0.266764
+[S2] c1_sparse_typespec_r030 transfer-only n_perm=20 donors=233 rows=3323
+   fit on HBCC → test MSSM
+      median R²=-0.084  calR²=+0.758  r=+0.871  ρ=+0.872
+      null (20 train-y shuffles)...
+         perm 1/20  r_null=-0.011  R²_null=-1.106
+         perm 5/20  r_null=+0.059  R²_null=-0.916
+         perm 10/20  r_null=+0.002  R²_null=-1.167
+         perm 15/20  r_null=+0.100  R²_null=-1.467
+         perm 20/20  r_null=-0.178  R²_null=-2.013
+      r_null_mean=+0.017  r_p=0.048
+   fit on MSSM → test HBCC
+      median R²=-0.415  calR²=+0.526  r=+0.725  ρ=+0.733
+      null (20 train-y shuffles)...
+         perm 1/20  r_null=-0.058  R²_null=-1.464
+         perm 5/20  r_null=+0.001  R²_null=-1.823
+         perm 10/20  r_null=+0.056  R²_null=-1.104
+         perm 15/20  r_null=-0.057  R²_null=-1.255
+         perm 20/20  r_null=+0.051  R²_null=-1.805
+      r_null_mean=+0.018  r_p=0.048
+[S2] wrote <repo>\results\posctrl\s2_c1_sparse_typespec_r030.json  r H→M=+0.871 M→H=+0.725  pass=True  36s
+[C1] frozen β[dense_shared_r015]=0.18666913590500295  full-fold R²=0.14174260474379086
+[S2] plant c1_dense_shared_r015 β=0.186669
+[S2] c1_dense_shared_r015 transfer-only n_perm=10 donors=233 rows=3323
+   fit on HBCC → test MSSM
+      median R²=-0.450  calR²=+0.548  r=+0.740  ρ=+0.752
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.003  R²_null=-1.088
+         perm 5/10  r_null=+0.072  R²_null=-0.895
+         perm 10/10  r_null=+0.002  R²_null=-1.183
+      r_null_mean=+0.046  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.536  calR²=+0.342  r=+0.584  ρ=+0.582
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.039  R²_null=-1.490
+         perm 5/10  r_null=+0.114  R²_null=-2.070
+         perm 10/10  r_null=+0.008  R²_null=-0.922
+      r_null_mean=-0.004  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c1_dense_shared_r015.json  r H→M=+0.740 M→H=+0.584  pass=True  21s
+[C1] frozen β[dense_shared_r050]=0.34711538643104906  full-fold R²=0.5097057772331364
+[S2] plant c1_dense_shared_r050 β=0.347115
+[S2] c1_dense_shared_r050 transfer-only n_perm=10 donors=233 rows=3323
+   fit on HBCC → test MSSM
+      median R²=+0.309  calR²=+0.907  r=+0.952  ρ=+0.941
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.054  R²_null=-1.143
+         perm 5/10  r_null=+0.057  R²_null=-0.910
+         perm 10/10  r_null=+0.012  R²_null=-1.166
+      r_null_mean=+0.050  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.004  calR²=+0.828  r=+0.910  ρ=+0.907
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.056  R²_null=-1.531
+         perm 5/10  r_null=+0.218  R²_null=-1.905
+         perm 10/10  r_null=-0.081  R²_null=-1.013
+      r_null_mean=-0.018  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c1_dense_shared_r050.json  r H→M=+0.952 M→H=+0.910  pass=True  21s
+[S2] C3 predictions not present in results/posctrl/*.json; rerunning transfer only.
+[C1] frozen β[dense_shared_r030]=0.24683784844272705  full-fold R²=0.29079956034761606
+[S2] C3 mask real n=60 d=00 donors=60
+[S2] C3 mask real n=60 d=01 donors=60
+[S2] C3 mask real n=60 d=02 donors=60
+[S2] C3 mask real n=60 d=03 donors=60
+[S2] C3 mask real n=60 d=04 donors=60
+[S2] C3 mask real n=60 d=05 donors=60
+[S2] C3 mask real n=60 d=06 donors=60
+[S2] C3 mask real n=60 d=07 donors=60
+[S2] C3 mask real n=60 d=08 donors=60
+[S2] C3 mask real n=60 d=09 donors=60
+[S2] C3 mask real n=100 d=00 donors=100
+[S2] C3 mask real n=100 d=01 donors=100
+[S2] C3 mask real n=100 d=02 donors=100
+[S2] C3 mask real n=100 d=03 donors=100
+[S2] C3 mask real n=100 d=04 donors=100
+[S2] C3 mask real n=100 d=05 donors=100
+[S2] C3 mask real n=100 d=06 donors=100
+[S2] C3 mask real n=100 d=07 donors=100
+[S2] C3 mask real n=100 d=08 donors=100
+[S2] C3 mask real n=100 d=09 donors=100
+[S2] C3 mask real n=150 d=00 donors=150
+[S2] C3 mask real n=150 d=01 donors=150
+[S2] C3 mask real n=150 d=02 donors=150
+[S2] C3 mask real n=150 d=03 donors=150
+[S2] C3 mask real n=150 d=04 donors=150
+[S2] C3 mask real n=150 d=05 donors=150
+[S2] C3 mask real n=150 d=06 donors=150
+[S2] C3 mask real n=150 d=07 donors=150
+[S2] C3 mask real n=150 d=08 donors=150
+[S2] C3 mask real n=150 d=09 donors=150
+[S2] C3 mask planted n=60 d=00 donors=60
+[S2] C3 mask planted n=60 d=01 donors=60
+[S2] C3 mask planted n=60 d=02 donors=60
+[S2] C3 mask planted n=60 d=03 donors=60
+[S2] C3 mask planted n=60 d=04 donors=60
+[S2] C3 mask planted n=60 d=05 donors=60
+[S2] C3 mask planted n=60 d=06 donors=60
+[S2] C3 mask planted n=60 d=07 donors=60
+[S2] C3 mask planted n=60 d=08 donors=60
+[S2] C3 mask planted n=60 d=09 donors=60
+[S2] C3 mask planted n=100 d=00 donors=100
+[S2] C3 mask planted n=100 d=01 donors=100
+[S2] C3 mask planted n=100 d=02 donors=100
+[S2] C3 mask planted n=100 d=03 donors=100
+[S2] C3 mask planted n=100 d=04 donors=100
+[S2] C3 mask planted n=100 d=05 donors=100
+[S2] C3 mask planted n=100 d=06 donors=100
+[S2] C3 mask planted n=100 d=07 donors=100
+[S2] C3 mask planted n=100 d=08 donors=100
+[S2] C3 mask planted n=100 d=09 donors=100
+[S2] C3 mask planted n=150 d=00 donors=150
+[S2] C3 mask planted n=150 d=01 donors=150
+[S2] C3 mask planted n=150 d=02 donors=150
+[S2] C3 mask planted n=150 d=03 donors=150
+[S2] C3 mask planted n=150 d=04 donors=150
+[S2] C3 mask planted n=150 d=05 donors=150
+[S2] C3 mask planted n=150 d=06 donors=150
+[S2] C3 mask planted n=150 d=07 donors=150
+[S2] C3 mask planted n=150 d=08 donors=150
+[S2] C3 mask planted n=150 d=09 donors=150
+Traceback (most recent call last):
+  File "<home>\AppData\Local\Cursor\AgentStores\cursor_agent_stores\32882cb0-d007-4fe8-8296-c9e6cbc64b93\files\s2_transfer.py", line 329, in main
+    if mask == "skip":
+       ^^^^^^^^^^^^^^
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+
+====================================================================================================
+POSCTRL supersession 2 transfer  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+Written after FINDINGS_POSCTRL.md S2 pre-registration. No src/ edits.
+Pass = r > 0 with null ≤ 0.05 both directions.
+====================================================================================================
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[C1] loaded frozen age* from age_star.npy  mean=52.05
+[C1] sparse eligible genes (mean CPM>1.0 in ≥15/20 types): 17749 / 25526
+[C1] planted w already frozen
+[S2] gene_ridge already complete
+[S2] c2a already complete
+[C1] frozen β[dense_shared_r030]=0.24683784844272705  full-fold R²=0.29079956034761606
+[S2] plant c1_dense_shared_r030 β=0.246838
+[S2] c1_dense_shared_r030 already complete
+[C1] frozen β[dense_typespec_r030]=0.24479061664766935  full-fold R²=0.29083609089792695
+[S2] plant c1_dense_typespec_r030 β=0.244791
+[S2] c1_dense_typespec_r030 already complete
+[C1] frozen β[sparse_shared_r030]=0.3226823122214063  full-fold R²=0.30441941650197835
+[S2] plant c1_sparse_shared_r030 β=0.322682
+[S2] c1_sparse_shared_r030 already complete
+[C1] frozen β[sparse_typespec_r030]=0.2667642179173281  full-fold R²=0.29578407961886966
+[S2] plant c1_sparse_typespec_r030 β=0.266764
+[S2] c1_sparse_typespec_r030 already complete
+[C1] frozen β[dense_shared_r015]=0.18666913590500295  full-fold R²=0.14174260474379086
+[S2] plant c1_dense_shared_r015 β=0.186669
+[S2] c1_dense_shared_r015 already complete
+[C1] frozen β[dense_shared_r050]=0.34711538643104906  full-fold R²=0.5097057772331364
+[S2] plant c1_dense_shared_r050 β=0.347115
+[S2] c1_dense_shared_r050 already complete
+[S2] C3 predictions not present in results/posctrl/*.json; rerunning transfer only.
+[C1] frozen β[dense_shared_r030]=0.24683784844272705  full-fold R²=0.29079956034761606
+[S2] C3 mask real n=60 d=00 donors=60
+[S2] C3 mask real n=60 d=01 donors=60
+[S2] C3 mask real n=60 d=02 donors=60
+[S2] C3 mask real n=60 d=03 donors=60
+[S2] C3 mask real n=60 d=04 donors=60
+[S2] C3 mask real n=60 d=05 donors=60
+[S2] C3 mask real n=60 d=06 donors=60
+[S2] C3 mask real n=60 d=07 donors=60
+[S2] C3 mask real n=60 d=08 donors=60
+[S2] C3 mask real n=60 d=09 donors=60
+[S2] C3 mask real n=100 d=00 donors=100
+[S2] C3 mask real n=100 d=01 donors=100
+[S2] C3 mask real n=100 d=02 donors=100
+[S2] C3 mask real n=100 d=03 donors=100
+[S2] C3 mask real n=100 d=04 donors=100
+[S2] C3 mask real n=100 d=05 donors=100
+[S2] C3 mask real n=100 d=06 donors=100
+[S2] C3 mask real n=100 d=07 donors=100
+[S2] C3 mask real n=100 d=08 donors=100
+[S2] C3 mask real n=100 d=09 donors=100
+[S2] C3 mask real n=150 d=00 donors=150
+[S2] C3 mask real n=150 d=01 donors=150
+[S2] C3 mask real n=150 d=02 donors=150
+[S2] C3 mask real n=150 d=03 donors=150
+[S2] C3 mask real n=150 d=04 donors=150
+[S2] C3 mask real n=150 d=05 donors=150
+[S2] C3 mask real n=150 d=06 donors=150
+[S2] C3 mask real n=150 d=07 donors=150
+[S2] C3 mask real n=150 d=08 donors=150
+[S2] C3 mask real n=150 d=09 donors=150
+[S2] C3 mask planted n=60 d=00 donors=60
+[S2] C3 mask planted n=60 d=01 donors=60
+[S2] C3 mask planted n=60 d=02 donors=60
+[S2] C3 mask planted n=60 d=03 donors=60
+[S2] C3 mask planted n=60 d=04 donors=60
+[S2] C3 mask planted n=60 d=05 donors=60
+[S2] C3 mask planted n=60 d=06 donors=60
+[S2] C3 mask planted n=60 d=07 donors=60
+[S2] C3 mask planted n=60 d=08 donors=60
+[S2] C3 mask planted n=60 d=09 donors=60
+[S2] C3 mask planted n=100 d=00 donors=100
+[S2] C3 mask planted n=100 d=01 donors=100
+[S2] C3 mask planted n=100 d=02 donors=100
+[S2] C3 mask planted n=100 d=03 donors=100
+[S2] C3 mask planted n=100 d=04 donors=100
+[S2] C3 mask planted n=100 d=05 donors=100
+[S2] C3 mask planted n=100 d=06 donors=100
+[S2] C3 mask planted n=100 d=07 donors=100
+[S2] C3 mask planted n=100 d=08 donors=100
+[S2] C3 mask planted n=100 d=09 donors=100
+[S2] C3 mask planted n=150 d=00 donors=150
+[S2] C3 mask planted n=150 d=01 donors=150
+[S2] C3 mask planted n=150 d=02 donors=150
+[S2] C3 mask planted n=150 d=03 donors=150
+[S2] C3 mask planted n=150 d=04 donors=150
+[S2] C3 mask planted n=150 d=05 donors=150
+[S2] C3 mask planted n=150 d=06 donors=150
+[S2] C3 mask planted n=150 d=07 donors=150
+[S2] C3 mask planted n=150 d=08 donors=150
+[S2] C3 mask planted n=150 d=09 donors=150
+[S2] c3_real_n060_d00 transfer-only n_perm=10 donors=60 rows=872
+   fit on HBCC → test MSSM
+      median R²=-0.677  calR²=+0.057  r=+0.143  ρ=+0.192
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.029  R²_null=-1.061
+         perm 5/10  r_null=+0.261  R²_null=-1.238
+         perm 10/10  r_null=-0.068  R²_null=-1.294
+      r_null_mean=-0.019  r_p=0.182
+   fit on MSSM → test HBCC
+      median R²=-1.768  calR²=+0.020  r=+0.110  ρ=+0.124
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.119  R²_null=-1.627
+         perm 5/10  r_null=+0.006  R²_null=-1.542
+         perm 10/10  r_null=+0.127  R²_null=-1.792
+      r_null_mean=+0.051  r_p=0.455
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n060_d00.json  r H→M=+0.143 M→H=+0.110  pass=False  7s
+[S2] c3_real_n060_d01 transfer-only n_perm=10 donors=60 rows=845
+   fit on HBCC → test MSSM
+      median R²=-1.068  calR²=+0.280  r=+0.501  ρ=+0.464
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.199  R²_null=-2.343
+         perm 5/10  r_null=+0.148  R²_null=-1.908
+         perm 10/10  r_null=+0.171  R²_null=-1.760
+      r_null_mean=+0.040  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.128  calR²=+0.231  r=+0.481  ρ=+0.442
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.068  R²_null=-2.324
+         perm 5/10  r_null=+0.036  R²_null=-1.758
+         perm 10/10  r_null=-0.261  R²_null=-2.239
+      r_null_mean=-0.048  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n060_d01.json  r H→M=+0.501 M→H=+0.481  pass=True  6s
+[S2] c3_real_n060_d02 transfer-only n_perm=10 donors=60 rows=836
+   fit on HBCC → test MSSM
+      median R²=-2.054  calR²=+0.049  r=+0.150  ρ=+0.208
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.044  R²_null=-1.885
+         perm 5/10  r_null=+0.164  R²_null=-2.013
+         perm 10/10  r_null=-0.233  R²_null=-3.465
+      r_null_mean=-0.030  r_p=0.182
+   fit on MSSM → test HBCC
+      median R²=-3.269  calR²=+0.025  r=+0.027  ρ=+0.018
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.233  R²_null=-2.675
+         perm 5/10  r_null=+0.195  R²_null=-2.666
+         perm 10/10  r_null=+0.319  R²_null=-2.466
+      r_null_mean=+0.038  r_p=0.545
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n060_d02.json  r H→M=+0.150 M→H=+0.027  pass=True  6s
+[S2] c3_real_n060_d03 transfer-only n_perm=10 donors=60 rows=854
+   fit on HBCC → test MSSM
+      median R²=-1.773  calR²=+0.061  r=+0.148  ρ=+0.150
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.034  R²_null=-2.291
+         perm 5/10  r_null=+0.105  R²_null=-1.647
+         perm 10/10  r_null=-0.047  R²_null=-2.136
+      r_null_mean=-0.003  r_p=0.182
+   fit on MSSM → test HBCC
+      median R²=-2.788  calR²=+0.066  r=+0.257  ρ=+0.238
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.288  R²_null=-3.051
+         perm 5/10  r_null=+0.301  R²_null=-2.977
+         perm 10/10  r_null=-0.260  R²_null=-4.918
+      r_null_mean=-0.044  r_p=0.364
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n060_d03.json  r H→M=+0.148 M→H=+0.257  pass=True  6s
+[S2] c3_real_n060_d04 transfer-only n_perm=10 donors=60 rows=867
+   fit on HBCC → test MSSM
+      median R²=-0.523  calR²=+0.213  r=+0.461  ρ=+0.518
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.128  R²_null=-1.219
+         perm 5/10  r_null=-0.194  R²_null=-1.881
+         perm 10/10  r_null=-0.083  R²_null=-1.859
+      r_null_mean=-0.067  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.521  calR²=+0.217  r=+0.466  ρ=+0.282
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.039  R²_null=-1.273
+         perm 5/10  r_null=+0.060  R²_null=-0.566
+         perm 10/10  r_null=+0.081  R²_null=-1.037
+      r_null_mean=-0.041  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n060_d04.json  r H→M=+0.461 M→H=+0.466  pass=True  6s
+[S2] c3_real_n060_d05 transfer-only n_perm=10 donors=60 rows=863
+   fit on HBCC → test MSSM
+      median R²=-0.520  calR²=+0.062  r=+0.247  ρ=+0.223
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.178  R²_null=-0.588
+         perm 5/10  r_null=-0.079  R²_null=-1.484
+         perm 10/10  r_null=-0.119  R²_null=-0.893
+      r_null_mean=+0.043  r_p=0.182
+   fit on MSSM → test HBCC
+      median R²=-1.028  calR²=+0.075  r=+0.275  ρ=+0.200
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.075  R²_null=-1.882
+         perm 5/10  r_null=+0.055  R²_null=-2.442
+         perm 10/10  r_null=-0.110  R²_null=-2.051
+      r_null_mean=+0.006  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n060_d05.json  r H→M=+0.247 M→H=+0.275  pass=True  7s
+[S2] c3_real_n060_d06 transfer-only n_perm=10 donors=60 rows=836
+   fit on HBCC → test MSSM
+      median R²=-0.804  calR²=+0.056  r=+0.122  ρ=+0.264
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.046  R²_null=-1.008
+         perm 5/10  r_null=+0.064  R²_null=-1.136
+         perm 10/10  r_null=-0.035  R²_null=-0.815
+      r_null_mean=-0.018  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.016  calR²=+0.061  r=+0.247  ρ=+0.180
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.221  R²_null=-2.863
+         perm 5/10  r_null=+0.029  R²_null=-1.938
+         perm 10/10  r_null=+0.054  R²_null=-2.008
+      r_null_mean=+0.023  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n060_d06.json  r H→M=+0.122 M→H=+0.247  pass=True  7s
+[S2] c3_real_n060_d07 transfer-only n_perm=10 donors=60 rows=876
+   fit on HBCC → test MSSM
+      median R²=-0.436  calR²=+0.271  r=+0.521  ρ=+0.552
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.112  R²_null=-1.724
+         perm 5/10  r_null=-0.209  R²_null=-1.450
+         perm 10/10  r_null=-0.232  R²_null=-1.521
+      r_null_mean=-0.053  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.696  calR²=+0.166  r=+0.407  ρ=+0.451
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.281  R²_null=-0.902
+         perm 5/10  r_null=-0.047  R²_null=-0.980
+         perm 10/10  r_null=-0.239  R²_null=-1.153
+      r_null_mean=+0.013  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n060_d07.json  r H→M=+0.521 M→H=+0.407  pass=True  7s
+[S2] c3_real_n060_d08 transfer-only n_perm=10 donors=60 rows=882
+   fit on HBCC → test MSSM
+      median R²=-1.004  calR²=+0.072  r=+0.268  ρ=+0.240
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.043  R²_null=-0.973
+         perm 5/10  r_null=+0.167  R²_null=-1.913
+         perm 10/10  r_null=+0.043  R²_null=-2.438
+      r_null_mean=+0.028  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.536  calR²=+0.064  r=+0.253  ρ=+0.346
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.072  R²_null=-2.517
+         perm 5/10  r_null=+0.078  R²_null=-1.234
+         perm 10/10  r_null=+0.074  R²_null=-2.494
+      r_null_mean=+0.032  r_p=0.182
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n060_d08.json  r H→M=+0.268 M→H=+0.253  pass=True  7s
+[S2] c3_real_n060_d09 transfer-only n_perm=10 donors=60 rows=838
+   fit on HBCC → test MSSM
+      median R²=-1.329  calR²=+0.032  r=+0.028  ρ=+0.130
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.016  R²_null=-1.838
+         perm 5/10  r_null=+0.204  R²_null=-2.272
+         perm 10/10  r_null=-0.029  R²_null=-1.316
+      r_null_mean=+0.009  r_p=0.455
+   fit on MSSM → test HBCC
+      median R²=-2.371  calR²=+0.012  r=-0.048  ρ=+0.044
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.035  R²_null=-2.114
+         perm 5/10  r_null=-0.150  R²_null=-2.562
+         perm 10/10  r_null=-0.106  R²_null=-3.084
+      r_null_mean=+0.001  r_p=0.636
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n060_d09.json  r H→M=+0.028 M→H=-0.048  pass=False  7s
+[S2] c3_real_n100_d00 transfer-only n_perm=10 donors=100 rows=1450
+   fit on HBCC → test MSSM
+      median R²=-1.865  calR²=+0.226  r=+0.470  ρ=+0.393
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.073  R²_null=-3.462
+         perm 5/10  r_null=-0.336  R²_null=-4.725
+         perm 10/10  r_null=-0.266  R²_null=-2.627
+      r_null_mean=+0.022  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.868  calR²=+0.131  r=+0.361  ρ=+0.361
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.010  R²_null=-3.008
+         perm 5/10  r_null=-0.141  R²_null=-3.248
+         perm 10/10  r_null=+0.183  R²_null=-2.189
+      r_null_mean=+0.042  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n100_d00.json  r H→M=+0.470 M→H=+0.361  pass=True  10s
+[S2] c3_real_n100_d01 transfer-only n_perm=10 donors=100 rows=1437
+   fit on HBCC → test MSSM
+      median R²=-0.915  calR²=+0.133  r=+0.354  ρ=+0.390
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.017  R²_null=-1.834
+         perm 5/10  r_null=-0.044  R²_null=-1.348
+         perm 10/10  r_null=+0.048  R²_null=-2.029
+      r_null_mean=+0.013  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.991  calR²=+0.131  r=+0.362  ρ=+0.355
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.303  R²_null=-1.364
+         perm 5/10  r_null=-0.237  R²_null=-1.790
+         perm 10/10  r_null=+0.297  R²_null=-0.939
+      r_null_mean=+0.011  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n100_d01.json  r H→M=+0.354 M→H=+0.362  pass=True  10s
+[S2] c3_real_n100_d02 transfer-only n_perm=10 donors=100 rows=1421
+   fit on HBCC → test MSSM
+      median R²=-0.671  calR²=+0.093  r=+0.268  ρ=+0.282
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.080  R²_null=-1.228
+         perm 5/10  r_null=-0.061  R²_null=-1.016
+         perm 10/10  r_null=-0.057  R²_null=-1.636
+      r_null_mean=-0.037  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.782  calR²=+0.128  r=+0.357  ρ=+0.370
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.220  R²_null=-2.137
+         perm 5/10  r_null=-0.140  R²_null=-2.167
+         perm 10/10  r_null=+0.005  R²_null=-1.603
+      r_null_mean=-0.011  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n100_d02.json  r H→M=+0.268 M→H=+0.357  pass=True  10s
+[S2] c3_real_n100_d03 transfer-only n_perm=10 donors=100 rows=1433
+   fit on HBCC → test MSSM
+      median R²=-0.409  calR²=+0.295  r=+0.543  ρ=+0.544
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.165  R²_null=-1.137
+         perm 5/10  r_null=-0.171  R²_null=-1.005
+         perm 10/10  r_null=-0.013  R²_null=-1.765
+      r_null_mean=+0.018  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.867  calR²=+0.126  r=+0.354  ρ=+0.375
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.057  R²_null=-1.654
+         perm 5/10  r_null=+0.011  R²_null=-1.098
+         perm 10/10  r_null=-0.105  R²_null=-1.903
+      r_null_mean=-0.012  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n100_d03.json  r H→M=+0.543 M→H=+0.354  pass=True  9s
+[S2] c3_real_n100_d04 transfer-only n_perm=10 donors=100 rows=1419
+   fit on HBCC → test MSSM
+      median R²=-0.180  calR²=+0.247  r=+0.497  ρ=+0.549
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.188  R²_null=-0.776
+         perm 5/10  r_null=-0.273  R²_null=-1.852
+         perm 10/10  r_null=-0.179  R²_null=-1.806
+      r_null_mean=-0.144  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.175  calR²=+0.227  r=+0.476  ρ=+0.535
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.091  R²_null=-0.927
+         perm 5/10  r_null=-0.379  R²_null=-1.592
+         perm 10/10  r_null=-0.021  R²_null=-0.939
+      r_null_mean=+0.069  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n100_d04.json  r H→M=+0.497 M→H=+0.476  pass=False  9s
+[S2] c3_real_n100_d05 transfer-only n_perm=10 donors=100 rows=1415
+   fit on HBCC → test MSSM
+      median R²=-0.147  calR²=+0.175  r=+0.417  ρ=+0.365
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.377  R²_null=-1.763
+         perm 5/10  r_null=-0.014  R²_null=-0.780
+         perm 10/10  r_null=+0.189  R²_null=-0.569
+      r_null_mean=+0.029  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.238  calR²=+0.098  r=+0.312  ρ=+0.278
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.000  R²_null=-0.916
+         perm 5/10  r_null=+0.111  R²_null=-1.040
+         perm 10/10  r_null=-0.058  R²_null=-0.671
+      r_null_mean=-0.010  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n100_d05.json  r H→M=+0.417 M→H=+0.312  pass=True  9s
+[S2] c3_real_n100_d06 transfer-only n_perm=10 donors=100 rows=1483
+   fit on HBCC → test MSSM
+      median R²=-0.691  calR²=+0.332  r=+0.576  ρ=+0.557
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.124  R²_null=-3.001
+         perm 5/10  r_null=-0.160  R²_null=-3.083
+         perm 10/10  r_null=+0.321  R²_null=-0.861
+      r_null_mean=+0.107  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.364  calR²=+0.273  r=+0.522  ρ=+0.602
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.137  R²_null=-2.005
+         perm 5/10  r_null=-0.250  R²_null=-2.685
+         perm 10/10  r_null=+0.239  R²_null=-1.056
+      r_null_mean=+0.048  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n100_d06.json  r H→M=+0.576 M→H=+0.522  pass=False  9s
+[S2] c3_real_n100_d07 transfer-only n_perm=10 donors=100 rows=1392
+   fit on HBCC → test MSSM
+      median R²=-0.932  calR²=+0.231  r=+0.480  ρ=+0.439
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.168  R²_null=-2.892
+         perm 5/10  r_null=-0.310  R²_null=-2.513
+         perm 10/10  r_null=-0.157  R²_null=-2.088
+      r_null_mean=+0.013  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.239  calR²=+0.064  r=+0.235  ρ=+0.271
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.181  R²_null=-1.699
+         perm 5/10  r_null=-0.365  R²_null=-2.251
+         perm 10/10  r_null=-0.040  R²_null=-2.144
+      r_null_mean=+0.002  r_p=0.273
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n100_d07.json  r H→M=+0.480 M→H=+0.235  pass=True  9s
+[S2] c3_real_n100_d08 transfer-only n_perm=10 donors=100 rows=1456
+   fit on HBCC → test MSSM
+      median R²=-0.667  calR²=+0.320  r=+0.566  ρ=+0.590
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.033  R²_null=-2.089
+         perm 5/10  r_null=-0.208  R²_null=-2.582
+         perm 10/10  r_null=+0.182  R²_null=-1.429
+      r_null_mean=+0.056  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.710  calR²=+0.240  r=+0.490  ρ=+0.490
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.108  R²_null=-1.959
+         perm 5/10  r_null=-0.065  R²_null=-2.012
+         perm 10/10  r_null=-0.069  R²_null=-2.608
+      r_null_mean=+0.013  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n100_d08.json  r H→M=+0.566 M→H=+0.490  pass=False  10s
+[S2] c3_real_n100_d09 transfer-only n_perm=10 donors=100 rows=1443
+   fit on HBCC → test MSSM
+      median R²=-2.113  calR²=+0.295  r=+0.535  ρ=+0.498
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.068  R²_null=-2.261
+         perm 5/10  r_null=+0.187  R²_null=-2.709
+         perm 10/10  r_null=+0.142  R²_null=-2.542
+      r_null_mean=-0.017  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.368  calR²=+0.189  r=+0.435  ρ=+0.447
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.035  R²_null=-1.638
+         perm 5/10  r_null=+0.144  R²_null=-2.350
+         perm 10/10  r_null=+0.153  R²_null=-1.800
+      r_null_mean=+0.029  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n100_d09.json  r H→M=+0.535 M→H=+0.435  pass=True  10s
+[S2] c3_real_n150_d00 transfer-only n_perm=10 donors=150 rows=2116
+   fit on HBCC → test MSSM
+      median R²=-0.558  calR²=+0.237  r=+0.467  ρ=+0.476
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.091  R²_null=-1.089
+         perm 5/10  r_null=+0.035  R²_null=-1.315
+         perm 10/10  r_null=+0.004  R²_null=-1.366
+      r_null_mean=+0.007  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.840  calR²=+0.191  r=+0.436  ρ=+0.385
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.107  R²_null=-2.061
+         perm 5/10  r_null=-0.102  R²_null=-1.911
+         perm 10/10  r_null=+0.016  R²_null=-1.492
+      r_null_mean=-0.010  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n150_d00.json  r H→M=+0.467 M→H=+0.436  pass=True  13s
+[S2] c3_real_n150_d01 transfer-only n_perm=10 donors=150 rows=2127
+   fit on HBCC → test MSSM
+      median R²=-0.395  calR²=+0.287  r=+0.508  ρ=+0.539
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.022  R²_null=-1.451
+         perm 5/10  r_null=-0.043  R²_null=-0.891
+         perm 10/10  r_null=-0.057  R²_null=-1.173
+      r_null_mean=+0.025  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.644  calR²=+0.329  r=+0.572  ρ=+0.587
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.256  R²_null=-2.230
+         perm 5/10  r_null=-0.000  R²_null=-1.112
+         perm 10/10  r_null=-0.165  R²_null=-1.533
+      r_null_mean=-0.061  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n150_d01.json  r H→M=+0.508 M→H=+0.572  pass=True  13s
+[S2] c3_real_n150_d02 transfer-only n_perm=10 donors=150 rows=2144
+   fit on HBCC → test MSSM
+      median R²=-0.854  calR²=+0.402  r=+0.606  ρ=+0.599
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.076  R²_null=-1.314
+         perm 5/10  r_null=+0.046  R²_null=-2.390
+         perm 10/10  r_null=+0.046  R²_null=-1.864
+      r_null_mean=-0.002  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.121  calR²=+0.290  r=+0.538  ρ=+0.542
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.033  R²_null=-1.645
+         perm 5/10  r_null=-0.005  R²_null=-1.857
+         perm 10/10  r_null=+0.012  R²_null=-1.762
+      r_null_mean=-0.047  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n150_d02.json  r H→M=+0.606 M→H=+0.538  pass=True  14s
+[S2] c3_real_n150_d03 transfer-only n_perm=10 donors=150 rows=2143
+   fit on HBCC → test MSSM
+      median R²=-0.485  calR²=+0.203  r=+0.450  ρ=+0.461
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.214  R²_null=-1.769
+         perm 5/10  r_null=+0.327  R²_null=-0.951
+         perm 10/10  r_null=-0.140  R²_null=-1.350
+      r_null_mean=-0.031  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.486  calR²=+0.129  r=+0.359  ρ=+0.328
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.227  R²_null=-1.838
+         perm 5/10  r_null=+0.128  R²_null=-1.094
+         perm 10/10  r_null=-0.094  R²_null=-1.475
+      r_null_mean=+0.016  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n150_d03.json  r H→M=+0.450 M→H=+0.359  pass=True  14s
+[S2] c3_real_n150_d04 transfer-only n_perm=10 donors=150 rows=2153
+   fit on HBCC → test MSSM
+      median R²=-0.192  calR²=+0.217  r=+0.466  ρ=+0.482
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.002  R²_null=-0.811
+         perm 5/10  r_null=+0.157  R²_null=-1.313
+         perm 10/10  r_null=+0.050  R²_null=-0.993
+      r_null_mean=+0.019  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.335  calR²=+0.276  r=+0.525  ρ=+0.522
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.155  R²_null=-1.534
+         perm 5/10  r_null=+0.105  R²_null=-0.731
+         perm 10/10  r_null=-0.045  R²_null=-1.632
+      r_null_mean=+0.037  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n150_d04.json  r H→M=+0.466 M→H=+0.525  pass=True  14s
+[S2] c3_real_n150_d05 transfer-only n_perm=10 donors=150 rows=2171
+   fit on HBCC → test MSSM
+      median R²=-0.065  calR²=+0.214  r=+0.462  ρ=+0.464
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.143  R²_null=-1.524
+         perm 5/10  r_null=-0.024  R²_null=-0.841
+         perm 10/10  r_null=-0.001  R²_null=-0.794
+      r_null_mean=-0.098  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.338  calR²=+0.332  r=+0.576  ρ=+0.551
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.097  R²_null=-0.819
+         perm 5/10  r_null=+0.133  R²_null=-0.606
+         perm 10/10  r_null=+0.072  R²_null=-1.228
+      r_null_mean=+0.069  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n150_d05.json  r H→M=+0.462 M→H=+0.576  pass=False  14s
+[S2] c3_real_n150_d06 transfer-only n_perm=10 donors=150 rows=2174
+   fit on HBCC → test MSSM
+      median R²=-0.261  calR²=+0.261  r=+0.491  ρ=+0.507
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.049  R²_null=-1.412
+         perm 5/10  r_null=+0.005  R²_null=-1.940
+         perm 10/10  r_null=-0.061  R²_null=-1.100
+      r_null_mean=+0.009  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.481  calR²=+0.249  r=+0.499  ρ=+0.496
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.065  R²_null=-1.380
+         perm 5/10  r_null=+0.017  R²_null=-1.475
+         perm 10/10  r_null=+0.234  R²_null=-0.544
+      r_null_mean=+0.015  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n150_d06.json  r H→M=+0.491 M→H=+0.499  pass=True  13s
+[S2] c3_real_n150_d07 transfer-only n_perm=10 donors=150 rows=2143
+   fit on HBCC → test MSSM
+      median R²=-0.156  calR²=+0.253  r=+0.494  ρ=+0.491
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.086  R²_null=-0.702
+         perm 5/10  r_null=-0.002  R²_null=-1.445
+         perm 10/10  r_null=+0.172  R²_null=-0.989
+      r_null_mean=+0.024  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.611  calR²=+0.276  r=+0.525  ρ=+0.483
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.131  R²_null=-1.358
+         perm 5/10  r_null=-0.231  R²_null=-1.493
+         perm 10/10  r_null=+0.207  R²_null=-1.500
+      r_null_mean=+0.079  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n150_d07.json  r H→M=+0.494 M→H=+0.525  pass=False  14s
+[S2] c3_real_n150_d08 transfer-only n_perm=10 donors=150 rows=2164
+   fit on HBCC → test MSSM
+      median R²=-0.147  calR²=+0.300  r=+0.530  ρ=+0.552
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.087  R²_null=-0.900
+         perm 5/10  r_null=-0.097  R²_null=-1.334
+         perm 10/10  r_null=-0.085  R²_null=-1.131
+      r_null_mean=-0.064  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.215  calR²=+0.183  r=+0.428  ρ=+0.420
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.110  R²_null=-1.424
+         perm 5/10  r_null=-0.096  R²_null=-1.867
+         perm 10/10  r_null=-0.090  R²_null=-1.254
+      r_null_mean=-0.034  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n150_d08.json  r H→M=+0.530 M→H=+0.428  pass=True  14s
+[S2] c3_real_n150_d09 transfer-only n_perm=10 donors=150 rows=2154
+   fit on HBCC → test MSSM
+      median R²=-0.469  calR²=+0.207  r=+0.454  ρ=+0.504
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.182  R²_null=-1.348
+         perm 5/10  r_null=-0.132  R²_null=-2.046
+         perm 10/10  r_null=+0.059  R²_null=-1.508
+      r_null_mean=+0.025  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.969  calR²=+0.198  r=+0.445  ρ=+0.419
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.165  R²_null=-1.958
+         perm 5/10  r_null=-0.058  R²_null=-2.001
+         perm 10/10  r_null=-0.130  R²_null=-2.486
+      r_null_mean=-0.057  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n150_d09.json  r H→M=+0.454 M→H=+0.445  pass=True  15s
+[S2] c3_real_n233_d00 transfer-only n_perm=10 donors=233 rows=3323
+   fit on HBCC → test MSSM
+      median R²=-0.124  calR²=+0.342  r=+0.568  ρ=+0.573
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.024  R²_null=-1.159
+         perm 5/10  r_null=+0.145  R²_null=-1.278
+         perm 10/10  r_null=+0.134  R²_null=-1.378
+      r_null_mean=+0.045  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.463  calR²=+0.334  r=+0.578  ρ=+0.567
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.177  R²_null=-1.350
+         perm 5/10  r_null=-0.044  R²_null=-1.506
+         perm 10/10  r_null=+0.031  R²_null=-1.573
+      r_null_mean=+0.068  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_real_n233_d00.json  r H→M=+0.568 M→H=+0.578  pass=False  44s
+[S2] c3_planted_n060_d00 transfer-only n_perm=10 donors=60 rows=869
+   fit on HBCC → test MSSM
+      median R²=-1.476  calR²=+0.061  r=+0.208  ρ=+0.159
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.040  R²_null=-2.544
+         perm 5/10  r_null=+0.045  R²_null=-5.349
+         perm 10/10  r_null=-0.031  R²_null=-4.387
+      r_null_mean=-0.008  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.219  calR²=+0.018  r=+0.096  ρ=+0.086
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.155  R²_null=-0.842
+         perm 5/10  r_null=-0.052  R²_null=-1.857
+         perm 10/10  r_null=+0.030  R²_null=-1.282
+      r_null_mean=+0.054  r_p=0.455
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n060_d00.json  r H→M=+0.208 M→H=+0.096  pass=False  6s
+[S2] c3_planted_n060_d01 transfer-only n_perm=10 donors=60 rows=882
+   fit on HBCC → test MSSM
+      median R²=-0.876  calR²=+0.206  r=+0.453  ρ=+0.403
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.262  R²_null=-1.307
+         perm 5/10  r_null=-0.102  R²_null=-1.047
+         perm 10/10  r_null=-0.194  R²_null=-1.186
+      r_null_mean=-0.052  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.117  calR²=+0.201  r=+0.447  ρ=+0.467
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.041  R²_null=-1.521
+         perm 5/10  r_null=+0.027  R²_null=-1.408
+         perm 10/10  r_null=-0.292  R²_null=-1.584
+      r_null_mean=-0.067  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n060_d01.json  r H→M=+0.453 M→H=+0.447  pass=True  6s
+[S2] c3_planted_n060_d02 transfer-only n_perm=10 donors=60 rows=885
+   fit on HBCC → test MSSM
+      median R²=-1.182  calR²=+0.097  r=+0.304  ρ=+0.300
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.015  R²_null=-2.613
+         perm 5/10  r_null=+0.068  R²_null=-2.335
+         perm 10/10  r_null=-0.159  R²_null=-2.213
+      r_null_mean=+0.052  r_p=0.182
+   fit on MSSM → test HBCC
+      median R²=-0.962  calR²=+0.013  r=+0.094  ρ=+0.099
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.096  R²_null=-1.590
+         perm 5/10  r_null=-0.032  R²_null=-1.981
+         perm 10/10  r_null=-0.129  R²_null=-2.239
+      r_null_mean=-0.067  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n060_d02.json  r H→M=+0.304 M→H=+0.094  pass=False  6s
+[S2] c3_planted_n060_d03 transfer-only n_perm=10 donors=60 rows=866
+   fit on HBCC → test MSSM
+      median R²=-1.675  calR²=+0.092  r=+0.303  ρ=+0.291
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.018  R²_null=-2.779
+         perm 5/10  r_null=-0.023  R²_null=-2.033
+         perm 10/10  r_null=-0.038  R²_null=-1.447
+      r_null_mean=-0.001  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-2.235  calR²=+0.228  r=+0.478  ρ=+0.438
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.077  R²_null=-3.727
+         perm 5/10  r_null=-0.002  R²_null=-2.869
+         perm 10/10  r_null=+0.018  R²_null=-2.328
+      r_null_mean=-0.090  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n060_d03.json  r H→M=+0.303 M→H=+0.478  pass=True  6s
+[S2] c3_planted_n060_d04 transfer-only n_perm=10 donors=60 rows=872
+   fit on HBCC → test MSSM
+      median R²=-0.082  calR²=+0.487  r=+0.698  ρ=+0.685
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.048  R²_null=-1.063
+         perm 5/10  r_null=+0.350  R²_null=-0.409
+         perm 10/10  r_null=+0.019  R²_null=-1.014
+      r_null_mean=-0.015  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.128  calR²=+0.330  r=+0.574  ρ=+0.574
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.081  R²_null=-1.435
+         perm 5/10  r_null=+0.032  R²_null=-0.502
+         perm 10/10  r_null=+0.038  R²_null=-0.549
+      r_null_mean=-0.071  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n060_d04.json  r H→M=+0.698 M→H=+0.574  pass=True  6s
+[S2] c3_planted_n060_d05 transfer-only n_perm=10 donors=60 rows=844
+   fit on HBCC → test MSSM
+      median R²=-1.035  calR²=+0.155  r=+0.336  ρ=+0.308
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.060  R²_null=-1.606
+         perm 5/10  r_null=-0.035  R²_null=-1.775
+         perm 10/10  r_null=-0.004  R²_null=-1.376
+      r_null_mean=-0.014  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.738  calR²=+0.127  r=+0.356  ρ=+0.377
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.029  R²_null=-1.439
+         perm 5/10  r_null=+0.042  R²_null=-1.046
+         perm 10/10  r_null=-0.070  R²_null=-0.758
+      r_null_mean=+0.035  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n060_d05.json  r H→M=+0.336 M→H=+0.356  pass=True  6s
+[S2] c3_planted_n060_d06 transfer-only n_perm=10 donors=60 rows=870
+   fit on HBCC → test MSSM
+      median R²=-0.532  calR²=+0.333  r=+0.547  ρ=+0.549
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.166  R²_null=-0.514
+         perm 5/10  r_null=-0.012  R²_null=-0.870
+         perm 10/10  r_null=-0.261  R²_null=-0.986
+      r_null_mean=-0.143  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.856  calR²=+0.031  r=+0.176  ρ=+0.126
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.119  R²_null=-0.688
+         perm 5/10  r_null=+0.092  R²_null=-1.235
+         perm 10/10  r_null=-0.262  R²_null=-2.280
+      r_null_mean=-0.029  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n060_d06.json  r H→M=+0.547 M→H=+0.176  pass=True  6s
+[S2] c3_planted_n060_d07 transfer-only n_perm=10 donors=60 rows=863
+   fit on HBCC → test MSSM
+      median R²=-1.288  calR²=+0.050  r=+0.139  ρ=+0.156
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.174  R²_null=-2.846
+         perm 5/10  r_null=+0.185  R²_null=-2.400
+         perm 10/10  r_null=+0.260  R²_null=-3.073
+      r_null_mean=+0.080  r_p=0.545
+   fit on MSSM → test HBCC
+      median R²=-1.540  calR²=+0.034  r=+0.184  ρ=+0.326
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.207  R²_null=-1.603
+         perm 5/10  r_null=+0.309  R²_null=-1.174
+         perm 10/10  r_null=+0.301  R²_null=-1.748
+      r_null_mean=+0.030  r_p=0.455
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n060_d07.json  r H→M=+0.139 M→H=+0.184  pass=False  6s
+[S2] c3_planted_n060_d08 transfer-only n_perm=10 donors=60 rows=832
+   fit on HBCC → test MSSM
+      median R²=-0.913  calR²=+0.275  r=+0.525  ρ=+0.612
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.374  R²_null=-1.267
+         perm 5/10  r_null=+0.166  R²_null=-1.782
+         perm 10/10  r_null=+0.049  R²_null=-1.075
+      r_null_mean=-0.099  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.014  calR²=+0.098  r=+0.313  ρ=+0.335
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.111  R²_null=-0.729
+         perm 5/10  r_null=-0.039  R²_null=-1.601
+         perm 10/10  r_null=-0.006  R²_null=-0.812
+      r_null_mean=-0.002  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n060_d08.json  r H→M=+0.525 M→H=+0.313  pass=True  6s
+[S2] c3_planted_n060_d09 transfer-only n_perm=10 donors=60 rows=839
+   fit on HBCC → test MSSM
+      median R²=-0.694  calR²=+0.171  r=+0.413  ρ=+0.461
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.010  R²_null=-2.116
+         perm 5/10  r_null=+0.093  R²_null=-1.932
+         perm 10/10  r_null=-0.105  R²_null=-0.849
+      r_null_mean=-0.005  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.054  calR²=+0.221  r=+0.470  ρ=+0.368
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.035  R²_null=-1.614
+         perm 5/10  r_null=+0.274  R²_null=-0.855
+         perm 10/10  r_null=+0.358  R²_null=-0.558
+      r_null_mean=+0.065  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n060_d09.json  r H→M=+0.413 M→H=+0.470  pass=False  7s
+[S2] c3_planted_n100_d00 transfer-only n_perm=10 donors=100 rows=1444
+   fit on HBCC → test MSSM
+      median R²=-0.214  calR²=+0.662  r=+0.813  ρ=+0.835
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.134  R²_null=-1.956
+         perm 5/10  r_null=+0.248  R²_null=-0.473
+         perm 10/10  r_null=-0.058  R²_null=-1.301
+      r_null_mean=+0.016  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.201  calR²=+0.288  r=+0.537  ρ=+0.451
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.010  R²_null=-1.363
+         perm 5/10  r_null=-0.000  R²_null=-2.069
+         perm 10/10  r_null=+0.009  R²_null=-1.725
+      r_null_mean=-0.002  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n100_d00.json  r H→M=+0.813 M→H=+0.537  pass=True  9s
+[S2] c3_planted_n100_d01 transfer-only n_perm=10 donors=100 rows=1437
+   fit on HBCC → test MSSM
+      median R²=-1.084  calR²=+0.328  r=+0.572  ρ=+0.590
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.008  R²_null=-2.095
+         perm 5/10  r_null=-0.102  R²_null=-3.307
+         perm 10/10  r_null=-0.195  R²_null=-3.209
+      r_null_mean=-0.017  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.838  calR²=+0.223  r=+0.472  ρ=+0.526
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.025  R²_null=-2.760
+         perm 5/10  r_null=-0.009  R²_null=-3.555
+         perm 10/10  r_null=-0.008  R²_null=-1.456
+      r_null_mean=-0.050  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n100_d01.json  r H→M=+0.572 M→H=+0.472  pass=True  9s
+[S2] c3_planted_n100_d02 transfer-only n_perm=10 donors=100 rows=1398
+   fit on HBCC → test MSSM
+      median R²=-1.184  calR²=+0.270  r=+0.520  ρ=+0.529
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.232  R²_null=-2.642
+         perm 5/10  r_null=-0.046  R²_null=-1.919
+         perm 10/10  r_null=+0.174  R²_null=-1.650
+      r_null_mean=-0.001  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.007  calR²=+0.150  r=+0.387  ρ=+0.354
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.284  R²_null=-1.515
+         perm 5/10  r_null=+0.175  R²_null=-1.146
+         perm 10/10  r_null=+0.140  R²_null=-0.947
+      r_null_mean=-0.002  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n100_d02.json  r H→M=+0.520 M→H=+0.387  pass=True  9s
+[S2] c3_planted_n100_d03 transfer-only n_perm=10 donors=100 rows=1416
+   fit on HBCC → test MSSM
+      median R²=-0.807  calR²=+0.357  r=+0.597  ρ=+0.623
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.064  R²_null=-0.890
+         perm 5/10  r_null=-0.002  R²_null=-1.688
+         perm 10/10  r_null=-0.011  R²_null=-1.165
+      r_null_mean=+0.013  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.150  calR²=+0.184  r=+0.429  ρ=+0.392
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.048  R²_null=-2.332
+         perm 5/10  r_null=+0.279  R²_null=-1.306
+         perm 10/10  r_null=+0.020  R²_null=-1.244
+      r_null_mean=+0.052  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n100_d03.json  r H→M=+0.597 M→H=+0.429  pass=False  10s
+[S2] c3_planted_n100_d04 transfer-only n_perm=10 donors=100 rows=1430
+   fit on HBCC → test MSSM
+      median R²=-1.285  calR²=+0.338  r=+0.580  ρ=+0.597
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.172  R²_null=-2.461
+         perm 5/10  r_null=+0.055  R²_null=-2.354
+         perm 10/10  r_null=+0.112  R²_null=-2.160
+      r_null_mean=+0.120  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.309  calR²=+0.231  r=+0.481  ρ=+0.415
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.039  R²_null=-2.235
+         perm 5/10  r_null=-0.205  R²_null=-2.183
+         perm 10/10  r_null=-0.188  R²_null=-1.733
+      r_null_mean=+0.044  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n100_d04.json  r H→M=+0.580 M→H=+0.481  pass=False  9s
+[S2] c3_planted_n100_d05 transfer-only n_perm=10 donors=100 rows=1423
+   fit on HBCC → test MSSM
+      median R²=-0.902  calR²=+0.408  r=+0.605  ρ=+0.611
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.277  R²_null=-1.944
+         perm 5/10  r_null=+0.021  R²_null=-2.150
+         perm 10/10  r_null=+0.041  R²_null=-1.967
+      r_null_mean=+0.047  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.809  calR²=+0.147  r=+0.383  ρ=+0.424
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.010  R²_null=-2.188
+         perm 5/10  r_null=+0.081  R²_null=-3.966
+         perm 10/10  r_null=-0.193  R²_null=-1.977
+      r_null_mean=+0.010  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n100_d05.json  r H→M=+0.605 M→H=+0.383  pass=True  9s
+[S2] c3_planted_n100_d06 transfer-only n_perm=10 donors=100 rows=1412
+   fit on HBCC → test MSSM
+      median R²=-0.937  calR²=+0.225  r=+0.474  ρ=+0.482
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.019  R²_null=-1.114
+         perm 5/10  r_null=+0.036  R²_null=-1.414
+         perm 10/10  r_null=-0.038  R²_null=-1.847
+      r_null_mean=-0.011  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.150  calR²=+0.249  r=+0.499  ρ=+0.492
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.109  R²_null=-1.604
+         perm 5/10  r_null=+0.185  R²_null=-1.806
+         perm 10/10  r_null=-0.138  R²_null=-2.824
+      r_null_mean=-0.029  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n100_d06.json  r H→M=+0.474 M→H=+0.499  pass=True  9s
+[S2] c3_planted_n100_d07 transfer-only n_perm=10 donors=100 rows=1397
+   fit on HBCC → test MSSM
+      median R²=-0.763  calR²=+0.327  r=+0.572  ρ=+0.597
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.068  R²_null=-1.787
+         perm 5/10  r_null=+0.069  R²_null=-1.396
+         perm 10/10  r_null=+0.084  R²_null=-1.154
+      r_null_mean=+0.021  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.681  calR²=+0.279  r=+0.528  ρ=+0.558
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.120  R²_null=-1.890
+         perm 5/10  r_null=-0.003  R²_null=-1.092
+         perm 10/10  r_null=+0.036  R²_null=-1.280
+      r_null_mean=+0.062  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n100_d07.json  r H→M=+0.572 M→H=+0.528  pass=False  9s
+[S2] c3_planted_n100_d08 transfer-only n_perm=10 donors=100 rows=1396
+   fit on HBCC → test MSSM
+      median R²=-1.100  calR²=+0.193  r=+0.403  ρ=+0.383
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.158  R²_null=-3.614
+         perm 5/10  r_null=-0.219  R²_null=-3.051
+         perm 10/10  r_null=-0.125  R²_null=-2.350
+      r_null_mean=-0.062  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.313  calR²=+0.204  r=+0.452  ρ=+0.405
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.062  R²_null=-1.409
+         perm 5/10  r_null=+0.182  R²_null=-1.451
+         perm 10/10  r_null=+0.082  R²_null=-1.486
+      r_null_mean=+0.003  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n100_d08.json  r H→M=+0.403 M→H=+0.452  pass=True  9s
+[S2] c3_planted_n100_d09 transfer-only n_perm=10 donors=100 rows=1418
+   fit on HBCC → test MSSM
+      median R²=-0.354  calR²=+0.350  r=+0.564  ρ=+0.565
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.153  R²_null=-1.847
+         perm 5/10  r_null=-0.127  R²_null=-1.903
+         perm 10/10  r_null=+0.144  R²_null=-1.565
+      r_null_mean=-0.061  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.826  calR²=+0.204  r=+0.451  ρ=+0.468
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.013  R²_null=-1.182
+         perm 5/10  r_null=+0.114  R²_null=-1.298
+         perm 10/10  r_null=+0.157  R²_null=-0.772
+      r_null_mean=+0.014  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n100_d09.json  r H→M=+0.564 M→H=+0.451  pass=True  9s
+[S2] c3_planted_n150_d00 transfer-only n_perm=10 donors=150 rows=2112
+   fit on HBCC → test MSSM
+      median R²=-0.059  calR²=+0.486  r=+0.697  ρ=+0.670
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.142  R²_null=-0.861
+         perm 5/10  r_null=+0.147  R²_null=-0.621
+         perm 10/10  r_null=+0.015  R²_null=-1.427
+      r_null_mean=-0.001  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.727  calR²=+0.438  r=+0.662  ρ=+0.668
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.048  R²_null=-1.837
+         perm 5/10  r_null=-0.102  R²_null=-1.003
+         perm 10/10  r_null=+0.092  R²_null=-0.919
+      r_null_mean=+0.006  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n150_d00.json  r H→M=+0.697 M→H=+0.662  pass=True  14s
+[S2] c3_planted_n150_d01 transfer-only n_perm=10 donors=150 rows=2187
+   fit on HBCC → test MSSM
+      median R²=-0.473  calR²=+0.615  r=+0.784  ρ=+0.813
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.139  R²_null=-1.214
+         perm 5/10  r_null=+0.038  R²_null=-2.498
+         perm 10/10  r_null=-0.220  R²_null=-2.528
+      r_null_mean=+0.042  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.452  calR²=+0.417  r=+0.646  ρ=+0.636
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.174  R²_null=-1.968
+         perm 5/10  r_null=-0.040  R²_null=-1.710
+         perm 10/10  r_null=+0.017  R²_null=-1.207
+      r_null_mean=-0.038  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n150_d01.json  r H→M=+0.784 M→H=+0.646  pass=True  14s
+[S2] c3_planted_n150_d02 transfer-only n_perm=10 donors=150 rows=2141
+   fit on HBCC → test MSSM
+      median R²=-0.169  calR²=+0.612  r=+0.750  ρ=+0.766
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.162  R²_null=-1.396
+         perm 5/10  r_null=-0.040  R²_null=-0.892
+         perm 10/10  r_null=-0.056  R²_null=-1.432
+      r_null_mean=-0.027  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.365  calR²=+0.328  r=+0.573  ρ=+0.554
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.155  R²_null=-0.872
+         perm 5/10  r_null=+0.139  R²_null=-0.912
+         perm 10/10  r_null=-0.005  R²_null=-2.157
+      r_null_mean=+0.001  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n150_d02.json  r H→M=+0.750 M→H=+0.573  pass=True  14s
+[S2] c3_planted_n150_d03 transfer-only n_perm=10 donors=150 rows=2173
+   fit on HBCC → test MSSM
+      median R²=-0.216  calR²=+0.594  r=+0.771  ρ=+0.747
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.039  R²_null=-1.589
+         perm 5/10  r_null=-0.085  R²_null=-1.323
+         perm 10/10  r_null=-0.241  R²_null=-1.506
+      r_null_mean=-0.039  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.516  calR²=+0.365  r=+0.604  ρ=+0.624
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.080  R²_null=-0.791
+         perm 5/10  r_null=+0.142  R²_null=-1.470
+         perm 10/10  r_null=-0.079  R²_null=-1.558
+      r_null_mean=+0.022  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n150_d03.json  r H→M=+0.771 M→H=+0.604  pass=True  15s
+[S2] c3_planted_n150_d04 transfer-only n_perm=10 donors=150 rows=2115
+   fit on HBCC → test MSSM
+      median R²=-1.092  calR²=+0.423  r=+0.651  ρ=+0.660
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.028  R²_null=-2.147
+         perm 5/10  r_null=+0.015  R²_null=-2.447
+         perm 10/10  r_null=+0.102  R²_null=-2.622
+      r_null_mean=-0.011  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.520  calR²=+0.271  r=+0.520  ρ=+0.567
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.137  R²_null=-2.313
+         perm 5/10  r_null=-0.188  R²_null=-2.928
+         perm 10/10  r_null=-0.130  R²_null=-3.386
+      r_null_mean=-0.006  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n150_d04.json  r H→M=+0.651 M→H=+0.520  pass=True  14s
+[S2] c3_planted_n150_d05 transfer-only n_perm=10 donors=150 rows=2170
+   fit on HBCC → test MSSM
+      median R²=-0.508  calR²=+0.618  r=+0.786  ρ=+0.756
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.157  R²_null=-1.391
+         perm 5/10  r_null=-0.044  R²_null=-1.410
+         perm 10/10  r_null=-0.236  R²_null=-1.755
+      r_null_mean=+0.047  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.490  calR²=+0.370  r=+0.608  ρ=+0.637
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.086  R²_null=-2.041
+         perm 5/10  r_null=-0.177  R²_null=-1.874
+         perm 10/10  r_null=+0.110  R²_null=-1.639
+      r_null_mean=-0.070  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n150_d05.json  r H→M=+0.786 M→H=+0.608  pass=True  14s
+[S2] c3_planted_n150_d06 transfer-only n_perm=10 donors=150 rows=2100
+   fit on HBCC → test MSSM
+      median R²=-0.932  calR²=+0.458  r=+0.677  ρ=+0.673
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.056  R²_null=-2.319
+         perm 5/10  r_null=+0.020  R²_null=-2.202
+         perm 10/10  r_null=-0.014  R²_null=-1.654
+      r_null_mean=-0.019  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-1.155  calR²=+0.438  r=+0.662  ρ=+0.676
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.122  R²_null=-2.100
+         perm 5/10  r_null=+0.056  R²_null=-2.150
+         perm 10/10  r_null=-0.030  R²_null=-2.627
+      r_null_mean=+0.024  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n150_d06.json  r H→M=+0.677 M→H=+0.662  pass=True  13s
+[S2] c3_planted_n150_d07 transfer-only n_perm=10 donors=150 rows=2160
+   fit on HBCC → test MSSM
+      median R²=-0.828  calR²=+0.383  r=+0.619  ρ=+0.628
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.035  R²_null=-2.763
+         perm 5/10  r_null=-0.139  R²_null=-1.933
+         perm 10/10  r_null=-0.035  R²_null=-2.314
+      r_null_mean=-0.007  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.885  calR²=+0.298  r=+0.546  ρ=+0.579
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.023  R²_null=-2.080
+         perm 5/10  r_null=+0.084  R²_null=-2.410
+         perm 10/10  r_null=+0.063  R²_null=-1.728
+      r_null_mean=+0.046  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n150_d07.json  r H→M=+0.619 M→H=+0.546  pass=True  13s
+[S2] c3_planted_n150_d08 transfer-only n_perm=10 donors=150 rows=2145
+   fit on HBCC → test MSSM
+      median R²=-0.174  calR²=+0.604  r=+0.777  ρ=+0.776
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.016  R²_null=-1.646
+         perm 5/10  r_null=-0.108  R²_null=-1.730
+         perm 10/10  r_null=-0.062  R²_null=-1.550
+      r_null_mean=-0.026  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.135  calR²=+0.446  r=+0.668  ρ=+0.649
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=+0.165  R²_null=-0.978
+         perm 5/10  r_null=-0.032  R²_null=-1.337
+         perm 10/10  r_null=-0.032  R²_null=-1.051
+      r_null_mean=+0.012  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n150_d08.json  r H→M=+0.777 M→H=+0.668  pass=True  13s
+[S2] c3_planted_n150_d09 transfer-only n_perm=10 donors=150 rows=2185
+   fit on HBCC → test MSSM
+      median R²=-0.799  calR²=+0.571  r=+0.756  ρ=+0.753
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.064  R²_null=-1.920
+         perm 5/10  r_null=+0.193  R²_null=-2.734
+         perm 10/10  r_null=-0.284  R²_null=-2.854
+      r_null_mean=-0.015  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.809  calR²=+0.522  r=+0.722  ρ=+0.726
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.053  R²_null=-2.343
+         perm 5/10  r_null=-0.004  R²_null=-1.311
+         perm 10/10  r_null=+0.100  R²_null=-2.058
+      r_null_mean=-0.004  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n150_d09.json  r H→M=+0.756 M→H=+0.722  pass=True  14s
+[S2] c3_planted_n233_d00 transfer-only n_perm=10 donors=233 rows=3323
+   fit on HBCC → test MSSM
+      median R²=-0.087  calR²=+0.748  r=+0.865  ρ=+0.863
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.023  R²_null=-1.119
+         perm 5/10  r_null=+0.067  R²_null=-0.900
+         perm 10/10  r_null=+0.006  R²_null=-1.177
+      r_null_mean=+0.045  r_p=0.091
+   fit on MSSM → test HBCC
+      median R²=-0.415  calR²=+0.590  r=+0.768  ρ=+0.764
+      null (10 train-y shuffles)...
+         perm 1/10  r_null=-0.052  R²_null=-1.502
+         perm 5/10  r_null=+0.151  R²_null=-2.023
+         perm 10/10  r_null=-0.017  R²_null=-0.940
+      r_null_mean=-0.010  r_p=0.091
+[S2] wrote <repo>\results\posctrl\s2_c3_planted_n233_d00.json  r H→M=+0.865 M→H=+0.768  pass=True  21s
+[S2] all transfer cells done

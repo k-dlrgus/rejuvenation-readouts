@@ -1,0 +1,22 @@
+{
+ "n_qc_rows": 24,
+ "n_qc_ok": 17,
+ "n_extrap_rows": 17,
+ "n_contrast_rows": 40,
+ "pca_k": 50,
+ "cell_cycle_computable": {
+  "GM00731": false,
+  "GM23815": false
+ },
+ "consistently_older": {
+  "frozen_ruler": false,
+  "md_score": false,
+  "tgfb_score": false,
+  "age_up_minus_age_down": true,
+  "pluri_primary": false
+ },
+ "paper_nonreprog_quote": "another is to the non-reprogrammed state that retains many of the starting fibroblast marker genes (Figure S6B), but it also expresses distinct markers perhaps due to viral infection and/or different culture conditions (Figure 3E)",
+ "note": "NonReprog does not read consistently older than Fibroblast on the frozen ruler across all qualifying donor \u00d7 timepoints. Observation only. Not used to discount Task 1. Paper remark (not used as a gate): \"another is to the non-reprogrammed state that retains many of the starting fibroblast marker genes (Figure S6B), but it also expresses distinct markers perhaps due to viral infection and/or different culture conditions (Figure 3E)\".",
+ "report_only": true,
+ "used_to_discount_task1": false
+}

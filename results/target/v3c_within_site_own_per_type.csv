@@ -1,0 +1,81 @@
+celltype,site,r2,mae,n,which
+GABAergic neuron,pooled,0.3867412634642782,11.036426858471039,179,own
+GABAergic neuron,H,0.18862435071730987,10.762030883213063,96,own
+GABAergic neuron,M,0.15710331707558567,11.353800516600744,83,own
+GABAergic neuron,mean_of_sites,0.17286383389644777,11.057915699906903,179,own
+L2/3 intratelencephalic projecting glutamatergic neuron,pooled,0.692707284368643,7.73715607745024,220,own
+L2/3 intratelencephalic projecting glutamatergic neuron,H,0.6421335304618525,7.065614874345789,112,own
+L2/3 intratelencephalic projecting glutamatergic neuron,M,0.5448261241863693,8.433569176965968,108,own
+L2/3 intratelencephalic projecting glutamatergic neuron,mean_of_sites,0.5934798273241109,7.749592025655878,220,own
+L2/3-6 intratelencephalic projecting glutamatergic neuron,pooled,0.6843321731195509,7.734310537261626,215,own
+L2/3-6 intratelencephalic projecting glutamatergic neuron,H,0.6681186858413457,6.565302492976204,111,own
+L2/3-6 intratelencephalic projecting glutamatergic neuron,M,0.49566819828871966,8.982001815297028,104,own
+L2/3-6 intratelencephalic projecting glutamatergic neuron,mean_of_sites,0.5818934420650327,7.773652154136617,215,own
+L5/6 near-projecting glutamatergic neuron,pooled,0.3288174299903365,10.85352176148688,124,own
+L5/6 near-projecting glutamatergic neuron,H,0.25537194307601585,9.742062078810815,82,own
+L5/6 near-projecting glutamatergic neuron,M,-0.13747850629203695,13.02351447528301,42,own
+L5/6 near-projecting glutamatergic neuron,mean_of_sites,0.05894671839198945,11.382788277046913,124,own
+L6 corticothalamic-projecting glutamatergic cortical neuron,pooled,0.38772327678578655,10.1603543246305,153,own
+L6 corticothalamic-projecting glutamatergic cortical neuron,H,0.31420524685595186,9.013527237036671,85,own
+L6 corticothalamic-projecting glutamatergic cortical neuron,M,0.08596187204898253,11.593888184122788,68,own
+L6 corticothalamic-projecting glutamatergic cortical neuron,mean_of_sites,0.2000835594524672,10.30370771057973,153,own
+L6 intratelencephalic projecting glutamatergic neuron,pooled,0.4777146126907097,9.3993056189059,150,own
+L6 intratelencephalic projecting glutamatergic neuron,H,0.3161073651234402,8.779795900999368,86,own
+L6 intratelencephalic projecting glutamatergic neuron,M,0.22516077716631988,10.2317718023428,64,own
+L6 intratelencephalic projecting glutamatergic neuron,mean_of_sites,0.27063407114488003,9.505783851671083,150,own
+L6b glutamatergic neuron of the primary motor cortex,pooled,0.2996224501380178,10.167359363528655,109,own
+L6b glutamatergic neuron of the primary motor cortex,H,0.2844477554016379,9.05553273112795,73,own
+L6b glutamatergic neuron of the primary motor cortex,M,-0.19831038870614792,12.421896701452301,36,own
+L6b glutamatergic neuron of the primary motor cortex,mean_of_sites,0.043068683347744996,10.738714716290126,109,own
+VIP GABAergic interneuron,pooled,0.4620186639679005,10.290568265548504,217,own
+VIP GABAergic interneuron,H,0.31986976175040616,9.952678752153341,112,own
+VIP GABAergic interneuron,M,0.26758258476051655,10.650983746503352,105,own
+VIP GABAergic interneuron,mean_of_sites,0.29372617325546135,10.301831249328346,217,own
+astrocyte,pooled,0.5813177888465488,8.985076190358166,229,own
+astrocyte,H,0.4960747222481029,8.308645991327161,117,own
+astrocyte,M,0.3579449000014988,9.691704166131625,112,own
+astrocyte,mean_of_sites,0.42700981112480085,9.000175078729393,229,own
+endothelial cell,pooled,0.304223794658226,11.6145315318678,160,own
+endothelial cell,H,0.11517520782975654,11.100224923795905,109,own
+endothelial cell,M,0.0541134110150403,12.713735851080282,51,own
+endothelial cell,mean_of_sites,0.08464430942239842,11.906980387438093,160,own
+lamp5 GABAergic interneuron,pooled,0.35329996592576574,11.452846009940345,205,own
+lamp5 GABAergic interneuron,H,0.1306271899243977,11.123745561310338,109,own
+lamp5 GABAergic interneuron,M,0.16770241285115162,11.826512144322331,96,own
+lamp5 GABAergic interneuron,mean_of_sites,0.14916480138777466,11.475128852816335,205,own
+microglial cell,pooled,0.4694964679371124,10.704697772411755,219,own
+microglial cell,H,0.21583652855524882,11.030285403423136,112,own
+microglial cell,M,0.3388586764166911,10.36389576611947,107,own
+microglial cell,mean_of_sites,0.27734760248596996,10.697090584771303,219,own
+oligodendrocyte,pooled,0.587297881320594,9.02237138588288,232,own
+oligodendrocyte,H,0.4951187787081961,8.362217416469807,120,own
+oligodendrocyte,M,0.3856734661787151,9.72967921025403,112,own
+oligodendrocyte,mean_of_sites,0.4403961224434556,9.045948313361919,232,own
+oligodendrocyte precursor cell,pooled,0.5117489097732115,9.98100401038371,232,own
+oligodendrocyte precursor cell,H,0.347424104520343,9.694273860950721,119,own
+oligodendrocyte precursor cell,M,0.32973561034629617,10.282958769521109,113,own
+oligodendrocyte precursor cell,mean_of_sites,0.3385798574333196,9.988616315235916,232,own
+pericyte,pooled,0.16652522392059543,12.160884958771158,136,own
+pericyte,H,-0.019841280358003477,12.065734677742041,90,own
+pericyte,M,-0.013261327711478144,12.347048552088989,46,own
+pericyte,mean_of_sites,-0.01655130403474081,12.206391614915514,136,own
+perivascular macrophage,pooled,-0.031100229787002887,11.576489959523775,24,own
+perivascular macrophage,H,-0.06370741470893315,11.375313836253651,22,own
+perivascular macrophage,M,,,2,own
+perivascular macrophage,mean_of_sites,-0.06370741470893315,11.375313836253651,24,own
+pvalb GABAergic interneuron,pooled,0.4346894266642638,10.403549415182315,209,own
+pvalb GABAergic interneuron,H,0.32483189798251566,9.44922797680025,110,own
+pvalb GABAergic interneuron,M,0.19765656212321403,11.463906568940166,99,own
+pvalb GABAergic interneuron,mean_of_sites,0.26124423005286485,10.456567272870208,209,own
+smooth muscle cell,pooled,-0.10731516645972872,12.982436776599942,12,own
+smooth muscle cell,H,-0.10731516645972872,12.982436776599942,12,own
+smooth muscle cell,M,,,0,own
+smooth muscle cell,mean_of_sites,-0.10731516645972872,12.982436776599942,12,own
+sst GABAergic interneuron,pooled,0.5352920501241374,9.498686461360386,206,own
+sst GABAergic interneuron,H,0.5052425965823364,8.313824456733121,111,own
+sst GABAergic interneuron,M,0.27792201099145364,10.883104172030139,95,own
+sst GABAergic interneuron,mean_of_sites,0.391582303786895,9.59846431438163,206,own
+vascular leptomeningeal cell,pooled,0.19876360292265294,13.923665292502768,81,own
+vascular leptomeningeal cell,H,0.022708401712910664,12.676980297037227,60,own
+vascular leptomeningeal cell,M,-0.17817545405723445,17.485622422404315,21,own
+vascular leptomeningeal cell,mean_of_sites,-0.0777335261721619,15.081301359720772,81,own

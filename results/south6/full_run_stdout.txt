@@ -1,0 +1,220 @@
+[prereg] <repo>\results\south6\PREREG.flag bytes=11771
+[file] <repo>\data\raw\southard\fibroblast_CRISPRa_final_pop_singlets_normalized_log1p.h5ad
+[file] size=8048055098 expected=8048055098
+[file] md5=2c926c7cae2eaab1ed2519b06ca21db5 expected_md5=2c926c7cae2eaab1ed2519b06ca21db5 (20s)
+[obs] n=220403 columns=['dataset', 'UMI_count', 'guide_identity', 'guide_umi_count', 'thresholded_features', 'thresholded_guide_umi', 'num_cells', 'guide_target', 'gem_group', 'mt_frac', 'keep', 'single_cell', 'control', 'pairwise_coef', 'pairwise_UMI_count', 'pairwise_singlet_equivalent_UMI_count', 'final_pairwise_UMI_count', 'protospacer']
+[var] n=30395 columns=['gene_name', 'feature_types', 'genome', 'mean', 'in_matrix', 'std', 'cv', 'fano', 'pairwise_p_cost', 'mean_adjusted_pairwise_p_cost', 'excess_cv', 'pairwise_chosen', 'gene_id']
+[raw audit] {'dtype': 'float32', 'integer_dtype': False, 'n_seen': 500497683, 'n_fractional': 500497683, 'n_negative': 0, 'n_nonfinite': 0, 'min': 0.16630810499191284, 'max': 8.961788177490234, 'raw_integer_counts': False, 'where': 'X/data'}
+[raw audit] {'dtype': 'float32', 'integer_dtype': False, 'n_seen': 500497683, 'n_fractional': 0, 'n_negative': 0, 'n_nonfinite': 0, 'min': 1.0, 'max': 2119.0, 'raw_integer_counts': True, 'where': 'layers/counts'}
+[matrix] source=layers/counts (csr) kind=csr node=/layers/counts shape=(220403, 30395)
+[column] 'guide_target' present
+[column] 'guide_identity' present
+[column] 'control' present
+[column] 'keep' present
+[column] 'single_cell' present
+[before-filter] control={False: 208569, True: 11834} keep={True: 220403} single_cell={True: 220403}
+[filter] n_before=220403 dropped_not_singlet=0 dropped_singlet_fails_keep=0 n_after=220403
+[control set] guide_target == 'non' exact match: 14013 kept cells
+[control set] guides=78 (expected 78) cells=14013; control=True 61 guides / 11834 cells; control=False 17 guides / 2179 cells
+[control set] cells moved from the targeting pool to the control pool relative to SOUTH5: 2179 in 17 guides
+[genes] symbol column 'gene_name' by pre-registered priority ('feature_name', 'gene_symbols', 'gene_symbol', 'gene_name', 'symbol')
+[genes] id column 'gene_id'
+[id_type south6_symbol] kind=symbol n=30395 n_ensembl=0 n_refseq=0 n_symbol_like=30394 source=fibroblast_CRISPRa_final_pop_singlets_normalized_log1p.h5ad::gene_name examples=['MIR1302-2HG', 'OR4F5', 'AL627309.1', 'AL627309.3', 'AL627309.5', 'AL627309.4', 'AP006222.2', 'AL732372.1']
+[id_type south6_id] kind=ensembl n=30395 n_ensembl=30395 n_refseq=0 n_symbol_like=0 source=fibroblast_CRISPRa_final_pop_singlets_normalized_log1p.h5ad::gene_id examples=['ENSG00000243485', 'ENSG00000186092', 'ENSG00000238009', 'ENSG00000239945', 'ENSG00000241860', 'ENSG00000241599', 'ENSG00000286448', 'ENSG00000236601']
+[align index] overlap=20265 ensembl=20257 symbol=8
+[coverage symbol] genes 16631/23485 (0.7082) |w| 0.6204
+[coverage ensembl_version_stripped] genes 20257/23485 (0.8626) |w| 0.8177
+[coverage best_after_md3_idtype] genes 20265/23485 (0.8629) |w| 0.8182
+[factors] distinct targets=1836 guides/target min=2 median=6.0 max=6 with>=2=1836
+[controls] non-targeting guides=78 cells=14013
+[align] matched columns=20264 ruler hits=20265 (duplicate source columns collapsed)
+[stream] rows 400/220,403 nnz=952,405 (0s)
+[stream] rows 80,400/220,403 nnz=203,819,365 (46s)
+[stream] rows 160,400/220,403 nnz=367,260,608 (88s)
+[stream] done cells=220,403 matched_nnz=498,534,339 in 121s
+[panel] factors=1836 nt_guides=78 (control=True 61) matched_genes=20264
+[z] missing_matched_set_to_0=164 ||d|| median=123.3505
+[z_from_counts check] row 0 max abs 0.000e+00
+[z_from_counts check] row 1 max abs 0.000e+00
+[z_from_counts check] row 2 max abs 0.000e+00
+[guides] z-scoring each ranked factor's guides for agreement
+[guides] median pairwise cosine <= 0 on 0 of 1836
+[identity] present=['COL1A1', 'COL1A2', 'FN1', 'LUM', 'PDGFRA', 'PDGFRB', 'POSTN', 'PRRX1', 'SERPINH1', 'VIM'] absent=[]
+[cc.genes] S=43 G2M=54 written <repo>\data\reference\seurat_cc.genes_tirosh2016.tsv
+[cc.genes] present 94/97
+[prolif quartiles] {'q25': 0.04358698258908349, 'q75': 0.08506921052099886, 'n_bottom': 3504, 'n_top': 3504}
+[prolif] built from NT quartiles n_bottom=3504 n_top=3504 ||p||=65.9633
+[columns gtex_obs] actually read from <repo>\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[S2] PCA on GTEx donors only n=652 p=23485 k=100
+[O1-Y1] ||c_young-c_old||=32.2839 n_young=113 n_old=231
+[Y2] fit=56 held=57 of 113 young donors, seed 20260914
+[Y2 k=20] radius=11.8805 held median=5.9384
+[Y2 k=50] radius=59.2987 held median=23.0641
+[Y2 k=100] singular rank=55 < 100. Mahalanobis undefined. Nothing substituted.
+[origin-target distances, before any factor is scored]
+  S1       O1->Y1 || ||= 32.28394904985961 md=nan inside=None skipped=False
+  S2_k20   O1->Y1 || ||= 28.645166494451423 md=nan inside=None skipped=False
+  S2_k50   O1->Y1 || ||= 30.864266060152048 md=nan inside=None skipped=False
+  S2_k100  O1->Y1 || ||= 31.43426327149642 md=nan inside=None skipped=False
+  S1       O2->Y1 || ||= 468.3877944278175 md=nan inside=None skipped=False
+  S2_k20   O2->Y1 || ||= 196.4503725228582 md=nan inside=None skipped=False
+  S2_k50   O2->Y1 || ||= 259.33352172621704 md=nan inside=None skipped=False
+  S2_k100  O2->Y1 || ||= 272.04454793124097 md=nan inside=None skipped=False
+  S2_k20   O1->Y2 || ||= 33.209985967930464 md=1.0554237776920008 inside=True skipped=False
+  S2_k50   O1->Y2 || ||= 35.167984970050306 md=6.011387700635865 inside=True skipped=False
+  S2_k100  O1->Y2 || ||= nan md=nan inside=None skipped=True
+  S2_k20   O2->Y2 || ||= 204.37571342159842 md=14.205454860554044 inside=False skipped=False
+  S2_k50   O2->Y2 || ||= 265.18874318671385 md=127.03484975852807 inside=False skipped=False
+  S2_k100  O2->Y2 || ||= nan md=nan inside=None skipped=True
+[algebra] matched-coordinate delta matches the full vector
+[stage2A] per-setting median ||d|| [123.35046957433535, 11.812841986567987, 18.05212061380677, 21.743734961599777, 123.35046957433535, 11.812841986567987, 18.05212061380677, 21.743734961599777, 11.812841986567987, 18.05212061380677, 11.812841986567987, 18.05212061380677]
+[perm] 25/1836 (132s)
+[perm] 50/1836 (265s)
+[perm] 75/1836 (385s)
+[perm] 100/1836 (509s)
+[perm] 125/1836 (628s)
+[perm] 150/1836 (722s)
+[perm] 175/1836 (845s)
+[perm] 200/1836 (976s)
+[perm] 225/1836 (1098s)
+[perm] 250/1836 (1223s)
+[perm] 275/1836 (1346s)
+[perm] 300/1836 (1469s)
+[perm] 325/1836 (1597s)
+[perm] 350/1836 (1724s)
+[perm] 375/1836 (1856s)
+[perm] 400/1836 (1980s)
+[perm] 425/1836 (2115s)
+[perm] 450/1836 (2241s)
+[perm] 475/1836 (2378s)
+[perm] 500/1836 (2504s)
+[perm] 525/1836 (2637s)
+[perm] 550/1836 (2769s)
+[perm] 575/1836 (2878s)
+[perm] 600/1836 (2964s)
+[perm] 625/1836 (3065s)
+[perm] 650/1836 (3212s)
+[perm] 675/1836 (3344s)
+[perm] 700/1836 (3467s)
+[perm] 725/1836 (3594s)
+[perm] 750/1836 (3724s)
+[perm] 775/1836 (3863s)
+[perm] 800/1836 (3997s)
+[perm] 825/1836 (4126s)
+[perm] 850/1836 (4263s)
+[perm] 875/1836 (4388s)
+[perm] 900/1836 (4517s)
+[perm] 925/1836 (4639s)
+[perm] 950/1836 (4768s)
+[perm] 975/1836 (4891s)
+[perm] 1000/1836 (5027s)
+[perm] 1025/1836 (5159s)
+[perm] 1050/1836 (5295s)
+[perm] 1075/1836 (5436s)
+[perm] 1100/1836 (5566s)
+[perm] 1125/1836 (5704s)
+[perm] 1150/1836 (5833s)
+[perm] 1175/1836 (5976s)
+[perm] 1200/1836 (6109s)
+[perm] 1225/1836 (6249s)
+[perm] 1250/1836 (6388s)
+[perm] 1275/1836 (6522s)
+[perm] 1300/1836 (6616s)
+[perm] 1325/1836 (6679s)
+[perm] 1350/1836 (6741s)
+[perm] 1375/1836 (6804s)
+[perm] 1400/1836 (6867s)
+[perm] 1425/1836 (6929s)
+[perm] 1450/1836 (6992s)
+[perm] 1475/1836 (7055s)
+[perm] 1500/1836 (7118s)
+[perm] 1525/1836 (7180s)
+[perm] 1550/1836 (7242s)
+[perm] 1575/1836 (7305s)
+[perm] 1600/1836 (7367s)
+[perm] 1625/1836 (7429s)
+[perm] 1650/1836 (7492s)
+[perm] 1675/1836 (7554s)
+[perm] 1700/1836 (7616s)
+[perm] 1725/1836 (7678s)
+[perm] 1750/1836 (7740s)
+[perm] 1775/1836 (7803s)
+[perm] 1800/1836 (7865s)
+[perm] 1825/1836 (7927s)
+[perm] 1836/1836 (7954s)
+[perm] done in 7954s
+[splits all78] 50/200
+[splits all78] 100/200
+[splits all78] 150/200
+[splits all78] 200/200
+[splits control_true61] 50/200
+[splits control_true61] 100/200
+[splits control_true61] 150/200
+[splits control_true61] 200/200
+[MDA] S1 O1_Y1 primary_mda=0.05 stricter_mda=0.05 margin=11.650200854386927
+[MDA] S2_k20 O1_Y1 primary_mda=0.05 stricter_mda=0.1 margin=0.5745238109975798
+[MDA] S2_k50 O1_Y1 primary_mda=0.05 stricter_mda=0.05 margin=0.5762963972516126
+[MDA] S2_k100 O1_Y1 primary_mda=0.05 stricter_mda=0.05 margin=0.7718338567153905
+[MDA] S1 O2_Y1 primary_mda=0.05 stricter_mda=0.05 margin=0.7832111267007917
+[MDA] S2_k20 O2_Y1 primary_mda=0.05 stricter_mda=0.25 margin=0.31308937208002163
+[MDA] S2_k50 O2_Y1 primary_mda=0.05 stricter_mda=0.25 margin=0.6022219192960762
+[MDA] S2_k100 O2_Y1 primary_mda=0.05 stricter_mda=0.1 margin=0.05752315778228195
+[MDA] S2_k20 O1_Y2 primary_mda=0.05 stricter_mda=0.05 margin=0.20827484448205846
+[MDA] S2_k50 O1_Y2 primary_mda=0.05 stricter_mda=0.05 margin=0.5113259991988304
+[MDA] S2_k20 O2_Y2 primary_mda=0.05 stricter_mda=0.25 margin=0.3128183485346412
+[MDA] S2_k50 O2_Y2 primary_mda=0.05 stricter_mda=0.25 margin=0.5655295896787663
+[stage2B robustness] settings where the 78-guide and 61-guide floors differ materially: 12 of 12 (threshold rel 0.1, or a changed stricter-floor MDA)
+[bootstrap] resampling cells
+[bootstrap] NT pool resampled
+[bootstrap] 50/1836
+[bootstrap] 100/1836
+[bootstrap] 150/1836
+[bootstrap] 200/1836
+[bootstrap] 250/1836
+[bootstrap] 300/1836
+[bootstrap] 350/1836
+[bootstrap] 400/1836
+[bootstrap] 450/1836
+[bootstrap] 500/1836
+[bootstrap] 550/1836
+[bootstrap] 600/1836
+[bootstrap] 650/1836
+[bootstrap] 700/1836
+[bootstrap] 750/1836
+[bootstrap] 800/1836
+[bootstrap] 850/1836
+[bootstrap] 900/1836
+[bootstrap] 950/1836
+[bootstrap] 1000/1836
+[bootstrap] 1050/1836
+[bootstrap] 1100/1836
+[bootstrap] 1150/1836
+[bootstrap] 1200/1836
+[bootstrap] 1250/1836
+[bootstrap] 1300/1836
+[bootstrap] 1350/1836
+[bootstrap] 1400/1836
+[bootstrap] 1450/1836
+[bootstrap] 1500/1836
+[bootstrap] 1550/1836
+[bootstrap] 1600/1836
+[bootstrap] 1650/1836
+[bootstrap] 1700/1836
+[bootstrap] 1750/1836
+[bootstrap] 1800/1836
+[count] S1 O1_Y1 toward_young=0 of 1836 (min_p=0.000200, tie_at_min_p=63)
+[count] S2_k20 O1_Y1 toward_young=0 of 1836 (min_p=0.000200, tie_at_min_p=4)
+[count] S2_k50 O1_Y1 toward_young=0 of 1836 (min_p=0.000200, tie_at_min_p=1)
+[count] S2_k100 O1_Y1 toward_young=0 of 1836 (min_p=0.000200, tie_at_min_p=0)
+[count] S1 O2_Y1 toward_young=0 of 1836 (min_p=0.000200, tie_at_min_p=8)
+[count] S2_k20 O2_Y1 toward_young=15 of 1836 (min_p=0.000200, tie_at_min_p=13)
+[count] S2_k50 O2_Y1 toward_young=9 of 1836 (min_p=0.000200, tie_at_min_p=9)
+[count] S2_k100 O2_Y1 toward_young=10 of 1836 (min_p=0.000200, tie_at_min_p=10)
+[count] S2_k20 O1_Y2 toward_young=0 of 1836 (min_p=0.000200, tie_at_min_p=0)
+[count] S2_k50 O1_Y2 toward_young=0 of 1836 (min_p=0.000200, tie_at_min_p=0)
+[count] S2_k20 O2_Y2 toward_young=17 of 1836 (min_p=0.000200, tie_at_min_p=15)
+[count] S2_k50 O2_Y2 toward_young=10 of 1836 (min_p=0.000200, tie_at_min_p=10)
+[done] findings written

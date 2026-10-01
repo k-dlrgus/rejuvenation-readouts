@@ -1,0 +1,22 @@
+{
+ "rule": "symbol upper startswith MT-",
+ "n_mito": 13,
+ "mito_symbols": [
+  "MT-ATP6",
+  "MT-ATP8",
+  "MT-CO1",
+  "MT-CO2",
+  "MT-CO3",
+  "MT-CYB",
+  "MT-ND1",
+  "MT-ND2",
+  "MT-ND3",
+  "MT-ND4",
+  "MT-ND4L",
+  "MT-ND5",
+  "MT-ND6"
+ ],
+ "columns_used": [
+  "symbol"
+ ]
+}

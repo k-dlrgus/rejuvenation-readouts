@@ -1,0 +1,21 @@
+Written **before any T-A download, projection, or ρ**, 2026-09-18. No threshold in this block is re-tuned after numbers exist.
+
+Take the Stage 1 ridge direction **exactly as frozen in `results/fibro/frozen_ruler_ridge_raw.npz`**. Refit nothing. Recalibrate nothing. Rescale nothing. Project, score, report Spearman ρ vs donor age.
+
+Same normalization as the frozen GTEx spec (FINDINGS_GTEX.md Stage 0 / FINDINGS_FIBRO.md Stage 1): TMM/edgeR log2-CPM (`prior.count=2`). Genes restricted to the overlap with the frozen ruler. Missing overlap genes left at z=0 (FINDINGS_EXTERNAL.md rule). Gene-overlap count reported. z uses the frozen train mean and sd.
+
+Metric: Spearman ρ vs the age the record states. Donor-level permutation null n_perm=200 (scores held fixed; shuffle donor ages; each cell starts a fresh Generator on seed `20260914`). Donor-bootstrap 95% percentile CI, B=200, seed `20260918`. Calibrated R² and uncalibrated R² reported; uncalibrated R² is never a gate. Pearson r reported, not a gate. Nothing averaged across cohorts.
+
+Adult restriction on the primary cell: GSE113957 samples with stated age < 18 are excluded to match the GTEx training range; the excluded count is reported. Do not infer a donor age that the record does not state. A record that does not state per-sample donor age is unusable.
+
+Cohorts, in priority order, each resolved from the record this session:
+1. **GSE113957** — primary external cell. Human dermal fibroblast. Ages stated in titles. Bulk. Adults ≥18.
+2. **Any single-cell fibroblast/skin aging cohort with ≥10 donors and stated ages** resolved this session (CELLxGENE, GEO, or SCOPING_TISSUE.md `near_miss` rows GSE226189 n=82 bulk, GSE307377 n=9). A 10x cohort is worth more than a larger bulk one because the platform shift is the thing under test. Say which platform each is.
+3. If no single-cell fibroblast cohort resolves, say so plainly. Do not substitute a bulk cohort and call the platform question answered.
+
+GSE325735 is out of scope.
+
+**Pre-registered reading** (only the outcome that fired; T-A cannot overturn the Stage 2 `no_decline` verdict by itself):
+- ρ > 0 with null ≤ 0.05 in the primary external cell → the ruler is a working instrument outside its training cohort; the Stage 2 `no_decline` verdict is interpretable as a statement about OSKM.
+- ρ ≤ 0 or null > 0.05 → the ruler does not validate externally; Stage 2 is uninterpretable and `no_decline` must not be reported as a finding about reprogramming.
+- bulk external passes, single-cell external fails (or none resolves) → the platform shift is unresolved; the Stage 2 projection rests on an unvalidated cross-platform step; do not resolve it by argument.

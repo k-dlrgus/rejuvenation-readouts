@@ -1,0 +1,9 @@
+﻿Primary A-genes (n=140): fraction of pooled age variance retained after adjusting for...
+   depth covariates only (2 df)     median=0.228  mean=0.285  n(<0.25)=74  n(<0.5)=118
+   pool only (74 df)                median=0.034  mean=0.073  n(<0.25)=131  n(<0.5)=136
+   pool + depth                     median=0.039  mean=0.078  n(<0.25)=131  n(<0.5)=136
+
+All genes with pooled unique_age >= 0.002 (n=1256):
+   depth only     median retention=0.336; genes still >=0.002: 327
+   pool only      median retention=0.087; genes still >=0.002: 85
+   pool + depth   median retention=0.094; genes still >=0.002: 87

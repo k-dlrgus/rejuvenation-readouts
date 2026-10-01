@@ -1,0 +1,16 @@
+[t2 GSE113957] reading <repo>\data\raw\fibro2\GSE113957\GSE113957_fpkm.txt.gz
+[id_type gse113957_Transcript_ID] kind=refseq_transcript n=27142 n_ensembl=0 n_refseq=27142 n_symbol_like=0 source=<repo>\data\raw\fibro2\GSE113957\GSE113957_fpkm.txt.gz:Transcript ID examples=['NM_173803', 'NM_014423', 'NM_001103167', 'NR_134623', 'NR_024490', 'NM_018397', 'NM_001037671', 'NR_106859']
+[t2 GSE113957] n_transcripts=27142 n_sample_cols=143
+[t2 GSE113957] parsed gene symbol from Annotation/Divergence n_unparsed=0 n_kept=27142
+[id_type gse113957_parsed_symbols] kind=symbol n=27142 n_ensembl=0 n_refseq=0 n_symbol_like=27130 source=<repo>\data\raw\fibro2\GSE113957\GSE113957_fpkm.txt.gz:Annotation/Divergence examples=['MPV17L', 'AFF4', 'ZGLP1', 'LOC105373021', 'GABPB1-AS1', 'CHDH', 'C12ORF74', 'MIR6801']
+[t2 GSE113957] collapsed transcripts→genes n_transcripts_kept=27142 n_unique_symbols=27142 (sum FPKM)
+[id_type gse113957_gene_symbols_collapsed] kind=symbol n=27142 n_ensembl=0 n_refseq=0 n_symbol_like=27130 source=collapsed Annotation/Divergence examples=['MPV17L', 'AFF4', 'ZGLP1', 'LOC105373021', 'GABPB1-AS1', 'CHDH', 'C12ORF74', 'MIR6801']
+[t2 GSE113957] rank-transform genes within sample method=average shape=(27142, 143) (different transform from GTEx TMM/log2-CPM; weaker test)
+[t2 GSE113957] n_fpkm_samples=143 n_missing_age=8 n_child=24 n_adult>=18=111
+[align gse113957_ranks] ruler_genes=23485 overlap=16414 ensembl=0 symbol_fallback=16414 missing=7071
+[t2 GSE113957 ruler] overlap=16414 missing_z0=7071 z uses frozen GTEx log2-CPM mu/sd on rank inputs (weaker test; not a refit)
+[t2 gse113957_ruler_ranks] ρ=+0.116 null=-0.009 p=+0.104 CI=[-0.018555902391827764, 0.297611599283316] n=111
+[t2] GSE113957 AMS STOP [addmodulescore] cut_number did not yield 24 bins (got 22). Not dropping bins.. nbin=24 not reduced. MD and Table S3 AMS not scored on this cohort. Frozen-ruler rank scores are kept. No paired Δρ for this cohort.
+[repair] t2 reading key=ruler_stronger_age_in_ge2
+Δρ CI excludes zero in favour of the ruler in 2 of 3 named cohorts. MD and/or their aging signature predict donor age materially worse than the ruler on independent fibroblast cohorts.
+[repair] FINDINGS rewritten

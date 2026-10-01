@@ -1,0 +1,2 @@
+name,dataset_id,tissue,n_donors,n_cell_types,n_comp_categories,batch_usable,batch_column,metric,composition_r2,expression_r2,ratio_expr_over_comp,composition_r2_within,expression_r2_within,composition_r2_naive,expression_r2_naive,expression_beats_composition,blood_composition_r2,blood_expression_r2
+retina_sc,be41a86a-b606-4b1c-8055-32f334898775,retina,16,8,11,True,tissue,within_batch,-0.2088487085930515,-0.0039130766464077205,0.01873641772922081,-0.2088487085930515,-0.0039130766464077205,-0.2994521467133475,-0.2509548719437935,True,0.493,0.482

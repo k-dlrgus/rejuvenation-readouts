@@ -1,0 +1,35 @@
+{
+ "t_age": 0.002386823424184309,
+ "k_ct": 0.4052093358598109,
+ "t_ct": 0.8152604586210945,
+ "k_age": 0.0003696811768819572,
+ "t_age_q": 0.9,
+ "k_ct_q": 0.5,
+ "t_ct_q": 0.9,
+ "k_age_q": 0.5,
+ "n_A": 1578,
+ "n_I": 1876,
+ "n_MIXED": 37,
+ "n_OTHER": 22035,
+ "n_genes": 25526,
+ "extra_covariates": [
+  "p0_cc_umi_frac",
+  "p0_frac_Oligo",
+  "p0_frac_Immune"
+ ],
+ "seed": 20260914,
+ "declared_before_scores": true,
+ "quantile_rule": {
+  "t_age_q": 0.9,
+  "k_ct_q": 0.5,
+  "t_ct_q": 0.9,
+  "k_age_q": 0.5
+ },
+ "unique_age_max": 0.034903716909554336,
+ "unique_age_p99": 0.006664594135528307,
+ "unique_age_median": 0.0003696811768819572,
+ "unique_ct_max": 0.9774474454739231,
+ "unique_ct_median": 0.4052093358598109,
+ "blood_unique_age_max": 0.0126,
+ "blood_unique_age_p99": 0.0019
+}

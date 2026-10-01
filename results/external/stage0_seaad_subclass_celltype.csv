@@ -1,0 +1,25 @@
+subclass,cell_type,n_nuclei
+Astrocyte,astrocyte of the cerebral cortex,70009
+Chandelier,pvalb chandelier GABAergic interneuron,10928
+Endothelial,cerebral cortex endothelial cell,2069
+L2/3 IT,L2/3-6 intratelencephalic projecting glutamatergic neuron,330085
+L4 IT,L2/3-6 intratelencephalic projecting glutamatergic neuron,168860
+L5 ET,L5 extratelencephalic projecting glutamatergic cortical neuron,2590
+L5 IT,L2/3-6 intratelencephalic projecting glutamatergic neuron,128090
+L5/6 NP,near-projecting glutamatergic cortical neuron,20741
+L6 CT,corticothalamic-projecting glutamatergic cortical neuron,18402
+L6 IT,L2/3-6 intratelencephalic projecting glutamatergic neuron,45252
+L6 IT Car3,L2/3-6 intratelencephalic projecting glutamatergic neuron,26129
+L6b,L6b glutamatergic cortical neuron,16227
+Lamp5,lamp5 GABAergic interneuron,42921
+Lamp5 Lhx6,lamp5 GABAergic interneuron,21443
+Microglia-PVM,microglial cell,40000
+OPC,oligodendrocyte precursor cell,32493
+Oligodendrocyte,oligodendrocyte,111194
+Pax6,caudal ganglionic eminence derived interneuron,9203
+Pvalb,pvalb GABAergic interneuron,90804
+Sncg,sncg GABAergic interneuron,22168
+Sst,sst GABAergic interneuron,58265
+Sst Chodl,sst GABAergic interneuron,1496
+VLMC,vascular leptomeningeal cell,4328
+Vip,VIP GABAergic interneuron,104514

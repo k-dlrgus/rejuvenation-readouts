@@ -1,0 +1,11 @@
+cell_line,label,n_cells,scored,reason,on_trajectory,age_score,nn_euclidean,nn_train_index,mahalanobis_pca,pca_k,age_source,n_missing_z0,tmm_n_rows
+GM00731,Fibroblast,5988,True,,True,4.277471888479707,451.43909347054523,602,23.944736665063587,50,TMM_log2CPM_frozen_ruler_state_pooled_per_donor,3133,5
+GM00731,PartialReprog,5832,True,,True,0.5928309097761407,463.9763107213793,342,24.384243479238233,50,TMM_log2CPM_frozen_ruler_state_pooled_per_donor,3133,5
+GM00731,EarlyPluripotency,4414,True,,True,-2.674928150874546,491.73334455861595,603,24.972887639155754,50,TMM_log2CPM_frozen_ruler_state_pooled_per_donor,3133,5
+GM00731,Pluripotency,439,True,,True,-10.545563693133696,630.7466353362692,420,28.506418431528694,50,TMM_log2CPM_frozen_ruler_state_pooled_per_donor,3133,5
+GM00731,NonReprog,5459,True,,False,6.806983148345976,469.96045103429435,598,23.76129558412852,50,TMM_log2CPM_frozen_ruler_state_pooled_per_donor,3133,5
+GM23815,Fibroblast,11355,True,,True,-2.2084142417819947,448.7722619223206,598,23.319618445247812,50,TMM_log2CPM_frozen_ruler_state_pooled_per_donor,3136,5
+GM23815,PartialReprog,6481,True,,True,-4.695129760385988,458.15419035766206,342,23.1814590402599,50,TMM_log2CPM_frozen_ruler_state_pooled_per_donor,3136,5
+GM23815,EarlyPluripotency,12961,True,,True,-8.016229255812952,495.5761708676957,603,25.042917958528125,50,TMM_log2CPM_frozen_ruler_state_pooled_per_donor,3136,5
+GM23815,Pluripotency,1249,True,,True,-15.240030352232179,629.5536417457705,342,28.273461954296224,50,TMM_log2CPM_frozen_ruler_state_pooled_per_donor,3136,5
+GM23815,NonReprog,1812,True,,False,-0.21580328907757224,490.5738556776428,604,24.64760130832443,50,TMM_log2CPM_frozen_ruler_state_pooled_per_donor,3136,5

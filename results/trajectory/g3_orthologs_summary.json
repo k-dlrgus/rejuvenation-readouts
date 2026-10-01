@@ -1,0 +1,14 @@
+{
+ "seed": 20260914,
+ "source": "NCBI gene_orthologs + gene2ensembl",
+ "n_human_phase1": 25526,
+ "n_strict_1to1": 14239,
+ "frac_phase1_strict": 0.5578233957533495,
+ "n_orth_rows": 17096,
+ "n_joined": 14272,
+ "urls": [
+  "https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene_orthologs.gz",
+  "https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2ensembl.gz"
+ ],
+ "cache": "<repo>\\data\\processed\\human_mouse_orthologs_ncbi.tsv"
+}

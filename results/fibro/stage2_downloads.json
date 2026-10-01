@@ -1,0 +1,15 @@
+{
+ "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297234/suppl/GSE297234_RAW.tar": {
+  "path": "<repo>\\data\\raw\\gse297234\\GSE297234_RAW.tar",
+  "size": 279050240,
+  "cached": true
+ },
+ "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297234/suppl/GSE297234_GM00731_SEVOSKM.rds": {
+  "skipped": true,
+  "reason": "Seurat RDS not required; 10x matrices are in RAW.tar"
+ },
+ "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297234/suppl/GSE297234_HFIB_COMBINED_SEVOSKM.rds": {
+  "skipped": true,
+  "reason": "Seurat RDS not required; 10x matrices are in RAW.tar"
+ }
+}

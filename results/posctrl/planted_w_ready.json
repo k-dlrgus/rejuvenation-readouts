@@ -1,0 +1,12 @@
+{
+ "seed": 20260915,
+ "n_eligible": 17749,
+ "n_support": 200,
+ "n_types_cpm": 15,
+ "regimes": [
+  "dense_shared",
+  "dense_typespec",
+  "sparse_shared",
+  "sparse_typespec"
+ ]
+}

@@ -1,0 +1,1 @@
+age score does not decline → the ruler reads a static donor property, not a modifiable state. Step 3 is not supported by this data.

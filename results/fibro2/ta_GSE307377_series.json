@@ -1,0 +1,53 @@
+{
+ "accession": "GSE307377",
+ "title": "Bulk RNA-seq analysis of primary human dermal fibroblasts from young and aged donors",
+ "types": [
+  "Expression profiling by high throughput sequencing"
+ ],
+ "platforms": [
+  "GPL24676"
+ ],
+ "n_sample_id": 9,
+ "supplementary": [
+  "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307377/suppl/GSE307377_raw.txt.gz",
+  "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307377/suppl/GSE307377_tpm.txt.gz"
+ ],
+ "overall_design": "Dermal fibroblasts from young and aged human donors were cultured in DMEM supplemented with 10% FBS, non-essential amino acids, and GlutaMAX. After 48 hours of culture, total RNA was extracted using the RNeasy Mini Kit with on-column DNase digestion. PolyA RNA libraries were prepared at the Salk Institute Genomics Core and sequenced using the NovaSeq 6000 SP platform. Reads were aligned to the hg19 reference genome using STAR (v2.5.3a), and differential expression analysis was performed using HOMER (v4.11.1).",
+ "summary": "Primary human dermal fibroblasts were obtained from four young donors (ages 23\u00e2\u0080\u009333) and five aged donors (ages 64\u00e2\u0080\u009372) through the San Diego Nathan Shock Center (SD-NSC) Human Cell Models of Aging Core. Cells were cultured under standard conditions and subjected to bulk RNA sequencing to investigate age-associated transcriptional changes. Libraries were prepared using polyA selection and sequenced on the Illumina NovaSeq 6000 platform. Differential gene expression analysis was performed using the HOMER pipeline.",
+ "series_fields": [
+  "Series_contact_address",
+  "Series_contact_city",
+  "Series_contact_country",
+  "Series_contact_institute",
+  "Series_contact_name",
+  "Series_contact_state",
+  "Series_contact_zip/postal_code",
+  "Series_contributor",
+  "Series_geo_accession",
+  "Series_last_update_date",
+  "Series_overall_design",
+  "Series_platform_id",
+  "Series_platform_organism",
+  "Series_platform_taxid",
+  "Series_pubmed_id",
+  "Series_relation",
+  "Series_sample_id",
+  "Series_sample_organism",
+  "Series_sample_taxid",
+  "Series_status",
+  "Series_submission_date",
+  "Series_summary",
+  "Series_supplementary_file",
+  "Series_title",
+  "Series_type"
+ ],
+ "n_gsm": 9,
+ "n_with_age": 9,
+ "n_missing_age": 0,
+ "organisms": [
+  "Homo sapiens"
+ ],
+ "molecules": [
+  "polyA RNA"
+ ]
+}

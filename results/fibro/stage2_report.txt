@@ -1,0 +1,113 @@
+====================================================================================================
+FIBRO STAGE 2  seed=20260914  boot_seed=20260918  release=GTEx Analysis V10  pipeline=RNASeQCv2.4.2  phs000424.v10
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+SMTSD exact: 'Cells - Cultured fibroblasts'  freeze=RNASEQ
+Primary transfer metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+PLS-1 is reported and is not averaged with ridge.
+Fail loudly: no substitute columns, no silent coerce, no dropping rows to pass an assertion.
+Do not infer a donor age that is not in the record.
+Do not open GSE325735.
+[gate] Stage 1 passed. Stage 1 pass: ridge raw ρ>0 both ways with null ≤ 0.05 (B1→C1 ρ=+0.529 null=-0.004 p=+0.005; C1→B1 ρ=+0.561 null=+0.013 p=+0.005).
+[prereg] <repo>\results\fibro\PREREG_STAGE2.flag exists BEFORE freeze/projection
+[freeze] already written <repo>\results\fibro\frozen_ruler_ridge_raw.npz; not refitting
+[geo] fetching SOFT for GSE297234
+[geo] Series_title: Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]
+[geo] Series_overall_design: 10x Genomics scRNA-seq of human fibroblasts from a young (GM23815, 22yr) and aged donor (GM00731, 96yr) treated with Sendai virus OSKM for up to 10 days.
+[geo] Series_supplementary_file: ['ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297234/suppl/GSE297234_GM00731_SEVOSKM.rds', 'ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297234/suppl/GSE297234_HFIB_COMBINED_SEVOSKM.rds', 'ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297234/suppl/GSE297234_RAW.tar']
+[geo] Series_sample_id: ['GSM8986586', 'GSM8986587', 'GSM8986588', 'GSM8986589', 'GSM8986590', 'GSM8986591', 'GSM8986592', 'GSM8986593']
+[geo] series fields actually read: ['Series_contact_address', 'Series_contact_city', 'Series_contact_country', 'Series_contact_institute', 'Series_contact_name', 'Series_contact_state', 'Series_contact_zip/postal_code', 'Series_contributor', 'Series_geo_accession', 'Series_last_update_date', 'Series_overall_design', 'Series_platform_id', 'Series_platform_organism', 'Series_platform_taxid', 'Series_pubmed_id', 'Series_relation', 'Series_sample_id', 'Series_sample_organism', 'Series_sample_taxid', 'Series_status', 'Series_submission_date', 'Series_summary', 'Series_supplementary_file', 'Series_title', 'Series_type', 'Series_web_link']
+[geo] parsed 8 GSM rows. columns actually read: ['gsm', 'title', 'source', 'organism', 'molecule', 'description', 'characteristics', 'growth_protocol', 'cell_line', 'cell_type', 'tissue', 'treatment', 'day', 'age_from_characteristics', 'age_from_growth_protocol', 'library_name', 'fields_read']
+       gsm                        title cell_line  day age_from_characteristics  age_from_growth_protocol
+GSM8986586  GM00731, Sendai OSKM, day 0   GM00731    0                     None                       NaN
+GSM8986587  GM00731, Sendai OSKM, day 3   GM00731    3                     None                       NaN
+GSM8986588  GM00731, Sendai OSKM, day 7   GM00731    7                     None                       NaN
+GSM8986589 GM00731, Sendai OSKM, day 10   GM00731   10                     None                       NaN
+GSM8986590  GM23815, Sendai OSKM, day 0   GM23815    0                     None                       NaN
+GSM8986591  GM23815, Sendai OSKM, day 3   GM23815    3                     None                       NaN
+GSM8986592  GM23815, Sendai OSKM, day 7   GM23815    7                     None                       NaN
+GSM8986593 GM23815, Sendai OSKM, day 10   GM23815   10                     None                       NaN
+[geo] sample table matches scoping description (2 donors, days 0/3/7/10, ages 22 and 96).
+[download] RAW.tar already on disk size=279050240; 8 h5 already extracted. Not re-fetching FTP.
+[download] skip (Seurat RDS not loaded): https://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297234/suppl/GSE297234_GM00731_SEVOSKM.rds
+[download] skip (Seurat RDS not loaded): https://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297234/suppl/GSE297234_HFIB_COMBINED_SEVOSKM.rds
+[tar] already extracted in <repo>\data\raw\gse297234\RAW
+   h5 GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5 gsm=GSM8986586 size=29369822
+   h5 GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5 gsm=GSM8986587 size=31628640
+   h5 GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5 gsm=GSM8986588 size=36793388
+   h5 GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5 gsm=GSM8986589 size=25597636
+   h5 GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5 gsm=GSM8986590 size=35497718
+   h5 GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5 gsm=GSM8986591 size=36401517
+   h5 GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5 gsm=GSM8986592 size=46693949
+   h5 GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5 gsm=GSM8986593 size=37056455
+[10x] h5 matrices: 8
+[10x] matrix.mtx files: 0
+[10x] usable triplets: 0
+[10x] using Cell Ranger HDF5 n=8 (not MTX; MTX triplets=0)
+   reading GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5
+   GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5: 5021 cells × 36601 genes gsm=GSM8986586 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D0_S2']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5
+   GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5: 6318 cells × 36601 genes gsm=GSM8986587 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D3_S4']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5
+   GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5: 6915 cells × 36601 genes gsm=GSM8986588 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D7_S6']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5
+   GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5: 4399 cells × 36601 genes gsm=GSM8986589 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D10_S8']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5
+   GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5: 7782 cells × 36601 genes gsm=GSM8986590 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D0_S1']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5
+   GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5: 6738 cells × 36601 genes gsm=GSM8986591 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D3_S3']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5
+   GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5: 12209 cells × 36601 genes gsm=GSM8986592 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D7_S5']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5
+   GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5: 7935 cells × 36601 genes gsm=GSM8986593 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D10_S7']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+[sendai] hits=0 names=[] n_ensg=36601 n_non_ensg=0 genomes=['GRCh38'] feature_types=['Gene Expression']
+[meta] GSM8986586 GM00731 day=0 age=96 n_cells=5021 age_source=Series_overall_design
+[meta] GSM8986587 GM00731 day=3 age=96 n_cells=6318 age_source=Series_overall_design
+[meta] GSM8986588 GM00731 day=7 age=96 n_cells=6915 age_source=Series_overall_design
+[meta] GSM8986589 GM00731 day=10 age=96 n_cells=4399 age_source=Series_overall_design
+[meta] GSM8986590 GM23815 day=0 age=22 n_cells=7782 age_source=Series_overall_design
+[meta] GSM8986591 GM23815 day=3 age=22 n_cells=6738 age_source=Series_overall_design
+[meta] GSM8986592 GM23815 day=7 age=22 n_cells=12209 age_source=Series_overall_design
+[meta] GSM8986593 GM23815 day=10 age=22 n_cells=7935 age_source=Series_overall_design
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[score] all-cell missing-gene columns set to z=0: 3086
+[pluri endogenous] requested=['POU5F1', 'NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=3 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[pluri endogenous_noOSKM] requested=['NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=2 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[pluri] with/without OSKM disagree=False → primary=with_OSKM
+[sanity] day0 aged=+2.7687 young=-2.4229 aged>young=True
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM00731 d0 n=5021 sizes=[73, 2535, 2413]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM00731 d3 n=6318 sizes=[2159, 915, 3244]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM00731 d7 n=6915 sizes=[3054, 3011, 850]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM00731 d10 n=4399 sizes=[2645, 708, 1046]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM23815 d0 n=7782 sizes=[2896, 3315, 1571]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM23815 d3 n=6738 sizes=[2637, 3346, 755]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM23815 d7 n=12209 sizes=[4407, 6163, 1639]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM23815 d10 n=7935 sizes=[2910, 793, 4232]
+[pluri endogenous] requested=['POU5F1', 'NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=3 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[verdict] no_decline: age score does not decline → the ruler reads a static donor property, not a modifiable state. Step 3 is not supported by this data.

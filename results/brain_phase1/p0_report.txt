@@ -1,0 +1,58 @@
+====================================================================================================
+BRAIN PHASE 1  STAGE P0 — confounders.  seed = 20260914
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+Adult cutoff age >= 20. Inclusion |r| >= 0.2 (a priori).
+Neuronal classes (a priori): ('EN', 'IN'). Low-n_genes debris cutoff: 500.
+[P0] R1 analysis donors: 233  ages 20–89  Source={'H': 120, 'M': 113}
+[P0] obs columns (33): ['Source', 'n_genes', 'n_counts', 'class', 'subclass', 'subtype', 'tissue_ontology_term_id', 'tissue_type', 'assay_ontology_term_id', 'cell_type_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'development_stage_ontology_term_id', 'sex_ontology_term_id', 'donor_id', 'suspension_type', 'is_primary_data', 'DLBD_status', 'FTD_status', 'Tauopathy_status', 'Vascular_status', 'Schizophrenia', 'Bipolar_Disorder', 'Parkinson_disease', 'genetic_ancestry', 'disease_ontology_term_id', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid']
+[P0] uns keys: ['batch_condition', 'citation', 'class_colors', 'genome', 'is_pre_analysis', 'organism', 'organism_ontology_term_id', 'schema_reference', 'schema_version', 'subclass_colors', 'subtype_colors', 'title', 'uid']
+[P0] uns batch_condition: ['Source']
+[P0] PMI in obs: False  RIN: False  pH: False  cause of death: False  soup/ambient: False  hash pool: False
+[P0] keyword hits in obs column names: none
+[P0] LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+[P0] reading donor-level obs from 13e8f1dd-962f-47b7-9cf7-c71d2b21b8a5.h5ad (no matrix)
+[P0] nuclei total=1,332,155  adult analysis-donor nuclei=1,054,845  donors in mask=233
+[P0] frac_neuronal (class EN+IN) vs name-contains-'neuron': Spearman r=1.000 (mean |diff|=0.0000)
+[P0] donors with |class−name neuronal frac| > 0.05: 0/233
+[P0] MALAT1 columns in pb var: 1  MT- columns: 33
+[P0] donor table n=233  missing malat1=0  missing mt=0
+[P0] frac_neuronal: mean=0.385  range 0.012–0.945
+[P0] malat1_frac: mean=0.0306  mt_frac: mean=0.00171
+[P0] frac_low_n_genes (n_genes<500): mean=0.000
+
+[P0] within-site Spearman(age, covariate):
+site                  H      M  within_site_pooled
+covariate                                         
+cc_umi_frac      +0.049 +0.263              +0.147
+frac_Immune      -0.292 -0.032              -0.159
+frac_Oligo       +0.087 +0.276              +0.185
+frac_low_n_genes    NaN    NaN                 NaN
+frac_neuronal    +0.044 -0.187              -0.064
+log_mean_genes   -0.034 -0.143              -0.086
+log_mean_umi     +0.005 -0.084              -0.036
+malat1_frac      -0.191 +0.031              -0.079
+mean_n_counts    +0.005 -0.084              -0.035
+mean_n_genes     -0.034 -0.143              -0.085
+mt_frac          +0.000 -0.008              +0.005
+n_nuclei         -0.117 -0.024              -0.068
+
+[P0] inclusion threshold |r| >= 0.2 (declared a priori)
+   frac_neuronal: not included: all within-site |r| < 0.2
+   frac_low_n_genes: not included: all within-site |r| < 0.2
+   malat1_frac: not included: all within-site |r| < 0.2
+   mt_frac: not included: all within-site |r| < 0.2
+   mean_n_counts: not included: all within-site |r| < 0.2
+   mean_n_genes: not included: all within-site |r| < 0.2
+   n_nuclei: not included: all within-site |r| < 0.2
+   cc_umi_frac: within-site |Spearman r| >= 0.2 (M r=+0.263)
+   frac_Oligo: within-site |Spearman r| >= 0.2 (M r=+0.276)
+   frac_Immune: within-site |Spearman r| >= 0.2 (H r=-0.292)
+[P0] depth covariates ALWAYS in P1 design: log(mean UMI/nucleus), log(mean genes/nucleus) (on each pseudobulk; specified, not selected on |r|)
+
+[P0] PMI present in obs: False  — ABSENT is a real limitation.
+[P0] RIN present in obs: False  — ABSENT is a real limitation.
+[P0] tissue pH present: False  cause of death: False
+[P0] included extra covariates for P1: ['cc_umi_frac', 'frac_Oligo', 'frac_Immune']
+[P0] wrote <repo>\results\brain_phase1
+[P0] rng consumed (seed 20260914); no stochastic draws in P0.

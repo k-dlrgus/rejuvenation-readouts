@@ -1,0 +1,5 @@
+tag,max_depth,learning_rate,max_iter,min_samples_leaf,l2_regularization,inner_rho_median,n_inner_folds,direction
+B1->C1,3,0.05,80,20,0.0,0.5344605986747947,3,B1→C1
+B1->C1,3,0.1,80,20,0.0,0.5066768233207114,3,B1→C1
+B1->C1,6,0.05,80,20,1.0,0.4721671944019574,3,B1→C1
+B1->C1,6,0.1,80,20,1.0,0.5058024170853214,3,B1→C1

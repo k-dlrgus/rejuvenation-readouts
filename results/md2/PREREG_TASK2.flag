@@ -1,0 +1,16 @@
+Written **before any MD vs frozen-ruler comparison**, 2026-09-19. No threshold in this block is re-tuned after numbers exist.
+
+On the Louvain clustering (their pipeline), per cluster × timepoint, both donors reported separately:
+
+1. Reproduce their Figure 3G result. Label each Louvain cluster by the mmc3.xlsx sheet Reprog_cell_state_signatures column with the highest mean AddModuleScore (Fibroblast, PartialReprog, EarlyPluripotency, Pluripotency, NonReprog). Reproduction matches their reported direction iff (a) at least one PartialReprog-assigned cluster and one NonReprog-assigned cluster exist with ≥20 cells in the aged donor, and (b) mean per-cell MD score in PartialReprog-assigned clusters is lower than in NonReprog-assigned clusters (aged donor). If it does not match, the comparison below is not valid — say so and stop Task 2.
+2. Score both instruments on the same cells: frozen GTEx fibroblast ruler and MD score (and their aging signature if buildable).
+3. Cross-correlate. Across cluster × timepoint rows with ≥20 cells, Spearman ρ between frozen age score and MD score, with permutation null (shuffle MD, hold age; n_perm=200, seed 20260914) and bootstrap CI (B=200, seed 20260918). Donors reported separately; not averaged.
+4. Composition test on their metric. Per cluster, d0→d7 and d0→d10 MD decline with a 200-draw size-matched random gene-set null (same n genes, matched on mean-expression bin; AddModuleScore; seed 20260914). Not permuted ruler weights. State the difference.
+
+**Pre-registered reading (only the outcome that fired):**
+- MD moves per cluster and the frozen ruler does too (Task 1 outcome 1) → both instruments agree; their bend claim is supported and our earlier negative was our clustering. Report it that way, without hedging.
+- MD moves per cluster, the frozen ruler does not → the instruments disagree on the same cells. Describe both, name what would settle it, and declare no winner.
+- Neither moves per cluster → our reproduction does not recover their published result; report the reproduction failure as the finding and do not present it as a refutation.
+- MD moves but fails its size-matched random-gene-set null → their metric's movement is not specific to mesenchymal genes in this dataset. Report the null value; this is a strong claim and needs the number stated next to it.
+
+“MD moves per cluster” = at least one aged-donor Louvain cluster with ≥20 cells at both endpoints shows MD decline d0→d7 or d0→d10 with p ≤ 0.05 on the size-matched gene-set null.

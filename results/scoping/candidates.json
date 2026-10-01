@@ -1,0 +1,360 @@
+{
+  "status": "complete",
+  "verdict": "STRONG GO",
+  "tissue": "skin / dermal fibroblast",
+  "preregistered_at": "2026-09-17",
+  "completed_at": "2026-09-17",
+  "bars": {
+    "A": "public cohort has >=150 donors, adult age span >=40 years, and per-sample RIN or an equivalent quality field. Bulk counts; single-cell is better and is noted.",
+    "B": "public dataset has >=4 distinct timepoints of partial reprogramming or another rejuvenation perturbation, in primary cells from donors with stated age, at least one donor >=60, with transcriptomic readout.",
+    "C": "public dataset has >=20 distinct perturbations applied to primary cells of that tissue from donors with stated age, at least one >=60, with transcriptomic readout.",
+    "GO": "a single tissue passes (A) and (B)",
+    "STRONG_GO": "the same tissue passes (A), (B) and (C)",
+    "NO_GO": "no tissue passes (A)+(B)"
+  },
+  "candidates": [
+    {
+      "id": "gtex_v10_cultured_fibroblasts",
+      "criterion": "A",
+      "tissue": "skin / dermal fibroblast",
+      "accession": "phs000424.v10",
+      "url": "https://storage.googleapis.com/adult-gtex/annotations/v10/metadata-files/GTEx_Analysis_v10_Annotations_SampleAttributesDS.txt",
+      "url_phenotypes": "https://storage.googleapis.com/adult-gtex/annotations/v10/metadata-files/GTEx_Analysis_v10_Annotations_SubjectPhenotypesDS.txt",
+      "title": "GTEx Analysis V10 RNASEQ freeze, SMTSD == Cells - Cultured fibroblasts",
+      "assay": "bulk RNA-seq (RNASeQCv2.4.2 gene reads)",
+      "organism": "Homo sapiens",
+      "n_samples": 652,
+      "n_donors": 652,
+      "donor_ages": "public AGE bins 20-29 n=60, 30-39 n=53, 40-49 n=106, 50-59 n=202, 60-69 n=210, 70-79 n=21",
+      "age_span_years": ">=50 (bin 20-29 to 70-79)",
+      "timepoints": null,
+      "perturbations": null,
+      "quality_field": "SMRIN miss=0 median=9.9 min=6.7 max=10.0",
+      "site_batch": {"SMCENTER_donor_n": {"B1": 421, "C1": 224, "D1": 7}, "n_SMNABTCH": 72, "n_SMGEBTCH": 90},
+      "access_tier": "open annotations and gene-reads GCT; exact year age controlled dbGaP phs000424.v10",
+      "fields_read": {
+        "n_samples_n_donors": "SMAFRZE==RNASEQ and SMTSD=='Cells - Cultured fibroblasts'; SUBJID from SAMPID first two hyphen tokens; nunique SUBJID",
+        "ages": "SubjectPhenotypesDS AGE (10-year bins)",
+        "RIN": "SampleAttributesDS SMRIN",
+        "sites": "SampleAttributesDS SMCENTER"
+      },
+      "passes": true
+    },
+    {
+      "id": "gtex_v10_skin_sun_exposed",
+      "criterion": "A",
+      "tissue": "skin / dermal fibroblast (bulk skin, mixed cell)",
+      "accession": "phs000424.v10",
+      "url": "https://storage.googleapis.com/adult-gtex/annotations/v10/metadata-files/GTEx_Analysis_v10_Annotations_SampleAttributesDS.txt",
+      "title": "GTEx Analysis V10 RNASEQ freeze, SMTSD == Skin - Sun Exposed (Lower leg)",
+      "assay": "bulk RNA-seq",
+      "organism": "Homo sapiens",
+      "n_samples": 754,
+      "n_donors": 754,
+      "donor_ages": "20-29 n=65, 30-39 n=61, 40-49 n=105, 50-59 n=237, 60-69 n=257, 70-79 n=29",
+      "age_span_years": ">=50",
+      "timepoints": null,
+      "perturbations": null,
+      "quality_field": "SMRIN miss=0 median=7.4 min=5.4 max=10.0",
+      "site_batch": {"SMCENTER_donor_n": {"B1": 509, "C1": 241, "D1": 4}},
+      "access_tier": "open annotations and gene-reads; exact year age dbGaP",
+      "fields_read": {
+        "n": "SMAFRZE==RNASEQ, SMTSD exact string, SUBJID nunique",
+        "ages": "SubjectPhenotypesDS AGE",
+        "RIN": "SMRIN"
+      },
+      "passes": true,
+      "note": "bulk mixed-cell skin; not the cultured fibroblast used in GSE297234/GSE325735"
+    },
+    {
+      "id": "gtex_v10_skin_not_sun_exposed",
+      "criterion": "A",
+      "tissue": "skin / dermal fibroblast (bulk skin, mixed cell)",
+      "accession": "phs000424.v10",
+      "url": "https://storage.googleapis.com/adult-gtex/annotations/v10/metadata-files/GTEx_Analysis_v10_Annotations_SampleAttributesDS.txt",
+      "title": "GTEx Analysis V10 RNASEQ freeze, SMTSD == Skin - Not Sun Exposed (Suprapubic)",
+      "assay": "bulk RNA-seq",
+      "organism": "Homo sapiens",
+      "n_samples": 651,
+      "n_donors": 651,
+      "donor_ages": "20-29 n=53, 30-39 n=57, 40-49 n=98, 50-59 n=201, 60-69 n=216, 70-79 n=26",
+      "age_span_years": ">=50",
+      "quality_field": "SMRIN miss=0 median=7.2 min=4.6 max=9.4",
+      "site_batch": {"SMCENTER_donor_n": {"B1": 447, "C1": 204}},
+      "access_tier": "open annotations and gene-reads; exact year age dbGaP",
+      "fields_read": {"n": "SMAFRZE==RNASEQ, SMTSD exact", "ages": "AGE bins", "RIN": "SMRIN"},
+      "passes": true
+    },
+    {
+      "id": "gtex_v10_muscle",
+      "criterion": "A",
+      "tissue": "muscle",
+      "accession": "phs000424.v10",
+      "url": "https://storage.googleapis.com/adult-gtex/annotations/v10/metadata-files/GTEx_Analysis_v10_Annotations_SampleAttributesDS.txt",
+      "title": "GTEx Analysis V10 RNASEQ freeze, SMTSD == Muscle - Skeletal",
+      "assay": "bulk RNA-seq",
+      "organism": "Homo sapiens",
+      "n_samples": 818,
+      "n_donors": 818,
+      "donor_ages": "20-29 n=71, 30-39 n=64, 40-49 n=121, 50-59 n=261, 60-69 n=273, 70-79 n=28",
+      "age_span_years": ">=50",
+      "quality_field": "SMRIN miss=0 median=8.0 min=5.5 max=9.9",
+      "site_batch": {"n_SMCENTER": 3},
+      "access_tier": "open annotations and gene-reads; exact year age dbGaP",
+      "fields_read": {"n": "SMAFRZE==RNASEQ and SMTSD; matches FINDINGS_GTEX Stage 0", "RIN": "SMRIN"},
+      "passes": true
+    },
+    {
+      "id": "gtex_v10_adipose_subcutaneous",
+      "criterion": "A",
+      "tissue": "adipose",
+      "accession": "phs000424.v10",
+      "url": "https://storage.googleapis.com/adult-gtex/annotations/v10/metadata-files/GTEx_Analysis_v10_Annotations_SampleAttributesDS.txt",
+      "title": "GTEx Analysis V10 RNASEQ freeze, SMTSD == Adipose - Subcutaneous",
+      "assay": "bulk RNA-seq",
+      "organism": "Homo sapiens",
+      "n_samples": 714,
+      "n_donors": 714,
+      "donor_ages": "20-29 n=57, 30-39 n=60, 40-49 n=109, 50-59 n=232, 60-69 n=233, 70-79 n=23",
+      "age_span_years": ">=50",
+      "quality_field": "SMRIN miss=0 median=6.8 min=5.0 max=9.7",
+      "access_tier": "open annotations and gene-reads; exact year age dbGaP",
+      "fields_read": {"n": "SMAFRZE==RNASEQ, SMTSD exact", "ages": "AGE", "RIN": "SMRIN"},
+      "passes": true
+    },
+    {
+      "id": "gtex_v10_adipose_visceral",
+      "criterion": "A",
+      "tissue": "adipose",
+      "accession": "phs000424.v10",
+      "url": "https://storage.googleapis.com/adult-gtex/annotations/v10/metadata-files/GTEx_Analysis_v10_Annotations_SampleAttributesDS.txt",
+      "title": "GTEx Analysis V10 RNASEQ freeze, SMTSD == Adipose - Visceral (Omentum)",
+      "assay": "bulk RNA-seq",
+      "organism": "Homo sapiens",
+      "n_samples": 587,
+      "n_donors": 587,
+      "donor_ages": "20-29 n=53, 30-39 n=52, 40-49 n=90, 50-59 n=196, 60-69 n=175, 70-79 n=21",
+      "age_span_years": ">=50",
+      "quality_field": "SMRIN miss=0 median=6.9 min=5.5 max=10.0",
+      "access_tier": "open annotations and gene-reads; exact year age dbGaP",
+      "fields_read": {"n": "SMAFRZE==RNASEQ, SMTSD exact", "RIN": "SMRIN"},
+      "passes": true
+    },
+    {
+      "id": "gtex_v10_lung",
+      "criterion": "A",
+      "tissue": "lung",
+      "accession": "phs000424.v10",
+      "url": "https://storage.googleapis.com/adult-gtex/annotations/v10/metadata-files/GTEx_Analysis_v10_Annotations_SampleAttributesDS.txt",
+      "title": "GTEx Analysis V10 RNASEQ freeze, SMTSD == Lung",
+      "assay": "bulk RNA-seq",
+      "organism": "Homo sapiens",
+      "n_samples": 604,
+      "n_donors": 604,
+      "donor_ages": "20-29 n=35, 30-39 n=44, 40-49 n=94, 50-59 n=211, 60-69 n=198, 70-79 n=22",
+      "age_span_years": ">=50",
+      "quality_field": "SMRIN miss=0 median=7.1 min=3.5 max=9.7",
+      "access_tier": "open annotations and gene-reads; exact year age dbGaP",
+      "fields_read": {"n": "SMAFRZE==RNASEQ, SMTSD exact", "RIN": "SMRIN"},
+      "passes": true
+    },
+    {
+      "id": "GSE297234",
+      "criterion": "B",
+      "tissue": "skin / dermal fibroblast",
+      "accession": "GSE297234",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297234",
+      "title": "Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]",
+      "assay": "10x 3' GEX v3.1 scRNA-seq",
+      "organism": "Homo sapiens",
+      "n_samples": 8,
+      "n_donors": 2,
+      "donor_ages": "22 yr (GM23815) and 96 yr (GM00731)",
+      "timepoints": ["day 0", "day 3", "day 7", "day 10"],
+      "perturbations": "Sendai OSKM",
+      "access_tier": "open",
+      "fields_read": {
+        "n_samples": "GEO esummary n_samples=8; !Series_sample_id count=8",
+        "timepoints": "esummary sample titles 'GM00731, Sendai OSKM, day 0/3/7/10' and same for GM23815; GSM !Sample_characteristics_ch1 treatment",
+        "ages": "!Series_overall_design 'young (GM23815, 22yr) and aged donor (GM00731, 96yr)'; GSM !Sample_growth_protocol 'healthy 96-year old male donor (GM00731)' and '22-year old male donor (GM23815)'",
+        "tissue_celltype": "GSM characteristics tissue: Skin; cell type: Fibroblast",
+        "assay": "GSM description '10x Genomics 3' GEX v3.1'"
+      },
+      "passes": true
+    },
+    {
+      "id": "GSE325735",
+      "criterion": "C",
+      "tissue": "skin / dermal fibroblast",
+      "accession": "GSE325735",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE325735",
+      "title": "Transcriptomic reprogramming screen identifies SRSF1 as a central regulator of aging and lifespan",
+      "assay": "bulk RNA-seq (polyA / total RNA)",
+      "organism": "Homo sapiens; Mus musculus",
+      "n_samples": 839,
+      "n_donors": "16 human M-coded NHDF lines in titles (M29..M94); 32 mouse-like titles excluded from (C)",
+      "donor_ages": "GSM !Sample_description 'Donor age 55/65/68/79/94' on fetched GSMs GSM9612229, GSM9611685, GSM9612063, GSM9612146, GSM9611436; titles use matching Mxx codes",
+      "timepoints": null,
+      "perturbations": 94,
+      "perturbation_list_n": 94,
+      "perturbation_note": "93 distinct Dox-inducible transgene names parsed from titles excluding WT/mTagBFP2/NTg, plus TP53(DN) from unparsed titles. Includes OSKM (40 samples) and SRSF1 (72 samples).",
+      "access_tier": "open (GEO public 2026/08/15)",
+      "fields_read": {
+        "n_samples": "esummary n_samples=839; 839 sample titles returned",
+        "design": "!Series_overall_design 'RNA-seq profiling of wild type normal human dermal fibroblast cells or iPSCs and their derivatives overexpressing different transgenes'",
+        "celltype": "GSM characteristics cell type: Fibroblast; growth_protocol NHDFs",
+        "ages": "!Sample_description 'Donor age 79, Passage 15' (GSM9612146) and analogues",
+        "perturbations": "!Sample_title 'Dox-inducible <GENE> transgene'; GSM genotype field"
+      },
+      "passes": true
+    },
+    {
+      "id": "GSE216481",
+      "criterion": "Joung TF Atlas non-hESC arm",
+      "tissue": "hESC / hESC-derived",
+      "accession": "GSE216481",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE216481",
+      "title": "A Transcription Factor Atlas of Directed Differentiation",
+      "assay": "SHARE-seq / 10x scRNA / bulk RNA-seq / ChIP / FlowFISH",
+      "organism": "Homo sapiens",
+      "n_samples": 281,
+      "n_donors": "hESC lines; donor age not applicable as aged primary",
+      "donor_ages": "not stated as aged primary donors",
+      "perturbations": "GSE217460: 3550 TF ORFs in hESCs",
+      "access_tier": "open",
+      "fields_read": {
+        "superseries": "!Series_relation SuperSeries of 15 GSE",
+        "GSE217460_design": "hESCs were transduced with a library of 3,550 transcription factor ORFs and cultured for 7 days before single-cell RNA-seq",
+        "GSE216479_design": "introduced into pluripotent stem cells",
+        "GSE219000_design": "hESCs were differentiated into cardiomyocytes",
+        "GSE219058_design": "hESCs were differentiated into neural progenitors"
+      },
+      "passes": false,
+      "note": "no non-hESC aged-primary arm"
+    }
+  ],
+  "near_miss": [
+    {
+      "accession": "GSE165177",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE165177",
+      "title": "Multi-omic rejuvenation of human cells by maturation phase transient reprogramming [Transient_RNAseq]",
+      "aimed": "B",
+      "n_samples": 95,
+      "shortfall": "timepoints 10/13/15/17 days pass the 4-point bar; GSM characteristics donor age (years): 53 (O1/O2) and 38 (O3). Needs at least one donor >=60.",
+      "fields_read": "GSM5391793/GSM5391824/GSM5391847 !Sample_characteristics_ch1 'donor age (years)'; growth_protocol 'middle age donors (38-53 years old)'"
+    },
+    {
+      "accession": "GSE297984",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297984",
+      "title": "Chemical reprogramming ameliorates cellular hallmarks of aging and extends lifespan",
+      "aimed": "B",
+      "n_samples": 24,
+      "shortfall": "2 timepoints (D6, D14 in sample titles); ages 22y/23y/56y/83y in titles so >=60 is present. Needs 4 timepoints. Also only 2 cocktails (2c, 7c) so not (C).",
+      "fields_read": "esummary sample titles RNA_LS_*_D6/D14_*y_DMSO/2c/7c; overall_design 'sampled at day 6 and 14'"
+    },
+    {
+      "accession": "GSE297233",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297233",
+      "title": "Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [RNA-seq]",
+      "aimed": "B",
+      "n_samples": 8,
+      "shortfall": "1 timepoint (4 days). overall_design states GM00731 96yr. Needs 4 timepoints.",
+      "fields_read": "!Series_overall_design; sample titles OSK/O4YRSK dox vs no dox, 4 days"
+    },
+    {
+      "accession": "GSE142439",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE142439",
+      "title": "Transient non-integrative nuclear reprogramming promotes multifaceted reversal of aging in human cells",
+      "aimed": "B",
+      "n_samples": 16,
+      "shortfall": "methylation array not transcriptomic; 2 conditions Normal/Treated. GSM4227385 characteristics age: 61. RNA-seq is SRA PRJNA598923 (18 runs, titles Fib/EC x young/aged/treated) — still 3 groups not 4 timepoints.",
+      "fields_read": "GEO sample titles; GSM characteristics age; SRA expxml Title"
+    },
+    {
+      "accession": "GSE237269",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE237269",
+      "title": "Transcription-Associated Chromatin Reorganization During Cellular Rejuvenation (RNA-Seq)",
+      "aimed": "B",
+      "n_samples": 6,
+      "shortfall": "3 conditions (Young, Old, RF day-8). Design states 10 yr GM09503 and 75 yr GM08401. Needs 4 timepoints.",
+      "fields_read": "!Series_overall_design; 6 sample titles"
+    },
+    {
+      "accession": "GSE226189",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE226189",
+      "title": "Transcriptomes of human primary skin fibroblasts reveal age-associated mRNAs and long noncoding RNAs",
+      "aimed": "A",
+      "n_samples": 82,
+      "n_donors": 82,
+      "shortfall": "82 donors, needs >=150. Ages 22-89 in overall_design and sample titles; GSM7067633 age (years): 72.",
+      "fields_read": "esummary n_samples=82; overall_design; GSM characteristics"
+    },
+    {
+      "accession": "GSE113957",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE113957",
+      "title": "Predicting age from the transcriptome of human dermal fibroblasts",
+      "aimed": "A",
+      "n_samples": 143,
+      "shortfall": "143 samples, needs >=150. Ages in sample titles (e.g. 92_Female, 1yr_Male). RIN not in series text fetched.",
+      "fields_read": "esummary n_samples=143; sample titles"
+    },
+    {
+      "accession": "GSE307377",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE307377",
+      "title": "Bulk RNA-seq analysis of primary human dermal fibroblasts from young and aged donors",
+      "aimed": "A",
+      "n_samples": 9,
+      "shortfall": "9 donors (ages 23,23,26,33,64,64,69,70,72 in titles and age: characteristics). Needs >=150.",
+      "fields_read": "esummary sample titles; all 9 GSM characteristics age:"
+    },
+    {
+      "accession": "GSE201710",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE201710",
+      "title": "Targeted partial reprogramming of age-associated cell states improves markers of health in mouse models of aging",
+      "aimed": "B",
+      "n_samples": 49,
+      "shortfall": "human samples are IMR90 culture-age / p16-OSK, not primary skeletal muscle from donors with stated chronological age >=60. Mouse in vivo OSK.",
+      "fields_read": "overall_design; sample titles IMR90_D20/D85/D125 and OSK Liver/Skin"
+    },
+    {
+      "accession": "GSE254389",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE254389",
+      "title": "NEUROD1 efficiently converts peripheral blood cells into neurons with partial reprogramming by pluripotency factors",
+      "aimed": "B",
+      "n_samples": 18,
+      "shortfall": "blood T-cell conversion, two methods x 3 replicates, not a >=4 timepoint aged-PBMC rejuvenation course. Ages not in series design.",
+      "fields_read": "overall_design; sample titles"
+    }
+  ],
+  "unverified": [
+    {
+      "what": "PRJNA1108254",
+      "searched": "NCBI SRA/BioProject esearch count=1090; esummary HTTP 429 this session",
+      "why_unverified": "no sample table or donor-age field read. Paper/GitHub attribute this to Hs27 (neonatal) CRISPRa/i Perturb-seq of 200 TFs; that mapping was not read from the SRA record."
+    },
+    {
+      "what": "10.6084/m9.figshare.30898748",
+      "searched": "web search for Sengstack/Zheng Perturb-seq data availability",
+      "why_unverified": "figshare record page not fetched"
+    },
+    {
+      "what": "CELLxGENE dataset a19d1667-a7b5-4556-9e5f-f9bfa690c0f1 Human dermal fibroblast atlas",
+      "searched": "CXG curation v1 datasets list (2226 datasets, 96 skin-ish); cell_count=108440 in list payload",
+      "why_unverified": "GET /datasets/{id} returned 404; n_donors and ages not read"
+    },
+    {
+      "what": "LINCS L1000 fibroblast GEO (GSE92742 or similar)",
+      "searched": "LINCS AND fibroblast AND Homo sapiens[Organism] -> only GSE169045 (iPSC-EC, n=36)",
+      "why_unverified": "classic L1000 accessions were not resolved"
+    }
+  ],
+  "searches_run": [
+    "GTEx V10 SampleAttributesDS + SubjectPhenotypesDS local files, confirmed against GCS URLs (HTTP 200, Content-Length 38497961 and 20292)",
+    "NCBI GDS esearch: partial reprogramming human; transient reprogramming human; OSKM fibroblast human; OSK fibroblast human; Yamanaka fibroblast human; rejuvenation fibroblast rnaseq; CRISPRa fibroblast; CRISPR screen fibroblast; Joung TF atlas; GSE216481; GSE165180; GSE297234; GSE142439; muscle/adipose/lung/PBMC OSKM human; iPSC neuron aged; LINCS fibroblast",
+    "GEO acc.cgi text + esummary sample titles for GSE297234, GSE297233, GSE165180/176/177, GSE142439, GSE216481, GSE217460, GSE113957, GSE226189, GSE325735, GSE326022, GSE297984, GSE201710, GSE247179, GSE300230, GSE307377, GSE304044, GSE190665, GSE237269, GSE254389, GSE261783, GSE280438, and others in results/scoping/geo_records*.json",
+    "GSM full text: all 8 of GSE297234; GSE325735 M55/M65/M68/M79/M94/mouse/iPSC; Gill O1/O2/O3; GSE142439 Person1; all 9 of GSE307377; GSE226189 AGE72",
+    "Joung subseries designs GSE217460, GSE216479, GSE216595, GSE219000, GSE219058, GSE216463, GSE216601, GSE216602",
+    "SRA esearch/esummary PRJNA598923 (18 runs), PRJNA1263211 (GSE297234), PRJNA1108254 (429 on summary)",
+    "CXG curation API list n=2226"
+  ]
+}

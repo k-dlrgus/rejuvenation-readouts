@@ -1,0 +1,354 @@
+====================================================================================================
+SOUTH3 — patch of SOUTH2: n_perm=20000, V_all-always guide agreement, report-only displacement geometry
+====================================================================================================
+[seeds] SEED=20260914 (splits, nulls, permutations) BOOT_SEED=20260918 (bootstrap); imported TOWARD_SEED=20260914, SAME BOOT_SEED=20260918. Unchanged from SOUTH2.
+[params] n_null=200 n_perm=20000 (SOUTH2: 200) n_boot=200 S2_KS=(20, 50, 100) (lowdim_common.KS=(20, 50, 100, 150)) F=(0.0, 0.05, 0.1, 0.25, 0.5, 1.0) adj_p_bar=0.05 q_bar=0.05
+[params] attainable minimum permutation p = 1/(20000+1) = 4.999750e-05; BH over 1,836 factors reaches q<=0.05 once 2 factor(s) tie at it (SOUTH2 needed 183).
+[params] n_null is recorded as pre-registered; the pre-registration assigns the null to the Stage 2A per-factor permutations (n_perm=20000), so no separate null draw exists.
+[params] permutation chunk=1000 rows, workers=6 (SOUTH3_WORKERS overrides)
+[scope] Uncalibrated R2 is never a gate; the frozen ruler is loaded, never refit; L4A_matrix.h5 is not opened; nothing is downloaded.
+[scope] Only FINDINGS_SOUTH3.md, PROGRESS_SOUTH3.md, results/south3/* and src/south3_run.py are written by this run. results/south2/stage3_full_table.csv and FINDINGS_SOUTH2.md are read, never written.
+[prereg] read <repo>\results\south3\PREREG.flag (1324 chars) and <repo>\results\south3\PREREG_SOUTH2_inherited.flag (9496 chars); not rewriting either block
+[file] <repo>\results\survey\opened\southard\fibroblast_CRISPRa_mean_pop.h5ad
+[file] size=1720196368 (pinned 1720196368) md5=ba44c7813903bb5df900348d6b0d589a (pinned ba44c7813903bb5df900348d6b0d589a) [4.3s]
+[frozen] <repo>\results\fibro\frozen_ruler_ridge_raw.npz n_genes=23485 keys=['w', 'coef', 'mu', 'sd', 'intercept', 'alpha', 'gene_id', 'symbol', 'ensembl', 'sample_ids', 'donors', 'age_mid', 'seed', 'n_donors', 'n_genes', 'regime', 'method', 'note'] (not refit)
+[h5] tree written (73 lines) -> <repo>\results\south3\h5_tree.txt
+[columns obs] actually read from <repo>\results\survey\opened\southard\fibroblast_CRISPRa_mean_pop.h5ad: ['protospacer', 'target_gene', 'target_expr', 'active', 'cluster', 'cluster_name', 'cluster_description', 'gene_driven', 'sequence_driven', 'sequence_suffix', 'bulk_expr', 'expressed', 'p_expressed', 'de_genes', 'strength', 'cell_count', 'target_gene_id', 'masked_active', 'masked_cluster', 'masked_cluster_name', 'masked_cluster_description', 'masked_cluster_size', 'masked_cluster_num_genes', 'stricter_masked_cluster', 'stricter_masked_cluster_description', 'guide_identity']
+[columns var] actually read from <repo>\results\survey\opened\southard\fibroblast_CRISPRa_mean_pop.h5ad: ['feature_types', 'genome', 'mean', 'in_matrix', 'std', 'cv', 'fano', 'pairwise_p_cost', 'mean_adjusted_pairwise_p_cost', 'excess_cv', 'pairwise_chosen', 'gene_id', 'gene_name']
+[h5] X shape=(10916, 4914) dtype=float64 layers=['adj_p', 'masked', 'p'] uns=none obsm=none varm=none raw_group=False
+[id_type south3_var_gene_id] kind=ensembl n=4914 n_ensembl=4914 n_refseq=0 n_symbol_like=0 source=<repo>\results\survey\opened\southard\fibroblast_CRISPRa_mean_pop.h5ad::var/gene_id examples=['ENSG00000000419', 'ENSG00000001036', 'ENSG00000001461', 'ENSG00000001629', 'ENSG00000001630', 'ENSG00000001631', 'ENSG00000002330', 'ENSG00000002549']
+[id_type south3_var_gene_name] kind=symbol n=4914 n_ensembl=0 n_refseq=0 n_symbol_like=4914 source=<repo>\results\survey\opened\southard\fibroblast_CRISPRa_mean_pop.h5ad::var/gene_name examples=['DPM1', 'FUCA2', 'NIPAL3', 'ANKIB1', 'CYP51A1', 'KRIT1', 'BAD', 'LAP3']
+[column index] unversioned Ensembl gene ids in var/gene_id (4,914/4,914 match ENSG, 0 carry a version suffix) with HGNC symbols in var/gene_name (4,914/4,914 symbol-shaped). The h5ad row index of var is a positional integer, not an identifier.
+[units] searched uns=empty, X attrs=['encoding-type', 'encoding-version'], var/obs column names, and bundled .txt files ['hs27_lambert_tfs.txt', 'hs27_targets.txt', 'mean_pop_targets.txt'] for '(?i)log2|log10|\\bln\\b|log[-_ ]?base|cpm|tpm|rpkm|fpkm|unit|normali[sz]|scale|fold[-_ ]?change|lfc': attr hits=[] column hits=[] doc hits=[]. Units and log base determinable from the file: False
+[align index] overlap=4907 ensembl=4906 symbol=1
+[coverage symbol] matched 4,834/23,485 genes (0.2058); |w| fraction 0.1208
+[coverage ensembl_version_stripped] matched 4,906/23,485 genes (0.2089); |w| fraction 0.1227
+[coverage best_of_two_after_md3_idtype] matched 4,907/23,485 genes (0.2089); |w| fraction 0.1228
+[coverage] mapping used for all later stages: best_of_two_after_md3_idtype (highest |w| fraction = 0.1228)
+[controls] rows labelled `off-target`: 17; of those, rows also carrying empty target_gene_id AND NaN target_expr AND active=False: 17
+[controls] rows meeting the evidence triple but NOT labelled `off-target`: 8156
+[factors] distinct transcription factors=1,836; guides per factor min=2 median=6 max=6; with >= 2 guides=1,836
+[row unit] per-guide perturbation row (the source's own mean-population regression output); guide_identity unique on every row=True (10,916 of 10,916)
+[convert] 4,907 matched coordinates; frozen sd floored at 1e-12 on 0 ruler genes
+[scan X+masked] 10916 rows in 4.3s; masked_entries=2247 on_own_target=2247 elsewhere=0
+[scan adj_p+p] 1.4s; rows where count(adj_p<=0.05) == obs.de_genes: 10916/10916; total adj_p<=0.05 entries=217578
+[audit] {'where': 'X', 'dtype': 'float64', 'n_seen': 53641224, 'n_negative': 30370039, 'n_nonfinite': 0, 'n_integral': 0, 'frac_negative': 0.566169761525203, 'frac_integral': 0.0, 'min': -9.156079292297363, 'max': 184.80467224121094, 'integer_dtype': False}
+[audit] {'n_masked_entries': 2247, 'n_on_own_target_gene': 2247, 'n_elsewhere': 0, 'examples_elsewhere': [], 'n_rows_with_any_mask': 2247, 'masked_per_row_max': 1, 'masked_per_row_min_nonzero': 1, 'set_to_zero': True}
+[audit] {'rows_where_de_genes_equals_count_adj_p_le_005': 10916, 'n_rows': 10916, 'n_entries_adj_p_le_005': 217578, 'p_min': 0.0, 'p_max': 0.9999999985175676}
+[units diag] spearman(mean|effect|, var/mean)=+0.645  spearman(mean|effect|, var/std)=+0.684  spearman(mean|effect|/std, var/mean)=-0.991 — neither a log base nor a linear unit is established by this. scale_unknown stands.
+[identity] panel actually used (9): ['COL1A1', 'COL1A2', 'FN1', 'LUM', 'PDGFRA', 'PDGFRB', 'PRRX1', 'SERPINH1', 'VIM']; absent: ['POSTN']
+[inventory] wrote <repo>\results\south3\inventory.json
+[effect-matrix test] p+adj_p layers present=True; X has 30,370,039 negative entries (0.566); integral fraction 0.0000; obs.de_genes reproduced by count(adj_p<=0.05) on 10,916/10,916 rows => X is per-gene effect estimates: True
+[stage0] passed: no Stage 0 STOP key fired
+[stage1] 1,836 factors with >= 2 guides; per-factor vector = mean of that factor's guide rows, converted to frozen-z by dividing each gene's effect by that gene's frozen training sd
+[stage1 V_all] ||d|| min=11.0365 median=20.2543 max=117.2566; n_nonzero_coords median=4907
+[stage1 V_sig] ||d|| min=0.7435 median=3.2889 max=32.0358; n_nonzero_coords median=66
+[columns gtex_obs] actually read from <repo>\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[S2] PCA fit on the GTEx fibroblast donor matrix only: n_donors=652 n_genes=23485 kmax=100; loadings orthonormal (max |L'L - I| = 4.13e-14)
+[S2] k=20: cumulative fraction of GTEx donor variance = 0.6337
+[S2] k=50: cumulative fraction of GTEx donor variance = 0.7098
+[S2] k=100: cumulative fraction of GTEx donor variance = 0.7621
+[columns toward_anchors] actually read from <repo>\results\toward\anchors.npz: ['c_young', 'c_old', 'u', 'n_young', 'n_old', 'n_middle', 'young_bins', 'old_bins', 'middle_bins', 'ensembl', 'n_genes', 'n_axis', 'n_young_expected', 'n_old_expected', 'note']
+[Y1/O1] TOWARD anchors: n_young=113 (bins ['20-29', '30-39']) n_old=231 (bins ['60-69', '70-79']); ||c_young - c_old||=32.2839
+[columns same_panel_z] actually read from <repo>\results\same\panel_z.npz: ['O', 'Y', 'S', 'S_rev', 'Pluri', 'NonReprog']
+[O2] Lu et al. GM00731 untreated day-0 fibroblast pseudobulk as built in SAME: 3,132 of 23,485 coordinates are exactly 0 (genes absent from that dataset, zeroed by SAME's own missing-gene rule)
+[Y2] young donors n=113; region fit on 56 donors, membership radius calibrated on 57 held-out young donors (seed 20260914)
+[Y2 k=20] defined: rank=20 cond=2.207e+02; held-out young Mahalanobis median=5.9384 max=14.0660; membership radius (95th pct of held-out young donors' own distances) = 11.8805
+[Y2 k=50] defined: rank=50 cond=1.597e+04; held-out young Mahalanobis median=23.0641 max=87.1226; membership radius (95th pct of held-out young donors' own distances) = 59.2987
+[Y2 k=100] SINGULAR: rank=55 < k=100 on 56 fit donors. Mahalanobis undefined; reported as such, nothing substituted.
+[origin->target distances, reported before anything is scored]
+  S1        O1->Y1  ||origin-target||=32.2839
+  S1        O2->Y1  ||origin-target||=468.3878
+  S2_k20    O1->Y1  ||origin-target||=28.6452
+  S2_k20    O1->Y2  ||origin-target||=33.2100 mahalanobis=1.0554 radius=11.8805 inside=True
+  S2_k20    O2->Y1  ||origin-target||=196.4504
+  S2_k20    O2->Y2  ||origin-target||=204.3757 mahalanobis=14.2055 radius=11.8805 inside=False
+  S2_k50    O1->Y1  ||origin-target||=30.8643
+  S2_k50    O1->Y2  ||origin-target||=35.1680 mahalanobis=6.0114 radius=59.2987 inside=True
+  S2_k50    O2->Y1  ||origin-target||=259.3335
+  S2_k50    O2->Y2  ||origin-target||=265.1887 mahalanobis=127.0348 radius=59.2987 inside=False
+  S2_k100   O1->Y1  ||origin-target||=31.4343
+  S2_k100   O1->Y2  ||origin-target||=35.8353 mahalanobis=NA radius=NA inside=None
+  S2_k100   O2->Y1  ||origin-target||=272.0445
+  S2_k100   O2->Y2  ||origin-target||=277.4758 mahalanobis=NA radius=NA inside=None
+[observed V_all] point estimates for 1,836 factors x 14 settings in 2s
+[observed V_sig] point estimates for 1,836 factors x 14 settings in 2s
+[stage2A] per-factor floor: permute each factor's own vector entries across the 4,907 matched gene coordinates, 20000 times, seed 20260914. The 18,578 unmatched ruler coordinates are structurally fixed at 0 by the conversion rule and are not permuted into; this keeps every null direction inside the same measured subspace as the real effect and preserves ||d|| exactly.
+[stage2A pooled] pooled floor: every factor's 20000 permuted vectors are rescaled to the median factor norm and pooled across all factors; the pooled floor is the 5th percentile of that pooled distribution. Zero-norm factors cannot be rescaled and are left out of the pool (counted below).
+[stage2A] reusing stage2a_null_reduced.npz: same seed, n_perm=20,000, chunk=1,000, factors and settings. Not redrawing the permutations.
+[stage2B] control floor from 17 untargeted `off-target` rows used as pseudo-effects. Reported only. These rows are NOT inert, so this is never the gate.
+[stage2C] true young-minus-old direction: ||v||=32.2839; restricted to the 4,907 measured coordinates ||v_measured||=15.7557 (0.4880 of the full norm)
+[MDA] V_all  S1        O1_Y1  full_v               MDA=0.050 (pooled floor +4.97706)
+[MDA] V_all  S1        O2_Y1  full_v               MDA=0.250 (pooled floor -0.58202)
+[MDA] V_all  S2_k20    O1_Y1  full_v               MDA=0.100 (pooled floor -0.98582)
+[MDA] V_all  S2_k20    O1_Y2  full_v               MDA=0.050 (pooled floor -0.57580)
+[MDA] V_all  S2_k20    O2_Y1  full_v               MDA=0.100 (pooled floor -0.31319)
+[MDA] V_all  S2_k20    O2_Y2  full_v               MDA=0.100 (pooled floor -0.27774)
+[MDA] V_all  S2_k50    O1_Y1  full_v               MDA=0.050 (pooled floor -0.85011)
+[MDA] V_all  S2_k50    O1_Y2  full_v               MDA=0.050 (pooled floor -0.51073)
+[MDA] V_all  S2_k50    O2_Y1  full_v               MDA=0.100 (pooled floor -0.37197)
+[MDA] V_all  S2_k50    O2_Y2  full_v               MDA=0.100 (pooled floor -0.34164)
+[MDA] V_all  S2_k100   O1_Y1  full_v               MDA=0.050 (pooled floor -0.74075)
+[MDA] V_all  S2_k100   O1_Y2  full_v               MDA=0.050 (pooled floor -0.44990)
+[MDA] V_all  S2_k100   O2_Y1  full_v               MDA=0.250 (pooled floor -0.55137)
+[MDA] V_all  S2_k100   O2_Y2  full_v               MDA=0.250 (pooled floor -0.51470)
+[MDA] V_all  S1        O1_Y1  measured_coords_only MDA=0.050 (pooled floor +4.97706)
+[MDA] V_all  S1        O2_Y1  measured_coords_only MDA=0.500 (pooled floor -0.58202)
+[MDA] V_all  S2_k20    O1_Y1  measured_coords_only MDA=0.250 (pooled floor -0.98582)
+[MDA] V_all  S2_k20    O1_Y2  measured_coords_only MDA=0.100 (pooled floor -0.57580)
+[MDA] V_all  S2_k20    O2_Y1  measured_coords_only MDA=0.100 (pooled floor -0.31319)
+[MDA] V_all  S2_k20    O2_Y2  measured_coords_only MDA=0.100 (pooled floor -0.27774)
+[MDA] V_all  S2_k50    O1_Y1  measured_coords_only MDA=0.100 (pooled floor -0.85011)
+[MDA] V_all  S2_k50    O1_Y2  measured_coords_only MDA=0.100 (pooled floor -0.51073)
+[MDA] V_all  S2_k50    O2_Y1  measured_coords_only MDA=0.250 (pooled floor -0.37197)
+[MDA] V_all  S2_k50    O2_Y2  measured_coords_only MDA=0.100 (pooled floor -0.34164)
+[MDA] V_all  S2_k100   O1_Y1  measured_coords_only MDA=0.100 (pooled floor -0.74075)
+[MDA] V_all  S2_k100   O1_Y2  measured_coords_only MDA=0.100 (pooled floor -0.44990)
+[MDA] V_all  S2_k100   O2_Y1  measured_coords_only MDA=0.250 (pooled floor -0.55137)
+[MDA] V_all  S2_k100   O2_Y2  measured_coords_only MDA=0.250 (pooled floor -0.51470)
+[MDA] V_sig  S1        O1_Y1  full_v               MDA=0.050 (pooled floor +0.15738)
+[MDA] V_sig  S1        O2_Y1  full_v               MDA=0.050 (pooled floor -0.00201)
+[MDA] V_sig  S2_k20    O1_Y1  full_v               MDA=0.050 (pooled floor -0.00776)
+[MDA] V_sig  S2_k20    O1_Y2  full_v               MDA=0.050 (pooled floor -0.02133)
+[MDA] V_sig  S2_k20    O2_Y1  full_v               MDA=0.050 (pooled floor -0.03460)
+[MDA] V_sig  S2_k20    O2_Y2  full_v               MDA=0.050 (pooled floor -0.03664)
+[MDA] V_sig  S2_k50    O1_Y1  full_v               MDA=0.050 (pooled floor -0.00952)
+[MDA] V_sig  S2_k50    O1_Y2  full_v               MDA=0.050 (pooled floor -0.02133)
+[MDA] V_sig  S2_k50    O2_Y1  full_v               MDA=0.050 (pooled floor -0.03305)
+[MDA] V_sig  S2_k50    O2_Y2  full_v               MDA=0.050 (pooled floor -0.03443)
+[MDA] V_sig  S2_k100   O1_Y1  full_v               MDA=0.050 (pooled floor -0.00937)
+[MDA] V_sig  S2_k100   O1_Y2  full_v               MDA=0.050 (pooled floor -0.02072)
+[MDA] V_sig  S2_k100   O2_Y1  full_v               MDA=0.050 (pooled floor -0.02572)
+[MDA] V_sig  S2_k100   O2_Y2  full_v               MDA=0.050 (pooled floor -0.02701)
+[MDA] V_sig  S1        O1_Y1  measured_coords_only MDA=0.050 (pooled floor +0.15738)
+[MDA] V_sig  S1        O2_Y1  measured_coords_only MDA=0.050 (pooled floor -0.00201)
+[MDA] V_sig  S2_k20    O1_Y1  measured_coords_only MDA=0.050 (pooled floor -0.00776)
+[MDA] V_sig  S2_k20    O1_Y2  measured_coords_only MDA=0.050 (pooled floor -0.02133)
+[MDA] V_sig  S2_k20    O2_Y1  measured_coords_only MDA=0.100 (pooled floor -0.03460)
+[MDA] V_sig  S2_k20    O2_Y2  measured_coords_only MDA=0.100 (pooled floor -0.03664)
+[MDA] V_sig  S2_k50    O1_Y1  measured_coords_only MDA=0.050 (pooled floor -0.00952)
+[MDA] V_sig  S2_k50    O1_Y2  measured_coords_only MDA=0.050 (pooled floor -0.02133)
+[MDA] V_sig  S2_k50    O2_Y1  measured_coords_only MDA=0.100 (pooled floor -0.03305)
+[MDA] V_sig  S2_k50    O2_Y2  measured_coords_only MDA=0.100 (pooled floor -0.03443)
+[MDA] V_sig  S2_k100   O1_Y1  measured_coords_only MDA=0.050 (pooled floor -0.00937)
+[MDA] V_sig  S2_k100   O1_Y2  measured_coords_only MDA=0.050 (pooled floor -0.02072)
+[MDA] V_sig  S2_k100   O2_Y1  measured_coords_only MDA=0.050 (pooled floor -0.02572)
+[MDA] V_sig  S2_k100   O2_Y2  measured_coords_only MDA=0.050 (pooled floor -0.02701)
+[stage2C] some f <= 1.0 clears the primary floor in at least one space/variant: True
+[guides] CHANGE 2: guide agreement is the median pairwise cosine between the V_all vectors of a factor's own guides, computed once and applied to both variants. guides_disagree (<= 0) fires on 299 of 1,836 factors. For reference only, the V_sig median pairwise cosine would fire on 1,692 of 1,836; that number gates nothing in SOUTH3.
+[stage3 V_all] 400/1836 factors (19s)
+[stage3 V_all] 800/1836 factors (39s)
+[stage3 V_all] 1200/1836 factors (59s)
+[stage3 V_all] 1600/1836 factors (78s)
+[stage3 V_all] done in 90s
+[stage3 V_all] identity_loss (panel drop > 0.5 in frozen-z units): 0
+[stage3 V_sig] 400/1836 factors (19s)
+[stage3 V_sig] 800/1836 factors (40s)
+[stage3 V_sig] 1200/1836 factors (59s)
+[stage3 V_sig] 1600/1836 factors (78s)
+[stage3 V_sig] done in 89s
+[stage3 V_sig] identity_loss (panel drop > 0.5 in frozen-z units): 0
+[stage3] full table 51,408 rows -> stage3_full_table.csv
+[count] V_all  S1        O1_Y1  delta<0=    0 below_floor=  578 q<=0.05=  436 toward_young=    0
+[count] V_all  S1        O2_Y1  delta<0=  918 below_floor=  477 q<=0.05=  325 toward_young=  266
+[count] V_all  S2_k20    O1_Y1  delta<0= 1645 below_floor=  498 q<=0.05=  322 toward_young=  277
+[count] V_all  S2_k20    O1_Y2  delta<0= 1209 below_floor=  194 q<=0.05=   50 toward_young=   44
+[count] V_all  S2_k20    O2_Y1  delta<0=  849 below_floor=  384 q<=0.05=  260 toward_young=  219
+[count] V_all  S2_k20    O2_Y2  delta<0=  775 below_floor=  372 q<=0.05=  246 toward_young=  208
+[count] V_all  S2_k50    O1_Y1  delta<0= 1595 below_floor=  449 q<=0.05=  283 toward_young=  247
+[count] V_all  S2_k50    O1_Y2  delta<0= 1111 below_floor=  194 q<=0.05=   61 toward_young=   53
+[count] V_all  S2_k50    O2_Y1  delta<0=  913 below_floor=  398 q<=0.05=  288 toward_young=  236
+[count] V_all  S2_k50    O2_Y2  delta<0=  840 below_floor=  383 q<=0.05=  280 toward_young=  230
+[count] V_all  S2_k100   O1_Y1  delta<0= 1545 below_floor=  366 q<=0.05=  198 toward_young=  173
+[count] V_all  S2_k100   O1_Y2  delta<0=  957 below_floor=  160 q<=0.05=   46 toward_young=   40
+[count] V_all  S2_k100   O2_Y1  delta<0= 1124 below_floor=  421 q<=0.05=  301 toward_young=  248
+[count] V_all  S2_k100   O2_Y2  delta<0= 1057 below_floor=  405 q<=0.05=  293 toward_young=  243
+[count] V_sig  S1        O1_Y1  delta<0=    0 below_floor=  317 q<=0.05=   56 toward_young=    0
+[count] V_sig  S1        O2_Y1  delta<0=  394 below_floor=  406 q<=0.05=  159 toward_young=  128
+[count] V_sig  S2_k20    O1_Y1  delta<0=  398 below_floor=  373 q<=0.05=   74 toward_young=   67
+[count] V_sig  S2_k20    O1_Y2  delta<0=  571 below_floor=  238 q<=0.05=   49 toward_young=   45
+[count] V_sig  S2_k20    O2_Y1  delta<0=  903 below_floor=  257 q<=0.05=   44 toward_young=   40
+[count] V_sig  S2_k20    O2_Y2  delta<0=  918 below_floor=  252 q<=0.05=   50 toward_young=   45
+[count] V_sig  S2_k50    O1_Y1  delta<0=  411 below_floor=  332 q<=0.05=   69 toward_young=   62
+[count] V_sig  S2_k50    O1_Y2  delta<0=  552 below_floor=  225 q<=0.05=   49 toward_young=   43
+[count] V_sig  S2_k50    O2_Y1  delta<0=  972 below_floor=  327 q<=0.05=   86 toward_young=   79
+[count] V_sig  S2_k50    O2_Y2  delta<0=  983 below_floor=  317 q<=0.05=   92 toward_young=   80
+[count] V_sig  S2_k100   O1_Y1  delta<0=  396 below_floor=  310 q<=0.05=   52 toward_young=   48
+[count] V_sig  S2_k100   O1_Y2  delta<0=  530 below_floor=  217 q<=0.05=   45 toward_young=   40
+[count] V_sig  S2_k100   O2_Y1  delta<0=  786 below_floor=  326 q<=0.05=   92 toward_young=   80
+[count] V_sig  S2_k100   O2_Y2  delta<0=  806 below_floor=  325 q<=0.05=   99 toward_young=   85
+[stage3] bootstrap delta intervals not containing their point estimate (flagged INVALID, never a gate): 618 of 51,380 computed
+[stage4] V_all  S1        O1_Y1  rho(delta,cos)=-0.008 rho(delta,ruler)=+0.094 rho(cos,ruler)=+0.293 top20 overlap d/c= 1 cos_top20_not_toward=20
+[stage4] V_all  S1        O2_Y1  rho(delta,cos)=+0.974 rho(delta,ruler)=+0.321 rho(cos,ruler)=+0.318 top20 overlap d/c=14 cos_top20_not_toward= 1
+[stage4] V_all  S2_k20    O1_Y1  rho(delta,cos)=+0.919 rho(delta,ruler)=+0.166 rho(cos,ruler)=+0.155 top20 overlap d/c= 1 cos_top20_not_toward= 2
+[stage4] V_all  S2_k20    O1_Y2  rho(delta,cos)=+0.974 rho(delta,ruler)=+0.325 rho(cos,ruler)=+0.310 top20 overlap d/c= 7 cos_top20_not_toward= 4
+[stage4] V_all  S2_k20    O2_Y1  rho(delta,cos)=+0.970 rho(delta,ruler)=+0.323 rho(cos,ruler)=+0.315 top20 overlap d/c= 4 cos_top20_not_toward= 8
+[stage4] V_all  S2_k20    O2_Y2  rho(delta,cos)=+0.967 rho(delta,ruler)=+0.309 rho(cos,ruler)=+0.308 top20 overlap d/c= 5 cos_top20_not_toward= 6
+[stage4] V_all  S2_k50    O1_Y1  rho(delta,cos)=+0.951 rho(delta,ruler)=+0.235 rho(cos,ruler)=+0.229 top20 overlap d/c= 3 cos_top20_not_toward= 3
+[stage4] V_all  S2_k50    O1_Y2  rho(delta,cos)=+0.972 rho(delta,ruler)=+0.352 rho(cos,ruler)=+0.348 top20 overlap d/c= 6 cos_top20_not_toward= 4
+[stage4] V_all  S2_k50    O2_Y1  rho(delta,cos)=+0.974 rho(delta,ruler)=+0.333 rho(cos,ruler)=+0.328 top20 overlap d/c= 5 cos_top20_not_toward= 9
+[stage4] V_all  S2_k50    O2_Y2  rho(delta,cos)=+0.973 rho(delta,ruler)=+0.326 rho(cos,ruler)=+0.324 top20 overlap d/c= 5 cos_top20_not_toward= 9
+[stage4] V_all  S2_k100   O1_Y1  rho(delta,cos)=+0.972 rho(delta,ruler)=+0.259 rho(cos,ruler)=+0.259 top20 overlap d/c= 6 cos_top20_not_toward= 4
+[stage4] V_all  S2_k100   O1_Y2  rho(delta,cos)=+0.943 rho(delta,ruler)=+0.360 rho(cos,ruler)=+0.372 top20 overlap d/c=10 cos_top20_not_toward= 5
+[stage4] V_all  S2_k100   O2_Y1  rho(delta,cos)=+0.969 rho(delta,ruler)=+0.341 rho(cos,ruler)=+0.327 top20 overlap d/c= 3 cos_top20_not_toward= 7
+[stage4] V_all  S2_k100   O2_Y2  rho(delta,cos)=+0.973 rho(delta,ruler)=+0.336 rho(cos,ruler)=+0.324 top20 overlap d/c= 3 cos_top20_not_toward= 8
+[stage4] V_sig  S1        O1_Y1  rho(delta,cos)=+0.157 rho(delta,ruler)=+0.096 rho(cos,ruler)=+0.248 top20 overlap d/c= 0 cos_top20_not_toward=20
+[stage4] V_sig  S1        O2_Y1  rho(delta,cos)=+0.881 rho(delta,ruler)=+0.097 rho(cos,ruler)=+0.101 top20 overlap d/c=15 cos_top20_not_toward= 2
+[stage4] V_sig  S2_k20    O1_Y1  rho(delta,cos)=+0.871 rho(delta,ruler)=+0.073 rho(cos,ruler)=+0.067 top20 overlap d/c= 9 cos_top20_not_toward= 2
+[stage4] V_sig  S2_k20    O1_Y2  rho(delta,cos)=+0.923 rho(delta,ruler)=+0.084 rho(cos,ruler)=+0.074 top20 overlap d/c= 7 cos_top20_not_toward= 5
+[stage4] V_sig  S2_k20    O2_Y1  rho(delta,cos)=+0.947 rho(delta,ruler)=+0.103 rho(cos,ruler)=+0.098 top20 overlap d/c= 1 cos_top20_not_toward=13
+[stage4] V_sig  S2_k20    O2_Y2  rho(delta,cos)=+0.948 rho(delta,ruler)=+0.097 rho(cos,ruler)=+0.094 top20 overlap d/c= 0 cos_top20_not_toward=12
+[stage4] V_sig  S2_k50    O1_Y1  rho(delta,cos)=+0.880 rho(delta,ruler)=+0.157 rho(cos,ruler)=+0.153 top20 overlap d/c= 9 cos_top20_not_toward= 3
+[stage4] V_sig  S2_k50    O1_Y2  rho(delta,cos)=+0.922 rho(delta,ruler)=+0.143 rho(cos,ruler)=+0.140 top20 overlap d/c= 9 cos_top20_not_toward= 3
+[stage4] V_sig  S2_k50    O2_Y1  rho(delta,cos)=+0.952 rho(delta,ruler)=+0.129 rho(cos,ruler)=+0.133 top20 overlap d/c= 4 cos_top20_not_toward= 4
+[stage4] V_sig  S2_k50    O2_Y2  rho(delta,cos)=+0.952 rho(delta,ruler)=+0.125 rho(cos,ruler)=+0.128 top20 overlap d/c= 3 cos_top20_not_toward= 4
+[stage4] V_sig  S2_k100   O1_Y1  rho(delta,cos)=+0.874 rho(delta,ruler)=+0.190 rho(cos,ruler)=+0.190 top20 overlap d/c= 9 cos_top20_not_toward= 2
+[stage4] V_sig  S2_k100   O1_Y2  rho(delta,cos)=+0.922 rho(delta,ruler)=+0.173 rho(cos,ruler)=+0.172 top20 overlap d/c= 9 cos_top20_not_toward= 3
+[stage4] V_sig  S2_k100   O2_Y1  rho(delta,cos)=+0.947 rho(delta,ruler)=+0.117 rho(cos,ruler)=+0.119 top20 overlap d/c= 5 cos_top20_not_toward= 2
+[stage4] V_sig  S2_k100   O2_Y2  rho(delta,cos)=+0.949 rho(delta,ruler)=+0.114 rho(cos,ruler)=+0.116 top20 overlap d/c= 6 cos_top20_not_toward= 2
+[geometry] ||d||/||target-origin|| ranges 0.00010 to 3.63204 over all settings; quartile table has 112 rows
+[geometry] V_all  S1        O1_Y1  Q1 ratio~0.5200 rho(delta,cos)=+0.498 identity err/||d|| median=0.24628 (bound 0.28026); resid/leading term=0.9513
+[geometry] V_all  S1        O1_Y1  Q2 ratio~0.5921 rho(delta,cos)=+0.652 identity err/||d|| median=0.27717 (bound 0.31369); resid/leading term=0.9373
+[geometry] V_all  S1        O1_Y1  Q3 ratio~0.6652 rho(delta,cos)=+0.579 identity err/||d|| median=0.30747 (bound 0.35837); resid/leading term=0.9249
+[geometry] V_all  S1        O1_Y1  Q4 ratio~0.8016 rho(delta,cos)=+0.221 identity err/||d|| median=0.35876 (bound 1.81602); resid/leading term=0.8933
+[geometry] V_all  S1        O2_Y1  Q1 ratio~0.0358 rho(delta,cos)=+0.999 identity err/||d|| median=0.01790 (bound 0.01932); resid/leading term=1.0005
+[geometry] V_all  S1        O2_Y1  Q2 ratio~0.0408 rho(delta,cos)=+0.999 identity err/||d|| median=0.02039 (bound 0.02162); resid/leading term=1.0005
+[geometry] V_all  S1        O2_Y1  Q3 ratio~0.0458 rho(delta,cos)=+0.999 identity err/||d|| median=0.02291 (bound 0.02470); resid/leading term=1.0004
+[geometry] V_all  S1        O2_Y1  Q4 ratio~0.0553 rho(delta,cos)=+0.974 identity err/||d|| median=0.02760 (bound 0.12517); resid/leading term=1.0005
+[geometry] V_all  S2_k20    O1_Y1  Q1 ratio~0.0541 rho(delta,cos)=+0.989 identity err/||d|| median=0.02573 (bound 0.03411); resid/leading term=1.0072
+[geometry] V_all  S2_k20    O1_Y1  Q2 ratio~0.0791 rho(delta,cos)=+0.989 identity err/||d|| median=0.03722 (bound 0.04539); resid/leading term=1.0192
+[geometry] V_all  S2_k20    O1_Y1  Q3 ratio~0.1032 rho(delta,cos)=+0.986 identity err/||d|| median=0.04818 (bound 0.05922); resid/leading term=1.0280
+[geometry] V_all  S2_k20    O1_Y1  Q4 ratio~0.1398 rho(delta,cos)=+0.932 identity err/||d|| median=0.06583 (bound 0.18354); resid/leading term=1.0436
+[geometry] V_all  S2_k20    O1_Y2  Q1 ratio~0.0466 rho(delta,cos)=+0.991 identity err/||d|| median=0.02255 (bound 0.02942); resid/leading term=1.0011
+[geometry] V_all  S2_k20    O1_Y2  Q2 ratio~0.0682 rho(delta,cos)=+0.998 identity err/||d|| median=0.03350 (bound 0.03915); resid/leading term=1.0038
+[geometry] V_all  S2_k20    O1_Y2  Q3 ratio~0.0890 rho(delta,cos)=+0.999 identity err/||d|| median=0.04390 (bound 0.05108); resid/leading term=1.0077
+[geometry] V_all  S2_k20    O1_Y2  Q4 ratio~0.1206 rho(delta,cos)=+0.993 identity err/||d|| median=0.06000 (bound 0.15831); resid/leading term=1.0123
+[geometry] V_all  S2_k20    O2_Y1  Q1 ratio~0.0079 rho(delta,cos)=+0.990 identity err/||d|| median=0.00374 (bound 0.00497); resid/leading term=1.0000
+[geometry] V_all  S2_k20    O2_Y1  Q2 ratio~0.0115 rho(delta,cos)=+0.998 identity err/||d|| median=0.00558 (bound 0.00662); resid/leading term=0.9998
+[geometry] V_all  S2_k20    O2_Y1  Q3 ratio~0.0150 rho(delta,cos)=+0.999 identity err/||d|| median=0.00735 (bound 0.00864); resid/leading term=0.9999
+[geometry] V_all  S2_k20    O2_Y1  Q4 ratio~0.0204 rho(delta,cos)=+0.992 identity err/||d|| median=0.01003 (bound 0.02676); resid/leading term=0.9997
+[geometry] V_all  S2_k20    O2_Y2  Q1 ratio~0.0076 rho(delta,cos)=+0.991 identity err/||d|| median=0.00359 (bound 0.00478); resid/leading term=1.0000
+[geometry] V_all  S2_k20    O2_Y2  Q2 ratio~0.0111 rho(delta,cos)=+0.998 identity err/||d|| median=0.00535 (bound 0.00636); resid/leading term=0.9995
+[geometry] V_all  S2_k20    O2_Y2  Q3 ratio~0.0145 rho(delta,cos)=+0.998 identity err/||d|| median=0.00705 (bound 0.00830); resid/leading term=0.9996
+[geometry] V_all  S2_k20    O2_Y2  Q4 ratio~0.0196 rho(delta,cos)=+0.990 identity err/||d|| median=0.00962 (bound 0.02573); resid/leading term=0.9991
+[geometry] V_all  S2_k50    O1_Y1  Q1 ratio~0.0626 rho(delta,cos)=+0.993 identity err/||d|| median=0.03035 (bound 0.03818); resid/leading term=1.0059
+[geometry] V_all  S2_k50    O1_Y1  Q2 ratio~0.0877 rho(delta,cos)=+0.994 identity err/||d|| median=0.04213 (bound 0.05005); resid/leading term=1.0163
+[geometry] V_all  S2_k50    O1_Y1  Q3 ratio~0.1132 rho(delta,cos)=+0.993 identity err/||d|| median=0.05459 (bound 0.06441); resid/leading term=1.0235
+[geometry] V_all  S2_k50    O1_Y1  Q4 ratio~0.1534 rho(delta,cos)=+0.976 identity err/||d|| median=0.07351 (bound 0.20763); resid/leading term=1.0343
+[geometry] V_all  S2_k50    O1_Y2  Q1 ratio~0.0550 rho(delta,cos)=+0.994 identity err/||d|| median=0.02712 (bound 0.03351); resid/leading term=1.0011
+[geometry] V_all  S2_k50    O1_Y2  Q2 ratio~0.0769 rho(delta,cos)=+0.999 identity err/||d|| median=0.03797 (bound 0.04393); resid/leading term=1.0037
+[geometry] V_all  S2_k50    O1_Y2  Q3 ratio~0.0993 rho(delta,cos)=+0.999 identity err/||d|| median=0.04924 (bound 0.05653); resid/leading term=1.0068
+[geometry] V_all  S2_k50    O1_Y2  Q4 ratio~0.1346 rho(delta,cos)=+0.983 identity err/||d|| median=0.06673 (bound 0.18222); resid/leading term=1.0096
+[geometry] V_all  S2_k50    O2_Y1  Q1 ratio~0.0075 rho(delta,cos)=+0.993 identity err/||d|| median=0.00360 (bound 0.00454); resid/leading term=1.0000
+[geometry] V_all  S2_k50    O2_Y1  Q2 ratio~0.0104 rho(delta,cos)=+0.999 identity err/||d|| median=0.00506 (bound 0.00596); resid/leading term=0.9999
+[geometry] V_all  S2_k50    O2_Y1  Q3 ratio~0.0135 rho(delta,cos)=+0.999 identity err/||d|| median=0.00660 (bound 0.00767); resid/leading term=1.0000
+[geometry] V_all  S2_k50    O2_Y1  Q4 ratio~0.0183 rho(delta,cos)=+0.994 identity err/||d|| median=0.00903 (bound 0.02471); resid/leading term=1.0002
+[geometry] V_all  S2_k50    O2_Y2  Q1 ratio~0.0073 rho(delta,cos)=+0.993 identity err/||d|| median=0.00350 (bound 0.00444); resid/leading term=0.9999
+[geometry] V_all  S2_k50    O2_Y2  Q2 ratio~0.0102 rho(delta,cos)=+0.998 identity err/||d|| median=0.00495 (bound 0.00583); resid/leading term=0.9998
+[geometry] V_all  S2_k50    O2_Y2  Q3 ratio~0.0132 rho(delta,cos)=+0.999 identity err/||d|| median=0.00645 (bound 0.00750); resid/leading term=0.9999
+[geometry] V_all  S2_k50    O2_Y2  Q4 ratio~0.0179 rho(delta,cos)=+0.993 identity err/||d|| median=0.00882 (bound 0.02416); resid/leading term=0.9999
+[geometry] V_all  S2_k100   O1_Y1  Q1 ratio~0.0724 rho(delta,cos)=+0.996 identity err/||d|| median=0.03558 (bound 0.04363); resid/leading term=1.0051
+[geometry] V_all  S2_k100   O1_Y1  Q2 ratio~0.0992 rho(delta,cos)=+0.997 identity err/||d|| median=0.04853 (bound 0.05697); resid/leading term=1.0135
+[geometry] V_all  S2_k100   O1_Y1  Q3 ratio~0.1291 rho(delta,cos)=+0.997 identity err/||d|| median=0.06321 (bound 0.07409); resid/leading term=1.0205
+[geometry] V_all  S2_k100   O1_Y1  Q4 ratio~0.1738 rho(delta,cos)=+0.986 identity err/||d|| median=0.08520 (bound 0.23815); resid/leading term=1.0290
+[geometry] V_all  S2_k100   O1_Y2  Q1 ratio~0.0635 rho(delta,cos)=+0.992 identity err/||d|| median=0.03123 (bound 0.03827); resid/leading term=1.0006
+[geometry] V_all  S2_k100   O1_Y2  Q2 ratio~0.0870 rho(delta,cos)=+0.998 identity err/||d|| median=0.04300 (bound 0.04997); resid/leading term=1.0029
+[geometry] V_all  S2_k100   O1_Y2  Q3 ratio~0.1132 rho(delta,cos)=+0.998 identity err/||d|| median=0.05623 (bound 0.06499); resid/leading term=1.0054
+[geometry] V_all  S2_k100   O1_Y2  Q4 ratio~0.1525 rho(delta,cos)=+0.942 identity err/||d|| median=0.07584 (bound 0.20890); resid/leading term=1.0069
+[geometry] V_all  S2_k100   O2_Y1  Q1 ratio~0.0084 rho(delta,cos)=+0.993 identity err/||d|| median=0.00406 (bound 0.00504); resid/leading term=1.0002
+[geometry] V_all  S2_k100   O2_Y1  Q2 ratio~0.0115 rho(delta,cos)=+0.999 identity err/||d|| median=0.00560 (bound 0.00658); resid/leading term=1.0004
+[geometry] V_all  S2_k100   O2_Y1  Q3 ratio~0.0149 rho(delta,cos)=+0.999 identity err/||d|| median=0.00737 (bound 0.00856); resid/leading term=1.0006
+[geometry] V_all  S2_k100   O2_Y1  Q4 ratio~0.0201 rho(delta,cos)=+0.990 identity err/||d|| median=0.00997 (bound 0.02752); resid/leading term=1.0011
+[geometry] V_all  S2_k100   O2_Y2  Q1 ratio~0.0082 rho(delta,cos)=+0.993 identity err/||d|| median=0.00398 (bound 0.00494); resid/leading term=1.0001
+[geometry] V_all  S2_k100   O2_Y2  Q2 ratio~0.0112 rho(delta,cos)=+0.999 identity err/||d|| median=0.00549 (bound 0.00645); resid/leading term=1.0003
+[geometry] V_all  S2_k100   O2_Y2  Q3 ratio~0.0146 rho(delta,cos)=+0.999 identity err/||d|| median=0.00722 (bound 0.00839); resid/leading term=1.0005
+[geometry] V_all  S2_k100   O2_Y2  Q4 ratio~0.0197 rho(delta,cos)=+0.992 identity err/||d|| median=0.00976 (bound 0.02698); resid/leading term=1.0009
+[geometry] V_sig  S1        O1_Y1  Q1 ratio~0.0631 rho(delta,cos)=+0.496 identity err/||d|| median=0.03150 (bound 0.03883); resid/leading term=0.9986
+[geometry] V_sig  S1        O1_Y1  Q2 ratio~0.0904 rho(delta,cos)=+0.743 identity err/||d|| median=0.04508 (bound 0.05094); resid/leading term=0.9974
+[geometry] V_sig  S1        O1_Y1  Q3 ratio~0.1164 rho(delta,cos)=+0.613 identity err/||d|| median=0.05798 (bound 0.06904); resid/leading term=0.9958
+[geometry] V_sig  S1        O1_Y1  Q4 ratio~0.1770 rho(delta,cos)=+0.216 identity err/||d|| median=0.08764 (bound 0.49616); resid/leading term=0.9909
+[geometry] V_sig  S1        O2_Y1  Q1 ratio~0.0043 rho(delta,cos)=+0.976 identity err/||d|| median=0.00217 (bound 0.00268); resid/leading term=1.0000
+[geometry] V_sig  S1        O2_Y1  Q2 ratio~0.0062 rho(delta,cos)=+0.995 identity err/||d|| median=0.00311 (bound 0.00351); resid/leading term=1.0000
+[geometry] V_sig  S1        O2_Y1  Q3 ratio~0.0080 rho(delta,cos)=+0.992 identity err/||d|| median=0.00401 (bound 0.00476); resid/leading term=0.9999
+[geometry] V_sig  S1        O2_Y1  Q4 ratio~0.0122 rho(delta,cos)=+0.878 identity err/||d|| median=0.00610 (bound 0.03420); resid/leading term=0.9999
+[geometry] V_sig  S2_k20    O1_Y1  Q1 ratio~0.0029 rho(delta,cos)=+0.947 identity err/||d|| median=0.00134 (bound 0.00193); resid/leading term=0.9996
+[geometry] V_sig  S2_k20    O1_Y1  Q2 ratio~0.0047 rho(delta,cos)=+0.992 identity err/||d|| median=0.00224 (bound 0.00284); resid/leading term=0.9992
+[geometry] V_sig  S2_k20    O1_Y1  Q3 ratio~0.0068 rho(delta,cos)=+0.993 identity err/||d|| median=0.00322 (bound 0.00433); resid/leading term=0.9990
+[geometry] V_sig  S2_k20    O1_Y1  Q4 ratio~0.0128 rho(delta,cos)=+0.939 identity err/||d|| median=0.00582 (bound 0.10957); resid/leading term=0.9984
+[geometry] V_sig  S2_k20    O1_Y2  Q1 ratio~0.0025 rho(delta,cos)=+0.968 identity err/||d|| median=0.00119 (bound 0.00167); resid/leading term=0.9998
+[geometry] V_sig  S2_k20    O1_Y2  Q2 ratio~0.0041 rho(delta,cos)=+0.995 identity err/||d|| median=0.00196 (bound 0.00245); resid/leading term=0.9996
+[geometry] V_sig  S2_k20    O1_Y2  Q3 ratio~0.0059 rho(delta,cos)=+0.996 identity err/||d|| median=0.00282 (bound 0.00373); resid/leading term=0.9995
+[geometry] V_sig  S2_k20    O1_Y2  Q4 ratio~0.0110 rho(delta,cos)=+0.961 identity err/||d|| median=0.00515 (bound 0.09451); resid/leading term=0.9991
+[geometry] V_sig  S2_k20    O2_Y1  Q1 ratio~0.0004 rho(delta,cos)=+0.984 identity err/||d|| median=0.00020 (bound 0.00028); resid/leading term=1.0000
+[geometry] V_sig  S2_k20    O2_Y1  Q2 ratio~0.0007 rho(delta,cos)=+0.998 identity err/||d|| median=0.00033 (bound 0.00041); resid/leading term=1.0000
+[geometry] V_sig  S2_k20    O2_Y1  Q3 ratio~0.0010 rho(delta,cos)=+0.997 identity err/||d|| median=0.00048 (bound 0.00063); resid/leading term=1.0000
+[geometry] V_sig  S2_k20    O2_Y1  Q4 ratio~0.0019 rho(delta,cos)=+0.968 identity err/||d|| median=0.00090 (bound 0.01598); resid/leading term=1.0000
+[geometry] V_sig  S2_k20    O2_Y2  Q1 ratio~0.0004 rho(delta,cos)=+0.984 identity err/||d|| median=0.00019 (bound 0.00027); resid/leading term=1.0000
+[geometry] V_sig  S2_k20    O2_Y2  Q2 ratio~0.0007 rho(delta,cos)=+0.998 identity err/||d|| median=0.00032 (bound 0.00040); resid/leading term=1.0000
+[geometry] V_sig  S2_k20    O2_Y2  Q3 ratio~0.0010 rho(delta,cos)=+0.997 identity err/||d|| median=0.00046 (bound 0.00061); resid/leading term=1.0000
+[geometry] V_sig  S2_k20    O2_Y2  Q4 ratio~0.0018 rho(delta,cos)=+0.970 identity err/||d|| median=0.00086 (bound 0.01536); resid/leading term=1.0000
+[geometry] V_sig  S2_k50    O1_Y1  Q1 ratio~0.0039 rho(delta,cos)=+0.954 identity err/||d|| median=0.00188 (bound 0.00254); resid/leading term=0.9996
+[geometry] V_sig  S2_k50    O1_Y1  Q2 ratio~0.0061 rho(delta,cos)=+0.995 identity err/||d|| median=0.00299 (bound 0.00362); resid/leading term=0.9994
+[geometry] V_sig  S2_k50    O1_Y1  Q3 ratio~0.0087 rho(delta,cos)=+0.991 identity err/||d|| median=0.00426 (bound 0.00542); resid/leading term=0.9991
+[geometry] V_sig  S2_k50    O1_Y1  Q4 ratio~0.0154 rho(delta,cos)=+0.949 identity err/||d|| median=0.00740 (bound 0.12546); resid/leading term=0.9987
+[geometry] V_sig  S2_k50    O1_Y2  Q1 ratio~0.0034 rho(delta,cos)=+0.969 identity err/||d|| median=0.00165 (bound 0.00223); resid/leading term=0.9998
+[geometry] V_sig  S2_k50    O1_Y2  Q2 ratio~0.0053 rho(delta,cos)=+0.996 identity err/||d|| median=0.00262 (bound 0.00317); resid/leading term=0.9996
+[geometry] V_sig  S2_k50    O1_Y2  Q3 ratio~0.0077 rho(delta,cos)=+0.995 identity err/||d|| median=0.00375 (bound 0.00476); resid/leading term=0.9994
+[geometry] V_sig  S2_k50    O1_Y2  Q4 ratio~0.0135 rho(delta,cos)=+0.961 identity err/||d|| median=0.00659 (bound 0.11011); resid/leading term=0.9992
+[geometry] V_sig  S2_k50    O2_Y1  Q1 ratio~0.0005 rho(delta,cos)=+0.983 identity err/||d|| median=0.00022 (bound 0.00030); resid/leading term=1.0000
+[geometry] V_sig  S2_k50    O2_Y1  Q2 ratio~0.0007 rho(delta,cos)=+0.998 identity err/||d|| median=0.00036 (bound 0.00043); resid/leading term=1.0000
+[geometry] V_sig  S2_k50    O2_Y1  Q3 ratio~0.0010 rho(delta,cos)=+0.997 identity err/||d|| median=0.00051 (bound 0.00065); resid/leading term=1.0000
+[geometry] V_sig  S2_k50    O2_Y1  Q4 ratio~0.0018 rho(delta,cos)=+0.975 identity err/||d|| median=0.00090 (bound 0.01493); resid/leading term=1.0000
+[geometry] V_sig  S2_k50    O2_Y2  Q1 ratio~0.0004 rho(delta,cos)=+0.982 identity err/||d|| median=0.00022 (bound 0.00030); resid/leading term=1.0000
+[geometry] V_sig  S2_k50    O2_Y2  Q2 ratio~0.0007 rho(delta,cos)=+0.998 identity err/||d|| median=0.00035 (bound 0.00042); resid/leading term=1.0000
+[geometry] V_sig  S2_k50    O2_Y2  Q3 ratio~0.0010 rho(delta,cos)=+0.997 identity err/||d|| median=0.00050 (bound 0.00063); resid/leading term=1.0000
+[geometry] V_sig  S2_k50    O2_Y2  Q4 ratio~0.0018 rho(delta,cos)=+0.974 identity err/||d|| median=0.00088 (bound 0.01460); resid/leading term=1.0000
+[geometry] V_sig  S2_k100   O1_Y1  Q1 ratio~0.0048 rho(delta,cos)=+0.952 identity err/||d|| median=0.00233 (bound 0.00313); resid/leading term=0.9996
+[geometry] V_sig  S2_k100   O1_Y1  Q2 ratio~0.0075 rho(delta,cos)=+0.994 identity err/||d|| median=0.00370 (bound 0.00437); resid/leading term=0.9993
+[geometry] V_sig  S2_k100   O1_Y1  Q3 ratio~0.0106 rho(delta,cos)=+0.991 identity err/||d|| median=0.00521 (bound 0.00661); resid/leading term=0.9991
+[geometry] V_sig  S2_k100   O1_Y1  Q4 ratio~0.0183 rho(delta,cos)=+0.942 identity err/||d|| median=0.00898 (bound 0.14525); resid/leading term=0.9986
+[geometry] V_sig  S2_k100   O1_Y2  Q1 ratio~0.0042 rho(delta,cos)=+0.967 identity err/||d|| median=0.00207 (bound 0.00275); resid/leading term=0.9998
+[geometry] V_sig  S2_k100   O1_Y2  Q2 ratio~0.0066 rho(delta,cos)=+0.996 identity err/||d|| median=0.00324 (bound 0.00384); resid/leading term=0.9996
+[geometry] V_sig  S2_k100   O1_Y2  Q3 ratio~0.0093 rho(delta,cos)=+0.995 identity err/||d|| median=0.00458 (bound 0.00580); resid/leading term=0.9995
+[geometry] V_sig  S2_k100   O1_Y2  Q4 ratio~0.0161 rho(delta,cos)=+0.956 identity err/||d|| median=0.00793 (bound 0.12741); resid/leading term=0.9991
+[geometry] V_sig  S2_k100   O2_Y1  Q1 ratio~0.0006 rho(delta,cos)=+0.982 identity err/||d|| median=0.00027 (bound 0.00036); resid/leading term=1.0000
+[geometry] V_sig  S2_k100   O2_Y1  Q2 ratio~0.0009 rho(delta,cos)=+0.998 identity err/||d|| median=0.00043 (bound 0.00051); resid/leading term=1.0000
+[geometry] V_sig  S2_k100   O2_Y1  Q3 ratio~0.0012 rho(delta,cos)=+0.997 identity err/||d|| median=0.00061 (bound 0.00076); resid/leading term=1.0000
+[geometry] V_sig  S2_k100   O2_Y1  Q4 ratio~0.0021 rho(delta,cos)=+0.969 identity err/||d|| median=0.00104 (bound 0.01678); resid/leading term=0.9999
+[geometry] V_sig  S2_k100   O2_Y2  Q1 ratio~0.0005 rho(delta,cos)=+0.982 identity err/||d|| median=0.00026 (bound 0.00035); resid/leading term=1.0000
+[geometry] V_sig  S2_k100   O2_Y2  Q2 ratio~0.0009 rho(delta,cos)=+0.998 identity err/||d|| median=0.00042 (bound 0.00050); resid/leading term=1.0000
+[geometry] V_sig  S2_k100   O2_Y2  Q3 ratio~0.0012 rho(delta,cos)=+0.996 identity err/||d|| median=0.00059 (bound 0.00075); resid/leading term=1.0000
+[geometry] V_sig  S2_k100   O2_Y2  Q4 ratio~0.0021 rho(delta,cos)=+0.970 identity err/||d|| median=0.00102 (bound 0.01645); resid/leading term=0.9999
+[geometry] identity residual delta-(-||d||cos) is non-negative on True (negatives: 0); residual / predicted leading term has per-setting medians 0.9317 to 1.0223
+[change2] guide flag changed on 19,530 of 51,408 factor-settings; toward_young label changed on 1,539 in total; attributable to the guide rule alone: 0 inside SOUTH2's numbers and 645 inside SOUTH3's numbers
+[survivor-vs-cos] V_all  S1        O2_Y1  n=266 recovered by top-n: cos=184 identity=165 delta=180 ||d||=36; rho(delta,cos) over all factors=+0.974
+[survivor-vs-cos] V_all  S2_k20    O1_Y1  n=277 recovered by top-n: cos=208 identity=148 delta=169 ||d||=79; rho(delta,cos) over all factors=+0.919
+[survivor-vs-cos] V_all  S2_k20    O1_Y2  n=44 recovered by top-n: cos=32 identity=12 delta=21 ||d||=4; rho(delta,cos) over all factors=+0.974
+[survivor-vs-cos] V_all  S2_k20    O2_Y1  n=219 recovered by top-n: cos=155 identity=178 delta=180 ||d||=25; rho(delta,cos) over all factors=+0.970
+[survivor-vs-cos] V_all  S2_k20    O2_Y2  n=208 recovered by top-n: cos=144 identity=165 delta=167 ||d||=21; rho(delta,cos) over all factors=+0.967
+[survivor-vs-cos] V_all  S2_k50    O1_Y1  n=247 recovered by top-n: cos=194 identity=123 delta=150 ||d||=57; rho(delta,cos) over all factors=+0.951
+[survivor-vs-cos] V_all  S2_k50    O1_Y2  n=53 recovered by top-n: cos=35 identity=17 delta=31 ||d||=3; rho(delta,cos) over all factors=+0.972
+[survivor-vs-cos] V_all  S2_k50    O2_Y1  n=236 recovered by top-n: cos=165 identity=189 delta=191 ||d||=33; rho(delta,cos) over all factors=+0.974
+[survivor-vs-cos] V_all  S2_k50    O2_Y2  n=230 recovered by top-n: cos=159 identity=185 delta=185 ||d||=30; rho(delta,cos) over all factors=+0.973
+[survivor-vs-cos] V_all  S2_k100   O1_Y1  n=173 recovered by top-n: cos=143 identity=73 delta=109 ||d||=25; rho(delta,cos) over all factors=+0.972
+[survivor-vs-cos] V_all  S2_k100   O1_Y2  n=40 recovered by top-n: cos=27 identity=6 delta=22 ||d||=1; rho(delta,cos) over all factors=+0.943
+[survivor-vs-cos] V_all  S2_k100   O2_Y1  n=248 recovered by top-n: cos=183 identity=182 delta=187 ||d||=34; rho(delta,cos) over all factors=+0.969
+[survivor-vs-cos] V_all  S2_k100   O2_Y2  n=243 recovered by top-n: cos=178 identity=185 delta=191 ||d||=34; rho(delta,cos) over all factors=+0.973
+[survivor-vs-cos] V_sig  S1        O2_Y1  n=128 recovered by top-n: cos=97 identity=90 delta=93 ||d||=16; rho(delta,cos) over all factors=+0.881
+[survivor-vs-cos] V_sig  S2_k20    O1_Y1  n=67 recovered by top-n: cos=35 identity=42 delta=42 ||d||=11; rho(delta,cos) over all factors=+0.871
+[survivor-vs-cos] V_sig  S2_k20    O1_Y2  n=45 recovered by top-n: cos=28 identity=34 delta=34 ||d||=13; rho(delta,cos) over all factors=+0.923
+[survivor-vs-cos] V_sig  S2_k20    O2_Y1  n=40 recovered by top-n: cos=13 identity=23 delta=23 ||d||=7; rho(delta,cos) over all factors=+0.947
+[survivor-vs-cos] V_sig  S2_k20    O2_Y2  n=45 recovered by top-n: cos=17 identity=26 delta=26 ||d||=9; rho(delta,cos) over all factors=+0.948
+[survivor-vs-cos] V_sig  S2_k50    O1_Y1  n=62 recovered by top-n: cos=37 identity=38 delta=38 ||d||=10; rho(delta,cos) over all factors=+0.880
+[survivor-vs-cos] V_sig  S2_k50    O1_Y2  n=43 recovered by top-n: cos=29 identity=26 delta=27 ||d||=12; rho(delta,cos) over all factors=+0.922
+[survivor-vs-cos] V_sig  S2_k50    O2_Y1  n=79 recovered by top-n: cos=48 identity=49 delta=49 ||d||=17; rho(delta,cos) over all factors=+0.952
+[survivor-vs-cos] V_sig  S2_k50    O2_Y2  n=80 recovered by top-n: cos=51 identity=49 delta=49 ||d||=17; rho(delta,cos) over all factors=+0.952
+[survivor-vs-cos] V_sig  S2_k100   O1_Y1  n=48 recovered by top-n: cos=29 identity=30 delta=30 ||d||=6; rho(delta,cos) over all factors=+0.874
+[survivor-vs-cos] V_sig  S2_k100   O1_Y2  n=40 recovered by top-n: cos=28 identity=26 delta=26 ||d||=12; rho(delta,cos) over all factors=+0.922
+[survivor-vs-cos] V_sig  S2_k100   O2_Y1  n=80 recovered by top-n: cos=53 identity=56 delta=56 ||d||=14; rho(delta,cos) over all factors=+0.947
+[survivor-vs-cos] V_sig  S2_k100   O2_Y2  n=85 recovered by top-n: cos=57 identity=58 delta=58 ||d||=16; rho(delta,cos) over all factors=+0.949
+[summary] `toward_young` is 0 in 2 of the 28 settings and non-zero in 26, ranging 40-277 of 1836 factors. Non-zero settings are V_all, V_sig. The counts are not pooled and no single setting is primary. **No.** Across the 26 settings that have survivors, the Spearman correlation between the delta ranking and the cosine ranking over all 1,836 factors is at least +0.871, and within every quartile of ||d|| / ||target - origin|| in those settings it is at least +0.878. Taking the top-n factors by cosine alone, n being that setting's number of survivors, recovers 2,329 of the 3,326 survivors (70.0%) — and taking the top-n by delta itself, the statistic the label is built on, recovers 2,334 (70.2%). The two agree to within a percentage point, so the ~30% that neither recovers is the conjunction of the floor and q gates, not information the cosine lacks. ||d|| alone recovers only 542 (16.3%), so the label is not merely picking the biggest displacements. The mechanism is the identity: in every setting that has a survivor the median residual of delta = -||d||cos(theta) is at most 5.6% of ||d||, so delta there is the cosine re-weighted by the displacement's own length and carries nothing beyond it. No survivor in any setting is distinguishable on direction from what a plain cosine ranking would give. What the delta machinery does buy is not a different ordering but a bar: it says which of those cosines are larger than the factor's own reshuffled null, and a cosine ranking on its own never says that.
+[done]

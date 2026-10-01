@@ -1,0 +1,10 @@
+seaad_subclass,seaad_cell_type,dlpfc_type,mapping_key,n_nuclei,mapped
+Astrocyte,astrocyte of the cerebral cortex,,,70009,False
+Chandelier,pvalb chandelier GABAergic interneuron,,,10928,False
+Endothelial,cerebral cortex endothelial cell,,,2069,False
+L5 ET,L5 extratelencephalic projecting glutamatergic cortical neuron,,,2590,False
+L5/6 NP,near-projecting glutamatergic cortical neuron,,,20741,False
+L6 CT,corticothalamic-projecting glutamatergic cortical neuron,,,18402,False
+L6b,L6b glutamatergic cortical neuron,,,16227,False
+Pax6,caudal ganglionic eminence derived interneuron,,,9203,False
+Sncg,sncg GABAergic interneuron,,,22168,False

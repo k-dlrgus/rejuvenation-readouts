@@ -1,0 +1,21 @@
+dlpfc_type,n_nuclei,n_donors,n_subclasses
+L2/3-6 intratelencephalic projecting glutamatergic neuron,698416,89,5
+VIP GABAergic interneuron,104514,89,1
+lamp5 GABAergic interneuron,64364,89,2
+microglial cell,40000,89,1
+oligodendrocyte,111194,89,1
+oligodendrocyte precursor cell,32493,89,1
+pvalb GABAergic interneuron,90804,89,1
+sst GABAergic interneuron,59761,89,2
+vascular leptomeningeal cell,4328,87,1
+GABAergic neuron,0,0,0
+L2/3 intratelencephalic projecting glutamatergic neuron,0,0,0
+L5/6 near-projecting glutamatergic neuron,0,0,0
+L6 corticothalamic-projecting glutamatergic cortical neuron,0,0,0
+L6 intratelencephalic projecting glutamatergic neuron,0,0,0
+L6b glutamatergic neuron of the primary motor cortex,0,0,0
+astrocyte,0,0,0
+endothelial cell,0,0,0
+pericyte,0,0,0
+perivascular macrophage,0,0,0
+smooth muscle cell,0,0,0

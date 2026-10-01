@@ -1,0 +1,12 @@
+Written **before any age score**, 2026-09-19. No threshold in this block is re-tuned after numbers exist.
+
+Cluster the aged donor GM00731 jointly across timepoints at k = 3 (the FIBRO3 setting), 8, 15, and the Louvain pipeline in CLUSTER_SETTINGS. Fix all settings before any age score is computed.
+
+For each resolution, per cluster × timepoint (≥20 cells): n cells, fraction of timepoint, frozen age score, MD score, TGF-β score, pluripotency−fibroblast score (frozen lists from FINDINGS_FIBRO.md), and the pre-registered 200-direction random null on d0→d7 and d0→d10 separately.
+
+Frozen ruler: results/fibro/frozen_ruler_ridge_raw.npz used as-is. Age null = 200 permuted-ruler-weight directions (seed 20260914), empirical p = (n_random ≥ real + 1) / (n_random + 1). Endpoint decline = age_score(day 0) − age_score(day T). Positive = younger on the ruler. MD/TGF-β are Seurat AddModuleScore on LogNormalize counts (control-gene bins matched on average expression; nbin=24, ctrl=100). Do not average across donors, clusters, or resolutions. d7 is not the Stage 2 endpoint.
+
+**Pre-registered reading (only the outcome that fired):**
+- At finer resolution some cluster shows a d0→d7 or d0→d10 age decline with p ≤ 0.05 → FINDINGS_FIBRO3.md's per-cluster negative was a resolution artifact. Report which clusters, at which resolutions, and how stable the result is across resolutions. State plainly that this supersedes the FIBRO3 per-cluster reading, quoting the sentence it supersedes.
+- No cluster at any resolution shows p ≤ 0.05 → the per-cluster negative holds and is not a resolution artifact. The frozen ruler does not move in these cells at any granularity tested.
+- Results appear at k=15 but not at Louvain, or vice versa → report per resolution, do not average, and say the finding is resolution-dependent.

@@ -1,0 +1,233 @@
+**SUPERSEDED by SOUTH6 (FINDINGS_SOUTH6.md), which defines the control set from `guide_target` rather than `control`; nothing else in this file is changed and `results/south5/` is kept.**
+
+# FINDINGS_SOUTH5 — rerun the Southard ranking with guide columns named
+
+**Status:** STOP `control_ambiguous`.
+
+control does not separate non-targeting from targeting cells. guide_target value(s) appearing under BOTH control states: ['non']. 'non': control=True 11834 cells / 61 guides, control=False 2179 cells / 17 guides. Value counts before filtering: control={False: 208569, True: 11834}, keep={True: 220403}, single_cell={True: 220403}. The non-targeting label is simultaneously flagged control=True for some cells and control=False for others, so control=True is a strict subset of the non-targeting population and control=False mixes non-targeting cells in with targeting cells. Not guessing the non-targeting set from guide_target strings and not repairing rows.
+
+The fenced pre-registration was written to this file and to `results/south5/PREREG.flag` before any statistic. The fence is the flag file, not a paraphrase.
+
+## Pre-registration (verbatim, written before any statistic)
+
+```
+TASK: SOUTH5 — SOUTH4 rerun with guide columns named explicitly.
+
+Nature of this task: computational reanalysis of a public human cell dataset.
+No lab work, no protocol, no new data. Output is a ranked table.
+
+SOUTH4 stopped with key `guide_assignment` because its parser did not
+recognise the obs columns. The columns exist and are named below, so that
+stop was a parser limitation and not a property of the data. SOUTH5 supersedes
+SOUTH4 with the columns named. Delete results/south4/ entirely; its run
+continued past its own recorded STOP and its outputs are not trustworthy.
+Add one line at the top of FINDINGS_SOUTH4.md marking it superseded and
+withdrawn; change nothing else in it.
+
+EXECUTION RULES, binding:
+- When a STOP key fires, write the findings and exit. Never compute anything
+  after a STOP. Never resume a stopped run.
+- No checkpoint/resume logic unless you verify that resumed random draws are
+  bit-identical to an uninterrupted stream and report that check.
+- FINDINGS and PROGRESS must report the same stop status. Every failure
+  counted must be printed verbatim.
+- Write src/south5_run.py so it runs standalone from a terminal
+  (`python src/south5_run.py`) with no agent interaction. Report the command.
+  Do not run the full job yourself; write it, smoke-test Stage 0 only, stop.
+
+Write FINDINGS_SOUTH5.md, PROGRESS_SOUTH5.md, results/south5/*, src/south5_run.py.
+Do not modify any other FINDINGS_*, PROGRESS_*, or src/ file.
+Import from src/toward_run.py, src/same_run.py, src/seng_run.py,
+src/lowdim_common.py; do not change them. Do not refit the frozen ruler.
+Seeds: 20260914, 20260918. n_perm=5000, n_boot=200.
+
+WRITE THE PRE-REGISTRATION FIRST: copy this file verbatim into
+FINDINGS_SOUTH5.md and results/south5/PREREG.flag before any statistic.
+
+--- DATA ---
+Southard et al. 2025 Hs27 CRISPRa Perturb-seq, Zenodo 10.5281/zenodo.15200179,
+per-cell singlets file, already downloaded by SOUTH4 to data/raw/southard/.
+Record its size and md5. Do not re-download if the md5 is recorded and stable.
+Do not substitute the mean-population file or a single lane.
+
+--- GUIDE ASSIGNMENT (named, not inferred) ---
+Target column: `guide_target`. Guide column: `guide_identity`.
+Control column: `control`. Quality column: `keep`. Singlet column: `single_cell`.
+Report the distinct values of `control`, `keep` and `single_cell` with counts
+BEFORE filtering. Then keep only cells that are singlets and pass `keep`,
+reporting how many are dropped and why.
+Non-targeting cells are those flagged by `control`. If `control` does not
+separate non-targeting from targeting cells, STOP `control_ambiguous` and
+report the value counts. Do not guess from `guide_target` strings.
+
+--- STAGE 0: INVENTORY (descriptive only) ---
+Report: matrix shape before and after filtering; whether X is raw integer
+counts (STOP `no_raw_counts` if not and no raw layer exists); distinct target
+genes; guides per target (min/median/max); non-targeting guides and cells;
+cells per target.
+Ruler coverage three ways (symbol, version-stripped Ensembl, best after
+src/md3_idtype.py), each as gene count AND fraction of the ruler's total
+absolute weight. Use the highest-weight mapping; name it. Record
+`coverage_low` if that fraction is below 0.25. SURVEY_TF.md expects ~0.63;
+report the actual number whatever it is.
+STOP `too_few_factors` if fewer than 500 targets have 2+ guides.
+STOP `no_controls` if fewer than 20 non-targeting guides.
+
+--- STAGE 1 through STAGE 5 ---
+Identical to the SOUTH4 pre-registration, which is reproduced verbatim below
+this line in FINDINGS_SOUTH5.md, with two changes and no others:
+  (a) n_perm = 5000 instead of 20000. Reason stated now, before any number:
+      S1 here has ~7x the genes of SOUTH3, so each draw costs ~7x more.
+      At 5000 the smallest p is 1/5001 and BH across 1,836 factors reaches
+      q <= 0.05 once 8 factors tie at that minimum, against 2 at 20000.
+      Report the attainable minimum p and how many factors tie at it.
+  (b) The guide columns are those named above.
+[Paste the SOUTH4 prereg text from "--- STAGE 1: VECTORS AND SPACES ---"
+through "--- OUTPUT ---" here verbatim.]
+
+--- OUTPUT ---
+As SOUTH4, with results written to results/south5/ and the candidate table to
+results/south5/top20.csv. PROGRESS_SOUTH5.md gives the stop status, the exact
+terminal command to run the full job, and the expected runtime.
+Record every failure verbatim. Do not substitute columns or repair rows.
+
+================================================================================
+SOUTH4 pre-registration, Stages 1–5, reproduced verbatim (governed by the two
+changes stated above: n_perm = 5000, and the named guide columns):
+================================================================================
+
+--- STAGE 1: VECTORS AND SPACES ---
+Pseudobulk per target gene (all its cells) and per non-targeting guide.
+Process exactly as TOWARD/SAME: sum counts, TMM, log2 CPM prior.count=2
+across this task's own panel, frozen GTEx mu/sd z-score, missing genes z=0.
+Effect vector d_g = z(target g) - z(all non-targeting cells pooled).
+One gene variant only: all matched genes. No significance masking; SOUTH3
+showed masking makes guides orthogonal by construction.
+Spaces: S1 gene space; S2 low-dim PCA fit ONLY on the GTEx fibroblast donor
+matrix, k in (20, 50, 100), applied unchanged. Report every k.
+
+--- ORIGINS AND TARGETS ---
+PRIMARY, declared now and reported first: O1 = GTEx donors aged 60-79,
+Y1 = GTEx donors aged 20-39, in S1 and each S2 k.
+SECONDARY, reported but never primary: O2 = Lu aged donor GM00731 day-0
+pseudobulk; Y2 = young donors as a region (mean, covariance, Mahalanobis,
+radius at the 95th percentile of held-out young donors), S2 only, skipped
+at any k where the covariance is singular.
+Reason for the primary choice, stated now: SOUTH3 found ||O2-Y1|| is 7-15x
+||O1-Y1||, so O2 makes any favourable projection lower delta, and the aged
+GTEx origin already sits inside the Y2 region, so Y2 membership does not
+discriminate at O1. This choice is made before any SOUTH4 number exists.
+Report each origin-to-target distance before scoring anything.
+
+--- STAGE 2: DETECTION LIMIT (before any ranking) ---
+A. Primary floor: permute each factor's own vector across genes 20,000 times;
+   delta = ||(origin + d_perm) - target|| - ||origin - target||; the floor is
+   the 5th percentile. Report per-factor and pooled-at-median-norm floors.
+B. Control floor: same delta using each non-targeting guide as a pseudo-effect,
+   and using random splits of the non-targeting cells. Report both. With 78
+   guides this is now a real floor; report it alongside A and say which is
+   stricter.
+C. Dose-response: add the true young-minus-old direction to the origin at
+   f = 0, 0.05, 0.1, 0.25, 0.5, 1.0, scaled to the median factor norm.
+   MDA = smallest f clearing the primary floor.
+   STOP `no_detection_power` if no f <= 1.0 clears it anywhere.
+Never subtract a floor. It is a bar to clear.
+
+--- STAGE 3: RANKING ---
+Per factor, per setting: cos, frac, delta, and for Y2 the Mahalanobis change
+and membership. Guide agreement = median pairwise cosine between that factor's
+own guide-level vectors, computed on unmasked vectors; flag `guides_disagree`
+if <= 0. Identity check on COL1A1, COL1A2, FN1, LUM, PDGFRA, PDGFRB, POSTN,
+PRRX1, SERPINH1, VIM (report which are present); flag `identity_loss` if the
+drop exceeds 0.5. Proliferation-residualized cos and delta as in seng_run.py.
+Frozen ruler score change as context only.
+Nulls: Stage 2A permutations, one-sided p, BH across factors within setting.
+Bootstrap over cells; flag any interval not containing its point estimate as
+INVALID and never gate on it.
+Label `toward_young` only if delta < 0 AND below the factor's own Stage 2A
+floor AND q <= 0.05 AND not identity_loss AND not guides_disagree.
+Report counts per setting; never pool. Zero is a valid answer.
+
+--- STAGE 4: DOES DELTA ADD ANYTHING? ---
+Repeat SOUTH3's check at this coverage. Report ‖d‖/‖target-origin‖ per factor;
+Spearman between delta and cosine rankings overall and by quartile of that
+ratio; the residual of delta ≈ -‖d‖cos(theta); and what fraction of survivors
+a plain top-n-by-cosine recovers. State plainly whether delta separates from
+cosine at this coverage, and in which ratio quartile if anywhere.
+
+--- STAGE 5: COMBINATIONS ---
+State at the top of the section that this assumes effects add linearly and
+that no public fibroblast screen can test that assumption.
+Greedy forward search on summed vectors: add the factor that most reduces
+distance; stop when nothing reduces it, or on entering the Y2 region, or at
+size 5. Repeat from 50 random starts (seed 20260914); report how often the
+same set recurs. Per set: delta, margin over floor, ‖d‖/‖gap‖ ratio, identity
+flag, and delta with each member removed.
+Report no set unless its delta clears the floor by at least the Stage 2B MDA
+margin. Report whether combinations reach a ratio where Stage 4 showed delta
+and cosine separating.
+
+--- WHAT DOES NOT COUNT ---
+- cosine or ruler-score drop alone as evidence of approach.
+- any delta not clearing the measured primary floor.
+- subtracting a floor instead of clearing it.
+- choosing k, mapping, origin or target after seeing results.
+- substituting a smaller file for the pinned one.
+- dropping or relabelling factors because they look odd; report them.
+- pooling settings into one number.
+- claims about the source paper's own conclusions.
+
+--- OUTPUT ---
+FINDINGS_SOUTH4.md: prereg verbatim; Stage 0 inventory with all three coverage
+numbers; Stage 2 floors and MDA; Stage 3 counts plus a top-20 candidate table
+(factor, delta, margin over floor, q, guide agreement, identity flag,
+proliferation flag) written to results/south4/top20.csv; Stage 4 verdict;
+Stage 5 combinations; fired keys; limitations, which must include: Hs27 is one
+neonatal line with no aged cells, so every delta is a counterfactual assuming
+the effect transfers; combinations assume additivity, untestable here; unmeasured
+genes assumed unmoved.
+PROGRESS_SOUTH4.md: stop status, next action.
+Record every failure verbatim. Do not substitute columns or repair rows.
+```
+
+## Stage 0 — inventory and guide assignment (as far as it was computed)
+
+Matrix shape before filtering: [220403, 30395]. After keeping singlets that pass `keep`: [220403, 30395].
+
+Cells before filtering: 220403. Dropped not-singlet: 0. Dropped singlet-fails-keep: 0. Cells after filtering: 220403.
+
+Distinct values before filtering:
+
+- `control`: {False: 208569, True: 11834}
+- `keep`: {True: 220403}
+- `single_cell`: {True: 220403}
+
+Non-targeting cells flagged by `control` (kept): 11834 across 61 distinct guides.
+
+guide_target label(s) appearing under BOTH control states (the ambiguity):
+
+| guide_target | control=True cells | control=True guides | control=False cells | control=False guides |
+| --- | --- | --- | --- | --- |
+| non | 11834 | 61 | 2179 | 17 |
+
+For `non` the ambiguity is guide-level: 78 distinct guides carry this label, `control=True` covers 61 of them and no guide has its cells split across both control states. So `control=True` is a strict subset of the 'non' population, missing 17 guide(s) and 2179 cells, and those cells sit in the `control=False` pool the pre-registration would otherwise treat as targeting.
+
+This is a property of the annotation, not of the parser: the columns were read by the names given in the pre-registration and `guide_target` was compared as a literal string with no splitting or substring matching.
+
+
+## Limitations
+
+- Hs27 is one neonatal line with no aged cells, so every delta is a counterfactual assuming the effect transfers.
+- Combinations assume additivity, untestable here. No public fibroblast screen can test that assumption.
+- Unmeasured genes are assumed unmoved (z = 0) and are not permuted into.
+- The primary origin and target are GTEx fibroblast donors, not cells from this line. O2 is one aged donor's day-0 pseudobulk from a different study.
+- Non-targeting guides are the control the experiment measured. They are not a proof that the guides are inert.
+- The frozen ruler was not refit. Its score is context only and is not evidence of approach.
+
+## Failures (verbatim)
+
+- **control_ambiguous:** control does not separate non-targeting from targeting cells. guide_target value(s) appearing under BOTH control states: ['non']. 'non': control=True 11834 cells / 61 guides, control=False 2179 cells / 17 guides. Value counts before filtering: control={False: 208569, True: 11834}, keep={True: 220403}, single_cell={True: 220403}. The non-targeting label is simultaneously flagged control=True for some cells and control=False for others, so control=True is a strict subset of the non-targeting population and control=False mixes non-targeting cells in with targeting cells. Not guessing the non-targeting set from guide_target strings and not repairing rows.
+
+## Flags
+
+None recorded.

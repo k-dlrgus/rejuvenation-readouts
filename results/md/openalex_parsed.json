@@ -1,0 +1,510 @@
+{
+ "id": "https://openalex.org/W4413257752",
+ "doi": "https://doi.org/10.1016/j.cell.2025.07.031",
+ "title": "Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming",
+ "publication_year": 2025,
+ "open_access": {
+  "is_oa": false,
+  "oa_status": "closed",
+  "oa_url": null,
+  "any_repository_has_fulltext": false
+ },
+ "primary_location": {
+  "id": "doi:10.1016/j.cell.2025.07.031",
+  "is_oa": false,
+  "landing_page_url": "https://doi.org/10.1016/j.cell.2025.07.031",
+  "pdf_url": null,
+  "source": {
+   "id": "https://openalex.org/S110447773",
+   "display_name": "Cell",
+   "issn_l": "0092-8674",
+   "issn": [
+    "0092-8674",
+    "1097-4172"
+   ],
+   "is_oa": false,
+   "is_in_doaj": false,
+   "is_core": true,
+   "host_organization": "https://openalex.org/P4310315673",
+   "host_organization_name": "Cell Press",
+   "host_organization_lineage": [
+    "https://openalex.org/P4310315673",
+    "https://openalex.org/P4310320990"
+   ],
+   "host_organization_lineage_names": [
+    "Cell Press",
+    "Elsevier BV"
+   ],
+   "type": "journal"
+  },
+  "license": null,
+  "license_id": null,
+  "version": "publishedVersion",
+  "is_accepted": true,
+  "is_published": true,
+  "raw_source_name": "Cell",
+  "raw_type": "journal-article"
+ },
+ "locations": [
+  {
+   "id": "doi:10.1016/j.cell.2025.07.031",
+   "is_oa": false,
+   "landing_page_url": "https://doi.org/10.1016/j.cell.2025.07.031",
+   "pdf_url": null,
+   "source": {
+    "id": "https://openalex.org/S110447773",
+    "display_name": "Cell",
+    "issn_l": "0092-8674",
+    "issn": [
+     "0092-8674",
+     "1097-4172"
+    ],
+    "is_oa": false,
+    "is_in_doaj": false,
+    "is_core": true,
+    "host_organization": "https://openalex.org/P4310315673",
+    "host_organization_name": "Cell Press",
+    "host_organization_lineage": [
+     "https://openalex.org/P4310315673",
+     "https://openalex.org/P4310320990"
+    ],
+    "host_organization_lineage_names": [
+     "Cell Press",
+     "Elsevier BV"
+    ],
+    "type": "journal"
+   },
+   "license": null,
+   "license_id": null,
+   "version": "publishedVersion",
+   "is_accepted": true,
+   "is_published": true,
+   "raw_source_name": "Cell",
+   "raw_type": "journal-article"
+  },
+  {
+   "id": "pmid:40816266",
+   "is_oa": false,
+   "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40816266",
+   "pdf_url": null,
+   "source": {
+    "id": "https://openalex.org/S4306525036",
+    "display_name": "PubMed",
+    "issn_l": null,
+    "issn": null,
+    "is_oa": false,
+    "is_in_doaj": false,
+    "is_core": false,
+    "host_organization": "https://openalex.org/I1299303238",
+    "host_organization_name": "National Institutes of Health",
+    "host_organization_lineage": [
+     "https://openalex.org/I1299303238"
+    ],
+    "host_organization_lineage_names": [],
+    "type": "repository"
+   },
+   "license": null,
+   "license_id": null,
+   "version": "publishedVersion",
+   "is_accepted": true,
+   "is_published": true,
+   "raw_source_name": "Cell",
+   "raw_type": "Journal Article"
+  }
+ ],
+ "ids": {
+  "openalex": "https://openalex.org/W4413257752",
+  "doi": "https://doi.org/10.1016/j.cell.2025.07.031",
+  "pmid": "https://pubmed.ncbi.nlm.nih.gov/40816266"
+ },
+ "authorships": [
+  {
+   "author_position": "first",
+   "author": {
+    "id": "https://openalex.org/A5103583940",
+    "display_name": "Jinlong L\u00fc",
+    "orcid": null
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I1281661879",
+     "display_name": "Fleet Science Center",
+     "ror": "https://ror.org/03bcvkf46",
+     "country_code": "US",
+     "type": "archive",
+     "lineage": [
+      "https://openalex.org/I1281661879"
+     ]
+    },
+    {
+     "id": "https://openalex.org/I4387153853",
+     "display_name": "Altos Labs",
+     "ror": "https://ror.org/05467hx49",
+     "country_code": null,
+     "type": "company",
+     "lineage": [
+      "https://openalex.org/I4387153853"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "raw_author_name": "Jinlong Y. Lu",
+   "raw_affiliation_strings": [
+    "San Diego Institute of Science, Altos Labs, San Diego, CA, USA"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "San Diego Institute of Science, Altos Labs, San Diego, CA, USA",
+     "institution_ids": [
+      "https://openalex.org/I1281661879",
+      "https://openalex.org/I4387153853"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "middle",
+   "author": {
+    "id": "https://openalex.org/A5034777527",
+    "display_name": "William B. Tu",
+    "orcid": "https://orcid.org/0000-0002-2365-1995"
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I1281661879",
+     "display_name": "Fleet Science Center",
+     "ror": "https://ror.org/03bcvkf46",
+     "country_code": "US",
+     "type": "archive",
+     "lineage": [
+      "https://openalex.org/I1281661879"
+     ]
+    },
+    {
+     "id": "https://openalex.org/I4387153853",
+     "display_name": "Altos Labs",
+     "ror": "https://ror.org/05467hx49",
+     "country_code": null,
+     "type": "company",
+     "lineage": [
+      "https://openalex.org/I4387153853"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "raw_author_name": "William B. Tu",
+   "raw_affiliation_strings": [
+    "San Diego Institute of Science, Altos Labs, San Diego, CA, USA"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "San Diego Institute of Science, Altos Labs, San Diego, CA, USA",
+     "institution_ids": [
+      "https://openalex.org/I1281661879",
+      "https://openalex.org/I4387153853"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "middle",
+   "author": {
+    "id": "https://openalex.org/A5101419740",
+    "display_name": "Ronghui Li",
+    "orcid": "https://orcid.org/0000-0001-6329-5895"
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I1307098950",
+     "display_name": "Salk Institute for Biological Studies",
+     "ror": "https://ror.org/03xez1567",
+     "country_code": "US",
+     "type": "nonprofit",
+     "lineage": [
+      "https://openalex.org/I1307098950"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "raw_author_name": "Ronghui Li",
+   "raw_affiliation_strings": [
+    "San Diego Institute of Science, Altos Labs, San Diego, CA, USA; Salk Institute for Biological Studies, La Jolla, CA, USA"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "San Diego Institute of Science, Altos Labs, San Diego, CA, USA; Salk Institute for Biological Studies, La Jolla, CA, USA",
+     "institution_ids": [
+      "https://openalex.org/I1307098950"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "middle",
+   "author": {
+    "id": "https://openalex.org/A5067129088",
+    "display_name": "Mingxi Weng",
+    "orcid": "https://orcid.org/0000-0002-7630-7522"
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I1281661879",
+     "display_name": "Fleet Science Center",
+     "ror": "https://ror.org/03bcvkf46",
+     "country_code": "US",
+     "type": "archive",
+     "lineage": [
+      "https://openalex.org/I1281661879"
+     ]
+    },
+    {
+     "id": "https://openalex.org/I4387153853",
+     "display_name": "Altos Labs",
+     "ror": "https://ror.org/05467hx49",
+     "country_code": null,
+     "type": "company",
+     "lineage": [
+      "https://openalex.org/I4387153853"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "raw_author_name": "Mingxi Weng",
+   "raw_affiliation_strings": [
+    "San Diego Institute of Science, Altos Labs, San Diego, CA, USA"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "San Diego Institute of Science, Altos Labs, San Diego, CA, USA",
+     "institution_ids": [
+      "https://openalex.org/I1281661879",
+      "https://openalex.org/I4387153853"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "middle",
+   "author": {
+    "id": "https://openalex.org/A5082249148",
+    "display_name": "Bhargav D. Sanketi",
+    "orcid": "https://orcid.org/0000-0002-0581-7509"
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I1281661879",
+     "display_name": "Fleet Science Center",
+     "ror": "https://ror.org/03bcvkf46",
+     "country_code": "US",
+     "type": "archive",
+     "lineage": [
+      "https://openalex.org/I1281661879"
+     ]
+    },
+    {
+     "id": "https://openalex.org/I4387153853",
+     "display_name": "Altos Labs",
+     "ror": "https://ror.org/05467hx49",
+     "country_code": null,
+     "type": "company",
+     "lineage": [
+      "https://openalex.org/I4387153853"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "raw_author_name": "Bhargav D. Sanketi",
+   "raw_affiliation_strings": [
+    "San Diego Institute of Science, Altos Labs, San Diego, CA, USA"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "San Diego Institute of Science, Altos Labs, San Diego, CA, USA",
+     "institution_ids": [
+      "https://openalex.org/I1281661879",
+      "https://openalex.org/I4387153853"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "middle",
+   "author": {
+    "id": "https://openalex.org/A5107063890",
+    "display_name": "Baolei Yuan",
+    "orcid": null
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I1281661879",
+     "display_name": "Fleet Science Center",
+     "ror": "https://ror.org/03bcvkf46",
+     "country_code": "US",
+     "type": "archive",
+     "lineage": [
+      "https://openalex.org/I1281661879"
+     ]
+    },
+    {
+     "id": "https://openalex.org/I4387153853",
+     "display_name": "Altos Labs",
+     "ror": "https://ror.org/05467hx49",
+     "country_code": null,
+     "type": "company",
+     "lineage": [
+      "https://openalex.org/I4387153853"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "raw_author_name": "Baolei Yuan",
+   "raw_affiliation_strings": [
+    "San Diego Institute of Science, Altos Labs, San Diego, CA, USA"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "San Diego Institute of Science, Altos Labs, San Diego, CA, USA",
+     "institution_ids": [
+      "https://openalex.org/I1281661879",
+      "https://openalex.org/I4387153853"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "middle",
+   "author": {
+    "id": "https://openalex.org/A5045608179",
+    "display_name": "Pradeep Reddy",
+    "orcid": "https://orcid.org/0000-0002-9173-3845"
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I1307098950",
+     "display_name": "Salk Institute for Biological Studies",
+     "ror": "https://ror.org/03xez1567",
+     "country_code": "US",
+     "type": "nonprofit",
+     "lineage": [
+      "https://openalex.org/I1307098950"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "raw_author_name": "Pradeep Reddy",
+   "raw_affiliation_strings": [
+    "San Diego Institute of Science, Altos Labs, San Diego, CA, USA; Salk Institute for Biological Studies, La Jolla, CA, USA"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "San Diego Institute of Science, Altos Labs, San Diego, CA, USA; Salk Institute for Biological Studies, La Jolla, CA, USA",
+     "institution_ids": [
+      "https://openalex.org/I1307098950"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "middle",
+   "author": {
+    "id": "https://openalex.org/A5029674899",
+    "display_name": "Concepci\u00f3n Rodr\u0131\u0301guez Esteban",
+    "orcid": null
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I1307098950",
+     "display_name": "Salk Institute for Biological Studies",
+     "ror": "https://ror.org/03xez1567",
+     "country_code": "US",
+     "type": "nonprofit",
+     "lineage": [
+      "https://openalex.org/I1307098950"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": false,
+   "raw_author_name": "Concepcion Rodriguez Esteban",
+   "raw_affiliation_strings": [
+    "San Diego Institute of Science, Altos Labs, San Diego, CA, USA; Salk Institute for Biological Studies, La Jolla, CA, USA"
+   ],
+   "raw_orcid": null,
+   "affiliations": [
+    {
+     "raw_affiliation_string": "San Diego Institute of Science, Altos Labs, San Diego, CA, USA; Salk Institute for Biological Studies, La Jolla, CA, USA",
+     "institution_ids": [
+      "https://openalex.org/I1307098950"
+     ]
+    }
+   ]
+  },
+  {
+   "author_position": "last",
+   "author": {
+    "id": "https://openalex.org/A5050690657",
+    "display_name": "Juan Carlos Izpis\u00faa Belmonte",
+    "orcid": "https://orcid.org/0000-0003-0557-8875"
+   },
+   "institutions": [
+    {
+     "id": "https://openalex.org/I1307098950",
+     "display_name": "Salk Institute for Biological Studies",
+     "ror": "https://ror.org/03xez1567",
+     "country_code": "US",
+     "type": "nonprofit",
+     "lineage": [
+      "https://openalex.org/I1307098950"
+     ]
+    }
+   ],
+   "countries": [
+    "US"
+   ],
+   "is_corresponding": true,
+   "raw_author_name": "Juan Carlos Izpisua Belmonte",
+   "raw_affiliation_strings": [
+    "San Diego Institute of Science, Altos Labs, San Diego, CA, USA; Salk Institute for Biological Studies, La Jolla, CA, USA. Electronic address: jcbelmonte@altoslabs.com"
+   ],
+   "raw_orcid": "https://orcid.org/0000-0003-0557-8875",
+   "affiliations": [
+    {
+     "raw_affiliation_string": "San Diego Institute of Science, Altos Labs, San Diego, CA, USA; Salk Institute for Biological Studies, La Jolla, CA, USA. Electronic address: jcbelmonte@altoslabs.com",
+     "institution_ids": [
+      "https://openalex.org/I1307098950"
+     ]
+    }
+   ]
+  }
+ ]
+}

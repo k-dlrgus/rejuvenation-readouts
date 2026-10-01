@@ -1,0 +1,32 @@
+{
+ "key": "negative_holds",
+ "text": "No cluster at any resolution shows p \u2264 0.05. The per-cluster negative holds and is not a resolution artifact. The frozen ruler does not move in these cells at any granularity tested.",
+ "by_resolution": {
+  "k15": {
+   "n_ok": 6,
+   "n_pass": 0,
+   "pass_rows": []
+  },
+  "k3": {
+   "n_ok": 4,
+   "n_pass": 0,
+   "pass_rows": []
+  },
+  "k8": {
+   "n_ok": 7,
+   "n_pass": 0,
+   "pass_rows": []
+  },
+  "louvain": {
+   "n_ok": 2,
+   "n_pass": 0,
+   "pass_rows": []
+  }
+ },
+ "n_pass_total": 0,
+ "k3_n_pass": 0,
+ "k8_n_pass": 0,
+ "k15_n_pass": 0,
+ "louvain_n_pass": 0,
+ "fibro3_sentence_at_issue": "Aged GM00731 d0\u2192d7 (the all-cell T-B cell had p=+0.005): cluster 0 decline=-0.582 p=+0.652 n_ge=130/200 n_d0=4941 n_d7=2719; cluster 1 decline=+2.215 p=+0.144 n_ge=28/200 n_d0=76 n_d7=850; cluster 2 skipped (n_cells<20 at an endpoint)."
+}

@@ -1,0 +1,8 @@
+stop_L2=True
+angle_bar_deg=35.0
+gene_boot_angle=45.07377681100883
+n_pass_angle=0
+n_pass_transfer=0
+n_pass_both=0
+winner=NONE
+reason=no variant/k achieved bootstrap angle materially below gene space AND positive site transfer in at least one direction — direction is not identifiable even at low dimension

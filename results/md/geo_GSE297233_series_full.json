@@ -1,0 +1,89 @@
+{
+ "Series_title": [
+  "Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [RNA-seq]"
+ ],
+ "Series_geo_accession": [
+  "GSE297233"
+ ],
+ "Series_status": [
+  "Public on Aug 14 2025"
+ ],
+ "Series_submission_date": [
+  "May 15 2025"
+ ],
+ "Series_last_update_date": [
+  "Aug 19 2025"
+ ],
+ "Series_pubmed_id": [
+  "40816266"
+ ],
+ "Series_web_link": [
+  "https://doi.org/10.1016/j.cell.2025.07.031"
+ ],
+ "Series_summary": [
+  "The loss of cellular and tissue identity is a hallmark of aging and numerous diseases, but the underlying mechanisms are not well understood. Our analysis of gene expression data from over 40 human tissues and 20 diseases reveals a pervasive upregulation of mesenchymal genes across multiple cell types, along with an altered composition of stromal cell populations, denoting a \u201cmesenchymal drift\u201d (MD). Increased MD correlates with disease progression, reduced patient survival, and an elevated mortality risk, whereas suppression of key MD transcription factors leads to epigenetic rejuvenation. Notably, Yamanaka factor-induced partial reprogramming can markedly reduce MD before dedifferentiation and gain of pluripotency, rejuvenating the aging transcriptome at the cellular and tissue levels. These findings provide mechanistic insight into the underlying beneficial effects of partial reprogramming and offer a framework for developing interventions to reverse age-related diseases using the partial reprogramming approach."
+ ],
+ "Series_overall_design": [
+  "RNA-seq of dox induced OSK and OCT4YR mutant+SK expression in human fibroblasts from an aged donor (GM00731, 96yr male)."
+ ],
+ "Series_type": [
+  "Expression profiling by high throughput sequencing"
+ ],
+ "Series_contributor": [
+  "William,B,Tu",
+  "Jinlong,Y,Lu",
+  "Juan Carlos,,Izpisua Belmonte"
+ ],
+ "Series_sample_id": [
+  "GSM8986578",
+  "GSM8986579",
+  "GSM8986580",
+  "GSM8986581",
+  "GSM8986582",
+  "GSM8986583",
+  "GSM8986584",
+  "GSM8986585"
+ ],
+ "Series_contact_name": [
+  "William,B,Tu"
+ ],
+ "Series_contact_institute": [
+  "Altos Labs"
+ ],
+ "Series_contact_address": [
+  "10945 Alexandria Way, Suite 100"
+ ],
+ "Series_contact_city": [
+  "San Diego"
+ ],
+ "Series_contact_state": [
+  "CA"
+ ],
+ "Series_contact_zip/postal_code": [
+  "92121"
+ ],
+ "Series_contact_country": [
+  "USA"
+ ],
+ "Series_supplementary_file": [
+  "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297233/suppl/GSE297233_raw_counts_matrix.csv.gz"
+ ],
+ "Series_platform_id": [
+  "GPL30173"
+ ],
+ "Series_platform_organism": [
+  "Homo sapiens"
+ ],
+ "Series_platform_taxid": [
+  "9606"
+ ],
+ "Series_sample_organism": [
+  "Homo sapiens"
+ ],
+ "Series_sample_taxid": [
+  "9606"
+ ],
+ "Series_relation": [
+  "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1263275"
+ ]
+}

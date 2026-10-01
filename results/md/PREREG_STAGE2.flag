@@ -1,0 +1,16 @@
+Written **before any MD score or frozen-ruler comparison**, 2026-09-19. No threshold in this block is re-tuned after numbers exist. Stage 2 runs only if Stage 1 recovered the authors' MD gene list and computation from public sources (GEO, PubMed, PMC, preprint servers, code repositories, open supplements). Exact or not at all. Refit nothing. Recalibrate nothing. Rescale nothing. Frozen ruler `results/fibro/frozen_ruler_ridge_raw.npz` used as-is. Clustering and cell filters already frozen in `results/fibro3/` used as-is. GSE325735 is out of scope.
+
+On the GSE297234 matrices already used by FINDINGS_FIBRO / FINDINGS_FIBRO3 (Cell Ranger `filtered_feature_bc_matrix.h5`), using the joint-cluster labels and MIN_CELLS=20 already frozen in `results/fibro3/`:
+
+1. **Reproduce their metric.** Compute the MD score as published, per cell and per (donor × cluster × timepoint). Report its trajectory. State plainly whether our reproduction reproduces their reported direction and magnitude. If it does not, say so and stop — a failed reproduction of their metric means Stage 2's comparison is not valid.
+2. **Run their comparison both ways.** For the exact timepoint comparison they made, report side by side: their MD score, and our frozen age ruler. Both on whole-sample averages, and both per cluster. Four cells. Never averaged together.
+3. **Cross-check the metrics against each other.** Across all donor × cluster × timepoint rows with ≥20 cells, report Spearman ρ between MD score and frozen age score, with permutation null and bootstrap CI. Two age-related metrics on the same cells should agree if they measure the same thing.
+4. **Composition test on their metric.** Apply the FINDINGS_FIBRO3.md per-cluster decomposition to *their* score: does the MD change survive when populations are analysed separately, or is it a mix shift? Report with the same 200-direction null where applicable.
+
+Seed `20260914`. boot `20260918`. n_perm=200. n_boot=200. n_random=200. Spearman ρ with permutation null is the reported statistic. Nothing averaged across donors, clusters, or regimes.
+
+**Pre-registered reading (only the outcome that fired):**
+- MD moves per cluster, our ruler does not → the two instruments disagree on the same cells. Report as an instrument disagreement, describe both, and do not declare a winner. Name the test that would settle it.
+- Neither moves per cluster, both move on whole-sample averages → the published claim rests on composition, as ours did before decomposition. This is a methodological finding about how reprogramming time courses are read, and it must be stated carefully and without overreach: one dataset, two donors, our reproduction of their metric.
+- Both move per cluster → their claim holds and our ruler is insensitive to what OSKM does in these cells. Report it as a limitation of our ruler. This is a real possible outcome and must not be argued away.
+- MD and our ruler correlate strongly across rows but disagree on the trajectory → report the discrepancy as unexplained.

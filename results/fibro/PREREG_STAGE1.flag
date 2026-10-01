@@ -1,0 +1,27 @@
+Written **before any Stage 1 fit**, 2026-09-17. No threshold in this block is re-tuned after numbers exist.
+
+Cohort: GTEx Analysis V10 RNASEQ freeze (`SMAFRZE==RNASEQ`), `SMTSD == "Cells - Cultured fibroblasts"`.
+One sample per donor. Target = public `AGE` bin midpoint. Model = SVD-LOO ridge (same fitter as
+POSCTRL gene_ridge / TARGET age companion). PLS-1 is fit and reported; it is **not** averaged with
+ridge (GTEx T3: PLS-1 has an inflated null).
+
+Preprocessing (FINDINGS_GTEX.md Stage 0, verbatim): gene filter ≥6 counts in ≥20% of samples;
+TMM/edgeR log2-CPM (`prior.count=2`); per-gene z-score on training rows only.
+
+Covariate regimes `raw` and `resid`. `resid` columns: `SMRIN`, `SMTSISCH`, `DTHHRDY` one-hot, `SEX`,
+residualized on training rows only. `resid` is reported alongside `raw`; it is not a gate.
+
+Within-site CV grouped by `SMNABTCH` (batch-held-out). Donor-held-out is asserted in the same folds
+(one sample per donor). Metrics: Spearman ρ, donor-level permutation null (n_perm=200, seed `20260914`),
+donor-bootstrap 95% percentile CI (B=200, seed `20260918`), calibrated R², uncalibrated R².
+Pearson r is reported and is not a gate.
+
+Transfer: B1→C1 and C1→B1 (`SMCENTER`). D1 is too small and is excluded, stated, not silently dropped.
+
+**Stage 1 pass = ρ > 0 in both transfer directions with permutation-null ρ ≤ 0.05, in `raw`, ridge.**
+If Stage 1 fails, STOP. Do not open GSE297234. The fibroblast ruler does not transfer between GTEx
+sites, so a reprogramming projection would be uninterpretable.
+
+GTEx public `AGE` is a 10-year bin, so ρ is against a coarse ordinal target and year-level error is
+not meaningful. Gene-universe overlap with the DLPFC 25526-gene matrix (Ensembl, version-stripped)
+is reported before Stage 2.

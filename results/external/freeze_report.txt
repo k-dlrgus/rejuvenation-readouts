@@ -1,0 +1,64 @@
+====================================================================================================
+EXTERNAL freeze DLPFC directions on all 233 donors  seed=20260914  seaad_dataset_id=c2876b1b-06d8-4d96-a56b-5304f815b99a
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO perturbation data. No TF Atlas. No candidate interventions.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+Fail loudly: no substitute columns, no invented cell-type synonyms.
+Cohort: Whole Taxonomy - MTG: Seattle Alzheimer's Disease Atlas (SEA-AD)
+Pass bar: r > 0 with permutation-null r ≤ 0.05 in the primary (no/low pathology) cell.
+n_perm=200  n_boot=200  bootstrap seed=20260918
+[dlpfc] 20 cell types from brain_aging_phase1_obs.csv  donors=233
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[freeze] global z-score  rows=3323 genes=25526
+[freeze] raw ridge per type:
+  ok   n method     norm    alpha  intercept                                                    celltype
+True 179  ridge 2.194438     0.01  51.351955                                            GABAergic neuron
+True 220  ridge 3.031276     0.01  52.727273     L2/3 intratelencephalic projecting glutamatergic neuron
+True 215  ridge 2.797400     0.01  52.446512   L2/3-6 intratelencephalic projecting glutamatergic neuron
+True 124  ridge 1.501296     0.01  50.919355                   L5/6 near-projecting glutamatergic neuron
+True 153  ridge 1.708373     0.01  52.954248 L6 corticothalamic-projecting glutamatergic cortical neuron
+True 150  ridge 2.102366     0.01  53.060000       L6 intratelencephalic projecting glutamatergic neuron
+True 109  ridge 1.584041     0.01  49.889908        L6b glutamatergic neuron of the primary motor cortex
+True 217  ridge 2.933327     0.01  52.566820                                   VIP GABAergic interneuron
+True 229  ridge 2.716874     0.01  52.759825                                                   astrocyte
+True 160  ridge 1.227398     0.01  48.743750                                            endothelial cell
+True 205  ridge 2.455112     0.01  52.336585                                 lamp5 GABAergic interneuron
+True 219  ridge 1.710544     0.01  52.716895                                             microglial cell
+True 232  ridge 3.369090     0.01  52.594828                                             oligodendrocyte
+True 232  ridge 2.384925     0.01  52.715517                              oligodendrocyte precursor cell
+True 136  ridge 0.984077     0.01  48.360294                                                    pericyte
+True  31  ridge 0.410533 10000.00  45.387097                                     perivascular macrophage
+True 209  ridge 3.073924     0.01  52.382775                                 pvalb GABAergic interneuron
+True  16  ridge 0.236399 10000.00  44.312500                                          smooth muscle cell
+True 206  ridge 2.450013     0.01  51.946602                                   sst GABAergic interneuron
+True  81  ridge 0.888589     0.01  47.259259                                vascular leptomeningeal cell
+[freeze] identity basis rank=19  singular=[307.4200804082118, 170.53290192223565, 163.58706136180595, 126.8921985317219, 119.24628417358564]  used_types=20
+[freeze] identity-residual ridge per type:
+  ok   n method     norm  alpha  intercept                                                    celltype
+True 179  ridge 2.211985   0.01  51.351955                                            GABAergic neuron
+True 220  ridge 3.064660   0.01  52.727273     L2/3 intratelencephalic projecting glutamatergic neuron
+True 215  ridge 2.852965   0.01  52.446512   L2/3-6 intratelencephalic projecting glutamatergic neuron
+True 124  ridge 1.515676   0.01  50.919355                   L5/6 near-projecting glutamatergic neuron
+True 153  ridge 1.723480   0.01  52.954248 L6 corticothalamic-projecting glutamatergic cortical neuron
+True 150  ridge 2.130797   0.01  53.060000       L6 intratelencephalic projecting glutamatergic neuron
+True 109  ridge 1.601261   0.01  49.889908        L6b glutamatergic neuron of the primary motor cortex
+True 217  ridge 2.960399   0.01  52.566820                                   VIP GABAergic interneuron
+True 229  ridge 2.728338   0.01  52.759825                                                   astrocyte
+True 160  ridge 1.234053   0.01  48.743750                                            endothelial cell
+True 205  ridge 2.474907   0.01  52.336585                                 lamp5 GABAergic interneuron
+True 219  ridge 1.718665   0.01  52.716895                                             microglial cell
+True 232  ridge 3.378956   0.01  52.594828                                             oligodendrocyte
+True 232  ridge 2.394465   0.01  52.715517                              oligodendrocyte precursor cell
+True 136  ridge 0.986764   0.01  48.360294                                                    pericyte
+True  31  ridge 0.507088   0.01  45.387097                                     perivascular macrophage
+True 209  ridge 3.093297   0.01  52.382775                                 pvalb GABAergic interneuron
+True  16  ridge 0.310594   0.01  44.312500                                          smooth muscle cell
+True 206  ridge 2.483819   0.01  51.946602                                   sst GABAergic interneuron
+True  81  ridge 0.894468   0.01  47.259259                                vascular leptomeningeal cell
+[freeze] wrote <repo>\results\external\frozen_directions.npz in 43s  raw_ok=20 id_ok=20

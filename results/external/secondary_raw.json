@@ -1,0 +1,21 @@
+{
+ "cell": "secondary_raw",
+ "r": 0.6867487041860956,
+ "rho": 0.40714807138255477,
+ "r2": 0.4405645413608835,
+ "cal_r2": 0.4716237827012818,
+ "r_null": 0.002856833969084449,
+ "r_null_p95": 0.17497764075023792,
+ "r_p": 0.004975124378109453,
+ "n_perm": 200,
+ "n_boot": 200,
+ "r_ci_lo": 0.39596469836826115,
+ "r_ci_hi": 0.8059391859810906,
+ "pass_r": true,
+ "n_types_ok": 9,
+ "n_types": 9,
+ "residualize_on": "pathology_score",
+ "n_donors": 89,
+ "n_donors_all": 89,
+ "pathology_field": "ADNC"
+}

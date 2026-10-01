@@ -1,0 +1,459 @@
+{
+ "seed": 20260914,
+ "boot_seed": 20260918,
+ "files": {},
+ "failures": [],
+ "columns": {
+  "t4_scores_csv": {
+   "source": "<repo>\\results\\fibro2\\ta_cxg_a19d1667_scores.csv",
+   "columns": [
+    "sample",
+    "donor",
+    "age_years",
+    "age_source",
+    "n_cells",
+    "assay",
+    "age_score"
+   ]
+  },
+  "t4_proj_npz": {
+   "source": "<repo>\\data\\processed\\fibro2\\ta_cxg_a19d1667_proj.npz",
+   "columns": [
+    "logcpm",
+    "pred",
+    "y",
+    "donor",
+    "missing",
+    "Z"
+   ]
+  },
+  "t4_ta_result_json": {
+   "source": "<repo>\\results\\fibro2\\ta_cxg_a19d1667_result.json",
+   "columns": [
+    "accession",
+    "age_max",
+    "age_min",
+    "boot_seed",
+    "cal_r2",
+    "n_boot",
+    "n_donors",
+    "n_ensembl",
+    "n_excluded_child",
+    "n_excluded_no_age",
+    "n_missing_z0",
+    "n_overlap",
+    "n_perm",
+    "n_ruler",
+    "n_samples",
+    "n_symbol_fallback",
+    "n_unique_age",
+    "pass_rho",
+    "platform_detail",
+    "platform_kind",
+    "r",
+    "r2",
+    "rho",
+    "rho_ci_hi",
+    "rho_ci_lo",
+    "rho_null",
+    "rho_p",
+    "role",
+    "seed",
+    "tag",
+    "used_10x_only"
+   ]
+  },
+  "t1_stage2_geo_samples": {
+   "source": "<repo>\\results\\fibro\\stage2_geo_samples.csv",
+   "columns": [
+    "gsm",
+    "title",
+    "source",
+    "organism",
+    "molecule",
+    "description",
+    "characteristics",
+    "growth_protocol",
+    "cell_line",
+    "cell_type",
+    "tissue",
+    "treatment",
+    "day",
+    "age_from_characteristics",
+    "age_from_growth_protocol",
+    "library_name",
+    "fields_read",
+    "age_years",
+    "age_source"
+   ]
+  },
+  "t1_h5_GSM8986586": {
+   "source": "GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "t1_h5_GSM8986587": {
+   "source": "GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "t1_h5_GSM8986588": {
+   "source": "GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "t1_h5_GSM8986589": {
+   "source": "GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "t1_h5_GSM8986590": {
+   "source": "GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "t1_h5_GSM8986591": {
+   "source": "GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "t1_h5_GSM8986592": {
+   "source": "GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "t1_h5_GSM8986593": {
+   "source": "GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "t2_gtex_obs": {
+   "source": "<repo>\\results\\fibro\\stage1_obs.csv",
+   "columns": [
+    "SAMPID",
+    "SMATSSCR",
+    "SMCENTER",
+    "SMPTHNTS",
+    "SMRIN",
+    "SMTS",
+    "SMTSD",
+    "SMUBRID",
+    "SMTSISCH",
+    "SMTSPAX",
+    "SMNABTCH",
+    "SMNABTCHT",
+    "SMNABTCHD",
+    "SMGEBTCH",
+    "SMGEBTCHD",
+    "SMGEBTCHT",
+    "ANALYTE_TYPE",
+    "SMAFRZE",
+    "SMGTC",
+    "SMRDTTL",
+    "SMALTTL",
+    "SMALTALG",
+    "SMSUPALG",
+    "SMRDLGTH",
+    "SMVQCFL",
+    "SMLMAPQ",
+    "SMUMPRD",
+    "SMUNPDRD",
+    "SMMPPD",
+    "SMMAPRT",
+    "SMMPPDUN",
+    "SMUNMPRT",
+    "SMMPDP",
+    "SMDPMPRT",
+    "SMMPPDXG",
+    "SMMPDPXG",
+    "SMDPRTXG",
+    "SMCHMRD",
+    "SMCHMRT",
+    "SMMPPDPR",
+    "SMMPHQRD",
+    "SMMPHQRT",
+    "SMMPLQRD",
+    "SMSPLTRT",
+    "SME1MPRD",
+    "SME2MPRD",
+    "SME1MPRT",
+    "SME2MPRT",
+    "SME1MMB",
+    "SME2MMB",
+    "SME1TTLB",
+    "SME2TTLB",
+    "SME1MMRT",
+    "SME2MMRT",
+    "SMTTLMM",
+    "SMTTLB",
+    "SMBSMMRT",
+    "SMESTLBS",
+    "SMEXNCRD",
+    "SMEXNCRT",
+    "SMEXPEFF",
+    "SMNTRNRD",
+    "SMNTRNRT",
+    "SMNTRARD",
+    "SMNTRART",
+    "SMNTERRD",
+    "SMNTERRT",
+    "SMAMBRD",
+    "SMAMBRT",
+    "SMNTEXC",
+    "SMDSCRT",
+    "SMEXNCRTHQ",
+    "SMNTRNRTHQ",
+    "SMNTRARTHQ",
+    "SMNTERRTHQ",
+    "SMAMBRTHQ",
+    "SME1SNSE",
+    "SME2SNSE",
+    "SME1ANTI",
+    "SME2ANTI",
+    "SME1PCTS",
+    "SME2PCTS",
+    "SMGNSDTC",
+    "SMRRNARD",
+    "SMRRNART",
+    "SMMFLGTH",
+    "SMSFLGTH",
+    "SMMDFLGTH",
+    "SMSMFLGTH",
+    "SMFGCMN",
+    "SMFGCSD",
+    "SMFGCSK",
+    "SMFGCKT",
+    "SM3PBMN",
+    "SM3PBSD",
+    "SM3PBMD",
+    "SM3PB25P",
+    "SM3PB75P",
+    "SM3PBSDM",
+    "SM3PBGN",
+    "SMMDMNCV",
+    "SMMDCVSD",
+    "SMMDCVCV",
+    "SMEXCVMD",
+    "SMEXCVMAD",
+    "SMMNCV",
+    "SMUVCRD",
+    "SMUVCRT",
+    "SMSHRTRD",
+    "SMSHRTRT",
+    "SMSMRDHQ",
+    "SMSMRTHQ",
+    "SMPRERDHQ",
+    "SMPRERTHQ",
+    "SMSMGNDT",
+    "SMPREGNDT",
+    "SMRDLNMN",
+    "SMRDLNMD",
+    "SMRDLNSD",
+    "donor",
+    "SUBJID",
+    "SEX",
+    "AGE",
+    "DTHHRDY",
+    "age_mid",
+    "age_ordinal"
+   ]
+  },
+  "t2_t1_z": {
+   "source": "<repo>\\results\\fibro3\\t1_cluster_z.npz",
+   "columns": [
+    "Z",
+    "age",
+    "pluri_with",
+    "pluri_without",
+    "counts",
+    "logcpm",
+    "missing",
+    "cell_line",
+    "day",
+    "cluster",
+    "n_cells",
+    "below_min_cells"
+   ]
+  },
+  "t2_t1_table": {
+   "source": "<repo>\\results\\fibro3\\t1_cluster_table.csv",
+   "columns": [
+    "cell_line",
+    "day",
+    "cluster",
+    "age_years",
+    "gsm",
+    "age_source",
+    "n_cells",
+    "n_timepoint",
+    "frac_timepoint",
+    "median_UMI",
+    "median_genes",
+    "mito_frac_median_cell",
+    "below_min_cells",
+    "age_score",
+    "pluri_with_OSKM",
+    "pluri_without_OSKM",
+    "pluri_primary",
+    "pluri_primary_name"
+   ]
+  },
+  "t3_t1_z": {
+   "source": "<repo>\\results\\fibro3\\t1_cluster_z.npz",
+   "columns": [
+    "Z",
+    "age",
+    "pluri_with",
+    "pluri_without",
+    "counts",
+    "logcpm",
+    "missing",
+    "cell_line",
+    "day",
+    "cluster",
+    "n_cells",
+    "below_min_cells"
+   ]
+  },
+  "t3_t1_table": {
+   "source": "<repo>\\results\\fibro3\\t1_cluster_table.csv",
+   "columns": [
+    "cell_line",
+    "day",
+    "cluster",
+    "age_years",
+    "gsm",
+    "age_source",
+    "n_cells",
+    "n_timepoint",
+    "frac_timepoint",
+    "median_UMI",
+    "median_genes",
+    "mito_frac_median_cell",
+    "below_min_cells",
+    "age_score",
+    "pluri_with_OSKM",
+    "pluri_without_OSKM",
+    "pluri_primary",
+    "pluri_primary_name"
+   ]
+  }
+ },
+ "unusable": [],
+ "unverified": [],
+ "status": "FIBRO3_DONE",
+ "frozen_ruler": "<repo>\\results\\fibro\\frozen_ruler_ridge_raw.npz",
+ "task4_choice": "b",
+ "option_a_run": false,
+ "t4_reading": {
+  "key": "instrument_validated",
+  "text": "the frozen fibroblast ruler is a validated instrument outside GTEx and the Stage 2 trajectory is interpretable as a statement about the cells.",
+  "interpretable": true,
+  "pass_rho": true
+ },
+ "t4_pass": true,
+ "t1_reading": {
+  "key": "cell_intrinsic",
+  "text": "Cell-intrinsic. The same cells' clusters individually reverse from d7 to d10. Then reprogramming genuinely pushes cells back along the age axis after d7, and that is a biological claim worth its own test. clusters=[0, 1, 2].",
+  "donor": "GM00731",
+  "min_cells": 20,
+  "C_ok": [
+   0,
+   1,
+   2
+  ],
+  "per_cluster": [
+   {
+    "cluster": 0,
+    "n_d7": 2719,
+    "n_d10": 3431,
+    "age_score_d7": 4.8058231131303,
+    "age_score_d10": 8.594906197040617,
+    "delta_age_d10_minus_d7": 3.7890830839103167,
+    "reverse": true,
+    "stable_or_decline": false
+   },
+   {
+    "cluster": 1,
+    "n_d7": 850,
+    "n_d10": 698,
+    "age_score_d7": -5.380398452854362,
+    "age_score_d10": 2.249007769781151,
+    "delta_age_d10_minus_d7": 7.629406222635513,
+    "reverse": true,
+    "stable_or_decline": false
+   },
+   {
+    "cluster": 2,
+    "n_d7": 3346,
+    "n_d10": 270,
+    "age_score_d7": -2.904254014260958,
+    "age_score_d10": 0.6191974351913498,
+    "delta_age_d10_minus_d7": 3.523451449452308,
+    "reverse": true,
+    "stable_or_decline": false
+   }
+  ],
+  "n_C_ok": 3,
+  "high_age_clusters_d7": [
+   0
+  ],
+  "low_age_clusters_d7": [
+   1
+  ],
+  "mix_shift": true,
+  "mix_notes": [
+   "high-age cluster 0 grows frac 0.3932\u21920.7799"
+  ],
+  "reverse_clusters": [
+   0,
+   1,
+   2
+  ],
+  "stable_or_decline_clusters": []
+ },
+ "t2_observations": [
+  "nn_euclidean: age score does not rise with distance \u03c1=-0.625 CI=[-0.834, -0.320] n=22. Not a gate.",
+  "mahalanobis_pca: age score does not rise with distance \u03c1=-0.572 CI=[-0.772, -0.253] n=22. Not a gate."
+ ]
+}

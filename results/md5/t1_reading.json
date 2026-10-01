@@ -1,0 +1,81 @@
+{
+ "by_donor": {
+  "GM00731": {
+   "scheme_used": "a",
+   "scheme_a_is_primary": true,
+   "n_qualifying_a": 1,
+   "n_qualifying_b": 1,
+   "timepoints": [
+    10
+   ],
+   "per_timepoint": [
+    {
+     "day": 10,
+     "key": "pr_below_fibroblast",
+     "text": "PartialReprog below Fibroblast on the frozen ruler, beating its null. Responding cells read younger than their own starting population. The rejuvenation reading holds and is not an artifact of NonReprog reading old. GM00731 scheme=a d10 PartialReprog vs Fibroblast n_PR=31 n_Fib=1030 MD \u0394mean=-0.13701588483197658 p_lower=0.004975124378109453 Cohen_d=-1.0091524212841425 ruler \u0394mean=-0.931403319338088 p_lower=0.004975124378109453 Cohen_d=-1.2831818356450844.",
+     "scheme": "a"
+    }
+   ],
+   "scheme_b_tabulated_not_primary": true,
+   "key": "pr_below_fibroblast",
+   "text": "PartialReprog below Fibroblast on the frozen ruler, beating its null. Responding cells read younger than their own starting population. The rejuvenation reading holds and is not an artifact of NonReprog reading old. GM00731 scheme=a d10 PartialReprog vs Fibroblast n_PR=31 n_Fib=1030 MD \u0394mean=-0.13701588483197658 p_lower=0.004975124378109453 Cohen_d=-1.0091524212841425 ruler \u0394mean=-0.931403319338088 p_lower=0.004975124378109453 Cohen_d=-1.2831818356450844.",
+   "primary": true
+  },
+  "GM23815": {
+   "scheme_used": "a",
+   "scheme_a_is_primary": true,
+   "n_qualifying_a": 3,
+   "n_qualifying_b": 1,
+   "timepoints": [
+    3,
+    7,
+    10
+   ],
+   "per_timepoint": [
+    {
+     "day": 3,
+     "key": "pr_below_fibroblast",
+     "text": "PartialReprog below Fibroblast on the frozen ruler, beating its null. Responding cells read younger than their own starting population. The rejuvenation reading holds and is not an artifact of NonReprog reading old. GM23815 scheme=a d3 PartialReprog vs Fibroblast n_PR=6113 n_Fib=46 MD \u0394mean=-0.29987847032668635 p_lower=0.004975124378109453 Cohen_d=-2.2158509134958058 ruler \u0394mean=-0.6643573111844852 p_lower=0.004975124378109453 Cohen_d=-1.1345691552224035.",
+     "scheme": "a"
+    },
+    {
+     "day": 7,
+     "key": "pr_below_fibroblast",
+     "text": "PartialReprog below Fibroblast on the frozen ruler, beating its null. Responding cells read younger than their own starting population. The rejuvenation reading holds and is not an artifact of NonReprog reading old. GM23815 scheme=a d7 PartialReprog vs Fibroblast n_PR=309 n_Fib=2233 MD \u0394mean=-0.2357721618356915 p_lower=0.004975124378109453 Cohen_d=-2.420975098758663 ruler \u0394mean=-0.10963599174700889 p_lower=0.004975124378109453 Cohen_d=-0.17682718606618064.",
+     "scheme": "a"
+    },
+    {
+     "day": 10,
+     "key": "pr_below_fibroblast",
+     "text": "PartialReprog below Fibroblast on the frozen ruler, beating its null. Responding cells read younger than their own starting population. The rejuvenation reading holds and is not an artifact of NonReprog reading old. GM23815 scheme=a d10 PartialReprog vs Fibroblast n_PR=50 n_Fib=1373 MD \u0394mean=-0.25128324204493047 p_lower=0.004975124378109453 Cohen_d=-2.5514397494328436 ruler \u0394mean=-0.4743939721469417 p_lower=0.004975124378109453 Cohen_d=-0.9545810171291685.",
+     "scheme": "a"
+    }
+   ],
+   "scheme_b_tabulated_not_primary": true,
+   "key": "pr_below_fibroblast",
+   "text": "PartialReprog below Fibroblast on the frozen ruler, beating its null. Responding cells read younger than their own starting population. The rejuvenation reading holds and is not an artifact of NonReprog reading old. GM23815 scheme=a d3 PartialReprog vs Fibroblast n_PR=6113 n_Fib=46 MD \u0394mean=-0.29987847032668635 p_lower=0.004975124378109453 Cohen_d=-2.2158509134958058 ruler \u0394mean=-0.6643573111844852 p_lower=0.004975124378109453 Cohen_d=-1.1345691552224035. PartialReprog below Fibroblast on the frozen ruler, beating its null. Responding cells read younger than their own starting population. The rejuvenation reading holds and is not an artifact of NonReprog reading old. GM23815 scheme=a d7 PartialReprog vs Fibroblast n_PR=309 n_Fib=2233 MD \u0394mean=-0.2357721618356915 p_lower=0.004975124378109453 Cohen_d=-2.420975098758663 ruler \u0394mean=-0.10963599174700889 p_lower=0.004975124378109453 Cohen_d=-0.17682718606618064. PartialReprog below Fibroblast on the frozen ruler, beating its null. Responding cells read younger than their own starting population. The rejuvenation reading holds and is not an artifact of NonReprog reading old. GM23815 scheme=a d10 PartialReprog vs Fibroblast n_PR=50 n_Fib=1373 MD \u0394mean=-0.25128324204493047 p_lower=0.004975124378109453 Cohen_d=-2.5514397494328436 ruler \u0394mean=-0.4743939721469417 p_lower=0.004975124378109453 Cohen_d=-0.9545810171291685.",
+   "primary": true
+  }
+ },
+ "primary_pair": [
+  "PartialReprog",
+  "Fibroblast"
+ ],
+ "min_cells_a": 30,
+ "scheme_b_fib_days": [
+  0,
+  3
+ ],
+ "scheme_b_pr_days": [
+  3,
+  7
+ ],
+ "md4_sentence_at_issue": "Both instruments agree that partially reprogrammed cells read younger. Their claim is supported and our earlier negatives reflected the wrong test (a within-state trajectory with no baseline).",
+ "what_would_settle": "An independent fibroblast age instrument scored on these same Louvain-labelled PartialReprog vs Fibroblast cells at the same donor \u00d7 timepoint, or the authors' Seurat v5 / sctransform v2 object with the frozen ruler projected onto that split.",
+ "effect_size": "cohens_d_pooled_nminus1",
+ "delta_definition": "mean(PartialReprog) - mean(Fibroblast)",
+ "lower_rule": "delta_mean < 0 and p_mean_lower <= 0.05",
+ "scheme_b_is_weaker": true,
+ "cells_rescored": false,
+ "contrast_function": "md4_task1._one_contrast for scheme (a); stratified variant for scheme (b)"
+}

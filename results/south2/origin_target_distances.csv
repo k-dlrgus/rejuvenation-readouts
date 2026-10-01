@@ -1,0 +1,15 @@
+space,k,origin,target,metric,origin_to_target_distance,origin_to_target_mahalanobis,membership_radius,origin_inside_radius,y2_defined
+S1,,O1,Y1,euclidean_frozen_z,32.28394904985961,,,,
+S1,,O2,Y1,euclidean_frozen_z,468.3877944278175,,,,
+S2_k20,20.0,O1,Y1,euclidean_pc,28.64516649445142,,,,
+S2_k20,20.0,O1,Y2,euclidean_pc+mahalanobis,33.20998596793046,1.055423777692001,11.8805472682513,True,True
+S2_k20,20.0,O2,Y1,euclidean_pc,196.4503725228582,,,,
+S2_k20,20.0,O2,Y2,euclidean_pc+mahalanobis,204.3757134215984,14.205454860554047,11.8805472682513,False,True
+S2_k50,50.0,O1,Y1,euclidean_pc,30.86426606015206,,,,
+S2_k50,50.0,O1,Y2,euclidean_pc+mahalanobis,35.167984970050306,6.011387700635873,59.29865112256314,True,True
+S2_k50,50.0,O2,Y1,euclidean_pc,259.33352172621704,,,,
+S2_k50,50.0,O2,Y2,euclidean_pc+mahalanobis,265.18874318671385,127.03484975852814,59.29865112256314,False,True
+S2_k100,100.0,O1,Y1,euclidean_pc,31.434263271496413,,,,
+S2_k100,100.0,O1,Y2,euclidean_pc+mahalanobis,35.8352850939227,,,,False
+S2_k100,100.0,O2,Y1,euclidean_pc,272.04454793124097,,,,
+S2_k100,100.0,O2,Y2,euclidean_pc+mahalanobis,277.475825319001,,,,False

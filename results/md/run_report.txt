@@ -1,0 +1,106 @@
+====================================================================================================
+MD RUN cell=all  seed=20260914  boot_seed=20260918  retrieval_date=2026-09-19
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Public sources only: GEO, PubMed, PMC, preprint servers, code repositories, open supplements.
+Do not circumvent a paywall. Do not approximate an MD score. Do not open GSE325735.
+Refit nothing. Frozen ruler used as-is.
+frozen_ruler exists=True path=<repo>\results\fibro\frozen_ruler_ridge_raw.npz
+prereg written
+====================================================================================================
+MD STAGE1  seed=20260914  boot_seed=20260918  retrieval_date=2026-09-19
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Public sources only: GEO, PubMed, PMC, preprint servers, code repositories, open supplements.
+Do not circumvent a paywall. Do not approximate an MD score. Do not open GSE325735.
+Refit nothing. Frozen ruler used as-is.
+frozen_ruler exists=True path=<repo>\results\fibro\frozen_ruler_ridge_raw.npz
+PREREG_STAGE2.flag written before any MD score.
+Written **before any MD score or frozen-ruler comparison**, 2026-09-19. No threshold in this block is re-tuned after numbers exist. Stage 2 runs only if Stage 1 recovered the authors' MD gene list and computation from public sources (GEO, PubMed, PMC, preprint servers, code repositories, open supplements). Exact or not at all. Refit nothing. Recalibrate nothing. Rescale nothing. Frozen ruler `results/fibro/frozen_ruler_ridge_raw.npz` used as-is. Clustering and cell filters already frozen in `res …
+[geo] SOFT series GSE297234
+[get] 200 2960B geo/text https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297234&targ=self&form=text&view=full
+[geo] fetching GSM SOFT GSE297234
+[get] 200 21383B text/html; charset=utf-8 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297234
+[geo] SOFT series GSE297233
+[get] 200 2688B geo/text https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297233&targ=self&form=text&view=full
+[geo] fetching GSM SOFT GSE297233
+[get] 200 21383B text/html; charset=utf-8 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE297233
+[eutils] 200 esearch.fcgi 357B
+[get] 200 60372B text/html; charset=utf-8 https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA1263211
+[eutils] 200 esearch.fcgi 297B
+[eutils] 200 esearch.fcgi 347B
+[eutils] 200 efetch.fcgi 8321B
+[get] 203 5565B text/html; charset=utf-8 https://pubmed.ncbi.nlm.nih.gov/40816266/
+[get] 403 5871B text/html; charset=utf-8 https://www.cell.com/cell/fulltext/S0092-8674(25)00853-0
+[get] 200 2973B text/html;charset=utf-8 https://doi.org/10.1016/j.cell.2025.07.031
+[get] 403 832805B text/html; charset=utf-8 https://www.sciencedirect.com/science/article/pii/S0092867425008530
+[eutils] 200 esearch.fcgi 276B
+[eutils] 200 elink.fcgi 429B
+[get] 200 6929B application/json;charset=utf-8 https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:40816266&resultType=core&format=json
+[get] 200 2973B text/html;charset=utf-8 https://doi.org/10.1016/j.cell.2025.07.031
+[get] 200 197B application/json;charset=utf-8 https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=HAS_PREPRINT:Y%20AND%20EXT_ID:40816266&format=json
+[get] 200 2931B application/json https://api.unpaywall.org/v2/10.1016/j.cell.2025.07.031?email=none@example.invalid
+[get] 200 22498B application/json https://api.openalex.org/works/https://doi.org/10.1016/j.cell.2025.07.031
+[get] 200 38660B application/json https://api.crossref.org/works/10.1016/j.cell.2025.07.031
+[get] 403 6187B text/html; charset=utf-8 https://www.biorxiv.org/search/prevalent%20mesenchymal%20drift%20in%20aging%20jcode%3Abiorxiv%20numresults%3A25%20sort%3Arelevance-rank
+[get] 403 6039B text/html; charset=utf-8 https://www.biorxiv.org/search/author%3ALu%20mesenchymal%20drift%20jcode%3Abiorxiv%20numresults%3A25
+[get] 403 6108B text/html; charset=utf-8 https://www.biorxiv.org/search/%22mesenchymal%20drift%22%20jcode%3Abiorxiv%20numresults%3A25%20sort%3Arelevance-rank
+[get] 403 5994B text/html; charset=utf-8 https://www.medrxiv.org/search/%22mesenchymal%20drift%22%20jcode%3Amedrxiv%20numresults%3A25
+[get] 200 234130B text/html; charset=utf-8 https://www.researchsquare.com/browse?q=Prevalent%20mesenchymal%20drift%20in%20aging
+[get] 200 4207B text/html https://osf.io/preprints/discover?q=Prevalent%20mesenchymal%20drift
+[get] 403 5989B text/html; charset=utf-8 https://www.ssrn.com/index.cfm/en/search/?q=Prevalent%20mesenchymal%20drift
+[get] 200 235B application/json;charset=utf-8 https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE:%22Prevalent%20mesenchymal%20drift%22%20AND%20(SRC:PPR%20OR%20PUB_TYPE:preprint)&format=json
+[get] 200 233B application/json;charset=utf-8 https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22mesenchymal%20drift%22%20AND%20AUTHOR:Lu%20AND%20(SRC:PPR%20OR%20PUB_TYPE:preprint)&format=json
+[get] 200 55B application/json; charset=utf-8 https://api.github.com/search/repositories?q=GSE297234
+[get] 200 55B application/json; charset=utf-8 https://api.github.com/search/repositories?q=mesenchymal+drift
+[get] 200 55B application/json; charset=utf-8 https://api.github.com/search/repositories?q=mesenchymal+drift+Lu
+[get] 200 55B application/json; charset=utf-8 https://api.github.com/search/repositories?q=mesenchymal+drift+altos
+[get] 401 120B application/json; charset=utf-8 https://api.github.com/search/code?q=GSE297234
+[get] 200 14547B application/json https://zenodo.org/api/records?q=%22mesenchymal%20drift%22%20AND%20(Lu%20OR%20GSE297234)&size=20
+[post] 200 figshare
+[get] 403 919B text/html https://codeocean.com/explore?query=mesenchymal%20drift
+[get] 403 5883B text/html; charset=utf-8 https://www.cell.com/cell/supplemental/S0092-8674(25)00853-0
+[get] 403 5937B text/html; charset=utf-8 https://www.cell.com/cms/10.1016/j.cell.2025.07.031/attachment/mmc1.pdf
+[get] 403 5871B text/html; charset=utf-8 https://www.cell.com/cell/fulltext/S0092-8674(25)00853-0#supplementaryMaterial
+[get] 404 189B text/xml https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc1.pdf
+[get] 200 20033B application/excel https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc1.xlsx
+[get] 200 166098B application/excel https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc2.xlsx
+[get] 200 84749B application/excel https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc3.xlsx
+[get] 404 189B text/xml https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc4.xlsx
+[get] 404 189B text/xml https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc5.xlsx
+[get] 404 189B text/xml https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc2.pdf
+[get] 404 189B text/xml https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc3.pdf
+[get] 404 189B text/xml https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc6.xlsx
+[get] 404 189B text/xml https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc7.xlsx
+[get] 403 5985B text/html; charset=utf-8 https://www.cell.com/cms/attachment/stateless/pii/S0092-8674(25)00853-0/mmc1.pdf
+[gate] open=False gene_list=True computation=False
+[gate] MD score gene list and computation cannot be recovered from public sources. STOP after Stage 1.
+[stage1] sources=57 gate_open=False
+====================================================================================================
+MD STAGE2  seed=20260914  boot_seed=20260918  retrieval_date=2026-09-19
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Public sources only: GEO, PubMed, PMC, preprint servers, code repositories, open supplements.
+Do not circumvent a paywall. Do not approximate an MD score. Do not open GSE325735.
+Refit nothing. Frozen ruler used as-is.
+frozen_ruler exists=True path=<repo>\results\fibro\frozen_ruler_ridge_raw.npz
+Written **before any MD score or frozen-ruler comparison**, 2026-09-19. No threshold in this block is re-tuned after numbers exist. Stage 2 runs only if Stage 1 recovered the authors' MD gene list and computation from public sources (GEO, PubMed, PMC, preprint servers, code repositories, open supplements). Exact or not at all. Refit nothing. Recalibrate nothing. Rescale nothing. Frozen ruler `results/fibro/frozen_ruler_ridge_raw.npz` used as-is. Clustering and cell filters already frozen in `results/fibro3/` used as-is. GSE325735 is out of scope.
+
+On the GSE297234 matrices already used by FINDINGS_FIBRO / FINDINGS_FIBRO3 (Cell Ranger `filtered_feature_bc_matrix.h5`), using the joint-cluster labels and MIN_CELLS=20 already frozen in `results/fibro3/`:
+
+1. **Reproduce their metric.** Compute the MD score as published, per cell and per (donor × cluster × timepoint). Report its trajectory. State plainly whether our reproduction reproduces their reported direction and magnitude. If it does not, say so and stop — a failed reproduction of their metric means Stage 2's comparison is not valid.
+2. **Run their comparison both ways.** For the exact timepoint comparison they made, report side by side: their MD score, and our frozen age ruler. Both on whole-sample averages, and both per cluster. Four cells. Never averaged together.
+3. **Cross-check the metrics against each other.** Across all donor × cluster × timepoint rows with ≥20 cells, report Spearman ρ between MD score and frozen age score, with permutation null and bootstrap CI. Two age-related metrics on the same cells should agree if they measure the same thing.
+4. **Composition test on their metric.** Apply the FINDINGS_FIBRO3.md per-cluster decomposition to *their* score: does the MD change survive when populations are analysed separately, or is it a mix shift? Report with the same 200-direction null where applicable.
+
+Seed `20260914`. boot `20260918`. n_perm=200. n_boot=200. n_random=200. Spearman ρ with permutation null is the reported statistic. Nothing averaged across donors, clusters, or regimes.
+
+**Pre-registered reading (only the outcome that fired):**
+- MD moves per cluster, our ruler does not → the two instruments disagree on the same cells. Report as an instrument disagreement, describe both, and do not declare a winner. Name the test that would settle it.
+- Neither moves per cluster, both move on whole-sample averages → the published claim rests on composition, as ours did before decomposition. This is a methodological finding about how reprogramming time courses are read, and it must be stated carefully and without overreach: one dataset, two donors, our reproduction of their metric.
+- Both move per cluster → their claim holds and our ruler is insensitive to what OSKM does in these cells. Report it as a limitation of our ruler. This is a real possible outcome and must not be argued away.
+- MD and our ruler correlate strongly across rows but disagree on the trajectory → report the discrepancy as unexplained.
+
+[gate] open=False reason=MD score gene list and computation cannot be recovered from public sources. STOP after Stage 1.
+[stage2] not run — gate closed
+[findings] <repo>\FINDINGS_MD.md

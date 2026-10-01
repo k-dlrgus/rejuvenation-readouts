@@ -1,0 +1,5 @@
+pre-registration 2026-09-17 written before any Stage 1 T-cell fit
+n_perm=200
+primary=held-out Pearson r
+pass = r > 0 with null <= 0.05
+angle reported only

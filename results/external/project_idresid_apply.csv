@@ -1,0 +1,21 @@
+kind,celltype,n,ok,intercept,slope
+idresid,GABAergic neuron,0,False,,
+idresid,L2/3 intratelencephalic projecting glutamatergic neuron,0,False,,
+idresid,L2/3-6 intratelencephalic projecting glutamatergic neuron,89,True,52.446511627906965,2.8529681600647794
+idresid,L5/6 near-projecting glutamatergic neuron,0,False,,
+idresid,L6 corticothalamic-projecting glutamatergic cortical neuron,0,False,,
+idresid,L6 intratelencephalic projecting glutamatergic neuron,0,False,,
+idresid,L6b glutamatergic neuron of the primary motor cortex,0,False,,
+idresid,VIP GABAergic interneuron,88,True,52.5668202764977,2.960403233180639
+idresid,astrocyte,0,False,,
+idresid,endothelial cell,0,False,,
+idresid,lamp5 GABAergic interneuron,88,True,52.33658536585367,2.474909551808913
+idresid,microglial cell,87,True,52.716894977168955,1.7186661857626657
+idresid,oligodendrocyte,86,True,52.5948275862069,3.3789608232676027
+idresid,oligodendrocyte precursor cell,87,True,52.71551724137931,2.3944665352833225
+idresid,pericyte,0,False,,
+idresid,perivascular macrophage,0,False,,
+idresid,pvalb GABAergic interneuron,88,True,52.38277511961723,3.0933013100658386
+idresid,smooth muscle cell,0,False,,
+idresid,sst GABAergic interneuron,88,True,51.946601941747566,2.4838213795405277
+idresid,vascular leptomeningeal cell,77,True,47.25925925925925,0.8944686522195711

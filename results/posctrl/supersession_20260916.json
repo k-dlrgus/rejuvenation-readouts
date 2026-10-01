@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-16",
+  "written_before_any_c1_c3_fit": true,
+  "angle_bar_35_retired": true,
+  "primary_bar": "transfer R2 > 0 in both directions with permutation null <= 0.05",
+  "sex_angle_ref_deg": 41.3,
+  "sex_c2a_boot_median_angle": 41.336132228431666,
+  "P2": "planted dense_shared at R2~0.30 transfers both ways",
+  "P3": "it does not",
+  "calibration": "within-site site-stratified ridge R2 0.30 +/- 0.03",
+  "c3_n": [60, 100, 150, 233],
+  "c3_draws_per_n": 10,
+  "n_gt_233_crossover": "extrapolation",
+  "seed": 20260914,
+  "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11"
+}

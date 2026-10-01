@@ -1,0 +1,19 @@
+Written **before any MD3 three-way ρ vs donor age or paired Δρ**, 2026-09-19. No threshold in this block is re-tuned after numbers exist.
+
+Three instruments, all applied unchanged to the same donors: (1) frozen GTEx ruler from results/fibro/frozen_ruler_ridge_raw.npz, used as-is, not refit; (2) MD score, AddModuleScore as in md2; (3) their age-up minus age-down score (mmc3 Table S3 Age up and Age down, AddModuleScore, same implementation as md2). Instrument (3) is AMS(Age up) − AMS(Age down).
+
+Cohorts:
+- CELLxGENE a19d1667-a7b5-4556-9e5f-f9bfa690c0f1 (10x, n=93) — already in results/fibro2/ and results/md2/. Frozen-ruler and MD numbers are read from those files and recomputed from the saved per-donor scores as a check. Age-up minus age-down is newly scored on the cached donor-count matrix.
+- GSE226189 (bulk, n=82) — same: ruler and MD from disk; age-up minus age-down newly scored. geneCOUNT Tracking_ID is Ensembl; ID type is checked before mapping.
+- GSE113957 (bulk, n=143, ages 1–92). FPKM blocks DESeq2 and TMM/log2-CPM but does not block rank-based scoring. Rank-transform genes within sample and score all three instruments on ranks. This is a different transform from the GTEx spec and is therefore a weaker test. Restrict to adults ≥18 to match the ruler's training range; report the excluded count. Transcript IDs are RefSeq; gene symbols are parsed from Annotation/Divergence. Unmappable IDs stop this cohort, recorded, not substituted.
+
+Per instrument × cohort: Spearman ρ vs donor age, permutation null (shuffle ages, hold scores; n_perm=200, seed 20260914), p, bootstrap CI (B=200, seed 20260918), n genes mapped out of the list's total, and the ID type of the matrix. Uncalibrated R² is reported and is never a gate.
+
+Then the statistic that matters: per cohort, the paired bootstrap difference in ρ between the frozen ruler and each of the other two instruments — resample donors, recompute both ρ on the same resampled donors, report Δρ = ρ_ruler − ρ_other with its 95% percentile CI. A Δρ CI that excludes zero is the claim; two separate ρ values with overlapping CIs are not. Report Δρ even where it favours the other instrument.
+
+**Pre-registered reading:**
+- Δρ CI excludes zero in favour of the ruler (CI lower bound > 0) in ≥2 of 3 named cohorts → MD and/or their aging signature predict donor age materially worse than the ruler on independent fibroblast cohorts.
+- Δρ CI includes zero (in the cohorts that distinguish the instruments under test) → the instruments are not distinguishable on age prediction at these n, and the Task 1 disagreement cannot be attributed to one being a weaker age instrument. Say which.
+- Mixed (one cohort excludes zero in favour of the ruler, another in favour of the other instrument, or fewer than two ruler-favouring cohorts) → report per cohort, do not average, do not declare a winner.
+
+An unscored cohort does not count as excluding zero. Do not report two separate ρ values as evidence of a difference without the paired Δρ CI. Do not declare a winner between the instruments.

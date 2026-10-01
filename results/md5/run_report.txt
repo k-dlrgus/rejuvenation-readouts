@@ -1,0 +1,179 @@
+====================================================================================================
+MD5 RUN  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / labels / AddModuleScore inherited from md2; not re-tuned.
+md4 cell_scores reused; cells are not rescored. md4 _one_contrast reused.
+MIN_CELLS_A=30. Scheme (b) Fib days=(0, 3) PR days=(3, 7). Donors never pooled.
+====================================================================================================
+MD5 TASK1  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / labels / AddModuleScore inherited from md2; not re-tuned.
+md4 cell_scores reused; cells are not rescored. md4 _one_contrast reused.
+MIN_CELLS_A=30. Scheme (b) Fib days=(0, 3) PR days=(3, 7). Donors never pooled.
+Written **before any MD5 contrast p-value**, 2026-09-19. No threshold in this block is re-tuned after numbers exist.
+
+Using the src/md2_*.py Louvain clustering already computed (not re-run, not re-tuned). Cell-state labels are the md2 assignment: argmax of mean AddModuleScore of mmc3 Reprog_cell_state_signatures columns Fibroblast / PartialReprog / EarlyPluripotency / Pluripotency / NonReprog. Labels are read from results/md2/t2_cluster_labels_*.csv. Not re-labelled. AddModuleScore for MD and TGF-β is the per-cell vector already stored in data/processed/md2/louvain_ams_*.npz (the md2 computation). Table S3 Age up / Age down and the frozen-ruler / pluripotency−fibroblast per-cell scores are the vectors already stored in data/processed/md4/cell_scores_*.npz (the md4 computation). Frozen ruler: results/fibro/frozen_ruler_ridge_raw.npz used as-is. Refit nothing. Do not re-cluster, re-label, re-tune, or rescore.
+
+Report aged donor GM00731 and young donor GM23815 separately, never pooled. First report cell counts for Fibroblast and PartialReprog at every timepoint per donor. Then run the contrast under two pre-declared schemes, both reported, neither substituted for the other:
+
+- (a) relaxed threshold: both states ≥30 cells at the same timepoint, no pooling across timepoints. Primary if it qualifies.
+- (b) pooled timepoints within state: Fibroblast cells from d0+d3 against PartialReprog cells from d3+d7, each pooled within donor. This breaks md4's within-timepoint permutation guard, so the permutation must shuffle the state label within timepoint strata and the timepoint composition of both arms must be reported. Label this clearly as the weaker design; use it only where (a) does not qualify. Do not report (b) as primary where (a) qualified. Do not lower the threshold below 30. Do not pool donors.
+
+Instruments, all applied unchanged from md4 cell_scores / md2 louvain_ams: frozen ruler, MD, TGF-β, Table S3 age-up minus age-down, pluripotency−fibroblast. Per contrast report Δmean and Δmedian, cell-level permutation p (200 shuffles, stratified as above for scheme (b); unstratified two-state shuffle among the cells in those two states at that donor × timepoint for scheme (a), which is md4_task1._one_contrast unchanged), bootstrap 95% CI (B=200), and Cohen's d (pooled sd, n−1, same sign as Δmean). Seed 20260914 for permutations. Bootstrap seed 20260918. Scheme (a) permutation/bootstrap offsets reuse md4_common.perm_seed / boot_seed for pair PartialReprog vs Fibroblast so already-published md4 context rows must reproduce. Scheme (b) uses a documented offset that does not collide with md4.
+
+Δmean = mean(PartialReprog) − mean(Fibroblast). “Below” / “beating the null” = Δmean < 0 and p_lower ≤ 0.05 on that instrument's cell-level permutation null. Empirical p_lower = (n_null ≤ Δobs + 1) / (n_null + 1).
+
+Sanity, before any new contrast p-value: (1) reproduce FINDINGS_MD2.md pooled MD means on the aged donor (PartialReprog +0.150, NonReprog +0.439; t2_reproduction.json); (2) occupancy matches results/md4/t1_cell_counts.csv. If either fails, stop. Cell-state labels have drifted.
+
+**Pre-registered reading (only the outcome that fired, per donor):**
+- PartialReprog below Fibroblast on the frozen ruler, beating its null → responding cells read younger than their own starting population. The rejuvenation reading holds and is not an artifact of NonReprog reading old. State this plainly.
+- PartialReprog not below Fibroblast while md4's PartialReprog < NonReprog stands → the md4 result is driven by NonReprog reading old, not by PartialReprog reading young. The rejuvenation reading is not supported by this data, and md4's reading must be restated in those terms. Say so plainly and quote the md4 sentence at issue.
+- Instruments disagree (MD below Fibroblast, ruler not, or the reverse) → report both, declare no winner, name what would settle it.
+- Neither scheme qualifies on the aged donor → the decisive test cannot be run in this dataset. Say so; do not lower the threshold further, and do not let the young donor stand in for the aged one.
+
+If two qualifying scheme-(a) timepoints in one donor fire different bullets, report both, do not pick, do not average. Scheme (b) is not averaged with scheme (a). Donors are not pooled.
+
+[genesets] inherited md4 MD n=205 TGFB n=54 Age up n=1533 Age down n=2007
+[id_type] GM00731 louvain_counts keys=['data', 'indices', 'indptr', 'shape', 'symbols', 'gene_id', 'feature_type']
+[id_type louvain_GM00731_symbols] kind=symbol n=29058 n_ensembl=0 n_refseq=0 n_symbol_like=29057 source=<repo>\data\processed\md2\louvain_counts_GM00731.npz:symbols examples=['AL627309.1', 'AL627309.5', 'AP006222.2', 'AL669831.2', 'LINC01409', 'FAM87B', 'LINC01128', 'LINC00115']
+[id_type louvain_GM00731_gene_id] kind=ensembl n=29058 n_ensembl=29058 n_refseq=0 n_symbol_like=0 source=<repo>\data\processed\md2\louvain_counts_GM00731.npz:gene_id examples=['ENSG00000238009', 'ENSG00000241860', 'ENSG00000286448', 'ENSG00000229905', 'ENSG00000237491', 'ENSG00000177757', 'ENSG00000228794', 'ENSG00000225880']
+[id_type] GM23815 louvain_counts keys=['data', 'indices', 'indptr', 'shape', 'symbols', 'gene_id', 'feature_type']
+[id_type louvain_GM23815_symbols] kind=symbol n=29154 n_ensembl=0 n_refseq=0 n_symbol_like=29154 source=<repo>\data\processed\md2\louvain_counts_GM23815.npz:symbols examples=['AL627309.1', 'AL627309.3', 'AL627309.5', 'AP006222.2', 'LINC01409', 'FAM87B', 'LINC01128', 'LINC00115']
+[id_type louvain_GM23815_gene_id] kind=ensembl n=29154 n_ensembl=29154 n_refseq=0 n_symbol_like=0 source=<repo>\data\processed\md2\louvain_counts_GM23815.npz:gene_id examples=['ENSG00000238009', 'ENSG00000239945', 'ENSG00000241860', 'ENSG00000286448', 'ENSG00000237491', 'ENSG00000177757', 'ENSG00000228794', 'ENSG00000225880']
+[t1 labels] GM00731 columns actually read: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[t1 obs] GM00731 columns actually read: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[t1 ams] GM00731 keys actually read: ['md', 'tgfb', 'bins', 'gene_mean', 'cluster', 'day', 'n_genes']
+[t1 labels] GM23815 columns actually read: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[t1 obs] GM23815 columns actually read: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[t1 ams] GM23815 keys actually read: ['md', 'tgfb', 'bins', 'gene_mean', 'cluster', 'day']
+[t1 counts] GM00731 d0 Fibroblast n=4939 PartialReprog n=3 both_ge30=False
+[t1 counts] GM00731 d3 Fibroblast n=5 PartialReprog n=5220 both_ge30=False
+[t1 counts] GM00731 d7 Fibroblast n=14 PartialReprog n=578 both_ge30=False
+[t1 counts] GM00731 d10 Fibroblast n=1030 PartialReprog n=31 both_ge30=True
+[t1 counts] GM23815 d0 Fibroblast n=7703 PartialReprog n=9 both_ge30=False
+[t1 counts] GM23815 d3 Fibroblast n=46 PartialReprog n=6113 both_ge30=True
+[t1 counts] GM23815 d7 Fibroblast n=2233 PartialReprog n=309 both_ge30=True
+[t1 counts] GM23815 d10 Fibroblast n=1373 PartialReprog n=50 both_ge30=True
+[t1] occupancy matches md4 t1_cell_counts.csv
+[t1 qualify a] GM00731 d0 PR n=3 Fib n=4939 qualifies=False
+[t1 qualify a] GM00731 d3 PR n=5220 Fib n=5 qualifies=False
+[t1 qualify a] GM00731 d7 PR n=578 Fib n=14 qualifies=False
+[t1 qualify a] GM00731 d10 PR n=31 Fib n=1030 qualifies=True
+[t1 qualify a] GM23815 d0 PR n=9 Fib n=7703 qualifies=False
+[t1 qualify a] GM23815 d3 PR n=6113 Fib n=46 qualifies=True
+[t1 qualify a] GM23815 d7 PR n=309 Fib n=2233 qualifies=True
+[t1 qualify a] GM23815 d10 PR n=50 Fib n=1373 qualifies=True
+[t1 qualify b] GM00731 Fib d0+d3 n=4944 PR d3+d7 n=5798 qualifies=True primary=False
+[t1 qualify b] GM23815 Fib d0+d3 n=7749 PR d3+d7 n=6422 qualifies=True primary=False
+[t1 sanity] n_PR=5832 n_NR=5459 MD_PR=+0.150471 MD_NR=+0.439448 ok=True
+[prereg] wrote <repo>\results\md5\DECLARED_BEFORE_SCORES.flag
+[t1 cell_scores] GM00731 keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[t1 cell_scores] GM23815 keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[t1 a] GM00731 d10 frozen_ruler Δmean=-0.931403319338088 p_lower=0.004975124378109453 d=-1.2831818356450844 beats=True
+[t1 a] GM00731 d10 md_score Δmean=-0.13701588483197658 p_lower=0.004975124378109453 d=-1.0091524212841425 beats=True
+[t1 a] GM00731 d10 tgfb_score Δmean=-0.004107466405590791 p_lower=0.40298507462686567 d=-0.05381853285720995 beats=False
+[t1 a] GM00731 d10 age_up_minus_age_down Δmean=-0.002632521947631375 p_lower=0.4129353233830846 d=-0.04415175581622318 beats=False
+[t1 a] GM00731 d10 pluri_primary Δmean=1.2414730347100704 p_lower=1.0 d=1.351243663591647 beats=False
+[t1 a] GM23815 d3 frozen_ruler Δmean=-0.6643573111844852 p_lower=0.004975124378109453 d=-1.1345691552224035 beats=True
+[t1 a] GM23815 d3 md_score Δmean=-0.29987847032668635 p_lower=0.004975124378109453 d=-2.2158509134958058 beats=True
+[t1 a] GM23815 d3 tgfb_score Δmean=-0.1175256396218631 p_lower=0.004975124378109453 d=-1.1883322976431392 beats=True
+[t1 a] GM23815 d3 age_up_minus_age_down Δmean=-0.06410726941088542 p_lower=0.004975124378109453 d=-1.3041889622312766 beats=True
+[t1 a] GM23815 d3 pluri_primary Δmean=1.8298043771406025 p_lower=1.0 d=1.394056252164136 beats=False
+[t1 a] GM23815 d7 frozen_ruler Δmean=-0.10963599174700889 p_lower=0.004975124378109453 d=-0.17682718606618064 beats=True
+[t1 a] GM23815 d7 md_score Δmean=-0.2357721618356915 p_lower=0.004975124378109453 d=-2.420975098758663 beats=True
+[t1 a] GM23815 d7 tgfb_score Δmean=-0.04359542669477191 p_lower=0.004975124378109453 d=-0.5274386049217576 beats=True
+[t1 a] GM23815 d7 age_up_minus_age_down Δmean=-0.05572521482579239 p_lower=0.004975124378109453 d=-1.171211040303416 beats=True
+[t1 a] GM23815 d7 pluri_primary Δmean=1.7911517576100486 p_lower=1.0 d=2.221779562750616 beats=False
+[t1 a] GM23815 d10 frozen_ruler Δmean=-0.4743939721469417 p_lower=0.004975124378109453 d=-0.9545810171291685 beats=True
+[t1 a] GM23815 d10 md_score Δmean=-0.25128324204493047 p_lower=0.004975124378109453 d=-2.5514397494328436 beats=True
+[t1 a] GM23815 d10 tgfb_score Δmean=-0.07981397765950829 p_lower=0.004975124378109453 d=-1.023575661595331 beats=True
+[t1 a] GM23815 d10 age_up_minus_age_down Δmean=-0.03319711568379739 p_lower=0.004975124378109453 d=-0.5825223888408261 beats=True
+[t1 a] GM23815 d10 pluri_primary Δmean=2.3384884605181337 p_lower=1.0 d=3.8677492544354215 beats=False
+[t1 overlap] md4 PR vs Fib qualifying rows=10 mismatches=0
+[t1 b] GM00731 frozen_ruler Δmean=-0.7241545543747385 p_lower=0.03482587064676617 d=-1.0044269867882298 beats=True mixed_strata=1
+[t1 b] GM00731 md_score Δmean=-0.3564518526499474 p_lower=0.004975124378109453 d=-2.714676253120738 beats=True mixed_strata=1
+[t1 b] GM00731 tgfb_score Δmean=-0.08591156163502403 p_lower=0.07462686567164178 d=-0.9482825636406078 beats=False mixed_strata=1
+[t1 b] GM00731 age_up_minus_age_down Δmean=-0.12499034753114649 p_lower=0.01990049751243781 d=-2.351637202848407 beats=True mixed_strata=1
+[t1 b] GM00731 pluri_primary Δmean=3.783684171942191 p_lower=0.9900497512437811 d=2.7919626740351737 beats=False mixed_strata=1
+[t1 b] GM23815 frozen_ruler Δmean=-0.6773371381311222 p_lower=0.004975124378109453 d=-1.1998135604416902 beats=True mixed_strata=1
+[t1 b] GM23815 md_score Δmean=-0.3885120955009841 p_lower=0.004975124378109453 d=-3.5868862542862407 beats=True mixed_strata=1
+[t1 b] GM23815 tgfb_score Δmean=-0.06680372143534376 p_lower=0.004975124378109453 d=-0.7523257010041658 beats=True mixed_strata=1
+[t1 b] GM23815 age_up_minus_age_down Δmean=-0.11975580799327008 p_lower=0.004975124378109453 d=-2.1973909365992705 beats=True mixed_strata=1
+[t1 b] GM23815 pluri_primary Δmean=2.732327331441425 p_lower=1.0 d=2.8542962840349992 beats=False mixed_strata=1
+[t1 reading] GM00731=pr_below_fibroblast scheme=a GM23815=pr_below_fibroblast scheme=a
+====================================================================================================
+MD5 TASK2  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / labels / AddModuleScore inherited from md2; not re-tuned.
+md4 cell_scores reused; cells are not rescored. md4 _one_contrast reused.
+MIN_CELLS_A=30. Scheme (b) Fib days=(0, 3) PR days=(3, 7). Donors never pooled.
+Written **before any MD5 QC median, cell-cycle fraction, extrapolation row, or NonReprog − Fibroblast contrast p-value**, 2026-09-19. Report-only. No gate.
+
+Per donor × timepoint, for each of NonReprog, Fibroblast and PartialReprog with ≥30 Louvain-kept cells: median UMI, median genes, mitochondrial fraction, cell-cycle phase fractions if computable from the md2 object (louvain_obs / louvain_ams / cluster labels). If those objects have no phase / S.Score / G2M.Score columns, record that cell-cycle is not computable from the md2 object and do not substitute Seurat CellCycleScoring or a new Tirosh score.
+
+Extrapolation distance to the GTEx fibroblast training distribution: the same PCA k=50 nearest-neighbour Euclidean and Mahalanobis measures as FINDINGS_FIBRO2.md / src/fibro2_extrap.py, already computed in results/md4/t2_extrap.csv (TMM among that donor's state×timepoint rows, then frozen μ/σ/w). Read those rows. Do not re-TMM, do not refit PCA, do not rescore.
+
+Also report, for each instrument, the NonReprog − Fibroblast contrast at every timepoint where both states have ≥30 cells, calling md4_task1._one_contrast unchanged (unstratified within timepoint). If NonReprog reads consistently older than the starting fibroblasts across donors and timepoints, state that as an observation and note the paper's own remark about viral infection and culture conditions in those cells. Do not use Task 2 to discount Task 1.
+
+[t1 labels] GM00731 columns actually read: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[t1 obs] GM00731 columns actually read: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[t2 cellcycle] GM00731 not computable. md2 louvain_obs / louvain_ams have no phase / S.Score / G2M.Score columns. Cell-cycle phase fractions are not computable from the md2 object. Not substituting Seurat CellCycleScoring or a new Tirosh score.
+[t1 cell_scores] GM00731 keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[t2 qc] GM00731 d0 NonReprog n=65 median_UMI=3904.0 median_genes=1659.0 mito=0.0514
+[t2 qc] GM00731 d0 Fibroblast n=4939 median_UMI=14469.0 median_genes=4094.0 mito=0.0255
+[t2 qc] GM00731 d3 NonReprog n=348 median_UMI=4735.0 median_genes=2138.0 mito=0.0248
+[t2 qc] GM00731 d3 PartialReprog n=5220 median_UMI=11444.5 median_genes=3922.0 mito=0.0372
+[t2 qc] GM00731 d7 NonReprog n=1932 median_UMI=8500.0 median_genes=3058.0 mito=0.0382
+[t2 qc] GM00731 d7 PartialReprog n=578 median_UMI=11502.0 median_genes=4018.5 mito=0.0361
+[t2 qc] GM00731 d10 NonReprog n=3114 median_UMI=12389.5 median_genes=3977.0 mito=0.0362
+[t2 qc] GM00731 d10 Fibroblast n=1030 median_UMI=20629.5 median_genes=5162.0 mito=0.0254
+[t2 qc] GM00731 d10 PartialReprog n=31 median_UMI=1979.0 median_genes=1205.0 mito=0.0168
+[t2 NR-Fib] GM00731 d0 frozen_ruler Δmean=-1.758279184439047 p_two=0.004975124378109453 nr_older=False
+[t2 NR-Fib] GM00731 d0 md_score Δmean=-0.15606894270043625 p_two=0.004975124378109453 nr_older=False
+[t2 NR-Fib] GM00731 d0 tgfb_score Δmean=0.04434935521301012 p_two=0.004975124378109453 nr_older=True
+[t2 NR-Fib] GM00731 d0 age_up_minus_age_down Δmean=0.10819629975879028 p_two=0.004975124378109453 nr_older=True
+[t2 NR-Fib] GM00731 d0 pluri_primary Δmean=1.85756636901732 p_two=0.004975124378109453 nr_older=True
+[t2 NR-Fib] GM00731 d10 frozen_ruler Δmean=0.030753108167346 p_two=0.27860696517412936 nr_older=False
+[t2 NR-Fib] GM00731 d10 md_score Δmean=-0.00037217157017016556 p_two=0.9303482587064676 nr_older=False
+[t2 NR-Fib] GM00731 d10 tgfb_score Δmean=0.009861844103101343 p_two=0.009950248756218905 nr_older=True
+[t2 NR-Fib] GM00731 d10 age_up_minus_age_down Δmean=0.06043393740248334 p_two=0.004975124378109453 nr_older=True
+[t2 NR-Fib] GM00731 d10 pluri_primary Δmean=-0.037255645289388184 p_two=0.208955223880597 nr_older=False
+[t1 labels] GM23815 columns actually read: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[t1 obs] GM23815 columns actually read: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[t2 cellcycle] GM23815 not computable. md2 louvain_obs / louvain_ams have no phase / S.Score / G2M.Score columns. Cell-cycle phase fractions are not computable from the md2 object. Not substituting Seurat CellCycleScoring or a new Tirosh score.
+[t1 cell_scores] GM23815 keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[t2 qc] GM23815 d0 Fibroblast n=7703 median_UMI=8169.0 median_genes=3038.0 mito=0.0292
+[t2 qc] GM23815 d3 Fibroblast n=46 median_UMI=6851.5 median_genes=2799.0 mito=0.0423
+[t2 qc] GM23815 d3 PartialReprog n=6113 median_UMI=11265.0 median_genes=4014.0 mito=0.0481
+[t2 qc] GM23815 d7 Fibroblast n=2233 median_UMI=4637.0 median_genes=2041.0 mito=0.0399
+[t2 qc] GM23815 d7 PartialReprog n=309 median_UMI=7489.0 median_genes=3001.0 mito=0.0458
+[t2 qc] GM23815 d10 NonReprog n=1794 median_UMI=4912.0 median_genes=2206.0 mito=0.0374
+[t2 qc] GM23815 d10 Fibroblast n=1373 median_UMI=8846.0 median_genes=3140.0 mito=0.0416
+[t2 qc] GM23815 d10 PartialReprog n=50 median_UMI=9196.0 median_genes=3437.0 mito=0.0468
+[t2 NR-Fib] GM23815 d10 frozen_ruler Δmean=0.29426745267144483 p_two=0.004975124378109453 nr_older=True
+[t2 NR-Fib] GM23815 d10 md_score Δmean=0.04346592924057163 p_two=0.004975124378109453 nr_older=True
+[t2 NR-Fib] GM23815 d10 tgfb_score Δmean=-0.001359088475812946 p_two=0.6666666666666666 nr_older=False
+[t2 NR-Fib] GM23815 d10 age_up_minus_age_down Δmean=0.05557920134488903 p_two=0.004975124378109453 nr_older=True
+[t2 NR-Fib] GM23815 d10 pluri_primary Δmean=-0.31202724099526513 p_two=0.004975124378109453 nr_older=False
+[t2 obs] frozen_ruler n_qualifying=3 n_nr_older=1 consistently=False
+[t2 obs] md_score n_qualifying=3 n_nr_older=1 consistently=False
+[t2 obs] tgfb_score n_qualifying=3 n_nr_older=2 consistently=False
+[t2 obs] age_up_minus_age_down n_qualifying=3 n_nr_older=3 consistently=True
+[t2 obs] pluri_primary n_qualifying=3 n_nr_older=1 consistently=False
+[t2] NonReprog does not read consistently older than Fibroblast on the frozen ruler across all qualifying donor × timepoints. Observation only. Not used to discount Task 1. Paper remark (not used as a gate): "another is to the non-reprogrammed state that retains many of the starting fibroblast marker genes (Figure S6B), but it also expresses distinct markers perhaps due to viral infection and/or different culture conditions (Figure 3E)".
+[run] DONE

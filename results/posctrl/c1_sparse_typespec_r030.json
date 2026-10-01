@@ -1,0 +1,58 @@
+{
+ "cell": "c1_sparse_typespec_r030",
+ "regime": "sparse_typespec",
+ "target_r2": 0.3,
+ "beta": 0.2667642179173281,
+ "cal": {
+  "beta": 0.2667642179173281,
+  "cheap_then_full_r2": 0.29578407961886966,
+  "target_r2": 0.3,
+  "cal_seed": 20260916,
+  "in_band": true,
+  "history": [
+   {
+    "beta": 0.44516618921823026,
+    "full_fold_r2": 0.587095052048605
+   },
+   {
+    "beta": 0.2444019196143821,
+    "full_fold_r2": 0.2509151539396055
+   },
+   {
+    "beta": 0.2667642179173281,
+    "full_fold_r2": 0.29578407961886966
+   }
+  ],
+  "n_extra": 2
+ },
+ "b_reduced": false,
+ "n_boot": 20,
+ "n_perm": 20,
+ "achieved_within_site_r2": 0.29578407961886966,
+ "within_site_null": -0.15888221038306988,
+ "boot_median_angle": 40.45825888932583,
+ "recovery_angle": 58.04140995758933,
+ "loso_r2": -0.2600393753250141,
+ "loso_null": -1.643209706589794,
+ "transfer_H_to_M": -0.08446023949278847,
+ "transfer_M_to_H": -0.4150243081474245,
+ "transfer_H_to_M_null": -1.6054839537027359,
+ "transfer_M_to_H_null": -1.448166325515419,
+ "young_old_balanced": 84.66473772766307,
+ "young_old_within_H": 87.42126615413316,
+ "young_old_within_M": 87.82773860585192,
+ "pass_angle": false,
+ "pass_transfer": false,
+ "pass_transfer_any": false,
+ "pass_transfer_primary": false,
+ "angle_vs_sex_ref": -0.8417411106741639,
+ "pass_both": false,
+ "support_frac": 0.5687500000000001,
+ "elapsed_s": 519.922598361969,
+ "path": "<repo>\\results\\posctrl\\c1_sparse_typespec_r030.json",
+ "cal_achieved_before_battery": 0.29578407961886966,
+ "sex_angle_ref": 41.3,
+ "complete": true,
+ "seed": 20260914,
+ "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11"
+}

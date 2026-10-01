@@ -1,0 +1,165 @@
+TASK: SOUTH2
+
+Nature of this task: a purely computational reanalysis of a published,
+publicly released human cell dataset already on disk in this repository.
+No laboratory work, no protocol, no biological material, no new data.
+The output is a ranked table and a set of statistics.
+
+SOUTH halted at Stage 0 with key `no_raw_counts` because its pre-registration
+described the input as a count matrix and the pinned file holds per-guide
+regression output instead. SOUTH2 supersedes SOUTH with an input description
+that matches the file. Do not edit FINDINGS_SOUTH.md; add one line at its top
+marking it superseded by SOUTH2, and leave everything else in it unchanged.
+
+Write FINDINGS_SOUTH2.md, PROGRESS_SOUTH2.md, results/south2/*, src/south2_run.py.
+Do not modify any other existing FINDINGS_*.md, PROGRESS_*.md, or src/ file.
+Import from src/toward_run.py, src/same_run.py, src/seng_run.py,
+src/lowdim_common.py, src/md3_idtype.py; do not change them.
+Do not refit the frozen ruler.
+Seeds: 20260914 (splits, nulls, permutations), 20260918 (bootstrap).
+n_null=200, n_perm=200, n_boot=200. Uncalibrated R2 is never a gate.
+
+WRITE THE PRE-REGISTRATION FIRST. Copy this whole file verbatim into
+FINDINGS_SOUTH2.md and touch results/south2/PREREG.flag before computing any
+statistic. Stage 0 may run after the flag exists. Nothing is re-tuned after
+numbers exist. Every STOP key halts the task and is reported as written.
+
+--- DATA (described as the file actually is) ---
+results/survey/opened/southard/fibroblast_CRISPRa_mean_pop.h5ad
+1,720,196,368 bytes, md5 ba44c7813903bb5df900348d6b0d589a.
+Rows are per-guide perturbations; X holds per-gene effect estimates from the
+source's own regression, with p and adj_p layers and a masked layer.
+This task uses those effect estimates directly as perturbation vectors.
+It does not use L4A_matrix.h5 and does not download anything.
+
+--- STAGE 0: INVENTORY (descriptive only, no statistic) ---
+Report:
+- exact shape; what one row is; what the column index holds (symbols,
+  Ensembl ids, versioned Ensembl ids, or mixed).
+- the units and log base of X, from uns, var, obs, or any bundled
+  documentation. If undeterminable, record key `scale_unknown` as a
+  REPORT-ONLY flag, not a stop; note that the Stage 2 floor is
+  magnitude-matched and therefore invariant to a global scale factor,
+  while the Stage 2 MDA is not.
+- what the masked layer marks, and how many entries it covers. Masked
+  entries are set to 0 and the count is reported.
+- ruler-gene coverage computed THREE ways: by symbol, by Ensembl id with
+  version suffixes stripped, and by the better of the two after
+  src/md3_idtype.py normalisation. For each, report the number of the
+  23,485 ruler genes matched AND the fraction of the ruler's total
+  absolute weight matched. Use the mapping with the highest weight
+  fraction for all later stages and name it explicitly.
+  Record flag `coverage_low` if that weight fraction is below 0.25.
+- number of distinct transcription factors, guides per factor
+  (min, median, max), and the count with at least 2 guides.
+- the untargeted control rows, identified by the `off-target` label and by
+  empty target_gene_id / NaN target_expr / active=False. Report their count
+  and, for each, sequence_driven status, de_genes count, and cell count.
+  These are used only as a secondary floor and are flagged as not inert.
+STOP, key `not_an_effect_matrix`, if X is not per-gene effect estimates.
+STOP, key `too_few_factors`, if fewer than 500 factors have 2+ guides.
+
+--- STAGE 1: VECTORS AND SPACES ---
+Per-factor effect vector: mean of that factor's guide rows.
+Conversion to frozen-ruler coordinates: divide each gene's effect by that
+gene's frozen training sd, giving a displacement in frozen-z units. Genes
+absent from the table are set to 0, meaning "this factor does not move this
+gene"; state that this is a weaker assumption than setting an expression
+level to zero, and report how many coordinates it fixes.
+Two gene variants, both pre-registered, both reported, never combined:
+  V_all  = every matched gene.
+  V_sig  = matched genes with adj_p <= 0.05 kept, the rest set to 0.
+Two spaces, both reported:
+  S1 gene space, frozen-ruler coordinates as above.
+  S2 low-dim, PCA fit ONLY on the GTEx fibroblast donor matrix, never on
+  this dataset or the targets, k in (20, 50, 100), applied unchanged.
+  Report every k; do not choose one after seeing results.
+
+--- TARGETS AND ORIGINS (fixed before anything is scored) ---
+Young target, reported separately, never combined:
+  Y1 = GTEx fibroblast donors aged 20-39 (existing TOWARD anchor).
+  Y2 = the same donors as a region: mean and covariance, S2 only,
+       Mahalanobis distance, membership radius at the 95th percentile of
+       held-out young donors' own distances. Report the radius.
+Aged origin, reported separately, never combined:
+  O1 = GTEx fibroblast donors aged 60-79 (existing anchor).
+  O2 = the Lu et al. aged donor GM00731 untreated day-0 fibroblast
+       pseudobulk, as built in SAME.
+Report each origin-to-target distance before scoring anything.
+
+--- STAGE 2: DETECTION LIMIT (before any factor is ranked) ---
+A. Primary floor, magnitude-matched random direction. For each factor,
+   permute its own vector's entries across genes 200 times and compute
+   delta = ||(origin + d_perm) - target|| - ||origin - target||.
+   The per-factor floor is the 5th percentile of that distribution.
+   Also report a pooled floor built from a vector at the median factor norm.
+B. Secondary floor, controls. Same delta using the untargeted control rows
+   as pseudo-effects. Report it, flag it as built on non-inert controls,
+   and do not use it as the gate.
+C. Dose-response. Add the true young-minus-old direction to the aged origin
+   at f = 0, 0.05, 0.1, 0.25, 0.5, 1.0, scaled to the median factor norm.
+   MDA = the smallest f whose delta falls below the primary floor.
+   STOP, key `no_detection_power`, if no f <= 1.0 clears the floor in any
+   space or variant. Report Stages 0-2 only and state plainly that this
+   data cannot support a ranking.
+Never subtract a floor from a later number. It is a bar to clear.
+
+--- STAGE 3: RANKING (only if Stage 2 passed) ---
+For each factor with 2+ guides, each origin/target pair, each space, each
+gene variant, report:
+  cos    = dot(d, v) / (||d|| ||v||), v = target - origin
+  frac   = dot(d, v) / ||v||^2
+  delta  = ||(origin + d) - target|| - ||origin - target||
+  for Y2 also: change in Mahalanobis distance, and whether origin + d lands
+  inside the membership radius.
+Guide reliability: compute each guide's own vector and report the median
+pairwise cosine between guides of the same factor. Flag `guides_disagree`
+if that median is <= 0. Factors so flagged are reported but never labelled
+a candidate.
+Also per factor: the identity check on COL1A1, COL1A2, FN1, LUM, PDGFRA,
+PDGFRB, POSTN, PRRX1, SERPINH1, VIM, using only the genes present (POSTN is
+absent; report the panel actually used and its size), flagging
+`identity_loss` if the drop exceeds 0.5; and the frozen ruler score change
+as a context column only.
+Nulls: the Stage 2A per-factor permutations, one-sided empirical p,
+BH-FDR across factors within each space and variant.
+Bootstrap over guides where a factor has 3+; flag any interval that does not
+contain its point estimate as INVALID and never use it as a gate.
+Label a factor `toward_young` only if delta is negative AND below its own
+Stage 2A floor AND q <= 0.05 AND identity_loss is not flagged AND
+guides_disagree is not flagged.
+Report the count in every space, variant and origin/target pair. Zero is a
+valid and reportable answer.
+If `coverage_low` fired in Stage 0, the candidate table is titled
+"exploratory" and every candidate carries that word.
+
+--- STAGE 4: DISAGREEMENT WITH DIRECTIONAL READOUTS ---
+Rank all factors three ways: by delta, by cos, and by drop in the frozen
+ruler score. Report Spearman correlation between each pair and the overlap
+of the top 20. State how many of the top 20 by cosine are not
+`toward_young` by delta.
+
+--- WHAT DOES NOT COUNT ---
+- cosine or ruler-score drop alone as evidence of approach.
+- any delta that does not clear the measured primary floor.
+- subtracting a floor instead of clearing it.
+- choosing k, gene variant, mapping, origin or target after seeing results.
+- using the control-row floor as the gate.
+- dropping or relabelling factors because they look odd; report them.
+- pooling spaces, variants, origins or targets into one number.
+- substituting a different file for the pinned one.
+- claims about the source paper's own conclusions; this task does not test them.
+
+--- OUTPUT ---
+FINDINGS_SOUTH2.md: this file verbatim; Stage 0 inventory including all three
+coverage numbers; conversion and its assumption; Stage 2 floor, control floor
+and MDA tables; Stage 3 full table plus a top-20 table with factor, delta,
+margin over floor, q, guide agreement, identity flag; Stage 4 disagreement
+table; fired keys; limitations, which must include: inputs are regression
+estimates, not expression, so the frozen count pipeline was not applied;
+effects are measured in one neonatal fibroblast line with no aged cells, so
+every delta is a counterfactual assuming the effect transfers to an aged cell;
+unmeasured genes are assumed unmoved; guide counts are small; the log base of
+the input may be unresolved; the identity panel is incomplete.
+PROGRESS_SOUTH2.md: stop status, next action.
+Record every failure verbatim. Do not substitute columns or repair rows.

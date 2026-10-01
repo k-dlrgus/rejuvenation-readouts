@@ -1,0 +1,34 @@
+{
+  "GM00731_joint": {
+    "n_old": 4939,
+    "n_new": 4938,
+    "n_both": 4936,
+    "only_old": 3,
+    "only_new": 2,
+    "identical": false
+  },
+  "GM00731_lu": {
+    "n_old": 4939,
+    "n_new": 4937,
+    "n_both": 4893,
+    "only_old": 46,
+    "only_new": 44,
+    "identical": false
+  },
+  "GM23815_joint": {
+    "n_old": 7703,
+    "n_new": 7688,
+    "n_both": 7687,
+    "only_old": 16,
+    "only_new": 1,
+    "identical": false
+  },
+  "GM23815_lu": {
+    "n_old": 7703,
+    "n_new": 7741,
+    "n_both": 7697,
+    "only_old": 6,
+    "only_new": 44,
+    "identical": false
+  }
+}

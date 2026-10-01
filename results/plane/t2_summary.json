@@ -1,0 +1,24 @@
+{
+ "pca_k": 50,
+ "n_rows": 10,
+ "n_scored": 10,
+ "fibro3_rho_nn": -0.625,
+ "fibro3_rho_ci": [
+  -0.834,
+  -0.32
+ ],
+ "fibro3_n": 22,
+ "md4_rho_nn": -0.28,
+ "report_only": true,
+ "used_to_discount_task1": false,
+ "tmm": "among that donor's scored-state rows (not md4 state\u00d7timepoint)",
+ "direction_statement": "FINDINGS_FIBRO3.md Task 2 (same PCA k=50 NN / Mahalanobis measures as FINDINGS_FIBRO2.md) \u03c1(nn_euclidean, frozen ruler)=-0.625 CI=[-0.834, -0.32] n=22. FINDINGS_MD4.md \u03c1_nn=-0.28 on state\u00d7timepoint rows. Negative \u03c1: the ruler score falls as distance from GTEx fibroblast training rises. GM00731 scored states by nn_euclidean (near\u2192far): Fibroblast nn=+451.439 mahal=+23.945; PartialReprog nn=+463.976 mahal=+24.384; NonReprog nn=+469.960 mahal=+23.761; EarlyPluripotency nn=+491.733 mahal=+24.973; Pluripotency nn=+630.747 mahal=+28.506. GM00731: Pluripotency nn=+630.747 Fibroblast nn=+451.439; Pluripotency farther than Fibroblast=True; farthest scored state=Pluripotency. GM00731 frozen ruler reading=`mixed`. Extrapolation that pushes age readings down with distance manufactures lockstep, not a bend. Not used to reclassify Task 1. GM23815 scored states by nn_euclidean (near\u2192far): Fibroblast nn=+448.772 mahal=+23.320; PartialReprog nn=+458.154 mahal=+23.181; NonReprog nn=+490.574 mahal=+24.648; EarlyPluripotency nn=+495.576 mahal=+25.043; Pluripotency nn=+629.554 mahal=+28.273. GM23815: Pluripotency nn=+629.554 Fibroblast nn=+448.772; Pluripotency farther than Fibroblast=True; farthest scored state=Pluripotency. GM23815 frozen ruler reading=`mixed`. Extrapolation that pushes age readings down with distance manufactures lockstep, not a bend. Not used to reclassify Task 1. Task 2 is report-only. It is not a gate and is not used to explain away a lockstep result.",
+ "identity": "pluri_primary",
+ "instruments": [
+  "frozen_ruler",
+  "md_score",
+  "age_up_minus_age_down"
+ ],
+ "NonReprog_scored_but_off_trajectory": true,
+ "NonReprog_in_trajectory_statistics": false
+}

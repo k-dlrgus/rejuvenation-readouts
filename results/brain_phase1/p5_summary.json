@@ -1,0 +1,21 @@
+{
+ "dataset_id": "c05e6940-729c-47bd-a2a6-6ce3730c4919",
+ "n_donors": 20,
+ "n_types": 11,
+ "n_pb": 193,
+ "n_A_frozen": 1355,
+ "n_A_mapped": 893,
+ "n_I_frozen": 1876,
+ "n_I_mapped": 1802,
+ "r2_A": -0.5177053498108466,
+ "r2_I_matched": -0.4247297159492942,
+ "r2_I_full": -0.441035951770397,
+ "acc_I": 1.0,
+ "acc_A": 0.9792746113989638,
+ "joint_r2_A": -0.4468656043948158,
+ "cross_test_holds": false,
+ "recommend_retina": true,
+ "text": "Frozen A-genes do **not** retain a clear age association on WM (median-over-types R\u00b2=-0.518, n_donors=20). Cross-test cannot confirm DLPFC.",
+ "seed": 20260914,
+ "dlpfc_verdict": "DISAGREEMENT between CV schemes"
+}

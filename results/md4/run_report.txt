@@ -1,0 +1,233 @@
+====================================================================================================
+MD4 RUN  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / labels / AddModuleScore inherited from md2; not re-tuned.
+MIN_CELLS_CONTRAST=50. Donors never pooled. Timepoints never pooled.
+====================================================================================================
+MD4 TASK1  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / labels / AddModuleScore inherited from md2; not re-tuned.
+MIN_CELLS_CONTRAST=50. Donors never pooled. Timepoints never pooled.
+Written **before any MD4 cell-level instrument score**, 2026-09-19. No threshold in this block is re-tuned after numbers exist.
+
+Using the src/md2_*.py Louvain clustering already computed (not re-run, not re-tuned). Cell-state labels are the md2 assignment: argmax of mean AddModuleScore of mmc3 Reprog_cell_state_signatures columns Fibroblast / PartialReprog / EarlyPluripotency / Pluripotency / NonReprog. Labels are read from results/md2/t2_cluster_labels_*.csv. Not re-labelled. AddModuleScore for MD and TGF-β is the per-cell vector already stored in data/processed/md2/louvain_ams_*.npz (the md2 computation). Table S3 Age up / Age down are scored with the same AddModuleScore implementation (nbin=24, ctrl=100) on the same LogNormalize Louvain matrix, using the bins stored in that npz. Frozen ruler: results/fibro/frozen_ruler_ridge_raw.npz used as-is. Refit nothing.
+
+Per donor, per timepoint, never pooled across donors or timepoints. A timepoint qualifies for a two-state contrast iff both states have ≥50 Louvain-kept cells at that donor × day. Cell counts and which timepoints qualify are reported before contrasts.
+
+Per cell:
+- frozen ruler score = edgeR log2-CPM (prior.count=2) on that cell's ruler-aligned UMI counts with TMM size factor fixed at 1 (library-size only). TMM is not re-estimated among cells, among states, or among timepoints: a TMM among ~20k cells would be a new size-factor fit on GSE297234 and is not the frozen bulk spec. Frozen μ, σ, w applied as-is; overlap genes that are all-zero in that donor's Louvain ruler matrix are left at z=0.
+- MD score, from md2 louvain_ams (not recomputed).
+- TGF-β score, from md2 louvain_ams (not recomputed).
+- Table S3 age-up minus age-down = AMS(Age up) − AMS(Age down).
+- pluripotency−fibroblast = mean-z(PLURI_ENDOGENOUS) − mean-z(FIBRO_IDENTITY) on the same per-cell Z as the ruler, drop_oskm=False (md2 pluri_primary).
+
+Primary contrast: PartialReprog vs NonReprog. Context rows (same procedure, not pooled into the primary): Fibroblast vs NonReprog; PartialReprog vs Fibroblast.
+
+Per qualifying timepoint, per instrument: Δmean = mean(state_A) − mean(state_B); Δmedian = median(state_A) − median(state_B). Cell-level permutation null: 200 shuffles of the two-state labels among the cells in those two states at that donor × timepoint (group sizes held; timepoint and donor held, so neither can drive the null). Empirical p_lower = (n_null ≤ Δobs + 1) / (n_null + 1); p_two_sided = (n_|null| ≥ |Δobs| + 1) / (n_null + 1). Donor-cell bootstrap 95% percentile CI on Δmean and Δmedian: resample cells within each state independently, B=200, seed 20260918. Effect size: Cohen's d on the mean difference, pooled sd with n−1, same sign as Δmean. Not rank-biserial. Seed 20260914 for permutations with a documented per-(donor, day, contrast) offset.
+
+Sanity check, before any new score: reproduce FINDINGS_MD2.md pooled MD means on the aged donor (PartialReprog +0.150, NonReprog +0.439; t2_reproduction.json). If they do not reproduce, stop. Cell-state labels have drifted.
+
+**Pre-registered reading (only the outcome that fired; each donor separately, never pooled; each qualifying timepoint reported, never pooled):**
+- MD lower in PartialReprog than NonReprog and the frozen ruler lower too, both beating their nulls → both instruments agree that partially reprogrammed cells read younger. Their claim is supported and our earlier negatives reflected the wrong test (a within-state trajectory with no baseline). Say so plainly and quote the sentences superseded.
+- MD lower, ruler not lower (or higher) → the instruments disagree on the population the published claim concerns, in a well-powered comparison. Report both numbers side by side, declare no winner, and name what would settle it.
+- Neither differs → our reproduction does not recover their Figure 3G contrast; report the reproduction failure as the finding, not as a refutation.
+- Ruler lower, MD not → report as an unexplained discrepancy.
+
+“Lower” / “beating their nulls” = Δmean = mean(PartialReprog) − mean(NonReprog) is < 0 and p_lower ≤ 0.05 on that instrument's cell-level permutation null, on that donor × timepoint. GM23815 is tabulated, never pooled with GM00731, never averaged.
+
+If two qualifying timepoints in one donor fire different bullets, report both, do not pick, do not average.
+
+[genesets] MD n=205 TGFB n=54 Age up n=1533 Age down n=2007
+[t1 labels] GM00731 columns actually read: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[t1 obs] GM00731 columns actually read: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[t1 ams] GM00731 keys actually read: ['md', 'tgfb', 'bins', 'gene_mean', 'cluster', 'day', 'n_genes']
+[t1 labels] GM23815 columns actually read: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[t1 obs] GM23815 columns actually read: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[t1 ams] GM23815 keys actually read: ['md', 'tgfb', 'bins', 'gene_mean', 'cluster', 'day']
+[t1 labels] GM00731 columns actually read: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[t1 obs] GM00731 columns actually read: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[t1 counts] GM00731 Fibroblast n0=4939 n3=5 n7=14 n10=1030 n_all=5988
+[t1 counts] GM00731 PartialReprog n0=3 n3=5220 n7=578 n10=31 n_all=5832
+[t1 counts] GM00731 EarlyPluripotency n0=2 n3=410 n7=3917 n10=85 n_all=4414
+[t1 counts] GM00731 Pluripotency n0=0 n3=5 n7=354 n10=80 n_all=439
+[t1 counts] GM00731 NonReprog n0=65 n3=348 n7=1932 n10=3114 n_all=5459
+[t1 labels] GM23815 columns actually read: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[t1 obs] GM23815 columns actually read: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[t1 counts] GM23815 Fibroblast n0=7703 n3=46 n7=2233 n10=1373 n_all=11355
+[t1 counts] GM23815 PartialReprog n0=9 n3=6113 n7=309 n10=50 n_all=6481
+[t1 counts] GM23815 EarlyPluripotency n0=56 n3=316 n7=8172 n10=4417 n_all=12961
+[t1 counts] GM23815 Pluripotency n0=0 n3=91 n7=977 n10=181 n_all=1249
+[t1 counts] GM23815 NonReprog n0=0 n3=10 n7=8 n10=1794 n_all=1812
+[t1 qualify] GM00731 d0 PartialReprog vs NonReprog n_a=3 n_b=65 qualifies=False
+[t1 qualify] GM00731 d0 Fibroblast vs NonReprog n_a=4939 n_b=65 qualifies=True
+[t1 qualify] GM00731 d0 PartialReprog vs Fibroblast n_a=3 n_b=4939 qualifies=False
+[t1 qualify] GM00731 d3 PartialReprog vs NonReprog n_a=5220 n_b=348 qualifies=True
+[t1 qualify] GM00731 d3 Fibroblast vs NonReprog n_a=5 n_b=348 qualifies=False
+[t1 qualify] GM00731 d3 PartialReprog vs Fibroblast n_a=5220 n_b=5 qualifies=False
+[t1 qualify] GM00731 d7 PartialReprog vs NonReprog n_a=578 n_b=1932 qualifies=True
+[t1 qualify] GM00731 d7 Fibroblast vs NonReprog n_a=14 n_b=1932 qualifies=False
+[t1 qualify] GM00731 d7 PartialReprog vs Fibroblast n_a=578 n_b=14 qualifies=False
+[t1 qualify] GM00731 d10 PartialReprog vs NonReprog n_a=31 n_b=3114 qualifies=False
+[t1 qualify] GM00731 d10 Fibroblast vs NonReprog n_a=1030 n_b=3114 qualifies=True
+[t1 qualify] GM00731 d10 PartialReprog vs Fibroblast n_a=31 n_b=1030 qualifies=False
+[t1 qualify] GM23815 d0 PartialReprog vs NonReprog n_a=9 n_b=0 qualifies=False
+[t1 qualify] GM23815 d0 Fibroblast vs NonReprog n_a=7703 n_b=0 qualifies=False
+[t1 qualify] GM23815 d0 PartialReprog vs Fibroblast n_a=9 n_b=7703 qualifies=False
+[t1 qualify] GM23815 d3 PartialReprog vs NonReprog n_a=6113 n_b=10 qualifies=False
+[t1 qualify] GM23815 d3 Fibroblast vs NonReprog n_a=46 n_b=10 qualifies=False
+[t1 qualify] GM23815 d3 PartialReprog vs Fibroblast n_a=6113 n_b=46 qualifies=False
+[t1 qualify] GM23815 d7 PartialReprog vs NonReprog n_a=309 n_b=8 qualifies=False
+[t1 qualify] GM23815 d7 Fibroblast vs NonReprog n_a=2233 n_b=8 qualifies=False
+[t1 qualify] GM23815 d7 PartialReprog vs Fibroblast n_a=309 n_b=2233 qualifies=True
+[t1 qualify] GM23815 d10 PartialReprog vs NonReprog n_a=50 n_b=1794 qualifies=True
+[t1 qualify] GM23815 d10 Fibroblast vs NonReprog n_a=1373 n_b=1794 qualifies=True
+[t1 qualify] GM23815 d10 PartialReprog vs Fibroblast n_a=50 n_b=1373 qualifies=True
+[t1] occupancy matches md3 t1_occupancy_pooled.csv
+[t1 sanity] n_PR=5832 n_NR=5459 MD_PR=+0.150471 MD_NR=+0.439448 ok=True
+[prereg] wrote <repo>\results\md4\DECLARED_BEFORE_SCORES.flag
+[id_type louvain_GM00731_symbols] kind=symbol n=29058 n_ensembl=0 n_refseq=0 n_symbol_like=29057 source=<repo>\data\processed\md2\louvain_counts_GM00731.npz:symbols examples=['AL627309.1', 'AL627309.5', 'AP006222.2', 'AL669831.2', 'LINC01409', 'FAM87B', 'LINC01128', 'LINC00115']
+[id_type louvain_GM00731_gene_id] kind=ensembl n=29058 n_ensembl=29058 n_refseq=0 n_symbol_like=0 source=<repo>\data\processed\md2\louvain_counts_GM00731.npz:gene_id examples=['ENSG00000238009', 'ENSG00000241860', 'ENSG00000286448', 'ENSG00000229905', 'ENSG00000237491', 'ENSG00000177757', 'ENSG00000228794', 'ENSG00000225880']
+[AMS GM00731_louvain_S3:age_up] requested=1533 mapped=896 missing=636 missing_symbols=['ADH1B', 'SLC25A52', 'FMO2', 'ENSG00000263244', 'TMSB4XP8', 'ENSG00000290383', 'ENSG00000283907', 'ENSG00000220370', 'RPL36AP21', 'PPIAP82', 'ENSG00000271047', 'EEF1A1P1', 'ENSG00000254732', 'TMSB10P1', 'ENSG00000196656', 'ENSG00000270249', 'RPL12P38', 'LINC01616', 'MT-TA', 'RPL5P8']
+[AMS GM00731_louvain_S3:age_up] n_mapped=896 n_ctrl=24488 score_mean=+0.0288
+[AMS GM00731_louvain_S3:age_down] requested=2007 mapped=1586 missing=421 missing_symbols=['TMEM191A', 'TMEM191A', 'RNA5-8SN3', 'RNVU1-29', 'RNU1-2', 'ENSG00000243679', 'CGB5', 'UBE2SP2', 'ENSG00000288725', 'FAM86DP', 'AGAP11', 'ENSG00000111780', 'ENSG00000235510', 'PSMC1P5', 'CGB8', 'URGCP-MRPS24', 'SLC2A3P1', 'ENSG00000260170', 'TRIM6-TRIM34', 'SLC7A5P2']
+[AMS GM00731_louvain_S3:age_down] n_mapped=1586 n_ctrl=24313 score_mean=+0.0407
+[pluri] endogenous requested=['POU5F1', 'NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=3 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri] fibro_identity requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[ruler-cells GM00731] n=22132 p=23485 n_missing_allzero=3133 lib_median=12291.0 prior.count=2 tmm_nf=1
+[ruler-cells GM00731] 0/22132
+[ruler-cells GM00731] 5120/22132
+[ruler-cells GM00731] 10240/22132
+[ruler-cells GM00731] 15360/22132
+[ruler-cells GM00731] 20480/22132
+[id_type louvain_GM23815_symbols] kind=symbol n=29154 n_ensembl=0 n_refseq=0 n_symbol_like=29154 source=<repo>\data\processed\md2\louvain_counts_GM23815.npz:symbols examples=['AL627309.1', 'AL627309.3', 'AL627309.5', 'AP006222.2', 'LINC01409', 'FAM87B', 'LINC01128', 'LINC00115']
+[id_type louvain_GM23815_gene_id] kind=ensembl n=29154 n_ensembl=29154 n_refseq=0 n_symbol_like=0 source=<repo>\data\processed\md2\louvain_counts_GM23815.npz:gene_id examples=['ENSG00000238009', 'ENSG00000239945', 'ENSG00000241860', 'ENSG00000286448', 'ENSG00000237491', 'ENSG00000177757', 'ENSG00000228794', 'ENSG00000225880']
+[AMS GM23815_louvain_S3:age_up] requested=1533 mapped=894 missing=638 missing_symbols=['ADH1B', 'KCNA4', 'SLC25A52', 'ENSG00000263244', 'TMSB4XP8', 'ENSG00000290383', 'ENSG00000283907', 'ENSG00000220370', 'RPL36AP21', 'PPIAP82', 'ENSG00000271047', 'EEF1A1P1', 'ENSG00000254732', 'TMSB10P1', 'ENSG00000196656', 'ENSG00000270249', 'RPL12P38', 'LINC01616', 'MT-TA', 'RPL5P8']
+[AMS GM23815_louvain_S3:age_up] n_mapped=894 n_ctrl=24930 score_mean=+0.0165
+[AMS GM23815_louvain_S3:age_down] requested=2007 mapped=1582 missing=425 missing_symbols=['TMEM191A', 'TMEM191A', 'RNA5-8SN3', 'RNVU1-29', 'RNU1-2', 'ENSG00000243679', 'CGB5', 'UBE2SP2', 'ENSG00000288725', 'FAM86DP', 'AGAP11', 'ENSG00000111780', 'ENSG00000235510', 'PSMC1P5', 'URGCP-MRPS24', 'SLC2A3P1', 'ENSG00000260170', 'TRIM6-TRIM34', 'SLC7A5P2', 'ENSG00000256663']
+[AMS GM23815_louvain_S3:age_down] n_mapped=1582 n_ctrl=24081 score_mean=+0.0460
+[pluri] endogenous requested=['POU5F1', 'NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=3 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri] fibro_identity requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[ruler-cells GM23815] n=33858 p=23485 n_missing_allzero=3136 lib_median=8037.0 prior.count=2 tmm_nf=1
+[ruler-cells GM23815] 0/33858
+[ruler-cells GM23815] 5120/33858
+[ruler-cells GM23815] 10240/33858
+[ruler-cells GM23815] 15360/33858
+[ruler-cells GM23815] 20480/33858
+[ruler-cells GM23815] 25600/33858
+[ruler-cells GM23815] 30720/33858
+[t1 contrast] GM00731 d0 Fibroblast vs NonReprog frozen_ruler Δmean=1.758279184439047 p_lower=1.0 d=2.7564127695401917 beats=False
+[t1 contrast] GM00731 d0 Fibroblast vs NonReprog md_score Δmean=0.15606894270043625 p_lower=1.0 d=2.217680757566113 beats=False
+[t1 contrast] GM00731 d0 Fibroblast vs NonReprog tgfb_score Δmean=-0.04434935521301012 p_lower=0.004975124378109453 d=-0.6422320698608843 beats=True
+[t1 contrast] GM00731 d0 Fibroblast vs NonReprog age_up_minus_age_down Δmean=-0.10819629975879028 p_lower=0.004975124378109453 d=-1.8760890226171352 beats=True
+[t1 contrast] GM00731 d0 Fibroblast vs NonReprog pluri_primary Δmean=-1.85756636901732 p_lower=0.004975124378109453 d=-4.032253271324404 beats=True
+[t1 contrast] GM00731 d3 PartialReprog vs NonReprog frozen_ruler Δmean=-0.4615273199823484 p_lower=0.004975124378109453 d=-0.5769177381403222 beats=True
+[t1 contrast] GM00731 d3 PartialReprog vs NonReprog md_score Δmean=-0.34147022679488415 p_lower=0.004975124378109453 d=-2.10407688578756 beats=True
+[t1 contrast] GM00731 d3 PartialReprog vs NonReprog tgfb_score Δmean=-0.12239614296698348 p_lower=0.004975124378109453 d=-1.148951130466771 beats=True
+[t1 contrast] GM00731 d3 PartialReprog vs NonReprog age_up_minus_age_down Δmean=-0.10205062452064313 p_lower=0.004975124378109453 d=-2.159685182339169 beats=True
+[t1 contrast] GM00731 d3 PartialReprog vs NonReprog pluri_primary Δmean=2.148431807724325 p_lower=1.0 d=1.2646433805519484 beats=False
+[t1 contrast] GM00731 d7 PartialReprog vs NonReprog frozen_ruler Δmean=-0.3729116978678704 p_lower=0.004975124378109453 d=-0.4240641770694765 beats=True
+[t1 contrast] GM00731 d7 PartialReprog vs NonReprog md_score Δmean=-0.16091675133010636 p_lower=0.004975124378109453 d=-1.3385320275469947 beats=True
+[t1 contrast] GM00731 d7 PartialReprog vs NonReprog tgfb_score Δmean=-0.0609289814679833 p_lower=0.004975124378109453 d=-0.6860313067179553 beats=True
+[t1 contrast] GM00731 d7 PartialReprog vs NonReprog age_up_minus_age_down Δmean=-0.0931046599429214 p_lower=0.004975124378109453 d=-1.9000743812125969 beats=True
+[t1 contrast] GM00731 d7 PartialReprog vs NonReprog pluri_primary Δmean=0.9530944987230168 p_lower=1.0 d=0.9517511470685497 beats=False
+[t1 contrast] GM00731 d10 Fibroblast vs NonReprog frozen_ruler Δmean=-0.030753108167346 p_lower=0.14925373134328357 d=-0.03643243032518948 beats=False
+[t1 contrast] GM00731 d10 Fibroblast vs NonReprog md_score Δmean=0.00037217157017016556 p_lower=0.5771144278606966 d=0.003536845006931628 beats=False
+[t1 contrast] GM00731 d10 Fibroblast vs NonReprog tgfb_score Δmean=-0.009861844103101343 p_lower=0.004975124378109453 d=-0.1170018010426897 beats=True
+[t1 contrast] GM00731 d10 Fibroblast vs NonReprog age_up_minus_age_down Δmean=-0.06043393740248334 p_lower=0.004975124378109453 d=-1.0705340939178376 beats=True
+[t1 contrast] GM00731 d10 Fibroblast vs NonReprog pluri_primary Δmean=0.037255645289388184 p_lower=0.9253731343283582 d=0.0499548077577518 beats=False
+[t1 contrast] GM23815 d7 PartialReprog vs Fibroblast frozen_ruler Δmean=-0.10963599174700889 p_lower=0.004975124378109453 d=-0.17682718606618064 beats=True
+[t1 contrast] GM23815 d7 PartialReprog vs Fibroblast md_score Δmean=-0.2357721618356915 p_lower=0.004975124378109453 d=-2.420975098758663 beats=True
+[t1 contrast] GM23815 d7 PartialReprog vs Fibroblast tgfb_score Δmean=-0.04359542669477191 p_lower=0.004975124378109453 d=-0.5274386049217576 beats=True
+[t1 contrast] GM23815 d7 PartialReprog vs Fibroblast age_up_minus_age_down Δmean=-0.05572521482579239 p_lower=0.004975124378109453 d=-1.171211040303416 beats=True
+[t1 contrast] GM23815 d7 PartialReprog vs Fibroblast pluri_primary Δmean=1.7911517576100486 p_lower=1.0 d=2.221779562750616 beats=False
+[t1 contrast] GM23815 d10 PartialReprog vs NonReprog frozen_ruler Δmean=-0.7686614248183865 p_lower=0.004975124378109453 d=-1.378699803086083 beats=True
+[t1 contrast] GM23815 d10 PartialReprog vs NonReprog md_score Δmean=-0.2947491712855021 p_lower=0.004975124378109453 d=-3.7001463221212694 beats=True
+[t1 contrast] GM23815 d10 PartialReprog vs NonReprog tgfb_score Δmean=-0.07845488918369535 p_lower=0.004975124378109453 d=-0.9235644535567741 beats=True
+[t1 contrast] GM23815 d10 PartialReprog vs NonReprog age_up_minus_age_down Δmean=-0.08877631702868642 p_lower=0.004975124378109453 d=-2.087235872540868 beats=True
+[t1 contrast] GM23815 d10 PartialReprog vs NonReprog pluri_primary Δmean=2.650515701513399 p_lower=1.0 d=5.464181636601161 beats=False
+[t1 contrast] GM23815 d10 Fibroblast vs NonReprog frozen_ruler Δmean=-0.29426745267144483 p_lower=0.004975124378109453 d=-0.5668399011337285 beats=True
+[t1 contrast] GM23815 d10 Fibroblast vs NonReprog md_score Δmean=-0.04346592924057163 p_lower=0.004975124378109453 d=-0.5029576233625824 beats=True
+[t1 contrast] GM23815 d10 Fibroblast vs NonReprog tgfb_score Δmean=0.001359088475812946 p_lower=0.6965174129353234 d=0.016677046728115454 beats=False
+[t1 contrast] GM23815 d10 Fibroblast vs NonReprog age_up_minus_age_down Δmean=-0.05557920134488903 p_lower=0.004975124378109453 d=-1.1502489728600944 beats=True
+[t1 contrast] GM23815 d10 Fibroblast vs NonReprog pluri_primary Δmean=0.31202724099526513 p_lower=1.0 d=0.6743772526542654 beats=False
+[t1 contrast] GM23815 d10 PartialReprog vs Fibroblast frozen_ruler Δmean=-0.4743939721469417 p_lower=0.004975124378109453 d=-0.9545810171291685 beats=True
+[t1 contrast] GM23815 d10 PartialReprog vs Fibroblast md_score Δmean=-0.25128324204493047 p_lower=0.004975124378109453 d=-2.5514397494328436 beats=True
+[t1 contrast] GM23815 d10 PartialReprog vs Fibroblast tgfb_score Δmean=-0.07981397765950829 p_lower=0.004975124378109453 d=-1.023575661595331 beats=True
+[t1 contrast] GM23815 d10 PartialReprog vs Fibroblast age_up_minus_age_down Δmean=-0.03319711568379739 p_lower=0.004975124378109453 d=-0.5825223888408261 beats=True
+[t1 contrast] GM23815 d10 PartialReprog vs Fibroblast pluri_primary Δmean=2.3384884605181337 p_lower=1.0 d=3.8677492544354215 beats=False
+[t1 reading] GM00731=both_lower GM23815=both_lower
+====================================================================================================
+MD4 TASK2  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / labels / AddModuleScore inherited from md2; not re-tuned.
+MIN_CELLS_CONTRAST=50. Donors never pooled. Timepoints never pooled.
+Written **before any MD4 extrapolation distance or ρ**, 2026-09-19. Report-only. No gate.
+
+For each donor × state × timepoint with n_cells ≥ 1 (n=0 is not a row): sum Louvain-kept UMIs to a pseudobulk on the frozen-ruler gene space (rulerY aligned as in md2/md3). TMM among that donor's state×timepoint rows, then frozen μ/σ/w. Distance to the GTEx fibroblast training z-space: PCA k=50 nearest-neighbour Euclidean and Mahalanobis, same functions as src/fibro2_extrap.py / FINDINGS_FIBRO2.md. Spearman ρ across those rows between each distance and the frozen ruler score, permutation null n_perm=200 seed 20260914 (shuffle the ruler score, hold distance), bootstrap CI B=200 seed 20260918. Donors reported separately and as concatenated rows; never averaged.
+
+FINDINGS_FIBRO3.md Task 2 (the same PCA k=50 NN / Mahalanobis measures as FINDINGS_FIBRO2.md) found ruler score vs nn_euclidean ρ=-0.625. If PartialReprog sits further from training than NonReprog, that correlation would push the Task 1 frozen-ruler contrast toward “PR reads younger”. Reported as direction only. Not a gate. Not used to explain a Task 1 result away.
+
+[t2] GTEx pack X shape=(652, 23485)
+[t2] GTEx train z n=652 p=23485
+[t2] PCA k=50
+[tmm t2_state_tp_GM00731] n_samples=19 n_genes=23485 nf_median=0.8125 prior.count=2
+[t2] GM00731 d0 Fibroblast n=4939 age=+5.253 nn=+465.617 mahal=+24.411
+[t2] GM00731 d0 PartialReprog n=3 age=+1.397 nn=+1342.161 mahal=+64.592
+[t2] GM00731 d0 EarlyPluripotency n=2 age=-4.307 nn=+2192.731 mahal=+137.899
+[t2] GM00731 d0 NonReprog n=65 age=-0.077 nn=+670.751 mahal=+26.971
+[t2] GM00731 d3 Fibroblast n=5 age=+10.582 nn=+1215.554 mahal=+56.410
+[t2] GM00731 d3 PartialReprog n=5220 age=+2.337 nn=+479.017 mahal=+23.982
+[t2] GM00731 d3 EarlyPluripotency n=410 age=+1.927 nn=+511.647 mahal=+24.076
+[t2] GM00731 d3 Pluripotency n=5 age=-18.978 nn=+1553.696 mahal=+80.698
+[t2] GM00731 d3 NonReprog n=348 age=+8.122 nn=+476.754 mahal=+22.042
+[t2] GM00731 d7 Fibroblast n=14 age=+8.596 nn=+918.913 mahal=+38.900
+[t2] GM00731 d7 PartialReprog n=578 age=+4.737 nn=+468.982 mahal=+23.158
+[t2] GM00731 d7 EarlyPluripotency n=3917 age=-0.739 nn=+503.349 mahal=+24.453
+[t2] GM00731 d7 Pluripotency n=354 age=-8.138 nn=+616.361 mahal=+24.829
+[t2] GM00731 d7 NonReprog n=1932 age=+7.015 nn=+470.259 mahal=+24.100
+[t2] GM00731 d10 Fibroblast n=1030 age=+7.873 nn=+474.154 mahal=+24.294
+[t2] GM00731 d10 PartialReprog n=31 age=+4.933 nn=+709.005 mahal=+31.008
+[t2] GM00731 d10 EarlyPluripotency n=85 age=-0.190 nn=+531.941 mahal=+24.800
+[t2] GM00731 d10 Pluripotency n=80 age=-5.242 nn=+631.384 mahal=+25.461
+[t2] GM00731 d10 NonReprog n=3114 age=+9.474 nn=+485.365 mahal=+24.012
+[tmm t2_state_tp_GM23815] n_samples=18 n_genes=23485 nf_median=0.9667 prior.count=2
+[t2] GM23815 d0 Fibroblast n=7703 age=+0.241 nn=+449.237 mahal=+23.054
+[t2] GM23815 d0 PartialReprog n=9 age=+2.361 nn=+1026.072 mahal=+47.539
+[t2] GM23815 d0 EarlyPluripotency n=56 age=-5.297 nn=+854.835 mahal=+35.877
+[t2] GM23815 d3 Fibroblast n=46 age=+5.947 nn=+593.699 mahal=+25.444
+[t2] GM23815 d3 PartialReprog n=6113 age=-2.952 nn=+455.379 mahal=+23.014
+[t2] GM23815 d3 EarlyPluripotency n=316 age=-1.037 nn=+514.939 mahal=+24.337
+[t2] GM23815 d3 Pluripotency n=91 age=-13.423 nn=+642.148 mahal=+24.855
+[t2] GM23815 d3 NonReprog n=10 age=-0.790 nn=+1066.480 mahal=+48.430
+[t2] GM23815 d7 Fibroblast n=2233 age=-1.817 nn=+465.875 mahal=+23.737
+[t2] GM23815 d7 PartialReprog n=309 age=-2.809 nn=+482.403 mahal=+24.240
+[t2] GM23815 d7 EarlyPluripotency n=8172 age=-8.203 nn=+508.372 mahal=+25.420
+[t2] GM23815 d7 Pluripotency n=977 age=-12.384 nn=+627.900 mahal=+25.657
+[t2] GM23815 d7 NonReprog n=8 age=-5.052 nn=+1515.850 mahal=+80.299
+[t2] GM23815 d10 Fibroblast n=1373 age=+0.181 nn=+468.409 mahal=+24.716
+[t2] GM23815 d10 PartialReprog n=50 age=-1.208 nn=+566.537 mahal=+26.410
+[t2] GM23815 d10 EarlyPluripotency n=4417 age=-3.487 nn=+484.765 mahal=+24.461
+[t2] GM23815 d10 Pluripotency n=181 age=-10.192 nn=+682.821 mahal=+27.762
+[t2] GM23815 d10 NonReprog n=1794 age=+2.866 nn=+480.957 mahal=+24.440
+[t2 corr] all nn_euclidean n=37 ρ=-0.2797534376481745 p=0.9552238805970149 CI=[-0.5759505388070959, 0.0652500973909413]
+[t2 corr] GM00731 nn_euclidean n=19 ρ=-0.368421052631579
+[t2 corr] GM23815 nn_euclidean n=18 ρ=-0.27347781217750256
+[t2 corr] all mahalanobis_pca n=37 ρ=-0.29208155523944995 p=0.9701492537313433 CI=[-0.6249018622043826, -0.01801164617425422]
+[t2 corr] GM00731 mahalanobis_pca n=19 ρ=-0.3701754385964912
+[t2 corr] GM23815 mahalanobis_pca n=18 ρ=-0.16821465428276572
+[run] DONE

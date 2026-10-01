@@ -1,0 +1,15 @@
+====================================================================================================
+STOP CONDITION A — VERDICT  (primary thresholds {'t_age': 0.005, 'k_ct': 0.2, 't_ct': 0.5, 'k_age': 0.001}; filters = prior run's, unchanged)
+====================================================================================================
+corrected-model A-genes at primary thresholds: 2
+A-genes surviving all confound filters:       2   (STOP A fires if < 10)
+of these with within-pool permutation q<0.05:  2
+genes with unique_age >= t_age=0.005 regardless of cell-type variance: 9 (permutation null mean 0.12)
+genes with ANY within-pool age association (permutation BH q<0.05): 1180
+known positives: CDKN2A slope +0.0084/yr (expected +), rank 12.0, unique_ct 0.287, class OTHER; LRRN3 slope -0.0119/yr (expected -), rank 4.0, unique_ct 0.602, class MIXED
+
+VERDICT: STOP CONDITION A FIRED.
+  Fewer than 10 A-genes survive. Under the corrected within-pool model the within-cell-type transcriptomic age signal in PBMC is
+  too sparse to build a gene-set-restricted age score from at the pre-registered thresholds. Per the operating mode the rerun halts
+  here: Stages B, C and D are NOT run. Thresholds were not relaxed. See FINDINGS_RERUN.md.
+====================================================================================================

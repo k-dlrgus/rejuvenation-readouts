@@ -1,0 +1,30 @@
+{
+ "consensus_pos": {
+  "n": 50,
+  "n_mito": 0,
+  "n_ribo": 1,
+  "n_cell_cycle": 1,
+  "n_mt_prefix": 0
+ },
+ "consensus_neg": {
+  "n": 50,
+  "n_mito": 0,
+  "n_ribo": 1,
+  "n_cell_cycle": 0,
+  "n_mt_prefix": 0
+ },
+ "mean_pos": {
+  "n": 50,
+  "n_mito": 1,
+  "n_ribo": 0,
+  "n_cell_cycle": 0,
+  "n_mt_prefix": 1
+ },
+ "mean_neg": {
+  "n": 50,
+  "n_mito": 0,
+  "n_ribo": 1,
+  "n_cell_cycle": 0,
+  "n_mt_prefix": 0
+ }
+}

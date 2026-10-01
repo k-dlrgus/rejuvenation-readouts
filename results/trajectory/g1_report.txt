@@ -1,0 +1,53 @@
+====================================================================================================
+TRAJECTORY G1 — geometric scores  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO GENE SELECTION: every gene in the Phase-1 matrix enters every model with a weight.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[filter] G1 uses ALL 25,526 genes; gene_idx = arange(25526). No threshold, no A/I bucket.
+[filter] cohort: 233 donors, 20 cell types, sites={'H': 120, 'M': 113}, rows=3323
+[filter] identity chance = 0.0698  (max of 1/20 and majority class)
+[folds] seed=20260914  loso=2  within_site=10
+
+[G1 age] scheme=loso
+   fitting pls1 on all 25526 genes, training folds only...
+   pls1  primary R²=-0.354  MAE=16.72 y  (pooled R²=-0.354  site_strat R²=-0.753)
+   permutation null (20 donor-level within-site shuffles)...
+   pls1 null pooled mean=-0.901  p95=-0.630  p(null>=obs)=0.048  usable=True
+   fitting ridge on all 25526 genes, training folds only...
+   ridge  primary R²=+0.101  MAE=13.84 y  (pooled R²=+0.101  site_strat R²=-0.174)
+   permutation null (20 donor-level within-site shuffles)...
+   ridge null pooled mean=-0.822  p95=-0.698  p(null>=obs)=0.048  usable=True
+[G1 identity] scheme=loso  nearest centroid in train identity subspace
+   acc=0.9910  macro_F1=0.9594  chance=0.0698  mean_dist_own=27.925  n_axes=19.0
+   permutation null (20 cell-type shuffles)...
+   acc null mean=0.0452  p=0.048
+
+[G1 age] scheme=within_site
+   fitting pls1 on all 25526 genes, training folds only...
+   pls1  primary R²=+0.016  MAE=12.11 y  (pooled R²=+0.257  site_strat R²=+0.016)
+   permutation null (20 donor-level within-site shuffles)...
+   pls1 null site_strat mean=-0.156  p95=-0.081  p(null>=obs)=0.048  usable=True
+   fitting ridge on all 25526 genes, training folds only...
+   ridge  primary R²=+0.317  MAE=9.98 y  (pooled R²=+0.488  site_strat R²=+0.317)
+   permutation null (20 donor-level within-site shuffles)...
+   ridge null site_strat mean=-0.055  p95=-0.015  p(null>=obs)=0.048  usable=True
+[G1 identity] scheme=within_site  nearest centroid in train identity subspace
+   acc=0.9961  macro_F1=0.9908  chance=0.0698  mean_dist_own=24.034  n_axes=18.9
+   permutation null (20 cell-type shuffles)...
+   acc null mean=0.0457  p=0.048
+[G1] loso |R²_ridge − R²_pls1|=0.455  material=YES
+[G1] within_site |R²_ridge − R²_pls1|=0.300  material=YES
+
+[STOP G1] stop=False  null_bad=False  collapse=False
+   age direction produces usable held-out R²; null is not inflated. Proceed to G2.
+[freeze] wrote frozen_scores.npz  genes=25526  types=20  identity_axes=19
+[G1] figures written
+[G1] wrote results/trajectory/g1_*
+[G1] done.

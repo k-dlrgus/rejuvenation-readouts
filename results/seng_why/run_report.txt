@@ -1,0 +1,83 @@
+[seng_why] diagnostic only; FINDINGS_SENG.md is not written
+[H1] perturb-seq record files=[('exp3_merged_not_normalized.h5ad', 1426871504)]
+[H1] mouse record files=[('mouse_rnaseq_sample_name.csv', 233), ('mouse_liver_raw_count_figshare.csv', 1669439)]
+[H1] h5-like names on the perturb-seq record: ['exp3_merged_not_normalized.h5ad']
+[load] <repo>\data\raw\seng\exp3_merged_not_normalized.h5ad size=1426871504
+[X] enc=csr_matrix shape=(36514, 36601) nnz=148239518 obs_cols=814 var_cols=0
+[wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[roles] WT=6809 pert=24610 NT=2145 unassigned=2950
+[obs] columns=814 low_cardinality_non_guide=7
+[obs low] PD14 dtype=bool role=pd_flag n_unique=2 pert_values=[false] differs=True
+[obs low] PD26 dtype=bool role=pd_flag n_unique=2 pert_values=[false] differs=True
+[obs low] PD32 dtype=bool role=pd_flag n_unique=2 pert_values=[false] differs=True
+[obs low] CRI dtype=int64 role=modality_flag n_unique=2 pert_values=[0, 1] differs=True
+[obs low] CRA dtype=int64 role=modality_flag n_unique=2 pert_values=[1, 0] differs=True
+[obs low] WT dtype=int64 role=wt_flag n_unique=2 pert_values=[0] differs=True
+[obs low] SampleName dtype=int8 role=qc n_unique=4 pert_values=[3] differs=True
+[PD on perturbed] PD14 n_unique=1 sample=[False] n_flagged=0
+[PD on perturbed] PD26 n_unique=1 sample=[False] n_flagged=0
+[PD on perturbed] PD32 n_unique=1 sample=[False] n_flagged=0
+[align index] overlap=16781 ensembl=0 symbol=16781
+[genes] ruler=23485 present=16781 file_genes=36601
+[genes] WARNING duplicate file columns in ruler map: 10
+[PD n] PD14=581 PD26=1880 PD32=4348
+[split PD32] early A/B=290/291 late A/B=2174/2174
+[split PD26] late A/B=940/940
+[cc] S used=42 missing_or_not_ruler=['MLF1IP'] G2M used=52 missing_or_not_ruler=['FAM64A', 'HN1']
+[quartile CRA] n_NT=666 bottom=167 top=167
+[quartile CRI] n_NT=1479 bottom=370 top=370
+[qual] n>=30: 340
+[panel] LATE=PD32
+[LATE PD32] ||v||=90.149349 cos(v,u)=-0.040273 p=1.0000 rho CRA=0.828053 CRI=0.862002
+[panel] LATE=PD26
+[LATE PD26] ||v||=86.158492 cos(v,u)=-0.005988 p=0.7363 rho CRA=0.819079 CRI=0.858861
+[match PD32] max |cos - screen.csv|=9.714e-17 max |prolif_shift diff|=9.714e-17
+[null PD26] n_null=200 perturbations=340
+[NT dense] CRA (666, 16781)
+[NT dense] CRI (1479, 16781)
+[null PD26] 20/340 CRA_CREB1 p=0.4279 elapsed_s=83.7 eta_s=1340
+[null PD26] 31/340 CRA_E2F3 p=0.0050 elapsed_s=134.1 eta_s=1337
+[null PD26] 39/340 CRA_EZH2 p=0.0249 elapsed_s=170.6 eta_s=1317
+[null PD26] 40/340 CRA_FERD3L p=0.3582 elapsed_s=175.4 eta_s=1315
+[null PD26] 60/340 CRA_HMGB1 p=0.7960 elapsed_s=263.7 eta_s=1231
+[null PD26] 80/340 CRA_JUND p=0.0249 elapsed_s=355.5 eta_s=1155
+[null PD26] 100/340 CRA_NKX2-2 p=0.0945 elapsed_s=447.2 eta_s=1073
+[null PD26] 120/340 CRA_PPARGC1B p=0.3582 elapsed_s=534.2 eta_s=979
+[null PD26] 140/340 CRA_TFAM p=0.6418 elapsed_s=620.2 eta_s=886
+[null PD26] 160/340 CRA_ZNF219 p=0.6915 elapsed_s=706.4 eta_s=795
+[null PD26] 180/340 CRI_BSX p=0.0597 elapsed_s=795.0 eta_s=707
+[null PD26] 200/340 CRI_EGR2 p=0.0100 elapsed_s=884.9 eta_s=619
+[null PD26] 220/340 CRI_GABARAPL1 p=0.9453 elapsed_s=971.3 eta_s=530
+[null PD26] 240/340 CRI_IRF4 p=0.6766 elapsed_s=1051.9 eta_s=438
+[null PD26] 260/340 CRI_NFE2L2 p=0.0697 elapsed_s=1138.8 eta_s=350
+[null PD26] 280/340 CRI_PGR p=0.0050 elapsed_s=1221.3 eta_s=262
+[null PD26] 300/340 CRI_SOX7 p=0.0448 elapsed_s=1301.5 eta_s=174
+[null PD26] 307/340 CRI_STAT3 p=0.0149 elapsed_s=1332.6 eta_s=143
+[null PD26] 320/340 CRI_TLX2 p=0.0149 elapsed_s=1389.6 eta_s=87
+[null PD26] 331/340 CRI_ZFX p=0.0050 elapsed_s=1440.0 eta_s=39
+[null PD26] 340/340 CRI_ZNF695 p=0.9900 elapsed_s=1477.9 eta_s=0
+[named LATE]
+modality perturbation  n_cells  cos_PD32  cos_PD26  q_cos_PD32_from_FINDINGS  p_cos_PD32_from_FINDINGS  p_cos_PD26  q_cos_PD26  cos_gt0_q05_PD26  cos_gt0_q05_PD32
+     CRA     CRA_E2F3      128  0.247948  0.142894                  0.092316                  0.004975    0.004975    0.138474             False             False
+     CRA     CRA_EZH2      107  0.197269  0.100964                  0.092316                  0.004975    0.024876    0.230790             False             False
+     CRI    CRI_STAT3       96  0.154649  0.098828                  0.100081                  0.024876    0.014925    0.092217             False             False
+     CRI      CRI_ZFX      157  0.316479  0.137448                  0.034428                  0.004975    0.004975    0.057380             False              True
+late   cos_v_u     p_n1  rho_prolif_CRA    rho_p_CRA  rho_prolif_CRI    rho_p_CRI    v_norm
+PD32 -0.040273 1.000000        0.828053 2.555195e-43        0.862002 2.459930e-52 90.149349
+PD26 -0.005988 0.736318        0.819079 1.144443e-41        0.858861 1.463402e-51 86.158492
+[R_rej] pseudobulk log2FC, all genes, Pearson
+[spearman R_rej vs cos_g] pooled rho=-0.9839 p=9.705e-255 CRA=-0.9826 CRI=-0.9864
+modality perturbation  n_cells     R_rej       R_rej_p  n_genes      cos  rank_R_rej  rank_cos_g  n_in_modality  published_table1_R_rej
+     CRA     CRA_E2F3      128 -0.280909  0.000000e+00    36601 0.247948         1.0         1.0          167.0                   -0.53
+     CRA     CRA_EZH2      107 -0.202977  0.000000e+00    36601 0.197269         9.0         6.0          167.0                   -0.36
+     CRI    CRI_STAT3       96 -0.154871 3.076560e-195    36601 0.154649        49.0        37.0          173.0                   -0.41
+     CRI      CRI_ZFX      157 -0.355302  0.000000e+00    36601 0.316479         1.0         2.0          173.0                   -0.51
+[H4] all-gene TMM/z at LATE=PD32
+[H4] mapped_genes=16771 unmapped=19830 dup_file_cols_skipped=10 missing_allzero=10078
+modality perturbation  n_cells  cos_all_genes  norm_d_ruler_mapped  norm_d_unmapped  cos_ruler  rank_cos_all  rank_cos_ruler
+     CRA     CRA_E2F3      128       0.066352            92.866364       133.280096   0.247948           3.0             1.0
+     CRA     CRA_EZH2      107       0.057770            91.571520       127.471912   0.197269           7.0             6.0
+     CRI    CRI_STAT3       96       0.052402            92.180185       206.364310   0.154649          50.0            37.0
+     CRI      CRI_ZFX      157       0.076685            86.861894       198.335134   0.316479           6.0             2.0
+[fired] ['unexplained']
+[done] elapsed_s=1512.1

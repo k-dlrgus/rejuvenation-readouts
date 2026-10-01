@@ -1,0 +1,105 @@
+{
+ "with_OSKM": {
+  "pluri": {
+   "mapped": [
+    "POU5F1",
+    "SALL4",
+    "DNMT3B"
+   ],
+   "missing": [
+    "NANOG",
+    "LIN28A",
+    "DPPA4",
+    "ZFP42"
+   ],
+   "n_mapped": 3,
+   "indices": [
+    7524,
+    21730,
+    21499
+   ]
+  },
+  "fibro": {
+   "mapped": [
+    "COL1A1",
+    "COL1A2",
+    "THY1",
+    "S100A4",
+    "FN1",
+    "VIM",
+    "POSTN"
+   ],
+   "missing": [],
+   "n_mapped": 7,
+   "indices": [
+    18872,
+    9037,
+    13445,
+    1484,
+    3668,
+    11490,
+    14963
+   ]
+  },
+  "drop_oskm": false,
+  "pluri_list": [
+   "POU5F1",
+   "NANOG",
+   "LIN28A",
+   "SALL4",
+   "DPPA4",
+   "ZFP42",
+   "DNMT3B"
+  ]
+ },
+ "without_OSKM": {
+  "pluri": {
+   "mapped": [
+    "SALL4",
+    "DNMT3B"
+   ],
+   "missing": [
+    "NANOG",
+    "LIN28A",
+    "DPPA4",
+    "ZFP42"
+   ],
+   "n_mapped": 2,
+   "indices": [
+    21730,
+    21499
+   ]
+  },
+  "fibro": {
+   "mapped": [
+    "COL1A1",
+    "COL1A2",
+    "THY1",
+    "S100A4",
+    "FN1",
+    "VIM",
+    "POSTN"
+   ],
+   "missing": [],
+   "n_mapped": 7,
+   "indices": [
+    18872,
+    9037,
+    13445,
+    1484,
+    3668,
+    11490,
+    14963
+   ]
+  },
+  "drop_oskm": true,
+  "pluri_list": [
+   "NANOG",
+   "LIN28A",
+   "SALL4",
+   "DPPA4",
+   "ZFP42",
+   "DNMT3B"
+  ]
+ }
+}

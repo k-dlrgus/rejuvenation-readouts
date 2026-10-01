@@ -1,0 +1,141 @@
+TASK: SOUTH
+
+Nature of this task: a purely computational reanalysis of published,
+publicly released human cell gene-expression tables that are already
+downloaded in this repository. No laboratory work, no protocol, no
+biological material, no new data generation. The output is a ranked
+table and a set of statistics.
+
+Write FINDINGS_SOUTH.md, PROGRESS_SOUTH.md, results/south/*, src/south_run.py.
+Do not modify any existing FINDINGS_*.md, PROGRESS_*.md, or existing src/ files.
+Import from src/toward_run.py, src/same_run.py, src/seng_run.py,
+src/lowdim_common.py; do not change them. Do not refit the frozen ruler.
+Seeds: 20260914 (splits, nulls, permutations), 20260918 (bootstrap).
+n_null=200, n_perm=200, n_boot=200. Uncalibrated R2 is never a gate.
+
+WRITE THE PRE-REGISTRATION FIRST. Copy this whole file verbatim into
+FINDINGS_SOUTH.md and touch results/south/PREREG.flag before computing any
+statistic. Stage 0 may run after the flag exists. Nothing is re-tuned after
+numbers exist. Every STOP key halts the task and is reported as written.
+
+--- DATA ---
+The already-downloaded expression table at
+results/survey/opened/southard/fibroblast_CRISPRa_mean_pop.h5ad
+(Southard et al. 2025, transcription-factor perturbations in the Hs27
+human fibroblast line, public). Record file size and md5.
+
+--- STAGE 0: INVENTORY (descriptive only, no statistic) ---
+From obs/var, determine and report:
+- what one row is: a single cell, a replicate, or a per-factor mean.
+- how many transcription factors, how many replicate rows per factor,
+  how many untargeted control rows, and their labels.
+- whether the matrix holds raw integer counts; if not, whether a raw
+  layer exists. If neither, STOP, key `no_raw_counts`.
+- how many of the 23,485 frozen-ruler genes are present.
+- what unit is available for resampling (cells, replicates, or none).
+  If none, STOP, key `no_resampling_unit`, and report the inventory only.
+STOP, key `no_controls`, if fewer than 10 control rows exist.
+
+--- SPACES (every statistic is reported in both) ---
+S1, gene space: frozen-ruler overlap genes; sum, TMM log2-CPM with
+prior.count=2 across this task's own panel, frozen GTEx mu/sd, z-score;
+missing genes z=0. Identical to TOWARD/SAME/SENG.
+S2, low-dim space: PCA fit only on the GTEx fibroblast donor matrix,
+never on this dataset and never on the targets, k in (20, 50, 100),
+applied unchanged to everything else. Report every k. Do not choose a k
+after seeing results.
+
+--- TARGETS AND ORIGINS (fixed before anything is scored) ---
+Young target, two definitions, reported separately, never combined:
+  Y1 = GTEx fibroblast donors aged 20-39 (existing TOWARD anchor).
+  Y2 = the same donors as a region: mean and covariance, in S2 only,
+       distance measured as Mahalanobis distance, membership radius set
+       at the 95th percentile of held-out young donors' own distances.
+       Report the radius.
+Aged origin, two definitions, reported separately, never combined:
+  O1 = GTEx fibroblast donors aged 60-79 (existing anchor).
+  O2 = the Lu et al. aged donor GM00731 untreated day-0 fibroblast
+       pseudobulk, as already built in SAME.
+Report each origin-to-target distance before anything else is scored.
+
+--- STAGE 1: DETECTION LIMIT (before any factor is scored) ---
+A. Control floor. Split the control rows into two disjoint halves,
+   200 times, taking d_null = z(half1) - z(half2), matched in row count
+   to the median real factor. For each origin/target pair report the
+   distribution of
+   delta = ||(origin + d_null) - target|| - ||origin - target||.
+   The floor is the 5th percentile: the most negative delta that noise
+   alone can reach. Report median, 5th percentile, and whether each
+   bootstrap interval contains its point estimate.
+B. Dose-response. Add the true young-minus-old direction to the aged
+   origin at fractions f = 0, 0.05, 0.1, 0.25, 0.5, 1.0, with magnitude
+   matched to the median real factor's vector norm. Report delta at each f.
+   MDA = the smallest f whose delta falls below the control floor.
+C. STOP, key `no_detection_power`, if no f <= 1.0 clears the floor in any
+   space. Report Stages 0 and 1 only and state plainly that this data
+   cannot support a ranking.
+Never subtract the floor from a later number. It is a bar to clear.
+
+--- STAGE 2: SINGLE-FACTOR RANKING (only if Stage 1 passed) ---
+For each transcription factor g with at least 2 replicate rows, the effect
+vector is d_g = z(g rows) - z(control rows). For each origin/target pair and
+each space report:
+  cos_g   = dot(d_g, v) / (||d_g|| ||v||), where v = target - origin
+  frac_g  = dot(d_g, v) / ||v||^2
+  delta_g = ||(origin + d_g) - target|| - ||origin - target||
+  for Y2 also: whether origin + d_g falls inside the membership radius,
+  and the change in Mahalanobis distance.
+Also per factor: proliferation-residualized cos and delta (project out the
+proliferation axis exactly as in seng_run.py); the identity check on
+COL1A1, COL1A2, FN1, LUM, PDGFRA, PDGFRB, POSTN, PRRX1, SERPINH1, VIM,
+flagging `identity_loss` if the drop exceeds 0.5; and the frozen ruler
+score as a context column only.
+Nulls: the Stage 1A control draws, size-matched to g, one-sided empirical p,
+BH-FDR across all factors. Bootstrap intervals by the Stage 0 resampling
+unit; flag any interval that does not contain its point estimate as INVALID
+and never use it as a gate.
+Label a factor `toward_young` only if delta_g is negative AND below the
+Stage 1A floor AND q <= 0.05 AND the residualized delta is negative with
+p <= 0.05 AND identity_loss is not flagged.
+Report the count in every space and every origin/target pair. Zero is a
+valid and reportable answer.
+
+--- STAGE 3: DISAGREEMENT WITH DIRECTIONAL READOUTS ---
+Rank all factors three ways: by delta_g, by cos_g, and by drop in the frozen
+ruler score. Report Spearman correlation between each pair of rankings and
+the overlap of the top 20. State how many of the top 20 by cosine are not
+`toward_young` by delta.
+
+--- STAGE 4: COMBINATIONS (assumption-laden; label as such) ---
+Only if Stage 1 passed. State at the top of the section that this stage
+assumes effects add linearly and that this data cannot test that assumption.
+Greedy forward search: start empty, add at each step the factor whose sum
+most reduces distance to the target, stop when no addition reduces it or when
+the state enters the Y2 membership region, maximum size 5. Repeat from 50
+random starts (seed 20260914) and report how often the same set is found.
+For each reported set give delta, margin over the Stage 1A floor, identity
+flag, and the delta with each member removed in turn.
+Report no set as a candidate unless its delta clears the floor by at least
+the Stage 1B MDA margin.
+
+--- WHAT DOES NOT COUNT ---
+- cosine or ruler-score drop alone as evidence of approach.
+- any delta that does not clear the measured control floor.
+- subtracting the floor instead of clearing it.
+- choosing k, origin, target, or proliferation cut after seeing results.
+- dropping or relabelling factors because they look odd; report them.
+- pooling the two origins, two targets, or two spaces into one number.
+- claims about the source paper's own conclusions; this task does not test them.
+
+--- OUTPUT ---
+FINDINGS_SOUTH.md: this file verbatim; Stage 0 inventory; both spaces and
+their sizes; Stage 1 floor and MDA table; Stage 2 full table plus a top-20
+table with factor, delta, margin over floor, q, identity flag, proliferation
+flag; Stage 3 disagreement table; Stage 4 with its additivity warning; fired
+keys; limitations, which must include: Hs27 is one neonatal line with no aged
+cells, so every delta is a counterfactual assuming the effect transfers;
+effects are measured in a different cell line and platform from the origin
+and target; combinations assume additivity; per-factor mean rows may not
+permit cell-level resampling.
+PROGRESS_SOUTH.md: stop status, next action.
+Record every failure verbatim. Do not substitute columns or repair rows.

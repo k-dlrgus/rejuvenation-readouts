@@ -1,0 +1,87 @@
+Written **before any SAME statistic**, 2026-09-21. No threshold in this block is re-tuned after numbers exist.
+
+Question: does aged partially-reprogrammed tissue move toward the YOUNG donor's untreated day-0 fibroblasts from the same experiment? And is that rejuvenation, or just both donors converging?
+
+Seeds: 20260914 (splits, permutations), 20260918 (bootstrap). n_perm=200, n_boot=200. GSE325735 out of scope. Uncalibrated R² never a gate.
+
+INPUTS (read from disk; refit/re-label/re-cluster/rescore nothing)
+- GSE297234 per-cell counts, md2 labels (results/md2/t2_cluster_labels_*.csv, results/md2/louvain_obs_*.csv) exactly as used in TOWARD.
+- Frozen-ruler overlap gene set and frozen GTEx mu/sd (same gene space and transform as TOWARD: pseudobulk -> TMM log2-CPM prior.count=2 across this task's full pseudobulk panel -> frozen GTEx mu/sd -> z; missing genes z=0).
+- Frozen ruler: context column only. Not the statistic.
+
+SPLIT (frozen before any statistic)
+Randomly split each donor's d0 Fibroblast cells 50/50 (seed 20260914):
+half A = anchors, half B = held out for the positive control only.
+  O  = GM00731 d0 Fibroblast, half A   (aged origin)
+  Y  = GM23815 d0 Fibroblast, half A   (young target)
+Report n cells in every half. If any half has <500 cells, STOP.
+
+PRIMARY STATISTICS (for a destination state S of one donor)
+Forward test (aged -> young):
+  v      = z(Y) - z(O)
+  d_S    = z(S) - z(O),       S = GM00731 PartialReprog (all timepoints pooled)
+  cos_S  = dot(d_S, v) / (||d_S|| * ||v||)
+  frac_S = dot(d_S, v) / ||v||^2      (0 = no progress, 1 = reached young
+                                        along the axis)
+  delta_S = ||z(S) - z(Y)|| - ||z(O) - z(Y)||   (negative = closer to young)
+
+Reverse test (young -> aged), identical formulas with donors swapped:
+  v_rev = z(O) - z(Y); origin Y; S_rev = GM23815 PartialReprog (all timepoints
+  pooled). Produces cos_rev, frac_rev, delta_rev.
+
+Asymmetry = frac_S - frac_rev.
+
+NULLS / CIs
+- N1: 200 permutations of v's entries across genes (seed 20260914).
+  p = (#{cos >= observed} + 1)/201. Same for the reverse test with v_rev.
+- Bootstrap (seed 20260918, B=200): resample cells with replacement within
+  each pseudobulk (O, Y, S, S_rev) independently; rebuild; 95% percentile CIs
+  on frac_S, frac_rev, delta_S, delta_rev, and Asymmetry (recomputed on the
+  same bootstrap draw).
+
+POSITIVE CONTROL P (run BEFORE any PartialReprog vector)
+Using ONLY half-B cells: build synthetic pseudobulks by mixing aged half-B d0
+cells with young half-B d0 cells at young fractions f = 0, 0.10, 0.25, 0.50
+(cell counts, not weights; seed 20260914; total cells fixed = min available).
+Score each mixture as S in the forward test against the half-A anchors.
+P PASSES only if: frac is monotonically increasing in f, AND frac at f=0.50
+has bootstrap CI excluding 0, AND delta at f=0.50 < 0.
+Also report the noise floor: frac and delta for f=0 (should be ~0).
+If P fails: STOP. The statistic cannot detect a known approach. Report nothing
+downstream.
+
+CONTEXT (reported, never the reading)
+- GM00731 Pluripotency as S in the forward test (overshoot reference).
+- GM00731 NonReprog as S in the forward test.
+- Frozen-ruler score of every pseudobulk.
+- cos(v, u_TOWARD) where u_TOWARD is the GTEx young-minus-old axis from
+  results/toward/anchors.npz: how much of the same-platform donor gap looks
+  like age as GTEx defines it. Report only.
+
+PRE-REGISTERED READING (decision order; only what fired)
+1. P fails -> key `pos_control_broken`. STOP.
+2. Forward: frac_S CI excludes 0 (positive) AND delta_S < 0 AND N1 p <= 0.05,
+   AND Asymmetry CI excludes 0 (positive) -> key `toward_young_same_platform`.
+   Aged partially-reprogrammed cells approach the young donor's untreated
+   cells more than the reverse. State n_cells and frac_S in the same sentence.
+   Also state: one young donor, so "young" is confounded with that donor.
+3. Forward meets the conditions in 2 BUT Asymmetry CI includes 0 or is
+   negative -> key `convergence_not_rejuvenation`. Both donors drift toward
+   each other; reprogramming erases donor differences rather than age.
+4. delta_S >= 0 OR frac_S CI includes 0 -> key `no_approach_same_platform`.
+   The TOWARD negative holds with the platform gap removed.
+5. Anything else -> key `mixed`; report exactly which conditions held.
+If GM00731 Pluripotency also has delta < 0 and frac CI > 0, add the flag
+`overshoot_also_closer` to whatever key fired and say the forward result may
+reflect generic de-differentiation, not approach to young fibroblast.
+
+WHAT DOES NOT COUNT
+- The frozen ruler moving. Context only.
+- The forward test alone. Without the reverse test, convergence and
+  rejuvenation look identical. Asymmetry is required.
+- Using half-B cells anywhere except P. Using half-A cells in P.
+- Per-timepoint slicing to find a better result. PartialReprog is pooled
+  across timepoints; report timepoint composition, do not split it.
+- Relaxing the 500-cell split minimum, changing f values, or re-choosing
+  anchors after seeing numbers.
+- Averaging donors, directions, or states.

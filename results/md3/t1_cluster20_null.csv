@@ -1,0 +1,457 @@
+aggregation,min_cells,cell_line,group,endpoint,d_end,n_random,seed,instrument,null_kind,cluster,label,n_cells_d0,n_cells_end,ok,reason,score_d0,score_end,decline,p,n_random_ge_real,pass_p,n_pluri_mapped,n_fibro_mapped,n_genes
+per_cluster,20,GM00731,0,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,0.0,Fibroblast,3998.0,9.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,0,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,0.0,Fibroblast,3998.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,1,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,1.0,NonReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,1,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,1.0,NonReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,2,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,2.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,2,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,2.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,3,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,3.0,PartialReprog,1.0,444.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,3,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,3.0,PartialReprog,1.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,4,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,4.0,NonReprog,9.0,1732.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,4,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,4.0,NonReprog,9.0,31.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,5,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,5.0,PartialReprog,2.0,48.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,5,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,5.0,PartialReprog,2.0,21.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,6,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,6.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,6,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,6.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,7,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,7.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,7,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,7.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,8,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,8.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,8,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,8.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,9,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,9.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,9,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,9.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,10,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,10.0,NonReprog,56.0,191.0,True,,-1.4246331227695694,3.966011763255402,-5.390644886024972,0.9303482587064676,186.0,False,,,
+per_cluster,20,GM00731,10,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,10.0,NonReprog,56.0,527.0,True,,-1.4246331227695694,7.934468697088863,-9.359101819858433,1.0,200.0,False,,,
+per_cluster,20,GM00731,11,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,11.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,11,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,11.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,12,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,12.0,Fibroblast,569.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,12,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,12.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,13,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,13.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,13,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,13.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,14,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,14.0,Pluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,14,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,14.0,Pluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,15,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,15.0,Fibroblast,372.0,3.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,15,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,15.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,16,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,16.0,EarlyPluripotency,2.0,32.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,16,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,16.0,EarlyPluripotency,2.0,7.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,17,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,17.0,NonReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,17,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,17.0,NonReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,18,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,18.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,18,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,18.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM00731,0,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,0.0,Fibroblast,3998.0,9.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,0,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,0.0,Fibroblast,3998.0,1.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,1,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,1.0,NonReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,1,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,1.0,NonReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,2,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,2.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,2,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,2.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,3,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,3.0,PartialReprog,1.0,444.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,3,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,3.0,PartialReprog,1.0,5.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,4,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,4.0,NonReprog,9.0,1732.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,4,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,4.0,NonReprog,9.0,31.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,5,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,5.0,PartialReprog,2.0,48.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,5,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,5.0,PartialReprog,2.0,21.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,6,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,6.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,6,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,6.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,7,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,7.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,7,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,7.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,8,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,8.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,8,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,8.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,9,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,9.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,9,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,9.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,10,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,10.0,NonReprog,56.0,191.0,True,,1.8602199915115722,5.834884843923977,-3.9746648524124044,0.9701492537313433,194.0,False,3.0,7.0,
+per_cluster,20,GM00731,10,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,10.0,NonReprog,56.0,527.0,True,,1.8602199915115722,3.313014672923439,-1.4527946814118669,0.8308457711442786,166.0,False,3.0,7.0,
+per_cluster,20,GM00731,11,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,11.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,11,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,11.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,12,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,12.0,Fibroblast,569.0,1.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,12,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,12.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,13,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,13.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,13,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,13.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,14,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,14.0,Pluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,14,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,14.0,Pluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,15,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,15.0,Fibroblast,372.0,3.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,15,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,15.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,16,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,16.0,EarlyPluripotency,2.0,32.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,16,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,16.0,EarlyPluripotency,2.0,7.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,17,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,17.0,NonReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,17,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,17.0,NonReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,18,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,18.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,18,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,18.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM00731,0,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,3998.0,9.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,0,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,3998.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,1,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,1.0,NonReprog,0.0,9.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,1,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,1.0,NonReprog,0.0,2313.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,2,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,2092.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,2,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,4.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,3,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,3.0,PartialReprog,1.0,444.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,3,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,3.0,PartialReprog,1.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,4,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,4.0,NonReprog,9.0,1732.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,4,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,4.0,NonReprog,9.0,31.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,5,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,2.0,48.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,5,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,2.0,21.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,6,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,6.0,Fibroblast,0.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,6,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,6.0,Fibroblast,0.0,1029.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,7,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,7.0,EarlyPluripotency,0.0,884.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,7,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,7.0,EarlyPluripotency,0.0,22.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,8,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,8.0,PartialReprog,0.0,13.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,8,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,8.0,PartialReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,9,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,9.0,EarlyPluripotency,0.0,909.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,9,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,9.0,EarlyPluripotency,0.0,52.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,10,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,10.0,NonReprog,56.0,191.0,True,,0.3560823908931772,0.3471541852095044,0.008928205683672807,0.03482587064676617,6.0,True,,,205.0
+per_cluster,20,GM00731,10,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,10.0,NonReprog,56.0,527.0,True,,0.3560823908931772,0.41679990549474616,-0.060717514601568934,0.8855721393034826,177.0,False,,,205.0
+per_cluster,20,GM00731,11,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,64.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,11,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,12,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,12.0,Fibroblast,569.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,12,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,12.0,Fibroblast,569.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,13,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,13.0,PartialReprog,0.0,3.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,13,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,13.0,PartialReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,14,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,14.0,Pluripotency,0.0,354.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,14,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,14.0,Pluripotency,0.0,80.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,15,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,15.0,Fibroblast,372.0,3.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,15,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,15.0,Fibroblast,372.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,16,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,16.0,EarlyPluripotency,2.0,32.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,16,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,16.0,EarlyPluripotency,2.0,7.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,17,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,17.0,NonReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,17,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,17.0,NonReprog,0.0,243.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,18,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,18.0,PartialReprog,0.0,6.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,18,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,18.0,PartialReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,205.0
+per_cluster,20,GM00731,0,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,3998.0,9.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,0,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,3998.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,1,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,1.0,NonReprog,0.0,9.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,1,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,1.0,NonReprog,0.0,2313.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,2,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,2092.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,2,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,4.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,3,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,3.0,PartialReprog,1.0,444.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,3,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,3.0,PartialReprog,1.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,4,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,4.0,NonReprog,9.0,1732.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,4,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,4.0,NonReprog,9.0,31.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,5,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,2.0,48.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,5,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,2.0,21.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,6,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,6.0,Fibroblast,0.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,6,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,6.0,Fibroblast,0.0,1029.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,7,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,7.0,EarlyPluripotency,0.0,884.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,7,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,7.0,EarlyPluripotency,0.0,22.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,8,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,8.0,PartialReprog,0.0,13.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,8,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,8.0,PartialReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,9,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,9.0,EarlyPluripotency,0.0,909.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,9,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,9.0,EarlyPluripotency,0.0,52.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,10,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,10.0,NonReprog,56.0,191.0,True,,0.1170513538663268,0.0786380325191144,0.0384133213472124,0.11940298507462686,23.0,False,,,54.0
+per_cluster,20,GM00731,10,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,10.0,NonReprog,56.0,527.0,True,,0.1170513538663268,0.10163677661138618,0.015414577254940623,0.2935323383084577,58.0,False,,,54.0
+per_cluster,20,GM00731,11,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,64.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,11,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,12,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,12.0,Fibroblast,569.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,12,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,12.0,Fibroblast,569.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,13,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,13.0,PartialReprog,0.0,3.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,13,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,13.0,PartialReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,14,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,14.0,Pluripotency,0.0,354.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,14,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,14.0,Pluripotency,0.0,80.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,15,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,15.0,Fibroblast,372.0,3.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,15,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,15.0,Fibroblast,372.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,16,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,16.0,EarlyPluripotency,2.0,32.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,16,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,16.0,EarlyPluripotency,2.0,7.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,17,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,17.0,NonReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,17,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,17.0,NonReprog,0.0,243.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,18,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,18.0,PartialReprog,0.0,6.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,18,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,18.0,PartialReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM00731,0,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,3998.0,9.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,0,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,3998.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,1,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,1.0,NonReprog,0.0,9.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,1,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,1.0,NonReprog,0.0,2313.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,2,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,2092.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,2,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,4.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,3,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,3.0,PartialReprog,1.0,444.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,3,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,3.0,PartialReprog,1.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,4,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,4.0,NonReprog,9.0,1732.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,4,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,4.0,NonReprog,9.0,31.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,5,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,2.0,48.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,5,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,2.0,21.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,6,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,6.0,Fibroblast,0.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,6,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,6.0,Fibroblast,0.0,1029.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,7,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,7.0,EarlyPluripotency,0.0,884.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,7,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,7.0,EarlyPluripotency,0.0,22.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,8,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,8.0,PartialReprog,0.0,13.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,8,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,8.0,PartialReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,9,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,9.0,EarlyPluripotency,0.0,909.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,9,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,9.0,EarlyPluripotency,0.0,52.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,10,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,10.0,NonReprog,56.0,191.0,True,,0.11197299770950127,0.05313474865348301,0.058838249056018255,0.004975124378109453,0.0,True,,,896.0
+per_cluster,20,GM00731,10,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,10.0,NonReprog,56.0,527.0,True,,0.11197299770950127,0.06252419168095658,0.04944880602854469,0.004975124378109453,0.0,True,,,896.0
+per_cluster,20,GM00731,11,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,64.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,11,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,12,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,12.0,Fibroblast,569.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,12,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,12.0,Fibroblast,569.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,13,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,13.0,PartialReprog,0.0,3.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,13,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,13.0,PartialReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,14,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,14.0,Pluripotency,0.0,354.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,14,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,14.0,Pluripotency,0.0,80.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,15,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,15.0,Fibroblast,372.0,3.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,15,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,15.0,Fibroblast,372.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,16,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,16.0,EarlyPluripotency,2.0,32.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,16,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,16.0,EarlyPluripotency,2.0,7.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,17,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,17.0,NonReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,17,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,17.0,NonReprog,0.0,243.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,18,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,18.0,PartialReprog,0.0,6.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,18,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,18.0,PartialReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,896.0
+per_cluster,20,GM00731,0,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,3998.0,9.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,0,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,3998.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,1,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,1.0,NonReprog,0.0,9.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,1,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,1.0,NonReprog,0.0,2313.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,2,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,2092.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,2,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,4.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,3,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,3.0,PartialReprog,1.0,444.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,3,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,3.0,PartialReprog,1.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,4,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,4.0,NonReprog,9.0,1732.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,4,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,4.0,NonReprog,9.0,31.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,5,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,2.0,48.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,5,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,2.0,21.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,6,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,6.0,Fibroblast,0.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,6,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,6.0,Fibroblast,0.0,1029.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,7,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,7.0,EarlyPluripotency,0.0,884.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,7,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,7.0,EarlyPluripotency,0.0,22.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,8,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,8.0,PartialReprog,0.0,13.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,8,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,8.0,PartialReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,9,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,9.0,EarlyPluripotency,0.0,909.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,9,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,9.0,EarlyPluripotency,0.0,52.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,10,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,10.0,NonReprog,56.0,191.0,True,,-0.05152560760027065,-0.016819207243460036,-0.03470640035681061,1.0,200.0,False,,,1586.0
+per_cluster,20,GM00731,10,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,10.0,NonReprog,56.0,527.0,True,,-0.05152560760027065,-0.023338274005315473,-0.028187333594955174,1.0,200.0,False,,,1586.0
+per_cluster,20,GM00731,11,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,64.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,11,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,12,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,12.0,Fibroblast,569.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,12,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,12.0,Fibroblast,569.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,13,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,13.0,PartialReprog,0.0,3.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,13,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,13.0,PartialReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,14,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,14.0,Pluripotency,0.0,354.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,14,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,14.0,Pluripotency,0.0,80.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,15,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,15.0,Fibroblast,372.0,3.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,15,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,15.0,Fibroblast,372.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,16,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,16.0,EarlyPluripotency,2.0,32.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,16,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,16.0,EarlyPluripotency,2.0,7.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,17,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,17.0,NonReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,17,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,17.0,NonReprog,0.0,243.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,18,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,18.0,PartialReprog,0.0,6.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM00731,18,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,18.0,PartialReprog,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,1586.0
+per_cluster,20,GM23815,0,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,0.0,Fibroblast,6454.0,14.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,0,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,0.0,Fibroblast,6454.0,2.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,1,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,1.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,1,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,1.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,2,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,2.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,2,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,2.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,3,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,3.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,3,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,3.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,4,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,4.0,Fibroblast,2.0,2210.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,4,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,4.0,Fibroblast,2.0,9.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,5,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,5.0,PartialReprog,9.0,118.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,5,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,5.0,PartialReprog,9.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,6,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,6.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,6,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,6.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,7,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,7.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,7,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,7.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,8,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,8.0,NonReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,8,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,8.0,NonReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,9,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,9.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,9,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,9.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,10,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,10.0,Pluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,10,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,10.0,Pluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,11,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,11.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,11,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,11.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,12,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,12.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,12,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,12.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,13,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,13.0,EarlyPluripotency,56.0,164.0,True,,-2.1599692178934107,-7.076469570164537,4.916500352271127,0.04975124378109453,9.0,True,,,
+per_cluster,20,GM23815,13,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,13.0,EarlyPluripotency,56.0,432.0,True,,-2.1599692178934107,-3.794437609124636,1.6344683912312252,0.15920398009950248,31.0,False,,,
+per_cluster,20,GM23815,14,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,14.0,Fibroblast,886.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,14,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,14.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,15,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,15.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,15,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,15.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,16,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,16.0,Fibroblast,361.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,16,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,16.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,17,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,17.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,17,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,17.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,18,d0→d7,7,200,20260914,frozen_ruler,permuted_ruler_weights,18.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,18,d0→d10,10,200,20260914,frozen_ruler,permuted_ruler_weights,18.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,,,
+per_cluster,20,GM23815,0,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,0.0,Fibroblast,6454.0,14.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,0,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,0.0,Fibroblast,6454.0,2.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,1,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,1.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,1,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,1.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,2,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,2.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,2,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,2.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,3,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,3.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,3,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,3.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,4,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,4.0,Fibroblast,2.0,2210.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,4,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,4.0,Fibroblast,2.0,9.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,5,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,5.0,PartialReprog,9.0,118.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,5,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,5.0,PartialReprog,9.0,5.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,6,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,6.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,6,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,6.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,7,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,7.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,7,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,7.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,8,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,8.0,NonReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,8,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,8.0,NonReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,9,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,9.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,9,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,9.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,10,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,10.0,Pluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,10,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,10.0,Pluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,11,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,11.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,11,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,11.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,12,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,12.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,12,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,12.0,PartialReprog,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,13,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,13.0,EarlyPluripotency,56.0,164.0,True,,1.7778692728588728,8.75794858523358,-6.980079312374707,0.9900497512437811,198.0,False,3.0,7.0,
+per_cluster,20,GM23815,13,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,13.0,EarlyPluripotency,56.0,432.0,True,,1.7778692728588728,6.874129038387551,-5.0962597655286785,0.9701492537313433,194.0,False,3.0,7.0,
+per_cluster,20,GM23815,14,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,14.0,Fibroblast,886.0,5.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,14,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,14.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,15,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,15.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,15,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,15.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,16,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,16.0,Fibroblast,361.0,1.0,False,n_cells<20 at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,16,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,16.0,Fibroblast,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,17,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,17.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,17,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,17.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,18,d0→d7,7,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,18.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,18,d0→d10,10,200,20261318,pluri_primary,size_matched_random_gene_sets_frozen_ruler_Z_not_AMS,18.0,EarlyPluripotency,,,False,missing group row at an endpoint,,,,,,,3.0,7.0,
+per_cluster,20,GM23815,0,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,6454.0,14.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,0,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,6454.0,2.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,1,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,1.0,EarlyPluripotency,0.0,3240.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,1,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,1.0,EarlyPluripotency,0.0,8.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,2,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,2,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,2730.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,3,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,3.0,EarlyPluripotency,0.0,2537.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,3,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,3.0,EarlyPluripotency,0.0,30.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,4,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,4.0,Fibroblast,2.0,2210.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,4,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,4.0,Fibroblast,2.0,9.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,5,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,9.0,118.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,5,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,9.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,6,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,6.0,EarlyPluripotency,0.0,1819.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,6,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,6.0,EarlyPluripotency,0.0,330.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,7,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,7.0,PartialReprog,0.0,20.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,7,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,7.0,PartialReprog,0.0,10.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,8,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,8.0,NonReprog,0.0,8.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,8,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,8.0,NonReprog,0.0,1794.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,9,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,9.0,Fibroblast,0.0,3.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,9,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,9.0,Fibroblast,0.0,1362.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,10,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,10.0,Pluripotency,0.0,977.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,10,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,10.0,Pluripotency,0.0,181.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,11,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,65.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,11,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,10.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,12,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,12.0,PartialReprog,0.0,106.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,12,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,12.0,PartialReprog,0.0,25.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,13,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,13.0,EarlyPluripotency,56.0,164.0,True,,0.37945819200746234,0.15923615551653109,0.22022203649093125,0.004975124378109453,0.0,True,,,204.0
+per_cluster,20,GM23815,13,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,13.0,EarlyPluripotency,56.0,432.0,True,,0.37945819200746234,0.23476979212888202,0.14468839987858031,0.004975124378109453,0.0,True,,,204.0
+per_cluster,20,GM23815,14,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,14.0,Fibroblast,886.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,14,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,14.0,Fibroblast,886.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,15,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,15.0,EarlyPluripotency,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,15,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,15.0,EarlyPluripotency,0.0,761.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,16,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,16.0,Fibroblast,361.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,16,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,16.0,Fibroblast,361.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,17,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,17.0,EarlyPluripotency,0.0,122.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,17,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,17.0,EarlyPluripotency,0.0,121.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,18,d0→d7,7,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,18.0,EarlyPluripotency,0.0,289.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,18,d0→d10,10,200,20260914,md_score,size_matched_random_gene_sets_mean_expression_bin,18.0,EarlyPluripotency,0.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,204.0
+per_cluster,20,GM23815,0,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,6454.0,14.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,0,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,6454.0,2.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,1,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,1.0,EarlyPluripotency,0.0,3240.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,1,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,1.0,EarlyPluripotency,0.0,8.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,2,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,2,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,2730.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,3,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,3.0,EarlyPluripotency,0.0,2537.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,3,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,3.0,EarlyPluripotency,0.0,30.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,4,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,4.0,Fibroblast,2.0,2210.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,4,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,4.0,Fibroblast,2.0,9.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,5,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,9.0,118.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,5,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,9.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,6,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,6.0,EarlyPluripotency,0.0,1819.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,6,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,6.0,EarlyPluripotency,0.0,330.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,7,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,7.0,PartialReprog,0.0,20.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,7,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,7.0,PartialReprog,0.0,10.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,8,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,8.0,NonReprog,0.0,8.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,8,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,8.0,NonReprog,0.0,1794.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,9,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,9.0,Fibroblast,0.0,3.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,9,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,9.0,Fibroblast,0.0,1362.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,10,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,10.0,Pluripotency,0.0,977.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,10,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,10.0,Pluripotency,0.0,181.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,11,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,65.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,11,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,10.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,12,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,12.0,PartialReprog,0.0,106.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,12,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,12.0,PartialReprog,0.0,25.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,13,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,13.0,EarlyPluripotency,56.0,164.0,True,,0.0772791865402369,0.055729503787387065,0.02154968275284983,0.373134328358209,74.0,False,,,54.0
+per_cluster,20,GM23815,13,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,13.0,EarlyPluripotency,56.0,432.0,True,,0.0772791865402369,0.07102896052561662,0.006250226014620275,0.40298507462686567,80.0,False,,,54.0
+per_cluster,20,GM23815,14,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,14.0,Fibroblast,886.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,14,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,14.0,Fibroblast,886.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,15,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,15.0,EarlyPluripotency,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,15,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,15.0,EarlyPluripotency,0.0,761.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,16,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,16.0,Fibroblast,361.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,16,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,16.0,Fibroblast,361.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,17,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,17.0,EarlyPluripotency,0.0,122.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,17,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,17.0,EarlyPluripotency,0.0,121.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,18,d0→d7,7,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,18.0,EarlyPluripotency,0.0,289.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,18,d0→d10,10,200,20261015,tgfb_score,size_matched_random_gene_sets_mean_expression_bin,18.0,EarlyPluripotency,0.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,54.0
+per_cluster,20,GM23815,0,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,6454.0,14.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,0,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,6454.0,2.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,1,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,1.0,EarlyPluripotency,0.0,3240.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,1,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,1.0,EarlyPluripotency,0.0,8.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,2,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,2,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,2730.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,3,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,3.0,EarlyPluripotency,0.0,2537.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,3,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,3.0,EarlyPluripotency,0.0,30.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,4,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,4.0,Fibroblast,2.0,2210.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,4,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,4.0,Fibroblast,2.0,9.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,5,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,9.0,118.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,5,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,9.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,6,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,6.0,EarlyPluripotency,0.0,1819.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,6,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,6.0,EarlyPluripotency,0.0,330.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,7,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,7.0,PartialReprog,0.0,20.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,7,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,7.0,PartialReprog,0.0,10.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,8,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,8.0,NonReprog,0.0,8.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,8,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,8.0,NonReprog,0.0,1794.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,9,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,9.0,Fibroblast,0.0,3.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,9,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,9.0,Fibroblast,0.0,1362.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,10,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,10.0,Pluripotency,0.0,977.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,10,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,10.0,Pluripotency,0.0,181.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,11,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,65.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,11,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,10.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,12,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,12.0,PartialReprog,0.0,106.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,12,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,12.0,PartialReprog,0.0,25.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,13,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,13.0,EarlyPluripotency,56.0,164.0,True,,0.08306683305455917,0.03476387606335019,0.04830295699120898,0.004975124378109453,0.0,True,,,894.0
+per_cluster,20,GM23815,13,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,13.0,EarlyPluripotency,56.0,432.0,True,,0.08306683305455917,0.04584755486979238,0.03721927818476679,0.004975124378109453,0.0,True,,,894.0
+per_cluster,20,GM23815,14,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,14.0,Fibroblast,886.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,14,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,14.0,Fibroblast,886.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,15,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,15.0,EarlyPluripotency,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,15,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,15.0,EarlyPluripotency,0.0,761.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,16,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,16.0,Fibroblast,361.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,16,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,16.0,Fibroblast,361.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,17,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,17.0,EarlyPluripotency,0.0,122.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,17,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,17.0,EarlyPluripotency,0.0,121.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,18,d0→d7,7,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,18.0,EarlyPluripotency,0.0,289.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,18,d0→d10,10,200,20261116,age_up,size_matched_random_gene_sets_mean_expression_bin,18.0,EarlyPluripotency,0.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,894.0
+per_cluster,20,GM23815,0,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,6454.0,14.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,0,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,0.0,Fibroblast,6454.0,2.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,1,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,1.0,EarlyPluripotency,0.0,3240.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,1,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,1.0,EarlyPluripotency,0.0,8.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,2,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,2,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,2.0,EarlyPluripotency,0.0,2730.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,3,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,3.0,EarlyPluripotency,0.0,2537.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,3,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,3.0,EarlyPluripotency,0.0,30.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,4,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,4.0,Fibroblast,2.0,2210.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,4,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,4.0,Fibroblast,2.0,9.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,5,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,9.0,118.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,5,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,5.0,PartialReprog,9.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,6,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,6.0,EarlyPluripotency,0.0,1819.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,6,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,6.0,EarlyPluripotency,0.0,330.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,7,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,7.0,PartialReprog,0.0,20.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,7,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,7.0,PartialReprog,0.0,10.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,8,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,8.0,NonReprog,0.0,8.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,8,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,8.0,NonReprog,0.0,1794.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,9,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,9.0,Fibroblast,0.0,3.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,9,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,9.0,Fibroblast,0.0,1362.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,10,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,10.0,Pluripotency,0.0,977.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,10,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,10.0,Pluripotency,0.0,181.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,11,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,65.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,11,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,11.0,PartialReprog,0.0,10.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,12,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,12.0,PartialReprog,0.0,106.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,12,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,12.0,PartialReprog,0.0,25.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,13,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,13.0,EarlyPluripotency,56.0,164.0,True,,-0.03773570198398351,0.0011649481507328193,-0.03890065013471633,1.0,200.0,False,,,1582.0
+per_cluster,20,GM23815,13,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,13.0,EarlyPluripotency,56.0,432.0,True,,-0.03773570198398351,-0.017281588975204373,-0.020454113008779137,1.0,200.0,False,,,1582.0
+per_cluster,20,GM23815,14,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,14.0,Fibroblast,886.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,14,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,14.0,Fibroblast,886.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,15,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,15.0,EarlyPluripotency,0.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,15,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,15.0,EarlyPluripotency,0.0,761.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,16,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,16.0,Fibroblast,361.0,1.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,16,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,16.0,Fibroblast,361.0,0.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,17,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,17.0,EarlyPluripotency,0.0,122.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,17,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,17.0,EarlyPluripotency,0.0,121.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,18,d0→d7,7,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,18.0,EarlyPluripotency,0.0,289.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0
+per_cluster,20,GM23815,18,d0→d10,10,200,20261217,age_down,size_matched_random_gene_sets_mean_expression_bin,18.0,EarlyPluripotency,0.0,5.0,False,n_cells<20 at an endpoint,,,,,,,,,1582.0

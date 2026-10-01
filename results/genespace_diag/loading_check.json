@@ -1,0 +1,60 @@
+{
+ "label": "diagnostic, not pre-registered",
+ "mmc3": "<repo>\\results\\md\\raw\\suppl__ars.els-cdn.com__1-s2.0-S0092867425008530-mmc3.xlsx",
+ "sheets": [
+  "MD_signatures",
+  "Aging_signatures",
+  "Fibroblast_subtype_signatures",
+  "Reprog_cell_state_signatures"
+ ],
+ "Aging_signatures_file_via_rels": "xl/worksheets/sheet2.xml",
+ "Aging_signatures_headers": [
+  "Age up",
+  "Age down"
+ ],
+ "age_up": {
+  "column": "Age up",
+  "n_indep": 1533,
+  "n_repo_reader": 1533,
+  "n_json": 1533,
+  "indep_equals_json_ordered": true,
+  "repo_reader_equals_json_ordered": true,
+  "first5_xlsx_raw": [
+   "SCN1A",
+   "STEAP4",
+   "ADH1B",
+   "KCNA4",
+   "LEP"
+  ],
+  "first5_json": [
+   "SCN1A",
+   "STEAP4",
+   "ADH1B",
+   "KCNA4",
+   "LEP"
+  ]
+ },
+ "age_down": {
+  "column": "Age down",
+  "n_indep": 2007,
+  "n_repo_reader": 2007,
+  "n_json": 2007,
+  "indep_equals_json_ordered": true,
+  "repo_reader_equals_json_ordered": true,
+  "first5_xlsx_raw": [
+   "CACNG4",
+   "CACNA1H",
+   "STRA6",
+   "SLC35F3",
+   "RRM2"
+  ],
+  "first5_json": [
+   "CACNG4",
+   "CACNA1H",
+   "STRA6",
+   "SLC35F3",
+   "RRM2"
+  ]
+ },
+ "age_up_equals_age_down_column": false
+}

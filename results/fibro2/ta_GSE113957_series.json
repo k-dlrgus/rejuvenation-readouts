@@ -1,0 +1,56 @@
+{
+ "accession": "GSE113957",
+ "title": "Predicting age from the transcriptome of human dermal fibroblasts",
+ "types": [
+  "Expression profiling by high throughput sequencing"
+ ],
+ "platforms": [
+  "GPL16791",
+  "GPL18573"
+ ],
+ "n_sample_id": 143,
+ "supplementary": [
+  "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/suppl/GSE113957_fpkm.txt.gz"
+ ],
+ "overall_design": "Single end stranded RNA-Seq",
+ "summary": "There is a marked heterogeneity in human lifespan and health outcomes for people of the same chronological age. Thus, one fundamental challenge is to identify molecular and cellular biomarkers of aging that could predict lifespan and be useful in evaluating lifestyle changes and therapeutic strategies in the pursuit of healthy aging. Here, we developed a computational method to predict biological age from gene expression data in skin fibroblast cells using an ensemble of machine learning classifiers. We generated an extensive RNA-seq dataset of fibroblast cell lines derived from 133 healthy individuals whose ages range from 1 to 94 years, and 10 patients with Hutchinson-Gilford Progeria Syndrome (HGPS), a premature aging disease. On this dataset, our method predicted chronological age with a median error of 4 years, outperforming algorithms proposed by prior studies that predicted age from DNA methylation [4\u00e2\u0080\u00938] and gene expression data [6,9] for fibroblasts. Importantly, our method consistently predicted higher ages for Progeria patients compared to age-matched controls, suggesting that our algorithm can identify accelerated aging in humans. These results show that the transcriptome of skin fibroblasts retains important age-related signatures. Our computational tool may also be applicable to predicting age from other genome-wide datasets.",
+ "series_fields": [
+  "Series_contact_address",
+  "Series_contact_city",
+  "Series_contact_country",
+  "Series_contact_department",
+  "Series_contact_email",
+  "Series_contact_institute",
+  "Series_contact_name",
+  "Series_contact_phone",
+  "Series_contact_state",
+  "Series_contact_zip/postal_code",
+  "Series_contributor",
+  "Series_geo_accession",
+  "Series_last_update_date",
+  "Series_overall_design",
+  "Series_platform_id",
+  "Series_platform_organism",
+  "Series_platform_taxid",
+  "Series_pubmed_id",
+  "Series_relation",
+  "Series_sample_id",
+  "Series_sample_organism",
+  "Series_sample_taxid",
+  "Series_status",
+  "Series_submission_date",
+  "Series_summary",
+  "Series_supplementary_file",
+  "Series_title",
+  "Series_type"
+ ],
+ "n_gsm": 143,
+ "n_with_age": 135,
+ "n_missing_age": 8,
+ "organisms": [
+  "Homo sapiens"
+ ],
+ "molecules": [
+  "total RNA"
+ ]
+}

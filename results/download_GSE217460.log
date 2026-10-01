@@ -1,0 +1,19 @@
+[download] https://ftp.ncbi.nlm.nih.gov/geo/series/GSE217nnn/GSE217460/suppl/GSE217460_210322_TFAtlas_differentiated_raw.h5ad.gz
+    -> data\raw\GSE217460\GSE217460_210322_TFAtlas_differentiated_raw.h5ad.gz
+    remote=127061504 local=0
+      9.9% 0.01 GB  (0.8 MB/s)
+     19.8% 0.03 GB  (0.7 MB/s)
+     33.0% 0.04 GB  (0.8 MB/s)
+     46.2% 0.06 GB  (0.8 MB/s)
+     52.8% 0.07 GB  (0.7 MB/s)
+     59.4% 0.08 GB  (0.6 MB/s)
+     75.9% 0.10 GB  (0.7 MB/s)
+     89.1% 0.11 GB  (0.7 MB/s)
+[done] data\raw\GSE217460\GSE217460_210322_TFAtlas_differentiated_raw.h5ad.gz (0.13 GB)
+[download] https://ftp.ncbi.nlm.nih.gov/geo/series/GSE217nnn/GSE217460/suppl/GSE217460_210322_TFAtlas_raw.h5ad.gz
+    -> data\raw\GSE217460\GSE217460_210322_TFAtlas_raw.h5ad.gz
+    remote=4687469096 local=0
+      0.2% 0.01 GB  (0.6 MB/s)
+      0.4% 0.02 GB  (0.6 MB/s)
+      0.7% 0.03 GB  (0.2 MB/s)
+[retry 1/20] ('Connection broken: IncompleteRead(35575541 bytes read, 4651893555 more expected)', IncompleteRead(35575541 bytes read, 4651893555 more expected))

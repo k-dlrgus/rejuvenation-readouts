@@ -1,0 +1,132 @@
+{
+ "sanity": {
+  "day0_aged": 2.768658769832732,
+  "day0_young": -2.4229074198440266,
+  "aged_gt_young": true
+ },
+ "aged": {
+  "cell_line": "GM00731",
+  "days": [
+   0,
+   3,
+   7,
+   10
+  ],
+  "age_score": [
+   2.768658769832732,
+   -0.18832033320412486,
+   -1.4159321966519975,
+   6.119542463860377
+  ],
+  "pluri": [
+   -1.5979352973543126,
+   8.174864864441993,
+   8.059927154669232,
+   3.845824200884512
+  ],
+  "decline_0_to_10": -3.3508836940276447,
+  "spearman_vs_day": 0.19999999999999998,
+  "p_endpoint": 0.9900497512437811,
+  "p_monotonicity": 0.5920398009950248,
+  "n_random": 200,
+  "n_null_ge_real": 198,
+  "n_null_le_real_mono": 118
+ },
+ "young": {
+  "cell_line": "GM23815",
+  "days": [
+   0,
+   3,
+   7,
+   10
+  ],
+  "age_score": [
+   -2.4229074198440266,
+   -4.992245093656465,
+   -9.739773328221705,
+   -4.884594873620896
+  ],
+  "pluri": [
+   -1.2646001062377195,
+   9.280109220766006,
+   10.14182083977496,
+   7.669076027518511
+  ],
+  "decline_0_to_10": 2.46168745377687,
+  "spearman_vs_day": -0.39999999999999997
+ },
+ "pluri_primary": "with_OSKM",
+ "pluri_disagree": false,
+ "sendai": {
+  "n_hits": 0,
+  "names": [],
+  "n_features_scanned": 73194,
+  "n_features_first_library": 36601,
+  "n_ensg": 36601,
+  "n_non_ensg": 0,
+  "n_libraries": 8,
+  "genomes": [
+   "GRCh38"
+  ],
+  "feature_types": [
+   "Gene Expression"
+  ],
+  "columns_actually_read": [
+   "gene_id",
+   "symbol",
+   "feature_type",
+   "genome"
+  ],
+  "pattern": "sendai|\\bsev\\b|\\bsev[-_]|kozak|transgene|cytotune|cyto.?tune|vector|orfeome|\\boskm\\b|sevoskm",
+  "note": "Sendai/vector features reported; not used in the frozen GTEx ruler. Pluripotency is scored with and without OSKM-family endogenous genes. Zero hits means the Cell Ranger matrix has no labelled Sendai/vector features; vector reads can still map onto endogenous OSKM gene models."
+ },
+ "verify": {
+  "n_samples": 8,
+  "days": [
+   0,
+   3,
+   7,
+   10
+  ],
+  "cell_lines": [
+   "GM00731",
+   "GM23815"
+  ],
+  "age_map": {
+   "GM00731": {
+    "age_years": 96,
+    "source": "Series_overall_design"
+   },
+   "GM23815": {
+    "age_years": 22,
+    "source": "Series_overall_design"
+   }
+  },
+  "discrepancies": [],
+  "used_record": true,
+  "overall_design": "10x Genomics scRNA-seq of human fibroblasts from a young (GM23815, 22yr) and aged donor (GM00731, 96yr) treated with Sendai virus OSKM for up to 10 days."
+ },
+ "outcome": {
+  "key": "no_decline",
+  "text": "age score does not decline \u2192 the ruler reads a static donor property, not a modifiable state. Step 3 is not supported by this data.",
+  "decline": -3.3508836940276447,
+  "monotonic": false,
+  "drop_time": 3,
+  "rise_time": 3,
+  "beats_null": false,
+  "declined": false,
+  "p_endpoint": 0.9900497512437811,
+  "sanity_ok": true
+ },
+ "figure": "<repo>\\results\\fibro\\figures\\plane.png",
+ "matrix_format": "10x_h5_filtered_feature_bc_matrix",
+ "n_allcell": 8,
+ "n_cluster_rows": 24,
+ "cluster_skipped": [],
+ "missing_genes_z0": 3086,
+ "n_ruler_genes": 23485,
+ "seed": 20260914,
+ "n_perm_random": 200,
+ "note": "nothing fitted on GSE297234",
+ "spearman_note": "trajectory Spearman uses n>=3 (4 days); not gtex spearman_safe n>=8"
+}

@@ -1,0 +1,9 @@
+{
+ "n_donors": 233,
+ "n_types": 20,
+ "n_genes": 25526,
+ "n_eligible_sparse": 17749,
+ "seed": 20260914,
+ "w_seed": 20260915,
+ "cal_seed": 20260916
+}

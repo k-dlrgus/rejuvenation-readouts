@@ -1,0 +1,88 @@
+﻿=== onek1k: 1,248,980 cells x 35,528 genes ===
+X sample: dtype=float32 min=1.0 max=7060.0 integer-fraction=1.00000
+donors: 981
+age: min=19 max=97 mean=63.9 median=67 distinct values=78  -> CONTINUOUS (per-year)
+age decade distribution (n donors):
+age
+(10, 20]       9
+(20, 30]      43
+(30, 40]      64
+(40, 50]      75
+(50, 60]     136
+(60, 70]     256
+(70, 80]     269
+(80, 90]     118
+(90, 100]     11
+sex: {'female': 565, 'male': 416}
+cells per donor: median=1246 min=333 max=3511
+pools: 75
+
+cell types [cell_type]: 29
+cell_type
+central memory CD4-positive, alpha-beta T cell           289000
+naive thymus-derived CD4-positive, alpha-beta T cell     259012
+natural killer cell                                      164933
+effector memory CD8-positive, alpha-beta T cell          161051
+naive B cell                                              65702
+naive thymus-derived CD8-positive, alpha-beta T cell      52538
+CD14-positive monocyte                                    36130
+effector memory CD4-positive, alpha-beta T cell           31261
+memory B cell                                             30234
+transitional stage B cell                                 29889
+regulatory T cell                                         26531
+gamma-delta T cell                                        18922
+CD4-positive, alpha-beta cytotoxic T cell                 17993
+central memory CD8-positive, alpha-beta T cell            16409
+CD14-low, CD16-positive monocyte                          15743
+mucosal-associated invariant T cell                        8835
+CD16-negative, CD56-bright natural killer cell, human      7006
+conventional dendritic cell                                4570
+plasmablast                                                3754
+plasmacytoid dendritic cell                                1897
+double negative thymocyte                                  1824
+hematopoietic precursor cell                               1812
+platelet                                                   1810
+CD4-positive, alpha-beta T cell                             773
+innate lymphoid cell                                        444
+CD8-positive, alpha-beta T cell                             305
+erythrocyte                                                 290
+dendritic cell                                              181
+peripheral blood mononuclear cell                           131
+
+cell types [predicted.celltype.l2]: 31
+predicted.celltype.l2
+CD4 TCM              289000
+CD4 Naive            259012
+NK                   163202
+CD8 TEM              161051
+B naive               65702
+CD8 Naive             52538
+CD14 Mono             36130
+CD4 TEM               31261
+B memory              30234
+B intermediate        29889
+Treg                  26531
+gdT                   18922
+CD4 CTL               17993
+CD8 TCM               16409
+CD16 Mono             15743
+MAIT                   8835
+NK_CD56bright          7006
+cDC2                   4456
+Plasmablast            3754
+pDC                    1897
+dnT                    1824
+HSPC                   1812
+Platelet               1810
+NK Proliferating       1731
+CD4 Proliferating       773
+ILC                     444
+CD8 Proliferating       305
+Eryth                   290
+ASDC                    181
+Doublet                 131
+cDC1                    114
+
+sex-age check: male mean age 64.2 (n=416), female 63.7 (n=565); Welch t p=0.586
+
+STOP CONDITION 0: NOT fired (>=10 donors, continuous age, span>=40y, >=3 cell types)

@@ -1,0 +1,4 @@
+[HBCC?묺SSM] median-over-types rho stored=0.573482803857 recomputed=0.573482803857 |diff|=0.00e+00; per-type max |diff| vs s3_gene_ridge_transfer_per_type.csv=1.11e-16
+[HBCC?묺SSM] n_donors=113 n_rows=1475; rho(age, donor median pred)=0.741812 (descriptive only; not the stored statistic)
+[MSSM?묱BCC] median-over-types rho stored=0.566712803808 recomputed=0.566712803808 |diff|=0.00e+00; per-type max |diff| vs s3_gene_ridge_transfer_per_type.csv=1.11e-16
+[MSSM?묱BCC] n_donors=120 n_rows=1848; rho(age, donor median pred)=0.743424 (descriptive only; not the stored statistic)

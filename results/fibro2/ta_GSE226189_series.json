@@ -1,0 +1,54 @@
+{
+ "accession": "GSE226189",
+ "title": "Transcriptomes of human primary skin fibroblasts reveal age-associated mRNAs and long noncoding RNAs",
+ "types": [
+  "Expression profiling by high throughput sequencing",
+  "Non-coding RNA profiling by high throughput sequencing"
+ ],
+ "platforms": [
+  "GPL24676"
+ ],
+ "n_sample_id": 82,
+ "supplementary": [
+  "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE226nnn/GSE226189/suppl/GSE226189_RAW.tar"
+ ],
+ "overall_design": "Comparative gene expression analysis of RNA-seq data from primary skin fibroblasts across healthy aging (82 individuals spanning from 22 to 89 years old).",
+ "summary": "Changes in the transcriptomes of human tissues with advancing age are poorly cataloged. Here, we set to identify the coding and long noncoding RNAs present in cultured primary skin fibroblasts collected from 82 healthy individuals across a wide age spectrum (22 to 89 years old) who participated in the GESTALT (Genetic and Epigenetic Signatures of Translational Aging Laboratory Testing) study of the National Institute on Aging, NIH. Using high-throughput RNA sequencing and a linear regression model, we identified 1,437 coding RNA (mRNA) and 1,177 linear and circular long noncoding (lncRNA) that were differentially abundant as a function of age. GSEA analysis revealed select transcription factors implicated in coordinating the transcription of subsets of differentially abundant mRNAs, while LncSEA identified RNA-binding proteins predicted to contribute to the age-associated lncRNA profiles. In sum, we report age-associated changes in the global transcriptome, coding and noncoding, from healthy human skin fibroblasts, and propose that they might serve as biomarkers and therapeutic targets in aging skin.",
+ "series_fields": [
+  "Series_contact_address",
+  "Series_contact_city",
+  "Series_contact_country",
+  "Series_contact_department",
+  "Series_contact_institute",
+  "Series_contact_laboratory",
+  "Series_contact_name",
+  "Series_contact_state",
+  "Series_contact_zip/postal_code",
+  "Series_contributor",
+  "Series_geo_accession",
+  "Series_last_update_date",
+  "Series_overall_design",
+  "Series_platform_id",
+  "Series_platform_organism",
+  "Series_platform_taxid",
+  "Series_relation",
+  "Series_sample_id",
+  "Series_sample_organism",
+  "Series_sample_taxid",
+  "Series_status",
+  "Series_submission_date",
+  "Series_summary",
+  "Series_supplementary_file",
+  "Series_title",
+  "Series_type"
+ ],
+ "n_gsm": 82,
+ "n_with_age": 82,
+ "n_missing_age": 0,
+ "organisms": [
+  "Homo sapiens"
+ ],
+ "molecules": [
+  "total RNA"
+ ]
+}

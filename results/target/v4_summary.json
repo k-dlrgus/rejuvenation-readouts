@@ -1,0 +1,234 @@
+{
+ "seed": 20260914,
+ "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11",
+ "v4a": [
+  {
+   "train_site": "H",
+   "test_site": "M",
+   "median_r2": -0.2134283411459802,
+   "null_mean": -1.348667650921406,
+   "null_p95": -1.0558621123843417,
+   "p": 0.047619047619047616,
+   "n_perm": 20,
+   "n_train_donors": 120,
+   "n_test_donors": 113
+  },
+  {
+   "train_site": "M",
+   "test_site": "H",
+   "median_r2": -0.4994978875331906,
+   "null_mean": -1.5867620986453317,
+   "null_p95": -0.9094061834838019,
+   "p": 0.047619047619047616,
+   "n_perm": 20,
+   "n_train_donors": 113,
+   "n_test_donors": 120
+  }
+ ],
+ "v4b": {
+  "n_donors_young": 102,
+  "n_donors_old": 131,
+  "median_angle_deg": 86.11123851494071,
+  "consensus_angle_deg": 82.14160789679775,
+  "young_to_old_median_r2": -5.390046820894062,
+  "old_to_young_median_r2": -6.966920195072021,
+  "young_pc1": 0.16886547250726314,
+  "old_pc1": 0.1818159997029878,
+  "per_type": [
+   {
+    "celltype": "GABAergic neuron",
+    "n_young": 83,
+    "n_old": 96,
+    "angle_deg": 87.37494206142485,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "L2/3 intratelencephalic projecting glutamatergic neuron",
+    "n_young": 95,
+    "n_old": 125,
+    "angle_deg": 79.68316160424234,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "L2/3-6 intratelencephalic projecting glutamatergic neuron",
+    "n_young": 95,
+    "n_old": 120,
+    "angle_deg": 80.35170030838152,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "L5/6 near-projecting glutamatergic neuron",
+    "n_young": 59,
+    "n_old": 65,
+    "angle_deg": 87.71295242898091,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "L6 corticothalamic-projecting glutamatergic cortical neuron",
+    "n_young": 64,
+    "n_old": 89,
+    "angle_deg": 86.11123851494071,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "L6 intratelencephalic projecting glutamatergic neuron",
+    "n_young": 62,
+    "n_old": 88,
+    "angle_deg": 84.95921817204538,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "L6b glutamatergic neuron of the primary motor cortex",
+    "n_young": 52,
+    "n_old": 57,
+    "angle_deg": 86.0351813528543,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "VIP GABAergic interneuron",
+    "n_young": 94,
+    "n_old": 123,
+    "angle_deg": 84.47984606070901,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "astrocyte",
+    "n_young": 99,
+    "n_old": 130,
+    "angle_deg": 82.84625482012612,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "endothelial cell",
+    "n_young": 83,
+    "n_old": 77,
+    "angle_deg": 88.43570659697512,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "lamp5 GABAergic interneuron",
+    "n_young": 91,
+    "n_old": 114,
+    "angle_deg": 86.98145200972179,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "microglial cell",
+    "n_young": 96,
+    "n_old": 123,
+    "angle_deg": 86.27472769107229,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "oligodendrocyte",
+    "n_young": 102,
+    "n_old": 130,
+    "angle_deg": 86.17087583467011,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "oligodendrocyte precursor cell",
+    "n_young": 101,
+    "n_old": 131,
+    "angle_deg": 83.44191368960234,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "pericyte",
+    "n_young": 70,
+    "n_old": 66,
+    "angle_deg": 89.06625764849232,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "perivascular macrophage",
+    "n_young": 20,
+    "n_old": 11,
+    "angle_deg": 89.05374168006826,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "pvalb GABAergic interneuron",
+    "n_young": 92,
+    "n_old": 117,
+    "angle_deg": 85.16814771486956,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "smooth muscle cell",
+    "n_young": 12,
+    "n_old": 4,
+    "angle_deg": NaN,
+    "young_ok": true,
+    "old_ok": false
+   },
+   {
+    "celltype": "sst GABAergic interneuron",
+    "n_young": 94,
+    "n_old": 112,
+    "angle_deg": 83.90123832964008,
+    "young_ok": true,
+    "old_ok": true
+   },
+   {
+    "celltype": "vascular leptomeningeal cell",
+    "n_young": 46,
+    "n_old": 35,
+    "angle_deg": 89.58479448387833,
+    "young_ok": true,
+    "old_ok": true
+   }
+  ]
+ },
+ "v4c": {
+  "tech": {
+   "consensus_pos": {
+    "n": 50,
+    "n_mito": 0,
+    "n_ribo": 1,
+    "n_cell_cycle": 1,
+    "n_mt_prefix": 0
+   },
+   "consensus_neg": {
+    "n": 50,
+    "n_mito": 0,
+    "n_ribo": 1,
+    "n_cell_cycle": 0,
+    "n_mt_prefix": 0
+   },
+   "mean_pos": {
+    "n": 50,
+    "n_mito": 1,
+    "n_ribo": 0,
+    "n_cell_cycle": 0,
+    "n_mt_prefix": 1
+   },
+   "mean_neg": {
+    "n": 50,
+    "n_mito": 0,
+    "n_ribo": 1,
+    "n_cell_cycle": 0,
+    "n_mt_prefix": 0
+   }
+  },
+  "n_enrichr": 950,
+  "n_aging_token_p05": 25
+ }
+}

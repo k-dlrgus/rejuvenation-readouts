@@ -1,0 +1,15 @@
+{
+ "n_samples": 652,
+ "n_genes_raw": 59033,
+ "n_genes_filter": 23485,
+ "n_overlap_dlpfc": 17791,
+ "frac_overlap": 0.7575473706621247,
+ "n_dlpfc": 25526,
+ "dlpfc_path": "<repo>\\data\\processed\\brain_aging_phase1_logcpm_genes.csv",
+ "dlpfc_columns_read": [
+  "gene_id",
+  "symbol"
+ ],
+ "gene_filter": ">=6 counts in >=20% of samples",
+ "normalization": "TMM then log2-CPM prior.count=2"
+}

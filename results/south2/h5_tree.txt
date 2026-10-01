@@ -1,0 +1,73 @@
+X: dataset shape=(10916, 4914) dtype=float64 encoding=array
+layers: group encoding=dict
+  adj_p: dataset shape=(10916, 4914) dtype=float64 encoding=array
+  masked: dataset shape=(10916, 4914) dtype=float64 encoding=array
+  p: dataset shape=(10916, 4914) dtype=float64 encoding=array
+obs: group encoding=dataframe
+  active: dataset shape=(10916,) dtype=bool encoding=array
+  bulk_expr: dataset shape=(10916,) dtype=float64 encoding=array
+  cell_count: dataset shape=(10916,) dtype=float64 encoding=array
+  cluster: dataset shape=(10916,) dtype=float64 encoding=array
+  cluster_description: group encoding=categorical
+    categories: dataset shape=(2100,) dtype=object encoding=string-array
+    codes: dataset shape=(10916,) dtype=int16 encoding=array
+  cluster_name: group encoding=categorical
+    categories: dataset shape=(236,) dtype=object encoding=string-array
+    codes: dataset shape=(10916,) dtype=int16 encoding=array
+  de_genes: dataset shape=(10916,) dtype=float64 encoding=array
+  expressed: dataset shape=(10916,) dtype=bool encoding=array
+  gene_driven: dataset shape=(10916,) dtype=bool encoding=array
+  guide_identity: dataset shape=(10916,) dtype=object encoding=string-array
+  masked_active: dataset shape=(10916,) dtype=bool encoding=array
+  masked_cluster: dataset shape=(10916,) dtype=float64 encoding=array
+  masked_cluster_description: group encoding=categorical
+    categories: dataset shape=(2096,) dtype=object encoding=string-array
+    codes: dataset shape=(10916,) dtype=int16 encoding=array
+  masked_cluster_name: group encoding=categorical
+    categories: dataset shape=(220,) dtype=object encoding=string-array
+    codes: dataset shape=(10916,) dtype=int16 encoding=array
+  masked_cluster_num_genes: dataset shape=(10916,) dtype=float64 encoding=array
+  masked_cluster_size: dataset shape=(10916,) dtype=float64 encoding=array
+  p_expressed: dataset shape=(10916,) dtype=float64 encoding=array
+  protospacer: dataset shape=(10916,) dtype=object encoding=string-array
+  sequence_driven: dataset shape=(10916,) dtype=bool encoding=array
+  sequence_suffix: group encoding=categorical
+    categories: dataset shape=(126,) dtype=object encoding=string-array
+    codes: dataset shape=(10916,) dtype=int8 encoding=array
+  strength: dataset shape=(10916,) dtype=float64 encoding=array
+  stricter_masked_cluster: dataset shape=(10916,) dtype=float64 encoding=array
+  stricter_masked_cluster_description: group encoding=categorical
+    categories: dataset shape=(2911,) dtype=object encoding=string-array
+    codes: dataset shape=(10916,) dtype=int16 encoding=array
+  target_expr: dataset shape=(10916,) dtype=float64 encoding=array
+  target_gene: group encoding=categorical
+    categories: dataset shape=(1837,) dtype=object encoding=string-array
+    codes: dataset shape=(10916,) dtype=int16 encoding=array
+  target_gene_id: group encoding=categorical
+    categories: dataset shape=(378,) dtype=object encoding=string-array
+    codes: dataset shape=(10916,) dtype=int16 encoding=array
+obsm: group encoding=dict
+obsp: group encoding=dict
+uns: group encoding=dict
+var: group encoding=dataframe
+  cv: dataset shape=(4914,) dtype=float32 encoding=array
+  excess_cv: dataset shape=(4914,) dtype=float32 encoding=array
+  fano: dataset shape=(4914,) dtype=float32 encoding=array
+  feature_types: group encoding=categorical
+    categories: dataset shape=(1,) dtype=object encoding=string-array
+    codes: dataset shape=(4914,) dtype=int8 encoding=array
+  gene_id: dataset shape=(4914,) dtype=object encoding=string-array
+  gene_name: dataset shape=(4914,) dtype=object encoding=string-array
+  genome: group encoding=categorical
+    categories: dataset shape=(1,) dtype=object encoding=string-array
+    codes: dataset shape=(4914,) dtype=int8 encoding=array
+  in_matrix: dataset shape=(4914,) dtype=bool encoding=array
+  mean: dataset shape=(4914,) dtype=float32 encoding=array
+  mean_adjusted_pairwise_p_cost: dataset shape=(4914,) dtype=float64 encoding=array
+  pairwise_chosen: group encoding=categorical
+    categories: dataset shape=(2,) dtype=object encoding=string-array
+    codes: dataset shape=(4914,) dtype=int8 encoding=array
+  pairwise_p_cost: dataset shape=(4914,) dtype=float64 encoding=array
+  std: dataset shape=(4914,) dtype=float32 encoding=array
+varm: group encoding=dict
+varp: group encoding=dict

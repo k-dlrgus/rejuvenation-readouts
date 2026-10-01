@@ -1,0 +1,1055 @@
+{
+  "old": {
+    "scheme": "old",
+    "a": {
+      "states": [
+        {
+          "cell_line": "GM00731",
+          "state": "Fibroblast_d0",
+          "n_cells": 4939,
+          "joint_mean": 0.5151367570932331,
+          "joint_ci_lo": 0.5134646010253517,
+          "joint_ci_hi": 0.5169498495629744
+        },
+        {
+          "cell_line": "GM00731",
+          "state": "PartialReprog",
+          "n_cells": 5832,
+          "joint_mean": 0.15752579308739909,
+          "joint_ci_lo": 0.1531354436736409,
+          "joint_ci_hi": 0.1617369394380799
+        },
+        {
+          "cell_line": "GM00731",
+          "state": "EarlyPluripotency",
+          "n_cells": 4414,
+          "joint_mean": 0.1467058603483695,
+          "joint_ci_lo": 0.14138913528524863,
+          "joint_ci_hi": 0.1514819235984225
+        },
+        {
+          "cell_line": "GM00731",
+          "state": "Pluripotency",
+          "n_cells": 439,
+          "joint_mean": 0.021948962428081423,
+          "joint_ci_lo": 0.012681571350747413,
+          "joint_ci_hi": 0.030930569241757824
+        },
+        {
+          "cell_line": "GM00731",
+          "state": "NonReprog",
+          "n_cells": 5459,
+          "joint_mean": 0.4479171283733868,
+          "joint_ci_lo": 0.44510576880078756,
+          "joint_ci_hi": 0.45062457437320613
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "Fibroblast_d0",
+          "n_cells": 7703,
+          "joint_mean": 0.46880852134227763,
+          "joint_ci_lo": 0.4671997958615263,
+          "joint_ci_hi": 0.4706132266740244
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "PartialReprog",
+          "n_cells": 6481,
+          "joint_mean": 0.08254388028645332,
+          "joint_ci_lo": 0.07914050472966146,
+          "joint_ci_hi": 0.08580286424986283
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "EarlyPluripotency",
+          "n_cells": 12961,
+          "joint_mean": 0.10143794799587742,
+          "joint_ci_lo": 0.09908447040329764,
+          "joint_ci_hi": 0.1036525104658613
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "Pluripotency",
+          "n_cells": 1249,
+          "joint_mean": -0.04692033233548901,
+          "joint_ci_lo": -0.05132712396571317,
+          "joint_ci_hi": -0.04141005034579281
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "NonReprog",
+          "n_cells": 1812,
+          "joint_mean": 0.4133268123764801,
+          "joint_ci_lo": 0.40972446412031316,
+          "joint_ci_hi": 0.4164681110862396
+        }
+      ],
+      "aged_d0": 0.5151367570932331,
+      "young_d0": 0.46880852134227763,
+      "aged_PartialReprog": 0.15752579308739909,
+      "gap": 0.046328235750955515,
+      "drop": 0.35761096400583403,
+      "drop_over_gap": 7.719071495150954,
+      "gap_ci": [
+        0.04343393678893401,
+        0.04866379792217704
+      ],
+      "drop_ci": [
+        0.3530401200264614,
+        0.3628196090420599
+      ],
+      "ratio_ci": [
+        7.331864573036845,
+        8.212028238641178
+      ]
+    },
+    "split": {
+      "n_d0_aged": 4939,
+      "n_d0_young": 7703,
+      "O": 2469,
+      "Y": 3851,
+      "aged_B": 2470,
+      "young_B": 3852,
+      "same_as_stored": true
+    },
+    "n_cells": {
+      "O": 2469,
+      "Y": 3851,
+      "S": 5832,
+      "S_rev": 6481,
+      "Pluri": 439,
+      "NonReprog": 5459
+    },
+    "b": {
+      "FULL": {
+        "n_genes": 23485,
+        "forward_progress": 0.674440748216413,
+        "forward_progress_ci": [
+          0.6673919962871651,
+          0.6800921160425388
+        ],
+        "forward_progress_ci_valid": true,
+        "forward_delta": 130.89356478446803,
+        "forward_delta_ci": [
+          130.47349301104504,
+          133.9181084903101
+        ],
+        "forward_delta_ci_valid": true,
+        "forward_dist_final": 261.58200170448356,
+        "forward_dist_start": 130.68843692001553,
+        "forward_final_over_start": 2.001569594596789,
+        "reverse_progress": -0.05727522677873291,
+        "reverse_progress_ci": [
+          -0.0628257203048914,
+          -0.05383465334427416
+        ],
+        "reverse_progress_ci_valid": true,
+        "reverse_delta": 163.34167251992545,
+        "reverse_delta_ci": [
+          163.31171857491597,
+          166.33006040142016
+        ],
+        "reverse_delta_ci_valid": true,
+        "reverse_dist_final": 294.030109439941,
+        "reverse_dist_start": 130.68843692001553,
+        "reverse_final_over_start": 2.249855583014544,
+        "asymmetry": 0.7317159749951458,
+        "asymmetry_ci": [
+          0.7240405163302078,
+          0.7404332563572681
+        ],
+        "asymmetry_ci_valid": true,
+        "mixtures": [
+          {
+            "f": 0.0,
+            "n_aged": 2470,
+            "n_young": 0,
+            "progress": 0.11458744592963613,
+            "progress_ci_lo": 0.09871663348293837,
+            "progress_ci_hi": 0.12095182735918947,
+            "progress_ci_valid": true,
+            "delta": 0.06805109688137634,
+            "delta_ci_lo": 5.8070464703982125,
+            "delta_ci_hi": 8.334360668817
+          },
+          {
+            "f": 0.1,
+            "n_aged": 2223,
+            "n_young": 247,
+            "progress": 0.18243537091412526,
+            "progress_ci_lo": 0.16731499808387965,
+            "progress_ci_hi": 0.19069801961511446,
+            "progress_ci_valid": true,
+            "delta": -7.870024259533409,
+            "delta_ci_lo": -1.8997635252250713,
+            "delta_ci_hi": 1.0069515019350677
+          },
+          {
+            "f": 0.25,
+            "n_aged": 1852,
+            "n_young": 618,
+            "progress": 0.2829286266887166,
+            "progress_ci_lo": 0.26713436287139175,
+            "progress_ci_hi": 0.29139174032920134,
+            "progress_ci_valid": true,
+            "delta": -18.91286402632018,
+            "delta_ci_lo": -11.793133013896414,
+            "delta_ci_hi": -9.372419797939745
+          },
+          {
+            "f": 0.5,
+            "n_aged": 1235,
+            "n_young": 1235,
+            "progress": 0.4408188614368522,
+            "progress_ci_lo": 0.42434338106362407,
+            "progress_ci_hi": 0.4474586408649893,
+            "progress_ci_valid": true,
+            "delta": -34.443006230983826,
+            "delta_ci_lo": -25.403148658470336,
+            "delta_ci_hi": -22.41415003731634
+          }
+        ],
+        "gate": {
+          "passed": true,
+          "monotonic": true,
+          "progress50_ci_excludes_0": true,
+          "progress50_ci_valid": true,
+          "delta50_lt_0": true,
+          "progress": [
+            0.11458744592963613,
+            0.18243537091412526,
+            0.2829286266887166,
+            0.4408188614368522
+          ],
+          "progress50": 0.4408188614368522,
+          "progress50_ci": [
+            0.42434338106362407,
+            0.4474586408649893
+          ],
+          "delta50": -34.443006230983826,
+          "failed": []
+        },
+        "rule_met": true
+      },
+      "MD": {
+        "n_genes": 205,
+        "forward_progress": 0.7901113656148799,
+        "forward_progress_ci": [
+          0.7798009928245563,
+          0.8106261018732633
+        ],
+        "forward_progress_ci_valid": true,
+        "forward_delta": 17.08796936338901,
+        "forward_delta_ci": [
+          16.733283929544932,
+          17.419278323459153
+        ],
+        "forward_delta_ci_valid": true,
+        "forward_dist_final": 31.68557801438903,
+        "forward_dist_start": 14.59760865100002,
+        "forward_final_over_start": 2.1706005943801205,
+        "reverse_progress": -0.22945373289586363,
+        "reverse_progress_ci": [
+          -0.2510898072757622,
+          -0.22392714445153084
+        ],
+        "reverse_progress_ci_valid": true,
+        "reverse_delta": 24.881301941072085,
+        "reverse_delta_ci": [
+          24.598446845598705,
+          25.29511650666905
+        ],
+        "reverse_delta_ci_valid": true,
+        "reverse_dist_final": 39.478910592072104,
+        "reverse_dist_start": 14.59760865100002,
+        "reverse_final_over_start": 2.704477941280305,
+        "asymmetry": 1.0195650985107436,
+        "asymmetry_ci": [
+          1.0093810971540642,
+          1.0547054282234858
+        ],
+        "asymmetry_ci_valid": true,
+        "mixtures": [
+          {
+            "f": 0.0,
+            "n_aged": 2470,
+            "n_young": 0,
+            "progress": 0.010364271848283138,
+            "progress_ci_lo": -0.01065770118881072,
+            "progress_ci_hi": 0.028121028860065397,
+            "progress_ci_valid": true,
+            "delta": -0.006861808050512508,
+            "delta_ci_lo": -0.1969811919124743,
+            "delta_ci_hi": 0.3758387732431388
+          },
+          {
+            "f": 0.1,
+            "n_aged": 2223,
+            "n_young": 247,
+            "progress": 0.09554746919636642,
+            "progress_ci_lo": 0.07342294443201834,
+            "progress_ci_hi": 0.11586470148356637,
+            "progress_ci_valid": true,
+            "delta": -1.1949618382181928,
+            "delta_ci_lo": -1.3605071345570618,
+            "delta_ci_hi": -0.7967733615264655
+          },
+          {
+            "f": 0.25,
+            "n_aged": 1852,
+            "n_young": 618,
+            "progress": 0.20744910784602918,
+            "progress_ci_lo": 0.18334446774081087,
+            "progress_ci_hi": 0.22692685748815405,
+            "progress_ci_valid": true,
+            "delta": -2.67617971082327,
+            "delta_ci_lo": -2.8475576061246803,
+            "delta_ci_hi": -2.133897853401783
+          },
+          {
+            "f": 0.5,
+            "n_aged": 1235,
+            "n_young": 1235,
+            "progress": 0.38831794054922353,
+            "progress_ci_lo": 0.36714346802894826,
+            "progress_ci_hi": 0.4071843613927403,
+            "progress_ci_valid": true,
+            "delta": -5.142994419554855,
+            "delta_ci_lo": -5.286090722772211,
+            "delta_ci_hi": -4.708385519135049
+          }
+        ],
+        "gate": {
+          "passed": true,
+          "monotonic": true,
+          "progress50_ci_excludes_0": true,
+          "progress50_ci_valid": true,
+          "delta50_lt_0": true,
+          "progress": [
+            0.010364271848283138,
+            0.09554746919636642,
+            0.20744910784602918,
+            0.38831794054922353
+          ],
+          "progress50": 0.38831794054922353,
+          "progress50_ci": [
+            0.36714346802894826,
+            0.4071843613927403
+          ],
+          "delta50": -5.142994419554855,
+          "failed": []
+        },
+        "rule_met": true
+      }
+    },
+    "c": {
+      "cos_S": 0.07724629325885633,
+      "delta_young": 9.369675854981608,
+      "delta_old": 10.857057907390072,
+      "n_PartialReprog": 5832
+    },
+    "rule_met": true
+  },
+  "joint": {
+    "scheme": "joint",
+    "a": {
+      "states": [
+        {
+          "cell_line": "GM00731",
+          "state": "Fibroblast_d0",
+          "n_cells": 4938,
+          "joint_mean": 0.5151020980954527,
+          "joint_ci_lo": 0.512955876605349,
+          "joint_ci_hi": 0.5168289140293869
+        },
+        {
+          "cell_line": "GM00731",
+          "state": "PartialReprog",
+          "n_cells": 5723,
+          "joint_mean": 0.15297937260192776,
+          "joint_ci_lo": 0.14910726760389187,
+          "joint_ci_hi": 0.15736743999766964
+        },
+        {
+          "cell_line": "GM00731",
+          "state": "EarlyPluripotency",
+          "n_cells": 4881,
+          "joint_mean": 0.17767811954188498,
+          "joint_ci_lo": 0.17270458337709674,
+          "joint_ci_hi": 0.18221562989076093
+        },
+        {
+          "cell_line": "GM00731",
+          "state": "Pluripotency",
+          "n_cells": 636,
+          "joint_mean": 0.07312229226410227,
+          "joint_ci_lo": 0.05990507763753355,
+          "joint_ci_hi": 0.08501761146069226
+        },
+        {
+          "cell_line": "GM00731",
+          "state": "NonReprog",
+          "n_cells": 5919,
+          "joint_mean": 0.4529342638955676,
+          "joint_ci_lo": 0.4504390421260506,
+          "joint_ci_hi": 0.4556416990700594
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "Fibroblast_d0",
+          "n_cells": 7688,
+          "joint_mean": 0.4689493854056956,
+          "joint_ci_lo": 0.46703300216199173,
+          "joint_ci_hi": 0.4707828355519315
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "PartialReprog",
+          "n_cells": 6408,
+          "joint_mean": 0.08065566612312677,
+          "joint_ci_lo": 0.07689716686198778,
+          "joint_ci_hi": 0.08363979753008882
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "EarlyPluripotency",
+          "n_cells": 13807,
+          "joint_mean": 0.12385138345357476,
+          "joint_ci_lo": 0.12112284556975716,
+          "joint_ci_hi": 0.12640524608048445
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "Pluripotency",
+          "n_cells": 1341,
+          "joint_mean": -0.025093088593944914,
+          "joint_ci_lo": -0.031340403007319405,
+          "joint_ci_hi": -0.018940414676297933
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "NonReprog",
+          "n_cells": 2525,
+          "joint_mean": 0.3636200657306749,
+          "joint_ci_lo": 0.35731417563863804,
+          "joint_ci_hi": 0.3691699561527183
+        }
+      ],
+      "aged_d0": 0.5151020980954527,
+      "young_d0": 0.4689493854056956,
+      "aged_PartialReprog": 0.15297937260192776,
+      "gap": 0.046152712689757125,
+      "drop": 0.362122725493525,
+      "drop_over_gap": 7.846185075355115,
+      "gap_ci": [
+        0.04316308722726423,
+        0.04864996598002963
+      ],
+      "drop_ci": [
+        0.3578539582099397,
+        0.36643963337768726
+      ],
+      "ratio_ci": [
+        7.448029109782466,
+        8.351831916992191
+      ]
+    },
+    "split": {
+      "n_d0_aged": 4938,
+      "n_d0_young": 7688,
+      "O": 2469,
+      "Y": 3844,
+      "aged_B": 2469,
+      "young_B": 3844,
+      "same_as_stored": false
+    },
+    "n_cells": {
+      "O": 2469,
+      "Y": 3844,
+      "S": 5723,
+      "S_rev": 6408,
+      "Pluri": 636,
+      "NonReprog": 5919
+    },
+    "b": {
+      "FULL": {
+        "n_genes": 23485,
+        "forward_progress": 0.6493416287661072,
+        "forward_progress_ci": [
+          0.6403634421127589,
+          0.6548923349188773
+        ],
+        "forward_progress_ci_valid": true,
+        "forward_delta": 133.3027083939924,
+        "forward_delta_ci": [
+          133.23811350884264,
+          136.3900895388943
+        ],
+        "forward_delta_ci_valid": true,
+        "forward_dist_final": 264.29591225122385,
+        "forward_dist_start": 130.99320385723146,
+        "forward_final_over_start": 2.0176307202874284,
+        "reverse_progress": -0.02480845915618742,
+        "reverse_progress_ci": [
+          -0.029377575430865707,
+          -0.02027595311605071
+        ],
+        "reverse_progress_ci_valid": true,
+        "reverse_delta": 162.8526480887398,
+        "reverse_delta_ci": [
+          162.77993363781522,
+          165.76358047040725
+        ],
+        "reverse_delta_ci_valid": true,
+        "reverse_dist_final": 293.8458519459713,
+        "reverse_dist_start": 130.99320385723146,
+        "reverse_final_over_start": 2.2432144820752056,
+        "asymmetry": 0.6741500879222947,
+        "asymmetry_ci": [
+          0.6629511790058893,
+          0.6811970811852195
+        ],
+        "asymmetry_ci_valid": true,
+        "mixtures": [
+          {
+            "f": 0.0,
+            "n_aged": 2469,
+            "n_young": 0,
+            "progress": 0.10944402964601622,
+            "progress_ci_lo": 0.09309755041044125,
+            "progress_ci_hi": 0.11569625033225943,
+            "progress_ci_valid": true,
+            "delta": 0.46693715678051717,
+            "delta_ci_lo": 6.13570282867331,
+            "delta_ci_hi": 8.843941499743547
+          },
+          {
+            "f": 0.1,
+            "n_aged": 2222,
+            "n_young": 247,
+            "progress": 0.17709991009763495,
+            "progress_ci_lo": 0.15889171380358888,
+            "progress_ci_hi": 0.1854483124806307,
+            "progress_ci_valid": true,
+            "delta": -7.401394238419613,
+            "delta_ci_lo": -1.160068843373789,
+            "delta_ci_hi": 1.8388525192976268
+          },
+          {
+            "f": 0.25,
+            "n_aged": 1852,
+            "n_young": 617,
+            "progress": 0.27132490906886314,
+            "progress_ci_lo": 0.2548352421986759,
+            "progress_ci_hi": 0.27875686308644365,
+            "progress_ci_valid": true,
+            "delta": -17.911926621996656,
+            "delta_ci_lo": -10.891192391143063,
+            "delta_ci_hi": -7.856988114077048
+          },
+          {
+            "f": 0.5,
+            "n_aged": 1235,
+            "n_young": 1234,
+            "progress": 0.4354160932383965,
+            "progress_ci_lo": 0.4168373744607343,
+            "progress_ci_hi": 0.4441587557237983,
+            "progress_ci_valid": true,
+            "delta": -34.02949651161998,
+            "delta_ci_lo": -25.092166485133596,
+            "delta_ci_hi": -21.80544778057036
+          }
+        ],
+        "gate": {
+          "passed": true,
+          "monotonic": true,
+          "progress50_ci_excludes_0": true,
+          "progress50_ci_valid": true,
+          "delta50_lt_0": true,
+          "progress": [
+            0.10944402964601622,
+            0.17709991009763495,
+            0.27132490906886314,
+            0.4354160932383965
+          ],
+          "progress50": 0.4354160932383965,
+          "progress50_ci": [
+            0.4168373744607343,
+            0.4441587557237983
+          ],
+          "delta50": -34.02949651161998,
+          "failed": []
+        },
+        "rule_met": true
+      },
+      "MD": {
+        "n_genes": 205,
+        "forward_progress": 0.7682727232500088,
+        "forward_progress_ci": [
+          0.7524076568675482,
+          0.7811035362506072
+        ],
+        "forward_progress_ci_valid": true,
+        "forward_delta": 17.459922736038322,
+        "forward_delta_ci": [
+          17.1771758686176,
+          17.839562465925326
+        ],
+        "forward_delta_ci_valid": true,
+        "forward_dist_final": 32.15128741289465,
+        "forward_dist_start": 14.691364676856331,
+        "forward_final_over_start": 2.1884479842463764,
+        "reverse_progress": -0.20784847804323828,
+        "reverse_progress_ci": [
+          -0.22130742597972372,
+          -0.1905410535631242
+        ],
+        "reverse_progress_ci_valid": true,
+        "reverse_delta": 24.949748794257488,
+        "reverse_delta_ci": [
+          24.727373757647722,
+          25.304368019713838
+        ],
+        "reverse_delta_ci_valid": true,
+        "reverse_dist_final": 39.64111347111382,
+        "reverse_dist_start": 14.691364676856331,
+        "reverse_final_over_start": 2.698259443083694,
+        "asymmetry": 0.9761212012932471,
+        "asymmetry_ci": [
+          0.9491683584983853,
+          0.9995288349007436
+        ],
+        "asymmetry_ci_valid": true,
+        "mixtures": [
+          {
+            "f": 0.0,
+            "n_aged": 2469,
+            "n_young": 0,
+            "progress": -0.0007457153502788336,
+            "progress_ci_lo": -0.019390737379750098,
+            "progress_ci_hi": 0.013844245806522276,
+            "progress_ci_valid": true,
+            "delta": 0.16215560219564296,
+            "delta_ci_lo": -0.003941197172894025,
+            "delta_ci_hi": 0.6131166797201861
+          },
+          {
+            "f": 0.1,
+            "n_aged": 2222,
+            "n_young": 247,
+            "progress": 0.09331844567402703,
+            "progress_ci_lo": 0.06858673328970713,
+            "progress_ci_hi": 0.11314253999629874,
+            "progress_ci_valid": true,
+            "delta": -1.192452875855519,
+            "delta_ci_lo": -1.3555830352425782,
+            "delta_ci_hi": -0.689269506162882
+          },
+          {
+            "f": 0.25,
+            "n_aged": 1852,
+            "n_young": 617,
+            "progress": 0.20935893685667822,
+            "progress_ci_lo": 0.1822220791883905,
+            "progress_ci_hi": 0.22622059635986558,
+            "progress_ci_valid": true,
+            "delta": -2.7378613391953994,
+            "delta_ci_lo": -2.8613718895759908,
+            "delta_ci_hi": -2.327991401231448
+          },
+          {
+            "f": 0.5,
+            "n_aged": 1235,
+            "n_young": 1234,
+            "progress": 0.3793333219714607,
+            "progress_ci_lo": 0.35381237842273905,
+            "progress_ci_hi": 0.398500591549495,
+            "progress_ci_valid": true,
+            "delta": -5.1250232801169915,
+            "delta_ci_lo": -5.233459224261935,
+            "delta_ci_hi": -4.562862898058352
+          }
+        ],
+        "gate": {
+          "passed": true,
+          "monotonic": true,
+          "progress50_ci_excludes_0": true,
+          "progress50_ci_valid": true,
+          "delta50_lt_0": true,
+          "progress": [
+            -0.0007457153502788336,
+            0.09331844567402703,
+            0.20935893685667822,
+            0.3793333219714607
+          ],
+          "progress50": 0.3793333219714607,
+          "progress50_ci": [
+            0.35381237842273905,
+            0.398500591549495
+          ],
+          "delta50": -5.1250232801169915,
+          "failed": []
+        },
+        "rule_met": true
+      }
+    },
+    "c": {
+      "cos_S": 0.07783174913068282,
+      "delta_young": 9.407292151287379,
+      "delta_old": 10.914692933668618,
+      "n_PartialReprog": 5723
+    },
+    "rule_met": true
+  },
+  "lu": {
+    "scheme": "lu",
+    "a": {
+      "states": [
+        {
+          "cell_line": "GM00731",
+          "state": "Fibroblast_d0",
+          "n_cells": 4937,
+          "joint_mean": 0.5141624922573577,
+          "joint_ci_lo": 0.5123633962277057,
+          "joint_ci_hi": 0.5163647331020293
+        },
+        {
+          "cell_line": "GM00731",
+          "state": "PartialReprog",
+          "n_cells": 5505,
+          "joint_mean": 0.14584945084551354,
+          "joint_ci_lo": 0.14243799978463517,
+          "joint_ci_hi": 0.1501383404807638
+        },
+        {
+          "cell_line": "GM00731",
+          "state": "EarlyPluripotency",
+          "n_cells": 3097,
+          "joint_mean": 0.15795833716099966,
+          "joint_ci_lo": 0.15375686885905254,
+          "joint_ci_hi": 0.1632758624381716
+        },
+        {
+          "cell_line": "GM00731",
+          "state": "Pluripotency",
+          "n_cells": 828,
+          "joint_mean": -0.008134053193609405,
+          "joint_ci_lo": -0.016873377085113724,
+          "joint_ci_hi": -0.001288678232513844
+        },
+        {
+          "cell_line": "GM00731",
+          "state": "NonReprog",
+          "n_cells": 5696,
+          "joint_mean": 0.4549706662636917,
+          "joint_ci_lo": 0.452576219173659,
+          "joint_ci_hi": 0.4577359035336656
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "Fibroblast_d0",
+          "n_cells": 7741,
+          "joint_mean": 0.46826954327063636,
+          "joint_ci_lo": 0.46663682326544065,
+          "joint_ci_hi": 0.46976155488923965
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "PartialReprog",
+          "n_cells": 6277,
+          "joint_mean": 0.07679737950353728,
+          "joint_ci_lo": 0.07356725166372528,
+          "joint_ci_hi": 0.08041109699696788
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "EarlyPluripotency",
+          "n_cells": 7490,
+          "joint_mean": 0.14857509397182872,
+          "joint_ci_lo": 0.1456756835116141,
+          "joint_ci_hi": 0.1510731528390481
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "Pluripotency",
+          "n_cells": 4271,
+          "joint_mean": -0.07101977154463922,
+          "joint_ci_lo": -0.07363942350809531,
+          "joint_ci_hi": -0.06858571584342264
+        },
+        {
+          "cell_line": "GM23815",
+          "state": "NonReprog",
+          "n_cells": 6016,
+          "joint_mean": 0.3903674078795504,
+          "joint_ci_lo": 0.3881211051826253,
+          "joint_ci_hi": 0.3924444054526276
+        }
+      ],
+      "aged_d0": 0.5141624922573577,
+      "young_d0": 0.46826954327063636,
+      "aged_PartialReprog": 0.14584945084551354,
+      "gap": 0.045892948986721305,
+      "drop": 0.3683130414118441,
+      "drop_over_gap": 8.025482117490686,
+      "gap_ci": [
+        0.043600277602499606,
+        0.04843455621039087
+      ],
+      "drop_ci": [
+        0.3641585226800207,
+        0.3726329910413914
+      ],
+      "ratio_ci": [
+        7.5828497907632295,
+        8.43485246474678
+      ]
+    },
+    "split": {
+      "n_d0_aged": 4937,
+      "n_d0_young": 7741,
+      "O": 2468,
+      "Y": 3870,
+      "aged_B": 2469,
+      "young_B": 3871,
+      "same_as_stored": false
+    },
+    "n_cells": {
+      "O": 2468,
+      "Y": 3870,
+      "S": 5505,
+      "S_rev": 6277,
+      "Pluri": 828,
+      "NonReprog": 5696
+    },
+    "b": {
+      "FULL": {
+        "n_genes": 23485,
+        "forward_progress": 0.6549829957972159,
+        "forward_progress_ci": [
+          0.6453743863421574,
+          0.6751721300983063
+        ],
+        "forward_progress_ci_valid": true,
+        "forward_delta": 135.83424192210444,
+        "forward_delta_ci": [
+          135.89642920999606,
+          139.50979336570038
+        ],
+        "forward_delta_ci_valid": false,
+        "forward_dist_final": 268.10712159169344,
+        "forward_dist_start": 132.272879669589,
+        "forward_final_over_start": 2.0269243571426854,
+        "reverse_progress": -0.03406134407085707,
+        "reverse_progress_ci": [
+          -0.04615704518288989,
+          -0.027381170562891875
+        ],
+        "reverse_progress_ci_valid": true,
+        "reverse_delta": 164.05521403415187,
+        "reverse_delta_ci": [
+          163.38777880021638,
+          166.8800555804985
+        ],
+        "reverse_delta_ci_valid": true,
+        "reverse_dist_final": 296.3280937037409,
+        "reverse_dist_start": 132.272879669589,
+        "reverse_final_over_start": 2.2402785396670395,
+        "asymmetry": 0.6890443398680729,
+        "asymmetry_ci": [
+          0.6746415790532809,
+          0.7209341752690469
+        ],
+        "asymmetry_ci_valid": true,
+        "mixtures": [
+          {
+            "f": 0.0,
+            "n_aged": 2469,
+            "n_young": 0,
+            "progress": 0.11016707399331835,
+            "progress_ci_lo": 0.09377189185602583,
+            "progress_ci_hi": 0.11541403143797214,
+            "progress_ci_valid": true,
+            "delta": 0.3862834668556019,
+            "delta_ci_lo": 6.0647114520764696,
+            "delta_ci_hi": 8.898691694381608
+          },
+          {
+            "f": 0.1,
+            "n_aged": 2222,
+            "n_young": 247,
+            "progress": 0.1781451106152988,
+            "progress_ci_lo": 0.16143659370406538,
+            "progress_ci_hi": 0.18363021575178753,
+            "progress_ci_valid": true,
+            "delta": -7.7534805723500995,
+            "delta_ci_lo": -1.3456286332395726,
+            "delta_ci_hi": 1.4437953297107968
+          },
+          {
+            "f": 0.25,
+            "n_aged": 1852,
+            "n_young": 617,
+            "progress": 0.27372776244689584,
+            "progress_ci_lo": 0.25618456277225043,
+            "progress_ci_hi": 0.27923273136235743,
+            "progress_ci_valid": true,
+            "delta": -18.073718579094077,
+            "delta_ci_lo": -11.114483904505796,
+            "delta_ci_hi": -8.295687921012512
+          },
+          {
+            "f": 0.5,
+            "n_aged": 1235,
+            "n_young": 1234,
+            "progress": 0.43112497444841674,
+            "progress_ci_lo": 0.41493420722811464,
+            "progress_ci_hi": 0.43845583458283777,
+            "progress_ci_valid": true,
+            "delta": -34.332495683488105,
+            "delta_ci_lo": -25.336097207148743,
+            "delta_ci_hi": -22.6798926833674
+          }
+        ],
+        "gate": {
+          "passed": true,
+          "monotonic": true,
+          "progress50_ci_excludes_0": true,
+          "progress50_ci_valid": true,
+          "delta50_lt_0": true,
+          "progress": [
+            0.11016707399331835,
+            0.1781451106152988,
+            0.27372776244689584,
+            0.43112497444841674
+          ],
+          "progress50": 0.43112497444841674,
+          "progress50_ci": [
+            0.41493420722811464,
+            0.43845583458283777
+          ],
+          "delta50": -34.332495683488105,
+          "failed": []
+        },
+        "rule_met": true
+      },
+      "MD": {
+        "n_genes": 205,
+        "forward_progress": 0.7426277045067172,
+        "forward_progress_ci": [
+          0.7215950754007694,
+          0.7938995238371552
+        ],
+        "forward_progress_ci_valid": true,
+        "forward_delta": 17.838689642310854,
+        "forward_delta_ci": [
+          17.45292738602373,
+          18.524668238524026
+        ],
+        "forward_delta_ci_valid": true,
+        "forward_dist_final": 32.85360725800959,
+        "forward_dist_start": 15.014917615698735,
+        "forward_final_over_start": 2.1880644369077156,
+        "reverse_progress": -0.19063971883083147,
+        "reverse_progress_ci": [
+          -0.2343250640901655,
+          -0.17058779989035397
+        ],
+        "reverse_progress_ci_valid": true,
+        "reverse_delta": 25.188683456478557,
+        "reverse_delta_ci": [
+          24.68084696594226,
+          25.692874627982892
+        ],
+        "reverse_delta_ci_valid": true,
+        "reverse_dist_final": 40.20360107217729,
+        "reverse_dist_start": 15.014917615698735,
+        "reverse_final_over_start": 2.677577200299968,
+        "asymmetry": 0.9332674233375486,
+        "asymmetry_ci": [
+          0.9014819738711497,
+          1.0266276057211394
+        ],
+        "asymmetry_ci_valid": true,
+        "mixtures": [
+          {
+            "f": 0.0,
+            "n_aged": 2469,
+            "n_young": 0,
+            "progress": 0.033750181784083025,
+            "progress_ci_lo": 0.007690777888341573,
+            "progress_ci_hi": 0.05166616954361865,
+            "progress_ci_valid": true,
+            "delta": -0.294095730110147,
+            "delta_ci_lo": -0.44620679283625486,
+            "delta_ci_hi": 0.11410433364757847
+          },
+          {
+            "f": 0.1,
+            "n_aged": 2222,
+            "n_young": 247,
+            "progress": 0.10327776683218828,
+            "progress_ci_lo": 0.07548662273831293,
+            "progress_ci_hi": 0.12516878057578318,
+            "progress_ci_valid": true,
+            "delta": -1.309610100497073,
+            "delta_ci_lo": -1.4960958286670505,
+            "delta_ci_hi": -0.8931424198157194
+          },
+          {
+            "f": 0.25,
+            "n_aged": 1852,
+            "n_young": 617,
+            "progress": 0.20963172795073956,
+            "progress_ci_lo": 0.18488851491212938,
+            "progress_ci_hi": 0.2295615563626181,
+            "progress_ci_valid": true,
+            "delta": -2.815885986008338,
+            "delta_ci_lo": -2.916845476339391,
+            "delta_ci_hi": -2.3927731109207664
+          },
+          {
+            "f": 0.5,
+            "n_aged": 1235,
+            "n_young": 1234,
+            "progress": 0.4114789364944878,
+            "progress_ci_lo": 0.3824358230086587,
+            "progress_ci_hi": 0.43445249174166756,
+            "progress_ci_valid": true,
+            "delta": -5.360340286867084,
+            "delta_ci_lo": -5.483348264233162,
+            "delta_ci_hi": -4.770030657143441
+          }
+        ],
+        "gate": {
+          "passed": true,
+          "monotonic": true,
+          "progress50_ci_excludes_0": true,
+          "progress50_ci_valid": true,
+          "delta50_lt_0": true,
+          "progress": [
+            0.033750181784083025,
+            0.10327776683218828,
+            0.20963172795073956,
+            0.4114789364944878
+          ],
+          "progress50": 0.4114789364944878,
+          "progress50_ci": [
+            0.3824358230086587,
+            0.43445249174166756
+          ],
+          "delta50": -5.360340286867084,
+          "failed": []
+        },
+        "rule_met": true
+      }
+    },
+    "c": {
+      "cos_S": 0.08150358085893432,
+      "delta_young": 15.786652851324504,
+      "delta_old": 17.398041668208634,
+      "n_PartialReprog": 5505
+    },
+    "rule_met": true
+  }
+}

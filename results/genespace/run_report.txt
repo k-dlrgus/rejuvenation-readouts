@@ -1,0 +1,163 @@
+====================================================================================================
+GENESPACE  seed=20260914  boot=20260918  n_perm=200  n_boot=200  n_random=200  n_baseline=200
+====================================================================================================
+GSE325735 is out of scope and is not opened.
+PREREG.flag read; not rewritten. paper/ and paper_package/ are not read.
+[hash] protected files before run: n=82
+[map] MD: entries=205 unique=205 mapped=205 unmapped=0 dups=[] cols=205
+[map] age_up: entries=1533 unique=1532 mapped=1312 unmapped=220 dups=['GOLGA8M'] cols=1312
+[map] age_down: entries=2007 unique=2006 mapped=1777 unmapped=229 dups=['TMEM191A'] cols=1777
+[map] checks {'up_down_overlap_lists': 0, 'up_down_overlap_mapped': 0, 'age_unique': 3538, 'md_age_total': 43, 'md_age_up': 18, 'md_age_down': 25, 'multi_col_symbols': 13, 'multi_col_in_lists': [], 'space_cols': {'FULL': 23485, 'MD': 205, 'AGE': 3089}}
+[columns louvain_obs_GM00731] actually read from <repo>\results\md2\louvain_obs_GM00731.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM00731] actually read from <repo>\results\md2\t2_cluster_labels_GM00731.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM00731] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM00731] n_cells=22132 n_clusters=19 days=[0, 3, 7, 10]
+[columns louvain_obs_GM23815] actually read from <repo>\results\md2\louvain_obs_GM23815.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM23815] actually read from <repo>\results\md2\t2_cluster_labels_GM23815.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM23815] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM23815] n_cells=33858 n_clusters=19 days=[0, 3, 7, 10]
+[split] O=2469 aged_B=2470 Y=3851 young_B=3852 rerun split_half equals split_idx.npz: True
+[main panel] n_cells={'O': 2469, 'Y': 3851, 'S': 5832, 'S_rev': 6481, 'Pluri': 439, 'NonReprog': 5459}
+[A1] zero genes in main SAME panel (fixed before any statistic): 3132
+[mixtures] n_total=2470 f=0.00:2470+0 f=0.10:2223+247 f=0.25:1852+618 f=0.50:1235+1235
+[columns gtex_obs] actually read from <repo>\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[anchors] {'n_young': 113, 'n_old': 231, 'n_middle': 308, 'n_donors': 652}
+[panel GM00731] PartialReprog n=5832 days={0: 3, 3: 5220, 7: 578, 10: 31}
+[panel GM00731] EarlyPluripotency n=4414 days={0: 2, 3: 410, 7: 3917, 10: 85}
+[panel GM00731] Pluripotency n=439 days={0: 0, 3: 5, 7: 354, 10: 80}
+[panel GM00731] NonReprog n=5459 days={0: 65, 3: 348, 7: 1932, 10: 3114}
+[tmm GM00731] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.9522 prior.count=2
+[panel GM23815] PartialReprog n=6481 days={0: 9, 3: 6113, 7: 309, 10: 50}
+[panel GM23815] EarlyPluripotency n=12961 days={0: 56, 3: 316, 7: 8172, 10: 4417}
+[panel GM23815] Pluripotency n=1249 days={0: 0, 3: 91, 7: 977, 10: 181}
+[panel GM23815] NonReprog n=1812 days={0: 0, 3: 10, 7: 8, 10: 1794}
+[tmm GM23815] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.9308 prior.count=2
+[z=0 per space and panel] {'FULL': {'main_same': 3132, 'mixture': 3507, 'gtex_GM00731': 3139, 'gtex_GM23815': 3138}, 'MD': {'main_same': 0, 'mixture': 0, 'gtex_GM00731': 0, 'gtex_GM23815': 0}, 'AGE': {'main_same': 333, 'mixture': 342, 'gtex_GM00731': 332, 'gtex_GM23815': 333}}
+[repro] same/summary.json frac_S: rerun=0.674440748216413 ref=0.674440748216413 diff=0.000e+00 OK
+[repro] same/summary.json delta_S: rerun=130.89356478446803 ref=130.89356478446803 diff=0.000e+00 OK
+[repro] same/summary.json frac_rev: rerun=-0.05727522677873291 ref=-0.05727522677873291 diff=0.000e+00 OK
+[repro] same/summary.json p.fracs[f=0.00]: rerun=0.11458744592963613 ref=0.11458744592963613 diff=0.000e+00 OK
+[repro] same/summary.json p.fracs[f=0.10]: rerun=0.18243537091412526 ref=0.18243537091412526 diff=0.000e+00 OK
+[repro] same/summary.json p.fracs[f=0.25]: rerun=0.2829286266887166 ref=0.2829286266887166 diff=0.000e+00 OK
+[repro] same/summary.json p.fracs[f=0.50]: rerun=0.4408188614368522 ref=0.4408188614368522 diff=0.000e+00 OK
+[repro] toward/stats.csv GM00731 PartialReprog cos_S: rerun=0.07724629325885633 ref=0.0772462932588563 diff=2.776e-17 OK
+[repro] toward/stats.csv GM00731 PartialReprog delta_young: rerun=9.369675854981608 ref=9.369675854981608 diff=0.000e+00 OK
+[repro] stop rule PASSED; MD and AGE may be computed.
+[same FULL] n_genes=23485 fwd progress=+0.674 delta=+130.894 perp=+1.975 label=SIDEWAYS | rev progress=-0.057
+[mix FULL] f=0.00 progress=+0.115 delta=+0.068 perp=+0.466 cos=+0.239
+[mix FULL] f=0.10 progress=+0.182 delta=-7.870 perp=+0.457 cos=+0.371
+[mix FULL] f=0.25 progress=+0.283 delta=-18.913 perp=+0.452 cos=+0.530
+[mix FULL] f=0.50 progress=+0.441 delta=-34.443 perp=+0.458 cos=+0.694
+[same MD] n_genes=205 fwd progress=+0.790 delta=+17.088 perp=+2.160 label=SIDEWAYS | rev progress=-0.229
+[mix MD] f=0.00 progress=+0.010 delta=-0.007 perp=+0.140 cos=+0.074
+[mix MD] f=0.10 progress=+0.096 delta=-1.195 perp=+0.152 cos=+0.531
+[mix MD] f=0.25 progress=+0.207 delta=-2.676 perp=+0.188 cos=+0.741
+[mix MD] f=0.50 progress=+0.388 delta=-5.143 perp=+0.200 cos=+0.889
+[same AGE] n_genes=3089 fwd progress=+0.822 delta=+44.605 perp=+1.915 label=SIDEWAYS | rev progress=-0.230
+[mix AGE] f=0.00 progress=+0.058 delta=+0.431 perp=+0.361 cos=+0.158
+[mix AGE] f=0.10 progress=+0.148 delta=-3.473 perp=+0.361 cos=+0.379
+[mix AGE] f=0.25 progress=+0.264 delta=-8.174 perp=+0.372 cos=+0.579
+[mix AGE] f=0.50 progress=+0.437 delta=-14.882 perp=+0.381 cos=+0.753
+[N1 same FULL forward] cos=+0.323 p=0.0050
+[N1 same FULL reverse] cos=-0.029 p=1.0000
+[N1 same MD forward] cos=+0.343 p=0.0050
+[N1 same MD reverse] cos=-0.095 p=0.2886
+[N1 same AGE forward] cos=+0.395 p=0.0050
+[N1 same AGE reverse] cos=-0.117 p=1.0000
+[mix boot] 50/200
+[mix boot] 100/200
+[mix boot] 150/200
+[mix boot] 200/200
+[main boot] 50/200
+[main boot] 100/200
+[main boot] 150/200
+[main boot] 200/200
+[gate FULL] pass=True failed=[]
+[gate MD] pass=True failed=[]
+[gate AGE] pass=True failed=[]
+[A3] frac_S_ci_lo: rerun=0.6673919962871651 ref=0.6673919962871651 diff=0.000e+00
+[A3] frac_S_ci_hi: rerun=0.6800921160425388 ref=0.6800921160425388 diff=0.000e+00
+[A3] delta_S_ci_lo: rerun=130.47349301104504 ref=130.47349301104504 diff=0.000e+00
+[A3] delta_S_ci_hi: rerun=133.9181084903101 ref=133.9181084903101 diff=0.000e+00
+[A3] frac_rev_ci_lo: rerun=-0.0628257203048914 ref=-0.0628257203048914 diff=0.000e+00
+[A3] frac_rev_ci_hi: rerun=-0.05383465334427416 ref=-0.05383465334427416 diff=0.000e+00
+[A3] p.frac50_ci_lo: rerun=0.42434338106362407 ref=0.42434338106362407 diff=0.000e+00
+[A3] p.frac50_ci_hi: rerun=0.4474586408649893 ref=0.4474586408649893 diff=0.000e+00
+[A3] posctrl.csv f=0.00 frac_ci_lo: rerun=0.09871663348293837 ref=0.0987166334829383 diff=6.939e-17
+[A3] posctrl.csv f=0.00 frac_ci_hi: rerun=0.12095182735918947 ref=0.1209518273591894 diff=6.939e-17
+[A3] posctrl.csv f=0.10 frac_ci_lo: rerun=0.16731499808387965 ref=0.1673149980838796 diff=5.551e-17
+[A3] posctrl.csv f=0.10 frac_ci_hi: rerun=0.19069801961511446 ref=0.1906980196151144 diff=5.551e-17
+[A3] posctrl.csv f=0.25 frac_ci_lo: rerun=0.26713436287139175 ref=0.2671343628713917 diff=5.551e-17
+[A3] posctrl.csv f=0.25 frac_ci_hi: rerun=0.29139174032920134 ref=0.2913917403292013 diff=5.551e-17
+[C3 prep] folds=[(0, 94, 187, 44), (1, 92, 181, 50), (2, 86, 180, 51), (3, 87, 191, 40), (4, 93, 185, 46)]
+[C3 FULL] fold 0 cos=+0.6147 CI=[+0.123, +0.754] valid pass_bar=True
+[C3 FULL] fold 1 cos=+0.8486 CI=[+0.701, +0.835] invalid pass_bar=True
+[C3 FULL] fold 2 cos=+0.7145 CI=[+0.300, +0.821] valid pass_bar=True
+[C3 FULL] fold 3 cos=+0.8252 CI=[+0.457, +0.846] valid pass_bar=True
+[C3 FULL] fold 4 cos=+0.8741 CI=[+0.677, +0.844] invalid pass_bar=True
+[C3 FULL] pass=True min_cos=+0.615
+[C3 MD] fold 0 cos=+0.7331 CI=[+0.308, +0.844] valid pass_bar=True
+[C3 MD] fold 1 cos=+0.8639 CI=[+0.716, +0.868] valid pass_bar=True
+[C3 MD] fold 2 cos=+0.8094 CI=[+0.313, +0.908] valid pass_bar=True
+[C3 MD] fold 3 cos=+0.8283 CI=[+0.434, +0.870] valid pass_bar=True
+[C3 MD] fold 4 cos=+0.8950 CI=[+0.658, +0.877] invalid pass_bar=True
+[C3 MD] pass=True min_cos=+0.733
+[C3 AGE] fold 0 cos=+0.6813 CI=[+0.117, +0.799] valid pass_bar=True
+[C3 AGE] fold 1 cos=+0.8662 CI=[+0.754, +0.867] valid pass_bar=True
+[C3 AGE] fold 2 cos=+0.7213 CI=[+0.181, +0.877] valid pass_bar=True
+[C3 AGE] fold 3 cos=+0.8418 CI=[+0.328, +0.891] valid pass_bar=True
+[C3 AGE] fold 4 cos=+0.8946 CI=[+0.664, +0.871] invalid pass_bar=True
+[C3 AGE] pass=True min_cos=+0.681
+[gtex FULL GM00731 PartialReprog] cos_S=+0.077 progress=+0.650 perp=+8.390 delta_young=+9.370 delta_old=+10.857 p_N1=0.0050 p_N2=0.3881
+[gtex FULL GM00731 EarlyPluripotency] cos_S=+0.117 progress=+0.977 perp=+8.262 delta_young=+30.456 delta_old=+32.695 p_N1=0.0050 p_N2=0.0796
+[gtex FULL GM00731 Pluripotency] cos_S=+0.126 progress=+2.128 perp=+16.791 delta_young=+184.049 delta_old=+188.313 p_N1=0.0050 p_N2=0.1393
+[gtex FULL GM00731 NonReprog] cos_S=+0.063 progress=+0.377 perp=+5.959 delta_young=+8.932 delta_old=+9.818 p_N1=0.0050 p_N2=0.3085
+[gtex FULL GM23815 PartialReprog] cos_S=+0.052 progress=+0.422 perp=+8.057 delta_young=+14.189 delta_old=+15.210 p_N1=0.0050 p_N2=0.4627
+[gtex FULL GM23815 EarlyPluripotency] cos_S=+0.076 progress=+0.639 perp=+8.406 delta_young=+46.322 delta_old=+47.903 p_N1=0.0050 p_N2=0.2139
+[gtex FULL GM23815 Pluripotency] cos_S=+0.112 progress=+1.789 perp=+15.855 delta_young=+185.957 delta_old=+189.656 p_N1=0.0050 p_N2=0.1493
+[gtex FULL GM23815 NonReprog] cos_S=+0.010 progress=+0.068 perp=+6.808 delta_young=+41.971 delta_old=+42.345 p_N1=0.0398 p_N2=0.4478
+[gtex MD GM00731 PartialReprog] cos_S=+0.209 progress=+2.162 perp=+10.136 delta_young=+6.461 delta_old=+7.002 p_N1=0.0796 p_N2=0.2786
+[gtex MD GM00731 EarlyPluripotency] cos_S=+0.225 progress=+2.344 perp=+10.143 delta_young=+7.447 delta_old=+8.025 p_N1=0.0498 p_N2=0.1990
+[gtex MD GM00731 Pluripotency] cos_S=+0.300 progress=+5.529 perp=+17.611 delta_young=+28.216 delta_old=+29.236 p_N1=0.0050 p_N2=0.1095
+[gtex MD GM00731 NonReprog] cos_S=+0.053 progress=+0.351 perp=+6.646 delta_young=-1.400 delta_old=-1.320 p_N1=0.2587 p_N2=0.4129
+[gtex MD GM23815 PartialReprog] cos_S=+0.210 progress=+2.278 perp=+10.610 delta_young=+11.798 delta_old=+12.322 p_N1=0.0995 p_N2=0.2736
+[gtex MD GM23815 EarlyPluripotency] cos_S=+0.201 progress=+2.187 perp=+10.646 delta_young=+11.686 delta_old=+12.191 p_N1=0.0945 p_N2=0.1841
+[gtex MD GM23815 Pluripotency] cos_S=+0.273 progress=+5.137 perp=+18.066 delta_young=+33.473 delta_old=+34.326 p_N1=0.0199 p_N2=0.1343
+[gtex MD GM23815 NonReprog] cos_S=+0.017 progress=+0.116 perp=+6.718 delta_young=+5.685 delta_old=+5.741 p_N1=0.5323 p_N2=0.4527
+[gtex AGE GM00731 PartialReprog] cos_S=-0.060 progress=-0.493 perp=+8.135 delta_young=-5.439 delta_old=-5.925 p_N1=0.9950 p_N2=0.6318
+[gtex AGE GM00731 EarlyPluripotency] cos_S=+0.057 progress=+0.441 perp=+7.744 delta_young=+1.686 delta_old=+2.093 p_N1=0.0050 p_N2=0.3383
+[gtex AGE GM00731 Pluripotency] cos_S=+0.102 progress=+1.552 perp=+15.154 delta_young=+44.720 delta_old=+45.931 p_N1=0.0050 p_N2=0.2338
+[gtex AGE GM00731 NonReprog] cos_S=+0.049 progress=+0.297 perp=+5.999 delta_young=-1.015 delta_old=-0.742 p_N1=0.0199 p_N2=0.3035
+[gtex AGE GM23815 PartialReprog] cos_S=-0.065 progress=-0.504 perp=+7.719 delta_young=-0.054 delta_old=-0.537 p_N1=1.0000 p_N2=0.6368
+[gtex AGE GM23815 EarlyPluripotency] cos_S=+0.014 progress=+0.111 perp=+7.760 delta_young=+10.716 delta_old=+10.852 p_N1=0.2090 p_N2=0.5473
+[gtex AGE GM23815 Pluripotency] cos_S=+0.073 progress=+1.032 perp=+14.049 delta_young=+46.968 delta_old=+47.860 p_N1=0.0249 p_N2=0.2786
+[gtex AGE GM23815 NonReprog] cos_S=+0.049 progress=+0.322 perp=+6.545 delta_young=+15.948 delta_old=+16.281 p_N1=0.0398 p_N2=0.1990
+[gtex boot GM00731] 50/200
+[gtex boot GM00731] 100/200
+[gtex boot GM00731] 150/200
+[gtex boot GM00731] 200/200
+[gtex boot GM23815] 50/200
+[gtex boot GM23815] 100/200
+[gtex boot GM23815] 150/200
+[gtex boot GM23815] 200/200
+[gtex key FULL GM00731] away_from_old_only
+[gtex key FULL GM23815] away_from_old_only
+[gtex key MD GM00731] away_from_old_only
+[gtex key MD GM23815] away_from_old_only
+[gtex key AGE GM00731] no_directional_structure
+[gtex key AGE GM23815] no_directional_structure
+[reading MD] key=SIDEWAYS
+In the MD gene space (205 ruler genes), aged partially-reprogrammed cells (GM00731 PartialReprog, n_cells=5832) end farther from the young donor's day-0 cells than they started (change in distance +17.088), mainly through movement off the aged-to-young axis: sideways term perp² = +4.667, overshoot term (progress − 1)² = +0.044, progress +0.790. This is not approach to the young donor.
+delta CI [+16.733, +17.419] (valid); progress CI [+0.780, +0.811] (valid).
+[reading AGE] key=SIDEWAYS
+In the AGE gene space (3089 ruler genes), aged partially-reprogrammed cells (GM00731 PartialReprog, n_cells=5832) end farther from the young donor's day-0 cells than they started (change in distance +44.605), mainly through movement off the aged-to-young axis: sideways term perp² = +3.665, overshoot term (progress − 1)² = +0.032, progress +0.822. This is not approach to the young donor.
+delta CI [+44.293, +45.573] (valid); progress CI [+0.812, +0.830] (valid).
+[baseline sec6_mu MD] draws=200 mean_overlap=10.03 (0.0489)
+[baseline sec6_mu AGE] draws=200 mean_overlap=447.32 (0.1448)
+[baseline A1_mu_zero MD] draws=200 mean_overlap=10.48 (0.0511)
+[baseline A1_mu_zero AGE] draws=200 mean_overlap=453.99 (0.1470)
+[run] DONE
+[hash] protected files unchanged (n=82).

@@ -1,0 +1,4 @@
+tissue,n_donors,n_batches,batch,composition_r2,expression_r2,expr_minus_comp,repeats_expr_gt_comp,data
+"blood PBMC (OneK1K, closed)",981,75,pool (75 10x),0.493,0.482,-0.01100000000000001,n/a (Stage B mean),scRNA
+brain white matter (c05e6940),20,7,SequencingPool,-0.29,0.194,0.484,10/10,snRNA
+brain DLPFC Aging_Cohort (adult controls),233,2,Source (H/M brain bank),0.0534116156333435,0.4444614164974363,0.3910498008640927,3/3,snRNA

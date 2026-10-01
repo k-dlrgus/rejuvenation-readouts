@@ -1,0 +1,13 @@
+{
+ "path": "<repo>\\results\\external\\frozen_directions.npz",
+ "n_donors": 233,
+ "n_genes": 25526,
+ "n_rows": 3323,
+ "n_types": 20,
+ "n_id_axes": 19,
+ "n_raw_ok": 20,
+ "n_id_ok": 20,
+ "elapsed_s": 43.24541521072388,
+ "seed": 20260914,
+ "note": "trained on all 233 DLPFC donors; not fit on SEA-AD"
+}

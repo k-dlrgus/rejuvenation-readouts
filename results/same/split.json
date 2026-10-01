@@ -1,0 +1,12 @@
+{
+ "n_O": 2469,
+ "n_Y": 3851,
+ "n_aged_B": 2470,
+ "n_young_B": 3852,
+ "n_d0_aged": 4939,
+ "n_d0_young": 7703,
+ "min_half": 500,
+ "ok": true,
+ "seed": 20260914,
+ "note": "independent Generator(seed) per donor; half A = n//2"
+}

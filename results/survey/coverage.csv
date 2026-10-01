@@ -1,0 +1,3 @@
+dataset,tier,gene_list,n_measured_symbols,n_ruler_genes,n_ruler_genes_measured,fraction_ruler_genes,fraction_abs_weight,note
+Southard Hs27 CRISPRa,A,results/survey/gene_lists/southard_hs27_L4A_genes.txt,36591,23467,16771,0.714663143989432,0.6298481684728727,Cell Ranger Gene Expression features from lane L4A filtered_feature_bc_matrix.h5. Guide-capture features were excluded. Inferred genes are not in this list. The mean-population h5ad keeps 4914 genes and was not used for coverage.
+Sengstack fibroblast Perturb-seq,A,,not read,23467,,,,coverage not computed: gene symbols were not extracted. Dataset X shape attribute is 36514 x 36601. The h5ad is 1.43 GB and the var index was not located by range reads.

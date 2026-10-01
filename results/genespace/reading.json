@@ -1,0 +1,185 @@
+{
+ "readings": {
+  "MD": {
+   "space": "MD",
+   "key": "SIDEWAYS",
+   "text": "In the MD gene space (205 ruler genes), aged partially-reprogrammed cells (GM00731 PartialReprog, n_cells=5832) end farther from the young donor's day-0 cells than they started (change in distance +17.088), mainly through movement off the aged-to-young axis: sideways term perp\u00b2 = +4.667, overshoot term (progress \u2212 1)\u00b2 = +0.044, progress +0.790. This is not approach to the young donor.",
+   "ci_line": "delta CI [+16.733, +17.419] (valid); progress CI [+0.780, +0.811] (valid).",
+   "gate": {
+    "passed": true,
+    "monotonic": true,
+    "progress50_ci_excludes_0": true,
+    "progress50_ci_valid": true,
+    "delta50_lt_0": true,
+    "progress": [
+     0.010364271848283138,
+     0.09554746919636642,
+     0.20744910784602918,
+     0.38831794054922353
+    ],
+    "progress50": 0.38831794054922353,
+    "progress50_ci": [
+     0.36714346802894826,
+     0.4071843613927403
+    ],
+    "delta50": -5.142994419554855,
+    "failed": []
+   },
+   "n_genes": 205,
+   "n_S": 5832
+  },
+  "AGE": {
+   "space": "AGE",
+   "key": "SIDEWAYS",
+   "text": "In the AGE gene space (3089 ruler genes), aged partially-reprogrammed cells (GM00731 PartialReprog, n_cells=5832) end farther from the young donor's day-0 cells than they started (change in distance +44.605), mainly through movement off the aged-to-young axis: sideways term perp\u00b2 = +3.665, overshoot term (progress \u2212 1)\u00b2 = +0.032, progress +0.822. This is not approach to the young donor.",
+   "ci_line": "delta CI [+44.293, +45.573] (valid); progress CI [+0.812, +0.830] (valid).",
+   "gate": {
+    "passed": true,
+    "monotonic": true,
+    "progress50_ci_excludes_0": true,
+    "progress50_ci_valid": true,
+    "delta50_lt_0": true,
+    "progress": [
+     0.057627615309640015,
+     0.1477460161958846,
+     0.26404328046570447,
+     0.436695279042495
+    ],
+    "progress50": 0.436695279042495,
+    "progress50_ci": [
+     0.41414130287935896,
+     0.45204727828312485
+    ],
+    "delta50": -14.88239225700816,
+    "failed": []
+   },
+   "n_genes": 3089,
+   "n_S": 5832
+  }
+ },
+ "context_labels": {
+  "FULL": {
+   "reverse": "SIDEWAYS",
+   "Pluri": "SIDEWAYS",
+   "NonReprog": "SIDEWAYS",
+   "forward": "SIDEWAYS"
+  },
+  "MD": {
+   "reverse": "SIDEWAYS",
+   "Pluri": "SIDEWAYS",
+   "NonReprog": "SIDEWAYS"
+  },
+  "AGE": {
+   "reverse": "SIDEWAYS",
+   "Pluri": "SIDEWAYS",
+   "NonReprog": "SIDEWAYS"
+  }
+ },
+ "gates": {
+  "FULL": {
+   "passed": true,
+   "monotonic": true,
+   "progress50_ci_excludes_0": true,
+   "progress50_ci_valid": true,
+   "delta50_lt_0": true,
+   "progress": [
+    0.11458744592963613,
+    0.18243537091412526,
+    0.2829286266887166,
+    0.4408188614368522
+   ],
+   "progress50": 0.4408188614368522,
+   "progress50_ci": [
+    0.42434338106362407,
+    0.4474586408649893
+   ],
+   "delta50": -34.443006230983826,
+   "failed": []
+  },
+  "MD": {
+   "passed": true,
+   "monotonic": true,
+   "progress50_ci_excludes_0": true,
+   "progress50_ci_valid": true,
+   "delta50_lt_0": true,
+   "progress": [
+    0.010364271848283138,
+    0.09554746919636642,
+    0.20744910784602918,
+    0.38831794054922353
+   ],
+   "progress50": 0.38831794054922353,
+   "progress50_ci": [
+    0.36714346802894826,
+    0.4071843613927403
+   ],
+   "delta50": -5.142994419554855,
+   "failed": []
+  },
+  "AGE": {
+   "passed": true,
+   "monotonic": true,
+   "progress50_ci_excludes_0": true,
+   "progress50_ci_valid": true,
+   "delta50_lt_0": true,
+   "progress": [
+    0.057627615309640015,
+    0.1477460161958846,
+    0.26404328046570447,
+    0.436695279042495
+   ],
+   "progress50": 0.436695279042495,
+   "progress50_ci": [
+    0.41414130287935896,
+    0.45204727828312485
+   ],
+   "delta50": -14.88239225700816,
+   "failed": []
+  }
+ },
+ "gtex_secondary_keys": {
+  "FULL": {
+   "GM00731": {
+    "key": "away_from_old_only",
+    "cell_line": "GM00731",
+    "is_contrast": false,
+    "text": "GM00731: PartialReprog has cos_S=+0.077 but delta_young=+9.370 (n_cells=5832). Movement is away-from-old only. This is a real negative finding: a 1D age score cannot distinguish toward-young from away-from-old. The frozen-ruler score is not used to rescue this."
+   },
+   "GM23815": {
+    "key": "away_from_old_only",
+    "cell_line": "GM23815",
+    "is_contrast": true,
+    "text": "CONTRAST (young donor GM23815; never the reading): PartialReprog has cos_S=+0.052 but delta_young=+14.189 (n_cells=6481). Movement is away-from-old only. This is a real negative finding: a 1D age score cannot distinguish toward-young from away-from-old. The frozen-ruler score is not used to rescue this."
+   }
+  },
+  "MD": {
+   "GM00731": {
+    "key": "away_from_old_only",
+    "cell_line": "GM00731",
+    "is_contrast": false,
+    "text": "GM00731: PartialReprog has cos_S=+0.209 but delta_young=+6.461 (n_cells=5832). Movement is away-from-old only. This is a real negative finding: a 1D age score cannot distinguish toward-young from away-from-old. The frozen-ruler score is not used to rescue this."
+   },
+   "GM23815": {
+    "key": "away_from_old_only",
+    "cell_line": "GM23815",
+    "is_contrast": true,
+    "text": "CONTRAST (young donor GM23815; never the reading): PartialReprog has cos_S=+0.210 but delta_young=+11.798 (n_cells=6481). Movement is away-from-old only. This is a real negative finding: a 1D age score cannot distinguish toward-young from away-from-old. The frozen-ruler score is not used to rescue this."
+   }
+  },
+  "AGE": {
+   "GM00731": {
+    "key": "no_directional_structure",
+    "cell_line": "GM00731",
+    "is_contrast": false,
+    "text": "GM00731: PartialReprog (n_cells=5832, cos_S=-0.060, p_N1=0.9950, p_N2=0.6318, delta_young=-5.439): Both nulls fail (p>0.05). No directional structure detectable at this n. The frozen-ruler score is not used to rescue this."
+   },
+   "GM23815": {
+    "key": "no_directional_structure",
+    "cell_line": "GM23815",
+    "is_contrast": true,
+    "text": "CONTRAST (young donor GM23815; never the reading): PartialReprog (n_cells=6481, cos_S=-0.065, p_N1=1.0000, p_N2=0.6368, delta_young=-0.054): Both nulls fail (p>0.05). No directional structure detectable at this n. The frozen-ruler score is not used to rescue this."
+   }
+  }
+ },
+ "note": "Only readings[MD] and readings[AGE] are the pre-registered reading. Context labels, the FULL gate and GTEx secondary keys never change it."
+}

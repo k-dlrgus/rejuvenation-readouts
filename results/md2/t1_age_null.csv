@@ -1,0 +1,91 @@
+resolution,cell_line,cluster,endpoint,d_end,n_random,seed,min_cells,instrument,null_kind,ok,n_cells_d0,n_cells_end,score_d0,score_end,decline,p,n_random_ge_real,pass_p,reason
+k3,GM00731,0,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights_reused_from_FIBRO3,True,4941.0,2719.0,4.223840962971457,4.8058231131303,-0.5819821501588427,0.6517412935323383,130.0,False,
+k3,GM00731,0,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights_reused_from_FIBRO3,True,4941.0,3431.0,4.223840962971457,8.594906197040617,-4.371065234069159,1.0,200.0,False,
+k3,GM00731,1,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights_reused_from_FIBRO3,True,76.0,850.0,-3.165255762815702,-5.380398452854362,2.21514269003866,0.1442786069651741,28.0,False,
+k3,GM00731,1,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights_reused_from_FIBRO3,True,76.0,698.0,-3.165255762815702,2.249007769781151,-5.414263532596853,0.8805970149253731,176.0,False,
+k3,GM00731,2,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights_reused_from_FIBRO3,False,4.0,3346.0,,,,,,,n_cells<20 at an endpoint
+k3,GM00731,2,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights_reused_from_FIBRO3,False,4.0,270.0,,,,,,,n_cells<20 at an endpoint
+k8,GM00731,0,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,79.0,1995.0,6.130270217337761,4.83544959148478,1.2948206258529806,0.13930348258706468,27.0,False,
+k8,GM00731,0,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,79.0,439.0,6.130270217337761,9.144955177232097,-3.0146849598943364,0.7711442786069652,154.0,False,
+k8,GM00731,1,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k8,GM00731,1,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k8,GM00731,2,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,268.0,379.0,2.8481592579232413,3.0723901725839937,-0.2242309146607524,0.48756218905472637,97.0,False,
+k8,GM00731,2,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,268.0,282.0,2.8481592579232413,4.861152543727373,-2.0129932858041317,0.9253731343283582,185.0,False,
+k8,GM00731,3,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,14.0,211.0,,,,,,,n_cells<20 at an endpoint
+k8,GM00731,3,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,14.0,100.0,,,,,,,n_cells<20 at an endpoint
+k8,GM00731,4,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,4599.0,56.0,5.485022342240792,5.535400066857798,-0.050377724617005626,0.6567164179104478,131.0,False,
+k8,GM00731,4,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,4599.0,10.0,,,,,,,n_cells<20 at an endpoint
+k8,GM00731,5,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k8,GM00731,5,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k8,GM00731,6,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,61.0,638.0,-2.334192896942283,-4.046421290346878,1.7122283934045948,0.09950248756218906,19.0,False,
+k8,GM00731,6,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,61.0,604.0,-2.334192896942283,3.4296077016625595,-5.763800598604842,0.9203980099502488,184.0,False,
+k8,GM00731,7,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k8,GM00731,7,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,0,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,0,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,1,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,1,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,2,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,2,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,3,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,11.0,1110.0,,,,,,,n_cells<20 at an endpoint
+k15,GM00731,3,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,11.0,301.0,,,,,,,n_cells<20 at an endpoint
+k15,GM00731,4,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,4,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,5,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,5,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,6,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,14.0,206.0,,,,,,,n_cells<20 at an endpoint
+k15,GM00731,6,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,14.0,99.0,,,,,,,n_cells<20 at an endpoint
+k15,GM00731,7,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,2276.0,8.0,,,,,,,n_cells<20 at an endpoint
+k15,GM00731,7,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,2276.0,3.0,,,,,,,n_cells<20 at an endpoint
+k15,GM00731,8,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,235.0,307.0,4.057013855684404,5.012730958508275,-0.9557171028238711,0.7960199004975125,159.0,False,
+k15,GM00731,8,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,235.0,259.0,4.057013855684404,6.396777722354827,-2.339763866670423,0.9701492537313433,194.0,False,
+k15,GM00731,9,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,9,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,10,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,60.0,210.0,-1.9035519812541868,4.391363093360222,-6.2949150746144085,0.9800995024875622,196.0,False,
+k15,GM00731,10,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,60.0,532.0,-1.9035519812541868,6.522446309504762,-8.42599829075895,0.9950248756218906,199.0,False,
+k15,GM00731,11,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,11,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,12,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,30.0,1059.0,3.5645251217842584,5.129029046498546,-1.564503924714288,0.5771144278606966,115.0,False,
+k15,GM00731,12,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,30.0,132.0,3.5645251217842584,8.526295136310097,-4.961770014525838,0.9502487562189055,190.0,False,
+k15,GM00731,13,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,2395.0,6.0,,,,,,,n_cells<20 at an endpoint
+k15,GM00731,13,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,14,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+k15,GM00731,14,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,0,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,3998.0,9.0,,,,,,,n_cells<20 at an endpoint
+louvain,GM00731,0,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,3998.0,1.0,,,,,,,n_cells<20 at an endpoint
+louvain,GM00731,1,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,1,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,2,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,2,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,3,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,1.0,444.0,,,,,,,n_cells<20 at an endpoint
+louvain,GM00731,3,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,1.0,5.0,,,,,,,n_cells<20 at an endpoint
+louvain,GM00731,4,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,9.0,1732.0,,,,,,,n_cells<20 at an endpoint
+louvain,GM00731,4,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,9.0,31.0,,,,,,,n_cells<20 at an endpoint
+louvain,GM00731,5,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,2.0,48.0,,,,,,,n_cells<20 at an endpoint
+louvain,GM00731,5,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,2.0,21.0,,,,,,,n_cells<20 at an endpoint
+louvain,GM00731,6,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,6,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,7,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,7,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,8,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,8,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,9,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,9,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,10,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,56.0,191.0,-1.4246331227695694,3.966011763255402,-5.390644886024972,0.9303482587064676,186.0,False,
+louvain,GM00731,10,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,True,56.0,527.0,-1.4246331227695694,7.934468697088863,-9.359101819858433,1.0,200.0,False,
+louvain,GM00731,11,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,11,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,12,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,569.0,1.0,,,,,,,n_cells<20 at an endpoint
+louvain,GM00731,12,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,13,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,13,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,14,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,14,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,15,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,372.0,3.0,,,,,,,n_cells<20 at an endpoint
+louvain,GM00731,15,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,16,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,2.0,32.0,,,,,,,n_cells<20 at an endpoint
+louvain,GM00731,16,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,2.0,7.0,,,,,,,n_cells<20 at an endpoint
+louvain,GM00731,17,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,17,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,18,d0→d7,7,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint
+louvain,GM00731,18,d0→d10,10,200,20260914,20,frozen_ruler,permuted_ruler_weights,False,,,,,,,,,missing cluster row at an endpoint

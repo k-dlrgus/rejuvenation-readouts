@@ -1,0 +1,158 @@
+{
+ "tol": 1e-06,
+ "passed": true,
+ "point": [
+  {
+   "quantity": "same/summary.json frac_S",
+   "rerun": 0.674440748216413,
+   "reference": 0.674440748216413,
+   "diff": 0.0,
+   "pass": true
+  },
+  {
+   "quantity": "same/summary.json delta_S",
+   "rerun": 130.89356478446803,
+   "reference": 130.89356478446803,
+   "diff": 0.0,
+   "pass": true
+  },
+  {
+   "quantity": "same/summary.json frac_rev",
+   "rerun": -0.05727522677873291,
+   "reference": -0.05727522677873291,
+   "diff": 0.0,
+   "pass": true
+  },
+  {
+   "quantity": "same/summary.json p.fracs[f=0.00]",
+   "rerun": 0.11458744592963613,
+   "reference": 0.11458744592963613,
+   "diff": 0.0,
+   "pass": true
+  },
+  {
+   "quantity": "same/summary.json p.fracs[f=0.10]",
+   "rerun": 0.18243537091412526,
+   "reference": 0.18243537091412526,
+   "diff": 0.0,
+   "pass": true
+  },
+  {
+   "quantity": "same/summary.json p.fracs[f=0.25]",
+   "rerun": 0.2829286266887166,
+   "reference": 0.2829286266887166,
+   "diff": 0.0,
+   "pass": true
+  },
+  {
+   "quantity": "same/summary.json p.fracs[f=0.50]",
+   "rerun": 0.4408188614368522,
+   "reference": 0.4408188614368522,
+   "diff": 0.0,
+   "pass": true
+  },
+  {
+   "quantity": "toward/stats.csv GM00731 PartialReprog cos_S",
+   "rerun": 0.07724629325885633,
+   "reference": 0.0772462932588563,
+   "diff": 2.7755575615628914e-17,
+   "pass": true
+  },
+  {
+   "quantity": "toward/stats.csv GM00731 PartialReprog delta_young",
+   "rerun": 9.369675854981608,
+   "reference": 9.369675854981608,
+   "diff": 0.0,
+   "pass": true
+  }
+ ],
+ "ci_comparison_A3": {
+  "note": "reported only; never a stop rule, gate or reading",
+  "rows": [
+   {
+    "bound": "frac_S_ci_lo",
+    "rerun": 0.6673919962871651,
+    "reference": 0.6673919962871651,
+    "diff": 0.0
+   },
+   {
+    "bound": "frac_S_ci_hi",
+    "rerun": 0.6800921160425388,
+    "reference": 0.6800921160425388,
+    "diff": 0.0
+   },
+   {
+    "bound": "delta_S_ci_lo",
+    "rerun": 130.47349301104504,
+    "reference": 130.47349301104504,
+    "diff": 0.0
+   },
+   {
+    "bound": "delta_S_ci_hi",
+    "rerun": 133.9181084903101,
+    "reference": 133.9181084903101,
+    "diff": 0.0
+   },
+   {
+    "bound": "frac_rev_ci_lo",
+    "rerun": -0.0628257203048914,
+    "reference": -0.0628257203048914,
+    "diff": 0.0
+   },
+   {
+    "bound": "frac_rev_ci_hi",
+    "rerun": -0.05383465334427416,
+    "reference": -0.05383465334427416,
+    "diff": 0.0
+   },
+   {
+    "bound": "p.frac50_ci_lo",
+    "rerun": 0.42434338106362407,
+    "reference": 0.42434338106362407,
+    "diff": 0.0
+   },
+   {
+    "bound": "p.frac50_ci_hi",
+    "rerun": 0.4474586408649893,
+    "reference": 0.4474586408649893,
+    "diff": 0.0
+   },
+   {
+    "bound": "posctrl.csv f=0.00 frac_ci_lo",
+    "rerun": 0.09871663348293837,
+    "reference": 0.0987166334829383,
+    "diff": 6.938893903907228e-17
+   },
+   {
+    "bound": "posctrl.csv f=0.00 frac_ci_hi",
+    "rerun": 0.12095182735918947,
+    "reference": 0.1209518273591894,
+    "diff": 6.938893903907228e-17
+   },
+   {
+    "bound": "posctrl.csv f=0.10 frac_ci_lo",
+    "rerun": 0.16731499808387965,
+    "reference": 0.1673149980838796,
+    "diff": 5.551115123125783e-17
+   },
+   {
+    "bound": "posctrl.csv f=0.10 frac_ci_hi",
+    "rerun": 0.19069801961511446,
+    "reference": 0.1906980196151144,
+    "diff": 5.551115123125783e-17
+   },
+   {
+    "bound": "posctrl.csv f=0.25 frac_ci_lo",
+    "rerun": 0.26713436287139175,
+    "reference": 0.2671343628713917,
+    "diff": 5.551115123125783e-17
+   },
+   {
+    "bound": "posctrl.csv f=0.25 frac_ci_hi",
+    "rerun": 0.29139174032920134,
+    "reference": 0.2913917403292013,
+    "diff": 5.551115123125783e-17
+   }
+  ]
+ }
+}

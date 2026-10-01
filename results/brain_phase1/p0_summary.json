@@ -1,0 +1,16 @@
+{
+ "n_donors": 233,
+ "included_extra": [
+  "cc_umi_frac",
+  "frac_Oligo",
+  "frac_Immune"
+ ],
+ "has_pmi": false,
+ "has_rin": false,
+ "has_ph": false,
+ "has_cod": false,
+ "has_soup": false,
+ "has_hash_pool": false,
+ "frac_neuronal_mean": 0.3850424901167905,
+ "seed": 20260914
+}

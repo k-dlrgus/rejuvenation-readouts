@@ -1,0 +1,7 @@
+Written **before any MD5 QC median, cell-cycle fraction, extrapolation row, or NonReprog − Fibroblast contrast p-value**, 2026-09-19. Report-only. No gate.
+
+Per donor × timepoint, for each of NonReprog, Fibroblast and PartialReprog with ≥30 Louvain-kept cells: median UMI, median genes, mitochondrial fraction, cell-cycle phase fractions if computable from the md2 object (louvain_obs / louvain_ams / cluster labels). If those objects have no phase / S.Score / G2M.Score columns, record that cell-cycle is not computable from the md2 object and do not substitute Seurat CellCycleScoring or a new Tirosh score.
+
+Extrapolation distance to the GTEx fibroblast training distribution: the same PCA k=50 nearest-neighbour Euclidean and Mahalanobis measures as FINDINGS_FIBRO2.md / src/fibro2_extrap.py, already computed in results/md4/t2_extrap.csv (TMM among that donor's state×timepoint rows, then frozen μ/σ/w). Read those rows. Do not re-TMM, do not refit PCA, do not rescore.
+
+Also report, for each instrument, the NonReprog − Fibroblast contrast at every timepoint where both states have ≥30 cells, calling md4_task1._one_contrast unchanged (unstratified within timepoint). If NonReprog reads consistently older than the starting fibroblasts across donors and timepoints, state that as an observation and note the paper's own remark about viral infection and culture conditions in those cells. Do not use Task 2 to discount Task 1.

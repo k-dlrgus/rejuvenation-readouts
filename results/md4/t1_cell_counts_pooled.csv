@@ -1,0 +1,11 @@
+cell_line,label,n_clusters,n_d0,n_d3,n_d7,n_d10,n_all
+GM00731,Fibroblast,4,4939,5,14,1030,5988
+GM00731,PartialReprog,6,3,5220,578,31,5832
+GM00731,EarlyPluripotency,4,2,410,3917,85,4414
+GM00731,Pluripotency,1,0,5,354,80,439
+GM00731,NonReprog,4,65,348,1932,3114,5459
+GM23815,Fibroblast,5,7703,46,2233,1373,11355
+GM23815,PartialReprog,4,9,6113,309,50,6481
+GM23815,EarlyPluripotency,8,56,316,8172,4417,12961
+GM23815,Pluripotency,1,0,91,977,181,1249
+GM23815,NonReprog,1,0,10,8,1794,1812

@@ -1,0 +1,68 @@
+Written **before any TOWARD statistic**, 2026-09-21. No threshold in this block is re-tuned after numbers exist.
+
+Question: do partially-reprogrammed cells move TOWARD young fibroblasts, or merely AWAY from old ones?
+
+Primary metric is the cosine cos_S defined below. Uncalibrated R² is never a gate. Spearman ρ is not the statistic here. Frozen ruler score is a context column only. GSE325735 is out of scope. Donors GM00731 and GM23815 are never pooled. States are never averaged. YOUNG/OLD bin boundaries are not re-chosen. Gene space is not switched to PCs. MIN_CELLS=30 is not relaxed.
+
+Seeds: 20260914 (N1 permutation of u / N2 donor splits / C3 fold shuffle / n_random). 20260918 (bootstrap). n_perm=200. n_boot=200. n_random=200.
+
+Inputs (read from disk; refit nothing, rescore nothing, re-cluster nothing):
+- GTEx V10 cultured-fibroblast Stage 0 matrix already on disk as data/processed/fibro/stage1_fibro.npz plus results/fibro/stage1_obs.csv (SMAFRZE==RNASEQ, SMTSD=="Cells - Cultured fibroblasts"; gene filter ≥6 counts in ≥20% samples; TMM/edgeR log2-CPM prior.count=2). This is the only GTEx matrix used. It is not rebuilt from the GCT.
+- Frozen ruler results/fibro/frozen_ruler_ridge_raw.npz — used only (i) to fix the overlap gene set and the GTEx training μ/σ, and (ii) to report a context column (Z @ w). It is NOT the statistic. Do not refit it.
+- GSE297234 labels and scores on disk: results/md2/t2_cluster_labels_*.csv, results/md2/louvain_obs_*.csv, data/processed/md4/cell_scores_*.npz, data/processed/md4/louvain_rulerY_*.npz. Labels are the md2 argmax assignment. Do NOT re-label, re-run Louvain, or re-tune AddModuleScore. cell_scores labels must match md2 labels or STOP.
+- results/md4/t2_extrap.csv (PCA k=50 nn_euclidean / Mahalanobis). Read as-is. Do not recompute. Do not average across days.
+
+Anchors (frozen to results/toward/anchors.npz before any GSE297234 vector is computed):
+- YOUNG = AGE bins 20-29 and 30-39 (n=113 expected; report actual).
+- OLD   = AGE bins 60-69 and 70-79 (n=231 expected; report actual).
+- Middle 40-49 and 50-59 is excluded from both anchors and is reported, not dropped silently.
+- If either anchor has n<50, STOP and report.
+- Gene space = frozen-ruler overlap gene set, unchanged. Per-gene z-score using the frozen GTEx training μ/σ only. Missing genes at z=0.
+- c_young = mean z-vector of YOUNG donors. c_old = mean z-vector of OLD donors.
+- u = (c_young − c_old) / ||c_young − c_old||  (the aging-axis anchor; unit length).
+
+Displacement, per donor (never pooled), states Fibroblast / PartialReprog / EarlyPluripotency / Pluripotency / NonReprog:
+- Timepoints pooled within each destination state. Report timepoint composition.
+- Fibroblast pseudobulk uses d0 cells only and is the ORIGIN. Fibroblast is not a destination. Non-d0 Fibroblast cells are reported as unused, not a destination.
+- If a donor has <30 d0 Fibroblast cells, STOP for that donor.
+- A destination state qualifies iff n_cells ≥ 30 in that donor. If it does not qualify, it is reported as skipped with its n, not dropped.
+- TMM among that donor's panel (origin + qualifying destinations), then log2-CPM prior.count=2, then frozen μ/σ.
+- For each non-origin qualifying state S: d_S = z(S) − z(Fibroblast_d0).
+
+Primary statistic:
+  cos_S = dot(d_S, u) / ||d_S||
+(u is unit, so this is cosine alignment of the move with the young-minus-old axis.)
+
+Reported alongside, never substituted for cos_S: ||d_S||; dist_young_S, dist_young_origin, delta_young = dist_young_S − dist_young_origin (negative = closer to young); dist_old_S, dist_old_origin, delta_old (positive = farther from old); frozen-ruler score of each pseudobulk (context); nn_euclidean and Mahalanobis for that state from md4 t2_extrap.csv as-is by day (not averaged).
+
+"TOWARD young" for a state REQUIRES ALL of: cos_S > 0, p_N1 ≤ 0.05, p_N2 ≤ 0.05, AND delta_young < 0. Either cosine-without-closer or closer-without-cosine is "AWAY from old only" / not toward-young. Passing one null is not passing. Both N1 and N2 required. delta_old > 0 alone is not evidence of toward-young.
+
+Nulls (not interchangeable), both reported for every qualifying destination state:
+- N1 (direction null, primary): 200 random unit vectors u_r by permuting the entries of u across genes (seed 20260914, independent Generator). p = (#{cos(d_S, u_r) ≥ cos_S} + 1) / 201.
+- N2 (anchor null): 200 splits of ALL GTEx cultured-fibroblast donors in the Stage 0 matrix into two equal-size pseudo-groups at random IGNORING age, rebuilding u each time (seed 20260914, independent Generator). Remainder of 1 donor if n odd is dropped from both groups that draw. p as in N1.
+PASS_NULLS = p_N1 ≤ 0.05 AND p_N2 ≤ 0.05.
+
+Bootstrap (seed 20260918, independent Generator per donor with offset 0 for GM00731 and 1 for GM23815): B=200 cell resamples with replacement within origin and within each qualifying destination independently; re-sum, re-TMM the donor panel, re-apply frozen μ/σ; 95% percentile CI on cos_S and delta_young. Anchors stay frozen. Not a gate.
+
+C3 positive control (GTEx only; run after anchors.npz is written and BEFORE any GSE297234 vector):
+- Shuffle all Stage 0 donors with seed 20260914 (independent Generator), assign fold = i % 5.
+- Each fold: rebuild YOUNG/OLD/u on the training donors only, same bins, same frozen μ/σ (μ/σ are not refit per fold).
+- Origin = mean z of held-out OLD donors. Destination = c_young of the training fold. d = c_young_train − mean(z_old_test). cos_fold = dot(d, u_train) / ||d||.
+- Construction minimum, frozen: n_young_train ≥ 20, n_old_train ≥ 20, n_old_test ≥ 5 in every fold. If any fold fails construction, C3 fails.
+- C3 pass = all 5 folds finite AND every fold cos > 0.50 (strongly positive). This bar is not re-tuned.
+- If C3 fails, the statistic is broken. STOP. Nothing downstream (no GSE vectors, no reading) is reported.
+
+C1 Pluripotency (per donor, after GSE vectors): if Pluripotency qualifies and meets TOWARD young (cos>0, both nulls, delta_young<0), the statistic is reading displacement magnitude / extrapolation, not direction toward young. Then PartialReprog is uninterpretable regardless of how it looks.
+C2 NonReprog: off-trajectory. Reported, not a gate.
+If Pluripotency is skipped (n<30), C1 cannot be evaluated; do not fire toward-young; key = c1_unevaluable.
+
+Pre-registered reading (only the outcome that fired; per donor). GM23815 is a contrast, never the claim-supporting reading. Decision order:
+1. C3 fails → key `c3_broken`. STOP. Nothing downstream is reported.
+2. Donor origin STOP → key `origin_stop`.
+3. PartialReprog skipped → key `skipped_partial`.
+4. PartialReprog has cos_S > 0 and delta_young ≥ 0 → key `away_from_old_only`. This is a real negative finding: movement is away-from-old only. A 1D age score cannot distinguish these two cases. Do not fall back to the frozen-ruler score.
+5. PartialReprog meets TOWARD young AND Pluripotency also meets TOWARD young → key `uninterpretable_c1`. Do NOT report a toward-young result. What would fix it: a direction statistic that Pluripotency does not pass, or an in-manifold target that is not the young-fibroblast centroid in the full overlap space.
+6. PartialReprog meets TOWARD young AND Pluripotency does not (C1 clean) AND C3 passed → key `toward_young`. Partially-reprogrammed cells move toward the young fibroblast target, not merely away from the old state. The safe-target framing is supported in this dataset. State n_cells in the same sentence.
+7. PartialReprog does not pass both nulls → key `no_directional_structure`. If both p>0.05, say so. If exactly one p≤0.05, say passing one null is not passing. Do not fall back to the frozen-ruler score.
+
+What does not count: frozen-ruler movement (label any such sentence context); large ||d_S||; delta_old>0 alone; one of two nulls; averaging donors or states; re-choosing bins; cosine-on-PCs; relaxing MIN_CELLS=30.

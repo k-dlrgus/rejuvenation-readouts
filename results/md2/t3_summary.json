@@ -1,0 +1,6 @@
+{
+ "aging_signature_built": false,
+ "aging_signature_reason": "GSE113957_fpkm.txt.gz values are not integer counts (cannot apply DESeq2). FINDINGS_FIBRO2.md: series matrix HEAD 404. STAR Methods require DESeq2 old-vs-young with PCA-based old/young split. Not approximating from FPKM and not substituting mmc3 Age up (n=1533) / Age down (n=2007). Aging-signature comparison reported as not run.",
+ "n_rows": 6,
+ "note": "report-only; no gate; frozen ruler numbers read from results/fibro2/; ruler not refit"
+}

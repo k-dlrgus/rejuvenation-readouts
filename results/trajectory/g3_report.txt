@@ -1,0 +1,45 @@
+====================================================================================================
+TRAJECTORY G3 — frozen scores on mouse aging + reprogramming  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO GENE SELECTION: every gene in the Phase-1 matrix enters every model with a weight.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+[data] cached TMS non-myeloid: 11554919-8ee5-411b-a088-7be1a7c9a5a6.h5ad
+[data] cached TMS myeloid: b14cb09f-dd56-4c6c-bbf1-6822f01af53f.h5ad
+[data] cached GSE224438: GSE224438_RAW.tar
+[frozen] genes=25526 types=20 identity_axes=19
+[orthologs] strict 1:1 pairs=14239
+[filter] frozen human genes=25526; strict 1:1 orthologs=14239
+[TMS] reading <repo>\data\raw\trajectory\tms_brain_nonmyeloid\11554919-8ee5-411b-a088-7be1a7c9a5a6.h5ad
+[filter] tms_nonmyeloid: 7,249 cells x 21,025 genes; obs cols=['FACS.selection', 'age', 'cell', 'free_annotation', 'method', 'donor_id', 'subtissue', 'n_genes', 'n_counts', 'louvain', 'leiden', 'assay_ontology_term_id', 'disease_ontology_term_id', 'cell_type_ontology_term_id', 'tissue_ontology_term_id', 'development_stage_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'sex_ontology_term_id', 'is_primary_data', 'suspension_type', 'tissue_type', 'cell_type', 'assay', 'disease', 'sex']
+[filter] donor_col=donor_id ct_col=cell_type age_col=development_stage numeric age 7249/7249
+[filter] gene id kind=ensembl example=['ENSMUSG00000029422' 'ENSMUSG00000076126' 'ENSMUSG00000049036']
+[filter] tms_nonmyeloid using adata.raw.X (counts)
+[filter] tms_nonmyeloid pseudobulks with ≥10 cells: 96
+[filter] mouse genes=21025; mapped 1:1 onto frozen human genes=13028 (0.510 of frozen)
+   mapped types: 0.823 of pseudobulks have a DLPFC type map
+[TMS] reading <repo>\data\raw\trajectory\tms_brain_myeloid\b14cb09f-dd56-4c6c-bbf1-6822f01af53f.h5ad
+[filter] tms_myeloid: 13,417 cells x 21,025 genes; obs cols=['FACS.selection', 'age', 'cell', 'method', 'donor_id', 'subtissue', 'n_genes', 'n_counts', 'louvain', 'leiden', 'assay_ontology_term_id', 'disease_ontology_term_id', 'cell_type_ontology_term_id', 'tissue_ontology_term_id', 'development_stage_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'sex_ontology_term_id', 'is_primary_data', 'suspension_type', 'tissue_type', 'cell_type', 'assay', 'disease', 'sex', 'tissue']
+[filter] donor_col=donor_id ct_col=cell_type age_col=development_stage numeric age 13417/13417
+[filter] gene id kind=ensembl example=['ENSMUSG00000029422' 'ENSMUSG00000076126' 'ENSMUSG00000049036']
+[filter] tms_myeloid using adata.raw.X (counts)
+[filter] tms_myeloid pseudobulks with ≥10 cells: 24
+[filter] mouse genes=21025; mapped 1:1 onto frozen human genes=13028 (0.510 of frozen)
+   mapped types: 1.000 of pseudobulks have a DLPFC type map
+
+[G3] independent mouse aging validation (frozen scores, no refit)
+[G3] per-type frozen-score vs age (Spearman):
+   pericyte: n=10 Spearman=-0.657 OLS_R²=+0.490
+   oligodendrocyte precursor cell: n=11 Spearman=-0.637 OLS_R²=+0.417
+   GABAergic neuron: n=13 Spearman=-0.553 OLS_R²=+0.155
+   astrocyte: n=11 Spearman=-0.178 OLS_R²=+0.045
+   endothelial cell: n=11 Spearman=-0.178 OLS_R²=+0.065
+   microglial cell: n=14 Spearman=-0.037 OLS_R²=+0.127
+   oligodendrocyte: n=12 Spearman=+0.419 OLS_R²=+0.181
+   perivascular macrophage: n=10 Spearman=+0.560 OLS_R²=+0.117
+   donor-mean age_score_ridge OLS_R²(age~score)=+0.130  Pearson=+0.361  Spearman=+0.343  n_donors=15  median-type OLS_R²=+0.141 (n_types=8)
+   shuffle-age null OLS_R² mean=+0.068  p_ols=0.235  null Spearman mean=-0.013  p_spearman=0.235  n_perm=50
+   cortex-subtissue sensitivity: n_donors=11 OLS_R²=+0.002 Spearman=-0.254
+   per-type Spearman signs: +2 / -6  (mixed signs ⇒ donor-mean can cancel)
+[G3] transfer_ok=False
+[G3] STOP: transfer failed. The frozen human DLPFC age score does not track chronological age in independent mouse brain aging (Tabula Muris Senis) after 1:1 ortholog mapping (13028/25526 genes mapped, 51.0% of frozen). OLS R² of mouse age ~ score = +0.130 (null +0.068, p=0.235); Spearman ρ=+0.343 (p=0.235). Per-type Spearman signs +2 / -6 (mixed signs; a donor-mean can cancel). The trajectory is not computed. Needed: a human adult cortical/DLPFC scRNA dataset (preferred) in which the frozen score tracks donor age, plus an adult cortical OSK or partial-reprogramming time course with cell-type labels; or a mouse cortical aging atlas on which this frozen score tracks age, plus an adult cortical (not SVZ, not E15.5) OSK time course.

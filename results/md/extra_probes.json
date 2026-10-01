@@ -1,0 +1,72 @@
+[
+  {
+    "url": "https://api.biorxiv.org/pubs/10.1016/j.cell.2025.07.031",
+    "status": 200,
+    "nbytes": 74,
+    "ctype": "application/json",
+    "excerpt": "{\"messages\":[{\"status\":\"Server not recognized\"}], \"collection\":[]}\r \r \r \r "
+  },
+  {
+    "url": "https://api.crossref.org/works?query.bibliographic=Prevalent%20mesenchymal%20drift%20Lu&filter=type:posted-content&rows=20",
+    "status": 200,
+    "nbytes": 83305,
+    "ctype": "application/json",
+    "excerpt": "{\"status\":\"ok\",\"message-type\":\"work-list\",\"message-version\":\"1.0.0\",\"message\":{\"facets\":{},\"total-results\":65390,\"items\":[{\"indexed\":{\"date-parts\":[[2023,8,19]],\"date-time\":\"2023-08-19T04:36:13Z\",\"timestamp\":1692419773257},\"posted\":{\"date-parts\":[[2023]]},\"group-title\":\"SSRN\",\"reference-count\":0,\"publisher\":\"Elsevier BV\",\"content-domain\":{\"domain\":[],\"crossmark-restriction\":false},\"DOI\":\"10.2139\\/"
+  },
+  {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=GSE297234[ACCN]&retmode=json",
+    "status": 200,
+    "nbytes": 392,
+    "ctype": "application/json; charset=UTF-8",
+    "excerpt": "{\"header\":{\"type\":\"esearch\",\"version\":\"0.3\"},\"esearchresult\":{\"count\":\"10\",\"retmax\":\"10\",\"retstart\":\"0\",\"idlist\":[\"200297234\",\"100024676\",\"308986593\",\"308986592\",\"308986591\",\"308986590\",\"308986589\",\"308986588\",\"308986587\",\"308986586\"],\"translationset\":[],\"translationstack\":[{\"term\":\"GSE297234[ACCN]\",\"field\":\"ACCN\",\"count\":\"10\",\"explode\":\"N\"},\"GROUP\"],\"querytranslation\":\"GSE297234[ACCN]\"}} "
+  },
+  {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=Prevalent%20mesenchymal%20drift&retmode=json&retmax=20",
+    "status": 200,
+    "nbytes": 540,
+    "ctype": "application/json; charset=UTF-8",
+    "excerpt": "{\"header\":{\"type\":\"esearch\",\"version\":\"0.3\"},\"esearchresult\":{\"count\":\"2\",\"retmax\":\"2\",\"retstart\":\"0\",\"idlist\":[\"200297234\",\"200297233\"],\"translationset\":[],\"translationstack\":[{\"term\":\"Prevalent[All Fields]\",\"field\":\"All Fields\",\"count\":\"2101\",\"explode\":\"N\"},{\"term\":\"mesenchymal[All Fields]\",\"field\":\"All Fields\",\"count\":\"45322\",\"explode\":\"N\"},\"AND\",{\"term\":\"drift[All Fields]\",\"field\":\"All Fields\""
+  },
+  {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=bioproject&term=PRJNA1263211&retmode=json",
+    "status": 200,
+    "nbytes": 303,
+    "ctype": "application/json; charset=UTF-8",
+    "excerpt": "{\"header\":{\"type\":\"esearch\",\"version\":\"0.3\"},\"esearchresult\":{\"count\":\"1\",\"retmax\":\"1\",\"retstart\":\"0\",\"idlist\":[\"1263211\"],\"translationset\":[],\"translationstack\":[{\"term\":\"PRJNA1263211[All Fields]\",\"field\":\"All Fields\",\"count\":\"1\",\"explode\":\"N\"},\"GROUP\"],\"querytranslation\":\"PRJNA1263211[All Fields]\"}} "
+  },
+  {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=PRJNA1263211&retmode=json&retmax=5",
+    "status": 200,
+    "nbytes": 348,
+    "ctype": "application/json; charset=UTF-8",
+    "excerpt": "{\"header\":{\"type\":\"esearch\",\"version\":\"0.3\"},\"esearchresult\":{\"count\":\"8\",\"retmax\":\"5\",\"retstart\":\"0\",\"idlist\":[\"38661437\",\"38661436\",\"38661435\",\"38661434\",\"38661433\"],\"translationset\":[],\"translationstack\":[{\"term\":\"PRJNA1263211[All Fields]\",\"field\":\"All Fields\",\"count\":\"8\",\"explode\":\"N\"},\"GROUP\"],\"querytranslation\":\"PRJNA1263211[All Fields]\"}} "
+  },
+  {
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc4.docx",
+    "status": 404,
+    "nbytes": 189,
+    "ctype": "text/xml",
+    "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><service-error><status><statusCode>NOT FOUND</statusCode><statusText>Attachment/Metadata missing</statusText></status></service-error>"
+  },
+  {
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc1.docx",
+    "status": 404,
+    "nbytes": 189,
+    "ctype": "text/xml",
+    "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><service-error><status><statusCode>NOT FOUND</statusCode><statusText>Attachment/Metadata missing</statusText></status></service-error>"
+  },
+  {
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-si1.pdf",
+    "status": 404,
+    "nbytes": 189,
+    "ctype": "text/xml",
+    "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><service-error><status><statusCode>NOT FOUND</statusCode><statusText>Attachment/Metadata missing</statusText></status></service-error>"
+  },
+  {
+    "url": "https://www.biorxiv.org/search/text_abstract_title%3A%22mesenchymal%20drift%22%20text_abstract_title_flags%3Amatch-phrase%20jcode%3Abiorxiv%20numresults%3A10%20sort%3Arelevance-rank%20format_result%3Acondensed",
+    "status": 403,
+    "nbytes": 6238,
+    "ctype": "text/html; charset=UTF-8",
+    "excerpt": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39"
+  }
+]

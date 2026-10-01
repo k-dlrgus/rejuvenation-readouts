@@ -1,0 +1,13 @@
+{
+ "ran": true,
+ "n_overlap": 20115,
+ "angle_deg": 80.19970901762603,
+ "null_mean": 89.67042162311502,
+ "null_median": 89.7175332213159,
+ "p": 0.000999000999000999,
+ "source": "v1_axes.npz",
+ "w_key": "W_age_ridge",
+ "n_types_collapsed": 20,
+ "n_random": 1000,
+ "note": "one number with a null; not evidence beyond closer-than-random"
+}

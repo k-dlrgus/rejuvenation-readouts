@@ -1,0 +1,76 @@
+﻿=== (a) simulation: expected within-pool retention for a REAL age effect ===
+       unique_age  within_pool  retained_mean  retained_min
+beta                                                       
+0.005      0.0051       0.0066         1.2962        1.1311
+0.010      0.0259       0.0250         0.9647        0.8694
+0.020      0.1066       0.0914         0.8573        0.8149
+expected retention ~ 1 - R2(age~pool) = 0.766   (observed median for primary A-genes: 0.034)
+
+=== (b) is per-cell depth a pool-level (batch) property? ===
+   R2( log mean_counts_per_cell [cell-type-residualized] ~ C(pool) ) = 0.855
+   R2( log mean_genes_per_cell [cell-type-residualized] ~ C(pool) ) = 0.812
+   donor-level corr(age, depth): between-pool means r=+0.432 (n=75 pools); within-pool r=-0.034
+
+=== (c) genome-wide: within-pool unique age variance ===
+                         0.500   0.900   0.950   0.990   0.999   1.000
+pooled unique_age      0.00024 0.00183 0.00291 0.00736 0.02154 0.03500
+within-pool unique_age 0.00010 0.00062 0.00092 0.00184 0.00454 0.01262
+   genes with unique_age >= 0.002: pooled=1256, within-pool=116, both=85
+   genes with unique_age >= 0.005: pooled=283, within-pool=10, both=9
+   genes with unique_age >= 0.01: pooled=76, within-pool=2, both=1
+Spearman(pooled unique_age, within-pool unique_age) over all genes: 0.337
+
+Top 25 genes by WITHIN-POOL unique age variance:
+                   symbol  unique_age_within_pool  unique_age  unique_ct  r_mean_counts  flag_cell_cycle  flag_technical  flag_sex
+ENSG00000138326     RPS24                  0.0126      0.0006     0.4102         0.4639            False            True     False
+ENSG00000124766      SOX4                  0.0123      0.0215     0.4578        -0.0880            False           False     False
+ENSG00000157514   TSC22D3                  0.0098      0.0350     0.2514         0.2262            False           False      True
+ENSG00000173114     LRRN3                  0.0079      0.0187     0.6053        -0.0523            False           False     False
+ENSG00000174307    PHLDA3                  0.0056      0.0090     0.1025         0.0875            False           False     False
+ENSG00000010030      ETV7                  0.0056      0.0091     0.1066         0.0921            False           False     False
+ENSG00000067082      KLF6                  0.0055      0.0068     0.5253         0.1493            False           False     False
+ENSG00000130741    EIF2S3                  0.0054      0.0136     0.3438        -0.2343            False           False      True
+ENSG00000135919  SERPINE2                  0.0051      0.0060     0.3299         0.0115            False           False     False
+ENSG00000147889    CDKN2A                  0.0050      0.0100     0.2871         0.0799            False           False     False
+ENSG00000180875     GREM2                  0.0050      0.0098     0.3053         0.0988            False           False     False
+ENSG00000206195    DUXAP8                  0.0047      0.0065     0.0464         0.0208            False           False     False
+ENSG00000114631    PODXL2                  0.0046      0.0042     0.0835         0.0594            False           False     False
+ENSG00000100097    LGALS1                  0.0046      0.0046     0.8309         0.0160            False           False     False
+ENSG00000265972     TXNIP                  0.0045      0.0015     0.2363        -0.0859            False           False     False
+ENSG00000125534     PPDPF                  0.0045      0.0011     0.3334        -0.2113            False           False     False
+ENSG00000203710       CR1                  0.0045      0.0054     0.6331         0.0211            False           False     False
+ENSG00000263417    GTSCR1                  0.0044      0.0059     0.5982         0.0479            False           False     False
+ENSG00000244752    CRYBB2                  0.0044      0.0033     0.0140        -0.0357            False           False     False
+ENSG00000136490     LIMD2                  0.0043      0.0064     0.4250         0.1173            False           False     False
+ENSG00000125726      CD70                  0.0043      0.0066     0.4245         0.0628            False           False     False
+ENSG00000197728     RPS26                  0.0042      0.0020     0.0226        -0.0434            False            True     False
+ENSG00000102317      RBM3                  0.0042      0.0143     0.2667         0.0471            False           False      True
+ENSG00000229807      XIST                  0.0041      0.0005     0.0112         0.0311            False           False      True
+ENSG00000171791      BCL2                  0.0041      0.0042     0.6185         0.0253            False           False     False
+
+=== (d) primary A-genes: age correlation pooled vs within-pool (cell-type-residualized expression) ===
+                          symbol  r_age_pooled  r_age_within_pool  r_mean_counts
+ENSG00000119335              SET        -0.181             -0.048         -0.578
+ENSG00000111913           RIPOR2        -0.177             -0.041         -0.349
+ENSG00000156136              DCK        -0.174             -0.048         -0.363
+ENSG00000169045          HNRNPH1        -0.158             -0.008         -0.709
+ENSG00000260613  ENSG00000260613        +0.154             +0.008         +0.398
+ENSG00000112308          C6orf62        -0.154             -0.007         -0.511
+ENSG00000143443          C1orf56        -0.161             -0.013         -0.676
+ENSG00000124193            SRSF6        -0.151             -0.010         -0.476
+ENSG00000159147           DONSON        +0.147             -0.001         +0.325
+ENSG00000176731             RBIS        +0.148             -0.022         +0.508
+ENSG00000102287            GABRE        +0.141             -0.010         +0.358
+ENSG00000175390            EIF3F        +0.139             +0.017         +0.515
+ENSG00000213639           PPP1CB        -0.139             +0.007         -0.544
+ENSG00000137876          RSL24D1        -0.135             -0.023         -0.457
+ENSG00000113369           ARRDC3        -0.129             -0.006         -0.454
+ENSG00000106355             LSM5        -0.134             -0.046         -0.261
+ENSG00000126524             SBDS        +0.126             +0.048         +0.177
+ENSG00000038274            MAT2B        -0.125             -0.024         -0.193
+ENSG00000070159            PTPN3        +0.117             +0.007         +0.249
+ENSG00000144674           GOLGA4        +0.122             -0.016         +0.319
+
+   primary A-genes: median |r_age| pooled=0.090, within-pool=0.018
+   all genes: 99th pct |r_age| pooled=0.111, within-pool=0.065
+   null (age permuted within pool at donor level): 99th pct |r| = 0.031, max=0.080

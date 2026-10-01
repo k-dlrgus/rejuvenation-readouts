@@ -1,0 +1,121 @@
+donor,celltype,n_cells,age,subtissue,age_score_ridge,age_score_pls,id_dist,id_assigned,id_used_type,mapped_human,source
+18_46_F,oligodendrocyte,159,1.5,Cortex ,-10.247664299739565,8.903969155768255,113.26334478398604,oligodendrocyte,oligodendrocyte,oligodendrocyte,tms_nonmyeloid
+18_46_F,"CD8-positive, alpha-beta T cell",42,1.5,Cortex ,-26.43602047114975,-51.0797031043991,136.1765818599247,GABAergic neuron,GABAergic neuron,,tms_nonmyeloid
+18_46_F,microglial cell,40,1.5,Striatum ,-4.371625539007474,54.40172722659937,218.9903411474324,L6b glutamatergic neuron of the primary motor cortex,microglial cell,microglial cell,tms_nonmyeloid
+18_46_F,astrocyte,47,1.5,Cortex ,-17.824610078470265,-30.623882530308798,109.9276097699021,astrocyte,astrocyte,astrocyte,tms_nonmyeloid
+18_46_F,ependymal cell,12,1.5,Cortex ,-16.450121461777112,-26.298008043379426,120.21857136703082,astrocyte,astrocyte,,tms_nonmyeloid
+18_46_F,brain pericyte,91,1.5,Cortex ,-13.986177208626188,-14.090574144557149,122.75177398481429,pericyte,pericyte,pericyte,tms_nonmyeloid
+18_47_F,endothelial cell,397,1.5,Cortex ,-17.07722233184402,8.080109706751024,112.16226881026584,endothelial cell,endothelial cell,endothelial cell,tms_nonmyeloid
+18_46_F,endothelial cell,541,1.5,Cortex ,-19.82708921170582,12.504814639329433,124.08127048032355,endothelial cell,endothelial cell,endothelial cell,tms_nonmyeloid
+18_45_M,endothelial cell,273,1.5,Striatum ,-17.779130814227475,18.242443150061778,114.55085573229613,endothelial cell,endothelial cell,endothelial cell,tms_nonmyeloid
+18_45_M,oligodendrocyte,101,1.5,Cortex ,-10.5843435685036,15.03578312378937,104.02509407852045,oligodendrocyte,oligodendrocyte,oligodendrocyte,tms_nonmyeloid
+18_47_F,oligodendrocyte,230,1.5,Cortex ,-8.87809367968428,18.768238654134446,104.50763563217681,oligodendrocyte,oligodendrocyte,oligodendrocyte,tms_nonmyeloid
+18_45_M,interneuron,17,1.5,Cerebellum ,-20.29986680549247,-13.015629054421833,123.61703037294127,GABAergic neuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+18_47_F,brain pericyte,53,1.5,Cortex ,-6.8357657477864615,-5.882496166977865,110.61018112704038,pericyte,pericyte,pericyte,tms_nonmyeloid
+18_45_M,astrocyte,14,1.5,Cortex ,-23.54491832349174,-26.211546293613928,129.0819106157378,astrocyte,astrocyte,astrocyte,tms_nonmyeloid
+18_46_F,interneuron,18,1.5,Cerebellum ,-22.171974872497373,-19.214936084231322,116.09115437659422,GABAergic neuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+18_45_M,neuron,27,1.5,Cerebellum ,-17.38064502440979,-28.133575194933364,102.51487630194573,VIP GABAergic interneuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+18_46_F,oligodendrocyte precursor cell,29,1.5,Cortex ,-8.662138296727692,0.6281967523409696,121.0004287897135,GABAergic neuron,oligodendrocyte precursor cell,oligodendrocyte precursor cell,tms_nonmyeloid
+18_45_M,brain pericyte,58,1.5,Cortex ,-11.261137577886245,-8.526766612185018,114.43893283010094,pericyte,pericyte,pericyte,tms_nonmyeloid
+18_46_F,neuron,47,1.5,Cerebellum ,-21.258008671340804,-40.15871167803835,111.26852833851336,VIP GABAergic interneuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+18_47_F,oligodendrocyte precursor cell,26,1.5,Cortex ,-3.780332325932027,10.821811103006567,123.91508879892659,VIP GABAergic interneuron,oligodendrocyte precursor cell,oligodendrocyte precursor cell,tms_nonmyeloid
+18_45_M,microglial cell,36,1.5,Cerebellum ,-6.443953767480736,50.06991627553133,189.58719297560316,L6 corticothalamic-projecting glutamatergic cortical neuron,microglial cell,microglial cell,tms_nonmyeloid
+18_45_M,neuroepithelial stem cell,58,1.5,Striatum ,-36.133273091847485,-59.88827754764371,124.21132749029103,L6b glutamatergic neuron of the primary motor cortex,L6b glutamatergic neuron of the primary motor cortex,,tms_nonmyeloid
+18_46_F,Bergmann glial cell,11,1.5,Cerebellum ,-18.625477799510584,-20.775479505563663,108.03927687454637,astrocyte,astrocyte,,tms_nonmyeloid
+18_47_F,astrocyte,35,1.5,Cortex ,-12.949024329559288,-25.963378972289934,103.65682478298565,astrocyte,astrocyte,astrocyte,tms_nonmyeloid
+18_46_F,T cell,20,1.5,Cortex ,-27.31873627071952,-44.5412757545802,134.22609273045907,GABAergic neuron,GABAergic neuron,,tms_nonmyeloid
+18_47_F,neuroepithelial stem cell,52,1.5,Hippocampus ,-37.981036019059744,-61.691879149810546,137.30400457211329,L6b glutamatergic neuron of the primary motor cortex,L6b glutamatergic neuron of the primary motor cortex,,tms_nonmyeloid
+18_47_F,neuron,29,1.5,Cortex ,-16.271238116959175,-21.712469122370813,100.69339378661797,GABAergic neuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+18_45_M,oligodendrocyte precursor cell,13,1.5,Hippocampus ,-8.088323340939983,0.2995278245665256,108.88999233124788,oligodendrocyte precursor cell,oligodendrocyte precursor cell,oligodendrocyte precursor cell,tms_nonmyeloid
+18_53_M,endothelial cell,147,1.5,Cortex ,-18.33472234022043,18.486233752907825,113.67593594030778,endothelial cell,endothelial cell,endothelial cell,tms_nonmyeloid
+18_53_M,oligodendrocyte,74,1.5,Cortex ,-10.388731768181675,9.125551539890305,113.43827789836442,oligodendrocyte,oligodendrocyte,oligodendrocyte,tms_nonmyeloid
+18_53_M,astrocyte,11,1.5,Cortex ,-25.81377353153055,-28.34647717437264,148.13438511237226,astrocyte,astrocyte,astrocyte,tms_nonmyeloid
+18_53_M,neuron,20,1.5,Cortex ,-23.299520600662913,-27.605079688003638,100.11154006268951,GABAergic neuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+18_53_M,ependymal cell,20,1.5,Striatum ,-14.96362881494223,-20.89892400143452,115.69337129913411,astrocyte,astrocyte,,tms_nonmyeloid
+18_47_F,interneuron,63,1.5,Striatum ,-26.788047198516296,-25.62947169099367,118.35156824924091,GABAergic neuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+18_53_M,brain pericyte,63,1.5,Cortex ,-12.225559176632641,-12.442088263990584,120.72629015958314,pericyte,pericyte,pericyte,tms_nonmyeloid
+18_53_M,oligodendrocyte precursor cell,26,1.5,Cortex ,-8.427335269473943,-0.40641808745700364,116.18855982880349,oligodendrocyte precursor cell,oligodendrocyte precursor cell,oligodendrocyte precursor cell,tms_nonmyeloid
+18_53_M,microglial cell,57,1.5,Striatum ,-4.845270760354682,74.95288936910052,276.7843657213283,L6b glutamatergic neuron of the primary motor cortex,microglial cell,microglial cell,tms_nonmyeloid
+18_53_M,neuroepithelial stem cell,24,1.5,Hippocampus ,-41.23794326811371,-71.4816401224989,140.0722395083283,L6b glutamatergic neuron of the primary motor cortex,L6b glutamatergic neuron of the primary motor cortex,,tms_nonmyeloid
+24_60_M,brain pericyte,40,1.6666666666666667,Cortex,-11.319959967406923,-3.12893972560431,117.89267918883729,pericyte,pericyte,pericyte,tms_nonmyeloid
+24_59_M,neuron,60,1.666666666666667,Hippocampus,-36.419788275959654,-27.34357643234753,151.87732862342145,L6b glutamatergic neuron of the primary motor cortex,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+24_60_M,neuron,95,1.6666666666666659,Cortex,-15.424476776016396,-34.24116282997669,106.3152379495011,VIP GABAergic interneuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+24_60_M,interneuron,55,1.6666666666666672,Cerebellum,-15.133624991845062,-15.32021153935504,102.03592433606366,GABAergic neuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+24_60_M,endothelial cell,151,1.6666666666666665,Cortex,-16.98462232983562,17.11804806072631,111.72604921713013,endothelial cell,endothelial cell,endothelial cell,tms_nonmyeloid
+24_60_M,astrocyte,31,1.666666666666666,Cortex,-18.687512953970966,-34.31455321089508,115.23785863800472,astrocyte,astrocyte,astrocyte,tms_nonmyeloid
+24_60_M,"CD8-positive, alpha-beta T cell",36,1.6666666666666665,Cortex,-30.40961360243133,-48.81336186238822,137.62416940936313,GABAergic neuron,GABAergic neuron,,tms_nonmyeloid
+24_60_M,oligodendrocyte,134,1.6666666666666667,Cortex,-8.538658312369046,9.58551527906843,111.29165718854635,oligodendrocyte,oligodendrocyte,oligodendrocyte,tms_nonmyeloid
+24_60_M,T cell,20,1.6666666666666667,Cerebellum,-31.028312556174164,-63.38211372093205,139.58855602923776,L6 corticothalamic-projecting glutamatergic cortical neuron,L6 corticothalamic-projecting glutamatergic cortical neuron,,tms_nonmyeloid
+24_60_M,macrophage,13,1.666666666666667,Cerebellum,17.81672030007125,11.798400145959915,252.61488088717897,L6b glutamatergic neuron of the primary motor cortex,perivascular macrophage,perivascular macrophage,tms_nonmyeloid
+24_60_M,oligodendrocyte precursor cell,12,1.666666666666667,Cortex,-11.384194860031748,-12.110955809426793,115.79297406663466,oligodendrocyte precursor cell,oligodendrocyte precursor cell,oligodendrocyte precursor cell,tms_nonmyeloid
+24_58_M,neuron,52,1.666666666666667,Hippocampus,-38.12092063136668,-29.04637410630716,150.072432236046,L6 corticothalamic-projecting glutamatergic cortical neuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+24_59_M,macrophage,12,1.666666666666667,Cortex,14.53319024693101,10.26889395705239,228.95223369077348,L6b glutamatergic neuron of the primary motor cortex,perivascular macrophage,perivascular macrophage,tms_nonmyeloid
+3_56_F,astrocyte,33,0.25,Striatum,-19.513952800793064,-26.70866881751907,113.22613811117856,astrocyte,astrocyte,astrocyte,tms_nonmyeloid
+3_10_M,oligodendrocyte,404,0.25,Cortex,-10.252183421119891,20.306662775569876,101.61974506738922,oligodendrocyte,oligodendrocyte,oligodendrocyte,tms_nonmyeloid
+3_10_M,endothelial cell,190,0.25,Cerebellum,-19.786085891513107,8.45369287391375,110.75162364265319,endothelial cell,endothelial cell,endothelial cell,tms_nonmyeloid
+3_9_M,neuron,63,0.25,Cerebellum,-13.413245299855777,-27.539144417582087,107.88914596195866,VIP GABAergic interneuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+3_9_M,astrocyte,156,0.25,Cortex,-12.070311196358388,-24.898400978186448,103.513908887239,astrocyte,astrocyte,astrocyte,tms_nonmyeloid
+3_11_M,endothelial cell,142,0.25,Hippocampus,-17.24172621842001,12.18910393768387,108.14660644703912,endothelial cell,endothelial cell,endothelial cell,tms_nonmyeloid
+3_8_M,medium spiny neuron,55,0.25,Striatum,-11.599343057802663,-27.62285527387557,104.83461863412303,VIP GABAergic interneuron,VIP GABAergic interneuron,,tms_nonmyeloid
+3_39_F,endothelial cell,50,0.25,Cerebellum,-16.656216704310214,27.99459189102841,105.92953513003546,endothelial cell,endothelial cell,endothelial cell,tms_nonmyeloid
+3_38_F,endothelial cell,216,0.25,Hippocampus,-17.308935214237,9.138631981628022,117.09233233698052,endothelial cell,endothelial cell,endothelial cell,tms_nonmyeloid
+3_10_M,oligodendrocyte precursor cell,46,0.25,Hippocampus,-4.7828990241930525,12.415277543453886,126.97775647574743,VIP GABAergic interneuron,oligodendrocyte precursor cell,oligodendrocyte precursor cell,tms_nonmyeloid
+3_9_M,interneuron,31,0.25,Cerebellum,-28.656433414121377,-10.08236986404656,155.3031544927625,L6 corticothalamic-projecting glutamatergic cortical neuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+3_8_M,oligodendrocyte precursor cell,35,0.25,Hippocampus,-3.4942273836166087,15.322140292685726,127.44305826945123,VIP GABAergic interneuron,oligodendrocyte precursor cell,oligodendrocyte precursor cell,tms_nonmyeloid
+3_8_M,oligodendrocyte,340,0.25,Hippocampus,-10.594661376216896,18.994698764248767,99.23989205907976,oligodendrocyte,oligodendrocyte,oligodendrocyte,tms_nonmyeloid
+3_9_M,oligodendrocyte,448,0.25,Cortex,-9.40803036205126,21.556702699980022,98.05736874630102,oligodendrocyte,oligodendrocyte,oligodendrocyte,tms_nonmyeloid
+3_38_F,oligodendrocyte,42,0.25,Hippocampus,-13.449496348988404,6.62459284933369,111.03079157544721,oligodendrocyte,oligodendrocyte,oligodendrocyte,tms_nonmyeloid
+3_10_M,neural stem cell,42,0.25,Striatum,-4.6931144600030015,-32.034939616395704,134.66721124613835,VIP GABAergic interneuron,VIP GABAergic interneuron,,tms_nonmyeloid
+3_10_M,medium spiny neuron,16,0.25,Cortex,-17.68694346827371,-28.472043127226538,102.59856019280883,GABAergic neuron,GABAergic neuron,,tms_nonmyeloid
+3_11_M,oligodendrocyte,42,0.25,Striatum,-11.993981394729548,15.190390171830547,95.88002960588464,oligodendrocyte,oligodendrocyte,oligodendrocyte,tms_nonmyeloid
+3_9_M,endothelial cell,76,0.25,Cortex,-17.62471344742561,12.860760732097962,103.11890912453009,endothelial cell,endothelial cell,endothelial cell,tms_nonmyeloid
+3_9_M,Bergmann glial cell,12,0.25,Cerebellum,-15.136536780631353,-22.764258347872843,106.92814442096403,astrocyte,astrocyte,,tms_nonmyeloid
+3_9_M,oligodendrocyte precursor cell,50,0.25,Hippocampus,-2.1735082642796324,15.795122941633743,125.81429609686708,VIP GABAergic interneuron,oligodendrocyte precursor cell,oligodendrocyte precursor cell,tms_nonmyeloid
+3_38_F,oligodendrocyte precursor cell,14,0.25,Hippocampus,-8.383839902736565,1.6687928898195517,114.56260054049758,oligodendrocyte precursor cell,oligodendrocyte precursor cell,oligodendrocyte precursor cell,tms_nonmyeloid
+3_8_M,astrocyte,64,0.25,Hippocampus,-11.698198995981377,-24.192784400007454,104.60661628930247,astrocyte,astrocyte,astrocyte,tms_nonmyeloid
+3_9_M,brain pericyte,28,0.25,Cortex,-3.7533977205114493,-1.7431960404271818,108.16591797825684,pericyte,pericyte,pericyte,tms_nonmyeloid
+3_11_M,neuron,11,0.25,Cerebellum,-19.687313681834873,-29.77761893136532,106.01799319428582,GABAergic neuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+3_10_M,astrocyte,125,0.25,Cortex,-13.627738071927226,-26.68300167495153,105.66575796670529,astrocyte,astrocyte,astrocyte,tms_nonmyeloid
+3_8_M,endothelial cell,47,0.25,Hippocampus,-15.177863420178342,17.49707662748689,103.01192318913708,endothelial cell,endothelial cell,endothelial cell,tms_nonmyeloid
+3_56_F,oligodendrocyte,38,0.25,Striatum,-12.64955634260542,8.457096016565453,106.92116799435264,oligodendrocyte,oligodendrocyte,oligodendrocyte,tms_nonmyeloid
+3_10_M,brain pericyte,86,0.25,Cortex,-7.476714188920903,-10.130561478627975,116.0231166159552,pericyte,pericyte,pericyte,tms_nonmyeloid
+3_8_M,brain pericyte,15,0.25,Hippocampus,-5.942578209757409,-3.1790016278903526,114.77752146474845,pericyte,pericyte,pericyte,tms_nonmyeloid
+3_10_M,neuron,46,0.25,Cortex,-16.472081492499953,-34.36744458802262,111.22007347239308,VIP GABAergic interneuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+3_11_M,oligodendrocyte precursor cell,24,0.25,Hippocampus,-4.62502258992958,11.247919224429225,114.79001188146248,VIP GABAergic interneuron,oligodendrocyte precursor cell,oligodendrocyte precursor cell,tms_nonmyeloid
+3_39_F,astrocyte,56,0.25,Cortex,-18.043333463439208,-26.92523395459747,105.25753273996243,astrocyte,astrocyte,astrocyte,tms_nonmyeloid
+3_38_F,medium spiny neuron,11,0.25,Striatum,-21.199946580420036,-32.26317510558263,105.22435969310106,GABAergic neuron,GABAergic neuron,,tms_nonmyeloid
+3_8_M,neural stem cell,17,0.25,Hippocampus,-6.2193031473945775,25.407799516978177,121.57158243483026,oligodendrocyte,oligodendrocyte,,tms_nonmyeloid
+3_38_F,brain pericyte,28,0.25,Cortex,-8.021756037553155,-6.453780109438609,117.44739888553181,pericyte,pericyte,pericyte,tms_nonmyeloid
+3_39_F,oligodendrocyte,82,0.25,Cortex,-10.766731094085566,12.189290338283863,99.90564539817562,oligodendrocyte,oligodendrocyte,oligodendrocyte,tms_nonmyeloid
+3_10_M,interneuron,15,0.25,Cerebellum,-18.4879606485431,-9.978160203683633,117.85905636634664,GABAergic neuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+3_39_F,oligodendrocyte precursor cell,28,0.25,Cortex,-4.434361141716172,9.292194877475625,123.24242649215009,GABAergic neuron,oligodendrocyte precursor cell,oligodendrocyte precursor cell,tms_nonmyeloid
+3_8_M,neuron,14,0.25,Cerebellum,-17.75738813864577,-23.334080633557488,98.06302993758185,GABAergic neuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+3_38_F,astrocyte,13,0.25,Striatum,-24.257055076422212,-28.656148231335866,123.88300988759362,astrocyte,astrocyte,astrocyte,tms_nonmyeloid
+3_38_F,neuron,12,0.25,Cerebellum,-20.268085463017883,-31.066934078998028,106.11350246271051,GABAergic neuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+3_10_M,Bergmann glial cell,11,0.25,Cerebellum,-15.53403275486022,-21.167723346286845,108.92560877402599,astrocyte,astrocyte,,tms_nonmyeloid
+3_56_F,interneuron,14,0.25,Cerebellum,-31.992091247581516,-22.191202578507895,167.32227781641686,L6 corticothalamic-projecting glutamatergic cortical neuron,GABAergic neuron,GABAergic neuron,tms_nonmyeloid
+3_11_M,brain pericyte,17,0.25,Hippocampus,-9.336099014853389,-3.579860596398612,109.50888213501938,pericyte,pericyte,pericyte,tms_nonmyeloid
+18_47_F,microglial cell,1186,1.5,Hippocampus ,-0.31127084480959805,32.731168846580545,119.29596206489435,microglial cell,microglial cell,microglial cell,tms_myeloid
+18_46_F,microglial cell,1222,1.5,Striatum ,0.8667395544520438,33.87790757937812,118.32209355256855,microglial cell,microglial cell,microglial cell,tms_myeloid
+18_45_M,microglial cell,1206,1.5,Hippocampus ,-0.12377508530022506,34.2909156767605,119.54356622570046,microglial cell,microglial cell,microglial cell,tms_myeloid
+18_53_M,microglial cell,761,1.5,Striatum ,-0.11294069482494483,33.59543720183039,114.76692281354605,microglial cell,microglial cell,microglial cell,tms_myeloid
+18_46_F,macrophage,20,1.5,Cerebellum ,12.340022641830053,11.927476902356833,160.18001019000903,microglial cell,perivascular macrophage,perivascular macrophage,tms_myeloid
+18_53_M,macrophage,21,1.5,Cerebellum ,15.220272332787104,14.774785823717892,150.48747217360938,microglial cell,perivascular macrophage,perivascular macrophage,tms_myeloid
+18_47_F,macrophage,24,1.5,Cerebellum ,11.451746601909832,9.600714002194618,164.24454856605485,L6b glutamatergic neuron of the primary motor cortex,perivascular macrophage,perivascular macrophage,tms_myeloid
+18_45_M,macrophage,21,1.5,Cerebellum ,12.397713357161136,12.721189699847807,153.58503669828644,pericyte,perivascular macrophage,perivascular macrophage,tms_myeloid
+24_60_M,microglial cell,1153,1.6666666666666665,Hippocampus,-0.03349062268706632,31.14570696087662,114.85071100956502,microglial cell,microglial cell,microglial cell,tms_myeloid
+24_59_M,microglial cell,1022,1.6666666666666667,Hippocampus,0.649209215411828,39.28243327713991,126.92001105357093,microglial cell,microglial cell,microglial cell,tms_myeloid
+24_60_M,macrophage,42,1.666666666666667,Cerebellum,15.112924691495499,14.588320424634256,166.74768227346115,oligodendrocyte precursor cell,perivascular macrophage,perivascular macrophage,tms_myeloid
+24_59_M,macrophage,28,1.6666666666666663,Cerebellum,16.44148885577457,15.530988259762323,167.1795115181326,oligodendrocyte precursor cell,perivascular macrophage,perivascular macrophage,tms_myeloid
+24_58_M,microglial cell,1215,1.6666666666666667,Striatum,1.4000193966733208,33.55777054012689,118.60164194480983,microglial cell,microglial cell,microglial cell,tms_myeloid
+24_58_M,macrophage,38,1.6666666666666663,Cerebellum,12.12341187841886,11.914594040396965,167.19310490591124,L6 corticothalamic-projecting glutamatergic cortical neuron,perivascular macrophage,perivascular macrophage,tms_myeloid
+24_61_M,macrophage,49,1.6666666666666667,Cerebellum,13.514108796558077,14.78334618233994,158.6191060612411,microglial cell,perivascular macrophage,perivascular macrophage,tms_myeloid
+24_61_M,microglial cell,877,1.6666666666666665,Hippocampus,-0.0732482921059768,30.468638964575312,114.1921687765994,microglial cell,microglial cell,microglial cell,tms_myeloid
+3_39_F,microglial cell,850,0.25,Striatum,-0.059411982331428026,33.236405113866304,118.36086537127868,microglial cell,microglial cell,microglial cell,tms_myeloid
+3_56_F,microglial cell,294,0.25,Striatum,0.533377689843352,33.57354291462023,112.66601193293104,microglial cell,microglial cell,microglial cell,tms_myeloid
+3_38_F,microglial cell,1091,0.25,Hippocampus,-0.25288162693646465,30.78763509784224,113.86812682343093,microglial cell,microglial cell,microglial cell,tms_myeloid
+3_8_M,microglial cell,581,0.25,Cortex,0.3226118334824101,30.718295849484893,105.53814517599999,microglial cell,microglial cell,microglial cell,tms_myeloid
+3_9_M,microglial cell,674,0.25,Striatum,1.1147429283773727,30.1081574981781,101.35414781301344,microglial cell,microglial cell,microglial cell,tms_myeloid
+3_10_M,microglial cell,998,0.25,Hippocampus,0.6533019306590817,32.1015416429416,102.53181005718598,microglial cell,microglial cell,microglial cell,tms_myeloid
+3_10_M,macrophage,21,0.25,Cerebellum,10.791952328588234,12.179679431168468,141.89165045792765,microglial cell,perivascular macrophage,perivascular macrophage,tms_myeloid
+3_38_F,macrophage,11,0.25,Cerebellum,13.869185258234845,13.06515314800193,155.28934205442675,pericyte,perivascular macrophage,perivascular macrophage,tms_myeloid

@@ -1,0 +1,2 @@
+DISAGREEMENT between CV schemes
+LOSO verdict = falsified (not separable); within-site verdict = soundness-fail. Hard rule: report the disagreement rather than picking the better number. LOSO: R²_A − R²_I = -0.279 < 0.10; Acc_A >= 0.9 × Acc_I (0.992). Within-site: shuffle-age R²=0.195 > 0.10 (pipeline soundness fail); R²_I >= 0.8 × R²_A (1.319); R²_A − R²_I = -0.135 < 0.10; Acc_A >= 0.9 × Acc_I (0.995).

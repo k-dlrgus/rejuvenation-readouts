@@ -1,0 +1,19 @@
+{
+ "seed": 20260914,
+ "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11",
+ "n_boot": 20,
+ "n_perm": 20,
+ "angle_bar_deg": 35.0,
+ "baseline": {
+  "boot_median_angle": 45.07377681100883,
+  "within_site_r2_v2": 0.231,
+  "within_site_r2_g1": 0.31664675981668755,
+  "transfer_H_to_M": -0.2134283411459802,
+  "transfer_M_to_H": -0.4994978875331906,
+  "young_old_angle": 86.11123851494071,
+  "source": "results/target json"
+ },
+ "stop_L2": true,
+ "winner": null,
+ "n_pass_both": 0
+}

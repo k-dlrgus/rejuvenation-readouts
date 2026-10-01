@@ -1,0 +1,31 @@
+[GTEx Brain - Frontal Cortex (BA9) -> Brain - Cortex] rho: stored=0.441061177656 recomputed=0.441061177656 |diff|=0.00e+00
+[GTEx Brain - Frontal Cortex (BA9) -> Brain - Cortex] r: stored=0.479553543187 recomputed=0.479553543187 |diff|=8.88e-16
+[GTEx Brain - Frontal Cortex (BA9) -> Brain - Cortex] r2: stored=0.202402122611 recomputed=0.202402122611 |diff|=3.05e-16
+[GTEx Brain - Frontal Cortex (BA9) -> Brain - Cortex] cal_r2: stored=0.229971600783 recomputed=0.229971600783 |diff|=5.55e-16
+[GTEx Brain - Frontal Cortex (BA9) -> Brain - Cortex] n_train: stored=75 recomputed=75 |diff|=0.00e+00
+[GTEx Brain - Frontal Cortex (BA9) -> Brain - Cortex] n_test: stored=270 recomputed=270 |diff|=0.00e+00
+[GTEx Brain - Frontal Cortex (BA9) -> Brain - Cortex] n_genes: stored=26590 recomputed=26590 |diff|=0.00e+00
+[GTEx Brain - Cortex -> Brain - Frontal Cortex (BA9)] rho: stored=0.317688623931 recomputed=0.317688623931 |diff|=0.00e+00
+[GTEx Brain - Cortex -> Brain - Frontal Cortex (BA9)] r: stored=0.406776949704 recomputed=0.406776949704 |diff|=1.67e-16
+[GTEx Brain - Cortex -> Brain - Frontal Cortex (BA9)] r2: stored=-0.156886024878 recomputed=-0.156886024878 |diff|=3.89e-16
+[GTEx Brain - Cortex -> Brain - Frontal Cortex (BA9)] cal_r2: stored=0.16546748681 recomputed=0.16546748681 |diff|=5.55e-17
+[GTEx Brain - Cortex -> Brain - Frontal Cortex (BA9)] n_train: stored=76 recomputed=76 |diff|=0.00e+00
+[GTEx Brain - Cortex -> Brain - Frontal Cortex (BA9)] n_test: stored=269 recomputed=269 |diff|=0.00e+00
+[GTEx Brain - Cortex -> Brain - Frontal Cortex (BA9)] n_genes: stored=26590 recomputed=26590 |diff|=0.00e+00
+[fibro B1→C1] rho: stored=0.529174387867 recomputed=0.529174387867 |diff|=0.00e+00
+[fibro B1→C1] r: stored=0.59395603935 recomputed=0.59395603935 |diff|=1.11e-16
+[fibro B1→C1] r2: stored=0.288735092439 recomputed=0.288735092439 |diff|=4.44e-16
+[fibro B1→C1] cal_r2: stored=0.352783776681 recomputed=0.352783776681 |diff|=0.00e+00
+[fibro B1→C1] n_train: stored=421 recomputed=421 |diff|=0.00e+00
+[fibro B1→C1] n_test: stored=224 recomputed=224 |diff|=0.00e+00
+[fibro B1→C1] rho_ci_lo: stored=0.417518864099 recomputed=0.417518864099 |diff|=5.55e-17
+[fibro B1→C1] rho_ci_hi: stored=0.611772739399 recomputed=0.611772739399 |diff|=0.00e+00
+[fibro C1→B1] rho: stored=0.561177172288 recomputed=0.561177172288 |diff|=0.00e+00
+[fibro C1→B1] r: stored=0.558585480502 recomputed=0.558585480502 |diff|=1.44e-15
+[fibro C1→B1] r2: stored=0.250965541622 recomputed=0.250965541622 |diff|=4.44e-16
+[fibro C1→B1] cal_r2: stored=0.312017739028 recomputed=0.312017739028 |diff|=1.83e-15
+[fibro C1→B1] n_train: stored=224 recomputed=224 |diff|=0.00e+00
+[fibro C1→B1] n_test: stored=421 recomputed=421 |diff|=0.00e+00
+[fibro C1→B1] rho_ci_lo: stored=0.499725402085 recomputed=0.499725402085 |diff|=0.00e+00
+[fibro C1→B1] rho_ci_hi: stored=0.616787407144 recomputed=0.616787407144 |diff|=0.00e+00
+[out] GTEx T3 rows=539 fibro rows=645 (one sample per donor per direction)

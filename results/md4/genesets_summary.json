@@ -1,0 +1,15 @@
+{
+ "n_MD": 205,
+ "n_TGFB": 54,
+ "n_age_up": 1533,
+ "n_age_down": 2007,
+ "md2_equals_md3_MD": true,
+ "md2_equals_md3_TGFB": true,
+ "mmc3_equals_md2_age_up": true,
+ "mmc3_equals_md2_age_down": true,
+ "used_as_deseq2_rebuild": false,
+ "used_as_published_lists": true,
+ "seed": 20260914,
+ "source_md2": "<repo>\\results\\md2\\genesets.json",
+ "source_md3": "<repo>\\results\\md3\\genesets.json"
+}

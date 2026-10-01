@@ -1,0 +1,79 @@
+====================================================================================================
+SAME  seed=20260914  boot=20260918  n_perm=200  n_boot=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md / PROGRESS*.md are not modified (except FINDINGS_SAME.md and PROGRESS_SAME.md).
+GSE325735 is out of scope and is not opened.
+Primary statistics: frac_S, delta_S, Asymmetry. Uncalibrated R² is never a gate.
+Frozen ruler is a context column only. Not refit.
+PREREG.flag exists; not rewriting the block.
+Written **before any SAME statistic**, 2026-09-21. No threshold in this block is re-tuned after numbers exist.
+
+Question: does aged partially-reprogrammed tissue move toward the YOUNG donor's untreated day-0 fibroblasts from the same experiment? And is that rejuvenation, or just both donors converging?
+
+Seeds: 20260914 (splits, permutations), 20260918 (bootstrap). n_perm=200, n_boot=200. GSE325735 ...
+[frozen] <repo>\results\fibro\frozen_ruler_ridge_raw.npz n_genes=23485 keys=['w', 'coef', 'mu', 'sd', 'intercept', 'alpha', 'gene_id', 'symbol', 'ensembl', 'sample_ids', 'donors', 'age_mid', 'seed', 'n_donors', 'n_genes', 'regime', 'method', 'note']
+[columns louvain_obs_GM00731] actually read from <repo>\results\md2\louvain_obs_GM00731.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM00731] actually read from <repo>\results\md2\t2_cluster_labels_GM00731.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM00731] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM00731] n_cells=22132 n_clusters=19 days=[0, 3, 7, 10]
+[columns louvain_obs_GM23815] actually read from <repo>\results\md2\louvain_obs_GM23815.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM23815] actually read from <repo>\results\md2\t2_cluster_labels_GM23815.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM23815] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM23815] n_cells=33858 n_clusters=19 days=[0, 3, 7, 10]
+[d0 Fibroblast] GM00731 n=4939  GM23815 n=7703
+[split] O=2469 aged_B=2470 Y=3851 young_B=3852 ok=True
+[P] n_total=min(n_aged_B, n_young_B)=2470  n_mixes=4 seed=20260914
+[P] f=0.00 n_aged=2470 n_young=0 n_total=2470
+[P] f=0.10 n_aged=2223 n_young=247 n_total=2470
+[P] f=0.25 n_aged=1852 n_young=618 n_total=2470
+[P] f=0.50 n_aged=1235 n_young=1235 n_total=2470
+[P tmm] n_rows=6 names=['O', 'Y', 'mix_f0.00', 'mix_f0.10', 'mix_f0.25', 'mix_f0.50'] nf_median=0.9834 prior.count=2 n_missing_z0=3507
+[P stat] f=0.00 frac=+0.115 delta=+0.068 cos=+0.239
+[P stat] f=0.10 frac=+0.182 delta=-7.870 cos=+0.371
+[P stat] f=0.25 frac=+0.283 delta=-18.913 cos=+0.530
+[P stat] f=0.50 frac=+0.441 delta=-34.443 cos=+0.694
+[P boot] 50/200
+[P boot] 100/200
+[P boot] 150/200
+[P boot] 200/200
+[P CI sanity] f=0.00 frac=+0.115 [+0.099, +0.121] OK
+[P CI sanity] f=0.00 delta=+0.068 [+5.807, +8.334] INVALID
+[P CI sanity] f=0.10 frac=+0.182 [+0.167, +0.191] OK
+[P CI sanity] f=0.10 delta=-7.870 [-1.900, +1.007] INVALID
+[P CI sanity] f=0.25 frac=+0.283 [+0.267, +0.291] OK
+[P CI sanity] f=0.25 delta=-18.913 [-11.793, -9.372] INVALID
+[P CI sanity] f=0.50 frac=+0.441 [+0.424, +0.447] OK
+[P CI sanity] f=0.50 delta=-34.443 [-25.403, -22.414] INVALID
+[P] pass=True monotonic=True frac50_ci_excludes_0=True delta50_neg=True reason=NA
+[occupancy] cell_line         state  n_cells  n_d0  n_d3  n_d7  n_d10 |   GM00731    Fibroblast     5988  4939     5    14   1030 |   GM00731 PartialReprog     5832     3  5220   578     31 |   GM00731  Pluripotency      439     0     5   354     80 |   GM00731     NonReprog     5459    65   348  1932   3114 |   GM23815    Fibroblast    11355  7703    46  2233   1373 |   GM23815 PartialReprog     6481     9  6113   309     50
+[panel] O GM00731 n=2469 role=anchor_halfA_d0_Fibroblast
+[panel] Y GM23815 n=3851 role=anchor_halfA_d0_Fibroblast
+[panel] S GM00731 n=5832 role=PartialReprog_pooled
+[panel] S_rev GM23815 n=6481 role=PartialReprog_pooled
+[panel] Pluri GM00731 n=439 role=Pluripotency_pooled
+[panel] NonReprog GM00731 n=5459 role=NonReprog_pooled
+[tmm main] n_rows=6 names=['O', 'Y', 'S', 'S_rev', 'Pluri', 'NonReprog'] nf_median=0.9602 prior.count=2 n_missing_z0=3132
+[forward] n_S=5832 cos=+0.323 frac=+0.674 delta=+130.894 ||d||=+272.734 ||v||=+130.688
+[reverse] n_Srev=6481 cos=-0.029 frac=-0.057 delta=+163.342
+[asymmetry] frac_S - frac_rev = +0.732
+[context Pluri] n=439 frac=+1.403 delta=+382.106
+[context NonReprog] n=5459 frac=+0.555 delta=+60.331
+[N1] forward p=0.0050 reverse p=1.0000 n_perm=200 seed=20260914
+[columns toward_anchors] actually read from <repo>\results\toward\anchors.npz: ['c_young', 'c_old', 'u', 'n_young', 'n_old', 'n_middle', 'young_bins', 'old_bins', 'middle_bins', 'ensembl', 'n_genes', 'n_axis', 'n_young_expected', 'n_old_expected', 'note']
+[context] cos(v, u_TOWARD)=+0.039 (unit-align=+0.039; report only)
+[boot] 50/200
+[boot] 100/200
+[boot] 150/200
+[boot] 200/200
+[CI sanity] forward frac_S=+0.674 [+0.667, +0.680] OK
+[CI sanity] forward delta_S=+130.894 [+130.473, +133.918] OK
+[CI sanity] reverse frac_rev=-0.057 [-0.063, -0.054] OK
+[CI sanity] reverse delta_rev=+163.342 [+163.312, +166.330] OK
+[CI sanity] Asymmetry=+0.732 [+0.724, +0.740] OK
+[CI sanity] Pluri frac=+1.403 [+1.365, +1.442] OK
+[CI sanity] Pluri delta=+382.106 [+391.791, +418.643] INVALID
+[CI sanity] NonReprog frac=+0.555 [+0.543, +0.561] OK
+[CI sanity] NonReprog delta=+60.331 [+62.804, +64.575] INVALID
+[reading] key=no_approach_same_platform flags=[]
+The TOWARD negative holds with the platform gap removed. GM00731 PartialReprog n_cells=5832, frac_S=+0.674, delta_S=+130.894 (delta_S >= 0: not closer to the young donor).
+[run] DONE

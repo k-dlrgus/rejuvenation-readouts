@@ -1,0 +1,34 @@
+[prereg] <repo>\results\south5\PREREG.flag bytes=10333
+[file] <repo>\data\raw\southard\fibroblast_CRISPRa_final_pop_singlets_normalized_log1p.h5ad
+[file] size=8048055098 expected=8048055098
+[file] md5=2c926c7cae2eaab1ed2519b06ca21db5 zenodo_md5=2c926c7cae2eaab1ed2519b06ca21db5 (31s)
+[obs] n=220403 columns=['dataset', 'UMI_count', 'guide_identity', 'guide_umi_count', 'thresholded_features', 'thresholded_guide_umi', 'num_cells', 'guide_target', 'gem_group', 'mt_frac', 'keep', 'single_cell', 'control', 'pairwise_coef', 'pairwise_UMI_count', 'pairwise_singlet_equivalent_UMI_count', 'final_pairwise_UMI_count', 'protospacer']
+[var] n=30395 columns=['gene_name', 'feature_types', 'genome', 'mean', 'in_matrix', 'std', 'cv', 'fano', 'pairwise_p_cost', 'mean_adjusted_pairwise_p_cost', 'excess_cv', 'pairwise_chosen', 'gene_id']
+[raw audit] {'dtype': 'float32', 'integer_dtype': False, 'n_seen': 500497683, 'n_fractional': 500497683, 'n_negative': 0, 'n_nonfinite': 0, 'min': 0.16630810499191284, 'max': 8.961788177490234, 'raw_integer_counts': False, 'where': 'X/data'}
+[raw audit] {'dtype': 'float32', 'integer_dtype': False, 'n_seen': 500497683, 'n_fractional': 0, 'n_negative': 0, 'n_nonfinite': 0, 'min': 1.0, 'max': 2119.0, 'raw_integer_counts': True, 'where': 'layers/counts'}
+[matrix] source=layers/counts (csr) kind=csr node=/layers/counts shape=(220403, 30395)
+[column] 'guide_target' present
+[column] 'guide_identity' present
+[column] 'control' present
+[column] 'keep' present
+[column] 'single_cell' present
+[before-filter] control={False: 208569, True: 11834} keep={True: 220403} single_cell={True: 220403}
+[filter] n_before=220403 dropped_not_singlet=0 dropped_singlet_fails_keep=0 n_after=220403
+[STOP] control_ambiguous: control does not separate non-targeting from targeting cells. guide_target value(s) appearing under BOTH control states: ['non']. 'non': control=True 11834 cells / 61 guides, control=False 2179 cells / 17 guides. Value counts before filtering: control={False: 208569, True: 11834}, keep={True: 220403}, single_cell={True: 220403}. The non-targeting label is simultaneously flagged control=True for some cells and control=False for others, so control=True is a strict subset of the non-targeting population and control=False mixes non-targeting cells in with targeting cells. Not guessing the non-targeting set from guide_target strings and not repairing rows.
+[prereg] <repo>\results\south5\PREREG.flag bytes=10333
+[file] <repo>\data\raw\southard\fibroblast_CRISPRa_final_pop_singlets_normalized_log1p.h5ad
+[file] size=8048055098 expected=8048055098
+[file] md5=2c926c7cae2eaab1ed2519b06ca21db5 zenodo_md5=2c926c7cae2eaab1ed2519b06ca21db5 (30s)
+[obs] n=220403 columns=['dataset', 'UMI_count', 'guide_identity', 'guide_umi_count', 'thresholded_features', 'thresholded_guide_umi', 'num_cells', 'guide_target', 'gem_group', 'mt_frac', 'keep', 'single_cell', 'control', 'pairwise_coef', 'pairwise_UMI_count', 'pairwise_singlet_equivalent_UMI_count', 'final_pairwise_UMI_count', 'protospacer']
+[var] n=30395 columns=['gene_name', 'feature_types', 'genome', 'mean', 'in_matrix', 'std', 'cv', 'fano', 'pairwise_p_cost', 'mean_adjusted_pairwise_p_cost', 'excess_cv', 'pairwise_chosen', 'gene_id']
+[raw audit] {'dtype': 'float32', 'integer_dtype': False, 'n_seen': 500497683, 'n_fractional': 500497683, 'n_negative': 0, 'n_nonfinite': 0, 'min': 0.16630810499191284, 'max': 8.961788177490234, 'raw_integer_counts': False, 'where': 'X/data'}
+[raw audit] {'dtype': 'float32', 'integer_dtype': False, 'n_seen': 500497683, 'n_fractional': 0, 'n_negative': 0, 'n_nonfinite': 0, 'min': 1.0, 'max': 2119.0, 'raw_integer_counts': True, 'where': 'layers/counts'}
+[matrix] source=layers/counts (csr) kind=csr node=/layers/counts shape=(220403, 30395)
+[column] 'guide_target' present
+[column] 'guide_identity' present
+[column] 'control' present
+[column] 'keep' present
+[column] 'single_cell' present
+[before-filter] control={False: 208569, True: 11834} keep={True: 220403} single_cell={True: 220403}
+[filter] n_before=220403 dropped_not_singlet=0 dropped_singlet_fails_keep=0 n_after=220403
+[STOP] control_ambiguous: control does not separate non-targeting from targeting cells. guide_target value(s) appearing under BOTH control states: ['non']. 'non': control=True 11834 cells / 61 guides, control=False 2179 cells / 17 guides. Value counts before filtering: control={False: 208569, True: 11834}, keep={True: 220403}, single_cell={True: 220403}. The non-targeting label is simultaneously flagged control=True for some cells and control=False for others, so control=True is a strict subset of the non-targeting population and control=False mixes non-targeting cells in with targeting cells. Not guessing the non-targeting set from guide_target strings and not repairing rows.

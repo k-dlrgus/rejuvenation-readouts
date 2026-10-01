@@ -1,0 +1,18 @@
+TRAJECTORY orthologs  seed=20260914  source=NCBI gene_orthologs
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[filter] Phase-1 human Ensembl IDs: 25526
+[read] <repo>\data\raw\ncbi_gene\gene_orthologs.gz
+  header: #tax_id	GeneID	relationship	Other_tax_id	Other_GeneID
+  human-mouse rows=17096
+[read] <repo>\data\raw\ncbi_gene\gene2ensembl.gz tax={10090, 9606}
+  header: #tax_id	GeneID	Ensembl_gene_identifier	RNA_nucleotide_accession.version	Ensembl_rna_identifier	protein_accession.version	Ensembl_protein_identifier
+  rows=73555
+[join] orthologs with both Ensembl IDs: 16871
+[filter] restricted to Phase-1 human genes: 14272 rows; unique human=14255
+[filter] strict 1:1 Ensembl pairs: 14239  fraction_of_phase1=0.558
+[orthologs] wrote results/trajectory/g3_orthologs_*

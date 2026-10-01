@@ -1,0 +1,120 @@
+TASK: SENG — do Sengstack et al. (PNAS 2026) "rejuvenating" TF perturbations
+move fibroblasts TOWARD young cells, or just away from old ones, and is the
+effect explained by proliferation?
+Write FINDINGS_SENG.md, PROGRESS_SENG.md, results/seng/*, src/seng_run.py.
+Do not modify any existing FINDINGS_*.md, PROGRESS_*.md, FALSIFICATION.md,
+or existing src/ files (import from src/toward_run.py and src/same_run.py;
+do not change them). Southard/Hs27 is out of scope. GSE325735 out of scope.
+Seeds: 20260914 (splits, nulls, permutations), 20260918 (bootstrap).
+n_null=200, n_perm=200, n_boot=200. Uncalibrated R2 never a gate.
+=== WRITE THE PRE-REGISTRATION FIRST ===
+Write this whole block verbatim into FINDINGS_SENG.md and touch
+results/seng/PREREG.flag BEFORE computing any statistic. Stage 0 below
+(descriptive inventory only) may run after the flag exists. Nothing is
+re-tuned after numbers exist.
+=== DATA ===
+figshare 10.6084/m9.figshare.30898748 (one h5ad, ~1.43 GB, CC BY 4.0).
+Download it to data/raw/seng/. Record file size and md5.
+=== STAGE 0: INVENTORY (descriptive only; no statistic) ===
+From obs, determine and report:
+- which column(s) hold perturbation labels (CRA_<TF>, CRI_<TF>, NT_*), guide
+  identity, population doubling (PD14/PD26/PD32 or similar), and WT status.
+- which NT labels belong to the CRISPRa line and which to the CRISPRi line.
+- which PD the perturbed cells are at.
+- cell counts for: every perturbation (pooled over its guides, and per guide),
+  NT per modality, WT per PD.
+- whether X is raw counts. If X is not raw integer counts and no raw layer
+  exists, STOP (key `no_raw_counts`).
+Branching rules (fixed now):
+- If no WT (untransduced) cells exist at >= 2 distinct PDs: STOP, key
+  `no_wt_reference`. Report the inventory only.
+- If NT cells cannot be assigned to modality: STOP, key `nt_unassignable`.
+- EARLY = WT cells at the lowest PD. LATE = WT cells at the PD of the perturbed
+  cells; if that PD cannot be determined, LATE = WT at the highest PD, and say so.
+- If EARLY or LATE has < 200 cells: STOP, key `wt_too_small`.
+=== GENE SPACE AND TRANSFORM (same as TOWARD/SAME, unchanged) ===
+Frozen-ruler overlap gene set; pseudobulk -> TMM log2-CPM prior.count=2 across
+this task's full pseudobulk panel -> frozen GTEx mu/sd -> z; missing genes z=0.
+Report how many ruler genes are present in this file.
+=== SPLIT (frozen before any statistic; seed 20260914) ===
+Split EARLY and LATE WT cells each 50/50 into halves A and B.
+Half A defines the young direction. Half B is used only in positive control P.
+=== STATISTICS (per perturbation g, per modality; MIN_CELLS = 30 pooled) ===
+v   = z(EARLY_A) - z(LATE_A)          passage-reversal direction ("young")
+d_g = z(cells with g) - z(NT same modality)   the TF's own effect (construct
+                                               effect cancels in the subtraction)
+cos_g   = dot(d_g, v) / (||d_g|| ||v||)
+frac_g  = dot(d_g, v) / ||v||^2
+delta_g = ||v - d_g|| - ||v||   (effect applied to a LATE cell; negative =
+                                 closer to EARLY. Assumes the TF effect is
+                                 additive to the construct effect; state this.)
+Proliferation axis (defined BEFORE looking at any perturbation):
+- Score every NT cell (both modalities) with the Tirosh 2016 S + G2M gene sets
+  (Seurat cc.genes; save the list used to data/reference/).
+- p = z(NT cells in top quartile of S+G2M score) - z(NT cells in bottom
+  quartile), per modality, then normalize.
+- Report cos(v, p): how much of "passage reversal" is proliferation.
+- For each g also compute the residual versions: project p out of both v and
+  d_g, recompute cos_g_resid and delta_g_resid.
+- Report each g's mean S+G2M score shift vs NT.
+Donor-age axis: u = u_TOWARD from results/toward/anchors.npz (GTEx young-
+minus-old donors). Report cos(v, u) with N1 (permute u's entries across genes,
+200x). For each g: cos(d_g, u).
+Identity check (report-only flag, not a gate): mean log2 expression of
+COL1A1, COL1A2, FN1, LUM, PDGFRA, PDGFRB, POSTN, PRRX1, SERPINH1, VIM in g's
+cells minus NT. Flag `identity_loss` if the drop is > 0.5.
+=== NULLS ===
+N_NT (primary, per modality): for each perturbation's cell count n, draw 200
+random subsets of n NT cells as fake perturbations (origin = the remaining NT
+cells), compute cos, frac, delta, cos_resid, delta_resid. Empirical one-sided
+p for each statistic in the direction of "more toward young".
+Multiple testing: BH-FDR across all perturbations within each modality.
+Bootstrap: resample cells within g and within NT (B=200) for 95% CIs.
+Every reported CI must contain its point estimate or be flagged INVALID.
+=== POSITIVE CONTROL P (run BEFORE any perturbation vector) ===
+Using half-B WT cells only: mixtures of LATE_B with EARLY_B at young fraction
+f = 0, 0.25, 0.50 (cell counts; total fixed). d_f = z(mix_f) - z(LATE_B only).
+P PASSES if frac increases monotonically with f, frac(0.50) CI excludes 0,
+and delta(0.50) < 0. Report f=0 as the noise floor.
+If P fails: STOP, key `pos_control_broken`.
+=== REPRODUCTION CHECK (their claim, before our critique) ===
+Named hits: CRA_E2F3, CRA_EZH2, CRI_STAT3, CRI_ZFX.
+If fewer than 3 of 4 have cos_g > 0 with N_NT FDR q <= 0.05: key
+`pipeline_disagrees`. Report all numbers, but do not interpret any hit as
+toward/away; say our pipeline does not reproduce their direction.
+=== PER-HIT CLASSIFICATION (named hits; only if reproduction passed) ===
+Each named hit gets exactly one label, checked in this order:
+1. `toward_young`: delta_g < 0 with N_NT q <= 0.05 AND delta_g_resid < 0 with
+   N_NT p <= 0.05.
+2. `proliferation_explained`: cos_g significant (q <= 0.05) but cos_g_resid
+   N_NT p > 0.05.
+3. `away_from_old_only`: cos_g significant, delta_g >= 0 or not significant.
+4. `no_effect`: none of the above.
+Also report per hit: cos(d_g, u) with its N1-style p, identity_loss flag.
+=== SCREEN-LEVEL READING (all perturbations with n >= 30) ===
+- rho_prolif = Spearman(cos_g, S+G2M shift) across all perturbations, each
+  modality separately.
+- Key `screen_tracks_proliferation` if rho_prolif >= 0.5 in BOTH modalities.
+- Report: number of perturbations with cos_g q <= 0.05 ("their-style hits"),
+  and how many of those also meet `toward_young`.
+- Report cos(v, u) and whether it beats N1. If it does not, add flag
+  `passage_axis_not_donor_age`: aging-in-a-dish does not resemble GTEx donor
+  aging in this gene space.
+=== WHAT DOES NOT COUNT ===
+- cos_g alone as evidence of rejuvenation. That is their metric; ours is delta.
+- Using NT from the other modality as origin.
+- Using half-B cells outside P, or half-A cells inside P.
+- Picking a different EARLY/LATE PD, proliferation gene set, or quartile cut
+  after seeing results.
+- Dropping or re-labelling perturbations because they look odd. Report them.
+- Averaging CRA and CRI results.
+- Frozen-ruler score changes: context column only.
+- Claims about Sengstack's in vivo mouse results. This data cannot test them.
+=== OUTPUT ===
+FINDINGS_SENG.md: prereg verbatim; Stage 0 inventory; split sizes; P table;
+reproduction check; named-hit table (all statistics, CIs, p, q, labels);
+screen-level table and rho_prolif; cos(v,p), cos(v,u); fired keys; limitations
+(must include: neonatal cells aged by passaging, not donor aging; one cell
+line; additivity assumption in delta; pseudobulk per perturbation).
+PROGRESS_SENG.md: STOP status, next action.
+Record every failure verbatim. Do not substitute columns or repair rows.

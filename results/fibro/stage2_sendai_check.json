@@ -1,0 +1,23 @@
+{
+ "n_hits": 0,
+ "names": [],
+ "n_features_scanned": 73194,
+ "n_features_first_library": 36601,
+ "n_ensg": 36601,
+ "n_non_ensg": 0,
+ "n_libraries": 8,
+ "genomes": [
+  "GRCh38"
+ ],
+ "feature_types": [
+  "Gene Expression"
+ ],
+ "columns_actually_read": [
+  "gene_id",
+  "symbol",
+  "feature_type",
+  "genome"
+ ],
+ "pattern": "sendai|\\bsev\\b|\\bsev[-_]|kozak|transgene|cytotune|cyto.?tune|vector|orfeome|\\boskm\\b|sevoskm",
+ "note": "Sendai/vector features reported; not used in the frozen GTEx ruler. Pluripotency is scored with and without OSKM-family endogenous genes. Zero hits means the Cell Ranger matrix has no labelled Sendai/vector features; vector reads can still map onto endogenous OSKM gene models."
+}

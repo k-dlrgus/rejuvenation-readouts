@@ -1,0 +1,2 @@
+dataset,tier,gene_list,note
+Southard Hs27 CRISPRa,A,results/survey/gene_lists/southard_hs27_L4A_genes.txt,Cell Ranger Gene Expression features from lane L4A filtered_feature_bc_matrix.h5. Guide-capture features were excluded. Inferred genes are not in this list. The mean-population h5ad keeps 4914 genes and was not used for coverage.

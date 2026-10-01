@@ -1,0 +1,17 @@
+column,n_levels,n_levels_ge2_donors,frac_donors_in_shared,aliased_with_donor,looks_technical,looks_soft_batch,usable_shared_donor,median_donors_per_level,min_donors_per_level,max_donors_per_level
+genetic_ancestry,5,5,1.0,False,False,False,True,27.0,2,159
+sex,2,2,1.0,False,False,False,True,145.5,91,200
+Source,2,2,1.0,False,False,True,True,145.5,113,178
+sex_ontology_term_id,2,2,1.0,False,False,False,True,145.5,91,200
+disease,6,4,0.993127147766323,False,False,False,True,3.5,1,259
+disease_ontology_term_id,6,4,0.993127147766323,False,False,False,True,3.5,1,259
+development_stage,85,67,0.9381443298969072,False,False,False,True,3.0,1,10
+development_stage_ontology_term_id,85,67,0.9381443298969072,False,False,False,True,3.0,1,10
+assay,1,1,1.0,False,False,True,False,291.0,291,291
+suspension_type,1,1,1.0,False,False,True,False,291.0,291,291
+tissue,1,1,1.0,False,False,True,False,291.0,291,291
+is_primary_data,1,1,1.0,False,False,False,False,291.0,291,291
+self_reported_ethnicity,1,1,1.0,False,False,False,False,291.0,291,291
+tissue_ontology_term_id,1,1,1.0,False,False,True,False,291.0,291,291
+tissue_type,1,1,1.0,False,False,True,False,291.0,291,291
+assay_ontology_term_id,1,1,1.0,False,False,True,False,291.0,291,291

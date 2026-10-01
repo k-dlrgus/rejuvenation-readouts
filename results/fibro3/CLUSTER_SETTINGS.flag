@@ -1,0 +1,13 @@
+Written **before any joint-cluster age score**, 2026-09-18. Not swept after numbers exist.
+
+JOINT CLUSTERING (code-listed; chosen before looking at any age score):
+- Scope: all cells of one donor, all timepoints concatenated. Donors clustered separately. Never pooled across donors.
+- Genes: frozen-ruler overlap genes with count-sum > 0 (same gene filter as Stage 2 cluster spec in FINDINGS_FIBRO.md).
+- Transform: log1p(CP10k) on those genes. Library size = row sum of the kept overlap genes (Stage 2).
+- Dimensionality: sklearn.decomposition.PCA(n_components=20, or n_cells−1 if smaller, svd_solver="randomized", random_state=20260914) on float32 log1p(CP10k). Cell order: libraries concatenated in day order 0, 3, 7, 10.
+- Cluster: sklearn.cluster.KMeans(n_clusters=3, random_state=20260914, n_init=10).
+- k=3 is the Stage 2 frozen k, applied jointly so cluster IDs are comparable across days of the same donor. Resolution is k (not a Leiden resolution). Not swept.
+- Seed `20260914`.
+- MIN_CELLS = 20 (prompt minimum) to score age / pluri / extrapolation / random-direction null at a cluster×timepoint. QC (n, fraction, median UMI, median genes, mito fraction) is reported at all n, including n<20.
+
+Amendment, still before any age score: the first listed dimensionality was IncrementalPCA(n_components=20, batch_size=2048). A run reached IncrementalPCA partial_fit on 2048×20354 and did not finish in usable time (~3 min/batch). No cluster labels and no age scores were written. Dimensionality was replaced by randomized PCA on the same matrix, same n_components, same KMeans k. This is not a k/resolution sweep.

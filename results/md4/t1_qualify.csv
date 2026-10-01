@@ -1,0 +1,25 @@
+cell_line,day,state_a,state_b,n_a,n_b,min_cells,qualifies,primary,reason
+GM00731,0,PartialReprog,NonReprog,3,65,50,False,True,n<50 in at least one state
+GM00731,0,Fibroblast,NonReprog,4939,65,50,True,False,
+GM00731,0,PartialReprog,Fibroblast,3,4939,50,False,False,n<50 in at least one state
+GM00731,3,PartialReprog,NonReprog,5220,348,50,True,True,
+GM00731,3,Fibroblast,NonReprog,5,348,50,False,False,n<50 in at least one state
+GM00731,3,PartialReprog,Fibroblast,5220,5,50,False,False,n<50 in at least one state
+GM00731,7,PartialReprog,NonReprog,578,1932,50,True,True,
+GM00731,7,Fibroblast,NonReprog,14,1932,50,False,False,n<50 in at least one state
+GM00731,7,PartialReprog,Fibroblast,578,14,50,False,False,n<50 in at least one state
+GM00731,10,PartialReprog,NonReprog,31,3114,50,False,True,n<50 in at least one state
+GM00731,10,Fibroblast,NonReprog,1030,3114,50,True,False,
+GM00731,10,PartialReprog,Fibroblast,31,1030,50,False,False,n<50 in at least one state
+GM23815,0,PartialReprog,NonReprog,9,0,50,False,True,n<50 in at least one state
+GM23815,0,Fibroblast,NonReprog,7703,0,50,False,False,n<50 in at least one state
+GM23815,0,PartialReprog,Fibroblast,9,7703,50,False,False,n<50 in at least one state
+GM23815,3,PartialReprog,NonReprog,6113,10,50,False,True,n<50 in at least one state
+GM23815,3,Fibroblast,NonReprog,46,10,50,False,False,n<50 in at least one state
+GM23815,3,PartialReprog,Fibroblast,6113,46,50,False,False,n<50 in at least one state
+GM23815,7,PartialReprog,NonReprog,309,8,50,False,True,n<50 in at least one state
+GM23815,7,Fibroblast,NonReprog,2233,8,50,False,False,n<50 in at least one state
+GM23815,7,PartialReprog,Fibroblast,309,2233,50,True,False,
+GM23815,10,PartialReprog,NonReprog,50,1794,50,True,True,
+GM23815,10,Fibroblast,NonReprog,1373,1794,50,True,False,
+GM23815,10,PartialReprog,Fibroblast,50,1373,50,True,False,

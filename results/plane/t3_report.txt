@@ -1,0 +1,17 @@
+====================================================================================================
+PLANE TASK3  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / labels / AddModuleScore inherited from md2; not re-tuned.
+md4 cell_scores reused for observed instruments; cells are not rescored.
+MIN_CELLS=30. Trajectory=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency']. NonReprog off-trajectory. Donors never pooled. Instruments never combined.
+Written **before any PLANE figure**, 2026-09-21.
+
+One figure per donor, three panels (frozen ruler, MD, age-up−age-down), x = identity, y = age, the four trajectory states as points with 2D bootstrap CIs joined in order, NonReprog as a separate marker, the random-direction or random-set envelope shaded behind. Same identity-axis scaling within a donor. results/plane/figures/plane_<donor>.png.
+
+[t3] wrote <repo>\results\plane\figures\plane_GM00731.png
+[t3] wrote <repo>\results\plane\figures\plane_GM23815.png

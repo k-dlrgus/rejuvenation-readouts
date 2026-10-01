@@ -1,0 +1,60 @@
+{
+ "key": "cell_intrinsic",
+ "text": "Cell-intrinsic. The same cells' clusters individually reverse from d7 to d10. Then reprogramming genuinely pushes cells back along the age axis after d7, and that is a biological claim worth its own test. clusters=[0, 1, 2].",
+ "donor": "GM00731",
+ "min_cells": 20,
+ "C_ok": [
+  0,
+  1,
+  2
+ ],
+ "per_cluster": [
+  {
+   "cluster": 0,
+   "n_d7": 2719,
+   "n_d10": 3431,
+   "age_score_d7": 4.8058231131303,
+   "age_score_d10": 8.594906197040617,
+   "delta_age_d10_minus_d7": 3.7890830839103167,
+   "reverse": true,
+   "stable_or_decline": false
+  },
+  {
+   "cluster": 1,
+   "n_d7": 850,
+   "n_d10": 698,
+   "age_score_d7": -5.380398452854362,
+   "age_score_d10": 2.249007769781151,
+   "delta_age_d10_minus_d7": 7.629406222635513,
+   "reverse": true,
+   "stable_or_decline": false
+  },
+  {
+   "cluster": 2,
+   "n_d7": 3346,
+   "n_d10": 270,
+   "age_score_d7": -2.904254014260958,
+   "age_score_d10": 0.6191974351913498,
+   "delta_age_d10_minus_d7": 3.523451449452308,
+   "reverse": true,
+   "stable_or_decline": false
+  }
+ ],
+ "n_C_ok": 3,
+ "high_age_clusters_d7": [
+  0
+ ],
+ "low_age_clusters_d7": [
+  1
+ ],
+ "mix_shift": true,
+ "mix_notes": [
+  "high-age cluster 0 grows frac 0.3932\u21920.7799"
+ ],
+ "reverse_clusters": [
+  0,
+  1,
+  2
+ ],
+ "stable_or_decline_clusters": []
+}

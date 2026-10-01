@@ -1,0 +1,21 @@
+celltype,r2,mae,n_te,n_tr,direction
+GABAergic neuron,-7.46332563430717,24.288771683669793,83,96,old_to_young
+L2/3 intratelencephalic projecting glutamatergic neuron,-3.810802327940565,18.451424237936585,95,125,old_to_young
+L2/3-6 intratelencephalic projecting glutamatergic neuron,-4.646488434810864,20.09039813453867,95,120,old_to_young
+L5/6 near-projecting glutamatergic neuron,-6.55594174602389,22.49287758003635,59,65,old_to_young
+L6 corticothalamic-projecting glutamatergic cortical neuron,-7.078359444215119,22.81956964136814,64,89,old_to_young
+L6 intratelencephalic projecting glutamatergic neuron,-6.201802835984014,21.56351581478141,62,88,old_to_young
+L6b glutamatergic neuron of the primary motor cortex,-6.171309775226002,22.579438934226417,52,57,old_to_young
+VIP GABAergic interneuron,-6.966920195072021,23.655023637314013,94,123,old_to_young
+astrocyte,-5.654557187305952,22.270597414545783,99,130,old_to_young
+endothelial cell,-8.48270599114799,25.87335224436064,83,77,old_to_young
+lamp5 GABAergic interneuron,-7.852587668699249,25.180397258031842,91,114,old_to_young
+microglial cell,-7.139504085505381,24.431336102986155,96,123,old_to_young
+oligodendrocyte,-6.644407953822842,23.56130737438495,102,130,old_to_young
+oligodendrocyte precursor cell,-6.180418585195969,23.093527081621303,101,131,old_to_young
+pericyte,-8.400456695848428,25.87450419327362,70,66,old_to_young
+perivascular macrophage,-13.0884492907671,33.00568007120118,20,11,old_to_young
+pvalb GABAergic interneuron,-7.128782356180372,23.733837353503734,92,117,old_to_young
+smooth muscle cell,,,12,4,old_to_young
+sst GABAergic interneuron,-6.002506502289884,22.142217358136094,94,112,old_to_young
+vascular leptomeningeal cell,-12.388563761042569,30.637242147231163,46,35,old_to_young

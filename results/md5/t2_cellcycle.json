@@ -1,0 +1,65 @@
+{
+ "GM00731": {
+  "cell_line": "GM00731",
+  "obs_columns": [
+   "barcode",
+   "gsm",
+   "file",
+   "cell_line",
+   "day",
+   "age_years",
+   "age_source",
+   "umi",
+   "n_genes",
+   "mito_frac",
+   "cluster",
+   "louvain_kept",
+   "percent_mt",
+   "label"
+  ],
+  "ams_keys": [
+   "md",
+   "tgfb",
+   "bins",
+   "gene_mean",
+   "cluster",
+   "day",
+   "n_genes"
+  ],
+  "obs_cell_cycle_hits": [],
+  "ams_cell_cycle_hits": [],
+  "computable": false,
+  "reason": "md2 louvain_obs / louvain_ams have no phase / S.Score / G2M.Score columns. Cell-cycle phase fractions are not computable from the md2 object. Not substituting Seurat CellCycleScoring or a new Tirosh score."
+ },
+ "GM23815": {
+  "cell_line": "GM23815",
+  "obs_columns": [
+   "barcode",
+   "gsm",
+   "file",
+   "cell_line",
+   "day",
+   "age_years",
+   "age_source",
+   "umi",
+   "n_genes",
+   "mito_frac",
+   "cluster",
+   "louvain_kept",
+   "percent_mt",
+   "label"
+  ],
+  "ams_keys": [
+   "md",
+   "tgfb",
+   "bins",
+   "gene_mean",
+   "cluster",
+   "day"
+  ],
+  "obs_cell_cycle_hits": [],
+  "ams_cell_cycle_hits": [],
+  "computable": false,
+  "reason": "md2 louvain_obs / louvain_ams have no phase / S.Score / G2M.Score columns. Cell-cycle phase fractions are not computable from the md2 object. Not substituting Seurat CellCycleScoring or a new Tirosh score."
+ }
+}

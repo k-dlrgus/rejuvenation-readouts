@@ -1,0 +1,7 @@
+step,unit,before,after,removed,note
+cells with numeric donor age,cells,45528,45528,0,non-numeric development_stage dropped
+is_primary_data==True,cells,45528,45528,0,
+pseudobulk groups with >= 20 cells,groups,289,201,88,
+cells in retained pseudobulk groups,cells,45528,44711,817,
+cell types present in >= 8 donors,cell types,15,11,4,"dropped: {'central nervous system macrophage': np.int64(1), 'committed oligodendrocyte precursor': np.int64(2), 'neuron': np.int64(2), 'vascular associated smooth muscle cell': np.int64(3)}"
+cells in retained cell types,cells,44711,44394,317,

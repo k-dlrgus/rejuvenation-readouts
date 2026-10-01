@@ -1,0 +1,7 @@
+{
+ "pca_k": 50,
+ "n_rows": 37,
+ "rho_nn_euclidean_all": -0.2797534376481745,
+ "fibro3_quoted": "nn_euclidean: age score does not rise with distance \u03c1=-0.625 CI=[-0.834, -0.320] n=22. Not a gate.",
+ "note": "Report-only. If \u03c1(distance, ruler)<0 and PartialReprog sits farther from training than NonReprog, that would push the Task 1 frozen-ruler contrast toward PR reading younger. Not a gate. Not used to discount Task 1."
+}

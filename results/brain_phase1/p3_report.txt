@@ -1,0 +1,39 @@
+====================================================================================================
+BRAIN PHASE 1  STAGE P3 — scores.  seed = 20260914
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+[P3] frozen full-data sets (for listing/P5, not nested CV features): A=1355 I=1876
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+
+================================================================================
+[P3] scheme=loso  n_folds=2
+[P3] loso: 2 folds, no donor in both folds: True
+   fold 0 H: nested A=1287 I=1880
+   fold 1 M: nested A=1500 I=1851
+   fitting A-gene ridge (within type)...
+   fitting unrestricted kernel ridge (within type)...
+   fitting I-gene identity classifier...
+   median-over-types R² A-genes=-0.102  unrest=+0.096  joint A=+0.032 unrest=+0.217
+   identity acc=0.999  macro-F1=0.996  chance=0.070  mean P(true)=0.998
+
+================================================================================
+[P3] scheme=within_site  n_folds=10
+[P3] within_site: 10 folds, no donor in both folds: True
+   fold 0 H: nested A=1538 I=1876
+   fold 1 H: nested A=1536 I=1901
+   fold 2 H: nested A=1568 I=1935
+   fold 3 H: nested A=1566 I=1866
+   fold 4 H: nested A=1530 I=1808
+   fold 5 M: nested A=1296 I=1847
+   fold 6 M: nested A=1215 I=2014
+   fold 7 M: nested A=1283 I=2030
+   fold 8 M: nested A=1433 I=1796
+   fold 9 M: nested A=1319 I=1878
+   fitting A-gene ridge (within type)...
+   fitting unrestricted kernel ridge (within type)...
+   fitting I-gene identity classifier...
+   median-over-types R² A-genes=+0.345  unrest=+0.483  joint A=+0.465 unrest=+0.588
+   identity acc=0.999  macro-F1=0.998  chance=0.070  mean P(true)=0.999
+[P3] A-gene construct captures the within-type age signal (A 0.345 vs unrestricted 0.483 median-over-types, within-site). Proceed.
+[findings] wrote <repo>\FINDINGS_BRAIN_PHASE1.md
+[P3] done.

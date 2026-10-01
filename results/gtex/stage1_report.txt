@@ -1,0 +1,47 @@
+====================================================================================================
+GTEX STAGE 1  seed=20260914  release=GTEx Analysis V10  pipeline=RNASeQCv2.4.2  phs000424.v10
+====================================================================================================
+NO perturbation data. No TF Atlas. No candidate interventions.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+Six tissues only: ['Brain - Frontal Cortex (BA9)', 'Brain - Cortex', 'Brain - Anterior cingulate cortex (BA24)', 'Brain - Hippocampus', 'Heart - Left Ventricle', 'Muscle - Skeletal']
+Neuronal markers (frozen): ['RBFOX3', 'SNAP25', 'SYT1', 'GAD1', 'SLC17A7']
+Glial markers (frozen a priori): ['GFAP', 'AQP4', 'MBP', 'PLP1', 'OLIG2', 'CX3CR1', 'AIF1']
+z-score per gene on training rows only inside every fold.
+Primary transfer metric: held-out Pearson r (n_perm=200); R²/calR²/ρ reported, not gates.
+Within-batch R² stratified by grouping variable, never pooled.
+Fail loudly: no substitute columns, no silent coerce, no dropping rows to pass an assertion.
+[gate] open=True status=S2_i reason=gate open: S2 outcome (i) — planted and real-age r transfer both ways (gene_ridge r HBCC→MSSM +0.568 / MSSM→HBCC +0.578; uncalibrated R² is a calibration artifact)
+[prereg] <repo>\results\gtex\PREREG_20260917.flag exists; n_perm=200
+[load] ba9
+[load] cortex
+[load] ba24
+[load] hippocampus
+[load] heart_lv
+[load] muscle
+===== COMP start =====
+[COMP] BA9 raw ridge T3 passed both ways; rerunning T1 BA9 with composition proxies alone
+[T1] Brain - Frontal Cortex (BA9) comp_only ridge
+   bootstrap 5/20 ba9 comp_only ridge
+   bootstrap 10/20 ba9 comp_only ridge
+   bootstrap 15/20 ba9 comp_only ridge
+   bootstrap 20/20 ba9 comp_only ridge
+   skip center C1, B1, A1: n=3
+   skip center D1, A1: n=4
+   perm 50/200 (22s)
+   perm 100/200 (24s)
+   perm 150/200 (26s)
+   perm 200/200 (28s)
+[T1] Brain - Frontal Cortex (BA9) comp_only pls1
+   bootstrap 5/20 ba9 comp_only pls1
+   bootstrap 10/20 ba9 comp_only pls1
+   bootstrap 15/20 ba9 comp_only pls1
+   bootstrap 20/20 ba9 comp_only pls1
+   skip center C1, B1, A1: n=3
+   skip center D1, A1: n=4
+   perm 50/200 (42s)
+   perm 100/200 (48s)
+   perm 150/200 (54s)
+   perm 200/200 (59s)
+[t1_comp] wrote 2 rows in 59s
+[verdict] BA9 raw passes transfer (held-out Pearson r > 0 with permutation null ≤ 0.05) AND resid does not change it materially (sign of r unchanged, Δangle=+2.98° < 5°). A stable bulk cortex age direction exists and is not driven by recorded logistics; the DLPFC instability is then attributable to something GTEx does not share: two-bank structure, snRNA/pseudobulk noise, or unrecorded covariates. Say all three; do not pick one. Composition-only T1 still passes; the direction is not only the neuronal/glial mix.
+===== COMP done 60s =====

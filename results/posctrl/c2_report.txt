@@ -1,0 +1,158 @@
+====================================================================================================
+POSCTRL C2 — sex control  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO perturbation data. No TF Atlas. No candidate interventions.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+L2 bars frozen: bootstrap ≤ 35°; planted transfer both directions > 0.
+Ridge α grid and fold constructor unchanged.
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[c2a] sex ±1  male_rows=2346 female_rows=977 nan=0  donors_male=162  donors_female=71
+[battery] c2a n_boot=20 n_perm=20 parts=['boot', 'oof_loso', 'oof_ws', 'transfer', 'youngold'] donors=233 genes=25526
+   ridge bootstrap 1/20  (11s)
+   ridge bootstrap 5/20  (54s)
+   ridge bootstrap 10/20  (111s)
+   ridge bootstrap 15/20  (170s)
+   ridge bootstrap 20/20  (227s)
+   median-over-types pairwise bootstrap angle = 41.3°
+   folds seed=20260914  within_site=10  loso=2
+   OOF ridge scheme=within_site n_folds=10 n_perm=20
+      site-strat R²=+0.360  pooled=+0.363
+====================================================================================================
+POSCTRL C2 — sex control  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO perturbation data. No TF Atlas. No candidate interventions.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+L2 bars frozen: bootstrap ≤ 35°; planted transfer both directions > 0.
+Ridge α grid and fold constructor unchanged.
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[c2a] sex ±1  male_rows=2346 female_rows=977 nan=0  donors_male=162  donors_female=71
+[battery] c2a n_boot=20 n_perm=20 parts=['boot', 'oof_loso', 'oof_ws', 'transfer', 'youngold'] donors=233 genes=25526
+   ridge bootstrap 1/20  (11s)
+   ridge bootstrap 5/20  (56s)
+   ridge bootstrap 10/20  (114s)
+   ridge bootstrap 15/20  (170s)
+   ridge bootstrap 20/20  (226s)
+   median-over-types pairwise bootstrap angle = 41.3°
+   folds seed=20260914  within_site=10  loso=2
+   OOF ridge scheme=within_site n_folds=10 n_perm=20
+      site-strat R²=+0.360  pooled=+0.363
+      site-strat AUC=+0.939  pooled=+0.952
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      null mean=-0.137  p95=-0.087  p=0.048
+   OOF ridge scheme=loso n_folds=2 n_perm=20
+      site-strat R²=+0.410  pooled=+0.410
+      site-strat AUC=+0.980  pooled=+0.978
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      null mean=-0.167  p95=-0.090  p=0.048
+   fit on HBCC → test MSSM
+      median-over-types R²=+0.512
+      held-out AUC=+0.977
+      null (20 train-age shuffles)...
+      null mean=-0.119  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=+0.358
+      held-out AUC=+0.938
+      null (20 train-age shuffles)...
+      null mean=-0.140  p=0.048
+[L2d] within HBCC: young donors=75 rows=1143  old donors=45 rows=705
+[L2d] within MSSM: young donors=27 rows=367  old donors=86 rows=1108
+[L2d] balance HBCC: min(young,old)=45 (young=75 old=45)
+[L2d] balance MSSM: min(young,old)=27 (young=27 old=86)
+[L2d] balanced pool: young donors=72 sites={'H': 45, 'M': 27}  old donors=72 sites={'H': 45, 'M': 27}
+   split=within_H young_rows=1143 old_rows=705
+      within_H median angle=78.4°  n_types=18
+   split=within_M young_rows=367 old_rows=1108
+      within_M median angle=83.3°  n_types=17
+   split=balanced young_rows=1047 old_rows=1042
+      balanced median angle=75.6°  n_types=18
+[battery] c2a done in 902s  boot=41.3°  ws R²=+0.360  H→M=+0.512  M→H=+0.358
+[c2a] wrote <repo>\results\posctrl\c2a.json
+[c2a] boot=41.3°  H→M=+0.512  M→H=+0.358  ws R²=+0.360  AUC=0.9391268216259451
+[STOP P1] C2a failed bootstrap ≤35° or transfer >0. Do not proceed to C1/C3.
+====================================================================================================
+POSCTRL C2 — sex control  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO perturbation data. No TF Atlas. No candidate interventions.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+L2 bars frozen: bootstrap ≤ 35°; planted transfer both directions > 0.
+Ridge α grid and fold constructor unchanged.
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[c2b] sex ±1  male_rows=2346 female_rows=977 nan=0  donors_male=162  donors_female=71
+[c2b] drop chrX/chrY/PAR: n_drop=876 n_keep=24650  chrom_xy=876 par_symbol=18
+[c2b] chrom counts: {'1': 2464, '2': 1753, '19': 1536, '3': 1464, '12': 1368, '17': 1361, '11': 1358, '6': 1294, '5': 1278, '7': 1248, '16': 1115, '4': 1101, '8': 1050, '10': 1038, '9': 981, '15': 909, 'X': 828, '14': 822, '20': 628, '22': 560, '13': 526, '18': 476, '21': 295, 'Y': 48, 'MT': 19, 'NA': 6}
+[battery] c2b n_boot=20 n_perm=20 parts=['boot', 'oof_loso', 'oof_ws', 'transfer', 'youngold'] donors=233 genes=24650
+   ridge bootstrap 1/20  (10s)
+   ridge bootstrap 5/20  (46s)
+   ridge bootstrap 10/20  (96s)
+   ridge bootstrap 15/20  (141s)
+   ridge bootstrap 20/20  (187s)
+   median-over-types pairwise bootstrap angle = 49.2°
+   folds seed=20260914  within_site=10  loso=2
+   OOF ridge scheme=within_site n_folds=10 n_perm=20
+      site-strat R²=+0.007  pooled=+0.014
+      site-strat AUC=+0.603  pooled=+0.634
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      null mean=-0.139  p95=-0.088  p=0.048
+   OOF ridge scheme=loso n_folds=2 n_perm=20
+      site-strat R²=+0.034  pooled=+0.042
+      site-strat AUC=+0.672  pooled=+0.660
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      null mean=-0.166  p95=-0.091  p=0.048
+   fit on HBCC → test MSSM
+      median-over-types R²=+0.053
+      held-out AUC=+0.679
+      null (20 train-age shuffles)...
+      null mean=-0.138  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=+0.027
+      held-out AUC=+0.660
+      null (20 train-age shuffles)...
+      null mean=-0.145  p=0.048
+[L2d] within HBCC: young donors=75 rows=1143  old donors=45 rows=705
+[L2d] within MSSM: young donors=27 rows=367  old donors=86 rows=1108
+[L2d] balance HBCC: min(young,old)=45 (young=75 old=45)
+[L2d] balance MSSM: min(young,old)=27 (young=27 old=86)
+[L2d] balanced pool: young donors=72 sites={'H': 45, 'M': 27}  old donors=72 sites={'H': 45, 'M': 27}
+   split=within_H young_rows=1143 old_rows=705
+      within_H median angle=86.6°  n_types=18
+   split=within_M young_rows=367 old_rows=1108
+      within_M median angle=88.6°  n_types=17
+   split=balanced young_rows=1047 old_rows=1042
+      balanced median angle=85.9°  n_types=18
+[battery] c2b done in 534s  boot=49.2°  ws R²=+0.007  H→M=+0.053  M→H=+0.027
+[c2b] wrote <repo>\results\posctrl\c2b.json
+[c2b] boot=49.2°  H→M=+0.053  M→H=+0.027  ws R²=+0.007  AUC=0.6025712337413494

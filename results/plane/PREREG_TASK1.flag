@@ -1,0 +1,29 @@
+Written **before any PLANE state-median, slope, bend statistic, or null p-value**, 2026-09-21. No threshold in this block is re-tuned after numbers exist.
+
+Using the src/md2_*.py Louvain clustering already computed (not re-run, not re-tuned). Cell-state labels are the md2 assignment: argmax of mean AddModuleScore of mmc3 Reprog_cell_state_signatures columns Fibroblast / PartialReprog / EarlyPluripotency / Pluripotency / NonReprog. Labels are read from results/md2/t2_cluster_labels_*.csv. Not re-labelled. AddModuleScore for MD is the per-cell vector already stored in data/processed/md2/louvain_ams_*.npz (the md2 computation). Table S3 age-up minus age-down and the frozen-ruler / pluripotency−fibroblast per-cell scores are the vectors already stored in data/processed/md4/cell_scores_*.npz (the md4 computation). Frozen ruler: results/fibro/frozen_ruler_ridge_raw.npz used as-is. Refit nothing. Do not re-cluster, re-label, re-tune, rescore observed instruments, or re-order the trajectory after seeing scores.
+
+Trajectory order, fixed before scoring: Fibroblast → PartialReprog → EarlyPluri → Pluripotency. NonReprog is off-trajectory: score and plot it, but exclude it from every trajectory statistic.
+
+Unit of analysis: the cell state, per donor. Pool timepoints within each state (the state, not the day, is the trajectory position here). Report the timepoint composition of every state. Require ≥30 cells per state per donor; a state below that is reported as not scored, not dropped silently.
+
+Two coordinates per cell: x = identity = pluripotency−fibroblast score (frozen lists from FINDINGS_FIBRO.md; primary version as stored in md4 cell_scores, drop_oskm=False). y = age. Three age instruments, plotted and tested separately, never combined: frozen ruler; MD; Table S3 age-up minus age-down.
+
+Per donor, per instrument:
+
+1. State medians and bootstrap 95% CIs (B=200, cells resampled within state) on both coordinates.
+2. Segment slopes. Δage / Δidentity for segment A (Fibroblast → PartialReprog) and segment B (PartialReprog → Pluripotency; if Pluripotency is not scored, use EarlyPluri and say so).
+3. Bend statistic = slope_A − slope_B, with bootstrap CI.
+4. Null: for the frozen ruler, the same statistic on 200 permuted-weight random directions (seed 20260914). For each gene-list score (MD, age-up−age-down), 200 size-matched, expression-bin-matched random gene sets. Report the empirical p for the observed bend being at least as large as the null's.
+
+Young direction = destination state median age below origin (Δage < 0). If Δidentity > 0, that is a negative slope; if Δidentity < 0, a positive slope. Slope CI excludes 0 in the young direction iff the bootstrap CI of the slope lies entirely on that side of 0. Segment B is flat if its slope CI includes 0; reversed (old direction) if the slope CI excludes 0 on the age-rises side (Δage > 0).
+
+Empirical p for the bend: p_more_negative = (n_null ≤ obs + 1) / (n_null + 1). That is the one-sided test that the observed bend is at least as large as the null's in the rejuvenation-separable direction (slope_A more negative than slope_B when identity increases). Also report p_more_positive. “Beats its null” = p_more_negative ≤ 0.05. Seed 20260914 for random directions and random gene sets. Bootstrap seed 20260918 with a documented per-(donor, instrument) offset. Donors never pooled. Instruments never combined. NonReprog never in a trajectory statistic.
+
+Sanity, before any new median or bend: (1) reproduce FINDINGS_MD2.md pooled MD means on the aged donor (PartialReprog +0.150, NonReprog +0.439; t2_reproduction.json); (2) occupancy matches results/md4/t1_cell_counts.csv summed within state. If either fails, stop. Cell-state labels have drifted.
+
+**Pre-registered reading (per donor, per instrument; only what fired):**
+- **Bend:** age falls in segment A (slope_A CI excludes 0 in the young direction) **and** segment B's age change is flat or reversed (slope_B CI includes 0 or is in the old direction) **and** the bend statistic beats its null at p ≤ 0.05 → age moves before identity is lost; rejuvenation is separable from dedifferentiation on this instrument.
+- **Lockstep:** age falls in both segments with overlapping slopes and the bend statistic does not beat its null → this instrument cannot separate rejuvenation from identity loss.
+- **Mixed / other:** report exactly what fired.
+
+Instrument comparison, report-only: state which instruments bend and which run in lockstep. FINDINGS_MD3.md Task 3 found MD correlates ρ ≈ −0.94 with the pluripotency−fibroblast score, so MD is expected to run in lockstep; say whether it does. If the frozen ruler bends and MD does not, that is the separation between the instruments, stated as observed, with no winner declared.

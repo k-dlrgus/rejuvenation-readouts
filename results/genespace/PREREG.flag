@@ -1,0 +1,146 @@
+Written **before any GENESPACE statistic**, 2026-09-30. No threshold in this block is re-tuned after numbers exist.
+
+Question: do the paper's two displacement tests (SAME: young target = GM23815 day-0 cells from the same experiment; TOWARD: young/old = GTEx centroids) give the same answer inside smaller gene spaces: (A) the MD genes, (B) the published age-up ∪ age-down genes? The full frozen-ruler space (23,485 genes) is rerun only as a reproduction check.
+
+Seeds: 20260914 (split check, mixtures, gene permutations, donor splits, C3 folds, size baseline). 20260918 (bootstrap). n_perm=200, n_random=200, n_boot=200, n_baseline=200. GSE325735 out of scope. Uncalibrated R² never a gate. No manuscript is edited. paper/ and paper_package/ are not read for any number; reference numbers come only from results/same/ and results/toward/.
+
+STATUS AT WRITING
+Read: FINDINGS_SAME.md, FINDINGS_TOWARD.md, src/same_run.py, src/toward_run.py, both PREREG.flag files, results/md3/genesets.json (+ src/md3_genesets.py, genesets_summary.json, fibro2_common.align_counts_to_ruler for the paper's symbol-matching convention). Computed: only the symbol -> ruler-column counts below, from the frozen ruler's `symbol`/`ensembl` arrays. Not loaded: any expression matrix, GTEx mu/sd, ruler weights, results/same/summary.json, results/toward/stats.csv. No statistic exists in any gene space.
+
+INPUTS (read from disk; refit/re-label/re-cluster/rescore nothing)
+- Everything under INPUTS in results/same/PREREG.flag and results/toward/PREREG.flag, unchanged (GSE297234 counts and md2 labels; GTEx Stage 0 pack; frozen ruler mu/sd; md4 files).
+- results/same/split_idx.npz (O, Y, aged_B, young_B): the paper's half-A / half-B cells.
+- results/md3/genesets.json keys "MD", "age_up", "age_down". Keys TGFB and reprog are not used.
+- Stop-rule references: results/same/summary.json, results/toward/stats.csv. Read by the script at the check step only.
+
+1. GENE SPACES
+Mapping rule (frozen): strip and upper-case each list entry; keep repeated entries once (first occurrence); an entry maps iff it exactly equals an upper-cased entry of the frozen ruler's `symbol` array (results/fibro/frozen_ruler_ridge_raw.npz). No alias table, no HGNC update, no Ensembl lookup, no fuzzy match. Unmapped entries are listed in gene_map.csv and dropped, not rescued. If a symbol matched more than one ruler column, all its columns would be included and counted (13 ruler symbols span >1 column; none is in these lists).
+Counts at writing (n mapped / n in list):
+  MD        : 205 / 205 entries (205 unique; 0 unmapped)        -> 205 columns
+  age_up    : 1312 / 1533 entries (1532 unique; GOLGA8M listed twice; 220 unmapped)
+  age_down  : 1777 / 2007 entries (2006 unique; TMEM191A listed twice; 229 unmapped)
+  age_up ∩ age_down: 0 in the lists, 0 among mapped. No overlap rule is needed.
+  AGE = age_up ∪ age_down: 3089 / 3538 unique                   -> 3089 columns
+  MD ∩ AGE (mapped): 43 genes (18 age_up, 25 age_down). Spaces overlap; nothing is removed to make them disjoint.
+  FULL: all 23,485 ruler columns.
+The script recomputes these counts; if any differs, STOP.
+A space is an index set of ruler columns, kept in ruler order (ascending column index). The space's matrix = those columns of the SAME frozen-z matrix the paper builds in the full space: TMM, log2-CPM prior.count=2, and z with frozen GTEx mu/sd run on all 23,485 genes of the paper's panel exactly as in the paper; columns are taken afterwards. TMM and z-scoring are never rerun on a subset. Genes set to z=0 (zero counts in every panel row) stay 0; report n such genes per space.
+Space order everywhere: FULL, MD, AGE.
+
+2. SAME-PLATFORM TEST (per space)
+Cells: O, Y, aged_B, young_B from results/same/split_idx.npz. The script also reruns split_half(d0, 20260914) per donor and STOPs if it does not equal the file. Mixtures: mix_indices(aged_B, young_B, 20260914), f = 0, 0.10, 0.25, 0.50, total = min(n_aged_B, n_young_B). PartialReprog, Pluripotency, NonReprog pooled across timepoints, md2 labels, as in the paper.
+Panels as in src/same_run.py (full-gene TMM): mixture panel [O, Y, mix f=0 … 0.50]; main panel [O, Y, S, S_rev, Pluri, NonReprog].
+Inside each space X (z restricted to X):
+  forward : v = z(Y) − z(O); S = GM00731 PartialReprog; d = z(S) − z(O).
+  reverse : v_rev = z(O) − z(Y); S_rev = GM23815 PartialReprog; d = z(S_rev) − z(Y).
+  mixture control: each mixture as S in the forward frame of X.
+  context : GM00731 Pluripotency and GM00731 NonReprog as S in the forward frame of X.
+  Asymmetry = progress_forward − progress_reverse (reported; not part of the section-7 reading).
+  N1 (reported, not a gate here): 200 permutations of v (resp. v_rev) within X, fresh Generator(20260914) per call; p = (#{cos ≥ observed} + 1)/201.
+Anchors, control and reverse are built from X's own columns in every space; nothing is copied between spaces. If ‖v‖ < 1e-12 in X, STOP for X.
+
+3. GTEx-ANCHORED TEST (per space; secondary)
+Anchors as in src/toward_run.py: GTEx Stage 0 matrix, frozen mu/sd z; YOUNG = AGE 20-29 ∪ 30-39, OLD = 60-69 ∪ 70-79 (report actual n; middle reported, not dropped). c_young(X), c_old(X) = centroids restricted to X; w(X) = c_young(X) − c_old(X); u(X) = w(X)/‖w(X)‖, re-normalized inside X.
+Per donor (GM00731 and GM23815 separately, never pooled), for every destination state (PartialReprog, EarlyPluripotency, Pluripotency, NonReprog; MIN_CELLS=30), with the paper's per-donor full-gene panel TMM: d = z(S) − z(d0 Fibroblast), restricted to X. Report cos_S = d·u(X)/‖d‖, dist_young, delta_young, dist_old, delta_old, and the section-4 statistics against w(X).
+Rebuilt inside X:
+  N1: 200 permutations of u(X) entries, fresh Generator(20260914) per space.
+  N2: 200 equal-size random GTEx donor splits ignoring age, fresh Generator(20260914) per space (same splits as the paper); each split's mean difference restricted to X, then unit-normalized.
+  C3 (five-fold positive control): same folds (Generator(20260914) shuffle, fold = i % 5); per fold rebuild c_young, c_old, u on training donors restricted to X; cos_fold = d·u_train/‖d‖ with d = c_young_train − mean z(held-out OLD), in X. Pass = all 5 folds finite and every cos_fold > 0.50; construction minimums unchanged (20/20/5).
+If C3 fails in X, the GTEx test for X is `c3_broken`: nothing about GSE297234 is reported for X in this test.
+If C3 passes, the decision order of results/toward/PREREG.flag is applied unchanged per donor in X as a secondary key (GM23815 contrast only). It never changes the section-7 reading.
+
+4. PER-STATE STATISTICS (every state, every space, both tests)
+  cos       = d·v / (‖d‖ ‖v‖)
+  progress  = d·v / ‖v‖²
+  delta     = ‖z(S) − target‖ − ‖z(origin) − target‖   (negative = closer to target)
+  perp      = ‖d − progress·v‖ / ‖v‖                   (sideways part, in units of ‖v‖)
+  rel_delta = delta / ‖z(origin) − target‖             (dimensionless)
+Same-platform test: v = target − origin, so ‖z(origin) − target‖ = ‖v‖ and
+  final distance² / ‖v‖² = (1 − progress)² + perp²,
+  hence delta < 0 iff (1 − progress)² + perp² < 1.
+The script checks this identity for every state, space and bootstrap draw; relative mismatch > 1e-8 is a code bug: STOP.
+GTEx test: v = w(X) = c_young − c_old, but the origin is the donor's d0 pseudobulk, not c_old, so the identity does NOT hold. progress and perp are reported against w(X); delta_young and delta_old are computed directly, never derived from progress/perp.
+
+5. READOUT-VECTOR COSINE (context only; never a gate or reading)
+  r_MD(X) : −1 on each column of X whose gene is in MD, 0 elsewhere. Signed so "MD goes down" is a positive cosine.
+  r_AGE(X): −1 on age_up columns, +1 on age_down columns, 0 elsewhere (a gene in both lists would get 0; there are none). Signed so "younger" is a positive cosine.
+Report cos(d, r) for every state in both tests, plus cos(v, r) and cos(u(X), r), in every space where r has ≥1 nonzero entry, with its n nonzero (FULL: r_MD 205, r_AGE 3089; MD: r_MD 205, r_AGE 43; AGE: r_MD 43, r_AGE 3089).
+This approximates the published AddModuleScore and does not reproduce it. AddModuleScore is per cell on log-normalized counts, subtracts expression-bin-matched control genes, and is summarized per cluster; here it is an unweighted sign vector dotted with frozen-GTEx z of TMM pseudobulk displacements.
+
+6. SIZE BASELINE (context; not a gate; never changes a reading)
+Cosines and distances are not compared across spaces of different size. For MD (205) and AGE (3089) separately:
+  - Bins: 24 equal-count bins of frozen GTEx mu over all 23,485 ruler genes; edges = quantiles of mu at 0, 1/24, …, 1; bin = searchsorted(edges, mu, side="right") − 1, clipped to 0..23.
+  - 200 draws. In each draw, for bins 0..23 in order, draw (n space genes in that bin) genes without replacement from all ruler genes in that bin. Space genes are not excluded; report the mean overlap of random sets with the real space.
+  - One Generator(20260914) per space, MD before AGE. Drawn column indices are saved.
+  - Each random set gets point estimates only (no bootstrap, no nulls), sliced from the same stored full-gene z matrices: every section-4 statistic in both tests, mixture-control progress and delta, and the section-7 geometry label.
+  - For the real space report position = (#{random < real} + 0.5·#{random = real}) / 200, the random 2.5 / 50 / 97.5 percentiles, and the count of random sets per geometry label.
+Cross-space comparisons use progress, perp, rel_delta, cos and baseline position; never raw distances.
+
+7. PRE-REGISTERED READING (per space, MD and AGE; forward same-platform test; only what fired)
+Gate = that space's mixture control passes: progress non-decreasing in f (f=0 ≤ 0.10 ≤ 0.25 ≤ 0.50), AND the progress CI at f=0.50 excludes 0 (lo > 0 or hi < 0, as in results/same/PREREG.flag) AND is valid (section 9), AND delta at f=0.50 < 0.
+Decision order:
+1. Stop rule (section 8) failed -> key `reproduction_failed`. No space is read.
+2. Gate failed -> NO READING.
+3. delta < 0 -> APPROACH.
+4. delta > 0 AND progress > 1 AND (progress − 1)² > perp² -> OVERSHOOT.
+5. delta > 0 AND not OVERSHOOT -> SIDEWAYS.
+6. delta = 0 exactly -> NO READING (tie).
+Point estimates decide the key. The delta and progress CIs, with valid/invalid flags, are printed after the sentence and do not change the key.
+Exact sentences (fill braces; no other wording):
+APPROACH: "In the {space} gene space ({n_genes} ruler genes), aged partially-reprogrammed cells (GM00731 PartialReprog, n_cells={n_S}) end closer to the young donor's day-0 cells than they started: change in distance {delta} ({rel_delta} of the starting gap), progress {progress}, sideways {perp}. The reverse test in the same space gives progress {progress_rev} and change in distance {delta_rev}; approach alone does not separate rejuvenation from donor convergence. One young donor, so 'young' is confounded with that donor."
+OVERSHOOT: "In the {space} gene space ({n_genes} ruler genes), aged partially-reprogrammed cells (GM00731 PartialReprog, n_cells={n_S}) move past the young donor's day-0 cells along the aged-to-young axis (progress {progress} > 1) and end farther from them than they started (change in distance {delta}); the overshoot term (progress − 1)² = {a} is larger than the sideways term perp² = {b}. This is not approach to the young donor."
+SIDEWAYS: "In the {space} gene space ({n_genes} ruler genes), aged partially-reprogrammed cells (GM00731 PartialReprog, n_cells={n_S}) end farther from the young donor's day-0 cells than they started (change in distance {delta}), mainly through movement off the aged-to-young axis: sideways term perp² = {b}, overshoot term (progress − 1)² = {a}, progress {progress}. This is not approach to the young donor."
+NO READING: "In the {space} gene space ({n_genes} ruler genes), the mixture positive control failed ({failed_conditions}); the statistic cannot detect a known approach in this space, and its forward numbers are not interpreted."
+NO READING (tie): "In the {space} gene space ({n_genes} ruler genes), change in distance is exactly 0; no reading."
+The same geometry label (APPROACH / OVERSHOOT / SIDEWAYS) is printed for reverse, Pluripotency and NonReprog in every space, and for forward in FULL, as context only. FULL is a reproduction check and gets no reading.
+Spaces are not averaged, ranked, or combined. There is no "best space". MD and AGE readings are reported side by side.
+
+8. STOP RULE (before any MD or AGE statistic)
+FULL is run first. Compare to disk, |new − reference| ≤ 1e-6 absolute:
+  results/same/summary.json : frac_S, delta_S, frac_rev, p.fracs (all four f).
+  results/toward/stats.csv  : row cell_line=GM00731, state=PartialReprog: cos_S, delta_young.
+Any miss -> STOP: key `reproduction_failed`; write every compared value, reference and difference to repro_check.json; compute no MD or AGE statistic. Nothing is re-tuned to make it match.
+
+9. INTERVALS
+Bootstrap B=200, seed 20260918, with the paper's procedure and generator order, so resampled cells/donors are identical in every space:
+  - same-platform mixture: fresh Generator(20260918); O and Y frozen; mixture cells resampled.
+  - same-platform main   : fresh Generator(20260918); O and Y frozen; S, S_rev, Pluri, NonReprog resampled.
+  - GTEx per donor       : Generator(20260918 + 0) GM00731, Generator(20260918 + 1) GM23815; origin and destinations resampled.
+  - C3 fold CIs          : fresh Generator(20260918) per space; held-out OLD donors resampled.
+Each draw re-TMMs the full-gene panel and z-scores with frozen mu/sd once; every space is sliced from that same draw. 95% percentile CIs.
+Validity: a CI is valid iff lo ≤ point ≤ hi. Otherwise it is flagged `invalid` in every table and text. An invalid CI cannot satisfy any condition (it can only fail the section-7 gate). FINDINGS_SAME.md and FINDINGS_TOWARD.md already note that the re-TMM bootstrap need not contain the point; the procedure is not changed here to make CIs valid.
+
+10. OUTPUTS / FILES
+New files only: results/genespace/ (this flag; manifest.json; gene_map.csv; spaces.json; repro_check.json; same_stats.csv; same_posctrl.csv; gtex_stats.csv; gtex_c3.csv; readout_cos.csv; size_baseline.csv; size_baseline_sets.npz; boot.npz; reading.json; summary.json; run_report.txt), src/genespace_run.py, FINDINGS_GENESPACE.md, PROGRESS_GENESPACE.md.
+No existing file is modified. src/genespace_run.py may import pure functions from src/same_run.py and src/toward_run.py; it must not call any function that writes (freeze_anchors, build_null_directions, run_c3, run_posctrl, write_findings, write_progress, save_manifest, record_failure of those modules). SHA-256 of every file under results/same/, results/toward/, results/md3/, plus results/fibro/frozen_ruler_ridge_raw.npz, src/same_run.py, src/toward_run.py, FINDINGS_SAME.md, FINDINGS_TOWARD.md is recorded before and after the run; any change -> run flagged invalid.
+This flag is not rewritten by the script.
+
+WHAT DOES NOT COUNT
+- Rerunning TMM or z-scoring on a subset. Refitting mu/sd, the ruler, labels, clusters or AddModuleScore.
+- Adding, removing or re-mapping genes, or choosing among spaces, after numbers exist.
+- Comparing raw cosines or distances across spaces of different size. Use progress, perp, rel_delta and the size baseline.
+- Using the size baseline or the readout cosine to change a reading.
+- The forward test alone as rejuvenation: an APPROACH sentence must carry the reverse numbers.
+- Any MD or AGE number if the FULL rerun misses the stop rule.
+- An invalid CI passing a gate.
+- Using half-B cells anywhere except the mixture control; using half-A cells in it; changing f values.
+- Per-timepoint slicing. Averaging donors, directions, states or spaces.
+- Frozen-ruler movement. Context only.
+- Any number from paper/ or paper_package/.
+
+AMENDMENT 1 — written 2026-09-30, **before any GENESPACE statistic**. Adds to sections 6, 2/7 and 8. Nothing above is changed.
+
+A1. SIZE BASELINE MATCHED ON MEASUREMENT (adds to section 6)
+Reason (owner): the age lists hold many pseudogenes and non-coding genes the reprogramming data do not measure (results/md3/t1_ams_meta_*.json: ~896 of 1,533 age-up, ~1,586 of 2,007 age-down found there; cited as context, not an input). Random genes are measured more often, so unmatched random sets would hold more genes that can move.
+- Zero status: a ruler gene is "zero" iff its summed counts are 0 in every row of the full-gene main SAME panel [O, Y, S, S_rev, Pluri, NonReprog] (section 2); otherwise "nonzero". This is the same mask same_run.py sets to z=0. The script fixes it from the panel counts before computing any statistic and saves it per gene in gene_map.csv.
+- Strata = 24 GTEx-mu bins (section 6) × {zero, nonzero} = 48 strata. In each draw, for each stratum in order (bin 0..23; zero before nonzero within a bin), draw (n space genes in that stratum) genes without replacement from all ruler genes in that stratum. Space genes are not excluded. Everything else in section 6 is unchanged (200 draws, one Generator(20260914) per space, MD before AGE, point estimates only, reporting).
+- Report per space (FULL, MD, AGE) and per list (age_up, age_down): n mapped to the ruler, n nonzero in the main SAME panel, n zero, and the per-stratum counts.
+
+A2. MIXTURE NOISE FLOOR (adds to sections 2 and 7)
+In every space, the f = 0 mixture's progress, delta, perp and cos are reported as the noise floor, as in the paper. They are not subtracted from any mixture, forward, reverse or context statistic. The section-7 gate and reading use uncorrected values.
+
+A3. FULL BOOTSTRAP-CI COMPARISON (adds to section 8; reported only, NOT a stop rule)
+After the section-8 point check, compare the FULL rerun's 95% CIs with the paper's:
+  results/same/summary.json : frac_S_ci_lo/hi, delta_S_ci_lo/hi, frac_rev_ci_lo/hi, and mixture progress CI at f=0.50 (p.frac50_ci_lo/hi).
+  The mixture progress CIs at f = 0, 0.10, 0.25 are not in summary.json; they are compared with results/same/posctrl.csv (frac_ci_lo/hi by f).
+Write each rerun bound, reference bound and difference to repro_check.json and FINDINGS_GENESPACE.md. A difference never stops the run, never replaces the rerun's CIs, and never changes a gate or reading.

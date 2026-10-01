@@ -1,0 +1,15 @@
+Written **before any Task 4 ρ**, 2026-09-18. No threshold in this block is re-tuned after numbers exist. Option (a) is not run.
+
+Choice: **(b)**. The primary external cell is superseded from GSE113957 to CELLxGENE dataset `a19d1667-a7b5-4556-9e5f-f9bfa690c0f1` (Human dermal fibroblast atlas; 10x-restricted adult donors).
+
+Ground: FINDINGS_FIBRO2.md T-A pre-registration already stated that a 10x cohort is worth more than a larger bulk one because the platform shift is the thing under test. Stage 2 projects a GTEx bulk polyA (RNASeQCv2.4.2) frozen ruler onto 10x 3' scRNA-seq pseudobulks. GSE113957 is bulk FPKM; an FPKM rank-transform would be a different transform from the GTEx TMM/log2-CPM spec and would remain bulk-to-bulk, so it would not test the platform shift. The CELLxGENE 10x cohort tests that shift directly.
+
+Take the Stage 1 ridge direction exactly as frozen in `results/fibro/frozen_ruler_ridge_raw.npz`. Refit nothing. Recalibrate nothing. Rescale nothing. Score Spearman ρ vs donor age on the superseded primary.
+
+Freeze-and-project path (FINDINGS_EXTERNAL.md / T-A): TMM/edgeR log2-CPM (`prior.count=2`); genes restricted to the overlap with the frozen ruler; missing overlap genes left at z=0; z uses the frozen train mean and sd. Adult restriction ≥18. Ages from the record column actually used. Do not infer a donor age that the record does not state.
+
+Metric: Spearman ρ vs stated age. Donor-level permutation null n_perm=200 (scores held fixed; shuffle donor ages; fresh Generator on seed `20260914`). Donor-bootstrap 95% percentile CI, B=200, seed `20260918`. Calibrated R² and uncalibrated R² reported; uncalibrated R² is never a gate. Pearson r reported, not a gate.
+
+**Pre-registered reading:** if the superseded primary passes (ρ > 0, null ≤ 0.05), the frozen fibroblast ruler is a validated instrument outside GTEx and the Stage 2 trajectory is interpretable as a statement about the cells. If it fails, Stage 2 remains uninterpretable and every number in Tasks 1–3 is descriptive only.
+
+GSE113957 is not scored in this prompt. Option (a) is not run. GSE226189 is not the superseded primary. GSE325735 is out of scope. Do not report both (a) and (b) and pick the better number.

@@ -1,0 +1,6 @@
+step,unit,before,after,removed,note
+cells with numeric donor age,cells,265767,115915,149852,non-numeric development_stage dropped
+pseudobulk groups with >= 20 cells,groups,223,145,78,
+cells in retained pseudobulk groups,cells,115915,115315,600,
+cell types present in >= 8 donors,cell types,17,8,9,"dropped: {'H1 horizontal cell': np.int64(7), 'H2 horizontal cell': np.int64(6), 'S cone cell': np.int64(1), 'amacrine cell': np.int64(5), 'astrocyte': np.int64(4), 'microglial cell': np.int64(2), 'parasol ganglion cell of retina': np.int64(3), 'retinal ganglion cell': np.int64(5), 'starburst amacrine cell': np.int64(7)}"
+cells in retained cell types,cells,115315,108014,7301,

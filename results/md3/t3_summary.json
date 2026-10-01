@@ -1,0 +1,30 @@
+{
+ "n_rows": 8,
+ "checks": [
+  {
+   "cell_line": "GM00731",
+   "md3_rho": 0.7820855614973262,
+   "md2_rho": 0.7820855614973262,
+   "abs_delta": 0.0,
+   "n_md3": 33,
+   "n_md2": 33
+  },
+  {
+   "cell_line": "GM23815",
+   "md3_rho": 0.7656226126814362,
+   "md2_rho": 0.7656226126814362,
+   "abs_delta": 0.0,
+   "n_md3": 34,
+   "n_md2": 34
+  }
+ ],
+ "ordinal": {
+  "Fibroblast": 0,
+  "PartialReprog": 1,
+  "EarlyPluripotency": 2,
+  "Pluripotency": 3
+ },
+ "min_cells": 20,
+ "report_only": true,
+ "no_gate": true
+}

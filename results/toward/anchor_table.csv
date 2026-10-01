@@ -1,0 +1,10 @@
+AGE_bin,n,role
+20-29,60,YOUNG
+30-39,53,YOUNG
+40-49,106,middle_excluded
+50-59,202,middle_excluded
+60-69,210,OLD
+70-79,21,OLD
+YOUNG_total,113,YOUNG
+OLD_total,231,OLD
+middle_total,308,middle_excluded

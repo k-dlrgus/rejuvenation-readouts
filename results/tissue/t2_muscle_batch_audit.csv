@@ -1,0 +1,2 @@
+name,dataset_id,tissue,n_donors,n_batches,batch_column,batch_usable,r2_age_batch,r2_depth_batch,r_age_depth_pooled,r_age_depth_between,r_age_depth_within,age_min,age_max,n_cell_types,n_pseudobulks
+muscle,15d374d6-0dfd-4d8e-ade7-81f73dc921ee,skeletal muscle,27,3,assay,True,0.06711187734908086,0.6423496810608086,0.11220461403972982,0.4708261283138574,-0.14411663291656457,19.0,90.0,13,214

@@ -1,0 +1,2 @@
+name,dataset_id,tissue,n_donors,n_batches,batch_column,batch_usable,r2_age_batch,r2_depth_batch,r_age_depth_pooled,r_age_depth_between,r_age_depth_within,age_min,age_max,n_cell_types,n_pseudobulks
+brain_wm,c05e6940-729c-47bd-a2a6-6ce3730c4919,brain,20,7,SequencingPool,True,0.2722195470729002,0.6262073367822304,0.2975212083576975,0.6249587661064603,0.005858121950520442,34.0,74.0,11,193

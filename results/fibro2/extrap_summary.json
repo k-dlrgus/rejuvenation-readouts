@@ -1,0 +1,57 @@
+{
+ "n_rows": 207,
+ "pca_k": 50,
+ "gtex_n": 652,
+ "gtex_p": 23485,
+ "note": "report-only; no pass/fail",
+ "by_cohort": [
+  {
+   "cohort": "GSE226189_near_miss_bulk",
+   "variant": "external",
+   "n": 82,
+   "nn_euclidean_min": 469.6194590307989,
+   "nn_euclidean_median": 532.813865736395,
+   "nn_euclidean_max": 835.9609758688341,
+   "mahalanobis_pca_min": 21.20646112518046,
+   "mahalanobis_pca_median": 29.97187384816275,
+   "mahalanobis_pca_max": 47.8284395498379,
+   "pca_k": 50
+  },
+  {
+   "cohort": "GSE297234",
+   "variant": "all_cell",
+   "n": 8,
+   "nn_euclidean_min": 452.37935160977867,
+   "nn_euclidean_median": 472.9434829485507,
+   "nn_euclidean_max": 506.75642112120795,
+   "mahalanobis_pca_min": 23.996595560201172,
+   "mahalanobis_pca_median": 25.01530596801941,
+   "mahalanobis_pca_max": 26.32361227333501,
+   "pca_k": 50
+  },
+  {
+   "cohort": "GSE297234",
+   "variant": "cluster",
+   "n": 24,
+   "nn_euclidean_min": 433.28875529426205,
+   "nn_euclidean_median": 473.6660086856963,
+   "nn_euclidean_max": 792.5333295148231,
+   "mahalanobis_pca_min": 21.91869312536799,
+   "mahalanobis_pca_median": 24.658931221428247,
+   "mahalanobis_pca_max": 34.96960921640875,
+   "pca_k": 50
+  },
+  {
+   "cohort": "cxg_a19d1667",
+   "variant": "external",
+   "n": 93,
+   "nn_euclidean_min": 493.3011920262257,
+   "nn_euclidean_median": 615.8002073236371,
+   "nn_euclidean_max": 1651.65982065208,
+   "mahalanobis_pca_min": 24.57951936197326,
+   "mahalanobis_pca_median": 30.544162682605947,
+   "mahalanobis_pca_max": 99.70797159164289,
+   "pca_k": 50
+  }
+ ]
+}

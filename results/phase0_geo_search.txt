@@ -1,0 +1,49 @@
+﻿====================================================================================================
+QUERY: (aging[Title] OR ageing[Title] OR "age-related"[Title] OR "healthy aging"[All Fields]) AND ("single-cell"[All Fields] OR "single cell"[All Fields] OR scRNA-seq[All Fields]) AND (PBMC[All Fields] OR "peripheral blood"[All Fields] OR immune[All Fields]) AND "Homo sapiens"[Organism] AND gse[Entry Type]
+  GEO returned 34 records (showing up to 34)
+  GSE343903   n_samples=    6  2026/08/20  Expression profiling by high throughput  | Single-Cell Analysis of the Aging Human Periovulatory Follicle Reveals Granulosa Cell Dysfunction and Immune D
+  GSE338484   n_samples=   29  2026/07/13  Genome binding/occupancy profiling by hi | Somatic mutations reveal the ontogeny of microglia in human aging [snATAC-seq]
+  GSE299953   n_samples=   28  2026/06/16  Expression profiling by high throughput  | Single-cell omics analysis of age-related immune signatures induced by Omicron sublineage breakthrough infecti
+  GSE329693   n_samples=   36  2026/06/15  Expression profiling by high throughput  | Microbiome-Derived Metabolites Shape CD4??T-Cell Differentiation and Immune Aging in Chronic HIV-1 Infection [
+  GSE328611   n_samples=    6  2026/06/15  Expression profiling by high throughput  | Microbiome-Derived Metabolites Shape CD4??T-Cell Differentiation and Immune Aging in Chronic HIV-1 Infection [
+  GSE287919   n_samples=       2026/05/15  Expression profiling by high throughput  | A Single-Cell Transcriptomic Atlas of Human Lens Homeostasis and Aging
+  GSE290999   n_samples=  130  2026/05/05  Methylation profiling by high throughput | DNA methylation gain at polycomb CpG islands is a hallmark of cellular aging
+  GSE270554   n_samples=   24  2026/04/27  Expression profiling by high throughput  | Aging restricts maturation of CXCL13+ T follicular helper cells in human immunity
+  GSE316337   n_samples=   54  2026/01/16  Expression profiling by high throughput  | Multi-omics profiling reveals microbiota, metabolite, lipid, and immunological heterogeneity underlying distin
+  GSE298439   n_samples=    2  2025/10/20  Expression profiling by high throughput  | 款灌 T Cells Target and Ablate Senescent Cells in Aging and Alleviate Pulmonary Fibrosis
+  GSE231906   n_samples=   59  2025/08/31  Expression profiling by high throughput  | Single-cell analysis of human thymus and peripheral blood unveils the dynamics of T-cell development and aging
+  GSE286254   n_samples=    7  2025/07/18  Other                                    | A Single-Cell Atlas Of Human Pediatric Liver Reveals Age-Related Hepatic Gene Signatures
+  GSE277909   n_samples=  271  2025/06/26  Expression profiling by high throughput  | Epigenetic attenuation of interferon signaling drives aging-related improvements in systemic lupus
+  GSE271406   n_samples=   55  2025/04/28  Expression profiling by high throughput  | Spatial-Temporal Analysis Revealed the Dynamic Changes of Leukemia Neighborhood After Receiving Pembrolizumab 
+  GSE288020   n_samples=   23  2025/01/27  Expression profiling by high throughput  | Immune-aging is linked to clinical malignancy and vaccine responses in myeloma
+  GSE254315   n_samples=   25  2024/12/13  Expression profiling by high throughput  | Single-cell transcriptome analysis reveals the molecular mechanisms underlying age-related changes in human te
+  GSE279408   n_samples=    1  2024/11/08  Expression profiling by high throughput  | Aging modifies endometrial dendritic cell function and unconventional double negative T cells in the human gen
+  GSE150148   n_samples=    1  2024/05/06  Expression profiling by high throughput  | Emergence of CCL18- and IFI27-expressing macrophages in aging lungs, and potential roles for alveolar type 2 c
+  GSE254483   n_samples=    4  2024/03/20  Expression profiling by high throughput  | Immunoglobulin G N-glycan Markers of Accelerated Biological Aging During Chronic HIV Infection
+  GSE260769   n_samples=   10  2024/03/10  Expression profiling by high throughput  | Dynamic changes of lung homeostasis from development-to-aging single-cell atlas
+  GSE232222   n_samples=   17  2024/01/05  Expression profiling by high throughput  | Mosaic loss of Y chromosome is associated with aging and epithelial injury in chronic kidney disease
+  GSE236660   n_samples=   63  2023/12/12  Expression profiling by high throughput  | Effect of Aging on the Human Myometrium at Single-Cell Resolution
+  GSE241492   n_samples=    6  2023/10/17  Expression profiling by high throughput  | STAT3 Modulates CD4+ T Mitochondrial Dynamics and Function in Aging
+  GSE222647   n_samples=   65  2023/10/06  Expression profiling by high throughput  | scRNAseq of peripheral blood mononuclear cells in age-related macular degeneration
+  GSE215814   n_samples=   27  2022/10/14  Expression profiling by high throughput  | IFN-貫 treatment accelerates SARS-CoV-2 clearance despite age-related delays in the induction of T cell immunit
+  GSE136184   n_samples=   16  2022/06/28  Expression profiling by high throughput  | Single Cell Analysis of CD8+ T-cells with Aging
+  GSE199337   n_samples=    4  2022/03/25  Expression profiling by high throughput  | Single-cell transcriptomics reveal a unique memory-like NK cell subset that accumulates with aging and correla
+  GSE179631   n_samples=    4  2022/01/20  Expression profiling by high throughput  | Hyaluronidase-1 impairs endothelial barrier in a subtype of age-related macular degeneration
+  GSE157007   n_samples=   48  2022/01/12  Expression profiling by high throughput  | Multidimensional single-cell analysis of human peripheral blood reveals characteristic features of the immune 
+  GSE189783   n_samples=   17  2021/12/02  Expression profiling by high throughput  | A unique adipocyte progenitor population that promotes age-related adiposity
+  GSE159688   n_samples=   50  2021/11/08  Expression profiling by high throughput  | Developmental regulation by miR-29 specifies age-related differences in the CD8+ T cell immune response
+  GSE137869   n_samples=   60  2020/02/21  Expression profiling by high throughput  | Caloric restriction reprograms the single-cell transcriptional landscape of Rattus norvegicus aging
+  GSE121560   n_samples=    8  2019/05/13  Expression profiling by high throughput  | Aging Human Hematopoietic Stem Cells Manifest Profound Epigenetic Reprogramming of Enhancers That May Predispo
+  GSE116254   n_samples=   16  2019/05/13  Expression profiling by high throughput  | Aging Human Hematopoietic Stem Cells Manifest Profound Epigenetic Reprogramming of Enhancers That May Predispo
+====================================================================================================
+QUERY: ("single-cell eQTL"[All Fields] OR OneK1K[All Fields]) AND "Homo sapiens"[Organism] AND gse[Entry Type]
+  GEO returned 6 records (showing up to 6)
+  GSE289173   n_samples=   48  2025/02/12  Expression profiling by high throughput  | Single-cell eQTL analysis identifies genetic variation underlying metabolic dysfunction-associated steatohepat
+  GSE273785   n_samples=   15  2025/01/15  Expression profiling by high throughput  | Single-cell Transcriptomics Reveals Inter-ethnic Variation in Immune Response to Falciparum Malaria [Batch2]
+  GSE273781   n_samples=   16  2025/01/15  Expression profiling by high throughput  | Single-cell Transcriptomics Reveals Inter-ethnic Variation in Immune Response to Falciparum Malaria. [Batch1]
+  GSE196830   n_samples= 1179  2022/04/08  Expression profiling by high throughput  | Single-cell eQTL mapping identifies cell type specific genetic control of autoimmune disease
+  GSE196829   n_samples= 1104  2022/04/08  Genome variation profiling by SNP array  | Single-cell eQTL mapping identifies cell type specific genetic control of autoimmune disease [Genotype_data]
+  GSE196735   n_samples=   75  2022/04/08  Expression profiling by high throughput  | Single-cell eQTL mapping identifies cell type specific genetic control of autoimmune disease [scRNAseq_data]
+====================================================================================================
+QUERY: (supercentenarian[All Fields] OR centenarian[All Fields]) AND ("single-cell"[All Fields] OR scRNA-seq[All Fields]) AND "Homo sapiens"[Organism] AND gse[Entry Type]
+  GEO returned 0 records (showing up to 0)

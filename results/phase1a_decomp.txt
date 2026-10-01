@@ -1,0 +1,122 @@
+﻿pseudobulk: 9,623 samples x 35,528 genes; donors=981; cell types=16
+                n_pseudobulks  n_donors  median_cells
+celltype                                             
+B_intermediate            493       493          32.0
+B_memory                  614       614          35.0
+B_naive                   844       844          62.0
+CD4_CTL                   280       280          36.0
+CD4_Naive                 974       974         246.0
+CD4_TCM                   980       980         276.5
+CD4_TEM                   698       698          34.0
+CD8_Naive                 671       671          54.0
+CD8_TCM                   293       293          26.0
+CD8_TEM                   966       966         136.0
+CD14_Mono                 493       493          49.0
+CD16_Mono                 293       293          31.0
+MAIT                      112       112          27.0
+NK                        977       977         147.0
+Treg                      606       606          31.0
+gdT                       329       329          30.0
+[filter] genes with CPM>1 in >= 10% of pseudobulks   genes  35,528 -> 13,904  (removed 21,624)
+[filter] drop CELLxGENE feature_is_filtered genes                genes  13,904 -> 13,904  (removed 0)
+
+=== variance component distribution over genes (fraction of total variance) ===
+             0.500  0.900  0.950  0.990  0.999  1.000
+unique_ct   0.1260 0.5163 0.6731 0.8538 0.9212 0.9687
+unique_age  0.0002 0.0018 0.0029 0.0074 0.0215 0.0350
+shared      0.0001 0.0016 0.0025 0.0048 0.0085 0.0150
+resid       0.8730 0.9481 0.9622 0.9776 0.9851 0.9908
+interaction 0.0025 0.0041 0.0046 0.0060 0.0100 0.0151
+partial_age 0.0003 0.0026 0.0044 0.0124 0.0352 0.0588
+
+shared component: min=-0.0110 max=0.0150 (near 0 => age and cell type ~orthogonal in design)
+
+Top 25 genes by unique age variance:
+                          symbol  unique_age  unique_ct  interaction  age_slope_per_year  mean_logcpm
+ENSG00000101745          ANKRD12      0.0350     0.4078       0.0027              0.0067       7.2750
+ENSG00000157514          TSC22D3      0.0350     0.2514       0.0019              0.0072       9.0306
+ENSG00000173812             EIF1      0.0294     0.3381       0.0014              0.0035      10.9802
+ENSG00000119335              SET      0.0268     0.1857       0.0022             -0.0051       7.4836
+ENSG00000111913           RIPOR2      0.0264     0.1588       0.0029             -0.0044       7.4559
+ENSG00000156467            UQCRB      0.0257     0.3546       0.0013              0.0039       9.3798
+ENSG00000156136              DCK      0.0254     0.1607       0.0025             -0.0089       5.6007
+ENSG00000169045          HNRNPH1      0.0237     0.0579       0.0011             -0.0069       7.3758
+ENSG00000260613  ENSG00000260613      0.0234     0.0089       0.0023              0.0114       0.5242
+ENSG00000112308          C6orf62      0.0226     0.0586       0.0021             -0.0081       5.8265
+ENSG00000196531             NACA      0.0225     0.4760       0.0015              0.0026      10.8282
+ENSG00000187514             PTMA      0.0222     0.3114       0.0028             -0.0027      11.5141
+ENSG00000143443          C1orf56      0.0220     0.1587       0.0018             -0.0102       6.5549
+ENSG00000070831            CDC42      0.0217     0.3834       0.0010             -0.0058       8.1986
+ENSG00000124766             SOX4      0.0215     0.4578       0.0124             -0.0189       2.3369
+ENSG00000124193            SRSF6      0.0215     0.0534       0.0015             -0.0085       5.6337
+ENSG00000113558             SKP1      0.0215     0.3176       0.0028             -0.0035       8.2121
+ENSG00000159147           DONSON      0.0209     0.0297       0.0010              0.0197       2.8392
+ENSG00000176731             RBIS      0.0207     0.0459       0.0012              0.0072       6.3032
+ENSG00000102287            GABRE      0.0195     0.0122       0.0017              0.0109       0.6422
+ENSG00000173114            LRRN3      0.0187     0.6053       0.0126             -0.0159       1.4047
+ENSG00000133112             TPT1      0.0186     0.5038       0.0011              0.0036      12.3674
+ENSG00000198888           MT-ND1      0.0183     0.4155       0.0019              0.0033      11.0788
+ENSG00000116489           CAPZA1      0.0174     0.3489       0.0013             -0.0074       6.1897
+ENSG00000175390            EIF3F      0.0171     0.1146       0.0033              0.0022       8.5276
+
+Top 15 genes by unique cell-type variance:
+                 symbol  unique_age  unique_ct  interaction  mean_logcpm
+ENSG00000087086     FTL      0.0001     0.9687       0.0003      11.0717
+ENSG00000019582    CD74      0.0006     0.9656       0.0003       9.4546
+ENSG00000104894    CD37      0.0004     0.9405       0.0003       9.2000
+ENSG00000105374    NKG7      0.0000     0.9360       0.0005       8.1585
+ENSG00000142676   RPL11      0.0002     0.9360       0.0010      12.6887
+ENSG00000197956  S100A6      0.0007     0.9352       0.0008       9.6369
+ENSG00000105640  RPL18A      0.0007     0.9341       0.0009      12.6196
+ENSG00000142541  RPL13A      0.0002     0.9329       0.0006      13.3362
+ENSG00000196154  S100A4      0.0009     0.9322       0.0009      10.0519
+ENSG00000118181   RPS25      0.0001     0.9309       0.0013      12.2854
+ENSG00000137154    RPS6      0.0002     0.9273       0.0010      12.8093
+ENSG00000144713   RPL32      0.0019     0.9227       0.0009      13.0031
+ENSG00000167526   RPL13      0.0001     0.9226       0.0011      13.3439
+ENSG00000271503    CCL5      0.0001     0.9218       0.0013       8.1316
+ENSG00000010671     BTK      0.0000     0.9212       0.0002       1.9200
+
+=== set sizes: A-genes by (t_age, k_ct) [I thresholds fixed t_ct=0.5,k_age=0.001] ===
+k_ct   0.1  0.2  0.3   0.5
+t_age                     
+0.002  328  700  872  1096
+0.005   65  140  170   242
+0.010   13   30   39    64
+0.020    6   10   11    19
+
+=== set sizes: MIXED by (t_age, t_ct) [k_ct=0.2,k_age=0.001] ===
+t_ct   0.3  0.5  0.7
+t_age               
+0.002  384  160   45
+0.005  113   41   10
+0.010   37   12    1
+0.020    8    0    0
+
+=== set sizes: I-genes by (t_ct, k_age) [t_age=0.005,k_ct=0.2] ===
+k_age  0.0005  0.0010  0.0020  0.0050
+t_ct                                 
+0.3      1892    2294    2650    2921
+0.5       978    1164    1317    1436
+0.7       448     511     558     593
+
+=== PRIMARY thresholds {'t_age': 0.005, 'k_ct': 0.2, 't_ct': 0.5, 'k_age': 0.001} ===
+gene_class
+OTHER    12559
+I         1164
+A          140
+MIXED       41
+A-genes (primary): SET, RIPOR2, DCK, HNRNPH1, ENSG00000260613, C6orf62, C1orf56, SRSF6, DONSON, RBIS, GABRE, EIF3F, PPP1CB, RSL24D1, ARRDC3, LSM5, SBDS, MAT2B, PTPN3, GOLGA4, CNBP, TRA2A, GLRA2, ACVR2B, ARHGAP45, ENSG00000259865, CBX3, SEC22B, MDM4, PSMA3-AS1, DNTTIP2, USP15, C16orf54, BAZ2A, FTX, EIF4E, ETV7, MARCHF6, ENSG00000225963, BTF3L4, PHLDA3, LBR, F8A1, BCLAF1, MT-ATP8, CNIH1, RASSF3, HNRNPD, EIF1AX, PER1, EIF3J, MEMO1, MATCAP1, PNRC1, NEK7, SLC30A7, ANKRD49, PAN3, CHASERR, BAZ1A, LRRC75A, ADNP, SYNE3, INTS6, TRAM1, ELK4, ENSG00000262967, PAFAH1B2, DENR, BOLA2B, CNOT9, YIPF4, MT-ND2, RBBP4, SMCR5, GOLGB1, C2orf68, TBL1XR1, RSBN1L, WHAMM, ARID4A, CNOT7, ZNF384, UBE2W, RSF1, CNN2, DUXAP8, PRKX, ENSG00000237343, TGFBR2, SFPQ, CASP2, OGT, GIGYF1, YAF2, NMT1, ALYREF, ENSG00000270681, FAM76A, PPP1R14B, EXOSC6, CITED4, CSRNP1, PIM3, AEN, RNF169, EIF2S2, B3GALT6, KIF5B, RNMT, C11orf58, LONP2, MARCHF7, QSOX2, PHF3, TFAP4, CSKMT, ANKRD44-IT1, SOCS1, CETN3, ZDHHC2, RBM26, ENSG00000246851, CSDE1, MZF1-AS1, FNBP4, TMEM64, HP1BP3, SMC3, MED31, PSD4, ATF1, ANKRD40, RNF187, NBPF9, TSPYL1, OSER1, ENSG00000288066, ENSG00000274818, CARNMT1
+MIXED (primary): LRRN3, TPT1, RPS10, RPL36AL, RPL7A, BTG1, ATP5ME, EEF1A1, EIF3E, TMEM123, ATM, UBC, RPL39, LAPTM5, RPS15A, TMEM258, PLP2, DUSP1, SELL, ARHGDIA, ARPC5, VIM, POLR2L, CHCHD2, KLF6, SNHG8, ATP5MJ, RPL34, ARF1, HLA-E, GTSCR1, RPS28, FOXP1, ATP5F1E, SYNE2, CR1, NOG, RPS8, FXYD5, CYRIB, CALM2
+
+=== sensitivity: pseudobulks with >=100 cells only (n=3,486; cell types=['CD4_TCM', 'CD4_Naive', 'NK', 'CD8_TEM', 'B_naive', 'CD8_Naive']) ===
+             0.500  0.900  0.950  0.990  0.999  1.000
+unique_ct   0.1759 0.6650 0.7764 0.9004 0.9463 0.9738
+unique_age  0.0006 0.0056 0.0093 0.0192 0.0347 0.0756
+resid       0.8208 0.9798 0.9888 0.9959 0.9988 0.9996
+partial_age 0.0009 0.0091 0.0153 0.0330 0.0547 0.0999
+Spearman(unique_age all vs >=100-cell): 0.640
+
+Batch check: age ~ C(pool) across 981 donors, 75 pools: R2=0.234, adj R2=0.172, F p=3.81e-21
+
+Mean partition over genes: {'unique_ct': 0.2071, 'unique_age': 0.0007, 'shared': 0.0005, 'interaction': 0.0026, 'resid': 0.7892}

@@ -1,0 +1,84 @@
+{
+ "msigdb_version": "https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2023.2.Hs/h.all.v2023.2.Hs.symbols.gmt",
+ "msigdb_gmt_ok": true,
+ "msigdb_gmt_url": "https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2023.2.Hs/h.all.v2023.2.Hs.symbols.gmt",
+ "msigdb_gmt_errors": [
+  {
+   "url": "https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2020.1.Hs/h.all.v2020.1.Hs.symbols.gmt",
+   "status": 404
+  }
+ ],
+ "n_EMT": 200,
+ "n_TGFB": 54,
+ "n_MD_built": 205,
+ "MD_TFs_added": [
+  "SNAI1",
+  "ZEB1",
+  "ZEB2",
+  "TWIST1",
+  "TWIST2"
+ ],
+ "MD_TFs_already_in_EMT": [],
+ "mmc3_n_MD": 205,
+ "mmc3_n_TGFB": 54,
+ "mmc3_MD_equal": true,
+ "mmc3_TGFB_equal": true,
+ "mmc3_MD_only_built": [],
+ "mmc3_MD_only_supplement": [],
+ "mmc3_TGFB_only_built": [],
+ "mmc3_TGFB_only_supplement": [],
+ "gmt_vs_local": {
+  "emt": {
+   "n_a": 200,
+   "n_b": 200,
+   "n_shared": 200,
+   "only_a": [],
+   "only_b": [],
+   "equal": true
+  },
+  "tgfb": {
+   "n_a": 54,
+   "n_b": 54,
+   "n_shared": 54,
+   "only_a": [],
+   "only_b": [],
+   "equal": true
+  }
+ },
+ "aging_signature_built": false,
+ "aging_signature_reason": "GSE113957_fpkm.txt.gz values are not integer counts (cannot apply DESeq2). FINDINGS_FIBRO2.md: series matrix HEAD 404. STAR Methods require DESeq2 old-vs-young with PCA-based old/young split. Not approximating from FPKM and not substituting mmc3 Age up (n=1533) / Age down (n=2007). Aging-signature comparison reported as not run.",
+ "mmc3_age_up_n": 1533,
+ "mmc3_age_down_n": 2007,
+ "mmc3_age_used_as_substitute": false,
+ "reprog_n": {
+  "Fibroblast": 200,
+  "PartialReprog": 200,
+  "EarlyPluripotency": 200,
+  "Pluripotency": 200,
+  "NonReprog": 200
+ },
+ "hallmark_local_path": "<repo>\\results\\lowdim\\genesets\\MSigDB_Hallmark_2020.txt",
+ "mmc3_path": "<repo>\\results\\md\\raw\\suppl__ars.els-cdn.com__1-s2.0-S0092867425008530-mmc3.xlsx",
+ "columns_read": {
+  "MD_signatures": [
+   "MD score",
+   "TGFB score"
+  ],
+  "Aging_signatures": [
+   "Age up",
+   "Age down"
+  ],
+  "Reprog_cell_state_signatures": [
+   "Fibroblast",
+   "PartialReprog",
+   "EarlyPluripotency",
+   "Pluripotency",
+   "NonReprog"
+  ],
+  "Fibroblast_subtype_signatures": [
+   "PI16_univ",
+   "LRRC15_myo",
+   "COL3A1_myo"
+  ]
+ }
+}

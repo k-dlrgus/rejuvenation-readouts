@@ -1,0 +1,49 @@
+{
+ "key": "instruments_disagree_on_claim_population",
+ "text": "Ruler does not decline in the pooled PartialReprog state while MD does, both with their own nulls. The instruments disagree on exactly the population the published claim concerns. No winner is declared. Pooled PartialReprog ruler: n_ok=2 n_pass=0 hits=[]. Pooled PartialReprog MD: n_ok=2 n_pass=1 hits=[{'cell_line': 'GM00731', 'group': 'PartialReprog', 'label': 'PartialReprog', 'endpoint': 'd0\u2192d7', 'decline': 0.007173997855181413, 'p': 0.014925373134328358, 'n_cells_d0': 3.0, 'n_cells_end': 578.0}].",
+ "levels_disagree": false,
+ "extra": null,
+ "pooled_PR_ruler": {
+  "n_ok": 2,
+  "n_pass": 0,
+  "hits": []
+ },
+ "pooled_PR_md": {
+  "n_ok": 2,
+  "n_pass": 1,
+  "hits": [
+   {
+    "cell_line": "GM00731",
+    "group": "PartialReprog",
+    "label": "PartialReprog",
+    "endpoint": "d0\u2192d7",
+    "decline": 0.007173997855181413,
+    "p": 0.014925373134328358,
+    "n_cells_d0": 3.0,
+    "n_cells_end": 578.0
+   }
+  ]
+ },
+ "cluster20_ruler": {
+  "n_ok": 2,
+  "n_pass": 0,
+  "hits": []
+ },
+ "cluster20_md": {
+  "n_ok": 2,
+  "n_pass": 1,
+  "hits": [
+   {
+    "cell_line": "GM00731",
+    "group": "10",
+    "label": "NonReprog",
+    "endpoint": "d0\u2192d7",
+    "decline": 0.008928205683672807,
+    "p": 0.03482587064676617,
+    "n_cells_d0": 56.0,
+    "n_cells_end": 191.0
+   }
+  ]
+ },
+ "md2_sentence_at_issue": "No cluster at any resolution shows p \u2264 0.05. The per-cluster negative holds and is not a resolution artifact. The frozen ruler does not move in these cells at any granularity tested."
+}

@@ -1,0 +1,28 @@
+[
+ {
+  "accession": "GSE297234",
+  "title": "Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]",
+  "n_samples": 8,
+  "pubmedids": [
+   "40816266"
+  ],
+  "relations": [],
+  "extrelations": [],
+  "bioproject": "PRJNA1263211",
+  "suppfile": "H5, RDS",
+  "pdat": "2025/08/14"
+ },
+ {
+  "accession": "GSE297233",
+  "title": "Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [RNA-seq]",
+  "n_samples": 8,
+  "pubmedids": [
+   "40816266"
+  ],
+  "relations": [],
+  "extrelations": [],
+  "bioproject": "PRJNA1263275",
+  "suppfile": "CSV",
+  "pdat": "2025/08/14"
+ }
+]

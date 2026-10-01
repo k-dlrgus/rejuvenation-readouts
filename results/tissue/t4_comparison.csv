@@ -1,0 +1,5 @@
+name,tissue,n_donors,age_span,batch_auditability,batch_column,r2_age_batch,r2_depth_batch,composition_r2,expression_r2,delta,expression_beats_composition,reprogramming
+brain_wm,brain,20,34–74,yes — SequencingPool,SequencingPool,0.2722195470729002,0.6262073367822304,-0.2901447564408853,0.1936178095424602,0.48376256598334544,True,mouse mPFC OSK multiome (GSE276656); mouse SVZ partial reprogramming scRNA (GSE224438). No human brain OSK scRNA found.
+retina_sc,retina,16,42–89,yes — tissue,tissue,0.1895316804407713,0.0130810548426562,-0.2088487085930515,-0.0039130766464077,0.2049356319466438,True,human+mouse RPE (GSE304044 SuperSeries); mouse retina aging multiome (GSE307031). No human retina OSK scRNA found.
+blood_OneK1K,blood (closed),981,19–97,yes — 75 10x pools,pool,0.23,0.86,0.493,0.482,-0.01100000000000001,False,closed — OneK1K Stage B. Not a candidate.
+muscle,skeletal muscle,27,19–90,yes — assay,assay,0.0671118773490808,0.6423496810608086,0.0322545357084907,0.0088195788314038,-0.023434956877086896,False,no tissue OSK scRNA. Closest: C2C12 / multi-type murine cells (GSE176206). Phase 2 incomplete.

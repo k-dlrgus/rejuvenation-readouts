@@ -1,0 +1,29 @@
+{
+ "n_common_genes": 20945,
+ "identity_rank": 5,
+ "identity_sv": [
+  196.076038519334,
+  103.21330954875826,
+  62.547256494037455,
+  37.517359074661265,
+  22.58801759230702
+ ],
+ "ba9_angle_to_identity": 62.97933952920945,
+ "ba9_proj_r2": 0.20639917631617533,
+ "null_angle_mean": 70.35209728027063,
+ "null_angle_median": 69.87495134545492,
+ "p_angle": 0.10945273631840796,
+ "pairwise_median_deg": 68.64961381794926,
+ "pairwise_null_mean": 84.89764363242153,
+ "p_pairwise": 0.004975124378109453,
+ "tissues": [
+  "Brain - Frontal Cortex (BA9)",
+  "Brain - Cortex",
+  "Brain - Anterior cingulate cortex (BA24)",
+  "Brain - Hippocampus",
+  "Heart - Left Ventricle",
+  "Muscle - Skeletal"
+ ],
+ "n_perm": 200,
+ "note": "bulk analogue of FINDINGS_GEOMETRY Part C, not a replication"
+}

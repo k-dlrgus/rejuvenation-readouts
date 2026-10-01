@@ -1,0 +1,12 @@
+{
+ "seed": 20260914,
+ "boot_seed": 20260918,
+ "failures": [
+  {
+   "step": "pipeline_disagrees",
+   "message": "Fewer than 3 of 4 named hits have cos_g>0 with N_NT FDR q<=0.05 (1/4). Our pipeline does not reproduce their direction. Named hits are not interpreted as toward/away.",
+   "details": {}
+  }
+ ],
+ "status": "DONE"
+}

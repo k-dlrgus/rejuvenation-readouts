@@ -1,0 +1,58 @@
+{
+ "seed": 20260914,
+ "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11",
+ "n_A": 1355,
+ "n_I": 1876,
+ "n_genes": 25526,
+ "n_random_draws": 50,
+ "n_sweep_draws": 10,
+ "size_sweep": [
+  10,
+  50,
+  100,
+  500,
+  1000,
+  1500
+ ],
+ "b1": [
+  {
+   "scheme": "within_site",
+   "n_A": 1355,
+   "n_draws": 50,
+   "random_median": 0.2542825204733775,
+   "random_p05": 0.20864978153020405,
+   "random_p95": 0.2978487164343269,
+   "random_null_median": -0.23371906705616574,
+   "A_frozen": 0.2497849026679462,
+   "A_null": -0.15544472356419192,
+   "I_full": 0.4243641277749911,
+   "I_null": -0.2298866434492624,
+   "A_beats_random": false,
+   "I_beats_A": true,
+   "random_matches_A": true
+  },
+  {
+   "scheme": "loso",
+   "n_A": 1355,
+   "n_draws": 50,
+   "random_median": 0.025140376610391924,
+   "random_p05": -0.02455561795085104,
+   "random_p95": 0.08617106474703441,
+   "random_null_median": -1.0262748790249003,
+   "A_frozen": -0.015607109907025296,
+   "A_null": -0.9707083258809571,
+   "I_full": 0.2889583833501521,
+   "I_null": -1.2651658907235799,
+   "A_beats_random": false,
+   "I_beats_A": true,
+   "random_matches_A": true
+  }
+ ],
+ "b3_verdict": "b_leaning",
+ "b3_text": "(b-leaning) A-genes do not beat random at matched size, so the A-bucket is not a privileged age axis; I-genes still predict age, which is the methods failure mode (aggregating many genes with tiny age slopes) more than a unique biology of A-genes.",
+ "b3_notes": [
+  "within-site B1: A=+0.250 random_med=+0.254 random_p95=+0.298 I=+0.424 null_random=-0.234",
+  "LOSO B1: A=-0.016 random_med=+0.025 I=+0.289 null_random=-1.026"
+ ],
+ "k_match": 1000
+}

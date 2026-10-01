@@ -1,0 +1,5 @@
+dtype,integer_dtype,n_seen,n_fractional,n_negative,n_nonfinite,min,max,raw_integer_counts,where
+float64,False,53641224,53640987,30370037,0,-9.156079292297363,184.80467224121094,False,X
+float64,False,53641224,53619366,0,0,0.0,0.9999999985175676,False,layers/adj_p
+float64,False,53641224,53638740,30369689,2247,-9.156079292297363,184.80467224121094,False,layers/masked
+float64,False,53641224,53593911,0,0,0.0,0.9999999985175676,False,layers/p

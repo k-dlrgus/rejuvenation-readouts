@@ -1,0 +1,128 @@
+BRAIN R0  seed=20260914
+====================================================================================================
+R0  name=brain_aging  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+  title=Aging_Cohort  collection_id=84ce6837-548d-4a1f-919f-0bc0d9a3952f
+  url_from_fetched_table=https://datasets.cellxgene.cziscience.com/13e8f1dd-962f-47b7-9cf7-c71d2b21b8a5.h5ad
+====================================================================================================
+[R0] GET https://api.cellxgene.cziscience.com/curation/v1/collections/84ce6837-548d-4a1f-919f-0bc0d9a3952f
+  collection name=Population-scale cross-disorder atlas of the human prefrontal cortex at single-cell resolution  doi=10.1101/2024.10.31.24316513
+  title=Aging_Cohort
+  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11  collection_id=84ce6837-548d-4a1f-919f-0bc0d9a3952f
+  cells=1332155  donors=291  types=25
+  assays=["10x 3' v3"]  suspension=['nucleus']  tissues=['dorsolateral prefrontal cortex']
+  diseases=['atherosclerosis', 'normal', 'type 1 diabetes mellitus', 'type 1 diabetes mellitus || atherosclerosis', 'type 2 diabetes mellitus', 'type 2 diabetes mellitus || atherosclerosis']
+  h5ad_url=https://datasets.cellxgene.cziscience.com/13e8f1dd-962f-47b7-9cf7-c71d2b21b8a5.h5ad
+  h5ad_bytes=12421671635
+
+==========================================================================================
+R0 PEEK brain_aging
+  source: https://datasets.cellxgene.cziscience.com/13e8f1dd-962f-47b7-9cf7-c71d2b21b8a5.h5ad
+==========================================================================================
+  matrix X shape=(1332155, 34176)
+  obs columns (33): ['Source', 'n_genes', 'n_counts', 'class', 'subclass', 'subtype', 'tissue_ontology_term_id', 'tissue_type', 'assay_ontology_term_id', 'cell_type_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'development_stage_ontology_term_id', 'sex_ontology_term_id', 'donor_id', 'suspension_type', 'is_primary_data', 'DLBD_status', 'FTD_status', 'Tauopathy_status', 'Vascular_status', 'Schizophrenia', 'Bipolar_Disorder', 'Parkinson_disease', 'genetic_ancestry', 'disease_ontology_term_id', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid']
+  categorical nunique (from categories, no codes read):
+                                  column  nunique_categories  looks_technical  looks_soft_batch
+                                  Source                 2.0            False              True
+                                 n_genes                 NaN            False             False
+                                n_counts                 NaN            False             False
+                                   class                 8.0            False             False
+                                subclass                27.0            False             False
+                                 subtype                65.0            False             False
+                 tissue_ontology_term_id                 1.0            False              True
+                             tissue_type                 1.0            False              True
+                  assay_ontology_term_id                 1.0            False              True
+              cell_type_ontology_term_id                25.0            False             False
+self_reported_ethnicity_ontology_term_id                 1.0            False             False
+      development_stage_ontology_term_id                85.0            False             False
+                    sex_ontology_term_id                 2.0            False             False
+                                donor_id               291.0            False             False
+                         suspension_type                 1.0            False              True
+                         is_primary_data                 NaN            False             False
+                             DLBD_status                 1.0            False             False
+                              FTD_status                 1.0            False             False
+                        Tauopathy_status                 1.0            False             False
+                         Vascular_status                 1.0            False             False
+                           Schizophrenia                 1.0            False             False
+                        Bipolar_Disorder                 1.0            False             False
+                       Parkinson_disease                 1.0            False             False
+                        genetic_ancestry                 5.0            False             False
+                disease_ontology_term_id                 6.0            False             False
+                               cell_type                25.0            False             False
+                                   assay                 1.0            False              True
+                                 disease                 6.0            False             False
+                                     sex                 2.0            False             False
+                                  tissue                 1.0            False              True
+                 self_reported_ethnicity                 1.0            False             False
+                       development_stage                85.0            False             False
+                      observation_joinid                 NaN            False             False
+  reading donor_id + candidate columns (codes only)...
+  n_cells=1,332,155  n_donors=291
+    read development_stage ...
+    read disease ...
+    read cell_type ...
+    read assay ...
+    read suspension_type ...
+    read tissue ...
+    read sex ...
+    read is_primary_data ...
+    read self_reported_ethnicity ...
+    read Source ...
+    read class ...
+    read subclass ...
+    read subtype ...
+    read tissue_ontology_term_id ...
+    read tissue_type ...
+    read assay_ontology_term_id ...
+    read cell_type_ontology_term_id ...
+    read development_stage_ontology_term_id ...
+    read sex_ontology_term_id ...
+    read genetic_ancestry ...
+    read disease_ontology_term_id ...
+  development_stage: nunique=85  top=[('48-year-old stage', 46211), ('80 year-old and over stage', 44709), ('16-year-old stage', 43815), ('13-year-old stage', 40552), ('40-year-old stage', 40422), ('53-year-old stage', 33507), ('50-year-old stage', 32906), ('46-year-old stage', 32714), ('18-year-old stage', 31385), ('15-year-old stage', 30563), ('85-year-old stage', 26907), ('42-year-old stage', 26772), ('31-year-old stage', 26301), ('41-year-old stage', 24299), ('56-year-old stage', 24034)]
+  disease: nunique=6  top=[('normal', 1156014), ('atherosclerosis', 137799), ('type 1 diabetes mellitus', 24202), ('type 2 diabetes mellitus', 11596), ('type 1 diabetes mellitus || atherosclerosis', 1368), ('type 2 diabetes mellitus || atherosclerosis', 1176)]
+  cell_type: nunique=25  top=[('oligodendrocyte', 415453), ('L2/3 intratelencephalic projecting glutamatergic neuron', 152901), ('astrocyte', 150320), ('oligodendrocyte precursor cell', 107659), ('L2/3-6 intratelencephalic projecting glutamatergic neuron', 96473), ('VIP GABAergic interneuron', 66708), ('microglial cell', 66294), ('sst GABAergic interneuron', 62613), ('pvalb GABAergic interneuron', 56981), ('GABAergic neuron', 27555), ('lamp5 GABAergic interneuron', 25892), ('endothelial cell', 22414), ('L6 intratelencephalic projecting glutamatergic neuron', 20988), ('L6 corticothalamic-projecting glutamatergic cortical neuron', 11902), ('pericyte', 11465)]
+  assay: nunique=1  top=[("10x 3' v3", 1332155)]
+  suspension_type: nunique=1  top=[('nucleus', 1332155)]
+  tissue: nunique=1  top=[('dorsolateral prefrontal cortex', 1332155)]
+  sex: nunique=2  top=[('male', 935684), ('female', 396471)]
+  is_primary_data: nunique=1  top=[(False, 1332155)]
+  self_reported_ethnicity: nunique=1  top=[('unknown', 1332155)]
+  Source: nunique=2  top=[('H', 899123), ('M', 433032)]
+  class: nunique=8  top=[('Oligo', 415453), ('EN', 300850), ('IN', 239749), ('Astro', 150320), ('OPC', 107659), ('Immune', 71999), ('Mural', 23711), ('Endo', 22414)]
+  subclass: nunique=27  top=[('Oligo', 415453), ('EN_L2_3_IT', 152901), ('Astro', 150320), ('OPC', 107659), ('IN_VIP', 66708), ('Micro', 66294), ('IN_SST', 62613), ('IN_PVALB', 47448), ('EN_L3_5_IT_3', 41249), ('EN_L3_5_IT_2', 39835), ('IN_ADARB2', 27555), ('Endo', 22414), ('IN_LAMP5_RELN', 17684), ('EN_L6_IT_1', 15966), ('EN_L3_5_IT_1', 15389)]
+  subtype: nunique=65  top=[('Oligo_OPALIN', 347483), ('Astro_WIF1', 101160), ('EN_L2_3_IT_PDGFD', 90079), ('OPC', 87807), ('Oligo_RBFOX1', 67970), ('Micro', 66294), ('EN_L2_3_IT_NTNG1', 62822), ('IN_VIP_TRPC6', 40078), ('EN_L3_5_IT_3', 39783), ('EN_L3_5_IT_2_MET', 31907), ('IN_SST_EDNRA', 30326), ('IN_PVALB_ANOS1', 28286), ('IN_SST_EYA4', 25253), ('IN_VIP_BCL11B', 21408), ('Astro_GRIA1', 20336)]
+  tissue_ontology_term_id: nunique=1  top=[('UBERON:0009834', 1332155)]
+  tissue_type: nunique=1  top=[('tissue', 1332155)]
+  assay_ontology_term_id: nunique=1  top=[('EFO:0009922', 1332155)]
+  cell_type_ontology_term_id: nunique=25  top=[('CL:0000128', 415453), ('CL:4030059', 152901), ('CL:0000127', 150320), ('CL:0002453', 107659), ('CL:4023040', 96473), ('CL:4023016', 66708), ('CL:0000129', 66294), ('CL:4023017', 62613), ('CL:4023018', 56981), ('CL:0000617', 27555), ('CL:4023011', 25892), ('CL:0000115', 22414), ('CL:4030065', 20988), ('CL:4023042', 11902), ('CL:0000669', 11465)]
+  development_stage_ontology_term_id: nunique=85  top=[('HsapDv:0000142', 46211), ('HsapDv:0000095', 44709), ('HsapDv:0000110', 43815), ('HsapDv:0000107', 40552), ('HsapDv:0000134', 40422), ('HsapDv:0000147', 33507), ('HsapDv:0000144', 32906), ('HsapDv:0000140', 32714), ('HsapDv:0000112', 31385), ('HsapDv:0000109', 30563), ('HsapDv:0000211', 26907), ('HsapDv:0000136', 26772), ('HsapDv:0000125', 26301), ('HsapDv:0000135', 24299), ('HsapDv:0000150', 24034)]
+  sex_ontology_term_id: nunique=2  top=[('PATO:0000384', 935684), ('PATO:0000383', 396471)]
+  genetic_ancestry: nunique=5  top=[('European', 704024), ('African', 497602), ('unknown', 105370), ('East Asian', 12879), ('South Asian', 12280)]
+  disease_ontology_term_id: nunique=6  top=[('PATO:0000461', 1156014), ('MONDO:0005311', 137799), ('MONDO:0005147', 24202), ('MONDO:0005148', 11596), ('MONDO:0005147 || MONDO:0005311', 1368), ('MONDO:0005148 || MONDO:0005311', 1176)]
+  donors=291
+  numeric age: n=290 min=0.08333333333333333 max=89.0 nunique=84  missing=1
+  non-numeric development_stage (donor-level): [('unknown', 1)]
+
+[R0] donor-level batch-column audit (every obs column scored):
+                            column  n_levels  n_levels_ge2_donors  frac_donors_in_shared  aliased_with_donor  looks_technical  looks_soft_batch  usable_shared_donor  median_donors_per_level  min_donors_per_level  max_donors_per_level
+                  genetic_ancestry         5                    5               1.000000               False            False             False                 True                     27.0                     2                   159
+                               sex         2                    2               1.000000               False            False             False                 True                    145.5                    91                   200
+                            Source         2                    2               1.000000               False            False              True                 True                    145.5                   113                   178
+              sex_ontology_term_id         2                    2               1.000000               False            False             False                 True                    145.5                    91                   200
+                           disease         6                    4               0.993127               False            False             False                 True                      3.5                     1                   259
+          disease_ontology_term_id         6                    4               0.993127               False            False             False                 True                      3.5                     1                   259
+                 development_stage        85                   67               0.938144               False            False             False                 True                      3.0                     1                    10
+development_stage_ontology_term_id        85                   67               0.938144               False            False             False                 True                      3.0                     1                    10
+                             assay         1                    1               1.000000               False            False              True                False                    291.0                   291                   291
+                   suspension_type         1                    1               1.000000               False            False              True                False                    291.0                   291                   291
+                            tissue         1                    1               1.000000               False            False              True                False                    291.0                   291                   291
+                   is_primary_data         1                    1               1.000000               False            False             False                False                    291.0                   291                   291
+           self_reported_ethnicity         1                    1               1.000000               False            False             False                False                    291.0                   291                   291
+           tissue_ontology_term_id         1                    1               1.000000               False            False              True                False                    291.0                   291                   291
+                       tissue_type         1                    1               1.000000               False            False              True                False                    291.0                   291                   291
+            assay_ontology_term_id         1                    1               1.000000               False            False              True                False                    291.0                   291                   291
+
+[R0] preferred batch column: genetic_ancestry  kind=shared_donor_but_not_sequencing_pool
+[R0] STOP_R0=False  (True means within-batch metric is undefined)
+
+wrote <repo>\results\brain\r0_summary.json

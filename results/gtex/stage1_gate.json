@@ -1,0 +1,61 @@
+{
+ "open": true,
+ "reason": "gate open: S2 outcome (i) \u2014 planted and real-age r transfer both ways (gene_ridge r HBCC\u2192MSSM +0.568 / MSSM\u2192HBCC +0.578; uncalibrated R\u00b2 is a calibration artifact)",
+ "posctrl_exists": true,
+ "c1_ran": true,
+ "status": "S2_i",
+ "source": "s2_c1_dense_shared_r030.json+s2_gene_ridge.json",
+ "transfer": {
+  "H_to_M": 0.5681984972828398,
+  "M_to_H": 0.5780077026604088,
+  "H_to_M_null": -0.005143838892140646,
+  "M_to_H_null": -0.02167705162433014,
+  "pass_transfer": true,
+  "planted_H_to_M": 0.8648156017122377,
+  "planted_M_to_H": 0.7678696386030015,
+  "planted_H_to_M_null": 0.015358459749279787,
+  "planted_M_to_H_null": 0.013189263548918983,
+  "planted_pass_r": true,
+  "metric": "pearson_r",
+  "uncal_R2_H_to_M": -0.12401031967221865,
+  "uncal_R2_M_to_H": -0.463305482028161
+ },
+ "s2": {
+  "planted_pass": true,
+  "real_pass": true,
+  "planted": {
+   "H_to_M": {
+    "r": 0.8648156017122377,
+    "r_null": 0.015358459749279787,
+    "r2": -0.08741143846402355,
+    "cal_r2": 0.7479063157375722,
+    "rho": 0.8634618034056083
+   },
+   "M_to_H": {
+    "r": 0.7678696386030015,
+    "r_null": 0.013189263548918983,
+    "r2": -0.4148615968605822,
+    "cal_r2": 0.5896237818883039,
+    "rho": 0.7636291979180085
+   },
+   "pass_r": true
+  },
+  "real_age": {
+   "H_to_M": {
+    "r": 0.5681984972828398,
+    "r_null": -0.005143838892140646,
+    "r2": -0.12401031967221865,
+    "cal_r2": 0.3416253228027104,
+    "rho": 0.5734828038569333
+   },
+   "M_to_H": {
+    "r": 0.5780077026604088,
+    "r_null": -0.02167705162433014,
+    "r2": -0.463305482028161,
+    "cal_r2": 0.334092904334764,
+    "rho": 0.5667128038080262
+   },
+   "pass_r": true
+  }
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "metric_explains": false,
+ "reference_explains": false,
+ "gene_space_explains": false,
+ "file_explains": false,
+ "fired": [
+  "unexplained"
+ ],
+ "r_top": false,
+ "n_cos_rank_outside_top15": 1,
+ "n_named_q05_PD26": 0,
+ "h4_top": false,
+ "n_ruler_rank_outside_top15": 1,
+ "h4_scale_dominated": false,
+ "spearman_Rrej_cos_pooled": -0.9838760054407149,
+ "spearman_Rrej_cos_pooled_p": 9.705306595128495e-255,
+ "spearman_by_modality": {
+  "CRA": {
+   "rho": -0.9825873210549642,
+   "p": 1.560106095221706e-122,
+   "n": 167
+  },
+  "CRI": {
+   "rho": -0.9864159532009773,
+   "p": 4.463473729974145e-136,
+   "n": 173
+  }
+ },
+ "pd32_cos_match_max_abs": 9.71445146547012e-17,
+ "n_ruler": 23485,
+ "n_ruler_present": 16781,
+ "n_file_genes": 36601,
+ "n_mapped": 16771,
+ "n_unmapped": 19830,
+ "n_dup_map": 10,
+ "top_rank_cutoff": 15,
+ "assumptions": {
+  "rrej_gene_selection": "all genes in the file; the paper states no significance cut and no DE filter for R_rej",
+  "rrej_correlation": "Pearson (SI states Pearson)",
+  "rrej_rejuvenating_direction": "negative (paper states negative R_rej)",
+  "rrej_log2fc": "pseudobulk library-size CPM, log2((CPM_a+1)/(CPM_b+1)); no TMM; all cells in the group, not half-A",
+  "rrej_aging_pds": "WT PD32 vs WT PD14, the PDs the paper's figures name as late and early",
+  "h4_unmapped_z": "panel mean and sd of TMM log2-CPM; frozen mu/sd have no entry for these genes"
+ },
+ "elapsed_s": 1512.0875009000301
+}

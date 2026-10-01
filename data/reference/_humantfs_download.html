@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Human Transcription Factors</title>
+    <!-- Core CSS - Include with every page -->
+    <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+      <link href="assets/css/main-style.css" rel="stylesheet" />
+
+    <!-- Page-Level CSS -->
+    <link href="assets/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+</head>
+
+<body>
+        
+
+    <!--  wrapper -->
+    <div id="wrapper">
+        <!-- navbar top -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+            <!-- navbar-header -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php">
+                    <img src="assets/img/home.png" alt="" />
+                </a>
+            </div>
+            <!-- end navbar-header -->
+            <!-- navbar-top-links -->
+            
+
+        </nav>
+        <!-- end navbar top -->
+        <!-- navbar side -->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <!-- sidebar-collapse -->
+            <div class="sidebar-collapse">
+                <!-- side-menu -->
+                <ul class="nav" id="side-menu">
+                    <!--<li>
+                        <!-- user image section
+                        <div class="user-section">
+                            <div class="user-section-inner">
+                                <img src="assets/img/user.jpg" alt="">
+                            </div>
+                            <div class="user-info">
+                                <div><strong> </strong></div>
+                                <div class="user-text-online">
+                                    <span class="user-circle-online btn btn-success btn-circle "></span>Online
+                                </div>
+                            </div>
+                        </div>
+                        <!--end user image section
+                    </li>-->
+                    
+                    <!-- remove link to index
+                    <li class="selected">
+                        <a href="index.php"><i class="fa fa-table fa-fw"></i>Tables</a>
+                    </li>
+                    
+                    <li>
+                        <a href="externalComments.php"><i class="fa fa-table fa-fw"></i>Comments</a>
+                    </li>-->
+                    <li class="selected">
+                                            </li>
+                    <!-- remove link to index-->
+                    <!-- remove link to index-->
+                   
+                    <li>
+                        <a href="dbds.php"><i class="fa fa-table fa-fw"></i>Browse TFs by DBD family</a>
+                    </li>
+                    <li >
+                        <a href="all.php"><i class="fa fa-table fa-fw"></i>All considered proteins</a>
+                    </li>
+                    <li >
+                        <a href="allTFs.php"><i class="fa fa-table fa-fw"></i>All TFs</a>
+                    </li>
+                    <li >
+                        <a href="download.php"><i class="fa fa-table fa-fw"></i>Download</a>
+                    </li>
+                    <li >
+                        <a href="links.php"><i class="fa fa-table fa-fw"></i>Links</a>
+                    </li>
+                    <li >
+                        <a href="cite.php"><i class="fa fa-table fa-fw"></i>How to cite</a>
+                    </li>
+                    <li >
+                        <a href="contact.php"><i class="fa fa-table fa-fw"></i>Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- end side-menu -->
+            </div>
+            <!-- end sidebar-collapse -->
+        </nav>
+        <!-- end navbar side -->
+        <!--  page-wrapper -->
+        <div id="page-wrapper" >
+            <div class="row">
+                <!--  page header -->
+                <div class="col-lg-12">
+                    <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Advanced Tables -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4><u>Human TFs data downloads:</u></h4>
+                                <p>
+                                    This page contains the official list of human TFs from Lambert et al (PMID:29425488), along
+                                    with all associated information.  Candidate proteins were manually examined by a panel
+                                    of experts based on available data.  Proteins with experimentally demonstrated DNA
+                                    binding specificity were considered TFs.  Other proteins, such as co-factors and RNA 
+                                    binding proteins, were classified as non-TFs.  All proteins (both TFs and non-TFs) are
+                                    contained in the database, along with the associated evidence.
+
+                                    See our accompanying publication (PMID:29425488) and website (<a href="http://humantfs.ccbr.utoronto.ca/">http://humantfs.ccbr.utoronto.ca/</a>) 
+                                    for further details.  Accompanying DNA binding motifs can be obtained through the links below (<a href="http://cisbp.ccbr.utoronto.ca/">http://cisbp.ccbr.utoronto.ca/</a>).  Questions and comments can be directed to 
+                                    Matt Weirauch (Matthew.Weirauch at cchmc.org).
+                                </p>
+                                <ul>
+                                    <li>
+                                        <b><u>Current lists of human TFs and their motifs (v1.01)</u></b>
+                                        <ol>
+                                            <li>
+                                                Human TFs
+                                                <ul>
+                                                    <li>
+                                                        Full Database (<a href="download/v_1.01/DatabaseExtract_v_1.01.csv" target="_blank">.csv</a>, <a href="download/v_1.01/DatabaseExtract_v_1.01.txt" target="_blank">.txt</a>, <a href="download/v_1.01/DatabaseExtract_v_1.01.xlsx" target="_blank">.xlsx</a>)
+                                                    </li>
+                                                    <li>
+                                                        Full Database README (<a href="download/v_1.01/Readme_TFs_v_1.01.txt" target="_blank">.txt</a>)
+                                                    </li>
+                                                    <li>
+                                                        TF gene names (<a href="download/v_1.01/TF_names_v_1.01.txt" target="_blank">.txt</a>)
+                                                    </li>
+                                                    <li>
+                                                        TF ensembl IDs (<a href="download/v_1.01/TFs_Ensembl_v_1.01.txt" target="_blank">.txt</a>)
+                                                                                 
+                                                    </li>
+                                                    <li>
+                                                        TFs associated with disease (related to Figures 4B and 4C) (<a href="download/v_1.01/TF-disease-data_Fig4.xlsx" target="_blank">.xlsx</a>)
+                                                                                 
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Human TF motifs
+                                                <ul>
+                                                    <li>
+                                                        Motif list (<a href="download/v_1.01/Human_TF_MotifList_v_1.01.csv" target="_blank">.csv</a>, <a href="download/v_1.01/Human_TF_MotifList_v_1.01.txt" target="_blank">.txt</a>, <a href="download/v_1.01/Human_TF_MotifList_v_1.01.xlsx" target="_blank">.xlsx</a>)
+                                                    </li>
+                                                    <li>
+                                                        Motif list README (<a href="download/v_1.01/README_Motifs_v_1.01.txt" target="_blank">.txt</a>)
+                                                    </li>
+                                                    <li>
+                                                        Motif PWM files (<a href="download/v_1.01/PWMs.zip" target="_blank">.zip</a>)
+                                                    </li>
+                                                    <li>
+                                                        Motif PWM file README (<a href="download/v_1.01/README_PWMs_v_1.01.txt" target="_blank">.txt</a>)
+                                                    </li>
+                                                    <li>
+                                                        Motif Similarity Matrix (refers to Figure 2A; <a href="download/v_1.01/MotifSimMatrix.csv" target="_blank">.csv</a>)
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    
+                                    <br>
+                                    <li>
+                                        <b><u>DBDs</u></b>
+                                        <ul>
+                                            <li>All DBD alignments (<a href="download/v_1.01/DBD_Alignments_v_1.01.zip">.zip</a>)</li>
+                                        </ul>
+                                    </li>
+                                    <!--<li>
+                                        <b><u>Previous Releases</b></u>
+                                    </li>
+                                    -->
+                                    <br>
+                                    <li>
+                                        <b><u>Supplemental Material from the original publication</b></u>
+                                        <ul>
+                                            <li>
+                                                These are the original supplemental files provided with the publication.  It is recommended to use the TF and motif lists above, which are more up-to-date
+                                                <ol>
+                                                    <li>
+                                                        Readme(<a href="download/v_1.01/Readme.csv" target="_blank">.csv</a>)
+                                                    </li>
+                                                    <li>
+                                                        Table S1(<a href="download/v_1.01/TableS1.csv" target="_blank">.csv</a>) - Human TFs annotations and curators comments (for TFs and non-TFs).
+                                                    </li>
+                                                    <li>
+                                                        Table S2(<a href="download/v_1.01/TableS2.csv" target="_blank">.csv</a>) - Motif diversity within each family - collection of TF motif clusters.
+                                                    </li>
+                                                    <li>
+                                                        Table S3(<a href="download/v_1.01/TableS3.csv" target="_blank">.csv</a>) - GWAS variants included in TF enrichment analyses.
+                                                    </li>
+                                                    <li>
+                                                        Table S4(<a href="download/v_1.01/TableS4.csv" target="_blank">.csv</a>) - Sources of  GWAS variants included in TF enrichment analyses.
+                                                    </li>
+                                                     <li>
+                                                        Interactive <a href="Figure3A.html" target="_blank">Figure 3A</a>: Presence and absence of human TF orthologs across eukaryotic species (<a href="download/v_1.01/Fig3A.csv" target="_blank">csv</a>)
+                                                    </li>
+                                                    <li>
+                                                        Interactive <a href="Figure4A.html" target="_blank">Figure 4A</a>: RNA-seq gene expression profiles for 1,554 human TFs across 37 human tissues (<a href="download/v_1.01/Fig4A.csv" target="_blank">csv</a>)
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- end  page header -->
+            </div>
+            </div>
+        </div>
+        <!-- end page-wrapper -->
+    </div>
+    <!-- end wrapper -->
+    <!-- Core Scripts - Include with every page -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="assets/plugins/pace/pace.js"></script>
+    <script src="assets/scripts/siminta.js"></script>
+    <!-- Page-Level Plugin Scripts-->
+    <script src="assets/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="assets/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#dataTables-example').dataTable();//"pageLength": 10
+        });
+        
+    </script>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11383861; 
+var sc_invisible=1; 
+var sc_security="2e7825eb"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web counter"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11383861/0/2e7825eb/1/" alt="web
+counter"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+
+</html>

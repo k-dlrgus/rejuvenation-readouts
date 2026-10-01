@@ -1,0 +1,42 @@
+{
+ "reading": {
+  "key": "boosting_below_ridge",
+  "text": "boosting transfer \u03c1 below ridge \u2192 note it and move on.",
+  "linearity_limiting": false,
+  "comps": [
+   {
+    "direction": "B1\u2192C1",
+    "hgb_rho": 0.4521978149424238,
+    "ridge_rho": 0.5291743878674791,
+    "ridge_ci_lo": 0.4175188640985519,
+    "ridge_ci_hi": 0.6117727393990587,
+    "inside": true,
+    "above": false,
+    "below_point": true
+   },
+   {
+    "direction": "C1\u2192B1",
+    "hgb_rho": 0.4560282096972335,
+    "ridge_rho": 0.5611771722875578,
+    "ridge_ci_lo": 0.4997254020850796,
+    "ridge_ci_hi": 0.616787407144493,
+    "inside": false,
+    "above": false,
+    "below_point": true
+   }
+  ]
+ },
+ "n_cv": 2,
+ "n_transfer": 2,
+ "skipped": [
+  {
+   "skipped": true,
+   "site": "D1",
+   "n": 7,
+   "reason": "n<10"
+  }
+ ],
+ "seed": 20260914,
+ "boot_seed": 20260918,
+ "direction_vs_score": "A nonlinear model yields a score, not a direction; the project's plane, angles, and 'age movement per unit identity loss' criterion all require a direction, so a nonlinear model cannot be substituted into Stage 2 without discarding the geometry."
+}

@@ -1,0 +1,25 @@
+donor,celltype,n_cells,age,subtissue,age_score_ridge,age_score_pls,id_dist,id_assigned,id_used_type,mapped_human,source
+18_47_F,microglial cell,1186,1.5,Hippocampus ,-0.31127084480959805,32.731168846580545,119.29596206489435,microglial cell,microglial cell,microglial cell,tms_myeloid
+18_46_F,microglial cell,1222,1.5,Striatum ,0.8667395544520438,33.87790757937812,118.32209355256855,microglial cell,microglial cell,microglial cell,tms_myeloid
+18_45_M,microglial cell,1206,1.5,Hippocampus ,-0.12377508530022506,34.2909156767605,119.54356622570046,microglial cell,microglial cell,microglial cell,tms_myeloid
+18_53_M,microglial cell,761,1.5,Striatum ,-0.11294069482494483,33.59543720183039,114.76692281354605,microglial cell,microglial cell,microglial cell,tms_myeloid
+18_46_F,macrophage,20,1.5,Cerebellum ,12.340022641830053,11.927476902356833,160.18001019000903,microglial cell,perivascular macrophage,perivascular macrophage,tms_myeloid
+18_53_M,macrophage,21,1.5,Cerebellum ,15.220272332787104,14.774785823717892,150.48747217360938,microglial cell,perivascular macrophage,perivascular macrophage,tms_myeloid
+18_47_F,macrophage,24,1.5,Cerebellum ,11.451746601909832,9.600714002194618,164.24454856605485,L6b glutamatergic neuron of the primary motor cortex,perivascular macrophage,perivascular macrophage,tms_myeloid
+18_45_M,macrophage,21,1.5,Cerebellum ,12.397713357161136,12.721189699847807,153.58503669828644,pericyte,perivascular macrophage,perivascular macrophage,tms_myeloid
+24_60_M,microglial cell,1153,1.6666666666666665,Hippocampus,-0.03349062268706632,31.14570696087662,114.85071100956502,microglial cell,microglial cell,microglial cell,tms_myeloid
+24_59_M,microglial cell,1022,1.6666666666666667,Hippocampus,0.649209215411828,39.28243327713991,126.92001105357093,microglial cell,microglial cell,microglial cell,tms_myeloid
+24_60_M,macrophage,42,1.666666666666667,Cerebellum,15.112924691495499,14.588320424634256,166.74768227346115,oligodendrocyte precursor cell,perivascular macrophage,perivascular macrophage,tms_myeloid
+24_59_M,macrophage,28,1.6666666666666663,Cerebellum,16.44148885577457,15.530988259762323,167.1795115181326,oligodendrocyte precursor cell,perivascular macrophage,perivascular macrophage,tms_myeloid
+24_58_M,microglial cell,1215,1.6666666666666667,Striatum,1.4000193966733208,33.55777054012689,118.60164194480983,microglial cell,microglial cell,microglial cell,tms_myeloid
+24_58_M,macrophage,38,1.6666666666666663,Cerebellum,12.12341187841886,11.914594040396965,167.19310490591124,L6 corticothalamic-projecting glutamatergic cortical neuron,perivascular macrophage,perivascular macrophage,tms_myeloid
+24_61_M,macrophage,49,1.6666666666666667,Cerebellum,13.514108796558077,14.78334618233994,158.6191060612411,microglial cell,perivascular macrophage,perivascular macrophage,tms_myeloid
+24_61_M,microglial cell,877,1.6666666666666665,Hippocampus,-0.0732482921059768,30.468638964575312,114.1921687765994,microglial cell,microglial cell,microglial cell,tms_myeloid
+3_39_F,microglial cell,850,0.25,Striatum,-0.059411982331428026,33.236405113866304,118.36086537127868,microglial cell,microglial cell,microglial cell,tms_myeloid
+3_56_F,microglial cell,294,0.25,Striatum,0.533377689843352,33.57354291462023,112.66601193293104,microglial cell,microglial cell,microglial cell,tms_myeloid
+3_38_F,microglial cell,1091,0.25,Hippocampus,-0.25288162693646465,30.78763509784224,113.86812682343093,microglial cell,microglial cell,microglial cell,tms_myeloid
+3_8_M,microglial cell,581,0.25,Cortex,0.3226118334824101,30.718295849484893,105.53814517599999,microglial cell,microglial cell,microglial cell,tms_myeloid
+3_9_M,microglial cell,674,0.25,Striatum,1.1147429283773727,30.1081574981781,101.35414781301344,microglial cell,microglial cell,microglial cell,tms_myeloid
+3_10_M,microglial cell,998,0.25,Hippocampus,0.6533019306590817,32.1015416429416,102.53181005718598,microglial cell,microglial cell,microglial cell,tms_myeloid
+3_10_M,macrophage,21,0.25,Cerebellum,10.791952328588234,12.179679431168468,141.89165045792765,microglial cell,perivascular macrophage,perivascular macrophage,tms_myeloid
+3_38_F,macrophage,11,0.25,Cerebellum,13.869185258234845,13.06515314800193,155.28934205442675,pericyte,perivascular macrophage,perivascular macrophage,tms_myeloid

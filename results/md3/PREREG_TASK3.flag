@@ -1,0 +1,7 @@
+Written **before any MD3 MD co-variation ρ**, 2026-09-19. Report-only. No gate.
+
+Across the GSE297234 Louvain cluster × timepoint rows with ≥20 cells (the FINDINGS_MD2.md unit, so the MD-vs-ruler cell is a check), report Spearman ρ between MD score and each of: the frozen ruler (reproduce the FINDINGS_MD2.md values as a check), the pluripotency−fibroblast score, the TGF-β score, and cell-state label treated as an ordinal along their trajectory.
+
+Ordinal, frozen before this ρ: Fibroblast=0, PartialReprog=1, EarlyPluripotency=2, Pluripotency=3. NonReprog is not on that axis and is excluded from the ordinal ρ; n excluded is reported. This is our coding of their OSKM progression, not theirs.
+
+Permutation null n_perm=200 seed 20260914 (shuffle MD, hold the other variable). Bootstrap CI B=200 seed 20260918. One table, both donors separate, never averaged. This says what MD co-varies with in this dataset without claiming what it “really” measures.

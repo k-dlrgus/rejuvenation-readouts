@@ -1,0 +1,34 @@
+[
+ {
+  "path": "<repo>\\data\\raw\\gse297234\\RAW\\GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5",
+  "gsm": "GSM8986586"
+ },
+ {
+  "path": "<repo>\\data\\raw\\gse297234\\RAW\\GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5",
+  "gsm": "GSM8986587"
+ },
+ {
+  "path": "<repo>\\data\\raw\\gse297234\\RAW\\GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5",
+  "gsm": "GSM8986588"
+ },
+ {
+  "path": "<repo>\\data\\raw\\gse297234\\RAW\\GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5",
+  "gsm": "GSM8986589"
+ },
+ {
+  "path": "<repo>\\data\\raw\\gse297234\\RAW\\GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5",
+  "gsm": "GSM8986590"
+ },
+ {
+  "path": "<repo>\\data\\raw\\gse297234\\RAW\\GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5",
+  "gsm": "GSM8986591"
+ },
+ {
+  "path": "<repo>\\data\\raw\\gse297234\\RAW\\GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5",
+  "gsm": "GSM8986592"
+ },
+ {
+  "path": "<repo>\\data\\raw\\gse297234\\RAW\\GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5",
+  "gsm": "GSM8986593"
+ }
+]

@@ -1,0 +1,23 @@
+{
+ "prolif": "built from NT quartiles n_bottom=3504 n_top=3504 ||p||=65.9633",
+ "n_factors": 1836,
+ "n_matched": 20264,
+ "n_ruler": 23485,
+ "identity_present": [
+  "COL1A1",
+  "COL1A2",
+  "FN1",
+  "LUM",
+  "PDGFRA",
+  "PDGFRB",
+  "POSTN",
+  "PRRX1",
+  "SERPINH1",
+  "VIM"
+ ],
+ "identity_absent": [],
+ "n_nt_guides": 78,
+ "n_nt_guides_control_true": 61,
+ "n_nt_cells": 14013,
+ "n_nt_cells_control_true": 11834
+}

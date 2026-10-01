@@ -1,0 +1,25 @@
+{
+ "pmid": "40816266",
+ "doi": "10.1016/j.cell.2025.07.031",
+ "title": "Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming.",
+ "abstract": "The loss of cellular and tissue identity is a hallmark of aging and numerous diseases, but the underlying mechanisms are not well understood. Our analysis of gene expression data from over 40 human tissues and 20 diseases reveals a pervasive upregulation of mesenchymal genes across multiple cell types, along with an altered composition of stromal cell populations, denoting a \"mesenchymal drift\" (MD). Increased MD correlates with disease progression, reduced patient survival, and an elevated mortality risk, whereas suppression of key MD transcription factors leads to epigenetic rejuvenation. Notably, Yamanaka factor-induced partial reprogramming can markedly reduce MD before dedifferentiation and gain of pluripotency, rejuvenating the aging transcriptome at the cellular and tissue levels. These findings provide mechanistic insight into the underlying beneficial effects of partial reprogramming and offer a framework for developing interventions to reverse age-related diseases using the partial reprogramming approach.",
+ "journal": "Cell",
+ "volume": "188",
+ "issue": "21",
+ "pages": "5895-5911.e17",
+ "year": "2025",
+ "authors": [
+  "Lu Jinlong Y",
+  "Tu William B",
+  "Li Ronghui",
+  "Weng Mingxi",
+  "Sanketi Bhargav D",
+  "Yuan Baolei",
+  "Reddy Pradeep",
+  "Rodriguez Esteban Concepcion",
+  "Izpisua Belmonte Juan Carlos"
+ ],
+ "pmc": null,
+ "status_pubstatus": "ppublish",
+ "grants": []
+}

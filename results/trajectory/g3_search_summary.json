@@ -1,0 +1,17 @@
+{
+ "seed": 20260914,
+ "candidates": [
+  "GSE276656",
+  "GSE224438",
+  "GSE271794"
+ ],
+ "n_geo_hits": 81,
+ "n_human_extra_soft": 3,
+ "n_cxg_mouse_brain": 32,
+ "n_cxg_human_osk": 0,
+ "candidate_found": {
+  "GSE276656": true,
+  "GSE224438": true,
+  "GSE271794": true
+ }
+}

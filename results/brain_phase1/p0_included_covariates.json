@@ -1,0 +1,40 @@
+{
+ "included": [
+  "cc_umi_frac",
+  "frac_Oligo",
+  "frac_Immune"
+ ],
+ "always_in_design": [
+  "log_mean_umi_per_nucleus",
+  "log_mean_genes_per_nucleus"
+ ],
+ "inclusion_threshold_abs_r": 0.2,
+ "reasons": {
+  "frac_neuronal": "not included: all within-site |r| < 0.2",
+  "frac_low_n_genes": "not included: all within-site |r| < 0.2",
+  "malat1_frac": "not included: all within-site |r| < 0.2",
+  "mt_frac": "not included: all within-site |r| < 0.2",
+  "mean_n_counts": "not included: all within-site |r| < 0.2",
+  "mean_n_genes": "not included: all within-site |r| < 0.2",
+  "n_nuclei": "not included: all within-site |r| < 0.2",
+  "cc_umi_frac": "within-site |Spearman r| >= 0.2 (M r=+0.263)",
+  "frac_Oligo": "within-site |Spearman r| >= 0.2 (M r=+0.276)",
+  "frac_Immune": "within-site |Spearman r| >= 0.2 (H r=-0.292)"
+ },
+ "absent": {
+  "PMI": true,
+  "RIN": true,
+  "tissue_pH": true,
+  "cause_of_death": true,
+  "soupX_decontX": true,
+  "hashing_pools": true
+ },
+ "hash_pool_limitation": "LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.",
+ "seed": 20260914,
+ "n_donors": 233,
+ "neuronal_classes": [
+  "EN",
+  "IN"
+ ],
+ "low_n_genes_cutoff": 500
+}

@@ -1,0 +1,22 @@
+Written **before any MD5 contrast p-value**, 2026-09-19. No threshold in this block is re-tuned after numbers exist.
+
+Using the src/md2_*.py Louvain clustering already computed (not re-run, not re-tuned). Cell-state labels are the md2 assignment: argmax of mean AddModuleScore of mmc3 Reprog_cell_state_signatures columns Fibroblast / PartialReprog / EarlyPluripotency / Pluripotency / NonReprog. Labels are read from results/md2/t2_cluster_labels_*.csv. Not re-labelled. AddModuleScore for MD and TGF-β is the per-cell vector already stored in data/processed/md2/louvain_ams_*.npz (the md2 computation). Table S3 Age up / Age down and the frozen-ruler / pluripotency−fibroblast per-cell scores are the vectors already stored in data/processed/md4/cell_scores_*.npz (the md4 computation). Frozen ruler: results/fibro/frozen_ruler_ridge_raw.npz used as-is. Refit nothing. Do not re-cluster, re-label, re-tune, or rescore.
+
+Report aged donor GM00731 and young donor GM23815 separately, never pooled. First report cell counts for Fibroblast and PartialReprog at every timepoint per donor. Then run the contrast under two pre-declared schemes, both reported, neither substituted for the other:
+
+- (a) relaxed threshold: both states ≥30 cells at the same timepoint, no pooling across timepoints. Primary if it qualifies.
+- (b) pooled timepoints within state: Fibroblast cells from d0+d3 against PartialReprog cells from d3+d7, each pooled within donor. This breaks md4's within-timepoint permutation guard, so the permutation must shuffle the state label within timepoint strata and the timepoint composition of both arms must be reported. Label this clearly as the weaker design; use it only where (a) does not qualify. Do not report (b) as primary where (a) qualified. Do not lower the threshold below 30. Do not pool donors.
+
+Instruments, all applied unchanged from md4 cell_scores / md2 louvain_ams: frozen ruler, MD, TGF-β, Table S3 age-up minus age-down, pluripotency−fibroblast. Per contrast report Δmean and Δmedian, cell-level permutation p (200 shuffles, stratified as above for scheme (b); unstratified two-state shuffle among the cells in those two states at that donor × timepoint for scheme (a), which is md4_task1._one_contrast unchanged), bootstrap 95% CI (B=200), and Cohen's d (pooled sd, n−1, same sign as Δmean). Seed 20260914 for permutations. Bootstrap seed 20260918. Scheme (a) permutation/bootstrap offsets reuse md4_common.perm_seed / boot_seed for pair PartialReprog vs Fibroblast so already-published md4 context rows must reproduce. Scheme (b) uses a documented offset that does not collide with md4.
+
+Δmean = mean(PartialReprog) − mean(Fibroblast). “Below” / “beating the null” = Δmean < 0 and p_lower ≤ 0.05 on that instrument's cell-level permutation null. Empirical p_lower = (n_null ≤ Δobs + 1) / (n_null + 1).
+
+Sanity, before any new contrast p-value: (1) reproduce FINDINGS_MD2.md pooled MD means on the aged donor (PartialReprog +0.150, NonReprog +0.439; t2_reproduction.json); (2) occupancy matches results/md4/t1_cell_counts.csv. If either fails, stop. Cell-state labels have drifted.
+
+**Pre-registered reading (only the outcome that fired, per donor):**
+- PartialReprog below Fibroblast on the frozen ruler, beating its null → responding cells read younger than their own starting population. The rejuvenation reading holds and is not an artifact of NonReprog reading old. State this plainly.
+- PartialReprog not below Fibroblast while md4's PartialReprog < NonReprog stands → the md4 result is driven by NonReprog reading old, not by PartialReprog reading young. The rejuvenation reading is not supported by this data, and md4's reading must be restated in those terms. Say so plainly and quote the md4 sentence at issue.
+- Instruments disagree (MD below Fibroblast, ruler not, or the reverse) → report both, declare no winner, name what would settle it.
+- Neither scheme qualifies on the aged donor → the decisive test cannot be run in this dataset. Say so; do not lower the threshold further, and do not let the young donor stand in for the aged one.
+
+If two qualifying scheme-(a) timepoints in one donor fire different bullets, report both, do not pick, do not average. Scheme (b) is not averaged with scheme (a). Donors are not pooled.

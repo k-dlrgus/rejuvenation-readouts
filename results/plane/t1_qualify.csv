@@ -1,0 +1,3 @@
+cell_line,n_Fibroblast,n_PartialReprog,n_EarlyPluripotency,n_Pluripotency,n_NonReprog,segment_A_ok,segment_B_ok,segment_B_end,segment_B_end_is_fallback,NonReprog_scored,min_cells,reason
+GM00731,5988,5832,4414,439,5459,True,True,Pluripotency,False,True,30,
+GM23815,11355,6481,12961,1249,1812,True,True,Pluripotency,False,True,30,

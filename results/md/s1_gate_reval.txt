@@ -1,0 +1,7 @@
+[mmc3] MD score n=205 TGFB n=54 sheets=['MD_signatures', 'Aging_signatures', 'Fibroblast_subtype_signatures', 'Reprog_cell_state_signatures']
+[gate] open=False gene_list=True n_MD=205 computation=False
+[gate] MD gene list recovered from open supplement mmc3.xlsx (n=205 genes, sheet MD_signatures, column 'MD score'; https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc3.xlsx). Computation of the score from those genes is not in any public source retrieved this session. STOP after Stage 1.
+GATE {"open": false, "gene_list_recovered": true, "computation_recovered": false, "n_MD_genes": 205, "reason": "MD gene list recovered from open supplement mmc3.xlsx (n=205 genes, sheet MD_signatures, column 'MD score'; https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc3.xlsx). Computation of the score from those genes is not in any public source retrieved this session. STOP after Stage 1."}
+GDS series [{'accession': 'GSE297234', 'title': 'Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]', 'n_samples': 8, 'pubmedids': ['40816266'], 'relations': [], 'extrelations': [], 'bioproject': 'PRJNA1263211', 'suppfile': 'H5, RDS', 'pdat': '2025/08/14'}, {'accession': 'GSE297233', 'title': 'Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [RNA-seq]', 'n_samples': 8, 'pubmedids': ['40816266'], 'relations': [], 'extrelations': [], 'bioproject': 'PRJNA1263275', 'suppfile': 'CSV', 'pdat': '2025/08/14'}]
+appended 10 extra sources; n=67
+FINDINGS <repo>\FINDINGS_MD.md

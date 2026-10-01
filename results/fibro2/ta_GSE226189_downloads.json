@@ -1,0 +1,17 @@
+{
+ "got": [
+  {
+   "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE226nnn/GSE226189/suppl/GSE226189_RAW.tar",
+   "path": "<repo>\\data\\raw\\fibro2\\GSE226189\\GSE226189_RAW.tar",
+   "size": 31559680
+  }
+ ],
+ "count_like": [
+  {
+   "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE226nnn/GSE226189/suppl/GSE226189_RAW.tar",
+   "path": "<repo>\\data\\raw\\fibro2\\GSE226189\\GSE226189_RAW.tar",
+   "size": 31559680
+  }
+ ],
+ "other": []
+}

@@ -1,0 +1,17 @@
+supersession=3
+date=2026-09-17
+written_before_s3_fit=True
+n_perm=200
+n_boot_r=200
+perm_seed=20260914
+boot_seed=20260918
+boot_draw_order=H_to_M_test_MSSM_then_M_to_H_test_HBCC
+task1=harden_gene_ridge_c2a_dense_shared_r030
+task2=share_real_age_r_over_planted_r030
+task3=identity_residual_age_fit_G2c_0.317_to_0.300
+pass_3=r_gt_0_and_null_le_0.05_both_ways
+verdict_if_3_passes=the_age_axis_transfers_after_removing_the_identity_subspace
+verdict_if_3_fails=transferable_age_signal_lives_in_the_identity_subspace
+s2_bar_not_retuned=True
+no_bootstrap_angle=True
+no_c3_refit=True

@@ -1,0 +1,256 @@
+==========================================================================================
+newstory run 2026-09-30 11:16:02
+[A] PART A — MD score per state, joint AddModuleScore over both donors
+[A] MD genes from results\md3\genesets.json: n=205 unique=205
+[A] GM00731 n_cells=22132 Fibroblast_d0=4939 PartialReprog=5832 EarlyPluripotency=4414 Pluripotency=439 NonReprog=5459
+[A] GM23815 n_cells=33858 Fibroblast_d0=7703 PartialReprog=6481 EarlyPluripotency=12961 Pluripotency=1249 NonReprog=1812
+[A] GM00731 per-donor rescoring vs data/processed/md2/louvain_ams_GM00731.npz: max|diff|=0.000e+00 bins_equal=True n_genes=29058 n_ctrl=9120 (5s)
+[A] GM23815 per-donor rescoring vs data/processed/md2/louvain_ams_GM23815.npz: max|diff|=0.000e+00 bins_equal=True n_genes=29154 n_ctrl=9690 (6s)
+[A] union genes=30000 (aged 29058, young 29154, shared 28212, aged-only 846, young-only 942); shared ids with different symbol=0
+[A] MD features on union axis n=205; same Ensembl id as per-donor mapping: {'GM00731': {'n_md_in_donor': 205, 'n_same_ensembl': 205}, 'GM23815': {'n_md_in_donor': 204, 'n_same_ensembl': 204}}
+[A] GM00731 joint score: n_ctrl=9483 (shared set n=9483); max|AMS - direct(shared ctrl)|=0.000e+00 (5s)
+[A] GM23815 joint score: n_ctrl=9483 (shared set n=9483); max|AMS - direct(shared ctrl)|=0.000e+00 (8s)
+[A] GM00731 Fibroblast_d0     n=  4939 joint=+0.5151 CI=[+0.5135, +0.5169] per-donor=+0.5062 md4=+0.5062
+[A] GM00731 PartialReprog     n=  5832 joint=+0.1575 CI=[+0.1531, +0.1617] per-donor=+0.1505 md4=+0.1505
+[A] GM00731 EarlyPluripotency n=  4414 joint=+0.1467 CI=[+0.1414, +0.1515] per-donor=+0.1415 md4=+0.1415
+[A] GM00731 Pluripotency      n=   439 joint=+0.0219 CI=[+0.0127, +0.0309] per-donor=+0.0216 md4=+0.0216
+[A] GM00731 NonReprog         n=  5459 joint=+0.4479 CI=[+0.4451, +0.4506] per-donor=+0.4394 md4=+0.4394
+[A] GM23815 Fibroblast_d0     n=  7703 joint=+0.4688 CI=[+0.4672, +0.4706] per-donor=+0.4788 md4=+0.4788
+[A] GM23815 PartialReprog     n=  6481 joint=+0.0825 CI=[+0.0791, +0.0858] per-donor=+0.0904 md4=+0.0904
+[A] GM23815 EarlyPluripotency n= 12961 joint=+0.1014 CI=[+0.0991, +0.1037] per-donor=+0.1081 md4=+0.1081
+[A] GM23815 Pluripotency      n=  1249 joint=-0.0469 CI=[-0.0513, -0.0414] per-donor=-0.0451 md4=-0.0451
+[A] GM23815 NonReprog         n=  1812 joint=+0.4133 CI=[+0.4097, +0.4165] per-donor=+0.4226 md4=+0.4226
+[A] joint: gap=+0.0463 drop=+0.3576 drop/gap=7.72
+[A] per-donor (md2 stored): gap=+0.0274 drop=+0.3557 drop/gap=12.99
+[A] md4 n-weighted: gap=+0.0274 drop=+0.3557 drop/gap=12.99
+[integrity] files outside results/newstory changed during this step: none
+==========================================================================================
+newstory run 2026-09-30 11:16:51
+[B] PART B — geometry point estimates (genespace_run functions)
+[map] MD: entries=205 unique=205 mapped=205 unmapped=0 dups=[] cols=205
+[map] age_up: entries=1533 unique=1532 mapped=1312 unmapped=220 dups=['GOLGA8M'] cols=1312
+[map] age_down: entries=2007 unique=2006 mapped=1777 unmapped=229 dups=['TMEM191A'] cols=1777
+[map] checks {'up_down_overlap_lists': 0, 'up_down_overlap_mapped': 0, 'age_unique': 3538, 'md_age_total': 43, 'md_age_up': 18, 'md_age_down': 25, 'multi_col_symbols': 13, 'multi_col_in_lists': [], 'space_cols': {'FULL': 23485, 'MD': 205, 'AGE': 3089}}
+[columns louvain_obs_GM00731] actually read from <repo>\results\md2\louvain_obs_GM00731.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM00731] actually read from <repo>\results\md2\t2_cluster_labels_GM00731.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM00731] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM00731] n_cells=22132 n_clusters=19 days=[0, 3, 7, 10]
+[columns louvain_obs_GM23815] actually read from <repo>\results\md2\louvain_obs_GM23815.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM23815] actually read from <repo>\results\md2\t2_cluster_labels_GM23815.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM23815] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM23815] n_cells=33858 n_clusters=19 days=[0, 3, 7, 10]
+[columns gtex_obs] actually read from <repo>\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[panel GM00731] PartialReprog n=5832 days={0: 3, 3: 5220, 7: 578, 10: 31}
+[panel GM00731] EarlyPluripotency n=4414 days={0: 2, 3: 410, 7: 3917, 10: 85}
+[panel GM00731] Pluripotency n=439 days={0: 0, 3: 5, 7: 354, 10: 80}
+[panel GM00731] NonReprog n=5459 days={0: 65, 3: 348, 7: 1932, 10: 3114}
+[tmm GM00731] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.9522 prior.count=2
+[panel GM23815] PartialReprog n=6481 days={0: 9, 3: 6113, 7: 309, 10: 50}
+[panel GM23815] EarlyPluripotency n=12961 days={0: 56, 3: 316, 7: 8172, 10: 4417}
+[panel GM23815] Pluripotency n=1249 days={0: 0, 3: 91, 7: 977, 10: 181}
+[panel GM23815] NonReprog n=1812 days={0: 0, 3: 10, 7: 8, 10: 1794}
+[tmm GM23815] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.9308 prior.count=2
+[B] A1_mu_zero MD: stored sets (200, 205); redrawn with draw_baseline_sets equal: True
+[B] MD same forward progress: p2.5/50/97.5 = 0.655194/0.979967/1.387038 max|diff vs size_baseline.csv|=1.11e-16
+[B] MD same forward perp: p2.5/50/97.5 = 1.891072/2.291386/2.697310 max|diff vs size_baseline.csv|=0.00e+00
+[B] MD same forward delta: p2.5/50/97.5 = 12.201980/15.011588/18.273831 max|diff vs size_baseline.csv|=3.55e-15
+[B] MD same reverse progress: p2.5/50/97.5 = -0.867180/-0.468602/-0.103352 max|diff vs size_baseline.csv|=5.55e-17
+[B] MD same reverse perp: p2.5/50/97.5 = 1.994728/2.425494/2.828779 max|diff vs size_baseline.csv|=2.22e-16
+[B] MD same reverse delta: p2.5/50/97.5 = 18.000456/21.318568/25.019371 max|diff vs size_baseline.csv|=0.00e+00
+[B] MD mixture f=0.50 delta: p2.5/50/97.5 = -5.029698/-3.923988/-2.914797 max|diff vs size_baseline.csv|=4.44e-16
+[B] A1_mu_zero AGE: stored sets (200, 3089); redrawn with draw_baseline_sets equal: True
+[B] AGE same forward progress: p2.5/50/97.5 = 0.611238/0.685180/0.759965 max|diff vs size_baseline.csv|=0.00e+00
+[B] AGE same forward perp: p2.5/50/97.5 = 1.883433/1.966284/2.065538 max|diff vs size_baseline.csv|=0.00e+00
+[B] AGE same forward delta: p2.5/50/97.5 = 44.870680/47.585346/51.044264 max|diff vs size_baseline.csv|=0.00e+00
+[B] AGE same reverse progress: p2.5/50/97.5 = -0.165066/-0.095592/-0.026165 max|diff vs size_baseline.csv|=8.33e-17
+[B] AGE same reverse perp: p2.5/50/97.5 = 1.902492/1.994691/2.069079 max|diff vs size_baseline.csv|=0.00e+00
+[B] AGE same reverse delta: p2.5/50/97.5 = 58.204902/61.138615/63.766439 max|diff vs size_baseline.csv|=7.11e-15
+[B] AGE mixture f=0.50 delta: p2.5/50/97.5 = -15.012209/-13.706978/-12.380627 max|diff vs size_baseline.csv|=0.00e+00
+[B] MD-size random sets: forward closer to young target in 0/200
+[B] AGE-size random sets: forward closer to young target in 0/200
+[B] reproduction checks vs results/genespace: n=230 max|diff|=5.684e-14
+[integrity] files outside results/newstory changed during this step: none
+==========================================================================================
+newstory run 2026-09-30 11:17:34
+[A] PART A — MD score per state, joint AddModuleScore over both donors
+[A] MD genes from results\md3\genesets.json: n=205 unique=205
+[A] GM00731 n_cells=22132 Fibroblast_d0=4939 PartialReprog=5832 EarlyPluripotency=4414 Pluripotency=439 NonReprog=5459
+[A] GM23815 n_cells=33858 Fibroblast_d0=7703 PartialReprog=6481 EarlyPluripotency=12961 Pluripotency=1249 NonReprog=1812
+[A] GM00731 per-donor rescoring vs data/processed/md2/louvain_ams_GM00731.npz: max|diff|=0.000e+00 bins_equal=True n_genes=29058 n_ctrl=9120 (5s)
+[A] GM23815 per-donor rescoring vs data/processed/md2/louvain_ams_GM23815.npz: max|diff|=0.000e+00 bins_equal=True n_genes=29154 n_ctrl=9690 (6s)
+[A] union genes=30000 (aged 29058, young 29154, shared 28212, aged-only 846, young-only 942); shared ids with different symbol=0
+[A] MD features on union axis n=205; same Ensembl id as per-donor mapping: {'GM00731': {'n_md_in_donor': 205, 'n_same_ensembl': 205, 'md_absent_from_donor_matrix': []}, 'GM23815': {'n_md_in_donor': 204, 'n_same_ensembl': 204, 'md_absent_from_donor_matrix': ['PRSS2']}}
+[A] GM00731 joint score: n_ctrl=9483 (shared set n=9483); max|AMS - direct(shared ctrl)|=0.000e+00 (5s)
+[A] GM23815 joint score: n_ctrl=9483 (shared set n=9483); max|AMS - direct(shared ctrl)|=0.000e+00 (8s)
+[A] GM00731 Fibroblast_d0     n=  4939 joint=+0.5151 CI=[+0.5135, +0.5169] per-donor=+0.5062 md4=+0.5062
+[A] GM00731 PartialReprog     n=  5832 joint=+0.1575 CI=[+0.1531, +0.1617] per-donor=+0.1505 md4=+0.1505
+[A] GM00731 EarlyPluripotency n=  4414 joint=+0.1467 CI=[+0.1414, +0.1515] per-donor=+0.1415 md4=+0.1415
+[A] GM00731 Pluripotency      n=   439 joint=+0.0219 CI=[+0.0127, +0.0309] per-donor=+0.0216 md4=+0.0216
+[A] GM00731 NonReprog         n=  5459 joint=+0.4479 CI=[+0.4451, +0.4506] per-donor=+0.4394 md4=+0.4394
+[A] GM23815 Fibroblast_d0     n=  7703 joint=+0.4688 CI=[+0.4672, +0.4706] per-donor=+0.4788 md4=+0.4788
+[A] GM23815 PartialReprog     n=  6481 joint=+0.0825 CI=[+0.0791, +0.0858] per-donor=+0.0904 md4=+0.0904
+[A] GM23815 EarlyPluripotency n= 12961 joint=+0.1014 CI=[+0.0991, +0.1037] per-donor=+0.1081 md4=+0.1081
+[A] GM23815 Pluripotency      n=  1249 joint=-0.0469 CI=[-0.0513, -0.0414] per-donor=-0.0451 md4=-0.0451
+[A] GM23815 NonReprog         n=  1812 joint=+0.4133 CI=[+0.4097, +0.4165] per-donor=+0.4226 md4=+0.4226
+[A] joint: gap=+0.0463 drop=+0.3576 drop/gap=7.72
+[A] per-donor (md2 stored): gap=+0.0274 drop=+0.3557 drop/gap=12.99
+[A] md4 n-weighted: gap=+0.0274 drop=+0.3557 drop/gap=12.99
+[B] PART B — geometry point estimates (genespace_run functions)
+[map] MD: entries=205 unique=205 mapped=205 unmapped=0 dups=[] cols=205
+[map] age_up: entries=1533 unique=1532 mapped=1312 unmapped=220 dups=['GOLGA8M'] cols=1312
+[map] age_down: entries=2007 unique=2006 mapped=1777 unmapped=229 dups=['TMEM191A'] cols=1777
+[map] checks {'up_down_overlap_lists': 0, 'up_down_overlap_mapped': 0, 'age_unique': 3538, 'md_age_total': 43, 'md_age_up': 18, 'md_age_down': 25, 'multi_col_symbols': 13, 'multi_col_in_lists': [], 'space_cols': {'FULL': 23485, 'MD': 205, 'AGE': 3089}}
+[columns louvain_obs_GM00731] actually read from <repo>\results\md2\louvain_obs_GM00731.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM00731] actually read from <repo>\results\md2\t2_cluster_labels_GM00731.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM00731] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM00731] n_cells=22132 n_clusters=19 days=[0, 3, 7, 10]
+[columns louvain_obs_GM23815] actually read from <repo>\results\md2\louvain_obs_GM23815.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM23815] actually read from <repo>\results\md2\t2_cluster_labels_GM23815.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM23815] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM23815] n_cells=33858 n_clusters=19 days=[0, 3, 7, 10]
+[columns gtex_obs] actually read from <repo>\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[panel GM00731] PartialReprog n=5832 days={0: 3, 3: 5220, 7: 578, 10: 31}
+[panel GM00731] EarlyPluripotency n=4414 days={0: 2, 3: 410, 7: 3917, 10: 85}
+[panel GM00731] Pluripotency n=439 days={0: 0, 3: 5, 7: 354, 10: 80}
+[panel GM00731] NonReprog n=5459 days={0: 65, 3: 348, 7: 1932, 10: 3114}
+[tmm GM00731] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.9522 prior.count=2
+[panel GM23815] PartialReprog n=6481 days={0: 9, 3: 6113, 7: 309, 10: 50}
+[panel GM23815] EarlyPluripotency n=12961 days={0: 56, 3: 316, 7: 8172, 10: 4417}
+[panel GM23815] Pluripotency n=1249 days={0: 0, 3: 91, 7: 977, 10: 181}
+[panel GM23815] NonReprog n=1812 days={0: 0, 3: 10, 7: 8, 10: 1794}
+[tmm GM23815] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.9308 prior.count=2
+[B] A1_mu_zero MD: stored sets (200, 205); redrawn with draw_baseline_sets equal: True
+[B] MD same forward progress: p2.5/50/97.5 = 0.655194/0.979967/1.387038 max|diff vs size_baseline.csv|=1.11e-16
+[B] MD same forward perp: p2.5/50/97.5 = 1.891072/2.291386/2.697310 max|diff vs size_baseline.csv|=0.00e+00
+[B] MD same forward delta: p2.5/50/97.5 = 12.201980/15.011588/18.273831 max|diff vs size_baseline.csv|=3.55e-15
+[B] MD same reverse progress: p2.5/50/97.5 = -0.867180/-0.468602/-0.103352 max|diff vs size_baseline.csv|=5.55e-17
+[B] MD same reverse perp: p2.5/50/97.5 = 1.994728/2.425494/2.828779 max|diff vs size_baseline.csv|=2.22e-16
+[B] MD same reverse delta: p2.5/50/97.5 = 18.000456/21.318568/25.019371 max|diff vs size_baseline.csv|=0.00e+00
+[B] MD mixture f=0.50 delta: p2.5/50/97.5 = -5.029698/-3.923988/-2.914797 max|diff vs size_baseline.csv|=4.44e-16
+[B] A1_mu_zero AGE: stored sets (200, 3089); redrawn with draw_baseline_sets equal: True
+[B] AGE same forward progress: p2.5/50/97.5 = 0.611238/0.685180/0.759965 max|diff vs size_baseline.csv|=0.00e+00
+[B] AGE same forward perp: p2.5/50/97.5 = 1.883433/1.966284/2.065538 max|diff vs size_baseline.csv|=0.00e+00
+[B] AGE same forward delta: p2.5/50/97.5 = 44.870680/47.585346/51.044264 max|diff vs size_baseline.csv|=0.00e+00
+[B] AGE same reverse progress: p2.5/50/97.5 = -0.165066/-0.095592/-0.026165 max|diff vs size_baseline.csv|=8.33e-17
+[B] AGE same reverse perp: p2.5/50/97.5 = 1.902492/1.994691/2.069079 max|diff vs size_baseline.csv|=0.00e+00
+[B] AGE same reverse delta: p2.5/50/97.5 = 58.204902/61.138615/63.766439 max|diff vs size_baseline.csv|=7.11e-15
+[B] AGE mixture f=0.50 delta: p2.5/50/97.5 = -15.012209/-13.706978/-12.380627 max|diff vs size_baseline.csv|=0.00e+00
+[B] MD-size random sets: forward closer to young target in 0/200
+[B] AGE-size random sets: forward closer to young target in 0/200
+[B] reproduction checks vs results/genespace: n=230 max|diff|=5.684e-14
+[C] wrote fig_N1_md_own_genes.{png,pdf,_data.csv}
+[C] wrote fig_N2_any_genes.{png,pdf,_data.csv}
+[integrity] files outside results/newstory changed during this step: none
+[numbers] wrote NUMBERS_NEWSTORY.md
+==========================================================================================
+newstory run 2026-09-30 11:19:11
+[C] wrote fig_N1_md_own_genes.{png,pdf,_data.csv}
+[C] wrote fig_N2_any_genes.{png,pdf,_data.csv}
+[integrity] files outside results/newstory changed during this step: none
+[numbers] wrote NUMBERS_NEWSTORY.md
+==========================================================================================
+newstory run 2026-09-30 11:19:40
+[C] wrote fig_N1_md_own_genes.{png,pdf,_data.csv}
+[C] wrote fig_N2_any_genes.{png,pdf,_data.csv}
+[integrity] files outside results/newstory changed during this step: none
+[numbers] wrote NUMBERS_NEWSTORY.md
+==========================================================================================
+newstory run 2026-09-30 11:20:08
+[A] PART A — MD score per state, joint AddModuleScore over both donors
+[A] MD genes from results\md3\genesets.json: n=205 unique=205
+[A] GM00731 n_cells=22132 Fibroblast_d0=4939 PartialReprog=5832 EarlyPluripotency=4414 Pluripotency=439 NonReprog=5459
+[A] GM23815 n_cells=33858 Fibroblast_d0=7703 PartialReprog=6481 EarlyPluripotency=12961 Pluripotency=1249 NonReprog=1812
+[A] GM00731 per-donor rescoring vs data/processed/md2/louvain_ams_GM00731.npz: max|diff|=0.000e+00 bins_equal=True n_genes=29058 n_ctrl=9120 (5s)
+[A] GM23815 per-donor rescoring vs data/processed/md2/louvain_ams_GM23815.npz: max|diff|=0.000e+00 bins_equal=True n_genes=29154 n_ctrl=9690 (6s)
+[A] union genes=30000 (aged 29058, young 29154, shared 28212, aged-only 846, young-only 942); shared ids with different symbol=0
+[A] MD features on union axis n=205; same Ensembl id as per-donor mapping: {'GM00731': {'n_md_in_donor': 205, 'n_same_ensembl': 205, 'md_absent_from_donor_matrix': []}, 'GM23815': {'n_md_in_donor': 204, 'n_same_ensembl': 204, 'md_absent_from_donor_matrix': ['PRSS2']}}
+[A] GM00731 joint score: n_ctrl=9483 (shared set n=9483); max|AMS - direct(shared ctrl)|=0.000e+00 (5s)
+[A] GM23815 joint score: n_ctrl=9483 (shared set n=9483); max|AMS - direct(shared ctrl)|=0.000e+00 (8s)
+[A] GM00731 Fibroblast_d0     n=  4939 joint=+0.5151 CI=[+0.5135, +0.5169] per-donor=+0.5062 md4=+0.5062
+[A] GM00731 PartialReprog     n=  5832 joint=+0.1575 CI=[+0.1531, +0.1617] per-donor=+0.1505 md4=+0.1505
+[A] GM00731 EarlyPluripotency n=  4414 joint=+0.1467 CI=[+0.1414, +0.1515] per-donor=+0.1415 md4=+0.1415
+[A] GM00731 Pluripotency      n=   439 joint=+0.0219 CI=[+0.0127, +0.0309] per-donor=+0.0216 md4=+0.0216
+[A] GM00731 NonReprog         n=  5459 joint=+0.4479 CI=[+0.4451, +0.4506] per-donor=+0.4394 md4=+0.4394
+[A] GM23815 Fibroblast_d0     n=  7703 joint=+0.4688 CI=[+0.4672, +0.4706] per-donor=+0.4788 md4=+0.4788
+[A] GM23815 PartialReprog     n=  6481 joint=+0.0825 CI=[+0.0791, +0.0858] per-donor=+0.0904 md4=+0.0904
+[A] GM23815 EarlyPluripotency n= 12961 joint=+0.1014 CI=[+0.0991, +0.1037] per-donor=+0.1081 md4=+0.1081
+[A] GM23815 Pluripotency      n=  1249 joint=-0.0469 CI=[-0.0513, -0.0414] per-donor=-0.0451 md4=-0.0451
+[A] GM23815 NonReprog         n=  1812 joint=+0.4133 CI=[+0.4097, +0.4165] per-donor=+0.4226 md4=+0.4226
+[A] joint: gap=+0.0463 drop=+0.3576 drop/gap=7.72
+[A] per-donor (md2 stored): gap=+0.0274 drop=+0.3557 drop/gap=12.99
+[A] md4 n-weighted: gap=+0.0274 drop=+0.3557 drop/gap=12.99
+[B] PART B — geometry point estimates (genespace_run functions)
+[map] MD: entries=205 unique=205 mapped=205 unmapped=0 dups=[] cols=205
+[map] age_up: entries=1533 unique=1532 mapped=1312 unmapped=220 dups=['GOLGA8M'] cols=1312
+[map] age_down: entries=2007 unique=2006 mapped=1777 unmapped=229 dups=['TMEM191A'] cols=1777
+[map] checks {'up_down_overlap_lists': 0, 'up_down_overlap_mapped': 0, 'age_unique': 3538, 'md_age_total': 43, 'md_age_up': 18, 'md_age_down': 25, 'multi_col_symbols': 13, 'multi_col_in_lists': [], 'space_cols': {'FULL': 23485, 'MD': 205, 'AGE': 3089}}
+[columns louvain_obs_GM00731] actually read from <repo>\results\md2\louvain_obs_GM00731.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM00731] actually read from <repo>\results\md2\t2_cluster_labels_GM00731.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM00731] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM00731] n_cells=22132 n_clusters=19 days=[0, 3, 7, 10]
+[columns louvain_obs_GM23815] actually read from <repo>\results\md2\louvain_obs_GM23815.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM23815] actually read from <repo>\results\md2\t2_cluster_labels_GM23815.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM23815] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM23815] n_cells=33858 n_clusters=19 days=[0, 3, 7, 10]
+[columns gtex_obs] actually read from <repo>\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[panel GM00731] PartialReprog n=5832 days={0: 3, 3: 5220, 7: 578, 10: 31}
+[panel GM00731] EarlyPluripotency n=4414 days={0: 2, 3: 410, 7: 3917, 10: 85}
+[panel GM00731] Pluripotency n=439 days={0: 0, 3: 5, 7: 354, 10: 80}
+[panel GM00731] NonReprog n=5459 days={0: 65, 3: 348, 7: 1932, 10: 3114}
+[tmm GM00731] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.9522 prior.count=2
+[panel GM23815] PartialReprog n=6481 days={0: 9, 3: 6113, 7: 309, 10: 50}
+[panel GM23815] EarlyPluripotency n=12961 days={0: 56, 3: 316, 7: 8172, 10: 4417}
+[panel GM23815] Pluripotency n=1249 days={0: 0, 3: 91, 7: 977, 10: 181}
+[panel GM23815] NonReprog n=1812 days={0: 0, 3: 10, 7: 8, 10: 1794}
+[tmm GM23815] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.9308 prior.count=2
+[B] A1_mu_zero MD: stored sets (200, 205); redrawn with draw_baseline_sets equal: True
+[B] MD same forward progress: p2.5/50/97.5 = 0.655194/0.979967/1.387038 max|diff vs size_baseline.csv|=1.11e-16
+[B] MD same forward perp: p2.5/50/97.5 = 1.891072/2.291386/2.697310 max|diff vs size_baseline.csv|=0.00e+00
+[B] MD same forward delta: p2.5/50/97.5 = 12.201980/15.011588/18.273831 max|diff vs size_baseline.csv|=3.55e-15
+[B] MD same reverse progress: p2.5/50/97.5 = -0.867180/-0.468602/-0.103352 max|diff vs size_baseline.csv|=5.55e-17
+[B] MD same reverse perp: p2.5/50/97.5 = 1.994728/2.425494/2.828779 max|diff vs size_baseline.csv|=2.22e-16
+[B] MD same reverse delta: p2.5/50/97.5 = 18.000456/21.318568/25.019371 max|diff vs size_baseline.csv|=0.00e+00
+[B] MD mixture f=0.50 delta: p2.5/50/97.5 = -5.029698/-3.923988/-2.914797 max|diff vs size_baseline.csv|=4.44e-16
+[B] A1_mu_zero AGE: stored sets (200, 3089); redrawn with draw_baseline_sets equal: True
+[B] AGE same forward progress: p2.5/50/97.5 = 0.611238/0.685180/0.759965 max|diff vs size_baseline.csv|=0.00e+00
+[B] AGE same forward perp: p2.5/50/97.5 = 1.883433/1.966284/2.065538 max|diff vs size_baseline.csv|=0.00e+00
+[B] AGE same forward delta: p2.5/50/97.5 = 44.870680/47.585346/51.044264 max|diff vs size_baseline.csv|=0.00e+00
+[B] AGE same reverse progress: p2.5/50/97.5 = -0.165066/-0.095592/-0.026165 max|diff vs size_baseline.csv|=8.33e-17
+[B] AGE same reverse perp: p2.5/50/97.5 = 1.902492/1.994691/2.069079 max|diff vs size_baseline.csv|=0.00e+00
+[B] AGE same reverse delta: p2.5/50/97.5 = 58.204902/61.138615/63.766439 max|diff vs size_baseline.csv|=7.11e-15
+[B] AGE mixture f=0.50 delta: p2.5/50/97.5 = -15.012209/-13.706978/-12.380627 max|diff vs size_baseline.csv|=0.00e+00
+[B] MD-size random sets: forward closer to young target in 0/200
+[B] AGE-size random sets: forward closer to young target in 0/200
+[B] reproduction checks vs results/genespace: n=230 max|diff|=5.684e-14
+[C] wrote fig_N1_md_own_genes.{png,pdf,_data.csv}
+[C] wrote fig_N2_any_genes.{png,pdf,_data.csv}
+[integrity] files outside results/newstory changed during this step: none
+[numbers] wrote NUMBERS_NEWSTORY.md
+==========================================================================================
+newstory run 2026-10-01 03:32:25
+[C] wrote fig_N1_md_own_genes.{png,pdf,_data.csv}
+[C] wrote fig_N2_any_genes.{png,pdf,_data.csv}
+[integrity] files outside results/newstory changed during this step: none
+[numbers] wrote NUMBERS_NEWSTORY.md
+==========================================================================================
+newstory run 2026-10-01 06:25:17
+[C] wrote fig_N1_md_own_genes.{png,pdf,_data.csv}
+[C] wrote fig_N5_ruler_same_mistake.{png,pdf,_data.csv}
+[integrity] files outside results/newstory changed during figure_n1/figure_n5: none
+==========================================================================================
+newstory run 2026-10-01 06:25:56
+[C] wrote fig_N5_ruler_same_mistake.{png,pdf,_data.csv}
+[integrity] files outside results/newstory changed during figure_n5: none
+==========================================================================================
+newstory run 2026-10-01 06:26:57
+[C] wrote fig_N5_ruler_same_mistake.{png,pdf,_data.csv}
+[integrity] files outside results/newstory changed during figure_n5: none

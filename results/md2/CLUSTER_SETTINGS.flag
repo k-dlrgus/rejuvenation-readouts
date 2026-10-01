@@ -1,0 +1,19 @@
+Written **before any age score**, 2026-09-19. All four resolutions are pre-registered. Not chosen after seeing which one gives a cleaner age trajectory.
+
+Scope: aged donor GM00731, all timepoints concatenated, jointly clustered. Task 2 Louvain is repeated independently on GM23815 (never pooled across donors).
+
+k = 3, 8, 15 (FIBRO3 setting, only k changes):
+- Genes: frozen-ruler overlap genes with count-sum > 0 (FINDINGS_FIBRO3.md Task 1 / FINDINGS_FIBRO.md Stage 2 cluster spec).
+- Transform: log1p(CP10k) on those genes. Library size = row sum of the kept overlap genes.
+- Dimensionality: sklearn.decomposition.PCA(n_components=20, or n_cells−1 if smaller, svd_solver="randomized", random_state=20260914) on float32 log1p(CP10k). Cell order: libraries concatenated in day order 0, 3, 7, 10.
+- Cluster: sklearn.cluster.KMeans(n_clusters=k, random_state=20260914, n_init=10).
+- k=3 reuses the frozen labels in results/fibro3/t1_cell_labels.csv for GM00731 (the FIBRO3 setting). k=8 and k=15 are fit on the same PCA recipe, new KMeans.
+- No n_genes>500 filter (FIBRO3 did not apply it). MIN_CELLS=20 to score a cluster×timepoint.
+
+Louvain (their pipeline, STAR Methods of Lu et al. Cell 2025 188:5895–5911, “Single-cell RNA-seq analysis of newly generated data”):
+- Cells with more than 500 genes; genes detected in at least 5 cells.
+- STAR Methods specify Seurat v5.0.0, sctransform v2, regression on percent mitochondrial, Louvain, AddModuleScore. This environment has no R/Seurat/sctransform. Deviation, not a silent substitute: LogNormalize (Seurat NormalizeData default: ln(1 + 10000 * count / tot); paper public-data prose also describes multiplying by the median total UMIs — we use scale.factor=10000 and report the prose/default discrepancy), then ScaleData-style residualization of percent.mt (symbol upper startswith MT-) on the top 3000 highly variable genes (Seurat SCTransform default variable.features.n; STAR Methods do not state n HVGs), PCA 50 PCs (Seurat RunPCA default; STAR Methods do not state n PCs), shared-nearest-neighbour graph (k.param=20, prune.SNN=1/15, Seurat FindNeighbors defaults; STAR Methods do not state these), Louvain via networkx.community.louvain_communities, resolution=0.8 (Seurat FindClusters default; STAR Methods do not state the resolution). Seed 20260914.
+- n clusters obtained is reported, not retuned.
+- Slingshot from day-0 fibroblast clusters is optional and report-only; not required for scoring.
+
+MIN_CELLS=20. Seed 20260914. Frozen ruler used as-is. Refit nothing.

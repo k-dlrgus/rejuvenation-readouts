@@ -1,0 +1,1327 @@
+donor,dlpfc_type,subclass,n_nuclei
+H18.30.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,565
+H18.30.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2206
+H18.30.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,4931
+H18.30.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,895
+H18.30.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,1568
+H18.30.001,VIP GABAergic interneuron,Vip,753
+H18.30.001,lamp5 GABAergic interneuron,Lamp5,306
+H18.30.001,lamp5 GABAergic interneuron,Lamp5 Lhx6,517
+H18.30.001,microglial cell,Microglia-PVM,1
+H18.30.001,oligodendrocyte,Oligodendrocyte,1
+H18.30.001,oligodendrocyte precursor cell,OPC,1
+H18.30.001,pvalb GABAergic interneuron,Pvalb,2677
+H18.30.001,sst GABAergic interneuron,Sst,2330
+H18.30.001,sst GABAergic interneuron,Sst Chodl,27
+H18.30.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,7261
+H18.30.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,3542
+H18.30.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,4600
+H18.30.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,1489
+H18.30.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,1547
+H18.30.002,VIP GABAergic interneuron,Vip,1894
+H18.30.002,lamp5 GABAergic interneuron,Lamp5,713
+H18.30.002,lamp5 GABAergic interneuron,Lamp5 Lhx6,424
+H18.30.002,microglial cell,Microglia-PVM,156
+H18.30.002,oligodendrocyte,Oligodendrocyte,868
+H18.30.002,oligodendrocyte precursor cell,OPC,329
+H18.30.002,pvalb GABAergic interneuron,Pvalb,2318
+H18.30.002,sst GABAergic interneuron,Sst,2898
+H18.30.002,sst GABAergic interneuron,Sst Chodl,47
+H18.30.002,vascular leptomeningeal cell,VLMC,17
+H19.30.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,12791
+H19.30.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,5984
+H19.30.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,5084
+H19.30.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,1646
+H19.30.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,577
+H19.30.001,VIP GABAergic interneuron,Vip,4212
+H19.30.001,lamp5 GABAergic interneuron,Lamp5,1376
+H19.30.001,lamp5 GABAergic interneuron,Lamp5 Lhx6,669
+H19.30.001,microglial cell,Microglia-PVM,655
+H19.30.001,oligodendrocyte,Oligodendrocyte,2764
+H19.30.001,oligodendrocyte precursor cell,OPC,1151
+H19.30.001,pvalb GABAergic interneuron,Pvalb,3355
+H19.30.001,sst GABAergic interneuron,Sst,4321
+H19.30.001,sst GABAergic interneuron,Sst Chodl,41
+H19.30.001,vascular leptomeningeal cell,VLMC,81
+H19.30.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,7728
+H19.30.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,3776
+H19.30.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,3409
+H19.30.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,1621
+H19.30.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,440
+H19.30.002,VIP GABAergic interneuron,Vip,2100
+H19.30.002,lamp5 GABAergic interneuron,Lamp5,854
+H19.30.002,lamp5 GABAergic interneuron,Lamp5 Lhx6,408
+H19.30.002,microglial cell,Microglia-PVM,282
+H19.30.002,oligodendrocyte,Oligodendrocyte,1874
+H19.30.002,oligodendrocyte precursor cell,OPC,573
+H19.30.002,pvalb GABAergic interneuron,Pvalb,1792
+H19.30.002,sst GABAergic interneuron,Sst,2062
+H19.30.002,sst GABAergic interneuron,Sst Chodl,42
+H19.30.002,vascular leptomeningeal cell,VLMC,26
+H19.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,6428
+H19.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,3420
+H19.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,2463
+H19.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,981
+H19.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,726
+H19.33.004,VIP GABAergic interneuron,Vip,2505
+H19.33.004,lamp5 GABAergic interneuron,Lamp5,727
+H19.33.004,lamp5 GABAergic interneuron,Lamp5 Lhx6,552
+H19.33.004,microglial cell,Microglia-PVM,796
+H19.33.004,oligodendrocyte,Oligodendrocyte,615
+H19.33.004,oligodendrocyte precursor cell,OPC,1261
+H19.33.004,pvalb GABAergic interneuron,Pvalb,2288
+H19.33.004,sst GABAergic interneuron,Sst,1495
+H19.33.004,sst GABAergic interneuron,Sst Chodl,61
+H19.33.004,vascular leptomeningeal cell,VLMC,97
+H20.33.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,5394
+H20.33.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2525
+H20.33.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1885
+H20.33.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,913
+H20.33.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,502
+H20.33.001,VIP GABAergic interneuron,Vip,1422
+H20.33.001,lamp5 GABAergic interneuron,Lamp5,457
+H20.33.001,lamp5 GABAergic interneuron,Lamp5 Lhx6,289
+H20.33.001,microglial cell,Microglia-PVM,811
+H20.33.001,oligodendrocyte,Oligodendrocyte,582
+H20.33.001,oligodendrocyte precursor cell,OPC,752
+H20.33.001,pvalb GABAergic interneuron,Pvalb,1252
+H20.33.001,sst GABAergic interneuron,Sst,376
+H20.33.001,sst GABAergic interneuron,Sst Chodl,16
+H20.33.001,vascular leptomeningeal cell,VLMC,92
+H20.33.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,6729
+H20.33.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2173
+H20.33.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1857
+H20.33.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,384
+H20.33.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,358
+H20.33.002,VIP GABAergic interneuron,Vip,1437
+H20.33.002,lamp5 GABAergic interneuron,Lamp5,672
+H20.33.002,lamp5 GABAergic interneuron,Lamp5 Lhx6,316
+H20.33.002,microglial cell,Microglia-PVM,538
+H20.33.002,oligodendrocyte,Oligodendrocyte,1869
+H20.33.002,oligodendrocyte precursor cell,OPC,298
+H20.33.002,pvalb GABAergic interneuron,Pvalb,1338
+H20.33.002,sst GABAergic interneuron,Sst,652
+H20.33.002,sst GABAergic interneuron,Sst Chodl,21
+H20.33.002,vascular leptomeningeal cell,VLMC,31
+H20.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,5865
+H20.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2660
+H20.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1943
+H20.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,809
+H20.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,354
+H20.33.004,VIP GABAergic interneuron,Vip,1572
+H20.33.004,lamp5 GABAergic interneuron,Lamp5,622
+H20.33.004,lamp5 GABAergic interneuron,Lamp5 Lhx6,353
+H20.33.004,microglial cell,Microglia-PVM,739
+H20.33.004,oligodendrocyte,Oligodendrocyte,852
+H20.33.004,oligodendrocyte precursor cell,OPC,601
+H20.33.004,pvalb GABAergic interneuron,Pvalb,1532
+H20.33.004,sst GABAergic interneuron,Sst,586
+H20.33.004,sst GABAergic interneuron,Sst Chodl,24
+H20.33.004,vascular leptomeningeal cell,VLMC,67
+H20.33.005,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,5269
+H20.33.005,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,4728
+H20.33.005,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,3318
+H20.33.005,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,1072
+H20.33.005,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,458
+H20.33.005,VIP GABAergic interneuron,Vip,2480
+H20.33.005,lamp5 GABAergic interneuron,Lamp5,928
+H20.33.005,lamp5 GABAergic interneuron,Lamp5 Lhx6,414
+H20.33.005,microglial cell,Microglia-PVM,878
+H20.33.005,oligodendrocyte,Oligodendrocyte,591
+H20.33.005,oligodendrocyte precursor cell,OPC,792
+H20.33.005,pvalb GABAergic interneuron,Pvalb,1759
+H20.33.005,sst GABAergic interneuron,Sst,568
+H20.33.005,sst GABAergic interneuron,Sst Chodl,18
+H20.33.005,vascular leptomeningeal cell,VLMC,123
+H20.33.008,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3519
+H20.33.008,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1867
+H20.33.008,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1198
+H20.33.008,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,304
+H20.33.008,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,178
+H20.33.008,VIP GABAergic interneuron,Vip,465
+H20.33.008,lamp5 GABAergic interneuron,Lamp5,147
+H20.33.008,lamp5 GABAergic interneuron,Lamp5 Lhx6,116
+H20.33.008,microglial cell,Microglia-PVM,201
+H20.33.008,oligodendrocyte,Oligodendrocyte,582
+H20.33.008,oligodendrocyte precursor cell,OPC,146
+H20.33.008,pvalb GABAergic interneuron,Pvalb,480
+H20.33.008,sst GABAergic interneuron,Sst,172
+H20.33.008,sst GABAergic interneuron,Sst Chodl,9
+H20.33.008,vascular leptomeningeal cell,VLMC,19
+H20.33.011,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,5061
+H20.33.011,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1673
+H20.33.011,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1277
+H20.33.011,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,451
+H20.33.011,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,224
+H20.33.011,VIP GABAergic interneuron,Vip,1366
+H20.33.011,lamp5 GABAergic interneuron,Lamp5,488
+H20.33.011,lamp5 GABAergic interneuron,Lamp5 Lhx6,259
+H20.33.011,microglial cell,Microglia-PVM,412
+H20.33.011,oligodendrocyte,Oligodendrocyte,2029
+H20.33.011,oligodendrocyte precursor cell,OPC,339
+H20.33.011,pvalb GABAergic interneuron,Pvalb,1069
+H20.33.011,sst GABAergic interneuron,Sst,496
+H20.33.011,sst GABAergic interneuron,Sst Chodl,24
+H20.33.011,vascular leptomeningeal cell,VLMC,21
+H20.33.012,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,4543
+H20.33.012,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2438
+H20.33.012,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1812
+H20.33.012,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,461
+H20.33.012,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,281
+H20.33.012,VIP GABAergic interneuron,Vip,1670
+H20.33.012,lamp5 GABAergic interneuron,Lamp5,613
+H20.33.012,lamp5 GABAergic interneuron,Lamp5 Lhx6,235
+H20.33.012,microglial cell,Microglia-PVM,516
+H20.33.012,oligodendrocyte,Oligodendrocyte,589
+H20.33.012,oligodendrocyte precursor cell,OPC,294
+H20.33.012,pvalb GABAergic interneuron,Pvalb,1021
+H20.33.012,sst GABAergic interneuron,Sst,271
+H20.33.012,sst GABAergic interneuron,Sst Chodl,7
+H20.33.012,vascular leptomeningeal cell,VLMC,69
+H20.33.013,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,6732
+H20.33.013,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1624
+H20.33.013,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1336
+H20.33.013,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,448
+H20.33.013,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,261
+H20.33.013,VIP GABAergic interneuron,Vip,1490
+H20.33.013,lamp5 GABAergic interneuron,Lamp5,512
+H20.33.013,lamp5 GABAergic interneuron,Lamp5 Lhx6,203
+H20.33.013,microglial cell,Microglia-PVM,367
+H20.33.013,oligodendrocyte,Oligodendrocyte,1540
+H20.33.013,oligodendrocyte precursor cell,OPC,401
+H20.33.013,pvalb GABAergic interneuron,Pvalb,1101
+H20.33.013,sst GABAergic interneuron,Sst,585
+H20.33.013,sst GABAergic interneuron,Sst Chodl,15
+H20.33.013,vascular leptomeningeal cell,VLMC,34
+H20.33.014,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,6409
+H20.33.014,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2142
+H20.33.014,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,2092
+H20.33.014,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,553
+H20.33.014,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,401
+H20.33.014,VIP GABAergic interneuron,Vip,1550
+H20.33.014,lamp5 GABAergic interneuron,Lamp5,617
+H20.33.014,lamp5 GABAergic interneuron,Lamp5 Lhx6,325
+H20.33.014,microglial cell,Microglia-PVM,265
+H20.33.014,oligodendrocyte,Oligodendrocyte,2308
+H20.33.014,oligodendrocyte precursor cell,OPC,569
+H20.33.014,pvalb GABAergic interneuron,Pvalb,1640
+H20.33.014,sst GABAergic interneuron,Sst,1238
+H20.33.014,sst GABAergic interneuron,Sst Chodl,28
+H20.33.014,vascular leptomeningeal cell,VLMC,22
+H20.33.015,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,5223
+H20.33.015,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2185
+H20.33.015,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1914
+H20.33.015,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,875
+H20.33.015,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,425
+H20.33.015,VIP GABAergic interneuron,Vip,870
+H20.33.015,lamp5 GABAergic interneuron,Lamp5,366
+H20.33.015,lamp5 GABAergic interneuron,Lamp5 Lhx6,271
+H20.33.015,microglial cell,Microglia-PVM,382
+H20.33.015,oligodendrocyte,Oligodendrocyte,608
+H20.33.015,oligodendrocyte precursor cell,OPC,359
+H20.33.015,pvalb GABAergic interneuron,Pvalb,1003
+H20.33.015,sst GABAergic interneuron,Sst,290
+H20.33.015,sst GABAergic interneuron,Sst Chodl,35
+H20.33.015,vascular leptomeningeal cell,VLMC,26
+H20.33.016,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,5132
+H20.33.016,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2485
+H20.33.016,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1846
+H20.33.016,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,795
+H20.33.016,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,257
+H20.33.016,VIP GABAergic interneuron,Vip,1136
+H20.33.016,lamp5 GABAergic interneuron,Lamp5,460
+H20.33.016,lamp5 GABAergic interneuron,Lamp5 Lhx6,288
+H20.33.016,microglial cell,Microglia-PVM,282
+H20.33.016,oligodendrocyte,Oligodendrocyte,1819
+H20.33.016,oligodendrocyte precursor cell,OPC,288
+H20.33.016,pvalb GABAergic interneuron,Pvalb,1097
+H20.33.016,sst GABAergic interneuron,Sst,523
+H20.33.016,sst GABAergic interneuron,Sst Chodl,19
+H20.33.016,vascular leptomeningeal cell,VLMC,26
+H20.33.017,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,2464
+H20.33.017,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2604
+H20.33.017,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1623
+H20.33.017,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,584
+H20.33.017,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,424
+H20.33.017,VIP GABAergic interneuron,Vip,1372
+H20.33.017,lamp5 GABAergic interneuron,Lamp5,418
+H20.33.017,lamp5 GABAergic interneuron,Lamp5 Lhx6,409
+H20.33.017,microglial cell,Microglia-PVM,553
+H20.33.017,oligodendrocyte,Oligodendrocyte,919
+H20.33.017,oligodendrocyte precursor cell,OPC,265
+H20.33.017,pvalb GABAergic interneuron,Pvalb,1107
+H20.33.017,sst GABAergic interneuron,Sst,571
+H20.33.017,sst GABAergic interneuron,Sst Chodl,35
+H20.33.017,vascular leptomeningeal cell,VLMC,68
+H20.33.018,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3718
+H20.33.018,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,3309
+H20.33.018,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,2307
+H20.33.018,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,1254
+H20.33.018,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,592
+H20.33.018,VIP GABAergic interneuron,Vip,1425
+H20.33.018,lamp5 GABAergic interneuron,Lamp5,497
+H20.33.018,lamp5 GABAergic interneuron,Lamp5 Lhx6,423
+H20.33.018,microglial cell,Microglia-PVM,594
+H20.33.018,oligodendrocyte,Oligodendrocyte,2093
+H20.33.018,oligodendrocyte precursor cell,OPC,461
+H20.33.018,pvalb GABAergic interneuron,Pvalb,1235
+H20.33.018,sst GABAergic interneuron,Sst,536
+H20.33.018,sst GABAergic interneuron,Sst Chodl,33
+H20.33.018,vascular leptomeningeal cell,VLMC,196
+H20.33.019,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,5234
+H20.33.019,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2432
+H20.33.019,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,2136
+H20.33.019,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,958
+H20.33.019,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,375
+H20.33.019,VIP GABAergic interneuron,Vip,1074
+H20.33.019,lamp5 GABAergic interneuron,Lamp5,483
+H20.33.019,lamp5 GABAergic interneuron,Lamp5 Lhx6,262
+H20.33.019,microglial cell,Microglia-PVM,391
+H20.33.019,oligodendrocyte,Oligodendrocyte,1119
+H20.33.019,oligodendrocyte precursor cell,OPC,514
+H20.33.019,pvalb GABAergic interneuron,Pvalb,950
+H20.33.019,sst GABAergic interneuron,Sst,495
+H20.33.019,sst GABAergic interneuron,Sst Chodl,9
+H20.33.019,vascular leptomeningeal cell,VLMC,42
+H20.33.020,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3596
+H20.33.020,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2754
+H20.33.020,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1981
+H20.33.020,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,843
+H20.33.020,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,460
+H20.33.020,VIP GABAergic interneuron,Vip,935
+H20.33.020,lamp5 GABAergic interneuron,Lamp5,555
+H20.33.020,lamp5 GABAergic interneuron,Lamp5 Lhx6,310
+H20.33.020,microglial cell,Microglia-PVM,697
+H20.33.020,oligodendrocyte,Oligodendrocyte,1408
+H20.33.020,oligodendrocyte precursor cell,OPC,333
+H20.33.020,pvalb GABAergic interneuron,Pvalb,773
+H20.33.020,sst GABAergic interneuron,Sst,420
+H20.33.020,sst GABAergic interneuron,Sst Chodl,13
+H20.33.020,vascular leptomeningeal cell,VLMC,102
+H20.33.024,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3219
+H20.33.024,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1544
+H20.33.024,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1291
+H20.33.024,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,595
+H20.33.024,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,315
+H20.33.024,VIP GABAergic interneuron,Vip,1101
+H20.33.024,lamp5 GABAergic interneuron,Lamp5,445
+H20.33.024,lamp5 GABAergic interneuron,Lamp5 Lhx6,347
+H20.33.024,microglial cell,Microglia-PVM,127
+H20.33.024,oligodendrocyte,Oligodendrocyte,2922
+H20.33.024,oligodendrocyte precursor cell,OPC,119
+H20.33.024,pvalb GABAergic interneuron,Pvalb,1199
+H20.33.024,sst GABAergic interneuron,Sst,1061
+H20.33.024,sst GABAergic interneuron,Sst Chodl,46
+H20.33.024,vascular leptomeningeal cell,VLMC,10
+H20.33.025,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,7981
+H20.33.025,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2270
+H20.33.025,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,2192
+H20.33.025,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,763
+H20.33.025,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,333
+H20.33.025,VIP GABAergic interneuron,Vip,1536
+H20.33.025,lamp5 GABAergic interneuron,Lamp5,768
+H20.33.025,lamp5 GABAergic interneuron,Lamp5 Lhx6,268
+H20.33.025,microglial cell,Microglia-PVM,761
+H20.33.025,oligodendrocyte,Oligodendrocyte,2376
+H20.33.025,oligodendrocyte precursor cell,OPC,500
+H20.33.025,pvalb GABAergic interneuron,Pvalb,1383
+H20.33.025,sst GABAergic interneuron,Sst,897
+H20.33.025,sst GABAergic interneuron,Sst Chodl,22
+H20.33.025,vascular leptomeningeal cell,VLMC,33
+H20.33.026,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,1233
+H20.33.026,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,730
+H20.33.026,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,601
+H20.33.026,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,229
+H20.33.026,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,213
+H20.33.026,VIP GABAergic interneuron,Vip,482
+H20.33.026,lamp5 GABAergic interneuron,Lamp5,255
+H20.33.026,lamp5 GABAergic interneuron,Lamp5 Lhx6,129
+H20.33.026,microglial cell,Microglia-PVM,182
+H20.33.026,oligodendrocyte,Oligodendrocyte,754
+H20.33.026,oligodendrocyte precursor cell,OPC,83
+H20.33.026,pvalb GABAergic interneuron,Pvalb,528
+H20.33.026,sst GABAergic interneuron,Sst,384
+H20.33.026,sst GABAergic interneuron,Sst Chodl,8
+H20.33.026,vascular leptomeningeal cell,VLMC,29
+H20.33.027,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,6289
+H20.33.027,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1651
+H20.33.027,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1454
+H20.33.027,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,525
+H20.33.027,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,439
+H20.33.027,VIP GABAergic interneuron,Vip,1593
+H20.33.027,lamp5 GABAergic interneuron,Lamp5,793
+H20.33.027,lamp5 GABAergic interneuron,Lamp5 Lhx6,301
+H20.33.027,microglial cell,Microglia-PVM,241
+H20.33.027,oligodendrocyte,Oligodendrocyte,727
+H20.33.027,oligodendrocyte precursor cell,OPC,598
+H20.33.027,pvalb GABAergic interneuron,Pvalb,1702
+H20.33.027,sst GABAergic interneuron,Sst,744
+H20.33.027,sst GABAergic interneuron,Sst Chodl,34
+H20.33.027,vascular leptomeningeal cell,VLMC,81
+H20.33.028,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,938
+H20.33.028,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1599
+H20.33.028,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,364
+H20.33.028,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,394
+H20.33.028,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,357
+H20.33.028,VIP GABAergic interneuron,Vip,591
+H20.33.028,lamp5 GABAergic interneuron,Lamp5,295
+H20.33.028,lamp5 GABAergic interneuron,Lamp5 Lhx6,76
+H20.33.028,microglial cell,Microglia-PVM,1077
+H20.33.028,oligodendrocyte,Oligodendrocyte,394
+H20.33.028,oligodendrocyte precursor cell,OPC,418
+H20.33.028,pvalb GABAergic interneuron,Pvalb,112
+H20.33.028,sst GABAergic interneuron,Sst,120
+H20.33.028,vascular leptomeningeal cell,VLMC,92
+H20.33.029,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3206
+H20.33.029,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1505
+H20.33.029,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,963
+H20.33.029,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,190
+H20.33.029,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,94
+H20.33.029,VIP GABAergic interneuron,Vip,1014
+H20.33.029,lamp5 GABAergic interneuron,Lamp5,299
+H20.33.029,lamp5 GABAergic interneuron,Lamp5 Lhx6,111
+H20.33.029,microglial cell,Microglia-PVM,368
+H20.33.029,oligodendrocyte,Oligodendrocyte,977
+H20.33.029,oligodendrocyte precursor cell,OPC,240
+H20.33.029,pvalb GABAergic interneuron,Pvalb,768
+H20.33.029,sst GABAergic interneuron,Sst,528
+H20.33.029,sst GABAergic interneuron,Sst Chodl,6
+H20.33.029,vascular leptomeningeal cell,VLMC,34
+H20.33.030,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,5934
+H20.33.030,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2633
+H20.33.030,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1784
+H20.33.030,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,815
+H20.33.030,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,376
+H20.33.030,VIP GABAergic interneuron,Vip,1933
+H20.33.030,lamp5 GABAergic interneuron,Lamp5,708
+H20.33.030,lamp5 GABAergic interneuron,Lamp5 Lhx6,364
+H20.33.030,microglial cell,Microglia-PVM,646
+H20.33.030,oligodendrocyte,Oligodendrocyte,2842
+H20.33.030,oligodendrocyte precursor cell,OPC,492
+H20.33.030,pvalb GABAergic interneuron,Pvalb,1559
+H20.33.030,sst GABAergic interneuron,Sst,814
+H20.33.030,sst GABAergic interneuron,Sst Chodl,18
+H20.33.030,vascular leptomeningeal cell,VLMC,108
+H20.33.031,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3420
+H20.33.031,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1434
+H20.33.031,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1122
+H20.33.031,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,448
+H20.33.031,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,226
+H20.33.031,VIP GABAergic interneuron,Vip,950
+H20.33.031,lamp5 GABAergic interneuron,Lamp5,375
+H20.33.031,lamp5 GABAergic interneuron,Lamp5 Lhx6,166
+H20.33.031,microglial cell,Microglia-PVM,353
+H20.33.031,oligodendrocyte,Oligodendrocyte,1316
+H20.33.031,oligodendrocyte precursor cell,OPC,163
+H20.33.031,pvalb GABAergic interneuron,Pvalb,847
+H20.33.031,sst GABAergic interneuron,Sst,555
+H20.33.031,sst GABAergic interneuron,Sst Chodl,10
+H20.33.031,vascular leptomeningeal cell,VLMC,10
+H20.33.032,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3298
+H20.33.032,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1607
+H20.33.032,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1304
+H20.33.032,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,804
+H20.33.032,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,337
+H20.33.032,VIP GABAergic interneuron,Vip,611
+H20.33.032,lamp5 GABAergic interneuron,Lamp5,377
+H20.33.032,lamp5 GABAergic interneuron,Lamp5 Lhx6,211
+H20.33.032,microglial cell,Microglia-PVM,219
+H20.33.032,oligodendrocyte,Oligodendrocyte,2112
+H20.33.032,oligodendrocyte precursor cell,OPC,331
+H20.33.032,pvalb GABAergic interneuron,Pvalb,768
+H20.33.032,sst GABAergic interneuron,Sst,362
+H20.33.032,sst GABAergic interneuron,Sst Chodl,27
+H20.33.032,vascular leptomeningeal cell,VLMC,34
+H20.33.033,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,1074
+H20.33.033,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,641
+H20.33.033,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,272
+H20.33.033,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,169
+H20.33.033,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,122
+H20.33.033,VIP GABAergic interneuron,Vip,716
+H20.33.033,lamp5 GABAergic interneuron,Lamp5,503
+H20.33.033,lamp5 GABAergic interneuron,Lamp5 Lhx6,84
+H20.33.033,microglial cell,Microglia-PVM,199
+H20.33.033,oligodendrocyte,Oligodendrocyte,219
+H20.33.033,oligodendrocyte precursor cell,OPC,74
+H20.33.033,pvalb GABAergic interneuron,Pvalb,80
+H20.33.033,sst GABAergic interneuron,Sst,148
+H20.33.033,sst GABAergic interneuron,Sst Chodl,1
+H20.33.033,vascular leptomeningeal cell,VLMC,34
+H20.33.034,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,4564
+H20.33.034,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1927
+H20.33.034,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1333
+H20.33.034,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,512
+H20.33.034,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,241
+H20.33.034,VIP GABAergic interneuron,Vip,1147
+H20.33.034,lamp5 GABAergic interneuron,Lamp5,412
+H20.33.034,lamp5 GABAergic interneuron,Lamp5 Lhx6,183
+H20.33.034,microglial cell,Microglia-PVM,356
+H20.33.034,oligodendrocyte,Oligodendrocyte,2415
+H20.33.034,oligodendrocyte precursor cell,OPC,301
+H20.33.034,pvalb GABAergic interneuron,Pvalb,1104
+H20.33.034,sst GABAergic interneuron,Sst,748
+H20.33.034,sst GABAergic interneuron,Sst Chodl,24
+H20.33.034,vascular leptomeningeal cell,VLMC,35
+H20.33.035,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,2483
+H20.33.035,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,904
+H20.33.035,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,631
+H20.33.035,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,200
+H20.33.035,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,116
+H20.33.035,VIP GABAergic interneuron,Vip,567
+H20.33.035,lamp5 GABAergic interneuron,Lamp5,270
+H20.33.035,lamp5 GABAergic interneuron,Lamp5 Lhx6,107
+H20.33.035,microglial cell,Microglia-PVM,209
+H20.33.035,oligodendrocyte,Oligodendrocyte,1181
+H20.33.035,oligodendrocyte precursor cell,OPC,120
+H20.33.035,pvalb GABAergic interneuron,Pvalb,500
+H20.33.035,sst GABAergic interneuron,Sst,410
+H20.33.035,sst GABAergic interneuron,Sst Chodl,11
+H20.33.035,vascular leptomeningeal cell,VLMC,13
+H20.33.036,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,821
+H20.33.036,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1630
+H20.33.036,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,473
+H20.33.036,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,173
+H20.33.036,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,140
+H20.33.036,VIP GABAergic interneuron,Vip,634
+H20.33.036,lamp5 GABAergic interneuron,Lamp5,194
+H20.33.036,lamp5 GABAergic interneuron,Lamp5 Lhx6,117
+H20.33.036,microglial cell,Microglia-PVM,162
+H20.33.036,oligodendrocyte,Oligodendrocyte,544
+H20.33.036,oligodendrocyte precursor cell,OPC,181
+H20.33.036,pvalb GABAergic interneuron,Pvalb,231
+H20.33.036,sst GABAergic interneuron,Sst,88
+H20.33.036,sst GABAergic interneuron,Sst Chodl,4
+H20.33.036,vascular leptomeningeal cell,VLMC,68
+H20.33.037,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,804
+H20.33.037,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,937
+H20.33.037,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,641
+H20.33.037,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,315
+H20.33.037,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,144
+H20.33.037,VIP GABAergic interneuron,Vip,423
+H20.33.037,lamp5 GABAergic interneuron,Lamp5,394
+H20.33.037,lamp5 GABAergic interneuron,Lamp5 Lhx6,94
+H20.33.037,microglial cell,Microglia-PVM,79
+H20.33.037,oligodendrocyte,Oligodendrocyte,602
+H20.33.037,oligodendrocyte precursor cell,OPC,62
+H20.33.037,pvalb GABAergic interneuron,Pvalb,173
+H20.33.037,sst GABAergic interneuron,Sst,118
+H20.33.037,vascular leptomeningeal cell,VLMC,76
+H20.33.038,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,201
+H20.33.038,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,413
+H20.33.038,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,55
+H20.33.038,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,2
+H20.33.038,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,8
+H20.33.038,VIP GABAergic interneuron,Vip,93
+H20.33.038,lamp5 GABAergic interneuron,Lamp5,47
+H20.33.038,lamp5 GABAergic interneuron,Lamp5 Lhx6,2
+H20.33.038,microglial cell,Microglia-PVM,371
+H20.33.038,oligodendrocyte,Oligodendrocyte,117
+H20.33.038,oligodendrocyte precursor cell,OPC,449
+H20.33.038,pvalb GABAergic interneuron,Pvalb,26
+H20.33.038,sst GABAergic interneuron,Sst,63
+H20.33.038,vascular leptomeningeal cell,VLMC,37
+H20.33.039,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,5388
+H20.33.039,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,3212
+H20.33.039,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,3050
+H20.33.039,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,1595
+H20.33.039,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,832
+H20.33.039,VIP GABAergic interneuron,Vip,1072
+H20.33.039,lamp5 GABAergic interneuron,Lamp5,606
+H20.33.039,lamp5 GABAergic interneuron,Lamp5 Lhx6,475
+H20.33.039,microglial cell,Microglia-PVM,391
+H20.33.039,oligodendrocyte,Oligodendrocyte,2064
+H20.33.039,oligodendrocyte precursor cell,OPC,467
+H20.33.039,pvalb GABAergic interneuron,Pvalb,1511
+H20.33.039,sst GABAergic interneuron,Sst,909
+H20.33.039,sst GABAergic interneuron,Sst Chodl,45
+H20.33.039,vascular leptomeningeal cell,VLMC,24
+H20.33.040,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,2824
+H20.33.040,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1636
+H20.33.040,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1042
+H20.33.040,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,451
+H20.33.040,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,227
+H20.33.040,VIP GABAergic interneuron,Vip,753
+H20.33.040,lamp5 GABAergic interneuron,Lamp5,336
+H20.33.040,lamp5 GABAergic interneuron,Lamp5 Lhx6,132
+H20.33.040,microglial cell,Microglia-PVM,535
+H20.33.040,oligodendrocyte,Oligodendrocyte,639
+H20.33.040,oligodendrocyte precursor cell,OPC,469
+H20.33.040,pvalb GABAergic interneuron,Pvalb,782
+H20.33.040,sst GABAergic interneuron,Sst,253
+H20.33.040,sst GABAergic interneuron,Sst Chodl,35
+H20.33.040,vascular leptomeningeal cell,VLMC,35
+H20.33.041,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3548
+H20.33.041,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2131
+H20.33.041,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1570
+H20.33.041,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,704
+H20.33.041,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,309
+H20.33.041,VIP GABAergic interneuron,Vip,808
+H20.33.041,lamp5 GABAergic interneuron,Lamp5,382
+H20.33.041,lamp5 GABAergic interneuron,Lamp5 Lhx6,202
+H20.33.041,microglial cell,Microglia-PVM,276
+H20.33.041,oligodendrocyte,Oligodendrocyte,1883
+H20.33.041,oligodendrocyte precursor cell,OPC,356
+H20.33.041,pvalb GABAergic interneuron,Pvalb,865
+H20.33.041,sst GABAergic interneuron,Sst,310
+H20.33.041,sst GABAergic interneuron,Sst Chodl,15
+H20.33.041,vascular leptomeningeal cell,VLMC,14
+H20.33.043,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,5851
+H20.33.043,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2662
+H20.33.043,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,2159
+H20.33.043,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,814
+H20.33.043,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,357
+H20.33.043,VIP GABAergic interneuron,Vip,1962
+H20.33.043,lamp5 GABAergic interneuron,Lamp5,678
+H20.33.043,lamp5 GABAergic interneuron,Lamp5 Lhx6,327
+H20.33.043,microglial cell,Microglia-PVM,756
+H20.33.043,oligodendrocyte,Oligodendrocyte,4423
+H20.33.043,oligodendrocyte precursor cell,OPC,383
+H20.33.043,pvalb GABAergic interneuron,Pvalb,1400
+H20.33.043,sst GABAergic interneuron,Sst,1392
+H20.33.043,sst GABAergic interneuron,Sst Chodl,31
+H20.33.043,vascular leptomeningeal cell,VLMC,26
+H20.33.044,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,4218
+H20.33.044,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1492
+H20.33.044,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1376
+H20.33.044,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,475
+H20.33.044,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,198
+H20.33.044,VIP GABAergic interneuron,Vip,1017
+H20.33.044,lamp5 GABAergic interneuron,Lamp5,533
+H20.33.044,lamp5 GABAergic interneuron,Lamp5 Lhx6,178
+H20.33.044,microglial cell,Microglia-PVM,326
+H20.33.044,oligodendrocyte,Oligodendrocyte,1683
+H20.33.044,oligodendrocyte precursor cell,OPC,446
+H20.33.044,pvalb GABAergic interneuron,Pvalb,890
+H20.33.044,sst GABAergic interneuron,Sst,1015
+H20.33.044,sst GABAergic interneuron,Sst Chodl,17
+H20.33.044,vascular leptomeningeal cell,VLMC,28
+H20.33.045,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,613
+H20.33.045,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1411
+H20.33.045,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,488
+H20.33.045,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,64
+H20.33.045,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,25
+H20.33.045,VIP GABAergic interneuron,Vip,1237
+H20.33.045,lamp5 GABAergic interneuron,Lamp5,851
+H20.33.045,lamp5 GABAergic interneuron,Lamp5 Lhx6,209
+H20.33.045,microglial cell,Microglia-PVM,269
+H20.33.045,oligodendrocyte,Oligodendrocyte,849
+H20.33.045,oligodendrocyte precursor cell,OPC,91
+H20.33.045,pvalb GABAergic interneuron,Pvalb,486
+H20.33.045,sst GABAergic interneuron,Sst,377
+H20.33.045,sst GABAergic interneuron,Sst Chodl,5
+H20.33.045,vascular leptomeningeal cell,VLMC,76
+H20.33.046,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3698
+H20.33.046,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2124
+H20.33.046,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1545
+H20.33.046,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,463
+H20.33.046,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,207
+H20.33.046,VIP GABAergic interneuron,Vip,587
+H20.33.046,lamp5 GABAergic interneuron,Lamp5,476
+H20.33.046,lamp5 GABAergic interneuron,Lamp5 Lhx6,122
+H20.33.046,microglial cell,Microglia-PVM,538
+H20.33.046,oligodendrocyte,Oligodendrocyte,468
+H20.33.046,oligodendrocyte precursor cell,OPC,216
+H20.33.046,pvalb GABAergic interneuron,Pvalb,598
+H20.33.046,sst GABAergic interneuron,Sst,195
+H20.33.046,sst GABAergic interneuron,Sst Chodl,3
+H20.33.046,vascular leptomeningeal cell,VLMC,97
+H200.1023,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,367
+H200.1023,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1300
+H200.1023,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1556
+H200.1023,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,315
+H200.1023,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,358
+H200.1023,VIP GABAergic interneuron,Vip,288
+H200.1023,lamp5 GABAergic interneuron,Lamp5,107
+H200.1023,lamp5 GABAergic interneuron,Lamp5 Lhx6,129
+H200.1023,microglial cell,Microglia-PVM,1
+H200.1023,oligodendrocyte,Oligodendrocyte,6
+H200.1023,oligodendrocyte precursor cell,OPC,1
+H200.1023,pvalb GABAergic interneuron,Pvalb,686
+H200.1023,sst GABAergic interneuron,Sst,782
+H200.1023,sst GABAergic interneuron,Sst Chodl,2
+H21.33.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3473
+H21.33.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2457
+H21.33.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1527
+H21.33.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,282
+H21.33.001,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,143
+H21.33.001,VIP GABAergic interneuron,Vip,1380
+H21.33.001,lamp5 GABAergic interneuron,Lamp5,584
+H21.33.001,lamp5 GABAergic interneuron,Lamp5 Lhx6,230
+H21.33.001,microglial cell,Microglia-PVM,851
+H21.33.001,oligodendrocyte,Oligodendrocyte,702
+H21.33.001,oligodendrocyte precursor cell,OPC,186
+H21.33.001,pvalb GABAergic interneuron,Pvalb,1316
+H21.33.001,sst GABAergic interneuron,Sst,1051
+H21.33.001,sst GABAergic interneuron,Sst Chodl,17
+H21.33.001,vascular leptomeningeal cell,VLMC,32
+H21.33.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3909
+H21.33.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1382
+H21.33.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,817
+H21.33.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,310
+H21.33.002,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,271
+H21.33.002,VIP GABAergic interneuron,Vip,1785
+H21.33.002,lamp5 GABAergic interneuron,Lamp5,735
+H21.33.002,lamp5 GABAergic interneuron,Lamp5 Lhx6,369
+H21.33.002,microglial cell,Microglia-PVM,458
+H21.33.002,oligodendrocyte,Oligodendrocyte,792
+H21.33.002,oligodendrocyte precursor cell,OPC,339
+H21.33.002,pvalb GABAergic interneuron,Pvalb,1602
+H21.33.002,sst GABAergic interneuron,Sst,1093
+H21.33.002,sst GABAergic interneuron,Sst Chodl,17
+H21.33.002,vascular leptomeningeal cell,VLMC,84
+H21.33.003,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,4839
+H21.33.003,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1766
+H21.33.003,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1653
+H21.33.003,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,577
+H21.33.003,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,257
+H21.33.003,VIP GABAergic interneuron,Vip,1730
+H21.33.003,lamp5 GABAergic interneuron,Lamp5,637
+H21.33.003,lamp5 GABAergic interneuron,Lamp5 Lhx6,277
+H21.33.003,microglial cell,Microglia-PVM,461
+H21.33.003,oligodendrocyte,Oligodendrocyte,1422
+H21.33.003,oligodendrocyte precursor cell,OPC,414
+H21.33.003,pvalb GABAergic interneuron,Pvalb,1561
+H21.33.003,sst GABAergic interneuron,Sst,1184
+H21.33.003,sst GABAergic interneuron,Sst Chodl,23
+H21.33.003,vascular leptomeningeal cell,VLMC,31
+H21.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3937
+H21.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1747
+H21.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1459
+H21.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,410
+H21.33.004,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,298
+H21.33.004,VIP GABAergic interneuron,Vip,1184
+H21.33.004,lamp5 GABAergic interneuron,Lamp5,414
+H21.33.004,lamp5 GABAergic interneuron,Lamp5 Lhx6,176
+H21.33.004,microglial cell,Microglia-PVM,360
+H21.33.004,oligodendrocyte,Oligodendrocyte,1586
+H21.33.004,oligodendrocyte precursor cell,OPC,454
+H21.33.004,pvalb GABAergic interneuron,Pvalb,1061
+H21.33.004,sst GABAergic interneuron,Sst,907
+H21.33.004,sst GABAergic interneuron,Sst Chodl,17
+H21.33.004,vascular leptomeningeal cell,VLMC,21
+H21.33.005,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,2585
+H21.33.005,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2388
+H21.33.005,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1833
+H21.33.005,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,951
+H21.33.005,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,484
+H21.33.005,VIP GABAergic interneuron,Vip,1062
+H21.33.005,lamp5 GABAergic interneuron,Lamp5,420
+H21.33.005,lamp5 GABAergic interneuron,Lamp5 Lhx6,285
+H21.33.005,microglial cell,Microglia-PVM,583
+H21.33.005,oligodendrocyte,Oligodendrocyte,708
+H21.33.005,oligodendrocyte precursor cell,OPC,333
+H21.33.005,pvalb GABAergic interneuron,Pvalb,1053
+H21.33.005,sst GABAergic interneuron,Sst,256
+H21.33.005,sst GABAergic interneuron,Sst Chodl,11
+H21.33.005,vascular leptomeningeal cell,VLMC,51
+H21.33.006,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,6731
+H21.33.006,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2363
+H21.33.006,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1715
+H21.33.006,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,412
+H21.33.006,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,275
+H21.33.006,VIP GABAergic interneuron,Vip,1694
+H21.33.006,lamp5 GABAergic interneuron,Lamp5,617
+H21.33.006,lamp5 GABAergic interneuron,Lamp5 Lhx6,389
+H21.33.006,microglial cell,Microglia-PVM,816
+H21.33.006,oligodendrocyte,Oligodendrocyte,2557
+H21.33.006,oligodendrocyte precursor cell,OPC,468
+H21.33.006,pvalb GABAergic interneuron,Pvalb,1496
+H21.33.006,sst GABAergic interneuron,Sst,865
+H21.33.006,sst GABAergic interneuron,Sst Chodl,20
+H21.33.006,vascular leptomeningeal cell,VLMC,21
+H21.33.007,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3089
+H21.33.007,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2104
+H21.33.007,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1078
+H21.33.007,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,545
+H21.33.007,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,325
+H21.33.007,VIP GABAergic interneuron,Vip,1546
+H21.33.007,lamp5 GABAergic interneuron,Lamp5,654
+H21.33.007,lamp5 GABAergic interneuron,Lamp5 Lhx6,345
+H21.33.007,microglial cell,Microglia-PVM,369
+H21.33.007,oligodendrocyte,Oligodendrocyte,2343
+H21.33.007,oligodendrocyte precursor cell,OPC,235
+H21.33.007,pvalb GABAergic interneuron,Pvalb,1467
+H21.33.007,sst GABAergic interneuron,Sst,1235
+H21.33.007,sst GABAergic interneuron,Sst Chodl,15
+H21.33.007,vascular leptomeningeal cell,VLMC,61
+H21.33.008,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,2372
+H21.33.008,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,3645
+H21.33.008,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1537
+H21.33.008,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,219
+H21.33.008,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,158
+H21.33.008,VIP GABAergic interneuron,Vip,1886
+H21.33.008,lamp5 GABAergic interneuron,Lamp5,1276
+H21.33.008,lamp5 GABAergic interneuron,Lamp5 Lhx6,444
+H21.33.008,microglial cell,Microglia-PVM,764
+H21.33.008,oligodendrocyte,Oligodendrocyte,2745
+H21.33.008,oligodendrocyte precursor cell,OPC,45
+H21.33.008,pvalb GABAergic interneuron,Pvalb,1167
+H21.33.008,sst GABAergic interneuron,Sst,817
+H21.33.008,sst GABAergic interneuron,Sst Chodl,7
+H21.33.008,vascular leptomeningeal cell,VLMC,43
+H21.33.009,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,879
+H21.33.009,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2461
+H21.33.009,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1161
+H21.33.009,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,357
+H21.33.009,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,258
+H21.33.009,VIP GABAergic interneuron,Vip,1128
+H21.33.009,lamp5 GABAergic interneuron,Lamp5,552
+H21.33.009,lamp5 GABAergic interneuron,Lamp5 Lhx6,260
+H21.33.009,microglial cell,Microglia-PVM,315
+H21.33.009,oligodendrocyte,Oligodendrocyte,1773
+H21.33.009,oligodendrocyte precursor cell,OPC,75
+H21.33.009,pvalb GABAergic interneuron,Pvalb,911
+H21.33.009,sst GABAergic interneuron,Sst,779
+H21.33.009,sst GABAergic interneuron,Sst Chodl,12
+H21.33.009,vascular leptomeningeal cell,VLMC,62
+H21.33.010,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,2950
+H21.33.010,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2796
+H21.33.010,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1726
+H21.33.010,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,684
+H21.33.010,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,316
+H21.33.010,VIP GABAergic interneuron,Vip,1766
+H21.33.010,lamp5 GABAergic interneuron,Lamp5,667
+H21.33.010,lamp5 GABAergic interneuron,Lamp5 Lhx6,309
+H21.33.010,microglial cell,Microglia-PVM,964
+H21.33.010,oligodendrocyte,Oligodendrocyte,719
+H21.33.010,oligodendrocyte precursor cell,OPC,401
+H21.33.010,pvalb GABAergic interneuron,Pvalb,1202
+H21.33.010,sst GABAergic interneuron,Sst,547
+H21.33.010,sst GABAergic interneuron,Sst Chodl,16
+H21.33.010,vascular leptomeningeal cell,VLMC,144
+H21.33.011,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,6555
+H21.33.011,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1742
+H21.33.011,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1330
+H21.33.011,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,343
+H21.33.011,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,202
+H21.33.011,VIP GABAergic interneuron,Vip,1618
+H21.33.011,lamp5 GABAergic interneuron,Lamp5,610
+H21.33.011,lamp5 GABAergic interneuron,Lamp5 Lhx6,220
+H21.33.011,microglial cell,Microglia-PVM,478
+H21.33.011,oligodendrocyte,Oligodendrocyte,2155
+H21.33.011,oligodendrocyte precursor cell,OPC,510
+H21.33.011,pvalb GABAergic interneuron,Pvalb,1049
+H21.33.011,sst GABAergic interneuron,Sst,685
+H21.33.011,sst GABAergic interneuron,Sst Chodl,13
+H21.33.011,vascular leptomeningeal cell,VLMC,20
+H21.33.012,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3416
+H21.33.012,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1988
+H21.33.012,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1459
+H21.33.012,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,572
+H21.33.012,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,253
+H21.33.012,VIP GABAergic interneuron,Vip,1140
+H21.33.012,lamp5 GABAergic interneuron,Lamp5,465
+H21.33.012,lamp5 GABAergic interneuron,Lamp5 Lhx6,272
+H21.33.012,microglial cell,Microglia-PVM,214
+H21.33.012,oligodendrocyte,Oligodendrocyte,3242
+H21.33.012,oligodendrocyte precursor cell,OPC,526
+H21.33.012,pvalb GABAergic interneuron,Pvalb,1285
+H21.33.012,sst GABAergic interneuron,Sst,388
+H21.33.012,sst GABAergic interneuron,Sst Chodl,14
+H21.33.012,vascular leptomeningeal cell,VLMC,50
+H21.33.013,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,1731
+H21.33.013,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2124
+H21.33.013,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1308
+H21.33.013,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,788
+H21.33.013,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,331
+H21.33.013,VIP GABAergic interneuron,Vip,719
+H21.33.013,lamp5 GABAergic interneuron,Lamp5,406
+H21.33.013,lamp5 GABAergic interneuron,Lamp5 Lhx6,191
+H21.33.013,microglial cell,Microglia-PVM,511
+H21.33.013,oligodendrocyte,Oligodendrocyte,526
+H21.33.013,oligodendrocyte precursor cell,OPC,463
+H21.33.013,pvalb GABAergic interneuron,Pvalb,714
+H21.33.013,sst GABAergic interneuron,Sst,229
+H21.33.013,sst GABAergic interneuron,Sst Chodl,13
+H21.33.013,vascular leptomeningeal cell,VLMC,25
+H21.33.014,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3774
+H21.33.014,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1620
+H21.33.014,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1111
+H21.33.014,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,608
+H21.33.014,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,323
+H21.33.014,VIP GABAergic interneuron,Vip,978
+H21.33.014,lamp5 GABAergic interneuron,Lamp5,442
+H21.33.014,lamp5 GABAergic interneuron,Lamp5 Lhx6,226
+H21.33.014,microglial cell,Microglia-PVM,246
+H21.33.014,oligodendrocyte,Oligodendrocyte,1006
+H21.33.014,oligodendrocyte precursor cell,OPC,244
+H21.33.014,pvalb GABAergic interneuron,Pvalb,1176
+H21.33.014,sst GABAergic interneuron,Sst,739
+H21.33.014,sst GABAergic interneuron,Sst Chodl,33
+H21.33.014,vascular leptomeningeal cell,VLMC,5
+H21.33.015,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,4873
+H21.33.015,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1636
+H21.33.015,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1265
+H21.33.015,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,448
+H21.33.015,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,231
+H21.33.015,VIP GABAergic interneuron,Vip,1417
+H21.33.015,lamp5 GABAergic interneuron,Lamp5,538
+H21.33.015,lamp5 GABAergic interneuron,Lamp5 Lhx6,205
+H21.33.015,microglial cell,Microglia-PVM,441
+H21.33.015,oligodendrocyte,Oligodendrocyte,2937
+H21.33.015,oligodendrocyte precursor cell,OPC,261
+H21.33.015,pvalb GABAergic interneuron,Pvalb,1052
+H21.33.015,sst GABAergic interneuron,Sst,1080
+H21.33.015,sst GABAergic interneuron,Sst Chodl,21
+H21.33.015,vascular leptomeningeal cell,VLMC,50
+H21.33.016,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,2565
+H21.33.016,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1314
+H21.33.016,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1114
+H21.33.016,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,530
+H21.33.016,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,269
+H21.33.016,VIP GABAergic interneuron,Vip,721
+H21.33.016,lamp5 GABAergic interneuron,Lamp5,301
+H21.33.016,lamp5 GABAergic interneuron,Lamp5 Lhx6,164
+H21.33.016,microglial cell,Microglia-PVM,250
+H21.33.016,oligodendrocyte,Oligodendrocyte,1940
+H21.33.016,oligodendrocyte precursor cell,OPC,246
+H21.33.016,pvalb GABAergic interneuron,Pvalb,717
+H21.33.016,sst GABAergic interneuron,Sst,394
+H21.33.016,sst GABAergic interneuron,Sst Chodl,9
+H21.33.016,vascular leptomeningeal cell,VLMC,13
+H21.33.017,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,2370
+H21.33.017,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,590
+H21.33.017,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,685
+H21.33.017,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,128
+H21.33.017,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,48
+H21.33.017,VIP GABAergic interneuron,Vip,832
+H21.33.017,lamp5 GABAergic interneuron,Lamp5,286
+H21.33.017,lamp5 GABAergic interneuron,Lamp5 Lhx6,170
+H21.33.017,microglial cell,Microglia-PVM,891
+H21.33.017,oligodendrocyte,Oligodendrocyte,541
+H21.33.017,oligodendrocyte precursor cell,OPC,74
+H21.33.017,pvalb GABAergic interneuron,Pvalb,440
+H21.33.017,sst GABAergic interneuron,Sst,390
+H21.33.017,sst GABAergic interneuron,Sst Chodl,4
+H21.33.017,vascular leptomeningeal cell,VLMC,39
+H21.33.018,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3175
+H21.33.018,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1455
+H21.33.018,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1018
+H21.33.018,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,256
+H21.33.018,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,265
+H21.33.018,VIP GABAergic interneuron,Vip,1568
+H21.33.018,lamp5 GABAergic interneuron,Lamp5,546
+H21.33.018,lamp5 GABAergic interneuron,Lamp5 Lhx6,239
+H21.33.018,microglial cell,Microglia-PVM,781
+H21.33.018,oligodendrocyte,Oligodendrocyte,1344
+H21.33.018,oligodendrocyte precursor cell,OPC,334
+H21.33.018,pvalb GABAergic interneuron,Pvalb,996
+H21.33.018,sst GABAergic interneuron,Sst,379
+H21.33.018,sst GABAergic interneuron,Sst Chodl,15
+H21.33.018,vascular leptomeningeal cell,VLMC,37
+H21.33.019,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,7089
+H21.33.019,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2598
+H21.33.019,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,2153
+H21.33.019,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,766
+H21.33.019,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,350
+H21.33.019,VIP GABAergic interneuron,Vip,1808
+H21.33.019,lamp5 GABAergic interneuron,Lamp5,657
+H21.33.019,lamp5 GABAergic interneuron,Lamp5 Lhx6,261
+H21.33.019,microglial cell,Microglia-PVM,284
+H21.33.019,oligodendrocyte,Oligodendrocyte,1520
+H21.33.019,oligodendrocyte precursor cell,OPC,605
+H21.33.019,pvalb GABAergic interneuron,Pvalb,1565
+H21.33.019,sst GABAergic interneuron,Sst,1023
+H21.33.019,sst GABAergic interneuron,Sst Chodl,33
+H21.33.019,vascular leptomeningeal cell,VLMC,50
+H21.33.020,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,71
+H21.33.020,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,144
+H21.33.020,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,13
+H21.33.020,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,2
+H21.33.020,VIP GABAergic interneuron,Vip,15
+H21.33.020,lamp5 GABAergic interneuron,Lamp5,1
+H21.33.020,microglial cell,Microglia-PVM,118
+H21.33.020,oligodendrocyte,Oligodendrocyte,15
+H21.33.020,oligodendrocyte precursor cell,OPC,82
+H21.33.020,pvalb GABAergic interneuron,Pvalb,1
+H21.33.020,sst GABAergic interneuron,Sst,4
+H21.33.020,vascular leptomeningeal cell,VLMC,50
+H21.33.021,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,1376
+H21.33.021,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2674
+H21.33.021,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,771
+H21.33.021,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,49
+H21.33.021,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,46
+H21.33.021,VIP GABAergic interneuron,Vip,2110
+H21.33.021,lamp5 GABAergic interneuron,Lamp5,887
+H21.33.021,lamp5 GABAergic interneuron,Lamp5 Lhx6,335
+H21.33.021,microglial cell,Microglia-PVM,265
+H21.33.021,oligodendrocyte,Oligodendrocyte,329
+H21.33.021,oligodendrocyte precursor cell,OPC,247
+H21.33.021,pvalb GABAergic interneuron,Pvalb,1037
+H21.33.021,sst GABAergic interneuron,Sst,347
+H21.33.021,sst GABAergic interneuron,Sst Chodl,11
+H21.33.021,vascular leptomeningeal cell,VLMC,63
+H21.33.022,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3829
+H21.33.022,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2358
+H21.33.022,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1271
+H21.33.022,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,566
+H21.33.022,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,287
+H21.33.022,VIP GABAergic interneuron,Vip,1657
+H21.33.022,lamp5 GABAergic interneuron,Lamp5,636
+H21.33.022,lamp5 GABAergic interneuron,Lamp5 Lhx6,456
+H21.33.022,microglial cell,Microglia-PVM,929
+H21.33.022,oligodendrocyte,Oligodendrocyte,1675
+H21.33.022,oligodendrocyte precursor cell,OPC,830
+H21.33.022,pvalb GABAergic interneuron,Pvalb,1448
+H21.33.022,sst GABAergic interneuron,Sst,1057
+H21.33.022,sst GABAergic interneuron,Sst Chodl,27
+H21.33.022,vascular leptomeningeal cell,VLMC,84
+H21.33.023,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,5407
+H21.33.023,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1545
+H21.33.023,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1321
+H21.33.023,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,360
+H21.33.023,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,201
+H21.33.023,VIP GABAergic interneuron,Vip,1222
+H21.33.023,lamp5 GABAergic interneuron,Lamp5,491
+H21.33.023,lamp5 GABAergic interneuron,Lamp5 Lhx6,173
+H21.33.023,microglial cell,Microglia-PVM,412
+H21.33.023,oligodendrocyte,Oligodendrocyte,1275
+H21.33.023,oligodendrocyte precursor cell,OPC,573
+H21.33.023,pvalb GABAergic interneuron,Pvalb,935
+H21.33.023,sst GABAergic interneuron,Sst,340
+H21.33.023,sst GABAergic interneuron,Sst Chodl,12
+H21.33.023,vascular leptomeningeal cell,VLMC,32
+H21.33.025,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,2344
+H21.33.025,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1599
+H21.33.025,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1256
+H21.33.025,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,367
+H21.33.025,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,222
+H21.33.025,VIP GABAergic interneuron,Vip,1448
+H21.33.025,lamp5 GABAergic interneuron,Lamp5,438
+H21.33.025,lamp5 GABAergic interneuron,Lamp5 Lhx6,236
+H21.33.025,microglial cell,Microglia-PVM,922
+H21.33.025,oligodendrocyte,Oligodendrocyte,921
+H21.33.025,oligodendrocyte precursor cell,OPC,454
+H21.33.025,pvalb GABAergic interneuron,Pvalb,898
+H21.33.025,sst GABAergic interneuron,Sst,475
+H21.33.025,sst GABAergic interneuron,Sst Chodl,17
+H21.33.025,vascular leptomeningeal cell,VLMC,65
+H21.33.026,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,2507
+H21.33.026,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1636
+H21.33.026,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,959
+H21.33.026,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,178
+H21.33.026,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,174
+H21.33.026,VIP GABAergic interneuron,Vip,790
+H21.33.026,lamp5 GABAergic interneuron,Lamp5,325
+H21.33.026,lamp5 GABAergic interneuron,Lamp5 Lhx6,228
+H21.33.026,microglial cell,Microglia-PVM,317
+H21.33.026,oligodendrocyte,Oligodendrocyte,986
+H21.33.026,oligodendrocyte precursor cell,OPC,137
+H21.33.026,pvalb GABAergic interneuron,Pvalb,907
+H21.33.026,sst GABAergic interneuron,Sst,410
+H21.33.026,sst GABAergic interneuron,Sst Chodl,12
+H21.33.026,vascular leptomeningeal cell,VLMC,43
+H21.33.027,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,10628
+H21.33.027,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2515
+H21.33.027,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1392
+H21.33.027,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,181
+H21.33.027,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,209
+H21.33.027,VIP GABAergic interneuron,Vip,1295
+H21.33.027,lamp5 GABAergic interneuron,Lamp5,692
+H21.33.027,lamp5 GABAergic interneuron,Lamp5 Lhx6,265
+H21.33.027,microglial cell,Microglia-PVM,1068
+H21.33.027,oligodendrocyte,Oligodendrocyte,1428
+H21.33.027,oligodendrocyte precursor cell,OPC,1892
+H21.33.027,pvalb GABAergic interneuron,Pvalb,1515
+H21.33.027,sst GABAergic interneuron,Sst,364
+H21.33.027,sst GABAergic interneuron,Sst Chodl,25
+H21.33.027,vascular leptomeningeal cell,VLMC,197
+H21.33.028,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3657
+H21.33.028,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1299
+H21.33.028,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,915
+H21.33.028,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,206
+H21.33.028,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,144
+H21.33.028,VIP GABAergic interneuron,Vip,1254
+H21.33.028,lamp5 GABAergic interneuron,Lamp5,319
+H21.33.028,lamp5 GABAergic interneuron,Lamp5 Lhx6,176
+H21.33.028,microglial cell,Microglia-PVM,778
+H21.33.028,oligodendrocyte,Oligodendrocyte,128
+H21.33.028,oligodendrocyte precursor cell,OPC,569
+H21.33.028,pvalb GABAergic interneuron,Pvalb,793
+H21.33.028,sst GABAergic interneuron,Sst,334
+H21.33.028,sst GABAergic interneuron,Sst Chodl,13
+H21.33.028,vascular leptomeningeal cell,VLMC,58
+H21.33.029,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,1862
+H21.33.029,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,915
+H21.33.029,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1155
+H21.33.029,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,547
+H21.33.029,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,197
+H21.33.029,VIP GABAergic interneuron,Vip,260
+H21.33.029,lamp5 GABAergic interneuron,Lamp5,193
+H21.33.029,lamp5 GABAergic interneuron,Lamp5 Lhx6,120
+H21.33.029,microglial cell,Microglia-PVM,201
+H21.33.029,oligodendrocyte,Oligodendrocyte,858
+H21.33.029,oligodendrocyte precursor cell,OPC,249
+H21.33.029,pvalb GABAergic interneuron,Pvalb,675
+H21.33.029,sst GABAergic interneuron,Sst,132
+H21.33.029,sst GABAergic interneuron,Sst Chodl,8
+H21.33.029,vascular leptomeningeal cell,VLMC,35
+H21.33.030,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3271
+H21.33.030,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1304
+H21.33.030,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,838
+H21.33.030,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,222
+H21.33.030,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,133
+H21.33.030,VIP GABAergic interneuron,Vip,980
+H21.33.030,lamp5 GABAergic interneuron,Lamp5,252
+H21.33.030,lamp5 GABAergic interneuron,Lamp5 Lhx6,114
+H21.33.030,microglial cell,Microglia-PVM,248
+H21.33.030,oligodendrocyte,Oligodendrocyte,764
+H21.33.030,oligodendrocyte precursor cell,OPC,170
+H21.33.030,pvalb GABAergic interneuron,Pvalb,804
+H21.33.030,sst GABAergic interneuron,Sst,587
+H21.33.030,sst GABAergic interneuron,Sst Chodl,18
+H21.33.030,vascular leptomeningeal cell,VLMC,25
+H21.33.031,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,4368
+H21.33.031,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1408
+H21.33.031,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1208
+H21.33.031,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,283
+H21.33.031,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,200
+H21.33.031,VIP GABAergic interneuron,Vip,1466
+H21.33.031,lamp5 GABAergic interneuron,Lamp5,684
+H21.33.031,lamp5 GABAergic interneuron,Lamp5 Lhx6,347
+H21.33.031,microglial cell,Microglia-PVM,424
+H21.33.031,oligodendrocyte,Oligodendrocyte,866
+H21.33.031,oligodendrocyte precursor cell,OPC,328
+H21.33.031,pvalb GABAergic interneuron,Pvalb,1309
+H21.33.031,sst GABAergic interneuron,Sst,679
+H21.33.031,sst GABAergic interneuron,Sst Chodl,7
+H21.33.031,vascular leptomeningeal cell,VLMC,43
+H21.33.032,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,4705
+H21.33.032,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1390
+H21.33.032,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1234
+H21.33.032,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,377
+H21.33.032,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,247
+H21.33.032,VIP GABAergic interneuron,Vip,1174
+H21.33.032,lamp5 GABAergic interneuron,Lamp5,507
+H21.33.032,lamp5 GABAergic interneuron,Lamp5 Lhx6,201
+H21.33.032,microglial cell,Microglia-PVM,342
+H21.33.032,oligodendrocyte,Oligodendrocyte,1869
+H21.33.032,oligodendrocyte precursor cell,OPC,487
+H21.33.032,pvalb GABAergic interneuron,Pvalb,1012
+H21.33.032,sst GABAergic interneuron,Sst,854
+H21.33.032,sst GABAergic interneuron,Sst Chodl,13
+H21.33.032,vascular leptomeningeal cell,VLMC,43
+H21.33.033,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,944
+H21.33.033,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,627
+H21.33.033,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,432
+H21.33.033,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,334
+H21.33.033,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,226
+H21.33.033,VIP GABAergic interneuron,Vip,504
+H21.33.033,lamp5 GABAergic interneuron,Lamp5,99
+H21.33.033,lamp5 GABAergic interneuron,Lamp5 Lhx6,153
+H21.33.033,microglial cell,Microglia-PVM,609
+H21.33.033,oligodendrocyte,Oligodendrocyte,305
+H21.33.033,oligodendrocyte precursor cell,OPC,266
+H21.33.033,pvalb GABAergic interneuron,Pvalb,311
+H21.33.033,sst GABAergic interneuron,Sst,184
+H21.33.033,sst GABAergic interneuron,Sst Chodl,3
+H21.33.033,vascular leptomeningeal cell,VLMC,52
+H21.33.034,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,775
+H21.33.034,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,172
+H21.33.034,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,204
+H21.33.034,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,54
+H21.33.034,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,69
+H21.33.034,VIP GABAergic interneuron,Vip,208
+H21.33.034,lamp5 GABAergic interneuron,Lamp5,68
+H21.33.034,lamp5 GABAergic interneuron,Lamp5 Lhx6,18
+H21.33.034,microglial cell,Microglia-PVM,230
+H21.33.034,oligodendrocyte,Oligodendrocyte,29
+H21.33.034,oligodendrocyte precursor cell,OPC,230
+H21.33.034,pvalb GABAergic interneuron,Pvalb,78
+H21.33.034,sst GABAergic interneuron,Sst,46
+H21.33.034,vascular leptomeningeal cell,VLMC,19
+H21.33.035,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3493
+H21.33.035,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1888
+H21.33.035,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1444
+H21.33.035,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,294
+H21.33.035,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,181
+H21.33.035,VIP GABAergic interneuron,Vip,993
+H21.33.035,lamp5 GABAergic interneuron,Lamp5,455
+H21.33.035,lamp5 GABAergic interneuron,Lamp5 Lhx6,137
+H21.33.035,microglial cell,Microglia-PVM,424
+H21.33.035,oligodendrocyte,Oligodendrocyte,719
+H21.33.035,oligodendrocyte precursor cell,OPC,438
+H21.33.035,pvalb GABAergic interneuron,Pvalb,791
+H21.33.035,sst GABAergic interneuron,Sst,474
+H21.33.035,sst GABAergic interneuron,Sst Chodl,6
+H21.33.035,vascular leptomeningeal cell,VLMC,70
+H21.33.036,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,2808
+H21.33.036,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1053
+H21.33.036,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1157
+H21.33.036,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,223
+H21.33.036,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,189
+H21.33.036,VIP GABAergic interneuron,Vip,985
+H21.33.036,lamp5 GABAergic interneuron,Lamp5,403
+H21.33.036,lamp5 GABAergic interneuron,Lamp5 Lhx6,208
+H21.33.036,microglial cell,Microglia-PVM,334
+H21.33.036,oligodendrocyte,Oligodendrocyte,1905
+H21.33.036,oligodendrocyte precursor cell,OPC,128
+H21.33.036,pvalb GABAergic interneuron,Pvalb,793
+H21.33.036,sst GABAergic interneuron,Sst,439
+H21.33.036,sst GABAergic interneuron,Sst Chodl,4
+H21.33.036,vascular leptomeningeal cell,VLMC,26
+H21.33.037,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,2270
+H21.33.037,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,613
+H21.33.037,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,639
+H21.33.037,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,419
+H21.33.037,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,93
+H21.33.037,VIP GABAergic interneuron,Vip,547
+H21.33.037,lamp5 GABAergic interneuron,Lamp5,242
+H21.33.037,lamp5 GABAergic interneuron,Lamp5 Lhx6,100
+H21.33.037,microglial cell,Microglia-PVM,237
+H21.33.037,oligodendrocyte,Oligodendrocyte,726
+H21.33.037,oligodendrocyte precursor cell,OPC,99
+H21.33.037,pvalb GABAergic interneuron,Pvalb,584
+H21.33.037,sst GABAergic interneuron,Sst,427
+H21.33.037,sst GABAergic interneuron,Sst Chodl,8
+H21.33.037,vascular leptomeningeal cell,VLMC,29
+H21.33.038,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,1522
+H21.33.038,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,929
+H21.33.038,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,512
+H21.33.038,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,190
+H21.33.038,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,125
+H21.33.038,VIP GABAergic interneuron,Vip,738
+H21.33.038,lamp5 GABAergic interneuron,Lamp5,243
+H21.33.038,lamp5 GABAergic interneuron,Lamp5 Lhx6,100
+H21.33.038,microglial cell,Microglia-PVM,165
+H21.33.038,oligodendrocyte,Oligodendrocyte,1009
+H21.33.038,oligodendrocyte precursor cell,OPC,126
+H21.33.038,pvalb GABAergic interneuron,Pvalb,486
+H21.33.038,sst GABAergic interneuron,Sst,241
+H21.33.038,sst GABAergic interneuron,Sst Chodl,3
+H21.33.038,vascular leptomeningeal cell,VLMC,25
+H21.33.039,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,1853
+H21.33.039,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1487
+H21.33.039,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,913
+H21.33.039,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,279
+H21.33.039,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,148
+H21.33.039,VIP GABAergic interneuron,Vip,771
+H21.33.039,lamp5 GABAergic interneuron,Lamp5,278
+H21.33.039,lamp5 GABAergic interneuron,Lamp5 Lhx6,170
+H21.33.039,microglial cell,Microglia-PVM,210
+H21.33.039,oligodendrocyte,Oligodendrocyte,1013
+H21.33.039,oligodendrocyte precursor cell,OPC,58
+H21.33.039,pvalb GABAergic interneuron,Pvalb,420
+H21.33.039,sst GABAergic interneuron,Sst,241
+H21.33.039,sst GABAergic interneuron,Sst Chodl,7
+H21.33.039,vascular leptomeningeal cell,VLMC,19
+H21.33.040,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,2953
+H21.33.040,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,2184
+H21.33.040,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1547
+H21.33.040,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,688
+H21.33.040,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,433
+H21.33.040,VIP GABAergic interneuron,Vip,845
+H21.33.040,lamp5 GABAergic interneuron,Lamp5,354
+H21.33.040,lamp5 GABAergic interneuron,Lamp5 Lhx6,318
+H21.33.040,microglial cell,Microglia-PVM,398
+H21.33.040,oligodendrocyte,Oligodendrocyte,1432
+H21.33.040,oligodendrocyte precursor cell,OPC,308
+H21.33.040,pvalb GABAergic interneuron,Pvalb,1102
+H21.33.040,sst GABAergic interneuron,Sst,540
+H21.33.040,sst GABAergic interneuron,Sst Chodl,26
+H21.33.040,vascular leptomeningeal cell,VLMC,47
+H21.33.041,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3301
+H21.33.041,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1745
+H21.33.041,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1616
+H21.33.041,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,558
+H21.33.041,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,295
+H21.33.041,VIP GABAergic interneuron,Vip,867
+H21.33.041,lamp5 GABAergic interneuron,Lamp5,363
+H21.33.041,lamp5 GABAergic interneuron,Lamp5 Lhx6,185
+H21.33.041,microglial cell,Microglia-PVM,454
+H21.33.041,oligodendrocyte,Oligodendrocyte,1633
+H21.33.041,oligodendrocyte precursor cell,OPC,459
+H21.33.041,pvalb GABAergic interneuron,Pvalb,956
+H21.33.041,sst GABAergic interneuron,Sst,366
+H21.33.041,sst GABAergic interneuron,Sst Chodl,13
+H21.33.041,vascular leptomeningeal cell,VLMC,36
+H21.33.042,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3534
+H21.33.042,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1631
+H21.33.042,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1385
+H21.33.042,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,425
+H21.33.042,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,257
+H21.33.042,VIP GABAergic interneuron,Vip,709
+H21.33.042,lamp5 GABAergic interneuron,Lamp5,349
+H21.33.042,lamp5 GABAergic interneuron,Lamp5 Lhx6,247
+H21.33.042,microglial cell,Microglia-PVM,453
+H21.33.042,oligodendrocyte,Oligodendrocyte,2000
+H21.33.042,oligodendrocyte precursor cell,OPC,436
+H21.33.042,pvalb GABAergic interneuron,Pvalb,947
+H21.33.042,sst GABAergic interneuron,Sst,261
+H21.33.042,sst GABAergic interneuron,Sst Chodl,18
+H21.33.042,vascular leptomeningeal cell,VLMC,30
+H21.33.043,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3665
+H21.33.043,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1459
+H21.33.043,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,1138
+H21.33.043,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,371
+H21.33.043,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,175
+H21.33.043,VIP GABAergic interneuron,Vip,1610
+H21.33.043,lamp5 GABAergic interneuron,Lamp5,533
+H21.33.043,lamp5 GABAergic interneuron,Lamp5 Lhx6,223
+H21.33.043,microglial cell,Microglia-PVM,972
+H21.33.043,oligodendrocyte,Oligodendrocyte,918
+H21.33.043,oligodendrocyte precursor cell,OPC,465
+H21.33.043,pvalb GABAergic interneuron,Pvalb,1103
+H21.33.043,sst GABAergic interneuron,Sst,624
+H21.33.043,sst GABAergic interneuron,Sst Chodl,15
+H21.33.043,vascular leptomeningeal cell,VLMC,44
+H21.33.044,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,1337
+H21.33.044,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,932
+H21.33.044,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,447
+H21.33.044,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,172
+H21.33.044,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,152
+H21.33.044,VIP GABAergic interneuron,Vip,521
+H21.33.044,lamp5 GABAergic interneuron,Lamp5,90
+H21.33.044,lamp5 GABAergic interneuron,Lamp5 Lhx6,106
+H21.33.044,microglial cell,Microglia-PVM,445
+H21.33.044,oligodendrocyte,Oligodendrocyte,79
+H21.33.044,oligodendrocyte precursor cell,OPC,428
+H21.33.044,pvalb GABAergic interneuron,Pvalb,266
+H21.33.044,sst GABAergic interneuron,Sst,176
+H21.33.044,sst GABAergic interneuron,Sst Chodl,2
+H21.33.044,vascular leptomeningeal cell,VLMC,33
+H21.33.045,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,936
+H21.33.045,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1189
+H21.33.045,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,816
+H21.33.045,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,93
+H21.33.045,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,60
+H21.33.045,VIP GABAergic interneuron,Vip,599
+H21.33.045,lamp5 GABAergic interneuron,Lamp5,517
+H21.33.045,lamp5 GABAergic interneuron,Lamp5 Lhx6,58
+H21.33.045,microglial cell,Microglia-PVM,356
+H21.33.045,oligodendrocyte,Oligodendrocyte,192
+H21.33.045,oligodendrocyte precursor cell,OPC,79
+H21.33.045,pvalb GABAergic interneuron,Pvalb,308
+H21.33.045,sst GABAergic interneuron,Sst,190
+H21.33.045,sst GABAergic interneuron,Sst Chodl,2
+H21.33.045,vascular leptomeningeal cell,VLMC,115
+H21.33.046,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,1409
+H21.33.046,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,776
+H21.33.046,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,376
+H21.33.046,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,71
+H21.33.046,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,54
+H21.33.046,VIP GABAergic interneuron,Vip,655
+H21.33.046,lamp5 GABAergic interneuron,Lamp5,202
+H21.33.046,lamp5 GABAergic interneuron,Lamp5 Lhx6,162
+H21.33.046,microglial cell,Microglia-PVM,277
+H21.33.046,oligodendrocyte,Oligodendrocyte,38
+H21.33.046,oligodendrocyte precursor cell,OPC,96
+H21.33.046,pvalb GABAergic interneuron,Pvalb,412
+H21.33.046,sst GABAergic interneuron,Sst,157
+H21.33.046,sst GABAergic interneuron,Sst Chodl,7
+H21.33.046,vascular leptomeningeal cell,VLMC,32
+H21.33.047,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3 IT,3315
+H21.33.047,L2/3-6 intratelencephalic projecting glutamatergic neuron,L4 IT,1292
+H21.33.047,L2/3-6 intratelencephalic projecting glutamatergic neuron,L5 IT,904
+H21.33.047,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT,206
+H21.33.047,L2/3-6 intratelencephalic projecting glutamatergic neuron,L6 IT Car3,173
+H21.33.047,VIP GABAergic interneuron,Vip,1486
+H21.33.047,lamp5 GABAergic interneuron,Lamp5,578
+H21.33.047,lamp5 GABAergic interneuron,Lamp5 Lhx6,198
+H21.33.047,microglial cell,Microglia-PVM,417
+H21.33.047,oligodendrocyte,Oligodendrocyte,981
+H21.33.047,oligodendrocyte precursor cell,OPC,359
+H21.33.047,pvalb GABAergic interneuron,Pvalb,1098
+H21.33.047,sst GABAergic interneuron,Sst,1117
+H21.33.047,sst GABAergic interneuron,Sst Chodl,21
+H21.33.047,vascular leptomeningeal cell,VLMC,21

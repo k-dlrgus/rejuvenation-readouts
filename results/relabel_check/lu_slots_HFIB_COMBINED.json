@@ -1,0 +1,40 @@
+{
+  "active.assay": [
+    "SCT"
+  ],
+  "active.ident": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14"
+  ],
+  "project.name": [
+    "HFIB"
+  ],
+  "version": [
+    "[5 0 2]"
+  ],
+  "assays": [
+    "RNA",
+    "SCT"
+  ],
+  "reductions": [
+    "pca",
+    "umap"
+  ],
+  "graphs": [
+    "SCT_nn",
+    "SCT_snn"
+  ]
+}

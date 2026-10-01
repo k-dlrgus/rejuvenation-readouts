@@ -1,0 +1,5 @@
+Written **before any MD4 extrapolation distance or ρ**, 2026-09-19. Report-only. No gate.
+
+For each donor × state × timepoint with n_cells ≥ 1 (n=0 is not a row): sum Louvain-kept UMIs to a pseudobulk on the frozen-ruler gene space (rulerY aligned as in md2/md3). TMM among that donor's state×timepoint rows, then frozen μ/σ/w. Distance to the GTEx fibroblast training z-space: PCA k=50 nearest-neighbour Euclidean and Mahalanobis, same functions as src/fibro2_extrap.py / FINDINGS_FIBRO2.md. Spearman ρ across those rows between each distance and the frozen ruler score, permutation null n_perm=200 seed 20260914 (shuffle the ruler score, hold distance), bootstrap CI B=200 seed 20260918. Donors reported separately and as concatenated rows; never averaged.
+
+FINDINGS_FIBRO3.md Task 2 (the same PCA k=50 NN / Mahalanobis measures as FINDINGS_FIBRO2.md) found ruler score vs nn_euclidean ρ=-0.625. If PartialReprog sits further from training than NonReprog, that correlation would push the Task 1 frozen-ruler contrast toward “PR reads younger”. Reported as direction only. Not a gate. Not used to explain a Task 1 result away.

@@ -1,0 +1,193 @@
+{
+ "by_donor": {
+  "GM00731": {
+   "frozen_ruler": {
+    "key": "mixed",
+    "text": "mixed / other: slope_A_young=True; slope_B_young=True; slope_B_flat=False; slope_B_old=False; slopes_overlap=False; bend_beats_null=False; age_falls_A=True; age_falls_B=True; p_more_negative=0.9850746268656716",
+    "flags": {
+     "slope_A_young": true,
+     "slope_B_young": true,
+     "slope_B_flat": false,
+     "slope_B_old": false,
+     "slopes_overlap": false,
+     "bend_beats_null": false,
+     "age_falls_A": true,
+     "age_falls_B": true,
+     "ok": true
+    },
+    "slope_A": -0.19198000287236447,
+    "slope_B": -2.514033220121115,
+    "bend": 2.3220532172487505,
+    "p_more_negative": 0.9850746268656716,
+    "p_more_positive": 0.01990049751243781,
+    "segment_B_end": "Pluripotency",
+    "segment_B_end_is_fallback": false,
+    "null_kind": "permuted_ruler_weights"
+   },
+   "md_score": {
+    "key": "mixed",
+    "text": "mixed / other: slope_A_young=True; slope_B_young=True; slope_B_flat=False; slope_B_old=False; slopes_overlap=False; bend_beats_null=True; age_falls_A=True; age_falls_B=True; p_more_negative=0.009950248756218905",
+    "flags": {
+     "slope_A_young": true,
+     "slope_B_young": true,
+     "slope_B_flat": false,
+     "slope_B_old": false,
+     "slopes_overlap": false,
+     "bend_beats_null": true,
+     "age_falls_A": true,
+     "age_falls_B": true,
+     "ok": true
+    },
+    "slope_A": -0.0978760602212234,
+    "slope_B": -0.14552910828949495,
+    "bend": 0.047653048068271545,
+    "p_more_negative": 0.009950248756218905,
+    "p_more_positive": 0.9950248756218906,
+    "segment_B_end": "Pluripotency",
+    "segment_B_end_is_fallback": false,
+    "null_kind": "size_matched_random_gene_sets_mean_expression_bin"
+   },
+   "age_up_minus_age_down": {
+    "key": "bend",
+    "text": "age falls in segment A (slope_A CI excludes 0 in the young direction) and segment B is flat or reversed and the bend statistic beats its null. Age moves before identity is lost; rejuvenation is separable from dedifferentiation on this instrument.",
+    "flags": {
+     "slope_A_young": true,
+     "slope_B_young": false,
+     "slope_B_flat": false,
+     "slope_B_old": true,
+     "slopes_overlap": false,
+     "bend_beats_null": true,
+     "age_falls_A": true,
+     "age_falls_B": false,
+     "ok": true
+    },
+    "slope_A": -0.03277591946286794,
+    "slope_B": 0.20496076051855025,
+    "bend": -0.23773667998141818,
+    "p_more_negative": 0.004975124378109453,
+    "p_more_positive": 1.0,
+    "segment_B_end": "Pluripotency",
+    "segment_B_end_is_fallback": false,
+    "null_kind": "size_matched_random_gene_sets_mean_expression_bin_up_minus_down"
+   }
+  },
+  "GM23815": {
+   "frozen_ruler": {
+    "key": "mixed",
+    "text": "mixed / other: slope_A_young=True; slope_B_young=True; slope_B_flat=False; slope_B_old=False; slopes_overlap=False; bend_beats_null=False; age_falls_A=True; age_falls_B=True; p_more_negative=0.8159203980099502",
+    "flags": {
+     "slope_A_young": true,
+     "slope_B_young": true,
+     "slope_B_flat": false,
+     "slope_B_old": false,
+     "slopes_overlap": false,
+     "bend_beats_null": false,
+     "age_falls_A": true,
+     "age_falls_B": true,
+     "ok": true
+    },
+    "slope_A": -0.24825459047419215,
+    "slope_B": -0.6909022235070909,
+    "bend": 0.44264763303289867,
+    "p_more_negative": 0.8159203980099502,
+    "p_more_positive": 0.1890547263681592,
+    "segment_B_end": "Pluripotency",
+    "segment_B_end_is_fallback": false,
+    "null_kind": "permuted_ruler_weights"
+   },
+   "md_score": {
+    "key": "mixed",
+    "text": "mixed / other: slope_A_young=True; slope_B_young=True; slope_B_flat=False; slope_B_old=False; slopes_overlap=False; bend_beats_null=True; age_falls_A=True; age_falls_B=True; p_more_negative=0.004975124378109453",
+    "flags": {
+     "slope_A_young": true,
+     "slope_B_young": true,
+     "slope_B_flat": false,
+     "slope_B_old": false,
+     "slopes_overlap": false,
+     "bend_beats_null": true,
+     "age_falls_A": true,
+     "age_falls_B": true,
+     "ok": true
+    },
+    "slope_A": -0.14528913765005586,
+    "slope_B": -0.08566663334911248,
+    "bend": -0.059622504300943374,
+    "p_more_negative": 0.004975124378109453,
+    "p_more_positive": 1.0,
+    "segment_B_end": "Pluripotency",
+    "segment_B_end_is_fallback": false,
+    "null_kind": "size_matched_random_gene_sets_mean_expression_bin"
+   },
+   "age_up_minus_age_down": {
+    "key": "bend",
+    "text": "age falls in segment A (slope_A CI excludes 0 in the young direction) and segment B is flat or reversed and the bend statistic beats its null. Age moves before identity is lost; rejuvenation is separable from dedifferentiation on this instrument.",
+    "flags": {
+     "slope_A_young": true,
+     "slope_B_young": false,
+     "slope_B_flat": false,
+     "slope_B_old": true,
+     "slopes_overlap": false,
+     "bend_beats_null": true,
+     "age_falls_A": true,
+     "age_falls_B": false,
+     "ok": true
+    },
+    "slope_A": -0.048348378177753504,
+    "slope_B": 0.08858368180453775,
+    "bend": -0.13693205998229124,
+    "p_more_negative": 0.004975124378109453,
+    "p_more_positive": 1.0,
+    "segment_B_end": "Pluripotency",
+    "segment_B_end_is_fallback": false,
+    "null_kind": "size_matched_random_gene_sets_mean_expression_bin_up_minus_down"
+   }
+  }
+ },
+ "instruments": [
+  "frozen_ruler",
+  "md_score",
+  "age_up_minus_age_down"
+ ],
+ "trajectory": [
+  "Fibroblast",
+  "PartialReprog",
+  "EarlyPluripotency",
+  "Pluripotency"
+ ],
+ "min_cells": 30,
+ "n_boot": 200,
+ "n_random": 200,
+ "seed": 20260914,
+ "boot_seed": 20260918,
+ "comparison": {
+  "by_instrument": [
+   {
+    "instrument": "frozen_ruler",
+    "key_GM00731": "mixed",
+    "key_GM23815": "mixed"
+   },
+   {
+    "instrument": "md_score",
+    "key_GM00731": "mixed",
+    "key_GM23815": "mixed"
+   },
+   {
+    "instrument": "age_up_minus_age_down",
+    "key_GM00731": "bend",
+    "key_GM23815": "bend"
+   }
+  ],
+  "md_expected_lockstep_from_md3": true,
+  "md3_rho": {
+   "GM00731": -0.938,
+   "GM23815": -0.96
+  },
+  "md3_n": {
+   "GM00731": 33,
+   "GM23815": 34
+  },
+  "note": "FINDINGS_MD3.md Task 3: MD vs pluri_primary \u03c1=-0.938 (GM00731 n=33) and \u03c1=-0.96 (GM23815 n=34). MD is expected to run in lockstep. No winner is declared."
+ },
+ "identity": "pluri_primary",
+ "NonReprog_excluded_from_trajectory_statistics": true
+}

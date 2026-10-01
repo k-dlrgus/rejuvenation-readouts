@@ -1,0 +1,5 @@
+stop_V2=False
+within_site_ridge_target_primary_r2=0.23066389475266602
+null_mean=-0.11160421401681977
+types_lose=0/20
+reason=TARGET retains held-out age predictivity in a majority of cell types

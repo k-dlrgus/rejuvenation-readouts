@@ -1,0 +1,41 @@
+{
+ "status": "no_transfer",
+ "verdict": "d",
+ "verdict_text": "The frozen human DLPFC age score does not track chronological age in independent mouse brain aging (Tabula Muris Senis) after 1:1 ortholog mapping (13028/25526 genes mapped, 51.0% of frozen). OLS R\u00b2 of mouse age ~ score = +0.130 (null +0.068, p=0.235); Spearman \u03c1=+0.343 (p=0.235). Per-type Spearman signs +2 / -6 (mixed signs; a donor-mean can cancel). The trajectory is not computed. Needed: a human adult cortical/DLPFC scRNA dataset (preferred) in which the frozen score tracks donor age, plus an adult cortical OSK or partial-reprogramming time course with cell-type labels; or a mouse cortical aging atlas on which this frozen score tracks age, plus an adult cortical (not SVZ, not E15.5) OSK time course.",
+ "narrative": "The frozen human DLPFC age score does not track chronological age in independent mouse brain aging (Tabula Muris Senis) after 1:1 ortholog mapping (13028/25526 genes mapped, 51.0% of frozen). OLS R\u00b2 of mouse age ~ score = +0.130 (null +0.068, p=0.235); Spearman \u03c1=+0.343 (p=0.235). Per-type Spearman signs +2 / -6 (mixed signs; a donor-mean can cancel). The trajectory is not computed. Needed: a human adult cortical/DLPFC scRNA dataset (preferred) in which the frozen score tracks donor age, plus an adult cortical OSK or partial-reprogramming time course with cell-type labels; or a mouse cortical aging atlas on which this frozen score tracks age, plus an adult cortical (not SVZ, not E15.5) OSK time course.",
+ "orthologs": {
+  "n_human": 25526,
+  "n_1to1": 14239,
+  "n_used": 13028,
+  "frac_used": 0.5103815717307842
+ },
+ "mouse_aging": {
+  "id": "66ff82b4-9380-469c-bc4b-cfa08eacd325 + c08f8441-4a10-4748-872a-e70c0bcccdba",
+  "title": "Tabula Muris Senis brain non-myeloid + myeloid (CXG)",
+  "r2": 0.13002342095437391,
+  "mae": NaN,
+  "spearman": 0.34292246764440937,
+  "pearson": 0.3605876051036339,
+  "n_donors": 15,
+  "median_type_r2": 0.14099809457446805,
+  "n_types": 8,
+  "null_mean": 0.0677027461163915,
+  "p": 0.23529411764705882,
+  "p_spearman": 0.23529411764705882,
+  "n_perm": 50,
+  "n_pseudobulks": 120,
+  "transfer_metric": "ols_age_on_score",
+  "n_types_spearman_pos": 2,
+  "n_types_spearman_neg": 6,
+  "cortex_sensitivity": {
+   "r2": 0.002324281400208683,
+   "spearman": -0.25434031378314964,
+   "n_donors": 11
+  },
+  "transfer_ok": false,
+  "n_genes_mapped": 13028
+ },
+ "needed": "Human adult DLPFC/cortex OSK or partial-reprogramming scRNA time course with numeric ages and cell-type labels; or a mouse cortical aging atlas on which the frozen score tracks age, plus an adult cortical (not SVZ, not E15.5) OSK time course.",
+ "skipped_GSE276656": "14.4 GB multiome RAW; not downloaded",
+ "skipped_GSE271794": "E15.5 development, not adult aging"
+}

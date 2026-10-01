@@ -1,0 +1,951 @@
+list,library,term,p,adj_p,genes,aging_token
+consensus_pos,MSigDB_Hallmark_2020,Inflammatory Response,0.08924145426065531,0.39536815575105444,"IL15,ROS1",True
+consensus_pos,MSigDB_Hallmark_2020,Interferon Alpha Response,0.2160330472811356,0.39536815575105444,IL15,True
+consensus_pos,MSigDB_Hallmark_2020,Xenobiotic Metabolism,0.39536815575105444,0.39536815575105444,GSTT2,False
+consensus_pos,MSigDB_Hallmark_2020,KRAS Signaling Dn,0.39536815575105444,0.39536815575105444,NGB,False
+consensus_pos,MSigDB_Hallmark_2020,Interferon Gamma Response,0.39536815575105444,0.39536815575105444,IL15,True
+consensus_pos,MSigDB_Hallmark_2020,p53 Pathway,0.39536815575105444,0.39536815575105444,RAD51C,True
+consensus_pos,MSigDB_Hallmark_2020,E2F Targets,0.39536815575105444,0.39536815575105444,RAD51C,False
+consensus_pos,MSigDB_Hallmark_2020,Myc Targets V1,0.39536815575105444,0.39536815575105444,CLNS1A,False
+consensus_pos,MSigDB_Hallmark_2020,Epithelial Mesenchymal Transition,0.39536815575105444,0.39536815575105444,IL15,False
+consensus_pos,MSigDB_Hallmark_2020,Allograft Rejection,0.39536815575105444,0.39536815575105444,IL15,False
+consensus_pos,GO_Biological_Process_2023,DNA Recombination (GO:0006310),0.0049475924537835565,0.23664081907998447,"RAD51C,MSH3",False
+consensus_pos,GO_Biological_Process_2023,Maintenance Of DNA Repeat Elements (GO:0043570),0.012438777192772534,0.23664081907998447,MSH3,False
+consensus_pos,GO_Biological_Process_2023,Regulation Of mRNA Export From Nucleus (GO:0010793),0.012438777192772534,0.23664081907998447,NSUN2,False
+consensus_pos,GO_Biological_Process_2023,Regulation Of Ribonucleoprotein Complex Localization (GO:2000197),0.012438777192772534,0.23664081907998447,NSUN2,False
+consensus_pos,GO_Biological_Process_2023,Positive Regulation Of Helicase Activity (GO:0051096),0.014908284799373634,0.23664081907998447,MSH3,False
+consensus_pos,GO_Biological_Process_2023,Negative Regulation Of Heart Rate (GO:0010459),0.014908284799373634,0.23664081907998447,RNLS,False
+consensus_pos,GO_Biological_Process_2023,L-methionine Salvage (GO:0071267),0.014908284799373634,0.23664081907998447,APIP,False
+consensus_pos,GO_Biological_Process_2023,Somatic Recombination Of Immunoglobulin Gene Segments (GO:0016447),0.01982916145118511,0.23664081907998447,MSH3,False
+consensus_pos,GO_Biological_Process_2023,Regulation Of Helicase Activity (GO:0051095),0.01982916145118511,0.23664081907998447,MSH3,False
+consensus_pos,GO_Biological_Process_2023,Tyrosine Phosphorylation Of STAT Protein (GO:0007260),0.01982916145118511,0.23664081907998447,IL15,False
+consensus_pos,GO_Biological_Process_2023,Positive Regulation Of Tissue Remodeling (GO:0034105),0.022280559123686802,0.23664081907998447,IL15,False
+consensus_pos,GO_Biological_Process_2023,Recombinational Repair (GO:0000725),0.023591646713008625,0.23664081907998447,"RAD51C,ZMYND8",False
+consensus_pos,GO_Biological_Process_2023,Columnar/Cuboidal Epithelial Cell Differentiation (GO:0002065),0.02472594881725805,0.23664081907998447,ROS1,False
+consensus_pos,GO_Biological_Process_2023,Interleukin-15-Mediated Signaling Pathway (GO:0035723),0.02472594881725805,0.23664081907998447,IL15,False
+consensus_pos,GO_Biological_Process_2023,Cellular Response To Interleukin-15 (GO:0071350),0.02472594881725805,0.23664081907998447,IL15,False
+consensus_pos,GO_Biological_Process_2023,Negative Regulation Of Heart Contraction (GO:0045822),0.027165344857992397,0.23664081907998447,RNLS,False
+consensus_pos,GO_Biological_Process_2023,Regulation Of RNA Export From Nucleus (GO:0046831),0.027165344857992397,0.23664081907998447,NSUN2,False
+consensus_pos,GO_Biological_Process_2023,Granulocyte Activation (GO:0036230),0.029598761568907096,0.23664081907998447,IL15,False
+consensus_pos,GO_Biological_Process_2023,Double-Strand Break Repair Via Homologous Recombination (GO:0000724),0.03145448478079644,0.23664081907998447,"RAD51C,ZMYND8",False
+consensus_pos,GO_Biological_Process_2023,Acute-Phase Response (GO:0006953),0.03202621324876303,0.23664081907998447,APOL2,False
+consensus_pos,GO_Biological_Process_2023,Regulation Of Establishment Of Protein Localization (GO:0070201),0.034447714169871156,0.23664081907998447,KIAA0586,False
+consensus_pos,GO_Biological_Process_2023,Negative Regulation Of Blood Pressure (GO:0045776),0.034447714169871156,0.23664081907998447,RNLS,False
+consensus_pos,GO_Biological_Process_2023,Mitotic Recombination (GO:0006312),0.034447714169871156,0.23664081907998447,MSH3,False
+consensus_pos,GO_Biological_Process_2023,mRNA Methylation (GO:0080009),0.03686327859360632,0.2426832507412416,NSUN2,False
+consensus_pos,GO_Biological_Process_2023,"mRNA Cis Splicing, Via Spliceosome (GO:0045292)",0.04167665479123348,0.2548006772984745,CLNS1A,False
+consensus_pos,KEGG_2021_Human,Homologous recombination,0.004719495169738577,0.07664286580050005,"BRIP1,RAD51C",False
+consensus_pos,KEGG_2021_Human,Fanconi anemia pathway,0.008067670084263163,0.07664286580050005,"BRIP1,RAD51C",False
+consensus_pos,KEGG_2021_Human,Mismatch repair,0.05597578058787951,0.3545132770565702,MSH3,False
+consensus_pos,KEGG_2021_Human,Intestinal immune network for IgA production,0.11333801483691312,0.3880293821018414,IL15,False
+consensus_pos,KEGG_2021_Human,Cysteine and methionine metabolism,0.1177765260040411,0.3880293821018414,APIP,False
+consensus_pos,KEGG_2021_Human,Glutathione metabolism,0.13314051228520932,0.3880293821018414,GSTT2,True
+consensus_pos,KEGG_2021_Human,Pathways in cancer,0.1469141065706296,0.3880293821018414,"IL15,MSH3,GSTT2",False
+consensus_pos,KEGG_2021_Human,Metabolism of xenobiotics by cytochrome P450,0.17353313536390655,0.3880293821018414,GSTT2,False
+consensus_pos,KEGG_2021_Human,Colorectal cancer,0.19404551285483848,0.3880293821018414,MSH3,False
+consensus_pos,KEGG_2021_Human,Rheumatoid arthritis,0.2081064570390282,0.3880293821018414,IL15,False
+consensus_pos,KEGG_2021_Human,Drug metabolism,0.23743240698267418,0.3880293821018414,GSTT2,False
+consensus_pos,KEGG_2021_Human,TNF signaling pathway,0.24507118869589983,0.3880293821018414,IL15,True
+consensus_pos,KEGG_2021_Human,Fluid shear stress and atherosclerosis,0.29470691822637646,0.4307254958693194,GSTT2,False
+consensus_pos,KEGG_2021_Human,JAK-STAT signaling pathway,0.3344552195120095,0.43631339857618523,IL15,False
+consensus_pos,KEGG_2021_Human,Hepatocellular carcinoma,0.34445794624435677,0.43631339857618523,GSTT2,False
+consensus_pos,KEGG_2021_Human,RNA transport,0.3735903703808139,0.4436385648272165,CLNS1A,False
+consensus_pos,KEGG_2021_Human,Human T-cell leukemia virus 1 infection,0.42374084404297946,0.4735927080480359,IL15,False
+consensus_pos,KEGG_2021_Human,Chemical carcinogenesis,0.4521970360135466,0.47731909356985475,GSTT2,False
+consensus_pos,KEGG_2021_Human,Cytokine-cytokine receptor interaction,0.5247480242056516,0.5247480242056516,IL15,True
+consensus_pos,Reactome_2022,Diseases Of DNA Repair R-HSA-9675135,0.00028134681783249164,0.02222639860876684,"BRIP1,RAD51C,MSH3",False
+consensus_pos,Reactome_2022,Impaired BRCA2 Binding To PALB2 R-HSA-9709603,0.001632124977335775,0.040798154752448336,"BRIP1,RAD51C",False
+consensus_pos,Reactome_2022,Defective HDR Thru Homologous Recombination (HRR) Due To BRCA1 Loss-Of-Function R-HSA-9701192,0.0017712212130127313,0.040798154752448336,"BRIP1,RAD51C",False
+consensus_pos,Reactome_2022,Resolution Of D-loop Structures Thru Synthesis-Dependent Strand Annealing (SDSA) R-HSA-5693554,0.002065729354554346,0.040798154752448336,"BRIP1,RAD51C",False
+consensus_pos,Reactome_2022,Resolution Of D-loop Structures Thru Holliday Junction Intermediates R-HSA-5693568,0.003077847146316263,0.042989264112294534,"BRIP1,RAD51C",False
+consensus_pos,Reactome_2022,Resolution Of D-Loop Structures R-HSA-5693537,0.003265007400933762,0.042989264112294534,"BRIP1,RAD51C",False
+consensus_pos,Reactome_2022,Presynaptic Phase Of Homologous DNA Pairing And Strand Exchange R-HSA-5693616,0.004496424806807151,0.045474955762288896,"BRIP1,RAD51C",False
+consensus_pos,Reactome_2022,Defective Homologous Recombination Repair (HRR) Due To BRCA2 Loss Of Function R-HSA-9701190,0.004719495169738577,0.045474955762288896,"BRIP1,RAD51C",False
+consensus_pos,Reactome_2022,Homologous DNA Pairing And Strand Exchange R-HSA-5693579,0.005180691162792406,0.045474955762288896,"BRIP1,RAD51C",False
+consensus_pos,Reactome_2022,HDR Thru Homologous Recombination (HRR) R-HSA-5685942,0.012210781302115073,0.08188861651908584,"BRIP1,RAD51C",False
+consensus_pos,Reactome_2022,Regulation Of HMOX1 Expression And Activity R-HSA-9707587,0.012438777192772534,0.08188861651908584,BRIP1,False
+consensus_pos,Reactome_2022,Diseases Of Mismatch Repair (MMR) R-HSA-5423599,0.012438777192772534,0.08188861651908584,MSH3,False
+consensus_pos,Reactome_2022,Lipid Particle Organization R-HSA-8964572,0.014908284799373634,0.08412532136789408,HSD17B13,False
+consensus_pos,Reactome_2022,Methionine Salvage Pathway R-HSA-1237112,0.014908284799373634,0.08412532136789408,APIP,False
+consensus_pos,Reactome_2022,CREB3 Factors Activate Genes R-HSA-8874211,0.01982916145118511,0.10443358364290825,CREBRF,False
+consensus_pos,Reactome_2022,Regulation Of BACH1 Activity R-HSA-9708530,0.027165344857992397,0.1213416253706208,BRIP1,False
+consensus_pos,Reactome_2022,Formation Of Apoptosome R-HSA-111458,0.027165344857992397,0.1213416253706208,APIP,True
+consensus_pos,Reactome_2022,Cytosolic Iron-Sulfur Cluster Assembly R-HSA-2564830,0.029598761568907096,0.1213416253706208,BRIP1,False
+consensus_pos,Reactome_2022,Cytochrome C-Mediated Apoptotic Response R-HSA-111461,0.03202621324876303,0.1213416253706208,APIP,False
+consensus_pos,Reactome_2022,HDR Thru Homologous Recombination (HRR) Or Single Strand Annealing (SSA) R-HSA-5693567,0.03302953017935412,0.1213416253706208,"BRIP1,RAD51C",False
+consensus_pos,Reactome_2022,Mismatch Repair (MMR) Directed By MSH2:MSH3 (MutSbeta) R-HSA-5358606,0.034447714169871156,0.1213416253706208,MSH3,False
+consensus_pos,Reactome_2022,Interleukin-15 Signaling R-HSA-8983432,0.034447714169871156,0.1213416253706208,IL15,False
+consensus_pos,Reactome_2022,Homology Directed Repair R-HSA-5693538,0.03572213956233325,0.1213416253706208,"BRIP1,RAD51C",False
+consensus_pos,Reactome_2022,Mismatch Repair R-HSA-5358508,0.03686327859360632,0.1213416253706208,MSH3,False
+consensus_pos,Reactome_2022,DNA Repair R-HSA-73894,0.04235590968519419,0.13384467460521365,"BRIP1,RAD51C,MSH3",False
+consensus_neg,MSigDB_Hallmark_2020,Xenobiotic Metabolism,0.39536815575105444,0.39536815575105444,CYP1A2,False
+consensus_neg,MSigDB_Hallmark_2020,heme Metabolism,0.39536815575105444,0.39536815575105444,CROCCP2,False
+consensus_neg,MSigDB_Hallmark_2020,Myc Targets V1,0.39536815575105444,0.39536815575105444,U2AF1,False
+consensus_neg,MSigDB_Hallmark_2020,Epithelial Mesenchymal Transition,0.39536815575105444,0.39536815575105444,CALU,False
+consensus_neg,GO_Biological_Process_2023,Regulation Of Peptide Hormone Secretion (GO:0090276),0.007499481830469069,0.1257654854536685,"CELA2A,PAX8",False
+consensus_neg,GO_Biological_Process_2023,Positive Regulation Of Pyruvate Dehydrogenase Activity (GO:1904184),0.012438777192772534,0.1257654854536685,PDPR,False
+consensus_neg,GO_Biological_Process_2023,Response To Gonadotropin (GO:0034698),0.012438777192772534,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Mesenchymal To Epithelial Transition Involved In Metanephros Morphogenesis (GO:0003337),0.012438777192772534,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Positive Regulation Of Epithelial Cell Differentiation Involved In Kidney Development (GO:2000698),0.012438777192772534,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Pronephros Development (GO:0048793),0.012438777192772534,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Epithelial Cell Differentiation Involved In Kidney Development (GO:0035850),0.014908284799373634,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Positive Regulation Of Hormone Metabolic Process (GO:0032352),0.014908284799373634,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Regulation Of Pyruvate Dehydrogenase Activity (GO:1904182),0.014908284799373634,0.1257654854536685,PDPR,False
+consensus_neg,GO_Biological_Process_2023,Metanephric Nephron Tubule Development (GO:0072234),0.014908284799373634,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Cellular Response To Gonadotropin Stimulus (GO:0071371),0.014908284799373634,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Negative Regulation Of T Cell Mediated Cytotoxicity (GO:0001915),0.017371741450283952,0.1257654854536685,KLRC1,False
+consensus_neg,GO_Biological_Process_2023,Thyroid Gland Development (GO:0030878),0.017371741450283952,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Kidney Epithelium Development (GO:0072073),0.017371741450283952,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Immune Response-Inhibiting Cell Surface Receptor Signaling Pathway (GO:0002767),0.01982916145118511,0.1257654854536685,KLRC1,False
+consensus_neg,GO_Biological_Process_2023,Regulation Of Nephron Tubule Epithelial Cell Differentiation (GO:0072182),0.01982916145118511,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Cell Differentiation Involved In Metanephros Development (GO:0072202),0.022280559123686802,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Insulin Metabolic Process (GO:1901142),0.022280559123686802,0.1257654854536685,CELA2A,True
+consensus_neg,GO_Biological_Process_2023,Mesenchymal To Epithelial Transition (GO:0060231),0.022280559123686802,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Omega-Hydroxylase P450 Pathway (GO:0097267),0.02472594881725805,0.1257654854536685,CYP1A2,False
+consensus_neg,GO_Biological_Process_2023,Negative Regulation Of Sprouting Angiogenesis (GO:1903671),0.02472594881725805,0.1257654854536685,EPN1,False
+consensus_neg,GO_Biological_Process_2023,Mesonephros Development (GO:0001823),0.02472594881725805,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Negative Regulation Of Natural Killer Cell Mediated Immunity (GO:0002716),0.02472594881725805,0.1257654854536685,KLRC1,False
+consensus_neg,GO_Biological_Process_2023,Urogenital System Development (GO:0001655),0.02472594881725805,0.1257654854536685,PAX8,False
+consensus_neg,GO_Biological_Process_2023,Organic Cyclic Compound Catabolic Process (GO:1901361),0.027165344857992397,0.1257654854536685,CYP1A2,False
+consensus_neg,KEGG_2021_Human,Caffeine metabolism,0.014908284799373634,0.3553522508759577,CYP1A2,False
+consensus_neg,KEGG_2021_Human,Linoleic acid metabolism,0.07006575883720893,0.3553522508759577,CYP1A2,False
+consensus_neg,KEGG_2021_Human,RNA polymerase,0.07471646000262763,0.3553522508759577,POLR2J3,False
+consensus_neg,KEGG_2021_Human,Thyroid cancer,0.08853222789026767,0.3553522508759577,PAX8,False
+consensus_neg,KEGG_2021_Human,Tryptophan metabolism,0.09989076947033614,0.3553522508759577,CYP1A2,False
+consensus_neg,KEGG_2021_Human,Graft-versus-host disease,0.09989076947033614,0.3553522508759577,KLRC1,False
+consensus_neg,KEGG_2021_Human,Steroid hormone biosynthesis,0.1418018805927374,0.3553522508759577,CYP1A2,False
+consensus_neg,KEGG_2021_Human,Aminoacyl-tRNA biosynthesis,0.15250939797562668,0.3553522508759577,CARS1,False
+consensus_neg,KEGG_2021_Human,Retinol metabolism,0.15675564908065587,0.3553522508759577,CYP1A2,False
+consensus_neg,KEGG_2021_Human,Thyroid hormone synthesis,0.1714539764404576,0.3553522508759577,PAX8,False
+consensus_neg,KEGG_2021_Human,Metabolism of xenobiotics by cytochrome P450,0.17353313536390655,0.3553522508759577,CYP1A2,False
+consensus_neg,KEGG_2021_Human,Antigen processing and presentation,0.17767612543797884,0.3553522508759577,KLRC1,False
+consensus_neg,KEGG_2021_Human,Pancreatic secretion,0.2258320069783284,0.3798918511722787,CELA2A,False
+consensus_neg,KEGG_2021_Human,Protein digestion and absorption,0.2277773453985499,0.3798918511722787,CELA2A,False
+consensus_neg,KEGG_2021_Human,Drug metabolism,0.23743240698267418,0.3798918511722787,CYP1A2,False
+consensus_neg,KEGG_2021_Human,Natural killer cell mediated cytotoxicity,0.28034336849839514,0.4205150527475927,KLRC1,False
+consensus_neg,KEGG_2021_Human,Spliceosome,0.3139989845586295,0.4432926840827711,U2AF1,False
+consensus_neg,KEGG_2021_Human,Transcriptional misregulation in cancer,0.38301625183987076,0.5106883357864943,PAX8,False
+consensus_neg,KEGG_2021_Human,Chemical carcinogenesis,0.4521970360135466,0.5370859429832162,CYP1A2,False
+consensus_neg,KEGG_2021_Human,Shigellosis,0.4618276248188864,0.5370859429832162,U2AF1,False
+consensus_neg,KEGG_2021_Human,Endocytosis,0.4699502001103142,0.5370859429832162,EPN1,False
+consensus_neg,KEGG_2021_Human,Huntington disease,0.5378493420766995,0.586744736810945,POLR2J3,False
+consensus_neg,KEGG_2021_Human,Herpes simplex virus 1 infection,0.7170049272413213,0.7400095475471683,ZNF354C,False
+consensus_neg,KEGG_2021_Human,Pathways in cancer,0.7400095475471683,0.7400095475471683,PAX8,False
+consensus_neg,Reactome_2022,Biosynthesis Of Maresin-Like SPMs R-HSA-9027307,0.014908284799373634,0.3451697719936423,CYP1A2,False
+consensus_neg,Reactome_2022,Biosynthesis Of Maresins R-HSA-9018682,0.01982916145118511,0.3451697719936423,CYP1A2,False
+consensus_neg,Reactome_2022,Synthesis Of Epoxy (EET) And Dihydroxyeicosatrienoic Acids (DHET) R-HSA-2142670,0.01982916145118511,0.3451697719936423,CYP1A2,False
+consensus_neg,Reactome_2022,Synthesis Of (16-20)-Hydroxyeicosatetraenoic Acids (HETE) R-HSA-2142816,0.022280559123686802,0.3451697719936423,CYP1A2,False
+consensus_neg,Reactome_2022,Methylation R-HSA-156581,0.034447714169871156,0.3451697719936423,CYP1A2,False
+consensus_neg,Reactome_2022,Regulation Of Pyruvate Dehydrogenase (PDH) Complex R-HSA-204174,0.039272920734465235,0.3451697719936423,PDPR,False
+consensus_neg,Reactome_2022,Biosynthesis Of DHA-derived SPMs R-HSA-9018677,0.04167665479123348,0.3451697719936423,CYP1A2,False
+consensus_neg,Reactome_2022,Biosynthesis Of Specialized Proresolving Mediators (SPMs) R-HSA-9018678,0.04646645529524364,0.3451697719936423,CYP1A2,False
+consensus_neg,Reactome_2022,Aflatoxin Activation And Detoxification R-HSA-5423646,0.04646645529524364,0.3451697719936423,CYP1A2,False
+consensus_neg,Reactome_2022,Interleukin-37 Signaling R-HSA-9008059,0.0512327930672156,0.3451697719936423,PTPN20,False
+consensus_neg,Reactome_2022,Cytosolic tRNA Aminoacylation R-HSA-379716,0.05833855301300996,0.3451697719936423,CARS1,False
+consensus_neg,Reactome_2022,Xenobiotics R-HSA-211981,0.05833855301300996,0.3451697719936423,CYP1A2,False
+consensus_neg,Reactome_2022,Pyruvate Metabolism R-HSA-70268,0.07471646000262763,0.37891919001332586,PDPR,False
+consensus_neg,Reactome_2022,EGFR Downregulation R-HSA-182971,0.07471646000262763,0.37891919001332586,EPN1,False
+consensus_neg,Reactome_2022,Detoxification Of Reactive Oxygen Species R-HSA-3299685,0.0816498044624026,0.386475741122039,NOX5,True
+consensus_neg,Reactome_2022,tRNA Aminoacylation R-HSA-379724,0.09989076947033614,0.4432652895246166,CARS1,False
+consensus_neg,Reactome_2022,Signaling By EGFR R-HSA-177929,0.11555999902224065,0.46481959162919617,EPN1,False
+consensus_neg,Reactome_2022,Pyruvate Metabolism And Citric Acid (TCA) Cycle R-HSA-71406,0.1265883240687765,0.46481959162919617,PDPR,False
+consensus_neg,Reactome_2022,Signaling By ALK Fusions And Activated Point Mutants R-HSA-9725370,0.12877776139221664,0.46481959162919617,CARS1,False
+consensus_neg,Reactome_2022,mRNA 3-End Processing R-HSA-72187,0.13531385173981347,0.46481959162919617,U2AF1,False
+consensus_neg,Reactome_2022,Arachidonic Acid Metabolism R-HSA-2142753,0.1374818510452552,0.46481959162919617,CYP1A2,False
+consensus_neg,Reactome_2022,Cytochrome P450 - Arranged By Substrate Type R-HSA-211897,0.15037842149138922,0.4773519425221475,CYP1A2,False
+consensus_neg,Reactome_2022,RNA Polymerase II Transcription Termination R-HSA-73856,0.15463513630999146,0.4773519425221475,U2AF1,False
+consensus_neg,Reactome_2022,Formation Of Cornified Envelope R-HSA-6809371,0.16936969182663447,0.4810099247876419,CELA2A,False
+consensus_neg,Reactome_2022,Transport Of Mature mRNA Derived From An Intron-Containing Transcript R-HSA-159236,0.16936969182663447,0.4810099247876419,U2AF1,False
+mean_per_type_pos,MSigDB_Hallmark_2020,Interferon Alpha Response,0.2160330472811356,0.39536815575105444,IL15,True
+mean_per_type_pos,MSigDB_Hallmark_2020,DNA Repair,0.3139989845586295,0.39536815575105444,RALA,False
+mean_per_type_pos,MSigDB_Hallmark_2020,Xenobiotic Metabolism,0.39536815575105444,0.39536815575105444,GSTT2,False
+mean_per_type_pos,MSigDB_Hallmark_2020,Interferon Gamma Response,0.39536815575105444,0.39536815575105444,IL15,True
+mean_per_type_pos,MSigDB_Hallmark_2020,p53 Pathway,0.39536815575105444,0.39536815575105444,RAD51C,True
+mean_per_type_pos,MSigDB_Hallmark_2020,E2F Targets,0.39536815575105444,0.39536815575105444,RAD51C,False
+mean_per_type_pos,MSigDB_Hallmark_2020,Myc Targets V1,0.39536815575105444,0.39536815575105444,CLNS1A,False
+mean_per_type_pos,MSigDB_Hallmark_2020,Epithelial Mesenchymal Transition,0.39536815575105444,0.39536815575105444,IL15,False
+mean_per_type_pos,MSigDB_Hallmark_2020,Allograft Rejection,0.39536815575105444,0.39536815575105444,IL15,False
+mean_per_type_pos,MSigDB_Hallmark_2020,Inflammatory Response,0.39536815575105444,0.39536815575105444,IL15,True
+mean_per_type_pos,GO_Biological_Process_2023,DNA Recombination (GO:0006310),0.0049475924537835565,0.24214127655927817,"RAD51C,MSH3",False
+mean_per_type_pos,GO_Biological_Process_2023,Maintenance Of DNA Repeat Elements (GO:0043570),0.012438777192772534,0.24214127655927817,MSH3,False
+mean_per_type_pos,GO_Biological_Process_2023,Regulation Of mRNA Export From Nucleus (GO:0010793),0.012438777192772534,0.24214127655927817,NSUN2,False
+mean_per_type_pos,GO_Biological_Process_2023,Regulation Of Ribonucleoprotein Complex Localization (GO:2000197),0.012438777192772534,0.24214127655927817,NSUN2,False
+mean_per_type_pos,GO_Biological_Process_2023,Positive Regulation Of Helicase Activity (GO:0051096),0.014908284799373634,0.24214127655927817,MSH3,False
+mean_per_type_pos,GO_Biological_Process_2023,Negative Regulation Of Heart Rate (GO:0010459),0.014908284799373634,0.24214127655927817,RNLS,False
+mean_per_type_pos,GO_Biological_Process_2023,L-methionine Salvage (GO:0071267),0.014908284799373634,0.24214127655927817,APIP,False
+mean_per_type_pos,GO_Biological_Process_2023,Somatic Recombination Of Immunoglobulin Gene Segments (GO:0016447),0.01982916145118511,0.24214127655927817,MSH3,False
+mean_per_type_pos,GO_Biological_Process_2023,Regulation Of Helicase Activity (GO:0051095),0.01982916145118511,0.24214127655927817,MSH3,False
+mean_per_type_pos,GO_Biological_Process_2023,Tyrosine Phosphorylation Of STAT Protein (GO:0007260),0.01982916145118511,0.24214127655927817,IL15,False
+mean_per_type_pos,GO_Biological_Process_2023,Positive Regulation Of Tissue Remodeling (GO:0034105),0.022280559123686802,0.24214127655927817,IL15,False
+mean_per_type_pos,GO_Biological_Process_2023,Interleukin-15-Mediated Signaling Pathway (GO:0035723),0.02472594881725805,0.24214127655927817,IL15,False
+mean_per_type_pos,GO_Biological_Process_2023,Cellular Response To Interleukin-15 (GO:0071350),0.02472594881725805,0.24214127655927817,IL15,False
+mean_per_type_pos,GO_Biological_Process_2023,Negative Regulation Of Heart Contraction (GO:0045822),0.027165344857992397,0.24214127655927817,RNLS,False
+mean_per_type_pos,GO_Biological_Process_2023,Regulation Of RNA Export From Nucleus (GO:0046831),0.027165344857992397,0.24214127655927817,NSUN2,False
+mean_per_type_pos,GO_Biological_Process_2023,Granulocyte Activation (GO:0036230),0.029598761568907096,0.24214127655927817,IL15,False
+mean_per_type_pos,GO_Biological_Process_2023,Regulation Of Establishment Of Protein Localization (GO:0070201),0.034447714169871156,0.24214127655927817,KIAA0586,False
+mean_per_type_pos,GO_Biological_Process_2023,Negative Regulation Of Blood Pressure (GO:0045776),0.034447714169871156,0.24214127655927817,RNLS,False
+mean_per_type_pos,GO_Biological_Process_2023,Mitotic Recombination (GO:0006312),0.034447714169871156,0.24214127655927817,MSH3,False
+mean_per_type_pos,GO_Biological_Process_2023,mRNA Methylation (GO:0080009),0.03686327859360632,0.24214127655927817,NSUN2,False
+mean_per_type_pos,GO_Biological_Process_2023,Protein Localization To Mitochondrion (GO:0070585),0.039272920734465235,0.24214127655927817,RALA,True
+mean_per_type_pos,GO_Biological_Process_2023,"mRNA Cis Splicing, Via Spliceosome (GO:0045292)",0.04167665479123348,0.24214127655927817,CLNS1A,False
+mean_per_type_pos,GO_Biological_Process_2023,Neutrophil Activation (GO:0042119),0.04407449493169267,0.24214127655927817,IL15,False
+mean_per_type_pos,GO_Biological_Process_2023,Positive Regulation Of Mitochondrial Fission (GO:0090141),0.04646645529524364,0.24214127655927817,RALA,True
+mean_per_type_pos,GO_Biological_Process_2023,Regulation Of Tissue Remodeling (GO:0034103),0.04646645529524364,0.24214127655927817,IL15,False
+mean_per_type_pos,KEGG_2021_Human,Colorectal cancer,0.019588053045278837,0.399421536855628,"RALA,MSH3",False
+mean_per_type_pos,KEGG_2021_Human,Pathways in cancer,0.04334694919746572,0.399421536855628,"RALA,IL15,MSH3,GSTT2",False
+mean_per_type_pos,KEGG_2021_Human,Mismatch repair,0.05597578058787951,0.399421536855628,MSH3,False
+mean_per_type_pos,KEGG_2021_Human,Homologous recombination,0.09763021468476817,0.399421536855628,RAD51C,False
+mean_per_type_pos,KEGG_2021_Human,Intestinal immune network for IgA production,0.11333801483691312,0.399421536855628,IL15,False
+mean_per_type_pos,KEGG_2021_Human,Cysteine and methionine metabolism,0.1177765260040411,0.399421536855628,APIP,False
+mean_per_type_pos,KEGG_2021_Human,Fanconi anemia pathway,0.1265883240687765,0.399421536855628,RAD51C,False
+mean_per_type_pos,KEGG_2021_Human,Glutathione metabolism,0.13314051228520932,0.399421536855628,GSTT2,True
+mean_per_type_pos,KEGG_2021_Human,Metabolism of xenobiotics by cytochrome P450,0.17353313536390655,0.4164795248733757,GSTT2,False
+mean_per_type_pos,KEGG_2021_Human,Pancreatic cancer,0.17353313536390655,0.4164795248733757,RALA,False
+mean_per_type_pos,KEGG_2021_Human,Rheumatoid arthritis,0.2081064570390282,0.4524391175924305,IL15,False
+mean_per_type_pos,KEGG_2021_Human,Drug metabolism,0.23743240698267418,0.4524391175924305,GSTT2,False
+mean_per_type_pos,KEGG_2021_Human,TNF signaling pathway,0.24507118869589983,0.4524391175924305,IL15,True
+mean_per_type_pos,KEGG_2021_Human,Fluid shear stress and atherosclerosis,0.29470691822637646,0.4861607421621259,GSTT2,False
+mean_per_type_pos,KEGG_2021_Human,Phospholipase D signaling pathway,0.3105302270346101,0.4861607421621259,RALA,False
+mean_per_type_pos,KEGG_2021_Human,JAK-STAT signaling pathway,0.3344552195120095,0.4861607421621259,IL15,False
+mean_per_type_pos,KEGG_2021_Human,Hepatocellular carcinoma,0.34445794624435677,0.4861607421621259,GSTT2,False
+mean_per_type_pos,KEGG_2021_Human,RNA transport,0.3735903703808139,0.4861607421621259,CLNS1A,False
+mean_per_type_pos,KEGG_2021_Human,Rap1 signaling pathway,0.41046765980788213,0.4861607421621259,RALA,False
+mean_per_type_pos,KEGG_2021_Human,Human T-cell leukemia virus 1 infection,0.42374084404297946,0.4861607421621259,IL15,False
+mean_per_type_pos,KEGG_2021_Human,Ras signaling pathway,0.4423976147030889,0.4861607421621259,RALA,False
+mean_per_type_pos,KEGG_2021_Human,Chemical carcinogenesis,0.4521970360135466,0.4861607421621259,GSTT2,False
+mean_per_type_pos,KEGG_2021_Human,Salmonella infection,0.4659040445720373,0.4861607421621259,RALA,False
+mean_per_type_pos,KEGG_2021_Human,Cytokine-cytokine receptor interaction,0.5247480242056516,0.5247480242056516,IL15,True
+mean_per_type_pos,Reactome_2022,Diseases Of DNA Repair R-HSA-9675135,0.00722250262714212,0.23793570728600444,"RAD51C,MSH3",False
+mean_per_type_pos,Reactome_2022,Diseases Of Mismatch Repair (MMR) R-HSA-5423599,0.012438777192772534,0.23793570728600444,MSH3,False
+mean_per_type_pos,Reactome_2022,Lipid Particle Organization R-HSA-8964572,0.014908284799373634,0.23793570728600444,HSD17B13,False
+mean_per_type_pos,Reactome_2022,Methionine Salvage Pathway R-HSA-1237112,0.014908284799373634,0.23793570728600444,APIP,False
+mean_per_type_pos,Reactome_2022,CREB3 Factors Activate Genes R-HSA-8874211,0.01982916145118511,0.23793570728600444,CREBRF,False
+mean_per_type_pos,Reactome_2022,Formation Of Apoptosome R-HSA-111458,0.027165344857992397,0.23793570728600444,APIP,True
+mean_per_type_pos,Reactome_2022,p38MAPK Events R-HSA-171007,0.029598761568907096,0.23793570728600444,RALA,False
+mean_per_type_pos,Reactome_2022,Cytochrome C-Mediated Apoptotic Response R-HSA-111461,0.03202621324876303,0.23793570728600444,APIP,False
+mean_per_type_pos,Reactome_2022,Mismatch Repair (MMR) Directed By MSH2:MSH3 (MutSbeta) R-HSA-5358606,0.034447714169871156,0.23793570728600444,MSH3,False
+mean_per_type_pos,Reactome_2022,Interleukin-15 Signaling R-HSA-8983432,0.034447714169871156,0.23793570728600444,IL15,False
+mean_per_type_pos,Reactome_2022,Mismatch Repair R-HSA-5358508,0.03686327859360632,0.23793570728600444,MSH3,False
+mean_per_type_pos,Reactome_2022,Signaling To RAS R-HSA-167044,0.04646645529524364,0.24706874049997396,RALA,False
+mean_per_type_pos,Reactome_2022,Nicotinamide Salvaging R-HSA-197264,0.04646645529524364,0.24706874049997396,RNLS,False
+mean_per_type_pos,Reactome_2022,Apoptotic Factor-Mediated Response R-HSA-111471,0.04885254998202776,0.24706874049997396,APIP,False
+mean_per_type_pos,Reactome_2022,Impaired BRCA2 Binding To PALB2 R-HSA-9709603,0.05833855301300996,0.24706874049997396,RAD51C,False
+mean_per_type_pos,Reactome_2022,Defective HDR Thru Homologous Recombination (HRR) Due To BRCA1 Loss-Of-Function R-HSA-9701192,0.06069552982417541,0.24706874049997396,RAD51C,False
+mean_per_type_pos,Reactome_2022,Sulfur Amino Acid Metabolism R-HSA-1614635,0.06304672495404354,0.24706874049997396,APIP,False
+mean_per_type_pos,Reactome_2022,Resolution Of D-loop Structures Thru Synthesis-Dependent Strand Annealing (SDSA) R-HSA-5693554,0.06539215225886762,0.24706874049997396,RAD51C,False
+mean_per_type_pos,Reactome_2022,Nicotinate Metabolism R-HSA-196807,0.07471646000262763,0.24706874049997396,RNLS,False
+mean_per_type_pos,Reactome_2022,Signaling To ERKs R-HSA-187687,0.0793443657059371,0.24706874049997396,RALA,False
+mean_per_type_pos,Reactome_2022,Resolution Of D-loop Structures Thru Holliday Junction Intermediates R-HSA-5693568,0.0793443657059371,0.24706874049997396,RAD51C,False
+mean_per_type_pos,Reactome_2022,Resolution Of D-Loop Structures R-HSA-5693537,0.0816498044624026,0.24706874049997396,RAD51C,False
+mean_per_type_pos,Reactome_2022,Gene And Protein Expression By JAK-STAT Signaling After Interleukin-12 Stimulation R-HSA-8950505,0.08394958536129378,0.24706874049997396,RALA,False
+mean_per_type_pos,Reactome_2022,Glutathione Conjugation R-HSA-156590,0.08624372197430759,0.24706874049997396,GSTT2,True
+mean_per_type_pos,Reactome_2022,Presynaptic Phase Of Homologous DNA Pairing And Strand Exchange R-HSA-5693616,0.09536409657552716,0.24706874049997396,RAD51C,False
+mean_per_type_neg,MSigDB_Hallmark_2020,Xenobiotic Metabolism,0.39536815575105444,0.39536815575105444,CYP1A2,False
+mean_per_type_neg,MSigDB_Hallmark_2020,heme Metabolism,0.39536815575105444,0.39536815575105444,CROCCP2,False
+mean_per_type_neg,MSigDB_Hallmark_2020,Myc Targets V1,0.39536815575105444,0.39536815575105444,U2AF1,False
+mean_per_type_neg,GO_Biological_Process_2023,Regulation Of Peptide Hormone Secretion (GO:0090276),0.007499481830469069,0.1255226279645166,"CELA2A,PAX8",False
+mean_per_type_neg,GO_Biological_Process_2023,Positive Regulation Of Pyruvate Dehydrogenase Activity (GO:1904184),0.012438777192772534,0.1255226279645166,PDPR,False
+mean_per_type_neg,GO_Biological_Process_2023,Response To Gonadotropin (GO:0034698),0.012438777192772534,0.1255226279645166,PAX8,False
+mean_per_type_neg,GO_Biological_Process_2023,Mesenchymal To Epithelial Transition Involved In Metanephros Morphogenesis (GO:0003337),0.012438777192772534,0.1255226279645166,PAX8,False
+mean_per_type_neg,GO_Biological_Process_2023,Positive Regulation Of Microglial Cell Activation (GO:1903980),0.012438777192772534,0.1255226279645166,TAFA3,False
+mean_per_type_neg,GO_Biological_Process_2023,Positive Regulation Of Epithelial Cell Differentiation Involved In Kidney Development (GO:2000698),0.012438777192772534,0.1255226279645166,PAX8,False
+mean_per_type_neg,GO_Biological_Process_2023,Pronephros Development (GO:0048793),0.012438777192772534,0.1255226279645166,PAX8,False
+mean_per_type_neg,GO_Biological_Process_2023,Epithelial Cell Differentiation Involved In Kidney Development (GO:0035850),0.014908284799373634,0.1255226279645166,PAX8,False
+mean_per_type_neg,GO_Biological_Process_2023,Positive Regulation Of Hormone Metabolic Process (GO:0032352),0.014908284799373634,0.1255226279645166,PAX8,False
+mean_per_type_neg,GO_Biological_Process_2023,Regulation Of Pyruvate Dehydrogenase Activity (GO:1904182),0.014908284799373634,0.1255226279645166,PDPR,False
+mean_per_type_neg,GO_Biological_Process_2023,Metanephric Nephron Tubule Development (GO:0072234),0.014908284799373634,0.1255226279645166,PAX8,False
+mean_per_type_neg,GO_Biological_Process_2023,Cellular Response To Gonadotropin Stimulus (GO:0071371),0.014908284799373634,0.1255226279645166,PAX8,False
+mean_per_type_neg,GO_Biological_Process_2023,Negative Regulation Of T Cell Mediated Cytotoxicity (GO:0001915),0.017371741450283952,0.1255226279645166,KLRC1,False
+mean_per_type_neg,GO_Biological_Process_2023,Thyroid Gland Development (GO:0030878),0.017371741450283952,0.1255226279645166,PAX8,False
+mean_per_type_neg,GO_Biological_Process_2023,Negative Regulation Of Microglial Cell Activation (GO:1903979),0.017371741450283952,0.1255226279645166,TAFA3,False
+mean_per_type_neg,GO_Biological_Process_2023,Kidney Epithelium Development (GO:0072073),0.017371741450283952,0.1255226279645166,PAX8,False
+mean_per_type_neg,GO_Biological_Process_2023,Immune Response-Inhibiting Cell Surface Receptor Signaling Pathway (GO:0002767),0.01982916145118511,0.1255226279645166,KLRC1,False
+mean_per_type_neg,GO_Biological_Process_2023,Regulation Of Nephron Tubule Epithelial Cell Differentiation (GO:0072182),0.01982916145118511,0.1255226279645166,PAX8,False
+mean_per_type_neg,GO_Biological_Process_2023,Cell Differentiation Involved In Metanephros Development (GO:0072202),0.022280559123686802,0.1255226279645166,PAX8,False
+mean_per_type_neg,GO_Biological_Process_2023,Insulin Metabolic Process (GO:1901142),0.022280559123686802,0.1255226279645166,CELA2A,True
+mean_per_type_neg,GO_Biological_Process_2023,Mesenchymal To Epithelial Transition (GO:0060231),0.022280559123686802,0.1255226279645166,PAX8,False
+mean_per_type_neg,GO_Biological_Process_2023,Omega-Hydroxylase P450 Pathway (GO:0097267),0.02472594881725805,0.1255226279645166,CYP1A2,False
+mean_per_type_neg,GO_Biological_Process_2023,Negative Regulation Of Sprouting Angiogenesis (GO:1903671),0.02472594881725805,0.1255226279645166,EPN1,False
+mean_per_type_neg,GO_Biological_Process_2023,Mesonephros Development (GO:0001823),0.02472594881725805,0.1255226279645166,PAX8,False
+mean_per_type_neg,GO_Biological_Process_2023,Negative Regulation Of Natural Killer Cell Mediated Immunity (GO:0002716),0.02472594881725805,0.1255226279645166,KLRC1,False
+mean_per_type_neg,KEGG_2021_Human,Caffeine metabolism,0.014908284799373634,0.36901964514041763,CYP1A2,False
+mean_per_type_neg,KEGG_2021_Human,Linoleic acid metabolism,0.07006575883720893,0.36901964514041763,CYP1A2,False
+mean_per_type_neg,KEGG_2021_Human,RNA polymerase,0.07471646000262763,0.36901964514041763,POLR2J3,False
+mean_per_type_neg,KEGG_2021_Human,Nicotinate and nicotinamide metabolism,0.08394958536129378,0.36901964514041763,NMRK1,False
+mean_per_type_neg,KEGG_2021_Human,Thyroid cancer,0.08853222789026767,0.36901964514041763,PAX8,False
+mean_per_type_neg,KEGG_2021_Human,Tryptophan metabolism,0.09989076947033614,0.36901964514041763,CYP1A2,False
+mean_per_type_neg,KEGG_2021_Human,Graft-versus-host disease,0.09989076947033614,0.36901964514041763,KLRC1,False
+mean_per_type_neg,KEGG_2021_Human,Steroid hormone biosynthesis,0.1418018805927374,0.36901964514041763,CYP1A2,False
+mean_per_type_neg,KEGG_2021_Human,Aminoacyl-tRNA biosynthesis,0.15250939797562668,0.36901964514041763,CARS1,False
+mean_per_type_neg,KEGG_2021_Human,Retinol metabolism,0.15675564908065587,0.36901964514041763,CYP1A2,False
+mean_per_type_neg,KEGG_2021_Human,Thyroid hormone synthesis,0.1714539764404576,0.36901964514041763,PAX8,False
+mean_per_type_neg,KEGG_2021_Human,Metabolism of xenobiotics by cytochrome P450,0.17353313536390655,0.36901964514041763,CYP1A2,False
+mean_per_type_neg,KEGG_2021_Human,Antigen processing and presentation,0.17767612543797884,0.36901964514041763,KLRC1,False
+mean_per_type_neg,KEGG_2021_Human,Progesterone-mediated oocyte maturation,0.22192691156038513,0.37709852873718835,SPDYE2,False
+mean_per_type_neg,KEGG_2021_Human,Pancreatic secretion,0.2258320069783284,0.37709852873718835,CELA2A,False
+mean_per_type_neg,KEGG_2021_Human,Protein digestion and absorption,0.2277773453985499,0.37709852873718835,CELA2A,False
+mean_per_type_neg,KEGG_2021_Human,Drug metabolism,0.23743240698267418,0.37709852873718835,CYP1A2,False
+mean_per_type_neg,KEGG_2021_Human,Oocyte meiosis,0.2767079241059198,0.398382681550351,SPDYE2,False
+mean_per_type_neg,KEGG_2021_Human,Natural killer cell mediated cytotoxicity,0.28034336849839514,0.398382681550351,KLRC1,False
+mean_per_type_neg,KEGG_2021_Human,Spliceosome,0.3139989845586295,0.4238986291541499,U2AF1,False
+mean_per_type_neg,KEGG_2021_Human,Transcriptional misregulation in cancer,0.38301625183987076,0.49244946665126244,PAX8,False
+mean_per_type_neg,KEGG_2021_Human,Chemical carcinogenesis,0.4521970360135466,0.5286939751241034,CYP1A2,False
+mean_per_type_neg,KEGG_2021_Human,Shigellosis,0.4618276248188864,0.5286939751241034,U2AF1,False
+mean_per_type_neg,KEGG_2021_Human,Endocytosis,0.4699502001103142,0.5286939751241034,EPN1,False
+mean_per_type_neg,KEGG_2021_Human,Huntington disease,0.5378493420766995,0.5808772894428356,POLR2J3,False
+mean_per_type_neg,Reactome_2022,Biosynthesis Of Maresin-Like SPMs R-HSA-9027307,0.014908284799373634,0.308205397510839,CYP1A2,False
+mean_per_type_neg,Reactome_2022,Biosynthesis Of Maresins R-HSA-9018682,0.01982916145118511,0.308205397510839,CYP1A2,False
+mean_per_type_neg,Reactome_2022,Synthesis Of Epoxy (EET) And Dihydroxyeicosatrienoic Acids (DHET) R-HSA-2142670,0.01982916145118511,0.308205397510839,CYP1A2,False
+mean_per_type_neg,Reactome_2022,Synthesis Of (16-20)-Hydroxyeicosatetraenoic Acids (HETE) R-HSA-2142816,0.022280559123686802,0.308205397510839,CYP1A2,False
+mean_per_type_neg,Reactome_2022,Methylation R-HSA-156581,0.034447714169871156,0.308205397510839,CYP1A2,False
+mean_per_type_neg,Reactome_2022,Regulation Of Pyruvate Dehydrogenase (PDH) Complex R-HSA-204174,0.039272920734465235,0.308205397510839,PDPR,False
+mean_per_type_neg,Reactome_2022,Biosynthesis Of DHA-derived SPMs R-HSA-9018677,0.04167665479123348,0.308205397510839,CYP1A2,False
+mean_per_type_neg,Reactome_2022,Biosynthesis Of Specialized Proresolving Mediators (SPMs) R-HSA-9018678,0.04646645529524364,0.308205397510839,CYP1A2,False
+mean_per_type_neg,Reactome_2022,Aflatoxin Activation And Detoxification R-HSA-5423646,0.04646645529524364,0.308205397510839,CYP1A2,False
+mean_per_type_neg,Reactome_2022,Interleukin-37 Signaling R-HSA-9008059,0.0512327930672156,0.308205397510839,PTPN20,False
+mean_per_type_neg,Reactome_2022,Cytosolic tRNA Aminoacylation R-HSA-379716,0.05833855301300996,0.308205397510839,CARS1,False
+mean_per_type_neg,Reactome_2022,Xenobiotics R-HSA-211981,0.05833855301300996,0.308205397510839,CYP1A2,False
+mean_per_type_neg,Reactome_2022,HDMs Demethylate Histones R-HSA-3214842,0.06304672495404354,0.308205397510839,KDM5D,False
+mean_per_type_neg,Reactome_2022,Pyruvate Metabolism R-HSA-70268,0.07471646000262763,0.308205397510839,PDPR,False
+mean_per_type_neg,Reactome_2022,EGFR Downregulation R-HSA-182971,0.07471646000262763,0.308205397510839,EPN1,False
+mean_per_type_neg,Reactome_2022,Nicotinate Metabolism R-HSA-196807,0.07471646000262763,0.308205397510839,NMRK1,False
+mean_per_type_neg,Reactome_2022,tRNA Aminoacylation R-HSA-379724,0.09989076947033614,0.38781122264954027,CARS1,False
+mean_per_type_neg,Reactome_2022,Signaling By EGFR R-HSA-177929,0.11555999902224065,0.4124455531357656,EPN1,False
+mean_per_type_neg,Reactome_2022,Pyruvate Metabolism And Citric Acid (TCA) Cycle R-HSA-71406,0.1265883240687765,0.4124455531357656,PDPR,False
+mean_per_type_neg,Reactome_2022,Signaling By ALK Fusions And Activated Point Mutants R-HSA-9725370,0.12877776139221664,0.4124455531357656,CARS1,False
+mean_per_type_neg,Reactome_2022,mRNA 3-End Processing R-HSA-72187,0.13531385173981347,0.4124455531357656,U2AF1,False
+mean_per_type_neg,Reactome_2022,Arachidonic Acid Metabolism R-HSA-2142753,0.1374818510452552,0.4124455531357656,CYP1A2,False
+mean_per_type_neg,Reactome_2022,Cytochrome P450 - Arranged By Substrate Type R-HSA-211897,0.15037842149138922,0.4252466248524765,CYP1A2,False
+mean_per_type_neg,Reactome_2022,RNA Polymerase II Transcription Termination R-HSA-73856,0.15463513630999146,0.4252466248524765,U2AF1,False
+mean_per_type_neg,Reactome_2022,Formation Of Cornified Envelope R-HSA-6809371,0.16936969182663447,0.4299384484829952,CELA2A,False
+oligodendrocyte_pos,MSigDB_Hallmark_2020,KRAS Signaling Dn,0.013678626042992382,0.19150076460189333,"CPB1,GDNF,MACROH2A2",False
+oligodendrocyte_pos,MSigDB_Hallmark_2020,UV Response Dn,0.05037319219466424,0.3526123453626497,"CAV1,PTPRM",False
+oligodendrocyte_pos,MSigDB_Hallmark_2020,Protein Secretion,0.2140587201245348,0.39536815575105444,TSPAN8,False
+oligodendrocyte_pos,MSigDB_Hallmark_2020,Interferon Alpha Response,0.2160330472811356,0.39536815575105444,SELL,True
+oligodendrocyte_pos,MSigDB_Hallmark_2020,Apoptosis,0.33277361941321715,0.39536815575105444,CAV1,True
+oligodendrocyte_pos,MSigDB_Hallmark_2020,IL-2/STAT5 Signaling,0.3938375225272607,0.39536815575105444,SELL,False
+oligodendrocyte_pos,MSigDB_Hallmark_2020,Hypoxia,0.39536815575105444,0.39536815575105444,CAV1,False
+oligodendrocyte_pos,MSigDB_Hallmark_2020,p53 Pathway,0.39536815575105444,0.39536815575105444,CDKN2A,True
+oligodendrocyte_pos,MSigDB_Hallmark_2020,Estrogen Response Early,0.39536815575105444,0.39536815575105444,NAV2,False
+oligodendrocyte_pos,MSigDB_Hallmark_2020,Estrogen Response Late,0.39536815575105444,0.39536815575105444,CAV1,False
+oligodendrocyte_pos,MSigDB_Hallmark_2020,Allograft Rejection,0.39536815575105444,0.39536815575105444,CDKN2A,False
+oligodendrocyte_pos,MSigDB_Hallmark_2020,Myogenesis,0.39536815575105444,0.39536815575105444,NAV2,False
+oligodendrocyte_pos,MSigDB_Hallmark_2020,E2F Targets,0.39536815575105444,0.39536815575105444,CDKN2A,False
+oligodendrocyte_pos,MSigDB_Hallmark_2020,Inflammatory Response,0.39536815575105444,0.39536815575105444,SELL,True
+oligodendrocyte_pos,GO_Biological_Process_2023,Negative Regulation Of Endocytosis (GO:0045806),0.003077847146316263,0.17711466417876523,"CAV1,EPHA3",False
+oligodendrocyte_pos,GO_Biological_Process_2023,Negative Regulation Of Endothelial Cell Proliferation (GO:0001937),0.0038576315924392225,0.17711466417876523,"CAV1,PTPRM",False
+oligodendrocyte_pos,GO_Biological_Process_2023,RNA Stabilization (GO:0043489),0.0038576315924392225,0.17711466417876523,"GDNF,NSUN2",False
+oligodendrocyte_pos,GO_Biological_Process_2023,Regulation Of Stem Cell Differentiation (GO:2000736),0.0056617913266769635,0.17711466417876523,"GDNF,NSUN2",False
+oligodendrocyte_pos,GO_Biological_Process_2023,Axon Guidance (GO:0007411),0.006148616172386748,0.17711466417876523,"GDNF,PTPRM,EPHA3",False
+oligodendrocyte_pos,GO_Biological_Process_2023,Regulation Of Cell-Matrix Adhesion (GO:0001952),0.011523761866123172,0.17711466417876523,"CDKN2A,EPHA3",False
+oligodendrocyte_pos,GO_Biological_Process_2023,Regulation Of Cell Differentiation (GO:0045595),0.012435473359891428,0.17711466417876523,"GDNF,NSUN2,EPHA3",False
+oligodendrocyte_pos,GO_Biological_Process_2023,Positive Regulation Of Gap Junction Assembly (GO:1903598),0.012438777192772534,0.17711466417876523,CAV1,False
+oligodendrocyte_pos,GO_Biological_Process_2023,Regulation Of Ribonucleoprotein Complex Localization (GO:2000197),0.012438777192772534,0.17711466417876523,NSUN2,False
+oligodendrocyte_pos,GO_Biological_Process_2023,Positive Regulation Of Animal Organ Morphogenesis (GO:0110110),0.012438777192772534,0.17711466417876523,GDNF,False
+oligodendrocyte_pos,GO_Biological_Process_2023,Regulation Of mRNA Export From Nucleus (GO:0010793),0.012438777192772534,0.17711466417876523,NSUN2,False
+oligodendrocyte_pos,GO_Biological_Process_2023,Regulation Of Morphogenesis Of A Branching Structure (GO:0060688),0.012438777192772534,0.17711466417876523,GDNF,False
+oligodendrocyte_pos,GO_Biological_Process_2023,Retinal Ganglion Cell Axon Guidance (GO:0031290),0.012438777192772534,0.17711466417876523,PTPRM,False
+oligodendrocyte_pos,GO_Biological_Process_2023,Negative Regulation Of Epithelial Cell Proliferation (GO:0050680),0.013274200561286012,0.17711466417876523,"CAV1,PTPRM",False
+oligodendrocyte_pos,GO_Biological_Process_2023,Regulation Of Hydrolase Activity (GO:0051336),0.01363735177477663,0.17711466417876523,"CAV1,EPHA3",False
+oligodendrocyte_pos,GO_Biological_Process_2023,Protein Localization To Basolateral Plasma Membrane (GO:1903361),0.014908284799373634,0.17711466417876523,CAV1,False
+oligodendrocyte_pos,GO_Biological_Process_2023,Positive Regulation Of ER-associated Ubiquitin-Dependent Protein Catabolic Process (GO:1903071),0.014908284799373634,0.17711466417876523,CAV1,True
+oligodendrocyte_pos,GO_Biological_Process_2023,Angiotensin-Activated Signaling Pathway (GO:0038166),0.014908284799373634,0.17711466417876523,CAV1,False
+oligodendrocyte_pos,GO_Biological_Process_2023,Positive Regulation Of Catecholamine Secretion (GO:0033605),0.014908284799373634,0.17711466417876523,GDNF,False
+oligodendrocyte_pos,GO_Biological_Process_2023,Regulation Of Cell Adhesion Molecule Production (GO:0060353),0.014908284799373634,0.17711466417876523,CAV1,False
+oligodendrocyte_pos,GO_Biological_Process_2023,Enteric Nervous System Development (GO:0048484),0.014908284799373634,0.17711466417876523,GDNF,False
+oligodendrocyte_pos,GO_Biological_Process_2023,Regulation Of Dopamine Uptake Involved In Synaptic Transmission (GO:0051584),0.017371741450283952,0.17711466417876523,GDNF,False
+oligodendrocyte_pos,GO_Biological_Process_2023,Positive Regulation Of Myeloid Cell Apoptotic Process (GO:0033034),0.017371741450283952,0.17711466417876523,CDKN2A,False
+oligodendrocyte_pos,GO_Biological_Process_2023,Negative Regulation Of Nitric Oxide Biosynthetic Process (GO:0045019),0.017371741450283952,0.17711466417876523,CAV1,False
+oligodendrocyte_pos,GO_Biological_Process_2023,Negative Regulation Of Nitric Oxide Metabolic Process (GO:1904406),0.017371741450283952,0.17711466417876523,CAV1,False
+oligodendrocyte_pos,KEGG_2021_Human,Pancreatic secretion,0.02691772640191098,0.459280319307968,"CPA1,CPB1",False
+oligodendrocyte_pos,KEGG_2021_Human,Protein digestion and absorption,0.02740756305932927,0.459280319307968,"CPA1,CPB1",False
+oligodendrocyte_pos,KEGG_2021_Human,Cell adhesion molecules,0.052889062238365064,0.459280319307968,"SELL,PTPRM",False
+oligodendrocyte_pos,KEGG_2021_Human,Bladder cancer,0.09763021468476817,0.459280319307968,CDKN2A,False
+oligodendrocyte_pos,KEGG_2021_Human,Viral myocarditis,0.13964452305344063,0.459280319307968,CAV1,False
+oligodendrocyte_pos,KEGG_2021_Human,Adherens junction,0.16308595979881008,0.459280319307968,PTPRM,False
+oligodendrocyte_pos,KEGG_2021_Human,Melanoma,0.16518569591012358,0.459280319307968,CDKN2A,False
+oligodendrocyte_pos,KEGG_2021_Human,Non-small cell lung cancer,0.16518569591012358,0.459280319307968,CDKN2A,False
+oligodendrocyte_pos,KEGG_2021_Human,p53 signaling pathway,0.1672802691231711,0.459280319307968,CDKN2A,True
+oligodendrocyte_pos,KEGG_2021_Human,Glioma,0.1714539764404576,0.459280319307968,CDKN2A,False
+oligodendrocyte_pos,KEGG_2021_Human,Pancreatic cancer,0.17353313536390655,0.459280319307968,CDKN2A,False
+oligodendrocyte_pos,KEGG_2021_Human,Chronic myeloid leukemia,0.17353313536390655,0.459280319307968,CDKN2A,False
+oligodendrocyte_pos,KEGG_2021_Human,Bacterial invasion of epithelial cells,0.1756071809118701,0.459280319307968,CAV1,False
+oligodendrocyte_pos,KEGG_2021_Human,Cell cycle,0.2675403902734135,0.5250892758043789,CDKN2A,False
+oligodendrocyte_pos,KEGG_2021_Human,Systemic lupus erythematosus,0.2875606166970605,0.5250892758043789,MACROH2A2,False
+oligodendrocyte_pos,KEGG_2021_Human,Fluid shear stress and atherosclerosis,0.29470691822637646,0.5250892758043789,CAV1,False
+oligodendrocyte_pos,KEGG_2021_Human,Cushing syndrome,0.3225962281219006,0.5250892758043789,CDKN2A,False
+oligodendrocyte_pos,KEGG_2021_Human,Cellular senescence,0.32430296197565434,0.5250892758043789,CDKN2A,True
+oligodendrocyte_pos,KEGG_2021_Human,Necroptosis,0.32939791820297204,0.5250892758043789,MACROH2A2,False
+oligodendrocyte_pos,KEGG_2021_Human,Hepatocellular carcinoma,0.34445794624435677,0.5250892758043789,CDKN2A,False
+oligodendrocyte_pos,KEGG_2021_Human,Axon guidance,0.36722819876446505,0.5250892758043789,EPHA3,False
+oligodendrocyte_pos,KEGG_2021_Human,Alcoholism,0.3735903703808139,0.5250892758043789,MACROH2A2,False
+oligodendrocyte_pos,KEGG_2021_Human,Neutrophil extracellular trap formation,0.37832081798382067,0.5250892758043789,MACROH2A2,False
+oligodendrocyte_pos,KEGG_2021_Human,Focal adhesion,0.39689500106482833,0.5250892758043789,CAV1,False
+oligodendrocyte_pos,KEGG_2021_Human,Viral carcinogenesis,0.3999373645428959,0.5250892758043789,CDKN2A,False
+oligodendrocyte_pos,Reactome_2022,NOSTRIN Mediated eNOS Trafficking R-HSA-203641,0.012438777192772534,0.3897823044777341,CAV1,False
+oligodendrocyte_pos,Reactome_2022,CREB Phosphorylation R-HSA-199920,0.017371741450283952,0.3897823044777341,GDNF,False
+oligodendrocyte_pos,Reactome_2022,Activation Of AP-1 Family Of Transcription Factors R-HSA-450341,0.02472594881725805,0.3897823044777341,GDNF,False
+oligodendrocyte_pos,Reactome_2022,RUNX3 Regulates p14-ARF R-HSA-8951936,0.02472594881725805,0.3897823044777341,CDKN2A,False
+oligodendrocyte_pos,Reactome_2022,eNOS Activation R-HSA-203615,0.027165344857992397,0.3897823044777341,CAV1,False
+oligodendrocyte_pos,Reactome_2022,SARS-CoV-2 Targets Host Intracellular Signaling And Regulatory Pathways R-HSA-9755779,0.03202621324876303,0.3897823044777341,CAV1,False
+oligodendrocyte_pos,Reactome_2022,Metabolism Of Nitric Oxide: NOS3 Activation And Regulation R-HSA-202131,0.03686327859360632,0.3897823044777341,CAV1,False
+oligodendrocyte_pos,Reactome_2022,FOXO-mediated Transcription Of Cell Cycle Genes R-HSA-9617828,0.04167665479123348,0.3897823044777341,CAV1,False
+oligodendrocyte_pos,Reactome_2022,Metabolism Of Angiotensinogen To Angiotensins R-HSA-2022377,0.04407449493169267,0.3897823044777341,CPB1,False
+oligodendrocyte_pos,Reactome_2022,Cell Surface Interactions At Vascular Wall R-HSA-202733,0.04428445162178129,0.3897823044777341,"SELL,CAV1",False
+oligodendrocyte_pos,Reactome_2022,SUMOylation Of Transcription Factors R-HSA-3232118,0.04646645529524364,0.3897823044777341,CDKN2A,False
+oligodendrocyte_pos,Reactome_2022,PTEN Regulation R-HSA-6807070,0.04729227939443079,0.3897823044777341,"GDNF,TNKS",False
+oligodendrocyte_pos,Reactome_2022,Apoptotic Factor-Mediated Response R-HSA-111471,0.04885254998202776,0.3897823044777341,CDKN2A,False
+oligodendrocyte_pos,Reactome_2022,Triglyceride Catabolism R-HSA-163560,0.05597578058787951,0.3897823044777341,CAV1,False
+oligodendrocyte_pos,Reactome_2022,Defective Intrinsic Pathway For Apoptosis R-HSA-9734009,0.05833855301300996,0.3897823044777341,CDKN2A,True
+oligodendrocyte_pos,Reactome_2022,Basigin Interactions R-HSA-210991,0.06069552982417541,0.3897823044777341,CAV1,False
+oligodendrocyte_pos,Reactome_2022,VEGFR2 Mediated Vascular Permeability R-HSA-5218920,0.06539215225886762,0.3897823044777341,CAV1,False
+oligodendrocyte_pos,Reactome_2022,Disassembly Of Destruction Complex And Recruitment Of AXIN To Membrane R-HSA-4641262,0.07006575883720893,0.3897823044777341,CAV1,False
+oligodendrocyte_pos,Reactome_2022,MAPK Targets/ Nuclear Events Mediated By MAP Kinases R-HSA-450282,0.0723939657090184,0.3897823044777341,GDNF,False
+oligodendrocyte_pos,Reactome_2022,Oncogene Induced Senescence R-HSA-2559585,0.0793443657059371,0.3897823044777341,CDKN2A,True
+oligodendrocyte_pos,Reactome_2022,Signaling By WNT In Cancer R-HSA-4791275,0.0793443657059371,0.3897823044777341,TNKS,False
+oligodendrocyte_pos,Reactome_2022,ESR-mediated Signaling R-HSA-8939211,0.08030707404949645,0.3897823044777341,"GDNF,CAV1",False
+oligodendrocyte_pos,Reactome_2022,Regulation Of TP53 Degradation R-HSA-6804757,0.08624372197430759,0.3897823044777341,CDKN2A,True
+oligodendrocyte_pos,Reactome_2022,RHOH GTPase Cycle R-HSA-9013407,0.08624372197430759,0.3897823044777341,CAV1,False
+oligodendrocyte_pos,Reactome_2022,TCF Dependent Signaling In Response To WNT R-HSA-201681,0.08773216638795828,0.3897823044777341,"TNKS,CAV1",False
+oligodendrocyte_neg,MSigDB_Hallmark_2020,Hypoxia,0.39536815575105444,0.39536815575105444,NEDD4L,False
+oligodendrocyte_neg,MSigDB_Hallmark_2020,Estrogen Response Early,0.39536815575105444,0.39536815575105444,SNX24,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Regulation Of Transmembrane Transport (GO:0034762),0.0028959211173454295,0.16019173807691228,"OCLN,NEDD4L",False
+oligodendrocyte_neg,GO_Biological_Process_2023,Membrane Protein Proteolysis (GO:0033619),0.003265007400933762,0.16019173807691228,"BACE2,NAPSA",False
+oligodendrocyte_neg,GO_Biological_Process_2023,tRNA Aminoacylation For Protein Translation (GO:0006418),0.0034573756419477466,0.16019173807691228,"YARS1,CARS1",False
+oligodendrocyte_neg,GO_Biological_Process_2023,C-terminal Protein Deglutamylation (GO:0035609),0.012438777192772534,0.17017652209736894,FOLH1B,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Negative Regulation Of Amyloid Precursor Protein Biosynthetic Process (GO:0042985),0.012438777192772534,0.17017652209736894,BACE2,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Protein Deglutamylation (GO:0035608),0.014908284799373634,0.17017652209736894,FOLH1B,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Regulation Of Blood-Brain Barrier Permeability (GO:1905603),0.014908284799373634,0.17017652209736894,OCLN,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Negative Regulation Of T Cell Mediated Cytotoxicity (GO:0001915),0.017371741450283952,0.17017652209736894,KLRC1,False
+oligodendrocyte_neg,GO_Biological_Process_2023,siRNA Processing (GO:0030422),0.017371741450283952,0.17017652209736894,HENMT1,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Negative Regulation Of Glycoprotein Biosynthetic Process (GO:0010561),0.01982916145118511,0.17017652209736894,BACE2,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Immune Response-Inhibiting Cell Surface Receptor Signaling Pathway (GO:0002767),0.01982916145118511,0.17017652209736894,KLRC1,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Negative Regulation Of Sodium Ion Transmembrane Transport (GO:1902306),0.022280559123686802,0.17017652209736894,NEDD4L,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Negative Regulation Of Potassium Ion Transmembrane Transporter Activity (GO:1901017),0.022280559123686802,0.17017652209736894,NEDD4L,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Negative Regulation Of Protein Localization To Cell Surface (GO:2000009),0.022280559123686802,0.17017652209736894,NEDD4L,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Negative Regulation Of Sodium Ion Transmembrane Transporter Activity (GO:2000650),0.02472594881725805,0.17017652209736894,NEDD4L,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Surfactant Homeostasis (GO:0043129),0.02472594881725805,0.17017652209736894,NAPSA,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Regulation Of Amyloid Precursor Protein Biosynthetic Process (GO:0042984),0.02472594881725805,0.17017652209736894,BACE2,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Negative Regulation Of Natural Killer Cell Mediated Immunity (GO:0002716),0.02472594881725805,0.17017652209736894,KLRC1,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Engulfment Of Apoptotic Cell (GO:0043652),0.02472594881725805,0.17017652209736894,XKR6,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Positive Regulation Of Vascular Permeability (GO:0043117),0.027165344857992397,0.17017652209736894,OCLN,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Negative Regulation Of Potassium Ion Transmembrane Transport (GO:1901380),0.027165344857992397,0.17017652209736894,NEDD4L,False
+oligodendrocyte_neg,GO_Biological_Process_2023,C-terminal Protein Amino Acid Modification (GO:0018410),0.029598761568907096,0.17017652209736894,FOLH1B,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Negative Regulation Of Potassium Ion Transport (GO:0043267),0.029598761568907096,0.17017652209736894,NEDD4L,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Monoacylglycerol Metabolic Process (GO:0046462),0.03202621324876303,0.17017652209736894,AWAT2,False
+oligodendrocyte_neg,GO_Biological_Process_2023,Sodium-Independent Organic Anion Transport (GO:0043252),0.03202621324876303,0.17017652209736894,SLCO6A1,False
+oligodendrocyte_neg,KEGG_2021_Human,Aminoacyl-tRNA biosynthesis,0.011865063410712947,0.2017060779821201,"YARS1,CARS1",False
+oligodendrocyte_neg,KEGG_2021_Human,Vitamin digestion and absorption,0.05833855301300996,0.33962861619914286,AWAT2,False
+oligodendrocyte_neg,KEGG_2021_Human,Tight junction,0.06679838762881467,0.33962861619914286,"OCLN,NEDD4L",False
+oligodendrocyte_neg,KEGG_2021_Human,Aldosterone-regulated sodium reabsorption,0.08853222789026767,0.33962861619914286,NEDD4L,False
+oligodendrocyte_neg,KEGG_2021_Human,Graft-versus-host disease,0.09989076947033614,0.33962861619914286,KLRC1,False
+oligodendrocyte_neg,KEGG_2021_Human,Retinol metabolism,0.15675564908065587,0.4263148604502999,AWAT2,False
+oligodendrocyte_neg,KEGG_2021_Human,Antigen processing and presentation,0.17767612543797884,0.4263148604502999,KLRC1,False
+oligodendrocyte_neg,KEGG_2021_Human,Leukocyte transendothelial migration,0.24886240785882746,0.4263148604502999,OCLN,False
+oligodendrocyte_neg,KEGG_2021_Human,Lysosome,0.27488345891042104,0.4263148604502999,NAPSA,True
+oligodendrocyte_neg,KEGG_2021_Human,Natural killer cell mediated cytotoxicity,0.28034336849839514,0.4263148604502999,KLRC1,False
+oligodendrocyte_neg,KEGG_2021_Human,Ubiquitin mediated proteolysis,0.2964824884084789,0.4263148604502999,NEDD4L,True
+oligodendrocyte_neg,KEGG_2021_Human,Cell adhesion molecules,0.3105302270346101,0.4263148604502999,OCLN,False
+oligodendrocyte_neg,KEGG_2021_Human,Hepatitis C,0.3260054815208176,0.4263148604502999,OCLN,False
+oligodendrocyte_neg,KEGG_2021_Human,Pathogenic Escherichia coli infection,0.3907648554462843,0.4745001816133452,OCLN,False
+oligodendrocyte_neg,KEGG_2021_Human,Endocytosis,0.4699502001103142,0.5326102267916893,NEDD4L,False
+oligodendrocyte_neg,KEGG_2021_Human,Alzheimer disease,0.6063398885560332,0.6442361315907852,BACE2,False
+oligodendrocyte_neg,KEGG_2021_Human,Herpes simplex virus 1 infection,0.7170049272413213,0.7170049272413213,ZNF549,False
+oligodendrocyte_neg,Reactome_2022,Cytosolic tRNA Aminoacylation R-HSA-379716,0.001632124977335775,0.1044559985494896,"YARS1,CARS1",False
+oligodendrocyte_neg,Reactome_2022,tRNA Aminoacylation R-HSA-379724,0.0049475924537835565,0.1583229585210738,"YARS1,CARS1",False
+oligodendrocyte_neg,Reactome_2022,RUNX1 Regulates Expression Of Components Of Tight Junctions R-HSA-8935964,0.012438777192772534,0.18529857546969547,OCLN,False
+oligodendrocyte_neg,Reactome_2022,Acyl Chain Remodeling Of DAG And TAG R-HSA-1482883,0.017371741450283952,0.18529857546969547,AWAT2,False
+oligodendrocyte_neg,Reactome_2022,Wax And Plasmalogen Biosynthesis R-HSA-8848584,0.017371741450283952,0.18529857546969547,AWAT2,False
+oligodendrocyte_neg,Reactome_2022,Retinoid Cycle In Cones (Daylight Vision) R-HSA-2187335,0.017371741450283952,0.18529857546969547,AWAT2,False
+oligodendrocyte_neg,Reactome_2022,Apoptotic Cleavage Of Cell Adhesion Proteins R-HSA-351906,0.027165344857992397,0.24836886727307333,OCLN,False
+oligodendrocyte_neg,Reactome_2022,Downregulation Of TGF-beta Receptor Signaling R-HSA-2173788,0.06304672495404354,0.3984877866806807,NEDD4L,False
+oligodendrocyte_neg,Reactome_2022,Surfactant Metabolism R-HSA-5683826,0.07006575883720893,0.3984877866806807,NAPSA,False
+oligodendrocyte_neg,Reactome_2022,PIWI-interacting RNA (piRNA) Biogenesis R-HSA-5601884,0.07006575883720893,0.3984877866806807,HENMT1,False
+oligodendrocyte_neg,Reactome_2022,Budding And Maturation Of HIV Virion R-HSA-162588,0.07006575883720893,0.3984877866806807,NEDD4L,False
+oligodendrocyte_neg,Reactome_2022,Downregulation Of SMAD2/3:SMAD4 Transcriptional Activity R-HSA-2173795,0.07471646000262763,0.3984877866806807,NEDD4L,False
+oligodendrocyte_neg,Reactome_2022,Apoptotic Cleavage Of Cellular Proteins R-HSA-111465,0.09081511663134849,0.41208883645509325,OCLN,False
+oligodendrocyte_neg,Reactome_2022,Intra-Golgi Traffic R-HSA-6811438,0.09989076947033614,0.41208883645509325,NAPSA,False
+oligodendrocyte_neg,Reactome_2022,TGF-beta Receptor Signaling Activates SMADs R-HSA-2173789,0.10439524246477773,0.41208883645509325,NEDD4L,False
+oligodendrocyte_neg,Reactome_2022,Retrograde Transport At Trans-Golgi-Network R-HSA-6811440,0.11333801483691312,0.41208883645509325,NAPSA,False
+oligodendrocyte_neg,Reactome_2022,Transcriptional Activity Of SMAD2/SMAD3:SMAD4 Heterotrimer R-HSA-2173793,0.11998760892209076,0.41208883645509325,NEDD4L,False
+oligodendrocyte_neg,Reactome_2022,Apoptotic Execution Phase R-HSA-75153,0.12219326087078625,0.41208883645509325,OCLN,False
+oligodendrocyte_neg,Reactome_2022,Golgi Associated Vesicle Biogenesis R-HSA-432722,0.12877776139221664,0.41208883645509325,NAPSA,False
+oligodendrocyte_neg,Reactome_2022,Signaling By ALK Fusions And Activated Point Mutants R-HSA-9725370,0.12877776139221664,0.41208883645509325,CARS1,False
+oligodendrocyte_neg,Reactome_2022,COPII-mediated Vesicle Transport R-HSA-204005,0.15250939797562668,0.4475046412074708,NAPSA,False
+oligodendrocyte_neg,Reactome_2022,Translation R-HSA-72766,0.155794181776059,0.4475046412074708,"YARS1,CARS1",False
+oligodendrocyte_neg,Reactome_2022,trans-Golgi Network Vesicle Budding R-HSA-199992,0.16308595979881008,0.4475046412074708,NAPSA,False
+oligodendrocyte_neg,Reactome_2022,COPI-dependent Golgi-to-ER Retrograde Traffic R-HSA-6811434,0.17767612543797884,0.4475046412074708,NAPSA,False
+oligodendrocyte_neg,Reactome_2022,Antigen Processing: Ubiquitination And Proteasome Degradation R-HSA-983168,0.17881153918485054,0.4475046412074708,"RNF217,NEDD4L",True
+astrocyte_pos,MSigDB_Hallmark_2020,IL-2/STAT5 Signaling,0.3938375225272607,0.39536815575105444,DRC1,False
+astrocyte_pos,MSigDB_Hallmark_2020,Xenobiotic Metabolism,0.39536815575105444,0.39536815575105444,GSTT2,False
+astrocyte_pos,MSigDB_Hallmark_2020,KRAS Signaling Up,0.39536815575105444,0.39536815575105444,AVL9,False
+astrocyte_pos,MSigDB_Hallmark_2020,Estrogen Response Early,0.39536815575105444,0.39536815575105444,GFRA1,False
+astrocyte_pos,MSigDB_Hallmark_2020,Estrogen Response Late,0.39536815575105444,0.39536815575105444,ASCL1,False
+astrocyte_pos,GO_Biological_Process_2023,Icosanoid Metabolic Process (GO:0006690),0.007499481830469069,0.2679213522293581,"CYP4F3,CYP4F12",False
+astrocyte_pos,GO_Biological_Process_2023,Renal System Process Involved In Regulation Of Blood Volume (GO:0001977),0.012438777192772534,0.2679213522293581,CYP4F12,False
+astrocyte_pos,GO_Biological_Process_2023,Protein Localization To Non-Motile Cilium (GO:0097499),0.012438777192772534,0.2679213522293581,PCARE,False
+astrocyte_pos,GO_Biological_Process_2023,Long-Chain Fatty Acid Catabolic Process (GO:0042758),0.014908284799373634,0.2679213522293581,CYP4F12,False
+astrocyte_pos,GO_Biological_Process_2023,Organic Hydroxy Compound Catabolic Process (GO:1901616),0.022280559123686802,0.2679213522293581,CYP4F12,False
+astrocyte_pos,GO_Biological_Process_2023,Ectoderm Development (GO:0007398),0.022280559123686802,0.2679213522293581,EDA2R,False
+astrocyte_pos,GO_Biological_Process_2023,Positive Regulation Of Insulin Secretion Involved In Cellular Response To Glucose Stimulus (GO:0035774),0.03202621324876303,0.2679213522293581,BAIAP3,True
+astrocyte_pos,GO_Biological_Process_2023,Renal Water Homeostasis (GO:0003091),0.034447714169871156,0.2679213522293581,CYP4F12,False
+astrocyte_pos,GO_Biological_Process_2023,Negative Regulation Of Receptor Signaling Pathway Via STAT (GO:1904893),0.034447714169871156,0.2679213522293581,GBP7,False
+astrocyte_pos,GO_Biological_Process_2023,Photoreceptor Cell Development (GO:0042461),0.034447714169871156,0.2679213522293581,PCARE,False
+astrocyte_pos,GO_Biological_Process_2023,Defense Response To Protozoan (GO:0042832),0.03686327859360632,0.2679213522293581,GBP7,False
+astrocyte_pos,GO_Biological_Process_2023,Negative Regulation Of Receptor Signaling Pathway Via JAK-STAT (GO:0046426),0.039272920734465235,0.2679213522293581,GBP7,False
+astrocyte_pos,GO_Biological_Process_2023,"Regulation Of Synaptic Transmission, GABAergic (GO:0032228)",0.039272920734465235,0.2679213522293581,BAIAP3,False
+astrocyte_pos,GO_Biological_Process_2023,Epoxygenase P450 Pathway (GO:0019373),0.04167665479123348,0.2679213522293581,CYP4F12,False
+astrocyte_pos,GO_Biological_Process_2023,Multicellular Organismal-Level Water Homeostasis (GO:0050891),0.04646645529524364,0.27479559364890616,CYP4F12,False
+astrocyte_pos,GO_Biological_Process_2023,Leukotriene Metabolic Process (GO:0006691),0.04885254998202776,0.27479559364890616,CYP4F3,False
+astrocyte_pos,GO_Biological_Process_2023,Fat-Soluble Vitamin Metabolic Process (GO:0006775),0.05833855301300996,0.3002818235880383,CYP4F12,False
+astrocyte_pos,GO_Biological_Process_2023,Sodium Ion Homeostasis (GO:0055078),0.06069552982417541,0.3002818235880383,CYP4F12,False
+astrocyte_pos,GO_Biological_Process_2023,Regulation Of Insulin Secretion Involved In Cellular Response To Glucose Stimulus (GO:0061178),0.06539215225886762,0.3002818235880383,BAIAP3,True
+astrocyte_pos,GO_Biological_Process_2023,Regulation Of Calcium Ion-Dependent Exocytosis (GO:0017158),0.0677318256109869,0.3002818235880383,BAIAP3,False
+astrocyte_pos,GO_Biological_Process_2023,Positive Regulation Of Viral Genome Replication (GO:0045070),0.07006575883720893,0.3002818235880383,GBP7,False
+astrocyte_pos,GO_Biological_Process_2023,Very Long-Chain Fatty Acid Metabolic Process (GO:0000038),0.07703325543276686,0.31047795276236256,CYP4F12,False
+astrocyte_pos,GO_Biological_Process_2023,Carboxylic Acid Metabolic Process (GO:0019752),0.0793443657059371,0.31047795276236256,CYP4F3,False
+astrocyte_pos,GO_Biological_Process_2023,Negative Regulation Of Type I Interferon Production (GO:0032480),0.09081511663134849,0.3198689869188129,GBP7,True
+astrocyte_pos,GO_Biological_Process_2023,Notch Signaling Pathway (GO:0007219),0.09536409657552716,0.3198689869188129,ASCL1,False
+astrocyte_pos,KEGG_2021_Human,Glutathione metabolism,0.13314051228520932,0.5106883357864943,GSTT2,True
+astrocyte_pos,KEGG_2021_Human,Arachidonic acid metabolism,0.1418018805927374,0.5106883357864943,CYP4F3,False
+astrocyte_pos,KEGG_2021_Human,Metabolism of xenobiotics by cytochrome P450,0.17353313536390655,0.5106883357864943,GSTT2,False
+astrocyte_pos,KEGG_2021_Human,NF-kappa B signaling pathway,0.22971789307458146,0.5106883357864943,EDA2R,True
+astrocyte_pos,KEGG_2021_Human,Drug metabolism,0.23743240698267418,0.5106883357864943,GSTT2,False
+astrocyte_pos,KEGG_2021_Human,Fluid shear stress and atherosclerosis,0.29470691822637646,0.5106883357864943,GSTT2,False
+astrocyte_pos,KEGG_2021_Human,Hepatocellular carcinoma,0.34445794624435677,0.5106883357864943,GSTT2,False
+astrocyte_pos,KEGG_2021_Human,NOD-like receptor signaling pathway,0.36562778723674233,0.5106883357864943,GBP7,False
+astrocyte_pos,KEGG_2021_Human,Transcriptional misregulation in cancer,0.38301625183987076,0.5106883357864943,BAIAP3,False
+astrocyte_pos,KEGG_2021_Human,Chemical carcinogenesis,0.4521970360135466,0.5426364432162559,GSTT2,False
+astrocyte_pos,KEGG_2021_Human,Cytokine-cytokine receptor interaction,0.5247480242056516,0.572452390042529,EDA2R,True
+astrocyte_pos,KEGG_2021_Human,Pathways in cancer,0.7400095475471683,0.7400095475471683,GSTT2,False
+astrocyte_pos,Reactome_2022,Eicosanoids R-HSA-211979,0.00039784050239185316,0.011338237178189386,"CYP4F3,CYP4F12",False
+astrocyte_pos,Reactome_2022,Fatty Acids R-HSA-211935,0.0006299020654549659,0.011338237178189386,"CYP4F3,CYP4F12",False
+astrocyte_pos,Reactome_2022,Cytochrome P450 - Arranged By Substrate Type R-HSA-211897,0.011523761866123172,0.13828514239347806,"CYP4F3,CYP4F12",False
+astrocyte_pos,Reactome_2022,Biological Oxidations R-HSA-211859,0.017191451228524356,0.1547230610567192,"CYP4F3,GSTT2,CYP4F12",False
+astrocyte_pos,Reactome_2022,Phase I - Functionalization Of Compounds R-HSA-211945,0.0279010087799889,0.1775925694134426,"CYP4F3,CYP4F12",False
+astrocyte_pos,Reactome_2022,Miscellaneous Substrates R-HSA-211958,0.029598761568907096,0.1775925694134426,CYP4F3,False
+astrocyte_pos,Reactome_2022,Synthesis Of Leukotrienes (LT) And Eoxins (EX) R-HSA-2142691,0.0512327930672156,0.2634829357742517,CYP4F3,False
+astrocyte_pos,Reactome_2022,TNFs Bind Their Physiological Receptors R-HSA-5669034,0.07006575883720893,0.2860922897265815,EDA2R,True
+astrocyte_pos,Reactome_2022,Glutathione Conjugation R-HSA-156590,0.08624372197430759,0.2860922897265815,GSTT2,True
+astrocyte_pos,Reactome_2022,NCAM1 Interactions R-HSA-419037,0.08853222789026767,0.2860922897265815,GFRA1,False
+astrocyte_pos,Reactome_2022,NGF-stimulated Transcription R-HSA-9031628,0.09309240170465724,0.2860922897265815,ASCL1,False
+astrocyte_pos,Reactome_2022,RET Signaling R-HSA-8853659,0.09536409657552716,0.2860922897265815,GFRA1,False
+astrocyte_pos,Reactome_2022,NCAM Signaling For Neurite Out-Growth R-HSA-375165,0.13314051228520932,0.34032451342256975,GFRA1,False
+astrocyte_pos,Reactome_2022,Arachidonic Acid Metabolism R-HSA-2142753,0.1374818510452552,0.34032451342256975,CYP4F3,False
+astrocyte_pos,Reactome_2022,Nuclear Events (Kinase And Transcription Factor Activation) R-HSA-198725,0.1418018805927374,0.34032451342256975,ASCL1,False
+astrocyte_pos,Reactome_2022,Interferon Gamma Signaling R-HSA-877300,0.20010134077429026,0.4479523341458894,GBP7,True
+astrocyte_pos,Reactome_2022,TNFR2 Non-Canonical NF-kB Pathway R-HSA-5668541,0.22192691156038513,0.4479523341458894,EDA2R,True
+astrocyte_pos,Reactome_2022,Phase II - Conjugation Of Compounds R-HSA-156580,0.23551090700841826,0.4479523341458894,GSTT2,False
+astrocyte_pos,Reactome_2022,Degradation Of Extracellular Matrix R-HSA-1474228,0.23934917373986106,0.4479523341458894,CAPN8,True
+astrocyte_pos,Reactome_2022,Signaling By NTRK1 (TRKA) R-HSA-187037,0.24886240785882746,0.4479523341458894,ASCL1,False
+astrocyte_pos,Reactome_2022,Signaling By NTRKs R-HSA-166520,0.28215436939905053,0.4836932046840866,ASCL1,False
+astrocyte_pos,Reactome_2022,Fatty Acid Metabolism R-HSA-8978868,0.35268088478543624,0.5771141751034412,CYP4F3,False
+astrocyte_pos,Reactome_2022,Interferon Signaling R-HSA-913531,0.39536815575105444,0.6188371133494766,GBP7,True
+astrocyte_pos,Reactome_2022,RAF/MAP Kinase Cascade R-HSA-5673001,0.49488711549796544,0.7040169004406073,GFRA1,False
+astrocyte_pos,Reactome_2022,MAPK1/MAPK3 Signaling R-HSA-5684996,0.5025203266713362,0.7040169004406073,GFRA1,False
+astrocyte_neg,MSigDB_Hallmark_2020,Epithelial Mesenchymal Transition,0.08924145426065531,0.39536815575105444,"FAS,PTX3",False
+astrocyte_neg,MSigDB_Hallmark_2020,Wnt-beta Catenin Signaling,0.09989076947033614,0.39536815575105444,WNT5B,False
+astrocyte_neg,MSigDB_Hallmark_2020,Apical Surface,0.10439524246477773,0.39536815575105444,SCUBE1,False
+astrocyte_neg,MSigDB_Hallmark_2020,IL-6/JAK/STAT3 Signaling,0.19606909758966404,0.39536815575105444,FAS,False
+astrocyte_neg,MSigDB_Hallmark_2020,Bile Acid Metabolism,0.24507118869589983,0.39536815575105444,DIO2,False
+astrocyte_neg,MSigDB_Hallmark_2020,Apoptosis,0.33277361941321715,0.39536815575105444,FAS,True
+astrocyte_neg,MSigDB_Hallmark_2020,IL-2/STAT5 Signaling,0.3938375225272607,0.39536815575105444,PLAGL1,False
+astrocyte_neg,MSigDB_Hallmark_2020,Xenobiotic Metabolism,0.39536815575105444,0.39536815575105444,FAS,False
+astrocyte_neg,MSigDB_Hallmark_2020,TNF-alpha Signaling via NF-kB,0.39536815575105444,0.39536815575105444,PTX3,True
+astrocyte_neg,MSigDB_Hallmark_2020,Interferon Gamma Response,0.39536815575105444,0.39536815575105444,FAS,True
+astrocyte_neg,MSigDB_Hallmark_2020,p53 Pathway,0.39536815575105444,0.39536815575105444,FAS,True
+astrocyte_neg,MSigDB_Hallmark_2020,Allograft Rejection,0.39536815575105444,0.39536815575105444,FAS,False
+astrocyte_neg,GO_Biological_Process_2023,Positive Regulation Of Microglial Cell Activation (GO:1903980),0.012438777192772534,0.15420362272756388,TAFA3,False
+astrocyte_neg,GO_Biological_Process_2023,Vitamin A Metabolic Process (GO:0006776),0.014908284799373634,0.15420362272756388,RPE65,False
+astrocyte_neg,GO_Biological_Process_2023,Negative Regulation Of Microglial Cell Activation (GO:1903979),0.017371741450283952,0.15420362272756388,TAFA3,False
+astrocyte_neg,GO_Biological_Process_2023,Lens Fiber Cell Development (GO:0070307),0.017371741450283952,0.15420362272756388,WNT5B,False
+astrocyte_neg,GO_Biological_Process_2023,T Cell Apoptotic Process (GO:0070231),0.017371741450283952,0.15420362272756388,FAS,False
+astrocyte_neg,GO_Biological_Process_2023,Adult Heart Development (GO:0007512),0.01982916145118511,0.15420362272756388,SCUBE1,False
+astrocyte_neg,GO_Biological_Process_2023,Translational Readthrough (GO:0006451),0.01982916145118511,0.15420362272756388,DIO2,False
+astrocyte_neg,GO_Biological_Process_2023,Selenocysteine Incorporation (GO:0001514),0.01982916145118511,0.15420362272756388,DIO2,False
+astrocyte_neg,GO_Biological_Process_2023,Regulation Of Cysteine-Type Endopeptidase Activity Involved In Apoptotic Signaling Pathway (GO:2001267),0.02472594881725805,0.15420362272756388,FAS,False
+astrocyte_neg,GO_Biological_Process_2023,Negative Regulation Of Sprouting Angiogenesis (GO:1903671),0.02472594881725805,0.15420362272756388,EPN1,False
+astrocyte_neg,GO_Biological_Process_2023,Thyroid Hormone Generation (GO:0006590),0.02472594881725805,0.15420362272756388,DIO2,False
+astrocyte_neg,GO_Biological_Process_2023,Cellular Response To Increased Oxygen Levels (GO:0036295),0.02472594881725805,0.15420362272756388,FAS,False
+astrocyte_neg,GO_Biological_Process_2023,Lens Fiber Cell Differentiation (GO:0070306),0.02472594881725805,0.15420362272756388,WNT5B,False
+astrocyte_neg,GO_Biological_Process_2023,Positive Regulation Of Non-Canonical Wnt Signaling Pathway (GO:2000052),0.02472594881725805,0.15420362272756388,WNT5B,False
+astrocyte_neg,GO_Biological_Process_2023,Engulfment Of Apoptotic Cell (GO:0043652),0.02472594881725805,0.15420362272756388,XKR6,False
+astrocyte_neg,GO_Biological_Process_2023,Detection Of Light Stimulus Involved In Sensory Perception (GO:0050962),0.027165344857992397,0.15420362272756388,RPE65,False
+astrocyte_neg,GO_Biological_Process_2023,Detection Of Light Stimulus Involved In Visual Perception (GO:0050908),0.027165344857992397,0.15420362272756388,RPE65,False
+astrocyte_neg,GO_Biological_Process_2023,Positive Regulation Of Neuroinflammatory Response (GO:0150078),0.029598761568907096,0.15420362272756388,TAFA3,True
+astrocyte_neg,GO_Biological_Process_2023,Endothelium Development (GO:0003158),0.029598761568907096,0.15420362272756388,SCUBE1,False
+astrocyte_neg,GO_Biological_Process_2023,Positive Regulation Of Wnt Signaling Pathway (GO:0030177),0.030421664588174364,0.15420362272756388,"WNT5B,LGR6",False
+astrocyte_neg,GO_Biological_Process_2023,Negative Regulation Of Neuroinflammatory Response (GO:0150079),0.03202621324876303,0.15420362272756388,TAFA3,True
+astrocyte_neg,GO_Biological_Process_2023,Endothelial Cell Differentiation (GO:0045446),0.03202621324876303,0.15420362272756388,SCUBE1,False
+astrocyte_neg,GO_Biological_Process_2023,Regulation Of Microglial Cell Activation (GO:1903978),0.034447714169871156,0.15420362272756388,TAFA3,False
+astrocyte_neg,GO_Biological_Process_2023,Regulation Of Non-Canonical Wnt Signaling Pathway (GO:2000050),0.034447714169871156,0.15420362272756388,WNT5B,False
+astrocyte_neg,GO_Biological_Process_2023,Negative Regulation Of Macrophage Activation (GO:0043031),0.03686327859360632,0.15420362272756388,TAFA3,False
+astrocyte_neg,KEGG_2021_Human,Human papillomavirus infection,0.049767091383155396,0.4775750919593676,"WNT5B,FAS,HES4",False
+astrocyte_neg,KEGG_2021_Human,Wnt signaling pathway,0.06474252903659296,0.4775750919593676,"WNT5B,LGR6",False
+astrocyte_neg,KEGG_2021_Human,RNA polymerase,0.07471646000262763,0.4775750919593676,POLR2J3,False
+astrocyte_neg,KEGG_2021_Human,African trypanosomiasis,0.08853222789026767,0.4775750919593676,FAS,False
+astrocyte_neg,KEGG_2021_Human,Allograft rejection,0.09081511663134849,0.4775750919593676,FAS,False
+astrocyte_neg,KEGG_2021_Human,Proteoglycans in cancer,0.09304866144027284,0.4775750919593676,"WNT5B,FAS",False
+astrocyte_neg,KEGG_2021_Human,Graft-versus-host disease,0.09989076947033614,0.4775750919593676,FAS,False
+astrocyte_neg,KEGG_2021_Human,Type I diabetes mellitus,0.10214577427941592,0.4775750919593676,FAS,False
+astrocyte_neg,KEGG_2021_Human,Autoimmune thyroid disease,0.12439349491287167,0.4775750919593676,FAS,False
+astrocyte_neg,KEGG_2021_Human,Basal cell carcinoma,0.1461007034145454,0.4775750919593676,WNT5B,False
+astrocyte_neg,KEGG_2021_Human,Retinol metabolism,0.15675564908065587,0.4775750919593676,RPE65,False
+astrocyte_neg,KEGG_2021_Human,p53 signaling pathway,0.1672802691231711,0.4775750919593676,FAS,True
+astrocyte_neg,KEGG_2021_Human,Melanogenesis,0.22388186624120487,0.4775750919593676,WNT5B,False
+astrocyte_neg,KEGG_2021_Human,Chagas disease,0.2258320069783284,0.4775750919593676,FAS,False
+astrocyte_neg,KEGG_2021_Human,Protein digestion and absorption,0.2277773453985499,0.4775750919593676,COL23A1,False
+astrocyte_neg,KEGG_2021_Human,Alzheimer disease,0.23543748238339798,0.4775750919593676,"WNT5B,FAS",False
+astrocyte_neg,KEGG_2021_Human,TNF signaling pathway,0.24507118869589983,0.4775750919593676,FAS,True
+astrocyte_neg,KEGG_2021_Human,Thyroid hormone signaling pathway,0.26198531339212133,0.4775750919593676,DIO2,False
+astrocyte_neg,KEGG_2021_Human,Natural killer cell mediated cytotoxicity,0.28034336849839514,0.4775750919593676,FAS,False
+astrocyte_neg,KEGG_2021_Human,Measles,0.29470691822637646,0.4775750919593676,FAS,False
+astrocyte_neg,KEGG_2021_Human,Apoptosis,0.30002049698269956,0.4775750919593676,FAS,True
+astrocyte_neg,KEGG_2021_Human,Signaling pathways regulating pluripotency of stem cells,0.3017829564686885,0.4775750919593676,WNT5B,False
+astrocyte_neg,KEGG_2021_Human,Breast cancer,0.30878940825208556,0.4775750919593676,WNT5B,False
+astrocyte_neg,KEGG_2021_Human,Cell adhesion molecules,0.3105302270346101,0.4775750919593676,ICAM3,False
+astrocyte_neg,KEGG_2021_Human,Gastric cancer,0.3122667490151626,0.4775750919593676,WNT5B,False
+astrocyte_neg,Reactome_2022,Integrin Cell Surface Interactions R-HSA-216083,0.011865063410712947,0.2674398405865354,"COL23A1,ICAM3",False
+astrocyte_neg,Reactome_2022,Thyroxine Biosynthesis R-HSA-209968,0.02472594881725805,0.2674398405865354,DIO2,False
+astrocyte_neg,Reactome_2022,Degradation Of Extracellular Matrix R-HSA-1474228,0.030421664588174364,0.2674398405865354,"SCUBE1,COL23A1",True
+astrocyte_neg,Reactome_2022,Extracellular Matrix Organization R-HSA-1474244,0.03617512627101113,0.2674398405865354,"SCUBE1,COL23A1,ICAM3",True
+astrocyte_neg,Reactome_2022,Metabolism Of Amine-Derived Hormones R-HSA-209776,0.04407449493169267,0.2674398405865354,DIO2,False
+astrocyte_neg,Reactome_2022,Regulation Of FZD By Ubiquitination R-HSA-4641263,0.04885254998202776,0.2674398405865354,LGR6,True
+astrocyte_neg,Reactome_2022,CD209 (DC-SIGN) Signaling R-HSA-5621575,0.04885254998202776,0.2674398405865354,ICAM3,False
+astrocyte_neg,Reactome_2022,TP53 Regulates Transcription Of Additional Cell Cycle Genes With Uncertain Roles In P53 Pathway R-HSA-6804115,0.0512327930672156,0.2674398405865354,PLAGL1,True
+astrocyte_neg,Reactome_2022,Canonical Retinoid Cycle In Rods (Twilight Vision) R-HSA-2453902,0.05597578058787951,0.2674398405865354,RPE65,False
+astrocyte_neg,Reactome_2022,WNT Ligand Biogenesis And Trafficking R-HSA-3238698,0.06304672495404354,0.2711009173023872,WNT5B,False
+astrocyte_neg,Reactome_2022,EGFR Downregulation R-HSA-182971,0.07471646000262763,0.2920734345557262,EPN1,False
+astrocyte_neg,Reactome_2022,Collagen Degradation R-HSA-1442490,0.09536409657552716,0.3312719971970899,COL23A1,True
+astrocyte_neg,Reactome_2022,Collagen Chain Trimerization R-HSA-8948216,0.10439524246477773,0.3312719971970899,COL23A1,True
+astrocyte_neg,Reactome_2022,TP53 Regulates Transcription Of Cell Cycle Genes R-HSA-6791312,0.11555999902224065,0.3312719971970899,PLAGL1,True
+astrocyte_neg,Reactome_2022,Signaling By EGFR R-HSA-177929,0.11555999902224065,0.3312719971970899,EPN1,False
+astrocyte_neg,Reactome_2022,Sensory Processing Of Sound By Outer Hair Cells Of Cochlea R-HSA-9662361,0.12439349491287167,0.33430751757834265,OTOG,False
+astrocyte_neg,Reactome_2022,Collagen Biosynthesis And Modifying Enzymes R-HSA-1650814,0.15463513630999146,0.3880274203652461,COL23A1,True
+astrocyte_neg,Reactome_2022,Signaling By WNT R-HSA-195721,0.16723034908925283,0.3880274203652461,"WNT5B,LGR6",False
+astrocyte_neg,Reactome_2022,Sensory Processing Of Sound R-HSA-9659379,0.1714539764404576,0.3880274203652461,OTOG,False
+astrocyte_neg,Reactome_2022,PCP/CE Pathway R-HSA-4086400,0.19808770290364253,0.4138443332034791,WNT5B,False
+astrocyte_neg,Reactome_2022,Collagen Formation R-HSA-1474290,0.20211002319239676,0.4138443332034791,COL23A1,True
+astrocyte_neg,Reactome_2022,Visual Phototransduction R-HSA-2187338,0.21800251374840374,0.4260958223264255,RPE65,False
+astrocyte_neg,Reactome_2022,Cargo Recognition For Clathrin-Mediated Endocytosis R-HSA-8856825,0.22971789307458146,0.42947258270465233,EPN1,False
+astrocyte_neg,Reactome_2022,Immunoregulatory Interactions Between A Lymphoid And A non-Lymphoid Cell R-HSA-198933,0.26569326637698776,0.4760337689254364,ICAM3,False
+astrocyte_neg,Reactome_2022,C-type Lectin Receptors (CLRs) R-HSA-5621481,0.29825367779529566,0.4778104211205956,ICAM3,False
+microglial cell_pos,MSigDB_Hallmark_2020,Inflammatory Response,0.0015598806233641427,0.020278448103733856,"IL15,TNFRSF9,CLEC5A,NOD2",True
+microglial cell_pos,MSigDB_Hallmark_2020,TNF-alpha Signaling via NF-kB,0.08924145426065531,0.2900347263471298,"TNFRSF9,SERPINB8",True
+microglial cell_pos,MSigDB_Hallmark_2020,Allograft Rejection,0.08924145426065531,0.2900347263471298,"IL15,HLA-DQA1",False
+microglial cell_pos,MSigDB_Hallmark_2020,Interferon Gamma Response,0.08924145426065531,0.2900347263471298,"IL15,HLA-DQA1",True
+microglial cell_pos,MSigDB_Hallmark_2020,Interferon Alpha Response,0.2160330472811356,0.39536815575105444,IL15,True
+microglial cell_pos,MSigDB_Hallmark_2020,IL-2/STAT5 Signaling,0.3938375225272607,0.39536815575105444,TNFRSF9,False
+microglial cell_pos,MSigDB_Hallmark_2020,Xenobiotic Metabolism,0.39536815575105444,0.39536815575105444,ESR1,False
+microglial cell_pos,MSigDB_Hallmark_2020,p53 Pathway,0.39536815575105444,0.39536815575105444,ALOX15B,True
+microglial cell_pos,MSigDB_Hallmark_2020,heme Metabolism,0.39536815575105444,0.39536815575105444,CLIC2,False
+microglial cell_pos,MSigDB_Hallmark_2020,KRAS Signaling Up,0.39536815575105444,0.39536815575105444,KCNN4,False
+microglial cell_pos,MSigDB_Hallmark_2020,Apical Junction,0.39536815575105444,0.39536815575105444,ALOX15B,False
+microglial cell_pos,MSigDB_Hallmark_2020,Complement,0.39536815575105444,0.39536815575105444,PLA2G7,True
+microglial cell_pos,MSigDB_Hallmark_2020,Epithelial Mesenchymal Transition,0.39536815575105444,0.39536815575105444,IL15,False
+microglial cell_pos,GO_Biological_Process_2023,Regulation Of Oxidoreductase Activity (GO:0051341),0.00046942457388711873,0.08308814957802002,"SLAMF8,NOD2",False
+microglial cell_pos,GO_Biological_Process_2023,Lipid Oxidation (GO:0034440),0.00046942457388711873,0.08308814957802002,"ALOX15B,PLA2G7",False
+microglial cell_pos,GO_Biological_Process_2023,Positive Regulation Of Interleukin-17 Production (GO:0032740),0.001632124977335775,0.12292705040681713,"IL15,NOD2",False
+microglial cell_pos,GO_Biological_Process_2023,Regulation Of B Cell Activation (GO:0050864),0.0017712212130127313,0.12292705040681713,"SLAMF8,NOD2",False
+microglial cell_pos,GO_Biological_Process_2023,Regulation Of Monocyte Chemotaxis (GO:0090025),0.0017712212130127313,0.12292705040681713,"SLAMF8,PLA2G7",False
+microglial cell_pos,GO_Biological_Process_2023,Positive Regulation Of Inflammatory Response (GO:0050729),0.0022418858798504493,0.12292705040681713,"AIM2,IL15,PLA2G7",True
+microglial cell_pos,GO_Biological_Process_2023,Positive Regulation Of T Cell Activation (GO:0050870),0.0024307608837506214,0.12292705040681713,"IL15,NOD2,HLA-DQA1",False
+microglial cell_pos,GO_Biological_Process_2023,Regulation Of Inflammatory Response (GO:0050727),0.0030219619876053227,0.128423624436728,"AIM2,IL15,NOD2,PLA2G7",True
+microglial cell_pos,GO_Biological_Process_2023,Regulation Of Interleukin-17 Production (GO:0032660),0.003265007400933762,0.128423624436728,"IL15,NOD2",False
+microglial cell_pos,GO_Biological_Process_2023,Positive Regulation Of Defense Response (GO:0031349),0.003686751554553751,0.13051100503120278,"AIM2,IL15,PLA2G7",False
+microglial cell_pos,GO_Biological_Process_2023,Lipid Modification (GO:0030258),0.0049475924537835565,0.13544411379900434,"PLA2G7,ALOX15B",False
+microglial cell_pos,GO_Biological_Process_2023,Positive Regulation Of Lymphocyte Activation (GO:0051251),0.00616259351355971,0.13544411379900434,"NOD2,HLA-DQA1",False
+microglial cell_pos,GO_Biological_Process_2023,Positive Regulation Of Response To External Stimulus (GO:0032103),0.00685512285061963,0.13544411379900434,"AIM2,IL15,PLA2G7",False
+microglial cell_pos,GO_Biological_Process_2023,Positive Regulation Of Interleukin-1 Beta Production (GO:0032731),0.008955160836496808,0.13544411379900434,"AIM2,NOD2",False
+microglial cell_pos,GO_Biological_Process_2023,Positive Regulation Of Interleukin-1 Production (GO:0032732),0.01118690003742748,0.13544411379900434,"AIM2,NOD2",False
+microglial cell_pos,GO_Biological_Process_2023,Peripheral Nervous System Neuron Development (GO:0048935),0.012438777192772534,0.13544411379900434,RUNX3,False
+microglial cell_pos,GO_Biological_Process_2023,Phagosome Acidification (GO:0090383),0.012438777192772534,0.13544411379900434,SLAMF8,False
+microglial cell_pos,GO_Biological_Process_2023,Negative Regulation Of Monocyte Chemotaxis (GO:0090027),0.012438777192772534,0.13544411379900434,SLAMF8,False
+microglial cell_pos,GO_Biological_Process_2023,Negative Regulation Of Myeloid Cell Apoptotic Process (GO:0033033),0.012438777192772534,0.13544411379900434,NOD2,False
+microglial cell_pos,GO_Biological_Process_2023,Mitochondrial Protein Catabolic Process (GO:0035694),0.012438777192772534,0.13544411379900434,SPATA18,True
+microglial cell_pos,GO_Biological_Process_2023,Regulation Of Type 2 Immune Response (GO:0002828),0.012438777192772534,0.13544411379900434,NOD2,False
+microglial cell_pos,GO_Biological_Process_2023,Positive Regulation Of Antigen Processing And Presentation (GO:0002579),0.012438777192772534,0.13544411379900434,NOD2,False
+microglial cell_pos,GO_Biological_Process_2023,Regulation Of Macrophage Apoptotic Process (GO:2000109),0.012438777192772534,0.13544411379900434,NOD2,False
+microglial cell_pos,GO_Biological_Process_2023,Positive Regulation Of Dendritic Cell Antigen Processing And Presentation (GO:0002606),0.012438777192772534,0.13544411379900434,NOD2,False
+microglial cell_pos,GO_Biological_Process_2023,Leukocyte Chemotaxis Involved In Inflammatory Response (GO:0002232),0.012438777192772534,0.13544411379900434,SLAMF8,True
+microglial cell_pos,KEGG_2021_Human,Intestinal immune network for IgA production,0.0064203200925442745,0.2151102215009659,"IL15,HLA-DQA1",False
+microglial cell_pos,KEGG_2021_Human,NOD-like receptor signaling pathway,0.010462303952461168,0.2151102215009659,"PSTPIP1,AIM2,NOD2",False
+microglial cell_pos,KEGG_2021_Human,Inflammatory bowel disease,0.011523761866123172,0.2151102215009659,"NOD2,HLA-DQA1",True
+microglial cell_pos,KEGG_2021_Human,Th1 and Th2 cell differentiation,0.022222383975626977,0.2201887026547472,"RUNX3,HLA-DQA1",False
+microglial cell_pos,KEGG_2021_Human,Rheumatoid arthritis,0.022674995409076425,0.2201887026547472,"IL15,HLA-DQA1",False
+microglial cell_pos,KEGG_2021_Human,Staphylococcus aureus infection,0.023591646713008625,0.2201887026547472,"FPR3,HLA-DQA1",False
+microglial cell_pos,KEGG_2021_Human,TNF signaling pathway,0.03197607762407203,0.25580862099257623,"IL15,NOD2",True
+microglial cell_pos,KEGG_2021_Human,Cytokine-cytokine receptor interaction,0.037434417090324794,0.26204091963227355,"IL15,TNFRSF9,IFNLR1",True
+microglial cell_pos,KEGG_2021_Human,Glycosaminoglycan degradation,0.04646645529524364,0.2869036411764073,HYAL3,False
+microglial cell_pos,KEGG_2021_Human,Pantothenate and CoA biosynthesis,0.0512327930672156,0.2869036411764073,VNN2,False
+microglial cell_pos,KEGG_2021_Human,JAK-STAT signaling pathway,0.062035997186313606,0.29025148813003393,"IL15,IFNLR1",False
+microglial cell_pos,KEGG_2021_Human,Tuberculosis,0.07451958870561042,0.29025148813003393,"NOD2,HLA-DQA1",False
+microglial cell_pos,KEGG_2021_Human,Asthma,0.07471646000262763,0.29025148813003393,HLA-DQA1,False
+microglial cell_pos,KEGG_2021_Human,Galactose metabolism,0.07471646000262763,0.29025148813003393,MGAM,False
+microglial cell_pos,KEGG_2021_Human,Starch and sucrose metabolism,0.08624372197430759,0.29025148813003393,MGAM,False
+microglial cell_pos,KEGG_2021_Human,Epstein-Barr virus infection,0.09075856660544276,0.29025148813003393,"RUNX3,HLA-DQA1",False
+microglial cell_pos,KEGG_2021_Human,Allograft rejection,0.09081511663134849,0.29025148813003393,HLA-DQA1,False
+microglial cell_pos,KEGG_2021_Human,Graft-versus-host disease,0.09989076947033614,0.29025148813003393,HLA-DQA1,False
+microglial cell_pos,KEGG_2021_Human,Type I diabetes mellitus,0.10214577427941592,0.29025148813003393,HLA-DQA1,False
+microglial cell_pos,KEGG_2021_Human,Human T-cell leukemia virus 1 infection,0.10395435029691961,0.29025148813003393,"IL15,HLA-DQA1",False
+microglial cell_pos,KEGG_2021_Human,Carbohydrate digestion and absorption,0.11111056030365549,0.29025148813003393,MGAM,False
+microglial cell_pos,KEGG_2021_Human,Ether lipid metabolism,0.11555999902224065,0.29025148813003393,PLA2G7,False
+microglial cell_pos,KEGG_2021_Human,Autoimmune thyroid disease,0.12439349491287167,0.29025148813003393,HLA-DQA1,False
+microglial cell_pos,KEGG_2021_Human,Endocrine and other factor-regulated calcium reabsorption,0.12439349491287167,0.29025148813003393,ESR1,False
+microglial cell_pos,KEGG_2021_Human,Viral myocarditis,0.13964452305344063,0.29648438836051916,HLA-DQA1,False
+microglial cell_pos,Reactome_2022,"Nucleotide-binding Domain, Leucine Rich Repeat Containing NLR Signaling Pathways R-HSA-168643",0.000315376219123607,0.04825256152591187,"PSTPIP1,AIM2,NOD2",False
+microglial cell_pos,Reactome_2022,Inflammasomes R-HSA-622312,0.0012477930702112238,0.09545616987115862,"PSTPIP1,AIM2",True
+microglial cell_pos,Reactome_2022,Ovarian Tumor Domain Proteases R-HSA-5689896,0.0042784069542198405,0.178462453060666,"NOD2,ESR1",False
+microglial cell_pos,Reactome_2022,Immune System R-HSA-168256,0.007506213699111645,0.178462453060666,"PSTPIP1,MGAM,AIM2,IL15,P2RX1,TNFRSF9,CLEC5A,IFNLR1,NOD2,TSPAN32,HLA-DQA1",False
+microglial cell_pos,Reactome_2022,RUNX3 Regulates BCL2L11 (BIM) Transcription R-HSA-8952158,0.012438777192772534,0.178462453060666,RUNX3,False
+microglial cell_pos,Reactome_2022,Innate Immune System R-HSA-168249,0.013915618990989864,0.178462453060666,"PSTPIP1,MGAM,AIM2,P2RX1,CLEC5A,NOD2,TSPAN32",False
+microglial cell_pos,Reactome_2022,Synthesis Of 15-Eicosatetraenoic Acid Derivatives R-HSA-2142770,0.014908284799373634,0.178462453060666,ALOX15B,False
+microglial cell_pos,Reactome_2022,RUNX1 Regulates Estrogen Receptor Mediated Transcription R-HSA-8931987,0.014908284799373634,0.178462453060666,ESR1,False
+microglial cell_pos,Reactome_2022,RUNX1 Regulates Transcription Of Genes Involved In WNT Signaling R-HSA-8939256,0.014908284799373634,0.178462453060666,ESR1,False
+microglial cell_pos,Reactome_2022,RUNX3 Regulates Immune Response And Cell Migration R-HSA-8949275,0.014908284799373634,0.178462453060666,RUNX3,False
+microglial cell_pos,Reactome_2022,RUNX3 Regulates CDKN1A Transcription R-HSA-8941855,0.017371741450283952,0.178462453060666,RUNX3,False
+microglial cell_pos,Reactome_2022,Formyl Peptide Receptors Bind Formyl Peptides And Many Other Ligands R-HSA-444473,0.01982916145118511,0.178462453060666,FPR3,False
+microglial cell_pos,Reactome_2022,Alpha-defensins R-HSA-1462054,0.01982916145118511,0.178462453060666,TSPAN32,False
+microglial cell_pos,Reactome_2022,Binding Of TCF/LEF:CTNNB1 To Target Gene Promoters R-HSA-4411364,0.01982916145118511,0.178462453060666,RUNX3,False
+microglial cell_pos,Reactome_2022,Ca2+ Activated K+ Channels R-HSA-1296052,0.01982916145118511,0.178462453060666,KCNN4,False
+microglial cell_pos,Reactome_2022,RUNX3 Regulates WNT Signaling R-HSA-8951430,0.01982916145118511,0.178462453060666,RUNX3,False
+microglial cell_pos,Reactome_2022,RUNX3 Regulates YAP1-mediated Transcription R-HSA-8951671,0.01982916145118511,0.178462453060666,RUNX3,False
+microglial cell_pos,Reactome_2022,RUNX3 Regulates p14-ARF R-HSA-8951936,0.02472594881725805,0.1952037136292699,RUNX3,False
+microglial cell_pos,Reactome_2022,Digestion Of Dietary Carbohydrate R-HSA-189085,0.027165344857992397,0.1952037136292699,MGAM,False
+microglial cell_pos,Reactome_2022,Hyaluronan Uptake And Degradation R-HSA-2160916,0.029598761568907096,0.1952037136292699,HYAL3,False
+microglial cell_pos,Reactome_2022,Cytokine Signaling In Immune System R-HSA-1280215,0.03033717311178548,0.1952037136292699,"IL15,TNFRSF9,IFNLR1,NOD2,HLA-DQA1",True
+microglial cell_pos,Reactome_2022,Synthesis Of PE R-HSA-1483213,0.03202621324876303,0.1952037136292699,PHOSPHO1,False
+microglial cell_pos,Reactome_2022,TFAP2 (AP-2) Family Regulates Transcription Of Growth Factors And Their Receptors R-HSA-8866910,0.03202621324876303,0.1952037136292699,ESR1,False
+microglial cell_pos,Reactome_2022,Dissolution Of Fibrin Clot R-HSA-75205,0.03202621324876303,0.1952037136292699,SERPINB8,False
+microglial cell_pos,Reactome_2022,CS/DS Degradation R-HSA-2024101,0.034447714169871156,0.1952037136292699,HYAL3,False
+microglial cell_neg,MSigDB_Hallmark_2020,Fatty Acid Metabolism,0.3277037968552589,0.39536815575105444,G0S2,False
+microglial cell_neg,MSigDB_Hallmark_2020,Myogenesis,0.39536815575105444,0.39536815575105444,HRC,False
+microglial cell_neg,MSigDB_Hallmark_2020,KRAS Signaling Up,0.39536815575105444,0.39536815575105444,G0S2,False
+microglial cell_neg,MSigDB_Hallmark_2020,TNF-alpha Signaling via NF-kB,0.39536815575105444,0.39536815575105444,G0S2,True
+microglial cell_neg,MSigDB_Hallmark_2020,Interferon Gamma Response,0.39536815575105444,0.39536815575105444,ITGB7,True
+microglial cell_neg,GO_Biological_Process_2023,Regulation Of Relaxation Of Cardiac Muscle (GO:1901897),0.012438777192772534,0.15671614488576538,HRC,False
+microglial cell_neg,GO_Biological_Process_2023,Parallel Actin Filament Bundle Assembly (GO:0030046),0.014908284799373634,0.15671614488576538,ESPN,False
+microglial cell_neg,GO_Biological_Process_2023,Positive Regulation Of Blood Circulation (GO:1903524),0.014908284799373634,0.15671614488576538,HRC,False
+microglial cell_neg,GO_Biological_Process_2023,Membrane Lipid Catabolic Process (GO:0046466),0.01982916145118511,0.15671614488576538,SMPDL3B,False
+microglial cell_neg,GO_Biological_Process_2023,Post-Transcriptional Gene Silencing (GO:0016441),0.027165344857992397,0.15671614488576538,MOV10L1,False
+microglial cell_neg,GO_Biological_Process_2023,Regulation Of Cell Communication By Electrical Coupling Involved In Cardiac Conduction (GO:1901844),0.027165344857992397,0.15671614488576538,HRC,False
+microglial cell_neg,GO_Biological_Process_2023,Epithelial Cell Morphogenesis (GO:0003382),0.029598761568907096,0.15671614488576538,RILPL1,False
+microglial cell_neg,GO_Biological_Process_2023,Negative Regulation Of Epidermal Growth Factor-Activated Receptor Activity (GO:0007175),0.029598761568907096,0.15671614488576538,ZGPAT,False
+microglial cell_neg,GO_Biological_Process_2023,Regulation Of Cell Communication By Electrical Coupling (GO:0010649),0.029598761568907096,0.15671614488576538,HRC,False
+microglial cell_neg,GO_Biological_Process_2023,Negative Regulation Of Toll-Like Receptor Signaling Pathway (GO:0034122),0.03202621324876303,0.15671614488576538,SMPDL3B,False
+microglial cell_neg,GO_Biological_Process_2023,Male Meiosis I (GO:0007141),0.039272920734465235,0.15671614488576538,MOV10L1,False
+microglial cell_neg,GO_Biological_Process_2023,Regulation Of Cardiac Muscle Contraction By Regulation Of The Release Of Sequestered Calcium Ion (GO:0010881),0.039272920734465235,0.15671614488576538,HRC,False
+microglial cell_neg,GO_Biological_Process_2023,Positive Regulation Of Heart Rate (GO:0010460),0.04167665479123348,0.15671614488576538,HRC,False
+microglial cell_neg,GO_Biological_Process_2023,Leukocyte Tethering Or Rolling (GO:0050901),0.04167665479123348,0.15671614488576538,ITGB7,False
+microglial cell_neg,GO_Biological_Process_2023,Membrane Lipid Metabolic Process (GO:0006643),0.04167665479123348,0.15671614488576538,SMPDL3B,False
+microglial cell_neg,GO_Biological_Process_2023,Epithelial Cell Development (GO:0002064),0.04407449493169267,0.15671614488576538,RILPL1,False
+microglial cell_neg,GO_Biological_Process_2023,ncRNA-mediated Post-Transcriptional Gene Silencing (GO:0035194),0.04407449493169267,0.15671614488576538,MOV10L1,False
+microglial cell_neg,GO_Biological_Process_2023,Nitric Oxide Mediated Signal Transduction (GO:0007263),0.04407449493169267,0.15671614488576538,RILPL1,False
+microglial cell_neg,GO_Biological_Process_2023,piRNA Processing (GO:0034587),0.04646645529524364,0.15671614488576538,MOV10L1,False
+microglial cell_neg,GO_Biological_Process_2023,Leukocyte Adhesion To Vascular Endothelial Cell (GO:0061756),0.04646645529524364,0.15671614488576538,ITGB7,False
+microglial cell_neg,GO_Biological_Process_2023,Receptor Clustering (GO:0043113),0.04646645529524364,0.15671614488576538,ITGB7,False
+microglial cell_neg,GO_Biological_Process_2023,Regulation Of Calcium Ion Transmembrane Transport (GO:1903169),0.04885254998202776,0.15671614488576538,HRC,False
+microglial cell_neg,GO_Biological_Process_2023,Regulation Of Toll-Like Receptor Signaling Pathway (GO:0034121),0.04885254998202776,0.15671614488576538,SMPDL3B,False
+microglial cell_neg,GO_Biological_Process_2023,Ameboidal-Type Cell Migration (GO:0001667),0.04885254998202776,0.15671614488576538,ITGB7,False
+microglial cell_neg,GO_Biological_Process_2023,Regulation Of Cardiac Muscle Contraction By Calcium Ion Signaling (GO:0010882),0.04885254998202776,0.15671614488576538,HRC,False
+microglial cell_neg,KEGG_2021_Human,Intestinal immune network for IgA production,0.11333801483691312,0.5946075559014855,ITGB7,False
+microglial cell_neg,KEGG_2021_Human,Fanconi anemia pathway,0.1265883240687765,0.5946075559014855,FAAP24,False
+microglial cell_neg,KEGG_2021_Human,Herpes simplex virus 1 infection,0.12804327776642044,0.5946075559014855,"ZNF154,ZNF418,ZNF549",False
+microglial cell_neg,KEGG_2021_Human,Arrhythmogenic right ventricular cardiomyopathy,0.1756071809118701,0.5946075559014855,ITGB7,False
+microglial cell_neg,KEGG_2021_Human,Cardiac muscle contraction,0.19606909758966404,0.5946075559014855,HRC,False
+microglial cell_neg,KEGG_2021_Human,ECM-receptor interaction,0.19808770290364253,0.5946075559014855,ITGB7,False
+microglial cell_neg,KEGG_2021_Human,Gap junction,0.19808770290364253,0.5946075559014855,TUBB8,False
+microglial cell_neg,KEGG_2021_Human,Hypertrophic cardiomyopathy,0.20211002319239676,0.5946075559014855,ITGB7,False
+microglial cell_neg,KEGG_2021_Human,Dilated cardiomyopathy,0.2140587201245348,0.5946075559014855,ITGB7,False
+microglial cell_neg,KEGG_2021_Human,Cell adhesion molecules,0.3105302270346101,0.6316040505792012,ITGB7,False
+microglial cell_neg,KEGG_2021_Human,Phagosome,0.31745063788071526,0.6316040505792012,TUBB8,False
+microglial cell_neg,KEGG_2021_Human,Transcriptional misregulation in cancer,0.38301625183987076,0.6316040505792012,ITGB7,False
+microglial cell_neg,KEGG_2021_Human,Pathogenic Escherichia coli infection,0.3907648554462843,0.6316040505792012,TUBB8,False
+microglial cell_neg,KEGG_2021_Human,Focal adhesion,0.39689500106482833,0.6316040505792012,ITGB7,False
+microglial cell_neg,KEGG_2021_Human,Regulation of actin cytoskeleton,0.4222806321196029,0.6316040505792012,ITGB7,False
+microglial cell_neg,KEGG_2021_Human,Calcium signaling pathway,0.45358310414097847,0.6316040505792012,HRC,False
+microglial cell_neg,KEGG_2021_Human,Salmonella infection,0.4659040445720373,0.6316040505792012,TUBB8,False
+microglial cell_neg,KEGG_2021_Human,Parkinson disease,0.4659040445720373,0.6316040505792012,TUBB8,False
+microglial cell_neg,KEGG_2021_Human,Prion disease,0.4974441859988057,0.6316040505792012,TUBB8,False
+microglial cell_neg,KEGG_2021_Human,Huntington disease,0.5378493420766995,0.6316040505792012,TUBB8,False
+microglial cell_neg,KEGG_2021_Human,Human papillomavirus infection,0.5663227960028818,0.6316040505792012,ITGB7,False
+microglial cell_neg,KEGG_2021_Human,PI3K-Akt signaling pathway,0.5909956578792304,0.6316040505792012,ITGB7,False
+microglial cell_neg,KEGG_2021_Human,Amyotrophic lateral sclerosis,0.6012889018007975,0.6316040505792012,TUBB8,False
+microglial cell_neg,KEGG_2021_Human,Alzheimer disease,0.6063398885560332,0.6316040505792012,TUBB8,False
+microglial cell_neg,KEGG_2021_Human,Pathways of neurodegeneration,0.6998036112134204,0.6998036112134204,TUBB8,False
+microglial cell_neg,Reactome_2022,Keratan Sulfate Degradation R-HSA-2022857,0.029598761568907096,0.4649632161597286,GLB1L,False
+microglial cell_neg,Reactome_2022,"Synthesis, Secretion, And Deacylation Of Ghrelin R-HSA-422085",0.04646645529524364,0.4649632161597286,MBOAT4,False
+microglial cell_neg,Reactome_2022,HS-GAG Degradation R-HSA-2024096,0.0512327930672156,0.4649632161597286,GLB1L,False
+microglial cell_neg,Reactome_2022,PIWI-interacting RNA (piRNA) Biogenesis R-HSA-5601884,0.07006575883720893,0.4649632161597286,MOV10L1,False
+microglial cell_neg,Reactome_2022,Sealing Of Nuclear Envelope (NE) By ESCRT-III R-HSA-9668328,0.07471646000262763,0.4649632161597286,TUBB8,False
+microglial cell_neg,Reactome_2022,Keratan Sulfate/Keratin Metabolism R-HSA-1638074,0.0793443657059371,0.4649632161597286,GLB1L,False
+microglial cell_neg,Reactome_2022,Fanconi Anemia Pathway R-HSA-6783310,0.09081511663134849,0.4649632161597286,FAAP24,False
+microglial cell_neg,Reactome_2022,Carboxyterminal Post-Translational Modifications Of Tubulin R-HSA-8955332,0.09763021468476817,0.4649632161597286,TUBB8,False
+microglial cell_neg,Reactome_2022,Glycosphingolipid Metabolism R-HSA-1660662,0.10663918735293466,0.4649632161597286,GLB1L,False
+microglial cell_neg,Reactome_2022,Heparan Sulfate/Heparin (HS-GAG) Metabolism R-HSA-1638091,0.12439349491287167,0.4649632161597286,GLB1L,False
+microglial cell_neg,Reactome_2022,Sensory Processing Of Sound By Outer Hair Cells Of Cochlea R-HSA-9662361,0.12439349491287167,0.4649632161597286,ESPN,False
+microglial cell_neg,Reactome_2022,Integrin Cell Surface Interactions R-HSA-216083,0.15250939797562668,0.4649632161597286,ITGB7,False
+microglial cell_neg,Reactome_2022,Sensory Processing Of Sound By Inner Hair Cells Of Cochlea R-HSA-9662360,0.15463513630999146,0.4649632161597286,ESPN,False
+microglial cell_neg,Reactome_2022,Sensory Processing Of Sound R-HSA-9659379,0.1714539764404576,0.4649632161597286,ESPN,False
+microglial cell_neg,Reactome_2022,Nuclear Envelope (NE) Reassembly R-HSA-2995410,0.1714539764404576,0.4649632161597286,TUBB8,False
+microglial cell_neg,Reactome_2022,Peptide Hormone Metabolism R-HSA-2980736,0.20010134077429026,0.4649632161597286,MBOAT4,False
+microglial cell_neg,Reactome_2022,Sphingolipid Metabolism R-HSA-428157,0.20010134077429026,0.4649632161597286,GLB1L,False
+microglial cell_neg,Reactome_2022,Post-translational Protein Phosphorylation R-HSA-8957275,0.2335846623503299,0.4649632161597286,HRC,False
+microglial cell_neg,Reactome_2022,Gene Silencing By RNA R-HSA-211000,0.23743240698267418,0.4649632161597286,MOV10L1,False
+microglial cell_neg,Reactome_2022,PPARA Activates Gene Expression R-HSA-1989781,0.25263496658997786,0.4649632161597286,G0S2,False
+microglial cell_neg,Reactome_2022,Regulation Of Lipid Metabolism By PPARalpha R-HSA-400206,0.2563889548341396,0.4649632161597286,G0S2,False
+microglial cell_neg,Reactome_2022,Glycosaminoglycan Metabolism R-HSA-1630316,0.26012446216628154,0.4649632161597286,GLB1L,False
+microglial cell_neg,Reactome_2022,Immunoregulatory Interactions Between A Lymphoid And A non-Lymphoid Cell R-HSA-198933,0.26569326637698776,0.4649632161597286,ITGB7,False
+microglial cell_neg,Reactome_2022,Regulation Of IGF Transport And Uptake By IGFBPs R-HSA-381426,0.26569326637698776,0.4649632161597286,HRC,True
+microglial cell_neg,Reactome_2022,Gene Expression (Transcription) R-HSA-74160,0.2948840031997492,0.4954051253755787,"ZNF154,ZNF418,ZNF549,MOV10L1,ZNF586",False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,MSigDB_Hallmark_2020,Inflammatory Response,0.08924145426065531,0.39536815575105444,"OPRK1,ROS1",True
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,MSigDB_Hallmark_2020,Androgen Response,0.22192691156038513,0.39536815575105444,INPP4B,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,MSigDB_Hallmark_2020,Spermatogenesis,0.2875606166970605,0.39536815575105444,DMRT1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,MSigDB_Hallmark_2020,UV Response Dn,0.30354106685611854,0.39536815575105444,INPP4B,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,MSigDB_Hallmark_2020,Apical Junction,0.39536815575105444,0.39536815575105444,NRAP,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,MSigDB_Hallmark_2020,E2F Targets,0.39536815575105444,0.39536815575105444,MELK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Negative Regulation Of Nuclear Division (GO:0051784),0.00027212309342677823,0.06558166551585355,"BMP4,DMRT1",False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Negative Regulation Of Cell Cycle Process (GO:0010948),0.003265007400933762,0.1770325546422989,"BMP4,DMRT1",False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Regulation Of Mitotic Nuclear Division (GO:0007088),0.008654668543521428,0.1770325546422989,"BMP4,DMRT1",False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Regulation Of Circadian Sleep/Wake Cycle (GO:0042749),0.012438777192772534,0.1770325546422989,HCRTR2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Regulation Of Glutamate Receptor Signaling Pathway (GO:1900449),0.012438777192772534,0.1770325546422989,NECAB2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Regulation Of Thymocyte Apoptotic Process (GO:0070243),0.012438777192772534,0.1770325546422989,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Blood Vessel Endothelial Cell Proliferation Involved In Sprouting Angiogenesis (GO:0002043),0.012438777192772534,0.1770325546422989,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Neuropeptide Signaling Pathway (GO:0007218),0.01256089224520355,0.1770325546422989,"OPRK1,HCRTR2",False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Lymphoid Progenitor Cell Differentiation (GO:0002320),0.014908284799373634,0.1770325546422989,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Regulation Of Digestive System Process (GO:0044058),0.014908284799373634,0.1770325546422989,OPRK1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Regulation Of Saliva Secretion (GO:0046877),0.014908284799373634,0.1770325546422989,OPRK1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Coronary Vasculature Development (GO:0060976),0.017371741450283952,0.1770325546422989,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Negative Regulation Of Mitotic Nuclear Division (GO:0045839),0.01982916145118511,0.1770325546422989,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Mesenchymal To Epithelial Transition (GO:0060231),0.022280559123686802,0.1770325546422989,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,IMP Metabolic Process (GO:0046040),0.022280559123686802,0.1770325546422989,AMPD1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Positive Regulation Of Myoblast Fusion (GO:1901741),0.022280559123686802,0.1770325546422989,CD53,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Endothelial Tube Morphogenesis (GO:0061154),0.022280559123686802,0.1770325546422989,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Lung Epithelium Development (GO:0060428),0.022280559123686802,0.1770325546422989,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Steroid Hormone Mediated Signaling Pathway (GO:0043401),0.02472594881725805,0.1770325546422989,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Regulation Of Glycoprotein Biosynthetic Process (GO:0010559),0.02472594881725805,0.1770325546422989,NECAB2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Columnar/Cuboidal Epithelial Cell Differentiation (GO:0002065),0.02472594881725805,0.1770325546422989,ROS1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Regulation Of Amyloid Precursor Protein Biosynthetic Process (GO:0042984),0.02472594881725805,0.1770325546422989,NECAB2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Hemopoiesis (GO:0030097),0.02643151920502357,0.1770325546422989,"BMP4,MELK",False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,AMP Metabolic Process (GO:0046033),0.027165344857992397,0.1770325546422989,AMPD1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,GO_Biological_Process_2023,Purine Ribonucleoside Monophosphate Biosynthetic Process (GO:0009168),0.027165344857992397,0.1770325546422989,AMPD1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,KEGG_2021_Human,Basal cell carcinoma,0.1461007034145454,0.4023772752915847,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,KEGG_2021_Human,Inositol phosphate metabolism,0.1672802691231711,0.4023772752915847,INPP4B,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,KEGG_2021_Human,Neuroactive ligand-receptor interaction,0.20964106712931346,0.4023772752915847,"OPRK1,HCRTR2",False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,KEGG_2021_Human,TGF-beta signaling pathway,0.2100954368002021,0.4023772752915847,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,KEGG_2021_Human,Phosphatidylinositol signaling system,0.2160330472811356,0.4023772752915847,INPP4B,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,KEGG_2021_Human,Thyroid hormone signaling pathway,0.26198531339212133,0.4023772752915847,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,KEGG_2021_Human,Purine metabolism,0.2767079241059198,0.4023772752915847,AMPD1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,KEGG_2021_Human,Fluid shear stress and atherosclerosis,0.29470691822637646,0.4023772752915847,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,KEGG_2021_Human,Signaling pathways regulating pluripotency of stem cells,0.3017829564686885,0.4023772752915847,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,KEGG_2021_Human,Hippo signaling pathway,0.33613266608727643,0.4033591993047317,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,KEGG_2021_Human,Cytokine-cytokine receptor interaction,0.5247480242056516,0.572452390042529,BMP4,True
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,KEGG_2021_Human,Pathways in cancer,0.7400095475471683,0.7400095475471683,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Purine Salvage R-HSA-74217,0.03202621324876303,0.33055871198769504,AMPD1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Transcriptional Regulation Of Testis Differentiation R-HSA-9690406,0.03202621324876303,0.33055871198769504,DMRT1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,"Synthesis Of IP2, IP, And Ins In Cytosol R-HSA-1855183",0.034447714169871156,0.33055871198769504,INPP4B,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Synthesis Of PIPs At Early Endosome Membrane R-HSA-1660516,0.039272920734465235,0.33055871198769504,INPP4B,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Gastrulation R-HSA-9758941,0.04167665479123348,0.33055871198769504,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,MECP2 Regulates Neuronal Receptors And Channels R-HSA-9022699,0.04407449493169267,0.33055871198769504,OPRK1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Nucleotide Salvage R-HSA-8956321,0.05597578058787951,0.34909650639246464,AMPD1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Molecules Associated With Elastic Fibres R-HSA-2129379,0.0677318256109869,0.34909650639246464,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,PIWI-interacting RNA (piRNA) Biogenesis R-HSA-5601884,0.07006575883720893,0.34909650639246464,TDRD9,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Defective B3GALTL Causes PpS R-HSA-5083635,0.08853222789026767,0.34909650639246464,ADAMTSL1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,O-glycosylation Of TSR Domain-Containing Proteins R-HSA-5173214,0.09081511663134849,0.34909650639246464,ADAMTSL1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Elastic Fibre Formation R-HSA-1566948,0.09309240170465724,0.34909650639246464,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Inositol Phosphate Metabolism R-HSA-1483249,0.11333801483691312,0.38567445724957744,INPP4B,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Synthesis Of PIPs At Plasma Membrane R-HSA-1660499,0.11998760892209076,0.38567445724957744,INPP4B,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Transcriptional Regulation By MECP2 R-HSA-8986944,0.13964452305344063,0.4189335691603219,OPRK1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Diseases Associated With O-glycosylation Of Proteins R-HSA-3906995,0.15887094888113906,0.4468245437282036,ADAMTSL1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,PI Metabolism R-HSA-1483255,0.1859011384602527,0.49209124886537475,INPP4B,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Metabolism Of Nucleotides R-HSA-15869,0.2120795205832498,0.5087837292485875,AMPD1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Post-translational Protein Phosphorylation R-HSA-8957275,0.2335846623503299,0.5087837292485875,BMP4,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,O-linked Glycosylation R-HSA-5173105,0.23551090700841826,0.5087837292485875,ADAMTSL1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Gene Silencing By RNA R-HSA-211000,0.23743240698267418,0.5087837292485875,TDRD9,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Regulation Of IGF Transport And Uptake By IGFBPs R-HSA-381426,0.26569326637698776,0.543463499407475,BMP4,True
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Diseases Of Glycosylation R-HSA-3781865,0.3017829564686885,0.5904449148300428,ADAMTSL1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Peptide Ligand-Binding Receptors R-HSA-375276,0.38922280309567664,0.7297927558043937,OPRK1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_pos,Reactome_2022,Phospholipid Metabolism R-HSA-1483257,0.4074776246816245,0.7334597244269242,INPP4B,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,MSigDB_Hallmark_2020,Pancreas Beta Cells,0.09536409657552716,0.39536815575105444,GCK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,MSigDB_Hallmark_2020,Wnt-beta Catenin Signaling,0.09989076947033614,0.39536815575105444,WNT6,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,MSigDB_Hallmark_2020,Fatty Acid Metabolism,0.3277037968552589,0.39536815575105444,AQP7,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,MSigDB_Hallmark_2020,Xenobiotic Metabolism,0.39536815575105444,0.39536815575105444,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,MSigDB_Hallmark_2020,KRAS Signaling Up,0.39536815575105444,0.39536815575105444,TPH1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,MSigDB_Hallmark_2020,Hypoxia,0.39536815575105444,0.39536815575105444,GCK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,MSigDB_Hallmark_2020,Adipogenesis,0.39536815575105444,0.39536815575105444,LEP,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,MSigDB_Hallmark_2020,Myc Targets V1,0.39536815575105444,0.39536815575105444,U2AF1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Response To Leptin (GO:0044321),0.00016986300982591541,0.04059725934839378,"LEP,GCK",False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Cellular Response To Hormone Stimulus (GO:0032870),0.0016793598271121666,0.13813866853319537,"PAX8,LEP,GCK",False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Regulation Of Peptide Hormone Secretion (GO:0090276),0.007499481830469069,0.13813866853319537,"PAX8,GCK",False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Protein Localization To Non-Motile Cilium (GO:0097499),0.012438777192772534,0.13813866853319537,ARL13B,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Mesenchymal To Epithelial Transition Involved In Metanephros Morphogenesis (GO:0003337),0.012438777192772534,0.13813866853319537,PAX8,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Regulation Of Tooth Mineralization (GO:0070170),0.012438777192772534,0.13813866853319537,WNT6,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Hexose Catabolic Process (GO:0019320),0.012438777192772534,0.13813866853319537,GCK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Response To Gonadotropin (GO:0034698),0.012438777192772534,0.13813866853319537,PAX8,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Regulation Of Natural Killer Cell Mediated Immunity (GO:0002715),0.012438777192772534,0.13813866853319537,LEP,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Positive Regulation Of Epithelial Cell Differentiation Involved In Kidney Development (GO:2000698),0.012438777192772534,0.13813866853319537,PAX8,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Pronephros Development (GO:0048793),0.012438777192772534,0.13813866853319537,PAX8,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Epithelial Cell Differentiation Involved In Kidney Development (GO:0035850),0.014908284799373634,0.13813866853319537,PAX8,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Positive Regulation Of Hormone Metabolic Process (GO:0032352),0.014908284799373634,0.13813866853319537,PAX8,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Protein Localization To Ciliary Membrane (GO:1903441),0.014908284799373634,0.13813866853319537,ARL13B,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Metanephric Nephron Tubule Development (GO:0072234),0.014908284799373634,0.13813866853319537,PAX8,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Cellular Response To Gonadotropin Stimulus (GO:0071371),0.014908284799373634,0.13813866853319537,PAX8,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Glycerol-3-Phosphate Metabolic Process (GO:0006072),0.014908284799373634,0.13813866853319537,GCK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Adult Feeding Behavior (GO:0008343),0.014908284799373634,0.13813866853319537,LEP,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Response To Insulin (GO:0032868),0.016695477638347864,0.13813866853319537,"LEP,GCK",True
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Negative Regulation Of Glucose Import (GO:0046325),0.017371741450283952,0.13813866853319537,LEP,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Thyroid Gland Development (GO:0030878),0.017371741450283952,0.13813866853319537,PAX8,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Cellular Response To Leptin Stimulus (GO:0044320),0.017371741450283952,0.13813866853319537,LEP,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Alditol Metabolic Process (GO:0019400),0.017371741450283952,0.13813866853319537,GCK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Negative Regulation Of Appetite (GO:0032099),0.017371741450283952,0.13813866853319537,LEP,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,GO_Biological_Process_2023,Positive Regulation Of Tooth Mineralization (GO:0070172),0.017371741450283952,0.13813866853319537,WNT6,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Tryptophan metabolism,0.0049475924537835565,0.25232721514296136,"TPH1,CYP1A2",False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,"Neomycin, kanamycin and gentamicin biosynthesis",0.012438777192772534,0.25344084158935176,GCK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Caffeine metabolism,0.014908284799373634,0.25344084158935176,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Maturity onset diabetes of the young,0.06304672495404354,0.4022813592526925,GCK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Folate biosynthesis,0.06304672495404354,0.4022813592526925,TPH1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Linoleic acid metabolism,0.07006575883720893,0.4022813592526925,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Galactose metabolism,0.07471646000262763,0.4022813592526925,GCK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Starch and sucrose metabolism,0.08624372197430759,0.4022813592526925,GCK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Thyroid cancer,0.08853222789026767,0.4022813592526925,PAX8,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Type II diabetes mellitus,0.10887762220856746,0.4022813592526925,GCK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Amino sugar and nucleotide sugar metabolism,0.11333801483691312,0.4022813592526925,GCK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Regulation of lipolysis in adipocytes,0.12877776139221664,0.4022813592526925,AQP7,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Steroid hormone biosynthesis,0.1418018805927374,0.4022813592526925,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Basal cell carcinoma,0.1461007034145454,0.4022813592526925,WNT6,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Glycolysis / Gluconeogenesis,0.15463513630999146,0.4022813592526925,GCK,True
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Retinol metabolism,0.15675564908065587,0.4022813592526925,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Adipocytokine signaling pathway,0.15887094888113906,0.4022813592526925,LEP,True
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Central carbon metabolism in cancer,0.16098104828531062,0.4022813592526925,GCK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Prolactin signaling pathway,0.16098104828531062,0.4022813592526925,GCK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,PPAR signaling pathway,0.16936969182663447,0.4022813592526925,AQP7,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Thyroid hormone synthesis,0.1714539764404576,0.4022813592526925,PAX8,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Metabolism of xenobiotics by cytochrome P450,0.17353313536390655,0.4022813592526925,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Insulin secretion,0.19404551285483848,0.43027483285203316,GCK,True
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Melanogenesis,0.22388186624120487,0.43918388146155485,WNT6,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,KEGG_2021_Human,Glucagon signaling pathway,0.23551090700841826,0.43918388146155485,GCK,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Serotonin And Melatonin Biosynthesis R-HSA-209931,0.012438777192772534,0.26364994071690934,TPH1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Acrosome Reaction And Sperm:Oocyte Membrane Binding R-HSA-1300645,0.014908284799373634,0.26364994071690934,IZUMO2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Biosynthesis Of Maresin-Like SPMs R-HSA-9027307,0.014908284799373634,0.26364994071690934,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Biosynthesis Of Maresins R-HSA-9018682,0.01982916145118511,0.26364994071690934,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Synthesis Of Epoxy (EET) And Dihydroxyeicosatrienoic Acids (DHET) R-HSA-2142670,0.01982916145118511,0.26364994071690934,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Synthesis Of (16-20)-Hydroxyeicosatetraenoic Acids (HETE) R-HSA-2142816,0.022280559123686802,0.26364994071690934,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Signaling By Leptin R-HSA-2586552,0.027165344857992397,0.26364994071690934,LEP,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Apoptotic Cleavage Of Cell Adhesion Proteins R-HSA-351906,0.027165344857992397,0.26364994071690934,DSG3,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Passive Transport By Aquaporins R-HSA-432047,0.029598761568907096,0.26364994071690934,AQP7,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Methylation R-HSA-156581,0.034447714169871156,0.26364994071690934,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Biosynthesis Of DHA-derived SPMs R-HSA-9018677,0.04167665479123348,0.26364994071690934,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Metabolism Of Amine-Derived Hormones R-HSA-209776,0.04407449493169267,0.26364994071690934,TPH1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Biosynthesis Of Specialized Proresolving Mediators (SPMs) R-HSA-9018678,0.04646645529524364,0.26364994071690934,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,"Synthesis, Secretion, And Deacylation Of Ghrelin R-HSA-422085",0.04646645529524364,0.26364994071690934,LEP,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Aflatoxin Activation And Detoxification R-HSA-5423646,0.04646645529524364,0.26364994071690934,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Chaperone Mediated Autophagy R-HSA-9613829,0.04885254998202776,0.26364994071690934,ARL13B,True
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,"Synthesis, Secretion, And Inactivation Of Glucagon-like Peptide-1 (GLP-1) R-HSA-381771",0.0512327930672156,0.26364994071690934,LEP,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,"Incretin Synthesis, Secretion, And Inactivation R-HSA-400508",0.05833855301300996,0.26364994071690934,LEP,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Aggrephagy R-HSA-9646399,0.05833855301300996,0.26364994071690934,ARL13B,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Xenobiotics R-HSA-211981,0.05833855301300996,0.26364994071690934,CYP1A2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Fertilization R-HSA-1187000,0.06069552982417541,0.26364994071690934,IZUMO2,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,WNT Ligand Biogenesis And Trafficking R-HSA-3238698,0.06304672495404354,0.26364994071690934,WNT6,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Late Endosomal Microautophagy R-HSA-9615710,0.07471646000262763,0.28641309667673925,ARL13B,True
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,EGFR Downregulation R-HSA-182971,0.07471646000262763,0.28641309667673925,EPN1,False
+L2/3 intratelencephalic projecting glutamatergic neuron_neg,Reactome_2022,Detoxification Of Reactive Oxygen Species R-HSA-3299685,0.0816498044624026,0.30047128042164156,NOX5,True

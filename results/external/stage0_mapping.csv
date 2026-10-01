@@ -1,0 +1,25 @@
+seaad_subclass,seaad_cell_type,dlpfc_type,mapping_key,n_nuclei,mapped
+Astrocyte,astrocyte of the cerebral cortex,,,70009,False
+Chandelier,pvalb chandelier GABAergic interneuron,,,10928,False
+Endothelial,cerebral cortex endothelial cell,,,2069,False
+L2/3 IT,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3-6 intratelencephalic projecting glutamatergic neuron,cell_type_exact,330085,True
+L4 IT,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3-6 intratelencephalic projecting glutamatergic neuron,cell_type_exact,168860,True
+L5 ET,L5 extratelencephalic projecting glutamatergic cortical neuron,,,2590,False
+L5 IT,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3-6 intratelencephalic projecting glutamatergic neuron,cell_type_exact,128090,True
+L5/6 NP,near-projecting glutamatergic cortical neuron,,,20741,False
+L6 CT,corticothalamic-projecting glutamatergic cortical neuron,,,18402,False
+L6 IT,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3-6 intratelencephalic projecting glutamatergic neuron,cell_type_exact,45252,True
+L6 IT Car3,L2/3-6 intratelencephalic projecting glutamatergic neuron,L2/3-6 intratelencephalic projecting glutamatergic neuron,cell_type_exact,26129,True
+L6b,L6b glutamatergic cortical neuron,,,16227,False
+Lamp5,lamp5 GABAergic interneuron,lamp5 GABAergic interneuron,cell_type_exact,42921,True
+Lamp5 Lhx6,lamp5 GABAergic interneuron,lamp5 GABAergic interneuron,cell_type_exact,21443,True
+Microglia-PVM,microglial cell,microglial cell,cell_type_exact,40000,True
+OPC,oligodendrocyte precursor cell,oligodendrocyte precursor cell,cell_type_exact,32493,True
+Oligodendrocyte,oligodendrocyte,oligodendrocyte,cell_type_exact,111194,True
+Pax6,caudal ganglionic eminence derived interneuron,,,9203,False
+Pvalb,pvalb GABAergic interneuron,pvalb GABAergic interneuron,cell_type_exact,90804,True
+Sncg,sncg GABAergic interneuron,,,22168,False
+Sst,sst GABAergic interneuron,sst GABAergic interneuron,cell_type_exact,58265,True
+Sst Chodl,sst GABAergic interneuron,sst GABAergic interneuron,cell_type_exact,1496,True
+VLMC,vascular leptomeningeal cell,vascular leptomeningeal cell,cell_type_exact,4328,True
+Vip,VIP GABAergic interneuron,VIP GABAergic interneuron,cell_type_exact,104514,True

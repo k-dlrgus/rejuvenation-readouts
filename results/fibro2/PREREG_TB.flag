@@ -1,0 +1,12 @@
+Written **before any T-B QC table or d0→d7 null**, 2026-09-18. No threshold in this block is re-tuned after numbers exist.
+
+From the GSE297234 Cell Ranger `filtered_feature_bc_matrix.h5` matrices already on disk under `data/raw/gse297234/RAW/`, report **per donor × timepoint**: cells recovered, median UMI/cell, median genes/cell, mitochondrial read fraction, and n cells per unsupervised cluster. Table only — this is a QC audit, not a model. Unsupervised clusters are the Stage 2 spec: within each donor × timepoint independently, log1p(CP10k) on genes overlapping the frozen ruler, PCA 20 (or n_cells−1 if smaller), k-means k=3, seed `20260914`. Skip a group if n_cells < 50.
+
+Then rerun the Stage 2 **random-direction null exactly as pre-registered** (200 permuted-weight directions, seed `20260914`) on the **d0→d7 endpoint** in addition to the d0→d10 endpoint already reported, for both donors, both pseudobulk variants (all-cell primary, per-cluster secondary). Cluster labels are assigned independently per donor × timepoint; the secondary pairing is by **within-timepoint cell-count rank** (largest / middle / smallest), not by k-means ID. Do not average cluster ranks into the all-cell primary. Do not average donors.
+
+Endpoint decline = age_score(day 0) − age_score(day T). Positive = younger on the ruler. Empirical p = (n_random ≥ real + 1) / (n_random + 1). Pass bar remains p ≤ 0.05. A post-hoc d7 endpoint is not permitted to become the primary Stage 2 result.
+
+**Pre-registered reading** (caveat on the verdict, not a reversal of it):
+- d0→d7 also gives p > 0.05 → the `no_decline` verdict does not depend on d10; d10's behaviour is a side observation.
+- d0→d7 gives p ≤ 0.05 while d0→d10 does not, **and** the QC table shows d10 differing materially from d0/d3/d7 on cells recovered, depth, or mitochondrial fraction → the endpoint choice is confounded by a technical difference at d10. Report as a caveat. State what would settle it (a cohort with more donors and a pre-registered endpoint).
+- d0→d7 gives p ≤ 0.05 with no technical difference at d10 → report the discrepancy and say it is unexplained.

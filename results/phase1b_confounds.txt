@@ -1,0 +1,121 @@
+﻿=== covariates vs age (is proliferation / depth itself age-associated?) ===
+Spearman(age, covariate) within cell type:
+covariate       cc_umi_frac  mean_counts_per_cell  mean_genes_per_cell  n_cells  prolif_marker_cell_frac
+celltype                                                                                                
+B_intermediate       +0.125                +0.136               +0.117   -0.013                   -0.003
+B_memory             +0.061                +0.174               +0.151   -0.164                   +0.072
+B_naive              +0.007                +0.177               +0.139   +0.003                   +0.050
+CD14_Mono            -0.122                +0.156               +0.099   +0.062                   -0.034
+CD16_Mono            +0.094                +0.111               +0.079   +0.059                   +0.031
+CD4_CTL              +0.117                +0.068               +0.056   +0.030                   +0.079
+CD4_Naive            -0.089                +0.237               +0.179   -0.244                   -0.091
+CD4_TCM              +0.024                +0.192               +0.157   -0.042                   +0.073
+CD4_TEM              +0.173                +0.192               +0.198   -0.072                   +0.096
+CD8_Naive            -0.039                +0.247               +0.213   -0.586                   -0.045
+CD8_TCM              -0.002                +0.334               +0.307   +0.051                   +0.052
+CD8_TEM              +0.084                +0.189               +0.175   +0.158                   +0.079
+MAIT                 +0.058                +0.273               +0.258   -0.105                   +0.126
+NK                   -0.097                +0.208               +0.175   +0.248                   +0.077
+Treg                 +0.129                +0.226               +0.215   -0.016                   -0.002
+gdT                  +0.173                +0.148               +0.192   +0.039                   +0.084
+
+sex vs age across donors: male 64.2y (n=416), female 63.7y (n=565), Welch p=0.586 -> NOT confounded
+
+=== genome-wide flag counts (all 13,904 expressed genes) ===
+  flag_cc_list          144
+  flag_cc_data           69
+  flag_cell_cycle       195
+  flag_ribo             157
+  flag_mito              13
+  flag_sex_chrom        462
+  flag_sex_data          25
+  flag_sex              463
+  flag_depth            236
+  flag_technical        355
+
+=== PRIMARY A-genes: n=140 (thresholds {'t_age': 0.005, 'k_ct': 0.2, 't_ct': 0.5, 'k_age': 0.001}) ===
+                                                     filter  flagged_marginal  removed_incremental  surviving
+             cell-cycle (Tirosh S/G2M + proliferation list)                 1                    1        139
+        cell-cycle (data: |r|>=0.3 with cycling covariates)                 2                    2        137
+                                    ribosomal (RPL/RPS/MRP)                 0                    0        137
+                                        mitochondrial (MT-)                 2                    2        135
+                                     sex-linked (chrX/chrY)                 7                    7        128
+                sex-DE (|d|>=0.5, p<1e-6, within cell type)                 0                    0        128
+depth-correlated (|r|>=0.3 with mean counts/genes per cell)                27                   23        105
+
+A-genes removed as cell-cycle: 3; additionally as technical (ribo/mito/depth): 26; cell-cycle OR technical: 29/140 = 20.7%
+A-genes removed as sex-linked only (biological covariate, reported separately): 6
+A-genes surviving ALL filters: 105/140 = 75.0%
+Flagged A-genes:
+   SET            age=0.0268 ct=0.186 r_cc=+0.13 r_prolif=-0.20 r_depth=-0.58/-0.50 d_sex=+0.26 chr=9 [depth]
+   RIPOR2         age=0.0264 ct=0.159 r_cc=+0.05 r_prolif=-0.06 r_depth=-0.35/-0.27 d_sex=+0.00 chr=6 [depth]
+   DCK            age=0.0254 ct=0.161 r_cc=+0.14 r_prolif=-0.07 r_depth=-0.36/-0.28 d_sex=+0.08 chr=4 [depth]
+   HNRNPH1        age=0.0237 ct=0.058 r_cc=+0.02 r_prolif=-0.32 r_depth=-0.71/-0.68 d_sex=+0.26 chr=5 [cc_data, depth]
+   ENSG00000260613 age=0.0234 ct=0.009 r_cc=+0.00 r_prolif=+0.12 r_depth=+0.40/+0.35 d_sex=-0.12 chr=22 [depth]
+   C6orf62        age=0.0226 ct=0.059 r_cc=+0.08 r_prolif=-0.17 r_depth=-0.51/-0.44 d_sex=+0.20 chr=6 [depth]
+   C1orf56        age=0.0220 ct=0.159 r_cc=+0.03 r_prolif=-0.27 r_depth=-0.68/-0.64 d_sex=+0.25 chr=1 [depth]
+   SRSF6          age=0.0215 ct=0.053 r_cc=+0.08 r_prolif=-0.19 r_depth=-0.48/-0.42 d_sex=+0.20 chr=20 [depth]
+   DONSON         age=0.0209 ct=0.030 r_cc=+0.04 r_prolif=+0.09 r_depth=+0.32/+0.29 d_sex=-0.08 chr=21 [depth]
+   RBIS           age=0.0207 ct=0.046 r_cc=+0.04 r_prolif=+0.24 r_depth=+0.51/+0.51 d_sex=-0.24 chr=8 [depth]
+   GABRE          age=0.0195 ct=0.012 r_cc=+0.01 r_prolif=+0.10 r_depth=+0.36/+0.32 d_sex=-0.13 chr=X [sex_chrom, depth]
+   EIF3F          age=0.0171 ct=0.115 r_cc=+0.03 r_prolif=+0.24 r_depth=+0.52/+0.50 d_sex=-0.08 chr=11 [depth]
+   PPP1CB         age=0.0166 ct=0.149 r_cc=+0.09 r_prolif=-0.22 r_depth=-0.54/-0.49 d_sex=+0.18 chr=2 [depth]
+   RSL24D1        age=0.0166 ct=0.085 r_cc=+0.07 r_prolif=-0.19 r_depth=-0.46/-0.43 d_sex=+0.12 chr=15 [depth]
+   ARRDC3         age=0.0160 ct=0.048 r_cc=+0.11 r_prolif=-0.16 r_depth=-0.45/-0.40 d_sex=+0.11 chr=5 [depth]
+   GOLGA4         age=0.0129 ct=0.135 r_cc=+0.03 r_prolif=+0.13 r_depth=+0.32/+0.32 d_sex=-0.13 chr=3 [depth]
+   CNBP           age=0.0121 ct=0.198 r_cc=+0.22 r_prolif=+0.30 r_depth=+0.42/+0.50 d_sex=-0.23 chr=3 [cc_data, depth]
+   TRA2A          age=0.0121 ct=0.113 r_cc=+0.08 r_prolif=-0.19 r_depth=-0.48/-0.45 d_sex=+0.18 chr=7 [depth]
+   GLRA2          age=0.0117 ct=0.015 r_cc=-0.00 r_prolif=+0.08 r_depth=+0.27/+0.24 d_sex=-0.09 chr=X [sex_chrom]
+   ENSG00000259865 age=0.0107 ct=0.095 r_cc=-0.00 r_prolif=-0.17 r_depth=-0.36/-0.33 d_sex=+0.15 chr=1 [depth]
+   MDM4           age=0.0101 ct=0.188 r_cc=+0.00 r_prolif=-0.22 r_depth=-0.50/-0.48 d_sex=+0.18 chr=1 [depth]
+   PSMA3-AS1      age=0.0100 ct=0.107 r_cc=+0.01 r_prolif=-0.18 r_depth=-0.42/-0.40 d_sex=+0.14 chr=14 [depth]
+   DNTTIP2        age=0.0099 ct=0.093 r_cc=+0.07 r_prolif=+0.16 r_depth=+0.34/+0.35 d_sex=-0.13 chr=1 [depth]
+   FTX            age=0.0093 ct=0.098 r_cc=+0.00 r_prolif=-0.05 r_depth=-0.26/-0.21 d_sex=+0.00 chr=X [sex_chrom]
+   LBR            age=0.0090 ct=0.098 r_cc=+0.18 r_prolif=-0.00 r_depth=-0.16/-0.09 d_sex=+0.01 chr=1 [cc_list]
+   F8A1           age=0.0088 ct=0.072 r_cc=+0.04 r_prolif=-0.04 r_depth=-0.17/-0.12 d_sex=+0.10 chr=X [sex_chrom]
+   MT-ATP8        age=0.0088 ct=0.077 r_cc=-0.04 r_prolif=+0.12 r_depth=+0.31/+0.29 d_sex=-0.11 chr=MT [mito, depth]
+   RASSF3         age=0.0084 ct=0.153 r_cc=+0.07 r_prolif=-0.10 r_depth=-0.31/-0.26 d_sex=+0.10 chr=12 [depth]
+   EIF1AX         age=0.0082 ct=0.016 r_cc=+0.15 r_prolif=+0.01 r_depth=-0.15/-0.09 d_sex=-1.01 chr=X [sex_chrom, sex_data]
+   PAN3           age=0.0078 ct=0.074 r_cc=+0.01 r_prolif=-0.18 r_depth=-0.38/-0.37 d_sex=+0.16 chr=13 [depth]
+   BAZ1A          age=0.0078 ct=0.105 r_cc=+0.08 r_prolif=+0.16 r_depth=+0.32/+0.34 d_sex=-0.13 chr=14 [depth]
+   TRAM1          age=0.0075 ct=0.200 r_cc=+0.19 r_prolif=-0.07 r_depth=-0.33/-0.24 d_sex=+0.14 chr=8 [depth]
+   MT-ND2         age=0.0070 ct=0.197 r_cc=-0.10 r_prolif=+0.06 r_depth=+0.19/+0.15 d_sex=-0.16 chr=MT [mito]
+   PRKX           age=0.0064 ct=0.088 r_cc=+0.05 r_prolif=+0.13 r_depth=+0.29/+0.29 d_sex=-0.54 chr=X [sex_chrom, sex_data]
+   OGT            age=0.0062 ct=0.111 r_cc=-0.01 r_prolif=-0.10 r_depth=-0.24/-0.22 d_sex=+0.09 chr=X [sex_chrom]
+
+Surviving A-genes: LSM5, SBDS, MAT2B, PTPN3, ACVR2B, ARHGAP45, CBX3, SEC22B, USP15, C16orf54, BAZ2A, EIF4E, ETV7, MARCHF6, ENSG00000225963, BTF3L4, PHLDA3, BCLAF1, CNIH1, HNRNPD, PER1, EIF3J, MEMO1, MATCAP1, PNRC1, NEK7, SLC30A7, ANKRD49, CHASERR, LRRC75A, ADNP, SYNE3, INTS6, ELK4, ENSG00000262967, PAFAH1B2, DENR, BOLA2B, CNOT9, YIPF4, RBBP4, SMCR5, GOLGB1, C2orf68, TBL1XR1, RSBN1L, WHAMM, ARID4A, CNOT7, ZNF384, UBE2W, RSF1, CNN2, DUXAP8, ENSG00000237343, TGFBR2, SFPQ, CASP2, GIGYF1, YAF2, NMT1, ALYREF, ENSG00000270681, FAM76A, PPP1R14B, EXOSC6, CITED4, CSRNP1, PIM3, AEN, RNF169, EIF2S2, B3GALT6, KIF5B, RNMT, C11orf58, LONP2, MARCHF7, QSOX2, PHF3, TFAP4, CSKMT, ANKRD44-IT1, SOCS1, CETN3, ZDHHC2, RBM26, ENSG00000246851, CSDE1, MZF1-AS1, FNBP4, TMEM64, HP1BP3, SMC3, MED31, PSD4, ATF1, ANKRD40, RNF187, NBPF9, TSPYL1, OSER1, ENSG00000288066, ENSG00000274818, CARNMT1
+
+Batch check on A-genes: fraction of age signal retained after adjusting for pool:
+count   140.000
+mean      0.073
+std       0.118
+min       0.000
+25%       0.006
+50%       0.034
+75%       0.086
+max       0.730
+   A-genes with <50% of age signal retained within pool: 136
+   A-genes with <25% of age signal retained within pool: 131
+
+STOP CONDITION 1b (majority of A-genes removed as cell-cycle or technical): NOT fired (29/140 = 20.7%)
+
+=== sweep: A-gene confound removal across thresholds ===
+ t_age  k_ct  n_A  n_cell_cycle  n_cc_list  n_cc_data  n_ribo  n_mito  n_depth  n_sex  n_cc_or_tech  frac_cc_or_tech  n_surviving
+ 0.002 0.100  328             2          1          1       5       1       14     17            20            0.061          292
+ 0.002 0.200  700             5          3          2       6       2       36     30            46            0.066          626
+ 0.002 0.300  872             6          4          2       8       5       50     38            65            0.075          771
+ 0.002 0.500 1096            10          5          6       9       8       93     44           114            0.104          940
+ 0.005 0.100   65             2          1          1       0       1       13      6            14            0.215           46
+ 0.005 0.200  140             3          1          2       0       2       27      7            29            0.207          105
+ 0.005 0.300  170             3          1          2       0       2       35      9            37            0.218          125
+ 0.005 0.500  242             6          2          5       0       3       60     11            65            0.269          167
+ 0.010 0.100   13             1          0          1       0       0       10      2            10            0.769            2
+ 0.010 0.200   30             2          0          2       0       0       21      2            21            0.700            8
+ 0.010 0.300   39             2          0          2       0       0       24      4            24            0.615           12
+ 0.010 0.500   64             2          0          2       0       1       39      5            39            0.609           21
+ 0.020 0.100    6             1          0          1       0       0        6      0             6            1.000            0
+ 0.020 0.200   10             1          0          1       0       0       10      0            10            1.000            0
+ 0.020 0.300   11             1          0          1       0       0       10      1            10            0.909            0
+ 0.020 0.500   19             1          0          1       0       0       16      1            16            0.842            2
+
+PRIMARY I-genes n=1164: cell-cycle 34, ribo 45, mito 1, sex 34, depth 45

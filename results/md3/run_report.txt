@@ -1,0 +1,494 @@
+====================================================================================================
+MD3 RUN  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / AddModuleScore inherited from md2; not re-tuned.
+====================================================================================================
+MD3 GENESETS  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / AddModuleScore inherited from md2; not re-tuned.
+## Why Table S3 age-up / age-down lists are exact, not an approximation
+
+FINDINGS_MD2.md did not run the authors' aging signature because GSE113957 is FPKM
+and the STAR Methods DESeq2 old-versus-young split (adjusted p < 0.05, log2FC > 0.5,
+old/young from PCA separation, DESeq2 v1.40.2) could not be rebuilt from integer
+counts. That refusal still stands: this prompt does not rebuild the DE analysis.
+
+mmc3.xlsx Table S3 (sheet `Aging_signatures`, columns `Age up` and `Age down`) is
+the authors' own published output of that DESeq2 analysis. Scoring those lists is
+using the published result, not reconstructing the test that produced it. That is
+therefore permitted here, where approximating the DE from FPKM was not.
+
+Mismatch versus a rebuilt DE, if one were later released, would be reported; it is
+not a reason to withhold the published lists.
+
+[mmc3] path=<repo>\results\md\raw\suppl__ars.els-cdn.com__1-s2.0-S0092867425008530-mmc3.xlsx sheets=['MD_signatures', 'Aging_signatures', 'Fibroblast_subtype_signatures', 'Reprog_cell_state_signatures']
+[id_type mmc3_Age_up] kind=symbol n=1533 n_ensembl=437 n_refseq=0 n_symbol_like=1095 source=<repo>\results\md\raw\suppl__ars.els-cdn.com__1-s2.0-S0092867425008530-mmc3.xlsx:Aging_signatures:Age up examples=['SCN1A', 'STEAP4', 'ADH1B', 'KCNA4', 'LEP', 'SLC25A52', 'SRD5A2', 'FMO2']
+[id_type mmc3_Age_down] kind=symbol n=2007 n_ensembl=213 n_refseq=0 n_symbol_like=1791 source=<repo>\results\md\raw\suppl__ars.els-cdn.com__1-s2.0-S0092867425008530-mmc3.xlsx:Aging_signatures:Age down examples=['CACNG4', 'CACNA1H', 'STRA6', 'SLC35F3', 'RRM2', 'DGKG', 'ALDH1A1', 'TMEM191A']
+[mmc3-aging] Age up n=1533 Age down n=2007 id_up=symbol id_down=symbol
+[mmc3 vs md2] Age up equal=True n_mmc3=1533 n_md2=1533 only_mmc3=[] only_md2=[]
+[mmc3 vs md2] Age down equal=True n_mmc3=2007 n_md2=2007
+====================================================================================================
+MD3 TASK1  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / AddModuleScore inherited from md2; not re-tuned.
+Written **before any MD3 age / MD / TGF-β / Table S3 / pluripotency score**, 2026-09-19. No threshold in this block is re-tuned after numbers exist.
+
+Using the src/md2_*.py Louvain clustering already computed (19 clusters per donor; not re-run, not re-tuned). Cell-state labels are the md2 assignment: argmax of mean AddModuleScore of mmc3 Reprog_cell_state_signatures columns Fibroblast / PartialReprog / EarlyPluripotency / Pluripotency / NonReprog. Labels are read from results/md2/t2_cluster_labels_*.csv. Not re-labelled.
+
+Three aggregation levels, each reported separately and never averaged together:
+- (a) pooled by cell state — all PartialReprog clusters pooled into one pseudobulk per timepoint, likewise each other state. This is the level their Figure 3G operates at and is the **primary cell**. No MIN_CELLS cutoff is applied to the pool (pooling is the reason this prompt exists); n cells at each timepoint is reported. A state with n=0 at an endpoint is not pairable.
+- (b) per cluster at ≥20 cells (the FINDINGS_MD2.md threshold, reproduced unchanged).
+- (c) per cluster at ≥10 cells, reported as a relaxed-threshold sensitivity check and labelled as such. Not primary.
+
+Per donor, never averaged: frozen ruler score, MD score, TGF-β score, Table S3 age-up score, Table S3 age-down score, and pluripotency−fibroblast score (frozen FINDINGS_FIBRO.md lists, same differentiation_score as md2), at d0/d3/d7/d10, with d0→d7 and d0→d10 endpoint changes.
+
+Nulls (not interchangeable):
+- Frozen ruler: 200 permuted-ruler-weight directions, seed 20260914. Empirical p = (n_random ≥ real + 1) / (n_random + 1). Endpoint decline = score(day 0) − score(day T). Positive = younger on the ruler.
+- Every gene-list score (MD, TGF-β, Age up, Age down): 200 size-matched, expression-bin-matched random gene sets, AddModuleScore nbin=24 ctrl=100, seed 20260914 with a documented per-list offset so MD uses the same stream as md2. Not permuted ruler weights.
+- Pluripotency−fibroblast is the frozen Stage 2 mean-z difference on the same TMM/z as the ruler, not AddModuleScore. Its null is 200 size-matched random gene sets in frozen-ruler gene space on that Z (not AMS bins). The difference is stated.
+
+Donors GM00731 and GM23815 reported separately. d7 is not the Stage 2 endpoint. Frozen ruler results/fibro/frozen_ruler_ridge_raw.npz used as-is. Refit nothing. Louvain resolution, AddModuleScore parameters, and cell filters are inherited from md2 and are not re-tuned.
+
+**Pre-registered reading (only the outcome that fired):**
+- Ruler declines in the pooled PartialReprog state with p ≤ 0.05 → the FINDINGS_MD2.md `negative_holds` reading was limited by cell counts, not by the ruler. Say so plainly and quote the sentence superseded.
+- Ruler does not decline in the pooled PartialReprog state while MD does, both with their own nulls → the instruments disagree on exactly the population the published claim concerns. This is the sharpest form of the disagreement; report both numbers side by side and declare no winner.
+- Neither moves in the pooled state → our reproduction does not recover their Figure 3G at the pooled level; report the reproduction failure as the finding, not as a refutation.
+- Pooled and per-cluster (≥20) levels disagree → report both, say which is which, do not pick.
+
+“Declines” / “moves” = endpoint decline d0→d7 or d0→d10 with p ≤ 0.05 on that instrument's own null, on the aged donor GM00731 pooled PartialReprog state for (a), or on at least one aged-donor Louvain cluster for (b). GM23815 is tabulated as a contrast, never pooled, never the reading.
+
+[t1 occupancy] GM00731 label columns actually read: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[t1 occupancy] GM00731 c0 label=Fibroblast n0=3998 n3=4 n7=9 n10=1
+[t1 occupancy] GM00731 c1 label=NonReprog n0=0 n3=0 n7=9 n10=2313
+[t1 occupancy] GM00731 c2 label=EarlyPluripotency n0=0 n3=0 n7=2092 n10=4
+[t1 occupancy] GM00731 c3 label=PartialReprog n0=1 n3=1589 n7=444 n10=5
+[t1 occupancy] GM00731 c4 label=NonReprog n0=9 n3=259 n7=1732 n10=31
+[t1 occupancy] GM00731 c5 label=PartialReprog n0=2 n3=1523 n7=48 n10=21
+[t1 occupancy] GM00731 c6 label=Fibroblast n0=0 n3=0 n7=1 n10=1029
+[t1 occupancy] GM00731 c7 label=EarlyPluripotency n0=0 n3=108 n7=884 n10=22
+[t1 occupancy] GM00731 c8 label=PartialReprog n0=0 n3=973 n7=13 n10=0
+[t1 occupancy] GM00731 c9 label=EarlyPluripotency n0=0 n3=0 n7=909 n10=52
+[t1 occupancy] GM00731 c10 label=NonReprog n0=56 n3=89 n7=191 n10=527
+[t1 occupancy] GM00731 c11 label=PartialReprog n0=0 n3=557 n7=64 n10=5
+[t1 occupancy] GM00731 c12 label=Fibroblast n0=569 n3=0 n7=1 n10=0
+[t1 occupancy] GM00731 c13 label=PartialReprog n0=0 n3=442 n7=3 n10=0
+[t1 occupancy] GM00731 c14 label=Pluripotency n0=0 n3=5 n7=354 n10=80
+[t1 occupancy] GM00731 c15 label=Fibroblast n0=372 n3=1 n7=3 n10=0
+[t1 occupancy] GM00731 c16 label=EarlyPluripotency n0=2 n3=302 n7=32 n10=7
+[t1 occupancy] GM00731 c17 label=NonReprog n0=0 n3=0 n7=0 n10=243
+[t1 occupancy] GM00731 c18 label=PartialReprog n0=0 n3=136 n7=6 n10=0
+[t1 occupancy] GM23815 label columns actually read: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[t1 occupancy] GM23815 c0 label=Fibroblast n0=6454 n3=19 n7=14 n10=2
+[t1 occupancy] GM23815 c1 label=EarlyPluripotency n0=0 n3=3 n7=3240 n10=8
+[t1 occupancy] GM23815 c2 label=EarlyPluripotency n0=0 n3=0 n7=1 n10=2730
+[t1 occupancy] GM23815 c3 label=EarlyPluripotency n0=0 n3=3 n7=2537 n10=30
+[t1 occupancy] GM23815 c4 label=Fibroblast n0=2 n3=21 n7=2210 n10=9
+[t1 occupancy] GM23815 c5 label=PartialReprog n0=9 n3=2039 n7=118 n10=5
+[t1 occupancy] GM23815 c6 label=EarlyPluripotency n0=0 n3=0 n7=1819 n10=330
+[t1 occupancy] GM23815 c7 label=PartialReprog n0=0 n3=2039 n7=20 n10=10
+[t1 occupancy] GM23815 c8 label=NonReprog n0=0 n3=10 n7=8 n10=1794
+[t1 occupancy] GM23815 c9 label=Fibroblast n0=0 n3=0 n7=3 n10=1362
+[t1 occupancy] GM23815 c10 label=Pluripotency n0=0 n3=91 n7=977 n10=181
+[t1 occupancy] GM23815 c11 label=PartialReprog n0=0 n3=1065 n7=65 n10=10
+[t1 occupancy] GM23815 c12 label=PartialReprog n0=0 n3=970 n7=106 n10=25
+[t1 occupancy] GM23815 c13 label=EarlyPluripotency n0=56 n3=246 n7=164 n10=432
+[t1 occupancy] GM23815 c14 label=Fibroblast n0=886 n3=5 n7=5 n10=0
+[t1 occupancy] GM23815 c15 label=EarlyPluripotency n0=0 n3=0 n7=0 n10=761
+[t1 occupancy] GM23815 c16 label=Fibroblast n0=361 n3=1 n7=1 n10=0
+[t1 occupancy] GM23815 c17 label=EarlyPluripotency n0=0 n3=64 n7=122 n10=121
+[t1 occupancy] GM23815 c18 label=EarlyPluripotency n0=0 n3=0 n7=289 n10=5
+[t1 occupancy pooled] GM00731 Fibroblast n0=4939 n3=5 n7=14 n10=1030
+[t1 occupancy pooled] GM00731 PartialReprog n0=3 n3=5220 n7=578 n10=31
+[t1 occupancy pooled] GM00731 EarlyPluripotency n0=2 n3=410 n7=3917 n10=85
+[t1 occupancy pooled] GM00731 Pluripotency n0=0 n3=5 n7=354 n10=80
+[t1 occupancy pooled] GM00731 NonReprog n0=65 n3=348 n7=1932 n10=3114
+[t1 occupancy pooled] GM23815 Fibroblast n0=7703 n3=46 n7=2233 n10=1373
+[t1 occupancy pooled] GM23815 PartialReprog n0=9 n3=6113 n7=309 n10=50
+[t1 occupancy pooled] GM23815 EarlyPluripotency n0=56 n3=316 n7=8172 n10=4417
+[t1 occupancy pooled] GM23815 Pluripotency n0=0 n3=91 n7=977 n10=181
+[t1 occupancy pooled] GM23815 NonReprog n0=0 n3=10 n7=8 n10=1794
+[prereg] DECLARED_BEFORE_SCORES.flag already exists; not rewriting
+[id_type louvain_GM00731_symbols] kind=symbol n=29058 n_ensembl=0 n_refseq=0 n_symbol_like=29057 source=<repo>\data\processed\md2\louvain_counts_GM00731.npz:symbols examples=['AL627309.1', 'AL627309.5', 'AP006222.2', 'AL669831.2', 'LINC01409', 'FAM87B', 'LINC01128', 'LINC00115']
+[id_type louvain_GM00731_gene_id] kind=ensembl n=29058 n_ensembl=29058 n_refseq=0 n_symbol_like=0 source=<repo>\data\processed\md2\louvain_counts_GM00731.npz:gene_id examples=['ENSG00000238009', 'ENSG00000241860', 'ENSG00000286448', 'ENSG00000229905', 'ENSG00000237491', 'ENSG00000177757', 'ENSG00000228794', 'ENSG00000225880']
+[AMS GM00731_louvain:md_score] requested=205 mapped=205 missing=0 missing_symbols=[]
+[AMS GM00731_louvain:md_score] n_mapped=205 n_ctrl=9120 score_mean=+0.3102
+[AMS GM00731_louvain:tgfb_score] requested=54 mapped=54 missing=0 missing_symbols=[]
+[AMS GM00731_louvain:tgfb_score] n_mapped=54 n_ctrl=3943 score_mean=-0.0021
+[AMS GM00731_louvain:state_Fibroblast] requested=200 mapped=200 missing=0 missing_symbols=[]
+[AMS GM00731_louvain:state_Fibroblast] n_mapped=200 n_ctrl=7088 score_mean=+0.4214
+[AMS GM00731_louvain:state_PartialReprog] requested=200 mapped=200 missing=0 missing_symbols=[]
+[AMS GM00731_louvain:state_PartialReprog] n_mapped=200 n_ctrl=7036 score_mean=+0.2732
+[AMS GM00731_louvain:state_EarlyPluripotency] requested=200 mapped=200 missing=0 missing_symbols=[]
+[AMS GM00731_louvain:state_EarlyPluripotency] n_mapped=200 n_ctrl=8851 score_mean=+0.4235
+[AMS GM00731_louvain:state_Pluripotency] requested=200 mapped=200 missing=0 missing_symbols=[]
+[AMS GM00731_louvain:state_Pluripotency] n_mapped=200 n_ctrl=10051 score_mean=-0.0472
+[AMS GM00731_louvain:state_NonReprog] requested=200 mapped=200 missing=0 missing_symbols=[]
+[AMS GM00731_louvain:state_NonReprog] n_mapped=200 n_ctrl=6895 score_mean=+0.2565
+[AMS GM00731_louvain_S3:age_up] requested=1533 mapped=896 missing=636 missing_symbols=['ADH1B', 'SLC25A52', 'FMO2', 'ENSG00000263244', 'TMSB4XP8', 'ENSG00000290383', 'ENSG00000283907', 'ENSG00000220370', 'RPL36AP21', 'PPIAP82', 'ENSG00000271047', 'EEF1A1P1', 'ENSG00000254732', 'TMSB10P1', 'ENSG00000196656', 'ENSG00000270249', 'RPL12P38', 'LINC01616', 'MT-TA', 'RPL5P8']
+[AMS GM00731_louvain_S3:age_up] n_mapped=896 n_ctrl=24488 score_mean=+0.0288
+[AMS GM00731_louvain_S3:age_down] requested=2007 mapped=1586 missing=421 missing_symbols=['TMEM191A', 'TMEM191A', 'RNA5-8SN3', 'RNVU1-29', 'RNU1-2', 'ENSG00000243679', 'CGB5', 'UBE2SP2', 'ENSG00000288725', 'FAM86DP', 'AGAP11', 'ENSG00000111780', 'ENSG00000235510', 'PSMC1P5', 'CGB8', 'URGCP-MRPS24', 'SLC2A3P1', 'ENSG00000260170', 'TRIM6-TRIM34', 'SLC7A5P2']
+[AMS GM00731_louvain_S3:age_down] n_mapped=1586 n_ctrl=24313 score_mean=+0.0407
+[tmm t1_cluster_GM00731] n_samples=53 n_genes=23485 nf_median=0.8116 prior.count=2
+[pluri endogenous] requested=['POU5F1', 'NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=3 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[pluri endogenous_noOSKM] requested=['NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=2 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[tmm t1_pooled_GM00731] n_samples=19 n_genes=23485 nf_median=0.8125 prior.count=2
+[pluri endogenous] requested=['POU5F1', 'NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=3 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[pluri endogenous_noOSKM] requested=['NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=2 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[t1 ruler-null per_cluster min=20] GM00731 10 d0→d7 decline=-5.3906 p=+0.930 n_ge=186/200 n0=56 n1=191
+[t1 ruler-null per_cluster min=20] GM00731 10 d0→d10 decline=-9.3591 p=+1.000 n_ge=200/200 n0=56 n1=527
+[t1 ruler-null per_cluster_sensitivity_ge10 min=10] GM00731 10 d0→d7 decline=-5.3906 p=+0.930 n_ge=186/200 n0=56 n1=191
+[t1 ruler-null per_cluster_sensitivity_ge10 min=10] GM00731 10 d0→d10 decline=-9.3591 p=+1.000 n_ge=200/200 n0=56 n1=527
+[t1 ruler-null pooled_by_state min=1] GM00731 NonReprog d0→d7 decline=-7.0925 p=+0.925 n_ge=185/200 n0=65 n1=1932
+[t1 ruler-null pooled_by_state min=1] GM00731 NonReprog d0→d10 decline=-9.5511 p=+0.980 n_ge=196/200 n0=65 n1=3114
+[t1 ruler-null pooled_by_state min=1] GM00731 Fibroblast d0→d7 decline=-3.3428 p=+0.866 n_ge=173/200 n0=4939 n1=14
+[t1 ruler-null pooled_by_state min=1] GM00731 Fibroblast d0→d10 decline=-2.6203 p=+0.995 n_ge=199/200 n0=4939 n1=1030
+[t1 ruler-null pooled_by_state min=1] GM00731 PartialReprog d0→d7 decline=-3.3394 p=+0.403 n_ge=80/200 n0=3 n1=578
+[t1 ruler-null pooled_by_state min=1] GM00731 PartialReprog d0→d10 decline=-3.5352 p=+0.483 n_ge=96/200 n0=3 n1=31
+[t1 ruler-null pooled_by_state min=1] GM00731 EarlyPluripotency d0→d7 decline=-3.5673 p=+0.194 n_ge=38/200 n0=2 n1=3917
+[t1 ruler-null pooled_by_state min=1] GM00731 EarlyPluripotency d0→d10 decline=-4.1169 p=+0.204 n_ge=40/200 n0=2 n1=85
+[AMS GM00731:md_score_null] requested=205 mapped=205 missing=0 missing_symbols=[]
+[t1 md_score-null] GM00731 draw 0/200
+[t1 md_score-null] GM00731 draw 20/200
+[t1 md_score-null] GM00731 draw 40/200
+[t1 md_score-null] GM00731 draw 60/200
+[t1 md_score-null] GM00731 draw 80/200
+[t1 md_score-null] GM00731 draw 100/200
+[t1 md_score-null] GM00731 draw 120/200
+[t1 md_score-null] GM00731 draw 140/200
+[t1 md_score-null] GM00731 draw 160/200
+[t1 md_score-null] GM00731 draw 180/200
+[t1 md_score-null per_cluster min=20] GM00731 10 d0→d7 decline=+0.0089 p=+0.035 n_ge=6/200 n0=56 n1=191
+[t1 md_score-null per_cluster min=20] GM00731 10 d0→d10 decline=-0.0607 p=+0.886 n_ge=177/200 n0=56 n1=527
+[t1 md_score-null per_cluster_sensitivity_ge10 min=10] GM00731 10 d0→d7 decline=+0.0089 p=+0.035 n_ge=6/200 n0=56 n1=191
+[t1 md_score-null per_cluster_sensitivity_ge10 min=10] GM00731 10 d0→d10 decline=-0.0607 p=+0.886 n_ge=177/200 n0=56 n1=527
+[t1 md_score-null pooled_by_state min=1] GM00731 NonReprog d0→d7 decline=-0.0950 p=+0.184 n_ge=36/200 n0=65 n1=1932
+[t1 md_score-null pooled_by_state min=1] GM00731 NonReprog d0→d10 decline=-0.0836 p=+0.070 n_ge=13/200 n0=65 n1=3114
+[t1 md_score-null pooled_by_state min=1] GM00731 Fibroblast d0→d7 decline=+0.0812 p=+0.159 n_ge=31/200 n0=4939 n1=14
+[t1 md_score-null pooled_by_state min=1] GM00731 Fibroblast d0→d10 decline=+0.0721 p=+0.005 n_ge=0/200 n0=4939 n1=1030
+[t1 md_score-null pooled_by_state min=1] GM00731 PartialReprog d0→d7 decline=+0.0072 p=+0.015 n_ge=2/200 n0=3 n1=578
+[t1 md_score-null pooled_by_state min=1] GM00731 PartialReprog d0→d10 decline=-0.0057 p=+0.886 n_ge=177/200 n0=3 n1=31
+[t1 md_score-null pooled_by_state min=1] GM00731 EarlyPluripotency d0→d7 decline=+0.0963 p=+0.005 n_ge=0/200 n0=2 n1=3917
+[t1 md_score-null pooled_by_state min=1] GM00731 EarlyPluripotency d0→d10 decline=+0.1700 p=+0.005 n_ge=0/200 n0=2 n1=85
+[AMS GM00731:tgfb_score_null] requested=54 mapped=54 missing=0 missing_symbols=[]
+[t1 tgfb_score-null] GM00731 draw 0/200
+[t1 tgfb_score-null] GM00731 draw 20/200
+[t1 tgfb_score-null] GM00731 draw 40/200
+[t1 tgfb_score-null] GM00731 draw 60/200
+[t1 tgfb_score-null] GM00731 draw 80/200
+[t1 tgfb_score-null] GM00731 draw 100/200
+[t1 tgfb_score-null] GM00731 draw 120/200
+[t1 tgfb_score-null] GM00731 draw 140/200
+[t1 tgfb_score-null] GM00731 draw 160/200
+[t1 tgfb_score-null] GM00731 draw 180/200
+[t1 tgfb_score-null per_cluster min=20] GM00731 10 d0→d7 decline=+0.0384 p=+0.119 n_ge=23/200 n0=56 n1=191
+[t1 tgfb_score-null per_cluster min=20] GM00731 10 d0→d10 decline=+0.0154 p=+0.294 n_ge=58/200 n0=56 n1=527
+[t1 tgfb_score-null per_cluster_sensitivity_ge10 min=10] GM00731 10 d0→d7 decline=+0.0384 p=+0.119 n_ge=23/200 n0=56 n1=191
+[t1 tgfb_score-null per_cluster_sensitivity_ge10 min=10] GM00731 10 d0→d10 decline=+0.0154 p=+0.294 n_ge=58/200 n0=56 n1=527
+[t1 tgfb_score-null pooled_by_state min=1] GM00731 NonReprog d0→d7 decline=+0.0383 p=+0.164 n_ge=32/200 n0=65 n1=1932
+[t1 tgfb_score-null pooled_by_state min=1] GM00731 NonReprog d0→d10 decline=+0.0854 p=+0.030 n_ge=5/200 n0=65 n1=3114
+[t1 tgfb_score-null pooled_by_state min=1] GM00731 Fibroblast d0→d7 decline=-0.0219 p=+0.811 n_ge=162/200 n0=4939 n1=14
+[t1 tgfb_score-null pooled_by_state min=1] GM00731 Fibroblast d0→d10 decline=+0.0509 p=+0.030 n_ge=5/200 n0=4939 n1=1030
+[t1 tgfb_score-null pooled_by_state min=1] GM00731 PartialReprog d0→d7 decline=-0.0151 p=+0.537 n_ge=107/200 n0=3 n1=578
+[t1 tgfb_score-null pooled_by_state min=1] GM00731 PartialReprog d0→d10 decline=-0.0150 p=+0.692 n_ge=138/200 n0=3 n1=31
+[t1 tgfb_score-null pooled_by_state min=1] GM00731 EarlyPluripotency d0→d7 decline=+0.0049 p=+0.338 n_ge=67/200 n0=2 n1=3917
+[t1 tgfb_score-null pooled_by_state min=1] GM00731 EarlyPluripotency d0→d10 decline=+0.0651 p=+0.139 n_ge=27/200 n0=2 n1=85
+[AMS GM00731:age_up_null] requested=1533 mapped=896 missing=636 missing_symbols=['ADH1B', 'SLC25A52', 'FMO2', 'ENSG00000263244', 'TMSB4XP8', 'ENSG00000290383', 'ENSG00000283907', 'ENSG00000220370', 'RPL36AP21', 'PPIAP82', 'ENSG00000271047', 'EEF1A1P1', 'ENSG00000254732', 'TMSB10P1', 'ENSG00000196656', 'ENSG00000270249', 'RPL12P38', 'LINC01616', 'MT-TA', 'RPL5P8']
+[t1 age_up-null] GM00731 draw 0/200
+[t1 age_up-null] GM00731 draw 20/200
+[t1 age_up-null] GM00731 draw 40/200
+[t1 age_up-null] GM00731 draw 60/200
+[t1 age_up-null] GM00731 draw 80/200
+[t1 age_up-null] GM00731 draw 100/200
+[t1 age_up-null] GM00731 draw 120/200
+[t1 age_up-null] GM00731 draw 140/200
+[t1 age_up-null] GM00731 draw 160/200
+[t1 age_up-null] GM00731 draw 180/200
+[t1 age_up-null per_cluster min=20] GM00731 10 d0→d7 decline=+0.0588 p=+0.005 n_ge=0/200 n0=56 n1=191
+[t1 age_up-null per_cluster min=20] GM00731 10 d0→d10 decline=+0.0494 p=+0.005 n_ge=0/200 n0=56 n1=527
+[t1 age_up-null per_cluster_sensitivity_ge10 min=10] GM00731 10 d0→d7 decline=+0.0588 p=+0.005 n_ge=0/200 n0=56 n1=191
+[t1 age_up-null per_cluster_sensitivity_ge10 min=10] GM00731 10 d0→d10 decline=+0.0494 p=+0.005 n_ge=0/200 n0=56 n1=527
+[t1 age_up-null pooled_by_state min=1] GM00731 NonReprog d0→d7 decline=+0.0508 p=+0.005 n_ge=0/200 n0=65 n1=1932
+[t1 age_up-null pooled_by_state min=1] GM00731 NonReprog d0→d10 decline=+0.0422 p=+0.005 n_ge=0/200 n0=65 n1=3114
+[t1 age_up-null pooled_by_state min=1] GM00731 Fibroblast d0→d7 decline=+0.0177 p=+0.010 n_ge=1/200 n0=4939 n1=14
+[t1 age_up-null pooled_by_state min=1] GM00731 Fibroblast d0→d10 decline=+0.0347 p=+0.005 n_ge=0/200 n0=4939 n1=1030
+[t1 age_up-null pooled_by_state min=1] GM00731 PartialReprog d0→d7 decline=-0.0020 p=+0.343 n_ge=68/200 n0=3 n1=578
+[t1 age_up-null pooled_by_state min=1] GM00731 PartialReprog d0→d10 decline=+0.0019 p=+0.896 n_ge=179/200 n0=3 n1=31
+[t1 age_up-null pooled_by_state min=1] GM00731 EarlyPluripotency d0→d7 decline=+0.0308 p=+0.005 n_ge=0/200 n0=2 n1=3917
+[t1 age_up-null pooled_by_state min=1] GM00731 EarlyPluripotency d0→d10 decline=+0.0482 p=+0.005 n_ge=0/200 n0=2 n1=85
+[AMS GM00731:age_down_null] requested=2007 mapped=1586 missing=421 missing_symbols=['TMEM191A', 'TMEM191A', 'RNA5-8SN3', 'RNVU1-29', 'RNU1-2', 'ENSG00000243679', 'CGB5', 'UBE2SP2', 'ENSG00000288725', 'FAM86DP', 'AGAP11', 'ENSG00000111780', 'ENSG00000235510', 'PSMC1P5', 'CGB8', 'URGCP-MRPS24', 'SLC2A3P1', 'ENSG00000260170', 'TRIM6-TRIM34', 'SLC7A5P2']
+[t1 age_down-null] GM00731 draw 0/200
+[t1 age_down-null] GM00731 draw 20/200
+[t1 age_down-null] GM00731 draw 40/200
+[t1 age_down-null] GM00731 draw 60/200
+[t1 age_down-null] GM00731 draw 80/200
+[t1 age_down-null] GM00731 draw 100/200
+[t1 age_down-null] GM00731 draw 120/200
+[t1 age_down-null] GM00731 draw 140/200
+[t1 age_down-null] GM00731 draw 160/200
+[t1 age_down-null] GM00731 draw 180/200
+[t1 age_down-null per_cluster min=20] GM00731 10 d0→d7 decline=-0.0347 p=+1.000 n_ge=200/200 n0=56 n1=191
+[t1 age_down-null per_cluster min=20] GM00731 10 d0→d10 decline=-0.0282 p=+1.000 n_ge=200/200 n0=56 n1=527
+[t1 age_down-null per_cluster_sensitivity_ge10 min=10] GM00731 10 d0→d7 decline=-0.0347 p=+1.000 n_ge=200/200 n0=56 n1=191
+[t1 age_down-null per_cluster_sensitivity_ge10 min=10] GM00731 10 d0→d10 decline=-0.0282 p=+1.000 n_ge=200/200 n0=56 n1=527
+[t1 age_down-null pooled_by_state min=1] GM00731 NonReprog d0→d7 decline=-0.0598 p=+1.000 n_ge=200/200 n0=65 n1=1932
+[t1 age_down-null pooled_by_state min=1] GM00731 NonReprog d0→d10 decline=-0.0631 p=+1.000 n_ge=200/200 n0=65 n1=3114
+[t1 age_down-null pooled_by_state min=1] GM00731 Fibroblast d0→d7 decline=+0.0005 p=+0.990 n_ge=198/200 n0=4939 n1=14
+[t1 age_down-null pooled_by_state min=1] GM00731 Fibroblast d0→d10 decline=-0.0229 p=+1.000 n_ge=200/200 n0=4939 n1=1030
+[t1 age_down-null pooled_by_state min=1] GM00731 PartialReprog d0→d7 decline=-0.0455 p=+1.000 n_ge=200/200 n0=3 n1=578
+[t1 age_down-null pooled_by_state min=1] GM00731 PartialReprog d0→d10 decline=-0.0065 p=+1.000 n_ge=200/200 n0=3 n1=31
+[t1 age_down-null pooled_by_state min=1] GM00731 EarlyPluripotency d0→d7 decline=-0.0355 p=+0.925 n_ge=185/200 n0=2 n1=3917
+[t1 age_down-null pooled_by_state min=1] GM00731 EarlyPluripotency d0→d10 decline=-0.0525 p=+1.000 n_ge=200/200 n0=2 n1=85
+[id_type louvain_GM23815_symbols] kind=symbol n=29154 n_ensembl=0 n_refseq=0 n_symbol_like=29154 source=<repo>\data\processed\md2\louvain_counts_GM23815.npz:symbols examples=['AL627309.1', 'AL627309.3', 'AL627309.5', 'AP006222.2', 'LINC01409', 'FAM87B', 'LINC01128', 'LINC00115']
+[id_type louvain_GM23815_gene_id] kind=ensembl n=29154 n_ensembl=29154 n_refseq=0 n_symbol_like=0 source=<repo>\data\processed\md2\louvain_counts_GM23815.npz:gene_id examples=['ENSG00000238009', 'ENSG00000239945', 'ENSG00000241860', 'ENSG00000286448', 'ENSG00000237491', 'ENSG00000177757', 'ENSG00000228794', 'ENSG00000225880']
+[AMS GM23815_louvain:md_score] requested=205 mapped=204 missing=1 missing_symbols=['PRSS2']
+[AMS GM23815_louvain:md_score] n_mapped=204 n_ctrl=9690 score_mean=+0.2315
+[AMS GM23815_louvain:tgfb_score] requested=54 mapped=54 missing=0 missing_symbols=[]
+[AMS GM23815_louvain:tgfb_score] n_mapped=54 n_ctrl=4015 score_mean=-0.0147
+[AMS GM23815_louvain:state_Fibroblast] requested=200 mapped=200 missing=0 missing_symbols=[]
+[AMS GM23815_louvain:state_Fibroblast] n_mapped=200 n_ctrl=8255 score_mean=+0.3702
+[AMS GM23815_louvain:state_PartialReprog] requested=200 mapped=200 missing=0 missing_symbols=[]
+[AMS GM23815_louvain:state_PartialReprog] n_mapped=200 n_ctrl=6845 score_mean=+0.2938
+[AMS GM23815_louvain:state_EarlyPluripotency] requested=200 mapped=200 missing=0 missing_symbols=[]
+[AMS GM23815_louvain:state_EarlyPluripotency] n_mapped=200 n_ctrl=8594 score_mean=+0.5075
+[AMS GM23815_louvain:state_Pluripotency] requested=200 mapped=200 missing=0 missing_symbols=[]
+[AMS GM23815_louvain:state_Pluripotency] n_mapped=200 n_ctrl=9732 score_mean=-0.0297
+[AMS GM23815_louvain:state_NonReprog] requested=200 mapped=200 missing=0 missing_symbols=[]
+[AMS GM23815_louvain:state_NonReprog] n_mapped=200 n_ctrl=9221 score_mean=+0.1711
+[AMS GM23815_louvain_S3:age_up] requested=1533 mapped=894 missing=638 missing_symbols=['ADH1B', 'KCNA4', 'SLC25A52', 'ENSG00000263244', 'TMSB4XP8', 'ENSG00000290383', 'ENSG00000283907', 'ENSG00000220370', 'RPL36AP21', 'PPIAP82', 'ENSG00000271047', 'EEF1A1P1', 'ENSG00000254732', 'TMSB10P1', 'ENSG00000196656', 'ENSG00000270249', 'RPL12P38', 'LINC01616', 'MT-TA', 'RPL5P8']
+[AMS GM23815_louvain_S3:age_up] n_mapped=894 n_ctrl=24930 score_mean=+0.0165
+[AMS GM23815_louvain_S3:age_down] requested=2007 mapped=1582 missing=425 missing_symbols=['TMEM191A', 'TMEM191A', 'RNA5-8SN3', 'RNVU1-29', 'RNU1-2', 'ENSG00000243679', 'CGB5', 'UBE2SP2', 'ENSG00000288725', 'FAM86DP', 'AGAP11', 'ENSG00000111780', 'ENSG00000235510', 'PSMC1P5', 'URGCP-MRPS24', 'SLC2A3P1', 'ENSG00000260170', 'TRIM6-TRIM34', 'SLC7A5P2', 'ENSG00000256663']
+[AMS GM23815_louvain_S3:age_down] n_mapped=1582 n_ctrl=24081 score_mean=+0.0460
+[tmm t1_cluster_GM23815] n_samples=55 n_genes=23485 nf_median=0.8621 prior.count=2
+[pluri endogenous] requested=['POU5F1', 'NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=3 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[pluri endogenous_noOSKM] requested=['NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=2 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[tmm t1_pooled_GM23815] n_samples=18 n_genes=23485 nf_median=0.9667 prior.count=2
+[pluri endogenous] requested=['POU5F1', 'NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=3 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[pluri endogenous_noOSKM] requested=['NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=2 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[t1 ruler-null per_cluster min=20] GM23815 13 d0→d7 decline=+4.9165 p=+0.050 n_ge=9/200 n0=56 n1=164
+[t1 ruler-null per_cluster min=20] GM23815 13 d0→d10 decline=+1.6345 p=+0.159 n_ge=31/200 n0=56 n1=432
+[t1 ruler-null per_cluster_sensitivity_ge10 min=10] GM23815 0 d0→d7 decline=+2.2268 p=+0.517 n_ge=103/200 n0=6454 n1=14
+[t1 ruler-null per_cluster_sensitivity_ge10 min=10] GM23815 13 d0→d7 decline=+4.9165 p=+0.050 n_ge=9/200 n0=56 n1=164
+[t1 ruler-null per_cluster_sensitivity_ge10 min=10] GM23815 13 d0→d10 decline=+1.6345 p=+0.159 n_ge=31/200 n0=56 n1=432
+[t1 ruler-null pooled_by_state min=1] GM23815 Fibroblast d0→d7 decline=+2.0576 p=+0.020 n_ge=3/200 n0=7703 n1=2233
+[t1 ruler-null pooled_by_state min=1] GM23815 Fibroblast d0→d10 decline=+0.0605 p=+0.557 n_ge=111/200 n0=7703 n1=1373
+[t1 ruler-null pooled_by_state min=1] GM23815 PartialReprog d0→d7 decline=+5.1697 p=+0.080 n_ge=15/200 n0=9 n1=309
+[t1 ruler-null pooled_by_state min=1] GM23815 PartialReprog d0→d10 decline=+3.5689 p=+0.159 n_ge=31/200 n0=9 n1=50
+[t1 ruler-null pooled_by_state min=1] GM23815 EarlyPluripotency d0→d7 decline=+2.9055 p=+0.124 n_ge=24/200 n0=56 n1=8172
+[t1 ruler-null pooled_by_state min=1] GM23815 EarlyPluripotency d0→d10 decline=-1.8103 p=+0.473 n_ge=94/200 n0=56 n1=4417
+[AMS GM23815:md_score_null] requested=205 mapped=204 missing=1 missing_symbols=['PRSS2']
+[t1 md_score-null] GM23815 draw 0/200
+[t1 md_score-null] GM23815 draw 20/200
+[t1 md_score-null] GM23815 draw 40/200
+[t1 md_score-null] GM23815 draw 60/200
+[t1 md_score-null] GM23815 draw 80/200
+[t1 md_score-null] GM23815[t1 md_score-nu[t1 md_score-null] GM2381[t1 md_score-null] GM23815 draw 100/200
+[t1 md_score-null] GM23815 draw 120/200
+[t1 md_score-null] GM23815 draw 140/200
+[t1 md_score-null] GM23815 draw 160/200
+[t1 md_score-null] GM23815 draw 180/200
+[t1 md_score-null per_cluster min=20] GM23815 13 d0→d7 decline=+0.2202 p=+0.005 n_ge=0/200 n0=56 n1=164
+[t1 md_score-null per_cluster min=20] GM23815 13 d0→d10 decline=+0.1447 p=+0.005 n_ge=0/200 n0=56 n1=432
+[t1 md_score-null per_cluster_sensitivity_ge10 min=10] GM23815 0 d0→d7 decline=+0.0816 p=+0.005 n_ge=0/200 n0=6454 n1=14
+[t1 md_score-null per_cluster_sensitivity_ge10 min=10] GM23815 13 d0→d7 decline=+0.2202 p=+0.005 n_ge=0/200 n0=56 n1=164
+[t1 md_score-null per_cluster_sensitivity_ge10 min=10] GM23815 13 d0→d10 decline=+0.1447 p=+0.005 n_ge=0/200 n0=56 n1=432
+[t1 md_score-null pooled_by_state min=1] GM23815 Fibroblast d0→d7 decline=+0.0692 p=+0.005 n_ge=0/200 n0=7703 n1=2233
+[t1 md_score-null pooled_by_state min=1] GM23815 Fibroblast d0→d10 decline=+0.0993 p=+0.005 n_ge=0/200 n0=7703 n1=1373
+[t1 md_score-null pooled_by_state min=1] GM23815 PartialReprog d0→d7 decline=+0.1426 p=+0.005 n_ge=0/200 n0=9 n1=309
+[t1 md_score-null pooled_by_state min=1] GM23815 PartialReprog d0→d10 decline=+0.1882 p=+0.005 n_ge=0/200 n0=9 n1=50
+[t1 md_score-null pooled_by_state min=1] GM23815 EarlyPluripotency d0→d7 decline=+0.3027 p=+0.005 n_ge=0/200 n0=56 n1=8172
+[t1 md_score-null pooled_by_state min=1] GM23815 EarlyPluripotency d0→d10 decline=+0.2134 p=+0.005 n_ge=0/200 n0=56 n1=4417
+[AMS GM23815:tgfb_score_null] requested=54 mapped=54 missing=0 missing_symbols=[]
+[t1 tgfb_score-null] GM23815 draw 0/200
+[t1 tgfb_score-null] GM23815 draw 20/200
+[t1 tgfb_score-null] GM23815 draw 40/200
+[t1 tgfb_score-null] GM23815 draw 60/200
+[t1 tgfb_score-null] GM23815 draw 80/200
+[t1 tgfb_score-null] GM23815 draw 100/200
+[t1 tgfb_score-null] GM23815 draw 120/200
+[t1 tgfb_score-null] GM23815 draw 140/200
+[t1 tgfb_score-null] GM23815 draw 160/200
+[t1 tgfb_score-null] GM23815 draw 180/200
+[t1 tgfb_score-null per_cluster min=20] GM23815 13 d0→d7 decline=+0.0215 p=+0.373 n_ge=74/200 n0=56 n1=164
+[t1 tgfb_score-null per_cluster min=20] GM23815 13 d0→d10 decline=+0.0063 p=+0.403 n_ge=80/200 n0=56 n1=432
+[t1 tgfb_score-null per_cluster_sensitivity_ge10 min=10] GM23815 0 d0→d7 decline=+0.0287 p=+0.154 n_ge=30/200 n0=6454 n1=14
+[t1 tgfb_score-null per_cluster_sensitivity_ge10 min=10] GM23815 13 d0→d7 decline=+0.0215 p=+0.373 n_ge=74/200 n0=56 n1=164
+[t1 tgfb_score-null per_cluster_sensitivity_ge10 min=10] GM23815 13 d0→d10 decline=+0.0063 p=+0.403 n_ge=80/200 n0=56 n1=432
+[t1 tgfb_score-null pooled_by_state min=1] GM23815 Fibroblast d0→d7 decline=+0.0438 p=+0.020 n_ge=3/200 n0=7703 n1=2233
+[t1 tgfb_score-null pooled_by_state min=1] GM23815 Fibroblast d0→d10 decline=-0.0075 p=+0.652 n_ge=130/200 n0=7703 n1=1373
+[t1 tgfb_score-null pooled_by_state min=1] GM23815 PartialReprog d0→d7 decline=+0.0642 p=+0.030 n_ge=5/200 n0=9 n1=309
+[t1 tgfb_score-null pooled_by_state min=1] GM23815 PartialReprog d0→d10 decline=+0.0490 p=+0.124 n_ge=24/200 n0=9 n1=50
+[t1 tgfb_score-null pooled_by_state min=1] GM23815 EarlyPluripotency d0→d7 decline=+0.1356 p=+0.020 n_ge=3/200 n0=56 n1=8172
+[t1 tgfb_score-null pooled_by_state min=1] GM23815 EarlyPluripotency d0→d10 decline=+0.1002 p=+0.060 n_ge=11/200 n0=56 n1=4417
+[AMS GM23815:age_up_null] requested=1533 mapped=894 missing=638 missing_symbols=['ADH1B', 'KCNA4', 'SLC25A52', 'ENSG00000263244', 'TMSB4XP8', 'ENSG00000290383', 'ENSG00000283907', 'ENSG00000220370', 'RPL36AP21', 'PPIAP82', 'ENSG00000271047', 'EEF1A1P1', 'ENSG00000254732', 'TMSB10P1', 'ENSG00000196656', 'ENSG00000270249', 'RPL12P38', 'LINC01616', 'MT-TA', 'RPL5P8']
+[t1 age_up-null] GM23815 draw 0/200
+[t1 age_up-null] GM23815 draw 20/200
+[t1 age_up-null] GM23815 draw 40/200
+[t1 age_up-null] GM23815 draw 60/200
+[t1 age_up-null] GM23815 draw 80/200
+[t1 age_up-null] GM23815 draw 100/200
+[t1 age_up-null] GM23815 draw 120/200
+[t1 age_up-null] GM23815 draw 140/200
+[t1 age_up-null] GM23815 draw 160/200
+[t1 age_up-null] GM23815 draw 180/200
+[t1 age_up-null per_cluster min=20] GM23815 13 d0→d7 decline=+0.0483 p=+0.005 n_ge=0/200 n0=56 n1=164
+[t1 age_up-null per_cluster min=20] GM23815 13 d0→d10 decline=+0.0372 p=+0.005 n_ge=0/200 n0=56 n1=432
+[t1 age_up-null per_cluster_sensitivity_ge10 min=10] GM23815 0 d0→d7 decline=+0.0197 p=+0.005 n_ge=0/200 n0=6454 n1=14
+[t1 age_up-null per_cluster_sensitivity_ge10 min=10] GM23815 13 d0→d7 decline=+0.0483 p=+0.005 n_ge=0/200 n0=56 n1=164
+[t1 age_up-null per_cluster_sensitivity_ge10 min=10] GM23815 13 d0→d10 decline=+0.0372 p=+0.005 n_ge=0/200 n0=56 n1=432
+[t1 age_up-null pooled_by_state min=1] GM23815 Fibroblast d0→d7 decline=+0.0057 p=+0.274 n_ge=54/200 n0=7703 n1=2233
+[t1 age_up-null pooled_by_state min=1] GM23815 Fibroblast d0→d10 decline=+0.0270 p=+0.005 n_ge=0/200 n0=7703 n1=1373
+[t1 age_up-null pooled_by_state min=1] GM23815 PartialReprog d0→d7 decline=-0.0186 p=+1.000 n_ge=200/200 n0=9 n1=309
+[t1 age_up-null pooled_by_state min=1] GM23815 PartialReprog d0→d10 decline=-0.0033 p=+0.915 n_ge=183/200 n0=9 n1=50
+[t1 age_up-null pooled_by_state min=1] GM23815 EarlyPluripotency d0→d7 decline=+0.0659 p=+0.005 n_ge=0/200 n0=56 n1=8172
+[t1 age_up-null pooled_by_state min=1] GM23815 EarlyPluripotency d0→d10 decline=+0.0740 p=+0.005 n_ge=0/200 n0=56 n1=4417
+[AMS GM23815:age_down_null] requested=2007 mapped=1582 missing=425 missing_symbols=['TMEM191A', 'TMEM191A', 'RNA5-8SN3', 'RNVU1-29', 'RNU1-2', 'ENSG00000243679', 'CGB5', 'UBE2SP2', 'ENSG00000288725', 'FAM86DP', 'AGAP11', 'ENSG00000111780', 'ENSG00000235510', 'PSMC1P5', 'URGCP-MRPS24', 'SLC2A3P1', 'ENSG00000260170', 'TRIM6-TRIM34', 'SLC7A5P2', 'ENSG00000256663']
+[t1 age_down-null] GM23815 draw 0/200
+[t1 age_down-null] GM23815 draw 20/200
+[t1 age_down-null] GM23815 draw 40/200
+[t1 age_down-null] GM23815 draw 60/200
+[t1 age_down-null] GM23815 draw 80/200
+[t1 age_down-null] GM23815 draw 100/200
+[t1 age_down-null] GM23815 draw 120/200
+[t1 age_down-null] GM23815 draw 140/200
+[t1 age_down-null] GM23815 draw 160/200
+[t1 age_down-null] GM23815 draw 180/200
+[t1 age_down-null per_cluster min=20] GM23815 13 d0→d7 decline=-0.0389 p=+1.000 n_ge=200/200 n0=56 n1=164
+[t1 age_down-null per_cluster min=20] GM23815 13 d0→d10 decline=-0.0205 p=+1.000 n_ge=200/200 n0=56 n1=432
+[t1 age_down-null per_cluster_sensitivity_ge10 min=10] GM23815 0 d0→d7 decline=-0.0065 p=+1.000 n_ge=200/200 n0=6454 n1=14
+[t1 age_down-null per_cluster_sensitivity_ge10 min=10] GM23815 13 d0→d7 decline=-0.0389 p=+1.000 n_ge=200/200 n0=56 n1=164
+[t1 age_down-null per_cluster_sensitivity_ge10 min=10] GM23815 13 d0→d10 decline=-0.0205 p=+1.000 n_ge=200/200 n0=56 n1=432
+[t1 age_down-null pooled_by_state min=1] GM23815 Fibroblast d0→d7 decline=+0.0043 p=+0.940 n_ge=188/200 n0=7703 n1=2233
+[t1 age_down-null pooled_by_state min=1] GM23815 Fibroblast d0→d10 decline=-0.0185 p=+1.000 n_ge=200/200 n0=7703 n1=1373
+[t1 age_down-null pooled_by_state min=1] GM23815 PartialReprog d0→d7 decline=+0.0375 p=+0.005 n_ge=0/200 n0=9 n1=309
+[t1 age_down-null pooled_by_state min=1] GM23815 PartialReprog d0→d10 decline=+0.0313 p=+0.005 n_ge=0/200 n0=9 n1=50
+[t1 age_down-null pooled_by_state min=1] GM23815 EarlyPluripotency d0→d7 decline=-0.0820 p=+1.000 n_ge=200/200 n0=56 n1=8172
+[t1 age_down-null pooled_by_state min=1] GM23815 EarlyPluripotency d0→d10 decline=-0.0874 p=+1.000 n_ge=200/200 n0=56 n1=4417
+[t1 md-check] GM00731 n_shared=33 max|ΔMD|=9.714e-17
+[t1 md-check] GM23815 n_shared=34 max|ΔMD|=9.021e-17
+[t1 reading] key=instruments_disagree_on_claim_population
+Ruler does not decline in the pooled PartialReprog state while MD does, both with their own nulls. The instruments disagree on exactly the population the published claim concerns. No winner is declared. Pooled PartialReprog ruler: n_ok=2 n_pass=0 hits=[]. Pooled PartialReprog MD: n_ok=2 n_pass=1 hits=[{'cell_line': 'GM00731', 'group': 'PartialReprog', 'label': 'PartialReprog', 'endpoint': 'd0→d7', 'decline': 0.007173997855181413, 'p': 0.014925373134328358, 'n_cells_d0': 3.0, 'n_cells_end': 578.0}].
+====================================================================================================
+MD3 TASK2  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / AddModuleScore inherited from md2; not re-tuned.
+Written **before any MD3 three-way ρ vs donor age or paired Δρ**, 2026-09-19. No threshold in this block is re-tuned after numbers exist.
+
+Three instruments, all applied unchanged to the same donors: (1) frozen GTEx ruler from results/fibro/frozen_ruler_ridge_raw.npz, used as-is, not refit; (2) MD score, AddModuleScore as in md2; (3) their age-up minus age-down score (mmc3 Table S3 Age up and Age down, AddModuleScore, same implementation as md2). Instrument (3) is AMS(Age up) − AMS(Age down).
+
+Cohorts:
+- CELLxGENE a19d1667-a7b5-4556-9e5f-f9bfa690c0f1 (10x, n=93) — already in results/fibro2/ and results/md2/. Frozen-ruler and MD numbers are read from those files and recomputed from the saved per-donor scores as a check. Age-up minus age-down is newly scored on the cached donor-count matrix.
+- GSE226189 (bulk, n=82) — same: ruler and MD from disk; age-up minus age-down newly scored. geneCOUNT Tracking_ID is Ensembl; ID type is checked before mapping.
+- GSE113957 (bulk, n=143, ages 1–92). FPKM blocks DESeq2 and TMM/log2-CPM but does not block rank-based scoring. Rank-transform genes within sample and score all three instruments on ranks. This is a different transform from the GTEx spec and is therefore a weaker test. Restrict to adults ≥18 to match the ruler's training range; report the excluded count. Transcript IDs are RefSeq; gene symbols are parsed from Annotation/Divergence. Unmappable IDs stop this cohort, recorded, not substituted.
+
+Per instrument × cohort: Spearman ρ vs donor age, permutation null (shuffle ages, hold scores; n_perm=200, seed 20260914), p, bootstrap CI (B=200, seed 20260918), n genes mapped out of the list's total, and the ID type of the matrix. Uncalibrated R² is reported and is never a gate.
+
+Then the statistic that matters: per cohort, the paired bootstrap difference in ρ between the frozen ruler and each of the other two instruments — resample donors, recompute both ρ on the same resampled donors, report Δρ = ρ_ruler − ρ_other with its 95% percentile CI. A Δρ CI that excludes zero is the claim; two separate ρ values with overlapping CIs are not. Report Δρ even where it favours the other instrument.
+
+**Pre-registered reading:**
+- Δρ CI excludes zero in favour of the ruler (CI lower bound > 0) in ≥2 of 3 named cohorts → MD and/or their aging signature predict donor age materially worse than the ruler on independent fibroblast cohorts.
+- Δρ CI includes zero (in the cohorts that distinguish the instruments under test) → the instruments are not distinguishable on age prediction at these n, and the Task 1 disagreement cannot be attributed to one being a weaker age instrument. Say which.
+- Mixed (one cohort excludes zero in favour of the ruler, another in favour of the other instrument, or fewer than two ruler-favouring cohorts) → report per cohort, do not average, do not declare a winner.
+
+An unscored cohort does not count as excluding zero. Do not report two separate ρ values as evidence of a difference without the paired Δρ CI. Do not declare a winner between the instruments.
+
+[id_type cxg_gene_id] kind=ensembl n=25952 n_ensembl=25952 n_refseq=0 n_symbol_like=0 source=<repo>\data\processed\md2\cxg_donor_counts.npz:genes examples=['ENSG00000278457', 'ENSG00000121410', 'ENSG00000268895', 'ENSG00000148584', 'ENSG00000175899', 'ENSG00000245105', 'ENSG00000166535', 'ENSG00000256661']
+[id_type cxg_symbols] kind=symbol n=25952 n_ensembl=8 n_refseq=0 n_symbol_like=25940 source=<repo>\data\processed\md2\cxg_donor_counts.npz:symbols examples=['5S_rRNA', 'A1BG', 'A1BG-AS1', 'A1CF', 'A2M', 'A2M-AS1', 'A2ML1', 'A2ML1-AS1']
+[id_type cxg_a19d1667_S3_symbols] kind=symbol n=25952 n_ensembl=8 n_refseq=0 n_symbol_like=25940 source=cxg_a19d1667_S3 examples=['5S_rRNA', 'A1BG', 'A1BG-AS1', 'A1CF', 'A2M', 'A2M-AS1', 'A2ML1', 'A2ML1-AS1']
+[AMS cxg_a19d1667_S3:age_up] requested=1533 mapped=986 missing=547 missing_symbols=['GOLGA8M', 'TNXB', 'DSEL', 'GOLGA8M', 'SGPP1', 'SLC27A3', 'ENSG00000263244', 'ENSG00000290383', 'ENSG00000283907', 'ENSG00000220370', 'ENSG00000271047', 'ENSG00000254732', 'ENSG00000196656', 'ENSG00000270249', 'MT-TA', 'ENSG00000236015', 'ENSG00000239719', 'PRELID1P6', 'EEF1A1P50', 'ENSG00000289470']
+[AMS cxg_a19d1667_S3:age_up] n_mapped=986 n_ctrl=22798 score_mean=+0.0948
+[AMS cxg_a19d1667_S3:age_down] requested=2007 mapped=1595 missing=411 missing_symbols=['STRA6', 'GALNT9', 'PLCH2', 'MIF', 'SLC2A6', 'LTC4S', 'SHMT1', 'XYLT1', 'SLC39A4', 'MBOAT7', 'SLC9A3', 'B3GNTL1', 'AGPAT5', 'PANK4', 'RNA5-8SN3', 'RNVU1-29', 'RNU1-2', 'ENSG00000243679', 'CGB5', 'UBE2SP2']
+[AMS cxg_a19d1667_S3:age_down] n_mapped=1595 n_ctrl=23774 score_mean=+0.0222
+[t2 cxg_a19d1667_S3] ρ=+0.161 null=+0.008 p=+0.085 CI=[-0.0034121669111458895, 0.3250383453998005] n=93
+[t2 cxg_ruler_check] ρ=+0.455 null=-0.003 p=+0.005 CI=[0.2526816895220932, 0.6052676976750401] n=93
+[t2 cxg_md_check] ρ=+0.253 null=-0.004 p=+0.005 CI=[0.025246309616156863, 0.4077160163719137] n=93
+[t2 Δρ cxg_ruler_minus_MD] Δρ=+0.202 CI=[0.005755702956966147, 0.44042949765765654] excludes0=True favours=ruler n=93
+[t2 Δρ cxg_ruler_minus_S3] Δρ=+0.295 CI=[0.10702354725911561, 0.48707353752319016] excludes0=True favours=ruler n=93
+[counts] reading GSE226189_RAW.tar
+[counts] GSE226189_RAW.tar tar files=164 geneCOUNT=82
+[counts] GSE226189_RAW.tar merged geneCOUNT genes=57773 samples=82 columns actually read (GSM, first 12)=['GSM7067566', 'GSM7067567', 'GSM7067568', 'GSM7067569', 'GSM7067570', 'GSM7067571', 'GSM7067572', 'GSM7067573', 'GSM7067574', 'GSM7067575', 'GSM7067576', 'GSM7067577']
+[id_type gse226189_Tracking_ID] kind=ensembl n=57773 n_ensembl=57773 n_refseq=0 n_symbol_like=0 source=<repo>\data\raw\fibro2\GSE226189\GSE226189_RAW.tar:Tracking_ID examples=['ENSG00000000003', 'ENSG00000000005', 'ENSG00000000419', 'ENSG00000000457', 'ENSG00000000460', 'ENSG00000000938', 'ENSG00000000971', 'ENSG00000001036']
+[t2 map] Ensembl→symbol sources=['<repo>\\data\\processed\\md2\\allcell_counts_GM00731.npz n=36600', 'frozen_ruler added=1753 total=38353'] n_ids=57773 n_mapped_to_symbol=33889 n_left_as_ensembl=23884
+[id_type gse226189_mapped_symbols] kind=symbol n=57773 n_ensembl=23884 n_refseq=0 n_symbol_like=33883 source=Ensembl→symbol via 10x+ruler examples=['TSPAN6', 'TNMD', 'DPM1', 'SCYL3', 'C1ORF112', 'FGR', 'CFH', 'FUCA2']
+[id_type GSE226189_S3_symbols] kind=symbol n=57773 n_ensembl=23884 n_refseq=0 n_symbol_like=33883 source=GSE226189_S3 examples=['TSPAN6', 'TNMD', 'DPM1', 'SCYL3', 'C1ORF112', 'FGR', 'CFH', 'FUCA2']
+[AMS GSE226189_S3:age_up] requested=1533 mapped=1040 missing=492 missing_symbols=['SRD5A2', 'ENSG00000263244', 'ENSG00000290383', 'ENSG00000283907', 'RPL36AP21', 'PPIAP82', 'EEF1A1P1', 'MT-TA', 'RPL5P8', 'SUMO1P4', 'RPL39P5', 'EEF1A1P50', 'ENSG00000289470', 'ACKR4P1', 'ENSG00000205037', 'ENSG00000287666', 'ENSG00000286289', 'ENSG00000290003', 'PSMC2P1', 'SLC25A51P4']
+[AMS GSE226189_S3:age_up] n_mapped=1040 n_ctrl=27292 score_mean=+0.1283
+[AMS GSE226189_S3:age_down] requested=2007 mapped=1745 missing=261 missing_symbols=['ORAI1', 'SCO2', 'RNA5-8SN3', 'RNVU1-29', 'RNU1-2', 'ENSG00000288725', 'PSMC1P5', 'URGCP-MRPS24', 'SLC2A3P1', 'TRIM6-TRIM34', 'SLC7A5P2', 'H4C11', 'ENSG00000236120', 'ENSG00000277047', 'PPAN-P2RY11', 'PRKAR1B-AS1', 'ENSG00000288698', 'ENSG00000268287', 'ENSG00000288529', 'CORO7-PAM16']
+[AMS GSE226189_S3:age_down] n_mapped=1745 n_ctrl=32535 score_mean=-0.0213
+[t2 GSE226189_S3] ρ=+0.037 null=+0.004 p=+0.363 CI=[-0.18178111248294898, 0.2264458212825737] n=82
+[t2 gse226189_ruler_check] ρ=+0.549 null=+0.005 p=+0.005 CI=[0.37380097241375604, 0.6665807965614972] n=82
+[t2 gse226189_md_check] ρ=+0.082 null=+0.011 p=+0.259 CI=[-0.13159154015549948, 0.29149310305873255] n=82
+[t2 Δρ gse226189_ruler_minus_MD] Δρ=+0.467 CI=[0.238787945597333, 0.6957578197697852] excludes0=True favours=ruler n=82
+[t2 Δρ gse226189_ruler_minus_S3] Δρ=+0.511 CI=[0.24819062904898104, 0.7720164199723213] excludes0=True favours=ruler n=82
+[t2 GSE113957] reading <repo>\data\raw\fibro2\GSE113957\GSE113957_fpkm.txt.gz
+[id_type gse113957_Transcript_ID] kind=refseq_transcript n=27142 n_ensembl=0 n_refseq=27142 n_symbol_like=0 source=<repo>\data\raw\fibro2\GSE113957\GSE113957_fpkm.txt.gz:Transcript ID examples=['NM_173803', 'NM_014423', 'NM_001103167', 'NR_134623', 'NR_024490', 'NM_018397', 'NM_001037671', 'NR_106859']
+[t2 GSE113957] n_transcripts=27142 n_sample_cols=143
+[t2 GSE113957] parsed gene symbol from Annotation/Divergence n_unparsed=0 n_kept=27142
+[id_type gse113957_parsed_symbols] kind=symbol n=27142 n_ensembl=0 n_refseq=0 n_symbol_like=27130 source=<repo>\data\raw\fibro2\GSE113957\GSE113957_fpkm.txt.gz:Annotation/Divergence examples=['MPV17L', 'AFF4', 'ZGLP1', 'LOC105373021', 'GABPB1-AS1', 'CHDH', 'C12ORF74', 'MIR6801']
+[t2 GSE113957] collapsed transcripts→genes n_genes=27142 (sum FPKM)
+[id_type gse113957_gene_symbols_collapsed] kind=symbol n=27142 n_ensembl=0 n_refseq=0 n_symbol_like=27130 source=collapsed Annotation/Divergence examples=['MPV17L', 'AFF4', 'ZGLP1', 'LOC105373021', 'GABPB1-AS1', 'CHDH', 'C12ORF74', 'MIR6801']
+[t2 GSE113957] rank-transform genes within sample method=average shape=(27142, 143) (different transform from GTEx TMM/log2-CPM; weaker test)
+[t2 GSE113957] n_fpkm_samples=143 n_missing_age=8 n_child=24 n_adult>=18=111
+[align gse113957_ranks] ruler_genes=23485 overlap=16414 ensembl=0 symbol_fallback=16414 missing=7071
+[t2 GSE113957 ruler] overlap=16414 missing_z0=7071 z uses frozen GTEx log2-CPM mu/sd on rank inputs (weaker test; not a refit)
+[t2 gse113957_ruler_ranks] ρ=+0.116 null=-0.009 p=+0.104 CI=[-0.018555902391827764, 0.297611599283316] n=111
+[t2] GSE113957 STOP [addmodulescore] cut_number did not yield 24 bins (got 22). Not dropping bins.
+[t2 reading] key=ruler_stronger_age_in_ge2
+Δρ CI excludes zero in favour of the ruler in 2 of 3 named cohorts. MD and/or their aging signature predict donor age materially worse than the ruler on independent fibroblast cohorts.
+====================================================================================================
+MD3 TASK3  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / AddModuleScore inherited from md2; not re-tuned.
+Written **before any MD3 MD co-variation ρ**, 2026-09-19. Report-only. No gate.
+
+Across the GSE297234 Louvain cluster × timepoint rows with ≥20 cells (the FINDINGS_MD2.md unit, so the MD-vs-ruler cell is a check), report Spearman ρ between MD score and each of: the frozen ruler (reproduce the FINDINGS_MD2.md values as a check), the pluripotency−fibroblast score, the TGF-β score, and cell-state label treated as an ordinal along their trajectory.
+
+Ordinal, frozen before this ρ: Fibroblast=0, PartialReprog=1, EarlyPluripotency=2, Pluripotency=3. NonReprog is not on that axis and is excluded from the ordinal ρ; n excluded is reported. This is our coding of their OSKM progression, not theirs.
+
+Permutation null n_perm=200 seed 20260914 (shuffle MD, hold the other variable). Bootstrap CI B=200 seed 20260918. One table, both donors separate, never averaged. This says what MD co-varies with in this dataset without claiming what it “really” measures.
+
+[t3] GM00731 n_rows≥20 with MD=33
+[t3 GM00731_MD_vs_frozen_ruler] n=33 ρ=+0.782 null=-0.014 p=+0.005 CI=[0.6026841105942605, 0.8794091332221533]
+[t3 check] GM00731 MD vs ruler md3=+0.782 md2=+0.782 |Δ|=0.0
+[t3 GM00731_MD_vs_pluri_primary] n=33 ρ=-0.938 null=+0.018 p=+1.000 CI=[-0.9688151255554315, -0.8503064647760364]
+[t3 GM00731_MD_vs_tgfb_score] n=33 ρ=+0.651 null=+0.017 p=+0.005 CI=[0.35163668526877606, 0.8353822009533274]
+[t3 GM00731_MD_vs_state_ordinal] n=24 ρ=-0.601 null=+0.012 p=+1.000 CI=[-0.8165813516817206, -0.15610980233100477]
+[t3] GM23815 n_rows≥20 with MD=34
+[t3 GM23815_MD_vs_frozen_ruler] n=34 ρ=+0.766 null=+0.013 p=+0.005 CI=[0.577046644839339, 0.8781790320111033]
+[t3 check] GM23815 MD vs ruler md3=+0.766 md2=+0.766 |Δ|=0.0
+[t3 GM23815_MD_vs_pluri_primary] n=34 ρ=-0.960 null=-0.015 p=+1.000 CI=[-0.9794562965642291, -0.8827703078699393]
+[t3 GM23815_MD_vs_tgfb_score] n=34 ρ=+0.650 null=+0.002 p=+0.005 CI=[0.43432343219184427, 0.8219098682194299]
+[t3 GM23815_MD_vs_state_ordinal] n=33 ρ=-0.581 null=+0.016 p=+1.000 CI=[-0.7682259005746418, -0.21611415882826301]
+[run] DONE

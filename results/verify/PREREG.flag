@@ -1,0 +1,69 @@
+TASK: VERIFY — audit every number in the preprint draft against its source file.
+
+Nature of this task: a read-only audit of files already in this repository.
+No statistic is computed, no analysis is rerun, and nothing is edited —
+including the preprint itself.
+
+Write FINDINGS_VERIFY.md, PROGRESS_VERIFY.md, results/verify/*.
+Create no other files. Modify no existing file. Do not refit the frozen ruler.
+Do not rerun any analysis to regenerate a number: every check reads a stored
+result file as it is on disk.
+
+Write this file verbatim into FINDINGS_VERIFY.md and results/verify/PREREG.flag
+before any check.
+
+--- INPUT ---
+The current preprint draft: the most recent rejuvenation_readouts_preprint_3.docx
+in the repository paper/. Report its filename, size, md5 and modification time, and
+list every other draft version found so the author can confirm the right one
+was audited. STOP `no_draft` if none exists.
+
+--- STAGE 1: EXTRACT ---
+Extract every numeric claim in the draft: correlations, confidence intervals,
+distances, counts, sample sizes, fractions, angles, p and q values, thresholds,
+accessions, file sizes. Include the abstract, tables, figure captions and
+methods. Write them to results/verify/claims.csv with the number, the sentence
+containing it, and its location in the document. Report the total.
+
+--- STAGE 2: TRACE ---
+For each claim, find the file under results/ that produced it. Record the path
+and the exact field or row. Read the number; never compute it. Mark each claim:
+  match        — draft and source agree at the precision printed
+  rounding     — differ only in the last printed digit
+  mismatch     — both exist and differ; record both values verbatim
+  untraceable  — no source found; record what was searched
+  not_a_claim  — a date, page number or similar
+Report the count of each. List every mismatch and every untraceable claim in
+full, with the draft sentence quoted exactly. Do not summarise them.
+
+--- STAGE 3: PLACEHOLDERS AND REFERENCES ---
+Report every bracketed placeholder still in the draft, verbatim with location.
+Report every results file, accession, URL and DOI the draft names, and whether
+it exists on disk. Do not fetch anything requiring credentials.
+Report every reference cited in the text but absent from the reference list,
+and every dataset used as data but not cited.
+
+--- STAGE 4: GAPS.md TRIAGE ---
+GAPS.md was written against an earlier draft and may be out of date. For each
+item in all five of its sections report exactly one verdict:
+  resolved — the current draft carries the corrected value; quote it
+  open     — the discrepancy or gap is still present; quote the draft sentence
+  stale    — the item refers to text no longer in the draft; say what was cut
+Do not edit GAPS.md.
+
+--- WHAT DOES NOT COUNT ---
+- editing the preprint, GAPS.md, or any result file.
+- recomputing a number instead of reading it.
+- judging a mismatch acceptable; report it and let the author decide.
+- guessing a source file; if the trace is uncertain, mark it untraceable.
+- collapsing several mismatches into one line.
+
+--- OUTPUT ---
+FINDINGS_VERIFY.md: this file verbatim; draft identity and other versions found;
+Stage 1 count; Stage 2 verdict counts plus the full mismatch and untraceable
+lists; Stage 3 placeholders, references and broken links; Stage 4 triage of all
+five GAPS sections; fired keys.
+PROGRESS_VERIFY.md: stop status, and a short ordered list of what must be fixed
+before posting, hardest first.
+results/verify/claims.csv: every claim with its verdict and source path.
+Record every failure verbatim.

@@ -1,0 +1,67 @@
+{
+ "any_material": false,
+ "flags": [
+  {
+   "cell_line": "GM00731",
+   "metric": "n_cells",
+   "label": "cells recovered",
+   "pre_median": 6318.0,
+   "d10": 4399.0,
+   "ratio": 0.6962646407090851,
+   "material": false
+  },
+  {
+   "cell_line": "GM00731",
+   "metric": "median_UMI_per_cell",
+   "label": "median UMI/cell",
+   "pre_median": 10922.0,
+   "d10": 13456.0,
+   "ratio": 1.2320087895989746,
+   "material": false
+  },
+  {
+   "cell_line": "GM00731",
+   "metric": "mito_read_fraction_library",
+   "label": "mitochondrial read fraction",
+   "pre_median": 0.03317215540013561,
+   "d10": 0.03587785418436102,
+   "ratio": 1.0815653596092327,
+   "material": false
+  },
+  {
+   "cell_line": "GM23815",
+   "metric": "n_cells",
+   "label": "cells recovered",
+   "pre_median": 7782.0,
+   "d10": 7935.0,
+   "ratio": 1.0196607555898227,
+   "material": false
+  },
+  {
+   "cell_line": "GM23815",
+   "metric": "median_UMI_per_cell",
+   "label": "median UMI/cell",
+   "pre_median": 8140.0,
+   "d10": 9063.0,
+   "ratio": 1.1133906633906634,
+   "material": false
+  },
+  {
+   "cell_line": "GM23815",
+   "metric": "mito_read_fraction_library",
+   "label": "mitochondrial read fraction",
+   "pre_median": 0.03838899794934119,
+   "d10": 0.04951283188448647,
+   "ratio": 1.2897661968104635,
+   "material": false
+  }
+ ],
+ "notes": [
+  "GM00731 cells recovered: d0/d3/d7 median=6318 d10=4399 ratio=0.696 material=False",
+  "GM00731 median UMI/cell: d0/d3/d7 median=1.092e+04 d10=1.346e+04 ratio=1.232 material=False",
+  "GM00731 mitochondrial read fraction: d0/d3/d7 median=0.03317 d10=0.03588 ratio=1.082 material=False",
+  "GM23815 cells recovered: d0/d3/d7 median=7782 d10=7935 ratio=1.020 material=False",
+  "GM23815 median UMI/cell: d0/d3/d7 median=8140 d10=9063 ratio=1.113 material=False",
+  "GM23815 mitochondrial read fraction: d0/d3/d7 median=0.03839 d10=0.04951 ratio=1.290 material=False"
+ ]
+}

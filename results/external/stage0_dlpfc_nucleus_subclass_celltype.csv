@@ -1,0 +1,31 @@
+subclass,cell_type,n_nuclei
+Adaptive,B cell,202
+Adaptive,T cell,1265
+Adaptive,natural killer cell,829
+Adaptive,plasma cell,57
+Astro,astrocyte,150320
+EN_L2_3_IT,L2/3 intratelencephalic projecting glutamatergic neuron,152901
+EN_L3_5_IT_1,L2/3-6 intratelencephalic projecting glutamatergic neuron,15389
+EN_L3_5_IT_2,L2/3-6 intratelencephalic projecting glutamatergic neuron,39835
+EN_L3_5_IT_3,L2/3-6 intratelencephalic projecting glutamatergic neuron,41249
+EN_L5_6_NP,L5/6 near-projecting glutamatergic neuron,8091
+EN_L5_ET,L5 extratelencephalic projecting glutamatergic cortical neuron,351
+EN_L6B,L6b glutamatergic neuron of the primary motor cortex,10144
+EN_L6_CT,L6 corticothalamic-projecting glutamatergic cortical neuron,11902
+EN_L6_IT_1,L6 intratelencephalic projecting glutamatergic neuron,15966
+EN_L6_IT_2,L6 intratelencephalic projecting glutamatergic neuron,5022
+Endo,endothelial cell,22414
+IN_ADARB2,GABAergic neuron,27555
+IN_LAMP5_LHX6,lamp5 GABAergic interneuron,8208
+IN_LAMP5_RELN,lamp5 GABAergic interneuron,17684
+IN_PVALB,pvalb GABAergic interneuron,47448
+IN_PVALB_CHC,pvalb GABAergic interneuron,9533
+IN_SST,sst GABAergic interneuron,62613
+IN_VIP,VIP GABAergic interneuron,66708
+Micro,microglial cell,66294
+OPC,oligodendrocyte precursor cell,107659
+Oligo,oligodendrocyte,415453
+PC,pericyte,11465
+PVM,perivascular macrophage,3352
+SMC,smooth muscle cell,2696
+VLMC,vascular leptomeningeal cell,9550

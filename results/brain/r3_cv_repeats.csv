@@ -1,0 +1,73 @@
+repeat,model,celltype,n,r2_within_batch,mae_within,r2_naive,mae_naive,alpha_mean,inner_mode,path
+0,"composition (CLR, 19 categories)",(donor level),233,0.048754373402656426,12.129108639669045,-0.6727307111171803,19.444814840399687,0.65,donor;donor,donor_inner_fallback
+0,"composition (CLR, 19 categories)",(donor level),233,-0.0038301770726620887,12.427696284420247,-0.6783111601616734,19.175348458716844,0.01,literal_tissue_analyze,literal_T3
+0,expression: all 20 cell types jointly,(donor level),233,0.4444614164974363,9.26995575728099,-0.4866563892132878,19.3385258897494,0.01,donor;donor,donor_inner_fallback
+0,expression: all 20 cell types jointly,(donor level),233,0.4444614164974363,9.26995575728099,-0.4866563892132878,19.3385258897494,0.01,literal_tissue_analyze,literal_T3
+0,expression: within cell type,GABAergic neuron,179,0.2957448666036664,10.289711018400231,-0.5636058343397341,18.661266467355976,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,L2/3 intratelencephalic projecting glutamatergic neuron,220,0.710336229289354,6.518111247916106,-0.2929777557174955,18.125677049438753,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,L2/3-6 intratelencephalic projecting glutamatergic neuron,215,0.6886936668110951,6.930977521718595,-0.2607117553963185,18.042205262932683,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,L5/6 near-projecting glutamatergic neuron,124,0.10742294840826805,11.142046601893757,-0.6802652321085538,18.806190882243083,500.005,donor;donor,donor_inner_fallback
+0,expression: within cell type,L6 corticothalamic-projecting glutamatergic cortical neuron,153,0.3638229066029828,9.488682594778606,-0.4283846127712565,17.656669150983195,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,L6 intratelencephalic projecting glutamatergic neuron,150,0.40969573656448777,9.01302899540203,-0.65747740236182,19.25688331803325,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,L6b glutamatergic neuron of the primary motor cortex,109,0.27129383283918296,9.926490554588582,-0.48203540650981447,16.908149905310715,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,VIP GABAergic interneuron,217,0.4339965493759852,9.180689068498676,-0.3762149033814386,18.268964896515318,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,astrocyte,229,0.487228622959464,8.74098824257586,-0.560398185923769,19.457340974521053,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,endothelial cell,160,0.04976327415542081,12.18949706032933,-0.8216710524875277,19.693019162109504,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,lamp5 GABAergic interneuron,205,0.3040949965085692,10.44647418648188,-0.48581287398604944,18.985674951280625,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,microglial cell,219,0.29626793358926107,10.537311076077424,-0.5935924063663853,19.592654024324652,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,oligodendrocyte,232,0.3561963131478538,9.947126551494675,-0.6002983191905178,19.69954339595573,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,oligodendrocyte precursor cell,232,0.5175622982993058,8.681879187807283,-0.511163057009375,19.096185195178638,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,pericyte,136,0.07301523255582187,11.832577358318975,-0.5643456685088399,17.192756169265216,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,perivascular macrophage,31,-0.0791961962465193,13.58827336936732,-1.8070077495811465,28.728820231864976,0.155,donor;donor,donor_inner_fallback
+0,expression: within cell type,pvalb GABAergic interneuron,209,0.3971285129983999,9.550971235693533,-0.4130749487218095,18.581085788769535,0.01,donor;donor,donor_inner_fallback
+0,expression: within cell type,smooth muscle cell,16,-0.01712867644909566,12.545706306708396,-0.1098105569803216,12.032299075810057,500.005,donor;donor,donor_inner_fallback
+0,expression: within cell type,sst GABAergic interneuron,206,0.5000194805491764,8.888012817029148,-0.30912756182743384,17.515560466682278,0.055,donor;donor,donor_inner_fallback
+0,expression: within cell type,vascular leptomeningeal cell,81,0.030919313701239348,13.670557746451056,-0.9311933148236975,22.74027921096003,500.005,donor;donor,donor_inner_fallback
+1,"composition (CLR, 19 categories)",(donor level),233,0.06188948886490209,12.118195652059477,-0.6894565383761098,19.574360065617366,2.0,donor;donor,donor_inner_fallback
+1,"composition (CLR, 19 categories)",(donor level),233,-0.0038301770726620887,12.427696284420247,-0.6783111601616734,19.175348458716844,0.01,literal_tissue_analyze,literal_T3
+1,expression: all 20 cell types jointly,(donor level),233,0.4444614164974363,9.26995575728099,-0.4866563892132878,19.3385258897494,0.01,donor;donor,donor_inner_fallback
+1,expression: all 20 cell types jointly,(donor level),233,0.4444614164974363,9.26995575728099,-0.4866563892132878,19.3385258897494,0.01,literal_tissue_analyze,literal_T3
+1,expression: within cell type,GABAergic neuron,179,0.2957448666036664,10.289711018400231,-0.5636058343397341,18.661266467355976,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,L2/3 intratelencephalic projecting glutamatergic neuron,220,0.710336229289354,6.518111247916106,-0.23371847714387872,17.704947152293204,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,L2/3-6 intratelencephalic projecting glutamatergic neuron,215,0.6886936668110951,6.930977521718595,-0.2607117553963185,18.042205262932683,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,L5/6 near-projecting glutamatergic neuron,124,0.24617652529963285,10.456991481837585,-0.7563756773742587,19.223972695705566,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,L6 corticothalamic-projecting glutamatergic cortical neuron,153,0.3638229066029828,9.488682594778606,-0.4283846127712565,17.656669150983195,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,L6 intratelencephalic projecting glutamatergic neuron,150,0.40969573656448777,9.01302899540203,-0.65747740236182,19.25688331803325,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,L6b glutamatergic neuron of the primary motor cortex,109,0.2060766562283025,10.39275972510097,-0.6020452115164303,17.302484612148458,0.505,donor;donor,donor_inner_fallback
+1,expression: within cell type,VIP GABAergic interneuron,217,0.4339965493759852,9.180689068498676,-0.3762149033814386,18.268964896515318,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,astrocyte,229,0.487228622959464,8.74098824257586,-0.5130890676285729,19.159766262782494,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,endothelial cell,160,0.04976327415542081,12.18949706032933,-0.8187468708636421,19.676243956215938,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,lamp5 GABAergic interneuron,205,0.295953797819431,10.505476939659728,-0.48581287398604944,18.985674951280625,0.055,donor;donor,donor_inner_fallback
+1,expression: within cell type,microglial cell,219,0.29626793358926107,10.537311076077424,-0.6065643940348235,19.70732519993451,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,oligodendrocyte,232,0.3561963131478538,9.947126551494675,-0.6002983191905178,19.69954339595573,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,oligodendrocyte precursor cell,232,0.5175622982993058,8.681879187807283,-0.511163057009375,19.096185195178638,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,pericyte,136,0.03988609098576423,12.051344676112388,-0.5974133170719722,17.248643859199344,500.005,donor;donor,donor_inner_fallback
+1,expression: within cell type,perivascular macrophage,31,-0.09345585968670433,13.664877698126736,-1.8313098757382278,28.77987039061151,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,pvalb GABAergic interneuron,209,0.3971285129983999,9.550971235693533,-0.4130749487218095,18.581085788769535,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,smooth muscle cell,16,-0.031878816473086324,12.545706306708396,-0.1098105569803216,12.032299075810057,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,sst GABAergic interneuron,206,0.5169735091580612,8.715336152657022,-0.30912756182743384,17.515560466682278,0.01,donor;donor,donor_inner_fallback
+1,expression: within cell type,vascular leptomeningeal cell,81,0.07621225443726687,13.450742488970313,-0.9225293067990816,22.743351881914684,0.01,donor;donor,donor_inner_fallback
+2,"composition (CLR, 19 categories)",(donor level),233,0.049590984632472135,12.33468449410171,-0.6727307111171803,19.444814840399687,6.5,donor;donor,donor_inner_fallback
+2,"composition (CLR, 19 categories)",(donor level),233,-0.0038301770726620887,12.427696284420247,-0.6783111601616734,19.175348458716844,0.01,literal_tissue_analyze,literal_T3
+2,expression: all 20 cell types jointly,(donor level),233,0.4444614164974363,9.26995575728099,-0.4866563892132878,19.3385258897494,0.01,donor;donor,donor_inner_fallback
+2,expression: all 20 cell types jointly,(donor level),233,0.4444614164974363,9.26995575728099,-0.4866563892132878,19.3385258897494,0.01,literal_tissue_analyze,literal_T3
+2,expression: within cell type,GABAergic neuron,179,0.2733526097713712,10.446161963120842,-0.5636058343397341,18.661266467355976,0.155,donor;donor,donor_inner_fallback
+2,expression: within cell type,L2/3 intratelencephalic projecting glutamatergic neuron,220,0.710336229289354,6.518111247916106,-0.2551548537299031,17.895507597810848,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,L2/3-6 intratelencephalic projecting glutamatergic neuron,215,0.6886936668110951,6.930977521718595,-0.2607117553963185,18.042205262932683,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,L5/6 near-projecting glutamatergic neuron,124,0.10742294840826805,11.142046601893757,-0.7563756773742587,19.223972695705566,500.005,donor;donor,donor_inner_fallback
+2,expression: within cell type,L6 corticothalamic-projecting glutamatergic cortical neuron,153,0.3638229066029828,9.488682594778606,-0.4186251558147125,17.584153397564506,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,L6 intratelencephalic projecting glutamatergic neuron,150,0.40969573656448777,9.01302899540203,-0.65747740236182,19.25688331803325,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,L6b glutamatergic neuron of the primary motor cortex,109,0.27129383283918296,9.926490554588582,-0.48203540650981447,16.908149905310715,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,VIP GABAergic interneuron,217,0.4339965493759852,9.180689068498676,-0.3762149033814386,18.268964896515318,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,astrocyte,229,0.487228622959464,8.74098824257586,-0.560398185923769,19.457340974521053,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,endothelial cell,160,0.04976327415542081,12.18949706032933,-0.8216710524875277,19.693019162109504,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,lamp5 GABAergic interneuron,205,0.3040949965085692,10.44647418648188,-0.48581287398604944,18.985674951280625,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,microglial cell,219,0.29626793358926107,10.537311076077424,-0.5627224061739027,19.335060050324437,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,oligodendrocyte,232,0.3561963131478538,9.947126551494675,-0.5945488978579496,19.66051604311641,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,oligodendrocyte precursor cell,232,0.5175622982993058,8.681879187807283,-0.511163057009375,19.096185195178638,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,pericyte,136,0.0687623212962184,11.874511823734602,-0.5643456685088399,17.192756169265216,0.155,donor;donor,donor_inner_fallback
+2,expression: within cell type,perivascular macrophage,31,-0.08809570215397478,13.636612160774018,-1.8070077495811465,28.728820231864976,0.055,donor;donor,donor_inner_fallback
+2,expression: within cell type,pvalb GABAergic interneuron,209,0.3971285129983999,9.550971235693533,-0.4130749487218095,18.581085788769535,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,smooth muscle cell,16,-0.031878816473086324,12.545706306708396,-0.1098105569803216,12.032299075810057,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,sst GABAergic interneuron,206,0.5169735091580612,8.715336152657022,-0.30912756182743384,17.515560466682278,0.01,donor;donor,donor_inner_fallback
+2,expression: within cell type,vascular leptomeningeal cell,81,0.0709681448679983,13.474541219287607,-0.95990411959221,22.960229438844358,0.155,donor;donor,donor_inner_fallback

@@ -1,0 +1,1 @@
+Stage 1 pass: ridge raw ρ>0 both ways with null ≤ 0.05 (B1→C1 ρ=+0.529 null=-0.004 p=+0.005; C1→B1 ρ=+0.561 null=+0.013 p=+0.005).

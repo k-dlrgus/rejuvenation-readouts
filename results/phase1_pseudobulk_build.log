@@ -1,0 +1,16 @@
+[load] onek1k: 1,248,980 cells x 35,528 genes; obs index unique=True; obs cols=['orig.ident', 'nCount_RNA', 'nFeature_RNA', 'percent.mt', 'donor_id', 'pool_number', 'predicted.celltype.l2', 'predicted.celltype.l2.score', 'age', 'tissue_ontology_term_id', 'assay_ontology_term_id', 'disease_ontology_term_id', 'cell_type_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'development_stage_ontology_term_id', 'sex_ontology_term_id', 'is_primary_data', 'suspension_type', 'tissue_type', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid', '_pos']
+[filter] cells with numeric donor age                            cells       1,248,980 ->  1,248,980  (removed 0) non-numeric development_stage dropped
+[filter] cells whose cell type is in the analysis map            cells       1,248,980 ->  1,243,859  (removed 5,121) dropped raw labels: ['CD4 Proliferating', 'CD8 Proliferating', 'Doublet', 'Eryth', 'HSPC', 'Platelet']
+[filter] pseudobulk groups with >= 20 cells                      groups         19,754 ->      9,681  (removed 10,073) 
+[filter] cells in retained pseudobulk groups                     cells       1,243,859 ->  1,170,622  (removed 73,237) 
+[filter] cell types present in >= 100 donors                     cell types         21 ->         16  (removed 5) dropped: {'NK_CD56bright': np.int64(33), 'Plasmablast': np.int64(14), 'cDC': np.int64(7), 'dnT': np.int64(1), 'pDC': np.int64(3)}
+[filter] cells in retained cell types                            cells       1,170,622 ->  1,168,986  (removed 1,636) 
+[counts] candidate X: encoding=csr_matrix dtype=float32 integer-fraction(sample)=1.0000 max=2057.0
+   rows 40,000/1,248,980  (26s)
+   rows 240,000/1,248,980  (48s)
+   rows 440,000/1,248,980  (74s)
+   rows 640,000/1,248,980  (93s)
+   rows 840,000/1,248,980  (112s)
+   rows 1,040,000/1,248,980  (132s)
+   rows 1,240,000/1,248,980  (153s)
+[done] pseudobulk (9623, 35528) -> <repo>\data\processed\onek1k_pseudobulk.h5ad  (182s)

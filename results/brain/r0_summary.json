@@ -1,0 +1,86 @@
+[
+ {
+  "name": "brain_aging",
+  "source": "https://datasets.cellxgene.cziscience.com/13e8f1dd-962f-47b7-9cf7-c71d2b21b8a5.h5ad",
+  "n_cells": 1332155,
+  "n_genes": 34176,
+  "n_donors": 291,
+  "obs_columns": [
+   "Source",
+   "n_genes",
+   "n_counts",
+   "class",
+   "subclass",
+   "subtype",
+   "tissue_ontology_term_id",
+   "tissue_type",
+   "assay_ontology_term_id",
+   "cell_type_ontology_term_id",
+   "self_reported_ethnicity_ontology_term_id",
+   "development_stage_ontology_term_id",
+   "sex_ontology_term_id",
+   "donor_id",
+   "suspension_type",
+   "is_primary_data",
+   "DLBD_status",
+   "FTD_status",
+   "Tauopathy_status",
+   "Vascular_status",
+   "Schizophrenia",
+   "Bipolar_Disorder",
+   "Parkinson_disease",
+   "genetic_ancestry",
+   "disease_ontology_term_id",
+   "cell_type",
+   "assay",
+   "disease",
+   "sex",
+   "tissue",
+   "self_reported_ethnicity",
+   "development_stage",
+   "observation_joinid"
+  ],
+        "batch_column": "Source",
+        "batch_kind": "shared_donor_site_or_assay_not_sequencing_pool",
+  "batch_recoverable": true,
+  "stop_r0": false,
+  "n_technical_usable": 0,
+  "n_any_usable": 8,
+  "age_min": 0.08333333333333333,
+  "age_max": 89.0,
+  "nunique_age": 84,
+  "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11",
+  "title": "Aging_Cohort",
+  "url_used": "https://datasets.cellxgene.cziscience.com/13e8f1dd-962f-47b7-9cf7-c71d2b21b8a5.h5ad",
+  "cxg": {
+   "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11",
+   "collection_id": "84ce6837-548d-4a1f-919f-0bc0d9a3952f",
+   "title": "Aging_Cohort",
+   "cell_count": 1332155,
+   "n_donors": 291,
+   "n_cell_types": 25,
+   "assays": [
+    "10x 3' v3"
+   ],
+   "tissues": [
+    "dorsolateral prefrontal cortex"
+   ],
+   "diseases": [
+    "atherosclerosis",
+    "normal",
+    "type 1 diabetes mellitus",
+    "type 1 diabetes mellitus || atherosclerosis",
+    "type 2 diabetes mellitus",
+    "type 2 diabetes mellitus || atherosclerosis"
+   ],
+   "suspension": [
+    "nucleus"
+   ],
+   "doi": "Publication: https://doi.org/10.1101/2024.10.31.24316513 Dataset Version: https://datasets.cellxgene.cziscience.com/13e8f1dd-962f-47b7-9cf7-c71d2b21b8a5.h5ad curated and distributed by CZ CELLxGENE Discover in Collection: https://cellxgene.cziscience.com/collections/84ce6837-548d-4a1f-919f-0bc0d9a3952f",
+   "h5ad_url": "https://datasets.cellxgene.cziscience.com/13e8f1dd-962f-47b7-9cf7-c71d2b21b8a5.h5ad",
+   "h5ad_bytes": 12421671635,
+   "collection_doi": "10.1101/2024.10.31.24316513",
+   "collection_name": "Population-scale cross-disorder atlas of the human prefrontal cortex at single-cell resolution"
+  }
+ }
+]

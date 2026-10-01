@@ -1,0 +1,235 @@
+[step0] GSE297234_HFIB_COMBINED_SEVOSKM.rds: header {'version': 3, 'writer': 263169, 'min_reader': 197888, 'native_encoding': 'UTF-8'}
+[step0] top-level type=25 class=['Seurat'] slots=['assays', 'meta.data', 'active.assay', 'active.ident', 'graphs', 'neighbors', 'reductions', 'images', 'project.name', 'misc', 'version', 'commands', 'tools', 'class']; skipped 26 large vectors (9.22 GB) by seeking
+[step0] HFIB_COMBINED: meta.data (53454, 20); columns ['orig.ident', 'nCount_RNA', 'nFeature_RNA', 'percent.mt', 'nCount_SCT', 'nFeature_SCT', 'age_group', 'HALLMARK_EMT1', 'HALLMARK_TGFB1', 'PI16_fibtype1', 'LRRC15_fibtype1', 'COL3A1_fibtype1', 'age_ident', 'cell_state', 'ordered_clusters', 'Fibroblast1', 'EarlyPluripotency1', 'Pluripotency1', 'PartialReprog1', 'NonReprog1']
+[step0] HFIB_COMBINED: other slots {'active.assay': ['SCT'], 'active.ident': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14'], 'project.name': ['HFIB'], 'version': [array([5, 0, 2])], 'assays': ['RNA', 'SCT'], 'reductions': ['pca', 'umap'], 'graphs': ['SCT_nn', 'SCT_snn']}
+[step0] HFIB_COMBINED.orig.ident: dtype=category n_unique=8 counts={'GM23815_D7': 11092, 'GM23815_D0': 7745, 'GM23815_D10': 7278, 'GM00731_D7': 6358, 'GM23815_D3': 6305, 'GM00731_D3': 5642, 'GM00731_D0': 4980, 'GM00731_D10': 4054}
+[step0] HFIB_COMBINED.nCount_RNA: dtype=float64 n_unique=21161 head=['2737.0', '21651.0', '11249.0', '11721.0', '13426.0']
+[step0] HFIB_COMBINED.nFeature_RNA: dtype=int64 n_unique=6468 head=['1384', '5206', '3799', '2736', '4678']
+[step0] HFIB_COMBINED.percent.mt: dtype=float64 n_unique=52236 head=['15.381804895871392', '4.318507228303543', '4.4803982576229', '2.5424451838580326', '3.8134962014002682']
+[step0] HFIB_COMBINED.nCount_SCT: dtype=float64 n_unique=10223 head=['12076.0', '15406.0', '13441.0', '13768.0', '13821.0']
+[step0] HFIB_COMBINED.nFeature_SCT: dtype=int64 n_unique=4545 head=['2995', '5132', '3799', '2736', '4678']
+[step0] HFIB_COMBINED.age_group: dtype=category n_unique=2 counts={'Young': 32420, 'Aged': 21034}
+[step0] HFIB_COMBINED.HALLMARK_EMT1: dtype=float64 n_unique=53454 head=['0.531143733597533', '0.5911586141858742', '0.45210917711268334', '0.6209352393409561', '0.4309382052200389']
+[step0] HFIB_COMBINED.HALLMARK_TGFB1: dtype=float64 n_unique=53454 head=['0.16699225278212027', '0.009255088971695802', '0.20847506999076815', '-0.07364426695281157', '0.10987834446761957']
+[step0] HFIB_COMBINED.PI16_fibtype1: dtype=float64 n_unique=53454 head=['0.24916459248809508', '0.3561822154957666', '0.3021375531059912', '0.2373344108855512', '0.3514129173796998']
+[step0] HFIB_COMBINED.LRRC15_fibtype1: dtype=float64 n_unique=53454 head=['0.3271624813835935', '0.40388457923533516', '0.3332650918574842', '0.4045750518348263', '0.2973082608560727']
+[step0] HFIB_COMBINED.COL3A1_fibtype1: dtype=float64 n_unique=53454 head=['0.46992651221779685', '0.4870086625245829', '0.42159861374634755', '0.448432857359212', '0.39987241786900946']
+[step0] HFIB_COMBINED.age_ident: dtype=category n_unique=8 counts={'Young_D7': 11092, 'Young_D0': 7745, 'Young_D10': 7278, 'Aged_D7': 6358, 'Young_D3': 6305, 'Aged_D3': 5642, 'Aged_D0': 4980, 'Aged_D10': 4054}
+[step0] HFIB_COMBINED.cell_state: dtype=category n_unique=16 counts={'Fib_1': 10810, 'EarPlu_2': 5138, 'NonRep_2': 5015, 'Plu_1': 4465, 'ParRep_1': 4061, 'EarPlu_3': 3893, 'ParRep_2': 3830, 'ParRep_4': 2864, 'NonRep_4': 2648, 'NonRep_1': 2419, 'Fib_2': 1964, 'NonRep_3': 1630, 'EarPlu_1': 1556, 'Fib_3': 1498, 'ParRepr_3': 1029, 'Plu_2': 634}
+[step0] HFIB_COMBINED.ordered_clusters: dtype=category n_unique=16 counts={'A': 10810, 'I': 5138, 'N': 5015, 'K': 4465, 'D': 4061, 'J': 3893, 'E': 3830, 'G': 2864, 'P': 2648, 'M': 2419, 'B': 1964, 'O': 1630, 'H': 1556, 'C': 1498, 'F': 1029, 'L': 634}
+[step0] HFIB_COMBINED.Fibroblast1: dtype=float64 n_unique=53454 head=['0.9703486100377019', '0.9498747873104079', '0.8384235599172507', '0.9605902216207357', '0.7973197470703747']
+[step0] HFIB_COMBINED.EarlyPluripotency1: dtype=float64 n_unique=53454 head=['0.3149770389587143', '0.2799236163425918', '0.3146290984536194', '0.4419950659979225', '0.2821749406215405']
+[step0] HFIB_COMBINED.Pluripotency1: dtype=float64 n_unique=53454 head=['-0.16359989440250533', '-0.28928837997286305', '-0.25419173692562497', '-0.1820273773055971', '-0.23470579605331662']
+[step0] HFIB_COMBINED.PartialReprog1: dtype=float64 n_unique=53454 head=['-0.015264543859996704', '0.07267466785133025', '0.4389296687624844', '0.17222747568269536', '0.25641230589032715']
+[step0] HFIB_COMBINED.NonReprog1: dtype=float64 n_unique=53454 head=['0.2735613750359893', '0.24793256753450754', '0.12909373950029168', '0.1988350150456239', '0.213876063889212']
+[step0] GSE297234_GM00731_SEVOSKM.rds: header {'version': 3, 'writer': 263169, 'min_reader': 197888, 'native_encoding': 'UTF-8'}
+[step0] top-level type=25 class=['Seurat'] slots=['assays', 'meta.data', 'active.assay', 'active.ident', 'graphs', 'neighbors', 'reductions', 'images', 'project.name', 'misc', 'version', 'commands', 'tools', 'class']; skipped 12 large vectors (4.58 GB) by seeking
+[step0] GM00731: meta.data (21418, 17); columns ['orig.ident', 'nCount_RNA', 'nFeature_RNA', 'percent.mt', 'nCount_SCT', 'nFeature_SCT', 'AGE_UP1', 'AGE_DOWN1', 'S.Score', 'G2M.Score', 'Phase', 'PI16_fibtype1', 'LRRC15_fibtype1', 'COL3A1_fibtype1', 'HALLMARK_EMT1', 'HALLMARK_TGFB1', 'ordered_clusters']
+[step0] GM00731: other slots {'active.assay': ['SCT'], 'active.ident': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14'], 'project.name': ['GM00731'], 'version': [array([   4,    9,    9, 9086])], 'assays': ['RNA', 'SCT'], 'reductions': ['pca', 'umap'], 'graphs': ['SCT_nn', 'SCT_snn']}
+[step0] GM00731.orig.ident: dtype=category n_unique=4 counts={'GM00731_D7': 6696, 'GM00731_D3': 5401, 'GM00731_D0': 5014, 'GM00731_D10': 4307}
+[step0] GM00731.nCount_RNA: dtype=float64 n_unique=14295 head=['2738.0', '21654.0', '11253.0', '11722.0', '13428.0']
+[step0] GM00731.nFeature_RNA: dtype=int64 n_unique=5644 head=['1385', '5209', '3803', '2737', '4680']
+[step0] GM00731.percent.mt: dtype=float64 n_unique=21272 head=['15.376186997808619', '4.317908931375265', '4.478805651826179', '2.5422282886879373', '3.8129282097110515']
+[step0] GM00731.nCount_SCT: dtype=float64 n_unique=3767 head=['9921.0', '13218.0', '11721.0', '12006.0', '12870.0']
+[step0] GM00731.nFeature_SCT: dtype=int64 n_unique=3639 head=['2631', '4818', '3780', '2734', '4660']
+[step0] GM00731.AGE_UP1: dtype=float64 n_unique=21418 head=['0.08722879956722573', '0.0356639306715896', '-0.008879201140962023', '0.04201246739079462', '0.039822614900370895']
+[step0] GM00731.AGE_DOWN1: dtype=float64 n_unique=21418 head=['-0.01558332276812767', '0.04513156500354484', '0.1082803430880109', '0.05302208622929411', '0.06537358820947517']
+[step0] GM00731.S.Score: dtype=float64 n_unique=21406 head=['-0.09426629776514688', '0.06761817854318375', '0.02781109653431829', '-0.05959705709769124', '0.06282918981224772']
+[step0] GM00731.G2M.Score: dtype=float64 n_unique=21418 head=['-0.13600627191715203', '-0.15562891892683337', '0.7132618367794576', '-0.12764813710481482', '0.27256013988702643']
+[step0] GM00731.Phase: dtype=category n_unique=3 counts={'G1': 14023, 'G2M': 4157, 'S': 3238}
+[step0] GM00731.PI16_fibtype1: dtype=float64 n_unique=21418 head=['0.21082793308339096', '0.3036924780944908', '0.2792835036152374', '0.2195669504167147', '0.3389442801781126']
+[step0] GM00731.LRRC15_fibtype1: dtype=float64 n_unique=21418 head=['0.23660023899591365', '0.3823562731167838', '0.30242643198013625', '0.3741635051012717', '0.28476439024427497']
+[step0] GM00731.COL3A1_fibtype1: dtype=float64 n_unique=21418 head=['0.38613793752277137', '0.4711616630035307', '0.3892870848664544', '0.42090234852004843', '0.37963678984765775']
+[step0] GM00731.HALLMARK_EMT1: dtype=float64 n_unique=21418 head=['0.3452992988235531', '0.5833879165881193', '0.4005179196797933', '0.5697577269661203', '0.4026118746704003']
+[step0] GM00731.HALLMARK_TGFB1: dtype=float64 n_unique=21418 head=['0.06694987990977475', '-0.02473998747805639', '0.15752922834484273', '-0.11943390458536679', '0.07057356592318043']
+[step0] GM00731.ordered_clusters: dtype=category n_unique=18 counts={'B': 3309, 'K': 2468, 'Q': 2364, 'I': 2249, 'G': 1362, 'O': 1346, 'N': 1242, 'R': 1166, 'C': 1113, 'P': 878, 'D': 743, 'M': 726, 'L': 619, 'F': 571, 'A': 537, 'H': 495, 'J': 119, 'E': 111}
+[prereg] wrote PREREG.flag
+[prereg] wrote FINDINGS_RELABEL.md (pre-registration only)
+[val pass1] GM00731 cells in=22653 kept=22132 dropped=521
+[val filter] cells kept=22132 genes kept=29058 dropped genes=7543
+[val pass2] GM00731 n=22132 nnz=87491886 (12s)
+[val hvg] n_candidates=29058 coef=[0.05377452928208112, 1.258931887338603, 0.3461653929528511]
+[val pass3] GM00731 n=22132 ams n_ctrl={'md_score': 9120, 'tgfb_score': 3943, 'state_Fibroblast': 7088, 'state_PartialReprog': 7036, 'state_EarlyPluripotency': 8851, 'state_Pluripotency': 10051, 'state_NonReprog': 6895} (26s)
+[val pca] npc=50 evr_sum=0.2544
+[val snn] n=22132 edges=808714
+[val louvain] n_clusters=19 sizes=[4012, 2322, 2096, 2039, 2031, 1594, 1030, 1014, 986, 961, 863, 626, 570, 445, 439, 376, 343, 243, 142] (32s; total 83s)
+[t2 label] GM00731 c0 n=4012 label=Fibroblast means={'Fibroblast': 0.8154, 'PartialReprog': 0.105, 'EarlyPluripotency': 0.3715, 'Pluripotency': -0.1434, 'NonReprog': 0.1974}
+[t2 label] GM00731 c1 n=2322 label=NonReprog means={'Fibroblast': 0.4513, 'PartialReprog': 0.1213, 'EarlyPluripotency': 0.266, 'Pluripotency': -0.1542, 'NonReprog': 0.8977}
+[t2 label] GM00731 c2 n=2096 label=EarlyPluripotency means={'Fibroblast': 0.2964, 'PartialReprog': 0.2662, 'EarlyPluripotency': 0.84, 'Pluripotency': 0.1222, 'NonReprog': -0.0184}
+[t2 label] GM00731 c3 n=2039 label=PartialReprog means={'Fibroblast': 0.3622, 'PartialReprog': 0.5076, 'EarlyPluripotency': 0.295, 'Pluripotency': -0.1534, 'NonReprog': 0.2613}
+[t2 label] GM00731 c4 n=2031 label=NonReprog means={'Fibroblast': 0.5004, 'PartialReprog': 0.1567, 'EarlyPluripotency': 0.3424, 'Pluripotency': -0.1222, 'NonReprog': 0.5778}
+[t2 label] GM00731 c5 n=1594 label=PartialReprog means={'Fibroblast': 0.1873, 'PartialReprog': 0.6181, 'EarlyPluripotency': 0.407, 'Pluripotency': -0.0743, 'NonReprog': -0.0299}
+[t2 label] GM00731 c6 n=1030 label=Fibroblast means={'Fibroblast': 0.4337, 'PartialReprog': 0.2586, 'EarlyPluripotency': 0.3787, 'Pluripotency': -0.1339, 'NonReprog': 0.4236}
+[t2 label] GM00731 c7 n=1014 label=EarlyPluripotency means={'Fibroblast': 0.3604, 'PartialReprog': 0.3001, 'EarlyPluripotency': 0.6296, 'Pluripotency': 0.0453, 'NonReprog': 0.2829}
+[t2 label] GM00731 c8 n=986 label=PartialReprog means={'Fibroblast': 0.1296, 'PartialReprog': 0.6654, 'EarlyPluripotency': 0.4872, 'Pluripotency': -0.0085, 'NonReprog': -0.104}
+[t2 label] GM00731 c9 n=961 label=EarlyPluripotency means={'Fibroblast': 0.1064, 'PartialReprog': 0.3995, 'EarlyPluripotency': 0.845, 'Pluripotency': 0.4741, 'NonReprog': -0.1162}
+[t2 label] GM00731 c10 n=863 label=NonReprog means={'Fibroblast': 0.2992, 'PartialReprog': -0.1147, 'EarlyPluripotency': 0.1076, 'Pluripotency': -0.0391, 'NonReprog': 0.5121}
+[t2 label] GM00731 c11 n=626 label=PartialReprog means={'Fibroblast': 0.1626, 'PartialReprog': 0.5634, 'EarlyPluripotency': 0.3897, 'Pluripotency': -0.0803, 'NonReprog': -0.0447}
+[t2 label] GM00731 c12 n=570 label=Fibroblast means={'Fibroblast': 0.8721, 'PartialReprog': 0.1429, 'EarlyPluripotency': 0.4257, 'Pluripotency': -0.1475, 'NonReprog': 0.1578}
+[t2 label] GM00731 c13 n=445 label=PartialReprog means={'Fibroblast': 0.1156, 'PartialReprog': 0.4146, 'EarlyPluripotency': 0.2522, 'Pluripotency': -0.0986, 'NonReprog': -0.0543}
+[t2 label] GM00731 c14 n=439 label=Pluripotency means={'Fibroblast': -0.0012, 'PartialReprog': -0.0516, 'EarlyPluripotency': 0.5915, 'Pluripotency': 0.6593, 'NonReprog': -0.0691}
+[t2 label] GM00731 c15 n=376 label=Fibroblast means={'Fibroblast': 0.6533, 'PartialReprog': 0.3534, 'EarlyPluripotency': 0.2876, 'Pluripotency': -0.1697, 'NonReprog': 0.121}
+[t2 label] GM00731 c16 n=343 label=EarlyPluripotency means={'Fibroblast': 0.0748, 'PartialReprog': 0.12, 'EarlyPluripotency': 0.208, 'Pluripotency': 0.0058, 'NonReprog': 0.0193}
+[t2 label] GM00731 c17 n=243 label=NonReprog means={'Fibroblast': 0.3341, 'PartialReprog': 0.37, 'EarlyPluripotency': 0.2533, 'Pluripotency': -0.1699, 'NonReprog': 0.6729}
+[t2 label] GM00731 c18 n=142 label=PartialReprog means={'Fibroblast': 0.2129, 'PartialReprog': 0.5263, 'EarlyPluripotency': 0.322, 'Pluripotency': -0.1182, 'NonReprog': 0.0441}
+[gate] {"same_cells_in_order": true, "percent_mt_max_abs_diff": 7.105427357601002e-15, "cluster_identical": true, "gene_mean_max_abs_diff": 0.0, "bins_identical": true, "md_max_abs_diff": 0.0, "state_max_abs_diff": {"state_Fibroblast": 0.0, "state_PartialReprog": 0.0, "state_EarlyPluripotency": 0.0, "state_Pluripotency": 0.0, "state_NonReprog": 0.0}, "labels_identical": true, "passed": true}
+[joint pass1] GM00731 cells in=22653 kept=22132 dropped=521
+[joint pass1] GM23815 cells in=34664 kept=33858 dropped=806
+[joint filter] cells kept=55990 genes kept=30804 dropped genes=5797
+[joint pass2] GM00731 n=22132 nnz=87496660 (10s)
+[joint pass2] GM23815 n=33858 nnz=109802686 (15s)
+[joint hvg] n_candidates=30804 coef=[0.0452045014300976, 1.2408283173885182, 0.3495164302505131]
+[joint pass3] GM00731 n=22132 ams n_ctrl={'md_score': 9533, 'tgfb_score': 4041, 'state_Fibroblast': 7624, 'state_PartialReprog': 6894, 'state_EarlyPluripotency': 8708, 'state_Pluripotency': 9684, 'state_NonReprog': 8097} (23s)
+[joint pass3] GM23815 n=33858 ams n_ctrl={'md_score': 9533, 'tgfb_score': 4041, 'state_Fibroblast': 7624, 'state_PartialReprog': 6894, 'state_EarlyPluripotency': 8708, 'state_Pluripotency': 9684, 'state_NonReprog': 8097} (29s)
+[joint pca] npc=50 evr_sum=0.2269
+[joint snn] n=55990 edges=2043044
+[joint louvain] n_clusters=24 sizes=[6348, 4446, 4406, 4397, 4047, 3462, 3347, 3114, 2978, 2441, 2065, 2064, 1977, 1845, 1733, 1532, 1425, 1361, 841, 692, 580, 414, 316, 159] (151s; total 263s)
+[t2 label] JOINT c0 n=6348 label=Fibroblast means={'Fibroblast': 0.7024, 'PartialReprog': 0.0981, 'EarlyPluripotency': 0.3838, 'Pluripotency': -0.1859, 'NonReprog': 0.2715}
+[t2 label] JOINT c1 n=4446 label=PartialReprog means={'Fibroblast': 0.3342, 'PartialReprog': 0.5368, 'EarlyPluripotency': 0.3094, 'Pluripotency': -0.2138, 'NonReprog': 0.2111}
+[t2 label] JOINT c2 n=4406 label=EarlyPluripotency means={'Fibroblast': 0.0996, 'PartialReprog': 0.4417, 'EarlyPluripotency': 0.7568, 'Pluripotency': 0.3564, 'NonReprog': -0.1169}
+[t2 label] JOINT c3 n=4397 label=Fibroblast means={'Fibroblast': 0.8311, 'PartialReprog': 0.121, 'EarlyPluripotency': 0.3583, 'Pluripotency': -0.2074, 'NonReprog': 0.2507}
+[t2 label] JOINT c4 n=4047 label=EarlyPluripotency means={'Fibroblast': 0.3084, 'PartialReprog': 0.2461, 'EarlyPluripotency': 0.7448, 'Pluripotency': 0.0193, 'NonReprog': 0.0396}
+[t2 label] JOINT c5 n=3462 label=EarlyPluripotency means={'Fibroblast': 0.2715, 'PartialReprog': 0.4069, 'EarlyPluripotency': 0.676, 'Pluripotency': 0.0002, 'NonReprog': 0.0582}
+[t2 label] JOINT c6 n=3347 label=EarlyPluripotency means={'Fibroblast': 0.3087, 'PartialReprog': 0.2849, 'EarlyPluripotency': 0.8109, 'Pluripotency': 0.1208, 'NonReprog': 0.0824}
+[t2 label] JOINT c7 n=3114 label=NonReprog means={'Fibroblast': 0.4793, 'PartialReprog': 0.1521, 'EarlyPluripotency': 0.2707, 'Pluripotency': -0.2186, 'NonReprog': 0.8941}
+[t2 label] JOINT c8 n=2978 label=PartialReprog means={'Fibroblast': 0.1311, 'PartialReprog': 0.6432, 'EarlyPluripotency': 0.5207, 'Pluripotency': -0.0244, 'NonReprog': -0.0848}
+[t2 label] JOINT c9 n=2441 label=PartialReprog means={'Fibroblast': 0.186, 'PartialReprog': 0.5976, 'EarlyPluripotency': 0.4006, 'Pluripotency': -0.1151, 'NonReprog': -0.0046}
+[t2 label] JOINT c10 n=2065 label=NonReprog means={'Fibroblast': 0.5293, 'PartialReprog': 0.1612, 'EarlyPluripotency': 0.3374, 'Pluripotency': -0.1825, 'NonReprog': 0.6332}
+[t2 label] JOINT c11 n=2064 label=Fibroblast means={'Fibroblast': 0.4498, 'PartialReprog': 0.1499, 'EarlyPluripotency': 0.4351, 'Pluripotency': -0.1334, 'NonReprog': 0.329}
+[t2 label] JOINT c12 n=1977 label=Pluripotency means={'Fibroblast': 0.01, 'PartialReprog': -0.036, 'EarlyPluripotency': 0.4166, 'Pluripotency': 0.4697, 'NonReprog': -0.0384}
+[t2 label] JOINT c13 n=1845 label=EarlyPluripotency means={'Fibroblast': 0.4094, 'PartialReprog': 0.3091, 'EarlyPluripotency': 0.4141, 'Pluripotency': -0.1919, 'NonReprog': 0.2812}
+[t2 label] JOINT c14 n=1733 label=NonReprog means={'Fibroblast': 0.4647, 'PartialReprog': 0.1081, 'EarlyPluripotency': 0.359, 'Pluripotency': -0.1669, 'NonReprog': 0.6942}
+[t2 label] JOINT c15 n=1532 label=NonReprog means={'Fibroblast': 0.2432, 'PartialReprog': -0.0942, 'EarlyPluripotency': 0.1823, 'Pluripotency': 0.0014, 'NonReprog': 0.3953}
+[t2 label] JOINT c16 n=1425 label=PartialReprog means={'Fibroblast': 0.1877, 'PartialReprog': 0.5384, 'EarlyPluripotency': 0.3925, 'Pluripotency': -0.141, 'NonReprog': 0.0054}
+[t2 label] JOINT c17 n=1361 label=Fibroblast means={'Fibroblast': 0.6359, 'PartialReprog': 0.2836, 'EarlyPluripotency': 0.34, 'Pluripotency': -0.2121, 'NonReprog': 0.2209}
+[t2 label] JOINT c18 n=841 label=PartialReprog means={'Fibroblast': 0.1087, 'PartialReprog': 0.4173, 'EarlyPluripotency': 0.2434, 'Pluripotency': -0.1406, 'NonReprog': -0.0506}
+[t2 label] JOINT c19 n=692 label=EarlyPluripotency means={'Fibroblast': 0.3067, 'PartialReprog': 0.3257, 'EarlyPluripotency': 0.5485, 'Pluripotency': -0.0453, 'NonReprog': 0.2857}
+[t2 label] JOINT c20 n=580 label=Fibroblast means={'Fibroblast': 0.9005, 'PartialReprog': 0.1411, 'EarlyPluripotency': 0.4199, 'Pluripotency': -0.2064, 'NonReprog': 0.2142}
+[t2 label] JOINT c21 n=414 label=EarlyPluripotency means={'Fibroblast': 0.0785, 'PartialReprog': 0.1683, 'EarlyPluripotency': 0.2089, 'Pluripotency': -0.0302, 'NonReprog': 0.0258}
+[t2 label] JOINT c22 n=316 label=EarlyPluripotency means={'Fibroblast': 0.1603, 'PartialReprog': 0.2579, 'EarlyPluripotency': 0.799, 'Pluripotency': 0.2834, 'NonReprog': -0.0528}
+[t2 label] JOINT c23 n=159 label=EarlyPluripotency means={'Fibroblast': 0.152, 'PartialReprog': 0.3056, 'EarlyPluripotency': 0.6931, 'Pluripotency': 0.296, 'NonReprog': -0.0129}
+[joint] wrote joint_cells.csv, joint_cluster_labels.csv; labels per cluster: {0: 'Fibroblast', 1: 'PartialReprog', 2: 'EarlyPluripotency', 3: 'Fibroblast', 4: 'EarlyPluripotency', 5: 'EarlyPluripotency', 6: 'EarlyPluripotency', 7: 'NonReprog', 8: 'PartialReprog', 9: 'PartialReprog', 10: 'NonReprog', 11: 'Fibroblast', 12: 'Pluripotency', 13: 'EarlyPluripotency', 14: 'NonReprog', 15: 'NonReprog', 16: 'PartialReprog', 17: 'Fibroblast', 18: 'PartialReprog', 19: 'EarlyPluripotency', 20: 'Fibroblast', 21: 'EarlyPluripotency', 22: 'EarlyPluripotency', 23: 'EarlyPluripotency'}
+[agree] GM00731 old x joint: share unchanged=0.9223 (n=22132)
+joint              Fibroblast  PartialReprog  ...  Pluripotency  NonReprog
+old                                           ...                         
+Fibroblast               4947              3  ...             1        491
+PartialReprog               6           5632  ...            33        103
+EarlyPluripotency           0             53  ...           142         38
+Pluripotency                0              1  ...           395         30
+NonReprog                  20             34  ...            65       5257
+
+[5 rows x 5 columns]
+[agree] GM00731 old x lu: share unchanged=0.7997 (n=21033)
+lu                 Fibroblast  PartialReprog  ...  NonReprog  Unlabelled
+old                                           ...                       
+Fibroblast               5023             25  ...        656          33
+PartialReprog             149           4990  ...        363         158
+EarlyPluripotency         183            344  ...        485         401
+Pluripotency                2              2  ...          2          32
+NonReprog                 550            144  ...       4190         475
+
+[5 rows x 6 columns]
+[agree] GM00731 joint x lu: share unchanged=0.8141 (n=21033)
+lu                 Fibroblast  PartialReprog  ...  NonReprog  Unlabelled
+joint                                         ...                       
+Fibroblast               4893              8  ...         60           6
+PartialReprog             140           4953  ...        312         138
+EarlyPluripotency         214            327  ...        826         350
+Pluripotency               17             55  ...         15         143
+NonReprog                 643            162  ...       4483         462
+
+[5 rows x 6 columns]
+[agree] GM23815 old x joint: share unchanged=0.9172 (n=33858)
+joint              Fibroblast  PartialReprog  ...  Pluripotency  NonReprog
+old                                           ...                         
+Fibroblast               9692             39  ...             6         89
+PartialReprog              41           6328  ...            12         31
+EarlyPluripotency          37             28  ...           225        506
+Pluripotency                1              9  ...          1098        126
+NonReprog                   6              4  ...             0       1773
+
+[5 rows x 5 columns]
+[agree] GM23815 old x lu: share unchanged=0.7156 (n=32419)
+lu                 Fibroblast  PartialReprog  ...  NonReprog  Unlabelled
+old                                           ...                       
+Fibroblast               7711             86  ...       3218          39
+PartialReprog             114           5875  ...        230         129
+EarlyPluripotency         518            276  ...        778         872
+Pluripotency               16             27  ...          5         393
+NonReprog                   6             13  ...       1785           6
+
+[5 rows x 6 columns]
+[agree] GM23815 joint x lu: share unchanged=0.7218 (n=32419)
+lu                 Fibroblast  PartialReprog  ...  NonReprog  Unlabelled
+joint                                         ...                       
+Fibroblast               7684             33  ...       2023          16
+PartialReprog             125           5854  ...        191         119
+EarlyPluripotency         488            321  ...       1913         438
+Pluripotency               28             37  ...         15         414
+NonReprog                  40             32  ...       1874         452
+
+[5 rows x 6 columns]
+[agree] day-0 Fibroblast membership: {'GM00731_joint': {'n_old': 4939, 'n_new': 4938, 'n_both': 4936, 'only_old': 3, 'only_new': 2, 'identical': False}, 'GM00731_lu': {'n_old': 4939, 'n_new': 4937, 'n_both': 4893, 'only_old': 46, 'only_new': 44, 'identical': False}, 'GM23815_joint': {'n_old': 7703, 'n_new': 7688, 'n_both': 7687, 'only_old': 16, 'only_new': 1, 'identical': False}, 'GM23815_lu': {'n_old': 7703, 'n_new': 7741, 'n_both': 7697, 'only_old': 6, 'only_new': 44, 'identical': False}}
+[map] MD: entries=205 unique=205 mapped=205 unmapped=0 dups=[] cols=205
+[map] age_up: entries=1533 unique=1532 mapped=1312 unmapped=220 dups=['GOLGA8M'] cols=1312
+[map] age_down: entries=2007 unique=2006 mapped=1777 unmapped=229 dups=['TMEM191A'] cols=1777
+[map] checks {'up_down_overlap_lists': 0, 'up_down_overlap_mapped': 0, 'age_unique': 3538, 'md_age_total': 43, 'md_age_up': 18, 'md_age_down': 25, 'multi_col_symbols': 13, 'multi_col_in_lists': [], 'space_cols': {'FULL': 23485, 'MD': 205, 'AGE': 3089}}
+[columns gtex_obs] actually read from <repo>\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[old] split {'n_d0_aged': 4939, 'n_d0_young': 7703, 'O': 2469, 'Y': 3851, 'aged_B': 2470, 'young_B': 3852, 'same_as_stored': True} panel n={'O': 2469, 'Y': 3851, 'S': 5832, 'S_rev': 6481, 'Pluri': 439, 'NonReprog': 5459}
+[old] main boot 50/200
+[old] main boot 100/200
+[old] main boot 150/200
+[old] main boot 200/200
+[old FULL] fwd progress=0.674441 delta=130.893565 final/start=2.0016 rev progress=-0.057275 asym=0.731716 [0.724041, 0.740433] gate=True rule_met=True
+[old MD] fwd progress=0.790111 delta=17.087969 final/start=2.1706 rev progress=-0.229454 asym=1.019565 [1.009381, 1.054705] gate=True rule_met=True
+[panel GM00731] PartialReprog n=5832 days={0: 3, 3: 5220, 7: 578, 10: 31}
+[panel GM00731] EarlyPluripotency n=4414 days={0: 2, 3: 410, 7: 3917, 10: 85}
+[panel GM00731] Pluripotency n=439 days={0: 0, 3: 5, 7: 354, 10: 80}
+[panel GM00731] NonReprog n=5459 days={0: 65, 3: 348, 7: 1932, 10: 3114}
+[tmm GM00731] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.9522 prior.count=2
+[panel GM23815] PartialReprog n=6481 days={0: 9, 3: 6113, 7: 309, 10: 50}
+[panel GM23815] EarlyPluripotency n=12961 days={0: 56, 3: 316, 7: 8172, 10: 4417}
+[panel GM23815] Pluripotency n=1249 days={0: 0, 3: 91, 7: 977, 10: 181}
+[panel GM23815] NonReprog n=1812 days={0: 0, 3: 10, 7: 8, 10: 1794}
+[tmm GM23815] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.9308 prior.count=2
+[harness] 112/112 within 1e-9; max|diff|=5.684e-14
+[joint] split {'n_d0_aged': 4938, 'n_d0_young': 7688, 'O': 2469, 'Y': 3844, 'aged_B': 2469, 'young_B': 3844, 'same_as_stored': False} panel n={'O': 2469, 'Y': 3844, 'S': 5723, 'S_rev': 6408, 'Pluri': 636, 'NonReprog': 5919}
+[joint] main boot 50/200
+[joint] main boot 100/200
+[joint] main boot 150/200
+[joint] main boot 200/200
+[joint FULL] fwd progress=0.649342 delta=133.302708 final/start=2.0176 rev progress=-0.024808 asym=0.674150 [0.662951, 0.681197] gate=True rule_met=True
+[joint MD] fwd progress=0.768273 delta=17.459923 final/start=2.1884 rev progress=-0.207848 asym=0.976121 [0.949168, 0.999529] gate=True rule_met=True
+[panel GM00731] PartialReprog n=5723 days={0: 3, 3: 5166, 7: 546, 10: 8}
+[panel GM00731] EarlyPluripotency n=4881 days={0: 0, 3: 355, 7: 3868, 10: 658}
+[panel GM00731] Pluripotency n=636 days={0: 7, 3: 97, 7: 460, 10: 72}
+[panel GM00731] NonReprog n=5919 days={0: 61, 3: 363, 7: 1893, 10: 3602}
+[tmm GM00731] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.9351 prior.count=2
+[panel GM23815] PartialReprog n=6408 days={0: 17, 3: 6090, 7: 271, 10: 30}
+[panel GM23815] EarlyPluripotency n=13807 days={0: 1, 3: 260, 7: 8224, 10: 5322}
+[panel GM23815] Pluripotency n=1341 days={0: 14, 3: 85, 7: 1091, 10: 151}
+[panel GM23815] NonReprog n=2525 days={0: 48, 3: 107, 7: 69, 10: 2301}
+[tmm GM23815] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.8917 prior.count=2
+[lu] split {'n_d0_aged': 4937, 'n_d0_young': 7741, 'O': 2468, 'Y': 3870, 'aged_B': 2469, 'young_B': 3871, 'same_as_stored': False} panel n={'O': 2468, 'Y': 3870, 'S': 5505, 'S_rev': 6277, 'Pluri': 828, 'NonReprog': 5696}
+[lu] main boot 50/200
+[lu] main boot 100/200
+[lu] main boot 150/200
+[lu] main boot 200/200
+[lu FULL] fwd progress=0.654983 delta=135.834242 final/start=2.0269 rev progress=-0.034061 asym=0.689044 [0.674642, 0.720934] gate=True rule_met=True
+[lu MD] fwd progress=0.742628 delta=17.838690 final/start=2.1881 rev progress=-0.190640 asym=0.933267 [0.901482, 1.026628] gate=True rule_met=True
+[panel GM00731] PartialReprog n=5505 days={0: 1, 3: 5258, 7: 207, 10: 39}
+[panel GM00731] EarlyPluripotency n=3097 days={0: 2, 3: 19, 7: 2698, 10: 378}
+[panel GM00731] Pluripotency n=828 days={0: 1, 3: 13, 7: 742, 10: 72}
+[panel GM00731] NonReprog n=5696 days={0: 39, 3: 213, 7: 2522, 10: 2922}
+[tmm GM00731] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=1.0546 prior.count=2
+[panel GM23815] PartialReprog n=6277 days={0: 0, 3: 5957, 7: 223, 10: 97}
+[panel GM23815] EarlyPluripotency n=7490 days={0: 0, 3: 62, 7: 4555, 10: 2873}
+[panel GM23815] Pluripotency n=4271 days={0: 1, 3: 51, 7: 3643, 10: 576}
+[panel GM23815] NonReprog n=6016 days={0: 3, 3: 125, 7: 2524, 10: 3364}
+[tmm GM23815] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.9882 prior.count=2
+[stats] wrote headline_old_new.csv, headline.json
+[findings] wrote <repo>\FINDINGS_RELABEL.md
+[findings] wrote <repo>\FINDINGS_RELABEL.md

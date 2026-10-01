@@ -1,0 +1,46 @@
+{
+  "md_genes": 205,
+  "nbin": 24,
+  "ctrl": 100,
+  "seed": 20260914,
+  "boot_seed": 20260918,
+  "n_boot": 200,
+  "union_genes": 30000,
+  "shared_genes": 28212,
+  "young_only": 942,
+  "aged_only": 846,
+  "n_ctrl_joint": 9483,
+  "n_cells": {
+    "GM00731": 22132,
+    "GM23815": 33858
+  },
+  "perdonor_repro": {
+    "GM00731": {
+      "max_abs_diff_vs_stored_md": 0.0,
+      "bins_equal_stored": true,
+      "n_ctrl": 9120,
+      "n_genes": 29058
+    },
+    "GM23815": {
+      "max_abs_diff_vs_stored_md": 0.0,
+      "bins_equal_stored": true,
+      "n_ctrl": 9690,
+      "n_genes": 29154
+    }
+  },
+  "feature_check": {
+    "GM00731": {
+      "n_md_in_donor": 205,
+      "n_same_ensembl": 205,
+      "md_absent_from_donor_matrix": []
+    },
+    "GM23815": {
+      "n_md_in_donor": 204,
+      "n_same_ensembl": 204,
+      "md_absent_from_donor_matrix": [
+        "PRSS2"
+      ]
+    }
+  },
+  "md4_scoring": "md_score_mean in results/md4/t1_state_timepoint_means.csv is the md2 louvain_ams vector, computed by add_module_score on each donor's own Louvain matrix separately (src/md2_task1.py for GM00731, src/md2_task2.py for GM23815); gene means, bins and control genes differ between donors."
+}

@@ -1,0 +1,5 @@
+donor,half,n_cells,role,used_in
+GM00731,A,2469,O (aged origin; forward-test anchor),anchors
+GM00731,B,2470,held out; P mixtures only,P
+GM23815,A,3851,Y (young target; forward-test anchor),anchors
+GM23815,B,3852,held out; P mixtures only,P

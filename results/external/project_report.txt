@@ -1,0 +1,41 @@
+====================================================================================================
+EXTERNAL project frozen DLPFC directions onto SEA-AD MTG  seed=20260914  seaad_dataset_id=c2876b1b-06d8-4d96-a56b-5304f815b99a
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO perturbation data. No TF Atlas. No candidate interventions.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+Fail loudly: no substitute columns, no invented cell-type synonyms.
+Cohort: Whole Taxonomy - MTG: Seattle Alzheimer's Disease Atlas (SEA-AD)
+Pass bar: r > 0 with permutation-null r ≤ 0.05 in the primary (no/low pathology) cell.
+n_perm=200  n_boot=200  bootstrap seed=20260918
+[project] expression source: <repo>\data\raw\seaad_mtg\732b4aa7-e441-4196-b05e-127433425613.h5ad
+[project] loading cached pseudobulk <repo>\results\external\stage1_pseudobulk.npz
+[genes] DLPFC=25526  SEA-AD=35483  overlap=22939  DLPFC-missing-in-SEA-AD=2587  frac=0.8987
+
+=== direction raw ===
+[primary] no/low pathology donors=26  (field=ADNC)
+[primary_raw] median r=+0.877  rho=+0.478  R²=-0.665  calR²=+0.769  types_ok=9/9
+[primary_raw] permutation null n_perm=200 ...
+[primary_raw] r_null mean=+0.004  p95=+0.322  p=0.005
+[primary_raw] donor bootstrap B=200 ...
+[primary_raw] r 95% CI [+0.639, +0.942]
+[secondary] donors with pathology score=89
+[secondary_raw] median r=+0.687  rho=+0.407  R²=+0.441  calR²=+0.472  types_ok=9/9
+[secondary_raw] permutation null n_perm=200 ...
+[secondary_raw] r_null mean=+0.003  p95=+0.175  p=0.005
+[secondary_raw] donor bootstrap B=200 ...
+[secondary_raw] r 95% CI [+0.396, +0.806]
+
+=== direction idresid ===
+[primary] no/low pathology donors=26  (field=ADNC)
+[primary_idresid] median r=+0.873  rho=+0.491  R²=-0.476  calR²=+0.762  types_ok=9/9
+[primary_idresid] permutation null n_perm=200 ...
+[primary_idresid] r_null mean=+0.003  p95=+0.325  p=0.005
+[primary_idresid] donor bootstrap B=200 ...
+[primary_idresid] r 95% CI [+0.652, +0.943]
+[secondary] donors with pathology score=89
+[secondary_idresid] median r=+0.698  rho=+0.430  R²=+0.474  calR²=+0.487  types_ok=9/9
+[secondary_idresid] permutation null n_perm=200 ...
+[secondary_idresid] r_null mean=+0.003  p95=+0.172  p=0.005
+[secondary_idresid] donor bootstrap B=200 ...
+[secondary_idresid] r 95% CI [+0.406, +0.818]

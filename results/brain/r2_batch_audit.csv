@@ -1,0 +1,2 @@
+name,dataset_id,tissue,n_donors,n_batches,batch_column,batch_usable,batch_kind,r2_age_batch,r2_depth_batch,r_age_depth_pooled,r_age_depth_between,r_age_depth_within,age_min,age_max,n_cell_types,n_pseudobulks,mean_umi_per_nucleus,blood_r2_age_batch,blood_r2_depth_batch,wm_r2_age_batch,wm_r2_depth_batch
+brain_aging,4442d412-91cb-4261-acca-8adf5fa04c11,brain (DLPFC),233,2,Source,True,brain_bank_not_sequencing_pool,0.26376797417643105,0.049313029265089625,-0.14304204885746988,,-0.03030936227120733,20.0,89.0,20,3323,13670.17454071008,0.23,0.86,0.272,0.626

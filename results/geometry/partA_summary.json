@@ -1,0 +1,377 @@
+{
+ "seed": 20260914,
+ "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11",
+ "n_donors": 233,
+ "n_types": 20,
+ "n_A": 1355,
+ "n_I": 1876,
+ "r2_age_on_site": 0.2637679741764313,
+ "donor_age_constant": true,
+ "hypotheses": [
+  {
+   "id": "H1_donor_leakage",
+   "fires": false,
+   "result": "PASS: no donor in both sides of any fold",
+   "note": "asserted on loso and within_site folds"
+  },
+  {
+   "id": "H2_shuffle_granularity",
+   "fires": false,
+   "result": "PASS: permute_age_within_site_obs remaps a permuted donor-level age onto every pseudobulk of that donor",
+   "note": "within-donor row shuffle is a no-op because age is donor-constant; per-pseudobulk shuffle is NOT what P4 ran"
+  },
+  {
+   "id": "H3_feature_selection_leakage",
+   "fires": true,
+   "result": "frozen pooled A R\u00b2=+0.435; nested=+0.345; P3 saved=+0.345",
+   "note": "P4c used frozen full-data sets; P3 nested inside folds"
+  },
+  {
+   "id": "H4_site_structure",
+   "fires": true,
+   "result": "intercept-only within-site pooled R\u00b2=+0.217 matches R\u00b2(age~site)=+0.264; site-stratified=-0.032",
+   "note": "within-site k-fold never mixes banks in a fold, so the intercept equals the training bank's mean age; pooled-across-banks R\u00b2 recovers the bank gap, which the within-site age permutation PRESERVES"
+  },
+  {
+   "id": "H5_target_centering",
+   "fires": false,
+   "result": "PASS as a full-cohort-mean bug: Ridge(fit_intercept=True) on train; r2_mae uses the evaluation vector's mean",
+   "note": "the eval vector for within-site CV is two banks concatenated \u2014 see H4"
+  }
+ ],
+ "fired": [
+  "H3_feature_selection_leakage",
+  "H4_site_structure"
+ ],
+ "fix": "Primary fix: report site-stratified median-over-types R\u00b2 for the within-site scheme (mean of the two banks' R\u00b2 per cell type, then median over types). LOSO is left on the original pooled/test-site metric \u2014 intercept mismatch across banks is a real transfer failure, not a scoring artifact. P4c frozen vs nested is reported side-by-side; frozen remains the size-matched cross-test.",
+ "stop_A": false,
+ "stop_A_reason": "corrected within-site shuffle null is usable",
+ "null_usable_threshold": 0.05,
+ "n_perm_A": 20,
+ "schemes": {
+  "loso": {
+   "frozen_A": {
+    "pooled_median_type_r2": -0.015607109907025296,
+    "site_strat_median_type_r2": -0.28578195136382006,
+    "site_cell_median_r2": -0.22340741569379374,
+    "joint_pooled_r2": 0.19004746221498325,
+    "joint_site_strat_r2": -0.10022224867456314,
+    "pooled_median_type_mae": 14.587765188213503,
+    "n_types_pooled": 20,
+    "n_types_strat": 20,
+    "method": "svd"
+   },
+   "frozen_I": {
+    "pooled_median_type_r2": 0.2889583833501521,
+    "site_strat_median_type_r2": 0.06699225413874466,
+    "site_cell_median_r2": 0.1697237133517503,
+    "joint_pooled_r2": 0.5038585659625694,
+    "joint_site_strat_r2": 0.3260195770769419,
+    "pooled_median_type_mae": 11.569368996490839,
+    "n_types_pooled": 20,
+    "n_types_strat": 20,
+    "method": "svd"
+   },
+   "nested_A": {
+    "pooled_median_type_r2": -0.09141960814659367,
+    "site_strat_median_type_r2": -0.4360365955955899,
+    "site_cell_median_r2": -0.40861457900753906,
+    "joint_pooled_r2": 0.03769812819697427,
+    "joint_site_strat_r2": -0.3071543617707233,
+    "pooled_median_type_mae": 15.430889803846332,
+    "n_types_pooled": 20,
+    "n_types_strat": 20,
+    "method": "svd"
+   },
+   "nested_I": {
+    "pooled_median_type_r2": 0.3295050263829101,
+    "site_strat_median_type_r2": 0.11792435432284926,
+    "site_cell_median_r2": 0.2490121918691115,
+    "joint_pooled_r2": 0.5409684615437127,
+    "joint_site_strat_r2": 0.37642956330056904,
+    "pooled_median_type_mae": 11.105175797896935,
+    "n_types_pooled": 20,
+    "n_types_strat": 20,
+    "method": "svd"
+   },
+   "nested_n_A_median": 1393.5,
+   "nested_n_I_median": 1865.5,
+   "matched_I": {
+    "pooled": 0.27888114151566346,
+    "site_strat": 0.0673537577381134,
+    "joint_pooled": 0.5018041076219677,
+    "joint_site_strat": 0.32322306312394933,
+    "n_draws": 20,
+    "k": 1355
+   },
+   "id_I_acc": 0.9990972013241047,
+   "id_A_acc": 0.9906710803490821,
+   "id_I_f1": 0.9959094582345044,
+   "id_chance": 0.0698164309359013,
+   "reported_p4": {
+    "r2_A": -0.019263282299080253,
+    "r2_I_matched": 0.2599015067864222,
+    "r2_I_full": 0.26653824296007844,
+    "shuffle_age_r2": -0.913163660356318,
+    "acc_I": 0.9990972013241047,
+    "acc_A": 0.9906710803490821,
+    "verdict": "falsified (not separable)"
+   },
+   "p3_saved_A": {
+    "pooled_median_type_r2": -0.10182524501918189,
+    "site_strat_median_type_r2": -0.4510032650687358,
+    "site_cell_median_r2": -0.4133276292522974,
+    "joint_pooled_r2": 0.031639043064634165,
+    "joint_site_strat_r2": -0.31538517376834574,
+    "pooled_median_type_mae": 15.440617409089558,
+    "n_types_pooled": 20,
+    "n_types_strat": 20
+   },
+   "p3_saved_unrest": {
+    "pooled_median_type_r2": 0.0959150714627241,
+    "site_strat_median_type_r2": -0.18113250679191342,
+    "site_cell_median_r2": -0.15271286780165116,
+    "joint_pooled_r2": 0.2170977134836546,
+    "joint_site_strat_r2": -0.06351417012326965,
+    "pooled_median_type_mae": 13.903023899439063,
+    "n_types_pooled": 20,
+    "n_types_strat": 20
+   },
+   "shuffle_A_null": {
+    "pooled_mean": -1.005445102211404,
+    "pooled_median": -1.0283340357231157,
+    "pooled_p95": -0.725502041447751,
+    "pooled_min": -1.357080439335882,
+    "pooled_max": -0.6985429254641031,
+    "pooled_n": 20,
+    "site_strat_mean": -1.7434044498695704,
+    "site_strat_median": -1.7520270313599022,
+    "site_strat_p95": -1.3276850321605793,
+    "site_strat_min": -2.225726293840226,
+    "site_strat_max": -1.1905383072613192,
+    "site_strat_n": 20
+   },
+   "shuffle_I_null": {
+    "pooled_mean": -0.9647361636931653,
+    "pooled_median": -1.0137412680609343,
+    "pooled_p95": -0.7743879232654274,
+    "pooled_min": -1.078511757959054,
+    "pooled_max": -0.6692341297386248,
+    "pooled_n": 10,
+    "site_strat_mean": -1.7005257812122054,
+    "site_strat_median": -1.7449791342362238,
+    "site_strat_p95": -1.361160704587559,
+    "site_strat_min": -2.01947856863943,
+    "site_strat_max": -1.2691376381011719,
+    "site_strat_n": 10
+   },
+   "shuffle_nestedA_null": {
+    "pooled_mean": -0.8276130483121642,
+    "pooled_median": -0.8663235535653853,
+    "pooled_p95": -0.71675839047548,
+    "pooled_min": -0.9171634301545393,
+    "pooled_max": -0.7011642384793217,
+    "pooled_n": 5,
+    "site_strat_mean": -1.4754231221845662,
+    "site_strat_median": -1.529278143606633,
+    "site_strat_p95": -1.279702149261766,
+    "site_strat_min": -1.6742227245769854,
+    "site_strat_max": -1.2555572603312166,
+    "site_strat_n": 5
+   }
+  },
+  "within_site": {
+   "frozen_A": {
+    "pooled_median_type_r2": 0.4347005954587349,
+    "site_strat_median_type_r2": 0.2497849026679462,
+    "site_cell_median_r2": 0.25756722330628834,
+    "joint_pooled_r2": 0.5699874350889609,
+    "joint_site_strat_r2": 0.41595645107724283,
+    "pooled_median_type_mae": 10.263248496301586,
+    "n_types_pooled": 20,
+    "n_types_strat": 20,
+    "method": "svd"
+   },
+   "frozen_I": {
+    "pooled_median_type_r2": 0.5708928990856305,
+    "site_strat_median_type_r2": 0.4243641277749911,
+    "site_cell_median_r2": 0.47000591010960285,
+    "joint_pooled_r2": 0.7047167014212274,
+    "joint_site_strat_r2": 0.5989540510292455,
+    "pooled_median_type_mae": 8.905405269057301,
+    "n_types_pooled": 20,
+    "n_types_strat": 20,
+    "method": "svd"
+   },
+   "nested_A": {
+    "pooled_median_type_r2": 0.34476038949672166,
+    "site_strat_median_type_r2": 0.12467356594751022,
+    "site_cell_median_r2": 0.15085730797460317,
+    "joint_pooled_r2": 0.4675301115258351,
+    "joint_site_strat_r2": 0.2767768131587889,
+    "pooled_median_type_mae": 11.07662683590462,
+    "n_types_pooled": 20,
+    "n_types_strat": 20,
+    "method": "svd"
+   },
+   "nested_I": {
+    "pooled_median_type_r2": 0.5980029444894623,
+    "site_strat_median_type_r2": 0.46163069070555945,
+    "site_cell_median_r2": 0.48308409818465303,
+    "joint_pooled_r2": 0.7239636542679377,
+    "joint_site_strat_r2": 0.6250950294312159,
+    "pooled_median_type_mae": 8.838981292652083,
+    "n_types_pooled": 20,
+    "n_types_strat": 20,
+    "method": "svd"
+   },
+   "nested_n_A_median": 1481.5,
+   "nested_n_I_median": 1877.0,
+   "matched_I": {
+    "pooled": 0.5616598576580198,
+    "site_strat": 0.4126022246772365,
+    "joint_pooled": 0.7038997722228998,
+    "joint_site_strat": 0.5978460868114746,
+    "n_draws": 20,
+    "k": 1355
+   },
+   "id_I_acc": 0.9993981342160698,
+   "id_A_acc": 0.9942822750526633,
+   "id_I_f1": 0.9978117016625309,
+   "id_chance": 0.0698164309359013,
+   "reported_p4": {
+    "r2_A": 0.423305833640098,
+    "r2_I_matched": 0.5585372671473182,
+    "r2_I_full": 0.5705254741860737,
+    "shuffle_age_r2": 0.1953817244152412,
+    "acc_I": 0.9993981342160698,
+    "acc_A": 0.9942822750526633,
+    "verdict": "soundness-fail"
+   },
+   "p3_saved_A": {
+    "pooled_median_type_r2": 0.34486323475972747,
+    "site_strat_median_type_r2": 0.12328566051186171,
+    "site_cell_median_r2": 0.14914510285027305,
+    "joint_pooled_r2": 0.4646701164993452,
+    "joint_site_strat_r2": 0.2728926563562012,
+    "pooled_median_type_mae": 11.076162921034708,
+    "n_types_pooled": 20,
+    "n_types_strat": 20
+   },
+   "p3_saved_unrest": {
+    "pooled_median_type_r2": 0.48332794875432,
+    "site_strat_median_type_r2": 0.30968793929102284,
+    "site_cell_median_r2": 0.3467723791839645,
+    "joint_pooled_r2": 0.588195372081268,
+    "joint_site_strat_r2": 0.4406767765240758,
+    "pooled_median_type_mae": 9.70763351610989,
+    "n_types_pooled": 20,
+    "n_types_strat": 20
+   },
+   "shuffle_A_null": {
+    "pooled_mean": 0.07218996768358207,
+    "pooled_median": 0.07851937533360018,
+    "pooled_p95": 0.11171594618513565,
+    "pooled_min": -0.002526973731734883,
+    "pooled_max": 0.12916247208651616,
+    "pooled_n": 20,
+    "site_strat_mean": -0.23167670140007254,
+    "site_strat_median": -0.22885379149121154,
+    "site_strat_p95": -0.1741302314909492,
+    "site_strat_min": -0.32427673061520496,
+    "site_strat_max": -0.17123093065673484,
+    "site_strat_n": 20
+   },
+   "shuffle_A_null_per_pseudobulk": {
+    "pooled_mean": -0.21454620610964764,
+    "pooled_median": -0.22289310811095753,
+    "pooled_p95": -0.16157517809886518,
+    "pooled_min": -0.2709781905801101,
+    "pooled_max": -0.15075531662505548,
+    "pooled_n": 5,
+    "site_strat_mean": -0.21882791566193224,
+    "site_strat_median": -0.23221644046164874,
+    "site_strat_p95": -0.16774040727504894,
+    "site_strat_min": -0.26119268771750775,
+    "site_strat_max": -0.15682626191783733,
+    "site_strat_n": 5
+   },
+   "shuffle_A_null_within_donor_rows": {
+    "pooled_mean": 0.4347005954587349,
+    "pooled_median": 0.4347005954587349,
+    "pooled_p95": 0.4347005954587349,
+    "pooled_min": 0.4347005954587349,
+    "pooled_max": 0.4347005954587349,
+    "pooled_n": 5,
+    "site_strat_mean": 0.24978490266794623,
+    "site_strat_median": 0.2497849026679462,
+    "site_strat_p95": 0.2497849026679462,
+    "site_strat_min": 0.2497849026679462,
+    "site_strat_max": 0.2497849026679462,
+    "site_strat_n": 5
+   },
+   "shuffle_I_null": {
+    "pooled_mean": 0.061297646230973536,
+    "pooled_median": 0.0526522804439391,
+    "pooled_p95": 0.10699041946448455,
+    "pooled_min": 0.013414329656541712,
+    "pooled_max": 0.11810981100293066,
+    "pooled_n": 10,
+    "site_strat_mean": -0.26202933039122883,
+    "site_strat_median": -0.271687643761246,
+    "site_strat_p95": -0.1814253080613528,
+    "site_strat_min": -0.33112792169867206,
+    "site_strat_max": -0.15979289308340436,
+    "site_strat_n": 10
+   },
+   "shuffle_nestedA_null": {
+    "pooled_mean": 0.06976902469852764,
+    "pooled_median": 0.07362170482042502,
+    "pooled_p95": 0.12608130049405086,
+    "pooled_min": 0.018935155704283835,
+    "pooled_max": 0.1316739385854745,
+    "pooled_n": 5,
+    "site_strat_mean": -0.24385987071156184,
+    "site_strat_median": -0.2752258502334112,
+    "site_strat_p95": -0.17610452517254868,
+    "site_strat_min": -0.29448198280677224,
+    "site_strat_max": -0.16997361502677294,
+    "site_strat_n": 5
+   }
+  }
+ },
+ "verdict_within_site": {
+  "r2_A": 0.2497849026679462,
+  "r2_I": 0.4126022246772365,
+  "shuffle": -0.23167670140007254,
+  "delta": -0.1628173220092903,
+  "ratio": 1.6518301157125295,
+  "acc_I": 0.9993981342160698,
+  "acc_A": 0.9942822750526633,
+  "verdict": "falsified (not separable)",
+  "detail": "R\u00b2_I >= 0.8 \u00d7 R\u00b2_A (1.652); R\u00b2_A \u2212 R\u00b2_I = -0.163 < 0.10; Acc_A >= 0.9 \u00d7 Acc_I (0.995)",
+  "sound": true
+ },
+ "verdict_loso": {
+  "r2_A": -0.015607109907025296,
+  "r2_I": 0.27888114151566346,
+  "shuffle": -1.005445102211404,
+  "delta": -0.29448825142268875,
+  "ratio": -17.868852284440536,
+  "acc_I": 0.9990972013241047,
+  "acc_A": 0.9906710803490821,
+  "verdict": "falsified (not separable)",
+  "detail": "R\u00b2_A \u2212 R\u00b2_I = -0.294 < 0.10; Acc_A >= 0.9 \u00d7 Acc_I (0.992)",
+  "sound": true
+ },
+ "p4c_change": "STRENGTHEN: soundness-fail cleared; separability still falsified on the cross-test",
+ "old_order": {
+  "within_site": "I_beats_A",
+  "loso": "I_beats_A"
+ },
+ "new_order": {
+  "within_site": "I_beats_A",
+  "loso": "I_beats_A"
+ },
+ "proceed_to_B": true
+}

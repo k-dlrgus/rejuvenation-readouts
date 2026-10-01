@@ -1,0 +1,22 @@
+{
+ "fired": true,
+ "n_A_primary": 2,
+ "n_surviving": 2,
+ "thresholds": {
+  "t_age": 0.005,
+  "k_ct": 0.2,
+  "t_ct": 0.5,
+  "k_age": 0.001
+ },
+ "seed": 20260914,
+ "n_perm": 1000,
+ "surviving_symbols": [
+  "PHLDA3",
+  "ETV7"
+ ],
+ "A_symbols": [
+  "PHLDA3",
+  "ETV7"
+ ],
+ "a3_ok": true
+}

@@ -1,0 +1,7 @@
+{
+ "ran": false,
+ "reason": "MD score gene list and computation cannot be recovered from public sources. STOP after Stage 1.",
+ "missing": [
+  "MD score computation (per cell vs per sample; mean / ssGSEA / AddModuleScore / other). Not in GEO SOFT, PubMed abstract, or Cell landing summary. Would be in STAR Methods of the paywalled article or in an author code repository."
+ ]
+}

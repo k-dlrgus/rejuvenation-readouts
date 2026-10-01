@@ -1,0 +1,5 @@
+orthogonal
+the age direction is largely ORTHOGONAL to identity directions — the axes are separable in geometry even though genes cannot be partitioned.
+shared=shared across cell types
+angle=66.21 null=70.89
+proj_r2=0.1629 null=0.1084

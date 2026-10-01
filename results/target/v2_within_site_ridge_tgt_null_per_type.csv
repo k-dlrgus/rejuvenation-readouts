@@ -1,0 +1,401 @@
+perm,celltype,r2,method,scheme,use_target
+0,GABAergic neuron,-0.07079495255425816,ridge,within_site,True
+0,L2/3 intratelencephalic projecting glutamatergic neuron,-0.26758393779810585,ridge,within_site,True
+0,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.17936253292851956,ridge,within_site,True
+0,L5/6 near-projecting glutamatergic neuron,-0.10382769344380938,ridge,within_site,True
+0,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.11942039674524618,ridge,within_site,True
+0,L6 intratelencephalic projecting glutamatergic neuron,-0.27735581426248346,ridge,within_site,True
+0,L6b glutamatergic neuron of the primary motor cortex,-0.08907515876438654,ridge,within_site,True
+0,VIP GABAergic interneuron,-0.10039837075952185,ridge,within_site,True
+0,astrocyte,-0.1783081834698903,ridge,within_site,True
+0,endothelial cell,-0.09183817965615404,ridge,within_site,True
+0,lamp5 GABAergic interneuron,-0.1006985747112884,ridge,within_site,True
+0,microglial cell,-0.14008868709495936,ridge,within_site,True
+0,oligodendrocyte,-0.26047317544212245,ridge,within_site,True
+0,oligodendrocyte precursor cell,-0.11530787490233274,ridge,within_site,True
+0,pericyte,-0.08593024907685276,ridge,within_site,True
+0,perivascular macrophage,-0.03943721309275361,ridge,within_site,True
+0,pvalb GABAergic interneuron,-0.17456220091982133,ridge,within_site,True
+0,smooth muscle cell,-0.2743112128217986,ridge,within_site,True
+0,sst GABAergic interneuron,-0.12156734595927954,ridge,within_site,True
+0,vascular leptomeningeal cell,0.012721654505610525,ridge,within_site,True
+1,GABAergic neuron,-0.12700158134021755,ridge,within_site,True
+1,L2/3 intratelencephalic projecting glutamatergic neuron,-0.1313394007413362,ridge,within_site,True
+1,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.1378907449679777,ridge,within_site,True
+1,L5/6 near-projecting glutamatergic neuron,-0.168354114747703,ridge,within_site,True
+1,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.1467693598249007,ridge,within_site,True
+1,L6 intratelencephalic projecting glutamatergic neuron,-0.23092982039837096,ridge,within_site,True
+1,L6b glutamatergic neuron of the primary motor cortex,-0.21066723493317774,ridge,within_site,True
+1,VIP GABAergic interneuron,-0.11141102782852319,ridge,within_site,True
+1,astrocyte,-0.1286812912186439,ridge,within_site,True
+1,endothelial cell,-0.051253131223917836,ridge,within_site,True
+1,lamp5 GABAergic interneuron,-0.11325019801857028,ridge,within_site,True
+1,microglial cell,-0.07143412555999018,ridge,within_site,True
+1,oligodendrocyte,-0.1390568735716461,ridge,within_site,True
+1,oligodendrocyte precursor cell,-0.12800884375234522,ridge,within_site,True
+1,pericyte,-0.06700485985507898,ridge,within_site,True
+1,perivascular macrophage,-0.03826106275990915,ridge,within_site,True
+1,pvalb GABAergic interneuron,-0.17336256464331812,ridge,within_site,True
+1,smooth muscle cell,0.057189744961205546,ridge,within_site,True
+1,sst GABAergic interneuron,-0.13514667690311555,ridge,within_site,True
+1,vascular leptomeningeal cell,-0.2440109351277916,ridge,within_site,True
+2,GABAergic neuron,-0.09203776647220019,ridge,within_site,True
+2,L2/3 intratelencephalic projecting glutamatergic neuron,-0.31063823279454406,ridge,within_site,True
+2,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.19778990256254003,ridge,within_site,True
+2,L5/6 near-projecting glutamatergic neuron,-0.15706269542781282,ridge,within_site,True
+2,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.17805863186418946,ridge,within_site,True
+2,L6 intratelencephalic projecting glutamatergic neuron,-0.29764015473103056,ridge,within_site,True
+2,L6b glutamatergic neuron of the primary motor cortex,-0.2618270357581497,ridge,within_site,True
+2,VIP GABAergic interneuron,-0.16186820737104968,ridge,within_site,True
+2,astrocyte,-0.18767399123295203,ridge,within_site,True
+2,endothelial cell,-0.10725334960269772,ridge,within_site,True
+2,lamp5 GABAergic interneuron,-0.09263619653386956,ridge,within_site,True
+2,microglial cell,-0.01929069712907311,ridge,within_site,True
+2,oligodendrocyte,-0.11878908870650906,ridge,within_site,True
+2,oligodendrocyte precursor cell,-0.10580827200129617,ridge,within_site,True
+2,pericyte,-0.11055752953181419,ridge,within_site,True
+2,perivascular macrophage,-0.002635732872864782,ridge,within_site,True
+2,pvalb GABAergic interneuron,-0.15099182688657997,ridge,within_site,True
+2,smooth muscle cell,-0.18502131985848358,ridge,within_site,True
+2,sst GABAergic interneuron,-0.12436948416535898,ridge,within_site,True
+2,vascular leptomeningeal cell,-0.20506348546463948,ridge,within_site,True
+3,GABAergic neuron,-0.08136711284427134,ridge,within_site,True
+3,L2/3 intratelencephalic projecting glutamatergic neuron,-0.14389569598424967,ridge,within_site,True
+3,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.16016975800227784,ridge,within_site,True
+3,L5/6 near-projecting glutamatergic neuron,-0.0897163044211291,ridge,within_site,True
+3,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.02761047065325839,ridge,within_site,True
+3,L6 intratelencephalic projecting glutamatergic neuron,-0.12449473850768222,ridge,within_site,True
+3,L6b glutamatergic neuron of the primary motor cortex,-0.09642678801375981,ridge,within_site,True
+3,VIP GABAergic interneuron,-0.11934927788293459,ridge,within_site,True
+3,astrocyte,-0.09557274219864298,ridge,within_site,True
+3,endothelial cell,-0.06349276107982194,ridge,within_site,True
+3,lamp5 GABAergic interneuron,-0.09407699940151548,ridge,within_site,True
+3,microglial cell,-0.05205120468642621,ridge,within_site,True
+3,oligodendrocyte,-0.012223144748233272,ridge,within_site,True
+3,oligodendrocyte precursor cell,-0.0466635144561483,ridge,within_site,True
+3,pericyte,-0.03105504134909065,ridge,within_site,True
+3,perivascular macrophage,-0.19864031692563744,ridge,within_site,True
+3,pvalb GABAergic interneuron,-0.12156108076670291,ridge,within_site,True
+3,smooth muscle cell,-0.1984172091047025,ridge,within_site,True
+3,sst GABAergic interneuron,-0.09249457391813465,ridge,within_site,True
+3,vascular leptomeningeal cell,-0.13210769507820175,ridge,within_site,True
+4,GABAergic neuron,-0.09053765423711657,ridge,within_site,True
+4,L2/3 intratelencephalic projecting glutamatergic neuron,-0.22154233098793596,ridge,within_site,True
+4,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.2467158370539273,ridge,within_site,True
+4,L5/6 near-projecting glutamatergic neuron,-0.0677471572522339,ridge,within_site,True
+4,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.02367422616238124,ridge,within_site,True
+4,L6 intratelencephalic projecting glutamatergic neuron,-0.11696677197384464,ridge,within_site,True
+4,L6b glutamatergic neuron of the primary motor cortex,-0.06148646318584705,ridge,within_site,True
+4,VIP GABAergic interneuron,-0.11233482878089263,ridge,within_site,True
+4,astrocyte,-0.23028876086373884,ridge,within_site,True
+4,endothelial cell,-0.0701048911681732,ridge,within_site,True
+4,lamp5 GABAergic interneuron,-0.048898312820910395,ridge,within_site,True
+4,microglial cell,-0.056208087175354415,ridge,within_site,True
+4,oligodendrocyte,-0.06681023047955659,ridge,within_site,True
+4,oligodendrocyte precursor cell,-0.1265284410070029,ridge,within_site,True
+4,pericyte,-0.06104658384508388,ridge,within_site,True
+4,perivascular macrophage,-0.1338357804484933,ridge,within_site,True
+4,pvalb GABAergic interneuron,-0.19234626921205444,ridge,within_site,True
+4,smooth muscle cell,-0.2720622265040893,ridge,within_site,True
+4,sst GABAergic interneuron,-0.12897159145997505,ridge,within_site,True
+4,vascular leptomeningeal cell,-0.1098803162048656,ridge,within_site,True
+5,GABAergic neuron,-0.09863411167200209,ridge,within_site,True
+5,L2/3 intratelencephalic projecting glutamatergic neuron,-0.24322258532105057,ridge,within_site,True
+5,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.2265742881184023,ridge,within_site,True
+5,L5/6 near-projecting glutamatergic neuron,-0.13566355808097552,ridge,within_site,True
+5,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.19279712545863636,ridge,within_site,True
+5,L6 intratelencephalic projecting glutamatergic neuron,-0.19857773455693362,ridge,within_site,True
+5,L6b glutamatergic neuron of the primary motor cortex,-0.14574644387946378,ridge,within_site,True
+5,VIP GABAergic interneuron,-0.1615978741513583,ridge,within_site,True
+5,astrocyte,-0.2278118866962653,ridge,within_site,True
+5,endothelial cell,-0.07654877041576647,ridge,within_site,True
+5,lamp5 GABAergic interneuron,-0.09663780803652389,ridge,within_site,True
+5,microglial cell,-0.1044978666802513,ridge,within_site,True
+5,oligodendrocyte,-0.2324258923890553,ridge,within_site,True
+5,oligodendrocyte precursor cell,-0.14277756773806594,ridge,within_site,True
+5,pericyte,-0.1102064017492328,ridge,within_site,True
+5,perivascular macrophage,0.0064990859827949166,ridge,within_site,True
+5,pvalb GABAergic interneuron,-0.18297749629432614,ridge,within_site,True
+5,smooth muscle cell,-0.1899970294989246,ridge,within_site,True
+5,sst GABAergic interneuron,-0.12527492619645986,ridge,within_site,True
+5,vascular leptomeningeal cell,-0.08194276313629856,ridge,within_site,True
+6,GABAergic neuron,-0.14568693801475396,ridge,within_site,True
+6,L2/3 intratelencephalic projecting glutamatergic neuron,-0.3429535034874238,ridge,within_site,True
+6,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.2506493140456958,ridge,within_site,True
+6,L5/6 near-projecting glutamatergic neuron,-0.16351473851328946,ridge,within_site,True
+6,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.17470758587432045,ridge,within_site,True
+6,L6 intratelencephalic projecting glutamatergic neuron,-0.22642517858635336,ridge,within_site,True
+6,L6b glutamatergic neuron of the primary motor cortex,-0.16342372780418268,ridge,within_site,True
+6,VIP GABAergic interneuron,-0.223381348326402,ridge,within_site,True
+6,astrocyte,-0.28958107056158555,ridge,within_site,True
+6,endothelial cell,-0.08291389275365635,ridge,within_site,True
+6,lamp5 GABAergic interneuron,-0.16482437295866204,ridge,within_site,True
+6,microglial cell,-0.17530557142493852,ridge,within_site,True
+6,oligodendrocyte,-0.19515318173095642,ridge,within_site,True
+6,oligodendrocyte precursor cell,-0.21414977259375723,ridge,within_site,True
+6,pericyte,-0.06726914836144515,ridge,within_site,True
+6,perivascular macrophage,-0.04239358609598187,ridge,within_site,True
+6,pvalb GABAergic interneuron,-0.24067467625339667,ridge,within_site,True
+6,smooth muscle cell,-0.015612991689168743,ridge,within_site,True
+6,sst GABAergic interneuron,-0.13926255499816764,ridge,within_site,True
+6,vascular leptomeningeal cell,-0.0975655063491625,ridge,within_site,True
+7,GABAergic neuron,-0.059103335970957405,ridge,within_site,True
+7,L2/3 intratelencephalic projecting glutamatergic neuron,-0.1882910215049367,ridge,within_site,True
+7,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.15798866915408138,ridge,within_site,True
+7,L5/6 near-projecting glutamatergic neuron,-0.14085780094013667,ridge,within_site,True
+7,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.14208393877641323,ridge,within_site,True
+7,L6 intratelencephalic projecting glutamatergic neuron,-0.17042451139813497,ridge,within_site,True
+7,L6b glutamatergic neuron of the primary motor cortex,-0.12859568907869368,ridge,within_site,True
+7,VIP GABAergic interneuron,-0.11243759192830582,ridge,within_site,True
+7,astrocyte,-0.1651545679870261,ridge,within_site,True
+7,endothelial cell,-0.09263698977129531,ridge,within_site,True
+7,lamp5 GABAergic interneuron,-0.07956542689589896,ridge,within_site,True
+7,microglial cell,-0.03535298486742633,ridge,within_site,True
+7,oligodendrocyte,-0.08238077474216188,ridge,within_site,True
+7,oligodendrocyte precursor cell,-0.09000683017228162,ridge,within_site,True
+7,pericyte,-0.08786988641512039,ridge,within_site,True
+7,perivascular macrophage,-0.2862141633975408,ridge,within_site,True
+7,pvalb GABAergic interneuron,-0.13599931040137647,ridge,within_site,True
+7,smooth muscle cell,-0.1710289039859163,ridge,within_site,True
+7,sst GABAergic interneuron,-0.11316534328309835,ridge,within_site,True
+7,vascular leptomeningeal cell,-0.3139487710687118,ridge,within_site,True
+8,GABAergic neuron,-0.04958616957895867,ridge,within_site,True
+8,L2/3 intratelencephalic projecting glutamatergic neuron,-0.20872139553413593,ridge,within_site,True
+8,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.24388271517277915,ridge,within_site,True
+8,L5/6 near-projecting glutamatergic neuron,-0.13532911143723936,ridge,within_site,True
+8,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.08957155275938722,ridge,within_site,True
+8,L6 intratelencephalic projecting glutamatergic neuron,-0.17636325171436928,ridge,within_site,True
+8,L6b glutamatergic neuron of the primary motor cortex,-0.18808315019327704,ridge,within_site,True
+8,VIP GABAergic interneuron,-0.12343694913051673,ridge,within_site,True
+8,astrocyte,-0.13093931331021458,ridge,within_site,True
+8,endothelial cell,-0.04061666278995546,ridge,within_site,True
+8,lamp5 GABAergic interneuron,-0.14269809888862006,ridge,within_site,True
+8,microglial cell,-0.04283846407765052,ridge,within_site,True
+8,oligodendrocyte,-0.22250276716508333,ridge,within_site,True
+8,oligodendrocyte precursor cell,-0.17136248333007353,ridge,within_site,True
+8,pericyte,-0.061645655724428594,ridge,within_site,True
+8,perivascular macrophage,-0.004795000786170567,ridge,within_site,True
+8,pvalb GABAergic interneuron,-0.16000916542969346,ridge,within_site,True
+8,smooth muscle cell,-0.4391056110950802,ridge,within_site,True
+8,sst GABAergic interneuron,-0.07201246790941018,ridge,within_site,True
+8,vascular leptomeningeal cell,-0.05735005688299177,ridge,within_site,True
+9,GABAergic neuron,0.02502043136764287,ridge,within_site,True
+9,L2/3 intratelencephalic projecting glutamatergic neuron,-0.14513198489440893,ridge,within_site,True
+9,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.06505032063867267,ridge,within_site,True
+9,L5/6 near-projecting glutamatergic neuron,-0.07184933797437454,ridge,within_site,True
+9,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.04587137175662315,ridge,within_site,True
+9,L6 intratelencephalic projecting glutamatergic neuron,-0.1257001879676688,ridge,within_site,True
+9,L6b glutamatergic neuron of the primary motor cortex,-0.054170257517546894,ridge,within_site,True
+9,VIP GABAergic interneuron,-0.049102950983938964,ridge,within_site,True
+9,astrocyte,-0.09441921678394294,ridge,within_site,True
+9,endothelial cell,-0.01871729673769984,ridge,within_site,True
+9,lamp5 GABAergic interneuron,-0.0028204206147667277,ridge,within_site,True
+9,microglial cell,-0.05075553749444506,ridge,within_site,True
+9,oligodendrocyte,-0.09813263288050833,ridge,within_site,True
+9,oligodendrocyte precursor cell,-0.06827298219099143,ridge,within_site,True
+9,pericyte,-0.0483796330313202,ridge,within_site,True
+9,perivascular macrophage,-0.0603047783271522,ridge,within_site,True
+9,pvalb GABAergic interneuron,-0.013213291231459312,ridge,within_site,True
+9,smooth muscle cell,-0.14809806627113753,ridge,within_site,True
+9,sst GABAergic interneuron,-0.019896135137141113,ridge,within_site,True
+9,vascular leptomeningeal cell,-0.11577606411622698,ridge,within_site,True
+10,GABAergic neuron,-0.13490853960989002,ridge,within_site,True
+10,L2/3 intratelencephalic projecting glutamatergic neuron,-0.22162932642276723,ridge,within_site,True
+10,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.22686732652564767,ridge,within_site,True
+10,L5/6 near-projecting glutamatergic neuron,-0.15684658838028964,ridge,within_site,True
+10,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.1079748886414289,ridge,within_site,True
+10,L6 intratelencephalic projecting glutamatergic neuron,-0.14982383788275055,ridge,within_site,True
+10,L6b glutamatergic neuron of the primary motor cortex,-0.12193808223956071,ridge,within_site,True
+10,VIP GABAergic interneuron,-0.16364076454538223,ridge,within_site,True
+10,astrocyte,-0.10452382613033118,ridge,within_site,True
+10,endothelial cell,-0.08536734930869261,ridge,within_site,True
+10,lamp5 GABAergic interneuron,-0.11891254105021498,ridge,within_site,True
+10,microglial cell,-0.07320788261138989,ridge,within_site,True
+10,oligodendrocyte,-0.10838783593400858,ridge,within_site,True
+10,oligodendrocyte precursor cell,-0.13638867782550468,ridge,within_site,True
+10,pericyte,-0.10035297170129731,ridge,within_site,True
+10,perivascular macrophage,-0.0020124138308361683,ridge,within_site,True
+10,pvalb GABAergic interneuron,-0.12862153686761812,ridge,within_site,True
+10,smooth muscle cell,-0.19625410409869581,ridge,within_site,True
+10,sst GABAergic interneuron,-0.1650826400908647,ridge,within_site,True
+10,vascular leptomeningeal cell,-0.11226410926113828,ridge,within_site,True
+11,GABAergic neuron,0.012096146890874848,ridge,within_site,True
+11,L2/3 intratelencephalic projecting glutamatergic neuron,-0.17532838009354745,ridge,within_site,True
+11,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.13083305732056794,ridge,within_site,True
+11,L5/6 near-projecting glutamatergic neuron,0.009466112312751795,ridge,within_site,True
+11,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.08301424857887851,ridge,within_site,True
+11,L6 intratelencephalic projecting glutamatergic neuron,-0.10287427244346803,ridge,within_site,True
+11,L6b glutamatergic neuron of the primary motor cortex,0.06803858909956967,ridge,within_site,True
+11,VIP GABAergic interneuron,-0.09740750269959164,ridge,within_site,True
+11,astrocyte,-0.10734739503926555,ridge,within_site,True
+11,endothelial cell,-0.06040299067110466,ridge,within_site,True
+11,lamp5 GABAergic interneuron,-0.04363063125955979,ridge,within_site,True
+11,microglial cell,-0.05644916037355252,ridge,within_site,True
+11,oligodendrocyte,-0.14620013565563017,ridge,within_site,True
+11,oligodendrocyte precursor cell,-0.016600917770926538,ridge,within_site,True
+11,pericyte,-0.0872851113737797,ridge,within_site,True
+11,perivascular macrophage,-0.06957520021780117,ridge,within_site,True
+11,pvalb GABAergic interneuron,-0.0958166906850495,ridge,within_site,True
+11,smooth muscle cell,-0.3148050506297124,ridge,within_site,True
+11,sst GABAergic interneuron,-0.0788415086109514,ridge,within_site,True
+11,vascular leptomeningeal cell,-0.19981076341644205,ridge,within_site,True
+12,GABAergic neuron,-0.04411130309277628,ridge,within_site,True
+12,L2/3 intratelencephalic projecting glutamatergic neuron,-0.15512604351895465,ridge,within_site,True
+12,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.19988580748907403,ridge,within_site,True
+12,L5/6 near-projecting glutamatergic neuron,-0.12021032567346146,ridge,within_site,True
+12,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.11522718165743706,ridge,within_site,True
+12,L6 intratelencephalic projecting glutamatergic neuron,-0.1615665798687701,ridge,within_site,True
+12,L6b glutamatergic neuron of the primary motor cortex,-0.15183000929618884,ridge,within_site,True
+12,VIP GABAergic interneuron,-0.08664527033901354,ridge,within_site,True
+12,astrocyte,-0.06254847521159257,ridge,within_site,True
+12,endothelial cell,-0.014439403997829114,ridge,within_site,True
+12,lamp5 GABAergic interneuron,-0.111914024487975,ridge,within_site,True
+12,microglial cell,-0.050245971316478455,ridge,within_site,True
+12,oligodendrocyte,-0.09312314836415553,ridge,within_site,True
+12,oligodendrocyte precursor cell,-0.06581784174403965,ridge,within_site,True
+12,pericyte,0.006535578910613682,ridge,within_site,True
+12,perivascular macrophage,-0.15457472614349776,ridge,within_site,True
+12,pvalb GABAergic interneuron,-0.21702500470671215,ridge,within_site,True
+12,smooth muscle cell,-0.27960136960110904,ridge,within_site,True
+12,sst GABAergic interneuron,-0.1732101332873206,ridge,within_site,True
+12,vascular leptomeningeal cell,0.0008219819749417101,ridge,within_site,True
+13,GABAergic neuron,-0.08734646480075103,ridge,within_site,True
+13,L2/3 intratelencephalic projecting glutamatergic neuron,-0.18537192302953087,ridge,within_site,True
+13,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.15640021552406402,ridge,within_site,True
+13,L5/6 near-projecting glutamatergic neuron,-0.18775537595060132,ridge,within_site,True
+13,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.13993902390157442,ridge,within_site,True
+13,L6 intratelencephalic projecting glutamatergic neuron,-0.19918448214255569,ridge,within_site,True
+13,L6b glutamatergic neuron of the primary motor cortex,-0.19826742831223843,ridge,within_site,True
+13,VIP GABAergic interneuron,-0.10242673402479496,ridge,within_site,True
+13,astrocyte,-0.11960535716495269,ridge,within_site,True
+13,endothelial cell,-0.04895805104906864,ridge,within_site,True
+13,lamp5 GABAergic interneuron,-0.05882050020334062,ridge,within_site,True
+13,microglial cell,-0.013355204886401184,ridge,within_site,True
+13,oligodendrocyte,-0.110105158523783,ridge,within_site,True
+13,oligodendrocyte precursor cell,-0.037220296238836936,ridge,within_site,True
+13,pericyte,-0.003172881034118946,ridge,within_site,True
+13,perivascular macrophage,-0.03731881459849418,ridge,within_site,True
+13,pvalb GABAergic interneuron,-0.053268241379870296,ridge,within_site,True
+13,smooth muscle cell,-0.23329830158878107,ridge,within_site,True
+13,sst GABAergic interneuron,-0.07839655782667476,ridge,within_site,True
+13,vascular leptomeningeal cell,-0.03976449922172187,ridge,within_site,True
+14,GABAergic neuron,-0.029181322508111673,ridge,within_site,True
+14,L2/3 intratelencephalic projecting glutamatergic neuron,-0.2802910302565298,ridge,within_site,True
+14,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.2075697340434799,ridge,within_site,True
+14,L5/6 near-projecting glutamatergic neuron,-0.09862229122843225,ridge,within_site,True
+14,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.04401744468194102,ridge,within_site,True
+14,L6 intratelencephalic projecting glutamatergic neuron,-0.03312558863265297,ridge,within_site,True
+14,L6b glutamatergic neuron of the primary motor cortex,-0.11265898721473766,ridge,within_site,True
+14,VIP GABAergic interneuron,-0.13323416558151002,ridge,within_site,True
+14,astrocyte,-0.04274947940490248,ridge,within_site,True
+14,endothelial cell,-0.06366016586653755,ridge,within_site,True
+14,lamp5 GABAergic interneuron,-0.13109211295655543,ridge,within_site,True
+14,microglial cell,-0.006852364775607966,ridge,within_site,True
+14,oligodendrocyte,-0.02406263474624054,ridge,within_site,True
+14,oligodendrocyte precursor cell,-0.07107484125238256,ridge,within_site,True
+14,pericyte,-0.022830915184510303,ridge,within_site,True
+14,perivascular macrophage,-0.16065727223612214,ridge,within_site,True
+14,pvalb GABAergic interneuron,-0.1594315037540633,ridge,within_site,True
+14,smooth muscle cell,-0.29885016521814634,ridge,within_site,True
+14,sst GABAergic interneuron,-0.1000103580699016,ridge,within_site,True
+14,vascular leptomeningeal cell,-0.15551040114559977,ridge,within_site,True
+15,GABAergic neuron,-0.11345544952782272,ridge,within_site,True
+15,L2/3 intratelencephalic projecting glutamatergic neuron,-0.17702698185994226,ridge,within_site,True
+15,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.13332499949651988,ridge,within_site,True
+15,L5/6 near-projecting glutamatergic neuron,-0.10516568100317536,ridge,within_site,True
+15,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.06466649202218,ridge,within_site,True
+15,L6 intratelencephalic projecting glutamatergic neuron,-0.19663014336884388,ridge,within_site,True
+15,L6b glutamatergic neuron of the primary motor cortex,-0.167829461051186,ridge,within_site,True
+15,VIP GABAergic interneuron,-0.085406477412721,ridge,within_site,True
+15,astrocyte,-0.16913987127257368,ridge,within_site,True
+15,endothelial cell,-0.08117023243871546,ridge,within_site,True
+15,lamp5 GABAergic interneuron,-0.01446204491255526,ridge,within_site,True
+15,microglial cell,-0.04043936004254822,ridge,within_site,True
+15,oligodendrocyte,-0.0909842548427855,ridge,within_site,True
+15,oligodendrocyte precursor cell,-0.06285972172282894,ridge,within_site,True
+15,pericyte,-0.053564407145160975,ridge,within_site,True
+15,perivascular macrophage,-0.06511003761738565,ridge,within_site,True
+15,pvalb GABAergic interneuron,-0.02089277806460005,ridge,within_site,True
+15,smooth muscle cell,-0.26863200938392917,ridge,within_site,True
+15,sst GABAergic interneuron,-0.10568208493675357,ridge,within_site,True
+15,vascular leptomeningeal cell,-0.03704990443492817,ridge,within_site,True
+16,GABAergic neuron,-0.08120068027161054,ridge,within_site,True
+16,L2/3 intratelencephalic projecting glutamatergic neuron,-0.23519032913340177,ridge,within_site,True
+16,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.22852471267436214,ridge,within_site,True
+16,L5/6 near-projecting glutamatergic neuron,-0.07705585822855032,ridge,within_site,True
+16,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.10267872162312908,ridge,within_site,True
+16,L6 intratelencephalic projecting glutamatergic neuron,-0.11484433194458354,ridge,within_site,True
+16,L6b glutamatergic neuron of the primary motor cortex,-0.08539118775601895,ridge,within_site,True
+16,VIP GABAergic interneuron,-0.13479818570772228,ridge,within_site,True
+16,astrocyte,-0.24968044325711725,ridge,within_site,True
+16,endothelial cell,-0.07622181806296957,ridge,within_site,True
+16,lamp5 GABAergic interneuron,-0.08387393907603669,ridge,within_site,True
+16,microglial cell,-0.14479581423932264,ridge,within_site,True
+16,oligodendrocyte,-0.2515403100752027,ridge,within_site,True
+16,oligodendrocyte precursor cell,-0.17296922365303402,ridge,within_site,True
+16,pericyte,0.010268397947026386,ridge,within_site,True
+16,perivascular macrophage,-0.12873915934581803,ridge,within_site,True
+16,pvalb GABAergic interneuron,-0.1904629960434726,ridge,within_site,True
+16,smooth muscle cell,-0.2673080473219944,ridge,within_site,True
+16,sst GABAergic interneuron,-0.15671962881629553,ridge,within_site,True
+16,vascular leptomeningeal cell,-0.1326619442843774,ridge,within_site,True
+17,GABAergic neuron,-0.06496247377645348,ridge,within_site,True
+17,L2/3 intratelencephalic projecting glutamatergic neuron,-0.15104268005845545,ridge,within_site,True
+17,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.259691257225244,ridge,within_site,True
+17,L5/6 near-projecting glutamatergic neuron,-0.09845399869207427,ridge,within_site,True
+17,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.07514082240009257,ridge,within_site,True
+17,L6 intratelencephalic projecting glutamatergic neuron,-0.07579443134121577,ridge,within_site,True
+17,L6b glutamatergic neuron of the primary motor cortex,-0.08296131150683406,ridge,within_site,True
+17,VIP GABAergic interneuron,-0.15873108836639993,ridge,within_site,True
+17,astrocyte,-0.12473237615124011,ridge,within_site,True
+17,endothelial cell,-0.10203395287205952,ridge,within_site,True
+17,lamp5 GABAergic interneuron,-0.13434505674648956,ridge,within_site,True
+17,microglial cell,-0.06508651408278743,ridge,within_site,True
+17,oligodendrocyte,-0.1238802240271234,ridge,within_site,True
+17,oligodendrocyte precursor cell,-0.0983221863304885,ridge,within_site,True
+17,pericyte,-0.09251774230185683,ridge,within_site,True
+17,perivascular macrophage,-0.07379693308225521,ridge,within_site,True
+17,pvalb GABAergic interneuron,-0.2609253631762193,ridge,within_site,True
+17,smooth muscle cell,-0.4311763440549212,ridge,within_site,True
+17,sst GABAergic interneuron,-0.13501480414728517,ridge,within_site,True
+17,vascular leptomeningeal cell,-0.06279484906836597,ridge,within_site,True
+18,GABAergic neuron,-0.07746898770491428,ridge,within_site,True
+18,L2/3 intratelencephalic projecting glutamatergic neuron,-0.11817335948584218,ridge,within_site,True
+18,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.08364332319277301,ridge,within_site,True
+18,L5/6 near-projecting glutamatergic neuron,-0.02006677399658091,ridge,within_site,True
+18,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.12264159313208844,ridge,within_site,True
+18,L6 intratelencephalic projecting glutamatergic neuron,-0.03429103166568914,ridge,within_site,True
+18,L6b glutamatergic neuron of the primary motor cortex,-0.16685846281661187,ridge,within_site,True
+18,VIP GABAergic interneuron,-0.030724836668716504,ridge,within_site,True
+18,astrocyte,-0.11878063211299383,ridge,within_site,True
+18,endothelial cell,-0.06991468737334472,ridge,within_site,True
+18,lamp5 GABAergic interneuron,-0.0629958839299739,ridge,within_site,True
+18,microglial cell,-0.05999803571984286,ridge,within_site,True
+18,oligodendrocyte,-0.1001467629043663,ridge,within_site,True
+18,oligodendrocyte precursor cell,-0.09240269455799588,ridge,within_site,True
+18,pericyte,-0.005353462241520779,ridge,within_site,True
+18,perivascular macrophage,-0.10111134454563064,ridge,within_site,True
+18,pvalb GABAergic interneuron,-0.07112746296340955,ridge,within_site,True
+18,smooth muscle cell,-0.045881242058346317,ridge,within_site,True
+18,sst GABAergic interneuron,-0.10217125608183464,ridge,within_site,True
+18,vascular leptomeningeal cell,-0.13971838579523643,ridge,within_site,True
+19,GABAergic neuron,-0.026746991467889614,ridge,within_site,True
+19,L2/3 intratelencephalic projecting glutamatergic neuron,-0.11021800660591541,ridge,within_site,True
+19,L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.05958078443632231,ridge,within_site,True
+19,L5/6 near-projecting glutamatergic neuron,-0.06131079336391587,ridge,within_site,True
+19,L6 corticothalamic-projecting glutamatergic cortical neuron,-0.06998958694922519,ridge,within_site,True
+19,L6 intratelencephalic projecting glutamatergic neuron,-0.02040186369894731,ridge,within_site,True
+19,L6b glutamatergic neuron of the primary motor cortex,-0.1020417334291478,ridge,within_site,True
+19,VIP GABAergic interneuron,-0.04463480885867943,ridge,within_site,True
+19,astrocyte,-0.1321739422789261,ridge,within_site,True
+19,endothelial cell,-0.06955440385534206,ridge,within_site,True
+19,lamp5 GABAergic interneuron,-0.005820840837537644,ridge,within_site,True
+19,microglial cell,0.0017810407651488447,ridge,within_site,True
+19,oligodendrocyte,-0.1109883506985303,ridge,within_site,True
+19,oligodendrocyte precursor cell,-0.04234293821522994,ridge,within_site,True
+19,pericyte,-0.02724840669505041,ridge,within_site,True
+19,perivascular macrophage,-0.11186297849713633,ridge,within_site,True
+19,pvalb GABAergic interneuron,-0.06469419574828839,ridge,within_site,True
+19,smooth muscle cell,-0.4051293761023209,ridge,within_site,True
+19,sst GABAergic interneuron,-0.07132829443608446,ridge,within_site,True
+19,vascular leptomeningeal cell,-0.0836307462162521,ridge,within_site,True

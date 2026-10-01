@@ -1,0 +1,30 @@
+{
+ "key": "no_approach_same_platform",
+ "flags": [],
+ "text": "The TOWARD negative holds with the platform gap removed. GM00731 PartialReprog n_cells=5832, frac_S=+0.674, delta_S=+130.894 (delta_S >= 0: not closer to the young donor).",
+ "conditions": {
+  "P_pass": true,
+  "frac_S_CI_excludes_0_positive": true,
+  "delta_S_lt_0": false,
+  "N1_p_le_0_05": true,
+  "Asymmetry_CI_excludes_0_positive": true,
+  "Asymmetry_CI_includes_0": false,
+  "Asymmetry_CI_negative": false,
+  "delta_S_ge_0": true,
+  "frac_S_CI_includes_0": false,
+  "overshoot_pluri_delta_lt_0_and_frac_CI_gt_0": false,
+  "frac_S": 0.674440748216413,
+  "delta_S": 130.89356478446803,
+  "p_N1": 0.004975124378109453,
+  "n_cells_S": 5832,
+  "asymmetry": 0.7317159749951458,
+  "frac_S_CI": [
+   0.6673919962871651,
+   0.6800921160425388
+  ],
+  "asymmetry_CI": [
+   0.7240405163302078,
+   0.7404332563572681
+  ]
+ }
+}

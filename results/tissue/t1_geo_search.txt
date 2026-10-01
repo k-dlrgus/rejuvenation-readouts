@@ -1,0 +1,379 @@
+====================================================================================================
+QUERY: human aging sc retina
+TERM:  (aging[Title] OR ageing[Title] OR "age-related"[Title] OR "healthy aging" OR "human aging" OR "ageing atlas") AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND (retina OR macular OR "retinal pigment" OR photoreceptor) AND "Homo sapiens"[Organism] AND gse[Entry Type]
+  GEO returned 10 records (showing 10)
+  GSE282283    n=   15  2026/02/19  Expression profiling by high through | YAP activation reverses aging-related visual dysfunction caused by impaired cell-matrix adhesion
+  GSE289703    n=   12  2025/02/19  Other                                | Single-cell multiome and enhancer mapping of human retinal pigment epithelium and choroid nominate pathogenic 
+  GSE208434    n=    2  2024/01/07  Expression profiling by high through | Single cell RNA-seq of myeloid cells in human age-related macular degeneration (AMD)
+  GSE222647    n=   65  2023/10/06  Expression profiling by high through | scRNAseq of peripheral blood mononuclear cells in age-related macular degeneration
+  GSE210543    n=   13  2023/01/19  Expression profiling by high through | Single cell RNA sequencing reveals transcriptional changes of human choroid and retinal pigment epithelium cel
+  GSE179631    n=    4  2022/01/20  Expression profiling by high through | Hyaluronidase-1 impairs endothelial barrier in a subtype of age-related macular degeneration
+  GSE135092    n=  537  2020/01/22  Expression profiling by high through | Integration of eQTL and single-cell transcriptomics in the human eye identifies causal genes for age-related m
+  GSE137847    n=   11  2019/09/23  Expression profiling by high through | Single-cell Transcriptomic Atlas of the Human Retina Identifies Cell Types Associated with Age-Related Macular
+  GSE137846    n=    5  2019/09/23  Expression profiling by high through | Single-cell Transcriptomic Atlas of the Human Retina Identifies Cell Types Associated with Age-Related Macular
+  GSE137537    n=    6  2019/09/21  Expression profiling by high through | Single-cell Transcriptomic Atlas of the Human Retina Identifies Cell Types Associated with Age-Related Macular
+====================================================================================================
+QUERY: human aging sc brain
+TERM:  (aging[Title] OR ageing[Title] OR "age-related"[Title] OR "healthy aging" OR "human aging" OR "ageing atlas") AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND (brain OR cortex OR cortical OR hippocampus OR "prefrontal cortex" OR DLPFC) AND "Homo sapiens"[Organism] AND gse[Entry Type]
+  GEO returned 30 records (showing 30)
+  GSE305900    n=   32  2026/08/18  Expression profiling by high through | Uncovering the transcriptional hallmarks of endothelial cell aging via integrated single-cell analysis
+  GSE305897    n=    7  2026/08/18  Expression profiling by high through | Uncovering the transcriptional hallmarks of endothelial cell aging via integrated single-cell analysis [RNA-Se
+  GSE338520    n=    7  2026/07/13  Genome binding/occupancy profiling b | Somatic mutations reveal the ontogeny of microglia in human aging [mtscATAC-seq]
+  GSE338484    n=   29  2026/07/13  Genome binding/occupancy profiling b | Somatic mutations reveal the ontogeny of microglia in human aging [snATAC-seq]
+  GSE329417    n=    4  2026/05/11  Expression profiling by high through | Single-nucleus profiling reveals age-associated remodeling opposed by parity in the postmenopausal human ovary
+  GSE325391    n=   27  2026/04/20  Expression profiling by high through | Unique transcriptional profiles of adult human immature neurons in healthy aging, Alzheimer?s disease, and cog
+  GSE290367    n=   90  2026/03/15  Genome binding/occupancy profiling b | Single-cell multiomic integration identifies widespread, cell-type resolved fetal reactivation in the diseased
+  GSE268609    n=   78  2025/12/15  Genome binding/occupancy profiling b | A roadmap to human hippocampal neurogenesis in adulthood, aging and AD
+  GSE282079    n=  318  2025/09/24  Expression profiling by high through | NETSseq Reveals Inflammatory and Aging Mechanisms in Distinct Cell Types Driving Cerebellar Decline in Ataxia 
+  GSE291605    n=   31  2025/08/29  Expression profiling by high through | Human Brain Cell-Type-Specific Aging Clocks Based on Single-Nuclei Transcriptomics
+  GSE299899    n=    7  2025/06/18  Genome binding/occupancy profiling b | Epigenetic and 3D genome reprogramming during the aging of human hippocampus [CUT&Tag]
+  GSE298243    n=   49  2025/06/17  Methylation profiling by high throug | Single-Cell Profiling of DNA Methylation in Autism Spectrum Disorder Prefrontal Cortex Reveals Distinct Regula
+  GSE299139    n=   40  2025/06/10  Other                                | Epigenetic and 3D genome reprogramming during the aging of human hippocampus
+  GSE250303    n=   56  2025/06/09  Expression profiling by high through | Telomeric Repeat-Containing RNA Increases in Aged Human Cells
+  GSE285230    n=    6  2025/01/10  Other                                | Droplet-based high-throughput 3D genome structure mapping of single cells with simultaneous transcriptomics (c
+  GSE278576    n=   80  2024/12/05  Expression profiling by high through | Epigenetic and 3D genome reprogramming during the aging of human hippocampus
+  GSE268599    n=  146  2024/07/22  Expression profiling by high through | Astrocyte transcriptomic changes along the spatiotemporal progression of Alzheimer?s disease
+  GSE253754    n=    1  2024/04/01  Other                                | Single-cell multiplex chromatin and RNA interactions in aging human brain
+  GSE232222    n=   17  2024/01/05  Expression profiling by high through | Mosaic loss of Y chromosome is associated with aging and epithelial injury in chronic kidney disease
+  GSE243292    n=   15  2023/10/02  Expression profiling by high through | Single-nucleus RNA sequencing of dorsolateral prefrontal cortex from normal, pathological aging, and Alzheimer
+  GSE234417    n=   16  2023/08/20  Expression profiling by high through | cGAS/STING drives ageing-related inflammation and neurodegeneration I
+  GSE212606    n=    3  2023/05/26  Expression profiling by high through | A global view of aging and Alzheimer?s pathogenesis-associated cell population dynamics in mammalian brain
+  GSE199243    n=   13  2022/08/26  Expression profiling by high through | A Single-Cell Transcriptome Atlas of Glia Diversity in the Human Hippocampus across the Lifespan and in Alzhei
+  GSE155430    n=   23  2021/10/20  Genome binding/occupancy profiling b | A single-cell epigenetic atlas of human IDH-mutant glioma
+  GSE160813    n=   21  2020/12/31  Expression profiling by high through | Age-Related Injury Responses of Human Oligodendrocytes to Metabolic Insults: Link to BCL-2 and Autophagy Pathw
+  GSE160810    n=   15  2020/12/31  Expression profiling by high through | Age-Related Injury Responses of Human Oligodendrocytes to Metabolic Insults: Link to BCL-2 and Autophagy Pathw
+  GSE137869    n=   60  2020/02/21  Expression profiling by high through | Caloric restriction reprograms the single-cell transcriptional landscape of Rattus norvegicus aging
+  GSE130664    n=   55  2020/01/28  Expression profiling by high through | Single-Cell Transcriptomic Atlas of Primate Ovarian Aging
+  GSE81547     n= 2544  2017/09/28  Expression profiling by high through | Single cell transcriptome analysis of human pancreas reveals transcriptional signatures of aging and somatic m
+  GSE92538     n=  363  2016/12/20  Expression profiling by array        | Inference of cell-type composition from human brain transcriptomic datasets illuminates the effects of age, ma
+====================================================================================================
+QUERY: human aging sc skeletal muscle
+TERM:  (aging[Title] OR ageing[Title] OR "age-related"[Title] OR "healthy aging" OR "human aging" OR "ageing atlas") AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND ("skeletal muscle" OR myofiber OR vastus OR quadriceps) AND "Homo sapiens"[Organism] AND gse[Entry Type]
+  GEO returned 4 records (showing 4)
+  GSE268953    n=   20  2025/05/09  Expression profiling by high through | Cellular senescence in skeletal muscle aging: new mechanisms and therapeutic potential for sarcopenia [snMulti
+  GSE268431    n=    2  2025/05/09  Genome binding/occupancy profiling b | Cellular senescence in skeletal muscle aging: new mechanisms and therapeutic potential for sarcopenia [cut&run
+  GSE196554    n=   12  2023/05/24  Expression profiling by high through | Single cell RNA sequencing of human muscle stem cells in aging
+  GSE137869    n=   60  2020/02/21  Expression profiling by high through | Caloric restriction reprograms the single-cell transcriptional landscape of Rattus norvegicus aging  [dup]
+====================================================================================================
+QUERY: human aging sc heart
+TERM:  (aging[Title] OR ageing[Title] OR "age-related"[Title] OR "healthy aging" OR "human aging" OR "ageing atlas") AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND (heart OR cardiac OR cardiomyocyte OR myocardium) AND "Homo sapiens"[Organism] AND gse[Entry Type]
+  GEO returned 4 records (showing 4)
+  GSE290367    n=   90  2026/03/15  Genome binding/occupancy profiling b | Single-cell multiomic integration identifies widespread, cell-type resolved fetal reactivation in the diseased  [dup]
+  GSE231906    n=   59  2025/08/31  Expression profiling by high through | Single-cell analysis of human thymus and peripheral blood unveils the dynamics of T-cell development and aging
+  GSE291605    n=   31  2025/08/29  Expression profiling by high through | Human Brain Cell-Type-Specific Aging Clocks Based on Single-Nuclei Transcriptomics  [dup]
+  GSE236128    n=   24  2024/06/30  Expression profiling by high through | Aging affects ciliated cells development in human endometrial epithelium
+====================================================================================================
+QUERY: human aging sc kidney
+TERM:  (aging[Title] OR ageing[Title] OR "age-related"[Title] OR "healthy aging" OR "human aging" OR "ageing atlas") AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND (kidney OR renal OR nephron) AND "Homo sapiens"[Organism] AND gse[Entry Type]
+  GEO returned 4 records (showing 4)
+  GSE330266    n=   10  2026/05/08  Expression profiling by high through | Hepatocyte Hedgehog Signaling Controls Ferroptosis to Alleviate Aging-related Organ Dysfunction
+  GSE291605    n=   31  2025/08/29  Expression profiling by high through | Human Brain Cell-Type-Specific Aging Clocks Based on Single-Nuclei Transcriptomics  [dup]
+  GSE232222    n=   17  2024/01/05  Expression profiling by high through | Mosaic loss of Y chromosome is associated with aging and epithelial injury in chronic kidney disease  [dup]
+  GSE137869    n=   60  2020/02/21  Expression profiling by high through | Caloric restriction reprograms the single-cell transcriptional landscape of Rattus norvegicus aging  [dup]
+====================================================================================================
+QUERY: human aging sc liver
+TERM:  (aging[Title] OR ageing[Title] OR "age-related"[Title] OR "healthy aging" OR "human aging" OR "ageing atlas") AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND (liver OR hepatic OR hepatocyte) AND "Homo sapiens"[Organism] AND gse[Entry Type]
+  GEO returned 17 records (showing 17)
+  GSE206078    n=   37  2026/06/18  Expression profiling by high through | ZNF512B Safeguards Genome Integrity at Regulatory Regions to Repress SASP and Inflammation
+  GSE330266    n=   10  2026/05/08  Expression profiling by high through | Hepatocyte Hedgehog Signaling Controls Ferroptosis to Alleviate Aging-related Organ Dysfunction  [dup]
+  GSE308173    n=    3  2026/03/02  Expression profiling by high through | Single-cell transcriptomic profileing of IMR-90 SV40-T cells expressing wild-type, E76K or E76R H2B
+  GSE286254    n=    7  2025/07/18  Other                                | A Single-Cell Atlas Of Human Pediatric Liver Reveals Age-Related Hepatic Gene Signatures
+  GSE250303    n=   56  2025/06/09  Expression profiling by high through | Telomeric Repeat-Containing RNA Increases in Aged Human Cells  [dup]
+  GSE259297    n=    8  2025/02/11  Other                                | A p53-CCF circuit integrates genome integrity with senescence phenotypes [WGS 2]
+  GSE259296    n=   14  2025/02/11  Other                                | A p53-CCF circuit integrates genome integrity with senescence phenotypes [WGS 1]
+  GSE259295    n=   18  2025/02/11  Expression profiling by high through | A p53-CCF circuit integrates genome integrity with senescence phenotypes  [RNA-Seq 2]
+  GSE259291    n=   12  2025/02/11  Expression profiling by high through | A p53-CCF circuit integrates genome integrity with senescence phenotypes [RNA-Seq 1]
+  GSE285230    n=    6  2025/01/10  Other                                | Droplet-based high-throughput 3D genome structure mapping of single cells with simultaneous transcriptomics (c  [dup]
+  GSE262072    n=   88  2024/05/27  Expression profiling by high through | Single-cell CAR T atlas reveals type 2 function in 8-year leukaemia remission
+  GSE165668    n=   21  2022/06/20  Expression profiling by high through | YAP/TAZ activity in stromal cells prevents ageing by controlling cGAS/STING
+  GSE179631    n=    4  2022/01/20  Expression profiling by high through | Hyaluronidase-1 impairs endothelial barrier in a subtype of age-related macular degeneration  [dup]
+  GSE159688    n=   50  2021/11/08  Expression profiling by high through | Developmental regulation by miR-29 specifies age-related differences in the CD8+ T cell immune response
+  GSE155430    n=   23  2021/10/20  Genome binding/occupancy profiling b | A single-cell epigenetic atlas of human IDH-mutant glioma  [dup]
+  GSE160813    n=   21  2020/12/31  Expression profiling by high through | Age-Related Injury Responses of Human Oligodendrocytes to Metabolic Insults: Link to BCL-2 and Autophagy Pathw  [dup]
+  GSE137869    n=   60  2020/02/21  Expression profiling by high through | Caloric restriction reprograms the single-cell transcriptional landscape of Rattus norvegicus aging  [dup]
+====================================================================================================
+QUERY: mouse aging sc retina
+TERM:  (aging[Title] OR ageing[Title] OR "age-related"[Title] OR "healthy aging" OR "human aging" OR "ageing atlas") AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND (retina OR macular OR "retinal pigment" OR photoreceptor) AND "Mus musculus"[Organism] AND gse[Entry Type]
+  GEO returned 17 records (showing 17)
+  GSE325478    n=   18  2026/04/02  Expression profiling by high through | Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mech
+  GSE325477    n=   17  2026/04/02  Genome binding/occupancy profiling b | Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mech
+  GSE325479    n=   62  2026/03/31  Expression profiling by high through | Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mech
+  GSE282283    n=   15  2026/02/19  Expression profiling by high through | YAP activation reverses aging-related visual dysfunction caused by impaired cell-matrix adhesion  [dup]
+  GSE303793    n=    6  2025/09/30  Expression profiling by high through | Retinal polyunsaturated fatty acid supplementation reverses aging-related vision loss in mice
+  GSE307031    n=    6  2025/09/05  Other                                | Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mech
+  GSE256389    n=    8  2025/02/16  Expression profiling by high through | Transcriptional Heterogeneity and Differential Response of Rod Photoreceptor Pathway Uncovered by Single Cell 
+  GSE230049    n=    8  2025/02/16  Expression profiling by high through | Transcriptional Heterogeneity and Differential Response of Rod Photoreceptor Pathway Uncovered by Single?Cell 
+  GSE288036    n=    2  2025/01/26  Expression profiling by high through | Smoking aggravates neovascular age-related macular degeneration via Sema4D-PlexinB1 axis-mediated activation o
+  GSE271262    n=    4  2024/12/31  Expression profiling by high through | Natural killer cells cooperate with neutrophils to suppress pathological angiogenesis in neovascular age-relat
+  GSE268463    n=    7  2024/12/06  Expression profiling by high through | SenMayo transcriptomic senescence panel highlights glial cells in the ageing mouse and human retina
+  GSE271038    n=   22  2024/10/31  Expression profiling by high through | Natural killer cells cooperate with neutrophils to suppress pathological angiogenesis in neovascular age-relat
+  GSE221952    n=    4  2024/08/08  Expression profiling by high through | Impaired RPE Mitochondrial Energetics Leads Subretinal Fibrosis in Neovascular Age-related Macular Degeneratio
+  GSE239941    n=    8  2024/02/28  Expression profiling by high through | Role of NR4A1 and non-classical monocytes in a mouse model of neovascular age-related macular degeneration
+  GSE195891    n=    4  2024/01/07  Expression profiling by high through | Single cell RNA-seq of immune cells in multiple mouse models of outer retinal degeneration
+  GSE242810    n=    3  2023/09/10  Expression profiling by high through | Adult Mouse Leptomeninges Exhibit Regional and Age-related Cellular Heterogeneity Implicating Mental Disorders
+  GSE110623    n=    4  2022/02/24  Expression profiling by high through | Autophagy in age-related macular degeneration using Vldlr KO mouse model of retinopathy
+====================================================================================================
+QUERY: mouse aging sc brain
+TERM:  (aging[Title] OR ageing[Title] OR "age-related"[Title] OR "healthy aging" OR "human aging" OR "ageing atlas") AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND (brain OR cortex OR cortical OR hippocampus OR "prefrontal cortex" OR DLPFC) AND "Mus musculus"[Organism] AND gse[Entry Type]
+  GEO returned 124 records (showing 20)
+  GSE327682    n=    6  2026/09/01  Expression profiling by high through | Aging Drives Region-Specific Metabolic Changes in Gut Muscularis Macrophages
+  GSE285471    n=   24  2026/08/08  Expression profiling by high through | APOE genotype modifies the gene signature of microglial and astrocytic responses to aging
+  GSE300591    n=   15  2026/08/07  Expression profiling by high through | Temporal changes in metabolism guide oligodendrocyte precursor cell dynamics in aging and multiple sclerosis 
+  GSE304047    n=    4  2026/07/22  Expression profiling by high through | HuR coordinates systemic aging through platelet infiltration.
+  GSE303038    n=    8  2026/07/19  Expression profiling by high through | Single-Cell Multiomic Profiling of the Mouse Hippocampus During Ageing and Memory Formation
+  GSE331489    n=  725  2026/05/31  Genome binding/occupancy profiling b | A global view of cell-type-specific temporal dynamics in mammalian aging [II]
+  GSE331488    n=  771  2026/05/31  Genome binding/occupancy profiling b | A global view of cell-type-specific temporal dynamics in mammalian aging [I]
+  GSE333394    n=    4  2026/05/28  Expression profiling by high through | Depletion of endothelial KLF4 drives age-related neurovascular dysfunction and neuropsychiatric impairment [sc
+  GSE310666    n=    2  2026/05/28  Expression profiling by high through | The Role of Supraoptic Hypothalamic Arginine Vasopressin Neurons in Aging-Associated Water Balance and Thermor
+  GSE325187    n=   20  2026/03/23  Expression profiling by high through | Senescent Endothelial Cells in Cerebral Microcirculation Are Key Drivers of Age-Related Blood-Brain Barrier Di
+  GSE269061    n=    5  2026/03/11  Expression profiling by high through | LIVER EXERCISE FACTOR REVERSES AGING AND ALZHEIMER?S-RELATED MEMORY LOSS BY TARGETING BRAIN VASCULATURE
+  GSE304010    n=   74  2026/02/09  Expression profiling by high through | A transcriptomic microglia taxonomy across mouse and human pathologies
+  GSE254518    n=    6  2026/01/26  Expression profiling by high through | Reduced DNAJB1 expression contributes to aging insubstantia nigra: insights from single-nuclei RNA seq
+  GSE181359    n= 2686  2025/12/30  Methylation profiling by high throug | Epigenetic Signatures of Brain Aging by Single Nucleus Methylation Sequencing [FC-9mo-m-020]
+  GSE181141    n= 3071  2025/12/29  Methylation profiling by high throug | Epigenetic Signatures of Brain Aging by Single Nucleus Methylation Sequencing [FC-9mo-m]
+  GSE181116    n= 1920  2025/12/23  Methylation profiling by high throug | Epigenetic Signatures of Brain Aging by Single Nucleus Methylation Sequencing [FC-18mo]
+  GSE169467    n= 3071  2025/12/23  Methylation profiling by high throug | Epigenetic Signatures of Brain Aging by Single Nucleus Methylation Sequencing [NACB-9mo-m-012]
+  GSE169384    n= 3069  2025/12/23  Methylation profiling by high throug | Epigenetic Signatures of Brain Aging by Single Nucleus Methylation Sequencing [FC-8wk-m-018]
+  GSE169345    n=  767  2025/12/22  Methylation profiling by high throug | Epigenetic Signatures of Brain Aging by Single Nucleus Methylation Sequencing [DHC-18mo-m-003]
+  GSE169273    n= 2301  2025/12/22  Methylation profiling by high throug | Epigenetic Signatures of Brain Aging by Single Nucleus Methylation Sequencing [DHC-18mo-m-002]
+====================================================================================================
+QUERY: mouse aging sc skeletal muscle
+TERM:  (aging[Title] OR ageing[Title] OR "age-related"[Title] OR "healthy aging" OR "human aging" OR "ageing atlas") AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND ("skeletal muscle" OR myofiber OR vastus OR quadriceps) AND "Mus musculus"[Organism] AND gse[Entry Type]
+  GEO returned 21 records (showing 20)
+  GSE331489    n=  725  2026/05/31  Genome binding/occupancy profiling b | A global view of cell-type-specific temporal dynamics in mammalian aging [II]  [dup]
+  GSE331488    n=  771  2026/05/31  Genome binding/occupancy profiling b | A global view of cell-type-specific temporal dynamics in mammalian aging [I]  [dup]
+  GSE313520    n=    2  2026/05/30  Expression profiling by high through | Multicellular senescence impairs skeletal muscle recovery following disuse in aging
+  GSE294765    n=   35  2026/04/23  Expression profiling by high through | A skeletal muscle atlas shows neuromuscular junction adaptations to growth and atrophy
+  GSE309190    n=    4  2025/09/30  Expression profiling by high through | CD94/NKG2A-Qa-1b Axis as a Key Modulator of Vaccine Responsiveness in Aging Populations
+  GSE288730    n=   21  2025/05/15  Genome binding/occupancy profiling b | Organism-wide cellular dynamics and epigenomic remodeling in mammalian aging
+  GSE268952    n=    6  2025/05/09  Expression profiling by high through | Cellular senescence in skeletal muscle aging: new mechanisms and therapeutic potential for sarcopenia [RNA-seq
+  GSE268433    n=    5  2025/05/09  Genome binding/occupancy profiling b | Cellular senescence in skeletal muscle aging: new mechanisms and therapeutic potential for sarcopenia [cut&run
+  GSE268407    n=    2  2025/05/09  Expression profiling by high through | Cellular senescence in skeletal muscle aging: new mechanisms and therapeutic potential for sarcopenia
+  GSE228055    n=    5  2025/04/16  Expression profiling by high through | Inflammation-induced epigenetic erosion drives stem cell ferroptosis during aging [scRNA-seq]
+  GSE279741    n=    8  2024/10/18  Expression profiling by high through | The immune landscape of murine skeletal muscle regeneration and aging
+  GSE266933    n=    2  2024/05/31  Expression profiling by high through | Single-cell transcriptomic analysis of skeletal muscle regeneration across mouse lifespan identifies altered s
+  GSE226007    n=    8  2024/05/01  Expression profiling by high through | Histone Lactylation Antagonizes Senescence and Skeletal Muscle Aging by Modulating Aging-Related Pathways [snR
+  GSE232106    n=   32  2023/08/07  Expression profiling by high through | Single-cell transcriptomic analysis of skeletal muscle regeneration across mouse lifespan identifies altered p
+  GSE180225    n=   13  2023/06/12  Expression profiling by high through | Aging disrupts gene expression timing during muscle regeneration
+  GSE214046    n=    4  2023/02/02  Genome binding/occupancy profiling b | Three-dimensional chromatin re-organization during muscle stem cell aging [scATAC-seq]
+  GSE214045    n=    4  2023/02/02  Other                                | Three-dimensional chromatin re-organization during muscle stem cell aging [Hi-C]
+  GSE187332    n=   59  2022/09/13  Genome binding/occupancy profiling b | Decay of heterochromatin domains at selective gene loci in aging mouse brain cells
+  GSE205395    n=    4  2022/06/05  Expression profiling by high through | Aging exacerbates neuromuscular junction disruption after injury that stimulates pro-inflammatory and diminish
+  GSE165978    n=    9  2021/05/06  Expression profiling by high through | Muscle Stem Cell Response to Perturbations of the Neuromuscular Junction Are Attenuated With Aging
+====================================================================================================
+QUERY: mouse aging sc heart
+TERM:  (aging[Title] OR ageing[Title] OR "age-related"[Title] OR "healthy aging" OR "human aging" OR "ageing atlas") AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND (heart OR cardiac OR cardiomyocyte OR myocardium) AND "Mus musculus"[Organism] AND gse[Entry Type]
+  GEO returned 22 records (showing 20)
+  GSE331489    n=  725  2026/05/31  Genome binding/occupancy profiling b | A global view of cell-type-specific temporal dynamics in mammalian aging [II]  [dup]
+  GSE331488    n=  771  2026/05/31  Genome binding/occupancy profiling b | A global view of cell-type-specific temporal dynamics in mammalian aging [I]  [dup]
+  GSE303973    n=    4  2026/01/07  Genome binding/occupancy profiling b | snATAC Sequencing of the aging mouse heart to study chromatin remodeling on single cell level
+  GSE294080    n=    4  2025/08/29  Expression profiling by high through | Ischemic injury induces hematopoietic aging and facilitates tumor growth [multiome]
+  GSE294079    n=    4  2025/08/29  Expression profiling by high through | Ischemic injury induces hematopoietic aging and facilitates tumor growth [scRNA-seq]
+  GSE286549    n=    8  2025/06/20  Expression profiling by high through | Acyl CoA binding protein as a potential driver of pathological aging.
+  GSE288730    n=   21  2025/05/15  Genome binding/occupancy profiling b | Organism-wide cellular dynamics and epigenomic remodeling in mammalian aging  [dup]
+  GSE274692    n=    2  2025/03/21  Expression profiling by high through | Aging promotes reactivation of the Barr body at distal chromosome regions [snRNA]
+  GSE232782    n=    2  2025/01/13  Expression profiling by high through | Single-cell transcriptomic profling of the aging mouse choroid plexus
+  GSE277702    n=   12  2024/11/01  Expression profiling by high through | Decoding Aging in the Heart via Single Cell Dual Omics of Non-Cardiomyocytes
+  GSE277701    n=    6  2024/11/01  Genome binding/occupancy profiling b | Decoding Aging in the Heart via Single Cell Dual Omics of Non-Cardiomyocytes (scATAC-Seq)
+  GSE277700    n=    6  2024/11/01  Expression profiling by high through | Decoding Aging in the Heart via Single Cell Dual Omics of Non-Cardiomyocytes (scRNA-Seq)
+  GSE173679    n= 4059  2024/04/30  Genome binding/occupancy profiling b | Orchestrating endothelial cell fate regulation and function during multiple organs? development, stress and ag
+  GSE247719    n=   78  2024/03/05  Expression profiling by high through | A Panoramic View of Cell Population Dynamics in Mammalian Aging
+  GSE212723    n=    2  2023/11/02  Expression profiling by high through | Transcriptional dysregulation impairs efficacy of neural stem cell activation during aging [scRNA-seq]
+  GSE217098    n=    5  2023/03/10  Expression profiling by high through | An interferon gamma response signature links myocardial aging and immunosenescence
+  GSE187332    n=   59  2022/09/13  Genome binding/occupancy profiling b | Decay of heterochromatin domains at selective gene loci in aging mouse brain cells  [dup]
+  GSE198832    n=  207  2022/07/23  Expression profiling by high through | Developmental and aging atlas by single cell mRNA-seq
+  GSE153562    n=  143  2022/07/23  Expression profiling by high through | Mapping the mouse developmental and aging atlas by single cell mRNA-seq
+  GSE155347    n=    4  2021/07/07  Expression profiling by high through | Ketogenesis restrains aging-induced exacerbation of COVID in a mouse model (scRNA-seq)
+====================================================================================================
+QUERY: mouse aging sc kidney
+TERM:  (aging[Title] OR ageing[Title] OR "age-related"[Title] OR "healthy aging" OR "human aging" OR "ageing atlas") AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND (kidney OR renal OR nephron) AND "Mus musculus"[Organism] AND gse[Entry Type]
+  GEO returned 20 records (showing 20)
+  GSE337932    n=    9  2026/09/09  Expression profiling by high through | Elimination of senescent macrophage by purinergic receptor P2RX7 antagonist to safeguard against kidney injury
+  GSE304047    n=    4  2026/07/22  Expression profiling by high through | HuR coordinates systemic aging through platelet infiltration.  [dup]
+  GSE331489    n=  725  2026/05/31  Genome binding/occupancy profiling b | A global view of cell-type-specific temporal dynamics in mammalian aging [II]  [dup]
+  GSE331488    n=  771  2026/05/31  Genome binding/occupancy profiling b | A global view of cell-type-specific temporal dynamics in mammalian aging [I]  [dup]
+  GSE308709    n=   36  2025/10/09  Expression profiling by high through | Cellular and Spatial Drivers of Unresolved Injury Link to Functional Decline in the Human Kidney
+  GSE286549    n=    8  2025/06/20  Expression profiling by high through | Acyl CoA binding protein as a potential driver of pathological aging.  [dup]
+  GSE288730    n=   21  2025/05/15  Genome binding/occupancy profiling b | Organism-wide cellular dynamics and epigenomic remodeling in mammalian aging  [dup]
+  GSE252772    n=   88  2025/01/13  Other                                | Spatial characterization of sex differential regulations in kidney across lifespan
+  GSE270205    n=    4  2024/12/19  Expression profiling by high through | Age-related TFEB Downregulation in Proximal Tubules Causes Systemic Metabolic Disorders with Occasional Apolip
+  GSE281572    n=   18  2024/11/16  Expression profiling by high through | HuR coordinates systemic aging through platelet infiltration
+  GSE240375    n=   10  2024/09/01  Expression profiling by high through | Aging and senescence-associated signatures of aged kidney glomerular cells
+  GSE240374    n=    4  2024/09/01  Expression profiling by high through | Aging and senescence-associated signatures of aged kidney glomerular cells [scRNA-seq]
+  GSE240373    n=    6  2024/09/01  Expression profiling by high through | Aging and senescence-associated signatures of aged kidney glomerular cells [bulk RNA-seq]
+  GSE261402    n=    4  2024/06/26  Expression profiling by high through | Single-cell transcriptional analysis of kidney from aging mice with podocyte specific RARRES1 overexpression
+  GSE173679    n= 4059  2024/04/30  Genome binding/occupancy profiling b | Orchestrating endothelial cell fate regulation and function during multiple organs? development, stress and ag  [dup]
+  GSE247719    n=   78  2024/03/05  Expression profiling by high through | A Panoramic View of Cell Population Dynamics in Mammalian Aging  [dup]
+  GSE239538    n=    4  2024/02/01  Expression profiling by high through | The renal capsule, a vibrant and adaptive cell environment of the kidney in homeostasis and aging [scRNA-seq]
+  GSE198832    n=  207  2022/07/23  Expression profiling by high through | Developmental and aging atlas by single cell mRNA-seq  [dup]
+  GSE153562    n=  143  2022/07/23  Expression profiling by high through | Mapping the mouse developmental and aging atlas by single cell mRNA-seq  [dup]
+  GSE132901    n=   21  2019/10/01  Expression profiling by high through | A murine aging cell atlas reveals cell identity and tissue-specific trajectories of aging
+====================================================================================================
+QUERY: mouse aging sc liver
+TERM:  (aging[Title] OR ageing[Title] OR "age-related"[Title] OR "healthy aging" OR "human aging" OR "ageing atlas") AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND (liver OR hepatic OR hepatocyte) AND "Mus musculus"[Organism] AND gse[Entry Type]
+  GEO returned 47 records (showing 20)
+  GSE307390    n=   24  2026/09/01  Expression profiling by high through | In situ fate mapping identifies the neonatal origin of platelet-biased hematopoietic stem cells
+  GSE344240    n=   32  2026/08/21  Genome binding/occupancy profiling b | Inhibiting Cyclin D1?CDK6 Suppresses Senescence-Associated Inflammatory Gene Expression and Age-Related Functi
+  GSE341377    n=    1  2026/07/29  Expression profiling by high through | Single-nucleus transcriptomic analysis of aging and hepatocyte-specific ADK reduction in mouse liver
+  GSE304047    n=    4  2026/07/22  Expression profiling by high through | HuR coordinates systemic aging through platelet infiltration.  [dup]
+  GSE319489    n=    8  2026/07/16  Expression profiling by high through | Restored clearance of senescent neutrophils by tissue-resident macrophages limits organ aging
+  GSE331489    n=  725  2026/05/31  Genome binding/occupancy profiling b | A global view of cell-type-specific temporal dynamics in mammalian aging [II]  [dup]
+  GSE331488    n=  771  2026/05/31  Genome binding/occupancy profiling b | A global view of cell-type-specific temporal dynamics in mammalian aging [I]  [dup]
+  GSE315907    n=  196  2026/05/01  Other                                | p53 maintains healthy aging
+  GSE314411    n=   31  2026/05/01  Expression profiling by high through | p53 maintains healthy aging [P53KO_PTENKO_RNAseq]
+  GSE314410    n=   25  2026/05/01  Expression profiling by high through | p53 maintains healthy aging [P53KO_HFD_RNAseq]
+  GSE328448    n=    4  2026/04/21  Other                                | Spatiotemporal transcriptomics characterizes immune microenvironment during mouse liver aging [Spatial Transcr
+  GSE327303    n=    7  2026/04/13  Expression profiling by high through | Spatiotemporal transcriptomics characterizes immune microenvironment during mouse liver aging [snRNA-Seq]
+  GSE327302    n=    7  2026/04/13  Expression profiling by high through | Spatiotemporal transcriptomics characterizes immune microenvironment during mouse liver aging
+  GSE299000    n=    8  2026/03/30  Expression profiling by high through | In situ fate mapping identifies the neonatal origin of platelet-biased hematopoietic stem cells [Native Develo
+  GSE269061    n=    5  2026/03/11  Expression profiling by high through | LIVER EXERCISE FACTOR REVERSES AGING AND ALZHEIMER?S-RELATED MEMORY LOSS BY TARGETING BRAIN VASCULATURE  [dup]
+  GSE311064    n=   12  2026/01/01  Expression profiling by high through | Cellular senescence in human liver under normal aging and cancer
+  GSE310392    n=   12  2026/01/01  Other                                | Cellular senescence in human liver under normal aging and cancer [Xenium]
+  GSE297023    n=   16  2025/08/03  Expression profiling by high through | Aging represses oncogenic KRAS-driven lung tumorigenesis and alters tumor suppression
+  GSE286549    n=    8  2025/06/20  Expression profiling by high through | Acyl CoA binding protein as a potential driver of pathological aging.  [dup]
+  GSE267923    n=   20  2025/06/04  Expression profiling by high through | Gene Regulatory Programs that Specify Age-Related Differences during Thymocyte Development
+====================================================================================================
+QUERY: human OSK/OSKM/reprogramming sc
+TERM:  (OSKM OR OSK OR "Oct4 Sox2 Klf4" OR "partial reprogramming" OR "Yamanaka factor" OR "in vivo reprogramming" OR "OSK treatment") AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND "Homo sapiens"[Organism] AND gse[Entry Type]
+  GEO returned 30 records (showing 30)
+  GSE300477    n=    1  2025/08/26  Expression profiling by high through | A Single-Short Partial Reprogramming of the Endothelial Cells in vivo decreases Blood Pressure and Vascular Co
+  GSE297234    n=    8  2025/08/14  Expression profiling by high through | Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]
+  GSE271242    n=   21  2025/05/12  Expression profiling by high through | Gene expression RNAseq profiles of TNKS/PARP-inhibitor Regulated Na?ve (TIRN) cells with or without transgenic
+  GSE267577    n=    3  2025/05/12  Expression profiling by high through | Gene expression profiles at the single cell level of TNKS/PARP-inhibitor Regulated Na?ve (TIRN) cells with or 
+  GSE242076    n=   28  2024/10/15  Expression profiling by high through | 3D Model Enhances Human Glia conversion to Neurons with Dopaminergic Functional and Molecular Traits Or: 3D Mo
+  GSE224700    n=   13  2024/05/01  Expression profiling by high through | Single cell RNA-seq analysis of human dermal fibroblasts and human pluripotent stem cells
+  GSE224699    n=    8  2024/05/01  Genome binding/occupancy profiling b | Single cell ATAC-seq analysis of human dermal fibroblasts and human pluripotent stem cells
+  GSE254389    n=   18  2024/02/02  Expression profiling by high through | NEUROD1 efficiently converts peripheral blood cells into neurons with partial reprogramming by pluripotency fa
+  GSE242423    n=    9  2023/09/06  Expression profiling by high through | Transcription factor stoichiometry, motif affinity and syntax regulate single-cell chromatin dynamics during f
+  GSE242421    n=    9  2023/09/06  Genome binding/occupancy profiling b | Transcription factor stoichiometry, motif affinity and syntax regulate single-cell chromatin dynamics during f
+  GSE242419    n=    2  2023/09/06  Expression profiling by high through | Transcription factor stoichiometry, motif affinity and syntax regulate single-cell chromatin dynamics during f
+  GSE163947    n=    8  2022/01/29  Expression profiling by high through | MYCL-mediated in vivo reprogramming expands pancreatic insulin-producing cells to reverse diabetes
+  GSE185192    n=   64  2021/10/11  Expression profiling by high through | Down Syndrome Induced Senescence Disrupts the Nuclear Architecture of Neural Progenitors
+  GSE139275    n=    3  2020/10/22  Expression profiling by high through | Transiently enhanced multi-drug resistance by epigenetic mechanism from reprogrammed cancer cell model
+  GSE122460    n=    2  2020/08/17  Expression profiling by high through | Determination of dynamic changes in chromatin accessibility during cellular reprogramming?[10X D8 CD13]
+  GSE118258    n=    6  2020/08/17  Expression profiling by high through | Determination of dynamic changes in chromatin accessibility during cellular reprogramming [scRNA-seq 10x]
+  GSE114367    n=    8  2020/08/17  Genome binding/occupancy profiling b | Determination of dynamic changes in chromatin accessibility during cellular reprogramming [ChIP-seq]
+  GSE106251    n=  192  2020/08/17  Expression profiling by high through | Determination of dynamic changes in chromatin accessibility during cellular reprogramming [scRNA-seq]
+  GSE100344    n=  480  2020/08/17  Expression profiling by high through | Determination of dynamic changes in chromatin accessibility during cellular reprogramming [scRNA]
+  GSE85580     n=  480  2020/08/17  Genome binding/occupancy profiling b | Determination of dynamic changes in chromatin accessibilty during cellular reprogramming [scATAC]
+  GSE110154    n= 1860  2019/07/14  Expression profiling by high through | Single cell transcriptome analysis of human fetal pancreas.
+  GSE93706     n=   59  2019/01/17  Expression profiling by high through | OCT6 uniquely replaces OCT4 in inducing human pluripotency
+  GSE102934    n= 1847  2018/04/15  Expression profiling by high through | bigSCale: An Analytical Framework for Big-Scale Single Cell Data
+  GSE90014     n=  192  2018/04/10  Expression profiling by high through | Proliferation pause as an early blockade of human cellular reprogramming toward pluripotency [single cell RNA-
+  GSE95021     n= 1513  2018/02/09  Expression profiling by high through | Coupling shRNA screens with single-cell RNA-Seq identifies mechanisms regulating senescence during reprogrammi
+  GSE95020     n=  376  2018/02/09  Expression profiling by high through | Coupling shRNA screening with single-cell RNA-Seq identifies mechanisms regulating senescence during reprogram
+  GSE94980     n=  620  2018/02/09  Expression profiling by high through | Single-cell RNA-Sequencing of IMR90 fibroblasts bypassing reprogramming-induced senescence
+  GSE94979     n=  460  2018/02/09  Expression profiling by high through | Single-cell RNA Sequencing as a tool for simultaneous shRNA detection and transcriptome analysis in the contex
+  GSE69319     n=   14  2016/12/01  Genome binding/occupancy profiling b | Na?ve iPSCs Generated from ?-thalassemia Fibroblasts Allow Efficient Gene Correction with CRISPR/Cas9
+  GSE50206     n=  184  2014/04/24  Expression profiling by array        | Induction of pluripotency in human somatic cells via a primitive streak-like state
+====================================================================================================
+QUERY: mouse OSK/OSKM/reprogramming sc
+TERM:  (OSKM OR OSK OR "Oct4 Sox2 Klf4" OR "partial reprogramming" OR "Yamanaka factor" OR "in vivo reprogramming" OR "OSK treatment") AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND "Mus musculus"[Organism] AND gse[Entry Type]
+  GEO returned 49 records (showing 49)
+  GSE274988    n=    3  2026/07/08  Expression profiling by high through | Enhanced liver regeneration via targeted mRNA delivery for partial in vivo reprogramming
+  GSE333189    n=    3  2026/05/29  Expression profiling by high through | Hopx is a dual-gatekeeper of astrocyte fate enabling in vivo reprogramming and neural repair
+  GSE294292    n=    4  2026/01/01  Expression profiling by high through | Enhanced activities of OCT4 and SOX2 facilitates epigenetic reprogramming by modulating cell cycle [OSK CCC/FN
+  GSE294288    n=   11  2026/01/01  Genome binding/occupancy profiling b | Enhanced activities of OCT4 and SOX2 facilitates epigenetic reprogramming by modulating cell cycle [OSK/OvSvK 
+  GSE294281    n=    2  2026/01/01  Genome binding/occupancy profiling b | Enhanced activities of OCT4 and SOX2 facilitates epigenetic reprogramming by modulating cell cycle [CCB/FNB AT
+  GSE222746    n=  460  2026/01/01  Expression profiling by high through | Enhanced activities of OCT4 and SOX2 facilitates epigenetic reprogramming by modulating cell cycle
+  GSE222745    n=  422  2026/01/01  Expression profiling by high through | Enhanced activities of OCT4 and SOX2 facilitates epigenetic reprogramming by modulating cell cycle [scRNA-Seq]
+  GSE222738    n=   12  2026/01/01  Expression profiling by high through | Enhanced activities of OCT4 and SOX2 facilitates epigenetic reprogramming by modulating cell cycle [RNA-Seq]
+  GSE291775    n=    2  2025/09/26  Expression profiling by high through | Transient ROR? Knockdown by Cell-penetrating siRNA Alleviates Retinal Degeneration Caused by Proteotoxicity
+  GSE307031    n=    6  2025/09/05  Other                                | Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mech  [dup]
+  GSE298954    n=   40  2025/08/26  Other                                | A Single-Short Partial Reprogramming of the Endothelial Cells decreases Blood Pressure via attenuation of EndM
+  GSE271794    n=    4  2025/08/20  Expression profiling by high through | Single-cell gene expression of neocortex after transient Yamanaka factor expression during brain development
+  GSE270268    n=    4  2025/08/13  Expression profiling by high through | In vivo cardiac reprogramming by delivery of PHF7 [snRNA-seq multiome]
+  GSE270236    n=   20  2025/07/09  Genome binding/occupancy profiling b | Chromatin Accessibility Dynamics in the Reprogramming of Somatic Cells to Pluripotency
+  GSE247173    n=   14  2025/01/01  Expression profiling by high through | Cellular rejuvenation protects neurons from inflammation mediated cell death (RNA-seq).
+  GSE246702    n=   16  2025/01/01  Genome binding/occupancy profiling b | Cellular rejuvenation protects neurons from inflammation mediated cell death (ATAC-seq).
+  GSE224438    n=   10  2024/02/04  Expression profiling by high through | Single-cell gene expression of the subventricular zone (SVZ) neurogenic niche after partial reprogramming
+  GSE212496    n=    3  2023/12/31  Expression profiling by high through | Single cell RNA-seq of Nutlin3a-Induced Senescent mouse embryonic fibroblasts with or without expressing OSKM
+  GSE237173    n=    2  2023/11/26  Expression profiling by high through | OSKM-induced epithelial cells of mouse intestine [scRNA-seq]
+  GSE220554    n=   30  2023/05/03  Expression profiling by high through | Establish a rapid and efficient chemical reprogramming platform (RNA-Seq II)
+  GSE144993    n=   59  2023/02/02  Expression profiling by high through | In vivo Chemical Reprogramming of Astrocytes into Functional Neurons
+  GSE145388    n=    8  2022/11/05  Expression profiling by high through | Induction of Pluripotent Stem Cells from Mouse Embryonic Fibroblasts by Jdp2, Glis1, Essrb and Sall4 [scRNA-se
+  GSE196475    n=   48  2022/08/24  Expression profiling by high through | Mettl14-driven senescence-associated secretory phenotype (SASP) facilitates somatic reprogramming
+  GSE176206    n=   18  2022/06/10  Expression profiling by high through | Partial reprogramming restores youthful gene expression through transient suppression of cell identity
+  GSE181800    n=   10  2022/05/06  Expression profiling by high through | Cellular identity loss occurring during both iPS cells generation and malignant transformation can be followed
+  GSE181799    n=   12  2022/05/06  Genome binding/occupancy profiling b | Cellular identity loss occurring during both iPS cells generation and malignant transformation can be followed
+  GSE181796    n=    4  2022/05/06  Genome binding/occupancy profiling b | Chromatin accessibility after 5 days of reprogramming and transformation
+  GSE181451    n=    8  2022/05/06  Expression profiling by high through | Cellular identity loss occurring during both iPS cells generation and malignant transformation can be followed
+  GSE181196    n=    9  2022/05/06  Genome binding/occupancy profiling b | Bcl11b and Atoh8 binding on chromatin in MEFs
+  GSE137050    n=   59  2022/05/06  Expression profiling by high through | The comparative roadmaps of reprogramming and transformation unveiled that cellular plasticity is broadly cont
+  GSE171127    n=  184  2022/04/28  Genome binding/occupancy profiling b | Comparative parallel meta-analysis of cells undergoing reprogramming to pluripotency and trophectoderm states
+  GSE144600    n=   29  2022/04/27  Expression profiling by high through | In vivo reprogramming drives dedifferentiation and enhances liver regeneration
+  GSE188819    n=    7  2022/04/06  Expression profiling by high through | Deciphering in vivo reprogramming using single cell RNA sequencing in the pancreas
+  GSE197437    n=   72  2022/02/28  Expression profiling by high through | Partial pluripotent reprogramming in C2C12 myoblasts
+  GSE178726    n=    9  2022/01/29  Expression profiling by high through | MYCL-mediated in vivo reprogramming expands pancreatic insulin-producing cells to reverse diabetes - RNA-Seq
+  GSE163947    n=    8  2022/01/29  Expression profiling by high through | MYCL-mediated in vivo reprogramming expands pancreatic insulin-producing cells to reverse diabetes  [dup]
+  GSE176177    n=    6  2021/11/18  Expression profiling by high through | Surf4 facilitates reprogramming by activating the cellular response to ER stress
+  GSE184987    n=   47  2021/09/30  Expression profiling by high through | Landscape of Monoallelic DNA Accessibility and Gene Regulatory Networks during Reprogramming to Naive Pluripot
+  GSE153846    n=  672  2021/09/30  Expression profiling by high through | Landscape of Monoallelic DNA Accessibility and Gene Regulatory Networks during Reprogramming to Naive Pluripot
+  GSE153844    n=    6  2021/09/30  Genome binding/occupancy profiling b | Landscape of Monoallelic DNA Accessibility and Gene Regulatory Networks during Reprogramming to Naive Pluripot
+  GSE110208    n=  461  2020/01/01  Expression profiling by high through | Accessing Pluripotency from the Somatic Side
+  GSE112004    n= 3840  2019/03/12  Expression profiling by high through | Single cell RNA-seq identifies the origins of heterogeneity in efficient cell transdifferentiation and reprogr
+  GSE103221    n=  933  2019/01/01  Expression profiling by high through | Resolving Cell Fate Decisions during Somatic Cell Reprogramming by Single-Cell RNA-seq
+  GSE109113    n=    4  2018/05/01  Expression profiling by high through | Long-term correction of diabetes in mice by in vivo reprogramming of pancreatic ducts
+  GSE97859     n=   14  2017/09/21  Genome binding/occupancy profiling b | Oocyte Specific Homeobox 1 (Obox1) Facilitates Somatic Cell Reprogramming by Promoting Mesenchymal-to-Epitheli
+  GSE42993     n=   26  2015/12/17  Expression profiling by array        | Different reprogramming methods generate undistinguishable pluripotent states
+  GSE55291     n=   95  2015/01/12  Expression profiling by high through | Noncoding RNA transcriptome analysis during cellular reprogramming
+  GSE50206     n=  184  2014/04/24  Expression profiling by array        | Induction of pluripotency in human somatic cells via a primitive streak-like state  [dup]
+  GSE21361     n=    4  2010/04/16  Expression profiling by array        | Dynamic single-cell imaging of direct reprogramming reveals an early specifying event
+====================================================================================================
+QUERY: reprogramming sc retina
+TERM:  (OSKM OR OSK OR "Oct4 Sox2 Klf4" OR "partial reprogramming" OR "Yamanaka factor" OR "in vivo reprogramming" OR "OSK treatment") AND (retina OR macular OR "retinal pigment" OR photoreceptor) AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND gse[Entry Type]
+  GEO returned 5 records (showing 5)
+  GSE274988    n=    3  2026/07/08  Expression profiling by high through | Enhanced liver regeneration via targeted mRNA delivery for partial in vivo reprogramming  [dup]
+  GSE291775    n=    2  2025/09/26  Expression profiling by high through | Transient ROR? Knockdown by Cell-penetrating siRNA Alleviates Retinal Degeneration Caused by Proteotoxicity  [dup]
+  GSE307031    n=    6  2025/09/05  Other                                | Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mech  [dup]
+  GSE247173    n=   14  2025/01/01  Expression profiling by high through | Cellular rejuvenation protects neurons from inflammation mediated cell death (RNA-seq).  [dup]
+  GSE246702    n=   16  2025/01/01  Genome binding/occupancy profiling b | Cellular rejuvenation protects neurons from inflammation mediated cell death (ATAC-seq).  [dup]
+====================================================================================================
+QUERY: reprogramming sc brain
+TERM:  (OSKM OR OSK OR "Oct4 Sox2 Klf4" OR "partial reprogramming" OR "Yamanaka factor" OR "in vivo reprogramming" OR "OSK treatment") AND (brain OR cortex OR cortical OR hippocampus OR "prefrontal cortex" OR DLPFC) AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND gse[Entry Type]
+  GEO returned 7 records (showing 7)
+  GSE333189    n=    3  2026/05/29  Expression profiling by high through | Hopx is a dual-gatekeeper of astrocyte fate enabling in vivo reprogramming and neural repair  [dup]
+  GSE271794    n=    4  2025/08/20  Expression profiling by high through | Single-cell gene expression of neocortex after transient Yamanaka factor expression during brain development  [dup]
+  GSE242076    n=   28  2024/10/15  Expression profiling by high through | 3D Model Enhances Human Glia conversion to Neurons with Dopaminergic Functional and Molecular Traits Or: 3D Mo  [dup]
+  GSE224438    n=   10  2024/02/04  Expression profiling by high through | Single-cell gene expression of the subventricular zone (SVZ) neurogenic niche after partial reprogramming  [dup]
+  GSE144993    n=   59  2023/02/02  Expression profiling by high through | In vivo Chemical Reprogramming of Astrocytes into Functional Neurons  [dup]
+  GSE102934    n= 1847  2018/04/15  Expression profiling by high through | bigSCale: An Analytical Framework for Big-Scale Single Cell Data  [dup]
+  GSE50206     n=  184  2014/04/24  Expression profiling by array        | Induction of pluripotency in human somatic cells via a primitive streak-like state  [dup]
+====================================================================================================
+QUERY: reprogramming sc skeletal muscle
+TERM:  (OSKM OR OSK OR "Oct4 Sox2 Klf4" OR "partial reprogramming" OR "Yamanaka factor" OR "in vivo reprogramming" OR "OSK treatment") AND ("skeletal muscle" OR myofiber OR vastus OR quadriceps) AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND gse[Entry Type]
+  GEO returned 2 records (showing 2)
+  GSE274988    n=    3  2026/07/08  Expression profiling by high through | Enhanced liver regeneration via targeted mRNA delivery for partial in vivo reprogramming  [dup]
+  GSE50206     n=  184  2014/04/24  Expression profiling by array        | Induction of pluripotency in human somatic cells via a primitive streak-like state  [dup]
+====================================================================================================
+QUERY: reprogramming sc heart
+TERM:  (OSKM OR OSK OR "Oct4 Sox2 Klf4" OR "partial reprogramming" OR "Yamanaka factor" OR "in vivo reprogramming" OR "OSK treatment") AND (heart OR cardiac OR cardiomyocyte OR myocardium) AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND gse[Entry Type]
+  GEO returned 3 records (showing 3)
+  GSE270268    n=    4  2025/08/13  Expression profiling by high through | In vivo cardiac reprogramming by delivery of PHF7 [snRNA-seq multiome]  [dup]
+  GSE224438    n=   10  2024/02/04  Expression profiling by high through | Single-cell gene expression of the subventricular zone (SVZ) neurogenic niche after partial reprogramming  [dup]
+  GSE50206     n=  184  2014/04/24  Expression profiling by array        | Induction of pluripotency in human somatic cells via a primitive streak-like state  [dup]
+====================================================================================================
+QUERY: reprogramming sc kidney
+TERM:  (OSKM OR OSK OR "Oct4 Sox2 Klf4" OR "partial reprogramming" OR "Yamanaka factor" OR "in vivo reprogramming" OR "OSK treatment") AND (kidney OR renal OR nephron) AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND gse[Entry Type]
+  GEO returned 1 records (showing 1)
+  GSE50206     n=  184  2014/04/24  Expression profiling by array        | Induction of pluripotency in human somatic cells via a primitive streak-like state  [dup]
+====================================================================================================
+QUERY: reprogramming sc liver
+TERM:  (OSKM OR OSK OR "Oct4 Sox2 Klf4" OR "partial reprogramming" OR "Yamanaka factor" OR "in vivo reprogramming" OR "OSK treatment") AND (liver OR hepatic OR hepatocyte) AND ("single-cell" OR "single cell" OR "single-nucleus" OR "single nucleus" OR scRNA-seq OR snRNA-seq OR "snRNA-seq") AND gse[Entry Type]
+  GEO returned 14 records (showing 14)
+  GSE274988    n=    3  2026/07/08  Expression profiling by high through | Enhanced liver regeneration via targeted mRNA delivery for partial in vivo reprogramming  [dup]
+  GSE270236    n=   20  2025/07/09  Genome binding/occupancy profiling b | Chromatin Accessibility Dynamics in the Reprogramming of Somatic Cells to Pluripotency  [dup]
+  GSE181800    n=   10  2022/05/06  Expression profiling by high through | Cellular identity loss occurring during both iPS cells generation and malignant transformation can be followed  [dup]
+  GSE181799    n=   12  2022/05/06  Genome binding/occupancy profiling b | Cellular identity loss occurring during both iPS cells generation and malignant transformation can be followed  [dup]
+  GSE181796    n=    4  2022/05/06  Genome binding/occupancy profiling b | Chromatin accessibility after 5 days of reprogramming and transformation  [dup]
+  GSE181451    n=    8  2022/05/06  Expression profiling by high through | Cellular identity loss occurring during both iPS cells generation and malignant transformation can be followed  [dup]
+  GSE137050    n=   59  2022/05/06  Expression profiling by high through | The comparative roadmaps of reprogramming and transformation unveiled that cellular plasticity is broadly cont  [dup]
+  GSE144600    n=   29  2022/04/27  Expression profiling by high through | In vivo reprogramming drives dedifferentiation and enhances liver regeneration  [dup]
+  GSE178726    n=    9  2022/01/29  Expression profiling by high through | MYCL-mediated in vivo reprogramming expands pancreatic insulin-producing cells to reverse diabetes - RNA-Seq  [dup]
+  GSE185192    n=   64  2021/10/11  Expression profiling by high through | Down Syndrome Induced Senescence Disrupts the Nuclear Architecture of Neural Progenitors  [dup]
+  GSE112004    n= 3840  2019/03/12  Expression profiling by high through | Single cell RNA-seq identifies the origins of heterogeneity in efficient cell transdifferentiation and reprogr  [dup]
+  GSE69319     n=   14  2016/12/01  Genome binding/occupancy profiling b | Na?ve iPSCs Generated from ?-thalassemia Fibroblasts Allow Efficient Gene Correction with CRISPR/Cas9  [dup]
+  GSE42993     n=   26  2015/12/17  Expression profiling by array        | Different reprogramming methods generate undistinguishable pluripotent states  [dup]
+  GSE50206     n=  184  2014/04/24  Expression profiling by array        | Induction of pluripotency in human somatic cells via a primitive streak-like state  [dup]
+
+297 GEO records written (228 unique accessions)

@@ -1,0 +1,624 @@
+{
+  "PRJNA598923": {
+    "accession": "PRJNA598923",
+    "bioproject": {
+      "header": {
+        "type": "esummary",
+        "version": "0.3"
+      },
+      "result": {
+        "uids": [
+          "598923"
+        ],
+        "598923": {
+          "uid": "598923",
+          "taxid": "",
+          "project_id": 598923,
+          "project_acc": "PRJNA598923",
+          "project_type": "Primary submission",
+          "project_data_type": "Raw sequence reads",
+          "sort_by_projecttype": 672848,
+          "sort_by_datatype": 659999,
+          "sort_by_organism": 1024052,
+          "project_subtype": "",
+          "project_target_scope": "Multispecies",
+          "project_target_material": "Genome",
+          "project_target_capture": "Whole",
+          "project_methodtype": "Sequencing",
+          "project_method": "",
+          "project_objectives_list": [
+            {
+              "project_objectivestype": "Raw Sequence Reads",
+              "project_objectives": ""
+            }
+          ],
+          "registration_date": "2020/01/04 00:00",
+          "project_name": "",
+          "project_title": "Young, Aged and Treated Samples",
+          "project_description": "This is the raw rna seq data for aged, young and transiently reprogrammed fibroblast and endothelial cell samples",
+          "keyword": "",
+          "relevance_agricultural": "",
+          "relevance_medical": "",
+          "relevance_industrial": "",
+          "relevance_environmental": "",
+          "relevance_evolution": "",
+          "relevance_model": "",
+          "relevance_other": "",
+          "organism_name": "",
+          "organism_strain": "",
+          "organism_label": "",
+          "sequencing_status": "SRA/Trace",
+          "submitter_organization": "Stanford University",
+          "submitter_organization_list": [
+            "Stanford University"
+          ],
+          "supergroup": ""
+        }
+      }
+    },
+    "sra_count": "18",
+    "sra_ids_head": [
+      "9804923",
+      "9804922",
+      "9804921",
+      "9804920",
+      "9804919",
+      "9804918",
+      "9804917",
+      "9804916",
+      "9804915",
+      "9804914",
+      "9804913",
+      "9804912",
+      "9804911",
+      "9804910",
+      "9804909",
+      "9804908",
+      "9804907",
+      "9804906"
+    ],
+    "sra_summaries_keys": [
+      "uids",
+      "9804923",
+      "9804922",
+      "9804921",
+      "9804920"
+    ],
+    "sra_rows": [
+      {
+        "uid": "9804923",
+        "title": null,
+        "expxml_head": "  <Summary><Title>EC aged 2</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"16258589\" total_bases=\"2568857062\" total_size=\"1093909680\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508543\" ver=\"1\" status=\"public\" name=\"EC aged 2\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948935\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>EC_u2</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRARY_SELE",
+        "runs_head": "                                <Run acc=\"SRR10836663\" total_spots=\"16258589\" total_bases=\"2568857062\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804922",
+        "title": null,
+        "expxml_head": "  <Summary><Title>Fib aged 2</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"15686230\" total_bases=\"2478424340\" total_size=\"1040977682\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508542\" ver=\"1\" status=\"public\" name=\"Fib aged 2\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948934\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>Fib_u2</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRARY_S",
+        "runs_head": "                                <Run acc=\"SRR10836664\" total_spots=\"15686230\" total_bases=\"2478424340\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804921",
+        "title": null,
+        "expxml_head": "  <Summary><Title>Fib aged 1</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"23137397\" total_bases=\"3655708726\" total_size=\"1584700635\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508541\" ver=\"1\" status=\"public\" name=\"Fib aged 1\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948933\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>Fib_u1</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRARY_S",
+        "runs_head": "                                <Run acc=\"SRR10836665\" total_spots=\"23137397\" total_bases=\"3655708726\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804920",
+        "title": null,
+        "expxml_head": "  <Summary><Title>EC aged 1</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"20850215\" total_bases=\"3336034400\" total_size=\"1392728040\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508540\" ver=\"1\" status=\"public\" name=\"EC aged 1\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948932\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>EC_u1</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRARY_SELE",
+        "runs_head": "                                <Run acc=\"SRR10836666\" total_spots=\"20850215\" total_bases=\"3336034400\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804919",
+        "title": null,
+        "expxml_head": "  <Summary><Title>Fib young 3</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"18681864\" total_bases=\"2951734512\" total_size=\"1227243077\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508539\" ver=\"1\" status=\"public\" name=\"Fib young 3\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948931\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>Fib_y3</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRARY",
+        "runs_head": "                                <Run acc=\"SRR10836667\" total_spots=\"18681864\" total_bases=\"2951734512\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804918",
+        "title": null,
+        "expxml_head": "  <Summary><Title>Fib young 2</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"16451949\" total_bases=\"2599407942\" total_size=\"1110951144\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508538\" ver=\"1\" status=\"public\" name=\"Fib young 2\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948930\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>Fib_y2</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRARY",
+        "runs_head": "                                <Run acc=\"SRR10836668\" total_spots=\"16451949\" total_bases=\"2599407942\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804917",
+        "title": null,
+        "expxml_head": "  <Summary><Title>Fib young 1</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"19691185\" total_bases=\"3111207230\" total_size=\"1337299234\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508537\" ver=\"1\" status=\"public\" name=\"Fib young 1\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948929\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>Fib_y1</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRARY",
+        "runs_head": "                                <Run acc=\"SRR10836669\" total_spots=\"19691185\" total_bases=\"3111207230\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804916",
+        "title": null,
+        "expxml_head": "  <Summary><Title>Fib treated 3</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"26686730\" total_bases=\"4216503340\" total_size=\"1809693835\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508536\" ver=\"1\" status=\"public\" name=\"Fib treated 3\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948928\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>Fib_t3</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIB",
+        "runs_head": "                                <Run acc=\"SRR10836670\" total_spots=\"26686730\" total_bases=\"4216503340\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804915",
+        "title": null,
+        "expxml_head": "  <Summary><Title>Fib treated 2</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"18562226\" total_bases=\"2932831708\" total_size=\"1227427259\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508535\" ver=\"1\" status=\"public\" name=\"Fib treated 2\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948927\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>Fib_t2</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIB",
+        "runs_head": "                                <Run acc=\"SRR10836671\" total_spots=\"18562226\" total_bases=\"2932831708\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804914",
+        "title": null,
+        "expxml_head": "  <Summary><Title>Fib treated 1</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"24340467\" total_bases=\"3845793786\" total_size=\"1663326203\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508534\" ver=\"1\" status=\"public\" name=\"Fib treated 1\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948926\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>Fib_t1</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIB",
+        "runs_head": "                                <Run acc=\"SRR10836672\" total_spots=\"24340467\" total_bases=\"3845793786\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804913",
+        "title": null,
+        "expxml_head": "  <Summary><Title>Fib aged 3</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"7357736\" total_bases=\"1162522288\" total_size=\"495008885\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508533\" ver=\"1\" status=\"public\" name=\"Fib aged 3\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948925\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>Fib_u3</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRARY_SEL",
+        "runs_head": "                                <Run acc=\"SRR10836673\" total_spots=\"7357736\" total_bases=\"1162522288\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804912",
+        "title": null,
+        "expxml_head": "  <Summary><Title>EC young 3</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"31180727\" total_bases=\"2494458160\" total_size=\"1034326603\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508532\" ver=\"1\" status=\"public\" name=\"EC young 3\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948924\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>EC_y3</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRARY_SE",
+        "runs_head": "                                <Run acc=\"SRR10836674\" total_spots=\"31180727\" total_bases=\"2494458160\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804911",
+        "title": null,
+        "expxml_head": "  <Summary><Title>EC young 2</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"19749208\" total_bases=\"3159873280\" total_size=\"1293453027\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508531\" ver=\"1\" status=\"public\" name=\"EC young 2\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948923\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>EC_y2</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRARY_SE",
+        "runs_head": "                                <Run acc=\"SRR10836675\" total_spots=\"19749208\" total_bases=\"3159873280\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804910",
+        "title": null,
+        "expxml_head": "  <Summary><Title>EC young 1</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"28714561\" total_bases=\"4536900638\" total_size=\"1904071794\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508530\" ver=\"1\" status=\"public\" name=\"EC young 1\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948922\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>EC_y1</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRARY_SE",
+        "runs_head": "                                <Run acc=\"SRR10836676\" total_spots=\"28714561\" total_bases=\"4536900638\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804909",
+        "title": null,
+        "expxml_head": "  <Summary><Title>EC treated 3</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"17309996\" total_bases=\"2769599360\" total_size=\"1170190528\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508529\" ver=\"1\" status=\"public\" name=\"EC treated 3\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948921\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>EC_t3</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRAR",
+        "runs_head": "                                <Run acc=\"SRR10836677\" total_spots=\"17309996\" total_bases=\"2769599360\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804908",
+        "title": null,
+        "expxml_head": "  <Summary><Title>EC treated 2</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"14805546\" total_bases=\"2339276268\" total_size=\"992299472\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508528\" ver=\"1\" status=\"public\" name=\"EC treated 2\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948920\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>EC_t2</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRARY",
+        "runs_head": "                                <Run acc=\"SRR10836678\" total_spots=\"14805546\" total_bases=\"2339276268\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804907",
+        "title": null,
+        "expxml_head": "  <Summary><Title>EC treated 1</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"17498682\" total_bases=\"2799789120\" total_size=\"1178746295\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508527\" ver=\"1\" status=\"public\" name=\"EC treated 1\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948919\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>EC_t1</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRAR",
+        "runs_head": "                                <Run acc=\"SRR10836679\" total_spots=\"17498682\" total_bases=\"2799789120\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "9804906",
+        "title": null,
+        "expxml_head": "  <Summary><Title>EC aged 3</Title><Platform instrument_model=\"NextSeq 500\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"20140987\" total_bases=\"3222557920\" total_size=\"1345867841\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA1020128\" center_name=\"Stanford University\" contact_name=\"Vittorio Sebastiano\" lab_name=\"Ob/Gyn\"/><Experiment acc=\"SRX7508526\" ver=\"1\" status=\"public\" name=\"EC aged 3\"/><Study acc=\"SRP239609\" name=\"Young, Aged and Treated Samples\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS5948918\" name=\"\"/><Instrument ILLUMINA=\"NextSeq 500\"/><Library_descriptor><LIBRARY_NAME>EC_u3</LIBRARY_NAME><LIBRARY_STRATEGY>RNA-Seq</LIBRARY_STRATEGY><LIBRARY_SOURCE>TRANSCRIPTOMIC</LIBRARY_SOURCE><LIBRARY_SELECTION>cDNA</LIBRARY_SELE",
+        "runs_head": "                                <Run acc=\"SRR10836680\" total_spots=\"20140987\" total_bases=\"3222557920\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      }
+    ]
+  },
+  "PRJNA1108254": {
+    "accession": "PRJNA1108254",
+    "bioproject": {
+      "header": {
+        "type": "esummary",
+        "version": "0.3"
+      },
+      "result": {
+        "uids": [
+          "1108254"
+        ],
+        "1108254": {
+          "uid": "1108254",
+          "taxid": "",
+          "project_id": 1108254,
+          "project_acc": "PRJNA1108254",
+          "project_type": "Primary submission",
+          "project_data_type": "Raw sequence reads",
+          "sort_by_projecttype": 291851,
+          "sort_by_datatype": 264481,
+          "sort_by_organism": 876876,
+          "project_subtype": "",
+          "project_target_scope": "Multispecies",
+          "project_target_material": "Genome",
+          "project_target_capture": "Whole",
+          "project_methodtype": "Sequencing",
+          "project_method": "",
+          "project_objectives_list": [
+            {
+              "project_objectivestype": "Raw Sequence Reads",
+              "project_objectives": ""
+            }
+          ],
+          "registration_date": "2024/05/06 00:00",
+          "project_name": "",
+          "project_title": "Recapitulating fibroblast transcriptional states using comprehensive transcription factor perturbations",
+          "project_description": "Cell atlas projects have revealed recurrent transcriptional states across tissues and diseases, but the regulatory mechanisms governing these states remain largely unclear. To investigate whether these states can be recapitulated in vitro, we systematically perturbed 1,836 transcription factors using CRISPRa Perturb-seq in primary fibroblasts and retinal pigment epithelial cells, enabled by a droplet overloading approach that achieves high multiplexing. We observed that CRISPRa activated most transcription factors within a physiological range, that epigenetic features predicted which genes are activatable, and that the protospacer's seed region could drive off-target effects. Perturbations recapitulated gene expression programs resembling in vivo fibroblast states, including universal and inflammatory states, and nominated KLF4 and KLF5 as key regulators of the universal state. Our findings suggest that recurrent transcriptional states reflect gene expression programs that can be elicited via perturbation, opening the door to engineering clinically relevant states for ex vivo study.",
+          "keyword": "",
+          "relevance_agricultural": "",
+          "relevance_medical": "",
+          "relevance_industrial": "",
+          "relevance_environmental": "",
+          "relevance_evolution": "",
+          "relevance_model": "",
+          "relevance_other": "",
+          "organism_name": "",
+          "organism_strain": "",
+          "organism_label": "",
+          "sequencing_status": "SRA/Trace",
+          "submitter_organization": "Memorial Sloan Kettering Cancer Center",
+          "submitter_organization_list": [
+            "Memorial Sloan Kettering Cancer Center"
+          ],
+          "supergroup": ""
+        }
+      }
+    },
+    "sra_count": "1090",
+    "sra_ids_head": [
+      "33607991",
+      "33607990",
+      "33607989",
+      "33607988",
+      "33607987",
+      "33607986",
+      "33607985",
+      "33607984",
+      "33607983",
+      "33607982",
+      "33607981",
+      "33607980",
+      "33607979",
+      "33607978",
+      "33607977",
+      "33607976",
+      "33607975",
+      "33607974",
+      "33607973",
+      "33607972",
+      "33607971",
+      "33607970",
+      "32802551",
+      "32802550",
+      "32802549",
+      "32802548",
+      "32802547",
+      "32802546",
+      "32802545",
+      "32802544"
+    ],
+    "sra_error": "HTTPError: HTTP Error 429: Too Many Requests"
+  },
+  "PRJNA1263211": {
+    "accession": "PRJNA1263211",
+    "bioproject": {
+      "header": {
+        "type": "esummary",
+        "version": "0.3"
+      },
+      "result": {
+        "uids": [
+          "1263211"
+        ],
+        "1263211": {
+          "uid": "1263211",
+          "taxid": 9606,
+          "project_id": 1263211,
+          "project_acc": "PRJNA1263211",
+          "project_type": "Primary submission",
+          "project_data_type": "Transcriptome or Gene expression",
+          "sort_by_projecttype": 192286,
+          "sort_by_datatype": 160764,
+          "sort_by_organism": 223008,
+          "project_subtype": "",
+          "project_target_scope": "Multiisolate",
+          "project_target_material": "Transcriptome",
+          "project_target_capture": "Whole",
+          "project_methodtype": "Sequencing",
+          "project_method": "",
+          "project_objectives_list": [
+            {
+              "project_objectivestype": "Expression",
+              "project_objectives": ""
+            }
+          ],
+          "registration_date": "2025/05/15 00:00",
+          "project_name": "Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]",
+          "project_title": "Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]",
+          "project_description": "The loss of cellular and tissue identity is a hallmark of aging and numerous diseases, but the underlying mechanisms are not well understood. Our analysis of gene expression data from over 40 human tissues and 20 diseases reveals a pervasive upregulation of mesenchymal genes across multiple cell types, along with an altered composition of stromal cell populations, denoting a \u201cmesenchymal drift\u201d (MD). Increased MD correlates with disease progression, reduced patient survival, and an elevated mortality risk, whereas suppression of key MD transcription factors leads to epigenetic rejuvenation. Notably, Yamanaka factor-induced partial reprogramming can markedly reduce MD before dedifferentiation and gain of pluripotency, rejuvenating the aging transcriptome at the cellular and tissue levels. These findings provide mechanistic insight into the underlying beneficial effects of partial reprogramming and offer a framework for developing interventions to reverse age-related diseases using the partial reprogramming approach. Overall design: 10x Genomics scRNA-seq of human fibroblasts from a young (GM23815, 22yr) and aged donor (GM00731, 96yr) treated with Sendai virus OSKM for up to 10 days.",
+          "keyword": "",
+          "relevance_agricultural": "",
+          "relevance_medical": "Yes",
+          "relevance_industrial": "",
+          "relevance_environmental": "",
+          "relevance_evolution": "",
+          "relevance_model": "",
+          "relevance_other": "",
+          "organism_name": "Homo sapiens",
+          "organism_strain": "",
+          "organism_label": "",
+          "sequencing_status": "SRA/Trace",
+          "submitter_organization": "Altos Labs",
+          "submitter_organization_list": [
+            "Altos Labs"
+          ],
+          "supergroup": "Eukaryotes"
+        }
+      }
+    },
+    "sra_count": "8",
+    "sra_ids_head": [
+      "38661437",
+      "38661436",
+      "38661435",
+      "38661434",
+      "38661433",
+      "38661432",
+      "38661431",
+      "38661430"
+    ],
+    "sra_summaries_keys": [
+      "uids",
+      "38661437",
+      "38661436",
+      "38661435",
+      "38661434"
+    ],
+    "sra_rows": [
+      {
+        "uid": "38661437",
+        "title": null,
+        "expxml_head": "  <Summary><Title>GSM8986593: GM23815, Sendai OSKM, day 10; Homo sapiens; RNA-Seq</Title><Platform instrument_model=\"Illumina NovaSeq 6000\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"157478674\" total_bases=\"21732057012\" total_size=\"7136869782\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA2130224\" center_name=\"Altos Labs\" contact_name=\"GEO Group\" lab_name=\"\"/><Experiment acc=\"SRX28808610\" ver=\"1\" status=\"public\" name=\"GSM8986593: GM23815, Sendai OSKM, day 10; Homo sapiens; RNA-Seq\"/><Study acc=\"SRP585494\" name=\"Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS25045522\" name=\"\"/><Instrument ILLUMINA=\"Illumina NovaSeq 6000\"/><Library_",
+        "runs_head": "                                <Run acc=\"SRR33578672\" total_spots=\"157478674\" total_bases=\"21732057012\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "38661436",
+        "title": null,
+        "expxml_head": "  <Summary><Title>GSM8986592: GM23815, Sendai OSKM, day 7; Homo sapiens; RNA-Seq</Title><Platform instrument_model=\"Illumina NovaSeq 6000\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"168135372\" total_bases=\"23202681336\" total_size=\"7642864835\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA2130224\" center_name=\"Altos Labs\" contact_name=\"GEO Group\" lab_name=\"\"/><Experiment acc=\"SRX28808609\" ver=\"1\" status=\"public\" name=\"GSM8986592: GM23815, Sendai OSKM, day 7; Homo sapiens; RNA-Seq\"/><Study acc=\"SRP585494\" name=\"Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS25045521\" name=\"\"/><Instrument ILLUMINA=\"Illumina NovaSeq 6000\"/><Library_de",
+        "runs_head": "                                <Run acc=\"SRR33578673\" total_spots=\"168135372\" total_bases=\"23202681336\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "38661435",
+        "title": null,
+        "expxml_head": "  <Summary><Title>GSM8986591: GM23815, Sendai OSKM, day 3; Homo sapiens; RNA-Seq</Title><Platform instrument_model=\"Illumina NovaSeq 6000\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"154548981\" total_bases=\"21327759378\" total_size=\"7077435637\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA2130224\" center_name=\"Altos Labs\" contact_name=\"GEO Group\" lab_name=\"\"/><Experiment acc=\"SRX28808608\" ver=\"1\" status=\"public\" name=\"GSM8986591: GM23815, Sendai OSKM, day 3; Homo sapiens; RNA-Seq\"/><Study acc=\"SRP585494\" name=\"Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS25045520\" name=\"\"/><Instrument ILLUMINA=\"Illumina NovaSeq 6000\"/><Library_de",
+        "runs_head": "                                <Run acc=\"SRR33578674\" total_spots=\"154548981\" total_bases=\"21327759378\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "38661434",
+        "title": null,
+        "expxml_head": "  <Summary><Title>GSM8986590: GM23815, Sendai OSKM, day 0; Homo sapiens; RNA-Seq</Title><Platform instrument_model=\"Illumina NovaSeq 6000\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"125101490\" total_bases=\"17264005620\" total_size=\"5851993842\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA2130224\" center_name=\"Altos Labs\" contact_name=\"GEO Group\" lab_name=\"\"/><Experiment acc=\"SRX28808607\" ver=\"1\" status=\"public\" name=\"GSM8986590: GM23815, Sendai OSKM, day 0; Homo sapiens; RNA-Seq\"/><Study acc=\"SRP585494\" name=\"Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS25045519\" name=\"\"/><Instrument ILLUMINA=\"Illumina NovaSeq 6000\"/><Library_de",
+        "runs_head": "                                <Run acc=\"SRR33578675\" total_spots=\"125101490\" total_bases=\"17264005620\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "38661433",
+        "title": null,
+        "expxml_head": "  <Summary><Title>GSM8986589: GM00731, Sendai OSKM, day 10; Homo sapiens; RNA-Seq</Title><Platform instrument_model=\"Illumina NovaSeq 6000\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"143754168\" total_bases=\"19838075184\" total_size=\"6539965101\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA2130224\" center_name=\"Altos Labs\" contact_name=\"GEO Group\" lab_name=\"\"/><Experiment acc=\"SRX28808606\" ver=\"1\" status=\"public\" name=\"GSM8986589: GM00731, Sendai OSKM, day 10; Homo sapiens; RNA-Seq\"/><Study acc=\"SRP585494\" name=\"Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS25045518\" name=\"\"/><Instrument ILLUMINA=\"Illumina NovaSeq 6000\"/><Library_",
+        "runs_head": "                                <Run acc=\"SRR33578676\" total_spots=\"143754168\" total_bases=\"19838075184\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "38661432",
+        "title": null,
+        "expxml_head": "  <Summary><Title>GSM8986588: GM00731, Sendai OSKM, day 7; Homo sapiens; RNA-Seq</Title><Platform instrument_model=\"Illumina NovaSeq 6000\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"173436581\" total_bases=\"23934248178\" total_size=\"7849782711\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA2130224\" center_name=\"Altos Labs\" contact_name=\"GEO Group\" lab_name=\"\"/><Experiment acc=\"SRX28808605\" ver=\"1\" status=\"public\" name=\"GSM8986588: GM00731, Sendai OSKM, day 7; Homo sapiens; RNA-Seq\"/><Study acc=\"SRP585494\" name=\"Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS25045517\" name=\"\"/><Instrument ILLUMINA=\"Illumina NovaSeq 6000\"/><Library_de",
+        "runs_head": "                                <Run acc=\"SRR33578677\" total_spots=\"173436581\" total_bases=\"23934248178\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "38661431",
+        "title": null,
+        "expxml_head": "  <Summary><Title>GSM8986587: GM00731, Sendai OSKM, day 3; Homo sapiens; RNA-Seq</Title><Platform instrument_model=\"Illumina NovaSeq 6000\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"145183960\" total_bases=\"20035386480\" total_size=\"6545150997\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA2130224\" center_name=\"Altos Labs\" contact_name=\"GEO Group\" lab_name=\"\"/><Experiment acc=\"SRX28808604\" ver=\"1\" status=\"public\" name=\"GSM8986587: GM00731, Sendai OSKM, day 3; Homo sapiens; RNA-Seq\"/><Study acc=\"SRP585494\" name=\"Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS25045516\" name=\"\"/><Instrument ILLUMINA=\"Illumina NovaSeq 6000\"/><Library_de",
+        "runs_head": "                                <Run acc=\"SRR33578678\" total_spots=\"145183960\" total_bases=\"20035386480\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      },
+      {
+        "uid": "38661430",
+        "title": null,
+        "expxml_head": "  <Summary><Title>GSM8986586: GM00731, Sendai OSKM, day 0; Homo sapiens; RNA-Seq</Title><Platform instrument_model=\"Illumina NovaSeq 6000\">ILLUMINA</Platform><Statistics total_runs=\"1\" total_spots=\"149880285\" total_bases=\"20683479330\" total_size=\"6806123684\" load_done=\"true\" cluster_name=\"public\"/></Summary><Submitter acc=\"SRA2130224\" center_name=\"Altos Labs\" contact_name=\"GEO Group\" lab_name=\"\"/><Experiment acc=\"SRX28808603\" ver=\"1\" status=\"public\" name=\"GSM8986586: GM00731, Sendai OSKM, day 0; Homo sapiens; RNA-Seq\"/><Study acc=\"SRP585494\" name=\"Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]\"/><Organism taxid=\"9606\" ScientificName=\"Homo sapiens\"/><Sample acc=\"SRS25045515\" name=\"\"/><Instrument ILLUMINA=\"Illumina NovaSeq 6000\"/><Library_de",
+        "runs_head": "                                <Run acc=\"SRR33578679\" total_spots=\"149880285\" total_bases=\"20683479330\" load_done=\"true\" is_public=\"true\" cluster_name=\"public\" static_data_available=\"true\"/>                                ",
+        "keys": [
+          "createdate",
+          "expxml",
+          "extlinks",
+          "runs",
+          "uid",
+          "updatedate"
+        ]
+      }
+    ]
+  }
+}

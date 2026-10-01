@@ -1,0 +1,53 @@
+{
+ "pca_k": 50,
+ "gtex_n": 652,
+ "gtex_p": 23485,
+ "n_rows_all": 23,
+ "n_rows_scored": 22,
+ "min_cells": 20,
+ "note": "report-only; no pass/fail; not a gate",
+ "observations": [
+  "nn_euclidean: age score does not rise with distance \u03c1=-0.625 CI=[-0.834, -0.320] n=22. Not a gate.",
+  "mahalanobis_pca: age score does not rise with distance \u03c1=-0.572 CI=[-0.772, -0.253] n=22. Not a gate."
+ ],
+ "pooled": [
+  {
+   "distance": "nn_euclidean",
+   "n": 22,
+   "rho": -0.6250705815923208,
+   "rho_null": 0.014116318464144552,
+   "rho_p": 1.0,
+   "rho_ci_lo": -0.8342929119275445,
+   "rho_ci_hi": -0.3195726495726496,
+   "r": -0.48204385142126915,
+   "r2": -11479.968981976961,
+   "cal_r2": 0.2323662746930507,
+   "n_perm": 200,
+   "n_boot": 200,
+   "seed": 20260914,
+   "boot_seed": 20260918,
+   "age_rises_with_distance": false,
+   "scope": "all_donor_cluster_timepoint_n_ge_20",
+   "cell_line": null
+  },
+  {
+   "distance": "mahalanobis_pca",
+   "n": 22,
+   "rho": -0.5719932241671373,
+   "rho_null": 0.01919819311123659,
+   "rho_p": 0.9900497512437811,
+   "rho_ci_lo": -0.772051135195465,
+   "rho_ci_hi": -0.25306536505279414,
+   "r": -0.4727148157629324,
+   "r2": -30.289313761952684,
+   "cal_r2": 0.2234592970417828,
+   "n_perm": 200,
+   "n_boot": 200,
+   "seed": 20260914,
+   "boot_seed": 20260918,
+   "age_rises_with_distance": false,
+   "scope": "all_donor_cluster_timepoint_n_ge_20",
+   "cell_line": null
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+Written **before the first GSE297234 projection**, 2026-09-17. No threshold in this block is re-tuned after numbers exist. Stage 2 runs only if Stage 1 passed. Nothing is fitted, refitted, or calibrated on GSE297234.
+
+Frozen age ruler: SVD-LOO ridge, `raw`, fit on **all** GTEx V10 RNASEQ cultured-fibroblast donors (including D1) after Stage 1 passed. Weights, train mean, and train sd are frozen. Missing overlap genes are left at z=0 (FINDINGS_EXTERNAL.md rule). Same TMM/edgeR log2-CPM (`prior.count=2`) as the GTEx matrix, genes restricted to the overlap.
+
+Dataset: GSE297234. Verify the sample table from the record before use. Expected (scoping): Sendai OSKM, primary dermal fibroblasts, days 0 / 3 / 7 / 10, donors GM23815 age 22 and GM00731 age 96. If the record differs, report the discrepancy and use the record. Do not infer a donor age that is not in the record.
+
+Two coordinates:
+- Age: pseudobulk per (donor × timepoint). (a) all-cell pseudobulk is primary. (b) unsupervised cluster within each donor × timepoint (PCA 20 PCs on log1p-CP10k of overlap genes, k-means k=3, seed `20260914`; skip a group if n_cells < 50). (b) is reported and never averaged into (a).
+- Differentiation / pluripotency: mean z of frozen endogenous set (POU5F1, NANOG, LIN28A, SALL4, DPPA4, ZFP42, DNMT3B) minus mean z of frozen fibroblast-identity set (COL1A1, COL1A2, THY1, S100A4, FN1, VIM, POSTN). z is per-gene across the scored (a) pseudobulks (and separately for (b)). Lists frozen before scoring.
+
+Sendai transgene contamination is a hard requirement. Before any score: check whether the processed matrix contains Sendai/vector features; report what is found. Report the pluripotency score both with and without POU5F1 and any other OSKM-family gene in the endogenous set. If the two disagree, the without-OSKM version is primary.
+
+Day-0 sanity check: with no reprogramming yet, the 96-year donor must score higher on the age ruler than the 22-year donor. Two donors is one comparison and proves nothing statistically — but if it fails, report it and treat every downstream number as suspect.
+
+Primary question: in the aged donor (GM00731), does the age score decline monotonically across days 0 → 3 → 7 → 10?
+
+Primary null — random directions: draw 200 unit vectors in the same gene space, matched to the frozen ruler's weight distribution (permute the ruler's weights across genes; seed `20260914`). Score every (a) pseudobulk on each. Report the fraction of random directions whose day-0→day-10 decline on the aged donor is at least as large as the real ruler's. **Pass = empirical p ≤ 0.05.**
+
+Secondary null: the same 200 permuted-weight directions against the monotonicity of the aged-donor trajectory (Spearman ρ of score vs day), not just the endpoint drop.
+
+Reading (only the outcome that fired; do not average donors, regimes, or pseudobulk variants):
+- age score declines, beats the random-direction null, **and** the pluripotency score rises later than the age drop → the curve bends; there is a measurable window where age moves before identity does.
+- age score declines but does **not** beat the random-direction null → uninformative; wholesale transcriptome change moves every direction, including this one. Do not report a bend.
+- age score declines and pluripotency rises in lockstep → no window; the field's core assumption is challenged. Report it as such, not as a failure.
+- age score does not decline → the ruler reads a static donor property, not a modifiable state. Step 3 is not supported by this data; say so plainly and stop.
+
+Operational definitions (frozen before any GSE297234 score):
+- Age endpoint decline = age_score(day 0) − age_score(day 10) on the aged donor, all-cell pseudobulk (a). Positive = younger on the ruler.
+- Age drop time = earliest d ∈ {3, 7, 10} with age_score(d) < age_score(0). If none, no drop.
+- Pluripotency rise time = earliest d ∈ {3, 7, 10} with pluri(d) > pluri(0). If none, no rise.
+- "rises later than the age drop" = age drop time exists AND pluri rise time exists AND pluri rise time > age drop time.
+- "lockstep" = both times exist AND they are equal.
+- "age score does not decline" = endpoint decline ≤ 0.
+- Two series of pluripotency "disagree" if the day-0→day-10 sign differs or the rise times differ; then without-OSKM is primary.
+- Unsupervised clusters: within each donor × timepoint independently, log1p(CP10k) on genes overlapping the frozen ruler, PCA 20 (or n_cells−1 if smaller), k-means k=3, seed `20260914`. Skip a group if n_cells < 50.
+
+The young donor (GM23815) is reported alongside as a contrast, never pooled with the aged donor.
+Do not open GSE325735.

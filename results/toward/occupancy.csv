@@ -1,0 +1,11 @@
+cell_line,state,n_cells,n_d0,n_d3,n_d7,n_d10,n_d0_fibroblast,qualifies_dest,origin_ok,unused_fibroblast_nond0,skipped_reason
+GM00731,Fibroblast,5988,4939,5,14,1030,4939.0,False,True,1049,
+GM00731,PartialReprog,5832,3,5220,578,31,,True,False,0,
+GM00731,EarlyPluripotency,4414,2,410,3917,85,,True,False,0,
+GM00731,Pluripotency,439,0,5,354,80,,True,False,0,
+GM00731,NonReprog,5459,65,348,1932,3114,,True,False,0,
+GM23815,Fibroblast,11355,7703,46,2233,1373,7703.0,False,True,3652,
+GM23815,PartialReprog,6481,9,6113,309,50,,True,False,0,
+GM23815,EarlyPluripotency,12961,56,316,8172,4417,,True,False,0,
+GM23815,Pluripotency,1249,0,91,977,181,,True,False,0,
+GM23815,NonReprog,1812,0,10,8,1794,,True,False,0,

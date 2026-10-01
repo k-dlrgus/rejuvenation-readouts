@@ -1,0 +1,15 @@
+{
+ "n_contrast_rows_a": 40,
+ "n_contrast_rows_b": 10,
+ "n_qualifying_a": 4,
+ "n_qualifying_b": 2,
+ "sanity_ok": true,
+ "by_donor": {
+  "GM00731": "pr_below_fibroblast",
+  "GM23815": "pr_below_fibroblast"
+ },
+ "scheme_used": {
+  "GM00731": "a",
+  "GM23815": "a"
+ }
+}

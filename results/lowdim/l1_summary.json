@@ -1,0 +1,204 @@
+{
+ "seed": 20260914,
+ "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11",
+ "n_donors": 233,
+ "n_types": 20,
+ "n_genes": 25526,
+ "n_rows": 3323,
+ "k": [
+  20,
+  50,
+  100,
+  150
+ ],
+ "variants": [
+  "pca",
+  "curated",
+  "wgcna"
+ ],
+ "tech_r_flag": 0.5,
+ "n_gene_sets": 7275,
+ "n_gene_sets_usable": 4686,
+ "gene_set_filter": {
+  "n_symbol_dups": 33,
+  "libraries": {
+   "Hallmark": {
+    "ok": true,
+    "n_listed": 50,
+    "n_mapped_ok": 50,
+    "median_mapped": 143.0
+   },
+   "Reactome": {
+    "ok": true,
+    "n_listed": 1818,
+    "n_mapped_ok": 1377,
+    "median_mapped": 21.0
+   },
+   "GO_BP": {
+    "ok": true,
+    "n_listed": 5407,
+    "n_mapped_ok": 3259,
+    "median_mapped": 12.0
+   }
+  }
+ },
+ "overview": [
+  {
+   "variant": "pca",
+   "label": "A_pca",
+   "k": 20,
+   "median_frac_flagged": 0.05,
+   "median_n_flagged": 1.0,
+   "median_k_eff": 20.0,
+   "types_any_flagged": 13,
+   "n_types": 20,
+   "median_abs_r_site": 0.1615327139345203,
+   "median_abs_r_logumi": 0.13051805060477972,
+   "median_abs_r_nfrac": 0.10690466336154654
+  },
+  {
+   "variant": "pca",
+   "label": "A_pca",
+   "k": 50,
+   "median_frac_flagged": 0.02,
+   "median_n_flagged": 1.0,
+   "median_k_eff": 50.0,
+   "types_any_flagged": 13,
+   "n_types": 20,
+   "median_abs_r_site": 0.10020229961389815,
+   "median_abs_r_logumi": 0.11087720015895122,
+   "median_abs_r_nfrac": 0.09298161515903451
+  },
+  {
+   "variant": "pca",
+   "label": "A_pca",
+   "k": 100,
+   "median_frac_flagged": 0.01,
+   "median_n_flagged": 1.0,
+   "median_k_eff": 100.0,
+   "types_any_flagged": 13,
+   "n_types": 20,
+   "median_abs_r_site": 0.06679242005269576,
+   "median_abs_r_logumi": 0.0752962594680861,
+   "median_abs_r_nfrac": 0.0711525264491083
+  },
+  {
+   "variant": "pca",
+   "label": "A_pca",
+   "k": 150,
+   "median_frac_flagged": 0.006666666666666667,
+   "median_n_flagged": 1.0,
+   "median_k_eff": 150.0,
+   "types_any_flagged": 13,
+   "n_types": 20,
+   "median_abs_r_site": 0.057428323416250066,
+   "median_abs_r_logumi": 0.06123977907659285,
+   "median_abs_r_nfrac": 0.060036768674841104
+  },
+  {
+   "variant": "curated",
+   "label": "B_curated",
+   "k": 20,
+   "median_frac_flagged": 0.0,
+   "median_n_flagged": 0.0,
+   "median_k_eff": 20.0,
+   "types_any_flagged": 3,
+   "n_types": 20,
+   "median_abs_r_site": 0.12048465334228908,
+   "median_abs_r_logumi": 0.10064986666791934,
+   "median_abs_r_nfrac": 0.07277534026576896
+  },
+  {
+   "variant": "curated",
+   "label": "B_curated",
+   "k": 50,
+   "median_frac_flagged": 0.0,
+   "median_n_flagged": 0.0,
+   "median_k_eff": 50.0,
+   "types_any_flagged": 6,
+   "n_types": 20,
+   "median_abs_r_site": 0.10353981124120946,
+   "median_abs_r_logumi": 0.0833292848009372,
+   "median_abs_r_nfrac": 0.09590418214457708
+  },
+  {
+   "variant": "curated",
+   "label": "B_curated",
+   "k": 100,
+   "median_frac_flagged": 0.0,
+   "median_n_flagged": 0.0,
+   "median_k_eff": 100.0,
+   "types_any_flagged": 7,
+   "n_types": 20,
+   "median_abs_r_site": 0.08658578571548138,
+   "median_abs_r_logumi": 0.11679770720049588,
+   "median_abs_r_nfrac": 0.059881914575439975
+  },
+  {
+   "variant": "curated",
+   "label": "B_curated",
+   "k": 150,
+   "median_frac_flagged": 0.0,
+   "median_n_flagged": 0.0,
+   "median_k_eff": 150.0,
+   "types_any_flagged": 7,
+   "n_types": 20,
+   "median_abs_r_site": 0.0826921949634836,
+   "median_abs_r_logumi": 0.10699310693536516,
+   "median_abs_r_nfrac": 0.059100831929261674
+  },
+  {
+   "variant": "wgcna",
+   "label": "C_wgcna",
+   "k": 20,
+   "median_frac_flagged": 0.05,
+   "median_n_flagged": 1.0,
+   "median_k_eff": 20.0,
+   "types_any_flagged": 16,
+   "n_types": 20,
+   "median_abs_r_site": 0.10459971547207772,
+   "median_abs_r_logumi": 0.07858584434887445,
+   "median_abs_r_nfrac": 0.09123945244731947
+  },
+  {
+   "variant": "wgcna",
+   "label": "C_wgcna",
+   "k": 50,
+   "median_frac_flagged": 0.02,
+   "median_n_flagged": 1.0,
+   "median_k_eff": 50.0,
+   "types_any_flagged": 18,
+   "n_types": 20,
+   "median_abs_r_site": 0.1014212184666447,
+   "median_abs_r_logumi": 0.07610830730002469,
+   "median_abs_r_nfrac": 0.07826195080552115
+  },
+  {
+   "variant": "wgcna",
+   "label": "C_wgcna",
+   "k": 100,
+   "median_frac_flagged": 0.02,
+   "median_n_flagged": 1.5,
+   "median_k_eff": 100.0,
+   "types_any_flagged": 19,
+   "n_types": 20,
+   "median_abs_r_site": 0.10037688638639342,
+   "median_abs_r_logumi": 0.07095269089170529,
+   "median_abs_r_nfrac": 0.07243966795400571
+  },
+  {
+   "variant": "wgcna",
+   "label": "C_wgcna",
+   "k": 150,
+   "median_frac_flagged": 0.013333333333333334,
+   "median_n_flagged": 2.0,
+   "median_k_eff": 150.0,
+   "types_any_flagged": 19,
+   "n_types": 20,
+   "median_abs_r_site": 0.09883031423293026,
+   "median_abs_r_logumi": 0.07566396878096232,
+   "median_abs_r_nfrac": 0.07114917077862713
+  }
+ ],
+ "note": "L1 fits are descriptive (full cohort) for the technical audit; L2 refits inside training folds."
+}

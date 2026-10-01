@@ -1,0 +1,42 @@
+{
+ "open": false,
+ "gene_list_recovered": true,
+ "computation_recovered": false,
+ "gene_list_source": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc3.xlsx",
+ "computation_source": null,
+ "n_MD_genes": 205,
+ "n_TGFB_genes": 54,
+ "mmc3_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc3.xlsx",
+ "missing": [
+  "MD score computation (per cell vs per sample; mean / ssGSEA / AddModuleScore / other). Open supplement mmc3.xlsx lists genes under column 'MD score' but contains no formula. GEO Sample_data_processing is Cell Ranger v7.1.0 + Seurat v5.0.0 sctransform v2, and does not mention an MD score. Would be in STAR Methods of the paywalled article (https://www.cell.com/cell/fulltext/S0092-8674(25)00853-0 , HTTP 403 this session) or in an author code repository (GitHub repo search total_count=0)."
+ ],
+ "reason": "MD gene list recovered from open supplement mmc3.xlsx (n=205 genes, sheet MD_signatures, column 'MD score'; https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc3.xlsx). Computation of the score from those genes is not in any public source retrieved this session. STOP after Stage 1.",
+ "notes": {
+  "citing_methods_are_not_the_authors_methods": true,
+  "do_not_approximate_addmodulescore": true,
+  "geo_data_processing_mentions_md_score": false,
+  "mmc3_sheets": {
+   "MD_signatures": {
+    "MD score": 205,
+    "TGFB score": 54
+   },
+   "Aging_signatures": {
+    "Age up": 1533,
+    "Age down": 2007
+   },
+   "Fibroblast_subtype_signatures": {
+    "PI16_univ": 778,
+    "LRRC15_myo": 472,
+    "COL3A1_myo": 278
+   },
+   "Reprog_cell_state_signatures": {
+    "Fibroblast": 200,
+    "PartialReprog": 200,
+    "EarlyPluripotency": 200,
+    "Pluripotency": 200,
+    "NonReprog": 200
+   }
+  }
+ },
+ "retrieval_date": "2026-09-19"
+}

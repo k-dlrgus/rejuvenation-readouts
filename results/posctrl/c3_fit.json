@@ -1,0 +1,64 @@
+{
+ "planted_curve": {
+  "angle_vs_sex_ref": {
+   "n_cross": 233.0,
+   "a": 32.62981688297751,
+   "b": 129.33118678717688,
+   "form": "a+b/sqrt(n)",
+   "threshold": 41.3,
+   "extrapolation": false,
+   "n_cross_observed": 233.0,
+   "n_cross_fitted": 222.51023153046643
+  },
+  "transfer_H_to_M": {
+   "n_cross": 263.7091750804621,
+   "a": -2.0372758841165575,
+   "b": 0.12545478319040093,
+   "form": "a+b*sqrt(n)",
+   "threshold": 0.0,
+   "extrapolation": true,
+   "n_cross_observed": NaN,
+   "n_cross_fitted": 263.7091750804621
+  },
+  "transfer_M_to_H": {
+   "n_cross": 397.67555339815647,
+   "a": -1.7289140284002977,
+   "b": 0.08669797446619067,
+   "form": "a+b*sqrt(n)",
+   "threshold": 0.0,
+   "extrapolation": true,
+   "n_cross_observed": NaN,
+   "n_cross_fitted": 397.67555339815647
+  }
+ },
+ "track": {
+  "planted_corr_n_angle": -0.9504136186941314,
+  "real_corr_n_angle": -0.8860136995147229,
+  "per_n": [
+   {
+    "n": 60,
+    "real_med": 49.37629507780834,
+    "planted_med": 49.2809348592369,
+    "real_inside_planted_spread": true
+   },
+   {
+    "n": 100,
+    "real_med": 46.876375697145136,
+    "planted_med": 45.75860162305888,
+    "real_inside_planted_spread": true
+   },
+   {
+    "n": 150,
+    "real_med": 45.49870007331039,
+    "planted_med": 42.9506546619573,
+    "real_inside_planted_spread": false
+   },
+   {
+    "n": 233,
+    "real_med": 45.07377681100883,
+    "planted_med": 41.1913944240051,
+    "real_inside_planted_spread": false
+   }
+  ]
+ }
+}

@@ -1,0 +1,2303 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE eSummaryResult PUBLIC "-//NLM//DTD esummary v1 20041029//EN" "https://eutils.ncbi.nlm.nih.gov/eutils/dtd/20041029/esummary-v1.dtd">
+<eSummaryResult>
+<DocSum>
+	<Id>200088696</Id>
+	<Item Name="Accession" Type="String">GSE88696</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR998MZP)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against PRPF8 in HepG2 cells followed by RNA-seq. (PRPF8_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88696</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2344429</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB637ZUM)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2344428</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB855MKK)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88696/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088693</Id>
+	<Item Name="Accession" Type="String">GSE88693</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR995RPB)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against SUPV3L1 in HepG2 cells followed by RNA-seq. (SUPV3L1_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88693</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2344425</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB726PQW)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2344424</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB577UVM)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88693/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088675</Id>
+	<Item Name="Accession" Type="String">GSE88675</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR964YTW)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against DDX55 in HepG2 cells followed by RNA-seq. (DDX55_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88675</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2344393</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB139BJN)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2344392</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB090BCK)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88675/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088641</Id>
+	<Item Name="Accession" Type="String">GSE88641</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR912EHP)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against PES1 in HepG2 cells followed by RNA-seq. (PES1_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88641</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2344331</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB970WUE)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2344330</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB121KJF)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88641/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088598</Id>
+	<Item Name="Accession" Type="String">GSE88598</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR856ZRV)</Item>
+	<Item Name="summary" Type="String">Control shRNA against no target in HepG2 cells followed by RNA-seq. (NT_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88598</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2344257</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB921NGP)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2344256</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB959OLD)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88598/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088564</Id>
+	<Item Name="Accession" Type="String">GSE88564</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR815JDY)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against CSTF2 in HepG2 cells followed by RNA-seq. (CSTF2_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88564</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2344199</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB209RYC)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2344198</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB249JKL)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88564/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088462</Id>
+	<Item Name="Accession" Type="String">GSE88462</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR684HTV)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against UCHL5 in HepG2 cells followed by RNA-seq. (UCHL5_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88462</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2344022</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB383DKR)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2344023</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB758NTZ)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88462/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088433</Id>
+	<Item Name="Accession" Type="String">GSE88433</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR647NYX)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against NONO in HepG2 cells followed by RNA-seq. (NONO_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88433</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343975</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB693YJG)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343974</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB920YRO)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88433/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088427</Id>
+	<Item Name="Accession" Type="String">GSE88427</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR639LKS)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against FKBP4 in HepG2 cells followed by RNA-seq. (FKBP4_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88427</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343965</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB359FBF)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343964</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB771DYJ)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88427/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088370</Id>
+	<Item Name="Accession" Type="String">GSE88370</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR573UBF)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against TFIP11 in HepG2 cells followed by RNA-seq. (TFIP11_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88370</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343870</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB483ITG)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343869</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB144PBT)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88370/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088366</Id>
+	<Item Name="Accession" Type="String">GSE88366</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR570CWH)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against BCCIP in HepG2 cells followed by RNA-seq. (BCCIP_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88366</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343863</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB731PTU)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343864</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB678MEZ)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88366/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088352</Id>
+	<Item Name="Accession" Type="String">GSE88352</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR547NWD)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against AARS in HepG2 cells followed by RNA-seq. (AARS_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88352</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343837</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB570OOU)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343838</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB812DMC)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88352/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088301</Id>
+	<Item Name="Accession" Type="String">GSE88301</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR481AYC)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against BCLAF1 in HepG2 cells followed by RNA-seq. (BCLAF1_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88301</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343749</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB493CND)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343748</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB432NCU)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88301/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088292</Id>
+	<Item Name="Accession" Type="String">GSE88292</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR471GIS)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against RRP9 in HepG2 cells followed by RNA-seq. (RRP9_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88292</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343736</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB232AMR)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343735</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB567ZLC)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88292/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088209</Id>
+	<Item Name="Accession" Type="String">GSE88209</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR347ZHQ)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against XRN2 in HepG2 cells followed by RNA-seq. (XRN2_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88209</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343594</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB907FAP)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343595</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB572CJA)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88209/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088189</Id>
+	<Item Name="Accession" Type="String">GSE88189</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR318OXM)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against UPF2 in HepG2 cells followed by RNA-seq. (UPF2_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88189</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343561</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB774ZJK)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343562</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB072LAK)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88189/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088117</Id>
+	<Item Name="Accession" Type="String">GSE88117</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR222CSF)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against DDX28 in HepG2 cells followed by RNA-seq. (DDX28_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88117</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343440</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB798NMN)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343441</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB570ODX)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88117/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088110</Id>
+	<Item Name="Accession" Type="String">GSE88110</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR210RWL)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against DDX27 in HepG2 cells followed by RNA-seq. (DDX27_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88110</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343424</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB839SYF)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343421</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB806FWN)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88110/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>200088078</Id>
+	<Item Name="Accession" Type="String">GSE88078</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCSR167JPY)</Item>
+	<Item Name="summary" Type="String">shRNA knockdown against SRP68 in HepG2 cells followed by RNA-seq. (SRP68_BGHLV17) For data usage terms and conditions, please refer to http://www.genome.gov/27528022 and http://www.genome.gov/Pages/Research/ENCODE/ENCODE_Data_Use_Policy_for_External_Users_03-07-14.pdf</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88078</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSE</Item>
+	<Item Name="gdsType" Type="String">Expression profiling by high throughput sequencing</Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List">
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343307</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB935AWZ)</Item>
+		</Item>
+		<Item Name="Sample" Type="Structure">
+			<Item Name="Accession" Type="String">GSM2343308</Item>
+			<Item Name="Title" Type="String">shRNA RNA-seq from HepG2 (ENCLB601WEK)</Item>
+		</Item>
+	</Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List"></Item>
+	<Item Name="n_samples" Type="Integer">2</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List">
+		<Item Name="int" Type="Integer">22955616</Item>
+	</Item>
+	<Item Name="Projects" Type="List">
+		<Item Name="Project" Type="Structure">
+			<Item Name="Name" Type="String">ENCODE</Item>
+			<Item Name="URL" Type="String">https://www.ncbi.nlm.nih.gov/geo/encode/</Item>
+		</Item>
+	</Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE88nnn/GSE88078/</Item>
+	<Item Name="GEO2R" Type="String">yes</Item>
+</DocSum>
+
+<DocSum>
+	<Id>302344429</Id>
+	<Item Name="Accession" Type="String">GSM2344429</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB637ZUM)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting PRPF8</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88696</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244849</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244849/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2344nnn/GSM2344429/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302344428</Id>
+	<Item Name="Accession" Type="String">GSM2344428</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB855MKK)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting PRPF8</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88696</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244848</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244848/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2344nnn/GSM2344428/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302344425</Id>
+	<Item Name="Accession" Type="String">GSM2344425</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB726PQW)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting SUPV3L1</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88693</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244840</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244840/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2344nnn/GSM2344425/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302344424</Id>
+	<Item Name="Accession" Type="String">GSM2344424</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB577UVM)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting SUPV3L1</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88693</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244839</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244839/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2344nnn/GSM2344424/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302344393</Id>
+	<Item Name="Accession" Type="String">GSM2344393</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB139BJN)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting DDX55</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88675</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244823</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244823/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2344nnn/GSM2344393/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302344392</Id>
+	<Item Name="Accession" Type="String">GSM2344392</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB090BCK)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting DDX55</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88675</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244822</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244822/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2344nnn/GSM2344392/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302344331</Id>
+	<Item Name="Accession" Type="String">GSM2344331</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB970WUE)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting PES1</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88641</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244751</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244751/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2344nnn/GSM2344331/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302344330</Id>
+	<Item Name="Accession" Type="String">GSM2344330</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB121KJF)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting PES1</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88641</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244750</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244750/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2344nnn/GSM2344330/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302344257</Id>
+	<Item Name="Accession" Type="String">GSM2344257</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB921NGP)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting Non-specific target control</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88598</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244655</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244655/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2344nnn/GSM2344257/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302344256</Id>
+	<Item Name="Accession" Type="String">GSM2344256</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB959OLD)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting Non-specific target control</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88598</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244654</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244654/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2344nnn/GSM2344256/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302344199</Id>
+	<Item Name="Accession" Type="String">GSM2344199</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB209RYC)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting CSTF2</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88564</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244615</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244615/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2344nnn/GSM2344199/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302344198</Id>
+	<Item Name="Accession" Type="String">GSM2344198</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB249JKL)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting CSTF2</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88564</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244614</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244614/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2344nnn/GSM2344198/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302344023</Id>
+	<Item Name="Accession" Type="String">GSM2344023</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB758NTZ)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting UCHL5</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88462</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244444</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244444/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2344nnn/GSM2344023/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302344022</Id>
+	<Item Name="Accession" Type="String">GSM2344022</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB383DKR)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting UCHL5</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88462</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244443</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244443/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2344nnn/GSM2344022/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343975</Id>
+	<Item Name="Accession" Type="String">GSM2343975</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB693YJG)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting NONO</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88433</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244417</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244417/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343975/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343974</Id>
+	<Item Name="Accession" Type="String">GSM2343974</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB920YRO)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting NONO</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88433</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244416</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244416/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343974/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343965</Id>
+	<Item Name="Accession" Type="String">GSM2343965</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB359FBF)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting FKBP4</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88427</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244380</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244380/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343965/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343964</Id>
+	<Item Name="Accession" Type="String">GSM2343964</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB771DYJ)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting FKBP4</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88427</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244379</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244379/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343964/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343870</Id>
+	<Item Name="Accession" Type="String">GSM2343870</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB483ITG)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting TFIP11</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88370</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244263</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244263/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343870/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343869</Id>
+	<Item Name="Accession" Type="String">GSM2343869</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB144PBT)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting TFIP11</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88370</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244262</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244262/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343869/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343864</Id>
+	<Item Name="Accession" Type="String">GSM2343864</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB678MEZ)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting BCCIP</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88366</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244257</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244257/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343864/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343863</Id>
+	<Item Name="Accession" Type="String">GSM2343863</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB731PTU)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting BCCIP</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88366</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244256</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244256/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343863/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343838</Id>
+	<Item Name="Accession" Type="String">GSM2343838</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB812DMC)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting AARS</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88352</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244231</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244231/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343838/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343837</Id>
+	<Item Name="Accession" Type="String">GSM2343837</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB570OOU)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting AARS</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88352</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244230</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244230/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343837/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343749</Id>
+	<Item Name="Accession" Type="String">GSM2343749</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB493CND)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting BCLAF1</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88301</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244140</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244140/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343749/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343748</Id>
+	<Item Name="Accession" Type="String">GSM2343748</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB432NCU)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting BCLAF1</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88301</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244139</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244139/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343748/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343736</Id>
+	<Item Name="Accession" Type="String">GSM2343736</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB232AMR)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting RRP9</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88292</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244124</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244124/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343736/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343735</Id>
+	<Item Name="Accession" Type="String">GSM2343735</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB567ZLC)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting RRP9</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88292</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2244123</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2244123/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343735/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343595</Id>
+	<Item Name="Accession" Type="String">GSM2343595</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB572CJA)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting XRN2</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88209</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2243975</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2243975/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343595/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343594</Id>
+	<Item Name="Accession" Type="String">GSM2343594</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB907FAP)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting XRN2</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88209</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2243974</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2243974/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343594/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343562</Id>
+	<Item Name="Accession" Type="String">GSM2343562</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB072LAK)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting UPF2</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88189</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2243939</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2243939/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343562/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343561</Id>
+	<Item Name="Accession" Type="String">GSM2343561</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB774ZJK)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting UPF2</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88189</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2243938</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2243938/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343561/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343441</Id>
+	<Item Name="Accession" Type="String">GSM2343441</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB570ODX)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting DDX28</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88117</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2243805</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2243805/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343441/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343440</Id>
+	<Item Name="Accession" Type="String">GSM2343440</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB798NMN)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting DDX28</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88117</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2243804</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2243804/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343440/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343424</Id>
+	<Item Name="Accession" Type="String">GSM2343424</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB839SYF)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting DDX27</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88110</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2243790</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2243790/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343424/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343421</Id>
+	<Item Name="Accession" Type="String">GSM2343421</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB806FWN)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting DDX27</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88110</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2243789</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2243789/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343421/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343308</Id>
+	<Item Name="Accession" Type="String">GSM2343308</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB601WEK)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting SRP68</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88078</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2243737</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2243737/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343308/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+<DocSum>
+	<Id>302343307</Id>
+	<Item Name="Accession" Type="String">GSM2343307</Item>
+	<Item Name="GDS" Type="String"></Item>
+	<Item Name="title" Type="String">shRNA RNA-seq from HepG2 (ENCLB935AWZ)</Item>
+	<Item Name="summary" Type="String">Homo sapiens HepG2 immortalized cell line transiently expressing shRNA targeting SRP68</Item>
+	<Item Name="GPL" Type="String">11154</Item>
+	<Item Name="GSE" Type="String">88078</Item>
+	<Item Name="taxon" Type="String">Homo sapiens</Item>
+	<Item Name="entryType" Type="String">GSM</Item>
+	<Item Name="gdsType" Type="String"></Item>
+	<Item Name="ptechType" Type="String"></Item>
+	<Item Name="valType" Type="String"></Item>
+	<Item Name="SSInfo" Type="String"></Item>
+	<Item Name="subsetInfo" Type="String"></Item>
+	<Item Name="PDAT" Type="String">2016/11/08</Item>
+	<Item Name="suppFile" Type="String">BIGWIG, TSV, TXT</Item>
+	<Item Name="Samples" Type="List"></Item>
+	<Item Name="Relations" Type="List"></Item>
+	<Item Name="ExtRelations" Type="List">
+		<Item Name="ExtRelation" Type="Structure">
+			<Item Name="RelationType" Type="String">SRA</Item>
+			<Item Name="TargetObject" Type="String">SRX2243736</Item>
+			<Item Name="TargetFTPLink" Type="String">ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX224/SRX2243736/</Item>
+		</Item>
+	</Item>
+	<Item Name="n_samples" Type="Integer">0</Item>
+	<Item Name="SeriesTitle" Type="String"></Item>
+	<Item Name="PlatformTitle" Type="String"></Item>
+	<Item Name="PlatformTaxa" Type="String"></Item>
+	<Item Name="SamplesTaxa" Type="String"></Item>
+	<Item Name="PubMedIds" Type="List"></Item>
+	<Item Name="Projects" Type="List"></Item>
+	<Item Name="FTPLink" Type="String">ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2343nnn/GSM2343307/</Item>
+	<Item Name="GEO2R" Type="String"></Item>
+</DocSum>
+
+</eSummaryResult>

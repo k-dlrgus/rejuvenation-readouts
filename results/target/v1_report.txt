@@ -1,0 +1,87 @@
+====================================================================================================
+TARGET V1 — recover axes + bootstrap stability  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO GENE SELECTION: every gene in the Phase-1 matrix enters every model with a weight.
+NO perturbation data. No TF Atlas. Expression space only.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+Working space: global train z-score; ridge coefficients live in that space (no second per-type z-score).
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[filter] V1 uses ALL 25,526 genes. No threshold, no A/I bucket.
+[filter] cohort: 233 donors, 20 cell types, sites={'H': 120, 'M': 113}, rows=3323
+[filter] donor bootstrap: resample 233 donors with replacement; all pseudobulks of each draw are kept (multiplicity). seed=20260914
+[filter] n_boot ridge=20  n_boot pls1=40
+[V1] identity subspace: 19 axes from 20 type centroids; S head=[307.42, 170.533, 163.587, 126.892, 119.246]
+[V1] full-cohort ridge age directions:
+   GABAergic neuron: n=179 ok=True alpha=0.01 norm=2.1944378719230504
+   L2/3 intratelencephalic projecting glutamatergic neuron: n=220 ok=True alpha=0.01 norm=3.031276381206086
+   L2/3-6 intratelencephalic projecting glutamatergic neuron: n=215 ok=True alpha=0.01 norm=2.797399618648009
+   L5/6 near-projecting glutamatergic neuron: n=124 ok=True alpha=0.01 norm=1.5012963104631978
+   L6 corticothalamic-projecting glutamatergic cortical neuron: n=153 ok=True alpha=0.01 norm=1.7083729103047516
+   L6 intratelencephalic projecting glutamatergic neuron: n=150 ok=True alpha=0.01 norm=2.1023660020826878
+   L6b glutamatergic neuron of the primary motor cortex: n=109 ok=True alpha=0.01 norm=1.5840407653341688
+   VIP GABAergic interneuron: n=217 ok=True alpha=0.01 norm=2.9333272498790333
+   astrocyte: n=229 ok=True alpha=0.01 norm=2.716874417702516
+   endothelial cell: n=160 ok=True alpha=0.01 norm=1.2273976595244465
+   lamp5 GABAergic interneuron: n=205 ok=True alpha=0.01 norm=2.4551118912409136
+   microglial cell: n=219 ok=True alpha=0.01 norm=1.7105443479486706
+   oligodendrocyte: n=232 ok=True alpha=0.01 norm=3.3690902115184618
+   oligodendrocyte precursor cell: n=232 ok=True alpha=0.01 norm=2.384924936596323
+   pericyte: n=136 ok=True alpha=0.01 norm=0.9840766794695651
+   perivascular macrophage: n=31 ok=True alpha=10000.0 norm=0.4105326135715729
+   pvalb GABAergic interneuron: n=209 ok=True alpha=0.01 norm=3.0739239547186714
+   smooth muscle cell: n=16 ok=True alpha=10000.0 norm=0.23639944591142367
+   sst GABAergic interneuron: n=206 ok=True alpha=0.01 norm=2.4500132146632496
+   vascular leptomeningeal cell: n=81 ok=True alpha=0.01 norm=0.8885891596553854
+[V1] wrote v1_axes.npz (age dirs + TARGET preview + identity basis)
+[V1] median angle to G1 frozen ridge dirs: 23.98° (expected small; spaces differ by a second per-type z-score in G1)
+
+[V1] donor bootstrap of the RIDGE age direction (20 replicates)
+   ridge bootstrap 1/20
+   ridge bootstrap 5/20
+   ridge bootstrap 10/20
+   ridge bootstrap 15/20
+   ridge bootstrap 20/20
+[V1] donor bootstrap of the PLS-1 age direction (40 replicates)
+   pls1 bootstrap 1/40
+   pls1 bootstrap 5/40
+   pls1 bootstrap 10/40
+   pls1 bootstrap 15/40
+   pls1 bootstrap 20/40
+   pls1 bootstrap 25/40
+   pls1 bootstrap 30/40
+   pls1 bootstrap 35/40
+   pls1 bootstrap 40/40
+
+[V1] ridge median-over-types of median pairwise bootstrap angle = 45.1°
+     pls1  median-over-types of median pairwise bootstrap angle = 38.6°
+     ridge types with median pairwise > 60°: 0/20
+     per-type ridge:
+       L2/3-6 intratelencephalic projecting glutamatergic neuron: pairwise 41.3°  to-full 31.7°  n_boot=20
+       oligodendrocyte: pairwise 42.1°  to-full 31.7°  n_boot=20
+       oligodendrocyte precursor cell: pairwise 42.8°  to-full 32.3°  n_boot=20
+       sst GABAergic interneuron: pairwise 42.9°  to-full 31.7°  n_boot=20
+       L2/3 intratelencephalic projecting glutamatergic neuron: pairwise 43.4°  to-full 33.6°  n_boot=20
+       astrocyte: pairwise 43.9°  to-full 34.4°  n_boot=20
+       microglial cell: pairwise 44.0°  to-full 32.7°  n_boot=20
+       VIP GABAergic interneuron: pairwise 44.1°  to-full 33.0°  n_boot=20
+       pvalb GABAergic interneuron: pairwise 44.6°  to-full 32.7°  n_boot=20
+       GABAergic neuron: pairwise 45.0°  to-full 34.5°  n_boot=20
+       L6 corticothalamic-projecting glutamatergic cortical neuron: pairwise 45.1°  to-full 33.0°  n_boot=20
+       L6 intratelencephalic projecting glutamatergic neuron: pairwise 45.2°  to-full 33.3°  n_boot=20
+       L6b glutamatergic neuron of the primary motor cortex: pairwise 46.3°  to-full 33.8°  n_boot=20
+       lamp5 GABAergic interneuron: pairwise 46.6°  to-full 34.8°  n_boot=20
+       L5/6 near-projecting glutamatergic neuron: pairwise 48.3°  to-full 35.8°  n_boot=20
+       endothelial cell: pairwise 49.4°  to-full 35.5°  n_boot=20
+       pericyte: pairwise 49.7°  to-full 36.9°  n_boot=20
+       vascular leptomeningeal cell: pairwise 51.9°  to-full 38.6°  n_boot=20
+       smooth muscle cell: pairwise 52.0°  to-full 40.8°  n_boot=19
+       perivascular macrophage: pairwise 55.5°  to-full 41.4°  n_boot=20
+[STOP V1] False  (median pairwise ridge 45.1° vs 60°)
+[V1] wrote results/target/v1_*
+[V1] done.

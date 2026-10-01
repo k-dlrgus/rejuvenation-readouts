@@ -1,0 +1,631 @@
+====================================================================================================
+FIBRO2 RUN cell=prereg  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+prereg written; FINDINGS_FIBRO2.md skeleton on disk
+[findings] <repo>\FINDINGS_FIBRO2.md
+====================================================================================================
+FIBRO2 RUN cell=ta  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+====================================================================================================
+FIBRO2 T-A  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+Written **before any T-A download, projection, or ρ**, 2026-09-18. No threshold in this block is re-tuned after numbers exist.
+
+Take the Stage 1 ridge direction **exactly as frozen in `results/fibro/frozen_ruler_ridge_raw.npz`**. Refit nothing. Recalibrate nothing. Rescale nothing. Project, score, report Spearman ρ vs donor age.
+
+Same normalization as the frozen GTEx spec (FINDINGS_GTEX.md Stage 0 / FINDINGS_FIBRO.md Stage 1): TMM/edgeR log2-CPM (`prior.count=2`). Genes restricted to the overlap with the frozen ruler. Missing overlap genes left at z=0 (FINDINGS_EXTERNAL.md rule). Gene-overlap count reported. z uses the frozen train mean and sd.
+
+Metric: Spearman ρ vs the age the record states. Donor-level permutation null n_perm=200 (scores held fixed; shuffle donor ages; each cell starts a fresh Generator on seed `20260914`). Donor-bootstrap 95% percentile CI, B=200, seed `20260918`. Calibrated R² and uncalibrated R² reported; uncalibrated R² is never a gate. Pearson r reported, not a gate. Nothing averaged across cohorts.
+
+Adult restriction on the primary cell: GSE113957 samples with stated age < 18 are excluded to match the GTEx training range; the excluded count is reported. Do not infer a donor age that the record does not state. A record that does not state per-sample donor age is unusable.
+
+Cohorts, in priority order, each resolved from the record this session:
+1. **GSE113957** — primary external cell. Human dermal fibroblast. Ages stated in titles. Bulk. Adults ≥18.
+2. **Any single-cell fibroblast/skin aging cohort with ≥10 donors and stated ages** resolved this session (CELLxGENE, GEO, or SCOPING_TISSUE.md `near_miss` rows GSE226189 n=82 bulk, GSE307377 n=9). A 10x cohort is worth more than a larger bulk one because the platform shift is the thing under test. Say which platform each is.
+3. If no single-cell fibroblast cohort resolves, say so plainly. Do not substitute a bulk cohort and call the platform question answered.
+
+GSE325735 is out of scope.
+
+**Pre-registered reading** (only the outcome that fired; T-A cannot overturn the Stage 2 `no_decline` verdict by itself):
+- ρ > 0 with null ≤ 0.05 in the primary external cell → the ruler is a working instrument outside its training cohort; the Stage 2 `no_decline` verdict is interpretable as a statement about OSKM.
+- ρ ≤ 0 or null > 0.05 → the ruler does not validate externally; Stage 2 is uninterpretable and `no_decline` must not be reported as a finding about reprogramming.
+- bulk external passes, single-cell external fails (or none resolves) → the platform shift is unresolved; the Stage 2 projection rests on an unvalidated cross-platform step; do not resolve it by argument.
+
+[frozen] n_genes=23485 n_donors=652 method=ridge regime=raw
+[geo] fetching SOFT for GSE113957
+[geo] GSE113957 Series_title: Predicting age from the transcriptome of human dermal fibroblasts
+[geo] GSE113957 Series_type: ['Expression profiling by high throughput sequencing']
+[geo] GSE113957 Series_platform_id: ['GPL16791', 'GPL18573']
+[geo] GSE113957 n Sample_id: 143
+[geo] GSE113957 Series_supplementary_file: ['ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/suppl/GSE113957_fpkm.txt.gz']
+[geo] GSE113957 series fields actually read: ['Series_contact_address', 'Series_contact_city', 'Series_contact_country', 'Series_contact_department', 'Series_contact_email', 'Series_contact_institute', 'Series_contact_name', 'Series_contact_phone', 'Series_contact_state', 'Series_contact_zip/postal_code', 'Series_contributor', 'Series_geo_accession', 'Series_last_update_date', 'Series_overall_design', 'Series_platform_id', 'Series_platform_organism', 'Series_platform_taxid', 'Series_pubmed_id', 'Series_relation', 'Series_sample_id', 'Series_sample_organism', 'Series_sample_taxid', 'Series_status', 'Series_submission_date', 'Series_summary', 'Series_supplementary_file', 'Series_title', 'Series_type']
+[geo] parsed 143 GSM. columns actually read (union of Sample_* keys): ['Sample_channel_count', 'Sample_characteristics_ch1', 'Sample_contact_address', 'Sample_contact_city', 'Sample_contact_country', 'Sample_contact_department', 'Sample_contact_email', 'Sample_contact_institute', 'Sample_contact_name', 'Sample_contact_phone', 'Sample_contact_state', 'Sample_contact_zip/postal_code', 'Sample_data_processing', 'Sample_data_row_count', 'Sample_description', 'Sample_extract_protocol_ch1', 'Sample_geo_accession', 'Sample_growth_protocol_ch1', 'Sample_instrument_model', 'Sample_last_update_date', 'Sample_library_selection', 'Sample_library_source', 'Sample_library_strategy', 'Sample_molecule_ch1', 'Sample_organism_ch1', 'Sample_platform_id', 'Sample_relation', 'Sample_series_id', 'Sample_source_name_ch1', 'Sample_status', 'Sample_submission_date', 'Sample_supplementary_file_1', 'Sample_taxid_ch1', 'Sample_title', 'Sample_type', 'gsm']
+[GSE113957] n_gsm=143 n_with_age=135 missing_age=8 age<18=24 adult=111 platform={'kind': 'bulk_rnaseq', 'is_array': False, 'is_seq': True, 'is_sc': False, 'types': ['Expression profiling by high throughput sequencing'], 'platforms': ['GPL16791', 'GPL18573'], 'molecules': ['total RNA']}
+FAIL TypeError: dict() got multiple values for keyword argument 'accession'
+====================================================================================================
+FIBRO2 RUN cell=ta  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+====================================================================================================
+FIBRO2 T-A  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+Written **before any T-A download, projection, or ρ**, 2026-09-18. No threshold in this block is re-tuned after numbers exist.
+
+Take the Stage 1 ridge direction **exactly as frozen in `results/fibro/frozen_ruler_ridge_raw.npz`**. Refit nothing. Recalibrate nothing. Rescale nothing. Project, score, report Spearman ρ vs donor age.
+
+Same normalization as the frozen GTEx spec (FINDINGS_GTEX.md Stage 0 / FINDINGS_FIBRO.md Stage 1): TMM/edgeR log2-CPM (`prior.count=2`). Genes restricted to the overlap with the frozen ruler. Missing overlap genes left at z=0 (FINDINGS_EXTERNAL.md rule). Gene-overlap count reported. z uses the frozen train mean and sd.
+
+Metric: Spearman ρ vs the age the record states. Donor-level permutation null n_perm=200 (scores held fixed; shuffle donor ages; each cell starts a fresh Generator on seed `20260914`). Donor-bootstrap 95% percentile CI, B=200, seed `20260918`. Calibrated R² and uncalibrated R² reported; uncalibrated R² is never a gate. Pearson r reported, not a gate. Nothing averaged across cohorts.
+
+Adult restriction on the primary cell: GSE113957 samples with stated age < 18 are excluded to match the GTEx training range; the excluded count is reported. Do not infer a donor age that the record does not state. A record that does not state per-sample donor age is unusable.
+
+Cohorts, in priority order, each resolved from the record this session:
+1. **GSE113957** — primary external cell. Human dermal fibroblast. Ages stated in titles. Bulk. Adults ≥18.
+2. **Any single-cell fibroblast/skin aging cohort with ≥10 donors and stated ages** resolved this session (CELLxGENE, GEO, or SCOPING_TISSUE.md `near_miss` rows GSE226189 n=82 bulk, GSE307377 n=9). A 10x cohort is worth more than a larger bulk one because the platform shift is the thing under test. Say which platform each is.
+3. If no single-cell fibroblast cohort resolves, say so plainly. Do not substitute a bulk cohort and call the platform question answered.
+
+GSE325735 is out of scope.
+
+**Pre-registered reading** (only the outcome that fired; T-A cannot overturn the Stage 2 `no_decline` verdict by itself):
+- ρ > 0 with null ≤ 0.05 in the primary external cell → the ruler is a working instrument outside its training cohort; the Stage 2 `no_decline` verdict is interpretable as a statement about OSKM.
+- ρ ≤ 0 or null > 0.05 → the ruler does not validate externally; Stage 2 is uninterpretable and `no_decline` must not be reported as a finding about reprogramming.
+- bulk external passes, single-cell external fails (or none resolves) → the platform shift is unresolved; the Stage 2 projection rests on an unvalidated cross-platform step; do not resolve it by argument.
+
+[frozen] n_genes=23485 n_donors=652 method=ridge regime=raw
+[geo] fetching SOFT for GSE113957
+[geo] GSE113957 Series_title: Predicting age from the transcriptome of human dermal fibroblasts
+[geo] GSE113957 Series_type: ['Expression profiling by high throughput sequencing']
+[geo] GSE113957 Series_platform_id: ['GPL16791', 'GPL18573']
+[geo] GSE113957 n Sample_id: 143
+[geo] GSE113957 Series_supplementary_file: ['ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/suppl/GSE113957_fpkm.txt.gz']
+[geo] GSE113957 series fields actually read: ['Series_contact_address', 'Series_contact_city', 'Series_contact_country', 'Series_contact_department', 'Series_contact_email', 'Series_contact_institute', 'Series_contact_name', 'Series_contact_phone', 'Series_contact_state', 'Series_contact_zip/postal_code', 'Series_contributor', 'Series_geo_accession', 'Series_last_update_date', 'Series_overall_design', 'Series_platform_id', 'Series_platform_organism', 'Series_platform_taxid', 'Series_pubmed_id', 'Series_relation', 'Series_sample_id', 'Series_sample_organism', 'Series_sample_taxid', 'Series_status', 'Series_submission_date', 'Series_summary', 'Series_supplementary_file', 'Series_title', 'Series_type']
+[geo] parsed 143 GSM. columns actually read (union of Sample_* keys): ['Sample_channel_count', 'Sample_characteristics_ch1', 'Sample_contact_address', 'Sample_contact_city', 'Sample_contact_country', 'Sample_contact_department', 'Sample_contact_email', 'Sample_contact_institute', 'Sample_contact_name', 'Sample_contact_phone', 'Sample_contact_state', 'Sample_contact_zip/postal_code', 'Sample_data_processing', 'Sample_data_row_count', 'Sample_description', 'Sample_extract_protocol_ch1', 'Sample_geo_accession', 'Sample_growth_protocol_ch1', 'Sample_instrument_model', 'Sample_last_update_date', 'Sample_library_selection', 'Sample_library_source', 'Sample_library_strategy', 'Sample_molecule_ch1', 'Sample_organism_ch1', 'Sample_platform_id', 'Sample_relation', 'Sample_series_id', 'Sample_source_name_ch1', 'Sample_status', 'Sample_submission_date', 'Sample_supplementary_file_1', 'Sample_taxid_ch1', 'Sample_title', 'Sample_type', 'gsm']
+[GSE113957] n_gsm=143 n_with_age=135 missing_age=8 age<18=24 adult=111 platform={'kind': 'bulk_rnaseq', 'is_array': False, 'is_seq': True, 'is_sc': False, 'types': ['Expression profiling by high throughput sequencing'], 'platforms': ['GPL16791', 'GPL18573'], 'molecules': ['total RNA']}
+[download] https://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/suppl/GSE113957_fpkm.txt.gz
+[download] GSE113957_fpkm.txt.gz size=7532882
+[download] series matrix https://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/matrix/GSE113957_series_matrix.txt.gz
+====================================================================================================
+FIBRO2 RUN cell=ta  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+====================================================================================================
+FIBRO2 T-A  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+Written **before any T-A download, projection, or ρ**, 2026-09-18. No threshold in this block is re-tuned after numbers exist.
+
+Take the Stage 1 ridge direction **exactly as frozen in `results/fibro/frozen_ruler_ridge_raw.npz`**. Refit nothing. Recalibrate nothing. Rescale nothing. Project, score, report Spearman ρ vs donor age.
+
+Same normalization as the frozen GTEx spec (FINDINGS_GTEX.md Stage 0 / FINDINGS_FIBRO.md Stage 1): TMM/edgeR log2-CPM (`prior.count=2`). Genes restricted to the overlap with the frozen ruler. Missing overlap genes left at z=0 (FINDINGS_EXTERNAL.md rule). Gene-overlap count reported. z uses the frozen train mean and sd.
+
+Metric: Spearman ρ vs the age the record states. Donor-level permutation null n_perm=200 (scores held fixed; shuffle donor ages; each cell starts a fresh Generator on seed `20260914`). Donor-bootstrap 95% percentile CI, B=200, seed `20260918`. Calibrated R² and uncalibrated R² reported; uncalibrated R² is never a gate. Pearson r reported, not a gate. Nothing averaged across cohorts.
+
+Adult restriction on the primary cell: GSE113957 samples with stated age < 18 are excluded to match the GTEx training range; the excluded count is reported. Do not infer a donor age that the record does not state. A record that does not state per-sample donor age is unusable.
+
+Cohorts, in priority order, each resolved from the record this session:
+1. **GSE113957** — primary external cell. Human dermal fibroblast. Ages stated in titles. Bulk. Adults ≥18.
+2. **Any single-cell fibroblast/skin aging cohort with ≥10 donors and stated ages** resolved this session (CELLxGENE, GEO, or SCOPING_TISSUE.md `near_miss` rows GSE226189 n=82 bulk, GSE307377 n=9). A 10x cohort is worth more than a larger bulk one because the platform shift is the thing under test. Say which platform each is.
+3. If no single-cell fibroblast cohort resolves, say so plainly. Do not substitute a bulk cohort and call the platform question answered.
+
+GSE325735 is out of scope.
+
+**Pre-registered reading** (only the outcome that fired; T-A cannot overturn the Stage 2 `no_decline` verdict by itself):
+- ρ > 0 with null ≤ 0.05 in the primary external cell → the ruler is a working instrument outside its training cohort; the Stage 2 `no_decline` verdict is interpretable as a statement about OSKM.
+- ρ ≤ 0 or null > 0.05 → the ruler does not validate externally; Stage 2 is uninterpretable and `no_decline` must not be reported as a finding about reprogramming.
+- bulk external passes, single-cell external fails (or none resolves) → the platform shift is unresolved; the Stage 2 projection rests on an unvalidated cross-platform step; do not resolve it by argument.
+
+[frozen] n_genes=23485 n_donors=652 method=ridge regime=raw
+[geo] fetching SOFT for GSE113957
+[geo] GSE113957 Series_title: Predicting age from the transcriptome of human dermal fibroblasts
+[geo] GSE113957 Series_type: ['Expression profiling by high throughput sequencing']
+[geo] GSE113957 Series_platform_id: ['GPL16791', 'GPL18573']
+[geo] GSE113957 n Sample_id: 143
+[geo] GSE113957 Series_supplementary_file: ['ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/suppl/GSE113957_fpkm.txt.gz']
+[geo] GSE113957 series fields actually read: ['Series_contact_address', 'Series_contact_city', 'Series_contact_country', 'Series_contact_department', 'Series_contact_email', 'Series_contact_institute', 'Series_contact_name', 'Series_contact_phone', 'Series_contact_state', 'Series_contact_zip/postal_code', 'Series_contributor', 'Series_geo_accession', 'Series_last_update_date', 'Series_overall_design', 'Series_platform_id', 'Series_platform_organism', 'Series_platform_taxid', 'Series_pubmed_id', 'Series_relation', 'Series_sample_id', 'Series_sample_organism', 'Series_sample_taxid', 'Series_status', 'Series_submission_date', 'Series_summary', 'Series_supplementary_file', 'Series_title', 'Series_type']
+[geo] parsed 143 GSM. columns actually read (union of Sample_* keys): ['Sample_channel_count', 'Sample_characteristics_ch1', 'Sample_contact_address', 'Sample_contact_city', 'Sample_contact_country', 'Sample_contact_department', 'Sample_contact_email', 'Sample_contact_institute', 'Sample_contact_name', 'Sample_contact_phone', 'Sample_contact_state', 'Sample_contact_zip/postal_code', 'Sample_data_processing', 'Sample_data_row_count', 'Sample_description', 'Sample_extract_protocol_ch1', 'Sample_geo_accession', 'Sample_growth_protocol_ch1', 'Sample_instrument_model', 'Sample_last_update_date', 'Sample_library_selection', 'Sample_library_source', 'Sample_library_strategy', 'Sample_molecule_ch1', 'Sample_organism_ch1', 'Sample_platform_id', 'Sample_relation', 'Sample_series_id', 'Sample_source_name_ch1', 'Sample_status', 'Sample_submission_date', 'Sample_supplementary_file_1', 'Sample_taxid_ch1', 'Sample_title', 'Sample_type', 'gsm']
+[GSE113957] n_gsm=143 n_with_age=135 missing_age=8 age<18=24 adult=111 platform={'kind': 'bulk_rnaseq', 'is_array': False, 'is_seq': True, 'is_sc': False, 'types': ['Expression profiling by high throughput sequencing'], 'platforms': ['GPL16791', 'GPL18573'], 'molecules': ['total RNA']}
+[download] https://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/suppl/GSE113957_fpkm.txt.gz
+[download] GSE113957_fpkm.txt.gz size=7532882
+[download] series matrix HEAD https://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/matrix/GSE113957_series_matrix.txt.gz
+[download] series matrix 404 — skip (not retrying)
+[counts] reading GSE113957_fpkm.txt.gz
+[counts] GSE113957_fpkm.txt.gz genes=27142 samples=147 columns actually read (first 12)=['start', 'end', 'Length', 'Copies', '101_19yr_Female_Caucasian', '102_19yr_Male_Caucasian', '103_19yr_Male_Caucasian', '104_19yr_Male_Caucasian', '105_20yr_Male_Caucasian', '106_20yr_Female_Caucasian', '107_31yr_Female_Caucasian', '108_31_female_Caucasian']
+[GSE113957] GSE113957_fpkm.txt.gz STOP [counts] GSE113957_fpkm.txt.gz: values are not integer counts (cannot apply TMM/log2-CPM). min=0.0 max=249213345.0 mean=1009452.0862567581
+[cxg] GET https://api.cellxgene.cziscience.com/curation/v1/datasets
+[cxg] 2228 datasets returned
+[cxg] fibroblast/skin title-or-tissue hits: 766
+[cxg] ≥10 donors and ≥8 numeric development_stage years: 121
+[cxg] top candidates:
+                          dataset_id                        collection_id                                                                                                       title  cell_count  n_donors  n_cell_types                                                                                                                                                                                                                   assays                                                                                                                                                                                                                                                                                                                                                                                                          tissues                                                                                                                                                                                                                                                                                                                                                                                                       cell_types  n_dev_stages  n_stages_numeric_years   age_min  age_max                                                                            h5ad_url  h5ad_bytes  is_10x  fibroblast_in_title  dermal_in_title
+a19d1667-a7b5-4556-9e5f-f9bfa690c0f1 3c4f0970-7614-43de-beb7-6128b3cb74ed                                                                               Human dermal fibroblast atlas      108440       221             1                                                                                                                                                        10x 3' v1; 10x 3' v2; 10x 3' v3; 10x 5' v1; MARS-seq; Seq-Well S3                                                                                                                                                                            hindlimb skin; inguinal region skin; lower leg skin; skin of abdomen; skin of back; skin of body; skin of cheek; skin of chest; skin of face; skin of forearm; skin of hip; skin of leg; skin of pes; skin of shoulder; skin of trunk                                                                                                                                                                                                                                                                                                                                                                                                  skin fibroblast            48                      47 18.000000     79.0 https://datasets.cellxgene.cziscience.com/8ae4471a-2e70-47b5-bc42-4f0df26a9996.h5ad  1831628432    True                 True             True
+62527b1a-826c-423d-b123-e495846979a9 05e3d0fc-c9dd-4f14-9163-2b242b3bb5c2                                           snRNA-seq of human optic nerve and optic nerve head - fibroblasts      118925        83             1                                                                                                                                                                                                                10x 3' v3                                                                                                                                                                                                                                                                                                                                                                                     cranial nerve II; optic disc                                                                                                                                                                                                                                                                                                     
+[cxg] candidate a19d1667-a7b5-4556-9e5f-f9bfa690c0f1 title='Human dermal fibroblast atlas' n_donors=221 assays=10x 3' v1; 10x 3' v2; 10x 3' v3; 10x 5' v1; MARS-seq; Seq-Well S3 bytes=1831628432
+[cxg] peek obs a19d1667 https://datasets.cellxgene.cziscience.com/8ae4471a-2e70-47b5-bc42-4f0df26a9996.h5ad
+[cxg] obs columns actually read (34): ['cluster_robust', 'donor_id', 'development_stage_ontology_term_id', 'sex_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'disease_ontology_term_id', 'tissue_ontology_term_id', 'cell_type_ontology_term_id', 'assay_ontology_term_id', 'suspension_type', 'Author', 'Accession (Sample)', 'Aligner', 'Genome', 'Donor identifier', 'Sample identifier', 'Internal sample identifier', 'Sequencer', 'Age', 'Race', 'Ethnicity', 'Sample location', 'Condition', 'Condition (other)', 'is_primary_data', 'tissue_type', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid']
+[cxg] matrix raw/X shape=(108440, 25952)
+[cxg] integer counts path=raw/X
+[cxg] donor_id: n=108,440 nunique=221 top=[('Ahl-22-P1_Y', 9243), ('Ahl-22-P3_Y', 7572), ('Ahl-22-P5_Y', 3928), ('He-20-Ctrl', 3443), ('Rey-21-SKN8104899', 2899), ('Den-21-Scar_2', 2632), ('Boo-21-HC03', 2431), ('Den-21-Scar_1', 2378), ('Bil-22-H05', 2114), ('Sol-20-y1', 1764), ('Bur-22-HC 2', 1475), ('Rey-21-SKN8105197', 1428)]
+[cxg] development_stage: n=108,440 nunique=48 top=[('unknown', 16739), ('22-year-old stage', 9243), ('42-year-old stage', 8008), ('29-year-old stage', 7723), ('64-year-old stage', 6462), ('25-year-old stage', 5692), ('36-year-old stage', 3712), ('59-year-old stage', 3497), ('75-year-old stage', 3280), ('39-year-old stage', 3182), ('28-year-old stage', 3155), ('48-year-old stage', 2999)]
+[cxg] sex: n=108,440 nunique=3 top=[('female', 60883), ('male', 33084), ('unknown', 14473)]
+[cxg] cell_type: n=108,440 nunique=1 top=[('skin fibroblast', 108440)]
+[cxg] assay: n=108,440 nunique=6 top=[("10x 3' v2", 53883), ("10x 3' v3", 33087), ('MARS-seq', 15393), ("10x 5' v1", 2885), ("10x 3' v1", 2742), ('Seq-Well S3', 450)]
+[cxg] tissue: n=108,440 nunique=15 top=[('skin of body', 37331), ('skin of forearm', 32138), ('skin of pes', 9887), ('skin of chest', 7099), ('skin of leg', 3961), ('hindlimb skin', 3443), ('skin of abdomen', 3247), ('inguinal region skin', 2739), ('skin of back', 2378), ('skin of hip', 2272), ('lower leg skin', 1475), ('skin of cheek', 1235)]
+[cxg] disease: n=108,440 nunique=4 top=[('normal', 100113), ('injury', 5983), ('keloid', 1270), ('localized scleroderma', 1074)]
+[cxg] suspension_type: n=108,440 nunique=1 top=[('cell', 108440)]
+[cxg] is_primary_data: n=108,440 nunique=2 top=[(True, 91218), (False, 17222)]
+[cxg] opening <repo>\data\raw\fibro2\cxg\8ae4471a-2e70-47b5-bc42-4f0df26a9996.h5ad
+[cxg] obs columns actually read: ['cluster_robust', 'donor_id', 'development_stage_ontology_term_id', 'sex_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'disease_ontology_term_id', 'tissue_ontology_term_id', 'cell_type_ontology_term_id', 'assay_ontology_term_id', 'suspension_type', 'Author', 'Accession (Sample)', 'Aligner', 'Genome', 'Donor identifier', 'Sample identifier', 'Internal sample identifier', 'Sequencer', 'Age', 'Race', 'Ethnicity', 'Sample location', 'Condition', 'Condition (other)', 'is_primary_data', 'tissue_type', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid']
+[cxg] n_cells=108,440 age_col=development_stage
+[cxg] 10x cells=92,597/108,440
+[cxg] counts=raw/X n_var=25952 gene_id n=25952
+   rows 40,000/108,440  (5s)
+   rows 80,000/108,440  (9s)
+   rows 108,440/108,440  (11s)
+[cxg] pseudobulk donors=93 adult_applied=True n_excl_child_donors=0 platform=10x (restricted)
+[align cxg_a19d1667] ruler_genes=23485 overlap=17047 ensembl=17029 symbol_fallback=18 missing=6438
+[tmm cxg_a19d1667] n_samples=93 n_genes=23485 nf_median=0.9892 prior.count=2
+[cxg_a19d1667] missing-gene columns set to z=0: 6580
+[cxg_a19d1667] ρ=+0.455 null=-0.003 p=+0.005 CI=[+0.253, +0.605] calR²=+0.171 R²=-9.664 pass=True n=93 n_donors=93 overlap=17047
+[geo] fetching SOFT for GSE226189
+[geo] GSE226189 Series_title: Transcriptomes of human primary skin fibroblasts reveal age-associated mRNAs and long noncoding RNAs
+[geo] GSE226189 Series_type: ['Expression profiling by high throughput sequencing', 'Non-coding RNA profiling by high throughput sequencing']
+[geo] GSE226189 Series_platform_id: ['GPL24676']
+[geo] GSE226189 n Sample_id: 82
+[geo] GSE226189 Series_supplementary_file: ['ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE226nnn/GSE226189/suppl/GSE226189_RAW.tar']
+[geo] GSE226189 series fields actually read: ['Series_contact_address', 'Series_contact_city', 'Series_contact_country', 'Series_contact_department', 'Series_contact_institute', 'Series_contact_laboratory', 'Series_contact_name', 'Series_contact_state', 'Series_contact_zip/postal_code', 'Series_contributor', 'Series_geo_accession', 'Series_last_update_date', 'Series_overall_design', 'Series_platform_id', 'Series_platform_organism', 'Series_platform_taxid', 'Series_relation', 'Series_sample_id', 'Series_sample_organism', 'Series_sample_taxid', 'Series_status', 'Series_submission_date', 'Series_summary', 'Series_supplementary_file', 'Series_title', 'Series_type']
+[download] series matrix FAIL: RuntimeError: failed to download https://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/matrix/GSE113957_series_matrix.txt.gz
+[counts] reading GSE113957_fpkm.txt.gz
+[geo] parsed 82 GSM. columns actually read (union of Sample_* keys): ['Sample_channel_count', 'Sample_characteristics_ch1', 'Sample_contact_address', 'Sample_contact_city', 'Sample_contact_country', 'Sample_contact_department', 'Sample_contact_institute', 'Sample_contact_laboratory', 'Sample_contact_name', 'Sample_contact_state', 'Sample_contact_zip/postal_code', 'Sample_data_processing', 'Sample_data_row_count', 'Sample_extract_protocol_ch1', 'Sample_geo_accession', 'Sample_growth_protocol_ch1', 'Sample_instrument_model', 'Sample_last_update_date', 'Sample_library_selection', 'Sample_library_source', 'Sample_library_strategy', 'Sample_molecule_ch1', 'Sample_organism_ch1', 'Sample_platform_id', 'Sample_relation', 'Sample_series_id', 'Sample_source_name_ch1', 'Sample_status', 'Sample_submission_date', 'Sample_supplementary_file_1', 'Sample_supplementary_file_2', 'Sample_taxid_ch1', 'Sample_title', 'Sample_type', 'gsm']
+[download] https://ftp.ncbi.nlm.nih.gov/geo/series/GSE226nnn/GSE226189/suppl/GSE226189_RAW.tar
+[counts] GSE113957_fpkm.txt.gz genes=27142 samples=147 columns actually read (first 12)=['start', 'end', 'Length', 'Copies', '101_19yr_Female_Caucasian', '102_19yr_Male_Caucasian', '103_19yr_Male_Caucasian', '104_19yr_Male_Caucasian', '105_20yr_Male_Caucasian', '106_20yr_Female_Caucasian', '107_31yr_Female_Caucasian', '108_31_female_Caucasian']
+[GSE113957] GSE113957_fpkm.txt.gz STOP [counts] GSE113957_fpkm.txt.gz: values are not integer counts (cannot apply TMM/log2-CPM). min=0.0 max=249213345.0 mean=1009452.0862567581
+[cxg] GET https://api.cellxgene.cziscience.com/curation/v1/datasets
+[cxg] 2228 datasets returned
+[cxg] fibroblast/skin title-or-tissue hits: 766
+[cxg] ≥10 donors and ≥8 numeric development_stage years: 121
+[cxg] top candidates:
+                          dataset_id                        collection_id                                                                                                       title  cell_count  n_donors  n_cell_types                                                                                                                                                                                                                   assays                                                                                                                                                                                                                                                                                                                                                                                                          tissues                                                                                                                                                                                                                                                                                                                                                                                                       cell_types  n_dev_stages  n_stages_numeric_years   age_min  age_max                                                                            h5ad_url  h5ad_bytes  is_10x  fibroblast_in_title  dermal_in_title
+a19d1667-a7b5-4556-9e5f-f9bfa690c0f1 3c4f0970-7614-43de-beb7-6128b3cb74ed                                                                               Human dermal fibroblast atlas      108440       221             1                                                                                                                                                        10x 3' v1; 10x 3' v2; 10x 3' v3; 10x 5' v1; MARS-seq; Seq-Well S3                                                                                                                                                                            hindlimb skin; inguinal region skin; lower leg skin; skin of abdomen; skin of back; skin of body; skin of cheek; skin of chest; skin of face; skin of forearm; skin of hip; skin of leg; skin of pes; skin of shoulder; skin of trunk                                                                                                                                                                                                                                                                                                                                                                                                  skin fibroblast            48                      47 18.000000     79.0 https://datasets.cellxgene.cziscience.com/8ae4471a-2e70-47b5-bc42-4f0df26a9996.h5ad  1831628432    True                 True             True
+62527b1a-826c-423d-b123-e495846979a9 05e3d0fc-c9dd-4f14-9163-2b242b3bb5c2                                           snRNA-seq of human optic nerve and optic nerve head - fibroblasts      118925        83             1                                                                                                                                                                                                                10x 3' v3                                                                                                                                                                                                                                                                                                                                                                                     cranial nerve II; optic disc                                                                                                                                                                                                                                                                                                     
+[cxg] candidate a19d1667-a7b5-4556-9e5f-f9bfa690c0f1 title='Human dermal fibroblast atlas' n_donors=221 assays=10x 3' v1; 10x 3' v2; 10x 3' v3; 10x 5' v1; MARS-seq; Seq-Well S3 bytes=1831628432
+[cxg] peek obs a19d1667 https://datasets.cellxgene.cziscience.com/8ae4471a-2e70-47b5-bc42-4f0df26a9996.h5ad
+[cxg] obs columns actually read (34): ['cluster_robust', 'donor_id', 'development_stage_ontology_term_id', 'sex_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'disease_ontology_term_id', 'tissue_ontology_term_id', 'cell_type_ontology_term_id', 'assay_ontology_term_id', 'suspension_type', 'Author', 'Accession (Sample)', 'Aligner', 'Genome', 'Donor identifier', 'Sample identifier', 'Internal sample identifier', 'Sequencer', 'Age', 'Race', 'Ethnicity', 'Sample location', 'Condition', 'Condition (other)', 'is_primary_data', 'tissue_type', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid']
+[cxg] matrix raw/X shape=(108440, 25952)
+[cxg] integer counts path=raw/X
+[download] GSE226189_RAW.tar size=31559680
+[download] series matrix HEAD https://ftp.ncbi.nlm.nih.gov/geo/series/GSE226nnn/GSE226189/matrix/GSE226189_series_matrix.txt.gz
+[counts] reading GSE226189_RAW.tar
+FAIL ValueError: Multiple files found in TAR archive. Only one file per TAR archive: ['GSM7067566_SKIN_AGE22_M_GR1_Gt073_circRNA.txt.gz', 'GSM7067566_SKIN_AGE22_M_GR1_Gt073_geneCOUNT.txt.gz', 'GSM7067567_SKIN_AGE23_M_GR1_Gt022_circRNA.txt.gz', 'GSM7067567_SKIN_AGE23_M_GR1_Gt022_geneCOUNT.txt.gz', 'GSM7067568_SKIN_AGE25_F_GR1_Gt085_circRNA.txt.gz', 'GSM7067568_SKIN_AGE25_F_GR1_Gt085_geneCOUNT.txt.gz', 'GSM7067569_SKIN_AGE25_M_GR1_Gt046_circRNA.txt.gz', 'GSM7067569_SKIN_AGE25_M_GR1_Gt046_geneCOUNT.txt.gz', 'GSM7067570_SKIN_AGE26_F_GR1_Gt045_circRNA.txt.gz', 'GSM7067570_SKIN_AGE26_F_GR1_Gt045_geneCOUNT.txt.gz', 'GSM7067571_SKIN_AGE27_F_GR1_Gt055_circRNA.txt.gz', 'GSM7067571_SKIN_AGE27_F_GR1_Gt055_geneCOUNT.txt.gz', 'GSM7067572_SKIN_AGE27_M_GR1_Gt142_circRNA.txt.gz', 'GSM7067572_SKIN_AGE27_M_GR1_Gt142_geneCOUNT.txt.gz', 'GSM7067573_SKIN_AGE28_F_GR1_Gt137_circRNA.txt.gz', 'GSM7067573_SKIN_AGE28_F_GR1_Gt137_geneCOUNT.txt.gz', 'GSM7067574_SKIN_AGE28_M_GR1_Gt001_circRNA.txt.gz', 'GSM7067574_SKIN_AGE28_M_GR1_Gt001_geneCOUNT.txt.gz', 'GSM7067575_SKIN_AGE28_M_GR1_Gt123_circRNA.txt.gz', 'GSM7067575_SKIN_AGE28_M_GR1_Gt123_geneCOUNT.txt.gz', 'GSM7067576_SKIN_AGE29_M_GR1_Gt135_circRNA.txt.gz', 'GSM7067576_SKIN_AGE29_M_GR1_Gt135_geneCOUNT.txt.gz', 'GSM7067577_SKIN_AGE30_M_GR1_Gt122_circRNA.txt.gz', 'GSM7067577_SKIN_AGE30_M_GR1_Gt122_geneCOUNT.txt.gz', 'GSM7067578_SKIN_AGE31_F_GR1_Gt090_circRNA.txt.gz', 'GSM7067578_SKIN_AGE31_F_GR1_Gt090_geneCOUNT.txt.gz', 'GSM7067579_SKIN_AGE31_M_GR1_Gt005_circRNA.txt.gz', 'GSM7067579_SKIN_AGE31_M_GR1_Gt005_geneCOUNT.txt.gz', 'GSM7067580_SKIN_AGE31_M_GR1_Gt025_circRNA.txt.gz', 'GSM7067580_SKIN_AGE31_M_GR1_Gt025_geneCOUNT.txt.gz', 'GSM7067581_SKIN_AGE31_M_GR1_Gt119_circRNA.txt.gz', 'GSM7067581_SKIN_AGE31_M_GR1_Gt119_geneCOUNT.txt.gz', 'GSM7067582_SKIN_AGE31_M_GR1_Gt130_circRNA.txt.gz', 'GSM7067582_SKIN_AGE31_M_GR1_Gt130_geneCOUNT.txt.gz', 'GSM7067583_SKIN_AGE32_F_GR1_Gt144_circRNA.txt.gz', 'GSM7067583_SKIN_AGE32_F_GR1_Gt144_geneCOUNT.txt.gz', 'GSM7067584_SKIN_AGE32_M_GR1_Gt042_circRNA.txt.gz', 'GSM7067584_SKIN_AGE32_M_GR1_Gt042_geneCOUNT.txt.gz', 'GSM7067585_SKIN_AGE35_F_GR2_Gt141_circRNA.txt.gz', 'GSM7067585_SKIN_AGE35_F_GR2_Gt141_geneCOUNT.txt.gz', 'GSM7067586_SKIN_AGE35_M_GR2_Gt104_circRNA.txt.gz', 'GSM7067586_SKIN_AGE35_M_GR2_Gt104_geneCOUNT.txt.gz', 'GSM7067587_SKIN_AGE35_M_GR2_Gt129_circRNA.txt.gz', 'GSM7067587_SKIN_AGE35_M_GR2_Gt129_geneCOUNT.txt.gz', 'GSM7067588_SKIN_AGE37_M_GR2_Gt064_circRNA.txt.gz', 'GSM7067588_SKIN_AGE37_M_GR2_Gt064_geneCOUNT.txt.gz', 'GSM7067589_SKIN_AGE38_F_GR2_Gt016_circRNA.txt.gz', 'GSM7067589_SKIN_AGE38_F_GR2_Gt016_geneCOUNT.txt.gz', 'GSM7067590_SKIN_AGE38_F_GR2_Gt152_circRNA.txt.gz', 'GSM7067590_SKIN_AGE38_F_GR2_Gt152_geneCOUNT.txt.gz', 'GSM7067591_SKIN_AGE38_M_GR2_Gt093_circRNA.txt.gz', 'GSM7067591_SKIN_AGE38_M_GR2_Gt093_geneCOUNT.txt.gz', 'GSM7067592_SKIN_AGE39_M_GR2_Gt126_circRNA.txt.gz', 'GSM7067592_SKIN_AGE39_M_GR2_Gt126_geneCOUNT.txt.gz', 'GSM7067593_SKIN_AGE42_F_GR2_Gt059_circRNA.txt.gz', 'GSM7067593_SKIN_AGE42_F_GR2_Gt059_geneCOUNT.txt.gz', 'GSM7067594_SKIN_AGE42_F_GR2_Gt145_circRNA.txt.gz', 'GSM7067594_SKIN_AGE42_F_GR2_Gt145_geneCOUNT.txt.gz', 'GSM7067595_SKIN_AGE42_M_GR2_Gt024_circRNA.txt.gz', 'GSM7067595_SKIN_AGE42_M_GR2_Gt024_geneCOUNT.txt.gz', 'GSM7067596_SKIN_AGE45_M_GR2_Gt017_circRNA.txt.gz', 'GSM7067596_SKIN_AGE45_M_GR2_Gt017_geneCOUNT.txt.gz', 'GSM7067597_SKIN_AGE45_M_GR2_Gt030_circRNA.txt.gz', 'GSM7067597_SKIN_AGE45_M_GR2_Gt030_geneCOUNT.txt.gz', 'GSM7067598_SKIN_AGE47_F_GR2_Gt078_circRNA.txt.gz', 'GSM7067598_SKIN_AGE47_F_GR2_Gt078_geneCOUNT.txt.gz', 'GSM7067599_SKIN_AGE47_M_GR2_Gt060_circRNA.txt.gz', 'GSM7067599_SKIN_AGE47_M_GR2_Gt060_geneCOUNT.txt.gz', 'GSM7067600_SKIN_AGE48_F_GR2_Gt133_circRNA.txt.gz', 'GSM7067600_SKIN_AGE48_F_GR2_Gt133_geneCOUNT.txt.gz', 'GSM7067601_SKIN_AGE48_F_GR2_Gt149_circRNA.txt.gz', 'GSM7067601_SKIN_AGE48_F_GR2_Gt149_geneCOUNT.txt.gz', 'GSM7067602_SKIN_AGE49_M_GR2_Gt128_circRNA.txt.gz', 'GSM7067602_SKIN_AGE49_M_GR2_Gt128_geneCOUNT.txt.gz', 'GSM7067603_SKIN_AGE51_M_GR3_Gt015_circRNA.txt.gz', 'GSM7067603_SKIN_AGE51_M_GR3_Gt015_geneCOUNT.txt.gz', 'GSM7067604_SKIN_AGE52_F_GR3_Gt027_circRNA.txt.gz', 'GSM7067604_SKIN_AGE52_F_GR3_Gt027_geneCOUNT.txt.gz', 'GSM7067605_SKIN_AGE52_F_GR3_Gt063_circRNA.txt.gz', 'GSM7067605_SKIN_AGE52_F_GR3_Gt063_geneCOUNT.txt.gz', 'GSM7067606_SKIN_AGE52_M_GR3_Gt007_circRNA.txt.gz', 'GSM7067606_SKIN_AGE52_M_GR3_Gt007_geneCOUNT.txt.gz', 'GSM7067607_SKIN_AGE52_M_GR3_Gt056_circRNA.txt.gz', 'GSM7067607_SKIN_AGE52_M_GR3_Gt056_geneCOUNT.txt.gz', 'GSM7067608_SKIN_AGE53_F_GR3_Gt146_circRNA.txt.gz', 'GSM7067608_SKIN_AGE53_F_GR3_Gt146_geneCOUNT.txt.gz', 'GSM7067609_SKIN_AGE54_M_GR3_Gt057_circRNA.txt.gz', 'GSM7067609_SKIN_AGE54_M_GR3_Gt057_geneCOUNT.txt.gz', 'GSM7067610_SKIN_AGE55_M_GR3_Gt136_circRNA.txt.gz', 'GSM7067610_SKIN_AGE55_M_GR3_Gt136_geneCOUNT.txt.gz', 'GSM7067611_SKIN_AGE56_F_GR3_Gt120_circRNA.txt.gz', 'GSM7067611_SKIN_AGE56_F_GR3_Gt120_geneCOUNT.txt.gz', 'GSM7067612_SKIN_AGE57_M_GR3_Gt004_circRNA.txt.gz', 'GSM7067612_SKIN_AGE57_M_GR3_Gt004_geneCOUNT.txt.gz', 'GSM7067613_SKIN_AGE58_F_GR3_Gt011_circRNA.txt.gz', 'GSM7067613_SKIN_AGE58_F_GR3_Gt011_geneCOUNT.txt.gz', 'GSM7067614_SKIN_AGE60_M_GR3_Gt013_circRNA.txt.gz', 'GSM7067614_SKIN_AGE60_M_GR3_Gt013_geneCOUNT.txt.gz', 'GSM7067615_SKIN_AGE61_F_GR3_Gt003_circRNA.txt.gz', 'GSM7067615_SKIN_AGE61_F_GR3_Gt003_geneCOUNT.txt.gz', 'GSM7067616_SKIN_AGE61_F_GR3_Gt102_circRNA.txt.gz', 'GSM7067616_SKIN_AGE61_F_GR3_Gt102_geneCOUNT.txt.gz', 'GSM7067617_SKIN_AGE62_F_GR3_Gt070_circRNA.txt.gz', 'GSM7067617_SKIN_AGE62_F_GR3_Gt070_geneCOUNT.txt.gz', 'GSM7067618_SKIN_AGE63_F_GR3_Gt101_circRNA.txt.gz', 'GSM7067618_SKIN_AGE63_F_GR3_Gt101_geneCOUNT.txt.gz', 'GSM7067619_SKIN_AGE63_M_GR3_Gt092_circRNA.txt.gz', 'GSM7067619_SKIN_AGE63_M_GR3_Gt092_geneCOUNT.txt.gz', 'GSM7067620_SKIN_AGE65_F_GR4_Gt033_circRNA.txt.gz', 'GSM7067620_SKIN_AGE65_F_GR4_Gt033_geneCOUNT.txt.gz', 'GSM7067621_SKIN_AGE66_F_GR3_Gt156_circRNA.txt.gz', 'GSM7067621_SKIN_AGE66_F_GR3_Gt156_geneCOUNT.txt.gz', 'GSM7067622_SKIN_AGE67_F_GR4_Gt080_circRNA.txt.gz', 'GSM7067622_SKIN_AGE67_F_GR4_Gt080_geneCOUNT.txt.gz', 'GSM7067623_SKIN_AGE67_M_GR4_Gt002_circRNA.txt.gz', 'GSM7067623_SKIN_AGE67_M_GR4_Gt002_geneCOUNT.txt.gz', 'GSM7067624_SKIN_AGE67_M_GR4_Gt039_circRNA.txt.gz', 'GSM7067624_SKIN_AGE67_M_GR4_Gt039_geneCOUNT.txt.gz', 'GSM7067625_SKIN_AGE69_F_GR4_Gt095_circRNA.txt.gz', 'GSM7067625_SKIN_AGE69_F_GR4_Gt095_geneCOUNT.txt.gz', 'GSM7067626_SKIN_AGE70_F_GR4_Gt089_circRNA.txt.gz', 'GSM7067626_SKIN_AGE70_F_GR4_Gt089_geneCOUNT.txt.gz', 'GSM7067627_SKIN_AGE70_M_GR4_Gt061_circRNA.txt.gz', 'GSM7067627_SKIN_AGE70_M_GR4_Gt061_geneCOUNT.txt.gz', 'GSM7067628_SKIN_AGE71_F_GR4_Gt138_circRNA.txt.gz', 'GSM7067628_SKIN_AGE71_F_GR4_Gt138_geneCOUNT.txt.gz', 'GSM7067629_SKIN_AGE72_F_GR4_Gt071_circRNA.txt.gz', 'GSM7067629_SKIN_AGE72_F_GR4_Gt071_geneCOUNT.txt.gz', 'GSM7067630_SKIN_AGE72_F_GR4_Gt109_circRNA.txt.gz', 'GSM7067630_SKIN_AGE72_F_GR4_Gt109_geneCOUNT.txt.gz', 'GSM7067631_SKIN_AGE72_M_GR4_Gt014_circRNA.txt.gz', 'GSM7067631_SKIN_AGE72_M_GR4_Gt014_geneCOUNT.txt.gz', 'GSM7067632_SKIN_AGE72_M_GR4_Gt065_circRNA.txt.gz', 'GSM7067632_SKIN_AGE72_M_GR4_Gt065_geneCOUNT.txt.gz', 'GSM7067633_SKIN_AGE72_M_GR4_Gt084_circRNA.txt.gz', 'GSM7067633_SKIN_AGE72_M_GR4_Gt084_geneCOUNT.txt.gz', 'GSM7067634_SKIN_AGE72_M_GR4_Gt114_circRNA.txt.gz', 'GSM7067634_SKIN_AGE72_M_GR4_Gt114_geneCOUNT.txt.gz', 'GSM7067635_SKIN_AGE73_F_GR4_Gt018_circRNA.txt.gz', 'GSM7067635_SKIN_AGE73_F_GR4_Gt018_geneCOUNT.txt.gz', 'GSM7067636_SKIN_AGE76_M_GR4_Gt115_circRNA.txt.gz', 'GSM7067636_SKIN_AGE76_M_GR4_Gt115_geneCOUNT.txt.gz', 'GSM7067637_SKIN_AGE77_F_GR4_Gt113_circRNA.txt.gz', 'GSM7067637_SKIN_AGE77_F_GR4_Gt113_geneCOUNT.txt.gz', 'GSM7067638_SKIN_AGE78_F_GR4_Gt035_circRNA.txt.gz', 'GSM7067638_SKIN_AGE78_F_GR4_Gt035_geneCOUNT.txt.gz', 'GSM7067639_SKIN_AGE80_F_GR5_Gt032_circRNA.txt.gz', 'GSM7067639_SKIN_AGE80_F_GR5_Gt032_geneCOUNT.txt.gz', 'GSM7067640_SKIN_AGE80_F_GR5_Gt083_circRNA.txt.gz', 'GSM7067640_SKIN_AGE80_F_GR5_Gt083_geneCOUNT.txt.gz', 'GSM7067641_SKIN_AGE81_M_GR5_Gt029_circRNA.txt.gz', 'GSM7067641_SKIN_AGE81_M_GR5_Gt029_geneCOUNT.txt.gz', 'GSM7067642_SKIN_AGE81_M_GR5_Gt108_circRNA.txt.gz', 'GSM7067642_SKIN_AGE81_M_GR5_Gt108_geneCOUNT.txt.gz', 'GSM7067643_SKIN_AGE81_M_GR5_Gt110_circRNA.txt.gz', 'GSM7067643_SKIN_AGE81_M_GR5_Gt110_geneCOUNT.txt.gz', 'GSM7067644_SKIN_AGE83_M_GR5_Gt026_circRNA.txt.gz', 'GSM7067644_SKIN_AGE83_M_GR5_Gt026_geneCOUNT.txt.gz', 'GSM7067645_SKIN_AGE85_M_GR5_Gt125_circRNA.txt.gz', 'GSM7067645_SKIN_AGE85_M_GR5_Gt125_geneCOUNT.txt.gz', 'GSM7067646_SKIN_AGE86_M_GR5_Gt111_circRNA.txt.gz', 'GSM7067646_SKIN_AGE86_M_GR5_Gt111_geneCOUNT.txt.gz', 'GSM7067647_SKIN_AGE89_M_GR5_Gt132_circRNA.txt.gz', 'GSM7067647_SKIN_AGE89_M_GR5_Gt132_geneCOUNT.txt.gz']
+[cxg] donor_id: n=108,440 nunique=221 top=[('Ahl-22-P1_Y', 9243), ('Ahl-22-P3_Y', 7572), ('Ahl-22-P5_Y', 3928), ('He-20-Ctrl', 3443), ('Rey-21-SKN8104899', 2899), ('Den-21-Scar_2', 2632), ('Boo-21-HC03', 2431), ('Den-21-Scar_1', 2378), ('Bil-22-H05', 2114), ('Sol-20-y1', 1764), ('Bur-22-HC 2', 1475), ('Rey-21-SKN8105197', 1428)]
+[cxg] development_stage: n=108,440 nunique=48 top=[('unknown', 16739), ('22-year-old stage', 9243), ('42-year-old stage', 8008), ('29-year-old stage', 7723), ('64-year-old stage', 6462), ('25-year-old stage', 5692), ('36-year-old stage', 3712), ('59-year-old stage', 3497), ('75-year-old stage', 3280), ('39-year-old stage', 3182), ('28-year-old stage', 3155), ('48-year-old stage', 2999)]
+[cxg] sex: n=108,440 nunique=3 top=[('female', 60883), ('male', 33084), ('unknown', 14473)]
+[cxg] cell_type: n=108,440 nunique=1 top=[('skin fibroblast', 108440)]
+[cxg] assay: n=108,440 nunique=6 top=[("10x 3' v2", 53883), ("10x 3' v3", 33087), ('MARS-seq', 15393), ("10x 5' v1", 2885), ("10x 3' v1", 2742), ('Seq-Well S3', 450)]
+[cxg] tissue: n=108,440 nunique=15 top=[('skin of body', 37331), ('skin of forearm', 32138), ('skin of pes', 9887), ('skin of chest', 7099), ('skin of leg', 3961), ('hindlimb skin', 3443), ('skin of abdomen', 3247), ('inguinal region skin', 2739), ('skin of back', 2378), ('skin of hip', 2272), ('lower leg skin', 1475), ('skin of cheek', 1235)]
+[cxg] disease: n=108,440 nunique=4 top=[('normal', 100113), ('injury', 5983), ('keloid', 1270), ('localized scleroderma', 1074)]
+[cxg] suspension_type: n=108,440 nunique=1 top=[('cell', 108440)]
+[cxg] is_primary_data: n=108,440 nunique=2 top=[(True, 91218), (False, 17222)]
+[cxg] opening <repo>\data\raw\fibro2\cxg\8ae4471a-2e70-47b5-bc42-4f0df26a9996.h5ad
+[cxg] obs columns actually read: ['cluster_robust', 'donor_id', 'development_stage_ontology_term_id', 'sex_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'disease_ontology_term_id', 'tissue_ontology_term_id', 'cell_type_ontology_term_id', 'assay_ontology_term_id', 'suspension_type', 'Author', 'Accession (Sample)', 'Aligner', 'Genome', 'Donor identifier', 'Sample identifier', 'Internal sample identifier', 'Sequencer', 'Age', 'Race', 'Ethnicity', 'Sample location', 'Condition', 'Condition (other)', 'is_primary_data', 'tissue_type', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid']
+[cxg] n_cells=108,440 age_col=development_stage
+[cxg] 10x cells=92,597/108,440
+[cxg] counts=raw/X n_var=25952 gene_id n=25952
+   rows 40,000/108,440  (5s)
+   rows 80,000/108,440  (8s)
+   rows 108,440/108,440  (11s)
+[cxg] pseudobulk donors=93 adult_applied=True n_excl_child_donors=0 platform=10x (restricted)
+[align cxg_a19d1667] ruler_genes=23485 overlap=17047 ensembl=17029 symbol_fallback=18 missing=6438
+[tmm cxg_a19d1667] n_samples=93 n_genes=23485 nf_median=0.9892 prior.count=2
+[cxg_a19d1667] missing-gene columns set to z=0: 6580
+[cxg_a19d1667] ρ=+0.455 null=-0.003 p=+0.005 CI=[+0.253, +0.605] calR²=+0.171 R²=-9.664 pass=True n=93 n_donors=93 overlap=17047
+[geo] fetching SOFT for GSE226189
+[geo] GSE226189 Series_title: Transcriptomes of human primary skin fibroblasts reveal age-associated mRNAs and long noncoding RNAs
+[geo] GSE226189 Series_type: ['Expression profiling by high throughput sequencing', 'Non-coding RNA profiling by high throughput sequencing']
+[geo] GSE226189 Series_platform_id: ['GPL24676']
+[geo] GSE226189 n Sample_id: 82
+[geo] GSE226189 Series_supplementary_file: ['ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE226nnn/GSE226189/suppl/GSE226189_RAW.tar']
+[geo] GSE226189 series fields actually read: ['Series_contact_address', 'Series_contact_city', 'Series_contact_country', 'Series_contact_department', 'Series_contact_institute', 'Series_contact_laboratory', 'Series_contact_name', 'Series_contact_state', 'Series_contact_zip/postal_code', 'Series_contributor', 'Series_geo_accession', 'Series_last_update_date', 'Series_overall_design', 'Series_platform_id', 'Series_platform_organism', 'Series_platform_taxid', 'Series_relation', 'Series_sample_id', 'Series_sample_organism', 'Series_sample_taxid', 'Series_status', 'Series_submission_date', 'Series_summary', 'Series_supplementary_file', 'Series_title', 'Series_type']
+[geo] parsed 82 GSM. columns actually read (union of Sample_* keys): ['Sample_channel_count', 'Sample_characteristics_ch1', 'Sample_contact_address', 'Sample_contact_city', 'Sample_contact_country', 'Sample_contact_department', 'Sample_contact_institute', 'Sample_contact_laboratory', 'Sample_contact_name', 'Sample_contact_state', 'Sample_contact_zip/postal_code', 'Sample_data_processing', 'Sample_data_row_count', 'Sample_extract_protocol_ch1', 'Sample_geo_accession', 'Sample_growth_protocol_ch1', 'Sample_instrument_model', 'Sample_last_update_date', 'Sample_library_selection', 'Sample_library_source', 'Sample_library_strategy', 'Sample_molecule_ch1', 'Sample_organism_ch1', 'Sample_platform_id', 'Sample_relation', 'Sample_series_id', 'Sample_source_name_ch1', 'Sample_status', 'Sample_submission_date', 'Sample_supplementary_file_1', 'Sample_supplementary_file_2', 'Sample_taxid_ch1', 'Sample_title', 'Sample_type', 'gsm']
+[download] https://ftp.ncbi.nlm.nih.gov/geo/series/GSE226nnn/GSE226189/suppl/GSE226189_RAW.tar
+[download] GSE226189_RAW.tar size=31559680
+[download] series matrix https://ftp.ncbi.nlm.nih.gov/geo/series/GSE226nnn/GSE226189/matrix/GSE226189_series_matrix.txt.gz
+[counts] reading GSE226189_RAW.tar
+FAIL ValueError: Multiple files found in TAR archive. Only one file per TAR archive: ['GSM7067566_SKIN_AGE22_M_GR1_Gt073_circRNA.txt.gz', 'GSM7067566_SKIN_AGE22_M_GR1_Gt073_geneCOUNT.txt.gz', 'GSM7067567_SKIN_AGE23_M_GR1_Gt022_circRNA.txt.gz', 'GSM7067567_SKIN_AGE23_M_GR1_Gt022_geneCOUNT.txt.gz', 'GSM7067568_SKIN_AGE25_F_GR1_Gt085_circRNA.txt.gz', 'GSM7067568_SKIN_AGE25_F_GR1_Gt085_geneCOUNT.txt.gz', 'GSM7067569_SKIN_AGE25_M_GR1_Gt046_circRNA.txt.gz', 'GSM7067569_SKIN_AGE25_M_GR1_Gt046_geneCOUNT.txt.gz', 'GSM7067570_SKIN_AGE26_F_GR1_Gt045_circRNA.txt.gz', 'GSM7067570_SKIN_AGE26_F_GR1_Gt045_geneCOUNT.txt.gz', 'GSM7067571_SKIN_AGE27_F_GR1_Gt055_circRNA.txt.gz', 'GSM7067571_SKIN_AGE27_F_GR1_Gt055_geneCOUNT.txt.gz', 'GSM7067572_SKIN_AGE27_M_GR1_Gt142_circRNA.txt.gz', 'GSM7067572_SKIN_AGE27_M_GR1_Gt142_geneCOUNT.txt.gz', 'GSM7067573_SKIN_AGE28_F_GR1_Gt137_circRNA.txt.gz', 'GSM7067573_SKIN_AGE28_F_GR1_Gt137_geneCOUNT.txt.gz', 'GSM7067574_SKIN_AGE28_M_GR1_Gt001_circRNA.txt.gz', 'GSM7067574_SKIN_AGE28_M_GR1_Gt001_geneCOUNT.txt.gz', 'GSM7067575_SKIN_AGE28_M_GR1_Gt123_circRNA.txt.gz', 'GSM7067575_SKIN_AGE28_M_GR1_Gt123_geneCOUNT.txt.gz', 'GSM7067576_SKIN_AGE29_M_GR1_Gt135_circRNA.txt.gz', 'GSM7067576_SKIN_AGE29_M_GR1_Gt135_geneCOUNT.txt.gz', 'GSM7067577_SKIN_AGE30_M_GR1_Gt122_circRNA.txt.gz', 'GSM7067577_SKIN_AGE30_M_GR1_Gt122_geneCOUNT.txt.gz', 'GSM7067578_SKIN_AGE31_F_GR1_Gt090_circRNA.txt.gz', 'GSM7067578_SKIN_AGE31_F_GR1_Gt090_geneCOUNT.txt.gz', 'GSM7067579_SKIN_AGE31_M_GR1_Gt005_circRNA.txt.gz', 'GSM7067579_SKIN_AGE31_M_GR1_Gt005_geneCOUNT.txt.gz', 'GSM7067580_SKIN_AGE31_M_GR1_Gt025_circRNA.txt.gz', 'GSM7067580_SKIN_AGE31_M_GR1_Gt025_geneCOUNT.txt.gz', 'GSM7067581_SKIN_AGE31_M_GR1_Gt119_circRNA.txt.gz', 'GSM7067581_SKIN_AGE31_M_GR1_Gt119_geneCOUNT.txt.gz', 'GSM7067582_SKIN_AGE31_M_GR1_Gt130_circRNA.txt.gz', 'GSM7067582_SKIN_AGE31_M_GR1_Gt130_geneCOUNT.txt.gz', 'GSM7067583_SKIN_AGE32_F_GR1_Gt144_circRNA.txt.gz', 'GSM7067583_SKIN_AGE32_F_GR1_Gt144_geneCOUNT.txt.gz', 'GSM7067584_SKIN_AGE32_M_GR1_Gt042_circRNA.txt.gz', 'GSM7067584_SKIN_AGE32_M_GR1_Gt042_geneCOUNT.txt.gz', 'GSM7067585_SKIN_AGE35_F_GR2_Gt141_circRNA.txt.gz', 'GSM7067585_SKIN_AGE35_F_GR2_Gt141_geneCOUNT.txt.gz', 'GSM7067586_SKIN_AGE35_M_GR2_Gt104_circRNA.txt.gz', 'GSM7067586_SKIN_AGE35_M_GR2_Gt104_geneCOUNT.txt.gz', 'GSM7067587_SKIN_AGE35_M_GR2_Gt129_circRNA.txt.gz', 'GSM7067587_SKIN_AGE35_M_GR2_Gt129_geneCOUNT.txt.gz', 'GSM7067588_SKIN_AGE37_M_GR2_Gt064_circRNA.txt.gz', 'GSM7067588_SKIN_AGE37_M_GR2_Gt064_geneCOUNT.txt.gz', 'GSM7067589_SKIN_AGE38_F_GR2_Gt016_circRNA.txt.gz', 'GSM7067589_SKIN_AGE38_F_GR2_Gt016_geneCOUNT.txt.gz', 'GSM7067590_SKIN_AGE38_F_GR2_Gt152_circRNA.txt.gz', 'GSM7067590_SKIN_AGE38_F_GR2_Gt152_geneCOUNT.txt.gz', 'GSM7067591_SKIN_AGE38_M_GR2_Gt093_circRNA.txt.gz', 'GSM7067591_SKIN_AGE38_M_GR2_Gt093_geneCOUNT.txt.gz', 'GSM7067592_SKIN_AGE39_M_GR2_Gt126_circRNA.txt.gz', 'GSM7067592_SKIN_AGE39_M_GR2_Gt126_geneCOUNT.txt.gz', 'GSM7067593_SKIN_AGE42_F_GR2_Gt059_circRNA.txt.gz', 'GSM7067593_SKIN_AGE42_F_GR2_Gt059_geneCOUNT.txt.gz', 'GSM7067594_SKIN_AGE42_F_GR2_Gt145_circRNA.txt.gz', 'GSM7067594_SKIN_AGE42_F_GR2_Gt145_geneCOUNT.txt.gz', 'GSM7067595_SKIN_AGE42_M_GR2_Gt024_circRNA.txt.gz', 'GSM7067595_SKIN_AGE42_M_GR2_Gt024_geneCOUNT.txt.gz', 'GSM7067596_SKIN_AGE45_M_GR2_Gt017_circRNA.txt.gz', 'GSM7067596_SKIN_AGE45_M_GR2_Gt017_geneCOUNT.txt.gz', 'GSM7067597_SKIN_AGE45_M_GR2_Gt030_circRNA.txt.gz', 'GSM7067597_SKIN_AGE45_M_GR2_Gt030_geneCOUNT.txt.gz', 'GSM7067598_SKIN_AGE47_F_GR2_Gt078_circRNA.txt.gz', 'GSM7067598_SKIN_AGE47_F_GR2_Gt078_geneCOUNT.txt.gz', 'GSM7067599_SKIN_AGE47_M_GR2_Gt060_circRNA.txt.gz', 'GSM7067599_SKIN_AGE47_M_GR2_Gt060_geneCOUNT.txt.gz', 'GSM7067600_SKIN_AGE48_F_GR2_Gt133_circRNA.txt.gz', 'GSM7067600_SKIN_AGE48_F_GR2_Gt133_geneCOUNT.txt.gz', 'GSM7067601_SKIN_AGE48_F_GR2_Gt149_circRNA.txt.gz', 'GSM7067601_SKIN_AGE48_F_GR2_Gt149_geneCOUNT.txt.gz', 'GSM7067602_SKIN_AGE49_M_GR2_Gt128_circRNA.txt.gz', 'GSM7067602_SKIN_AGE49_M_GR2_Gt128_geneCOUNT.txt.gz', 'GSM7067603_SKIN_AGE51_M_GR3_Gt015_circRNA.txt.gz', 'GSM7067603_SKIN_AGE51_M_GR3_Gt015_geneCOUNT.txt.gz', 'GSM7067604_SKIN_AGE52_F_GR3_Gt027_circRNA.txt.gz', 'GSM7067604_SKIN_AGE52_F_GR3_Gt027_geneCOUNT.txt.gz', 'GSM7067605_SKIN_AGE52_F_GR3_Gt063_circRNA.txt.gz', 'GSM7067605_SKIN_AGE52_F_GR3_Gt063_geneCOUNT.txt.gz', 'GSM7067606_SKIN_AGE52_M_GR3_Gt007_circRNA.txt.gz', 'GSM7067606_SKIN_AGE52_M_GR3_Gt007_geneCOUNT.txt.gz', 'GSM7067607_SKIN_AGE52_M_GR3_Gt056_circRNA.txt.gz', 'GSM7067607_SKIN_AGE52_M_GR3_Gt056_geneCOUNT.txt.gz', 'GSM7067608_SKIN_AGE53_F_GR3_Gt146_circRNA.txt.gz', 'GSM7067608_SKIN_AGE53_F_GR3_Gt146_geneCOUNT.txt.gz', 'GSM7067609_SKIN_AGE54_M_GR3_Gt057_circRNA.txt.gz', 'GSM7067609_SKIN_AGE54_M_GR3_Gt057_geneCOUNT.txt.gz', 'GSM7067610_SKIN_AGE55_M_GR3_Gt136_circRNA.txt.gz', 'GSM7067610_SKIN_AGE55_M_GR3_Gt136_geneCOUNT.txt.gz', 'GSM7067611_SKIN_AGE56_F_GR3_Gt120_circRNA.txt.gz', 'GSM7067611_SKIN_AGE56_F_GR3_Gt120_geneCOUNT.txt.gz', 'GSM7067612_SKIN_AGE57_M_GR3_Gt004_circRNA.txt.gz', 'GSM7067612_SKIN_AGE57_M_GR3_Gt004_geneCOUNT.txt.gz', 'GSM7067613_SKIN_AGE58_F_GR3_Gt011_circRNA.txt.gz', 'GSM7067613_SKIN_AGE58_F_GR3_Gt011_geneCOUNT.txt.gz', 'GSM7067614_SKIN_AGE60_M_GR3_Gt013_circRNA.txt.gz', 'GSM7067614_SKIN_AGE60_M_GR3_Gt013_geneCOUNT.txt.gz', 'GSM7067615_SKIN_AGE61_F_GR3_Gt003_circRNA.txt.gz', 'GSM7067615_SKIN_AGE61_F_GR3_Gt003_geneCOUNT.txt.gz', 'GSM7067616_SKIN_AGE61_F_GR3_Gt102_circRNA.txt.gz', 'GSM7067616_SKIN_AGE61_F_GR3_Gt102_geneCOUNT.txt.gz', 'GSM7067617_SKIN_AGE62_F_GR3_Gt070_circRNA.txt.gz', 'GSM7067617_SKIN_AGE62_F_GR3_Gt070_geneCOUNT.txt.gz', 'GSM7067618_SKIN_AGE63_F_GR3_Gt101_circRNA.txt.gz', 'GSM7067618_SKIN_AGE63_F_GR3_Gt101_geneCOUNT.txt.gz', 'GSM7067619_SKIN_AGE63_M_GR3_Gt092_circRNA.txt.gz', 'GSM7067619_SKIN_AGE63_M_GR3_Gt092_geneCOUNT.txt.gz', 'GSM7067620_SKIN_AGE65_F_GR4_Gt033_circRNA.txt.gz', 'GSM7067620_SKIN_AGE65_F_GR4_Gt033_geneCOUNT.txt.gz', 'GSM7067621_SKIN_AGE66_F_GR3_Gt156_circRNA.txt.gz', 'GSM7067621_SKIN_AGE66_F_GR3_Gt156_geneCOUNT.txt.gz', 'GSM7067622_SKIN_AGE67_F_GR4_Gt080_circRNA.txt.gz', 'GSM7067622_SKIN_AGE67_F_GR4_Gt080_geneCOUNT.txt.gz', 'GSM7067623_SKIN_AGE67_M_GR4_Gt002_circRNA.txt.gz', 'GSM7067623_SKIN_AGE67_M_GR4_Gt002_geneCOUNT.txt.gz', 'GSM7067624_SKIN_AGE67_M_GR4_Gt039_circRNA.txt.gz', 'GSM7067624_SKIN_AGE67_M_GR4_Gt039_geneCOUNT.txt.gz', 'GSM7067625_SKIN_AGE69_F_GR4_Gt095_circRNA.txt.gz', 'GSM7067625_SKIN_AGE69_F_GR4_Gt095_geneCOUNT.txt.gz', 'GSM7067626_SKIN_AGE70_F_GR4_Gt089_circRNA.txt.gz', 'GSM7067626_SKIN_AGE70_F_GR4_Gt089_geneCOUNT.txt.gz', 'GSM7067627_SKIN_AGE70_M_GR4_Gt061_circRNA.txt.gz', 'GSM7067627_SKIN_AGE70_M_GR4_Gt061_geneCOUNT.txt.gz', 'GSM7067628_SKIN_AGE71_F_GR4_Gt138_circRNA.txt.gz', 'GSM7067628_SKIN_AGE71_F_GR4_Gt138_geneCOUNT.txt.gz', 'GSM7067629_SKIN_AGE72_F_GR4_Gt071_circRNA.txt.gz', 'GSM7067629_SKIN_AGE72_F_GR4_Gt071_geneCOUNT.txt.gz', 'GSM7067630_SKIN_AGE72_F_GR4_Gt109_circRNA.txt.gz', 'GSM7067630_SKIN_AGE72_F_GR4_Gt109_geneCOUNT.txt.gz', 'GSM7067631_SKIN_AGE72_M_GR4_Gt014_circRNA.txt.gz', 'GSM7067631_SKIN_AGE72_M_GR4_Gt014_geneCOUNT.txt.gz', 'GSM7067632_SKIN_AGE72_M_GR4_Gt065_circRNA.txt.gz', 'GSM7067632_SKIN_AGE72_M_GR4_Gt065_geneCOUNT.txt.gz', 'GSM7067633_SKIN_AGE72_M_GR4_Gt084_circRNA.txt.gz', 'GSM7067633_SKIN_AGE72_M_GR4_Gt084_geneCOUNT.txt.gz', 'GSM7067634_SKIN_AGE72_M_GR4_Gt114_circRNA.txt.gz', 'GSM7067634_SKIN_AGE72_M_GR4_Gt114_geneCOUNT.txt.gz', 'GSM7067635_SKIN_AGE73_F_GR4_Gt018_circRNA.txt.gz', 'GSM7067635_SKIN_AGE73_F_GR4_Gt018_geneCOUNT.txt.gz', 'GSM7067636_SKIN_AGE76_M_GR4_Gt115_circRNA.txt.gz', 'GSM7067636_SKIN_AGE76_M_GR4_Gt115_geneCOUNT.txt.gz', 'GSM7067637_SKIN_AGE77_F_GR4_Gt113_circRNA.txt.gz', 'GSM7067637_SKIN_AGE77_F_GR4_Gt113_geneCOUNT.txt.gz', 'GSM7067638_SKIN_AGE78_F_GR4_Gt035_circRNA.txt.gz', 'GSM7067638_SKIN_AGE78_F_GR4_Gt035_geneCOUNT.txt.gz', 'GSM7067639_SKIN_AGE80_F_GR5_Gt032_circRNA.txt.gz', 'GSM7067639_SKIN_AGE80_F_GR5_Gt032_geneCOUNT.txt.gz', 'GSM7067640_SKIN_AGE80_F_GR5_Gt083_circRNA.txt.gz', 'GSM7067640_SKIN_AGE80_F_GR5_Gt083_geneCOUNT.txt.gz', 'GSM7067641_SKIN_AGE81_M_GR5_Gt029_circRNA.txt.gz', 'GSM7067641_SKIN_AGE81_M_GR5_Gt029_geneCOUNT.txt.gz', 'GSM7067642_SKIN_AGE81_M_GR5_Gt108_circRNA.txt.gz', 'GSM7067642_SKIN_AGE81_M_GR5_Gt108_geneCOUNT.txt.gz', 'GSM7067643_SKIN_AGE81_M_GR5_Gt110_circRNA.txt.gz', 'GSM7067643_SKIN_AGE81_M_GR5_Gt110_geneCOUNT.txt.gz', 'GSM7067644_SKIN_AGE83_M_GR5_Gt026_circRNA.txt.gz', 'GSM7067644_SKIN_AGE83_M_GR5_Gt026_geneCOUNT.txt.gz', 'GSM7067645_SKIN_AGE85_M_GR5_Gt125_circRNA.txt.gz', 'GSM7067645_SKIN_AGE85_M_GR5_Gt125_geneCOUNT.txt.gz', 'GSM7067646_SKIN_AGE86_M_GR5_Gt111_circRNA.txt.gz', 'GSM7067646_SKIN_AGE86_M_GR5_Gt111_geneCOUNT.txt.gz', 'GSM7067647_SKIN_AGE89_M_GR5_Gt132_circRNA.txt.gz', 'GSM7067647_SKIN_AGE89_M_GR5_Gt132_geneCOUNT.txt.gz']
+====================================================================================================
+FIBRO2 RUN cell=ta  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+====================================================================================================
+FIBRO2 T-A  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+Written **before any T-A download, projection, or ρ**, 2026-09-18. No threshold in this block is re-tuned after numbers exist.
+
+Take the Stage 1 ridge direction **exactly as frozen in `results/fibro/frozen_ruler_ridge_raw.npz`**. Refit nothing. Recalibrate nothing. Rescale nothing. Project, score, report Spearman ρ vs donor age.
+
+Same normalization as the frozen GTEx spec (FINDINGS_GTEX.md Stage 0 / FINDINGS_FIBRO.md Stage 1): TMM/edgeR log2-CPM (`prior.count=2`). Genes restricted to the overlap with the frozen ruler. Missing overlap genes left at z=0 (FINDINGS_EXTERNAL.md rule). Gene-overlap count reported. z uses the frozen train mean and sd.
+
+Metric: Spearman ρ vs the age the record states. Donor-level permutation null n_perm=200 (scores held fixed; shuffle donor ages; each cell starts a fresh Generator on seed `20260914`). Donor-bootstrap 95% percentile CI, B=200, seed `20260918`. Calibrated R² and uncalibrated R² reported; uncalibrated R² is never a gate. Pearson r reported, not a gate. Nothing averaged across cohorts.
+
+Adult restriction on the primary cell: GSE113957 samples with stated age < 18 are excluded to match the GTEx training range; the excluded count is reported. Do not infer a donor age that the record does not state. A record that does not state per-sample donor age is unusable.
+
+Cohorts, in priority order, each resolved from the record this session:
+1. **GSE113957** — primary external cell. Human dermal fibroblast. Ages stated in titles. Bulk. Adults ≥18.
+2. **Any single-cell fibroblast/skin aging cohort with ≥10 donors and stated ages** resolved this session (CELLxGENE, GEO, or SCOPING_TISSUE.md `near_miss` rows GSE226189 n=82 bulk, GSE307377 n=9). A 10x cohort is worth more than a larger bulk one because the platform shift is the thing under test. Say which platform each is.
+3. If no single-cell fibroblast cohort resolves, say so plainly. Do not substitute a bulk cohort and call the platform question answered.
+
+GSE325735 is out of scope.
+
+**Pre-registered reading** (only the outcome that fired; T-A cannot overturn the Stage 2 `no_decline` verdict by itself):
+- ρ > 0 with null ≤ 0.05 in the primary external cell → the ruler is a working instrument outside its training cohort; the Stage 2 `no_decline` verdict is interpretable as a statement about OSKM.
+- ρ ≤ 0 or null > 0.05 → the ruler does not validate externally; Stage 2 is uninterpretable and `no_decline` must not be reported as a finding about reprogramming.
+- bulk external passes, single-cell external fails (or none resolves) → the platform shift is unresolved; the Stage 2 projection rests on an unvalidated cross-platform step; do not resolve it by argument.
+
+[frozen] n_genes=23485 n_donors=652 method=ridge regime=raw
+[geo] fetching SOFT for GSE113957
+[geo] GSE113957 Series_title: Predicting age from the transcriptome of human dermal fibroblasts
+[geo] GSE113957 Series_type: ['Expression profiling by high throughput sequencing']
+[geo] GSE113957 Series_platform_id: ['GPL16791', 'GPL18573']
+[geo] GSE113957 n Sample_id: 143
+[geo] GSE113957 Series_supplementary_file: ['ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/suppl/GSE113957_fpkm.txt.gz']
+[geo] GSE113957 series fields actually read: ['Series_contact_address', 'Series_contact_city', 'Series_contact_country', 'Series_contact_department', 'Series_contact_email', 'Series_contact_institute', 'Series_contact_name', 'Series_contact_phone', 'Series_contact_state', 'Series_contact_zip/postal_code', 'Series_contributor', 'Series_geo_accession', 'Series_last_update_date', 'Series_overall_design', 'Series_platform_id', 'Series_platform_organism', 'Series_platform_taxid', 'Series_pubmed_id', 'Series_relation', 'Series_sample_id', 'Series_sample_organism', 'Series_sample_taxid', 'Series_status', 'Series_submission_date', 'Series_summary', 'Series_supplementary_file', 'Series_title', 'Series_type']
+[geo] parsed 143 GSM. columns actually read (union of Sample_* keys): ['Sample_channel_count', 'Sample_characteristics_ch1', 'Sample_contact_address', 'Sample_contact_city', 'Sample_contact_country', 'Sample_contact_department', 'Sample_contact_email', 'Sample_contact_institute', 'Sample_contact_name', 'Sample_contact_phone', 'Sample_contact_state', 'Sample_contact_zip/postal_code', 'Sample_data_processing', 'Sample_data_row_count', 'Sample_description', 'Sample_extract_protocol_ch1', 'Sample_geo_accession', 'Sample_growth_protocol_ch1', 'Sample_instrument_model', 'Sample_last_update_date', 'Sample_library_selection', 'Sample_library_source', 'Sample_library_strategy', 'Sample_molecule_ch1', 'Sample_organism_ch1', 'Sample_platform_id', 'Sample_relation', 'Sample_series_id', 'Sample_source_name_ch1', 'Sample_status', 'Sample_submission_date', 'Sample_supplementary_file_1', 'Sample_taxid_ch1', 'Sample_title', 'Sample_type', 'gsm']
+[GSE113957] n_gsm=143 n_with_age=135 missing_age=8 age<18=24 adult=111 platform={'kind': 'bulk_rnaseq', 'is_array': False, 'is_seq': True, 'is_sc': False, 'types': ['Expression profiling by high throughput sequencing'], 'platforms': ['GPL16791', 'GPL18573'], 'molecules': ['total RNA']}
+[download] https://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/suppl/GSE113957_fpkm.txt.gz
+[download] GSE113957_fpkm.txt.gz size=7532882
+[download] series matrix HEAD https://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/matrix/GSE113957_series_matrix.txt.gz
+[download] series matrix 404 — skip (not retrying)
+[counts] reading GSE113957_fpkm.txt.gz
+[counts] GSE113957_fpkm.txt.gz genes=27142 samples=147 columns actually read (first 12)=['start', 'end', 'Length', 'Copies', '101_19yr_Female_Caucasian', '102_19yr_Male_Caucasian', '103_19yr_Male_Caucasian', '104_19yr_Male_Caucasian', '105_20yr_Male_Caucasian', '106_20yr_Female_Caucasian', '107_31yr_Female_Caucasian', '108_31_female_Caucasian']
+[GSE113957] GSE113957_fpkm.txt.gz STOP [counts] GSE113957_fpkm.txt.gz: values are not integer counts (cannot apply TMM/log2-CPM). min=0.0 max=249213345.0 mean=1009452.0862567581
+[cxg] reuse cached result ρ=+0.455 p=+0.005 n_donors=93 overlap=17047
+[geo] fetching SOFT for GSE226189
+[geo] GSE226189 Series_title: Transcriptomes of human primary skin fibroblasts reveal age-associated mRNAs and long noncoding RNAs
+[geo] GSE226189 Series_type: ['Expression profiling by high throughput sequencing', 'Non-coding RNA profiling by high throughput sequencing']
+[geo] GSE226189 Series_platform_id: ['GPL24676']
+[geo] GSE226189 n Sample_id: 82
+[geo] GSE226189 Series_supplementary_file: ['ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE226nnn/GSE226189/suppl/GSE226189_RAW.tar']
+[geo] GSE226189 series fields actually read: ['Series_contact_address', 'Series_contact_city', 'Series_contact_country', 'Series_contact_department', 'Series_contact_institute', 'Series_contact_laboratory', 'Series_contact_name', 'Series_contact_state', 'Series_contact_zip/postal_code', 'Series_contributor', 'Series_geo_accession', 'Series_last_update_date', 'Series_overall_design', 'Series_platform_id', 'Series_platform_organism', 'Series_platform_taxid', 'Series_relation', 'Series_sample_id', 'Series_sample_organism', 'Series_sample_taxid', 'Series_status', 'Series_submission_date', 'Series_summary', 'Series_supplementary_file', 'Series_title', 'Series_type']
+[geo] parsed 82 GSM. columns actually read (union of Sample_* keys): ['Sample_channel_count', 'Sample_characteristics_ch1', 'Sample_contact_address', 'Sample_contact_city', 'Sample_contact_country', 'Sample_contact_department', 'Sample_contact_institute', 'Sample_contact_laboratory', 'Sample_contact_name', 'Sample_contact_state', 'Sample_contact_zip/postal_code', 'Sample_data_processing', 'Sample_data_row_count', 'Sample_extract_protocol_ch1', 'Sample_geo_accession', 'Sample_growth_protocol_ch1', 'Sample_instrument_model', 'Sample_last_update_date', 'Sample_library_selection', 'Sample_library_source', 'Sample_library_strategy', 'Sample_molecule_ch1', 'Sample_organism_ch1', 'Sample_platform_id', 'Sample_relation', 'Sample_series_id', 'Sample_source_name_ch1', 'Sample_status', 'Sample_submission_date', 'Sample_supplementary_file_1', 'Sample_supplementary_file_2', 'Sample_taxid_ch1', 'Sample_title', 'Sample_type', 'gsm']
+[download] https://ftp.ncbi.nlm.nih.gov/geo/series/GSE226nnn/GSE226189/suppl/GSE226189_RAW.tar
+[download] GSE226189_RAW.tar size=31559680
+[download] series matrix HEAD https://ftp.ncbi.nlm.nih.gov/geo/series/GSE226nnn/GSE226189/matrix/GSE226189_series_matrix.txt.gz
+[counts] reading GSE226189_RAW.tar
+[counts] GSE226189_RAW.tar tar files=164 geneCOUNT=82
+[counts] GSE226189_RAW.tar merged geneCOUNT genes=57773 samples=82 columns actually read (GSM, first 12)=['GSM7067566', 'GSM7067567', 'GSM7067568', 'GSM7067569', 'GSM7067570', 'GSM7067571', 'GSM7067572', 'GSM7067573', 'GSM7067574', 'GSM7067575', 'GSM7067576', 'GSM7067577']
+[GSE226189_near_miss_bulk] excluding 0 samples with stated age < 18
+[align GSE226189_near_miss_bulk] ruler_genes=23485 overlap=21351 ensembl=21351 symbol_fallback=0 missing=2134
+[tmm GSE226189_near_miss_bulk] n_samples=82 n_genes=23485 nf_median=1.0233 prior.count=2
+[GSE226189_near_miss_bulk] missing-gene columns set to z=0: 2134
+[GSE226189_near_miss_bulk] ρ=+0.549 null=+0.005 p=+0.005 CI=[+0.374, +0.667] calR²=+0.299 R²=-9.963 pass=True n=82 n_donors=82 overlap=21351
+[geo] fetching SOFT for GSE307377
+[geo] GSE307377 Series_title: Bulk RNA-seq analysis of primary human dermal fibroblasts from young and aged donors
+[geo] GSE307377 Series_type: ['Expression profiling by high throughput sequencing']
+[geo] GSE307377 Series_platform_id: ['GPL24676']
+[geo] GSE307377 n Sample_id: 9
+[geo] GSE307377 Series_supplementary_file: ['ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307377/suppl/GSE307377_raw.txt.gz', 'ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307377/suppl/GSE307377_tpm.txt.gz']
+[geo] GSE307377 series fields actually read: ['Series_contact_address', 'Series_contact_city', 'Series_contact_country', 'Series_contact_institute', 'Series_contact_name', 'Series_contact_state', 'Series_contact_zip/postal_code', 'Series_contributor', 'Series_geo_accession', 'Series_last_update_date', 'Series_overall_design', 'Series_platform_id', 'Series_platform_organism', 'Series_platform_taxid', 'Series_pubmed_id', 'Series_relation', 'Series_sample_id', 'Series_sample_organism', 'Series_sample_taxid', 'Series_status', 'Series_submission_date', 'Series_summary', 'Series_supplementary_file', 'Series_title', 'Series_type']
+[geo] parsed 9 GSM. columns actually read (union of Sample_* keys): ['Sample_channel_count', 'Sample_characteristics_ch1', 'Sample_contact_address', 'Sample_contact_city', 'Sample_contact_country', 'Sample_contact_institute', 'Sample_contact_name', 'Sample_contact_state', 'Sample_contact_zip/postal_code', 'Sample_data_processing', 'Sample_data_row_count', 'Sample_description', 'Sample_extract_protocol_ch1', 'Sample_geo_accession', 'Sample_growth_protocol_ch1', 'Sample_instrument_model', 'Sample_last_update_date', 'Sample_library_selection', 'Sample_library_source', 'Sample_library_strategy', 'Sample_molecule_ch1', 'Sample_organism_ch1', 'Sample_platform_id', 'Sample_relation', 'Sample_series_id', 'Sample_source_name_ch1', 'Sample_status', 'Sample_submission_date', 'Sample_supplementary_file_1', 'Sample_taxid_ch1', 'Sample_title', 'Sample_treatment_protocol_ch1', 'Sample_type', 'gsm']
+[download] https://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307377/suppl/GSE307377_raw.txt.gz
+[download] GSE307377_raw.txt.gz size=1363809
+[download] https://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307377/suppl/GSE307377_tpm.txt.gz
+[download] GSE307377_tpm.txt.gz size=1498390
+[download] series matrix HEAD https://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307377/matrix/GSE307377_series_matrix.txt.gz
+[counts] reading GSE307377_raw.txt.gz
+[counts] GSE307377_raw.txt.gz genes=27142 samples=13 columns actually read (first 12)=['start', 'end', 'Length', 'Copies', 'tags/TM15_CKC7_O_CTRL_S15 (24231287.0 total)', 'tags/TM16_CKC8_Y_CTRL_S16 (29213548.0 total)', 'tags/TM17_CKC14_O_CTRL_S17 (27749988.0 total)', 'tags/TM18_CKC15_Y_CTRL_S18 (27297887.0 total)', 'tags/TM19_CKC16_O_CTRL_S19 (31283964.0 total)', 'tags/TM1_CKC3_Y_CTRL_S1 (31598368.0 total)', 'tags/TM2_CKC4_Y_CTRL_S2 (33021164.0 total)', 'tags/TM3_CKC5_O_CTRL_S3 (25505823.0 total)']
+[GSE307377] GSE307377_raw.txt.gz STOP [counts] GSE307377_raw.txt.gz: values are not integer counts (cannot apply TMM/log2-CPM). min=0.0 max=249213345.0 mean=11411341.114857856
+[counts] reading GSE307377_tpm.txt.gz
+[counts] GSE307377_tpm.txt.gz genes=27142 samples=13 columns actually read (first 12)=['start', 'end', 'Length', 'Copies', 'tags/TM15_CKC7_O_CTRL_S15 TPM', 'tags/TM16_CKC8_Y_CTRL_S16 TPM', 'tags/TM17_CKC14_O_CTRL_S17 TPM', 'tags/TM18_CKC15_Y_CTRL_S18 TPM', 'tags/TM19_CKC16_O_CTRL_S19 TPM', 'tags/TM1_CKC3_Y_CTRL_S1 TPM', 'tags/TM2_CKC4_Y_CTRL_S2 TPM', 'tags/TM3_CKC5_O_CTRL_S3 TPM']
+[GSE307377] GSE307377_tpm.txt.gz STOP [counts] GSE307377_tpm.txt.gz: values are not integer counts (cannot apply TMM/log2-CPM). min=0.0 max=249213345.0 mean=11410647.138622222
+[counts] reading GSE307377_series_matrix.txt.gz
+[series_matrix] genes=0 samples=9 columns actually read (first 12)=['GSM9222986', 'GSM9222987', 'GSM9222988', 'GSM9222989', 'GSM9222990', 'GSM9222991', 'GSM9222992', 'GSM9222993', 'GSM9222994']
+[GSE307377] GSE307377_series_matrix.txt.gz STOP [counts] zero-size array to reduction operation fmin which has no identity
+[findings] <repo>\FINDINGS_FIBRO2.md
+====================================================================================================
+FIBRO2 RUN cell=tb  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+====================================================================================================
+FIBRO2 T-B  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+Written **before any T-B QC table or d0→d7 null**, 2026-09-18. No threshold in this block is re-tuned after numbers exist.
+
+From the GSE297234 Cell Ranger `filtered_feature_bc_matrix.h5` matrices already on disk under `data/raw/gse297234/RAW/`, report **per donor × timepoint**: cells recovered, median UMI/cell, median genes/cell, mitochondrial read fraction, and n cells per unsupervised cluster. Table only — this is a QC audit, not a model. Unsupervised clusters are the Stage 2 spec: within each donor × timepoint independently, log1p(CP10k) on genes overlapping the frozen ruler, PCA 20 (or n_cells−1 if smaller), k-means k=3, seed `20260914`. Skip a group if n_cells < 50.
+
+Then rerun the Stage 2 **random-direction null exactly as pre-registered** (200 permuted-weight directions, seed `20260914`) on the **d0→d7 endpoint** in addition to the d0→d10 endpoint already reported, for both donors, both pseudobulk variants (all-cell primary, per-cluster secondary). Cluster labels are assigned independently per donor × timepoint; the secondary pairing is by **within-timepoint cell-count rank** (largest / middle / smallest), not by k-means ID. Do not average cluster ranks into the all-cell primary. Do not average donors.
+
+Endpoint decline = age_score(day 0) − age_score(day T). Positive = younger on the ruler. Empirical p = (n_random ≥ real + 1) / (n_random + 1). Pass bar remains p ≤ 0.05. A post-hoc d7 endpoint is not permitted to become the primary Stage 2 result.
+
+**Pre-registered reading** (caveat on the verdict, not a reversal of it):
+- d0→d7 also gives p > 0.05 → the `no_decline` verdict does not depend on d10; d10's behaviour is a side observation.
+- d0→d7 gives p ≤ 0.05 while d0→d10 does not, **and** the QC table shows d10 differing materially from d0/d3/d7 on cells recovered, depth, or mitochondrial fraction → the endpoint choice is confounded by a technical difference at d10. Report as a caveat. State what would settle it (a cohort with more donors and a pre-registered endpoint).
+- d0→d7 gives p ≤ 0.05 with no technical difference at d10 → report the discrepancy and say it is unexplained.
+
+[tb] loaded Stage 2 sample table <repo>\results\fibro\stage2_geo_samples.csv n=8 columns actually read: ['gsm', 'title', 'source', 'organism', 'molecule', 'description', 'characteristics', 'growth_protocol', 'cell_line', 'cell_type', 'tissue', 'treatment', 'day', 'age_from_characteristics', 'age_from_growth_protocol', 'library_name', 'fields_read', 'age_years', 'age_source']
+   h5 GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5 gsm=GSM8986586 size=29369822
+   h5 GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5 gsm=GSM8986587 size=31628640
+   h5 GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5 gsm=GSM8986588 size=36793388
+   h5 GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5 gsm=GSM8986589 size=25597636
+   h5 GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5 gsm=GSM8986590 size=35497718
+   h5 GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5 gsm=GSM8986591 size=36401517
+   h5 GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5 gsm=GSM8986592 size=46693949
+   h5 GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5 gsm=GSM8986593 size=37056455
+[10x] h5 matrices: 8
+   reading GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5
+   GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5: 5021 cells × 36601 genes gsm=GSM8986586 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D0_S2']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5
+   GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5: 6318 cells × 36601 genes gsm=GSM8986587 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D3_S4']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5
+   GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5: 6915 cells × 36601 genes gsm=GSM8986588 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D7_S6']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5
+   GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5: 4399 cells × 36601 genes gsm=GSM8986589 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D10_S8']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5
+   GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5: 7782 cells × 36601 genes gsm=GSM8986590 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D0_S1']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5
+   GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5: 6738 cells × 36601 genes gsm=GSM8986591 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D3_S3']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5
+   GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5: 12209 cells × 36601 genes gsm=GSM8986592 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D7_S5']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5
+   GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5: 7935 cells × 36601 genes gsm=GSM8986593 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D10_S7']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+[meta] GSM8986586 GM00731 day=0 age=96 n_cells=5021 age_source=Series_overall_design
+[meta] GSM8986587 GM00731 day=3 age=96 n_cells=6318 age_source=Series_overall_design
+[meta] GSM8986588 GM00731 day=7 age=96 n_cells=6915 age_source=Series_overall_design
+[meta] GSM8986589 GM00731 day=10 age=96 n_cells=4399 age_source=Series_overall_design
+[meta] GSM8986590 GM23815 day=0 age=22 n_cells=7782 age_source=Series_overall_design
+[meta] GSM8986591 GM23815 day=3 age=22 n_cells=6738 age_source=Series_overall_design
+[meta] GSM8986592 GM23815 day=7 age=22 n_cells=12209 age_source=Series_overall_design
+[meta] GSM8986593 GM23815 day=10 age=22 n_cells=7935 age_source=Series_overall_design
+[tb] loaded 8 libraries
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[qc] GM00731 d0 n_cells=5021 medUMI=14380 medGenes=4078 mito_lib=0.02283972351650985 clusters=[73, 2535, 2413]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[qc] GM00731 d3 n_cells=6318 medUMI=10199 medGenes=3646 mito_lib=0.03883674221277347 clusters=[2159, 915, 3244]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[qc] GM00731 d7 n_cells=6915 medUMI=10922 medGenes=3700 mito_lib=0.03317215540013561 clusters=[3054, 3011, 850]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[qc] GM00731 d10 n_cells=4399 medUMI=13456 medGenes=4187 mito_lib=0.03587785418436102 clusters=[2645, 708, 1046]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[qc] GM23815 d0 n_cells=7782 medUMI=8140 medGenes=3030 mito_lib=0.026711005305762408 clusters=[2896, 3315, 1571]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[qc] GM23815 d3 n_cells=6738 medUMI=10662 medGenes=3882 mito_lib=0.05094586476819631 clusters=[2637, 3346, 755]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[qc] GM23815 d7 n_cells=12209 medUMI=6108 medGenes=2565 mito_lib=0.03838899794934119 clusters=[4407, 6163, 1639]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[qc] GM23815 d10 n_cells=7935 medUMI=9063 medGenes=3183 mito_lib=0.04951283188448647 clusters=[2910, 793, 4232]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[allcell] GM00731 d0 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[allcell] GM00731 d3 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[allcell] GM00731 d7 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[allcell] GM00731 d10 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[allcell] GM23815 d0 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[allcell] GM23815 d3 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[allcell] GM23815 d7 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[allcell] GM23815 d10 overlap=20452
+[tmm tb_allcell] n_samples=8 n_genes=23485 nf_median=0.9863 prior.count=2
+[tb] all-cell missing z=0 columns=3086 n_random=200
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM00731 d0 sizes=[73, 2535, 2413]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM00731 d3 sizes=[2159, 915, 3244]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM00731 d7 sizes=[3054, 3011, 850]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM00731 d10 sizes=[2645, 708, 1046]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM23815 d0 sizes=[2896, 3315, 1571]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM23815 d3 sizes=[2637, 3346, 755]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM23815 d7 sizes=[4407, 6163, 1639]
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster] GM23815 d10 sizes=[2910, 793, 4232]
+[tmm tb_cluster] n_samples=24 n_genes=23485 nf_median=0.9718 prior.count=2
+[tb] cluster missing z=0 columns=3086
+[null] all_cell GM00731 d0→d10 decline=-3.3509 p=+0.990 n_ge=198/200
+[null] all_cell GM00731 d0→d7 decline=+4.1846 p=+0.005 n_ge=0/200
+[null] all_cell GM23815 d0→d10 decline=+2.4617 p=+0.060 n_ge=11/200
+[null] all_cell GM23815 d0→d7 decline=+7.3169 p=+0.005 n_ge=0/200
+[null] cluster_rank0 GM00731 d0→d10 decline=-3.2932 p=+0.990
+[null] cluster_rank1 GM00731 d0→d10 decline=-2.3895 p=+0.955
+[null] cluster_rank2 GM00731 d0→d10 decline=-7.0617 p=+0.960
+[null] cluster_rank0 GM00731 d0→d7 decline=+1.0580 p=+0.224
+[null] cluster_rank1 GM00731 d0→d7 decline=+6.3791 p=+0.005
+[null] cluster_rank2 GM00731 d0→d7 decline=+0.4267 p=+0.224
+[null] cluster_rank0 GM23815 d0→d10 decline=+4.2439 p=+0.010
+[null] cluster_rank1 GM23815 d0→d10 decline=-1.4788 p=+0.871
+[null] cluster_rank2 GM23815 d0→d10 decline=+6.3084 p=+0.050
+[null] cluster_rank0 GM23815 d0→d7 decline=+5.7190 p=+0.005
+[null] cluster_rank1 GM23815 d0→d7 decline=+9.6370 p=+0.005
+[null] cluster_rank2 GM23815 d0→d7 decline=+11.8885 p=+0.005
+[qc] d10 vs d0/d3/d7: GM00731 cells recovered: d0/d3/d7 median=6318 d10=4399 ratio=0.696 material=False | GM00731 median UMI/cell: d0/d3/d7 median=1.092e+04 d10=1.346e+04 ratio=1.232 material=False | GM00731 mitochondrial read fraction: d0/d3/d7 median=0.03317 d10=0.03588 ratio=1.082 material=False | GM23815 cells recovered: d0/d3/d7 median=7782 d10=7935 ratio=1.020 material=False | GM23815 median UMI/cell: d0/d3/d7 median=8140 d10=9063 ratio=1.113 material=False | GM23815 mitochondrial read fraction: d0/d3/d7 median=0.03839 d10=0.04951 ratio=1.290 material=False
+[tb reading] key=d7_unexplained d0→d7 gives p ≤ 0.05 with no technical difference at d10 → the discrepancy is unexplained.
+[findings] <repo>\FINDINGS_FIBRO2.md
+====================================================================================================
+FIBRO2 RUN cell=tc  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+====================================================================================================
+FIBRO2 T-C  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+Written **before any T-C boosting fit**, 2026-09-18. No threshold in this block is re-tuned after numbers exist.
+
+On GTEx cultured fibroblasts only (the Stage 1 cohort and preprocessing, unchanged: `SMAFRZE==RNASEQ`, `SMTSD == "Cells - Cultured fibroblasts"`, gene filter ≥6 counts in ≥20% of samples, TMM/edgeR log2-CPM `prior.count=2`, per-gene z-score on training rows only). D1 n is too small; excluded from B1↔C1 transfer and from within-site CV, stated, not silently dropped.
+
+Fit `sklearn.ensemble.HistGradientBoostingRegressor`. Hyperparameters by inner grouped CV on training folds only (outer folds unchanged: within-site `SMNABTCH`-grouped; transfer is B1→C1 and C1→B1). Inner-CV selection metric is Spearman ρ on the inner held-out batches; the selected hyperparameter tuple is frozen for that train split before any permutation of that split.
+
+Report within-site ρ and **B1→C1 / C1→B1 transfer ρ** with the same donor-level permutation null (n_perm=200, seed `20260914`) and donor-bootstrap 95% CI (B=200, seed `20260918`), side by side with the ridge numbers from `results/fibro/stage1_cv.csv` and `results/fibro/stage1_transfer.csv`. Uncalibrated R² reported, never a gate.
+
+This is a **diagnostic, not a replacement**. A nonlinear model yields a score, not a direction; the project's plane, angles, and "age movement per unit identity loss" criterion all require a direction, so a nonlinear model cannot be substituted into Stage 2 without discarding the geometry. Do not rescore GSE297234 with boosting.
+
+**Pre-registered reading:**
+- boosting transfer ρ within the ridge bootstrap CI (both directions) → linearity is not the limiting factor; ridge stays.
+- boosting transfer ρ materially above the ridge CI (upper bound exceeded in both directions) → the linear direction is leaving signal on the table. Report the gap. Do not rerun Stage 2 with boosting. A direction-preserving nonlinear extension (e.g. a kernel or autoencoder latent with a linear age axis inside it) would be the next design question.
+- boosting transfer ρ below ridge → note it and move on.
+
+A nonlinear model yields a score, not a direction; the project's plane, angles, and 'age movement per unit identity loss' criterion all require a direction, so a nonlinear model cannot be substituted into Stage 2 without discarding the geometry.
+HGB permutation null: donor-level shuffle of ages; fitted scores held fixed (n_perm=200, seed 20260914). Ridge Stage 1 numbers on disk used a refit-on-permuted-y null because ridge is cheap; T-C reading compares HGB transfer ρ to the ridge bootstrap CI, not to ridge p-values. Do not rescore GSE297234 with boosting.
+[tc] pack n=652 genes=23485 D1 n=7. D1 n is too small for a transfer cell; excluded from B1↔C1 transfer and from within-site CV, stated, not silently dropped from the cohort table.
+   inner B1_fold0 {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.49879169499416826 (39s)
+   inner B1_fold0 {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.43366512066496377 (43s)
+   inner B1_fold0 {'max_depth': 6, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.48880956558612193 (77s)
+   inner B1_fold0 {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.50046282340712 (73s)
+[hgb] B1_fold0 selected {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} inner_ρ=+0.500
+   inner B1_fold1 {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.375245751786934 (42s)
+   inner B1_fold1 {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.4382762703256218 (55s)
+   inner B1_fold1 {'max_depth': 6, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.34669277733666515 (83s)
+   inner B1_fold1 {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.3085000312952798 (81s)
+[hgb] B1_fold1 selected {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} inner_ρ=+0.438
+   inner B1_fold2 {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.5169846988294771 (53s)
+   inner B1_fold2 {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.5090304972247182 (53s)
+   inner B1_fold2 {'max_depth': 6, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.4811182479238984 (81s)
+   inner B1_fold2 {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.4679366337838232 (87s)
+[hgb] B1_fold2 selected {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} inner_ρ=+0.517
+   inner B1_fold3 {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.48809957438323714 (55s)
+   inner B1_fold3 {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.4514665197622501 (65s)
+   inner B1_fold3 {'max_depth': 6, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.4640036409914626 (80s)
+   inner B1_fold3 {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.41994875095845335 (81s)
+[hgb] B1_fold3 selected {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} inner_ρ=+0.488
+   inner B1_fold4 {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.35596432584612886 (53s)
+   inner B1_fold4 {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.28361905818315664 (48s)
+   inner B1_fold4 {'max_depth': 6, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.3030711854618584 (73s)
+   inner B1_fold4 {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.3020788388700212 (83s)
+[hgb] B1_fold4 selected {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} inner_ρ=+0.356
+[cv] B1 hgb ρ=+0.442 null=+0.009 p=+0.005 CI=[+0.360, +0.510] n=421 (1434s)
+   inner C1_fold0 {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.1511000265103261 (37s)
+   inner C1_fold0 {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.08247231610060587 (37s)
+   inner C1_fold0 {'max_depth': 6, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.1070741804133097 (44s)
+   inner C1_fold0 {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.13818300940072975 (42s)
+[hgb] C1_fold0 selected {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} inner_ρ=+0.151
+   inner C1_fold1 {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.048493353570872484 (39s)
+   inner C1_fold1 {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.12132341708756565 (41s)
+   inner C1_fold1 {'max_depth': 6, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.04358562598758178 (46s)
+   inner C1_fold1 {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.05299789673513932 (46s)
+[hgb] C1_fold1 selected {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} inner_ρ=+0.121
+   inner C1_fold2 {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.12148760488603853 (42s)
+   inner C1_fold2 {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.18156169773300382 (39s)
+   inner C1_fold2 {'max_depth': 6, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.12820791815309654 (40s)
+   inner C1_fold2 {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.18567723478522302 (39s)
+[hgb] C1_fold2 selected {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} inner_ρ=+0.186
+   inner C1_fold3 {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.3612807675833328 (39s)
+   inner C1_fold3 {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.36375760192417184 (38s)
+   inner C1_fold3 {'max_depth': 6, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.35188746762616613 (42s)
+   inner C1_fold3 {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.32822156319487833 (44s)
+[hgb] C1_fold3 selected {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} inner_ρ=+0.364
+   inner C1_fold4 {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.28504116723126055 (38s)
+   inner C1_fold4 {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.2573003489706001 (37s)
+   inner C1_fold4 {'max_depth': 6, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.2805608093321497 (44s)
+   inner C1_fold4 {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.28881689911062985 (42s)
+[hgb] C1_fold4 selected {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} inner_ρ=+0.289
+[cv] C1 hgb ρ=+0.184 null=+0.004 p=+0.005 CI=[+0.067, +0.312] n=224 (2340s)
+[cv] skip site D1: n=7 < 10
+[cv] skip site D1: {'skipped': True, 'site': 'D1', 'n': 7, 'reason': 'n<10'}
+   inner B1->C1 {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.5344605986747947 (65s)
+   inner B1->C1 {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.5066768233207114 (72s)
+   inner B1->C1 {'max_depth': 6, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.4721671944019574 (97s)
+   inner B1->C1 {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.5058024170853214 (95s)
+[hgb] B1->C1 selected {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} inner_ρ=+0.534
+[transfer] B1→C1 hgb ρ=+0.452 null=-0.009 p=+0.005 CI=[+0.330, +0.562] (354s)
+   inner C1->B1 {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.2818958153987127 (43s)
+   inner C1->B1 {'max_depth': 3, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} ρ_med=0.2059431512470309 (42s)
+   inner C1->B1 {'max_depth': 6, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.23379554304766015 (62s)
+   inner C1->B1 {'max_depth': 6, 'learning_rate': 0.1, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 1.0} ρ_med=0.09111505022182831 (52s)
+[hgb] C1->B1 selected {'max_depth': 3, 'learning_rate': 0.05, 'max_iter': 80, 'min_samples_leaf': 20, 'l2_regularization': 0.0} inner_ρ=+0.282
+[transfer] C1→B1 hgb ρ=+0.456 null=+0.003 p=+0.005 CI=[+0.359, +0.516] (572s)
+[findings] <repo>\FINDINGS_FIBRO2.md
+====================================================================================================
+FIBRO2 RUN cell=extrap  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+====================================================================================================
+FIBRO2 EXTRAP  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing on external or GSE297234. Do not open GSE325735.
+Fail loudly: no substitute columns, no inferred ages, no dropping rows to pass an assertion.
+Report-only. No pass/fail. Mahalanobis is in the leading PCA of GTEx fibroblast z-space. Nearest neighbour is Euclidean in the same z-space (missing genes at 0).
+[extrap] GTEx train z: n=652 p=23485
+[extrap] PCA k=50
+[extrap] GSE297234 all-cell n=8
+[extrap] GSE297234 cluster n=24
+[extrap] cxg_a19d1667 n=93
+[extrap] GSE226189_near_miss_bulk n=82
+[findings] <repo>\FINDINGS_FIBRO2.md

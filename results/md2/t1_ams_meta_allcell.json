@@ -1,0 +1,72 @@
+{
+ "md_score": {
+  "n_requested": 205,
+  "n_mapped": 205,
+  "n_missing": 0,
+  "missing": [],
+  "n_ctrl": 9167,
+  "nbin": 24,
+  "ctrl_per_gene": 100,
+  "seed": 20260914
+ },
+ "tgfb_score": {
+  "n_requested": 54,
+  "n_mapped": 54,
+  "n_missing": 0,
+  "missing": [],
+  "n_ctrl": 3875,
+  "nbin": 24,
+  "ctrl_per_gene": 100,
+  "seed": 20260914
+ },
+ "state_Fibroblast": {
+  "n_requested": 200,
+  "n_mapped": 200,
+  "n_missing": 0,
+  "missing": [],
+  "n_ctrl": 7018,
+  "nbin": 24,
+  "ctrl_per_gene": 100,
+  "seed": 20260914
+ },
+ "state_PartialReprog": {
+  "n_requested": 200,
+  "n_mapped": 200,
+  "n_missing": 0,
+  "missing": [],
+  "n_ctrl": 7021,
+  "nbin": 24,
+  "ctrl_per_gene": 100,
+  "seed": 20260914
+ },
+ "state_EarlyPluripotency": {
+  "n_requested": 200,
+  "n_mapped": 200,
+  "n_missing": 0,
+  "missing": [],
+  "n_ctrl": 8818,
+  "nbin": 24,
+  "ctrl_per_gene": 100,
+  "seed": 20260914
+ },
+ "state_Pluripotency": {
+  "n_requested": 200,
+  "n_mapped": 200,
+  "n_missing": 0,
+  "missing": [],
+  "n_ctrl": 10002,
+  "nbin": 24,
+  "ctrl_per_gene": 100,
+  "seed": 20260914
+ },
+ "state_NonReprog": {
+  "n_requested": 200,
+  "n_mapped": 200,
+  "n_missing": 0,
+  "missing": [],
+  "n_ctrl": 6934,
+  "nbin": 24,
+  "ctrl_per_gene": 100,
+  "seed": 20260914
+ }
+}

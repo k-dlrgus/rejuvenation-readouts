@@ -1,0 +1,71 @@
+{
+ "seed": 20260914,
+ "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11",
+ "n_genes": 25526,
+ "n_types": 20,
+ "n_identity_axes": 19,
+ "random_proj_expect": 0.000744339105226044,
+ "c3": {
+  "method": "pls1",
+  "median_angle_deg": 66.2135284659227,
+  "median_proj_r2": 0.16289476536010716,
+  "consensus_angle_deg": 58.829580279775215,
+  "consensus_proj_r2": 0.2678945827825784,
+  "pairwise_median_deg": 78.26692738106556,
+  "shared_pc1_frac": 0.4049922236510191,
+  "null_median_angle_mean": 70.89182207518779,
+  "null_median_proj_r2_mean": 0.10837836164797922,
+  "null_consensus_angle_mean": 61.878203100910376,
+  "null_pairwise_median_mean": 80.31555316822438,
+  "null_shared_pc1_mean": 0.32979929786089685,
+  "p_proj_r2_ge_obs": 0.0297029702970297,
+  "p_angle_le_obs": 0.0297029702970297,
+  "p_shared_pc1_ge_obs": 0.039603960396039604,
+  "n_perm": 100,
+  "n_identity_axes": 19,
+  "p_genes": 25526,
+  "ridge_median_angle_deg": 83.32323311065412,
+  "ridge_median_proj_r2": 0.013518332193990233,
+  "ridge_consensus_angle_deg": 76.86859088836684,
+  "ridge_shared_pc1_frac": 0.1806884451767552
+ },
+ "c3_ridge": {
+  "median_angle_deg": 83.32323311065412,
+  "median_proj_r2": 0.013518332193990233,
+  "consensus_angle_deg": 76.86859088836684,
+  "shared_pc1_frac": 0.1806884451767552,
+  "pairwise_median_deg": 85.99558125082874
+ },
+ "cv": {
+  "loso": {
+   "median_angle_deg": 74.73839308493575,
+   "median_proj_r2": 0.07008962069659255,
+   "consensus_angle_deg": 62.606871957557615,
+   "pairwise_median_deg": 81.44786688410574,
+   "shared_pc1_frac": 0.2985887615622713,
+   "n_folds": 2,
+   "null_median_angle_mean": 79.88577292283017,
+   "null_median_proj_r2_mean": 0.032056888962627296,
+   "p_angle_le_obs": 0.047619047619047616,
+   "p_proj_r2_ge_obs": 0.047619047619047616,
+   "n_perm": 20
+  },
+  "within_site": {
+   "median_angle_deg": 74.58548840629999,
+   "median_proj_r2": 0.07069470840688752,
+   "consensus_angle_deg": 63.0911653243448,
+   "pairwise_median_deg": 83.05518030729687,
+   "shared_pc1_frac": 0.288742831319839,
+   "n_folds": 10,
+   "null_median_angle_mean": 78.91751395248389,
+   "null_median_proj_r2_mean": 0.03801270023772503,
+   "p_angle_le_obs": 0.09523809523809523,
+   "p_proj_r2_ge_obs": 0.09523809523809523,
+   "n_perm": 20
+  }
+ },
+ "geom": "orthogonal",
+ "geom_text": "the age direction is largely ORTHOGONAL to identity directions \u2014 the axes are separable in geometry even though genes cannot be partitioned.",
+ "shared": "shared across cell types",
+ "n_perm_c": 100
+}

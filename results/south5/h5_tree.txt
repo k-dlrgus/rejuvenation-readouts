@@ -1,0 +1,65 @@
+X: group encoding=csr_matrix
+  data: dataset shape=(500497683,) dtype=float32 encoding=
+  indices: dataset shape=(500497683,) dtype=int32 encoding=
+  indptr: dataset shape=(220404,) dtype=int32 encoding=
+layers: group encoding=dict
+  counts: group encoding=csr_matrix
+    data: dataset shape=(500497683,) dtype=float32 encoding=
+    indices: dataset shape=(500497683,) dtype=int32 encoding=
+    indptr: dataset shape=(220404,) dtype=int32 encoding=
+obs: group encoding=dataframe
+  UMI_count: dataset shape=(220403,) dtype=float32 encoding=array
+  _index: dataset shape=(220403,) dtype=object encoding=string-array
+  control: dataset shape=(220403,) dtype=bool encoding=array
+  dataset: group encoding=categorical
+    categories: dataset shape=(1,) dtype=object encoding=string-array
+    codes: dataset shape=(220403,) dtype=int8 encoding=array
+  final_pairwise_UMI_count: dataset shape=(220403,) dtype=float64 encoding=array
+  gem_group: dataset shape=(220403,) dtype=int64 encoding=array
+  guide_identity: group encoding=categorical
+    categories: dataset shape=(10924,) dtype=object encoding=string-array
+    codes: dataset shape=(220403,) dtype=int16 encoding=array
+  guide_target: group encoding=categorical
+    categories: dataset shape=(1837,) dtype=object encoding=string-array
+    codes: dataset shape=(220403,) dtype=int16 encoding=array
+  guide_umi_count: dataset shape=(220403,) dtype=float64 encoding=array
+  keep: dataset shape=(220403,) dtype=bool encoding=array
+  mt_frac: dataset shape=(220403,) dtype=float32 encoding=array
+  num_cells: dataset shape=(220403,) dtype=float64 encoding=array
+  pairwise_UMI_count: dataset shape=(220403,) dtype=float64 encoding=array
+  pairwise_coef: dataset shape=(220403,) dtype=float64 encoding=array
+  pairwise_singlet_equivalent_UMI_count: dataset shape=(220403,) dtype=float64 encoding=array
+  protospacer: group encoding=categorical
+    categories: dataset shape=(10847,) dtype=object encoding=string-array
+    codes: dataset shape=(220403,) dtype=int16 encoding=array
+  single_cell: dataset shape=(220403,) dtype=bool encoding=array
+  thresholded_features: group encoding=categorical
+    categories: dataset shape=(10924,) dtype=object encoding=string-array
+    codes: dataset shape=(220403,) dtype=int16 encoding=array
+  thresholded_guide_umi: group encoding=categorical
+    categories: dataset shape=(4362,) dtype=object encoding=string-array
+    codes: dataset shape=(220403,) dtype=int16 encoding=array
+obsm: group encoding=dict
+obsp: group encoding=dict
+uns: group encoding=dict
+  log1p: group encoding=dict
+var: group encoding=dataframe
+  cv: dataset shape=(30395,) dtype=float32 encoding=array
+  excess_cv: dataset shape=(30395,) dtype=float32 encoding=array
+  fano: dataset shape=(30395,) dtype=float32 encoding=array
+  feature_types: group encoding=categorical
+    categories: dataset shape=(1,) dtype=object encoding=string-array
+    codes: dataset shape=(30395,) dtype=int8 encoding=array
+  gene_id: dataset shape=(30395,) dtype=object encoding=string-array
+  gene_name: dataset shape=(30395,) dtype=object encoding=string-array
+  genome: group encoding=categorical
+    categories: dataset shape=(1,) dtype=object encoding=string-array
+    codes: dataset shape=(30395,) dtype=int8 encoding=array
+  in_matrix: dataset shape=(30395,) dtype=bool encoding=array
+  mean: dataset shape=(30395,) dtype=float32 encoding=array
+  mean_adjusted_pairwise_p_cost: dataset shape=(30395,) dtype=float64 encoding=array
+  pairwise_chosen: dataset shape=(30395,) dtype=bool encoding=array
+  pairwise_p_cost: dataset shape=(30395,) dtype=float64 encoding=array
+  std: dataset shape=(30395,) dtype=float32 encoding=array
+varm: group encoding=dict
+varp: group encoding=dict

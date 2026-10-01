@@ -1,0 +1,5 @@
+Written **before any external-cohort MD ρ**, 2026-09-19. Report-only. No gate.
+
+Their aging signature comes from Fleischer et al. 2018 (~100 dermal fibroblasts); our ruler comes from GTEx cultured fibroblasts (n=652). If the Fleischer DE sets are buildable from GSE113957 exactly as published (DESeq2 old-vs-young, adjusted p < 0.05 and log2FC > 0.5, old/young from PCA separation), report each instrument's Spearman ρ against donor age in the external cohorts already validated in FINDINGS_FIBRO2.md (CELLxGENE a19d1667-a7b5-4556-9e5f-f9bfa690c0f1, n=93, 10x; GSE226189, n=82, bulk), with nulls and CIs. One table. No gate.
+
+If GSE113957's format prevents exact reconstruction, say so and report the aging-signature comparison as not run rather than approximating. MD and the frozen ruler are still scored. Frozen ruler numbers are read from results/fibro2/; the ruler is not refit.

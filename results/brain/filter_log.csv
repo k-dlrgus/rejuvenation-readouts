@@ -1,0 +1,14 @@
+step,unit,before,after,removed,note
+is_primary_data (NOT applied; all False),cells,1332155,1332155,0,kept all; flag is collection-duplication not double-counting inside this file
+neurotypical (no brain-disease flag to drop),cells,1332155,1332155,0,"Aging_Cohort is already the neurotypical subset of PsychAD; CXG `disease` is systemic comorbidity (atherosclerosis/diabetes), kept"
+nuclei with numeric donor age,cells,1332155,1330258,1897,non-numeric development_stage dropped
+adult nuclei (age >= 20),cells,1330258,1054845,275413,"developmental/adolescent nuclei removed=275,413"
+caller keep_mask (analysis cohort),cells,1332155,1054845,277310,
+cells with numeric donor age,cells,1054845,1054845,0,non-numeric development_stage dropped
+pseudobulk groups with >= 20 cells,groups,4974,3333,1641,
+cells in retained pseudobulk groups,cells,1054845,1044171,10674,
+cell types present in >= 10 donors,cell types,24,20,4,"dropped: {'B cell': np.int64(1), 'T cell': np.int64(6), 'natural killer cell': np.int64(2), 'plasma cell': np.int64(1)}"
+cells in retained cell types,cells,1044171,1043833,338,
+pseudobulks of adult analysis donors,groups,3323,3323,0,
+cell types with >= 10 adult donors,groups,3323,3323,0,types 20 -> 20 dropped={}
+donors with >=1 retained pseudobulk,donors,233,233,0,

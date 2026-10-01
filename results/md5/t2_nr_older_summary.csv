@@ -1,0 +1,6 @@
+instrument,n_qualifying,n_nr_older,consistently_older
+frozen_ruler,3,1,False
+md_score,3,1,False
+tgfb_score,3,2,False
+age_up_minus_age_down,3,3,True
+pluri_primary,3,1,False

@@ -1,0 +1,21 @@
+ok,n,method,norm,alpha,intercept,celltype
+True,179,ridge,2.1944378719230504,0.01,51.35195530726257,GABAergic neuron
+True,220,ridge,3.031276381206086,0.01,52.72727272727273,L2/3 intratelencephalic projecting glutamatergic neuron
+True,215,ridge,2.797399618648009,0.01,52.44651162790698,L2/3-6 intratelencephalic projecting glutamatergic neuron
+True,124,ridge,1.5012963104631978,0.01,50.91935483870968,L5/6 near-projecting glutamatergic neuron
+True,153,ridge,1.7083729103047516,0.01,52.95424836601307,L6 corticothalamic-projecting glutamatergic cortical neuron
+True,150,ridge,2.1023660020826878,0.01,53.06,L6 intratelencephalic projecting glutamatergic neuron
+True,109,ridge,1.5840407653341688,0.01,49.88990825688074,L6b glutamatergic neuron of the primary motor cortex
+True,217,ridge,2.9333272498790333,0.01,52.566820276497694,VIP GABAergic interneuron
+True,229,ridge,2.716874417702516,0.01,52.75982532751092,astrocyte
+True,160,ridge,1.2273976595244465,0.01,48.74375,endothelial cell
+True,205,ridge,2.4551118912409136,0.01,52.33658536585366,lamp5 GABAergic interneuron
+True,219,ridge,1.7105443479486706,0.01,52.71689497716895,microglial cell
+True,232,ridge,3.3690902115184618,0.01,52.5948275862069,oligodendrocyte
+True,232,ridge,2.384924936596323,0.01,52.71551724137931,oligodendrocyte precursor cell
+True,136,ridge,0.9840766794695651,0.01,48.36029411764706,pericyte
+True,31,ridge,0.4105326135715729,10000.0,45.38709677419355,perivascular macrophage
+True,209,ridge,3.0739239547186714,0.01,52.38277511961722,pvalb GABAergic interneuron
+True,16,ridge,0.23639944591142367,10000.0,44.3125,smooth muscle cell
+True,206,ridge,2.4500132146632496,0.01,51.94660194174757,sst GABAergic interneuron
+True,81,ridge,0.8885891596553854,0.01,47.25925925925926,vascular leptomeningeal cell

@@ -1,0 +1,43 @@
+{
+ "control_set_definition": "guide_target == 'non' (exact string equality)",
+ "matrix_shape_before": [
+  220403,
+  30395
+ ],
+ "matrix_shape_after": [
+  220403,
+  30395
+ ],
+ "n_before": 220403,
+ "n_after": 220403,
+ "dropped_not_singlet": 0,
+ "dropped_singlet_fails_keep": 0,
+ "control_counts": {
+  "False": 208569,
+  "True": 11834
+ },
+ "keep_counts": {
+  "True": 220403
+ },
+ "single_cell_counts": {
+  "True": 220403
+ },
+ "n_nt_guides": 78,
+ "n_nt_cells": 14013,
+ "n_nt_guides_control_true": 61,
+ "n_nt_guides_control_false": 17,
+ "n_nt_cells_control_true": 11834,
+ "n_nt_cells_control_false": 2179,
+ "expected_n_nt_guides": 78,
+ "expected_control_true": 61,
+ "expected_control_false": 17,
+ "guides_with_cells_in_both_control_states": [],
+ "guides_carrying_non_and_another_label": [],
+ "n_control_true_outside_non": 0,
+ "south5_n_nt_cells": 11834,
+ "south5_n_nt_guides": 61,
+ "cells_moved_targeting_to_control": 2179,
+ "guides_moved_targeting_to_control": 17,
+ "n_targeting_cells": 206390,
+ "n_targeting_cells_south5": 208569
+}

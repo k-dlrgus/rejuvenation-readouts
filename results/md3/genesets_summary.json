@@ -1,0 +1,20 @@
+{
+ "mmc3_path": "<repo>\\results\\md\\raw\\suppl__ars.els-cdn.com__1-s2.0-S0092867425008530-mmc3.xlsx",
+ "n_age_up": 1533,
+ "n_age_down": 2007,
+ "age_up_id_type": "symbol",
+ "age_down_id_type": "symbol",
+ "n_MD": 205,
+ "n_TGFB": 54,
+ "mmc3_equals_md2_age_up": true,
+ "mmc3_equals_md2_age_down": true,
+ "used_as_deseq2_rebuild": false,
+ "used_as_published_lists": true,
+ "seed": 20260914,
+ "columns_read": {
+  "Aging_signatures": [
+   "Age up",
+   "Age down"
+  ]
+ }
+}

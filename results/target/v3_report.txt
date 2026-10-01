@@ -1,0 +1,50 @@
+====================================================================================================
+TARGET V3 — one target or twenty  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO GENE SELECTION: every gene in the Phase-1 matrix enters every model with a weight.
+NO perturbation data. No TF Atlas. Expression space only.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+Working space: global train z-score; ridge coefficients live in that space (no second per-type z-score).
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[V3a] pairwise median angle of per-type TARGETs = 86.0°  (n_types_ok=20)
+[V3b] PC1 of per-type TARGETs explains 0.173 of variance across types
+   V3a permutation null (50 donor-level within-site shuffles, ridge TARGET)
+      perm 10/50
+      perm 20/50
+      perm 30/50
+      perm 40/50
+      perm 50/50
+     pairwise null mean=85.8°  p(angle≤obs)=0.725
+     PC1 null mean=0.162  p=0.039
+[V3b] jointly-fit within-type ridge TARGET: angle to identity after projection retained=0.997; median angle to per-type TARGETs=72.0°
+
+[V3c] scheme=loso
+   V3c OOF consensus vs own TARGET  scheme=loso
+      own TARGET primary R²=-0.077  consensus R²=-0.147  fold-mean PC1=0.171
+      consensus permutation null (20 shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      consensus null mean=-1.006  p=0.048
+
+[V3c] scheme=within_site
+   V3c OOF consensus vs own TARGET  scheme=within_site
+      own TARGET primary R²=+0.231  consensus R²=+0.100  fold-mean PC1=0.174
+      consensus permutation null (20 shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      consensus null mean=-0.332  p=0.048
+
+[V3 verdict] (b) Type-specific targets — consensus loses most of the signal. There is no universal rejuvenation direction in cortex; interventions would have to be cell-type-specific.
+   within-site own R²=+0.231  consensus R²=+0.100  median loss=+0.144  median ratio=+0.620
+[V3] wrote results/target/v3_*
+[V3] done.

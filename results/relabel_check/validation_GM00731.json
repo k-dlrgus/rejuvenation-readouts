@@ -1,0 +1,63 @@
+{
+  "same_cells_in_order": true,
+  "percent_mt_max_abs_diff": 7.105427357601002e-15,
+  "cluster_identical": true,
+  "gene_mean_max_abs_diff": 0.0,
+  "bins_identical": true,
+  "md_max_abs_diff": 0.0,
+  "state_max_abs_diff": {
+    "state_Fibroblast": 0.0,
+    "state_PartialReprog": 0.0,
+    "state_EarlyPluripotency": 0.0,
+    "state_Pluripotency": 0.0,
+    "state_NonReprog": 0.0
+  },
+  "labels_identical": true,
+  "meta": {
+    "lines": [
+      "GM00731"
+    ],
+    "n_cells_in": {
+      "GM00731": 22653
+    },
+    "n_cells_kept": {
+      "GM00731": 22132
+    },
+    "n_genes_kept": 29058,
+    "n_genes_dropped": 7543,
+    "n_hvg_candidates": 29058,
+    "hvg_coef": [
+      0.05377452928208112,
+      1.258931887338603,
+      0.3461653929528511
+    ],
+    "npc": 50,
+    "evr_sum": 0.25442197918891907,
+    "snn_edges": 808714,
+    "n_clusters": 19,
+    "sizes": [
+      4012,
+      2322,
+      2096,
+      2039,
+      2031,
+      1594,
+      1030,
+      1014,
+      986,
+      961,
+      863,
+      626,
+      570,
+      445,
+      439,
+      376,
+      343,
+      243,
+      142
+    ],
+    "mito_rule": "symbol upper startswith MT-",
+    "n_mito": 13
+  },
+  "passed": true
+}

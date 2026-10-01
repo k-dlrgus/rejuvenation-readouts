@@ -1,0 +1,15 @@
+{
+ "n_sources": 67,
+ "n_ok": 38,
+ "n_fail": 4,
+ "geo_accessions": [
+  "GSE297233",
+  "GSE297234"
+ ],
+ "pubmed_pmc": null,
+ "gate_open": false,
+ "gate_reason": "MD gene list recovered from open supplement mmc3.xlsx (n=205 genes, sheet MD_signatures, column 'MD score'; https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc3.xlsx). Computation of the score from those genes is not in any public source retrieved this session. STOP after Stage 1.",
+ "gene_list_recovered": true,
+ "n_MD_genes": 205,
+ "computation_recovered": false
+}

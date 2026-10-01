@@ -1,0 +1,18 @@
+{
+ "n_median_rows": 30,
+ "n_slope_rows": 6,
+ "n_bend_rows": 6,
+ "sanity_ok": true,
+ "by_donor": {
+  "GM00731": {
+   "frozen_ruler": "mixed",
+   "md_score": "mixed",
+   "age_up_minus_age_down": "bend"
+  },
+  "GM23815": {
+   "frozen_ruler": "mixed",
+   "md_score": "mixed",
+   "age_up_minus_age_down": "bend"
+  }
+ }
+}

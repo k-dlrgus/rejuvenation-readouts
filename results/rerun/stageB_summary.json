@@ -1,0 +1,48 @@
+{
+ "seed": 20260914,
+ "n_donors": 981,
+ "r2_age_pool": 0.2343458637116479,
+ "B1": {
+  "r2_pool": 0.23434586371164778,
+  "r2_pool_comp": 0.6289324173186311,
+  "increment": 0.39458655360698336,
+  "frac_within_pool_insample": 0.5153587434658337,
+  "adj_r2_pool": 0.17180899165277574,
+  "adj_r2_pool_comp": 0.5914087291823129,
+  "F_p": 7.354361046698731e-128,
+  "null_increment_mean": 0.013362503213950603,
+  "null_increment_p95": 0.021374835255277405,
+  "n_comp_df": 16
+ },
+ "B2": {
+  "composition_r2_within": 0.49285252302553834,
+  "composition_ci": [
+   0.4336323688493762,
+   0.5356138518483252
+  ],
+  "composition_mae_within": 8.078467687490493,
+  "composition_r2_naive": 0.48913053084403535,
+  "expression_alltype_r2_within": 0.48228243443901386,
+  "expression_alltype_ci": [
+   0.4540146018620064,
+   0.5075285938722737
+  ],
+  "expression_alltype_mae_within": 8.123353834879385,
+  "expression_alltype_r2_naive": 0.5142860924079884,
+  "expression_per_type_r2_within_median": 0.11963132647487576,
+  "expression_per_type_r2_within_max": 0.582685600551657,
+  "expression_per_type_best": "CD4_Naive",
+  "combined_2df_r2": 0.5994844545468896,
+  "corr_comp_expr_pred": 0.7764798448381222,
+  "shuffle": {
+   "composition": 0.001149355436824595,
+   "expression_alltype": 0.0004494372016977666,
+   "per_type_median": -0.0015935743109833922
+  }
+ },
+ "B3": {
+  "A_share_sum_unique_age": 0.0029694787827256736,
+  "MIXED_plus_I_share": 0.06394686479996922,
+  "unique_ct_ge_0p5_share": 0.09900508931252874
+ }
+}

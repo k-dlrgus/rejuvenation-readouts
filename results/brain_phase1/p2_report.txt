@@ -1,0 +1,53 @@
+====================================================================================================
+BRAIN PHASE 1  STAGE P2 — confound filters.  seed = 20260914
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+[P2] declared A-genes in: 1578; I-genes: 1876; MIXED: 37
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[P2] chromosomes mapped for 25,520/25,526 genes
+[P2] |r|>=0.3 with p0_cc_umi_frac: 63 genes
+[P2] |r|>=0.3 with p0_frac_Oligo: 0 genes
+[P2] |r|>=0.3 with p0_frac_Immune: 1 genes
+
+Covariate–age (within cell type) for depth/cycle (orientation):
+Spearman(age, covariate) within cell type:
+covariate                                                    cc_umi_frac  mean_counts_per_cell  mean_genes_per_cell  n_cells  prolif_marker_cell_frac
+celltype                                                                                                                                             
+GABAergic neuron                                                  +0.168                -0.224               -0.279   -0.229                   -0.232
+L2/3 intratelencephalic projecting glutamatergic neuron           +0.524                -0.195               -0.222   -0.163                   -0.134
+L2/3-6 intratelencephalic projecting glutamatergic neuron         +0.342                -0.115               -0.119   -0.140                   -0.127
+L5/6 near-projecting glutamatergic neuron                         +0.419                -0.131               -0.164   -0.275                   -0.154
+L6 corticothalamic-projecting glutamatergic cortical neuron       +0.534                -0.014               -0.016   -0.182                   -0.103
+L6 intratelencephalic projecting glutamatergic neuron             +0.537                +0.020               +0.004   -0.271                   +0.114
+L6b glutamatergic neuron of the primary motor cortex              +0.338                +0.144               +0.092   -0.066                   +0.098
+VIP GABAergic interneuron                                         +0.098                -0.126               -0.197   -0.274                   -0.117
+astrocyte                                                         +0.091                +0.265               +0.268   -0.081                   +0.021
+endothelial cell                                                  +0.020                +0.031               +0.043   -0.363                   -0.136
+lamp5 GABAergic interneuron                                       +0.054                -0.057               -0.126   -0.225                   -0.139
+microglial cell                                                   +0.245                +0.285               +0.299   -0.260                   -0.032
+oligodendrocyte                                                   +0.073                +0.134               +0.106   +0.067                   +0.154
+oligodendrocyte precursor cell                                    +0.062                +0.209               +0.197   -0.415                   +0.237
+pericyte                                                          -0.056                +0.093               +0.067   -0.193                   -0.054
+perivascular macrophage                                           +0.259                +0.043               +0.097   +0.057                   +0.037
+pvalb GABAergic interneuron                                       +0.195                -0.111               -0.163   -0.232                   -0.143
+smooth muscle cell                                                +0.393                -0.016               -0.028   -0.084                   +0.147
+sst GABAergic interneuron                                         +0.282                -0.202               -0.272   -0.390                   -0.189
+vascular leptomeningeal cell                                      +0.130                +0.187               +0.179   -0.219                   +0.057
+
+Sequential A-gene survival:
+                                                     filter  flagged_marginal  removed_incremental  surviving
+             cell-cycle (Tirosh S/G2M + proliferation list)                 5                    5       1573
+        cell-cycle (data: |r|>=0.3 with cycling covariates)                94                   94       1479
+                                    ribosomal (RPL/RPS/MRP)                35                   26       1453
+                                        mitochondrial (MT-)                 2                    2       1451
+                                     sex-linked (chrX/chrY)                97                   89       1362
+                sex-DE (|d|>=0.5, p<1e-6, within cell type)                 6                    6       1356
+depth-correlated (|r|>=0.3 with mean UMI/genes per nucleus)                 6                    1       1355
+            P0-covariate-correlated (|r|>=0.3, within type)                11                    0       1355
+
+[P2] A surviving: 1355 / 1578
+[P2] 99/1578 declared A-genes are cell-cycle flagged (list=5, data=94). DLPFC is largely post-mitotic; OPCs are the main cycling population. Small CC hit, as expected for post-mitotic cortex.
+
+[P2] 1355 A-genes survive (>= 30). Proceed to P3.
+[findings] wrote <repo>\FINDINGS_BRAIN_PHASE1.md
+[P2] done.

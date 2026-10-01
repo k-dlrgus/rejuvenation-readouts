@@ -1,0 +1,96 @@
+﻿====================================================================================================
+DATASET: 3faad104-2ab8-4434-816d-474d8d2641db
+TITLE: Single-cell eQTL mapping identifies cell type specific genetic control of autoimmune disease
+COLLECTION: Single-cell eQTL mapping identifies cell type specific genetic control of autoimmune disease
+DOI: 10.1126/science.abf3041
+collection_id: dde06e0f-ab3b-46be-96a2-a8082383c4a1
+cells=1,248,980  donors=981  cell_types=29  age=19.0-97.0  distinct_numeric_ages=78/78
+assays: 10x 3' v2
+tissues: blood
+diseases: normal
+h5ad: https://datasets.cellxgene.cziscience.com/1e44db10-b572-46cc-adae-dcc7acd44ca6.h5ad (4.4 GB)
+dev stages sample: 19-year-old stage; 20-year-old stage; 21-year-old stage; 22-year-old stage; 23-year-old stage; 24-year-old stage; 25-year-old stage; 26-year-old stage; 27-year-old stage; 28-year-old stage; 29-year-old stage; 30-year-old stage
+====================================================================================================
+DATASET: c838aec3-03ef-4398-b882-0e3912abfff0
+TITLE: AIDA Phase 1 Data Freeze v2: Chinese, Indian, Japanese, Korean, Malay, and Thai donors in Japan, Singapore, South Korea, Thailand, and India
+COLLECTION: Asian Immune Diversity Atlas (AIDA)
+DOI: 10.1016/j.cell.2025.02.017
+collection_id: ced320a1-29f3-47c1-a735-513c7084d508
+cells=1,265,624  donors=625  cell_types=32  age=19.0-77.0  distinct_numeric_ages=55/55
+assays: 10x 5' v2
+tissues: blood
+diseases: normal
+h5ad: https://datasets.cellxgene.cziscience.com/f89a12c2-7a3b-415b-ab87-bbc550fe17f4.h5ad (14.2 GB)
+dev stages sample: 19-year-old stage; 21-year-old stage; 22-year-old stage; 23-year-old stage; 24-year-old stage; 25-year-old stage; 26-year-old stage; 27-year-old stage; 28-year-old stage; 29-year-old stage; 30-year-old stage; 31-year-old stage
+====================================================================================================
+DATASET: ff4235bb-1cdf-4dcf-a13a-dc4f32244400
+TITLE: All cells
+COLLECTION: Immunobiology of Aging Cohort PBMC Profiling
+DOI: 10.1038/s41586-025-09686-5
+collection_id: 60a2676d-9f37-46cc-9b02-c7370a53be9c
+cells=3,758,514  donors=234  cell_types=37  age=40.0-89.0  distinct_numeric_ages=51/51
+assays: 10x gene expression flex
+tissues: blood
+diseases: cytomegalovirus infection; normal
+h5ad: https://datasets.cellxgene.cziscience.com/924554e2-d893-4015-be86-017e96fab55b.h5ad (40.1 GB)
+dev stages sample: 40-year-old stage; 41-year-old stage; 42-year-old stage; 43-year-old stage; 44-year-old stage; 45-year-old stage; 46-year-old stage; 47-year-old stage; 48-year-old stage; 49-year-old stage; 50-year-old stage; 51-year-old stage
+====================================================================================================
+DATASET: ca7d95ac-53aa-4a94-8c76-300c608ce6a0
+TITLE: All cells from human PBMC samples collected in Indonesia
+COLLECTION: Ancestral and environmental diversity shape the immune landscape in Indonesia
+DOI: 10.64898/2026.02.15.704933
+collection_id: d1e0e64d-6d2a-4a3e-b7f4-43ed909a9d9c
+cells=462,034  donors=199  cell_types=13  age=18.0-60.0  distinct_numeric_ages=41/41
+assays: 10x 5' v2
+tissues: blood
+diseases: normal
+h5ad: https://datasets.cellxgene.cziscience.com/6a322de5-4cc6-43f5-b35d-6f0c246fb297.h5ad (3.9 GB)
+dev stages sample: 18-year-old stage; 19-year-old stage; 20-year-old stage; 21-year-old stage; 22-year-old stage; 23-year-old stage; 24-year-old stage; 25-year-old stage; 26-year-old stage; 27-year-old stage; 28-year-old stage; 29-year-old stage
+====================================================================================================
+DATASET: 789ad837-9bf5-436c-9b60-9f1153546e4c
+TITLE: altra all samples
+COLLECTION: Progression to rheumatoid arthritis in at-risk individuals is defined by systemic inflammation and by T and B cell dysregulation
+DOI: 10.1126/scitranslmed.adt7214
+collection_id: 3a518635-c062-4c66-a9bd-c4581a5e3c63
+cells=2,029,864  donors=89  cell_types=38  age=21.0-78.0  distinct_numeric_ages=50/50
+assays: 10x 3' v3
+tissues: blood
+diseases: cytomegalovirus infection; cytomegalovirus infection || rheumatoid arthritis; normal; rheumatoid arthritis
+h5ad: https://datasets.cellxgene.cziscience.com/498b1730-9e9e-4901-87ad-2532d94ebe90.h5ad (18.1 GB)
+dev stages sample: 21-year-old stage; 22-year-old stage; 23-year-old stage; 24-year-old stage; 28-year-old stage; 31-year-old stage; 32-year-old stage; 33-year-old stage; 34-year-old stage; 35-year-old stage; 36-year-old stage; 37-year-old stage
+====================================================================================================
+DATASET: d86edd6a-4b5d-437a-ad80-1fd976a5e23a
+TITLE: Blood
+COLLECTION: Automatic cell-type harmonization and integration across Human Cell Atlas datasets
+DOI: 10.1016/j.cell.2023.11.026
+collection_id: 854c0855-23ad-4362-8b77-6b1639e7a9fc
+cells=335,916  donors=65  cell_types=24  age=21.0-73.0  distinct_numeric_ages=32/37
+assays: 10x 3' v2; 10x 3' v3; 10x 5' v1; 10x 5' v2
+tissues: blood
+diseases: normal
+h5ad: https://datasets.cellxgene.cziscience.com/e1ce4d49-a850-4167-a18c-9e9e68bbfe66.h5ad (2.4 GB)
+dev stages sample: 21-year-old stage; 22-year-old stage; 26-year-old stage; 27-year-old stage; 28-year-old stage; 29-year-old stage; 30-year-old stage; 32-year-old stage; 33-year-old stage; 34-year-old stage; 35-year-old stage; 37-year-old stage
+====================================================================================================
+DATASET: 1b350d0a-4535-4879-beb6-1142f3f94947
+TITLE: Immune aging project - all cells
+COLLECTION: Multimodal profiling reveals tissue-directed signatures of human immune cells altered with age
+DOI: 10.1038/s41590-025-02241-4
+collection_id: cc431242-35ea-41e1-a100-41e0dec2665b
+cells=1,281,499  donors=24  cell_types=31  age=20.0-75.0  distinct_numeric_ages=12/17
+assays: 10x 3' v3; 10x 5' v2
+tissues: blood; bone marrow; colonic epithelium; epithelial lining fluid; inguinal lymph node; jejunal epithelium; jejunum lamina propria; lamina propria of mucosa of colon; liver; lung; mesenteric lymph node;
+diseases: normal
+h5ad: https://datasets.cellxgene.cziscience.com/589324ee-ce60-4295-843f-29a52894a522.h5ad (12.7 GB)
+dev stages sample: 20-year-old stage; 23-year-old stage; 25-year-old stage; 27-year-old stage; 33-year-old stage; 48-year-old stage; 56-year-old stage; 64-year-old stage; 67-year-old stage; 68-year-old stage; 73-year-old stage; 75-year-old stage
+====================================================================================================
+DATASET: 53d208b0-2cfd-4366-9866-c3c6114081bc
+TITLE: Tabula Sapiens - All Cells
+COLLECTION: Tabula Sapiens
+DOI: 10.1126/science.abl4896
+collection_id: e5f58829-1a66-40b5-a624-9046778e74f5
+cells=1,136,218  donors=24  cell_types=180  age=22.0-74.0  distinct_numeric_ages=19/19
+assays: 10x 3' v3; 10x 5' v2; Smart-seq2; Smart-seq3
+tissues: abdominal aorta; adipose tissue; anterior part of tongue; anterior segment of eyeball; aorta; ascending colon; bladder organ; blood; bone marrow; brown adipose tissue; buccal mucosa; cardiac atrium; c
+diseases: normal
+h5ad: https://datasets.cellxgene.cziscience.com/1c88f927-bcbb-4bb1-9881-281842945a2d.h5ad (45.0 GB)
+dev stages sample: 22-year-old stage; 26-year-old stage; 33-year-old stage; 36-year-old stage; 37-year-old stage; 38-year-old stage; 40-year-old stage; 42-year-old stage; 45-year-old stage; 46-year-old stage; 55-year-old stage; 56-year-old stage

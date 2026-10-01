@@ -1,0 +1,81 @@
+celltype,site,r2,mae,n,method,scheme,use_target
+GABAergic neuron,pooled,-0.25275659477129553,16.23834930037257,179,ridge,loso,False
+GABAergic neuron,H,-0.8632475521911207,16.94935107026991,96,ridge,loso,False
+GABAergic neuron,M,-0.48686629171802864,15.415985807479254,83,ridge,loso,False
+GABAergic neuron,mean_of_sites,-0.6750569219545747,16.182668438874583,179,ridge,loso,False
+L2/3 intratelencephalic projecting glutamatergic neuron,pooled,0.6399988203281602,8.97993251394924,220,ridge,loso,False
+L2/3 intratelencephalic projecting glutamatergic neuron,H,0.4718736186341129,9.504687166357987,112,ridge,loso,False
+L2/3 intratelencephalic projecting glutamatergic neuron,M,0.5743354538068777,8.435742504043871,108,ridge,loso,False
+L2/3 intratelencephalic projecting glutamatergic neuron,mean_of_sites,0.5231045362204954,8.97021483520093,220,ridge,loso,False
+L2/3-6 intratelencephalic projecting glutamatergic neuron,pooled,0.4434815300280104,11.252485838120718,215,ridge,loso,False
+L2/3-6 intratelencephalic projecting glutamatergic neuron,H,0.13322898503316427,12.206973202027168,111,ridge,loso,False
+L2/3-6 intratelencephalic projecting glutamatergic neuron,M,0.3851807690840442,10.233754132412871,104,ridge,loso,False
+L2/3-6 intratelencephalic projecting glutamatergic neuron,mean_of_sites,0.25920487705860423,11.22036366722002,215,ridge,loso,False
+L5/6 near-projecting glutamatergic neuron,pooled,-0.3293236678065232,16.32568831219194,124,ridge,loso,False
+L5/6 near-projecting glutamatergic neuron,H,-1.0105618164637575,17.01585997743307,82,ridge,loso,False
+L5/6 near-projecting glutamatergic neuron,M,-0.35672075331069597,14.978210299102106,42,ridge,loso,False
+L5/6 near-projecting glutamatergic neuron,mean_of_sites,-0.6836412848872268,15.997035138267588,124,ridge,loso,False
+L6 corticothalamic-projecting glutamatergic cortical neuron,pooled,0.06525231131711962,13.779151776879356,153,ridge,loso,False
+L6 corticothalamic-projecting glutamatergic cortical neuron,H,-0.28850900288589476,13.939937358653351,85,ridge,loso,False
+L6 corticothalamic-projecting glutamatergic cortical neuron,M,-0.10852757637111599,13.578169799661861,68,ridge,loso,False
+L6 corticothalamic-projecting glutamatergic cortical neuron,mean_of_sites,-0.19851828962850537,13.759053579157605,153,ridge,loso,False
+L6 intratelencephalic projecting glutamatergic neuron,pooled,0.11431236563468339,13.651494120281463,150,ridge,loso,False
+L6 intratelencephalic projecting glutamatergic neuron,H,-0.463305482028161,14.541160152609235,86,ridge,loso,False
+L6 intratelencephalic projecting glutamatergic neuron,M,0.04875143647699842,12.45600538934101,64,ridge,loso,False
+L6 intratelencephalic projecting glutamatergic neuron,mean_of_sites,-0.2072770227755813,13.498582770975123,150,ridge,loso,False
+L6b glutamatergic neuron of the primary motor cortex,pooled,-0.22224605722010926,14.847388253352944,109,ridge,loso,False
+L6b glutamatergic neuron of the primary motor cortex,H,-0.8422015185434926,16.18886876667221,73,ridge,loso,False
+L6b glutamatergic neuron of the primary motor cortex,M,-0.007752318438391637,12.127163879122218,36,ridge,loso,False
+L6b glutamatergic neuron of the primary motor cortex,mean_of_sites,-0.4249769184909421,14.158016322897215,109,ridge,loso,False
+VIP GABAergic interneuron,pooled,0.0065286360265128796,15.048949321020887,217,ridge,loso,False
+VIP GABAergic interneuron,H,-0.46361950248299055,15.692020345144016,112,ridge,loso,False
+VIP GABAergic interneuron,M,-0.1394930629733213,14.36300689528955,105,ridge,loso,False
+VIP GABAergic interneuron,mean_of_sites,-0.30155628272815593,15.027513620216784,217,ridge,loso,False
+astrocyte,pooled,0.3279164822599775,12.334345823841101,229,ridge,loso,False
+astrocyte,H,0.01391964428701753,12.455323817310855,117,ridge,loso,False
+astrocyte,M,0.14559855959138057,12.207967027091447,112,ridge,loso,False
+astrocyte,mean_of_sites,0.07975910193919905,12.331645422201152,229,ridge,loso,False
+endothelial cell,pooled,-0.42582476413044734,17.081443041233946,160,ridge,loso,False
+endothelial cell,H,-0.9999690151253084,17.473983556422155,109,ridge,loso,False
+endothelial cell,M,-0.5856708023956734,16.242483900929738,51,ridge,loso,False
+endothelial cell,mean_of_sites,-0.7928199087604909,16.85823372867595,160,ridge,loso,False
+lamp5 GABAergic interneuron,pooled,-0.13550711465461585,16.15856465045268,205,ridge,loso,False
+lamp5 GABAergic interneuron,H,-0.7208346053276973,16.734647023999464,109,ridge,loso,False
+lamp5 GABAergic interneuron,M,-0.25889480427391054,15.504471122154762,96,ridge,loso,False
+lamp5 GABAergic interneuron,mean_of_sites,-0.4898647048008039,16.119559073077113,205,ridge,loso,False
+microglial cell,pooled,-0.02852466522405961,15.178598723243336,219,ridge,loso,False
+microglial cell,H,-0.45283250172314515,15.249447430517444,112,ridge,loso,False
+microglial cell,M,-0.35208566160858323,15.104439328713427,107,ridge,loso,False
+microglial cell,mean_of_sites,-0.4024590816658642,15.176943379615436,219,ridge,loso,False
+oligodendrocyte,pooled,0.22399004289144553,13.330329826298435,232,ridge,loso,False
+oligodendrocyte,H,-0.13539819843969791,13.379580009195923,120,ridge,loso,False
+oligodendrocyte,M,0.030764440323257425,13.277561773193984,112,ridge,loso,False
+oligodendrocyte,mean_of_sites,-0.052316879058220245,13.328570891194953,232,ridge,loso,False
+oligodendrocyte precursor cell,pooled,0.26665931401263687,12.953678669107576,232,ridge,loso,False
+oligodendrocyte precursor cell,H,-0.06953217798985589,13.041023567278643,119,ridge,loso,False
+oligodendrocyte precursor cell,M,0.08237409098269322,12.861695988732732,113,ridge,loso,False
+oligodendrocyte precursor cell,mean_of_sites,0.006420956496418662,12.951359778005688,232,ridge,loso,False
+pericyte,pooled,-0.5838818223976403,17.2565197575511,136,ridge,loso,False
+pericyte,H,-0.970336528507985,17.38876477034853,90,ridge,loso,False
+pericyte,M,-0.8596766240083609,16.997779515121362,46,ridge,loso,False
+pericyte,mean_of_sites,-0.9150065762581729,17.193272142734948,136,ridge,loso,False
+perivascular macrophage,pooled,-1.809067106469076,28.646934063939252,31,ridge,loso,False
+perivascular macrophage,H,-5.511717882047113,28.597773310109517,22,ridge,loso,False
+perivascular macrophage,M,-2.6674105237848558,28.767104795523032,9,ridge,loso,False
+perivascular macrophage,mean_of_sites,-4.089564202915984,28.682439052816274,31,ridge,loso,False
+pvalb GABAergic interneuron,pooled,0.04042507164477771,14.845104507509413,209,ridge,loso,False
+pvalb GABAergic interneuron,H,-0.39725861559411113,15.015470159268826,110,ridge,loso,False
+pvalb GABAergic interneuron,M,-0.10741132388005337,14.655809338887845,99,ridge,loso,False
+pvalb GABAergic interneuron,mean_of_sites,-0.25233496973708225,14.835639749078336,209,ridge,loso,False
+smooth muscle cell,pooled,-0.5236611707751062,8.401251993961708,4,ridge,loso,False
+smooth muscle cell,H,,,0,ridge,loso,False
+smooth muscle cell,M,-0.5236611707751062,8.401251993961708,4,ridge,loso,False
+smooth muscle cell,mean_of_sites,-0.5236611707751062,8.401251993961708,4,ridge,loso,False
+sst GABAergic interneuron,pooled,0.1009837713881595,14.141679625365466,206,ridge,loso,False
+sst GABAergic interneuron,H,-0.31295195268286236,14.798148847034609,111,ridge,loso,False
+sst GABAergic interneuron,M,0.0001705260522465446,13.374647166362566,95,ridge,loso,False
+sst GABAergic interneuron,mean_of_sites,-0.1563907133153079,14.086398006698587,206,ridge,loso,False
+vascular leptomeningeal cell,pooled,-0.6916280399686003,21.04151359661597,81,ridge,loso,False
+vascular leptomeningeal cell,H,-1.3168735778786855,20.508977407015866,60,ridge,loso,False
+vascular leptomeningeal cell,M,-0.9865539102883345,22.56304556690198,21,ridge,loso,False
+vascular leptomeningeal cell,mean_of_sites,-1.15171374408351,21.536011486958923,81,ridge,loso,False

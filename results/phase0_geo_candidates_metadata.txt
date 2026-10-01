@@ -1,0 +1,48 @@
+﻿================================================================================
+ACCESSION: GSE196830
+Title:       Single-cell eQTL mapping identifies cell type specific genetic control of autoimmune disease
+Organism:    Homo sapiens
+Type:        Expression profiling by high throughput sequencing; Genome variation profiling by SNP array
+Platforms:   GPL24676; GPL28939
+Status:      Public on Apr 08 2022
+Submission:  Feb 15 2022
+PubMed:      35389779; 36823676; 38622708
+N samples:   1179
+Contributors:  ...
+Summary:     This SuperSeries is composed of the SubSeries listed below.
+Design:      Refer to individual Series
+Supplementary files:
+    ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE196nnn/GSE196830/suppl/GSE196830_RAW.tar
+================================================================================
+================================================================================
+ACCESSION: GSE196735
+Title:       Single-cell eQTL mapping identifies cell type specific genetic control of autoimmune disease [scRNAseq_data]
+Organism:    Homo sapiens
+Type:        Expression profiling by high throughput sequencing
+Platforms:   GPL24676
+Status:      Public on Apr 08 2022
+Submission:  Feb 14 2022
+PubMed:      35389779; 36823676; 38622708
+N samples:   75
+Contributors: Seyhan,,Yazar, Joseph,E,Powell, Alex,W,Hewitt ...
+Summary:     The human immune system displays remarkable variation between individuals, leading to differences in susceptibility to autoimmune disease. We present single cell RNA sequence data from 1,267,768 peripheral blood mononuclear cells from 982 healthy human subjects. For 14 cell types, we identified 26,597 independent cis-expression quantitative trait loci (eQTLs) and 990 trans-eQTL, with the majority showing cell type specific effects on gene expression. We subsequently show how eQTLs have dynamic allelic effects in B cells transitioning from na창혞혳횄혱ve to memory states and demonstrate how commonly segregating alleles lead to inter-individual variation in immune function. Finally, utilizing a Mendelian randomization approach, we identify the causal route by which 305 risk loci contribute to autoimmune disease at the cellular level. This work brings together genetic epidemiology with scRNA-seq to uncover drivers of inter-individual variation in the immune system.
+Design:      Human PBMC mRNA profiles at single cell resolution
+Supplementary files:
+    ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE196nnn/GSE196735/suppl/GSE196735_RAW.tar
+================================================================================
+================================================================================
+ACCESSION: GSE157007
+Title:       Multidimensional single-cell analysis of human peripheral blood reveals characteristic features of the immune system landscape in aging and frailty
+Organism:    Homo sapiens
+Type:        Expression profiling by high throughput sequencing; Other
+Platforms:   GPL24676
+Status:      Public on Jan 12 2022
+Submission:  Aug 27 2020
+PubMed:      none listed
+N samples:   48
+Contributors: Oscar,J,Luo ...
+Summary:     Frailty is an intermediate status of human ageing process, associated with decompensated homeostasis and death. The immune phenotype of frailty and its underlying cellular and molecular processes remain poorly understood. Here we profiled 114,467 immune cells from cord blood, young adults, healthy and frail elderly using single-cell RNA and TCR V(D)J sequencing. An age-dependent accumulation of cell heterogeneity and transcriptome variability in defined immune cell types was observed. With the specific expression of gene sets, characteristic transcription factors were identified in given immune cell types of certain age group. Trajectory analysis revealed cells from non-frail and frail elderly often fall into distinct trajectories, despite similar chronological age. Numerous TCR clonotypes were shared among T cell subtypes in aged and frail samples, indicating differential pluripotency and resilience capability of aged T cells. Finally, a frailty-specific monocyte subset was identified with exclusively high expression of lncRNAs NEAT1 and MALAT1. Our results discover human frailty-specific immune cell characteristics based on the comprehensive dimensions in immune landscape of agei...
+Design:      Three cord blood samples, PBMC samples from 3 healthy young, 6 healthy old and 5 frail donors were used for single-cell RNA, TCR and cell surface protein (CCR7, CD45RA, CD4 and CD8) antibody barcoded sequencing to create a single-cell transcriptome and TCR atlas from newborns to frailty.
+Supplementary files:
+    ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE157nnn/GSE157007/suppl/GSE157007_RAW.tar
+================================================================================

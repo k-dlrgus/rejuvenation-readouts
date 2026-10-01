@@ -1,0 +1,43 @@
+====================================================================================================
+GEOMETRY PART C — geometric reframe  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[filter] geometry uses ALL 25,526 genes; no A/I bucketing.
+[C] standardized 3323 x 25526 (global mean/sd on full matrix for descriptive)
+[C2] identity subspace: 19 axes from 20 type centroids; singular values head=[307.42, 170.533, 163.587, 126.892, 119.246]
+[C3] FULL PLS-1  median angle=66.2°  median proj R²=0.163  consensus angle=58.8°  PC1 shared=0.405
+[C3] FULL ridge  median angle=83.3°  median proj R²=0.014  consensus angle=76.9°  PC1 shared=0.181
+
+[C3] permutation null: 100 donor-level within-site age shuffles (PLS-1)
+   perm 20/100
+   perm 40/100
+   perm 60/100
+   perm 80/100
+   perm 100/100
+[C3] obs median angle 66.2° vs null 70.9° (p_angle≤obs=0.030)
+     obs median proj R² 0.163 vs null 0.108 (p=0.030)
+     shared PC1 0.405 vs null 0.330 (p=0.040)
+
+[C] CV scheme=loso: age directions on each training fold
+   loso median-over-folds angle=74.7°  proj R²=0.070  pairwise=81.4°  PC1=0.299
+   loso permutation null (20 draws of median-over-folds)...
+   loso null angle=79.9°  p=0.048
+
+[C] CV scheme=within_site: age directions on each training fold
+   within_site median-over-folds angle=74.6°  proj R²=0.071  pairwise=83.1°  PC1=0.289
+   within_site permutation null (20 draws of median-over-folds)...
+   within_site null angle=78.9°  p=0.095
+
+[C3 claim] orthogonal: the age direction is largely ORTHOGONAL to identity directions — the axes are separable in geometry even though genes cannot be partitioned.
+   (random vector into 19-dim subspace of R^25526 has E[proj R²]=0.0007)
+[C4] per-type age directions are shared across cell types (pairwise median 78.3°; PC1 0.405; null PC1 0.330)
+
+[C] wrote results/geometry/partC_*
+[C] done.

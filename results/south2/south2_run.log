@@ -1,0 +1,217 @@
+====================================================================================================
+SOUTH2 — Southard Hs27 CRISPRa TFs ranked by approach to a young fibroblast target
+====================================================================================================
+[seeds] SEED=20260914 (splits, nulls, permutations) BOOT_SEED=20260918 (bootstrap); imported TOWARD_SEED=20260914, SAME BOOT_SEED=20260918
+[params] n_null=200 n_perm=200 n_boot=200 S2_KS=(20, 50, 100) (lowdim_common.KS=(20, 50, 100, 150)) F=(0.0, 0.05, 0.1, 0.25, 0.5, 1.0) adj_p_bar=0.05 q_bar=0.05
+[params] n_null is recorded as pre-registered; the pre-registration assigns the null to the Stage 2A per-factor permutations (n_perm=200), so no separate null draw exists.
+[scope] Uncalibrated R2 is never a gate; the frozen ruler is loaded, never refit; L4A_matrix.h5 is not opened; nothing is downloaded.
+[scope] Only FINDINGS_SOUTH2.md, PROGRESS_SOUTH2.md, results/south2/* and src/south2_run.py are written by this run.
+[prereg] read <repo>\results\south2\PREREG.flag (9496 chars); not rewriting the block
+[file] <repo>\results\survey\opened\southard\fibroblast_CRISPRa_mean_pop.h5ad
+[file] size=1720196368 (pinned 1720196368) md5=ba44c7813903bb5df900348d6b0d589a (pinned ba44c7813903bb5df900348d6b0d589a) [2.6s]
+[frozen] <repo>\results\fibro\frozen_ruler_ridge_raw.npz n_genes=23485 keys=['w', 'coef', 'mu', 'sd', 'intercept', 'alpha', 'gene_id', 'symbol', 'ensembl', 'sample_ids', 'donors', 'age_mid', 'seed', 'n_donors', 'n_genes', 'regime', 'method', 'note'] (not refit)
+[h5] tree written (73 lines) -> <repo>\results\south2\h5_tree.txt
+[columns obs] actually read from <repo>\results\survey\opened\southard\fibroblast_CRISPRa_mean_pop.h5ad: ['protospacer', 'target_gene', 'target_expr', 'active', 'cluster', 'cluster_name', 'cluster_description', 'gene_driven', 'sequence_driven', 'sequence_suffix', 'bulk_expr', 'expressed', 'p_expressed', 'de_genes', 'strength', 'cell_count', 'target_gene_id', 'masked_active', 'masked_cluster', 'masked_cluster_name', 'masked_cluster_description', 'masked_cluster_size', 'masked_cluster_num_genes', 'stricter_masked_cluster', 'stricter_masked_cluster_description', 'guide_identity']
+[columns var] actually read from <repo>\results\survey\opened\southard\fibroblast_CRISPRa_mean_pop.h5ad: ['feature_types', 'genome', 'mean', 'in_matrix', 'std', 'cv', 'fano', 'pairwise_p_cost', 'mean_adjusted_pairwise_p_cost', 'excess_cv', 'pairwise_chosen', 'gene_id', 'gene_name']
+[h5] X shape=(10916, 4914) dtype=float64 layers=['adj_p', 'masked', 'p'] uns=none obsm=none varm=none raw_group=False
+[id_type south2_var_gene_id] kind=ensembl n=4914 n_ensembl=4914 n_refseq=0 n_symbol_like=0 source=<repo>\results\survey\opened\southard\fibroblast_CRISPRa_mean_pop.h5ad::var/gene_id examples=['ENSG00000000419', 'ENSG00000001036', 'ENSG00000001461', 'ENSG00000001629', 'ENSG00000001630', 'ENSG00000001631', 'ENSG00000002330', 'ENSG00000002549']
+[id_type south2_var_gene_name] kind=symbol n=4914 n_ensembl=0 n_refseq=0 n_symbol_like=4914 source=<repo>\results\survey\opened\southard\fibroblast_CRISPRa_mean_pop.h5ad::var/gene_name examples=['DPM1', 'FUCA2', 'NIPAL3', 'ANKIB1', 'CYP51A1', 'KRIT1', 'BAD', 'LAP3']
+[column index] unversioned Ensembl gene ids in var/gene_id (4,914/4,914 match ENSG, 0 carry a version suffix) with HGNC symbols in var/gene_name (4,914/4,914 symbol-shaped). The h5ad row index of var is a positional integer, not an identifier.
+[units] searched uns=empty, X attrs=['encoding-type', 'encoding-version'], var/obs column names, and bundled .txt files ['hs27_lambert_tfs.txt', 'hs27_targets.txt', 'mean_pop_targets.txt'] for '(?i)log2|log10|\\bln\\b|log[-_ ]?base|cpm|tpm|rpkm|fpkm|unit|normali[sz]|scale|fold[-_ ]?change|lfc': attr hits=[] column hits=[] doc hits=[]. Units and log base determinable from the file: False
+[align index] overlap=4907 ensembl=4906 symbol=1
+[coverage symbol] matched 4,834/23,485 genes (0.2058); |w| fraction 0.1208
+[coverage ensembl_version_stripped] matched 4,906/23,485 genes (0.2089); |w| fraction 0.1227
+[coverage best_of_two_after_md3_idtype] matched 4,907/23,485 genes (0.2089); |w| fraction 0.1228
+[coverage] mapping used for all later stages: best_of_two_after_md3_idtype (highest |w| fraction = 0.1228)
+[controls] rows labelled `off-target`: 17; of those, rows also carrying empty target_gene_id AND NaN target_expr AND active=False: 17
+[controls] rows meeting the evidence triple but NOT labelled `off-target`: 8156
+[factors] distinct transcription factors=1,836; guides per factor min=2 median=6 max=6; with >= 2 guides=1,836
+[row unit] per-guide perturbation row (the source's own mean-population regression output); guide_identity unique on every row=True (10,916 of 10,916)
+[convert] 4,907 matched coordinates; frozen sd floored at 1e-12 on 0 ruler genes
+[scan X+masked] 10916 rows in 2.9s; masked_entries=2247 on_own_target=2247 elsewhere=0
+[scan adj_p+p] 1.2s; rows where count(adj_p<=0.05) == obs.de_genes: 10916/10916; total adj_p<=0.05 entries=217578
+[audit] {'where': 'X', 'dtype': 'float64', 'n_seen': 53641224, 'n_negative': 30370039, 'n_nonfinite': 0, 'n_integral': 0, 'frac_negative': 0.566169761525203, 'frac_integral': 0.0, 'min': -9.156079292297363, 'max': 184.80467224121094, 'integer_dtype': False}
+[audit] {'n_masked_entries': 2247, 'n_on_own_target_gene': 2247, 'n_elsewhere': 0, 'examples_elsewhere': [], 'n_rows_with_any_mask': 2247, 'masked_per_row_max': 1, 'masked_per_row_min_nonzero': 1, 'set_to_zero': True}
+[audit] {'rows_where_de_genes_equals_count_adj_p_le_005': 10916, 'n_rows': 10916, 'n_entries_adj_p_le_005': 217578, 'p_min': 0.0, 'p_max': 0.9999999985175676}
+[units diag] spearman(mean|effect|, var/mean)=+0.645  spearman(mean|effect|, var/std)=+0.684  spearman(mean|effect|/std, var/mean)=-0.991 — neither a log base nor a linear unit is established by this. scale_unknown stands.
+[identity] panel actually used (9): ['COL1A1', 'COL1A2', 'FN1', 'LUM', 'PDGFRA', 'PDGFRB', 'PRRX1', 'SERPINH1', 'VIM']; absent: ['POSTN']
+[inventory] wrote <repo>\results\south2\inventory.json
+[effect-matrix test] p+adj_p layers present=True; X has 30,370,039 negative entries (0.566); integral fraction 0.0000; obs.de_genes reproduced by count(adj_p<=0.05) on 10,916/10,916 rows => X is per-gene effect estimates: True
+[stage0] passed: no Stage 0 STOP key fired
+[stage1] 1,836 factors with >= 2 guides; per-factor vector = mean of that factor's guide rows, converted to frozen-z by dividing each gene's effect by that gene's frozen training sd
+[stage1 V_all] ||d|| min=11.0365 median=20.2543 max=117.2566; n_nonzero_coords median=4907
+[stage1 V_sig] ||d|| min=0.7435 median=3.2889 max=32.0358; n_nonzero_coords median=66
+[columns gtex_obs] actually read from <repo>\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[S2] PCA fit on the GTEx fibroblast donor matrix only: n_donors=652 n_genes=23485 kmax=100; loadings orthonormal (max |L'L - I| = 6.43e-14)
+[S2] k=20: cumulative fraction of GTEx donor variance = 0.6337
+[S2] k=50: cumulative fraction of GTEx donor variance = 0.7098
+[S2] k=100: cumulative fraction of GTEx donor variance = 0.7621
+[columns toward_anchors] actually read from <repo>\results\toward\anchors.npz: ['c_young', 'c_old', 'u', 'n_young', 'n_old', 'n_middle', 'young_bins', 'old_bins', 'middle_bins', 'ensembl', 'n_genes', 'n_axis', 'n_young_expected', 'n_old_expected', 'note']
+[Y1/O1] TOWARD anchors: n_young=113 (bins ['20-29', '30-39']) n_old=231 (bins ['60-69', '70-79']); ||c_young - c_old||=32.2839
+[columns same_panel_z] actually read from <repo>\results\same\panel_z.npz: ['O', 'Y', 'S', 'S_rev', 'Pluri', 'NonReprog']
+[O2] Lu et al. GM00731 untreated day-0 fibroblast pseudobulk as built in SAME: 3,132 of 23,485 coordinates are exactly 0 (genes absent from that dataset, zeroed by SAME's own missing-gene rule)
+[Y2] young donors n=113; region fit on 56 donors, membership radius calibrated on 57 held-out young donors (seed 20260914)
+[Y2 k=20] defined: rank=20 cond=2.207e+02; held-out young Mahalanobis median=5.9384 max=14.0660; membership radius (95th pct of held-out young donors' own distances) = 11.8805
+[Y2 k=50] defined: rank=50 cond=1.597e+04; held-out young Mahalanobis median=23.0641 max=87.1226; membership radius (95th pct of held-out young donors' own distances) = 59.2987
+[Y2 k=100] SINGULAR: rank=55 < k=100 on 56 fit donors. Mahalanobis undefined; reported as such, nothing substituted.
+[origin->target distances, reported before anything is scored]
+  S1        O1->Y1  ||origin-target||=32.2839
+  S1        O2->Y1  ||origin-target||=468.3878
+  S2_k20    O1->Y1  ||origin-target||=28.6452
+  S2_k20    O1->Y2  ||origin-target||=33.2100 mahalanobis=1.0554 radius=11.8805 inside=True
+  S2_k20    O2->Y1  ||origin-target||=196.4504
+  S2_k20    O2->Y2  ||origin-target||=204.3757 mahalanobis=14.2055 radius=11.8805 inside=False
+  S2_k50    O1->Y1  ||origin-target||=30.8643
+  S2_k50    O1->Y2  ||origin-target||=35.1680 mahalanobis=6.0114 radius=59.2987 inside=True
+  S2_k50    O2->Y1  ||origin-target||=259.3335
+  S2_k50    O2->Y2  ||origin-target||=265.1887 mahalanobis=127.0348 radius=59.2987 inside=False
+  S2_k100   O1->Y1  ||origin-target||=31.4343
+  S2_k100   O1->Y2  ||origin-target||=35.8353 mahalanobis=NA radius=NA inside=None
+  S2_k100   O2->Y1  ||origin-target||=272.0445
+  S2_k100   O2->Y2  ||origin-target||=277.4758 mahalanobis=NA radius=NA inside=None
+[stage2A] per-factor floor: permute each factor's own vector entries across the 4,907 matched gene coordinates, 200 times, seed 20260914. The 18,578 unmatched ruler coordinates are structurally fixed at 0 by the conversion rule and are not permuted into; this keeps every null direction inside the same measured subspace as the real effect and preserves ||d|| exactly.
+[stage2A pooled] pooled floor: every factor's 200 permuted vectors are rescaled to the median factor norm and pooled across all factors; the pooled floor is the 5th percentile of that pooled distribution. Zero-norm factors cannot be rescaled and are left out of the pool (counted below).
+[stage2A V_all] 400/1836 factors (28s)
+[stage2A V_all] 800/1836 factors (64s)
+[stage2A V_all] 1200/1836 factors (94s)
+[stage2A V_all] 1600/1836 factors (132s)
+[stage2A V_all] done in 157s; median ||d||=20.2543; zero-norm factors=0
+[stage2A V_sig] 400/1836 factors (43s)
+[stage2A V_sig] 800/1836 factors (82s)
+[stage2A V_sig] 1200/1836 factors (119s)
+[stage2A V_sig] 1600/1836 factors (162s)
+[stage2A V_sig] done in 190s; median ||d||=3.2889; zero-norm factors=0
+[stage2B] control floor from 17 untargeted `off-target` rows used as pseudo-effects. Reported only. These rows are NOT inert, so this is never the gate.
+[stage2C] true young-minus-old direction: ||v||=32.2839; restricted to the 4,907 measured coordinates ||v_measured||=15.7557 (0.4880 of the full norm)
+[MDA] V_all  S1        O1_Y1  full_v               MDA=0.050 (pooled floor +4.97725)
+[MDA] V_all  S1        O2_Y1  full_v               MDA=0.250 (pooled floor -0.58195)
+[MDA] V_all  S2_k20    O1_Y1  full_v               MDA=0.100 (pooled floor -0.98568)
+[MDA] V_all  S2_k20    O1_Y2  full_v               MDA=0.050 (pooled floor -0.57592)
+[MDA] V_all  S2_k20    O2_Y1  full_v               MDA=0.100 (pooled floor -0.31272)
+[MDA] V_all  S2_k20    O2_Y2  full_v               MDA=0.100 (pooled floor -0.27754)
+[MDA] V_all  S2_k50    O1_Y1  full_v               MDA=0.050 (pooled floor -0.85007)
+[MDA] V_all  S2_k50    O1_Y2  full_v               MDA=0.050 (pooled floor -0.51112)
+[MDA] V_all  S2_k50    O2_Y1  full_v               MDA=0.100 (pooled floor -0.37139)
+[MDA] V_all  S2_k50    O2_Y2  full_v               MDA=0.100 (pooled floor -0.34115)
+[MDA] V_all  S2_k100   O1_Y1  full_v               MDA=0.050 (pooled floor -0.74080)
+[MDA] V_all  S2_k100   O1_Y2  full_v               MDA=0.050 (pooled floor -0.45058)
+[MDA] V_all  S2_k100   O2_Y1  full_v               MDA=0.250 (pooled floor -0.55156)
+[MDA] V_all  S2_k100   O2_Y2  full_v               MDA=0.250 (pooled floor -0.51497)
+[MDA] V_all  S1        O1_Y1  measured_coords_only MDA=0.050 (pooled floor +4.97725)
+[MDA] V_all  S1        O2_Y1  measured_coords_only MDA=0.500 (pooled floor -0.58195)
+[MDA] V_all  S2_k20    O1_Y1  measured_coords_only MDA=0.250 (pooled floor -0.98568)
+[MDA] V_all  S2_k20    O1_Y2  measured_coords_only MDA=0.100 (pooled floor -0.57592)
+[MDA] V_all  S2_k20    O2_Y1  measured_coords_only MDA=0.100 (pooled floor -0.31272)
+[MDA] V_all  S2_k20    O2_Y2  measured_coords_only MDA=0.100 (pooled floor -0.27754)
+[MDA] V_all  S2_k50    O1_Y1  measured_coords_only MDA=0.100 (pooled floor -0.85007)
+[MDA] V_all  S2_k50    O1_Y2  measured_coords_only MDA=0.100 (pooled floor -0.51112)
+[MDA] V_all  S2_k50    O2_Y1  measured_coords_only MDA=0.250 (pooled floor -0.37139)
+[MDA] V_all  S2_k50    O2_Y2  measured_coords_only MDA=0.100 (pooled floor -0.34115)
+[MDA] V_all  S2_k100   O1_Y1  measured_coords_only MDA=0.100 (pooled floor -0.74080)
+[MDA] V_all  S2_k100   O1_Y2  measured_coords_only MDA=0.100 (pooled floor -0.45058)
+[MDA] V_all  S2_k100   O2_Y1  measured_coords_only MDA=0.250 (pooled floor -0.55156)
+[MDA] V_all  S2_k100   O2_Y2  measured_coords_only MDA=0.250 (pooled floor -0.51497)
+[MDA] V_sig  S1        O1_Y1  full_v               MDA=0.050 (pooled floor +0.15732)
+[MDA] V_sig  S1        O2_Y1  full_v               MDA=0.050 (pooled floor -0.00202)
+[MDA] V_sig  S2_k20    O1_Y1  full_v               MDA=0.050 (pooled floor -0.00776)
+[MDA] V_sig  S2_k20    O1_Y2  full_v               MDA=0.050 (pooled floor -0.02147)
+[MDA] V_sig  S2_k20    O2_Y1  full_v               MDA=0.050 (pooled floor -0.03454)
+[MDA] V_sig  S2_k20    O2_Y2  full_v               MDA=0.050 (pooled floor -0.03663)
+[MDA] V_sig  S2_k50    O1_Y1  full_v               MDA=0.050 (pooled floor -0.00950)
+[MDA] V_sig  S2_k50    O1_Y2  full_v               MDA=0.050 (pooled floor -0.02144)
+[MDA] V_sig  S2_k50    O2_Y1  full_v               MDA=0.050 (pooled floor -0.03300)
+[MDA] V_sig  S2_k50    O2_Y2  full_v               MDA=0.050 (pooled floor -0.03441)
+[MDA] V_sig  S2_k100   O1_Y1  full_v               MDA=0.050 (pooled floor -0.00937)
+[MDA] V_sig  S2_k100   O1_Y2  full_v               MDA=0.050 (pooled floor -0.02086)
+[MDA] V_sig  S2_k100   O2_Y1  full_v               MDA=0.050 (pooled floor -0.02569)
+[MDA] V_sig  S2_k100   O2_Y2  full_v               MDA=0.050 (pooled floor -0.02698)
+[MDA] V_sig  S1        O1_Y1  measured_coords_only MDA=0.050 (pooled floor +0.15732)
+[MDA] V_sig  S1        O2_Y1  measured_coords_only MDA=0.050 (pooled floor -0.00202)
+[MDA] V_sig  S2_k20    O1_Y1  measured_coords_only MDA=0.050 (pooled floor -0.00776)
+[MDA] V_sig  S2_k20    O1_Y2  measured_coords_only MDA=0.050 (pooled floor -0.02147)
+[MDA] V_sig  S2_k20    O2_Y1  measured_coords_only MDA=0.100 (pooled floor -0.03454)
+[MDA] V_sig  S2_k20    O2_Y2  measured_coords_only MDA=0.100 (pooled floor -0.03663)
+[MDA] V_sig  S2_k50    O1_Y1  measured_coords_only MDA=0.050 (pooled floor -0.00950)
+[MDA] V_sig  S2_k50    O1_Y2  measured_coords_only MDA=0.050 (pooled floor -0.02144)
+[MDA] V_sig  S2_k50    O2_Y1  measured_coords_only MDA=0.100 (pooled floor -0.03300)
+[MDA] V_sig  S2_k50    O2_Y2  measured_coords_only MDA=0.100 (pooled floor -0.03441)
+[MDA] V_sig  S2_k100   O1_Y1  measured_coords_only MDA=0.050 (pooled floor -0.00937)
+[MDA] V_sig  S2_k100   O1_Y2  measured_coords_only MDA=0.050 (pooled floor -0.02086)
+[MDA] V_sig  S2_k100   O2_Y1  measured_coords_only MDA=0.050 (pooled floor -0.02569)
+[MDA] V_sig  S2_k100   O2_Y2  measured_coords_only MDA=0.050 (pooled floor -0.02698)
+[stage2C] some f <= 1.0 clears the primary floor in at least one space/variant: True
+[stage3 V_all] 400/1836 factors (23s)
+[stage3 V_all] 800/1836 factors (45s)
+[stage3 V_all] 1200/1836 factors (68s)
+[stage3 V_all] 1600/1836 factors (90s)
+[stage3 V_all] done in 102s
+[stage3 V_all] guides_disagree (median pairwise guide cosine <= 0): 299 of 1,836; identity_loss (panel drop > 0.5 in frozen-z units): 0
+[stage3 V_sig] 400/1836 factors (21s)
+[stage3 V_sig] 800/1836 factors (44s)
+[stage3 V_sig] 1200/1836 factors (63s)
+[stage3 V_sig] 1600/1836 factors (81s)
+[stage3 V_sig] done in 93s
+[stage3 V_sig] guides_disagree (median pairwise guide cosine <= 0): 1,692 of 1,836; identity_loss (panel drop > 0.5 in frozen-z units): 0
+[stage3] full table 51,408 rows -> stage3_full_table.csv
+[count] V_all  S1        O1_Y1  delta<0=    0 below_floor=  582 q<=0.05=  407 toward_young=    0
+[count] V_all  S1        O2_Y1  delta<0=  918 below_floor=  477 q<=0.05=  280 toward_young=  231
+[count] V_all  S2_k20    O1_Y1  delta<0= 1645 below_floor=  502 q<=0.05=  258 toward_young=  224
+[count] V_all  S2_k20    O1_Y2  delta<0= 1209 below_floor=  194 q<=0.05=    0 toward_young=    0
+[count] V_all  S2_k20    O2_Y1  delta<0=  849 below_floor=  383 q<=0.05=  220 toward_young=  189
+[count] V_all  S2_k20    O2_Y2  delta<0=  775 below_floor=  375 q<=0.05=  221 toward_young=  190
+[count] V_all  S2_k50    O1_Y1  delta<0= 1595 below_floor=  451 q<=0.05=  223 toward_young=  194
+[count] V_all  S2_k50    O1_Y2  delta<0= 1111 below_floor=  203 q<=0.05=    0 toward_young=    0
+[count] V_all  S2_k50    O2_Y1  delta<0=  913 below_floor=  408 q<=0.05=  250 toward_young=  207
+[count] V_all  S2_k50    O2_Y2  delta<0=  840 below_floor=  397 q<=0.05=  238 toward_young=  194
+[count] V_all  S2_k100   O1_Y1  delta<0= 1545 below_floor=  377 q<=0.05=    0 toward_young=    0
+[count] V_all  S2_k100   O1_Y2  delta<0=  957 below_floor=  158 q<=0.05=    0 toward_young=    0
+[count] V_all  S2_k100   O2_Y1  delta<0= 1124 below_floor=  430 q<=0.05=  262 toward_young=  216
+[count] V_all  S2_k100   O2_Y2  delta<0= 1057 below_floor=  411 q<=0.05=  256 toward_young=  208
+[count] V_sig  S1        O1_Y1  delta<0=    0 below_floor=  324 q<=0.05=    0 toward_young=    0
+[count] V_sig  S1        O2_Y1  delta<0=  394 below_floor=  436 q<=0.05=    0 toward_young=    0
+[count] V_sig  S2_k20    O1_Y1  delta<0=  398 below_floor=  380 q<=0.05=    0 toward_young=    0
+[count] V_sig  S2_k20    O1_Y2  delta<0=  571 below_floor=  252 q<=0.05=    0 toward_young=    0
+[count] V_sig  S2_k20    O2_Y1  delta<0=  903 below_floor=  266 q<=0.05=    0 toward_young=    0
+[count] V_sig  S2_k20    O2_Y2  delta<0=  918 below_floor=  260 q<=0.05=    0 toward_young=    0
+[count] V_sig  S2_k50    O1_Y1  delta<0=  411 below_floor=  348 q<=0.05=    0 toward_young=    0
+[count] V_sig  S2_k50    O1_Y2  delta<0=  552 below_floor=  235 q<=0.05=    0 toward_young=    0
+[count] V_sig  S2_k50    O2_Y1  delta<0=  972 below_floor=  341 q<=0.05=    0 toward_young=    0
+[count] V_sig  S2_k50    O2_Y2  delta<0=  983 below_floor=  334 q<=0.05=    0 toward_young=    0
+[count] V_sig  S2_k100   O1_Y1  delta<0=  396 below_floor=  308 q<=0.05=    0 toward_young=    0
+[count] V_sig  S2_k100   O1_Y2  delta<0=  530 below_floor=  225 q<=0.05=    0 toward_young=    0
+[count] V_sig  S2_k100   O2_Y1  delta<0=  786 below_floor=  335 q<=0.05=    0 toward_young=    0
+[count] V_sig  S2_k100   O2_Y2  delta<0=  806 below_floor=  335 q<=0.05=    0 toward_young=    0
+[stage3] bootstrap delta intervals not containing their point estimate (flagged INVALID, never a gate): 618 of 51,380 computed
+[stage4] V_all  S1        O1_Y1  rho(delta,cos)=-0.008 rho(delta,ruler)=+0.094 rho(cos,ruler)=+0.293 top20 overlap d/c= 1 cos_top20_not_toward=20
+[stage4] V_all  S1        O2_Y1  rho(delta,cos)=+0.974 rho(delta,ruler)=+0.321 rho(cos,ruler)=+0.318 top20 overlap d/c=14 cos_top20_not_toward= 1
+[stage4] V_all  S2_k20    O1_Y1  rho(delta,cos)=+0.919 rho(delta,ruler)=+0.166 rho(cos,ruler)=+0.155 top20 overlap d/c= 1 cos_top20_not_toward= 2
+[stage4] V_all  S2_k20    O1_Y2  rho(delta,cos)=+0.974 rho(delta,ruler)=+0.325 rho(cos,ruler)=+0.310 top20 overlap d/c= 7 cos_top20_not_toward=20
+[stage4] V_all  S2_k20    O2_Y1  rho(delta,cos)=+0.970 rho(delta,ruler)=+0.323 rho(cos,ruler)=+0.315 top20 overlap d/c= 4 cos_top20_not_toward= 8
+[stage4] V_all  S2_k20    O2_Y2  rho(delta,cos)=+0.967 rho(delta,ruler)=+0.309 rho(cos,ruler)=+0.308 top20 overlap d/c= 5 cos_top20_not_toward= 6
+[stage4] V_all  S2_k50    O1_Y1  rho(delta,cos)=+0.951 rho(delta,ruler)=+0.235 rho(cos,ruler)=+0.229 top20 overlap d/c= 3 cos_top20_not_toward= 3
+[stage4] V_all  S2_k50    O1_Y2  rho(delta,cos)=+0.972 rho(delta,ruler)=+0.352 rho(cos,ruler)=+0.348 top20 overlap d/c= 6 cos_top20_not_toward=20
+[stage4] V_all  S2_k50    O2_Y1  rho(delta,cos)=+0.974 rho(delta,ruler)=+0.333 rho(cos,ruler)=+0.328 top20 overlap d/c= 5 cos_top20_not_toward= 9
+[stage4] V_all  S2_k50    O2_Y2  rho(delta,cos)=+0.973 rho(delta,ruler)=+0.326 rho(cos,ruler)=+0.324 top20 overlap d/c= 5 cos_top20_not_toward= 9
+[stage4] V_all  S2_k100   O1_Y1  rho(delta,cos)=+0.972 rho(delta,ruler)=+0.259 rho(cos,ruler)=+0.259 top20 overlap d/c= 6 cos_top20_not_toward=20
+[stage4] V_all  S2_k100   O1_Y2  rho(delta,cos)=+0.943 rho(delta,ruler)=+0.360 rho(cos,ruler)=+0.372 top20 overlap d/c=10 cos_top20_not_toward=20
+[stage4] V_all  S2_k100   O2_Y1  rho(delta,cos)=+0.969 rho(delta,ruler)=+0.341 rho(cos,ruler)=+0.327 top20 overlap d/c= 3 cos_top20_not_toward= 7
+[stage4] V_all  S2_k100   O2_Y2  rho(delta,cos)=+0.973 rho(delta,ruler)=+0.336 rho(cos,ruler)=+0.324 top20 overlap d/c= 3 cos_top20_not_toward= 8
+[stage4] V_sig  S1        O1_Y1  rho(delta,cos)=+0.157 rho(delta,ruler)=+0.096 rho(cos,ruler)=+0.248 top20 overlap d/c= 0 cos_top20_not_toward=20
+[stage4] V_sig  S1        O2_Y1  rho(delta,cos)=+0.881 rho(delta,ruler)=+0.097 rho(cos,ruler)=+0.101 top20 overlap d/c=15 cos_top20_not_toward=20
+[stage4] V_sig  S2_k20    O1_Y1  rho(delta,cos)=+0.871 rho(delta,ruler)=+0.073 rho(cos,ruler)=+0.067 top20 overlap d/c= 9 cos_top20_not_toward=20
+[stage4] V_sig  S2_k20    O1_Y2  rho(delta,cos)=+0.923 rho(delta,ruler)=+0.084 rho(cos,ruler)=+0.074 top20 overlap d/c= 7 cos_top20_not_toward=20
+[stage4] V_sig  S2_k20    O2_Y1  rho(delta,cos)=+0.947 rho(delta,ruler)=+0.103 rho(cos,ruler)=+0.098 top20 overlap d/c= 1 cos_top20_not_toward=20
+[stage4] V_sig  S2_k20    O2_Y2  rho(delta,cos)=+0.948 rho(delta,ruler)=+0.097 rho(cos,ruler)=+0.094 top20 overlap d/c= 0 cos_top20_not_toward=20
+[stage4] V_sig  S2_k50    O1_Y1  rho(delta,cos)=+0.880 rho(delta,ruler)=+0.157 rho(cos,ruler)=+0.153 top20 overlap d/c= 9 cos_top20_not_toward=20
+[stage4] V_sig  S2_k50    O1_Y2  rho(delta,cos)=+0.922 rho(delta,ruler)=+0.143 rho(cos,ruler)=+0.140 top20 overlap d/c= 9 cos_top20_not_toward=20
+[stage4] V_sig  S2_k50    O2_Y1  rho(delta,cos)=+0.952 rho(delta,ruler)=+0.129 rho(cos,ruler)=+0.133 top20 overlap d/c= 4 cos_top20_not_toward=20
+[stage4] V_sig  S2_k50    O2_Y2  rho(delta,cos)=+0.952 rho(delta,ruler)=+0.125 rho(cos,ruler)=+0.128 top20 overlap d/c= 3 cos_top20_not_toward=20
+[stage4] V_sig  S2_k100   O1_Y1  rho(delta,cos)=+0.874 rho(delta,ruler)=+0.190 rho(cos,ruler)=+0.190 top20 overlap d/c= 9 cos_top20_not_toward=20
+[stage4] V_sig  S2_k100   O1_Y2  rho(delta,cos)=+0.922 rho(delta,ruler)=+0.173 rho(cos,ruler)=+0.172 top20 overlap d/c= 9 cos_top20_not_toward=20
+[stage4] V_sig  S2_k100   O2_Y1  rho(delta,cos)=+0.947 rho(delta,ruler)=+0.117 rho(cos,ruler)=+0.119 top20 overlap d/c= 5 cos_top20_not_toward=20
+[stage4] V_sig  S2_k100   O2_Y2  rho(delta,cos)=+0.949 rho(delta,ruler)=+0.114 rho(cos,ruler)=+0.116 top20 overlap d/c= 6 cos_top20_not_toward=20
+[summary] `toward_young` is 0 in 19 of the 28 settings and non-zero in 9, ranging 189-231 of 1836 factors. Every non-zero setting is V_all; V_sig returns 0 everywhere. The counts are not pooled and no single setting is primary.
+[done]

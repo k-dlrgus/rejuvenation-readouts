@@ -1,0 +1,7 @@
+cell_line,state,n_cells,n_d0,n_d3,n_d7,n_d10
+GM00731,Fibroblast,5988,4939,5,14,1030
+GM00731,PartialReprog,5832,3,5220,578,31
+GM00731,Pluripotency,439,0,5,354,80
+GM00731,NonReprog,5459,65,348,1932,3114
+GM23815,Fibroblast,11355,7703,46,2233,1373
+GM23815,PartialReprog,6481,9,6113,309,50

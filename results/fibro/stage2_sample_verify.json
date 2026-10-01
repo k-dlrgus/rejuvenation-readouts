@@ -1,0 +1,26 @@
+{
+ "n_samples": 8,
+ "days": [
+  0,
+  3,
+  7,
+  10
+ ],
+ "cell_lines": [
+  "GM00731",
+  "GM23815"
+ ],
+ "age_map": {
+  "GM00731": {
+   "age_years": 96,
+   "source": "Series_overall_design"
+  },
+  "GM23815": {
+   "age_years": 22,
+   "source": "Series_overall_design"
+  }
+ },
+ "discrepancies": [],
+ "used_record": true,
+ "overall_design": "10x Genomics scRNA-seq of human fibroblasts from a young (GM23815, 22yr) and aged donor (GM00731, 96yr) treated with Sendai virus OSKM for up to 10 days."
+}

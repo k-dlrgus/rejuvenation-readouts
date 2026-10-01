@@ -1,0 +1,2 @@
+PASS
+A-gene construct captures the within-type age signal (A 0.345 vs unrestricted 0.483 median-over-types, within-site). Proceed.

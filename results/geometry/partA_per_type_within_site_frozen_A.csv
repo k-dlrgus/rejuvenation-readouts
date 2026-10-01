@@ -1,0 +1,81 @@
+celltype,site,r2,mae,n,scheme,model
+GABAergic neuron,pooled,0.4426873617292877,10.53697969484245,179,within_site,frozen_A
+GABAergic neuron,H,0.30559028723251436,9.89762156343442,96,within_site,frozen_A
+GABAergic neuron,M,0.18495627983938467,11.276478256471014,83,within_site,frozen_A
+GABAergic neuron,mean_of_sites,0.24527328353594952,10.587049909952718,179,within_site,frozen_A
+L2/3 intratelencephalic projecting glutamatergic neuron,pooled,0.6751805569949009,8.061694565627649,220,within_site,frozen_A
+L2/3 intratelencephalic projecting glutamatergic neuron,H,0.662900453459118,7.096723247354732,112,within_site,frozen_A
+L2/3 intratelencephalic projecting glutamatergic neuron,M,0.47817594455286627,9.062405562355117,108,within_site,frozen_A
+L2/3 intratelencephalic projecting glutamatergic neuron,mean_of_sites,0.5705381990059921,8.079564404854924,220,within_site,frozen_A
+L2/3-6 intratelencephalic projecting glutamatergic neuron,pooled,0.6883232380515035,7.749785448233801,215,within_site,frozen_A
+L2/3-6 intratelencephalic projecting glutamatergic neuron,H,0.6497296046244698,6.760806854940978,111,within_site,frozen_A
+L2/3-6 intratelencephalic projecting glutamatergic neuron,M,0.5240398251548823,8.805329908382872,104,within_site,frozen_A
+L2/3-6 intratelencephalic projecting glutamatergic neuron,mean_of_sites,0.5868847148896761,7.783068381661925,215,within_site,frozen_A
+L5/6 near-projecting glutamatergic neuron,pooled,0.3793519126719699,10.309565955828775,124,within_site,frozen_A
+L5/6 near-projecting glutamatergic neuron,H,0.34028028021626655,8.925290799810123,82,within_site,frozen_A
+L5/6 near-projecting glutamatergic neuron,M,-0.10008022173247433,13.01219840329377,42,within_site,frozen_A
+L5/6 near-projecting glutamatergic neuron,mean_of_sites,0.12010002924189611,10.968744601551947,124,within_site,frozen_A
+L6 corticothalamic-projecting glutamatergic cortical neuron,pooled,0.4267138291881821,9.702094697896404,153,within_site,frozen_A
+L6 corticothalamic-projecting glutamatergic cortical neuron,H,0.32304181079222805,8.817101955567017,85,within_site,frozen_A
+L6 corticothalamic-projecting glutamatergic cortical neuron,M,0.18555123280765773,10.808335625808144,68,within_site,frozen_A
+L6 corticothalamic-projecting glutamatergic cortical neuron,mean_of_sites,0.2542965217999429,9.81271879068758,153,within_site,frozen_A
+L6 intratelencephalic projecting glutamatergic neuron,pooled,0.533468658466036,9.025634424922364,150,within_site,frozen_A
+L6 intratelencephalic projecting glutamatergic neuron,H,0.4296812935099288,8.211084097665772,86,within_site,frozen_A
+L6 intratelencephalic projecting glutamatergic neuron,M,0.2594016037568765,10.120186427173408,64,within_site,frozen_A
+L6 intratelencephalic projecting glutamatergic neuron,mean_of_sites,0.34454144863340264,9.16563526241959,150,within_site,frozen_A
+L6b glutamatergic neuron of the primary motor cortex,pooled,0.4243029285702783,9.255038182150036,109,within_site,frozen_A
+L6b glutamatergic neuron of the primary motor cortex,H,0.43855335886119806,7.987595450663128,73,within_site,frozen_A
+L6b glutamatergic neuron of the primary motor cortex,M,-0.03377542189500349,11.825130387665155,36,within_site,frozen_A
+L6b glutamatergic neuron of the primary motor cortex,mean_of_sites,0.2023889684830973,9.906362919164142,109,within_site,frozen_A
+VIP GABAergic interneuron,pooled,0.4663379313116853,10.012416332242642,217,within_site,frozen_A
+VIP GABAergic interneuron,H,0.4488768863571482,8.704545400632512,112,within_site,frozen_A
+VIP GABAergic interneuron,M,0.14670940989880232,11.407478659293451,105,within_site,frozen_A
+VIP GABAergic interneuron,mean_of_sites,0.29779314812797525,10.056012029962982,217,within_site,frozen_A
+astrocyte,pooled,0.48185886996672334,10.188266521529288,229,within_site,frozen_A
+astrocyte,H,0.4066935656170406,9.084163095686591,117,within_site,frozen_A
+astrocyte,M,0.17525216825253842,11.341660278882822,112,within_site,frozen_A
+astrocyte,mean_of_sites,0.2909728669347895,10.212911687284706,229,within_site,frozen_A
+endothelial cell,pooled,0.33278114778834567,11.35757347344207,160,within_site,frozen_A
+endothelial cell,H,0.18524031299883048,10.780550639920765,109,within_site,frozen_A
+endothelial cell,M,0.02919404660487812,12.590818352928787,51,within_site,frozen_A
+endothelial cell,mean_of_sites,0.1072171798018543,11.685684496424777,160,within_site,frozen_A
+lamp5 GABAergic interneuron,pooled,0.4618888964513864,10.216931036774394,205,within_site,frozen_A
+lamp5 GABAergic interneuron,H,0.30379019902519977,9.42055795010934,109,within_site,frozen_A
+lamp5 GABAergic interneuron,M,0.2791315339415118,11.121146312258674,96,within_site,frozen_A
+lamp5 GABAergic interneuron,mean_of_sites,0.2914608664833558,10.270852131184007,205,within_site,frozen_A
+microglial cell,pooled,0.47192448244568896,10.635273718840233,219,within_site,frozen_A
+microglial cell,H,0.2557328428557002,10.55168457042771,112,within_site,frozen_A
+microglial cell,M,0.3040687536786113,10.722768902225306,107,within_site,frozen_A
+microglial cell,mean_of_sites,0.27990079826715575,10.637226736326507,219,within_site,frozen_A
+oligodendrocyte,pooled,0.5705866486550945,9.300305195917339,232,within_site,frozen_A
+oligodendrocyte,H,0.40915398998552466,8.966976079111598,120,within_site,frozen_A
+oligodendrocyte,M,0.42625891561680573,9.657443535352062,112,within_site,frozen_A
+oligodendrocyte,mean_of_sites,0.4177064528011652,9.312209807231831,232,within_site,frozen_A
+oligodendrocyte precursor cell,pooled,0.41913943164388257,10.771475420526365,232,within_site,frozen_A
+oligodendrocyte precursor cell,H,0.2335068346453868,10.143965587053597,119,within_site,frozen_A
+oligodendrocyte precursor cell,M,0.19277344382173855,11.432304360201227,113,within_site,frozen_A
+oligodendrocyte precursor cell,mean_of_sites,0.21314013923356268,10.788134973627411,232,within_site,frozen_A
+pericyte,pooled,0.21315388908781074,11.794520135566673,136,within_site,frozen_A
+pericyte,H,0.09279337853201242,11.391305690898877,90,within_site,frozen_A
+pericyte,M,-0.0699168586153911,12.583417962090618,46,within_site,frozen_A
+pericyte,mean_of_sites,0.01143825995831066,11.987361826494748,136,within_site,frozen_A
+perivascular macrophage,pooled,-0.1741600752403849,12.143683923987496,24,within_site,frozen_A
+perivascular macrophage,H,-0.1693778064970184,11.871392378215678,22,within_site,frozen_A
+perivascular macrophage,M,,,2,within_site,frozen_A
+perivascular macrophage,mean_of_sites,-0.1693778064970184,11.871392378215678,24,within_site,frozen_A
+pvalb GABAergic interneuron,pooled,0.3606108801317498,10.817024313738466,209,within_site,frozen_A
+pvalb GABAergic interneuron,H,0.3271543628643706,9.486291514376171,110,within_site,frozen_A
+pvalb GABAergic interneuron,M,0.0005268743358450845,12.295616313029909,99,within_site,frozen_A
+pvalb GABAergic interneuron,mean_of_sites,0.16384061860010785,10.89095391370304,209,within_site,frozen_A
+smooth muscle cell,pooled,-0.1521335981226244,14.319834997881024,12,within_site,frozen_A
+smooth muscle cell,H,-0.1521335981226244,14.319834997881024,12,within_site,frozen_A
+smooth muscle cell,M,,,0,within_site,frozen_A
+smooth muscle cell,mean_of_sites,-0.1521335981226244,14.319834997881024,12,within_site,frozen_A
+sst GABAergic interneuron,pooled,0.4950487597567985,9.911612238422231,206,within_site,frozen_A
+sst GABAergic interneuron,H,0.4908588455655438,8.263538260107763,111,within_site,frozen_A
+sst GABAergic interneuron,M,0.18362615340322197,11.83725657097914,95,within_site,frozen_A
+sst GABAergic interneuron,mean_of_sites,0.3372424994843829,10.05039741554345,206,within_site,frozen_A
+vascular leptomeningeal cell,pooled,0.1079204976356396,14.482980260871772,81,within_site,frozen_A
+vascular leptomeningeal cell,H,0.051378297824897,12.4868693307857,60,within_site,frozen_A
+vascular leptomeningeal cell,M,-0.5872952757669203,20.18615434683199,21,within_site,frozen_A
+vascular leptomeningeal cell,mean_of_sites,-0.26795848897101165,16.336511838808846,81,within_site,frozen_A

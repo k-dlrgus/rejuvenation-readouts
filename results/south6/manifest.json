@@ -1,0 +1,19 @@
+{
+ "failures": [],
+ "flags": [],
+ "notes": [
+  {
+   "step": "launch",
+   "message": "Full job launched by the agent at the user's explicit instruction, after the Stage 0 smoke test returned a ruler coverage weight fraction of 0.8182 on the best mapping (symbol-only 0.6204, against the ~0.63 SURVEY_TF.md expected). This departs from the pre-registration line 'Write it, smoke-test Stage 0 only, stop. Do not run the full job yourself.' Nothing else in the pre-registration was changed and no statistic was computed before the pre-registration was written.",
+   "details": null
+  },
+  {
+   "step": "Y2_singular",
+   "message": "Y2 at k=100 rank 55 < 100. Skipped.",
+   "details": {
+    "k": 100,
+    "rank": 55
+   }
+  }
+ ]
+}

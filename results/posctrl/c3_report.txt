@@ -1,0 +1,1050 @@
+====================================================================================================
+POSCTRL C3 — power curve  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO perturbation data. No TF Atlas. No candidate interventions.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+SUPERSESSION 2026-09-16: 35° angle bar retired for C1/C3.
+C1/C3 primary bar: transfer R² > 0 both directions AND permutation null ≤ 0.05.
+Angle reported against sex reference 41.3°, not 35°.
+Ridge α grid and fold constructor unchanged.
+[C3] P1 superseded 2026-09-16; 35° bar retired; running power curve.
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[C1] loaded frozen age* from age_star.npy  mean=52.05
+[C1] sparse eligible genes (mean CPM>1.0 in ≥15/20 types): 17749 / 25526
+[C1] planted w already frozen
+[C1] frozen β[dense_shared_r030]=0.24683784844272705  full-fold R²=0.29079956034761606
+[C3] planted dense_shared β=0.246838
+[C3] c3_real_n060_d00 n_donors=60  H=31 M=29
+[battery] c3_real_n060_d00 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (3s)
+   ridge bootstrap 10/20  (6s)
+   ridge bootstrap 15/20  (8s)
+   ridge bootstrap 20/20  (11s)
+   median-over-types pairwise bootstrap angle = 49.6°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.677
+      null (20 train-age shuffles)...
+      null mean=-1.383  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.768
+      null (20 train-age shuffles)...
+      null mean=-1.659  p=0.571
+[battery] c3_real_n060_d00 done in 23s  boot=49.6°  ws R²=+nan  H→M=-0.677  M→H=-1.768
+[C3] c3_real_n060_d01 n_donors=60  H=31 M=29
+[battery] c3_real_n060_d01 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/20  (0s)
+   ridge bootstrap 5/20  (2s)
+   ridge bootstrap 10/20  (5s)
+   ridge bootstrap 15/20  (7s)
+   ridge bootstrap 20/20  (10s)
+   median-over-types pairwise bootstrap angle = 49.4°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.068
+      null (20 train-age shuffles)...
+      null mean=-2.229  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.128
+      null (20 train-age shuffles)...
+      null mean=-1.951  p=0.095
+[battery] c3_real_n060_d01 done in 21s  boot=49.4°  ws R²=+nan  H→M=-1.068  M→H=-1.128
+[C3] c3_real_n060_d02 n_donors=60  H=31 M=29
+[battery] c3_real_n060_d02 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/20  (0s)
+   ridge bootstrap 5/20  (3s)
+   ridge bootstrap 10/20  (5s)
+   ridge bootstrap 15/20  (8s)
+   ridge bootstrap 20/20  (10s)
+   median-over-types pairwise bootstrap angle = 49.8°
+   fit on HBCC → test MSSM
+      median-over-types R²=-2.054
+      null (20 train-age shuffles)...
+      null mean=-3.101  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-3.269
+      null (20 train-age shuffles)...
+      null mean=-3.949  p=0.286
+[battery] c3_real_n060_d02 done in 22s  boot=49.8°  ws R²=+nan  H→M=-2.054  M→H=-3.269
+[C3] c3_real_n060_d03 n_donors=60  H=31 M=29
+[battery] c3_real_n060_d03 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (3s)
+   ridge bootstrap 10/20  (5s)
+   ridge bootstrap 15/20  (8s)
+   ridge bootstrap 20/20  (10s)
+   median-over-types pairwise bootstrap angle = 49.1°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.773
+      null (20 train-age shuffles)...
+      null mean=-2.445  p=0.095
+   fit on MSSM → test HBCC
+      median-over-types R²=-2.788
+      null (20 train-age shuffles)...
+      null mean=-3.551  p=0.381
+[battery] c3_real_n060_d03 done in 22s  boot=49.1°  ws R²=+nan  H→M=-1.773  M→H=-2.788
+[C3] c3_real_n060_d04 n_donors=60  H=31 M=29
+[battery] c3_real_n060_d04 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/20  (0s)
+   ridge bootstrap 5/20  (3s)
+   ridge bootstrap 10/20  (5s)
+   ridge bootstrap 15/20  (8s)
+   ridge bootstrap 20/20  (10s)
+   median-over-types pairwise bootstrap angle = 47.4°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.523
+      null (20 train-age shuffles)...
+      null mean=-1.362  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.521
+      null (20 train-age shuffles)...
+      null mean=-1.155  p=0.143
+[battery] c3_real_n060_d04 done in 22s  boot=47.4°  ws R²=+nan  H→M=-0.523  M→H=-0.521
+[C3] c3_real_n060_d05 n_donors=60  H=31 M=29
+[battery] c3_real_n060_d05 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (3s)
+   ridge bootstrap 10/20  (5s)
+   ridge bootstrap 15/20  (8s)
+   ridge bootstrap 20/20  (10s)
+   median-over-types pairwise bootstrap angle = 48.4°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.520
+      null (20 train-age shuffles)...
+      null mean=-0.784  p=0.190
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.028
+      null (20 train-age shuffles)...
+      null mean=-1.484  p=0.333
+[battery] c3_real_n060_d05 done in 22s  boot=48.4°  ws R²=+nan  H→M=-0.520  M→H=-1.028
+[C3] c3_real_n060_d06 n_donors=60  H=31 M=29
+[battery] c3_real_n060_d06 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/20  (0s)
+   ridge bootstrap 5/20  (3s)
+   ridge bootstrap 10/20  (6s)
+   ridge bootstrap 15/20  (8s)
+   ridge bootstrap 20/20  (10s)
+   median-over-types pairwise bootstrap angle = 50.1°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.804
+      null (20 train-age shuffles)...
+      null mean=-0.971  p=0.143
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.016
+      null (20 train-age shuffles)...
+      null mean=-1.826  p=0.143
+[battery] c3_real_n060_d06 done in 22s  boot=50.1°  ws R²=+nan  H→M=-0.804  M→H=-1.016
+[C3] c3_real_n060_d07 n_donors=60  H=31 M=29
+[battery] c3_real_n060_d07 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (3s)
+   ridge bootstrap 10/20  (5s)
+   ridge bootstrap 15/20  (8s)
+   ridge bootstrap 20/20  (11s)
+   median-over-types pairwise bootstrap angle = 46.7°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.436
+      null (20 train-age shuffles)...
+      null mean=-1.634  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.696
+      null (20 train-age shuffles)...
+      null mean=-0.968  p=0.190
+[battery] c3_real_n060_d07 done in 22s  boot=46.7°  ws R²=+nan  H→M=-0.436  M→H=-0.696
+[C3] c3_real_n060_d08 n_donors=60  H=31 M=29
+[battery] c3_real_n060_d08 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/20  (0s)
+   ridge bootstrap 5/20  (2s)
+   ridge bootstrap 10/20  (5s)
+   ridge bootstrap 15/20  (8s)
+   ridge bootstrap 20/20  (10s)
+   median-over-types pairwise bootstrap angle = 50.4°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.004
+      null (20 train-age shuffles)...
+      null mean=-2.189  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.536
+      null (20 train-age shuffles)...
+      null mean=-1.821  p=0.429
+[battery] c3_real_n060_d08 done in 22s  boot=50.4°  ws R²=+nan  H→M=-1.004  M→H=-1.536
+[C3] c3_real_n060_d09 n_donors=60  H=31 M=29
+[battery] c3_real_n060_d09 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (3s)
+   ridge bootstrap 10/20  (5s)
+   ridge bootstrap 15/20  (8s)
+   ridge bootstrap 20/20  (10s)
+   median-over-types pairwise bootstrap angle = 49.4°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.329
+      null (20 train-age shuffles)...
+      null mean=-2.080  p=0.095
+   fit on MSSM → test HBCC
+      median-over-types R²=-2.371
+      null (20 train-age shuffles)...
+      null mean=-2.366  p=0.429
+[battery] c3_real_n060_d09 done in 21s  boot=49.4°  ws R²=+nan  H→M=-1.329  M→H=-2.371
+[C3] c3_real_n100_d00 n_donors=100  H=52 M=48
+[battery] c3_real_n100_d00 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (5s)
+   ridge bootstrap 10/20  (9s)
+   ridge bootstrap 15/20  (14s)
+   ridge bootstrap 20/20  (19s)
+   median-over-types pairwise bootstrap angle = 46.6°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.865
+      null (20 train-age shuffles)...
+      null mean=-3.158  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.868
+      null (20 train-age shuffles)...
+      null mean=-2.833  p=0.095
+[battery] c3_real_n100_d00 done in 37s  boot=46.6°  ws R²=+nan  H→M=-1.865  M→H=-1.868
+[C3] c3_real_n100_d01 n_donors=100  H=52 M=48
+[battery] c3_real_n100_d01 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (5s)
+   ridge bootstrap 10/20  (10s)
+   ridge bootstrap 15/20  (15s)
+   ridge bootstrap 20/20  (20s)
+   median-over-types pairwise bootstrap angle = 46.3°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.915
+      null (20 train-age shuffles)...
+      null mean=-1.527  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.991
+      null (20 train-age shuffles)...
+      null mean=-1.857  p=0.048
+[battery] c3_real_n100_d01 done in 40s  boot=46.3°  ws R²=+nan  H→M=-0.915  M→H=-0.991
+[C3] c3_real_n100_d02 n_donors=100  H=52 M=48
+[battery] c3_real_n100_d02 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (5s)
+   ridge bootstrap 10/20  (10s)
+   ridge bootstrap 15/20  (15s)
+   ridge bootstrap 20/20  (20s)
+   median-over-types pairwise bootstrap angle = 48.8°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.671
+      null (20 train-age shuffles)...
+      null mean=-1.329  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.782
+      null (20 train-age shuffles)...
+      null mean=-1.585  p=0.048
+[battery] c3_real_n100_d02 done in 39s  boot=48.8°  ws R²=+nan  H→M=-0.671  M→H=-0.782
+[C3] c3_real_n100_d03 n_donors=100  H=52 M=48
+[battery] c3_real_n100_d03 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (5s)
+   ridge bootstrap 10/20  (9s)
+   ridge bootstrap 15/20  (14s)
+   ridge bootstrap 20/20  (19s)
+   median-over-types pairwise bootstrap angle = 46.2°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.409
+      null (20 train-age shuffles)...
+      null mean=-1.050  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.867
+      null (20 train-age shuffles)...
+      null mean=-1.594  p=0.095
+[battery] c3_real_n100_d03 done in 38s  boot=46.2°  ws R²=+nan  H→M=-0.409  M→H=-0.867
+[C3] c3_real_n100_d04 n_donors=100  H=52 M=48
+[battery] c3_real_n100_d04 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (5s)
+   ridge bootstrap 10/20  (9s)
+   ridge bootstrap 15/20  (14s)
+   ridge bootstrap 20/20  (19s)
+   median-over-types pairwise bootstrap angle = 47.2°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.180
+      null (20 train-age shuffles)...
+      null mean=-1.115  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.175
+      null (20 train-age shuffles)...
+      null mean=-1.017  p=0.048
+[battery] c3_real_n100_d04 done in 36s  boot=47.2°  ws R²=+nan  H→M=-0.180  M→H=-0.175
+[C3] c3_real_n100_d05 n_donors=100  H=52 M=48
+[battery] c3_real_n100_d05 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (4s)
+   ridge bootstrap 10/20  (9s)
+   ridge bootstrap 15/20  (14s)
+   ridge bootstrap 20/20  (18s)
+   median-over-types pairwise bootstrap angle = 47.7°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.147
+      null (20 train-age shuffles)...
+      null mean=-0.959  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.238
+      null (20 train-age shuffles)...
+      null mean=-0.924  p=0.048
+[battery] c3_real_n100_d05 done in 36s  boot=47.7°  ws R²=+nan  H→M=-0.147  M→H=-0.238
+[C3] c3_real_n100_d06 n_donors=100  H=52 M=48
+[battery] c3_real_n100_d06 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (5s)
+   ridge bootstrap 10/20  (9s)
+   ridge bootstrap 15/20  (14s)
+   ridge bootstrap 20/20  (19s)
+   median-over-types pairwise bootstrap angle = 47.1°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.691
+      null (20 train-age shuffles)...
+      null mean=-2.001  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.364
+      null (20 train-age shuffles)...
+      null mean=-1.824  p=0.048
+[battery] c3_real_n100_d06 done in 38s  boot=47.1°  ws R²=+nan  H→M=-0.691  M→H=-0.364
+[C3] c3_real_n100_d07 n_donors=100  H=52 M=48
+[battery] c3_real_n100_d07 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (5s)
+   ridge bootstrap 10/20  (9s)
+   ridge bootstrap 15/20  (13s)
+   ridge bootstrap 20/20  (18s)
+   median-over-types pairwise bootstrap angle = 47.6°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.932
+      null (20 train-age shuffles)...
+      null mean=-2.178  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.239
+      null (20 train-age shuffles)...
+      null mean=-1.865  p=0.143
+[battery] c3_real_n100_d07 done in 37s  boot=47.6°  ws R²=+nan  H→M=-0.932  M→H=-1.239
+[C3] c3_real_n100_d08 n_donors=100  H=52 M=48
+[battery] c3_real_n100_d08 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (5s)
+   ridge bootstrap 10/20  (10s)
+   ridge bootstrap 15/20  (15s)
+   ridge bootstrap 20/20  (20s)
+   median-over-types pairwise bootstrap angle = 45.3°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.667
+      null (20 train-age shuffles)...
+      null mean=-1.781  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.710
+      null (20 train-age shuffles)...
+      null mean=-2.373  p=0.048
+[battery] c3_real_n100_d08 done in 39s  boot=45.3°  ws R²=+nan  H→M=-0.667  M→H=-0.710
+[C3] c3_real_n100_d09 n_donors=100  H=52 M=48
+[battery] c3_real_n100_d09 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/20  (1s)
+   ridge bootstrap 5/20  (5s)
+   ridge bootstrap 10/20  (10s)
+   ridge bootstrap 15/20  (14s)
+   ridge bootstrap 20/20  (19s)
+   median-over-types pairwise bootstrap angle = 44.5°
+   fit on HBCC → test MSSM
+      median-over-types R²=-2.113
+      null (20 train-age shuffles)...
+      null mean=-3.494  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.368
+      null (20 train-age shuffles)...
+      null mean=-2.395  p=0.095
+[battery] c3_real_n100_d09 done in 38s  boot=44.5°  ws R²=+nan  H→M=-2.113  M→H=-1.368
+[C3] c3_real_n150_d00 n_donors=150  H=77 M=73
+[battery] c3_real_n150_d00 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/20  (2s)
+   ridge bootstrap 5/20  (10s)
+   ridge bootstrap 10/20  (20s)
+   ridge bootstrap 15/20  (29s)
+   ridge bootstrap 20/20  (38s)
+   median-over-types pairwise bootstrap angle = 45.7°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.558
+      null (20 train-age shuffles)...
+      null mean=-1.687  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.840
+      null (20 train-age shuffles)...
+      null mean=-1.918  p=0.048
+[battery] c3_real_n150_d00 done in 63s  boot=45.7°  ws R²=+nan  H→M=-0.558  M→H=-0.840
+[C3] c3_real_n150_d01 n_donors=150  H=77 M=73
+[battery] c3_real_n150_d01 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/20  (2s)
+   ridge bootstrap 5/20  (10s)
+   ridge bootstrap 10/20  (21s)
+   ridge bootstrap 15/20  (31s)
+   ridge bootstrap 20/20  (41s)
+   median-over-types pairwise bootstrap angle = 44.6°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.395
+      null (20 train-age shuffles)...
+      null mean=-1.496  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.644
+      null (20 train-age shuffles)...
+      null mean=-1.516  p=0.095
+[battery] c3_real_n150_d01 done in 66s  boot=44.6°  ws R²=+nan  H→M=-0.395  M→H=-0.644
+[C3] c3_real_n150_d02 n_donors=150  H=77 M=73
+[battery] c3_real_n150_d02 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/20  (2s)
+   ridge bootstrap 5/20  (9s)
+   ridge bootstrap 10/20  (19s)
+   ridge bootstrap 15/20  (29s)
+   ridge bootstrap 20/20  (38s)
+   median-over-types pairwise bootstrap angle = 45.3°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.854
+      null (20 train-age shuffles)...
+      null mean=-1.901  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.121
+      null (20 train-age shuffles)...
+      null mean=-1.849  p=0.048
+[battery] c3_real_n150_d02 done in 66s  boot=45.3°  ws R²=+nan  H→M=-0.854  M→H=-1.121
+[C3] c3_real_n150_d03 n_donors=150  H=77 M=73
+[battery] c3_real_n150_d03 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/20  (2s)
+   ridge bootstrap 5/20  (10s)
+   ridge bootstrap 10/20  (20s)
+   ridge bootstrap 15/20  (31s)
+   ridge bootstrap 20/20  (41s)
+   median-over-types pairwise bootstrap angle = 45.5°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.485
+      null (20 train-age shuffles)...
+      null mean=-1.426  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.486
+      null (20 train-age shuffles)...
+      null mean=-1.564  p=0.048
+[battery] c3_real_n150_d03 done in 67s  boot=45.5°  ws R²=+nan  H→M=-0.485  M→H=-0.486
+[C3] c3_real_n150_d04 n_donors=150  H=77 M=73
+[battery] c3_real_n150_d04 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/20  (2s)
+   ridge bootstrap 5/20  (10s)
+   ridge bootstrap 10/20  (20s)
+   ridge bootstrap 15/20  (29s)
+   ridge bootstrap 20/20  (39s)
+   median-over-types pairwise bootstrap angle = 44.8°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.192
+      null (20 train-age shuffles)...
+      null mean=-1.435  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.335
+      null (20 train-age shuffles)...
+      null mean=-1.473  p=0.048
+[battery] c3_real_n150_d04 done in 65s  boot=44.8°  ws R²=+nan  H→M=-0.192  M→H=-0.335
+[C3] c3_real_n150_d05 n_donors=150  H=77 M=73
+[battery] c3_real_n150_d05 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/20  (2s)
+   ridge bootstrap 5/20  (11s)
+   ridge bootstrap 10/20  (21s)
+   ridge bootstrap 15/20  (30s)
+   ridge bootstrap 20/20  (41s)
+   median-over-types pairwise bootstrap angle = 46.4°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.065
+      null (20 train-age shuffles)...
+      null mean=-1.219  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.338
+      null (20 train-age shuffles)...
+      null mean=-1.096  p=0.048
+[battery] c3_real_n150_d05 done in 68s  boot=46.4°  ws R²=+nan  H→M=-0.065  M→H=-0.338
+[C3] c3_real_n150_d06 n_donors=150  H=77 M=73
+[battery] c3_real_n150_d06 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/20  (2s)
+   ridge bootstrap 5/20  (11s)
+   ridge bootstrap 10/20  (22s)
+   ridge bootstrap 15/20  (32s)
+   ridge bootstrap 20/20  (42s)
+   median-over-types pairwise bootstrap angle = 46.3°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.261
+      null (20 train-age shuffles)...
+      null mean=-1.476  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.481
+      null (20 train-age shuffles)...
+      null mean=-1.499  p=0.095
+[battery] c3_real_n150_d06 done in 69s  boot=46.3°  ws R²=+nan  H→M=-0.261  M→H=-0.481
+[C3] c3_real_n150_d07 n_donors=150  H=77 M=73
+[battery] c3_real_n150_d07 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/20  (2s)
+   ridge bootstrap 5/20  (10s)
+   ridge bootstrap 10/20  (20s)
+   ridge bootstrap 15/20  (30s)
+   ridge bootstrap 20/20  (40s)
+   median-over-types pairwise bootstrap angle = 45.5°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.156
+      null (20 train-age shuffles)...
+      null mean=-1.185  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.611
+      null (20 train-age shuffles)...
+      null mean=-1.635  p=0.048
+[battery] c3_real_n150_d07 done in 65s  boot=45.5°  ws R²=+nan  H→M=-0.156  M→H=-0.611
+[C3] c3_real_n150_d08 n_donors=150  H=77 M=73
+[battery] c3_real_n150_d08 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/20  (2s)
+   ridge bootstrap 5/20  (11s)
+   ridge bootstrap 10/20  (22s)
+   ridge bootstrap 15/20  (33s)
+   ridge bootstrap 20/20  (43s)
+   median-over-types pairwise bootstrap angle = 47.4°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.147
+      null (20 train-age shuffles)...
+      null mean=-1.086  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.215
+      null (20 train-age shuffles)...
+      null mean=-1.177  p=0.048
+[battery] c3_real_n150_d08 done in 69s  boot=47.4°  ws R²=+nan  H→M=-0.147  M→H=-0.215
+[C3] c3_real_n150_d09 n_donors=150  H=77 M=73
+[battery] c3_real_n150_d09 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/20  (2s)
+   ridge bootstrap 5/20  (9s)
+   ridge bootstrap 10/20  (19s)
+   ridge bootstrap 15/20  (28s)
+   ridge bootstrap 20/20  (37s)
+   median-over-types pairwise bootstrap angle = 45.3°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.469
+      null (20 train-age shuffles)...
+      null mean=-1.683  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.969
+      null (20 train-age shuffles)...
+      null mean=-2.217  p=0.048
+[battery] c3_real_n150_d09 done in 64s  boot=45.3°  ws R²=+nan  H→M=-0.469  M→H=-0.969
+[C3] c3_real_n233_d00 n_donors=233  H=120 M=113
+[battery] c3_real_n233_d00 n_boot=20 n_perm=20 parts=['boot', 'transfer'] donors=233 genes=25526
+   ridge bootstrap 1/20  (14s)
+   ridge bootstrap 5/20  (57s)
+   ridge bootstrap 10/20  (114s)
+   ridge bootstrap 15/20  (169s)
+   ridge bootstrap 20/20  (224s)
+   median-over-types pairwise bootstrap angle = 45.1°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.124
+      null (20 train-age shuffles)...
+      null mean=-1.410  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.463
+      null (20 train-age shuffles)...
+      null mean=-1.602  p=0.048
+[battery] c3_real_n233_d00 done in 305s  boot=45.1°  ws R²=+nan  H→M=-0.124  M→H=-0.463
+[C3] c3_planted_n060_d00 n_donors=60  H=31 M=29
+[battery] c3_planted_n060_d00 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (3s)
+   ridge bootstrap 10/10  (5s)
+   median-over-types pairwise bootstrap angle = 50.1°
+   recovery angle (median over boots and types) = 71.6°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.476
+      null (10 train-age shuffles)...
+      null mean=-2.604  p=0.182
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.219
+      null (10 train-age shuffles)...
+      null mean=-1.625  p=0.273
+[battery] c3_planted_n060_d00 done in 12s  boot=50.1°  ws R²=+nan  H→M=-1.476  M→H=-1.219
+[C3] c3_planted_n060_d01 n_donors=60  H=31 M=29
+[battery] c3_planted_n060_d01 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/10  (0s)
+   ridge bootstrap 5/10  (3s)
+   ridge bootstrap 10/10  (6s)
+   median-over-types pairwise bootstrap angle = 46.0°
+   recovery angle (median over boots and types) = 71.8°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.876
+      null (10 train-age shuffles)...
+      null mean=-1.118  p=0.364
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.117
+      null (10 train-age shuffles)...
+      null mean=-1.625  p=0.182
+[battery] c3_planted_n060_d01 done in 13s  boot=46.0°  ws R²=+nan  H→M=-0.876  M→H=-1.117
+[C3] c3_planted_n060_d02 n_donors=60  H=31 M=29
+[battery] c3_planted_n060_d02 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (3s)
+   ridge bootstrap 10/10  (5s)
+   median-over-types pairwise bootstrap angle = 44.3°
+   recovery angle (median over boots and types) = 70.5°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.182
+      null (10 train-age shuffles)...
+      null mean=-1.722  p=0.182
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.962
+      null (10 train-age shuffles)...
+      null mean=-1.881  p=0.091
+[battery] c3_planted_n060_d02 done in 12s  boot=44.3°  ws R²=+nan  H→M=-1.182  M→H=-0.962
+[C3] c3_planted_n060_d03 n_donors=60  H=31 M=29
+[battery] c3_planted_n060_d03 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (3s)
+   ridge bootstrap 10/10  (6s)
+   median-over-types pairwise bootstrap angle = 48.0°
+   recovery angle (median over boots and types) = 72.2°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.675
+      null (10 train-age shuffles)...
+      null mean=-1.892  p=0.273
+   fit on MSSM → test HBCC
+      median-over-types R²=-2.235
+      null (10 train-age shuffles)...
+      null mean=-2.844  p=0.364
+[battery] c3_planted_n060_d03 done in 12s  boot=48.0°  ws R²=+nan  H→M=-1.675  M→H=-2.235
+[C3] c3_planted_n060_d04 n_donors=60  H=31 M=29
+[battery] c3_planted_n060_d04 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/10  (0s)
+   ridge bootstrap 5/10  (3s)
+   ridge bootstrap 10/10  (5s)
+   median-over-types pairwise bootstrap angle = 48.3°
+   recovery angle (median over boots and types) = 71.5°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.082
+      null (10 train-age shuffles)...
+      null mean=-0.946  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.128
+      null (10 train-age shuffles)...
+      null mean=-0.605  p=0.091
+[battery] c3_planted_n060_d04 done in 12s  boot=48.3°  ws R²=+nan  H→M=-0.082  M→H=-0.128
+[C3] c3_planted_n060_d05 n_donors=60  H=31 M=29
+[battery] c3_planted_n060_d05 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/10  (0s)
+   ridge bootstrap 5/10  (3s)
+   ridge bootstrap 10/10  (5s)
+   median-over-types pairwise bootstrap angle = 50.7°
+   recovery angle (median over boots and types) = 73.0°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.035
+      null (10 train-age shuffles)...
+      null mean=-1.696  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.738
+      null (10 train-age shuffles)...
+      null mean=-1.153  p=0.182
+[battery] c3_planted_n060_d05 done in 11s  boot=50.7°  ws R²=+nan  H→M=-1.035  M→H=-0.738
+[C3] c3_planted_n060_d06 n_donors=60  H=31 M=29
+[battery] c3_planted_n060_d06 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (3s)
+   ridge bootstrap 10/10  (5s)
+   median-over-types pairwise bootstrap angle = 52.2°
+   recovery angle (median over boots and types) = 72.4°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.532
+      null (10 train-age shuffles)...
+      null mean=-1.395  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.856
+      null (10 train-age shuffles)...
+      null mean=-1.005  p=0.364
+[battery] c3_planted_n060_d06 done in 12s  boot=52.2°  ws R²=+nan  H→M=-0.532  M→H=-0.856
+[C3] c3_planted_n060_d07 n_donors=60  H=31 M=29
+[battery] c3_planted_n060_d07 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (3s)
+   ridge bootstrap 10/10  (5s)
+   median-over-types pairwise bootstrap angle = 48.6°
+   recovery angle (median over boots and types) = 71.4°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.288
+      null (10 train-age shuffles)...
+      null mean=-2.232  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.540
+      null (10 train-age shuffles)...
+      null mean=-1.647  p=0.455
+[battery] c3_planted_n060_d07 done in 12s  boot=48.6°  ws R²=+nan  H→M=-1.288  M→H=-1.540
+[C3] c3_planted_n060_d08 n_donors=60  H=31 M=29
+[battery] c3_planted_n060_d08 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (3s)
+   ridge bootstrap 10/10  (5s)
+   median-over-types pairwise bootstrap angle = 51.5°
+   recovery angle (median over boots and types) = 72.5°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.913
+      null (10 train-age shuffles)...
+      null mean=-1.666  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.014
+      null (10 train-age shuffles)...
+      null mean=-1.279  p=0.364
+[battery] c3_planted_n060_d08 done in 12s  boot=51.5°  ws R²=+nan  H→M=-0.913  M→H=-1.014
+[C3] c3_planted_n060_d09 n_donors=60  H=31 M=29
+[battery] c3_planted_n060_d09 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=60 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (3s)
+   ridge bootstrap 10/10  (5s)
+   median-over-types pairwise bootstrap angle = 50.0°
+   recovery angle (median over boots and types) = 74.2°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.694
+      null (10 train-age shuffles)...
+      null mean=-1.475  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.054
+      null (10 train-age shuffles)...
+      null mean=-1.952  p=0.273
+[battery] c3_planted_n060_d09 done in 11s  boot=50.0°  ws R²=+nan  H→M=-0.694  M→H=-1.054
+[C3] c3_planted_n100_d00 n_donors=100  H=52 M=48
+[battery] c3_planted_n100_d00 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (5s)
+   ridge bootstrap 10/10  (10s)
+   median-over-types pairwise bootstrap angle = 45.9°
+   recovery angle (median over boots and types) = 65.4°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.214
+      null (10 train-age shuffles)...
+      null mean=-1.208  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.201
+      null (10 train-age shuffles)...
+      null mean=-1.444  p=0.091
+[battery] c3_planted_n100_d00 done in 21s  boot=45.9°  ws R²=+nan  H→M=-0.214  M→H=-0.201
+[C3] c3_planted_n100_d01 n_donors=100  H=52 M=48
+[battery] c3_planted_n100_d01 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (5s)
+   ridge bootstrap 10/10  (10s)
+   median-over-types pairwise bootstrap angle = 43.9°
+   recovery angle (median over boots and types) = 66.8°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.084
+      null (10 train-age shuffles)...
+      null mean=-1.764  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.838
+      null (10 train-age shuffles)...
+      null mean=-2.615  p=0.091
+[battery] c3_planted_n100_d01 done in 20s  boot=43.9°  ws R²=+nan  H→M=-1.084  M→H=-0.838
+[C3] c3_planted_n100_d02 n_donors=100  H=52 M=48
+[battery] c3_planted_n100_d02 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (5s)
+   ridge bootstrap 10/10  (10s)
+   median-over-types pairwise bootstrap angle = 43.4°
+   recovery angle (median over boots and types) = 66.8°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.184
+      null (10 train-age shuffles)...
+      null mean=-2.308  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.007
+      null (10 train-age shuffles)...
+      null mean=-1.599  p=0.273
+[battery] c3_planted_n100_d02 done in 20s  boot=43.4°  ws R²=+nan  H→M=-1.184  M→H=-1.007
+[C3] c3_planted_n100_d03 n_donors=100  H=52 M=48
+[battery] c3_planted_n100_d03 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (5s)
+   ridge bootstrap 10/10  (10s)
+   median-over-types pairwise bootstrap angle = 42.6°
+   recovery angle (median over boots and types) = 68.8°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.807
+      null (10 train-age shuffles)...
+      null mean=-1.272  p=0.273
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.150
+      null (10 train-age shuffles)...
+      null mean=-1.275  p=0.636
+[battery] c3_planted_n100_d03 done in 20s  boot=42.6°  ws R²=+nan  H→M=-0.807  M→H=-1.150
+[C3] c3_planted_n100_d04 n_donors=100  H=52 M=48
+[battery] c3_planted_n100_d04 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (5s)
+   ridge bootstrap 10/10  (10s)
+   median-over-types pairwise bootstrap angle = 46.2°
+   recovery angle (median over boots and types) = 66.8°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.285
+      null (10 train-age shuffles)...
+      null mean=-2.504  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.309
+      null (10 train-age shuffles)...
+      null mean=-2.090  p=0.182
+[battery] c3_planted_n100_d04 done in 20s  boot=46.2°  ws R²=+nan  H→M=-1.285  M→H=-1.309
+[C3] c3_planted_n100_d05 n_donors=100  H=52 M=48
+[battery] c3_planted_n100_d05 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (5s)
+   ridge bootstrap 10/10  (10s)
+   median-over-types pairwise bootstrap angle = 45.6°
+   recovery angle (median over boots and types) = 67.5°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.902
+      null (10 train-age shuffles)...
+      null mean=-1.548  p=0.182
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.809
+      null (10 train-age shuffles)...
+      null mean=-2.741  p=0.091
+[battery] c3_planted_n100_d05 done in 20s  boot=45.6°  ws R²=+nan  H→M=-0.902  M→H=-0.809
+[C3] c3_planted_n100_d06 n_donors=100  H=52 M=48
+[battery] c3_planted_n100_d06 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (4s)
+   ridge bootstrap 10/10  (9s)
+   median-over-types pairwise bootstrap angle = 47.4°
+   recovery angle (median over boots and types) = 70.8°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.937
+      null (10 train-age shuffles)...
+      null mean=-1.640  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.150
+      null (10 train-age shuffles)...
+      null mean=-2.106  p=0.091
+[battery] c3_planted_n100_d06 done in 18s  boot=47.4°  ws R²=+nan  H→M=-0.937  M→H=-1.150
+[C3] c3_planted_n100_d07 n_donors=100  H=52 M=48
+[battery] c3_planted_n100_d07 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (5s)
+   ridge bootstrap 10/10  (10s)
+   median-over-types pairwise bootstrap angle = 46.7°
+   recovery angle (median over boots and types) = 69.4°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.763
+      null (10 train-age shuffles)...
+      null mean=-1.842  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.681
+      null (10 train-age shuffles)...
+      null mean=-1.804  p=0.091
+[battery] c3_planted_n100_d07 done in 20s  boot=46.7°  ws R²=+nan  H→M=-0.763  M→H=-0.681
+[C3] c3_planted_n100_d08 n_donors=100  H=52 M=48
+[battery] c3_planted_n100_d08 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (5s)
+   ridge bootstrap 10/10  (9s)
+   median-over-types pairwise bootstrap angle = 47.5°
+   recovery angle (median over boots and types) = 69.1°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.100
+      null (10 train-age shuffles)...
+      null mean=-2.845  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.313
+      null (10 train-age shuffles)...
+      null mean=-1.661  p=0.182
+[battery] c3_planted_n100_d08 done in 19s  boot=47.5°  ws R²=+nan  H→M=-1.100  M→H=-1.313
+[C3] c3_planted_n100_d09 n_donors=100  H=52 M=48
+[battery] c3_planted_n100_d09 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=100 genes=25526
+   ridge bootstrap 1/10  (1s)
+   ridge bootstrap 5/10  (5s)
+   ridge bootstrap 10/10  (9s)
+   median-over-types pairwise bootstrap angle = 43.7°
+   recovery angle (median over boots and types) = 67.0°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.354
+      null (10 train-age shuffles)...
+      null mean=-1.289  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.826
+      null (10 train-age shuffles)...
+      null mean=-1.602  p=0.091
+[battery] c3_planted_n100_d09 done in 19s  boot=43.7°  ws R²=+nan  H→M=-0.354  M→H=-0.826
+[C3] c3_planted_n150_d00 n_donors=150  H=77 M=73
+[battery] c3_planted_n150_d00 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/10  (2s)
+   ridge bootstrap 5/10  (9s)
+   ridge bootstrap 10/10  (17s)
+   median-over-types pairwise bootstrap angle = 44.7°
+   recovery angle (median over boots and types) = 64.7°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.059
+      null (10 train-age shuffles)...
+      null mean=-1.187  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.727
+      null (10 train-age shuffles)...
+      null mean=-1.184  p=0.182
+[battery] c3_planted_n150_d00 done in 31s  boot=44.7°  ws R²=+nan  H→M=-0.059  M→H=-0.727
+[C3] c3_planted_n150_d01 n_donors=150  H=77 M=73
+[battery] c3_planted_n150_d01 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/10  (2s)
+   ridge bootstrap 5/10  (9s)
+   ridge bootstrap 10/10  (18s)
+   median-over-types pairwise bootstrap angle = 39.3°
+   recovery angle (median over boots and types) = 62.2°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.473
+      null (10 train-age shuffles)...
+      null mean=-1.942  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.452
+      null (10 train-age shuffles)...
+      null mean=-1.405  p=0.091
+[battery] c3_planted_n150_d01 done in 32s  boot=39.3°  ws R²=+nan  H→M=-0.473  M→H=-0.452
+[C3] c3_planted_n150_d02 n_donors=150  H=77 M=73
+[battery] c3_planted_n150_d02 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/10  (2s)
+   ridge bootstrap 5/10  (9s)
+   ridge bootstrap 10/10  (18s)
+   median-over-types pairwise bootstrap angle = 40.7°
+   recovery angle (median over boots and types) = 63.8°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.169
+      null (10 train-age shuffles)...
+      null mean=-1.314  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.365
+      null (10 train-age shuffles)...
+      null mean=-1.466  p=0.091
+[battery] c3_planted_n150_d02 done in 33s  boot=40.7°  ws R²=+nan  H→M=-0.169  M→H=-0.365
+[C3] c3_planted_n150_d03 n_donors=150  H=77 M=73
+[battery] c3_planted_n150_d03 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/10  (2s)
+   ridge bootstrap 5/10  (9s)
+   ridge bootstrap 10/10  (19s)
+   median-over-types pairwise bootstrap angle = 43.7°
+   recovery angle (median over boots and types) = 64.0°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.216
+      null (10 train-age shuffles)...
+      null mean=-1.308  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.516
+      null (10 train-age shuffles)...
+      null mean=-1.950  p=0.091
+[battery] c3_planted_n150_d03 done in 34s  boot=43.7°  ws R²=+nan  H→M=-0.216  M→H=-0.516
+[C3] c3_planted_n150_d04 n_donors=150  H=77 M=73
+[battery] c3_planted_n150_d04 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/10  (2s)
+   ridge bootstrap 5/10  (10s)
+   ridge bootstrap 10/10  (19s)
+   median-over-types pairwise bootstrap angle = 43.8°
+   recovery angle (median over boots and types) = 65.0°
+   fit on HBCC → test MSSM
+      median-over-types R²=-1.092
+      null (10 train-age shuffles)...
+      null mean=-2.024  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.520
+      null (10 train-age shuffles)...
+      null mean=-2.349  p=0.091
+[battery] c3_planted_n150_d04 done in 33s  boot=43.8°  ws R²=+nan  H→M=-1.092  M→H=-1.520
+[C3] c3_planted_n150_d05 n_donors=150  H=77 M=73
+[battery] c3_planted_n150_d05 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/10  (2s)
+   ridge bootstrap 5/10  (10s)
+   ridge bootstrap 10/10  (21s)
+   median-over-types pairwise bootstrap angle = 42.2°
+   recovery angle (median over boots and types) = 63.1°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.508
+      null (10 train-age shuffles)...
+      null mean=-1.772  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.490
+      null (10 train-age shuffles)...
+      null mean=-1.796  p=0.091
+[battery] c3_planted_n150_d05 done in 35s  boot=42.2°  ws R²=+nan  H→M=-0.508  M→H=-0.490
+[C3] c3_planted_n150_d06 n_donors=150  H=77 M=73
+[battery] c3_planted_n150_d06 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/10  (2s)
+   ridge bootstrap 5/10  (8s)
+   ridge bootstrap 10/10  (16s)
+   median-over-types pairwise bootstrap angle = 44.7°
+   recovery angle (median over boots and types) = 64.9°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.932
+      null (10 train-age shuffles)...
+      null mean=-1.512  p=0.182
+   fit on MSSM → test HBCC
+      median-over-types R²=-1.155
+      null (10 train-age shuffles)...
+      null mean=-2.227  p=0.091
+[battery] c3_planted_n150_d06 done in 29s  boot=44.7°  ws R²=+nan  H→M=-0.932  M→H=-1.155
+[C3] c3_planted_n150_d07 n_donors=150  H=77 M=73
+[battery] c3_planted_n150_d07 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/10  (2s)
+   ridge bootstrap 5/10  (11s)
+   ridge bootstrap 10/10  (21s)
+   median-over-types pairwise bootstrap angle = 39.5°
+   recovery angle (median over boots and types) = 62.2°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.828
+      null (10 train-age shuffles)...
+      null mean=-2.279  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.885
+      null (10 train-age shuffles)...
+      null mean=-1.975  p=0.091
+[battery] c3_planted_n150_d07 done in 36s  boot=39.5°  ws R²=+nan  H→M=-0.828  M→H=-0.885
+[C3] c3_planted_n150_d08 n_donors=150  H=77 M=73
+[battery] c3_planted_n150_d08 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/10  (2s)
+   ridge bootstrap 5/10  (11s)
+   ridge bootstrap 10/10  (21s)
+   median-over-types pairwise bootstrap angle = 44.1°
+   recovery angle (median over boots and types) = 62.4°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.174
+      null (10 train-age shuffles)...
+      null mean=-1.514  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.135
+      null (10 train-age shuffles)...
+      null mean=-1.256  p=0.091
+[battery] c3_planted_n150_d08 done in 36s  boot=44.1°  ws R²=+nan  H→M=-0.174  M→H=-0.135
+[C3] c3_planted_n150_d09 n_donors=150  H=77 M=73
+[battery] c3_planted_n150_d09 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=150 genes=25526
+   ridge bootstrap 1/10  (2s)
+   ridge bootstrap 5/10  (11s)
+   ridge bootstrap 10/10  (22s)
+   median-over-types pairwise bootstrap angle = 42.2°
+   recovery angle (median over boots and types) = 61.3°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.799
+      null (10 train-age shuffles)...
+      null mean=-2.586  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.809
+      null (10 train-age shuffles)...
+      null mean=-1.832  p=0.091
+[battery] c3_planted_n150_d09 done in 36s  boot=42.2°  ws R²=+nan  H→M=-0.799  M→H=-0.809
+[C3] c3_planted_n233_d00 n_donors=233  H=120 M=113
+[battery] c3_planted_n233_d00 n_boot=10 n_perm=10 parts=['boot', 'transfer'] donors=233 genes=25526
+   ridge bootstrap 1/10  (16s)
+   ridge bootstrap 5/10  (51s)
+   ridge bootstrap 10/10  (101s)
+   median-over-types pairwise bootstrap angle = 41.2°
+   recovery angle (median over boots and types) = 58.3°
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.087
+      null (10 train-age shuffles)...
+      null mean=-1.737  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.415
+      null (10 train-age shuffles)...
+      null mean=-1.613  p=0.091
+[battery] c3_planted_n233_d00 done in 122s  boot=41.2°  ws R²=+nan  H→M=-0.087  M→H=-0.415
+[C3] planted angle vs 41.3°: n_cross=233.0  extrapolation=False
+[C3] planted H→M vs 0: n_cross=263.7091750804621  extrapolation=True  (n>233 labeled extrapolation)
+[C3] planted M→H vs 0: n_cross=397.67555339815647  extrapolation=True  (n>233 labeled extrapolation)
+[C3] corr(n, angle) planted=-0.950  real=-0.886
+[C3] wrote c3_summary.json and figures/c3_power_vs_n.png

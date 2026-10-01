@@ -1,0 +1,50 @@
+Written **before any joint-cluster age score**, 2026-09-18. Not swept after numbers exist.
+
+JOINT CLUSTERING (code-listed; chosen before looking at any age score):
+- Scope: all cells of one donor, all timepoints concatenated. Donors clustered separately. Never pooled across donors.
+- Genes: frozen-ruler overlap genes with count-sum > 0 (same gene filter as Stage 2 cluster spec in FINDINGS_FIBRO.md).
+- Transform: log1p(CP10k) on those genes. Library size = row sum of the kept overlap genes (Stage 2).
+- Dimensionality: sklearn.decomposition.PCA(n_components=20, or n_cells−1 if smaller, svd_solver="randomized", random_state=20260914) on float32 log1p(CP10k). Cell order: libraries concatenated in day order 0, 3, 7, 10.
+- Cluster: sklearn.cluster.KMeans(n_clusters=3, random_state=20260914, n_init=10).
+- k=3 is the Stage 2 frozen k, applied jointly so cluster IDs are comparable across days of the same donor. Resolution is k (not a Leiden resolution). Not swept.
+- Seed `20260914`.
+- MIN_CELLS = 20 (prompt minimum) to score age / pluri / extrapolation / random-direction null at a cluster×timepoint. QC (n, fraction, median UMI, median genes, mito fraction) is reported at all n, including n<20.
+
+Amendment, still before any age score: the first listed dimensionality was IncrementalPCA(n_components=20, batch_size=2048). A run reached IncrementalPCA partial_fit on 2048×20354 and did not finish in usable time (~3 min/batch). No cluster labels and no age scores were written. Dimensionality was replaced by randomized PCA on the same matrix, same n_components, same KMeans k. This is not a k/resolution sweep.
+
+
+Written **before any joint-cluster age score**, 2026-09-18. No threshold in this block is re-tuned after numbers exist.
+
+Using the GSE297234 Cell Ranger `filtered_feature_bc_matrix.h5` matrices already on disk. Cluster cells jointly across all timepoints within each donor (not within timepoint). Clustering settings are in `results/fibro3/CLUSTER_SETTINGS.flag` and are listed before any age score.
+
+Per donor × cluster × timepoint report: n cells, fraction of that timepoint's cells, median UMI, median genes, mito fraction, frozen age score, pluripotency−fibroblast score (frozen lists from FINDINGS_FIBRO.md, with and without OSKM-family genes). Frozen ruler `results/fibro/frozen_ruler_ridge_raw.npz` used as-is. Refit nothing. Missing overlap genes left at z=0.
+
+MIN_CELLS = 20. Do not read a d7–d10 trend off a cluster×timepoint with n < 20.
+
+Operational definitions (frozen before any joint-cluster age score):
+- C_ok(donor) = clusters with n ≥ 20 at both d7 and d10.
+- Cluster reverse = age_score(d10) > age_score(d7) (score increased; older on the ruler).
+- Cluster stable_or_decline = age_score(d10) ≤ age_score(d7).
+- High-age cluster at d7 = cluster with n ≥ 20 at d7 and age_score(d7) equal to the maximum among those.
+- Low-age cluster at d7 = cluster with n ≥ 20 at d7 and age_score(d7) equal to the minimum among those.
+- Fraction = n_cells(cluster, day) / n_cells(donor, day). A missing cluster has fraction 0.
+- Mix shift (reversal-direction) = frac(high-age, d10) > frac(high-age, d7) OR frac(low-age, d10) < frac(low-age, d7).
+- Primary reading is the aged donor GM00731. GM23815 is tabulated as a contrast, never pooled, never the reading.
+
+**Pre-registered reading** (only the outcome that fired; d7 is not the Stage 2 endpoint):
+- **Compositional.** Individual clusters' age scores are stable or keep declining from d7 to d10, but the *mix* shifts — a high-age-score cluster grows, or a low-scoring one shrinks or drops out. Then the all-cell reversal is a composition artifact, the same failure mode as the blood result in `FINDINGS_BRAIN_PHASE1.md` §2. Say so in those words.
+- **Cell-intrinsic.** The same cells' clusters individually reverse from d7 to d10. Then reprogramming genuinely pushes cells back along the age axis after d7, and that is a biological claim worth its own test.
+- **Mixed.** Report which clusters do which. Do not average them into one number.
+- **Unresolvable.** Too few cells per cluster × timepoint (threshold 20 cells) to read either way. Say so and stop rather than reading a trend off thin cells.
+
+Firing rule (aged donor only):
+- Unresolvable if C_ok is empty.
+- Cell-intrinsic if C_ok is non-empty AND every cluster in C_ok reverses.
+- Compositional if C_ok is non-empty AND every cluster in C_ok is stable_or_decline AND mix shift is True.
+- Mixed if C_ok is non-empty AND at least one cluster reverses AND at least one does not.
+- If all C_ok are stable_or_decline and mix shift is False: key=`no_listed_bullet`; report the tables; do not invent a fifth story.
+
+Clusters are not lineage-tracked. "The same cells" is an inference from joint cluster identity, not from barcodes.
+
+
+This flag was written after joint clustering and before any age score.

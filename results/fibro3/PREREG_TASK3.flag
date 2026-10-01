@@ -1,0 +1,3 @@
+Written **before any per-cluster random-direction p**, 2026-09-18.
+
+For each donor × cluster with ≥20 cells at both endpoints, rerun the pre-registered random-direction null (200 permuted-weight directions, seed `20260914`) on d0→d7 and d0→d10 separately. Endpoint decline = age_score(day 0) − age_score(day T). Positive = younger on the ruler. Empirical p = (n_random ≥ real + 1) / (n_random + 1). Joint cluster IDs pair the same cluster across days (not size-rank). Do not average clusters or donors. d7 is not the Stage 2 endpoint.

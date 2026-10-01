@@ -1,0 +1,936 @@
+CXG human listing: 1621 datasets; title/collection match OSK/OSKM/reprogramming: 0
+  (none — CELLxGENE Discover has no human OSK/OSKM time-course under these title terms)
+
+GEO reprogramming-query accessions to fetch SOFT for: 77
+
+
+ACCESSION: GSE100344
+  Title:     Determination of dynamic changes in chromatin accessibility during cellular reprogramming [scRNA]
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 480   PubMed: 32917699
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Understanding the heterogeneity of cellular reprogramming process at a single-cell high resolution level.
+  Design:    480 Single-Cell mRNA-Seq libraries of cells undergoing cellular reprogramming at different time-points.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE100nnn/GSE100344/suppl/GSE100344_BJ_FPKM.csv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE100nnn/GSE100344/suppl/GSE100344_D16+_FPKM.csv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE100nnn/GSE100344/suppl/GSE100344_D16-_FPKM.csv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE100nnn/GSE100344/suppl/GSE100344_D2_FPKM.csv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/s
+
+
+ACCESSION: GSE102934
+  Title:     bigSCale: An Analytical Framework for Big-Scale Single Cell Data
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 1847   PubMed: 29724792
+  Tissues mentioned (priority list): ['brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Single-cell RNA sequencing significantly deepened our insights into complex tissues and latest techniques are capable to analyze ten-thousands of cells simultaneously. With bigSCale, we provide an analytical framework being scalable to analyze millions of cells, addressing challenges of future large data sets. Unlike other methods, bigSCale does not constrain data to fit an a priori-defined distribution and instead uses an accurate numerical model of noise. We evaluate the performance of bigSCal
+  Design:    Single cell transcriptomes from 1847 neuronal progenitors differentiated from iPSC of one healthy donor, two patients with Williams-Beuren syndrome and two patients with 7q11.23 microduplication syndrome.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE102nnn/GSE102934/suppl/GSE102934_IPSC_Expression.csv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE102nnn/GSE102934/suppl/GSE102934_Table_S1_Linnarsson.xlsx | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE102nnn/GSE102934/suppl/GSE102934_Table_S2_10X_full.xlsx | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE102nnn/GSE102934/suppl/GSE102934_Table_S3_10x_Reln.xlsx | ft
+
+
+ACCESSION: GSE103221
+  Title:     Resolving Cell Fate Decisions during Somatic Cell Reprogramming by Single-Cell RNA-seq
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 933   PubMed: 30772174
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   The use of Yamanaka factors or chemical compound converting mouse embryonic fibroblasts (MEFs) into induced pluripotent stem cells (iPSCs). However, these reprogramming processes are highly heterogeneous and remain poorly understood. Here we comprehensively profile the different stages of an optimized Oct4, Sox2, Klf4 and chemical-induced reprogramming at single-cell resolution. 
+  Design:    Using high efficient OSK induced reprogramming systems, which can get chimera-competent iPSCs at D7, we collected cells across 8 days reprogramming time course [1] using Fluidigm C1. In total, we analyzed 912 single cells isolated at D0, D1, D2, D3, D5, D7, D8, plus MEFs, iPSCs, and ESCs were sequenced, [2] using 10x Genomics, we analyzed 59141 single cells after QC isolated at D0, D1, D3, D5, D6,
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE103nnn/GSE103221/suppl/GSE103221_RAW.tar | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE103nnn/GSE103221/suppl/GSE103221_normalized_counts.csv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE103nnn/GSE103221/suppl/GSE103221_raw_read_counts.csv.gz
+
+
+ACCESSION: GSE106251
+  Title:     Determination of dynamic changes in chromatin accessibility during cellular reprogramming [scRNA-seq]
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 192   PubMed: 32917699
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Understanding the heterogeneity of cellular reprogramming process at a single-cell high resolution level.
+  Design:    Single-Cell mRNA-Seq libraries of BDD2-C8-trated cells undergoing cellular reprogramming at day 8.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE106nnn/GSE106251/suppl/GSE106251_BDD2-C8_FPKM.txt.gz
+
+
+ACCESSION: GSE109113
+  Title:     Long-term correction of diabetes in mice by in vivo reprogramming of pancreatic ducts
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 4   PubMed: 29550076
+  Tissues mentioned (priority list): ['liver']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Here, we report in vivo reprogramming of pancreatic ductal cells through intra-ductal delivery of an adenoviral vector expressing the transcription factors Pdx1, Neurog3 and Mafa (adPNM). To better understand the extent of reprogramming in induced pancreatic ductal cells, comparative single cell RNA sequencing was performed on insulin+ pancreatic ductal cells and pancreatic Î²-cells. Compared with pancreatic Î² cells, we show that insulin+ pancreatic ductal cells had established a Î²-cell gene e
+  Design:    single cell RNAseq in insulin+ pancreatic ductal cells and pancreatic Î²-cells from the same animal through FACS
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE109nnn/GSE109113/suppl/GSE109113_barcodes.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE109nnn/GSE109113/suppl/GSE109113_genes.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE109nnn/GSE109113/suppl/GSE109113_matrix.mtx.gz
+
+
+ACCESSION: GSE110154
+  Title:     Single cell transcriptome analysis of human fetal pancreas.
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 1860   PubMed: none listed
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Organ development is the process in which the mesoderm, endoderm and ectoderm develop into distinct cell types in highly ordered, discrete organs. Although model organisms have been hugely helpful to delineate the specific cell state transformations involved in organogenesis, the considerable differences in time-scale and physiology between human and such model organism can make direct comparisons difficult. Here, we analyze 1982 single cells from all cell lineages in the developing human pancre
+  Design:    Examination of single cells from primary human pancreas tissue
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE110nnn/GSE110154/suppl/GSE110154_RAW.tar
+
+
+ACCESSION: GSE110208
+  Title:     Accessing Pluripotency from the Somatic Side
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 461   PubMed: none listed
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   We report that Jdp2, Jhdm1b, Mkk6, Glis1, Nanog, Essrb and Sall4 (7F) convert MEFs to chimera competent iPSCs with fast kinetics. Time lapse microscopy reveal morphological changes distinct for 7F and Yamanaka factor (YF) reprogramming. Bulk transcriptomic analyses suggest that 7F and YF share 927 up and 548 down regulated genes, but differ in 1138 YF and 427 7F specifically activated genes. Single cell RNA sequencing reveals a fate path that can be further resolved into a cell fate continuum ba
+  Design:    To explore the dynamics process of the 7F reprogramming system, we isolated  singel cells at D0, D1, D3, D4, D5, D7 using Fluidigm C1 system, totally we got 461 high quality single cells data sets.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE110nnn/GSE110208/suppl/GSE110208_raw_counts_461.csv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE110nnn/GSE110208/suppl/GSE110208_tpm_461.csv.gz
+
+
+ACCESSION: GSE112004
+  Title:     Single cell RNA-seq identifies the origins of heterogeneity in efficient cell transdifferentiation and reprogramming.
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 3840   PubMed: 30860479
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Some somatic cells are plastic, having the capacity to convert into other specialized cells (transdifferentiation) or into induced pluripotent stem cells (iPSCs, reprogramming) in response to transcription factor over-expression. To explore what makes a cell plastic and whether susceptibility to different cell conversion processes is coupled, we exposed bone marrow derived pre-B cells to two different transcription factor protocols that efficiently convert them either into macrophages (iMac) or 
+  Design:    We isolated CD19+ B cell precursors from the bone marrow of reprogrammable mice and infected them with a retrovirus encoding a hormone inducible form of C/EBPÎ± (C/EBPÎ±-ER-hCD4). After expansion in culture, we induced them to either trans-differentiate to macrophages or to reprogram into iPSCs. To induce the macrophage fate, we treated the cells with beta-estradiol to activate C/EBPÎ± for up to 1
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE112nnn/GSE112004/suppl/GSE112004_counts.030U.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE112nnn/GSE112004/suppl/GSE112004_counts.031U.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE112nnn/GSE112004/suppl/GSE112004_counts.032U.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE112nnn/GSE112004/suppl/GSE112004_counts.033U.tsv.gz | ftp://ftp.ncbi.nlm.n
+
+
+ACCESSION: GSE114367
+  Title:     Determination of dynamic changes in chromatin accessibility during cellular reprogramming [ChIP-seq]
+  Organism:  Homo sapiens
+  Type:      Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 8   PubMed: 32917699
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Understanding the heterogeneity of cellular reprogramming process at a single-cell high resolution level.
+  Design:    ChIP-Seq of FRA1 and TEAD4 in cells undergoing cellular reprogramming.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE114nnn/GSE114367/suppl/GSE114367_RAW.tar
+
+
+ACCESSION: GSE118258
+  Title:     Determination of dynamic changes in chromatin accessibility during cellular reprogramming [scRNA-seq 10x]
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 6   PubMed: 32917699
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Understanding the heterogeneity of cellular reprogramming process at a single-cell high resolution level.
+  Design:    10X Genomics Single-Cell mRNA-Seq libraries of cells undergoing cellular reprogramming at different time-points.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE118nnn/GSE118258/suppl/GSE118258_Annotation.txt.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE118nnn/GSE118258/suppl/GSE118258_UMI.csv.gz
+
+
+ACCESSION: GSE122460
+  Title:     Determination of dynamic changes in chromatin accessibility during cellular reprogrammingÂ [10X D8 CD13]
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 2   PubMed: 32917699
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Understanding the heterogeneity of cellular reprogramming process at a single-cell high resolution level.
+  Design:    10X Genomics Single-Cell mRNA-Seq libraries of cells undergoing cellular reprogramming at D8 and sorted using CD13 antibody.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE122nnn/GSE122460/suppl/GSE122460_Annotation.txt.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE122nnn/GSE122460/suppl/GSE122460_D8_CD13_UMI.csv.gz
+
+
+ACCESSION: GSE137050
+  Title:     The comparative roadmaps of reprogramming and transformation unveiled that cellular plasticity is broadly controlled by Bcl11b and Atoh8
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing; Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 59   PubMed: 36075976
+  Tissues mentioned (priority list): ['brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Coordinated changes of cellular plasticity and cellular identity are critical for pluripotent reprogramming and oncogenic transformation. However, the sequences of cellular/molecular events that orchestrate these intermingled modifications have never been comparatively dissected. Here, we deconvoluted the cellular trajectories of reprogramming (via Oct4/Sox2/Klf4/c-Myc) and transformation (via Ras/c-Myc) at the single-cell resolution and revealed how the two processes intersect prior to bifurcat
+  Design:    Refer to individual Series
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE137nnn/GSE137050/suppl/GSE137050_RAW.tar
+
+
+ACCESSION: GSE139275
+  Title:     Transiently enhanced multi-drug resistance by epigenetic mechanism from reprogrammed cancer cell model
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 3   PubMed: none listed
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Background: Drug resistance by epigenetic modulation in cancer cells has been suggested, and the epigenetic-driven heterogeneity has been suggested as an important mechanism. To elucidate the epigenetic mechanism further, epigenetically reprogrammed cancer (R-cancer) cells were established and their resistance during differentiation was analyzed.  Methods: R-cancer cells for H460 (R-H460) were established by transient introduction of reprogramming factors. Then, differentiated R-H460 (dR-H460) c
+  Design:    Single cell RNA sequencing was performed on H460, mdR-H460, and ldR-H460 cells. After quality filtration and integration of  parent H460 and two epigenetic H460 variants of mdR-H460 and ldR-H460, we obtained an integrated single cell transcriptome for 14,638 cells.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE139nnn/GSE139275/suppl/GSE139275_RAW.tar
+
+
+ACCESSION: GSE144600
+  Title:     In vivo reprogramming drives dedifferentiation and enhances liver regeneration
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing; Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 29   PubMed: 35476977
+  Tissues mentioned (priority list): ['liver']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   Mammalian tissues have a limited regenerative capacity. Previous studies showed that dedifferentiation contributes to tissue regeneration in non-mammalian vertebrate species such as zebrafish and newt. However, dedifferentiation is rarely observed in mammalian tissues even in the neonatal stage and therefore artificial induction of dedifferentiation might enhance regeneration in mammalian tissues. Here we demonstrate that short-term expression of Yamanaka 4 factors (4F) induces dedifferentiation
+  Design:    The Hep-4F mouse model carries Alb-Cre, tetO-4F and LoxP-STOP-LoxP-rtTA-IRES-GFP (Fig. 1a). In this mouse model, LoxP-STOP-LoxP cassette is excised by Alb-Cre, resulting in expression of rtTA together with GFP as a lineage-tracing marker, allowing for specific 4F induction in the liver when doxycycline (Dox) is administrated. We performed bulk RNA-Seq, bulk ATAC-Seq to determine the effect of 4F o
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE144nnn/GSE144600/suppl/GSE144600_liver4F_ATAC_peakunion.raw.txt.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE144nnn/GSE144600/suppl/GSE144600_liver4F_RNA_exons.raw.xlsx | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE144nnn/GSE144600/suppl/GSE144600_liver4F_SC_minusDox_filtered_feature_bc_matrix.h5 | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE144nnn/GSE144600/sup
+
+
+ACCESSION: GSE144993
+  Title:     In vivo Chemical Reprogramming of Astrocytes into Functional Neurons
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 59   PubMed: none listed
+  Tissues mentioned (priority list): ['brain']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   In mammals, many organs lack robust regenerative abilities. Lost cells in impaired tissue could potentially be compensated by converting nearby cells in situ through in vivo reprogramming. Small molecule-induced reprogramming offers a spatiotemporally flexible and non-integrative strategy for altering cell fate, which is, in principle, favorable for in vivo reprogramming in organs with notoriously poor regenerative abilities, such as the brain. Here, we demonstrate that in adult mouse brain, sma
+  Design:    The mouse chemical induced neurons at BW12 were selected for single-cell RNA-seq.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE144nnn/GSE144993/suppl/GSE144993_FPKM.csv.gz
+
+
+ACCESSION: GSE145388
+  Title:     Induction of Pluripotent Stem Cells from Mouse Embryonic Fibroblasts by Jdp2, Glis1, Essrb and Sall4 [scRNA-seq]
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 8   PubMed: none listed
+  Tissues mentioned (priority list): ['brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Reprogramming somatic cells to pluripotency has revolutionized our understanding of cell fate control. Yet, most of that knowledge has been predicated on a single system powered by Oct4, Sox2, Klf4 and Myc.  Here we describe two four factor sets capable of reprogramming mouse embryonic fibroblasts (MEFs) to pluripoten-cy. We first developed Jdp2, Glis1, Essrb and Sall4 or JGES that can mediate ro-bust reprogramming by orchestrating a unique chromatin accessibility dynamics involving loci encodin
+  Design:    Single cell RNA-seq profiles of 8 JGES reprogamming samples which were collected every 24 hours. Sequencing was proformed by  HiSeqX10.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE145nnn/GSE145388/suppl/GSE145388_ESC.tar.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE145nnn/GSE145388/suppl/GSE145388_MEF.tar.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE145nnn/GSE145388/suppl/GSE145388_RAW.tar
+
+
+ACCESSION: GSE153844
+  Title:     Landscape of Monoallelic DNA Accessibility and Gene Regulatory Networks during Reprogramming to Naive Pluripotency and X Chromosome Reactivation [ATAC-seq]
+  Organism:  Mus musculus
+  Type:      Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 6   PubMed: 34724962
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   X chromosome reactivation (XCR) represents a paradigm to study epigenetic regulation and the reversal of chromatin silencing, although how it is linked to the pluripotency gene regulatory network, pluripotency transcription factors (TFs) and chromatin remodelling processes remains largely unexplained. Several pluripotency TFs have been linked to XCR through binding to the long non-coding RNA gene Xist, but whether other regulatory elements are involved is unclear. Here, we show that reprogrammin
+  Design:    ATAC-seq
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE153nnn/GSE153844/suppl/GSE153844_nonallelic_norm_log_counts.txt.gz
+
+
+ACCESSION: GSE153846
+  Title:     Landscape of Monoallelic DNA Accessibility and Gene Regulatory Networks during Reprogramming to Naive Pluripotency and X Chromosome Reactivation [smart-seq]
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 672   PubMed: 34724962
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   X chromosome reactivation (XCR) represents a paradigm to study epigenetic regulation and the reversal of chromatin silencing, although how it is linked to the pluripotency gene regulatory network, pluripotency transcription factors (TFs) and chromatin remodelling processes remains largely unexplained. Several pluripotency TFs have been linked to XCR through binding to the long non-coding RNA gene Xist, but whether other regulatory elements are involved is unclear. Here, we show that reprogrammin
+  Design:    single-cell RNA-seq using smart-seq protocol
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE153nnn/GSE153846/suppl/GSE153846_loom_XCR_5runs.loom.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE153nnn/GSE153846/suppl/GSE153846_smartseq_annotation.xlsx | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE153nnn/GSE153846/suppl/GSE153846_smartseq_norm_counts.csv.gz
+
+
+ACCESSION: GSE163947
+  Title:     MYCL-mediated in vivo reprogramming expands pancreatic insulin-producing cells to reverse diabetes
+  Organism:  Homo sapiens; Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 8   PubMed: none listed
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Î² cell proliferation rates decline with age and adult Î² cells have limited self-duplicating activity for regeneration, which predisposes to diabetes. Here we show that, among MYC family members, Mycl was expressed preferentially in proliferating immature endocrine cells. Genetic ablation of Mycl caused a modest reduction in cell proliferation of pancreatic endocrine cells in neonatal mice. By contrast, systemic expression of Mycl in mice stimulated proliferation in pancreatic islet cells and r
+  Design:    For scRNAseq in chimeric mouse islets, we transduced Mycl in 8-week-old adult chimeric mice for 8 weeks by drinking Dox-containing water (Dox: 2.0mg/mL). After dissociation of the islets into single cells in TrypLE, we generated chromium single cell 3â² v1 libraries and sequenced them using Illumina Novaseq 6000. We profiled 7,001 cells (ex1: 4,307 cells; ex2: 2,694 cells).For scRNAseq in mouse i
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE163nnn/GSE163947/suppl/GSE163947_RAW.tar
+
+
+ACCESSION: GSE171127
+  Title:     Comparative parallel meta-analysis of cells undergoing reprogramming to pluripotency and trophectoderm states
+  Organism:  Mus musculus
+  Type:      Genome binding/occupancy profiling by high throughput sequencing; Methylation profiling by high throughput sequencing; Expression profiling by high throughput sequencing; Genome variation profiling by high throughput sequencing
+  N samples: 184   PubMed: 35715410
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   During early embryogenesis, totipotent cells undergo asymmetric cell divisions, resulting in two compartments in the early embryo: the inner cell mass (ICM) that gives rise to pluripotency cells and an outer layer of trophectoderm (TE). It is only at the 32-64- cell stage when a clear segregation between the two cell types can be observed.  This proposes a âTâ-like model where cells of each stage (2-16-cell stage) of the early embryo undergo a relatively similar changes in their transcriptom
+  Design:    we conducted a comparative parallel meta-analysis on cells undergoing reprogramming to induced pluripotent stem cells (iPSCs) and induced trophoblast stem cells (iTSCs) and examined their transcriptome (i.e. Bulk RNA-seq and SC-RNA-seq), methylome (i.e. RRBS), chromatin accessibility and activity (i.e. ATAC-seq and Chip-seq for H3K4me2 and H3K27ac) and genomic stability (CNVs) along the process
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE171nnn/GSE171127/suppl/GSE171127_ATAC-seq.txt.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE171nnn/GSE171127/suppl/GSE171127_ChIP-seq_H3K27ac.txt.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE171nnn/GSE171127/suppl/GSE171127_ChIP-seq_H3K4me2.txt.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE171nnn/GSE171127/suppl/GSE171127_RAW.tar | ftp://ftp.ncbi.nlm.nih.g
+
+
+ACCESSION: GSE176177
+  Title:     Surf4 facilitates reprogramming by activating the cellular response to ER stress
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 6   PubMed: 34585448
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   By somatic cell nuclear transfer, the oocytes can reprogram terminally differentiated cells back to totipotent state. So the oocytes enriched maternal proteins attract great interests in exploring key factors in somatic cell reprogramming. Here, we presented a maternal factor, surfeit locus protein 4 (Surf4), can significantly facilitate the generation of induced pluripotent stem cells (iPSCs) in a proliferation-independent manner. When co-expressed with Oct4, Sox2, Klf4 and c-Myc (OSKM), Surf4Â
+  Design:    The reprogrammable MEFs derived from the R26rtTA Col1a14F2A Oct4EGFPÂ mice, which harboring the doxycycline-inducible polycistronic 4F2A cassette (Oct4, Sox2, Klf4 and c-Myc), the constitutively expressed reverse tetracycline transactivator (rtTA) and expressed enhanced green fluorescent protein (EGFP) under the control of the Oct4 promoter and distal enhancer, were used in the experiments. The re
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE176nnn/GSE176177/suppl/GSE176177_RAW.tar
+
+
+ACCESSION: GSE176206
+  Title:     Partial reprogramming restores youthful gene expression through transient suppression of cell identity
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 18   PubMed: 35690067
+  Tissues mentioned (priority list): ['liver']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Transient induction of pluripotent reprogramming factors has been reported to reverse some features of aging in mammalian cells and tissues. However, the impact of transient reprogramming on somatic cell identity programs and the necessity of individual pluripotency factors remain unknown. Here, we mapped trajectories of transient reprogramming in young and aged cells from multiple murine cell types using single cell transcriptomics to address these questions. We found that transient reprogrammi
+  Design:    Mouse adipogenic cells and mesenchymal stem cells (MSCs) were treated with inducible OSKM reprogramming factors delivered by lentivirus for 3 days followed by a 3 day chase and subsequently profiled by single cell RNA-seq. MSCs were treated with barcoded lentiviral vectors carrying each of the OSKM factors separately. Cells from young (2-4 months old) and aged (20-30 months old) animals were used 
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE176nnn/GSE176206/suppl/GSE176206_adipo_screen.h5ad.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE176nnn/GSE176206/suppl/GSE176206_adipo_sokm.h5ad.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE176nnn/GSE176206/suppl/GSE176206_msc_screen.h5ad.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE176nnn/GSE176206/suppl/GSE176206_msc_sokm.h5ad.gz | ftp://ftp.ncbi.nlm.n
+
+
+ACCESSION: GSE178726
+  Title:     MYCL-mediated in vivo reprogramming expands pancreatic insulin-producing cells to reverse diabetes - RNA-Seq
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 9   PubMed: none listed
+  Tissues mentioned (priority list): ['liver']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Î² cell proliferation rates decline with age and adult Î² cells have limited self-duplicating activity for regeneration, which predisposes to diabetes. Here we show that, among MYC family members, Mycl was expressed preferentially in proliferating immature endocrine cells. Genetic ablation of Mycl caused a modest reduction in cell proliferation of pancreatic endocrine cells in neonatal mice. By contrast, systemic expression of Mycl in mice stimulated proliferation in pancreatic islet cells and r
+  Design:    For RNAseq in mouse liver, we transduced c-Myc or Mycl in 4-week-old adult mice for 48 hrs by intraperitoneal injection of Dox (0.2 ml; 2.0mg/mL). For the control, liver were harvested from no treatment Mycl inducible mice at 4wks(WT).
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE178nnn/GSE178726/suppl/GSE178726_processed_file.xlsx
+
+
+ACCESSION: GSE181196
+  Title:     Bcl11b and Atoh8 binding on chromatin in MEFs
+  Organism:  Mus musculus
+  Type:      Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 9   PubMed: 36075976
+  Tissues mentioned (priority list): ['brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Coordinated changes of cellular plasticity and cellular identity are critical for pluripotent reprogramming and oncogenic transformation. However, the sequences of cellular/molecular events that orchestrate these intermingled modifications have never been comparatively dissected. Here, we deconvoluted the cellular trajectories of reprogramming (via Oct4/Sox2/Klf4/c-Myc) and transformation (via Ras/c-Myc) at the single-cell resolution and revealed how the two processes intersect prior to bifurcat
+  Design:    ChIP-sequencing assay targeting the Atoh8 factor presenting an AM tag peptide or the endogenous Bcl11b transcription factor. As a control an empty AM tag pulldown as well as a whole cell extract input control has been also generated.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181196/suppl/GSE181196_RAW.tar
+
+
+ACCESSION: GSE181451
+  Title:     Cellular identity loss occurring during both iPS cells generation and malignant transformation can be followed using the somatic markers Thy1 and Bcl11b [scRNA-seq]
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 8   PubMed: 36075976
+  Tissues mentioned (priority list): ['brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Coordinated changes of cellular plasticity and cellular identity are critical for pluripotent reprogramming and oncogenic transformation. However, the sequences of cellular/molecular events that orchestrate these intermingled modifications have never been comparatively dissected. Here, we deconvoluted the cellular trajectories of reprogramming (via Oct4/Sox2/Klf4/c-Myc) and transformation (via Ras/c-Myc) at the single-cell resolution and revealed how the two processes intersect prior to bifurcat
+  Design:    single cell RNA-seq analyses were conducted on untreated MEFs and in a kinetic manner during reprogramming and transformation alongside iPS and transformed cells (TC).
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181451/suppl/GSE181451_RAW.tar
+
+
+ACCESSION: GSE181796
+  Title:     Chromatin accessibility after 5 days of reprogramming and transformation
+  Organism:  Mus musculus
+  Type:      Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 4   PubMed: 36075976
+  Tissues mentioned (priority list): ['brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Coordinated changes of cellular plasticity and cellular identity are critical for pluripotent reprogramming and oncogenic transformation. However, the sequences of cellular/molecular events that orchestrate these intermingled modifications have never been comparatively dissected. Here, we deconvoluted the cellular trajectories of reprogramming (via Oct4/Sox2/Klf4/c-Myc) and transformation (via Ras/c-Myc) at the single-cell resolution and revealed how the two processes intersect prior to bifurcat
+  Design:    ATAC-seq analyses were conducted on bulk cells after 5 days of reprogramming and transformation
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181796/suppl/GSE181796_Processed_data_ATAC-seq_Repro-Transfo.csv.gz
+
+
+ACCESSION: GSE181799
+  Title:     Cellular identity loss occurring during both iPS cells generation and malignant transformation can be followed using the somatic markers Thy1 and Bcl11b (ATAC-seq)
+  Organism:  Mus musculus
+  Type:      Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 12   PubMed: 36075976
+  Tissues mentioned (priority list): ['brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Coordinated changes of cellular plasticity and cellular identity are critical for pluripotent reprogramming and oncogenic transformation. However, the sequences of cellular/molecular events that orchestrate these intermingled modifications have never been comparatively dissected. Here, we deconvoluted the cellular trajectories of reprogramming (via Oct4/Sox2/Klf4/c-Myc) and transformation (via Ras/c-Myc) at the single-cell resolution and revealed how the two processes intersect prior to bifurcat
+  Design:    R-BLTL and T-BLTL intermediates being more prone to reprogram / transform, we FACS-sorted R-BLTL/T-BLTL and R-BHTH/T-BHTH in their way to pluripotency or malignancy to identify new regulators. ATAC-seq analyses were conducted on untreated MEFs alongside R-BLTL and T-BLTL (both Bcl11blow/thy1low), R-BHTH and T-BHTH (both Bcl11bhigh/thy1high) at 5 days of reprogramming or transformation and in iPS a
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181799/suppl/GSE181799_MEF_peaks.narrowPeak.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181799/suppl/GSE181799_MEF_peaks.txt.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181799/suppl/GSE181799_MEF_summits.bed.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181799/suppl/GSE181799_R-BHTH_peaks.narrowPeak.gz | ftp://ftp
+
+
+ACCESSION: GSE181800
+  Title:     Cellular identity loss occurring during both iPS cells generation and malignant transformation can be followed using the somatic markers Thy1 and Bcl11b [RNA-seq]
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 10   PubMed: 36075976
+  Tissues mentioned (priority list): ['brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Coordinated changes of cellular plasticity and cellular identity are critical for pluripotent reprogramming and oncogenic transformation. However, the sequences of cellular/molecular events that orchestrate these intermingled modifications have never been comparatively dissected. Here, we deconvoluted the cellular trajectories of reprogramming (via Oct4/Sox2/Klf4/c-Myc) and transformation (via Ras/c-Myc) at the single-cell resolution and revealed how the two processes intersect prior to bifurcat
+  Design:    R-BLTL and T-BLTL intermediates being more prone to reprogram / transform, we FACS-sorted R-BLTL/T-BLTL and R-BHTH/T-BHTH in their way to pluripotency or malignancy to identify new regulators. RNA-seq analyses were conducted on untreated MEFs alongside R-BLTL and T-BLTL  (both Bcl11blow/thy1low), R-BHTH and T-BHTH (both Bcl11bhigh/thy1high) at 5 days of reprogramming or transformation and in iPS a
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181800/suppl/GSE181800_model_fc.csv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181800/suppl/GSE181800_normalized_count.csv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181800/suppl/GSE181800_raw_count.csv.gz
+
+
+ACCESSION: GSE184987
+  Title:     Landscape of Monoallelic DNA Accessibility and Gene Regulatory Networks during Reprogramming to Naive Pluripotency and X Chromosome Reactivation [allele-specific analysis]
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 47   PubMed: 34724962
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   X chromosome reactivation (XCR) represents a paradigm to study epigenetic regulation and the reversal of chromatin silencing, although how it is linked to the pluripotency gene regulatory network, pluripotency transcription factors (TFs) and chromatin remodelling processes remains largely unexplained. Several pluripotency TFs have been linked to XCR through binding to the long non-coding RNA gene Xist, but whether other regulatory elements are involved is unclear. Here, we show that reprogrammin
+  Design:    48 single cells of Mus musculus induced pluripotent stem cells (iPSCs). iPSCs were obtained by reprogramming of mouse embryonic fibroblasts that come from a cross between a female Mus musculus musculus (Mus) containing transgenic X-linked eGFP (X-eGFP) and male Mus musculus castaneus (Cast). Reprogramming was performed by OSKM overexpression by lentiviral vector.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE184nnn/GSE184987/suppl/GSE184987_iPSC_allelic_count_matrix.csv.gz
+
+
+ACCESSION: GSE185192
+  Title:     Down Syndrome Induced Senescence Disrupts the Nuclear Architecture of Neural Progenitors
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 64   PubMed: 34995493
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   We utilized human derived induced pluripotent stem cells (iPSCs) and iPSC derived neural progenitor cells (NPCs) from individuals with Down syndrome and sex matched controls to interrogate the cell type consequences of trisomy 21 (T21). We report the consequences of T21 on the spatial chromatin organization (Hi-C), lamina-associated domains (ChIP-seq), chromatin state (ATAC-seq), and transcriptome (RNA-seq)  in an isogenic pair (euploid: Iso-E and trisomic: Iso-T cells derived from the same indi
+  Design:    Decoding the impact trisomy 21 (T21) on the 3D-genome organization, lamina-associated domains, epigenome and transcriptome of human derived induced pluripotent stem cells (iPSCs) and neural progenitor cells (NPCs).
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE185nnn/GSE185192/suppl/GSE185192_NPC_HiC_IsoE.hic | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE185nnn/GSE185192/suppl/GSE185192_NPC_HiC_IsoT.hic | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE185nnn/GSE185192/suppl/GSE185192_NPC_HiC_MaE.hic | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE185nnn/GSE185192/suppl/GSE185192_NPC_HiC_MaT.hic | ftp://ftp.ncbi.nlm.nih.gov/geo
+
+
+ACCESSION: GSE188819
+  Title:     Deciphering in vivo reprogramming using single cell RNA sequencing in the pancreas
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 7   PubMed: 35420133
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   The manipulation of cell fates through reprogramming is one of the most exciting advances in recent years. The most striking breakthrough in the field occurred when Yamanaka first illustrated the possibility to convert differentiated cells into pluripotent stem cells by the ectopic expression of four transcription factors, Oct4, Sox2, Klf4 and c-Myc or OSKM. Our laboratory has demonstrated that transient expression of these four Yamanaka factors leads to teratoma formation in mice indicative of 
+  Design:    Single cell RNAseq of reprogrammed pancreas (i4F) compared to WT and cerulein-induced damaged pancreas
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE188nnn/GSE188819/suppl/GSE188819_CER_counts.txt.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE188nnn/GSE188819/suppl/GSE188819_CER_metadata.txt.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE188nnn/GSE188819/suppl/GSE188819_WT_counts.txt.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE188nnn/GSE188819/suppl/GSE188819_WT_metadata.txt.gz | ftp://ftp.ncbi.nlm.nih
+
+
+ACCESSION: GSE196475
+  Title:     Mettl14-driven senescence-associated secretory phenotype (SASP) facilitates somatic reprogramming
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 48   PubMed: 35947961
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   The METTL3-METTL14 complex, as the "writer" of N6-methyladenosine (m6A), plays an important role in many biological processes. Previous studies have shown that overexpression of Mettl3 can increase the level of m6A and promotes somatic cell reprogramming. Here, we demonstrate that Mettl14, another component of the methyltransferase (MTase) complex, can significantly enhance the generation of induced pluripotent stem cells (iPSCs) in m6A independent manner. Cooperating with Oct4, Sox2, Klf4 and c
+  Design:    The reprogrammable MEFs derived from the transgenic mice carrying the tetO-OSKM transgene and Oct4-GFP/Rosa26-M2rtTA were used in the experiments. The reprogrammable MEFs that were not induced with doxycycline were designated as âMEFâ . The reprogrammable cells with or without Obox1âs overexpression were induced with doxycycline (1ug/ml) for 3 days. The cells were harvested and performed RNA
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE196nnn/GSE196475/suppl/GSE196475_mRNA-seq_day0-day15_FPKM.xlsx
+
+
+ACCESSION: GSE197437
+  Title:     Partial pluripotent reprogramming in C2C12 myoblasts
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 72   PubMed: 35690067
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Partial pluripotent reprogramming has been reported to reverse some features of aging in mammalian cells and tissues. However, the impact of partial reprogramming on somatic cell identity programs and the necessity of individual pluripotency factors remain unknown. Here, we mapped trajectories of partial reprogramming in young and aged cells from multiple murine cell types using single cell transcriptomics to address these questions. We found that partial reprogramming restored youthful gene exp
+  Design:    C2C12 myoblasts were transduced with lentiviral vectors harboring CMV>Tet3G-T2A-Hygro alleles and positive cells were selected by culture in hygromycin B. Selected clones were then transduced with lentiviral vectors harboring TRE>{Sox2,Oct4,Klf4,Myc}-EFS>eGFP alleles and selected by FACS for eGFP expression. Cells were cultured for eight days in three experimental groups. (1) Control cells were no
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE197nnn/GSE197437/suppl/GSE197437_adata.h5ad.gz
+
+
+ACCESSION: GSE212496
+  Title:     Single cell RNA-seq of Nutlin3a-Induced Senescent mouse embryonic fibroblasts with or without expressing OSKM
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 3   PubMed: none listed
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Purpose: Use scRNA-seq to determine the trajectories of transcriptomes during partial reprogramming of nutlin-3a senescent MEFs. Methods: MEFs were isolated from p16-CreERT2/rtTA3-mKate2/TRE-OSKM-mCherry mice. After the senescence induction through RO3306 and nutlin-3a, treatments with 4-OHT for 9 days and doxycycline for 12 days were performed to induce OSKM expression. The doxycycline treated MEFs and untreated MEFs were collected by trypsinization and directly used for scRNA library preparati
+  Design:    Examining  differentially expressed genes and identifing transposable elements within quiescent and nutlin3a-induced senescent pulmonary fibroblasts
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE212nnn/GSE212496/suppl/GSE212496_OSKM_c_seurat.rds.gz
+
+
+ACCESSION: GSE21361
+  Title:     Dynamic single-cell imaging of direct reprogramming reveals an early specifying event
+  Organism:  Mus musculus
+  Type:      Expression profiling by array
+  N samples: 4   PubMed: 20436460
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   The study of induced pluripotency often relies on experimental approaches that average measurements across a large population of cells, the majority of which do not become pluripotent. Here we used high-resolution, time-lapse imaging to trace the reprogramming process over 2 weeks from single mouse embryonic fibroblasts (MEFs) to pluripotency factor-positive colonies. This enabled us to calculate a normalized cell-of-origin reprogramming efficiency that takes into account only the initial MEFs t
+  Design:    Gene expression profiling: Mouse E13.5 fibroblasts were generated by blastocyst injection with doxycycline inducible Oct4, Sox2, Klf4, and c-Myc primary iPS cells as previously described.  Cells were serum starved with 0.5% FBS containing medium, followed by either continued serum starvation for 96 hours, or by 96 hours of factor induction through medium supplemented with 2 ug/ml doxycycline (Sigm
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE21nnn/GSE21361/suppl/GSE21361_RAW.tar
+
+
+ACCESSION: GSE220554
+  Title:     Establish a rapid and efficient chemical reprogramming platform (RNA-Seq II)
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 30   PubMed: 37550515
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Chemically reprogramming somatic cells to iPSCs is time-consuming and low-efficiency. Here, we discribe a rapid chemical reprogramming condition enabling generating iPSCs from MEFs in 12 days. To further investigate the mechemisms and draw an epigenetic maps during the rapid chemical reprogramming, we performed time-course RNA-seq, ATAC-seq, RRBS, CUT&Tag (H3K4me3, H3K18la, H3K9me3, H3K27me3 and H3K27ac) and scRNA-seq.
+  Design:    Fibroblasts, intermediate cells and iPSCs were collected for RNA-seq at indicated time points.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE220nnn/GSE220554/suppl/GSE220554_FPKM-4F-TFR.txt.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE220nnn/GSE220554/suppl/GSE220554_FPKM-CF1.txt.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE220nnn/GSE220554/suppl/GSE220554_FPKM-minus_one.txt.gz
+
+
+ACCESSION: GSE222738
+  Title:     Enhanced activities of OCT4 and SOX2 facilitates epigenetic reprogramming by modulating cell cycle [RNA-Seq]
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 12   PubMed: 40448624
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   Fusing VP16  transcription activation domain with OCT4 and SOX2 (OvSvK) promoted the generation of induced pluripotency stem cells (iPSCs) by remodeling cell cycle and epigenetic modification. Multiomic analyses revealed that the other 80% upregulated genes experienced increase in H3K4me3 and decrease in H3K27me3 and were enriched with genes which undergo more intensive DNA demethylation during cell proliferation. Consistent results were obtained when siCcnd1, siCdkn2a and Ccne1 were screened ou
+  Design:    For bulk RNA-seq, cells were infected with O, S, K, OS, OK and SK respectively and collected at  post-infected Day0. For single-cell RNA-Seq, reprogramming cells were collected at post-infected Day0, Day1, Day2, Day3 and Day4 using Fluidigm C1. For ATAC-seq, cells were infected with hCdt1 and hGeminin and also OSK or OvSvK. Cells at different cell cycle stage were isolated by fluorescence-activate
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE222nnn/GSE222738/suppl/GSE222738_factor_merged_counts.csv.gz
+
+
+ACCESSION: GSE222745
+  Title:     Enhanced activities of OCT4 and SOX2 facilitates epigenetic reprogramming by modulating cell cycle [scRNA-Seq]
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 422   PubMed: 40448624
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Fusing VP16  transcription activation domain with OCT4 and SOX2 (OvSvK) promoted the generation of induced pluripotency stem cells (iPSCs) by remodeling cell cycle and epigenetic modification. Multiomic analyses revealed that the other 80% upregulated genes experienced increase in H3K4me3 and decrease in H3K27me3 and were enriched with genes which undergo more intensive DNA demethylation during cell proliferation. Consistent results were obtained when siCcnd1, siCdkn2a and Ccne1 were screened ou
+  Design:    For bulk RNA-seq, cells were infected with O, S, K, OS, OK and SK respectively and collected at  post-infected Day0. For single-cell RNA-Seq, reprogramming cells were collected at post-infected Day0, Day1, Day2, Day3 and Day4 using Fluidigm C1. For ATAC-seq, cells were infected with hCdt1 and hGeminin and also OSK or OvSvK. Cells at different cell cycle stage were isolated by fluorescence-activate
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE222nnn/GSE222745/suppl/GSE222745_ovsvk_raw.csv.gz
+
+
+ACCESSION: GSE222746
+  Title:     Enhanced activities of OCT4 and SOX2 facilitates epigenetic reprogramming by modulating cell cycle
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing; Genome binding/occupancy profiling by high throughput sequencing; Other
+  N samples: 460   PubMed: 40448624
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   This SuperSeries is composed of the SubSeries listed below.
+  Design:    Refer to individual Series
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE222nnn/GSE222746/suppl/GSE222746_RAW.tar
+
+
+ACCESSION: GSE224438
+  Title:     Single-cell gene expression of the subventricular zone (SVZ) neurogenic niche after partial reprogramming
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 10   PubMed: 38553564
+  Tissues mentioned (priority list): ['brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Partial reprogramming has the potential to reverse age-related decline in some tissues. Its impact on the cell types within the aging brain, particularly the subventricular zone neurogenic niche, is unknown.
+  Design:    Partial reprogramming was induced in the whole body of old mice, or induced specifically in the SVZ of old mice. SVZ cells were isolated from old mice after partial reprogramming, as well as young and old controls, and analyzed by single-cell RNA-sequencing.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE224nnn/GSE224438/suppl/GSE224438_RAW.tar
+
+
+ACCESSION: GSE224699
+  Title:     Single cell ATAC-seq analysis of human dermal fibroblasts and human pluripotent stem cells
+  Organism:  Homo sapiens
+  Type:      Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 8   PubMed: 38701780
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Human pluripotent stem cells have two major pluripotent states, primed and naive, and the heterogeneity among cell lines in each pluripotent state remains a major unresolved problem. We showed that the overexpression of H1FOO-DD, which has a short expression period by fusing the destabilized domain to the maternal-specific linker histone H1FOO, together with OCT4, SOX2, KLF4 and LMYC in human somatic cells improves the quality of reprogramming to primed and naive pluripotency.
+  Design:    Cultured human dermal fibroblasts and primed human pluripotent stem cell lines were sampled at specific time points, and analyzed by single cell ATAC-seq
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE224nnn/GSE224699/suppl/GSE224699_RAW.tar
+
+
+ACCESSION: GSE224700
+  Title:     Single cell RNA-seq analysis of human dermal fibroblasts and human pluripotent stem cells
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 13   PubMed: 38701780
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Human pluripotent stem cells have two major pluripotent states, primed and naive, and the heterogeneity among cell lines in each pluripotent state remains a major unresolved problem. We showed that the overexpression of H1FOO-DD, which has a short expression period by fusing the destabilized domain to the maternal-specific linker histone H1FOO, together with OCT4, SOX2, KLF4 and LMYC in human somatic cells improves the quality of reprogramming to primed and naive pluripotency.
+  Design:    Cultured human dermal fibroblasts and primed pluripotent stem cell lines were sampled at specific time points, and analyzed by single cell RNA-seq
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE224nnn/GSE224700/suppl/GSE224700_RAW.tar
+
+
+ACCESSION: GSE237173
+  Title:     OSKM-induced epithelial cells of mouse intestine [scRNA-seq]
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 2   PubMed: 38000027; 42248561
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Tissue regeneration after injury is thought to involve the dedifferentiation of somatic cells, which is often understood as evidence for natural adaptative reprogramming in vivo. In the intestinal epithelium, acute tissue damage triggers the rapid emergence of injury-responsive cells with fetal-like characteristics, a sign of dedifferentiation. However, there is no direct evidence that tissue regeneration involves a shared molecular mechanism with direct cellular reprogramming. It is also not kn
+  Design:    We used Doxycline-inducible OSKM-overexpressing mice to induce OSKM in vivo. Dox was administrated to a mouse to induce OSKM.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE237nnn/GSE237173/suppl/GSE237173_RAW.tar
+
+
+ACCESSION: GSE242076
+  Title:     3D Model Enhances Human Glia conversion to Neurons with Dopaminergic Functional and Molecular Traits Or: 3D Model Enhances Human Glia conver-sion to Induced Dopamine Neurons?
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 28   PubMed: 39236715
+  Tissues mentioned (priority list): ['brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Parkinsonâs disease (PD), a prevalent neurodegenerative disorder, is primarily characterized by progressive loss of ventral midbrain dopamine (DA) neurons. This focal degeneration makes PD suitable for cell replacement therapies and clinical trials using stem cell derived-DA neurons are ongoing. An emerging alternative to cell transplantation for brain repair is in vivo reprogramming, where resident glia is converted into neurons directly inside the brain. While functional neurons with potenti
+  Design:    Single-nuclei RNA-seq of stem cell derived glial progenitors and converted neurons -------------------------- Authors state "Due to privacy concerns we are unable to submit raw data and has hence only uploaded count matrices."
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE242nnn/GSE242076/suppl/GSE242076_RAW.tar
+
+
+ACCESSION: GSE242419
+  Title:     Transcription factor stoichiometry, motif affinity and syntax regulate single-cell chromatin dynamics during fibroblast reprogramming to pluripotency [multiome]
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing; Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 2   PubMed: none listed
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Ectopic expression of OCT4, SOX2, KLF4 and MYC (OSKM) transforms differentiated cells into induced pluripotent stem cells. To refine our mechanistic understanding of reprogramming, especially of the early stages, we profiled chromatin accessibility and gene expression at single-cell resolution across a finely sampled time course of human fibroblast reprogramming. Using neural networks that map DNA sequence to ATAC-seq profiles at base-resolution, we annotated cell-state-specific predictive trans
+  Design:    In this study, we profiled chromatin accessibility and gene expression at single cell resolution across a finely sampled, 14 day time course of OSKM induced reprogramming of human fibroblasts. In addition, we jointly profiled chromatin accessibility and gene expression at single nucleus resolution at days 1 and 2. **Note from submitter: RAW DATA not provided due to patient privacy**
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE242nnn/GSE242419/suppl/GSE242419_RAW.tar | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE242nnn/GSE242419/suppl/GSE242419_multiome.ATAC.RNA.barcode.map.tsv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE242nnn/GSE242419/suppl/GSE242419_multiome_genes.tsv.gz
+
+
+ACCESSION: GSE242421
+  Title:     Transcription factor stoichiometry, motif affinity and syntax regulate single-cell chromatin dynamics during fibroblast reprogramming to pluripotency [scATAC]
+  Organism:  Homo sapiens
+  Type:      Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 9   PubMed: none listed
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Ectopic expression of OCT4, SOX2, KLF4 and MYC (OSKM) transforms differentiated cells into induced pluripotent stem cells. To refine our mechanistic understanding of reprogramming, especially of the early stages, we profiled chromatin accessibility and gene expression at single-cell resolution across a finely sampled time course of human fibroblast reprogramming. Using neural networks that map DNA sequence to ATAC-seq profiles at base-resolution, we annotated cell-state-specific predictive trans
+  Design:    In this study, we profiled chromatin accessibility and gene expression at single cell resolution across a finely sampled, 14 day time course of OSKM induced reprogramming of human fibroblasts. In addition, we jointly profiled chromatin accessibility and gene expression at single nucleus resolution at days 1 and 2. **note from submitter: RAW DATA not provided due to patient privacy**
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE242nnn/GSE242421/suppl/GSE242421_RAW.tar
+
+
+ACCESSION: GSE242423
+  Title:     Transcription factor stoichiometry, motif affinity and syntax regulate single-cell chromatin dynamics during fibroblast reprogramming to pluripotency [scRNA]
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 9   PubMed: none listed
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Ectopic expression of OCT4, SOX2, KLF4 and MYC (OSKM) transforms differentiated cells into induced pluripotent stem cells. To refine our mechanistic understanding of reprogramming, especially of the early stages, we profiled chromatin accessibility and gene expression at single-cell resolution across a finely sampled time course of human fibroblast reprogramming. Using neural networks that map DNA sequence to ATAC-seq profiles at base-resolution, we annotated cell-state-specific predictive trans
+  Design:    In this study, we profiled chromatin accessibility and gene expression at single cell resolution across a finely sampled, 14 day time course of OSKM induced reprogramming of human fibroblasts. In addition, we jointly profiled chromatin accessibility and gene expression at single nucleus resolution at days 1 and 2. **note from submitter: RAW DATA not provided due to patient privacy**
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE242nnn/GSE242423/suppl/GSE242423_RAW.tar | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE242nnn/GSE242423/suppl/GSE242423_scRNA_genes.tsv.gz
+
+
+ACCESSION: GSE246702
+  Title:     Cellular rejuvenation protects neurons from inflammation mediated cell death (ATAC-seq).
+  Organism:  Mus musculus
+  Type:      Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 16   PubMed: none listed
+  Tissues mentioned (priority list): ['retina', 'brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   In multiple sclerosis (MS), invasion of the central nervous system by peripheral immune cells, activation of resident microglia and astrocytes, and demyelination occur as a cascade of events that trigger neuronal damage and death. The molecular signals in neurons that activate damage in response to the complex immune environment have not been fully characterized. Retinal ganglion cell neurons (RGCs) of the central nervous system (CNS) undergo axonal injury and cell death in MS and this is recapi
+  Design:    EAE was induced in 7â8-week-old female subjects. ATAC sequencing was conducted at various stages, including naive, presymptomatic, onset, and peak stages.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE246nnn/GSE246702/suppl/GSE246702_EAE_ATAC_1000bp_TSS.csv.gz
+
+
+ACCESSION: GSE247173
+  Title:     Cellular rejuvenation protects neurons from inflammation mediated cell death (RNA-seq).
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 14   PubMed: none listed
+  Tissues mentioned (priority list): ['retina', 'brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   In multiple sclerosis (MS), invasion of the central nervous system by peripheral immune cells, activation of resident microglia and astrocytes, and demyelination occur as a cascade of events that trigger neuronal damage and death. The molecular signals in neurons that activate damage in response to the complex immune environment have not been fully characterized. Retinal ganglion cell neurons (RGCs) of the central nervous system (CNS) undergo axonal injury and cell death in MS and this is recapi
+  Design:    EAE was induced in 7â8-week-old female subjects. RNA sequencing was conducted at various stages, including naive, presymptomatic, onset, and peak stages.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247173/suppl/GSE247173_RNA_Metadata_EAE_RGC.xlsx
+
+
+ACCESSION: GSE254389
+  Title:     NEUROD1 efficiently converts peripheral blood cells into neurons with partial reprogramming by pluripotency factors
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 18   PubMed: none listed
+  Tissues mentioned (priority list): ['brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   The direct reprogramming of cells has tremendous potential in in vitro neurological studies. Previous attempts to convert blood cells into induced neurons have presented several challenges, necessitating the development of a less invasive, efficient, rapid, and convenient approach. The current study introduces an optimized method for converting somatic cells into neurons using a nonsurgical approach that employs peripheral blood cells instead of fibroblasts. We have demonstrated the efficacy of 
+  Design:    Human T cell-derive induced-neuron. Two different induction method. Each three replicate.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE254nnn/GSE254389/suppl/GSE254389_transcript-FPKM_202401.txt.gz
+
+
+ACCESSION: GSE267577
+  Title:     Gene expression profiles at the single cell level of TNKS/PARP-inhibitor Regulated NaÃ¯ve (TIRN) cells with or without transgenic inducible DUX4 (iDUX4) activation.
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 3   PubMed: 40338744
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Proteogenomic Reprogramming to a Functional Human Blastomere-like Stem Cell State via a PARP-DUX4 Regulatory Axis; Zimmerlin et al, 2024. PARP1 (ARTD1) and Tankyrases (TNKS1/TNKS2; PARP5a/5b) are poly-ADP-ribose polymerases (PARPs) with catalytic and non-catalytic functions that regulate both the genome and proteome during zygotic genome activation (ZGA), totipotent, and pluripotent embryonic stages. Here, we show that primed, conventional human pluripotent stem cells (hPSC) cultured continuousl
+  Design:    TIRN cells were originally reported as possessing a naive epiblast-like pluripotent stem cell molecular phenotype, but also simultaneously expressed cohorts of transcriptional factors and a transcriptional program defining the human cleavage embryonic stage.  We used single cell RNA sequencing (scRNA-seq) to examine cellular heterogeneity in TIRN cells, with or without transgenic activation of the
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE267nnn/GSE267577/suppl/GSE267577_RAW.tar
+
+
+ACCESSION: GSE270236
+  Title:     Chromatin Accessibility Dynamics in the Reprogramming of Somatic Cells to Pluripotency
+  Organism:  Mus musculus
+  Type:      Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 20   PubMed: none listed
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Pluripotent stem cells have the incredible ability to self-renew indefinitely and to differentiate into all the cell types of the body. Remarkably, somatic cells can transition back into a pluripotent state through ectopic expression of the transcription factors OCT4, SOX2, KLF4, and MYC. This shift towards a state of higher differentiation potential represents an extraordinary capability to alter cell fate. However, reprogramming studies are challenging due to the inefficient and heterogeneous 
+  Design:    Single-cell ATAC-sequencing of mouse embryonic fibroblasts (MEFs), MEFs undergoing reprogramming, mouse embryonic stem cells, and mouse induced pluripotent stem cells
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE270nnn/GSE270236/suppl/GSE270236_RAW.tar
+
+
+ACCESSION: GSE270268
+  Title:     In vivo cardiac reprogramming by delivery of PHF7 [snRNA-seq multiome]
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 4   PubMed: 40631661
+  Tissues mentioned (priority list): ['skeletal muscle', 'heart', 'liver']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Cellular reprogramming of cardiac fibroblasts to cardiomyocytes following myocardial infarction (MI) is an attractive strategy to redirect the fibrotic response of the non-regenerative adult heart to a more functional myocardium. Current reprogramming strategies are inefficient or require an excess of factors in adult and human cells due to staunch epigenetic barriers. Recently, we identified the epigenetic factor PHF7 as a potent activating factor of in vitro adult fibroblast reprogramming thro
+  Design:    To investigate the effect of PHF7 cocktails on in vivo reprogramming we performed snRNA and snATAC sequencing on nuclei from mouse hearts that had undergone myocardial infarction (MI) and intramyocardial injection with retrovirus bearing control, PHF7, PHF7/TBX5 (PT), PHF7/Mef2c/Tbx5 (PMT) constructs.  Please note that each processed data was generated from both snATAC-seq and scRNA-seq samples, a
+  Suppl:     
+
+
+ACCESSION: GSE271242
+  Title:     Gene expression RNAseq profiles of TNKS/PARP-inhibitor Regulated NaÃ¯ve (TIRN) cells with or without transgenic inducible DUX4 (iDUX4) activation.
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 21   PubMed: 40338744
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Proteogenomic Reprogramming to a Functional Human Blastomere-like Stem Cell State via a PARP-DUX4 Regulatory Axis; Zimmerlin et al, 2024. PARP1 (ARTD1) and Tankyrases (TNKS1/TNKS2; PARP5a/5b) are poly-ADP-ribose polymerases (PARPs) with catalytic and non-catalytic functions that regulate both the genome and proteome during zygotic genome activation (ZGA), totipotent, and pluripotent embryonic stages. Here, we show that primed, conventional human pluripotent stem cells (hPSC) cultured continuousl
+  Design:    TIRN cells were originally reported as possessing a naive epiblast-like pluripotent stem cell molecular phenotype. We  used RNAseq to examine expression of transcriptional factors and a transcriptional program defining the human cleavage embryonic stage in primed and TIRN hESC, with or without transgenic activation of the pioneer factor DUX4. The hESC line RUES02 was cultured in parallel in primed
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE271nnn/GSE271242/suppl/GSE271242_RAW.tar | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE271nnn/GSE271242/suppl/GSE271242_normalized.counts.csv.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE271nnn/GSE271242/suppl/GSE271242_raw.counts.csv.gz
+
+
+ACCESSION: GSE271794
+  Title:     Single-cell gene expression of neocortex after transient Yamanaka factor expression during brain development
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 4   PubMed: 39426381
+  Tissues mentioned (priority list): ['brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Yamanaka factors (YFs) can reverse some aging features in mammalian tissues, but their effects on the brain remain largely unexplored. Here, we used single cell RNA sequecing (scRNA-seq) to analyze the effects of YFs induction during cortical development.
+  Design:    We used the conditional inducible-four factors (i4F) mouse line, which allows the induction of YFs in a Tet-ON system. This line was crossed with a Cre-dependent floxed rtTA and the nervous system-specific Nestin-Cre (Nes) mouse line. In this mouse model (i4F-Nes), YF expression was induced by administering doxycycline from E10.5 to E14.5. The rostral region of the mouse neocortex was collected at
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE271nnn/GSE271794/suppl/GSE271794_RAW.tar
+
+
+ACCESSION: GSE274988
+  Title:     Enhanced liver regeneration via targeted mRNA delivery for partial in vivo reprogramming
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 3   PubMed: 42248561
+  Tissues mentioned (priority list): ['retina', 'skeletal muscle', 'liver']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   Recent studies suggest that injury-induced dedifferentiation, which leads to the formation of âinjury-responsive cellsâ, contributes significantly to tissue repair across various organs, including the liver. Utilizing Yamanaka factors (Oct4, Sox2, Klf4, and c-Myc: OSKM) for in vivo partial reprogramming generates âinjury-responsive cellsâ in the intestine, mirroring those derived from injury-induced dedifferentiation. Thus, the transgene induction of OSKM or viral delivery of Oct4, Sox2,
+  Design:    We used whole liver samples for single nucleus RNA sequencing. There were control, APAP and OSKM groups. APAP livers were sampled 48 h after 300 mg/kg APAP I.P. injection. OSKM livers were sampled 72 h after 0. 15 mg/kg doxycycline administration. Whole samples were prepared using reprogrammable mice to minimize the genetic background effect.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE274nnn/GSE274988/suppl/GSE274988_filtered_feature_bc_matrix.h5
+
+
+ACCESSION: GSE291775
+  Title:     Transient RORÎ² Knockdown by Cell-penetrating siRNA Alleviates Retinal Degeneration Caused by Proteotoxicity
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 2   PubMed: 41153677
+  Tissues mentioned (priority list): ['retina', 'liver']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Retinitis pigmentosa (RP) is characterized by rod photoreceptor degeneration-driven apoptosis, which secondarily triggers cone photoreceptor loss and eventual blindness. Preserving rod function remains a primary therapeutic objective. Inspired by prior studies demonstrating that neural retina leucine zipper (Nrl) knockdown conferred resistance to rod mutations and induced in vivo rod-to-cone conversion with therapeutic effects in inherited retinal degeneration (IRD) models, we hypothesized that 
+  Design:    All animal experiments were performed in accordance with the guidelines approved by the Institutional Animal Care and Use Committee (IACUC) of Konkuk University (Approval No. KU24219). The mice were housed under a 12-hour light/dark cycle at a temperature of 22 Â± 2Â°C and humidity of 50 Â± 10%, with free access to food and water. Two- and eight-week-old C57BL/6J mice were obtained from DBL (Inche
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE291nnn/GSE291775/suppl/GSE291775_RAW.tar
+
+
+ACCESSION: GSE294281
+  Title:     Enhanced activities of OCT4 and SOX2 facilitates epigenetic reprogramming by modulating cell cycle [CCB/FNB ATAC-seq]
+  Organism:  Mus musculus
+  Type:      Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 2   PubMed: 40448624
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   Fusing VP16  transcription activation domain with OCT4 and SOX2 (OvSvK) promoted the generation of induced pluripotency stem cells (iPSCs) by remodeling cell cycle and epigenetic modification. Multiomic analyses revealed that the other 80% upregulated genes experienced increase in H3K4me3 and decrease in H3K27me3 and were enriched with genes which undergo more intensive DNA demethylation during cell proliferation. Consistent results were obtained when siCcnd1, siCdkn2a and Ccne1 were screened ou
+  Design:    For bulk RNA-seq, cells were infected with O, S, K, OS, OK and SK respectively and collected at  post-infected Day0. For single-cell RNA-Seq, reprogramming cells were collected at post-infected Day0, Day1, Day2, Day3 and Day4 using Fluidigm C1. For ATAC-seq, cells were infected with hCdt1 and hGeminin and also OSK or OvSvK. Cells at different cell cycle stage were isolated by fluorescence-activate
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE294nnn/GSE294281/suppl/GSE294281_RAW.tar
+
+
+ACCESSION: GSE294288
+  Title:     Enhanced activities of OCT4 and SOX2 facilitates epigenetic reprogramming by modulating cell cycle [OSK/OvSvK CUT&TAG]
+  Organism:  Mus musculus
+  Type:      Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 11   PubMed: 40448624
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   Fusing VP16  transcription activation domain with OCT4 and SOX2 (OvSvK) promoted the generation of induced pluripotency stem cells (iPSCs) by remodeling cell cycle and epigenetic modification. Multiomic analyses revealed that the other 80% upregulated genes experienced increase in H3K4me3 and decrease in H3K27me3 and were enriched with genes which undergo more intensive DNA demethylation during cell proliferation. Consistent results were obtained when siCcnd1, siCdkn2a and Ccne1 were screened ou
+  Design:    For bulk RNA-seq, cells were infected with O, S, K, OS, OK and SK respectively and collected at  post-infected Day0. For single-cell RNA-Seq, reprogramming cells were collected at post-infected Day0, Day1, Day2, Day3 and Day4 using Fluidigm C1. For ATAC-seq, cells were infected with hCdt1 and hGeminin and also OSK or OvSvK. Cells at different cell cycle stage were isolated by fluorescence-activate
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE294nnn/GSE294288/suppl/GSE294288_RAW.tar
+
+
+ACCESSION: GSE294292
+  Title:     Enhanced activities of OCT4 and SOX2 facilitates epigenetic reprogramming by modulating cell cycle [OSK CCC/FN RNA-seq]
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 4   PubMed: 40448624
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   Fusing VP16  transcription activation domain with OCT4 and SOX2 (OvSvK) promoted the generation of induced pluripotency stem cells (iPSCs) by remodeling cell cycle and epigenetic modification. Multiomic analyses revealed that the other 80% upregulated genes experienced increase in H3K4me3 and decrease in H3K27me3 and were enriched with genes which undergo more intensive DNA demethylation during cell proliferation. Consistent results were obtained when siCcnd1, siCdkn2a and Ccne1 were screened ou
+  Design:    For bulk RNA-seq, cells were infected with O, S, K, OS, OK and SK respectively and collected at  post-infected Day0. For single-cell RNA-Seq, reprogramming cells were collected at post-infected Day0, Day1, Day2, Day3 and Day4 using Fluidigm C1. For ATAC-seq, cells were infected with hCdt1 and hGeminin and also OSK or OvSvK. Cells at different cell cycle stage were isolated by fluorescence-activate
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE294nnn/GSE294292/suppl/GSE294292_CCC_FN_counts.txt.gz
+
+
+ACCESSION: GSE297234
+  Title:     Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 8   PubMed: 40816266
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   The loss of cellular and tissue identity is a hallmark of aging and numerous diseases, but the underlying mechanisms are not well understood. Our analysis of gene expression data from over 40 human tissues and 20 diseases reveals a pervasive upregulation of mesenchymal genes across multiple cell types, along with an altered composition of stromal cell populations, denoting a âmesenchymal driftâ (MD). Increased MD correlates with disease progression, reduced patient survival, and an elevated 
+  Design:    10x Genomics scRNA-seq of human fibroblasts from a young (GM23815, 22yr) and aged donor (GM00731, 96yr) treated with Sendai virus OSKM for up to 10 days.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297234/suppl/GSE297234_GM00731_SEVOSKM.rds | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297234/suppl/GSE297234_HFIB_COMBINED_SEVOSKM.rds | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297234/suppl/GSE297234_RAW.tar
+
+
+ACCESSION: GSE298954
+  Title:     A Single-Short Partial Reprogramming of the Endothelial Cells decreases Blood Pressure via attenuation of EndMT in Hypertensive Mice
+  Organism:  Mus musculus
+  Type:      Other
+  N samples: 40   PubMed: none listed
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Small artery remodeling and endothelial dysfunction are hallmarks of hypertension. Evidence supports a likely causal association between cardiovascular diseases and endothelial-to-mesenchymal transition (EndMT), a cellular transdifferentiation process in which endothelial cells (ECs) partially lose their identity and acquire mesenchymal phenotypes. EC reprogramming represents an innovative strategy in regenerative medicine to prevent deleterious effects induced by cardiovascular diseases. We hyp
+  Design:    All animal procedures and protocols used were approved by the Animal Care and Use Committee at the University of South Carolina School of Medicine Columbia. Lentiviral vector production and utilization in cells and mice had the School of Medicine Columbia University of South Carolina ethics committee approval (IACUC #2596-101690-041122, and IBC protocol #300322). Experiments were conducted followi
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE298nnn/GSE298954/suppl/GSE298954_Mm_R_NGS_WTA_v1.0.pkc.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE298nnn/GSE298954/suppl/GSE298954_RAW.tar | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE298nnn/GSE298954/suppl/GSE298954_bph_endo_vsm_results.tar.gz
+
+
+ACCESSION: GSE300477
+  Title:     A Single-Short Partial Reprogramming of the Endothelial Cells in vivo decreases Blood Pressure and Vascular Contractility Through the Attenuation of Endothelial-to-Mesenchymal Transition in Male Hypertensive Mice
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 1   PubMed: none listed
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Endothelial cell (EC) reprogramming represents an innovative strategy in regenerative medicine to prevent deleterious effects induced by cardiovascular diseases. Here, we showed for the first time, that a single-short partial reprogramming of ECs, via the overexpression of three master transcription factors Oct-3/4, Sox-2, and Klf-4 (OSK), was able to bring ECs back to a youthful phenotype in hypertensive mice. Accordingly, we effectively generated in vitro ECs with endothelial progenitor cell (
+  Design:    Human male and female normal and hypertensive aortic endothelial cells were treated with OSK or control EGFP sendai virus for 3 or 7 days. The attentuation of EndMT in HAoECs by OSK were determined using scRNA-seq.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE300nnn/GSE300477/suppl/GSE300477_RAW.tar
+
+
+ACCESSION: GSE307031
+  Title:     Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mechanisms mediating natural retinal aging [Mouse_Xenium]
+  Organism:  Mus musculus
+  Type:      Other
+  N samples: 6   PubMed: none listed
+  Tissues mentioned (priority list): ['retina', 'brain']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   We performed integrated single-cell RNA- and ATAC-Seq analyses of the retina and retinal pigment epithelium (RPE) across the natural lifespan in zebrafish, mice, and humans. By profiling gene expression and chromatin accessibility, we identified extensive cell type- and species-specific aging-dependent changes, with a much smaller number of broadly expressed and conserved genes that include regulators of inflammation and autophagy. We constructed predictive aging clocks for retinal cell types an
+  Design:    we generated mouse datasets by the Xenium 5k platform to analyze aging-dependent gene expression changes in the mouse retina in situ. This retina dataset consists of 4 ages of retina samples, at 5, 12, 55, and 112 weeks, and each age contains two sections (center and peripheral) from one male and one female. We directly tested whether constitutive, low level, Muller glia-specific expression of the
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307031/suppl/GSE307031_RAW.tar
+
+
+ACCESSION: GSE333189
+  Title:     Hopx is a dual-gatekeeper of astrocyte fate enabling in vivo reprogramming and neural repair
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing; Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 3   PubMed: none listed
+  Tissues mentioned (priority list): ['brain', 'liver']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Astrocyte-to-neuron conversion provides a potential strategy for neural repair, but the endogenous mechanisms that maintain astrocytic identity and restrict neuronal fate acquisition remain incompletely understood. In this study, we investigated the role of Hopx, an astrocyte-enriched transcriptional regulator, in maintaining astrocyte fate and limiting astrocyte-to-neuron conversion. We developed an AAV-compatible TIGR interference (TIGRi) system to repress Hopx expression in vivo and applied t
+  Design:    Single-cell RNA-seq experiment was designed to characterize the transcriptional trajectory of astrocyte-lineage cells undergoing Hopx knockdown-induced astrocyte-to-neuron conversion in vivo. Five Aldh1l1CreERT2;Rosa26-LSL-tdTomato mice received hippocampal injection of Cre-dependent AAV-TIGRi-Hopx carrying an EGFP reporter, followed by tamoxifen induction to activate lineage tracing and virus-dep
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE333nnn/GSE333189/suppl/GSE333189_RAW.tar
+
+
+ACCESSION: GSE42993
+  Title:     Different reprogramming methods generate undistinguishable pluripotent states
+  Organism:  Mus musculus
+  Type:      Expression profiling by array
+  N samples: 26   PubMed: none listed
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Pluripotency can be induced from different cell types using different methods. Several studies have reported that iPSC retain an epigenetic memory from the tissue from which they were derived. However, the influence of the method used for reprogramming in the final pluripotent state has not been investigated yet. Therefore, we have taken advantage of germline stem cells (GSCs) that can be converted into germline pluripotent stem cells (gPSCs) using specific culture conditions or into induced plu
+  Design:    Samples were hybridised as biological replicates. 26 samples were analyzed.  iPSC[GSCneonatal]#1: iPSC day 10 from GSC, clone 1, 2 biological rep iPSC[GSCneonatal]#2: iPSC day 10 from GSC, clone 2, 2 biological rep iPSC[GSCadult]#1:    iPSC day 40 from GSC, clone 1, 2 biological rep iPSC[GSCadult]#2:    iPSC day 40 from GSC, clone 2, 2 biological rep gPSC[GSCneonatal]#1: gPSC day 10 from GSC, clon
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE42nnn/GSE42993/suppl/GSE42993_RAW.tar | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE42nnn/GSE42993/suppl/GSE42993_non_normalized.txt.gz
+
+
+ACCESSION: GSE50206
+  Title:     Induction of pluripotency in human somatic cells via a primitive streak-like state
+  Organism:  Homo sapiens; Mus musculus
+  Type:      Expression profiling by array
+  N samples: 184   PubMed: 24759836
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   During mammalian embryonic development, the primitive streak is initiates the differentiation of pluripotent epiblast cells into germ layers. Pluripotency can be reacquired in committed somatic cells using a combination of handful transcription factors, such as OCT3/4, SOX2, KLF4 and c-MYC (hereafter referred to as OSKM), albeit with low efficiency . Here we   show that, during the OSKM-induced reprogramming process toward pluripotency in human cells, intermediate cells transiently show gene exp
+  Design:    Human differentiated progeny derived from pluripotent stem cells, N=13  Human undifferentiated pluripotent stem cells, N=6  Transgenic ESC line, N=6  Human tissues, N=29  Human tissue-derived cells, N=20  Human nascent reprogrammed cells, N=95 Mouse cells, N=12
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE50nnn/GSE50206/suppl/GSE50206_RAW.tar
+
+
+ACCESSION: GSE55291
+  Title:     Noncoding RNA transcriptome analysis during cellular reprogramming
+  Organism:  Mus musculus
+  Type:      Expression profiling by high throughput sequencing; Non-coding RNA profiling by high throughput sequencing
+  N samples: 95   PubMed: 25575081
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   We report the application of single-cell and bulk RNA sequencing technology to examine the noncoding transcriptome of cells undergoing reprogramming to the pluripotent state.
+  Design:    Examination of noncoding RNAs in reprogrammming cells.  We examined iPS cells grown in standard ES cell culture conditions, as well as iPS cells grown in "2i" conditions (small molecule inhibition of Mek and Gsk3).  We also compared our iPS samples to male and female ES cells (mES, fES).
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE55nnn/GSE55291/suppl/GSE55291_RAW.tar
+
+
+ACCESSION: GSE69319
+  Title:     NaÃ¯ve iPSCs Generated from Î²-thalassemia Fibroblasts Allow Efficient Gene Correction with CRISPR/Cas9
+  Organism:  Homo sapiens
+  Type:      Genome binding/occupancy profiling by high throughput sequencing; Expression profiling by high throughput sequencing
+  N samples: 14   PubMed: 26676643
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   We used a modified 5i/L/FA system to generate transgene-free naÃ¯ve iPSCs directly from the fibroblasts of a patient suffering from Î²-thalassemia and further demonstrated efficient gene correction with a CRISPR/Cas9 system, which provides an improved strategy for personalized treatment of Î²-thalassemia.
+  Design:    A modified 5i/L/FA system was used to generate transgene-free naÃ¯ve iPSCs directly from the fibroblasts of a patient suffering from Î²-thalassemia.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE69nnn/GSE69319/suppl/GSE69319_RAW.tar | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE69nnn/GSE69319/suppl/GSE69319_gene_expression.txt.gz
+
+
+ACCESSION: GSE85580
+  Title:     Determination of dynamic changes in chromatin accessibilty during cellular reprogramming [scATAC]
+  Organism:  Homo sapiens
+  Type:      Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 480   PubMed: 32917699
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Understanding the heterogeneity of cellular reprogramming process at a single-cell high resolution level.
+  Design:    480 Single-Cell ATAC-Seq libraries of cells undergoing cellular reprogramming at different time-points.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE85nnn/GSE85580/suppl/GSE85580_BJ_merged.ucsc.bedGraph.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE85nnn/GSE85580/suppl/GSE85580_D16neg_merged.ucsc.bedGraph.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE85nnn/GSE85580/suppl/GSE85580_D16pos_merged.ucsc.bedGraph.gz | ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE85nnn/GSE85580/suppl/GSE85580_D2_merged.ucsc.bedGra
+
+
+ACCESSION: GSE90014
+  Title:     Proliferation pause as an early blockade of human cellular reprogramming toward pluripotency [single cell RNA-seq analysis]
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 192   PubMed: 29641997
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Human induced Pluripotent Stem cells (iPSCs) can be generated by enforced-expression of OCT3/4, SOX2, KLF4 and c-MYC (OSKM) via intermediate state that is labeled with a surface antigen TRA-1-60.  However the event during conversion of somatic cells to TRA-1-60 positive (+) fate by OSKM is still unclear. Here we show that TRA-1-60 (+) cells emerged from ESRG (+) cells with proliferation independent manner.   Overcoming the proliferation pausing phase is crucial for further progression of reprogr
+  Design:    Single cell RNA-seq profiles of Human dermal fibroblasts, Human induced Pluripotent Stem cell, intermediate reprogrammed cells.
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE90nnn/GSE90014/suppl/GSE90014_RAW.tar
+
+
+ACCESSION: GSE93706
+  Title:     OCT6 uniquely replaces OCT4 in inducing human pluripotency
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing; Genome binding/occupancy profiling by high throughput sequencing
+  N samples: 59   PubMed: 32917606
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   Somatic cells can be reprogrammed into pluripotent stem cells by the ectopic expression of OCT4, SOX2, KLF4, and c-MYC. Although SOX2, KLF4, and c-MYC (SKM) can be substituted by their respective family members, OCT4 is considered to not be interchangeable with any octamer-binding POU proteins. Through a screening with 102 candidate genes, here we have identified that the POU protein OCT6 (also known as SCIP, TST-1, and POU3F1), in conjunction with SKM, is capable of functionally replacing OCT4 
+  Design:    The TRA1-60+ cells in the two induction system at day 2, 4, 6, 8, 10, 12, and 16, which were isolated by FACS using APC anti-human CD13 (BioLegend), PE anti-human TRA-1-60 (BioLegend). The sorted TRA1-60+ cells during reprogramming were washed several times in 0.5% BSA-PBS (Sigma) solution and subsequently picked and transferred into lysate buffer by a mouth pipette with 50 cell for each tube. At 
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE93nnn/GSE93706/suppl/GSE93706_RAW.tar
+
+
+ACCESSION: GSE94979
+  Title:     Single-cell RNA Sequencing as a tool for simultaneous shRNA detection and transcriptome analysis in the context of functional shRNA screens
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 460   PubMed: 29138277
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Ectopic expression of the transcription factors Oct4, Sox2, Klf4 and c-Myc (OSKM) can reprogram somatic cells into induced pluripotent stem cells (iPSCs). These iPSCs are highly similar to embryonic stem cells and can be used for regenerative medicine, drug screening and disease modelling. Despite recent advances, reprogramming is a slow and inefficient process. This suggests that there are several safeguarding mechanisms to counteract cell fate conversion. Cellular senescence is one of these ba
+  Design:    460 samples: 300 IMR90 cells expressing OSKM and shRNA library, 50 IMR90 cells expressing control vector, 50 K562 myeloid leukemia cells, 30 positive controls (RNA from IMR90 cells expressing control vector as input; RNA used as a control for the single cell processing, coming from RNA isolation of a bulk population of IMR90 cells expressing the control vector), 30 negative controls
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE94nnn/GSE94979/suppl/GSE94979_RAW.tar
+
+
+ACCESSION: GSE94980
+  Title:     Single-cell RNA-Sequencing of IMR90 fibroblasts bypassing reprogramming-induced senescence
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 620   PubMed: 29138277
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Ectopic expression of the transcription factors Oct4, Sox2, Klf4 and c-Myc (OSKM) can reprogram somatic cells into induced pluripotent stem cells (iPSCs). These iPSCs are highly similar to embryonic stem cells and can be used for regenerative medicine, drug screening and disease modelling. Despite recent advances, reprogramming is a slow and inefficient process. This suggests that there are several safeguarding mechanisms to counteract cell fate conversion. Cellular senescence is one of these ba
+  Design:    310 samples: scRNA-Seq libraries of OSKM-expressing IMR90 cells infected individually with shRNAs targeting p53 (40 cells) or shRNAs against the top candidates identified in the screen: p21 (three different shRNAs; 40 cells), MTOR (three different shRNAs; 40 cells), MYOT (two different shRNAs; 40 cells) and UBE2E1 (two different shRNAs; 40 cells). Control samples were: cells expressing OSKM (40 ce
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE94nnn/GSE94980/suppl/GSE94980_RAW.tar
+
+
+ACCESSION: GSE95020
+  Title:     Coupling shRNA screening with single-cell RNA-Seq identifies mechanisms regulating senescence during reprogramming
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 376   PubMed: 29138277
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   Ectopic expression of the transcription factors Oct4, Sox2, Klf4 and c-Myc (OSKM) can reprogram somatic cells into induced pluripotent stem cells (iPSCs). These iPSCs are highly similar to embryonic stem cells and can be used for regenerative medicine, drug screening and disease modelling. Despite recent advances, reprogramming is a slow and inefficient process. This suggests that there are several safeguarding mechanisms to counteract cell fate conversion. Cellular senescence is one of these ba
+  Design:    376 samples: 280 IMR90 cells expressing OSKM and shRNA library derived from the shRNA screen (bypassing senescence), 64 OSKM-expressing IMR90 cells (senescent), 32 IMR90 cells expressing control vector
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE95nnn/GSE95020/suppl/GSE95020_RAW.tar
+
+
+ACCESSION: GSE95021
+  Title:     Coupling shRNA screens with single-cell RNA-Seq identifies mechanisms regulating senescence during reprogramming
+  Organism:  Homo sapiens
+  Type:      Expression profiling by high throughput sequencing
+  N samples: 1513   PubMed: 29138277
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: True
+  Summary:   This SuperSeries is composed of the SubSeries listed below.
+  Design:    Refer to individual Series
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE95nnn/GSE95021/suppl/GSE95021_RAW.tar
+
+
+ACCESSION: GSE97859
+  Title:     Oocyte Specific Homeobox 1 (Obox1) Facilitates Somatic Cell Reprogramming by Promoting Mesenchymal-to-Epithelial Transition and Mitigating Cell Hyper-proliferation
+  Organism:  Mus musculus
+  Type:      Genome binding/occupancy profiling by high throughput sequencing; Expression profiling by high throughput sequencing
+  N samples: 14   PubMed: 29033306
+  Tissues mentioned (priority list): ['(none of retina/brain/muscle/heart/kidney/liver)']
+  single-cell/nucleus in title/summary/type: False
+  Summary:   Mammalian oocytes possess fascinating unknown factors, which can reprogram terminally differentiated germ cells (sperm) or somatic cells into totipotent embryos. Here, we demonstrate that oocyte specific homeobox 1 (Obox1), an oocyte-specific factor, can markedly enhance the generation of induced pluripotent stem cells (iPSCs) from mouse fibroblasts in a proliferation-independent manner and can replace Sox2 to achieve pluripotency. Overexpression of Obox1 can greatly promote mesenchymal-to-epith
+  Design:    The reprogrammable MEFs derived from the transgenic mice carrying the tetO-OSKM transgene and Oct4-GFP/Rosa26-M2rtTA were used in the experiments. The reprogrammable MEFs that were not induced with doxycycline were designated as âMEFâ (control). The reprogrammable cells with or without Obox1âs overexpression were induced with doxycycline (1ug/ml) for 3 days. The cells were harvested and perf
+  Suppl:     ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE97nnn/GSE97859/suppl/GSE97859_RAW.tar
+
+=== tissue coverage: aging atlas (CXG primary) vs reprogramming (GEO SOFT, any organism) ===
+  retina             CXG primary datasets=16 (full=6);  GEO reprogramming series mentioning tissue=5 ['GSE246702', 'GSE247173', 'GSE274988', 'GSE291775', 'GSE307031']
+  brain              CXG primary datasets=15 (full=15);  GEO reprogramming series mentioning tissue=17 ['GSE102934', 'GSE137050', 'GSE144993', 'GSE145388', 'GSE181196', 'GSE181451', 'GSE181796', 'GSE181799', 'GSE181800', 'GSE224438', 'GSE242076', 'GSE246702', 'GSE247173', 'GSE254389', 'GSE271794', 'GSE307031', 'GSE333189']
+  skeletal muscle    CXG primary datasets=1 (full=1);  GEO reprogramming series mentioning tissue=2 ['GSE270268', 'GSE274988']
+  heart              CXG primary datasets=5 (full=2);  GEO reprogramming series mentioning tissue=1 ['GSE270268']
+  kidney             CXG primary datasets=8 (full=7);  GEO reprogramming series mentioning tissue=0 []
+  liver              CXG primary datasets=14 (full=7);  GEO reprogramming series mentioning tissue=8 ['GSE109113', 'GSE144600', 'GSE176206', 'GSE178726', 'GSE270268', 'GSE274988', 'GSE291775', 'GSE333189']

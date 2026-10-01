@@ -1,0 +1,115 @@
+====================================================================================================
+GTEX STAGE 0  seed=20260914  release=GTEx Analysis V10  pipeline=RNASeQCv2.4.2  phs000424.v10
+====================================================================================================
+NO perturbation data. No TF Atlas. No candidate interventions.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+Six tissues only: ['Brain - Frontal Cortex (BA9)', 'Brain - Cortex', 'Brain - Anterior cingulate cortex (BA24)', 'Brain - Hippocampus', 'Heart - Left Ventricle', 'Muscle - Skeletal']
+Neuronal markers (frozen): ['RBFOX3', 'SNAP25', 'SYT1', 'GAD1', 'SLC17A7']
+Glial markers (frozen a priori): ['GFAP', 'AQP4', 'MBP', 'PLP1', 'OLIG2', 'CX3CR1', 'AIF1']
+z-score per gene on training rows only inside every fold.
+Primary R² stratified by grouping variable, never pooled.
+Fail loudly: no substitute columns, no silent coerce, no dropping rows to pass an assertion.
+[download] gene_reads: https://storage.googleapis.com/adult-gtex/bulk-gex/v10/rna-seq/GTEx_Analysis_v10_RNASeQCv2.4.2_gene_reads.gct.gz
+[download] GTEx_Analysis_v10_RNASeQCv2.4.2_gene_reads.gct.gz size=941668791 md5=f845a258935dcde043f5547f196941b7 (matches GCS)
+[download] sample_attributes: https://storage.googleapis.com/adult-gtex/annotations/v10/metadata-files/GTEx_Analysis_v10_Annotations_SampleAttributesDS.txt
+[download] GTEx_Analysis_v10_Annotations_SampleAttributesDS.txt size=38497961 md5=4c45e25c3fc5ec92a97da0d4bcba1207 (matches GCS)
+[download] subject_phenotypes: https://storage.googleapis.com/adult-gtex/annotations/v10/metadata-files/GTEx_Analysis_v10_Annotations_SubjectPhenotypesDS.txt
+[download] GTEx_Analysis_v10_Annotations_SubjectPhenotypesDS.txt size=20292 md5=ffa15a680855c6c84f2551bfba8017ba (matches GCS)
+[read] sample_attributes: GTEx_Analysis_v10_Annotations_SampleAttributesDS.txt rows=48,231 cols=119
+[read] sample_attributes columns actually read (119): ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD']
+[read] subject_phenotypes: GTEx_Analysis_v10_Annotations_SubjectPhenotypesDS.txt rows=981 cols=4
+[read] subject_phenotypes columns actually read (4): ['SUBJID', 'SEX', 'AGE', 'DTHHRDY']
+[cohort] SMAFRZE levels observed: ['DEEPWGS', 'EXCLUDE', 'OMNI', 'RNASEQ', 'SMLRNA', 'WES', 'WGS']
+[filter] SMAFRZE==RNASEQ and SMTSD in 6 tissues: 2,297 samples
+[cohort] SEX levels: {'field': 'SEX', 'observed': ['1', '2'], 'expected': ['1', '2'], 'missing_expected_not_in_data': [], 'n_na': 0}
+[cohort] DTHHRDY levels: {'field': 'DTHHRDY', 'observed': ['0', '1', '2', '3', '4'], 'expected': ['0', '1', '2', '3', '4'], 'missing_expected_not_in_data': [], 'n_na': 11}
+[cohort] AGE bins: {'field': 'AGE', 'observed': ['20-29', '30-39', '40-49', '50-59', '60-69', '70-79'], 'expected': ['20-29', '30-39', '40-49', '50-59', '60-69', '70-79'], 'missing_expected_not_in_data': [], 'n_na': 0}
+[write] <repo>\results\gtex\stage0_obs.csv n=2297
+[cohort] Brain - Frontal Cortex (BA9): n=269 donors=269 centers=4 nabatch=147 sex 1/2=201/68
+[cohort] Brain - Cortex: n=270 donors=270 centers=3 nabatch=164 sex 1/2=195/75
+[cohort] Brain - Anterior cingulate cortex (BA24): n=233 donors=233 centers=4 nabatch=146 sex 1/2=177/56
+[cohort] Brain - Hippocampus: n=255 donors=255 centers=4 nabatch=145 sex 1/2=190/65
+[cohort] Heart - Left Ventricle: n=452 donors=452 centers=3 nabatch=269 sex 1/2=308/144
+[cohort] Muscle - Skeletal: n=818 donors=818 centers=3 nabatch=338 sex 1/2=552/266
+[audit] Brain - Frontal Cortex (BA9) ~ SMRIN: R²=+0.000 n=269 dropped=0 levels=1
+[audit] Brain - Frontal Cortex (BA9) ~ SMTSISCH: R²=+0.007 n=269 dropped=0 levels=1
+[audit] Brain - Frontal Cortex (BA9) ~ DTHHRDY: R²=+0.093 n=269 dropped=0 levels=5
+[audit] Brain - Frontal Cortex (BA9) ~ SEX: R²=+0.003 n=269 dropped=0 levels=2
+[audit] Brain - Frontal Cortex (BA9) ~ SMCENTER: R²=+0.010 n=269 dropped=0 levels=4
+[audit] Brain - Frontal Cortex (BA9) ~ SMNABTCH: R²=+0.601 n=269 dropped=0 levels=147
+[audit] Brain - Frontal Cortex (BA9) ~ JOINT: R²=+0.640 n=269 p=157
+[audit] Brain - Cortex ~ SMRIN: R²=+0.010 n=270 dropped=0 levels=1
+[audit] Brain - Cortex ~ SMTSISCH: R²=+0.024 n=270 dropped=0 levels=1
+[audit] Brain - Cortex ~ DTHHRDY: R²=+0.129 n=270 dropped=0 levels=5
+[audit] Brain - Cortex ~ SEX: R²=+0.002 n=270 dropped=0 levels=2
+[audit] Brain - Cortex ~ SMCENTER: R²=+0.007 n=270 dropped=0 levels=3
+[audit] Brain - Cortex ~ SMNABTCH: R²=+0.641 n=270 dropped=0 levels=164
+[audit] Brain - Cortex ~ JOINT: R²=+0.688 n=270 p=173
+[audit] Brain - Anterior cingulate cortex (BA24) ~ SMRIN: R²=+0.003 n=233 dropped=0 levels=1
+[audit] Brain - Anterior cingulate cortex (BA24) ~ SMTSISCH: R²=+0.016 n=233 dropped=0 levels=1
+[audit] Brain - Anterior cingulate cortex (BA24) ~ DTHHRDY: R²=+0.138 n=233 dropped=0 levels=5
+[audit] Brain - Anterior cingulate cortex (BA24) ~ SEX: R²=+0.007 n=233 dropped=0 levels=2
+[audit] Brain - Anterior cingulate cortex (BA24) ~ SMCENTER: R²=+0.017 n=233 dropped=0 levels=4
+[audit] Brain - Anterior cingulate cortex (BA24) ~ SMNABTCH: R²=+0.671 n=233 dropped=0 levels=146
+[audit] Brain - Anterior cingulate cortex (BA24) ~ JOINT: R²=+0.716 n=233 p=156
+[audit] Brain - Hippocampus ~ SMRIN: R²=+0.010 n=255 dropped=0 levels=1
+[audit] Brain - Hippocampus ~ SMTSISCH: R²=+0.016 n=255 dropped=0 levels=1
+[audit] Brain - Hippocampus ~ DTHHRDY: R²=+0.086 n=255 dropped=0 levels=5
+[audit] Brain - Hippocampus ~ SEX: R²=+0.005 n=255 dropped=0 levels=2
+[audit] Brain - Hippocampus ~ SMCENTER: R²=+0.005 n=255 dropped=0 levels=4
+[audit] Brain - Hippocampus ~ SMNABTCH: R²=+0.554 n=255 dropped=0 levels=145
+[audit] Brain - Hippocampus ~ JOINT: R²=+0.619 n=255 p=155
+[audit] Heart - Left Ventricle ~ SMRIN: R²=+0.070 n=452 dropped=0 levels=1
+[audit] Heart - Left Ventricle ~ SMTSISCH: R²=+0.040 n=451 dropped=1 levels=1
+[audit] Heart - Left Ventricle ~ DTHHRDY: R²=+0.121 n=451 dropped=1 levels=5
+[audit] Heart - Left Ventricle ~ SEX: R²=+0.007 n=452 dropped=0 levels=2
+[audit] Heart - Left Ventricle ~ SMCENTER: R²=+0.000 n=452 dropped=0 levels=3
+[audit] Heart - Left Ventricle ~ SMNABTCH: R²=+0.647 n=452 dropped=0 levels=269
+[audit] Heart - Left Ventricle ~ JOINT: R²=+0.673 n=450 p=278
+[audit] Muscle - Skeletal ~ SMRIN: R²=+0.001 n=818 dropped=0 levels=1
+[audit] Muscle - Skeletal ~ SMTSISCH: R²=+0.054 n=818 dropped=0 levels=1
+[audit] Muscle - Skeletal ~ DTHHRDY: R²=+0.186 n=808 dropped=10 levels=5
+[audit] Muscle - Skeletal ~ SEX: R²=+0.001 n=818 dropped=0 levels=2
+[audit] Muscle - Skeletal ~ SMCENTER: R²=+0.017 n=818 dropped=0 levels=3
+[audit] Muscle - Skeletal ~ SMNABTCH: R²=+0.429 n=818 dropped=0 levels=338
+[audit] Muscle - Skeletal ~ JOINT: R²=+0.540 n=808 p=347
+[STOP] BA9 n=269  (flag underpowered if n<150: False)
+[STOP] SMCENTER with ≥25 BA9 samples: 2  (T2 not testable if <3: True)
+[STOP] BA9 SMCENTER counts: {'B1, A1': 149, 'C1, A1': 113, 'D1, A1': 4, 'C1, B1, A1': 3}
+[gct] version='#1.2' declared genes=59,033 samples=19,788
+[gct] header columns actually read: Name, Description + 19788 sample IDs
+[gct] keeping 2297 / 19788 sample columns (not in 6-tissue freeze: 17491)
+[gct] pandas usecols subset (does not materialise the full gene × all-sample matrix)
+[gct] subset matrix 59,033 genes × 2297 samples in 205s
+[overlap] DLPFC universe n=25,526 from brain_aging_phase1_logcpm_genes.csv columns=['gene_id', 'symbol']
+[filter] Brain - Frontal Cortex (BA9): genes ≥6 counts in ≥20% samples  59,033 -> 26,847  (removed 32,186)  n_samples=269
+[overlap] Brain - Frontal Cortex (BA9): filtered genes 26,847 ∩ DLPFC universe 20,115
+[filter] Brain - Cortex: genes ≥6 counts in ≥20% samples  59,033 -> 27,151  (removed 31,882)  n_samples=270
+[overlap] Brain - Cortex: filtered genes 27,151 ∩ DLPFC universe 20,195
+[filter] Brain - Anterior cingulate cortex (BA24): genes ≥6 counts in ≥20% samples  59,033 -> 26,595  (removed 32,438)  n_samples=233
+[overlap] Brain - Anterior cingulate cortex (BA24): filtered genes 26,595 ∩ DLPFC universe 20,059
+[filter] Brain - Hippocampus: genes ≥6 counts in ≥20% samples  59,033 -> 26,657  (removed 32,376)  n_samples=255
+[overlap] Brain - Hippocampus: filtered genes 26,657 ∩ DLPFC universe 19,949
+[filter] Heart - Left Ventricle: genes ≥6 counts in ≥20% samples  59,033 -> 23,818  (removed 35,215)  n_samples=452
+[overlap] Heart - Left Ventricle: filtered genes 23,818 ∩ DLPFC universe 18,226
+[filter] Muscle - Skeletal: genes ≥6 counts in ≥20% samples  59,033 -> 23,228  (removed 35,805)  n_samples=818
+[overlap] Muscle - Skeletal: filtered genes 23,228 ∩ DLPFC universe 17,943
+[composition] neuronal: ['RBFOX3', 'SNAP25', 'SYT1', 'GAD1', 'SLC17A7'] all mapped
+[composition] glial: ['GFAP', 'AQP4', 'MBP', 'PLP1', 'OLIG2', 'CX3CR1', 'AIF1'] all mapped
+[composition] Brain - Frontal Cortex (BA9) neuronal: Spearman age_mid=-0.193 age_ordinal=-0.193 SMTSISCH=+0.012  R²~SMCENTER=+0.014
+[composition] Brain - Frontal Cortex (BA9) glial: Spearman age_mid=+0.191 age_ordinal=+0.191 SMTSISCH=+0.105  R²~SMCENTER=+0.027
+[composition] neuronal: ['RBFOX3', 'SNAP25', 'SYT1', 'GAD1', 'SLC17A7'] all mapped
+[composition] glial: ['GFAP', 'AQP4', 'MBP', 'PLP1', 'OLIG2', 'CX3CR1', 'AIF1'] all mapped
+[composition] Brain - Cortex neuronal: Spearman age_mid=-0.251 age_ordinal=-0.251 SMTSISCH=-0.009  R²~SMCENTER=+0.012
+[composition] Brain - Cortex glial: Spearman age_mid=+0.170 age_ordinal=+0.170 SMTSISCH=+0.024  R²~SMCENTER=+0.029
+[composition] neuronal: ['RBFOX3', 'SNAP25', 'SYT1', 'GAD1', 'SLC17A7'] all mapped
+[composition] glial: ['GFAP', 'AQP4', 'MBP', 'PLP1', 'OLIG2', 'CX3CR1', 'AIF1'] all mapped
+[composition] Brain - Anterior cingulate cortex (BA24) neuronal: Spearman age_mid=-0.177 age_ordinal=-0.177 SMTSISCH=+0.122  R²~SMCENTER=+0.006
+[composition] Brain - Anterior cingulate cortex (BA24) glial: Spearman age_mid=+0.136 age_ordinal=+0.136 SMTSISCH=-0.076  R²~SMCENTER=+0.006
+[composition] neuronal: ['RBFOX3', 'SNAP25', 'SYT1', 'GAD1', 'SLC17A7'] all mapped
+[composition] glial: ['GFAP', 'AQP4', 'MBP', 'PLP1', 'OLIG2', 'CX3CR1', 'AIF1'] all mapped
+[composition] Brain - Hippocampus neuronal: Spearman age_mid=-0.187 age_ordinal=-0.187 SMTSISCH=+0.085  R²~SMCENTER=+0.007
+[composition] Brain - Hippocampus glial: Spearman age_mid=+0.207 age_ordinal=+0.207 SMTSISCH=-0.117  R²~SMCENTER=+0.017
+[gate] Stage 1 open=False  reason=post-supersession status is P3 (power-limited); GTEx n would not be interpretable  status=P3
+[write] <repo>\results\gtex\manifest.json
+STAGE 0 complete.

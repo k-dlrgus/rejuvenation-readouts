@@ -1,0 +1,200 @@
+==========================================================================================
+OSK/OSKM + retina/vision (any assay)
+(OSK OR OSKM OR Yamanaka) AND (retina OR photoreceptor OR vision OR RPE) AND gse[Entry Type]
+  GEO returned 26 (showing 20)
+  GSE316614    n=69  Homo sapiens             Targeting mutation-agnostic disease pathways ameliorates ciliopathy-related mesenchymal drift in RPE
+  GSE274988    n=3  Mus musculus             Enhanced liver regeneration via targeted mRNA delivery for partial in vivo reprogramming
+  GSE304044    n=120  Homo sapiens; Mus muscul Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision
+  GSE304043    n=7  Mus musculus             Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_6]
+  GSE304042    n=11  Homo sapiens             Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_5]
+  GSE304041    n=12  Homo sapiens             Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_4]
+  GSE304040    n=24  Mus musculus             Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_3]
+  GSE304039    n=6  Homo sapiens             Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_2]
+  GSE304038    n=18  Mus musculus             Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_1]
+  GSE304037    n=42  Mus musculus             Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_ATAC-seq_1]
+  GSE325621    n=13  Danio rerio              Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mech
+  GSE325620    n=14  Danio rerio              Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mech
+  GSE325478    n=18  Mus musculus             Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mech
+  GSE325477    n=17  Mus musculus             Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mech
+  GSE307031    n=6  Mus musculus             Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mech
+  GSE199576    n=16  Homo sapiens             Single cell transcriptomic analysis and Epigenomic profiling of human Axioloids
+  GSE199575    n=4  Homo sapiens             Epigenomic profiling of human Axioloids with CUT&Tag
+  GSE198362    n=14  Homo sapiens             Cell Autonomous Lipid Handling Defects in Stargardt iPS Cell-Derived Retinal Pigment Epithelium Cells
+  GSE199571    n=12  Homo sapiens             Single cell transcriptomic analysis of human axioloids
+  GSE173304    n=6  Sus scrofa               Gene expression programs between genetically matched PEF and porcine iPSCs
+==========================================================================================
+partial reprogramming [Title]
+"partial reprogramming"[Title] AND gse[Entry Type]
+  GEO returned 18 (showing 18)
+  GSE276656    n=20  Mus musculus             Gene expression + ATAC multiome profiling of mPFC engram cells after OSK partial reprogramming
+  GSE300477    n=1  Homo sapiens             A Single-Short Partial Reprogramming of the Endothelial Cells in vivo decreases Blood Pressure and Vascular Co
+  GSE298954    n=40  Mus musculus             A Single-Short Partial Reprogramming of the Endothelial Cells decreases Blood Pressure via attenuation of EndM
+  GSE297234    n=8  Homo sapiens             Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]
+  GSE297233    n=8  Homo sapiens             Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [RNA-seq]
+  GSE201710    n=49  Homo sapiens; Mus muscul Targeted partial reprogramming of age-associated cell states improves markers of health in mouse models of agi
+  GSE245385    n=65  Mus musculus             Impact of partial reprogramming, aging, and differentiation on primary neural stem cells
+  GSE224438    n=10  Mus musculus             Single-cell gene expression of the subventricular zone (SVZ) neurogenic niche after partial reprogramming
+  GSE254389    n=18  Homo sapiens             NEUROD1 efficiently converts peripheral blood cells into neurons with partial reprogramming by pluripotency fa
+  GSE176206    n=18  Mus musculus             Partial reprogramming restores youthful gene expression through transient suppression of cell identity
+  GSE190986    n=180  Mus musculus             In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice
+  GSE190985    n=60  Mus musculus             In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (10 month
+  GSE190984    n=60  Mus musculus             In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (1 months
+  GSE190983    n=60  Mus musculus             In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (7 months
+  GSE190665    n=168  Rattus norvegicus; Homo  In vivo partial reprogramming in 4F mice
+  GSE122763    n=6  Mus musculus             Partial reprogramming of melanoma cells confers drug resistance and increased vulnerability to calcium channel
+  GSE122402    n=6  Mus musculus             Partial reprogramming of melanoma cells confers drug resistance and increased vulnerability to calcium channel
+  GSE122399    n=12  Mus musculus             Partial reprogramming of melanoma cells confers drug resistance and increased vulnerability to calcium channel
+==========================================================================================
+in vivo OSK + aging
+(OSK OR OSKM) AND (aging OR ageing) AND "in vivo" AND gse[Entry Type]
+  GEO returned 8 (showing 8)
+  GSE325735    n=839  Mus musculus; Homo sapie Transcriptomic reprogramming screen identifies SRSF1 as a central regulator of aging and lifespan
+  GSE300477    n=1  Homo sapiens             A Single-Short Partial Reprogramming of the Endothelial Cells in vivo decreases Blood Pressure and Vascular Co
+  GSE298954    n=40  Mus musculus             A Single-Short Partial Reprogramming of the Endothelial Cells decreases Blood Pressure via attenuation of EndM
+  GSE245949    n=24  Mus musculus; Homo sapie Failed reprogramming of transformed cells due to induction of apoptosis and senescence impairs tumor progressi
+  GSE231853    n=60  Mus musculus             Initiation Phase Cellular Reprogramming Rejuvenates DNA Damage Repair Defect In The Ercc1 Accelerated Aging Mo
+  GSE190985    n=60  Mus musculus             In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (10 month
+  GSE190984    n=60  Mus musculus             In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (1 months
+  GSE190983    n=60  Mus musculus             In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (7 months
+
+SOFT fetch for 35 extra accessions: ['GSE122399', 'GSE122402', 'GSE122763', 'GSE176206', 'GSE190665', 'GSE190983', 'GSE190984', 'GSE190985', 'GSE190986', 'GSE198362', 'GSE201710', 'GSE224438', 'GSE231853', 'GSE245385', 'GSE254389', 'GSE274988', 'GSE276656', 'GSE297233', 'GSE297234', 'GSE298954', 'GSE300477', 'GSE304037', 'GSE304038', 'GSE304039', 'GSE304040', 'GSE304041', 'GSE304042', 'GSE304043', 'GSE304044', 'GSE307031', 'GSE325477', 'GSE325478', 'GSE325620', 'GSE325621', 'GSE325735']
+
+GSE122399 | Mus musculus | n=12 | Expression profiling by array | PMID 32063604
+  Partial reprogramming of melanoma cells confers drug resistance and increased vulnerability to calcium channel antagonists [C790 cells]
+  Our aim is to compare whole-genome expression profiles of partially reprogrammed C790 melanoma murine cells ( - dox vs + dox) after treatment with trametinib, in order to identify potential candidates related with drug resistance.
+
+GSE122402 | Mus musculus | n=6 | Expression profiling by array | PMID 32063604
+  Partial reprogramming of melanoma cells confers drug resistance and increased vulnerability to calcium channel antagonists [4434 cells]
+  Our aim is to compare whole-genome expression profiles of partially reprogrammed 4434 melanoma murine cells after induction of stem cell related genes (+ dox vs -dox)
+
+GSE122763 | Mus musculus | n=6 | Expression profiling by array | PMID 32063604
+  Partial reprogramming of melanoma cells confers drug resistance and increased vulnerability to calcium channel antagonists
+  Our aim is to compare whole-genome expression profiles of partially reprogrammed C790 melanoma murine cells after induction of stem cell related genes (+ dox vs -dox)
+
+GSE176206 | Mus musculus | n=18 | Expression profiling by high throughput sequencing | PMID 35690067
+  Partial reprogramming restores youthful gene expression through transient suppression of cell identity
+  Transient induction of pluripotent reprogramming factors has been reported to reverse some features of aging in mammalian cells and tissues. However, the impact of transient reprogramming on somatic cell identity programs and the necessity of individual pluripotency factors remain unknown. Here, we mapped trajectories of transient reprogramming in young and aged cells from multiple murine cell typ
+
+GSE190665 | Mus musculus | n=168 | Methylation profiling by array | PMID 37563227; 38848365
+  In vivo partial reprogramming in 4F mice
+  Partial reprogramming by expression of reprogramming factors (Oct4, Sox2, Klf4 and cMyc) for short periods of time restores a youthful epigenetic signature to aging cells and extends the lifespan of a premature aging mouse model. However, the effects of longer-term partial reprogramming in physiologically aging wild-type mice are unknown. Here, we have performed various long-term partial reprogram
+
+GSE190983 | Mus musculus | n=60 | Expression profiling by high throughput sequencing | PMID none
+  In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (7 months; long-term treatment)
+  Various length of in vivo 4F (four Yamanaka factors) partial reprogramming protocols were performed to evaluate effects of longer-term partial reprogramming in physiologically aging wild-type mice. Here, long-term (7 months) partial reprogramming was induced and transcriptional changes in various tissues were compared to age-matched, untreated mice.
+
+GSE190984 | Mus musculus | n=60 | Expression profiling by high throughput sequencing | PMID none
+  In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (1 months; sort-term treatment)
+  Various length of in vivo 4F (four Yamanaka factors) partial reprogramming protocols were performed to evaluate effects of longer-term partial reprogramming in physiologically aging wild-type mice. Here, short-term (1 months) partial reprogramming was induced and transcriptional changes in various tissues were compared to age-matched, untreated mice.
+
+GSE190985 | Mus musculus | n=60 | Expression profiling by high throughput sequencing | PMID none
+  In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (10 months; long-term treatment)
+  Various length of in vivo 4F (four Yamanaka factors) partial reprogramming protocols were performed to evaluate effects of longer-term partial reprogramming in physiologically aging wild-type mice. Here, long-term (10 months) partial reprogramming was induced and transcriptional changes in various tissues were compared to age-matched, untreated mice.
+
+GSE190986 | Mus musculus | n=180 | Expression profiling by high throughput sequencing | PMID none
+  In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice
+  This SuperSeries is composed of the SubSeries listed below.
+
+GSE198362 | Homo sapiens | n=14 | Expression profiling by high throughput sequencing | PMID 36306781
+  Cell Autonomous Lipid Handling Defects in Stargardt iPS Cell-Derived Retinal Pigment Epithelium Cells
+  Stargardt retinopathy is an inherited form of macular degeneration caused by mutations in gene ABCA4 and characterized by the accumulation of lipid-rich deposits in the retinal pigment epithelium (RPE), RPE atrophy, and photoreceptor cell death. Inadequate mechanistic insights into pathophysiological changes occurring in Stargardt RPE have contributed to its lacking treatments. Here we show that A
+
+GSE201710 | Homo sapiens; Mus musculus | n=49 | Expression profiling by high throughput sequencing | PMID 39259812
+  Targeted partial reprogramming of age-associated cell states improves markers of health in mouse models of aging
+  The study aims to explore the effects of CDKN2A-OSK expression across various tissues and human primary cells using next-generation sequencing. Mouse tissues and human cultured cells were collected at specific time points, followed by RNA extraction and next-generation sequencing. The sequencing data for mouse RNA were aligned to the mm9 genome, while the human RNA data were aligned to the Hg38 ge
+
+GSE224438 | Mus musculus | n=10 | Expression profiling by high throughput sequencing | PMID 38553564
+  Single-cell gene expression of the subventricular zone (SVZ) neurogenic niche after partial reprogramming
+  Partial reprogramming has the potential to reverse age-related decline in some tissues. Its impact on the cell types within the aging brain, particularly the subventricular zone neurogenic niche, is unknown.
+
+GSE231853 | Mus musculus | n=60 | Expression profiling by high throughput sequencing | PMID 38322248
+  Initiation Phase Cellular Reprogramming Rejuvenates DNA Damage Repair Defect In The Ercc1 Accelerated Aging Mouse Model
+  Unlike aging somatic cells, which exhibit a decline in molecular fidelity and eventually reach a state of replicative senescence, pluripotent stem cells can indefinitely replenish themselves while retaining full homeostatic capacity. The conferment of beneficial -pluripotency related traits via in vivo partial cellular reprogramming (IVPR) significantly extends lifespan and restores aging phenotyp
+
+GSE245385 | Mus musculus | n=65 | Expression profiling by high throughput sequencing | PMID 38553564
+  Impact of partial reprogramming, aging, and differentiation on primary neural stem cells
+  Partial reprogramming is of interest as a potential strategy to improve or erase aging hallmarks. The mechanisms underlying its effect on specific cell types remain unknown. Here, we investigate early transcriptional changes that could mediate the effects of reprogramming on old neural stem cells (NSCs) and their differentiation.
+
+GSE254389 | Homo sapiens | n=18 | Expression profiling by high throughput sequencing | PMID none
+  NEUROD1 efficiently converts peripheral blood cells into neurons with partial reprogramming by pluripotency factors
+  The direct reprogramming of cells has tremendous potential in in vitro neurological studies. Previous attempts to convert blood cells into induced neurons have presented several challenges, necessitating the development of a less invasive, efficient, rapid, and convenient approach. The current study introduces an optimized method for converting somatic cells into neurons using a nonsurgical approa
+
+GSE274988 | Mus musculus | n=3 | Expression profiling by high throughput sequencing | PMID 42248561
+  Enhanced liver regeneration via targeted mRNA delivery for partial in vivo reprogramming
+  Recent studies suggest that injury-induced dedifferentiation, which leads to the formation of âinjury-responsive cellsâ, contributes significantly to tissue repair across various organs, including the liver. Utilizing Yamanaka factors (Oct4, Sox2, Klf4, and c-Myc: OSKM) for in vivo partial reprogramming generates âinjury-responsive cellsâ in the intestine, mirroring those derived from inju
+
+GSE276656 | Mus musculus | n=20 | Expression profiling by high throughput sequencing; Genome binding/occupancy profiling by high throughput sequencing | PMID 41672073
+  Gene expression + ATAC multiome profiling of mPFC engram cells after OSK partial reprogramming
+  Counteracting cognitive decline is an important goal in regenerative medicine. Recently, partial cellular reprogramming has emerged as a promising strategy to restore cellular function and promote tissue regeneration, but whether this approach can also reverse cognitive frailty is not known. In old mice and mouse models of Alzheimerâs Disease (AD) engram cells responsible for memory formation ar
+
+GSE297233 | Homo sapiens | n=8 | Expression profiling by high throughput sequencing | PMID 40816266
+  Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [RNA-seq]
+  The loss of cellular and tissue identity is a hallmark of aging and numerous diseases, but the underlying mechanisms are not well understood. Our analysis of gene expression data from over 40 human tissues and 20 diseases reveals a pervasive upregulation of mesenchymal genes across multiple cell types, along with an altered composition of stromal cell populations, denoting a âmesenchymal driftâ
+
+GSE297234 | Homo sapiens | n=8 | Expression profiling by high throughput sequencing | PMID 40816266
+  Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]
+  The loss of cellular and tissue identity is a hallmark of aging and numerous diseases, but the underlying mechanisms are not well understood. Our analysis of gene expression data from over 40 human tissues and 20 diseases reveals a pervasive upregulation of mesenchymal genes across multiple cell types, along with an altered composition of stromal cell populations, denoting a âmesenchymal driftâ
+
+GSE298954 | Mus musculus | n=40 | Other | PMID none
+  A Single-Short Partial Reprogramming of the Endothelial Cells decreases Blood Pressure via attenuation of EndMT in Hypertensive Mice
+  Small artery remodeling and endothelial dysfunction are hallmarks of hypertension. Evidence supports a likely causal association between cardiovascular diseases and endothelial-to-mesenchymal transition (EndMT), a cellular transdifferentiation process in which endothelial cells (ECs) partially lose their identity and acquire mesenchymal phenotypes. EC reprogramming represents an innovative strateg
+
+GSE300477 | Homo sapiens | n=1 | Expression profiling by high throughput sequencing | PMID none
+  A Single-Short Partial Reprogramming of the Endothelial Cells in vivo decreases Blood Pressure and Vascular Contractility Through the Attenuation of Endothelial-to-Mesenchymal Transition in Male Hypertensive Mice
+  Endothelial cell (EC) reprogramming represents an innovative strategy in regenerative medicine to prevent deleterious effects induced by cardiovascular diseases. Here, we showed for the first time, that a single-short partial reprogramming of ECs, via the overexpression of three master transcription factors Oct-3/4, Sox-2, and Klf-4 (OSK), was able to bring ECs back to a youthful phenotype in hype
+
+GSE304037 | Mus musculus | n=42 | Genome binding/occupancy profiling by high throughput sequencing | PMID none
+  Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_ATAC-seq_1]
+  OCT4, SOX2, and KLF4 (OSK) Yamanaka factors can reverse age-related epigenetic changes, yet alternate mechanisms by which they promote tissue resilience remain poorly understood. Oxidative stress contributes to retinal pigmented epithelium (RPE) degeneration in age-related macular degeneration. Here, we show that OSK expression in RPE promotes Tet2-independent oxidative resilience through acute, m
+
+GSE304038 | Mus musculus | n=18 | Expression profiling by high throughput sequencing | PMID none
+  Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_1]
+  OCT4, SOX2, and KLF4 (OSK) Yamanaka factors can reverse age-related epigenetic changes, yet alternate mechanisms by which they promote tissue resilience remain poorly understood. Oxidative stress contributes to retinal pigmented epithelium (RPE) degeneration in age-related macular degeneration. Here, we show that OSK expression in RPE promotes Tet2-independent oxidative resilience through acute, m
+
+GSE304039 | Homo sapiens | n=6 | Expression profiling by high throughput sequencing | PMID none
+  Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_2]
+  OCT4, SOX2, and KLF4 (OSK) Yamanaka factors can reverse age-related epigenetic changes, yet alternate mechanisms by which they promote tissue resilience remain poorly understood. Oxidative stress contributes to retinal pigmented epithelium (RPE) degeneration in age-related macular degeneration. Here, we show that OSK expression in RPE promotes Tet2-independent oxidative resilience through acute, m
+
+GSE304040 | Mus musculus | n=24 | Expression profiling by high throughput sequencing | PMID none
+  Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_3]
+  OCT4, SOX2, and KLF4 (OSK) Yamanaka factors can reverse age-related epigenetic changes, yet alternate mechanisms by which they promote tissue resilience remain poorly understood. Oxidative stress contributes to retinal pigmented epithelium (RPE) degeneration in age-related macular degeneration. Here, we show that OSK expression in RPE promotes Tet2-independent oxidative resilience through acute, m
+
+GSE304041 | Homo sapiens | n=12 | Expression profiling by high throughput sequencing | PMID none
+  Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_4]
+  OCT4, SOX2, and KLF4 (OSK) Yamanaka factors can reverse age-related epigenetic changes, yet alternate mechanisms by which they promote tissue resilience remain poorly understood. Oxidative stress contributes to retinal pigmented epithelium (RPE) degeneration in age-related macular degeneration. Here, we show that OSK expression in RPE promotes Tet2-independent oxidative resilience through acute, m
+
+GSE304042 | Homo sapiens | n=11 | Expression profiling by high throughput sequencing | PMID none
+  Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_5]
+  OCT4, SOX2, and KLF4 (OSK) Yamanaka factors can reverse age-related epigenetic changes, yet alternate mechanisms by which they promote tissue resilience remain poorly understood. Oxidative stress contributes to retinal pigmented epithelium (RPE) degeneration in age-related macular degeneration. Here, we show that OSK expression in RPE promotes Tet2-independent oxidative resilience through acute, m
+
+GSE304043 | Mus musculus | n=7 | Expression profiling by high throughput sequencing | PMID none
+  Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_6]
+  OCT4, SOX2, and KLF4 (OSK) Yamanaka factors can reverse age-related epigenetic changes, yet alternate mechanisms by which they promote tissue resilience remain poorly understood. Oxidative stress contributes to retinal pigmented epithelium (RPE) degeneration in age-related macular degeneration. Here, we show that OSK expression in RPE promotes Tet2-independent oxidative resilience through acute, m
+
+GSE304044 | Homo sapiens; Mus musculus | n=120 | Expression profiling by high throughput sequencing; Genome binding/occupancy profiling by high throughput sequencing | PMID none
+  Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision
+  This SuperSeries is composed of the SubSeries listed below.
+
+GSE307031 | Mus musculus | n=6 | Other | PMID none
+  Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mechanisms mediating natural retinal aging [Mouse_Xenium]
+  We performed integrated single-cell RNA- and ATAC-Seq analyses of the retina and retinal pigment epithelium (RPE) across the natural lifespan in zebrafish, mice, and humans. By profiling gene expression and chromatin accessibility, we identified extensive cell type- and species-specific aging-dependent changes, with a much smaller number of broadly expressed and conserved genes that include regula
+
+GSE325477 | Mus musculus | n=17 | Genome binding/occupancy profiling by high throughput sequencing | PMID none
+  Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mechanisms mediating natural retinal aging [Mouse_multiome_scATAC]
+  Biological age is a major risk factor in the development of common degenerative retinal diseases such as age-related macular degeneration and glaucoma. To systematically characterize molecular mechanisms underlying retinal aging, we performed integrated single- cell RNA- and ATAC-Seq analyses of the retina and retinal pigment epithelium (RPE) across the natural lifespan in zebrafish, mice, and hum
+
+GSE325478 | Mus musculus | n=18 | Expression profiling by high throughput sequencing | PMID none
+  Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mechanisms mediating natural retinal aging [Mouse_multiome_scRNA]
+  Biological age is a major risk factor in the development of common degenerative retinal diseases such as age-related macular degeneration and glaucoma. To systematically characterize molecular mechanisms underlying retinal aging, we performed integrated single- cell RNA- and ATAC-Seq analyses of the retina and retinal pigment epithelium (RPE) across the natural lifespan in zebrafish, mice, and hum
+
+GSE325620 | Danio rerio | n=14 | Expression profiling by high throughput sequencing | PMID none
+  Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mechanisms mediating natural retinal aging [Zebrafish_multiome RNA]
+  Biological age is a major risk factor in the development of common degenerative retinal diseases such as age-related macular degeneration and glaucoma. To systematically characterize molecular mechanisms underlying retinal aging, we performed integrated single- cell RNA- and ATAC-Seq analyses of the retina and retinal pigment epithelium (RPE) across the natural lifespan in zebrafish, mice, and hum
+
+GSE325621 | Danio rerio | n=13 | Genome binding/occupancy profiling by high throughput sequencing | PMID none
+  Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mechanisms mediating natural retinal aging [Zebrafish multiome_ATAC]
+  Biological age is a major risk factor in the development of common degenerative retinal diseases such as age-related macular degeneration and glaucoma. To systematically characterize molecular mechanisms underlying retinal aging, we performed integrated single- cell RNA- and ATAC-Seq analyses of the retina and retinal pigment epithelium (RPE) across the natural lifespan in zebrafish, mice, and hum
+
+GSE325735 | Homo sapiens; Mus musculus | n=839 | Expression profiling by high throughput sequencing | PMID none
+  Transcriptomic reprogramming screen identifies SRSF1 as a central regulator of aging and lifespan
+  Aging is characterized by progressive functional decline accompanied by distinct transcriptomic and epigenetic alterations. While partial reprogramming via Yamanaka factors can reverse these signatures and improve cell function, safety and efficacy concerns limit their in vivo application, necessitating novel age reversal factors. Here, we develop a functionally interpretable transcriptomic age pr

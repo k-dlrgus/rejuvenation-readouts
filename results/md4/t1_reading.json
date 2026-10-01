@@ -1,0 +1,54 @@
+{
+ "by_donor": {
+  "GM00731": {
+   "key": "both_lower",
+   "n_qualifying": 2,
+   "timepoints": [
+    3,
+    7
+   ],
+   "per_timepoint": [
+    {
+     "day": 3,
+     "key": "both_lower",
+     "text": "MD lower in PartialReprog than NonReprog and the frozen ruler lower too, both beating their nulls. Both instruments agree that partially reprogrammed cells read younger. Their claim is supported and our earlier negatives reflected the wrong test (a within-state trajectory with no baseline). GM00731 d3 PartialReprog vs NonReprog n_PR=5220 n_NR=348 MD \u0394mean=-0.34147022679488415 p_lower=0.004975124378109453 Cohen_d=-2.10407688578756 ruler \u0394mean=-0.4615273199823484 p_lower=0.004975124378109453 Cohen_d=-0.5769177381403222."
+    },
+    {
+     "day": 7,
+     "key": "both_lower",
+     "text": "MD lower in PartialReprog than NonReprog and the frozen ruler lower too, both beating their nulls. Both instruments agree that partially reprogrammed cells read younger. Their claim is supported and our earlier negatives reflected the wrong test (a within-state trajectory with no baseline). GM00731 d7 PartialReprog vs NonReprog n_PR=578 n_NR=1932 MD \u0394mean=-0.16091675133010636 p_lower=0.004975124378109453 Cohen_d=-1.3385320275469947 ruler \u0394mean=-0.3729116978678704 p_lower=0.004975124378109453 Cohen_d=-0.4240641770694765."
+    }
+   ],
+   "text": "MD lower in PartialReprog than NonReprog and the frozen ruler lower too, both beating their nulls. Both instruments agree that partially reprogrammed cells read younger. Their claim is supported and our earlier negatives reflected the wrong test (a within-state trajectory with no baseline). GM00731 d3 PartialReprog vs NonReprog n_PR=5220 n_NR=348 MD \u0394mean=-0.34147022679488415 p_lower=0.004975124378109453 Cohen_d=-2.10407688578756 ruler \u0394mean=-0.4615273199823484 p_lower=0.004975124378109453 Cohen_d=-0.5769177381403222. MD lower in PartialReprog than NonReprog and the frozen ruler lower too, both beating their nulls. Both instruments agree that partially reprogrammed cells read younger. Their claim is supported and our earlier negatives reflected the wrong test (a within-state trajectory with no baseline). GM00731 d7 PartialReprog vs NonReprog n_PR=578 n_NR=1932 MD \u0394mean=-0.16091675133010636 p_lower=0.004975124378109453 Cohen_d=-1.3385320275469947 ruler \u0394mean=-0.3729116978678704 p_lower=0.004975124378109453 Cohen_d=-0.4240641770694765."
+  },
+  "GM23815": {
+   "key": "both_lower",
+   "n_qualifying": 1,
+   "timepoints": [
+    10
+   ],
+   "per_timepoint": [
+    {
+     "day": 10,
+     "key": "both_lower",
+     "text": "MD lower in PartialReprog than NonReprog and the frozen ruler lower too, both beating their nulls. Both instruments agree that partially reprogrammed cells read younger. Their claim is supported and our earlier negatives reflected the wrong test (a within-state trajectory with no baseline). GM23815 d10 PartialReprog vs NonReprog n_PR=50 n_NR=1794 MD \u0394mean=-0.2947491712855021 p_lower=0.004975124378109453 Cohen_d=-3.7001463221212694 ruler \u0394mean=-0.7686614248183865 p_lower=0.004975124378109453 Cohen_d=-1.378699803086083."
+    }
+   ],
+   "text": "MD lower in PartialReprog than NonReprog and the frozen ruler lower too, both beating their nulls. Both instruments agree that partially reprogrammed cells read younger. Their claim is supported and our earlier negatives reflected the wrong test (a within-state trajectory with no baseline). GM23815 d10 PartialReprog vs NonReprog n_PR=50 n_NR=1794 MD \u0394mean=-0.2947491712855021 p_lower=0.004975124378109453 Cohen_d=-3.7001463221212694 ruler \u0394mean=-0.7686614248183865 p_lower=0.004975124378109453 Cohen_d=-1.378699803086083."
+  }
+ },
+ "primary_pair": [
+  "PartialReprog",
+  "NonReprog"
+ ],
+ "min_cells": 50,
+ "md3_status_withdrawn": "instruments_disagree_on_claim_population",
+ "md3_sentence": "Ruler does not decline in the pooled PartialReprog state while MD does, both with their own nulls. The instruments disagree on exactly the population the published claim concerns. No winner is declared.",
+ "md2_instruments_disagree": "MD moves per cluster, the frozen ruler does not. The instruments disagree on the same cells. What would settle it: an independent fibroblast age instrument scored on these same Louvain clusters, or the authors' Seurat/sctransform object with the frozen ruler projected onto it. No winner is declared.",
+ "md2_negative_holds": "No cluster at any resolution shows p \u2264 0.05. The per-cluster negative holds and is not a resolution artifact. The frozen ruler does not move in these cells at any granularity tested.",
+ "fibro_stage2": "age score does not decline \u2192 the ruler reads a static donor property, not a modifiable state. Step 3 is not supported by this data.",
+ "what_would_settle": "An independent fibroblast age instrument scored on these same Louvain-labelled cells at the same donor \u00d7 timepoint, or the authors' Seurat v5 / sctransform v2 object with the frozen ruler projected onto the same PartialReprog vs NonReprog split.",
+ "effect_size": "cohens_d_pooled_nminus1",
+ "delta_definition": "mean(state_A) - mean(state_B)",
+ "lower_rule": "delta_mean < 0 and p_mean_lower <= 0.05"
+}

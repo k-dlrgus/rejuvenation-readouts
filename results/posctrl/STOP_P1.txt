@@ -1,0 +1,5 @@
+stop_P1=True
+boot_median_angle=41.336132228431666
+transfer_H_to_M=0.5117665952957187
+transfer_M_to_H=0.35822098443172434
+reason=C2a sex control failed L2 bars; pipeline suspect

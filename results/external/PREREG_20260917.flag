@@ -1,0 +1,24 @@
+Written **before any DLPFC fit or SEA-AD projection**, 2026-09-17. No threshold in this block is re-tuned after numbers exist.
+
+FINDINGS_POSCTRL.md Supersession 2–3: the DLPFC age direction transfers between HBCC and MSSM as Pearson r (gene_ridge r +0.568 / +0.578; identity-residualized r +0.573 / +0.576; n_perm=200). Uncalibrated transfer R² is a calibration artifact. FINDINGS_GTEX.md: a stable bulk cortex age direction exists in GTEx BA9 (held-out r) and is not driven by recorded logistics.
+
+This cell asks a different question: does the **frozen** DLPFC direction, trained on all 233 DLPFC donors and never fit on SEA-AD, predict chronological age in SEA-AD single-nucleus MTG (Allen Institute; a third bank, region, and lab)?
+
+Two directions are frozen on all 233 DLPFC donors, per cell type, before any SEA-AD score is computed:
+- **raw ridge** — global z-score, per-type SVD-LOO ridge age direction (same fitter as POSCTRL gene_ridge / TARGET age companion).
+- **identity-residualized ridge** — the G2c / FINDINGS_GEOMETRY Part C 0.317→0.300 fit: type-centroid identity basis on the globally z-scored matrix, residualize, refit ridge age per type.
+
+SEA-AD donor × mapped-type pseudobulks use the same log2(CPM+1) normalization as the DLPFC Phase-1 matrix (`decomp.normalize_logcpm`). Gene overlap is reported. Missing DLPFC genes are left at the DLPFC mean (z=0) so the frozen vector is not rewritten.
+
+**Primary cell:** donors with no or low AD pathology, using the pathology field frozen below from Stage 0 (CERAD, Braak, or ADNC/overall pathology score; not `disease`).
+**Secondary cell:** all mapped donors, pathology score as a covariate (partial Pearson r: residualize score and age on the pathology score).
+
+Metric: Pearson r vs chronological age. Donor-level permutation null n_perm=200 (X held fixed; each cell starts a fresh Generator on seed 20260914). Donor-bootstrap 95% percentile CI on the median-over-types r, B=200, seed 20260918. Also report Spearman ρ, calibrated R² (intercept and slope refit on SEA-AD), and uncalibrated R² (DLPFC 1-D calibration applied to SEA-AD). Aggregation: median over mapped cell types with n≥8 donors (POSCTRL S2/S3). Angle is not a gate.
+
+**Pass = r > 0 with permutation-null r ≤ 0.05 in the primary cell.**
+
+Pathology field frozen from Stage 0 (not chosen after seeing r):
+- field: `ADNC`
+- source file: `https://datasets.cellxgene.cziscience.com/732b4aa7-e441-4196-b05e-127433425613.h5ad`
+- no/low levels (primary): ['low', 'not ad', 'reference']
+- numeric encoding for the covariate cell: ADNC_or_overall declared ordinal table

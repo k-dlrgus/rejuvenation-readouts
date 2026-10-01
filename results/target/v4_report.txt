@@ -1,0 +1,82 @@
+====================================================================================================
+TARGET V4 — trustworthiness  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO GENE SELECTION: every gene in the Phase-1 matrix enters every model with a weight.
+NO perturbation data. No TF Atlas. Expression space only.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+Working space: global train z-score; ridge coefficients live in that space (no second per-type z-score).
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[V4a] sites={'H': 120, 'M': 113}
+   fit on H → test M
+      median-over-types R²=-0.213
+      null (20 train-age shuffles)...
+      null mean=-1.349  p=0.048
+   fit on M → test H
+      median-over-types R²=-0.499
+      null (20 train-age shuffles)...
+      null mean=-1.587  p=0.048
+[V4b] young (age<50): n_donors=102  rows=1510  age 20–49
+      old   (age>=50): n_donors=131  rows=1813  age 50–89
+      young sites={'H': 75, 'M': 27}  old sites={'H': 45, 'M': 86}
+      median angle young-TARGET vs old-TARGET = 86.1°
+      consensus young vs old angle = 82.1°  (young PC1=0.169, old PC1=0.182)
+      young→old median R²=-5.390  old→young median R²=-6.967
+[V4c] consensus top50+ mito/ribo/cellcycle = 0/1/1
+      consensus top50- mito/ribo/cellcycle = 0/1/0
+   Enrichr consensus_pos (n=50)
+   Enrichr consensus_neg (n=50)
+   Enrichr mean_per_type_pos (n=50)
+   Enrichr mean_per_type_neg (n=50)
+   Enrichr oligodendrocyte_pos (n=50)
+   Enrichr oligodendrocyte_neg (n=50)
+   Enrichr astrocyte_pos (n=50)
+   Enrichr astrocyte_neg (n=50)
+   Enrichr microglial cell_pos (n=50)
+   Enrichr microglial cell_neg (n=50)
+   Enrichr L2/3 intratelencephalic projecting glutamatergic neuron_pos (n=50)
+   Enrichr L2/3 intratelencephalic projecting glutamatergic neuron_neg (n=50)
+      Enrichr terms with aging tokens & p<0.05: 25
+         L2/3 intratelencephalic projecting glutamatergic neuron_neg | GO_Biological_Process_2023: Response To Leptin (GO:0044321)  p=1.70e-04
+         L2/3 intratelencephalic projecting glutamatergic neuron_pos | GO_Biological_Process_2023: Negative Regulation Of Nuclear Division (GO:0051784)  p=2.72e-04
+         consensus_pos | Reactome_2022: Diseases Of DNA Repair R-HSA-9675135  p=2.81e-04
+         microglial cell_pos | Reactome_2022: Nucleotide-binding Domain, Leucine Rich Repeat Containing NLR Signaling Pathways R-HSA-168643  p=3.15e-04
+         astrocyte_pos | Reactome_2022: Eicosanoids R-HSA-211979  p=3.98e-04
+         microglial cell_pos | GO_Biological_Process_2023: Lipid Oxidation (GO:0034440)  p=4.69e-04
+         microglial cell_pos | GO_Biological_Process_2023: Regulation Of Oxidoreductase Activity (GO:0051341)  p=4.69e-04
+         astrocyte_pos | Reactome_2022: Fatty Acids R-HSA-211935  p=6.30e-04
+         consensus_pos | Reactome_2022: Impaired BRCA2 Binding To PALB2 R-HSA-9709603  p=1.63e-03
+         oligodendrocyte_neg | Reactome_2022: Cytosolic tRNA Aminoacylation R-HSA-379716  p=1.63e-03
+         L2/3 intratelencephalic projecting glutamatergic neuron_neg | GO_Biological_Process_2023: Cellular Response To Hormone Stimulus (GO:0032870)  p=1.68e-03
+         consensus_pos | Reactome_2022: Defective HDR Thru Homologous Recombination (HRR) Due To BRCA1 Loss-Of-Function R-HSA-9701192  p=1.77e-03
+         oligodendrocyte_neg | GO_Biological_Process_2023: Regulation Of Transmembrane Transport (GO:0034762)  p=2.90e-03
+         oligodendrocyte_pos | GO_Biological_Process_2023: Negative Regulation Of Endocytosis (GO:0045806)  p=3.08e-03
+         oligodendrocyte_neg | GO_Biological_Process_2023: Membrane Protein Proteolysis (GO:0033619)  p=3.27e-03
+         L2/3 intratelencephalic projecting glutamatergic neuron_pos | GO_Biological_Process_2023: Negative Regulation Of Cell Cycle Process (GO:0010948)  p=3.27e-03
+         oligodendrocyte_pos | GO_Biological_Process_2023: Negative Regulation Of Endothelial Cell Proliferation (GO:0001937)  p=3.86e-03
+         oligodendrocyte_pos | GO_Biological_Process_2023: RNA Stabilization (GO:0043489)  p=3.86e-03
+         L2/3 intratelencephalic projecting glutamatergic neuron_neg | KEGG_2021_Human: Tryptophan metabolism  p=4.95e-03
+         mean_per_type_pos | GO_Biological_Process_2023: DNA Recombination (GO:0006310)  p=4.95e-03
+         mean_per_type_pos | Reactome_2022: Diseases Of DNA Repair R-HSA-9675135  p=7.22e-03
+         mean_per_type_neg | GO_Biological_Process_2023: Regulation Of Peptide Hormone Secretion (GO:0090276)  p=7.50e-03
+         astrocyte_pos | GO_Biological_Process_2023: Icosanoid Metabolic Process (GO:0006690)  p=7.50e-03
+         consensus_neg | GO_Biological_Process_2023: Regulation Of Peptide Hormone Secretion (GO:0090276)  p=7.50e-03
+         L2/3 intratelencephalic projecting glutamatergic neuron_pos | GO_Biological_Process_2023: Regulation Of Mitotic Nuclear Division (GO:0007088)  p=8.65e-03
+         astrocyte_neg | Reactome_2022: Integrin Cell Surface Interactions R-HSA-216083  p=1.19e-02
+         mean_per_type_pos | GO_Biological_Process_2023: Regulation Of mRNA Export From Nucleus (GO:0010793)  p=1.24e-02
+         mean_per_type_neg | GO_Biological_Process_2023: Pronephros Development (GO:0048793)  p=1.24e-02
+         mean_per_type_neg | GO_Biological_Process_2023: Positive Regulation Of Microglial Cell Activation (GO:1903980)  p=1.24e-02
+         microglial cell_neg | GO_Biological_Process_2023: Regulation Of Relaxation Of Cardiac Muscle (GO:1901897)  p=1.24e-02
+         astrocyte_neg | GO_Biological_Process_2023: Positive Regulation Of Microglial Cell Activation (GO:1903980)  p=1.24e-02
+         consensus_neg | GO_Biological_Process_2023: Pronephros Development (GO:0048793)  p=1.24e-02
+         consensus_neg | GO_Biological_Process_2023: Positive Regulation Of Epithelial Cell Differentiation Involved In Kidney Development (GO:2000698)  p=1.24e-02
+         microglial cell_neg | GO_Biological_Process_2023: Parallel Actin Filament Bundle Assembly (GO:0030046)  p=1.49e-02
+         microglial cell_neg | GO_Biological_Process_2023: Positive Regulation Of Blood Circulation (GO:1903524)  p=1.49e-02
+         astrocyte_neg | GO_Biological_Process_2023: Vitamin A Metabolic Process (GO:0006776)  p=1.49e-02
+[V4] wrote results/target/v4_*
+[V4] done.

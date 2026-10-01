@@ -1,0 +1,39 @@
+[obs] 8ae4471a-2e70-47b5-bc42-4f0df26a9996.h5ad n_cells=108,440 donor_ids=221
+[audit] n_cells_used and age match all 93 scored pseudobulks
+[Reynolds_2021] scored donor_ids=23 ages=[np.float64(42.0)] orig Donor identifier=['S4', 'S5', 's1', 's2', 's3'] author Age=['25-60 y'] accessions unique=23
+   Reynolds_2021::S4: 5 donor_ids, n_cells_used=2975
+   Reynolds_2021::S5: 5 donor_ids, n_cells_used=1710
+   Reynolds_2021::s1: 5 donor_ids, n_cells_used=977
+   Reynolds_2021::s2: 4 donor_ids, n_cells_used=1214
+   Reynolds_2021::s3: 4 donor_ids, n_cells_used=451
+[check] ruler.rho: stored=0.455126666333 recomputed=0.455126666333 |diff|=0.00e+00 (ta_cxg_a19d1667_result.json)
+[check] ruler.rho_null: stored=-0.00319574459649 recomputed=-0.00319574459649 |diff|=0.00e+00 (ta_cxg_a19d1667_result.json)
+[check] ruler.rho_p: stored=0.00497512437811 recomputed=0.00497512437811 |diff|=0.00e+00 (ta_cxg_a19d1667_result.json)
+[check] ruler.rho_ci_lo: stored=0.252681689522 recomputed=0.252681689522 |diff|=0.00e+00 (ta_cxg_a19d1667_result.json)
+[check] ruler.rho_ci_hi: stored=0.605267697675 recomputed=0.605267697675 |diff|=0.00e+00 (ta_cxg_a19d1667_result.json)
+[check] cxg_ruler_minus_MD.rho_ruler: stored=0.455126666333 recomputed=0.455126666333 |diff|=5.55e-17 (t2_delta_rho.csv)
+[check] cxg_ruler_minus_MD.rho_other: stored=0.253403748004 recomputed=0.253403748004 |diff|=0.00e+00 (t2_delta_rho.csv)
+[check] cxg_ruler_minus_MD.delta_rho: stored=0.201722918329 recomputed=0.201722918329 |diff|=8.33e-17 (t2_delta_rho.csv)
+[check] cxg_ruler_minus_MD.delta_ci_lo: stored=0.00575570295697 recomputed=0.00575570295697 |diff|=4.68e-17 (t2_delta_rho.csv)
+[check] cxg_ruler_minus_MD.delta_ci_hi: stored=0.440429497658 recomputed=0.440429497658 |diff|=5.55e-17 (t2_delta_rho.csv)
+[check] cxg_ruler_minus_MD.n_donors: stored=93 recomputed=93 |diff|=0.00e+00 (t2_delta_rho.csv)
+[check] cxg_ruler_minus_S3.rho_ruler: stored=0.455126666333 recomputed=0.455126666333 |diff|=5.55e-17 (t2_delta_rho.csv)
+[check] cxg_ruler_minus_S3.rho_other: stored=0.16061436372 recomputed=0.16061436372 |diff|=2.78e-17 (t2_delta_rho.csv)
+[check] cxg_ruler_minus_S3.delta_rho: stored=0.294512302613 recomputed=0.294512302613 |diff|=5.55e-17 (t2_delta_rho.csv)
+[check] cxg_ruler_minus_S3.delta_ci_lo: stored=0.107023547259 recomputed=0.107023547259 |diff|=1.39e-17 (t2_delta_rho.csv)
+[check] cxg_ruler_minus_S3.delta_ci_hi: stored=0.487073537523 recomputed=0.487073537523 |diff|=5.55e-17 (t2_delta_rho.csv)
+[check] cxg_ruler_minus_S3.n_donors: stored=93 recomputed=93 |diff|=0.00e+00 (t2_delta_rho.csv)
+[check] PASS max |diff|=8.33e-17
+[result] analysis=stored_reproduction_pseudobulk_as_donor, contrast=ruler_spearman, n_units=93, n_pseudobulks=93, rho=0.4551, rho_null=-0.0032, rho_p=0.0050, rho_ci_lo=0.2527, rho_ci_hi=0.6053
+[result] analysis=stored_reproduction_pseudobulk_as_donor, contrast=ruler_minus_MD_AddModuleScore, n_units=93, n_pseudobulks=93, rho_ruler=0.4551, rho_other=0.2534, delta_rho=0.2017, delta_ci_lo=0.0058, delta_ci_hi=0.4404, excludes_zero=True, favours=ruler
+[result] analysis=stored_reproduction_pseudobulk_as_donor, contrast=ruler_minus_age_up_minus_age_down, n_units=93, n_pseudobulks=93, rho_ruler=0.4551, rho_other=0.1606, delta_rho=0.2945, delta_ci_lo=0.1070, delta_ci_hi=0.4871, excludes_zero=True, favours=ruler
+[result] analysis=true_donor, contrast=ruler_spearman, n_units=65, n_pseudobulks=93, rho=0.4334, rho_null=-0.0031, rho_p=0.0050, rho_ci_lo=0.1744, rho_ci_hi=0.6103
+[result] analysis=true_donor, contrast=ruler_minus_MD_AddModuleScore, n_units=65, n_pseudobulks=93, rho_ruler=0.4334, rho_other=0.2620, delta_rho=0.1714, delta_ci_lo=-0.1176, delta_ci_hi=0.4125, excludes_zero=False, favours=None
+[result] analysis=true_donor, contrast=ruler_minus_age_up_minus_age_down, n_units=65, n_pseudobulks=93, rho_ruler=0.4334, rho_other=0.0618, delta_rho=0.3716, delta_ci_lo=0.0944, delta_ci_hi=0.5953, excludes_zero=True, favours=ruler
+[result] analysis=true_donor_pseudobulk_ge30cells, contrast=ruler_spearman, n_units=64, n_pseudobulks=81, rho=0.4369, rho_null=-0.0015, rho_p=0.0050, rho_ci_lo=0.1897, rho_ci_hi=0.6232
+[result] analysis=true_donor_pseudobulk_ge30cells, contrast=ruler_minus_MD_AddModuleScore, n_units=64, n_pseudobulks=81, rho_ruler=0.4369, rho_other=0.2601, delta_rho=0.1767, delta_ci_lo=-0.1046, delta_ci_hi=0.4045, excludes_zero=False, favours=None
+[result] analysis=true_donor_pseudobulk_ge30cells, contrast=ruler_minus_age_up_minus_age_down, n_units=64, n_pseudobulks=81, rho_ruler=0.4369, rho_other=0.0551, delta_rho=0.3818, delta_ci_lo=0.0800, delta_ci_hi=0.6392, excludes_zero=True, favours=ruler
+[result] analysis=supplement_true_donor_excl_placeholder_age, contrast=ruler_spearman, n_units=57, n_pseudobulks=67, rho=0.4423, rho_null=-0.0090, rho_p=0.0050, rho_ci_lo=0.1466, rho_ci_hi=0.6559
+[result] analysis=supplement_true_donor_excl_placeholder_age, contrast=ruler_minus_MD_AddModuleScore, n_units=57, n_pseudobulks=67, rho_ruler=0.4423, rho_other=0.2685, delta_rho=0.1739, delta_ci_lo=-0.1500, delta_ci_hi=0.5068, excludes_zero=False, favours=None
+[result] analysis=supplement_true_donor_excl_placeholder_age, contrast=ruler_minus_age_up_minus_age_down, n_units=57, n_pseudobulks=67, rho_ruler=0.4423, rho_other=0.0569, delta_rho=0.3855, delta_ci_lo=0.1225, delta_ci_hi=0.6634, excludes_zero=True, favours=ruler
+[n] pseudobulks=93 true_donors=65 true_donors_ge30=64 pseudobulks_ge30=81 excl_placeholder_true_donors=57

@@ -1,0 +1,81 @@
+celltype,site,r2,mae,n,method,scheme,use_target
+GABAergic neuron,pooled,0.28295729911349854,11.864660519289536,179,pls1,within_site,True
+GABAergic neuron,H,0.04294341802452517,11.672962362787837,96,pls1,within_site,True
+GABAergic neuron,M,0.024013835338109413,12.086383688255358,83,pls1,within_site,True
+GABAergic neuron,mean_of_sites,0.03347862668131729,11.879673025521598,179,pls1,within_site,True
+L2/3 intratelencephalic projecting glutamatergic neuron,pooled,0.3167317448754988,11.947363831711945,220,pls1,within_site,True
+L2/3 intratelencephalic projecting glutamatergic neuron,H,0.11607821552018982,11.463220726981985,112,pls1,within_site,True
+L2/3 intratelencephalic projecting glutamatergic neuron,M,0.07507092020764661,12.449438162543016,108,pls1,within_site,True
+L2/3 intratelencephalic projecting glutamatergic neuron,mean_of_sites,0.09557456786391821,11.9563294447625,220,pls1,within_site,True
+L2/3-6 intratelencephalic projecting glutamatergic neuron,pooled,0.30003507813396413,11.979515675436373,215,pls1,within_site,True
+L2/3-6 intratelencephalic projecting glutamatergic neuron,H,0.10653290811340022,11.336955389088676,111,pls1,within_site,True
+L2/3-6 intratelencephalic projecting glutamatergic neuron,M,0.03512491927237393,12.6653252118267,104,pls1,within_site,True
+L2/3-6 intratelencephalic projecting glutamatergic neuron,mean_of_sites,0.07082891369288707,12.001140300457688,215,pls1,within_site,True
+L5/6 near-projecting glutamatergic neuron,pooled,0.1922265152142525,11.935630721517999,124,pls1,within_site,True
+L5/6 near-projecting glutamatergic neuron,H,0.042656654546770145,11.102474448848621,82,pls1,within_site,True
+L5/6 near-projecting glutamatergic neuron,M,-0.26663876520133045,13.562269158634397,42,pls1,within_site,True
+L5/6 near-projecting glutamatergic neuron,mean_of_sites,-0.11199105532728015,12.332371803741509,124,pls1,within_site,True
+L6 corticothalamic-projecting glutamatergic cortical neuron,pooled,0.24302767857716367,11.421722413043467,153,pls1,within_site,True
+L6 corticothalamic-projecting glutamatergic cortical neuron,H,0.10128476830573518,10.766304463598898,85,pls1,within_site,True
+L6 corticothalamic-projecting glutamatergic cortical neuron,M,-0.06964011397338044,12.24099484984918,68,pls1,within_site,True
+L6 corticothalamic-projecting glutamatergic cortical neuron,mean_of_sites,0.015822327166177375,11.50364965672404,153,pls1,within_site,True
+L6 intratelencephalic projecting glutamatergic neuron,pooled,0.2923981692696296,11.229481248964222,150,pls1,within_site,True
+L6 intratelencephalic projecting glutamatergic neuron,H,0.01920047134229219,11.067074151804091,86,pls1,within_site,True
+L6 intratelencephalic projecting glutamatergic neuron,M,0.015053781112622344,11.447715785773145,64,pls1,within_site,True
+L6 intratelencephalic projecting glutamatergic neuron,mean_of_sites,0.017127126227457268,11.257394968788617,150,pls1,within_site,True
+L6b glutamatergic neuron of the primary motor cortex,pooled,0.15244457013027346,11.301748069915002,109,pls1,within_site,True
+L6b glutamatergic neuron of the primary motor cortex,H,0.07704791662735644,10.505663540687534,73,pls1,within_site,True
+L6b glutamatergic neuron of the primary motor cortex,M,-0.3460042855502641,12.916030587515145,36,pls1,within_site,True
+L6b glutamatergic neuron of the primary motor cortex,mean_of_sites,-0.13447818446145382,11.71084706410134,109,pls1,within_site,True
+VIP GABAergic interneuron,pooled,0.2674065801981389,12.072850770781777,217,pls1,within_site,True
+VIP GABAergic interneuron,H,0.05458906570237876,11.917570596667767,112,pls1,within_site,True
+VIP GABAergic interneuron,M,0.022380758148651703,12.238482956503384,105,pls1,within_site,True
+VIP GABAergic interneuron,mean_of_sites,0.03848491192551523,12.078026776585576,217,pls1,within_site,True
+astrocyte,pooled,0.3439488719362148,11.429520904421693,229,pls1,within_site,True
+astrocyte,H,0.08975580914046666,11.196329220933883,117,pls1,within_site,True
+astrocyte,M,0.11393638565409392,11.673122930922348,112,pls1,within_site,True
+astrocyte,mean_of_sites,0.10184609739728029,11.434726075928115,229,pls1,within_site,True
+endothelial cell,pooled,0.2647589809185019,11.826215128629352,160,pls1,within_site,True
+endothelial cell,H,0.056377439333995416,11.319503958792724,109,pls1,within_site,True
+endothelial cell,M,0.016724310369243267,12.909186060240959,51,pls1,within_site,True
+endothelial cell,mean_of_sites,0.03655087485161934,12.114345009516843,160,pls1,within_site,True
+lamp5 GABAergic interneuron,pooled,0.22036020888348395,12.62050264795922,205,pls1,within_site,True
+lamp5 GABAergic interneuron,H,-0.02165895926725603,12.37851977867899,109,pls1,within_site,True
+lamp5 GABAergic interneuron,M,-0.030925229649237496,12.895254030787816,96,pls1,within_site,True
+lamp5 GABAergic interneuron,mean_of_sites,-0.026292094458246762,12.636886904733403,205,pls1,within_site,True
+microglial cell,pooled,0.3829320724217721,11.709807883404082,219,pls1,within_site,True
+microglial cell,H,0.08868829288609514,11.888374630010016,112,pls1,within_site,True
+microglial cell,M,0.2301371903947289,11.522896896302544,107,pls1,within_site,True
+microglial cell,mean_of_sites,0.15941274164041203,11.70563576315628,219,pls1,within_site,True
+oligodendrocyte,pooled,0.30900425745226445,11.985098386274684,232,pls1,within_site,True
+oligodendrocyte,H,0.02290296906361644,11.71900881763751,120,pls1,within_site,True
+oligodendrocyte,M,0.10306331832853699,12.270194352671655,112,pls1,within_site,True
+oligodendrocyte,mean_of_sites,0.06298314369607672,11.994601585154584,232,pls1,within_site,True
+oligodendrocyte precursor cell,pooled,0.311716171697097,11.82161101732301,232,pls1,within_site,True
+oligodendrocyte precursor cell,H,-0.020350927648044692,12.242424981045374,119,pls1,within_site,True
+oligodendrocyte precursor cell,M,0.15523208872451966,11.378452949332202,113,pls1,within_site,True
+oligodendrocyte precursor cell,mean_of_sites,0.06744058053823748,11.810438965188787,232,pls1,within_site,True
+pericyte,pooled,0.15502106935009075,12.20291925549191,136,pls1,within_site,True
+pericyte,H,-0.03697388988531003,12.138541864634044,90,pls1,within_site,True
+pericyte,M,-0.02101477574795796,12.32887502021382,46,pls1,within_site,True
+pericyte,mean_of_sites,-0.028994332816633994,12.233708442423932,136,pls1,within_site,True
+perivascular macrophage,pooled,-0.026795137559522786,11.569843583278518,24,pls1,within_site,True
+perivascular macrophage,H,-0.06616983088476514,11.408621225944263,22,pls1,within_site,True
+perivascular macrophage,M,,,2,pls1,within_site,True
+perivascular macrophage,mean_of_sites,-0.06616983088476514,11.408621225944263,24,pls1,within_site,True
+pvalb GABAergic interneuron,pooled,0.23730015842396213,12.504639340053929,209,pls1,within_site,True
+pvalb GABAergic interneuron,H,0.01505451694416371,12.006649293126342,110,pls1,within_site,True
+pvalb GABAergic interneuron,M,-0.007495112285407446,13.05796161441792,99,pls1,within_site,True
+pvalb GABAergic interneuron,mean_of_sites,0.0037797023293781318,12.532305453772132,209,pls1,within_site,True
+smooth muscle cell,pooled,-0.1045936104391696,12.868823452700596,12,pls1,within_site,True
+smooth muscle cell,H,-0.1045936104391696,12.868823452700596,12,pls1,within_site,True
+smooth muscle cell,M,,,0,pls1,within_site,True
+smooth muscle cell,mean_of_sites,-0.1045936104391696,12.868823452700596,12,pls1,within_site,True
+sst GABAergic interneuron,pooled,0.2902918180628765,11.724902849871969,206,pls1,within_site,True
+sst GABAergic interneuron,H,0.1124826029505015,11.206455704903338,111,pls1,within_site,True
+sst GABAergic interneuron,M,0.044458070557211515,12.330667408730049,95,pls1,within_site,True
+sst GABAergic interneuron,mean_of_sites,0.0784703367538565,11.768561556816692,206,pls1,within_site,True
+vascular leptomeningeal cell,pooled,0.19024265625447012,14.074020950141863,81,pls1,within_site,True
+vascular leptomeningeal cell,H,0.031339874752964625,12.741279069897946,60,pls1,within_site,True
+vascular leptomeningeal cell,M,-0.2282896430282586,17.881854893695905,21,pls1,within_site,True
+vascular leptomeningeal cell,mean_of_sites,-0.09847488413764699,15.311566981796926,81,pls1,within_site,True

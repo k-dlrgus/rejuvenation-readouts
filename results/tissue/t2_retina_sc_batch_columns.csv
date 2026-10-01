@@ -1,0 +1,15 @@
+column,n_levels,n_levels_ge2_donors,frac_donors_in_shared,aliased_with_donor,looks_technical,usable
+tissue,3,3,1.0,False,True,True
+assay,2,2,1.0,False,True,True
+sample_collection_year,2,2,1.0,False,True,True
+sequencing_platform,4,4,1.0,False,False,True
+study_name,4,4,1.0,False,False,True
+self_reported_ethnicity,2,2,1.0,False,False,True
+institute,2,2,1.0,False,False,True
+tissue_handling_interval,13,3,0.375,False,False,True
+suspension_type,1,1,1.0,False,True,False
+sample_preservation_method,1,1,1.0,False,True,False
+library_id,16,0,0.0,True,True,False
+sample_id,16,0,0.0,True,True,False
+age_nunique,1,1,1.0,False,False,False
+disease,1,1,1.0,False,False,False

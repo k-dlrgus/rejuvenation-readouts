@@ -1,0 +1,13 @@
+{
+ "path": "<repo>\\results\\fibro\\frozen_ruler_ridge_raw.npz",
+ "n_donors": 652,
+ "n_genes": 23485,
+ "alpha": 0.01,
+ "intercept": 52.352760736196316,
+ "n_finite_w": 23485,
+ "seed": 20260914,
+ "regime": "raw",
+ "method": "ridge",
+ "includes_D1": true,
+ "note": "trained on all GTEx fibroblast donors; not fit on GSE297234"
+}

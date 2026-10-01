@@ -1,0 +1,173 @@
+{
+ "seed": 20260914,
+ "boot_seed": 20260918,
+ "failures": [],
+ "fired_keys": [],
+ "report_flags": [
+  {
+   "key": "scale_unknown",
+   "message": "The units and log base of X are undeterminable from the file: uns is empty, X carries no unit attribute, var holds only mean/std/cv/fano/excess_cv with no unit statement, obs holds no unit statement, and the only bundled documentation in the folder is three plain gene-symbol lists. This is a REPORT-ONLY flag, not a stop. The Stage 2A/2B floors are magnitude-matched (they permute or re-use the same vector, so they are invariant to a global scale factor on X); the Stage 2C MDA is NOT invariant, because it scales the true young-minus-old direction to the median factor norm, and that norm moves with any global rescaling of X.",
+   "details": {
+    "uns_keys": [],
+    "obsm_keys": [],
+    "varm_keys": [],
+    "x_attrs": {
+     "encoding-type": "array",
+     "encoding-version": "0.2.0"
+    },
+    "x_attr_unit_hits": [],
+    "column_unit_hits": [],
+    "var_columns": [
+     "feature_types",
+     "genome",
+     "mean",
+     "in_matrix",
+     "std",
+     "cv",
+     "fano",
+     "pairwise_p_cost",
+     "mean_adjusted_pairwise_p_cost",
+     "excess_cv",
+     "pairwise_chosen",
+     "gene_id",
+     "gene_name"
+    ],
+    "obs_columns": [
+     "protospacer",
+     "target_gene",
+     "target_expr",
+     "active",
+     "cluster",
+     "cluster_name",
+     "cluster_description",
+     "gene_driven",
+     "sequence_driven",
+     "sequence_suffix",
+     "bulk_expr",
+     "expressed",
+     "p_expressed",
+     "de_genes",
+     "strength",
+     "cell_count",
+     "target_gene_id",
+     "masked_active",
+     "masked_cluster",
+     "masked_cluster_name",
+     "masked_cluster_description",
+     "masked_cluster_size",
+     "masked_cluster_num_genes",
+     "stricter_masked_cluster",
+     "stricter_masked_cluster_description",
+     "guide_identity"
+    ],
+    "bundled_txt_files": [
+     "hs27_lambert_tfs.txt",
+     "hs27_targets.txt",
+     "mean_pop_targets.txt"
+    ],
+    "bundled_txt_with_unit_words": [],
+    "var_mean_range": [
+     0.2000397890806198,
+     243.13070678710938
+    ],
+    "var_std_range": [
+     0.45594996213912964,
+     189.19163513183594
+    ],
+    "searched_for": "(?i)log2|log10|\\bln\\b|log[-_ ]?base|cpm|tpm|rpkm|fpkm|unit|normali[sz]|scale|fold[-_ ]?change|lfc",
+    "determinable": false,
+    "diag_spearman_meanabs_vs_var_mean": 0.6448417788047209,
+    "diag_spearman_meanabs_vs_var_std": 0.6836284843427785,
+    "diag_spearman_meanabs_over_std_vs_var_mean": -0.9912508423463984,
+    "diag_median_meanabs": 0.17825809569753606
+   }
+  },
+  {
+   "key": "coverage_low",
+   "message": "The chosen mapping (best_of_two_after_md3_idtype) matches 0.1228 of the frozen ruler's total absolute weight, which is below 0.25. The Stage 3 candidate table is titled exploratory and every candidate carries that word.",
+   "details": {
+    "mapping": "best_of_two_after_md3_idtype",
+    "n_matched": 4907,
+    "n_ruler": 23485,
+    "frac_genes": 0.20894187779433682,
+    "weight_matched": 13.535734524780253,
+    "weight_total": 110.26373532224551,
+    "weight_frac": 0.12275780867773163,
+    "n_source_cols_used": 4907,
+    "n_source_cols": 4914
+   }
+  }
+ ],
+ "status": "DONE",
+ "notes": [
+  {
+   "step": "Y2_singular",
+   "message": "Y2 at k=100: the young-donor covariance built on 56 fit donors has rank 55 < k=100, so the Mahalanobis metric is singular and undefined. No pseudo-inverse or ridge was substituted. Y2 is reported as undefined at this k; Y1 at the same k is unaffected.",
+   "details": {
+    "k": 100,
+    "n_fit": 56,
+    "rank": 55
+   }
+  },
+  {
+   "step": "stage2A_streaming",
+   "message": "Implementation decision forced by n_perm = 20,000 and fixed before any floor existed. SOUTH2 held every permuted delta in RAM (200 per factor and setting) and derived the floor and the permutation p from that array afterwards. 20,000 permuted deltas for 1,836 factors across 28 factor-settings do not fit, so each factor's permutations are drawn in row chunks of 1,000 and reduced as they are produced: the 5th percentile (the floor), the count of permuted deltas at or below the already-computed observed delta (the numerator of the one-sided empirical p), and the rescaled draw that feeds the pooled floor. The per-factor generator, np.random.default_rng([SEED, i]), the permuted coordinate set, and the delta definition are all unchanged. Two consequences are stated rather than hidden: (a) the observed delta is now computed before the permutations instead of after, which changes no value because it does not depend on them; (b) the pooled draw is evaluated from the algebraic form sqrt(r2 + 2*s*dot + s^2*qn2) - ||r|| instead of by rescaling a 20000 x 4907 block, which is the same quantity up to float64 rounding. Both were checked against the SOUTH2 code path before the run: drawing the permutations in chunks of 1,000 from np.random.default_rng([SEED, i]) gives a bit-identical block to drawing them in one call, so SOUTH3's null is SOUTH2's stream continued \u2014 the first 200 of SOUTH3's 20,000 draws are literally SOUTH2's 200 draws \u2014 and the streamed delta matches the block_stats delta exactly, the pooled draw to 5e-14 absolute. The reduced null \u2014 the per-factor floors and the observed-value counts, which is everything any later stage reads \u2014 is kept at `results/south3/stage2a_null_reduced.npz` so the report can be rebuilt without redrawing the permutations; it is keyed on the seed, n_perm, chunk size, factor count and setting list, and is ignored if any of them differs.",
+   "details": {
+    "n_perm": 20000,
+    "n_perm_south2": 200,
+    "perm_chunk": 1000,
+    "n_workers": 6
+   }
+  },
+  {
+   "step": "stage2C_clearing_rule",
+   "message": "Implementation reading fixed before any floor existed: a dose 'clears the floor' when its delta is below the primary floor AND negative, mirroring the Stage 3 toward_young rule. Without the second clause, f = 0 (no displacement, delta exactly 0) would count as clearing whenever a floor happens to be positive, which would report detection power for adding nothing.",
+   "details": {}
+  }
+ ],
+ "inventory_path": "<repo>\\results\\south3\\inventory.json",
+ "n_stage3_rows": 51408,
+ "toward_young_by_setting": {
+  "V_all|S1|O1_Y1": 0,
+  "V_all|S1|O2_Y1": 266,
+  "V_all|S2_k20|O1_Y1": 277,
+  "V_all|S2_k20|O1_Y2": 44,
+  "V_all|S2_k20|O2_Y1": 219,
+  "V_all|S2_k20|O2_Y2": 208,
+  "V_all|S2_k50|O1_Y1": 247,
+  "V_all|S2_k50|O1_Y2": 53,
+  "V_all|S2_k50|O2_Y1": 236,
+  "V_all|S2_k50|O2_Y2": 230,
+  "V_all|S2_k100|O1_Y1": 173,
+  "V_all|S2_k100|O1_Y2": 40,
+  "V_all|S2_k100|O2_Y1": 248,
+  "V_all|S2_k100|O2_Y2": 243,
+  "V_sig|S1|O1_Y1": 0,
+  "V_sig|S1|O2_Y1": 128,
+  "V_sig|S2_k20|O1_Y1": 67,
+  "V_sig|S2_k20|O1_Y2": 45,
+  "V_sig|S2_k20|O2_Y1": 40,
+  "V_sig|S2_k20|O2_Y2": 45,
+  "V_sig|S2_k50|O1_Y1": 62,
+  "V_sig|S2_k50|O1_Y2": 43,
+  "V_sig|S2_k50|O2_Y1": 79,
+  "V_sig|S2_k50|O2_Y2": 80,
+  "V_sig|S2_k100|O1_Y1": 48,
+  "V_sig|S2_k100|O1_Y2": 40,
+  "V_sig|S2_k100|O2_Y1": 80,
+  "V_sig|S2_k100|O2_Y2": 85
+ },
+ "verdict_survivor_vs_cosine": "**No.** Across the 26 settings that have survivors, the Spearman correlation between the delta ranking and the cosine ranking over all 1,836 factors is at least +0.871, and within every quartile of ||d|| / ||target - origin|| in those settings it is at least +0.878. Taking the top-n factors by cosine alone, n being that setting's number of survivors, recovers 2,329 of the 3,326 survivors (70.0%) \u2014 and taking the top-n by delta itself, the statistic the label is built on, recovers 2,334 (70.2%). The two agree to within a percentage point, so the ~30% that neither recovers is the conjunction of the floor and q gates, not information the cosine lacks. ||d|| alone recovers only 542 (16.3%), so the label is not merely picking the biggest displacements. The mechanism is the identity: in every setting that has a survivor the median residual of delta = -||d||cos(theta) is at most 5.6% of ||d||, so delta there is the cosine re-weighted by the displacement's own length and carries nothing beyond it. No survivor in any setting is distinguishable on direction from what a plain cosine ranking would give. What the delta machinery does buy is not a different ordering but a bar: it says which of those cosines are larger than the factor's own reshuffled null, and a cosine ranking on its own never says that.",
+ "p_min_attainable": 4.999750012499375e-05,
+ "change2": {
+  "flag_changed": 19530,
+  "label_changed_total": 1539,
+  "by_change2_within_south2": 0,
+  "by_change2_within_south3": 645,
+  "n_rows": 51408,
+  "n_factor_flag_changed": 1395,
+  "vsig_survivors_south3": 842,
+  "vsig_by_change2": 645,
+  "vall_by_change2": 0
+ }
+}

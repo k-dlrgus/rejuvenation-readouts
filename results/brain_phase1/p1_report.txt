@@ -1,0 +1,111 @@
+====================================================================================================
+BRAIN PHASE 1  STAGE P1 — variance decomposition.  seed = 20260914
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+DECLARED quantile rule (a priori, before looking at set sizes or scores): {'t_age_q': 0.9, 'k_ct_q': 0.5, 't_ct_q': 0.9, 'k_age_q': 0.5}
+  A: unique_age >= Q0.9 AND unique_ct <= Q0.5
+  I: unique_ct  >= Q0.9 AND unique_age <= Q0.5
+  MIXED: unique_age >= Q{t_age_q} AND unique_ct >= Q{t_ct_q}  (excluded from both scores)
+Sweep is reported; selection is NOT on downstream R².
+[data] reading <repo>\data\processed\tissue_brain_aging_pseudobulk.h5ad
+[filter] genes with CPM>1 in >= 10% of pseudobulks   genes  34,176 -> 25,526  (removed 8,650)
+[filter] drop CELLxGENE feature_is_filtered genes                genes  25,526 -> 25,526  (removed 0)
+[data] wrote <repo>\data\processed\brain_aging_phase1_logcpm.npy (3,323 x 25,526)
+[P1] pseudobulks=3,323 genes=25,526 donors=233 types=20 Source={'H': 1848, 'M': 1475}
+[P1] P0 extra covariates in design: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[P1] design: 20 cell types + 1 Source contrast + 2 depth + 3 P0 extras + 1 age  (~27 columns) on 3,323 rows
+[P1] every donor in exactly one Source: True
+
+Corrected model — distribution over 25526 genes (fraction of total variance):
+               0.500   0.800   0.900   0.950   0.990   0.999   1.000
+unique_ct    0.40521 0.71350 0.81526 0.86855 0.92311 0.95066 0.97745
+unique_age   0.00037 0.00143 0.00239 0.00351 0.00666 0.01589 0.03490
+shared      -0.00000 0.00045 0.00088 0.00132 0.00233 0.00371 0.00703
+nuisance     0.02033 0.06907 0.11404 0.15855 0.25423 0.36017 0.41404
+interaction  0.00608 0.00968 0.01234 0.01509 0.02181 0.04106 0.10654
+resid        0.54586 0.76761 0.83589 0.87553 0.92544 0.95859 0.97880
+partial_age  0.00083 0.00311 0.00535 0.00808 0.01581 0.03216 0.06360
+Mean partition: unique_ct=0.4345, unique_age=0.0009, shared=0.0000, nuisance=0.0425, interaction=0.0070, resid=0.5220, partial_age=0.0020
+
+Blood within-pool unique_age (FINDINGS_RERUN.md): max=0.0126 (1.26%), 99th pct=0.0019 (0.19%), median=0.00011
+Brain unique_age: max=0.03490 (3.49%), 99th=0.00666 (0.67%), median=0.00037
+Brain unique_ct: max=0.9774, median=0.4052 (blood median unique_ct=0.1248)
+
+unique_age: pooled (ct+age) vs Source-only vs corrected (Source+depth+P0):
+                                     0.500   0.800   0.900   0.950   0.990   0.999   1.000
+pooled (ct+age)                    0.00163 0.00686 0.01182 0.01660 0.02692 0.04176 0.07499
+source-only (ct+Source+age)        0.00075 0.00308 0.00519 0.00720 0.01152 0.02402 0.04455
+corrected (ct+Source+depth+P0+age) 0.00037 0.00143 0.00239 0.00351 0.00666 0.01589 0.03490
+Spearman(pooled, corrected unique_age) = 0.482
+Spearman(source-only, corrected) = 0.723
+
+Top 25 genes by CORRECTED unique_age:
+                          symbol  unique_age  unique_ct  unique_age_pooled  age_slope_per_year  mean_logcpm
+gene_id                                                                                                    
+ENSG00000234511          C5orf58      0.0349     0.0412             0.0493             -0.0206       3.1842
+ENSG00000188681          TEKT4P2      0.0346     0.2525             0.0236              0.0174       4.0634
+ENSG00000229807             XIST      0.0246     0.0282             0.0286              0.0329       5.7727
+ENSG00000286009  ENSG00000286009      0.0239     0.0360             0.0397             -0.0167       2.1207
+ENSG00000067646              ZFY      0.0233     0.0181             0.0320             -0.0217       3.7077
+ENSG00000114374            USP9Y      0.0226     0.0120             0.0295             -0.0258       6.4416
+ENSG00000176728           TTTY14      0.0225     0.0122             0.0316             -0.0286       6.6698
+ENSG00000012817            KDM5D      0.0214     0.0076             0.0305             -0.0229       4.5874
+ENSG00000183878              UTY      0.0214     0.0239             0.0294             -0.0262       6.4296
+ENSG00000165246           NLGN4Y      0.0207     0.0911             0.0326             -0.0260       6.6376
+ENSG00000067048            DDX3Y      0.0201     0.0178             0.0228             -0.0205       4.0191
+ENSG00000228526         MIR34AHG      0.0199     0.6538             0.0173              0.0129       3.8687
+ENSG00000129824           RPS4Y1      0.0198     0.0096             0.0263             -0.0162       3.3207
+ENSG00000184719             RNLS      0.0197     0.4663             0.0187              0.0066       6.2666
+ENSG00000131002           TXLNGY      0.0193     0.0196             0.0295             -0.0214       4.1890
+ENSG00000241859           ANOS2P      0.0185     0.0946             0.0268             -0.0188       5.3224
+ENSG00000100578         KIAA0586      0.0185     0.1957             0.0345              0.0033       6.1135
+ENSG00000125618             PAX8      0.0172     0.1601             0.0292             -0.0137       2.3197
+ENSG00000172247          C1QTNF4      0.0172     0.2406             0.0327             -0.0091       3.3485
+ENSG00000136436         CALCOCO2      0.0171     0.6020             0.0441              0.0055       5.3467
+ENSG00000140386           SCAPER      0.0170     0.4170             0.0469              0.0026       8.1727
+ENSG00000233070          ZFY-AS1      0.0168     0.0154             0.0454             -0.0131       1.9884
+ENSG00000228411            CDY4P      0.0161     0.0712             0.0339             -0.0086       0.9798
+ENSG00000261742        LINC00922      0.0161     0.1515             0.0359             -0.0126       1.7366
+ENSG00000286033  ENSG00000286033      0.0160     0.2890             0.0036              0.0085       5.0397
+
+--------------------------------------------------------------------------------
+[P1-null] donor ages permuted WITHIN site, 200 draws (orientation only)
+   perm 50/200
+   perm 100/200
+   perm 150/200
+   perm 200/200
+ t_age  observed  null_mean  null_p95  empirical_FDR
+0.0010      7128  2736.8900 4409.1000         0.3840
+0.0020      3357   869.3450 1626.4500         0.2590
+0.0050       584    94.8050  173.2000         0.1623
+0.0100        86    15.1800   31.0500         0.1765
+0.0200        11     2.0050    6.0000         0.1823
+null max unique_age: median 0.02405, 95th 0.04184, max 0.05082
+
+================================================================================
+[P1] DECLARED THRESHOLDS (quantile rule applied to the corrected distribution)
+  t_age = Q0.90(unique_age) = 0.002387
+  k_ct  = Q0.50(unique_ct)  = 0.405209
+  t_ct  = Q0.90(unique_ct)  = 0.815260
+  k_age = Q0.50(unique_age) = 0.000370
+  set sizes: A=1578  I=1876  MIXED=37  OTHER=22035  (n genes=25526)
+  These sizes are written to FINDINGS_BRAIN_PHASE1.md NOW, before P2 filters and before any score.
+
+Sweep set sizes (high_q x low_q) — NOT selected on R²:
+low_q   0.25  0.50  0.75
+high_q                  
+0.80    1565  3076  4482
+0.90     792  1578  2309
+0.95     395   790  1175
+0.99      85   159   242
+I-gene sizes:
+low_q   0.25  0.50  0.75
+high_q                  
+0.80    1858  3407  4532
+0.90    1062  1876  2365
+0.95     594   997  1214
+0.99     127   205   249
+[findings] wrote <repo>\FINDINGS_BRAIN_PHASE1.md
+
+[P1] FINDINGS_BRAIN_PHASE1.md updated with declared thresholds. flag=<repo>\results\brain_phase1\p1_DECLARED_BEFORE_SCORES.flag
+[P1] done.

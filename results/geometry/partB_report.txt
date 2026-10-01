@@ -1,0 +1,118 @@
+====================================================================================================
+GEOMETRY PART B — gene-count control  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+[B] Part A passed. stop_A=False  change=STRENGTHEN: soundness-fail cleared; separability still falsified on the cross-test
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[filter] universe for random draws: all 25,526 genes (no extra filter)
+[filter] A-pool=1355  I-pool=1876  (frozen P2; not re-derived)
+
+--------------------------------------------------------------------------------
+[B1] 50 random sets of size n_A=1355 from all 25526 genes
+   scheme=loso
+      draw 10/50  r2=+0.024  null=-0.906
+      draw 20/50  r2=+0.013  null=-1.040
+      draw 30/50  r2=+0.081  null=-0.663
+      draw 40/50  r2=-0.018  null=-1.452
+      draw 50/50  r2=+0.013  null=-1.108
+   [loso] random median R²=+0.025  null median=-1.026  A_frozen=-0.016  I_full=+0.289
+   scheme=within_site
+      draw 10/50  r2=+0.261  null=-0.271
+      draw 20/50  r2=+0.205  null=-0.343
+      draw 30/50  r2=+0.292  null=-0.185
+      draw 40/50  r2=+0.248  null=-0.247
+      draw 50/50  r2=+0.233  null=-0.153
+   [within_site] random median R²=+0.254  null median=-0.234  A_frozen=+0.250  I_full=+0.424
+
+--------------------------------------------------------------------------------
+[B2] size sweep [10, 50, 100, 500, 1000, 1500]  draws=10 (A/I random subsets + random genes)
+   loso  A  k=10 (eff=10) draws=10
+      median R²=-0.653  null=-0.831
+   loso  A  k=50 (eff=50) draws=10
+      median R²=-0.554  null=-0.767
+   loso  A  k=100 (eff=100) draws=10
+      median R²=-0.949  null=-0.868
+   loso  A  k=500 (eff=500) draws=10
+      median R²=-0.138  null=-1.218
+   loso  A  k=1000 (eff=1000) draws=10
+      median R²=-0.026  null=-1.071
+   loso  A  k=1500 (eff=1355) draws=1
+      median R²=-0.016  null=-0.668
+   loso  I  k=10 (eff=10) draws=10
+      median R²=-0.660  null=-0.819
+   loso  I  k=50 (eff=50) draws=10
+      median R²=-0.387  null=-0.992
+   loso  I  k=100 (eff=100) draws=10
+      median R²=-0.623  null=-1.504
+   loso  I  k=500 (eff=500) draws=10
+      median R²=+0.194  null=-1.488
+   loso  I  k=1000 (eff=1000) draws=10
+      median R²=+0.233  null=-0.972
+   loso  I  k=1500 (eff=1500) draws=10
+      median R²=+0.279  null=-1.329
+   loso  random  k=10 (eff=10) draws=10
+      median R²=-0.730  null=-0.784
+   loso  random  k=50 (eff=50) draws=10
+      median R²=-0.575  null=-0.786
+   loso  random  k=100 (eff=100) draws=10
+      median R²=-0.845  null=-1.783
+   loso  random  k=500 (eff=500) draws=10
+      median R²=-0.129  null=-1.689
+   loso  random  k=1000 (eff=1000) draws=10
+      median R²=-0.002  null=-1.407
+   loso  random  k=1500 (eff=1500) draws=10
+      median R²=+0.058  null=-0.899
+   within_site  A  k=10 (eff=10) draws=10
+      median R²=-0.035  null=-0.049
+   within_site  A  k=50 (eff=50) draws=10
+      median R²=-0.022  null=-0.070
+   within_site  A  k=100 (eff=100) draws=10
+      median R²=-3.215  null=-6.631
+   within_site  A  k=500 (eff=500) draws=10
+      median R²=+0.094  null=-0.306
+   within_site  A  k=1000 (eff=1000) draws=10
+      median R²=+0.225  null=-0.243
+   within_site  A  k=1500 (eff=1355) draws=1
+      median R²=+0.250  null=-0.254
+   within_site  I  k=10 (eff=10) draws=10
+      median R²=-0.035  null=-0.043
+   within_site  I  k=50 (eff=50) draws=10
+      median R²=-0.009  null=-0.036
+   within_site  I  k=100 (eff=100) draws=10
+      median R²=-2.056  null=-4.965
+   within_site  I  k=500 (eff=500) draws=10
+      median R²=+0.300  null=-0.534
+   within_site  I  k=1000 (eff=1000) draws=10
+      median R²=+0.391  null=-0.465
+   within_site  I  k=1500 (eff=1500) draws=10
+      median R²=+0.418  null=-0.321
+   within_site  random  k=10 (eff=10) draws=10
+      median R²=-0.039  null=-0.028
+   within_site  random  k=50 (eff=50) draws=10
+      median R²=-0.038  null=-0.044
+   within_site  random  k=100 (eff=100) draws=10
+      median R²=-2.962  null=-4.266
+   within_site  random  k=500 (eff=500) draws=10
+      median R²=+0.122  null=-0.308
+   within_site  random  k=1000 (eff=1000) draws=10
+      median R²=+0.226  null=-0.249
+   within_site  random  k=1500 (eff=1500) draws=10
+      median R²=+0.258  null=-0.134
+
+[B1] summary:
+     scheme  n_A  n_draws  random_median  random_p05  random_p95  random_null_median  A_frozen  A_null  I_full  I_null  A_beats_random  I_beats_A  random_matches_A
+within_site 1355       50         +0.254      +0.209      +0.298              -0.234    +0.250  -0.155  +0.424  -0.230           False       True              True
+       loso 1355       50         +0.025      -0.025      +0.086              -1.026    -0.016  -0.971  +0.289  -1.265           False       True              True
+
+[B3] (b-leaning) A-genes do not beat random at matched size, so the A-bucket is not a privileged age axis; I-genes still predict age, which is the methods failure mode (aggregating many genes with tiny age slopes) more than a unique biology of A-genes.
+   within-site B1: A=+0.250 random_med=+0.254 random_p95=+0.298 I=+0.424 null_random=-0.234
+   LOSO B1: A=-0.016 random_med=+0.025 I=+0.289 null_random=-1.026
+
+[B] wrote results/geometry/partB_*
+[B] done.

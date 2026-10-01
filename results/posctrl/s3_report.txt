@@ -1,0 +1,163 @@
+====================================================================================================
+POSCTRL supersession 3 transfer  perm_seed=20260914  boot_seed=20260918  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+Written after FINDINGS_POSCTRL.md S3 pre-registration. No src/ edits.
+n_perm=200  B=200  Pass = r > 0 with null ≤ 0.05 both directions.
+====================================================================================================
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[C1] loaded frozen age* from age_star.npy  mean=52.05
+[C1] sparse eligible genes (mean CPM>1.0 in ≥15/20 types): 17749 / 25526
+[C1] planted w already frozen
+[S3] gene_ridge transfer n_perm=200 residualize=False donors=233 rows=3323
+   fit on HBCC → test MSSM
+      median R²=-0.124  calR²=+0.342  r=+0.568  ρ=+0.573
+      null (200 train-y shuffles)...
+         perm 1/200  r_null=+0.024  R²_null=-1.159
+         perm 20/200  r_null=-0.041  R²_null=-1.855
+         perm 40/200  r_null=-0.296  R²_null=-1.647
+         perm 60/200  r_null=+0.033  R²_null=-1.319
+         perm 80/200  r_null=-0.009  R²_null=-1.514
+         perm 100/200  r_null=+0.161  R²_null=-1.369
+         perm 120/200  r_null=+0.112  R²_null=-0.918
+         perm 140/200  r_null=+0.050  R²_null=-1.354
+         perm 160/200  r_null=-0.166  R²_null=-2.144
+         perm 180/200  r_null=+0.030  R²_null=-1.678
+         perm 200/200  r_null=-0.141  R²_null=-1.574
+      r_null_mean=-0.010  r_p=0.005
+   fit on MSSM → test HBCC
+      median R²=-0.463  calR²=+0.334  r=+0.578  ρ=+0.567
+      null (200 train-y shuffles)...
+         perm 1/200  r_null=-0.015  R²_null=-1.685
+         perm 20/200  r_null=-0.047  R²_null=-2.205
+         perm 40/200  r_null=+0.150  R²_null=-0.938
+         perm 60/200  r_null=-0.158  R²_null=-1.923
+         perm 80/200  r_null=+0.144  R²_null=-0.838
+         perm 100/200  r_null=+0.205  R²_null=-1.099
+         perm 120/200  r_null=+0.057  R²_null=-1.404
+         perm 140/200  r_null=+0.076  R²_null=-1.773
+         perm 160/200  r_null=-0.035  R²_null=-1.827
+         perm 180/200  r_null=-0.119  R²_null=-1.921
+         perm 200/200  r_null=-0.100  R²_null=-1.583
+      r_null_mean=+0.004  r_p=0.005
+[S3] wrote <repo>\results\posctrl\s3_gene_ridge.json  r H→M=+0.568 M→H=+0.578  pass=True  728s
+[S3] c2a transfer n_perm=200 residualize=False donors=233 rows=3323
+   fit on HBCC → test MSSM
+      median R²=+0.512  calR²=+0.716  r=+0.846  ρ=+0.788
+      null (200 train-y shuffles)...
+         perm 1/200  r_null=-0.020  R²_null=-0.170
+         perm 20/200  r_null=-0.129  R²_null=-0.377
+         perm 40/200  r_null=-0.037  R²_null=-0.121
+         perm 60/200  r_null=+0.073  R²_null=-0.102
+         perm 80/200  r_null=+0.008  R²_null=-0.152
+         perm 100/200  r_null=-0.102  R²_null=-0.179
+         perm 120/200  r_null=+0.144  R²_null=-0.062
+         perm 140/200  r_null=-0.032  R²_null=-0.195
+         perm 160/200  r_null=-0.076  R²_null=-0.288
+         perm 180/200  r_null=-0.067  R²_null=-0.156
+         perm 200/200  r_null=-0.036  R²_null=-0.253
+      r_null_mean=+0.005  r_p=0.005
+   fit on MSSM → test HBCC
+      median R²=+0.358  calR²=+0.612  r=+0.782  ρ=+0.716
+      null (200 train-y shuffles)...
+         perm 1/200  r_null=-0.276  R²_null=-0.400
+         perm 20/200  r_null=+0.032  R²_null=-0.068
+         perm 40/200  r_null=+0.042  R²_null=-0.148
+         perm 60/200  r_null=-0.140  R²_null=-0.310
+         perm 80/200  r_null=-0.054  R²_null=-0.225
+         perm 100/200  r_null=-0.008  R²_null=-0.172
+         perm 120/200  r_null=-0.198  R²_null=-0.302
+         perm 140/200  r_null=-0.100  R²_null=-0.407
+         perm 160/200  r_null=+0.033  R²_null=-0.085
+         perm 180/200  r_null=-0.041  R²_null=-0.151
+         perm 200/200  r_null=-0.033  R²_null=-0.234
+      r_null_mean=-0.002  r_p=0.005
+[S3] wrote <repo>\results\posctrl\s3_c2a.json  r H→M=+0.846 M→H=+0.782  pass=True  803s
+[C1] frozen β[dense_shared_r030]=0.24683784844272705  full-fold R²=0.29079956034761606
+[S3] plant c1_dense_shared_r030 β=0.246838
+[S3] c1_dense_shared_r030 transfer n_perm=200 residualize=False donors=233 rows=3323
+   fit on HBCC → test MSSM
+      median R²=-0.087  calR²=+0.748  r=+0.865  ρ=+0.863
+      null (200 train-y shuffles)...
+         perm 1/200  r_null=-0.023  R²_null=-1.119
+         perm 20/200  r_null=-0.189  R²_null=-1.983
+         perm 40/200  r_null=+0.022  R²_null=-1.705
+         perm 60/200  r_null=-0.106  R²_null=-1.001
+         perm 80/200  r_null=-0.025  R²_null=-2.044
+         perm 100/200  r_null=+0.187  R²_null=-1.498
+         perm 120/200  r_null=-0.035  R²_null=-1.907
+         perm 140/200  r_null=+0.224  R²_null=-1.120
+         perm 160/200  r_null=+0.073  R²_null=-1.872
+         perm 180/200  r_null=-0.083  R²_null=-2.025
+         perm 200/200  r_null=+0.157  R²_null=-1.717
+      r_null_mean=+0.005  r_p=0.005
+   fit on MSSM → test HBCC
+      median R²=-0.415  calR²=+0.590  r=+0.768  ρ=+0.764
+      null (200 train-y shuffles)...
+         perm 1/200  r_null=+0.065  R²_null=-1.370
+         perm 20/200  r_null=+0.098  R²_null=-2.036
+         perm 40/200  r_null=+0.011  R²_null=-1.273
+         perm 60/200  r_null=+0.069  R²_null=-1.471
+         perm 80/200  r_null=+0.001  R²_null=-1.377
+         perm 100/200  r_null=-0.046  R²_null=-1.428
+         perm 120/200  r_null=+0.137  R²_null=-1.591
+         perm 140/200  r_null=-0.177  R²_null=-1.823
+         perm 160/200  r_null=+0.118  R²_null=-1.264
+         perm 180/200  r_null=+0.054  R²_null=-1.405
+         perm 200/200  r_null=-0.036  R²_null=-2.049
+      r_null_mean=+0.006  r_p=0.005
+[S3] wrote <repo>\results\posctrl\s3_c1_dense_shared_r030.json  r H→M=+0.865 M→H=+0.768  pass=True  394s
+[S3] (3) identity-residualized age fit (G2c / Part C 0.317→0.300)
+[S3] idresid transfer n_perm=200 residualize=True donors=233 rows=3323
+   fit on HBCC → test MSSM
+      identity axes=19
+      median R²=-0.149  calR²=+0.329  r=+0.573  ρ=+0.574
+      null (200 train-y shuffles)...
+         perm 1/200  r_null=+0.021  R²_null=-1.240
+         perm 20/200  r_null=-0.027  R²_null=-1.601
+         perm 40/200  r_null=-0.246  R²_null=-1.536
+         perm 60/200  r_null=+0.023  R²_null=-1.327
+         perm 80/200  r_null=+0.008  R²_null=-1.524
+         perm 100/200  r_null=+0.147  R²_null=-1.477
+         perm 120/200  r_null=+0.093  R²_null=-1.174
+         perm 140/200  r_null=+0.034  R²_null=-1.265
+         perm 160/200  r_null=-0.115  R²_null=-1.748
+         perm 180/200  r_null=+0.061  R²_null=-1.453
+         perm 200/200  r_null=-0.112  R²_null=-1.596
+      r_null_mean=-0.009  r_p=0.005
+   fit on MSSM → test HBCC
+      identity axes=19
+      median R²=-0.481  calR²=+0.332  r=+0.576  ρ=+0.559
+      null (200 train-y shuffles)...
+         perm 1/200  r_null=-0.014  R²_null=-1.649
+         perm 20/200  r_null=+0.034  R²_null=-1.733
+         perm 40/200  r_null=+0.095  R²_null=-0.935
+         perm 60/200  r_null=-0.143  R²_null=-1.749
+         perm 80/200  r_null=+0.076  R²_null=-0.876
+         perm 100/200  r_null=+0.185  R²_null=-1.081
+         perm 120/200  r_null=+0.028  R²_null=-1.621
+         perm 140/200  r_null=+0.054  R²_null=-1.860
+         perm 160/200  r_null=-0.088  R²_null=-1.809
+         perm 180/200  r_null=-0.060  R²_null=-1.832
+         perm 200/200  r_null=-0.133  R²_null=-1.432
+      r_null_mean=+0.007  r_p=0.005
+[S3] wrote <repo>\results\posctrl\s3_idresid.json  r H→M=+0.573 M→H=+0.576  pass=True  764s
+[S3] donor-bootstrap 95% CI on r (B=200, resample the test bank)
+[S3] bootstrap draws: H→M n=200  M→H n=200
+[S3] gene_ridge r H_to_M=+0.568  95% CI [+0.425, +0.673]  n=200
+[S3] gene_ridge r M_to_H=+0.578  95% CI [+0.478, +0.670]  n=200
+[S3] c2a r H_to_M=+0.846  95% CI [+0.781, +0.898]  n=200
+[S3] c2a r M_to_H=+0.782  95% CI [+0.721, +0.851]  n=200
+[S3] c1_dense_shared_r030 r H_to_M=+0.865  95% CI [+0.816, +0.909]  n=200
+[S3] c1_dense_shared_r030 r M_to_H=+0.768  95% CI [+0.675, +0.813]  n=200
+[S3] idresid r H_to_M=+0.573  95% CI [+0.424, +0.678]  n=200
+[S3] idresid r M_to_H=+0.576  95% CI [+0.479, +0.671]  n=200
+[S3] (2) fraction of transferable age signal = r_real / r_planted
+[S3] share H_to_M=+0.657  95% CI [+0.499, +0.766]  r_real=+0.568 r_planted=+0.865
+[S3] share M_to_H=+0.753  95% CI [+0.642, +0.907]  r_real=+0.578 r_planted=+0.768
+[S3] (3) identity residual pass_r=True → pass
+[S3] verdict: the age axis transfers after removing the identity subspace
+[S3] all cells done

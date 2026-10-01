@@ -1,0 +1,43 @@
+r2,n,n_dropped,p,ok,tissue,covariate,kind,n_levels,n_samples
+0.00026749356769006916,269,0,2,True,Brain - Frontal Cortex (BA9),SMRIN,single,1,269
+0.007421984180856711,269,0,2,True,Brain - Frontal Cortex (BA9),SMTSISCH,single,1,269
+0.09269026130744085,269,0,5,True,Brain - Frontal Cortex (BA9),DTHHRDY,single,5,269
+0.003220481600505365,269,0,2,True,Brain - Frontal Cortex (BA9),SEX,single,2,269
+0.009638719117643912,269,0,4,True,Brain - Frontal Cortex (BA9),SMCENTER,single,4,269
+0.6013975282161279,269,0,147,True,Brain - Frontal Cortex (BA9),SMNABTCH,single,147,269
+0.6398487689742083,269,0,157,True,Brain - Frontal Cortex (BA9),JOINT,joint,156,269
+0.010409386734311799,270,0,2,True,Brain - Cortex,SMRIN,single,1,270
+0.024411622222336504,270,0,2,True,Brain - Cortex,SMTSISCH,single,1,270
+0.1292147760720338,270,0,5,True,Brain - Cortex,DTHHRDY,single,5,270
+0.001689901709798547,270,0,2,True,Brain - Cortex,SEX,single,2,270
+0.006657138309302479,270,0,3,True,Brain - Cortex,SMCENTER,single,3,270
+0.6405443765005505,270,0,164,True,Brain - Cortex,SMNABTCH,single,164,270
+0.6884857882660492,270,0,173,True,Brain - Cortex,JOINT,joint,172,270
+0.0032974581842856177,233,0,2,True,Brain - Anterior cingulate cortex (BA24),SMRIN,single,1,233
+0.016368727935399674,233,0,2,True,Brain - Anterior cingulate cortex (BA24),SMTSISCH,single,1,233
+0.13840618277746808,233,0,5,True,Brain - Anterior cingulate cortex (BA24),DTHHRDY,single,5,233
+0.006524396549271949,233,0,2,True,Brain - Anterior cingulate cortex (BA24),SEX,single,2,233
+0.01680381518882401,233,0,4,True,Brain - Anterior cingulate cortex (BA24),SMCENTER,single,4,233
+0.6712129340889024,233,0,146,True,Brain - Anterior cingulate cortex (BA24),SMNABTCH,single,146,233
+0.7159806407301955,233,0,156,True,Brain - Anterior cingulate cortex (BA24),JOINT,joint,155,233
+0.00957297672802282,255,0,2,True,Brain - Hippocampus,SMRIN,single,1,255
+0.016091559403933475,255,0,2,True,Brain - Hippocampus,SMTSISCH,single,1,255
+0.08588379705400995,255,0,5,True,Brain - Hippocampus,DTHHRDY,single,5,255
+0.005235713269776676,255,0,2,True,Brain - Hippocampus,SEX,single,2,255
+0.004953775789390935,255,0,4,True,Brain - Hippocampus,SMCENTER,single,4,255
+0.5539708065314201,255,0,145,True,Brain - Hippocampus,SMNABTCH,single,145,255
+0.6189699410632227,255,0,155,True,Brain - Hippocampus,JOINT,joint,154,255
+0.07031064749845095,452,0,2,True,Heart - Left Ventricle,SMRIN,single,1,452
+0.039806673128562786,451,1,2,True,Heart - Left Ventricle,SMTSISCH,single,1,452
+0.12123864517850103,451,1,5,True,Heart - Left Ventricle,DTHHRDY,single,5,452
+0.006971876871144533,452,0,2,True,Heart - Left Ventricle,SEX,single,2,452
+0.0004717092755561758,452,0,3,True,Heart - Left Ventricle,SMCENTER,single,3,452
+0.6473342764020374,452,0,269,True,Heart - Left Ventricle,SMNABTCH,single,269,452
+0.6731716969725486,450,2,278,True,Heart - Left Ventricle,JOINT,joint,277,452
+0.0009244487181192529,818,0,2,True,Muscle - Skeletal,SMRIN,single,1,818
+0.05404815474982616,818,0,2,True,Muscle - Skeletal,SMTSISCH,single,1,818
+0.18566123923613154,808,10,5,True,Muscle - Skeletal,DTHHRDY,single,5,818
+0.0007636496386482783,818,0,2,True,Muscle - Skeletal,SEX,single,2,818
+0.01722311361727802,818,0,3,True,Muscle - Skeletal,SMCENTER,single,3,818
+0.42916188452127,818,0,338,True,Muscle - Skeletal,SMNABTCH,single,338,818
+0.5403913998136793,808,10,347,True,Muscle - Skeletal,JOINT,joint,346,818

@@ -1,0 +1,90 @@
+====================================================================================================
+TISSUE ANALYZE  name=retina_sc  seed=20260914  dataset_id=be41a86a-b606-4b1c-8055-32f334898775
+  title=scRNA-seq of human retina - all cells  tissue=retina
+  local=<repo>\data\raw\tissue\retina_sc\9847a0f8-18a0-411c-bff9-827a607e7fcf.h5ad  size=2,539,032,977
+====================================================================================================
+
+==========================================================================================
+PEEK retina_sc
+  source: <repo>\data\raw\tissue\retina_sc\9847a0f8-18a0-411c-bff9-827a607e7fcf.h5ad
+==========================================================================================
+  matrix X shape=(265767, 35475)
+  obs columns (56): ['reference_genome', 'gene_annotation_version', 'alignment_software', 'intronic_reads_counted', 'donor_id', 'donor_age', 'self_reported_ethnicity_ontology_term_id', 'donor_cause_of_death', 'donor_living_at_sample_collection', 'sample_id', 'sample_preservation_method', 'tissue_ontology_term_id', 'development_stage_ontology_term_id', 'sample_collection_method', 'tissue_source', 'tissue_type', 'sample_collection_year', 'suspension_depletion_factors', 'suspension_depleted_cell_types', 'suspension_derivation_process', 'suspension_dissociation_reagent', 'suspension_dissociation_time', 'suspension_enriched_cell_types', 'suspension_enrichment_factors', 'cell_viability_percentage', 'suspension_uuid', 'suspension_type', 'tissue_handling_interval', 'library_id', 'assay_ontology_term_id', 'sequenced_fragment', 'cell_number_loaded', 'institute', 'library_id_repository', 'sequencing_platform', 'is_primary_data', 'cell_type_ontology_term_id', 'author_cell_type', 'disease_ontology_term_id', 'reported_diseases', 'sex_ontology_term_id', 'nCount_RNA', 'nFeature_RNA', 'percent.mt', 'majorclass', 'group2', 'group3', 'study_name', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid']
+  donor_id: n=265,767  nunique=20  top=[('R-00646_01', 67522), ('R-00646_07', 34404), ('R-00646_04', 32412), ('H5', 32059), ('H3', 27514), ('R-00646_03', 15514), ('H1', 11721), ('H9', 9187), ('Pt2', 8101), ('SC', 4681), ('H4', 3807), ('17-011', 3709)]
+  development_stage: n=265,767  nunique=16  top=[('adult stage', 149852), ('69-year-old stage', 32059), ('60-year-old stage', 27514), ('53-year-old stage', 12896), ('74-year-old stage', 11721), ('78-year-old stage', 8101), ('42-year-old stage', 4681), ('64-year-old stage', 3807), ('71-year-old stage', 3118), ('54-year-old stage', 2659), ('86-year-old stage', 2009), ('82-year-old stage', 1753)]
+  sex: n=265,767  nunique=2  top=[('male', 201888), ('female', 63879)]
+  cell_type: n=265,767  nunique=18  top=[('retinal rod cell', 89279), ('retinal bipolar neuron', 58425), ('Mueller cell', 47245), ('rod bipolar cell', 14363), ('GABAergic amacrine cell', 12412), ('midget ganglion cell of retina', 10103), ('glycinergic amacrine cell', 9745), ('retinal cone cell', 5811), ('H1 horizontal cell', 5455), ('microglial cell', 3084), ('astrocyte', 2434), ('H2 horizontal cell', 1858)]
+  assay: n=265,767  nunique=2  top=[("10x 3' v2", 217531), ("10x 3' v3", 48236)]
+  tissue: n=265,767  nunique=5  top=[('fovea centralis', 116144), ('peripheral region of retina', 113263), ('chorioretinal region', 23883), ('retinal neural layer', 9694), ('macula lutea proper', 2783)]
+  suspension_type: n=265,767  nunique=1  top=[('cell', 265767)]
+  disease: n=265,767  nunique=1  top=[('normal', 265767)]
+  is_primary_data: n=265,767  nunique=2  top=[(False, 259706), (True, 6061)]
+  nCount_RNA: n=265,767  nunique=25202  top=[(651.0, 143), (520.0, 138), (623.0, 138), (592.0, 138), (656.0, 137), (615.0, 136), (517.0, 135), (529.0, 134), (543.0, 134), (559.0, 133), (551.0, 133), (676.0, 132)]
+  nFeature_RNA: n=265,767  nunique=8545  top=[(503, 223), (466, 223), (489, 220), (459, 212), (467, 212), (464, 209), (501, 208), (506, 205), (512, 205), (499, 204), (514, 203), (474, 203)]
+  library_id: n=265,767  nunique=96  top=[('42b17ae4-6897-4659-adba-3d2508cd2d16', 9187), ('667ec2d1-b3ec-49d8-9075-6e049eb22bba', 8097), ('e194e66e-2af7-4df7-a13b-50e11f13b214', 6025), ('5fa1a6bf-409b-4d17-b2b1-c8c531a23057', 5993), ('3adc6055-d298-41b2-8486-4f84e18f26a9', 5975), ('879b57b1-797a-4e63-9848-8a85dd0a61cd', 5969), ('c31291f7-f119-41af-ab4e-22645e64c184', 5883), ('0279a23f-30b8-45d4-9fc6-5f68e4dcca2c', 5880), ('e06b7e7a-f414-48a8-b31a-beaa143d4fbc', 5841), ('26ac80f5-1d78-426c-ada8-55a1e49d68bd', 5161), ('94928bed-b80f-4612-845b-38f2a7545620', 4741), ('231590cc-9198-4767-8a7d-95e51232c288', 4724)]
+  suspension_uuid: n=265,767  nunique=52  top=[('75cf970f-8f67-4ede-85ab-7ec6b63fbf37', 32059), ('0980acb6-64a6-4503-93cd-802668b2cca9', 24852), ('165e6788-0254-423d-a4de-ff84eb308cc3', 23387), ('c05e522a-00aa-49ac-8229-8cae7a934585', 19180), ('cf8a4bef-c8a4-4606-bccd-536abe041208', 9737), ('340fe4e0-387e-43b9-bde3-16362239437d', 9423), ('ae559cbf-fa66-46c2-8d95-3b24d0325f0e', 9260), ('7b818530-b222-4fa0-8601-788193468f9b', 9187), ('7d083d00-6f47-4bba-a829-720c3594da7f', 8831), ('1b6566fd-57de-4ab2-ba5d-a62c3db12a4b', 8707), ('20f1a853-ef77-4720-a44b-8d58a0a77ce4', 7247), ('f63b3683-6f02-49fb-8a49-84ae05cbaefb', 6721)]
+  sample_id: n=265,767  nunique=48  top=[('c4141f4a-960e-4a2b-a200-65208d073e3f', 32059), ('d7e25760-225d-4502-867b-a11a42aaba61', 24852), ('24b6eb87-2240-4028-b13c-a4ca0fb670d4', 23387), ('ac81cb51-abd1-4489-be54-76c4155ef663', 19180), ('9b646ae2-3f71-4fec-963a-ce9e988fd831', 18683), ('50ce184b-12e5-4aa1-8c08-049a660e71ec', 11721), ('24355458-0ca3-4d64-9bc9-ffdc7cf4b505', 9737), ('f1be4097-678c-4351-a82d-43eca2655596', 9187), ('37444071-bb21-4593-b469-506e29ed8d7e', 8831), ('5a465720-53af-41e4-af66-8b7688e7b09b', 8707), ('f68bad53-516d-47d1-acd5-0db95063381a', 7247), ('ee3e32be-79f7-46f0-92f0-51b96ed846b6', 6721)]
+  assay_ontology_term_id: n=265,767  nunique=2  top=[('EFO:0009899', 217531), ('EFO:0009922', 48236)]
+  tissue_ontology_term_id: n=265,767  nunique=5  top=[('UBERON:0001786', 116144), ('UBERON:0013682', 113263), ('UBERON:0019207', 23883), ('UBERON:0003902', 9694), ('UBERON:0002822', 2783)]
+  donors: 20  age min=42.0 max=89.0 nunique_age=15  cells/donor median=4244 (min 1191, max 67522)
+  candidate batch-like columns present: ['library_id', 'suspension_uuid', 'sample_id', 'assay', 'assay_ontology_term_id', 'suspension_type', 'tissue', 'tissue_ontology_term_id']
+[load] 265,767 cells; obs cols=['reference_genome', 'gene_annotation_version', 'alignment_software', 'intronic_reads_counted', 'donor_id', 'donor_age', 'self_reported_ethnicity_ontology_term_id', 'donor_cause_of_death', 'donor_living_at_sample_collection', 'sample_id', 'sample_preservation_method', 'tissue_ontology_term_id', 'development_stage_ontology_term_id', 'sample_collection_method', 'tissue_source', 'tissue_type', 'sample_collection_year', 'suspension_depletion_factors', 'suspension_depleted_cell_types', 'suspension_derivation_process', 'suspension_dissociation_reagent', 'suspension_dissociation_time', 'suspension_enriched_cell_types', 'suspension_enrichment_factors', 'cell_viability_percentage', 'suspension_uuid', 'suspension_type', 'tissue_handling_interval', 'library_id', 'assay_ontology_term_id', 'sequenced_fragment', 'cell_number_loaded', 'institute', 'library_id_repository', 'sequencing_platform', 'is_primary_data', 'cell_type_ontology_term_id', 'author_cell_type', 'disease_ontology_term_id', 'reported_diseases', 'sex_ontology_term_id', 'nCount_RNA', 'nFeature_RNA', 'percent.mt', 'majorclass', 'group2', 'group3', 'study_name', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid', '_pos']
+[filter] is_primary_data==True would keep 6,061/265,767 (2.3%) — NOT applied (cells are duplicated into subset files of the same collection)
+[age] filled 0 cells from donor_age where development_stage was non-numeric
+[filter] cells with numeric donor age                          cells 265,767 -> 115,915 (removed 149,852)
+[filter] adult cells (age >= 18)                         cells 115,915 -> 115,915 (removed 0)
+[donors] 16 adult donors; age 42–89 (nunique=15, span=47 y); cells/donor median 3414
+
+[T2] donor-level batch-column audit:
+                    column  n_levels  n_levels_ge2_donors  frac_donors_in_shared  aliased_with_donor  looks_technical  usable
+                    tissue         3                    3                  1.000               False             True    True
+                     assay         2                    2                  1.000               False             True    True
+    sample_collection_year         2                    2                  1.000               False             True    True
+       sequencing_platform         4                    4                  1.000               False            False    True
+                study_name         4                    4                  1.000               False            False    True
+   self_reported_ethnicity         2                    2                  1.000               False            False    True
+                 institute         2                    2                  1.000               False            False    True
+  tissue_handling_interval        13                    3                  0.375               False            False    True
+           suspension_type         1                    1                  1.000               False             True   False
+sample_preservation_method         1                    1                  1.000               False             True   False
+                library_id        16                    0                  0.000                True             True   False
+                 sample_id        16                    0                  0.000                True             True   False
+               age_nunique         1                    1                  1.000               False            False   False
+                   disease         1                    1                  1.000               False            False   False
+[T2] selected batch column: tissue
+[T2] R2(age ~ C(batch=tissue)) = 0.190   n_batches=3  donors/batch: median 5.0 (min 3, max 8)
+
+[pseudobulk] min_cells=20  min_donors_per_type=8
+[filter] pseudobulks of adult analysis donors                  groups 105 -> 105 (removed 0)
+[filter] cell types with >= 8 adult donors            groups 105 -> 105  types 8 -> 8  dropped={}
+[filter] genes with CPM>1 in >= 10% of pseudobulks   genes  35,475 -> 22,301  (removed 13,174)
+[filter] donors with at least one retained pseudobulk          donors 16 -> 16
+[filter] cells of analysis donors                              cells 115,915 -> 115,915 (removed 0)
+[filter] cell types kept as composition categories (mean prop>=0.005, donors>=8): 10 kept, 8 collapsed to 'other' (3,867 cells, 3.34%) dropped=['H2 horizontal cell', 'S cone cell', 'astrocyte', 'microglial cell', 'parasol ganglion cell of retina', 'retinal ganglion cell', 'retinal pigment epithelial cell', 'starburst amacrine cell']
+cells/donor for composition: median 3414 (min 1191, max 32059); CLR dim=11
+[T2] R2(log mean UMI/cell ~ C(batch)) = 0.013
+[T2] corr(age, depth): pooled r=+0.165; between-batch r=+0.999 (n=3 batches); within-batch r=+0.081
+
+====================================================================================================
+[T3] batch-grouped CV: composition vs within-cell-type expression
+====================================================================================================
+  n_donors=16 n_batches=3 n_outer=3 n_repeats=3  within-batch metric ON
+building per-type kernels:
+   GABAergic amacrine cell                  n=  13 batches=3
+   Mueller cell                             n=  16 batches=3
+   glycinergic amacrine cell                n=  11 batches=3
+   midget ganglion cell of retina           n=  11 batches=3
+   retinal bipolar neuron                   n=  16 batches=3
+   retinal cone cell                        n=  10 batches=2
+   retinal rod cell                         n=  16 batches=3
+   rod bipolar cell                         n=  12 batches=3
+   repeat 0: comp R2w=-0.209  expr R2w=-0.004  comp naive=-0.299  expr naive=-0.251
+   repeat 1: comp R2w=-0.209  expr R2w=-0.004  comp naive=-0.299  expr naive=-0.251
+   repeat 2: comp R2w=-0.209  expr R2w=-0.004  comp naive=-0.299  expr naive=-0.251
+  composition (CLR, 11 categories): within-batch R2=-0.209 [-1.3785340764173601, 0.000359614826847765] {-0.209,-0.209}  naive R2=-0.299 [-0.780,-0.139]
+  expression: all 8 cell types jointly: within-batch R2=-0.004 [-0.02227823878615487, 4.248692744368565e-05] {-0.004,-0.004}  naive R2=-0.251 [-0.820,+0.052]
+
+[T3] retina_sc: composition R2=-0.209  expression R2=-0.004  expr/comp=+0.019  metric=within_batch
+     blood reference: composition 0.493  expression 0.482  expr/comp=0.978
+
+[retina_sc] done.

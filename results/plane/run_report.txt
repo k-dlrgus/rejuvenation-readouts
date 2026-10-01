@@ -1,0 +1,247 @@
+====================================================================================================
+PLANE RUN  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / labels / AddModuleScore inherited from md2; not re-tuned.
+md4 cell_scores reused for observed instruments; cells are not rescored.
+MIN_CELLS=30. Trajectory=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency']. NonReprog off-trajectory. Donors never pooled. Instruments never combined.
+====================================================================================================
+PLANE TASK1  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / labels / AddModuleScore inherited from md2; not re-tuned.
+md4 cell_scores reused for observed instruments; cells are not rescored.
+MIN_CELLS=30. Trajectory=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency']. NonReprog off-trajectory. Donors never pooled. Instruments never combined.
+Written **before any PLANE state-median, slope, bend statistic, or null p-value**, 2026-09-21. No threshold in this block is re-tuned after numbers exist.
+
+Using the src/md2_*.py Louvain clustering already computed (not re-run, not re-tuned). Cell-state labels are the md2 assignment: argmax of mean AddModuleScore of mmc3 Reprog_cell_state_signatures columns Fibroblast / PartialReprog / EarlyPluripotency / Pluripotency / NonReprog. Labels are read from results/md2/t2_cluster_labels_*.csv. Not re-labelled. AddModuleScore for MD is the per-cell vector already stored in data/processed/md2/louvain_ams_*.npz (the md2 computation). Table S3 age-up minus age-down and the frozen-ruler / pluripotency−fibroblast per-cell scores are the vectors already stored in data/processed/md4/cell_scores_*.npz (the md4 computation). Frozen ruler: results/fibro/frozen_ruler_ridge_raw.npz used as-is. Refit nothing. Do not re-cluster, re-label, re-tune, rescore observed instruments, or re-order the trajectory after seeing scores.
+
+Trajectory order, fixed before scoring: Fibroblast → PartialReprog → EarlyPluri → Pluripotency. NonReprog is off-trajectory: score and plot it, but exclude it from every trajectory statistic.
+
+Unit of analysis: the cell state, per donor. Pool timepoints within each state (the state, not the day, is the trajectory position here). Report the timepoint composition of every state. Require ≥30 cells per state per donor; a state below that is reported as not scored, not dropped silently.
+
+Two coordinates per cell: x = identity = pluripotency−fibroblast score (frozen lists from FINDINGS_FIBRO.md; primary version as stored in md4 cell_scores, drop_oskm=False). y = age. Three age instruments, plotted and tested separately, never combined: frozen ruler; MD; Table S3 age-up minus age-down.
+
+Per donor, per instrument:
+
+1. State medians and bootstrap 95% CIs (B=200, cells resampled within state) on both coordinates.
+2. Segment slopes. Δage / Δidentity for segment A (Fibroblast → PartialReprog) and segment B (PartialReprog → Pluripotency; if Pluripotency is not scored, use EarlyPluri and say so).
+3. Bend statistic = slope_A − slope_B, with bootstrap CI.
+4. Null: for the frozen ruler, the same statistic on 200 permuted-weight random directions (seed 20260914). For each gene-list score (MD, age-up−age-down), 200 size-matched, expression-bin-matched random gene sets. Report the empirical p for the observed bend being at least as large as the null's.
+
+Young direction = destination state median age below origin (Δage < 0). If Δidentity > 0, that is a negative slope; if Δidentity < 0, a positive slope. Slope CI excludes 0 in the young direction iff the bootstrap CI of the slope lies entirely on that side of 0. Segment B is flat if its slope CI includes 0; reversed (old direction) if the slope CI excludes 0 on the age-rises side (Δage > 0).
+
+Empirical p for the bend: p_more_negative = (n_null ≤ obs + 1) / (n_null + 1). That is the one-sided test that the observed bend is at least as large as the null's in the rejuvenation-separable direction (slope_A more negative than slope_B when identity increases). Also report p_more_positive. “Beats its null” = p_more_negative ≤ 0.05. Seed 20260914 for random directions and random gene sets. Bootstrap seed 20260918 with a documented per-(donor, instrument) offset. Donors never pooled. Instruments never combined. NonReprog never in a trajectory statistic.
+
+Sanity, before any new median or bend: (1) reproduce FINDINGS_MD2.md pooled MD means on the aged donor (PartialReprog +0.150, NonReprog +0.439; t2_reproduction.json); (2) occupancy matches results/md4/t1_cell_counts.csv summed within state. If either fails, stop. Cell-state labels have drifted.
+
+**Pre-registered reading (per donor, per instrument; only what fired):**
+- **Bend:** age falls in segment A (slope_A CI excludes 0 in the young direction) **and** segment B's age change is flat or reversed (slope_B CI includes 0 or is in the old direction) **and** the bend statistic beats its null at p ≤ 0.05 → age moves before identity is lost; rejuvenation is separable from dedifferentiation on this instrument.
+- **Lockstep:** age falls in both segments with overlapping slopes and the bend statistic does not beat its null → this instrument cannot separate rejuvenation from identity loss.
+- **Mixed / other:** report exactly what fired.
+
+Instrument comparison, report-only: state which instruments bend and which run in lockstep. FINDINGS_MD3.md Task 3 found MD correlates ρ ≈ −0.94 with the pluripotency−fibroblast score, so MD is expected to run in lockstep; say whether it does. If the frozen ruler bends and MD does not, that is the separation between the instruments, stated as observed, with no winner declared.
+
+[genesets] MD n=205 Age up n=1533 Age down n=2007
+[t1 labels] GM00731 columns actually read: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[t1 obs] GM00731 columns actually read: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[t1 ams] GM00731 keys actually read: ['md', 'tgfb', 'bins', 'gene_mean', 'cluster', 'day', 'n_genes']
+[id_type louvain_GM00731_symbols] kind=symbol n=29058 n_ensembl=0 n_refseq=0 n_symbol_like=29057 source=<repo>\data\processed\md2\louvain_counts_GM00731.npz:symbols examples=['AL627309.1', 'AL627309.5', 'AP006222.2', 'AL669831.2', 'LINC01409', 'FAM87B', 'LINC01128', 'LINC00115']
+[id_type louvain_GM00731_gene_id] kind=ensembl n=29058 n_ensembl=29058 n_refseq=0 n_symbol_like=0 source=<repo>\data\processed\md2\louvain_counts_GM00731.npz:gene_id examples=['ENSG00000238009', 'ENSG00000241860', 'ENSG00000286448', 'ENSG00000229905', 'ENSG00000237491', 'ENSG00000177757', 'ENSG00000228794', 'ENSG00000225880']
+[t1 labels] GM23815 columns actually read: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[t1 obs] GM23815 columns actually read: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[t1 ams] GM23815 keys actually read: ['md', 'tgfb', 'bins', 'gene_mean', 'cluster', 'day']
+[id_type louvain_GM23815_symbols] kind=symbol n=29154 n_ensembl=0 n_refseq=0 n_symbol_like=29154 source=<repo>\data\processed\md2\louvain_counts_GM23815.npz:symbols examples=['AL627309.1', 'AL627309.3', 'AL627309.5', 'AP006222.2', 'LINC01409', 'FAM87B', 'LINC01128', 'LINC00115']
+[id_type louvain_GM23815_gene_id] kind=ensembl n=29154 n_ensembl=29154 n_refseq=0 n_symbol_like=0 source=<repo>\data\processed\md2\louvain_counts_GM23815.npz:gene_id examples=['ENSG00000238009', 'ENSG00000239945', 'ENSG00000241860', 'ENSG00000286448', 'ENSG00000237491', 'ENSG00000177757', 'ENSG00000228794', 'ENSG00000225880']
+[t1 labels] GM00731 columns actually read: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[t1 obs] GM00731 columns actually read: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[t1 counts] GM00731 Fibroblast n0=4939 n3=5 n7=14 n10=1030 n_all=5988 scored=True
+[t1 counts] GM00731 PartialReprog n0=3 n3=5220 n7=578 n10=31 n_all=5832 scored=True
+[t1 counts] GM00731 EarlyPluripotency n0=2 n3=410 n7=3917 n10=85 n_all=4414 scored=True
+[t1 counts] GM00731 Pluripotency n0=0 n3=5 n7=354 n10=80 n_all=439 scored=True
+[t1 counts] GM00731 NonReprog n0=65 n3=348 n7=1932 n10=3114 n_all=5459 scored=True
+[t1 labels] GM23815 columns actually read: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[t1 obs] GM23815 columns actually read: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[t1 counts] GM23815 Fibroblast n0=7703 n3=46 n7=2233 n10=1373 n_all=11355 scored=True
+[t1 counts] GM23815 PartialReprog n0=9 n3=6113 n7=309 n10=50 n_all=6481 scored=True
+[t1 counts] GM23815 EarlyPluripotency n0=56 n3=316 n7=8172 n10=4417 n_all=12961 scored=True
+[t1 counts] GM23815 Pluripotency n0=0 n3=91 n7=977 n10=181 n_all=1249 scored=True
+[t1 counts] GM23815 NonReprog n0=0 n3=10 n7=8 n10=1794 n_all=1812 scored=True
+[t1] occupancy matches md4 t1_cell_counts.csv
+[t1 qualify] GM00731 A_ok=True B_ok=True B_end=Pluripotency fallback=False
+[t1 qualify] GM23815 A_ok=True B_ok=True B_end=Pluripotency fallback=False
+[t1 sanity] n_PR=5832 n_NR=5459 MD_PR=+0.150471 MD_NR=+0.439448 ok=True
+[prereg] wrote <repo>\results\plane\DECLARED_BEFORE_SCORES.flag
+[t1 cell_scores] GM00731 keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[t1] GM00731 md_score matches louvain_ams exactly
+[t1 cell_scores] GM23815 keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[t1] GM23815 md_score matches louvain_ams exactly
+[t1 median] GM00731 frozen_ruler Fibroblast n=5988 x=+8.2813 [+8.2658,+8.2946] y=+18.2293 [+18.2159,+18.2507]
+[t1 median] GM00731 frozen_ruler PartialReprog n=5832 x=+12.1346 [+12.0669,+12.2170] y=+17.4895 [+17.4640,+17.5207]
+[t1 median] GM00731 frozen_ruler EarlyPluripotency n=4414 x=+12.1655 [+12.1065,+12.2090] y=+17.0415 [+17.0047,+17.0644]
+[t1 median] GM00731 frozen_ruler Pluripotency n=439 x=+12.9861 [+12.8953,+13.1007] y=+15.3491 [+15.2252,+15.4214]
+[t1 median] GM00731 frozen_ruler NonReprog n=5459 x=+8.9082 [+8.8844,+8.9285] y=+18.3863 [+18.3597,+18.4123]
+[t1 median] GM00731 md_score Fibroblast n=5988 x=+8.2813 [+8.2667,+8.2978] y=+0.5054 [+0.5029,+0.5078]
+[t1 median] GM00731 md_score PartialReprog n=5832 x=+12.1346 [+12.0632,+12.2234] y=+0.1283 [+0.1220,+0.1344]
+[t1 median] GM00731 md_score EarlyPluripotency n=4414 x=+12.1655 [+12.0906,+12.2094] y=+0.1257 [+0.1197,+0.1328]
+[t1 median] GM00731 md_score Pluripotency n=439 x=+12.9861 [+12.8881,+13.1007] y=+0.0044 [-0.0033,+0.0182]
+[t1 median] GM00731 md_score NonReprog n=5459 x=+8.9082 [+8.8865,+8.9307] y=+0.4420 [+0.4387,+0.4449]
+[t1 median] GM00731 age_up_minus_age_down Fibroblast n=5988 x=+8.2813 [+8.2658,+8.2957] y=+0.0252 [+0.0237,+0.0270]
+[t1 median] GM00731 age_up_minus_age_down PartialReprog n=5832 x=+12.1346 [+12.0669,+12.2203] y=-0.1011 [-0.1026,-0.0994]
+[t1 median] GM00731 age_up_minus_age_down EarlyPluripotency n=4414 x=+12.1655 [+12.0954,+12.2056] y=-0.0003 [-0.0022,+0.0018]
+[t1 median] GM00731 age_up_minus_age_down Pluripotency n=439 x=+12.9861 [+12.8726,+13.1003] y=+0.0734 [+0.0679,+0.0824]
+[t1 median] GM00731 age_up_minus_age_down NonReprog n=5459 x=+8.9082 [+8.8884,+8.9313] y=+0.0293 [+0.0279,+0.0309]
+[t1 median] GM23815 frozen_ruler Fibroblast n=11355 x=+9.4417 [+9.4322,+9.4506] y=+18.8545 [+18.8405,+18.8674]
+[t1 median] GM23815 frozen_ruler PartialReprog n=6481 x=+12.0875 [+12.0401,+12.1250] y=+18.1976 [+18.1756,+18.2143]
+[t1 median] GM23815 frozen_ruler EarlyPluripotency n=12961 x=+12.2182 [+12.1834,+12.2481] y=+18.1300 [+18.1137,+18.1438]
+[t1 median] GM23815 frozen_ruler Pluripotency n=1249 x=+13.6840 [+13.5781,+13.7511] y=+17.0946 [+17.0289,+17.1654]
+[t1 median] GM23815 frozen_ruler NonReprog n=1812 x=+9.3430 [+9.3116,+9.3619] y=+19.1876 [+19.1658,+19.2154]
+[t1 median] GM23815 md_score Fibroblast n=11355 x=+9.4417 [+9.4321,+9.4523] y=+0.4590 [+0.4569,+0.4606]
+[t1 median] GM23815 md_score PartialReprog n=6481 x=+12.0875 [+12.0439,+12.1270] y=+0.0746 [+0.0689,+0.0806]
+[t1 median] GM23815 md_score EarlyPluripotency n=12961 x=+12.2182 [+12.1840,+12.2534] y=+0.1153 [+0.1111,+0.1196]
+[t1 median] GM23815 md_score Pluripotency n=1249 x=+13.6840 [+13.5592,+13.7511] y=-0.0622 [-0.0659,-0.0586]
+[t1 median] GM23815 md_score NonReprog n=1812 x=+9.3430 [+9.3221,+9.3623] y=+0.4220 [+0.4156,+0.4261]
+[t1 median] GM23815 age_up_minus_age_down Fibroblast n=11355 x=+9.4417 [+9.4321,+9.4527] y=+0.0098 [+0.0089,+0.0109]
+[t1 median] GM23815 age_up_minus_age_down PartialReprog n=6481 x=+12.0875 [+12.0470,+12.1282] y=-0.1181 [-0.1197,-0.1166]
+[t1 median] GM23815 age_up_minus_age_down EarlyPluripotency n=12961 x=+12.2182 [+12.1859,+12.2542] y=-0.0287 [-0.0300,-0.0273]
+[t1 median] GM23815 age_up_minus_age_down Pluripotency n=1249 x=+13.6840 [+13.5793,+13.7511] y=+0.0233 [+0.0205,+0.0252]
+[t1 median] GM23815 age_up_minus_age_down NonReprog n=1812 x=+9.3430 [+9.3222,+9.3637] y=+0.0235 [+0.0218,+0.0252]
+[t1 slope] GM00731 frozen_ruler A=-0.19198000287236447 B=-2.514033220121115 bend=2.3220532172487505 B_end=Pluripotency fallback=False
+[t1 slope] GM00731 md_score A=-0.0978760602212234 B=-0.14552910828949495 bend=0.047653048068271545 B_end=Pluripotency fallback=False
+[t1 slope] GM00731 age_up_minus_age_down A=-0.03277591946286794 B=0.20496076051855025 bend=-0.23773667998141818 B_end=Pluripotency fallback=False
+[t1 slope] GM23815 frozen_ruler A=-0.24825459047419215 B=-0.6909022235070909 bend=0.44264763303289867 B_end=Pluripotency fallback=False
+[t1 slope] GM23815 md_score A=-0.14528913765005586 B=-0.08566663334911248 bend=-0.059622504300943374 B_end=Pluripotency fallback=False
+[t1 slope] GM23815 age_up_minus_age_down A=-0.048348378177753504 B=0.08858368180453775 bend=-0.13693205998229124 B_end=Pluripotency fallback=False
+[null ruler GM00731] n=22132 p=23485 n_missing_allzero=3133 n_random=200 seed=20260914 tmm_nf=1 prior=2
+[null ruler GM00731] 0/22132
+[null ruler GM00731] 5120/22132
+[null ruler GM00731] 10240/22132
+[null ruler GM00731] 15360/22132
+[null ruler GM00731] 20480/22132
+[null ruler] GM00731 observed scores match md4 cell_scores max_abs_delta=0.0
+[AMS GM00731:MD] requested=205 mapped=205 missing=0 missing_symbols=[]
+[null AMS GM00731:MD] draw 0/200 n_mapped=205
+[null AMS GM00731:MD] draw 20/200 n_mapped=205
+[null AMS GM00731:MD] draw 40/200 n_mapped=205
+[null AMS GM00731:MD] draw 60/200 n_mapped=205
+[null AMS GM00731:MD] draw 80/200 n_mapped=205
+[null AMS GM00731:MD] draw 100/200 n_mapped=205
+[null AMS GM00731:MD] draw 120/200 n_mapped=205
+[null AMS GM00731:MD] draw 140/200 n_mapped=205
+[null AMS GM00731:MD] draw 160/200 n_mapped=205
+[null AMS GM00731:MD] draw 180/200 n_mapped=205
+[AMS GM00731:S3:up] requested=1533 mapped=896 missing=636 missing_symbols=['ADH1B', 'SLC25A52', 'FMO2', 'ENSG00000263244', 'TMSB4XP8', 'ENSG00000290383', 'ENSG00000283907', 'ENSG00000220370', 'RPL36AP21', 'PPIAP82', 'ENSG00000271047', 'EEF1A1P1', 'ENSG00000254732', 'TMSB10P1', 'ENSG00000196656', 'ENSG00000270249', 'RPL12P38', 'LINC01616', 'MT-TA', 'RPL5P8']
+[AMS GM00731:S3:down] requested=2007 mapped=1586 missing=421 missing_symbols=['TMEM191A', 'TMEM191A', 'RNA5-8SN3', 'RNVU1-29', 'RNU1-2', 'ENSG00000243679', 'CGB5', 'UBE2SP2', 'ENSG00000288725', 'FAM86DP', 'AGAP11', 'ENSG00000111780', 'ENSG00000235510', 'PSMC1P5', 'CGB8', 'URGCP-MRPS24', 'SLC2A3P1', 'ENSG00000260170', 'TRIM6-TRIM34', 'SLC7A5P2']
+[null AMS GM00731:S3 up-down] draw 0/200
+[null AMS GM00731:S3 up-down] draw 20/200
+[null AMS GM00731:S3 up-down] draw 40/200
+[null AMS GM00731:S3 up-down] draw 60/200
+[null AMS GM00731:S3 up-down] draw 80/200
+[null AMS GM00731:S3 up-down] draw 100/200
+[null AMS GM00731:S3 up-down] draw 120/200
+[null AMS GM00731:S3 up-down] draw 140/200
+[null AMS GM00731:S3 up-down] draw 160/200
+[null AMS GM00731:S3 up-down] draw 180/200
+[null] GM00731 frozen_ruler n_fin=200 obs_bend=2.3220532172487505 null_med=0.056025902690547 p_neg=0.9850746268656716 p_pos=0.01990049751243781 kind=permuted_ruler_weights
+[null] GM00731 md_score n_fin=200 obs_bend=0.047653048068271545 null_med=0.1466871760597851 p_neg=0.009950248756218905 p_pos=0.9950248756218906 kind=size_matched_random_gene_sets_mean_expression_bin
+[null] GM00731 age_up_minus_age_down n_fin=200 obs_bend=-0.23773667998141818 null_med=0.0124503936941644 p_neg=0.004975124378109453 p_pos=1.0 kind=size_matched_random_gene_sets_mean_expression_bin_up_minus_down
+[null ruler GM23815] n=33858 p=23485 n_missing_allzero=3136 n_random=200 seed=20260914 tmm_nf=1 prior=2
+[null ruler GM23815] 0/33858
+[null ruler GM23815] 5120/33858
+[null ruler GM23815] 10240/33858
+[null ruler GM23815] 15360/33858
+[null ruler GM23815] 20480/33858
+[null ruler GM23815] 25600/33858
+[null ruler GM23815] 30720/33858
+[null ruler] GM23815 observed scores match md4 cell_scores max_abs_delta=0.0
+[AMS GM23815:MD] requested=205 mapped=204 missing=1 missing_symbols=['PRSS2']
+[null AMS GM23815:MD] draw 0/200 n_mapped=204
+[null AMS GM23815:MD] draw 20/200 n_mapped=204
+[null AMS GM23815:MD] draw 40/200 n_mapped=204
+[null AMS GM23815:MD] draw 60/200 n_mapped=204
+[null AMS GM23815:MD] draw 80/200 n_mapped=204
+[null AMS GM23815:MD] draw 100/200 n_mapped=204
+[null AMS GM23815:MD] draw 120/200 n_mapped=204
+[null AMS GM23815:MD] draw 140/200 n_mapped=204
+[null AMS GM23815:MD] draw 160/200 n_mapped=204
+[null AMS GM23815:MD] draw 180/200 n_mapped=204
+[AMS GM23815:S3:up] requested=1533 mapped=894 missing=638 missing_symbols=['ADH1B', 'KCNA4', 'SLC25A52', 'ENSG00000263244', 'TMSB4XP8', 'ENSG00000290383', 'ENSG00000283907', 'ENSG00000220370', 'RPL36AP21', 'PPIAP82', 'ENSG00000271047', 'EEF1A1P1', 'ENSG00000254732', 'TMSB10P1', 'ENSG00000196656', 'ENSG00000270249', 'RPL12P38', 'LINC01616', 'MT-TA', 'RPL5P8']
+[AMS GM23815:S3:down] requested=2007 mapped=1582 missing=425 missing_symbols=['TMEM191A', 'TMEM191A', 'RNA5-8SN3', 'RNVU1-29', 'RNU1-2', 'ENSG00000243679', 'CGB5', 'UBE2SP2', 'ENSG00000288725', 'FAM86DP', 'AGAP11', 'ENSG00000111780', 'ENSG00000235510', 'PSMC1P5', 'URGCP-MRPS24', 'SLC2A3P1', 'ENSG00000260170', 'TRIM6-TRIM34', 'SLC7A5P2', 'ENSG00000256663']
+[null AMS GM23815:S3 up-down] draw 0/200
+[null AMS GM23815:S3 up-down] draw 20/200
+[null AMS GM23815:S3 up-down] draw 40/200
+[null AMS GM23815:S3 up-down] draw 60/200
+[null AMS GM23815:S3 up-down] draw 80/200
+[null AMS GM23815:S3 up-down] draw 100/200
+[null AMS GM23815:S3 up-down] draw 120/200
+[null AMS GM23815:S3 up-down] draw 140/200
+[null AMS GM23815:S3 up-down] draw 160/200
+[null AMS GM23815:S3 up-down] draw 180/200
+[null] GM23815 frozen_ruler n_fin=200 obs_bend=0.44264763303289867 null_med=0.089800322000479 p_neg=0.8159203980099502 p_pos=0.1890547263681592 kind=permuted_ruler_weights
+[null] GM23815 md_score n_fin=200 obs_bend=-0.059622504300943374 null_med=0.08600908294953429 p_neg=0.004975124378109453 p_pos=1.0 kind=size_matched_random_gene_sets_mean_expression_bin
+[null] GM23815 age_up_minus_age_down n_fin=200 obs_bend=-0.13693205998229124 null_med=0.0009962622480352416 p_neg=0.004975124378109453 p_pos=1.0 kind=size_matched_random_gene_sets_mean_expression_bin_up_minus_down
+[t1 reading] GM00731 frozen_ruler key=mixed p_neg=0.9850746268656716 bend=2.3220532172487505
+[t1 reading] GM00731 md_score key=mixed p_neg=0.009950248756218905 bend=0.047653048068271545
+[t1 reading] GM00731 age_up_minus_age_down key=bend p_neg=0.004975124378109453 bend=-0.23773667998141818
+[t1 reading] GM23815 frozen_ruler key=mixed p_neg=0.8159203980099502 bend=0.44264763303289867
+[t1 reading] GM23815 md_score key=mixed p_neg=0.004975124378109453 bend=-0.059622504300943374
+[t1 reading] GM23815 age_up_minus_age_down key=bend p_neg=0.004975124378109453 bend=-0.13693205998229124
+====================================================================================================
+PLANE TASK2  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / labels / AddModuleScore inherited from md2; not re-tuned.
+md4 cell_scores reused for observed instruments; cells are not rescored.
+MIN_CELLS=30. Trajectory=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency']. NonReprog off-trajectory. Donors never pooled. Instruments never combined.
+Written **before any PLANE extrapolation distance**, 2026-09-21. Report-only. No gate.
+
+Per state per donor, report the extrapolation distance to the GTEx fibroblast training distribution (same PCA k=50 nearest-neighbour Euclidean and Mahalanobis measures as FINDINGS_FIBRO2.md / src/fibro2_extrap.py). Sum Louvain-kept UMIs to a pseudobulk on the frozen-ruler gene space (md4 louvain_rulerY aligned). TMM among that donor's scored-state rows, then frozen μ/σ/w. Do not re-TMM among cells. Do not refit PCA. Do not rescore the per-cell instruments of Task 1.
+
+State the direction extrapolation pushes the result, using the evidence already in the repo: FINDINGS_FIBRO3.md Task 2 (the same PCA k=50 NN / Mahalanobis measures as FINDINGS_FIBRO2.md) found the ruler score falls with distance from training (ρ = −0.625); FINDINGS_MD4.md found a weaker version (ρ = −0.280). Pluripotent cells sit furthest from fibroblast training. If extrapolation pushes readings down with distance, it manufactures lockstep, not a bend — so a bend observed in the frozen ruler would be conservative with respect to extrapolation, and lockstep would be uninterpretable. State whichever applies from the numbers, and say so plainly. Do not use this to rescue a lockstep result.
+
+[t2] GTEx pack X shape=(652, 23485)
+[t2] GTEx train z n=652 p=23485
+[t2] PCA k=50
+[tmm t2_state_GM00731] n_samples=5 n_genes=23485 nf_median=0.9461 prior.count=2
+[t2] GM00731 Fibroblast n=5988 age=+4.277 nn=+451.439 mahal=+23.945
+[t2] GM00731 PartialReprog n=5832 age=+0.593 nn=+463.976 mahal=+24.384
+[t2] GM00731 EarlyPluripotency n=4414 age=-2.675 nn=+491.733 mahal=+24.973
+[t2] GM00731 Pluripotency n=439 age=-10.546 nn=+630.747 mahal=+28.506
+[t2] GM00731 NonReprog n=5459 age=+6.807 nn=+469.960 mahal=+23.761
+[tmm t2_state_GM23815] n_samples=5 n_genes=23485 nf_median=0.9292 prior.count=2
+[t2] GM23815 Fibroblast n=11355 age=-2.208 nn=+448.772 mahal=+23.320
+[t2] GM23815 PartialReprog n=6481 age=-4.695 nn=+458.154 mahal=+23.181
+[t2] GM23815 EarlyPluripotency n=12961 age=-8.016 nn=+495.576 mahal=+25.043
+[t2] GM23815 Pluripotency n=1249 age=-15.240 nn=+629.554 mahal=+28.273
+[t2] GM23815 NonReprog n=1812 age=-0.216 nn=+490.574 mahal=+24.648
+[t2 direction] FINDINGS_FIBRO3.md Task 2 (same PCA k=50 NN / Mahalanobis measures as FINDINGS_FIBRO2.md) ρ(nn_euclidean, frozen ruler)=-0.625 CI=[-0.834, -0.32] n=22. FINDINGS_MD4.md ρ_nn=-0.28 on state×timepoint rows. Negative ρ: the ruler score falls as distance from GTEx fibroblast training rises. GM00731 scored states by nn_euclidean (near→far): Fibroblast nn=+451.439 mahal=+23.945; PartialReprog nn=+463.976 mahal=+24.384; NonReprog nn=+469.960 mahal=+23.761; EarlyPluripotency nn=+491.733 mahal=+24.973; Pluripotency nn=+630.747 mahal=+28.506. GM00731: Pluripotency nn=+630.747 Fibroblast nn=+451.439; Pluripotency farther than Fibroblast=True; farthest scored state=Pluripotency. GM00731 frozen ruler reading=`mixed`. Extrapolation that pushes age readings down with distance manufactures lockstep, not a bend. Not used to reclassify Task 1. GM23815 scored states by nn_euclidean (near→far): Fibroblast nn=+448.772 mahal=+23.320; PartialReprog nn=+458.154 mahal=+23.181; NonReprog nn=+490.574 mahal=+24.648; EarlyPluripotency nn=+495.576 mahal=+25.043; Pluripotency nn=+629.554 mahal=+28.273. GM23815: Pluripotency nn=+629.554 Fibroblast nn=+448.772; Pluripotency farther than Fibroblast=True; farthest scored state=Pluripotency. GM23815 frozen ruler reading=`mixed`. Extrapolation that pushes age readings down with distance manufactures lockstep, not a bend. Not used to reclassify Task 1. Task 2 is report-only. It is not a gate and is not used to explain away a lockstep result.
+====================================================================================================
+PLANE TASK3  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Louvain / labels / AddModuleScore inherited from md2; not re-tuned.
+md4 cell_scores reused for observed instruments; cells are not rescored.
+MIN_CELLS=30. Trajectory=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency']. NonReprog off-trajectory. Donors never pooled. Instruments never combined.
+Written **before any PLANE figure**, 2026-09-21.
+
+One figure per donor, three panels (frozen ruler, MD, age-up−age-down), x = identity, y = age, the four trajectory states as points with 2D bootstrap CIs joined in order, NonReprog as a separate marker, the random-direction or random-set envelope shaded behind. Same identity-axis scaling within a donor. results/plane/figures/plane_<donor>.png.
+
+[t3] wrote <repo>\results\plane\figures\plane_GM00731.png
+[t3] wrote <repo>\results\plane\figures\plane_GM23815.png
+[run] DONE

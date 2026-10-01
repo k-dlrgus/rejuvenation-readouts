@@ -1,0 +1,11 @@
+{
+ "seed": 20260914,
+ "n": 3323,
+ "mean": 52.04784832982245,
+ "donor_mean": 52.64377682403433,
+ "site_means": {
+  "H": 43.88041125541125,
+  "M": 62.28067796610169
+ },
+ "note": "donor-level within-bank permutation of chronological age"
+}

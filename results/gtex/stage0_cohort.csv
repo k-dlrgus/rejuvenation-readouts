@@ -1,0 +1,7 @@
+tissue,slug,n_samples,n_donors,n_SMCENTER,n_SMNABTCH,n_SMGEBTCH,n_male,n_female,SMRIN_n_missing,SMRIN_median,SMRIN_min,SMRIN_max,SMTSISCH_n_missing,SMTSISCH_median,SMTSISCH_min,SMTSISCH_max,DTHHRDY_n_missing,DTHHRDY_n_levels,n_AGE_20-29,n_AGE_30-39,n_AGE_40-49,n_AGE_50-59,n_AGE_60-69,n_AGE_70-79
+Brain - Frontal Cortex (BA9),ba9,269,269,4,147,108,201,68,0,7.1,5.5,9.4,0,766.0,223.0,1350.0,0,5,5,8,23,83,138,12
+Brain - Cortex,cortex,270,270,3,164,141,195,75,0,6.5,5.4,8.7,0,1004.0,383.0,1668.0,0,5,7,8,25,84,129,17
+Brain - Anterior cingulate cortex (BA24),ba24,233,233,4,146,105,177,56,0,6.6,5.5,9.4,0,790.0,223.0,1375.0,0,5,7,7,25,62,119,13
+Brain - Hippocampus,hippocampus,255,255,4,145,111,190,65,0,6.7,5.5,9.2,0,762.0,223.0,1375.0,0,5,4,8,25,75,128,15
+Heart - Left Ventricle,heart_lv,452,452,3,269,204,308,144,0,7.25,5.5,9.4,1,492.0,55.0,1737.0,1,5,20,25,67,159,167,14
+Muscle - Skeletal,muscle,818,818,3,338,226,552,266,0,8.0,5.5,9.9,0,573.0,35.0,2075.0,10,5,71,64,121,261,273,28

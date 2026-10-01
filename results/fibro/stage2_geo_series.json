@@ -1,0 +1,38 @@
+{
+ "Series_title": [
+  "Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq]"
+ ],
+ "Series_overall_design": [
+  "10x Genomics scRNA-seq of human fibroblasts from a young (GM23815, 22yr) and aged donor (GM00731, 96yr) treated with Sendai virus OSKM for up to 10 days."
+ ],
+ "Series_summary": [
+  "The loss of cellular and tissue identity is a hallmark of aging and numerous diseases, but the underlying mechanisms are not well understood. Our analysis of gene expression data from over 40 human tissues and 20 diseases reveals a pervasive upregulation of mesenchymal genes across multiple cell types, along with an altered composition of stromal cell populations, denoting a \u00e2\u0080\u009cmesenchymal drift\u00e2\u0080\u009d (MD). Increased MD correlates with disease progression, reduced patient survival, and an elevated mortality risk, whereas suppression of key MD transcription factors leads to epigenetic rejuvenation. Notably, Yamanaka factor-induced partial reprogramming can markedly reduce MD before dedifferentiation and gain of pluripotency, rejuvenating the aging transcriptome at the cellular and tissue levels. These findings provide mechanistic insight into the underlying beneficial effects of partial reprogramming and offer a framework for developing interventions to reverse age-related diseases using the partial reprogramming approach."
+ ],
+ "Series_supplementary_file": [
+  "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297234/suppl/GSE297234_GM00731_SEVOSKM.rds",
+  "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297234/suppl/GSE297234_HFIB_COMBINED_SEVOSKM.rds",
+  "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE297nnn/GSE297234/suppl/GSE297234_RAW.tar"
+ ],
+ "Series_sample_id": [
+  "GSM8986586",
+  "GSM8986587",
+  "GSM8986588",
+  "GSM8986589",
+  "GSM8986590",
+  "GSM8986591",
+  "GSM8986592",
+  "GSM8986593"
+ ],
+ "Series_pubmed_id": [
+  "40816266"
+ ],
+ "Series_type": [
+  "Expression profiling by high throughput sequencing"
+ ],
+ "Series_platform_id": [
+  "GPL24676"
+ ],
+ "Series_sample_organism": [
+  "Homo sapiens"
+ ]
+}

@@ -1,0 +1,1441 @@
+split,variant,k,clean,config,celltype,n_young,n_old,angle_deg,ok,n_donors_young,n_donors_old
+within_H,pca,20,False,A_pca_k020,GABAergic neuron,61,35,88.84317300784437,True,75,45
+within_H,pca,20,False,A_pca_k020,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,83.53132073735412,True,75,45
+within_H,pca,20,False,A_pca_k020,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,86.41820122998635,True,75,45
+within_H,pca,20,False,A_pca_k020,L5/6 near-projecting glutamatergic neuron,49,33,87.000011536703,True,75,45
+within_H,pca,20,False,A_pca_k020,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,70.24405209137662,True,75,45
+within_H,pca,20,False,A_pca_k020,L6 intratelencephalic projecting glutamatergic neuron,50,36,85.14270915213402,True,75,45
+within_H,pca,20,False,A_pca_k020,L6b glutamatergic neuron of the primary motor cortex,43,30,88.53285492794413,True,75,45
+within_H,pca,20,False,A_pca_k020,VIP GABAergic interneuron,68,44,88.04234810627273,True,75,45
+within_H,pca,20,False,A_pca_k020,astrocyte,73,44,87.51093953716368,True,75,45
+within_H,pca,20,False,A_pca_k020,endothelial cell,69,40,89.23059627423685,True,75,45
+within_H,pca,20,False,A_pca_k020,lamp5 GABAergic interneuron,67,42,86.84747455585176,True,75,45
+within_H,pca,20,False,A_pca_k020,microglial cell,70,42,81.30777985167887,True,75,45
+within_H,pca,20,False,A_pca_k020,oligodendrocyte,75,45,86.16429302689303,True,75,45
+within_H,pca,20,False,A_pca_k020,oligodendrocyte precursor cell,74,45,86.91267813944825,True,75,45
+within_H,pca,20,False,A_pca_k020,pericyte,56,34,85.8829601495272,True,75,45
+within_H,pca,20,False,A_pca_k020,perivascular macrophage,18,4,,False,75,45
+within_H,pca,20,False,A_pca_k020,pvalb GABAergic interneuron,67,43,86.19918422598182,True,75,45
+within_H,pca,20,False,A_pca_k020,smooth muscle cell,9,3,,False,75,45
+within_H,pca,20,False,A_pca_k020,sst GABAergic interneuron,68,43,88.51953912665951,True,75,45
+within_H,pca,20,False,A_pca_k020,vascular leptomeningeal cell,40,20,83.6927434805292,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,GABAergic neuron,61,35,88.84317300784437,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,83.53132073735412,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,86.41820122998635,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,L5/6 near-projecting glutamatergic neuron,49,33,87.000011536703,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,69.58159993049846,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,L6 intratelencephalic projecting glutamatergic neuron,50,36,85.14270915213402,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,L6b glutamatergic neuron of the primary motor cortex,43,30,88.53285492794413,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,VIP GABAergic interneuron,68,44,88.04234810627273,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,astrocyte,73,44,84.29672622937935,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,endothelial cell,69,40,89.23517723749357,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,lamp5 GABAergic interneuron,67,42,87.29547293771255,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,microglial cell,70,42,88.79860232352567,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,oligodendrocyte,75,45,84.01273200527206,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,oligodendrocyte precursor cell,74,45,86.91267813944825,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,pericyte,56,34,77.62377982733638,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,perivascular macrophage,18,4,,False,75,45
+within_H,pca,20,True,A_pca_k020_clean,pvalb GABAergic interneuron,67,43,86.19918422598182,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,smooth muscle cell,9,3,,False,75,45
+within_H,pca,20,True,A_pca_k020_clean,sst GABAergic interneuron,68,43,88.7649615168852,True,75,45
+within_H,pca,20,True,A_pca_k020_clean,vascular leptomeningeal cell,40,20,86.23448166668365,True,75,45
+within_H,pca,50,False,A_pca_k050,GABAergic neuron,61,35,87.95041747035715,True,75,45
+within_H,pca,50,False,A_pca_k050,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,79.07733650784638,True,75,45
+within_H,pca,50,False,A_pca_k050,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,85.71863416616303,True,75,45
+within_H,pca,50,False,A_pca_k050,L5/6 near-projecting glutamatergic neuron,49,33,89.06313457737532,True,75,45
+within_H,pca,50,False,A_pca_k050,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,79.51365170062861,True,75,45
+within_H,pca,50,False,A_pca_k050,L6 intratelencephalic projecting glutamatergic neuron,50,36,76.30943562753238,True,75,45
+within_H,pca,50,False,A_pca_k050,L6b glutamatergic neuron of the primary motor cortex,43,30,31.78487294469621,True,75,45
+within_H,pca,50,False,A_pca_k050,VIP GABAergic interneuron,68,44,86.84200187807696,True,75,45
+within_H,pca,50,False,A_pca_k050,astrocyte,73,44,84.85732790386159,True,75,45
+within_H,pca,50,False,A_pca_k050,endothelial cell,69,40,89.48994264586167,True,75,45
+within_H,pca,50,False,A_pca_k050,lamp5 GABAergic interneuron,67,42,88.29132439744248,True,75,45
+within_H,pca,50,False,A_pca_k050,microglial cell,70,42,88.89022204539953,True,75,45
+within_H,pca,50,False,A_pca_k050,oligodendrocyte,75,45,87.16503817648567,True,75,45
+within_H,pca,50,False,A_pca_k050,oligodendrocyte precursor cell,74,45,86.87149323200121,True,75,45
+within_H,pca,50,False,A_pca_k050,pericyte,56,34,86.31406023312186,True,75,45
+within_H,pca,50,False,A_pca_k050,perivascular macrophage,18,4,,False,75,45
+within_H,pca,50,False,A_pca_k050,pvalb GABAergic interneuron,67,43,87.79723648637722,True,75,45
+within_H,pca,50,False,A_pca_k050,smooth muscle cell,9,3,,False,75,45
+within_H,pca,50,False,A_pca_k050,sst GABAergic interneuron,68,43,85.80309081946622,True,75,45
+within_H,pca,50,False,A_pca_k050,vascular leptomeningeal cell,40,20,66.15887480843949,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,GABAergic neuron,61,35,87.95041747035715,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,79.07733650784638,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,85.71863416616303,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,L5/6 near-projecting glutamatergic neuron,49,33,88.25658593706771,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,77.68920851089891,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,L6 intratelencephalic projecting glutamatergic neuron,50,36,76.30943562753238,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,L6b glutamatergic neuron of the primary motor cortex,43,30,31.78487294469621,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,VIP GABAergic interneuron,68,44,86.84200187807696,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,astrocyte,73,44,84.33207928969317,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,endothelial cell,69,40,89.54929202178556,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,lamp5 GABAergic interneuron,67,42,88.07020800920661,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,microglial cell,70,42,87.38269492203452,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,oligodendrocyte,75,45,86.01052805048893,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,oligodendrocyte precursor cell,74,45,86.87149323200121,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,pericyte,56,34,88.86863655621829,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,perivascular macrophage,18,4,,False,75,45
+within_H,pca,50,True,A_pca_k050_clean,pvalb GABAergic interneuron,67,43,87.79723648637722,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,smooth muscle cell,9,3,,False,75,45
+within_H,pca,50,True,A_pca_k050_clean,sst GABAergic interneuron,68,43,85.88348889236059,True,75,45
+within_H,pca,50,True,A_pca_k050_clean,vascular leptomeningeal cell,40,20,84.96814302550203,True,75,45
+within_H,pca,100,False,A_pca_k100,GABAergic neuron,61,35,88.80839603348056,True,75,45
+within_H,pca,100,False,A_pca_k100,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,80.09410935603064,True,75,45
+within_H,pca,100,False,A_pca_k100,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,85.2835837231963,True,75,45
+within_H,pca,100,False,A_pca_k100,L5/6 near-projecting glutamatergic neuron,49,33,89.06313457737532,True,75,45
+within_H,pca,100,False,A_pca_k100,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,79.51365170062861,True,75,45
+within_H,pca,100,False,A_pca_k100,L6 intratelencephalic projecting glutamatergic neuron,50,36,76.30943562753238,True,75,45
+within_H,pca,100,False,A_pca_k100,L6b glutamatergic neuron of the primary motor cortex,43,30,31.78487294469621,True,75,45
+within_H,pca,100,False,A_pca_k100,VIP GABAergic interneuron,68,44,86.58438369875705,True,75,45
+within_H,pca,100,False,A_pca_k100,astrocyte,73,44,84.04457001343039,True,75,45
+within_H,pca,100,False,A_pca_k100,endothelial cell,69,40,89.22666252460851,True,75,45
+within_H,pca,100,False,A_pca_k100,lamp5 GABAergic interneuron,67,42,88.18830010577842,True,75,45
+within_H,pca,100,False,A_pca_k100,microglial cell,70,42,86.04589927028292,True,75,45
+within_H,pca,100,False,A_pca_k100,oligodendrocyte,75,45,85.97114550553634,True,75,45
+within_H,pca,100,False,A_pca_k100,oligodendrocyte precursor cell,74,45,86.69808116466324,True,75,45
+within_H,pca,100,False,A_pca_k100,pericyte,56,34,85.33356347559909,True,75,45
+within_H,pca,100,False,A_pca_k100,perivascular macrophage,18,4,,False,75,45
+within_H,pca,100,False,A_pca_k100,pvalb GABAergic interneuron,67,43,87.02087334098559,True,75,45
+within_H,pca,100,False,A_pca_k100,smooth muscle cell,9,3,,False,75,45
+within_H,pca,100,False,A_pca_k100,sst GABAergic interneuron,68,43,84.97519749250621,True,75,45
+within_H,pca,100,False,A_pca_k100,vascular leptomeningeal cell,40,20,66.15887480843949,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,GABAergic neuron,61,35,88.80839603348056,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,80.09410935603064,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,85.2835837231963,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,L5/6 near-projecting glutamatergic neuron,49,33,88.25658593706771,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,77.68920851089891,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,L6 intratelencephalic projecting glutamatergic neuron,50,36,76.30943562753238,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,L6b glutamatergic neuron of the primary motor cortex,43,30,31.78487294469621,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,VIP GABAergic interneuron,68,44,86.58438369875705,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,astrocyte,73,44,83.3483250392296,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,endothelial cell,69,40,89.27372571027585,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,lamp5 GABAergic interneuron,67,42,88.0196922056287,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,microglial cell,70,42,86.80174118789088,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,oligodendrocyte,75,45,84.98836580633531,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,oligodendrocyte precursor cell,74,45,86.69808116466324,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,pericyte,56,34,89.32775857837673,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,perivascular macrophage,18,4,,False,75,45
+within_H,pca,100,True,A_pca_k100_clean,pvalb GABAergic interneuron,67,43,87.02087334098559,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,smooth muscle cell,9,3,,False,75,45
+within_H,pca,100,True,A_pca_k100_clean,sst GABAergic interneuron,68,43,85.05805153283278,True,75,45
+within_H,pca,100,True,A_pca_k100_clean,vascular leptomeningeal cell,40,20,84.96814302550203,True,75,45
+within_H,pca,150,False,A_pca_k150,GABAergic neuron,61,35,88.80839603348056,True,75,45
+within_H,pca,150,False,A_pca_k150,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,80.09410935603064,True,75,45
+within_H,pca,150,False,A_pca_k150,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,85.2835837231963,True,75,45
+within_H,pca,150,False,A_pca_k150,L5/6 near-projecting glutamatergic neuron,49,33,89.06313457737532,True,75,45
+within_H,pca,150,False,A_pca_k150,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,79.51365170062861,True,75,45
+within_H,pca,150,False,A_pca_k150,L6 intratelencephalic projecting glutamatergic neuron,50,36,76.30943562753238,True,75,45
+within_H,pca,150,False,A_pca_k150,L6b glutamatergic neuron of the primary motor cortex,43,30,31.78487294469621,True,75,45
+within_H,pca,150,False,A_pca_k150,VIP GABAergic interneuron,68,44,86.58438369875705,True,75,45
+within_H,pca,150,False,A_pca_k150,astrocyte,73,44,84.04457001343039,True,75,45
+within_H,pca,150,False,A_pca_k150,endothelial cell,69,40,89.22666252460851,True,75,45
+within_H,pca,150,False,A_pca_k150,lamp5 GABAergic interneuron,67,42,88.18830010577842,True,75,45
+within_H,pca,150,False,A_pca_k150,microglial cell,70,42,86.04589927028292,True,75,45
+within_H,pca,150,False,A_pca_k150,oligodendrocyte,75,45,85.97114550553634,True,75,45
+within_H,pca,150,False,A_pca_k150,oligodendrocyte precursor cell,74,45,86.69808116466324,True,75,45
+within_H,pca,150,False,A_pca_k150,pericyte,56,34,85.33356347559909,True,75,45
+within_H,pca,150,False,A_pca_k150,perivascular macrophage,18,4,,False,75,45
+within_H,pca,150,False,A_pca_k150,pvalb GABAergic interneuron,67,43,87.02087334098559,True,75,45
+within_H,pca,150,False,A_pca_k150,smooth muscle cell,9,3,,False,75,45
+within_H,pca,150,False,A_pca_k150,sst GABAergic interneuron,68,43,84.97519749250621,True,75,45
+within_H,pca,150,False,A_pca_k150,vascular leptomeningeal cell,40,20,66.15887480843949,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,GABAergic neuron,61,35,88.80839603348056,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,80.09410935603064,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,85.2835837231963,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,L5/6 near-projecting glutamatergic neuron,49,33,88.25658593706771,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,77.68920851089891,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,L6 intratelencephalic projecting glutamatergic neuron,50,36,76.30943562753238,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,L6b glutamatergic neuron of the primary motor cortex,43,30,31.78487294469621,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,VIP GABAergic interneuron,68,44,86.58438369875705,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,astrocyte,73,44,83.3483250392296,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,endothelial cell,69,40,89.27372571027585,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,lamp5 GABAergic interneuron,67,42,88.0196922056287,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,microglial cell,70,42,86.80174118789088,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,oligodendrocyte,75,45,84.98836580633531,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,oligodendrocyte precursor cell,74,45,86.69808116466324,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,pericyte,56,34,89.32775857837673,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,perivascular macrophage,18,4,,False,75,45
+within_H,pca,150,True,A_pca_k150_clean,pvalb GABAergic interneuron,67,43,87.02087334098559,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,smooth muscle cell,9,3,,False,75,45
+within_H,pca,150,True,A_pca_k150_clean,sst GABAergic interneuron,68,43,85.05805153283278,True,75,45
+within_H,pca,150,True,A_pca_k150_clean,vascular leptomeningeal cell,40,20,84.96814302550203,True,75,45
+within_H,curated,20,False,B_curated_k020,GABAergic neuron,61,35,82.8290736769037,True,75,45
+within_H,curated,20,False,B_curated_k020,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,80.68601090321533,True,75,45
+within_H,curated,20,False,B_curated_k020,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,83.9100417465861,True,75,45
+within_H,curated,20,False,B_curated_k020,L5/6 near-projecting glutamatergic neuron,49,33,61.76759694839938,True,75,45
+within_H,curated,20,False,B_curated_k020,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,42.724894047257614,True,75,45
+within_H,curated,20,False,B_curated_k020,L6 intratelencephalic projecting glutamatergic neuron,50,36,82.48531584263475,True,75,45
+within_H,curated,20,False,B_curated_k020,L6b glutamatergic neuron of the primary motor cortex,43,30,75.47206591942022,True,75,45
+within_H,curated,20,False,B_curated_k020,VIP GABAergic interneuron,68,44,75.77030126137251,True,75,45
+within_H,curated,20,False,B_curated_k020,astrocyte,73,44,67.67237171517787,True,75,45
+within_H,curated,20,False,B_curated_k020,endothelial cell,69,40,69.93338304355848,True,75,45
+within_H,curated,20,False,B_curated_k020,lamp5 GABAergic interneuron,67,42,43.22063325473429,True,75,45
+within_H,curated,20,False,B_curated_k020,microglial cell,70,42,67.28365317377707,True,75,45
+within_H,curated,20,False,B_curated_k020,oligodendrocyte,75,45,85.15584656503383,True,75,45
+within_H,curated,20,False,B_curated_k020,oligodendrocyte precursor cell,74,45,87.83604273466077,True,75,45
+within_H,curated,20,False,B_curated_k020,pericyte,56,34,74.00384829421921,True,75,45
+within_H,curated,20,False,B_curated_k020,perivascular macrophage,18,4,,False,75,45
+within_H,curated,20,False,B_curated_k020,pvalb GABAergic interneuron,67,43,37.99704891510395,True,75,45
+within_H,curated,20,False,B_curated_k020,smooth muscle cell,9,3,,False,75,45
+within_H,curated,20,False,B_curated_k020,sst GABAergic interneuron,68,43,73.6641191446783,True,75,45
+within_H,curated,20,False,B_curated_k020,vascular leptomeningeal cell,40,20,48.434730676832494,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,GABAergic neuron,61,35,82.8290736769037,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,80.68601090321533,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,83.9100417465861,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,L5/6 near-projecting glutamatergic neuron,49,33,62.10579689198863,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,42.724894047257614,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,L6 intratelencephalic projecting glutamatergic neuron,50,36,82.48531584263475,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,L6b glutamatergic neuron of the primary motor cortex,43,30,75.47206591942022,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,VIP GABAergic interneuron,68,44,74.14127499260405,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,astrocyte,73,44,88.14518798467338,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,endothelial cell,69,40,69.93338304355848,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,lamp5 GABAergic interneuron,67,42,43.22063325473429,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,microglial cell,70,42,67.28365317377707,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,oligodendrocyte,75,45,86.64548273226977,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,oligodendrocyte precursor cell,74,45,87.83604273466077,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,pericyte,56,34,74.00384829421921,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,perivascular macrophage,18,4,,False,75,45
+within_H,curated,20,True,B_curated_k020_clean,pvalb GABAergic interneuron,67,43,52.06250715338222,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,smooth muscle cell,9,3,,False,75,45
+within_H,curated,20,True,B_curated_k020_clean,sst GABAergic interneuron,68,43,73.6641191446783,True,75,45
+within_H,curated,20,True,B_curated_k020_clean,vascular leptomeningeal cell,40,20,48.434730676832494,True,75,45
+within_H,curated,50,False,B_curated_k050,GABAergic neuron,61,35,46.44664423051982,True,75,45
+within_H,curated,50,False,B_curated_k050,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,84.32232497366583,True,75,45
+within_H,curated,50,False,B_curated_k050,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,83.4799125656864,True,75,45
+within_H,curated,50,False,B_curated_k050,L5/6 near-projecting glutamatergic neuron,49,33,88.66277583608031,True,75,45
+within_H,curated,50,False,B_curated_k050,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,39.67327774493314,True,75,45
+within_H,curated,50,False,B_curated_k050,L6 intratelencephalic projecting glutamatergic neuron,50,36,76.66063689711332,True,75,45
+within_H,curated,50,False,B_curated_k050,L6b glutamatergic neuron of the primary motor cortex,43,30,80.56605612780028,True,75,45
+within_H,curated,50,False,B_curated_k050,VIP GABAergic interneuron,68,44,87.87374057211701,True,75,45
+within_H,curated,50,False,B_curated_k050,astrocyte,73,44,56.468711012652996,True,75,45
+within_H,curated,50,False,B_curated_k050,endothelial cell,69,40,63.58488038885309,True,75,45
+within_H,curated,50,False,B_curated_k050,lamp5 GABAergic interneuron,67,42,85.2854628772754,True,75,45
+within_H,curated,50,False,B_curated_k050,microglial cell,70,42,68.49680691150142,True,75,45
+within_H,curated,50,False,B_curated_k050,oligodendrocyte,75,45,79.37154816372706,True,75,45
+within_H,curated,50,False,B_curated_k050,oligodendrocyte precursor cell,74,45,52.93272628565822,True,75,45
+within_H,curated,50,False,B_curated_k050,pericyte,56,34,66.67141702156086,True,75,45
+within_H,curated,50,False,B_curated_k050,perivascular macrophage,18,4,,False,75,45
+within_H,curated,50,False,B_curated_k050,pvalb GABAergic interneuron,67,43,57.106830850406915,True,75,45
+within_H,curated,50,False,B_curated_k050,smooth muscle cell,9,3,,False,75,45
+within_H,curated,50,False,B_curated_k050,sst GABAergic interneuron,68,43,74.8483078393591,True,75,45
+within_H,curated,50,False,B_curated_k050,vascular leptomeningeal cell,40,20,56.90743850818022,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,GABAergic neuron,61,35,46.44664423051982,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,84.32232497366583,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,83.4799125656864,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,L5/6 near-projecting glutamatergic neuron,49,33,72.88056616012405,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,39.67327774493314,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,L6 intratelencephalic projecting glutamatergic neuron,50,36,76.66063689711332,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,L6b glutamatergic neuron of the primary motor cortex,43,30,80.56605612780028,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,VIP GABAergic interneuron,68,44,89.0507014202702,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,astrocyte,73,44,55.59332808359095,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,endothelial cell,69,40,63.58488038885309,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,lamp5 GABAergic interneuron,67,42,85.2854628772754,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,microglial cell,70,42,68.29233848458509,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,oligodendrocyte,75,45,75.4357049807175,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,oligodendrocyte precursor cell,74,45,52.93272628565822,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,pericyte,56,34,66.67141702156086,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,perivascular macrophage,18,4,,False,75,45
+within_H,curated,50,True,B_curated_k050_clean,pvalb GABAergic interneuron,67,43,66.58440487962628,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,smooth muscle cell,9,3,,False,75,45
+within_H,curated,50,True,B_curated_k050_clean,sst GABAergic interneuron,68,43,74.8483078393591,True,75,45
+within_H,curated,50,True,B_curated_k050_clean,vascular leptomeningeal cell,40,20,56.90743850818022,True,75,45
+within_H,curated,100,False,B_curated_k100,GABAergic neuron,61,35,51.397099101915714,True,75,45
+within_H,curated,100,False,B_curated_k100,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,83.98298360499706,True,75,45
+within_H,curated,100,False,B_curated_k100,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,82.55025631104378,True,75,45
+within_H,curated,100,False,B_curated_k100,L5/6 near-projecting glutamatergic neuron,49,33,88.66277583608031,True,75,45
+within_H,curated,100,False,B_curated_k100,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,39.67327774493314,True,75,45
+within_H,curated,100,False,B_curated_k100,L6 intratelencephalic projecting glutamatergic neuron,50,36,76.66063689711332,True,75,45
+within_H,curated,100,False,B_curated_k100,L6b glutamatergic neuron of the primary motor cortex,43,30,80.56605612780028,True,75,45
+within_H,curated,100,False,B_curated_k100,VIP GABAergic interneuron,68,44,88.61109143581096,True,75,45
+within_H,curated,100,False,B_curated_k100,astrocyte,73,44,62.3609566037763,True,75,45
+within_H,curated,100,False,B_curated_k100,endothelial cell,69,40,74.37097655313909,True,75,45
+within_H,curated,100,False,B_curated_k100,lamp5 GABAergic interneuron,67,42,87.09578518988127,True,75,45
+within_H,curated,100,False,B_curated_k100,microglial cell,70,42,75.40069505140136,True,75,45
+within_H,curated,100,False,B_curated_k100,oligodendrocyte,75,45,75.59195727119862,True,75,45
+within_H,curated,100,False,B_curated_k100,oligodendrocyte precursor cell,74,45,53.841147356486815,True,75,45
+within_H,curated,100,False,B_curated_k100,pericyte,56,34,66.78386448720072,True,75,45
+within_H,curated,100,False,B_curated_k100,perivascular macrophage,18,4,,False,75,45
+within_H,curated,100,False,B_curated_k100,pvalb GABAergic interneuron,67,43,64.04507213346506,True,75,45
+within_H,curated,100,False,B_curated_k100,smooth muscle cell,9,3,,False,75,45
+within_H,curated,100,False,B_curated_k100,sst GABAergic interneuron,68,43,73.32869762211578,True,75,45
+within_H,curated,100,False,B_curated_k100,vascular leptomeningeal cell,40,20,56.90743850818022,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,GABAergic neuron,61,35,51.397099101915714,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,83.98298360499706,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,82.55025631104378,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,L5/6 near-projecting glutamatergic neuron,49,33,72.88056616012405,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,39.67327774493314,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,L6 intratelencephalic projecting glutamatergic neuron,50,36,76.66063689711332,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,L6b glutamatergic neuron of the primary motor cortex,43,30,80.56605612780028,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,VIP GABAergic interneuron,68,44,88.94500945378361,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,astrocyte,73,44,63.03510940519028,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,endothelial cell,69,40,74.37097655313909,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,lamp5 GABAergic interneuron,67,42,87.09578518988127,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,microglial cell,70,42,75.33980098960707,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,oligodendrocyte,75,45,73.18296264934537,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,oligodendrocyte precursor cell,74,45,53.841147356486815,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,pericyte,56,34,66.78386448720072,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,perivascular macrophage,18,4,,False,75,45
+within_H,curated,100,True,B_curated_k100_clean,pvalb GABAergic interneuron,67,43,72.41556522126227,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,smooth muscle cell,9,3,,False,75,45
+within_H,curated,100,True,B_curated_k100_clean,sst GABAergic interneuron,68,43,73.32869762211578,True,75,45
+within_H,curated,100,True,B_curated_k100_clean,vascular leptomeningeal cell,40,20,56.90743850818022,True,75,45
+within_H,curated,150,False,B_curated_k150,GABAergic neuron,61,35,51.397099101915714,True,75,45
+within_H,curated,150,False,B_curated_k150,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,83.98298360499706,True,75,45
+within_H,curated,150,False,B_curated_k150,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,82.55025631104378,True,75,45
+within_H,curated,150,False,B_curated_k150,L5/6 near-projecting glutamatergic neuron,49,33,88.66277583608031,True,75,45
+within_H,curated,150,False,B_curated_k150,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,39.67327774493314,True,75,45
+within_H,curated,150,False,B_curated_k150,L6 intratelencephalic projecting glutamatergic neuron,50,36,76.66063689711332,True,75,45
+within_H,curated,150,False,B_curated_k150,L6b glutamatergic neuron of the primary motor cortex,43,30,80.56605612780028,True,75,45
+within_H,curated,150,False,B_curated_k150,VIP GABAergic interneuron,68,44,88.61109143581096,True,75,45
+within_H,curated,150,False,B_curated_k150,astrocyte,73,44,62.3609566037763,True,75,45
+within_H,curated,150,False,B_curated_k150,endothelial cell,69,40,74.37097655313909,True,75,45
+within_H,curated,150,False,B_curated_k150,lamp5 GABAergic interneuron,67,42,87.09578518988127,True,75,45
+within_H,curated,150,False,B_curated_k150,microglial cell,70,42,75.40069505140136,True,75,45
+within_H,curated,150,False,B_curated_k150,oligodendrocyte,75,45,75.59195727119862,True,75,45
+within_H,curated,150,False,B_curated_k150,oligodendrocyte precursor cell,74,45,53.841147356486815,True,75,45
+within_H,curated,150,False,B_curated_k150,pericyte,56,34,66.78386448720072,True,75,45
+within_H,curated,150,False,B_curated_k150,perivascular macrophage,18,4,,False,75,45
+within_H,curated,150,False,B_curated_k150,pvalb GABAergic interneuron,67,43,64.04507213346506,True,75,45
+within_H,curated,150,False,B_curated_k150,smooth muscle cell,9,3,,False,75,45
+within_H,curated,150,False,B_curated_k150,sst GABAergic interneuron,68,43,73.32869762211578,True,75,45
+within_H,curated,150,False,B_curated_k150,vascular leptomeningeal cell,40,20,56.90743850818022,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,GABAergic neuron,61,35,51.397099101915714,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,83.98298360499706,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,82.55025631104378,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,L5/6 near-projecting glutamatergic neuron,49,33,72.88056616012405,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,39.67327774493314,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,L6 intratelencephalic projecting glutamatergic neuron,50,36,76.66063689711332,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,L6b glutamatergic neuron of the primary motor cortex,43,30,80.56605612780028,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,VIP GABAergic interneuron,68,44,88.94500945378361,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,astrocyte,73,44,63.03510940519028,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,endothelial cell,69,40,74.37097655313909,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,lamp5 GABAergic interneuron,67,42,87.09578518988127,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,microglial cell,70,42,75.33980098960707,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,oligodendrocyte,75,45,73.18296264934537,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,oligodendrocyte precursor cell,74,45,53.841147356486815,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,pericyte,56,34,66.78386448720072,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,perivascular macrophage,18,4,,False,75,45
+within_H,curated,150,True,B_curated_k150_clean,pvalb GABAergic interneuron,67,43,72.41556522126227,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,smooth muscle cell,9,3,,False,75,45
+within_H,curated,150,True,B_curated_k150_clean,sst GABAergic interneuron,68,43,73.32869762211578,True,75,45
+within_H,curated,150,True,B_curated_k150_clean,vascular leptomeningeal cell,40,20,56.90743850818022,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,GABAergic neuron,61,35,89.59930921798086,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,88.43523809895404,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,85.30572961747382,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,L5/6 near-projecting glutamatergic neuron,49,33,88.40598343303866,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,89.85642886104905,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,L6 intratelencephalic projecting glutamatergic neuron,50,36,87.89519617576613,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,L6b glutamatergic neuron of the primary motor cortex,43,30,89.4230932245655,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,VIP GABAergic interneuron,68,44,89.34656761727082,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,astrocyte,73,44,85.89132363712157,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,endothelial cell,69,40,88.43849517601386,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,lamp5 GABAergic interneuron,67,42,83.57380402163881,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,microglial cell,70,42,87.1376502753581,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,oligodendrocyte,75,45,89.04479430333781,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,oligodendrocyte precursor cell,74,45,88.46178349554668,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,pericyte,56,34,87.9334236522507,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,perivascular macrophage,18,4,,False,75,45
+within_H,wgcna,20,False,C_wgcna_k020,pvalb GABAergic interneuron,67,43,88.4718163184374,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,smooth muscle cell,9,3,,False,75,45
+within_H,wgcna,20,False,C_wgcna_k020,sst GABAergic interneuron,68,43,89.16888819549642,True,75,45
+within_H,wgcna,20,False,C_wgcna_k020,vascular leptomeningeal cell,40,20,89.57840598613632,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,GABAergic neuron,61,35,89.59930921798086,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,88.4314038077169,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,85.30572961747382,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,L5/6 near-projecting glutamatergic neuron,49,33,88.19490811256914,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,89.85642886104905,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,L6 intratelencephalic projecting glutamatergic neuron,50,36,87.89519617576613,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,L6b glutamatergic neuron of the primary motor cortex,43,30,89.67483210810404,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,VIP GABAergic interneuron,68,44,89.23029366755135,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,astrocyte,73,44,86.35235076447478,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,endothelial cell,69,40,88.43849517601386,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,lamp5 GABAergic interneuron,67,42,83.57380402163881,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,microglial cell,70,42,87.51798637398757,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,oligodendrocyte,75,45,88.69013707188088,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,oligodendrocyte precursor cell,74,45,88.85315898153863,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,pericyte,56,34,88.2059453278005,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,perivascular macrophage,18,4,,False,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,pvalb GABAergic interneuron,67,43,88.4718163184374,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,smooth muscle cell,9,3,,False,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,sst GABAergic interneuron,68,43,89.16888819549642,True,75,45
+within_H,wgcna,20,True,C_wgcna_k020_clean,vascular leptomeningeal cell,40,20,89.57840598613632,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,GABAergic neuron,61,35,87.41377139001678,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,89.65028871484074,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,88.01745544283533,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,L5/6 near-projecting glutamatergic neuron,49,33,87.36108836330047,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,89.73004832992622,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,L6 intratelencephalic projecting glutamatergic neuron,50,36,88.90155209504653,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,L6b glutamatergic neuron of the primary motor cortex,43,30,88.33684523476026,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,VIP GABAergic interneuron,68,44,88.92831635737006,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,astrocyte,73,44,85.75892181140809,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,endothelial cell,69,40,89.97303880088678,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,lamp5 GABAergic interneuron,67,42,81.64996022221783,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,microglial cell,70,42,89.18043877427645,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,oligodendrocyte,75,45,84.48713981493155,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,oligodendrocyte precursor cell,74,45,82.16675774742838,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,pericyte,56,34,88.44888120510457,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,perivascular macrophage,18,4,,False,75,45
+within_H,wgcna,50,False,C_wgcna_k050,pvalb GABAergic interneuron,67,43,88.81670076492655,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,smooth muscle cell,9,3,,False,75,45
+within_H,wgcna,50,False,C_wgcna_k050,sst GABAergic interneuron,68,43,86.47200445503421,True,75,45
+within_H,wgcna,50,False,C_wgcna_k050,vascular leptomeningeal cell,40,20,89.77979441776914,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,GABAergic neuron,61,35,87.41377139001678,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,89.55219811266873,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,88.88325497673256,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,L5/6 near-projecting glutamatergic neuron,49,33,88.03879203563534,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,89.73004832992622,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,L6 intratelencephalic projecting glutamatergic neuron,50,36,89.67974913748519,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,L6b glutamatergic neuron of the primary motor cortex,43,30,88.2339514456276,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,VIP GABAergic interneuron,68,44,88.6925229914729,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,astrocyte,73,44,85.7415284654183,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,endothelial cell,69,40,89.97318519310132,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,lamp5 GABAergic interneuron,67,42,81.64996022221783,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,microglial cell,70,42,88.89505768546408,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,oligodendrocyte,75,45,84.91420451405178,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,oligodendrocyte precursor cell,74,45,82.22439328189377,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,pericyte,56,34,88.69262411310754,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,perivascular macrophage,18,4,,False,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,pvalb GABAergic interneuron,67,43,88.81670076492655,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,smooth muscle cell,9,3,,False,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,sst GABAergic interneuron,68,43,86.47200445503421,True,75,45
+within_H,wgcna,50,True,C_wgcna_k050_clean,vascular leptomeningeal cell,40,20,89.90127166422108,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,GABAergic neuron,61,35,88.20289298427296,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,87.35662012964129,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,86.06385320489454,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,L5/6 near-projecting glutamatergic neuron,49,33,87.36108836330047,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,89.73004832992622,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,L6 intratelencephalic projecting glutamatergic neuron,50,36,88.90155209504653,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,L6b glutamatergic neuron of the primary motor cortex,43,30,88.33684523476026,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,VIP GABAergic interneuron,68,44,88.92839868222835,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,astrocyte,73,44,86.26885214454543,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,endothelial cell,69,40,89.66288778904317,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,lamp5 GABAergic interneuron,67,42,80.0874774855912,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,microglial cell,70,42,89.48541530294533,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,oligodendrocyte,75,45,85.59084116573536,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,oligodendrocyte precursor cell,74,45,83.33860439368131,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,pericyte,56,34,88.46947474666474,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,perivascular macrophage,18,4,,False,75,45
+within_H,wgcna,100,False,C_wgcna_k100,pvalb GABAergic interneuron,67,43,88.25511140834939,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,smooth muscle cell,9,3,,False,75,45
+within_H,wgcna,100,False,C_wgcna_k100,sst GABAergic interneuron,68,43,85.70445788786436,True,75,45
+within_H,wgcna,100,False,C_wgcna_k100,vascular leptomeningeal cell,40,20,89.77979441776914,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,GABAergic neuron,61,35,88.20289298427296,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,87.21322362519206,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,86.71749271389953,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,L5/6 near-projecting glutamatergic neuron,49,33,88.03879203563534,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,89.73004832992622,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,L6 intratelencephalic projecting glutamatergic neuron,50,36,89.67974913748519,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,L6b glutamatergic neuron of the primary motor cortex,43,30,88.2339514456276,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,VIP GABAergic interneuron,68,44,88.68944452878047,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,astrocyte,73,44,86.39502948079738,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,endothelial cell,69,40,89.64613199080962,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,lamp5 GABAergic interneuron,67,42,80.0874774855912,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,microglial cell,70,42,89.17593956200128,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,oligodendrocyte,75,45,86.06029694706947,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,oligodendrocyte precursor cell,74,45,83.31688451107689,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,pericyte,56,34,88.67152070962206,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,perivascular macrophage,18,4,,False,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,pvalb GABAergic interneuron,67,43,88.25511140834939,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,smooth muscle cell,9,3,,False,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,sst GABAergic interneuron,68,43,85.70445788786436,True,75,45
+within_H,wgcna,100,True,C_wgcna_k100_clean,vascular leptomeningeal cell,40,20,89.90127166422108,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,GABAergic neuron,61,35,88.20289298427296,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,87.35662012964129,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,86.06385320489454,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,L5/6 near-projecting glutamatergic neuron,49,33,87.36108836330047,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,89.73004832992622,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,L6 intratelencephalic projecting glutamatergic neuron,50,36,88.90155209504653,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,L6b glutamatergic neuron of the primary motor cortex,43,30,88.33684523476026,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,VIP GABAergic interneuron,68,44,88.92839868222835,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,astrocyte,73,44,86.26885214454543,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,endothelial cell,69,40,89.66288778904317,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,lamp5 GABAergic interneuron,67,42,80.0874774855912,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,microglial cell,70,42,89.48541530294533,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,oligodendrocyte,75,45,85.59084116573536,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,oligodendrocyte precursor cell,74,45,83.33860439368131,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,pericyte,56,34,88.46947474666474,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,perivascular macrophage,18,4,,False,75,45
+within_H,wgcna,150,False,C_wgcna_k150,pvalb GABAergic interneuron,67,43,88.25511140834939,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,smooth muscle cell,9,3,,False,75,45
+within_H,wgcna,150,False,C_wgcna_k150,sst GABAergic interneuron,68,43,85.70445788786436,True,75,45
+within_H,wgcna,150,False,C_wgcna_k150,vascular leptomeningeal cell,40,20,89.77979441776914,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,GABAergic neuron,61,35,88.20289298427296,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,L2/3 intratelencephalic projecting glutamatergic neuron,68,44,87.21322362519206,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,86.71749271389953,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,L5/6 near-projecting glutamatergic neuron,49,33,88.03879203563534,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,49,36,89.73004832992622,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,L6 intratelencephalic projecting glutamatergic neuron,50,36,89.67974913748519,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,L6b glutamatergic neuron of the primary motor cortex,43,30,88.2339514456276,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,VIP GABAergic interneuron,68,44,88.68944452878047,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,astrocyte,73,44,86.39502948079738,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,endothelial cell,69,40,89.64613199080962,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,lamp5 GABAergic interneuron,67,42,80.0874774855912,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,microglial cell,70,42,89.17593956200128,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,oligodendrocyte,75,45,86.06029694706947,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,oligodendrocyte precursor cell,74,45,83.31688451107689,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,pericyte,56,34,88.67152070962206,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,perivascular macrophage,18,4,,False,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,pvalb GABAergic interneuron,67,43,88.25511140834939,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,smooth muscle cell,9,3,,False,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,sst GABAergic interneuron,68,43,85.70445788786436,True,75,45
+within_H,wgcna,150,True,C_wgcna_k150_clean,vascular leptomeningeal cell,40,20,89.90127166422108,True,75,45
+within_M,pca,20,False,A_pca_k020,GABAergic neuron,22,61,69.32288919729153,True,27,86
+within_M,pca,20,False,A_pca_k020,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,87.66565153412286,True,27,86
+within_M,pca,20,False,A_pca_k020,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,88.83863354593127,True,27,86
+within_M,pca,20,False,A_pca_k020,L5/6 near-projecting glutamatergic neuron,10,32,82.97987569644886,True,27,86
+within_M,pca,20,False,A_pca_k020,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,26.12587608378244,True,27,86
+within_M,pca,20,False,A_pca_k020,L6 intratelencephalic projecting glutamatergic neuron,12,52,60.792756166888864,True,27,86
+within_M,pca,20,False,A_pca_k020,L6b glutamatergic neuron of the primary motor cortex,9,27,62.25239064586466,True,27,86
+within_M,pca,20,False,A_pca_k020,VIP GABAergic interneuron,26,79,84.4260645804696,True,27,86
+within_M,pca,20,False,A_pca_k020,astrocyte,26,86,87.9721405954699,True,27,86
+within_M,pca,20,False,A_pca_k020,endothelial cell,14,37,79.30119400951824,True,27,86
+within_M,pca,20,False,A_pca_k020,lamp5 GABAergic interneuron,24,72,52.31137284568364,True,27,86
+within_M,pca,20,False,A_pca_k020,microglial cell,26,81,78.01570944329886,True,27,86
+within_M,pca,20,False,A_pca_k020,oligodendrocyte,27,85,87.45448445197349,True,27,86
+within_M,pca,20,False,A_pca_k020,oligodendrocyte precursor cell,27,86,88.10459893067559,True,27,86
+within_M,pca,20,False,A_pca_k020,pericyte,14,32,42.989427527241155,True,27,86
+within_M,pca,20,False,A_pca_k020,perivascular macrophage,2,7,,False,27,86
+within_M,pca,20,False,A_pca_k020,pvalb GABAergic interneuron,25,74,87.07404927286277,True,27,86
+within_M,pca,20,False,A_pca_k020,smooth muscle cell,3,1,,False,27,86
+within_M,pca,20,False,A_pca_k020,sst GABAergic interneuron,26,69,85.4903217764942,True,27,86
+within_M,pca,20,False,A_pca_k020,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,pca,20,True,A_pca_k020_clean,GABAergic neuron,22,61,85.19823068661145,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,87.3020701115649,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,88.46546407872049,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,L5/6 near-projecting glutamatergic neuron,10,32,88.33504147234655,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,26.12587608378244,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,L6 intratelencephalic projecting glutamatergic neuron,12,52,87.36554368479963,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,L6b glutamatergic neuron of the primary motor cortex,9,27,82.64024250733017,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,VIP GABAergic interneuron,26,79,87.20324133845291,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,astrocyte,26,86,84.68582051397388,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,endothelial cell,14,37,81.03760482214658,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,lamp5 GABAergic interneuron,24,72,87.64441117230854,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,microglial cell,26,81,85.51938939219087,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,oligodendrocyte,27,85,83.32816947429896,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,oligodendrocyte precursor cell,27,86,87.9634092800709,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,pericyte,14,32,64.26438061668274,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,perivascular macrophage,2,7,,False,27,86
+within_M,pca,20,True,A_pca_k020_clean,pvalb GABAergic interneuron,25,74,88.09829443667654,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,smooth muscle cell,3,1,,False,27,86
+within_M,pca,20,True,A_pca_k020_clean,sst GABAergic interneuron,26,69,84.70441197163231,True,27,86
+within_M,pca,20,True,A_pca_k020_clean,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,pca,50,False,A_pca_k050,GABAergic neuron,22,61,77.95837784013317,True,27,86
+within_M,pca,50,False,A_pca_k050,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,85.87278607017356,True,27,86
+within_M,pca,50,False,A_pca_k050,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,88.51526227853944,True,27,86
+within_M,pca,50,False,A_pca_k050,L5/6 near-projecting glutamatergic neuron,10,32,76.3299090465913,True,27,86
+within_M,pca,50,False,A_pca_k050,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,49.983472612087276,True,27,86
+within_M,pca,50,False,A_pca_k050,L6 intratelencephalic projecting glutamatergic neuron,12,52,37.63986872016256,True,27,86
+within_M,pca,50,False,A_pca_k050,L6b glutamatergic neuron of the primary motor cortex,9,27,61.155077462752146,True,27,86
+within_M,pca,50,False,A_pca_k050,VIP GABAergic interneuron,26,79,86.41283812477843,True,27,86
+within_M,pca,50,False,A_pca_k050,astrocyte,26,86,88.93973642501086,True,27,86
+within_M,pca,50,False,A_pca_k050,endothelial cell,14,37,86.98421780321887,True,27,86
+within_M,pca,50,False,A_pca_k050,lamp5 GABAergic interneuron,24,72,62.282269259402625,True,27,86
+within_M,pca,50,False,A_pca_k050,microglial cell,26,81,86.08548793617868,True,27,86
+within_M,pca,50,False,A_pca_k050,oligodendrocyte,27,85,88.63461722699611,True,27,86
+within_M,pca,50,False,A_pca_k050,oligodendrocyte precursor cell,27,86,87.6227014879474,True,27,86
+within_M,pca,50,False,A_pca_k050,pericyte,14,32,37.330588813473284,True,27,86
+within_M,pca,50,False,A_pca_k050,perivascular macrophage,2,7,,False,27,86
+within_M,pca,50,False,A_pca_k050,pvalb GABAergic interneuron,25,74,81.21104279127216,True,27,86
+within_M,pca,50,False,A_pca_k050,smooth muscle cell,3,1,,False,27,86
+within_M,pca,50,False,A_pca_k050,sst GABAergic interneuron,26,69,89.56679867198906,True,27,86
+within_M,pca,50,False,A_pca_k050,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,pca,50,True,A_pca_k050_clean,GABAergic neuron,22,61,87.91958176044471,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,84.85668586672426,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,87.96950959771628,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,L5/6 near-projecting glutamatergic neuron,10,32,88.99681413968098,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,49.983472612087276,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,L6 intratelencephalic projecting glutamatergic neuron,12,52,89.09679575016423,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,L6b glutamatergic neuron of the primary motor cortex,9,27,82.87319266033143,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,VIP GABAergic interneuron,26,79,88.55223334997203,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,astrocyte,26,86,85.9078236553386,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,endothelial cell,14,37,85.8715553824502,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,lamp5 GABAergic interneuron,24,72,89.47121258464571,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,microglial cell,26,81,87.08523126018154,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,oligodendrocyte,27,85,87.57530808978878,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,oligodendrocyte precursor cell,27,86,88.39693560094118,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,pericyte,14,32,75.1248538162955,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,perivascular macrophage,2,7,,False,27,86
+within_M,pca,50,True,A_pca_k050_clean,pvalb GABAergic interneuron,25,74,89.17832746839265,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,smooth muscle cell,3,1,,False,27,86
+within_M,pca,50,True,A_pca_k050_clean,sst GABAergic interneuron,26,69,87.61230000239208,True,27,86
+within_M,pca,50,True,A_pca_k050_clean,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,pca,100,False,A_pca_k100,GABAergic neuron,22,61,79.41804349544869,True,27,86
+within_M,pca,100,False,A_pca_k100,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,85.72836655412145,True,27,86
+within_M,pca,100,False,A_pca_k100,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,87.1000461308519,True,27,86
+within_M,pca,100,False,A_pca_k100,L5/6 near-projecting glutamatergic neuron,10,32,76.3299090465913,True,27,86
+within_M,pca,100,False,A_pca_k100,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,53.57860622906232,True,27,86
+within_M,pca,100,False,A_pca_k100,L6 intratelencephalic projecting glutamatergic neuron,12,52,37.63986872016256,True,27,86
+within_M,pca,100,False,A_pca_k100,L6b glutamatergic neuron of the primary motor cortex,9,27,61.155077462752146,True,27,86
+within_M,pca,100,False,A_pca_k100,VIP GABAergic interneuron,26,79,87.53759945219637,True,27,86
+within_M,pca,100,False,A_pca_k100,astrocyte,26,86,88.90470705483797,True,27,86
+within_M,pca,100,False,A_pca_k100,endothelial cell,14,37,86.98421780321887,True,27,86
+within_M,pca,100,False,A_pca_k100,lamp5 GABAergic interneuron,24,72,75.69496205147321,True,27,86
+within_M,pca,100,False,A_pca_k100,microglial cell,26,81,86.68903328618859,True,27,86
+within_M,pca,100,False,A_pca_k100,oligodendrocyte,27,85,68.68948825908139,True,27,86
+within_M,pca,100,False,A_pca_k100,oligodendrocyte precursor cell,27,86,87.32222510950503,True,27,86
+within_M,pca,100,False,A_pca_k100,pericyte,14,32,37.330588813473284,True,27,86
+within_M,pca,100,False,A_pca_k100,perivascular macrophage,2,7,,False,27,86
+within_M,pca,100,False,A_pca_k100,pvalb GABAergic interneuron,25,74,84.72614720541802,True,27,86
+within_M,pca,100,False,A_pca_k100,smooth muscle cell,3,1,,False,27,86
+within_M,pca,100,False,A_pca_k100,sst GABAergic interneuron,26,69,89.8412487751417,True,27,86
+within_M,pca,100,False,A_pca_k100,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,pca,100,True,A_pca_k100_clean,GABAergic neuron,22,61,87.23186987564985,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,85.18998431866514,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,86.64166371571906,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,L5/6 near-projecting glutamatergic neuron,10,32,88.99681413968098,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,53.57860622906232,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,L6 intratelencephalic projecting glutamatergic neuron,12,52,89.09679575016423,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,L6b glutamatergic neuron of the primary motor cortex,9,27,82.87319266033143,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,VIP GABAergic interneuron,26,79,88.92871768497336,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,astrocyte,26,86,86.96116733320278,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,endothelial cell,14,37,85.8715553824502,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,lamp5 GABAergic interneuron,24,72,89.83307489138645,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,microglial cell,26,81,88.74320371619233,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,oligodendrocyte,27,85,87.79756380204431,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,oligodendrocyte precursor cell,27,86,87.84138241599075,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,pericyte,14,32,75.1248538162955,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,perivascular macrophage,2,7,,False,27,86
+within_M,pca,100,True,A_pca_k100_clean,pvalb GABAergic interneuron,25,74,89.70350734603578,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,smooth muscle cell,3,1,,False,27,86
+within_M,pca,100,True,A_pca_k100_clean,sst GABAergic interneuron,26,69,87.46862725125847,True,27,86
+within_M,pca,100,True,A_pca_k100_clean,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,pca,150,False,A_pca_k150,GABAergic neuron,22,61,79.41804349544869,True,27,86
+within_M,pca,150,False,A_pca_k150,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,85.72836655412145,True,27,86
+within_M,pca,150,False,A_pca_k150,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,87.1000461308519,True,27,86
+within_M,pca,150,False,A_pca_k150,L5/6 near-projecting glutamatergic neuron,10,32,76.3299090465913,True,27,86
+within_M,pca,150,False,A_pca_k150,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,53.57860622906232,True,27,86
+within_M,pca,150,False,A_pca_k150,L6 intratelencephalic projecting glutamatergic neuron,12,52,37.63986872016256,True,27,86
+within_M,pca,150,False,A_pca_k150,L6b glutamatergic neuron of the primary motor cortex,9,27,61.155077462752146,True,27,86
+within_M,pca,150,False,A_pca_k150,VIP GABAergic interneuron,26,79,87.53759945219637,True,27,86
+within_M,pca,150,False,A_pca_k150,astrocyte,26,86,88.90470705483797,True,27,86
+within_M,pca,150,False,A_pca_k150,endothelial cell,14,37,86.98421780321887,True,27,86
+within_M,pca,150,False,A_pca_k150,lamp5 GABAergic interneuron,24,72,75.69496205147321,True,27,86
+within_M,pca,150,False,A_pca_k150,microglial cell,26,81,86.68903328618859,True,27,86
+within_M,pca,150,False,A_pca_k150,oligodendrocyte,27,85,68.68948825908139,True,27,86
+within_M,pca,150,False,A_pca_k150,oligodendrocyte precursor cell,27,86,87.32222510950503,True,27,86
+within_M,pca,150,False,A_pca_k150,pericyte,14,32,37.330588813473284,True,27,86
+within_M,pca,150,False,A_pca_k150,perivascular macrophage,2,7,,False,27,86
+within_M,pca,150,False,A_pca_k150,pvalb GABAergic interneuron,25,74,84.72614720541802,True,27,86
+within_M,pca,150,False,A_pca_k150,smooth muscle cell,3,1,,False,27,86
+within_M,pca,150,False,A_pca_k150,sst GABAergic interneuron,26,69,89.8412487751417,True,27,86
+within_M,pca,150,False,A_pca_k150,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,pca,150,True,A_pca_k150_clean,GABAergic neuron,22,61,87.23186987564985,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,85.18998431866514,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,86.64166371571906,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,L5/6 near-projecting glutamatergic neuron,10,32,88.99681413968098,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,53.57860622906232,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,L6 intratelencephalic projecting glutamatergic neuron,12,52,89.09679575016423,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,L6b glutamatergic neuron of the primary motor cortex,9,27,82.87319266033143,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,VIP GABAergic interneuron,26,79,88.92871768497336,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,astrocyte,26,86,86.96116733320278,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,endothelial cell,14,37,85.8715553824502,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,lamp5 GABAergic interneuron,24,72,89.83307489138645,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,microglial cell,26,81,88.74320371619233,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,oligodendrocyte,27,85,87.79756380204431,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,oligodendrocyte precursor cell,27,86,87.84138241599075,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,pericyte,14,32,75.1248538162955,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,perivascular macrophage,2,7,,False,27,86
+within_M,pca,150,True,A_pca_k150_clean,pvalb GABAergic interneuron,25,74,89.70350734603578,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,smooth muscle cell,3,1,,False,27,86
+within_M,pca,150,True,A_pca_k150_clean,sst GABAergic interneuron,26,69,87.46862725125847,True,27,86
+within_M,pca,150,True,A_pca_k150_clean,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,curated,20,False,B_curated_k020,GABAergic neuron,22,61,71.3276161877699,True,27,86
+within_M,curated,20,False,B_curated_k020,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,81.07477572151248,True,27,86
+within_M,curated,20,False,B_curated_k020,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,76.35844219588498,True,27,86
+within_M,curated,20,False,B_curated_k020,L5/6 near-projecting glutamatergic neuron,10,32,82.30088684617506,True,27,86
+within_M,curated,20,False,B_curated_k020,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,78.42757569593479,True,27,86
+within_M,curated,20,False,B_curated_k020,L6 intratelencephalic projecting glutamatergic neuron,12,52,72.19526719712627,True,27,86
+within_M,curated,20,False,B_curated_k020,L6b glutamatergic neuron of the primary motor cortex,9,27,88.89856854790528,True,27,86
+within_M,curated,20,False,B_curated_k020,VIP GABAergic interneuron,26,79,80.80001502381968,True,27,86
+within_M,curated,20,False,B_curated_k020,astrocyte,26,86,52.11911335626619,True,27,86
+within_M,curated,20,False,B_curated_k020,endothelial cell,14,37,80.46131451692752,True,27,86
+within_M,curated,20,False,B_curated_k020,lamp5 GABAergic interneuron,24,72,66.35836074250321,True,27,86
+within_M,curated,20,False,B_curated_k020,microglial cell,26,81,73.61664363600492,True,27,86
+within_M,curated,20,False,B_curated_k020,oligodendrocyte,27,85,51.940009305109,True,27,86
+within_M,curated,20,False,B_curated_k020,oligodendrocyte precursor cell,27,86,82.99912506172649,True,27,86
+within_M,curated,20,False,B_curated_k020,pericyte,14,32,89.88895425017422,True,27,86
+within_M,curated,20,False,B_curated_k020,perivascular macrophage,2,7,,False,27,86
+within_M,curated,20,False,B_curated_k020,pvalb GABAergic interneuron,25,74,74.93679204860662,True,27,86
+within_M,curated,20,False,B_curated_k020,smooth muscle cell,3,1,,False,27,86
+within_M,curated,20,False,B_curated_k020,sst GABAergic interneuron,26,69,78.15791554062034,True,27,86
+within_M,curated,20,False,B_curated_k020,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,curated,20,True,B_curated_k020_clean,GABAergic neuron,22,61,86.90564773424705,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,82.71391751900119,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,84.93295180958518,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,L5/6 near-projecting glutamatergic neuron,10,32,81.81005139556494,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,82.79652728706034,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,L6 intratelencephalic projecting glutamatergic neuron,12,52,89.98812395442137,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,L6b glutamatergic neuron of the primary motor cortex,9,27,80.14447809172322,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,VIP GABAergic interneuron,26,79,80.80001502381968,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,astrocyte,26,86,53.09338302467215,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,endothelial cell,14,37,52.38197734910842,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,lamp5 GABAergic interneuron,24,72,58.170557995022214,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,microglial cell,26,81,75.64424730635355,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,oligodendrocyte,27,85,51.940009305109,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,oligodendrocyte precursor cell,27,86,82.99912506172649,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,pericyte,14,32,85.78793257330683,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,perivascular macrophage,2,7,,False,27,86
+within_M,curated,20,True,B_curated_k020_clean,pvalb GABAergic interneuron,25,74,72.33096813409784,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,smooth muscle cell,3,1,,False,27,86
+within_M,curated,20,True,B_curated_k020_clean,sst GABAergic interneuron,26,69,69.81052007449865,True,27,86
+within_M,curated,20,True,B_curated_k020_clean,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,curated,50,False,B_curated_k050,GABAergic neuron,22,61,80.43548963925342,True,27,86
+within_M,curated,50,False,B_curated_k050,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,81.38561128207729,True,27,86
+within_M,curated,50,False,B_curated_k050,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,66.82419668168214,True,27,86
+within_M,curated,50,False,B_curated_k050,L5/6 near-projecting glutamatergic neuron,10,32,84.52564154863701,True,27,86
+within_M,curated,50,False,B_curated_k050,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,85.98403924717972,True,27,86
+within_M,curated,50,False,B_curated_k050,L6 intratelencephalic projecting glutamatergic neuron,12,52,83.79575357977417,True,27,86
+within_M,curated,50,False,B_curated_k050,L6b glutamatergic neuron of the primary motor cortex,9,27,89.15325407203363,True,27,86
+within_M,curated,50,False,B_curated_k050,VIP GABAergic interneuron,26,79,80.19423032907866,True,27,86
+within_M,curated,50,False,B_curated_k050,astrocyte,26,86,75.65124462848831,True,27,86
+within_M,curated,50,False,B_curated_k050,endothelial cell,14,37,78.3073398553347,True,27,86
+within_M,curated,50,False,B_curated_k050,lamp5 GABAergic interneuron,24,72,69.82551536587692,True,27,86
+within_M,curated,50,False,B_curated_k050,microglial cell,26,81,86.67734628709691,True,27,86
+within_M,curated,50,False,B_curated_k050,oligodendrocyte,27,85,51.38732924976159,True,27,86
+within_M,curated,50,False,B_curated_k050,oligodendrocyte precursor cell,27,86,84.58723626778594,True,27,86
+within_M,curated,50,False,B_curated_k050,pericyte,14,32,88.25281763052732,True,27,86
+within_M,curated,50,False,B_curated_k050,perivascular macrophage,2,7,,False,27,86
+within_M,curated,50,False,B_curated_k050,pvalb GABAergic interneuron,25,74,76.54048460645426,True,27,86
+within_M,curated,50,False,B_curated_k050,smooth muscle cell,3,1,,False,27,86
+within_M,curated,50,False,B_curated_k050,sst GABAergic interneuron,26,69,88.21470491260004,True,27,86
+within_M,curated,50,False,B_curated_k050,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,curated,50,True,B_curated_k050_clean,GABAergic neuron,22,61,75.71179824954608,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,81.56374434263708,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,84.40000689666338,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,L5/6 near-projecting glutamatergic neuron,10,32,84.42265696194404,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,85.97050932620382,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,L6 intratelencephalic projecting glutamatergic neuron,12,52,89.28510430777983,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,L6b glutamatergic neuron of the primary motor cortex,9,27,83.20320489693559,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,VIP GABAergic interneuron,26,79,80.19423032907866,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,astrocyte,26,86,56.39198415971371,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,endothelial cell,14,37,84.69471856798143,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,lamp5 GABAergic interneuron,24,72,74.0406607865122,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,microglial cell,26,81,82.38541475754631,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,oligodendrocyte,27,85,50.42843601392656,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,oligodendrocyte precursor cell,27,86,84.58723626778594,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,pericyte,14,32,85.66390861753258,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,perivascular macrophage,2,7,,False,27,86
+within_M,curated,50,True,B_curated_k050_clean,pvalb GABAergic interneuron,25,74,74.9852014464653,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,smooth muscle cell,3,1,,False,27,86
+within_M,curated,50,True,B_curated_k050_clean,sst GABAergic interneuron,26,69,79.85132322236532,True,27,86
+within_M,curated,50,True,B_curated_k050_clean,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,curated,100,False,B_curated_k100,GABAergic neuron,22,61,75.72638599135365,True,27,86
+within_M,curated,100,False,B_curated_k100,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,83.78405632599332,True,27,86
+within_M,curated,100,False,B_curated_k100,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,71.24855602682648,True,27,86
+within_M,curated,100,False,B_curated_k100,L5/6 near-projecting glutamatergic neuron,10,32,84.52564154863701,True,27,86
+within_M,curated,100,False,B_curated_k100,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,85.05730814308428,True,27,86
+within_M,curated,100,False,B_curated_k100,L6 intratelencephalic projecting glutamatergic neuron,12,52,83.79575357977417,True,27,86
+within_M,curated,100,False,B_curated_k100,L6b glutamatergic neuron of the primary motor cortex,9,27,89.15325407203363,True,27,86
+within_M,curated,100,False,B_curated_k100,VIP GABAergic interneuron,26,79,83.36715992614013,True,27,86
+within_M,curated,100,False,B_curated_k100,astrocyte,26,86,78.80420081862874,True,27,86
+within_M,curated,100,False,B_curated_k100,endothelial cell,14,37,78.3073398553347,True,27,86
+within_M,curated,100,False,B_curated_k100,lamp5 GABAergic interneuron,24,72,84.83424461874952,True,27,86
+within_M,curated,100,False,B_curated_k100,microglial cell,26,81,81.7658414260786,True,27,86
+within_M,curated,100,False,B_curated_k100,oligodendrocyte,27,85,64.28078879245874,True,27,86
+within_M,curated,100,False,B_curated_k100,oligodendrocyte precursor cell,27,86,83.16078296471458,True,27,86
+within_M,curated,100,False,B_curated_k100,pericyte,14,32,88.25281763052732,True,27,86
+within_M,curated,100,False,B_curated_k100,perivascular macrophage,2,7,,False,27,86
+within_M,curated,100,False,B_curated_k100,pvalb GABAergic interneuron,25,74,81.55052476890167,True,27,86
+within_M,curated,100,False,B_curated_k100,smooth muscle cell,3,1,,False,27,86
+within_M,curated,100,False,B_curated_k100,sst GABAergic interneuron,26,69,87.95904648147318,True,27,86
+within_M,curated,100,False,B_curated_k100,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,curated,100,True,B_curated_k100_clean,GABAergic neuron,22,61,75.71179824954608,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,88.87883715959198,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,84.40000689666338,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,L5/6 near-projecting glutamatergic neuron,10,32,84.42265696194404,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,85.03348291499826,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,L6 intratelencephalic projecting glutamatergic neuron,12,52,89.28510430777983,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,L6b glutamatergic neuron of the primary motor cortex,9,27,83.20320489693559,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,VIP GABAergic interneuron,26,79,81.31201163042157,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,astrocyte,26,86,62.929573416123844,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,endothelial cell,14,37,84.69471856798143,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,lamp5 GABAergic interneuron,24,72,75.02295048182108,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,microglial cell,26,81,79.92700275552899,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,oligodendrocyte,27,85,63.976896913731636,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,oligodendrocyte precursor cell,27,86,83.16078296471458,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,pericyte,14,32,85.66390861753258,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,perivascular macrophage,2,7,,False,27,86
+within_M,curated,100,True,B_curated_k100_clean,pvalb GABAergic interneuron,25,74,75.30771519685976,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,smooth muscle cell,3,1,,False,27,86
+within_M,curated,100,True,B_curated_k100_clean,sst GABAergic interneuron,26,69,81.27696868992659,True,27,86
+within_M,curated,100,True,B_curated_k100_clean,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,curated,150,False,B_curated_k150,GABAergic neuron,22,61,75.72638599135365,True,27,86
+within_M,curated,150,False,B_curated_k150,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,83.78405632599332,True,27,86
+within_M,curated,150,False,B_curated_k150,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,71.24855602682648,True,27,86
+within_M,curated,150,False,B_curated_k150,L5/6 near-projecting glutamatergic neuron,10,32,84.52564154863701,True,27,86
+within_M,curated,150,False,B_curated_k150,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,85.05730814308428,True,27,86
+within_M,curated,150,False,B_curated_k150,L6 intratelencephalic projecting glutamatergic neuron,12,52,83.79575357977417,True,27,86
+within_M,curated,150,False,B_curated_k150,L6b glutamatergic neuron of the primary motor cortex,9,27,89.15325407203363,True,27,86
+within_M,curated,150,False,B_curated_k150,VIP GABAergic interneuron,26,79,83.36715992614013,True,27,86
+within_M,curated,150,False,B_curated_k150,astrocyte,26,86,78.80420081862874,True,27,86
+within_M,curated,150,False,B_curated_k150,endothelial cell,14,37,78.3073398553347,True,27,86
+within_M,curated,150,False,B_curated_k150,lamp5 GABAergic interneuron,24,72,84.83424461874952,True,27,86
+within_M,curated,150,False,B_curated_k150,microglial cell,26,81,81.7658414260786,True,27,86
+within_M,curated,150,False,B_curated_k150,oligodendrocyte,27,85,64.28078879245874,True,27,86
+within_M,curated,150,False,B_curated_k150,oligodendrocyte precursor cell,27,86,83.16078296471458,True,27,86
+within_M,curated,150,False,B_curated_k150,pericyte,14,32,88.25281763052732,True,27,86
+within_M,curated,150,False,B_curated_k150,perivascular macrophage,2,7,,False,27,86
+within_M,curated,150,False,B_curated_k150,pvalb GABAergic interneuron,25,74,81.55052476890167,True,27,86
+within_M,curated,150,False,B_curated_k150,smooth muscle cell,3,1,,False,27,86
+within_M,curated,150,False,B_curated_k150,sst GABAergic interneuron,26,69,87.95904648147318,True,27,86
+within_M,curated,150,False,B_curated_k150,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,curated,150,True,B_curated_k150_clean,GABAergic neuron,22,61,75.71179824954608,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,88.87883715959198,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,84.40000689666338,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,L5/6 near-projecting glutamatergic neuron,10,32,84.42265696194404,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,85.03348291499826,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,L6 intratelencephalic projecting glutamatergic neuron,12,52,89.28510430777983,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,L6b glutamatergic neuron of the primary motor cortex,9,27,83.20320489693559,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,VIP GABAergic interneuron,26,79,81.31201163042157,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,astrocyte,26,86,62.929573416123844,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,endothelial cell,14,37,84.69471856798143,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,lamp5 GABAergic interneuron,24,72,75.02295048182108,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,microglial cell,26,81,79.92700275552899,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,oligodendrocyte,27,85,63.976896913731636,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,oligodendrocyte precursor cell,27,86,83.16078296471458,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,pericyte,14,32,85.66390861753258,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,perivascular macrophage,2,7,,False,27,86
+within_M,curated,150,True,B_curated_k150_clean,pvalb GABAergic interneuron,25,74,75.30771519685976,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,smooth muscle cell,3,1,,False,27,86
+within_M,curated,150,True,B_curated_k150_clean,sst GABAergic interneuron,26,69,81.27696868992659,True,27,86
+within_M,curated,150,True,B_curated_k150_clean,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,wgcna,20,False,C_wgcna_k020,GABAergic neuron,22,61,89.6389546005848,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,86.34965098299898,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,81.59200753588095,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,L5/6 near-projecting glutamatergic neuron,10,32,88.6425848067254,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,89.0801544942707,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,L6 intratelencephalic projecting glutamatergic neuron,12,52,89.028347846079,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,L6b glutamatergic neuron of the primary motor cortex,9,27,89.0322255425642,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,VIP GABAergic interneuron,26,79,87.72424756748632,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,astrocyte,26,86,89.58594807437157,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,endothelial cell,14,37,89.62206815203132,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,lamp5 GABAergic interneuron,24,72,88.62092445152727,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,microglial cell,26,81,89.80337347292456,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,oligodendrocyte,27,85,89.48151234914302,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,oligodendrocyte precursor cell,27,86,87.07660264810589,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,pericyte,14,32,87.29725457965368,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,perivascular macrophage,2,7,,False,27,86
+within_M,wgcna,20,False,C_wgcna_k020,pvalb GABAergic interneuron,25,74,87.65690721684638,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,smooth muscle cell,3,1,,False,27,86
+within_M,wgcna,20,False,C_wgcna_k020,sst GABAergic interneuron,26,69,88.59856912310686,True,27,86
+within_M,wgcna,20,False,C_wgcna_k020,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,GABAergic neuron,22,61,89.80407910564807,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,84.11990099092378,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,83.16387929815617,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,L5/6 near-projecting glutamatergic neuron,10,32,88.35005575948942,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,89.0801544942707,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,L6 intratelencephalic projecting glutamatergic neuron,12,52,85.72226015280057,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,L6b glutamatergic neuron of the primary motor cortex,9,27,86.01511349432873,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,VIP GABAergic interneuron,26,79,87.72424756748632,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,astrocyte,26,86,89.0903248789736,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,endothelial cell,14,37,88.83733085094738,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,lamp5 GABAergic interneuron,24,72,89.01466398967523,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,microglial cell,26,81,88.80394476406083,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,oligodendrocyte,27,85,88.67329147876757,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,oligodendrocyte precursor cell,27,86,87.07660264810589,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,pericyte,14,32,88.57869916539481,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,perivascular macrophage,2,7,,False,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,pvalb GABAergic interneuron,25,74,88.99545364813847,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,smooth muscle cell,3,1,,False,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,sst GABAergic interneuron,26,69,88.7809937922914,True,27,86
+within_M,wgcna,20,True,C_wgcna_k020_clean,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,wgcna,50,False,C_wgcna_k050,GABAergic neuron,22,61,89.8025025621966,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,86.17336809982842,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,79.37226798891358,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,L5/6 near-projecting glutamatergic neuron,10,32,88.50191480195862,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,87.85302718371264,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,L6 intratelencephalic projecting glutamatergic neuron,12,52,89.47723355444498,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,L6b glutamatergic neuron of the primary motor cortex,9,27,87.92525824716665,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,VIP GABAergic interneuron,26,79,89.60957159034885,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,astrocyte,26,86,88.00237193754269,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,endothelial cell,14,37,89.18927350887633,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,lamp5 GABAergic interneuron,24,72,89.8664297538287,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,microglial cell,26,81,89.29157648026883,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,oligodendrocyte,27,85,87.95254086497977,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,oligodendrocyte precursor cell,27,86,87.26109404825607,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,pericyte,14,32,89.73341808270841,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,perivascular macrophage,2,7,,False,27,86
+within_M,wgcna,50,False,C_wgcna_k050,pvalb GABAergic interneuron,25,74,86.71906967313308,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,smooth muscle cell,3,1,,False,27,86
+within_M,wgcna,50,False,C_wgcna_k050,sst GABAergic interneuron,26,69,87.35605557704598,True,27,86
+within_M,wgcna,50,False,C_wgcna_k050,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,GABAergic neuron,22,61,89.34955235748359,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,86.20357265105628,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,80.96904475815842,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,L5/6 near-projecting glutamatergic neuron,10,32,89.56268359609608,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,87.85302718371264,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,L6 intratelencephalic projecting glutamatergic neuron,12,52,87.83481959394746,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,L6b glutamatergic neuron of the primary motor cortex,9,27,85.8511180691244,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,VIP GABAergic interneuron,26,79,86.38804223326278,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,astrocyte,26,86,87.92272904165193,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,endothelial cell,14,37,88.71005418802379,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,lamp5 GABAergic interneuron,24,72,89.722773710245,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,microglial cell,26,81,89.12964507474815,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,oligodendrocyte,27,85,88.36201384104372,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,oligodendrocyte precursor cell,27,86,87.26109404825607,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,pericyte,14,32,89.15906836800283,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,perivascular macrophage,2,7,,False,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,pvalb GABAergic interneuron,25,74,86.89431063666835,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,smooth muscle cell,3,1,,False,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,sst GABAergic interneuron,26,69,87.7432103055285,True,27,86
+within_M,wgcna,50,True,C_wgcna_k050_clean,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,wgcna,100,False,C_wgcna_k100,GABAergic neuron,22,61,89.85758233497667,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,87.12762184584737,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,82.2244881608917,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,L5/6 near-projecting glutamatergic neuron,10,32,88.50191480195862,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,87.86988589736502,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,L6 intratelencephalic projecting glutamatergic neuron,12,52,89.47723355444498,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,L6b glutamatergic neuron of the primary motor cortex,9,27,87.92525824716665,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,VIP GABAergic interneuron,26,79,88.752104192077,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,astrocyte,26,86,89.5819201288024,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,endothelial cell,14,37,89.18927350887633,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,lamp5 GABAergic interneuron,24,72,89.4371128075948,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,microglial cell,26,81,88.58431960804144,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,oligodendrocyte,27,85,88.85494133794217,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,oligodendrocyte precursor cell,27,86,89.57047537281684,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,pericyte,14,32,89.73341808270841,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,perivascular macrophage,2,7,,False,27,86
+within_M,wgcna,100,False,C_wgcna_k100,pvalb GABAergic interneuron,25,74,86.3136134603958,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,smooth muscle cell,3,1,,False,27,86
+within_M,wgcna,100,False,C_wgcna_k100,sst GABAergic interneuron,26,69,88.24136253356612,True,27,86
+within_M,wgcna,100,False,C_wgcna_k100,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,GABAergic neuron,22,61,89.60405564016644,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,87.10453829520995,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,83.67797463103744,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,L5/6 near-projecting glutamatergic neuron,10,32,89.56268359609608,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,87.86988589736502,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,L6 intratelencephalic projecting glutamatergic neuron,12,52,87.83481959394746,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,L6b glutamatergic neuron of the primary motor cortex,9,27,85.8511180691244,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,VIP GABAergic interneuron,26,79,87.35046406373327,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,astrocyte,26,86,89.56560919397664,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,endothelial cell,14,37,88.71005418802379,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,lamp5 GABAergic interneuron,24,72,89.68103693488693,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,microglial cell,26,81,88.44317116560428,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,oligodendrocyte,27,85,88.92375457194014,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,oligodendrocyte precursor cell,27,86,89.57047537281684,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,pericyte,14,32,89.15906836800283,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,perivascular macrophage,2,7,,False,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,pvalb GABAergic interneuron,25,74,85.95659019014664,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,smooth muscle cell,3,1,,False,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,sst GABAergic interneuron,26,69,88.41674769207549,True,27,86
+within_M,wgcna,100,True,C_wgcna_k100_clean,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,wgcna,150,False,C_wgcna_k150,GABAergic neuron,22,61,89.85758233497667,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,87.12762184584737,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,82.2244881608917,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,L5/6 near-projecting glutamatergic neuron,10,32,88.50191480195862,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,87.86988589736502,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,L6 intratelencephalic projecting glutamatergic neuron,12,52,89.47723355444498,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,L6b glutamatergic neuron of the primary motor cortex,9,27,87.92525824716665,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,VIP GABAergic interneuron,26,79,88.752104192077,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,astrocyte,26,86,89.5819201288024,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,endothelial cell,14,37,89.18927350887633,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,lamp5 GABAergic interneuron,24,72,89.4371128075948,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,microglial cell,26,81,88.58431960804144,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,oligodendrocyte,27,85,88.85494133794217,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,oligodendrocyte precursor cell,27,86,89.57047537281684,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,pericyte,14,32,89.73341808270841,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,perivascular macrophage,2,7,,False,27,86
+within_M,wgcna,150,False,C_wgcna_k150,pvalb GABAergic interneuron,25,74,86.3136134603958,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,smooth muscle cell,3,1,,False,27,86
+within_M,wgcna,150,False,C_wgcna_k150,sst GABAergic interneuron,26,69,88.24136253356612,True,27,86
+within_M,wgcna,150,False,C_wgcna_k150,vascular leptomeningeal cell,6,15,,False,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,GABAergic neuron,22,61,89.60405564016644,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,L2/3 intratelencephalic projecting glutamatergic neuron,27,81,87.10453829520995,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,26,78,83.67797463103744,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,L5/6 near-projecting glutamatergic neuron,10,32,89.56268359609608,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,15,53,87.86988589736502,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,L6 intratelencephalic projecting glutamatergic neuron,12,52,87.83481959394746,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,L6b glutamatergic neuron of the primary motor cortex,9,27,85.8511180691244,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,VIP GABAergic interneuron,26,79,87.35046406373327,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,astrocyte,26,86,89.56560919397664,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,endothelial cell,14,37,88.71005418802379,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,lamp5 GABAergic interneuron,24,72,89.68103693488693,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,microglial cell,26,81,88.44317116560428,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,oligodendrocyte,27,85,88.92375457194014,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,oligodendrocyte precursor cell,27,86,89.57047537281684,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,pericyte,14,32,89.15906836800283,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,perivascular macrophage,2,7,,False,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,pvalb GABAergic interneuron,25,74,85.95659019014664,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,smooth muscle cell,3,1,,False,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,sst GABAergic interneuron,26,69,88.41674769207549,True,27,86
+within_M,wgcna,150,True,C_wgcna_k150_clean,vascular leptomeningeal cell,6,15,,False,27,86
+balanced,pca,20,False,A_pca_k020,GABAergic neuron,59,53,82.79880340212684,True,72,72
+balanced,pca,20,False,A_pca_k020,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,79.05053730261501,True,72,72
+balanced,pca,20,False,A_pca_k020,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,87.73770898198548,True,72,72
+balanced,pca,20,False,A_pca_k020,L5/6 near-projecting glutamatergic neuron,38,42,83.25708707543924,True,72,72
+balanced,pca,20,False,A_pca_k020,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,70.38228631077052,True,72,72
+balanced,pca,20,False,A_pca_k020,L6 intratelencephalic projecting glutamatergic neuron,39,51,80.81861718799625,True,72,72
+balanced,pca,20,False,A_pca_k020,L6b glutamatergic neuron of the primary motor cortex,30,39,76.59929002118385,True,72,72
+balanced,pca,20,False,A_pca_k020,VIP GABAergic interneuron,66,68,85.14737216583478,True,72,72
+balanced,pca,20,False,A_pca_k020,astrocyte,70,71,79.9679978817562,True,72,72
+balanced,pca,20,False,A_pca_k020,endothelial cell,55,49,88.47178408973633,True,72,72
+balanced,pca,20,False,A_pca_k020,lamp5 GABAergic interneuron,63,63,86.31687246880486,True,72,72
+balanced,pca,20,False,A_pca_k020,microglial cell,67,67,84.72528327163475,True,72,72
+balanced,pca,20,False,A_pca_k020,oligodendrocyte,72,71,80.61600728674958,True,72,72
+balanced,pca,20,False,A_pca_k020,oligodendrocyte precursor cell,71,72,81.83151995765327,True,72,72
+balanced,pca,20,False,A_pca_k020,pericyte,45,41,87.51596360414526,True,72,72
+balanced,pca,20,False,A_pca_k020,perivascular macrophage,11,6,,False,72,72
+balanced,pca,20,False,A_pca_k020,pvalb GABAergic interneuron,64,64,82.34583441744482,True,72,72
+balanced,pca,20,False,A_pca_k020,smooth muscle cell,11,3,,False,72,72
+balanced,pca,20,False,A_pca_k020,sst GABAergic interneuron,65,64,89.35549130392151,True,72,72
+balanced,pca,20,False,A_pca_k020,vascular leptomeningeal cell,31,22,77.83036710771894,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,GABAergic neuron,59,53,82.79880340212684,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,80.4212144301155,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,89.26254167681728,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,L5/6 near-projecting glutamatergic neuron,38,42,89.01867769596048,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,61.86642731668,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,L6 intratelencephalic projecting glutamatergic neuron,39,51,88.62311463617355,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,L6b glutamatergic neuron of the primary motor cortex,30,39,84.46223891268772,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,VIP GABAergic interneuron,66,68,88.33903427686064,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,astrocyte,70,71,78.3790765021114,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,endothelial cell,55,49,86.85785531400273,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,lamp5 GABAergic interneuron,63,63,83.66130949755392,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,microglial cell,67,67,85.70233448296852,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,oligodendrocyte,72,71,82.40319165057716,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,oligodendrocyte precursor cell,71,72,81.67365430658856,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,pericyte,45,41,89.39368604942048,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,perivascular macrophage,11,6,,False,72,72
+balanced,pca,20,True,A_pca_k020_clean,pvalb GABAergic interneuron,64,64,84.22862727833801,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,smooth muscle cell,11,3,,False,72,72
+balanced,pca,20,True,A_pca_k020_clean,sst GABAergic interneuron,65,64,86.10663925252823,True,72,72
+balanced,pca,20,True,A_pca_k020_clean,vascular leptomeningeal cell,31,22,77.86772596851935,True,72,72
+balanced,pca,50,False,A_pca_k050,GABAergic neuron,59,53,88.19381817500128,True,72,72
+balanced,pca,50,False,A_pca_k050,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,81.2373464953844,True,72,72
+balanced,pca,50,False,A_pca_k050,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,81.9609000126317,True,72,72
+balanced,pca,50,False,A_pca_k050,L5/6 near-projecting glutamatergic neuron,38,42,85.6419455322324,True,72,72
+balanced,pca,50,False,A_pca_k050,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,78.46211178937523,True,72,72
+balanced,pca,50,False,A_pca_k050,L6 intratelencephalic projecting glutamatergic neuron,39,51,83.49913007182786,True,72,72
+balanced,pca,50,False,A_pca_k050,L6b glutamatergic neuron of the primary motor cortex,30,39,29.12894003148771,True,72,72
+balanced,pca,50,False,A_pca_k050,VIP GABAergic interneuron,66,68,88.45226084512737,True,72,72
+balanced,pca,50,False,A_pca_k050,astrocyte,70,71,85.19864692189397,True,72,72
+balanced,pca,50,False,A_pca_k050,endothelial cell,55,49,87.80961253112302,True,72,72
+balanced,pca,50,False,A_pca_k050,lamp5 GABAergic interneuron,63,63,86.80849972257073,True,72,72
+balanced,pca,50,False,A_pca_k050,microglial cell,67,67,87.7463363487543,True,72,72
+balanced,pca,50,False,A_pca_k050,oligodendrocyte,72,71,87.80079597923367,True,72,72
+balanced,pca,50,False,A_pca_k050,oligodendrocyte precursor cell,71,72,82.32660132742086,True,72,72
+balanced,pca,50,False,A_pca_k050,pericyte,45,41,66.54257560269852,True,72,72
+balanced,pca,50,False,A_pca_k050,perivascular macrophage,11,6,,False,72,72
+balanced,pca,50,False,A_pca_k050,pvalb GABAergic interneuron,64,64,88.09482067897663,True,72,72
+balanced,pca,50,False,A_pca_k050,smooth muscle cell,11,3,,False,72,72
+balanced,pca,50,False,A_pca_k050,sst GABAergic interneuron,65,64,88.29851286329738,True,72,72
+balanced,pca,50,False,A_pca_k050,vascular leptomeningeal cell,31,22,40.85691465202055,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,GABAergic neuron,59,53,88.19381817500128,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,81.66021753001132,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,82.09157245281797,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,L5/6 near-projecting glutamatergic neuron,38,42,89.2617467746664,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,70.4865050545827,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,L6 intratelencephalic projecting glutamatergic neuron,39,51,87.9542221650816,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,L6b glutamatergic neuron of the primary motor cortex,30,39,89.75684147358754,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,VIP GABAergic interneuron,66,68,89.00109283909421,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,astrocyte,70,71,84.53949551289197,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,endothelial cell,55,49,87.58139923805956,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,lamp5 GABAergic interneuron,63,63,86.09843596088074,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,microglial cell,67,67,87.77867407351955,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,oligodendrocyte,72,71,88.24653819756496,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,oligodendrocyte precursor cell,71,72,82.32590315795036,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,pericyte,45,41,89.00700681174929,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,perivascular macrophage,11,6,,False,72,72
+balanced,pca,50,True,A_pca_k050_clean,pvalb GABAergic interneuron,64,64,87.91083984479381,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,smooth muscle cell,11,3,,False,72,72
+balanced,pca,50,True,A_pca_k050_clean,sst GABAergic interneuron,65,64,88.80382460912922,True,72,72
+balanced,pca,50,True,A_pca_k050_clean,vascular leptomeningeal cell,31,22,56.82653586784414,True,72,72
+balanced,pca,100,False,A_pca_k100,GABAergic neuron,59,53,88.31579158998964,True,72,72
+balanced,pca,100,False,A_pca_k100,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,81.36433279669426,True,72,72
+balanced,pca,100,False,A_pca_k100,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,84.10651654837764,True,72,72
+balanced,pca,100,False,A_pca_k100,L5/6 near-projecting glutamatergic neuron,38,42,85.6419455322324,True,72,72
+balanced,pca,100,False,A_pca_k100,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,78.46211178937523,True,72,72
+balanced,pca,100,False,A_pca_k100,L6 intratelencephalic projecting glutamatergic neuron,39,51,83.49913007182786,True,72,72
+balanced,pca,100,False,A_pca_k100,L6b glutamatergic neuron of the primary motor cortex,30,39,29.12894003148771,True,72,72
+balanced,pca,100,False,A_pca_k100,VIP GABAergic interneuron,66,68,89.26094861955681,True,72,72
+balanced,pca,100,False,A_pca_k100,astrocyte,70,71,85.0816118083038,True,72,72
+balanced,pca,100,False,A_pca_k100,endothelial cell,55,49,87.78944961084404,True,72,72
+balanced,pca,100,False,A_pca_k100,lamp5 GABAergic interneuron,63,63,87.32093837816973,True,72,72
+balanced,pca,100,False,A_pca_k100,microglial cell,67,67,87.65140796304576,True,72,72
+balanced,pca,100,False,A_pca_k100,oligodendrocyte,72,71,87.92919309103654,True,72,72
+balanced,pca,100,False,A_pca_k100,oligodendrocyte precursor cell,71,72,83.87373966080428,True,72,72
+balanced,pca,100,False,A_pca_k100,pericyte,45,41,66.54257560269852,True,72,72
+balanced,pca,100,False,A_pca_k100,perivascular macrophage,11,6,,False,72,72
+balanced,pca,100,False,A_pca_k100,pvalb GABAergic interneuron,64,64,86.33561197773432,True,72,72
+balanced,pca,100,False,A_pca_k100,smooth muscle cell,11,3,,False,72,72
+balanced,pca,100,False,A_pca_k100,sst GABAergic interneuron,65,64,85.35717435643454,True,72,72
+balanced,pca,100,False,A_pca_k100,vascular leptomeningeal cell,31,22,40.85691465202055,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,GABAergic neuron,59,53,88.31579158998964,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,81.49838298355118,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,81.35675492882295,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,L5/6 near-projecting glutamatergic neuron,38,42,89.2617467746664,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,70.4865050545827,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,L6 intratelencephalic projecting glutamatergic neuron,39,51,87.9542221650816,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,L6b glutamatergic neuron of the primary motor cortex,30,39,89.75684147358754,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,VIP GABAergic interneuron,66,68,88.80948921860384,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,astrocyte,70,71,82.28427127765086,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,endothelial cell,55,49,87.75784546500334,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,lamp5 GABAergic interneuron,63,63,86.81233300042231,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,microglial cell,67,67,86.90868363079137,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,oligodendrocyte,72,71,88.42819113192863,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,oligodendrocyte precursor cell,71,72,83.88048899662131,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,pericyte,45,41,89.00700681174929,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,perivascular macrophage,11,6,,False,72,72
+balanced,pca,100,True,A_pca_k100_clean,pvalb GABAergic interneuron,64,64,86.45008496377497,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,smooth muscle cell,11,3,,False,72,72
+balanced,pca,100,True,A_pca_k100_clean,sst GABAergic interneuron,65,64,85.25641744895908,True,72,72
+balanced,pca,100,True,A_pca_k100_clean,vascular leptomeningeal cell,31,22,56.82653586784414,True,72,72
+balanced,pca,150,False,A_pca_k150,GABAergic neuron,59,53,88.31579158998964,True,72,72
+balanced,pca,150,False,A_pca_k150,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,81.36433279669426,True,72,72
+balanced,pca,150,False,A_pca_k150,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,84.10651654837764,True,72,72
+balanced,pca,150,False,A_pca_k150,L5/6 near-projecting glutamatergic neuron,38,42,85.6419455322324,True,72,72
+balanced,pca,150,False,A_pca_k150,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,78.46211178937523,True,72,72
+balanced,pca,150,False,A_pca_k150,L6 intratelencephalic projecting glutamatergic neuron,39,51,83.49913007182786,True,72,72
+balanced,pca,150,False,A_pca_k150,L6b glutamatergic neuron of the primary motor cortex,30,39,29.12894003148771,True,72,72
+balanced,pca,150,False,A_pca_k150,VIP GABAergic interneuron,66,68,89.26094861955681,True,72,72
+balanced,pca,150,False,A_pca_k150,astrocyte,70,71,85.0816118083038,True,72,72
+balanced,pca,150,False,A_pca_k150,endothelial cell,55,49,87.78944961084404,True,72,72
+balanced,pca,150,False,A_pca_k150,lamp5 GABAergic interneuron,63,63,87.32093837816973,True,72,72
+balanced,pca,150,False,A_pca_k150,microglial cell,67,67,87.65140796304576,True,72,72
+balanced,pca,150,False,A_pca_k150,oligodendrocyte,72,71,87.92919309103654,True,72,72
+balanced,pca,150,False,A_pca_k150,oligodendrocyte precursor cell,71,72,83.87373966080428,True,72,72
+balanced,pca,150,False,A_pca_k150,pericyte,45,41,66.54257560269852,True,72,72
+balanced,pca,150,False,A_pca_k150,perivascular macrophage,11,6,,False,72,72
+balanced,pca,150,False,A_pca_k150,pvalb GABAergic interneuron,64,64,86.33561197773432,True,72,72
+balanced,pca,150,False,A_pca_k150,smooth muscle cell,11,3,,False,72,72
+balanced,pca,150,False,A_pca_k150,sst GABAergic interneuron,65,64,85.35717435643454,True,72,72
+balanced,pca,150,False,A_pca_k150,vascular leptomeningeal cell,31,22,40.85691465202055,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,GABAergic neuron,59,53,88.31579158998964,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,81.49838298355118,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,81.35675492882295,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,L5/6 near-projecting glutamatergic neuron,38,42,89.2617467746664,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,70.4865050545827,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,L6 intratelencephalic projecting glutamatergic neuron,39,51,87.9542221650816,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,L6b glutamatergic neuron of the primary motor cortex,30,39,89.75684147358754,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,VIP GABAergic interneuron,66,68,88.80948921860384,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,astrocyte,70,71,82.28427127765086,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,endothelial cell,55,49,87.75784546500334,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,lamp5 GABAergic interneuron,63,63,86.81233300042231,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,microglial cell,67,67,86.90868363079137,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,oligodendrocyte,72,71,88.42819113192863,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,oligodendrocyte precursor cell,71,72,83.88048899662131,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,pericyte,45,41,89.00700681174929,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,perivascular macrophage,11,6,,False,72,72
+balanced,pca,150,True,A_pca_k150_clean,pvalb GABAergic interneuron,64,64,86.45008496377497,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,smooth muscle cell,11,3,,False,72,72
+balanced,pca,150,True,A_pca_k150_clean,sst GABAergic interneuron,65,64,85.25641744895908,True,72,72
+balanced,pca,150,True,A_pca_k150_clean,vascular leptomeningeal cell,31,22,56.82653586784414,True,72,72
+balanced,curated,20,False,B_curated_k020,GABAergic neuron,59,53,80.58802777362692,True,72,72
+balanced,curated,20,False,B_curated_k020,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,82.0578847746779,True,72,72
+balanced,curated,20,False,B_curated_k020,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,85.82809285641558,True,72,72
+balanced,curated,20,False,B_curated_k020,L5/6 near-projecting glutamatergic neuron,38,42,83.23356164492245,True,72,72
+balanced,curated,20,False,B_curated_k020,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,52.97225772750913,True,72,72
+balanced,curated,20,False,B_curated_k020,L6 intratelencephalic projecting glutamatergic neuron,39,51,74.25384312406537,True,72,72
+balanced,curated,20,False,B_curated_k020,L6b glutamatergic neuron of the primary motor cortex,30,39,88.17586684659025,True,72,72
+balanced,curated,20,False,B_curated_k020,VIP GABAergic interneuron,66,68,81.31581921045874,True,72,72
+balanced,curated,20,False,B_curated_k020,astrocyte,70,71,89.13706777236854,True,72,72
+balanced,curated,20,False,B_curated_k020,endothelial cell,55,49,68.87304528000912,True,72,72
+balanced,curated,20,False,B_curated_k020,lamp5 GABAergic interneuron,63,63,54.15996338307353,True,72,72
+balanced,curated,20,False,B_curated_k020,microglial cell,67,67,76.24021802445633,True,72,72
+balanced,curated,20,False,B_curated_k020,oligodendrocyte,72,71,78.00453093753131,True,72,72
+balanced,curated,20,False,B_curated_k020,oligodendrocyte precursor cell,71,72,78.82166353731772,True,72,72
+balanced,curated,20,False,B_curated_k020,pericyte,45,41,87.47425938706944,True,72,72
+balanced,curated,20,False,B_curated_k020,perivascular macrophage,11,6,,False,72,72
+balanced,curated,20,False,B_curated_k020,pvalb GABAergic interneuron,64,64,63.105455118234794,True,72,72
+balanced,curated,20,False,B_curated_k020,smooth muscle cell,11,3,,False,72,72
+balanced,curated,20,False,B_curated_k020,sst GABAergic interneuron,65,64,82.33547701045318,True,72,72
+balanced,curated,20,False,B_curated_k020,vascular leptomeningeal cell,31,22,74.93962737919921,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,GABAergic neuron,59,53,80.58802777362692,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,85.76032948830337,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,89.50002263931796,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,L5/6 near-projecting glutamatergic neuron,38,42,82.3897777539479,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,52.97225772750913,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,L6 intratelencephalic projecting glutamatergic neuron,39,51,49.72510691854461,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,L6b glutamatergic neuron of the primary motor cortex,30,39,72.97762795521079,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,VIP GABAergic interneuron,66,68,80.91251454818507,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,astrocyte,70,71,86.52039481460908,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,endothelial cell,55,49,77.02272193512066,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,lamp5 GABAergic interneuron,63,63,52.61780252511004,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,microglial cell,67,67,76.24021802445633,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,oligodendrocyte,72,71,79.43318508599842,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,oligodendrocyte precursor cell,71,72,78.82166353731772,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,pericyte,45,41,88.727500697847,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,perivascular macrophage,11,6,,False,72,72
+balanced,curated,20,True,B_curated_k020_clean,pvalb GABAergic interneuron,64,64,76.86045181631154,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,smooth muscle cell,11,3,,False,72,72
+balanced,curated,20,True,B_curated_k020_clean,sst GABAergic interneuron,65,64,82.33547701045318,True,72,72
+balanced,curated,20,True,B_curated_k020_clean,vascular leptomeningeal cell,31,22,74.85926874016589,True,72,72
+balanced,curated,50,False,B_curated_k050,GABAergic neuron,59,53,63.888247765338235,True,72,72
+balanced,curated,50,False,B_curated_k050,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,85.8785055586168,True,72,72
+balanced,curated,50,False,B_curated_k050,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,87.82434101195983,True,72,72
+balanced,curated,50,False,B_curated_k050,L5/6 near-projecting glutamatergic neuron,38,42,82.61048555476663,True,72,72
+balanced,curated,50,False,B_curated_k050,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,38.1626298034216,True,72,72
+balanced,curated,50,False,B_curated_k050,L6 intratelencephalic projecting glutamatergic neuron,39,51,71.43722829333767,True,72,72
+balanced,curated,50,False,B_curated_k050,L6b glutamatergic neuron of the primary motor cortex,30,39,56.647827496635216,True,72,72
+balanced,curated,50,False,B_curated_k050,VIP GABAergic interneuron,66,68,86.82519999078889,True,72,72
+balanced,curated,50,False,B_curated_k050,astrocyte,70,71,87.42643835467402,True,72,72
+balanced,curated,50,False,B_curated_k050,endothelial cell,55,49,79.97941221100567,True,72,72
+balanced,curated,50,False,B_curated_k050,lamp5 GABAergic interneuron,63,63,58.40421278792737,True,72,72
+balanced,curated,50,False,B_curated_k050,microglial cell,67,67,82.24496537546071,True,72,72
+balanced,curated,50,False,B_curated_k050,oligodendrocyte,72,71,68.00977749276913,True,72,72
+balanced,curated,50,False,B_curated_k050,oligodendrocyte precursor cell,71,72,60.94998865487835,True,72,72
+balanced,curated,50,False,B_curated_k050,pericyte,45,41,80.22570926078501,True,72,72
+balanced,curated,50,False,B_curated_k050,perivascular macrophage,11,6,,False,72,72
+balanced,curated,50,False,B_curated_k050,pvalb GABAergic interneuron,64,64,74.33514387949532,True,72,72
+balanced,curated,50,False,B_curated_k050,smooth muscle cell,11,3,,False,72,72
+balanced,curated,50,False,B_curated_k050,sst GABAergic interneuron,65,64,73.62237853970178,True,72,72
+balanced,curated,50,False,B_curated_k050,vascular leptomeningeal cell,31,22,69.83717738244655,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,GABAergic neuron,59,53,63.888247765338235,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,87.45046355981701,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,86.99480906262673,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,L5/6 near-projecting glutamatergic neuron,38,42,81.38344704798102,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,38.1626298034216,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,L6 intratelencephalic projecting glutamatergic neuron,39,51,71.22233922643535,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,L6b glutamatergic neuron of the primary motor cortex,30,39,55.9908210323474,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,VIP GABAergic interneuron,66,68,86.87908291571827,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,astrocyte,70,71,76.97374606396559,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,endothelial cell,55,49,84.08641538978955,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,lamp5 GABAergic interneuron,63,63,57.47726524936541,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,microglial cell,67,67,82.24496537546071,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,oligodendrocyte,72,71,67.99677190396086,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,oligodendrocyte precursor cell,71,72,60.94998865487835,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,pericyte,45,41,79.52455044647817,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,perivascular macrophage,11,6,,False,72,72
+balanced,curated,50,True,B_curated_k050_clean,pvalb GABAergic interneuron,64,64,74.8908553505119,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,smooth muscle cell,11,3,,False,72,72
+balanced,curated,50,True,B_curated_k050_clean,sst GABAergic interneuron,65,64,73.62237853970178,True,72,72
+balanced,curated,50,True,B_curated_k050_clean,vascular leptomeningeal cell,31,22,69.73667767010723,True,72,72
+balanced,curated,100,False,B_curated_k100,GABAergic neuron,59,53,65.47801381464616,True,72,72
+balanced,curated,100,False,B_curated_k100,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,83.55706124932065,True,72,72
+balanced,curated,100,False,B_curated_k100,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,85.91481187166954,True,72,72
+balanced,curated,100,False,B_curated_k100,L5/6 near-projecting glutamatergic neuron,38,42,82.61048555476663,True,72,72
+balanced,curated,100,False,B_curated_k100,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,38.1626298034216,True,72,72
+balanced,curated,100,False,B_curated_k100,L6 intratelencephalic projecting glutamatergic neuron,39,51,71.43722829333767,True,72,72
+balanced,curated,100,False,B_curated_k100,L6b glutamatergic neuron of the primary motor cortex,30,39,56.647827496635216,True,72,72
+balanced,curated,100,False,B_curated_k100,VIP GABAergic interneuron,66,68,86.64189336719184,True,72,72
+balanced,curated,100,False,B_curated_k100,astrocyte,70,71,79.92164813275251,True,72,72
+balanced,curated,100,False,B_curated_k100,endothelial cell,55,49,80.35011332890957,True,72,72
+balanced,curated,100,False,B_curated_k100,lamp5 GABAergic interneuron,63,63,59.867076117440675,True,72,72
+balanced,curated,100,False,B_curated_k100,microglial cell,67,67,82.55198722849434,True,72,72
+balanced,curated,100,False,B_curated_k100,oligodendrocyte,72,71,69.8685860149919,True,72,72
+balanced,curated,100,False,B_curated_k100,oligodendrocyte precursor cell,71,72,58.01001704668401,True,72,72
+balanced,curated,100,False,B_curated_k100,pericyte,45,41,80.22570926078501,True,72,72
+balanced,curated,100,False,B_curated_k100,perivascular macrophage,11,6,,False,72,72
+balanced,curated,100,False,B_curated_k100,pvalb GABAergic interneuron,64,64,71.38825807221836,True,72,72
+balanced,curated,100,False,B_curated_k100,smooth muscle cell,11,3,,False,72,72
+balanced,curated,100,False,B_curated_k100,sst GABAergic interneuron,65,64,75.44191560526627,True,72,72
+balanced,curated,100,False,B_curated_k100,vascular leptomeningeal cell,31,22,69.83717738244655,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,GABAergic neuron,59,53,65.10656499199783,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,86.33235631953325,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,87.07304404233548,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,L5/6 near-projecting glutamatergic neuron,38,42,81.38344704798102,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,38.1626298034216,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,L6 intratelencephalic projecting glutamatergic neuron,39,51,71.22233922643535,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,L6b glutamatergic neuron of the primary motor cortex,30,39,55.9908210323474,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,VIP GABAergic interneuron,66,68,86.3592210664816,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,astrocyte,70,71,71.23013070766831,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,endothelial cell,55,49,84.23453869776931,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,lamp5 GABAergic interneuron,63,63,59.431444239239134,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,microglial cell,67,67,82.55198722849434,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,oligodendrocyte,72,71,70.24006597346899,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,oligodendrocyte precursor cell,71,72,58.01001704668401,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,pericyte,45,41,79.52455044647817,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,perivascular macrophage,11,6,,False,72,72
+balanced,curated,100,True,B_curated_k100_clean,pvalb GABAergic interneuron,64,64,74.89849143767027,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,smooth muscle cell,11,3,,False,72,72
+balanced,curated,100,True,B_curated_k100_clean,sst GABAergic interneuron,65,64,75.44191560526627,True,72,72
+balanced,curated,100,True,B_curated_k100_clean,vascular leptomeningeal cell,31,22,69.73667767010723,True,72,72
+balanced,curated,150,False,B_curated_k150,GABAergic neuron,59,53,65.47801381464616,True,72,72
+balanced,curated,150,False,B_curated_k150,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,83.55706124932065,True,72,72
+balanced,curated,150,False,B_curated_k150,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,85.91481187166954,True,72,72
+balanced,curated,150,False,B_curated_k150,L5/6 near-projecting glutamatergic neuron,38,42,82.61048555476663,True,72,72
+balanced,curated,150,False,B_curated_k150,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,38.1626298034216,True,72,72
+balanced,curated,150,False,B_curated_k150,L6 intratelencephalic projecting glutamatergic neuron,39,51,71.43722829333767,True,72,72
+balanced,curated,150,False,B_curated_k150,L6b glutamatergic neuron of the primary motor cortex,30,39,56.647827496635216,True,72,72
+balanced,curated,150,False,B_curated_k150,VIP GABAergic interneuron,66,68,86.64189336719184,True,72,72
+balanced,curated,150,False,B_curated_k150,astrocyte,70,71,79.92164813275251,True,72,72
+balanced,curated,150,False,B_curated_k150,endothelial cell,55,49,80.35011332890957,True,72,72
+balanced,curated,150,False,B_curated_k150,lamp5 GABAergic interneuron,63,63,59.867076117440675,True,72,72
+balanced,curated,150,False,B_curated_k150,microglial cell,67,67,82.55198722849434,True,72,72
+balanced,curated,150,False,B_curated_k150,oligodendrocyte,72,71,69.8685860149919,True,72,72
+balanced,curated,150,False,B_curated_k150,oligodendrocyte precursor cell,71,72,58.01001704668401,True,72,72
+balanced,curated,150,False,B_curated_k150,pericyte,45,41,80.22570926078501,True,72,72
+balanced,curated,150,False,B_curated_k150,perivascular macrophage,11,6,,False,72,72
+balanced,curated,150,False,B_curated_k150,pvalb GABAergic interneuron,64,64,71.38825807221836,True,72,72
+balanced,curated,150,False,B_curated_k150,smooth muscle cell,11,3,,False,72,72
+balanced,curated,150,False,B_curated_k150,sst GABAergic interneuron,65,64,75.44191560526627,True,72,72
+balanced,curated,150,False,B_curated_k150,vascular leptomeningeal cell,31,22,69.83717738244655,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,GABAergic neuron,59,53,65.10656499199783,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,86.33235631953325,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,87.07304404233548,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,L5/6 near-projecting glutamatergic neuron,38,42,81.38344704798102,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,38.1626298034216,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,L6 intratelencephalic projecting glutamatergic neuron,39,51,71.22233922643535,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,L6b glutamatergic neuron of the primary motor cortex,30,39,55.9908210323474,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,VIP GABAergic interneuron,66,68,86.3592210664816,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,astrocyte,70,71,71.23013070766831,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,endothelial cell,55,49,84.23453869776931,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,lamp5 GABAergic interneuron,63,63,59.431444239239134,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,microglial cell,67,67,82.55198722849434,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,oligodendrocyte,72,71,70.24006597346899,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,oligodendrocyte precursor cell,71,72,58.01001704668401,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,pericyte,45,41,79.52455044647817,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,perivascular macrophage,11,6,,False,72,72
+balanced,curated,150,True,B_curated_k150_clean,pvalb GABAergic interneuron,64,64,74.89849143767027,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,smooth muscle cell,11,3,,False,72,72
+balanced,curated,150,True,B_curated_k150_clean,sst GABAergic interneuron,65,64,75.44191560526627,True,72,72
+balanced,curated,150,True,B_curated_k150_clean,vascular leptomeningeal cell,31,22,69.73667767010723,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,GABAergic neuron,59,53,88.76543865221315,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,82.61192768076974,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,89.08974118973734,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,L5/6 near-projecting glutamatergic neuron,38,42,88.29660697576759,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,89.11054323333599,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,L6 intratelencephalic projecting glutamatergic neuron,39,51,87.54907615675961,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,L6b glutamatergic neuron of the primary motor cortex,30,39,88.58547171195946,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,VIP GABAergic interneuron,66,68,86.68202567896131,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,astrocyte,70,71,88.95083049462232,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,endothelial cell,55,49,87.91823314801306,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,lamp5 GABAergic interneuron,63,63,89.72978573855922,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,microglial cell,67,67,87.19783127403727,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,oligodendrocyte,72,71,89.68450458555228,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,oligodendrocyte precursor cell,71,72,89.86350216004845,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,pericyte,45,41,88.70424818147241,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,perivascular macrophage,11,6,,False,72,72
+balanced,wgcna,20,False,C_wgcna_k020,pvalb GABAergic interneuron,64,64,89.14700683077066,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,smooth muscle cell,11,3,,False,72,72
+balanced,wgcna,20,False,C_wgcna_k020,sst GABAergic interneuron,65,64,82.64656796008242,True,72,72
+balanced,wgcna,20,False,C_wgcna_k020,vascular leptomeningeal cell,31,22,89.3827478089142,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,GABAergic neuron,59,53,89.5020939317078,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,82.18097114493446,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,89.11576152724103,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,L5/6 near-projecting glutamatergic neuron,38,42,87.84997297334247,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,88.71843922414335,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,L6 intratelencephalic projecting glutamatergic neuron,39,51,88.67242852549433,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,L6b glutamatergic neuron of the primary motor cortex,30,39,89.92075016593421,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,VIP GABAergic interneuron,66,68,86.5921705097639,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,astrocyte,70,71,89.37989302951202,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,endothelial cell,55,49,88.5348662914602,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,lamp5 GABAergic interneuron,63,63,89.24289531818584,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,microglial cell,67,67,87.19764143062714,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,oligodendrocyte,72,71,89.2073020263379,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,oligodendrocyte precursor cell,71,72,89.94017286379233,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,pericyte,45,41,88.59666806884809,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,perivascular macrophage,11,6,,False,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,pvalb GABAergic interneuron,64,64,89.91841563919375,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,smooth muscle cell,11,3,,False,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,sst GABAergic interneuron,65,64,81.75564592913705,True,72,72
+balanced,wgcna,20,True,C_wgcna_k020_clean,vascular leptomeningeal cell,31,22,89.3827478089142,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,GABAergic neuron,59,53,86.70347066284262,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,86.95142997657979,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,87.4068934898115,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,L5/6 near-projecting glutamatergic neuron,38,42,86.40593038453997,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,89.68168012587897,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,L6 intratelencephalic projecting glutamatergic neuron,39,51,85.96907314662175,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,L6b glutamatergic neuron of the primary motor cortex,30,39,88.16727126535007,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,VIP GABAergic interneuron,66,68,89.65635243891043,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,astrocyte,70,71,89.81159316291183,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,endothelial cell,55,49,89.60727843765773,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,lamp5 GABAergic interneuron,63,63,89.96847053443292,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,microglial cell,67,67,89.4883765483461,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,oligodendrocyte,72,71,88.27581319399822,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,oligodendrocyte precursor cell,71,72,87.58208688500703,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,pericyte,45,41,88.90875348890646,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,perivascular macrophage,11,6,,False,72,72
+balanced,wgcna,50,False,C_wgcna_k050,pvalb GABAergic interneuron,64,64,84.21271341432012,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,smooth muscle cell,11,3,,False,72,72
+balanced,wgcna,50,False,C_wgcna_k050,sst GABAergic interneuron,65,64,89.03232976426611,True,72,72
+balanced,wgcna,50,False,C_wgcna_k050,vascular leptomeningeal cell,31,22,89.22877820484004,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,GABAergic neuron,59,53,86.61417642002613,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,86.8421331850151,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,87.93477294709498,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,L5/6 near-projecting glutamatergic neuron,38,42,87.48655210398755,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,89.79119251570971,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,L6 intratelencephalic projecting glutamatergic neuron,39,51,87.42375490115256,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,L6b glutamatergic neuron of the primary motor cortex,30,39,88.24700322231332,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,VIP GABAergic interneuron,66,68,89.55921590625374,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,astrocyte,70,71,88.7560088728442,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,endothelial cell,55,49,89.46155687761615,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,lamp5 GABAergic interneuron,63,63,89.84561142276067,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,microglial cell,67,67,89.50984756815434,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,oligodendrocyte,72,71,87.83818569538887,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,oligodendrocyte precursor cell,71,72,88.2212300605885,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,pericyte,45,41,88.88625149194567,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,perivascular macrophage,11,6,,False,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,pvalb GABAergic interneuron,64,64,84.99443942439666,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,smooth muscle cell,11,3,,False,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,sst GABAergic interneuron,65,64,88.66589264616916,True,72,72
+balanced,wgcna,50,True,C_wgcna_k050_clean,vascular leptomeningeal cell,31,22,89.1729484976768,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,GABAergic neuron,59,53,78.86143250397285,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,86.41926786914996,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,88.8684508175797,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,L5/6 near-projecting glutamatergic neuron,38,42,86.40593038453997,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,89.68168012587897,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,L6 intratelencephalic projecting glutamatergic neuron,39,51,85.96907314662175,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,L6b glutamatergic neuron of the primary motor cortex,30,39,88.16727126535007,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,VIP GABAergic interneuron,66,68,86.21558425980993,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,astrocyte,70,71,89.20472684255716,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,endothelial cell,55,49,88.89786877802516,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,lamp5 GABAergic interneuron,63,63,87.76632297609022,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,microglial cell,67,67,88.41954749917028,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,oligodendrocyte,72,71,87.95901344223185,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,oligodendrocyte precursor cell,71,72,87.61179156088193,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,pericyte,45,41,88.90875348890646,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,perivascular macrophage,11,6,,False,72,72
+balanced,wgcna,100,False,C_wgcna_k100,pvalb GABAergic interneuron,64,64,88.64026772197138,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,smooth muscle cell,11,3,,False,72,72
+balanced,wgcna,100,False,C_wgcna_k100,sst GABAergic interneuron,65,64,89.15105214989802,True,72,72
+balanced,wgcna,100,False,C_wgcna_k100,vascular leptomeningeal cell,31,22,89.22877820484004,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,GABAergic neuron,59,53,79.7053245661154,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,84.10298108757773,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,89.09279584709385,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,L5/6 near-projecting glutamatergic neuron,38,42,87.48655210398755,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,89.79119251570971,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,L6 intratelencephalic projecting glutamatergic neuron,39,51,87.42375490115256,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,L6b glutamatergic neuron of the primary motor cortex,30,39,88.24700322231332,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,VIP GABAergic interneuron,66,68,89.02350429162459,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,astrocyte,70,71,89.42089296471025,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,endothelial cell,55,49,88.77368865934818,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,lamp5 GABAergic interneuron,63,63,88.14597969359,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,microglial cell,67,67,88.34441544802947,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,oligodendrocyte,72,71,86.37154285046675,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,oligodendrocyte precursor cell,71,72,87.4494223828309,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,pericyte,45,41,88.88625149194567,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,perivascular macrophage,11,6,,False,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,pvalb GABAergic interneuron,64,64,86.65890761468562,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,smooth muscle cell,11,3,,False,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,sst GABAergic interneuron,65,64,89.33830328310407,True,72,72
+balanced,wgcna,100,True,C_wgcna_k100_clean,vascular leptomeningeal cell,31,22,89.1729484976768,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,GABAergic neuron,59,53,78.86143250397285,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,86.41926786914996,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,88.8684508175797,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,L5/6 near-projecting glutamatergic neuron,38,42,86.40593038453997,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,89.68168012587897,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,L6 intratelencephalic projecting glutamatergic neuron,39,51,85.96907314662175,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,L6b glutamatergic neuron of the primary motor cortex,30,39,88.16727126535007,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,VIP GABAergic interneuron,66,68,86.21558425980993,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,astrocyte,70,71,89.20472684255716,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,endothelial cell,55,49,88.89786877802516,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,lamp5 GABAergic interneuron,63,63,87.76632297609022,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,microglial cell,67,67,88.41954749917028,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,oligodendrocyte,72,71,87.95901344223185,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,oligodendrocyte precursor cell,71,72,87.61179156088193,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,pericyte,45,41,88.90875348890646,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,perivascular macrophage,11,6,,False,72,72
+balanced,wgcna,150,False,C_wgcna_k150,pvalb GABAergic interneuron,64,64,88.64026772197138,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,smooth muscle cell,11,3,,False,72,72
+balanced,wgcna,150,False,C_wgcna_k150,sst GABAergic interneuron,65,64,89.15105214989802,True,72,72
+balanced,wgcna,150,False,C_wgcna_k150,vascular leptomeningeal cell,31,22,89.22877820484004,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,GABAergic neuron,59,53,79.7053245661154,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,L2/3 intratelencephalic projecting glutamatergic neuron,66,70,84.10298108757773,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,64,89.09279584709385,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,L5/6 near-projecting glutamatergic neuron,38,42,87.48655210398755,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,L6 corticothalamic-projecting glutamatergic cortical neuron,42,52,89.79119251570971,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,L6 intratelencephalic projecting glutamatergic neuron,39,51,87.42375490115256,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,L6b glutamatergic neuron of the primary motor cortex,30,39,88.24700322231332,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,VIP GABAergic interneuron,66,68,89.02350429162459,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,astrocyte,70,71,89.42089296471025,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,endothelial cell,55,49,88.77368865934818,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,lamp5 GABAergic interneuron,63,63,88.14597969359,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,microglial cell,67,67,88.34441544802947,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,oligodendrocyte,72,71,86.37154285046675,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,oligodendrocyte precursor cell,71,72,87.4494223828309,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,pericyte,45,41,88.88625149194567,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,perivascular macrophage,11,6,,False,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,pvalb GABAergic interneuron,64,64,86.65890761468562,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,smooth muscle cell,11,3,,False,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,sst GABAergic interneuron,65,64,89.33830328310407,True,72,72
+balanced,wgcna,150,True,C_wgcna_k150_clean,vascular leptomeningeal cell,31,22,89.1729484976768,True,72,72

@@ -1,0 +1,38 @@
+====================================================================================================
+BRAIN PHASE 1  STAGE P4 — negatives + cross-test.  seed = 20260914
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+FALSIFICATION.md is pre-registration and is not revised.
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[P4] frozen A=1355 I=1876 (full-data sets; models retrained in CV, genes not re-derived)
+
+================================================================================
+[P4] scheme=loso
+[P3] loso: 2 folds, no donor in both folds: True
+   age model on A-genes...
+   age model on full I-genes...
+   age model on size-matched I-genes (20 draws)...
+   identity on I-genes...
+   identity on A-genes (cross)...
+   R²_A=-0.019  R²_I_matched=+0.260  R²_I_full=+0.267
+   Acc_I=0.999  Acc_A=0.991  chance=0.070
+   shuffle age R²=-0.913  shuffle type acc=0.058
+   verdict: falsified (not separable)  (R²_A − R²_I = -0.279 < 0.10; Acc_A >= 0.9 × Acc_I (0.992))
+
+================================================================================
+[P4] scheme=within_site
+[P3] within_site: 10 folds, no donor in both folds: True
+   age model on A-genes...
+   age model on full I-genes...
+   age model on size-matched I-genes (20 draws)...
+   identity on I-genes...
+   identity on A-genes (cross)...
+   R²_A=+0.423  R²_I_matched=+0.559  R²_I_full=+0.571
+   Acc_I=0.999  Acc_A=0.994  chance=0.070
+   shuffle age R²=+0.195  shuffle type acc=0.054
+   verdict: soundness-fail  (shuffle-age R²=0.195 > 0.10 (pipeline soundness fail); R²_I >= 0.8 × R²_A (1.319); R²_A − R²_I = -0.135 < 0.10; Acc_A >= 0.9 × Acc_I (0.995))
+
+[P4] THE DECISION: DISAGREEMENT between CV schemes
+LOSO verdict = falsified (not separable); within-site verdict = soundness-fail. Hard rule: report the disagreement rather than picking the better number. LOSO: R²_A − R²_I = -0.279 < 0.10; Acc_A >= 0.9 × Acc_I (0.992). Within-site: shuffle-age R²=0.195 > 0.10 (pipeline soundness fail); R²_I >= 0.8 × R²_A (1.319); R²_A − R²_I = -0.135 < 0.10; Acc_A >= 0.9 × Acc_I (0.995).
+[findings] wrote <repo>\FINDINGS_BRAIN_PHASE1.md
+[P4] done.

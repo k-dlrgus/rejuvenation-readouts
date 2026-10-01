@@ -1,0 +1,8 @@
+column,dtype,role,n_unique,unique_up_to_10,n_unique_wt,unique_wt_up_to_10,n_unique_perturbed,unique_perturbed_up_to_10,differs_wt_vs_perturbed
+PD14,bool,pd_flag,2,"[true, false]",2,"[true, false]",1,[false],True
+PD26,bool,pd_flag,2,"[false, true]",2,"[false, true]",1,[false],True
+PD32,bool,pd_flag,2,"[false, true]",2,"[false, true]",1,[false],True
+CRI,int64,modality_flag,2,"[0, 1]",1,[0],2,"[0, 1]",True
+CRA,int64,modality_flag,2,"[0, 1]",1,[0],2,"[1, 0]",True
+WT,int64,wt_flag,2,"[1, 0]",1,[1],1,[0],True
+SampleName,int8,qc,4,"[0, 2, 1, 3]",3,"[0, 2, 1]",1,[3],True

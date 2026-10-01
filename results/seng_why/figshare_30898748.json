@@ -1,0 +1,124 @@
+{
+ "files": [
+  {
+   "id": 60428597,
+   "name": "exp3_merged_not_normalized.h5ad",
+   "size": 1426871504,
+   "is_link_only": false,
+   "download_url": "https://ndownloader.figshare.com/files/60428597",
+   "supplied_md5": "bfccaa94a916c22e4b0793913a04128b",
+   "computed_md5": "bfccaa94a916c22e4b0793913a04128b",
+   "mimetype": "application/x-hdf"
+  }
+ ],
+ "folder_structure": {},
+ "authors": [
+  {
+   "id": 7847567,
+   "full_name": "Jiashun Zheng",
+   "first_name": "Jiashun",
+   "last_name": "Zheng",
+   "is_active": true,
+   "url_name": "Jiashun_Zheng",
+   "orcid_id": ""
+  },
+  {
+   "id": 22914022,
+   "full_name": "Janine Sengstack",
+   "first_name": "Janine",
+   "last_name": "Sengstack",
+   "is_active": false,
+   "url_name": "_",
+   "orcid_id": ""
+  },
+  {
+   "id": 69115,
+   "full_name": "Changhui Deng",
+   "first_name": "Changhui",
+   "last_name": "Deng",
+   "is_active": false,
+   "url_name": "Changhui_Deng",
+   "orcid_id": ""
+  },
+  {
+   "id": 31608,
+   "full_name": "Hao Li",
+   "first_name": "Hao",
+   "last_name": "Li",
+   "is_active": false,
+   "url_name": "Hao_Li",
+   "orcid_id": ""
+  }
+ ],
+ "custom_fields": [],
+ "figshare_url": "https://figshare.com/articles/dataset/Single_Cell_Perturb-seq_data_in_h5ad_format_For_the_paper_published_in_PNAS_/30898748",
+ "download_disabled": false,
+ "description": "<p dir=\"ltr\">Data saved in h5ad format, is the combined file from single cell read matrix (from 10x cellranger) and the Perturb-seq UMI counts from individual guides. Each TF was targeted by two guides at the same time, but the guide UMIs are counted separately.</p><p dir=\"ltr\"><br></p>",
+ "funding": null,
+ "funding_list": [],
+ "version": 2,
+ "status": "public",
+ "size": 1426871504,
+ "created_date": "2025-12-25T06:54:05Z",
+ "modified_date": "2026-01-12T22:12:26Z",
+ "is_public": true,
+ "is_confidential": false,
+ "is_metadata_record": false,
+ "confidential_reason": "",
+ "metadata_reason": "",
+ "license": {
+  "value": 1,
+  "name": "CC BY 4.0",
+  "url": "https://creativecommons.org/licenses/by/4.0/"
+ },
+ "tags": [
+  "Rejuvenination",
+  "human fibroblast cell Perturb-seq",
+  "Transcription Factor Perturbation"
+ ],
+ "keywords": [
+  "Rejuvenination",
+  "human fibroblast cell Perturb-seq",
+  "Transcription Factor Perturbation"
+ ],
+ "categories": [
+  {
+   "id": 24178,
+   "title": "Biochemistry and cell biology not elsewhere classified",
+   "parent_id": 24133,
+   "path": "/24130/24133/24178",
+   "source_id": "310199",
+   "taxonomy_id": 100
+  }
+ ],
+ "references": [],
+ "has_linked_file": false,
+ "citation": "Zheng, Jiashun; Sengstack, Janine; Deng, Changhui; Li, Hao (2025). Systematic identification of single transcription factor perturbations that drive cellular and tissue rejuvenation.. figshare. Dataset. https://doi.org/10.6084/m9.figshare.30898748.v2",
+ "related_materials": [],
+ "is_embargoed": false,
+ "embargo_date": "2026-01-16",
+ "embargo_type": null,
+ "embargo_title": "",
+ "embargo_reason": "",
+ "embargo_options": [],
+ "id": 30898748,
+ "title": "Systematic identification of single transcription factor perturbations that drive cellular and tissue rejuvenation.",
+ "doi": "10.6084/m9.figshare.30898748.v2",
+ "handle": "",
+ "url": "https://api.figshare.com/v2/articles/30898748",
+ "published_date": "2025-12-25T06:54:05Z",
+ "thumb": "",
+ "defined_type": 3,
+ "defined_type_name": "dataset",
+ "group_id": null,
+ "url_private_api": "https://api.figshare.com/v2/account/articles/30898748",
+ "url_public_api": "https://api.figshare.com/v2/articles/30898748",
+ "url_private_html": "https://figshare.com/account/articles/30898748",
+ "url_public_html": "https://figshare.com/articles/dataset/Single_Cell_Perturb-seq_data_in_h5ad_format_For_the_paper_published_in_PNAS_/30898748",
+ "timeline": {
+  "posted": "2025-12-25T06:54:05",
+  "firstOnline": "2025-12-16"
+ },
+ "resource_title": null,
+ "resource_doi": null
+}

@@ -1,0 +1,98 @@
+{
+ "status": "STAGE1_DONE_GATE_CLOSED",
+ "failures": [
+  {
+   "step": "stage1",
+   "message": "OSError: [Errno 22] Invalid argument: '<repo>\\\\results\\\\md\\\\raw\\\\bioproject_BioProject: https:\\\\www.ncbi.nlm.nih.gov\\\\bioproject\\\\PRJNA1263211.html'"
+  }
+ ],
+ "columns": {},
+ "frozen_ruler": "<repo>\\results\\fibro\\frozen_ruler_ridge_raw.npz",
+ "searches_run": [
+  {
+   "query": "40816266[PMID] in db=gds",
+   "via": "eutils esearch gds",
+   "result": "n=0 ids=[]"
+  },
+  {
+   "query": "40816266[pmid] in db=pmc",
+   "via": "eutils esearch pmc",
+   "result": "n=0 ids=[]"
+  },
+  {
+   "query": "biorxiv_title",
+   "via": "https://www.biorxiv.org/search/prevalent%20mesenchymal%20drift%20in%20aging%20jcode%3Abiorxiv%20numresults%3A25%20sort%3Arelevance-rank",
+   "result": "retrieved status=403 nbytes=6187 results_token=None empty_marker=False"
+  },
+  {
+   "query": "biorxiv_author_lu",
+   "via": "https://www.biorxiv.org/search/author%3ALu%20mesenchymal%20drift%20jcode%3Abiorxiv%20numresults%3A25",
+   "result": "retrieved status=403 nbytes=6039 results_token=None empty_marker=False"
+  },
+  {
+   "query": "biorxiv_phrase",
+   "via": "https://www.biorxiv.org/search/%22mesenchymal%20drift%22%20jcode%3Abiorxiv%20numresults%3A25%20sort%3Arelevance-rank",
+   "result": "retrieved status=403 nbytes=6108 results_token=None empty_marker=False"
+  },
+  {
+   "query": "medrxiv_phrase",
+   "via": "https://www.medrxiv.org/search/%22mesenchymal%20drift%22%20jcode%3Amedrxiv%20numresults%3A25",
+   "result": "retrieved status=403 nbytes=5994 results_token=None empty_marker=False"
+  },
+  {
+   "query": "researchsquare_title",
+   "via": "https://www.researchsquare.com/browse?q=Prevalent%20mesenchymal%20drift%20in%20aging",
+   "result": "retrieved status=200 nbytes=234130 results_token=None empty_marker=False"
+  },
+  {
+   "query": "osf_preprints",
+   "via": "https://osf.io/preprints/discover?q=Prevalent%20mesenchymal%20drift",
+   "result": "retrieved status=200 nbytes=4207 results_token=None empty_marker=False"
+  },
+  {
+   "query": "ssrn",
+   "via": "https://www.ssrn.com/index.cfm/en/search/?q=Prevalent%20mesenchymal%20drift",
+   "result": "retrieved status=403 nbytes=5989 results_token=None empty_marker=False"
+  },
+  {
+   "query": "TITLE:\"Prevalent mesenchymal drift\" preprint",
+   "via": "europepmc",
+   "result": "hitCount=0"
+  },
+  {
+   "query": "GSE297234",
+   "via": "github repos",
+   "result": "total_count=0 items=[]"
+  },
+  {
+   "query": "mesenchymal_drift",
+   "via": "github repos",
+   "result": "total_count=0 items=[]"
+  },
+  {
+   "query": "lu_mesenchymal",
+   "via": "github repos",
+   "result": "total_count=0 items=[]"
+  },
+  {
+   "query": "altos_md",
+   "via": "github repos",
+   "result": "total_count=0 items=[]"
+  }
+ ],
+ "s1_summary": {
+  "n_sources": 67,
+  "gate_open": false,
+  "gene_list_recovered": true,
+  "n_MD_genes": 205,
+  "computation_recovered": false,
+  "gate_reason": "MD gene list recovered from open supplement mmc3.xlsx (n=205 genes, sheet MD_signatures, column 'MD score'; https://ars.els-cdn.com/content/image/1-s2.0-S0092867425008530-mmc3.xlsx). Computation of the score from those genes is not in any public source retrieved this session. STOP after Stage 1."
+ },
+ "s2_summary": {
+  "ran": false,
+  "reason": "MD score gene list and computation cannot be recovered from public sources. STOP after Stage 1.",
+  "missing": [
+   "MD score computation (per cell vs per sample; mean / ssGSEA / AddModuleScore / other). Not in GEO SOFT, PubMed abstract, or Cell landing summary. Would be in STAR Methods of the paywalled article or in an author code repository."
+  ]
+ }
+}

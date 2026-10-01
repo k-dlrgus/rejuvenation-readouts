@@ -1,0 +1,149 @@
+====================================================================================================
+RERUN STAGE B — the compositional question.  seed = 20260914 | 10 repeats x 5-fold pool-grouped CV, 3-fold inner
+====================================================================================================
+[data] log-CPM pseudobulks: 9,623 x 13,904 genes | donors=981 | pools=75 | cell types=16 | every donor in exactly one pool: True
+[B0] 981 donors, 75 pools; R2(age ~ pool) = 0.234; within-pool age SD = 14.45 y (total SD 16.51 y). All B2 metrics are on within-pool age unless labelled 'naive'.
+
+====================================================================================================
+[B1] per-donor cell-type composition (all cells of the raw h5ad) -> within-pool age
+====================================================================================================
+[filter] cells of the 981 analysis donors                     cells 1,248,980 -> 1,248,980 (removed 0)
+[filter] drop non-PBMC / artefact labels ['Doublet', 'Eryth', 'HSPC', 'Platelet']   cells 1,248,980 -> 1,244,937 (removed 4,043)
+composition categories: 16 analysis types + 'other_PBMC' = ['ASDC', 'CD4 Proliferating', 'CD8 Proliferating', 'ILC', 'NK_CD56bright', 'Plasmablast', 'cDC1', 'cDC2', 'dnT', 'pDC'] (20,754 cells, 1.67%)
+cells per donor used for composition: median 1242 (min 332, max 3492)
+mean proportion per category (%): B_intermediate 2.4, B_memory 2.4, B_naive 5.3, CD14_Mono 3.0, CD16_Mono 1.3, CD4_CTL 1.5, CD4_Naive 20.6, CD4_TCM 23.0, CD4_TEM 2.5, CD8_Naive 4.1, CD8_TCM 1.3, CD8_TEM 13.2, MAIT 0.7, NK 13.5, Treg 2.1, gdT 1.5, other_PBMC 1.7
+
+per-category proportion vs age, within pool (Pearson on pool-centred values; 'pooled' = uncorrected for reference):
+      category  mean_prop  r_within_pool      p  spearman_within_pool  r_pooled
+     CD8_Naive     +0.041         -0.663 +0.000                -0.655    -0.680
+          MAIT     +0.007         -0.290 +0.000                -0.266    -0.297
+     CD4_Naive     +0.206         -0.219 +0.000                -0.251    -0.201
+      B_memory     +0.024         -0.163 +0.000                -0.216    -0.153
+       CD8_TCM     +0.013         -0.108 +0.001                -0.195    -0.135
+    other_PBMC     +0.017         -0.106 +0.001                -0.090    -0.108
+       CD4_TEM     +0.025         -0.095 +0.003                -0.128    -0.106
+           gdT     +0.015         -0.009 +0.785                -0.074    -0.021
+       B_naive     +0.053         +0.010 +0.764                -0.038    -0.027
+B_intermediate     +0.024         +0.030 +0.353                -0.123    +0.030
+       CD4_TCM     +0.230         +0.107 +0.001                +0.086    +0.068
+       CD4_CTL     +0.015         +0.138 +0.000                +0.172    +0.156
+     CD14_Mono     +0.030         +0.157 +0.000                +0.157    +0.056
+          Treg     +0.021         +0.164 +0.000                +0.149    +0.024
+       CD8_TEM     +0.132         +0.193 +0.000                +0.172    +0.218
+     CD16_Mono     +0.013         +0.216 +0.000                +0.218    +0.188
+            NK     +0.135         +0.248 +0.000                +0.245    +0.307
+
+summary axes vs age, within pool:
+   naive share of CD4 T       r = -0.300  (p = 6.8e-22);  mean 0.399
+   naive share of CD8 T       r = -0.569  (p = 3.7e-85);  mean 0.249
+   CD4_CTL share of CD4 T     r = +0.175  (p = 3.3e-08);  mean 0.034
+   naive share of B           r = +0.075  (p = 1.9e-02);  mean 0.517
+   NK share of PBMC           r = +0.248  (p = 3.6e-15);  mean 0.135
+   T share of PBMC            r = -0.214  (p = 1.2e-11);  mean 0.705
+   monocyte share of PBMC     r = +0.206  (p = 7.9e-11);  mean 0.043
+
+[B1] in-sample: R2(age ~ pool) = 0.234; R2(age ~ pool + CLR composition[16 df]) = 0.629; increment = 0.395 of total age variance = 51.5% OF WITHIN-POOL AGE VARIANCE (adj R2 0.172 -> 0.591); F p = 7.4e-128
+     within-pool permutation null for the increment (1000 draws): mean 0.0134 (= 1.7% of within-pool variance), 95th pct 0.0214, max 0.0338; observed 0.3946 -> p < 0.001
+
+====================================================================================================
+[B2] pool-grouped CV: age from composition vs from within-cell-type expression (all genes)
+====================================================================================================
+building kernels (all 13,904 genes, standardised within cell type):
+   B_intermediate  n= 493 pools=75
+   B_memory        n= 614 pools=75
+   B_naive         n= 844 pools=75
+   CD14_Mono       n= 493 pools=67
+   CD16_Mono       n= 293 pools=65
+   CD4_CTL         n= 280 pools=71
+   CD4_Naive       n= 974 pools=75
+   CD4_TCM         n= 980 pools=75
+   CD4_TEM         n= 698 pools=75
+   CD8_Naive       n= 671 pools=75
+   CD8_TCM         n= 293 pools=70
+   CD8_TEM         n= 966 pools=75
+   MAIT            n= 112 pools=54
+   NK              n= 977 pools=75
+   Treg            n= 606 pools=73
+   gdT             n= 329 pools=73
+   repeat 0: comp R2w=0.487  all-type expr R2w=0.482  median per-type R2w=0.122
+   repeat 1: comp R2w=0.499  all-type expr R2w=0.488  median per-type R2w=0.125
+   repeat 2: comp R2w=0.492  all-type expr R2w=0.484  median per-type R2w=0.127
+   repeat 3: comp R2w=0.493  all-type expr R2w=0.487  median per-type R2w=0.125
+   repeat 4: comp R2w=0.493  all-type expr R2w=0.485  median per-type R2w=0.124
+   repeat 5: comp R2w=0.494  all-type expr R2w=0.479  median per-type R2w=0.119
+   repeat 6: comp R2w=0.489  all-type expr R2w=0.477  median per-type R2w=0.119
+   repeat 7: comp R2w=0.492  all-type expr R2w=0.483  median per-type R2w=0.114
+   repeat 8: comp R2w=0.495  all-type expr R2w=0.482  median per-type R2w=0.122
+   repeat 9: comp R2w=0.493  all-type expr R2w=0.477  median per-type R2w=0.117
+
+[B2] pool-grouped CV summary (R2 mean over 10 repeats; [pool-cluster bootstrap 95% CI, repeat 0]; {repeat min-max}):
+model                                         n  within-pool R2                      MAE_w   naive R2 (raw age)              MAE_n
+composition (CLR, 17 categories)            981  +0.493 [+0.434, +0.536] {+0.487,+0.499}   8.08   +0.489 [+0.431, +0.538]         9.44
+expression: all 16 cell types jointly       981  +0.482 [+0.454, +0.508] {+0.477,+0.488}   8.12   +0.514 [+0.486, +0.555]         9.12
+   expression: B_intermediate               493  +0.121 [+0.076, +0.154] {+0.114,+0.132}  11.09   +0.193 [+0.158, +0.252]        12.64
+   expression: B_memory                     614  +0.113 [+0.063, +0.145] {+0.099,+0.128}  10.79   +0.170 [+0.130, +0.219]        12.45
+   expression: B_naive                      844  +0.072 [+0.026, +0.105] {+0.050,+0.089}  10.81   +0.108 [+0.071, +0.165]        12.15
+   expression: CD14_Mono                    493  +0.111 [+0.078, +0.168] {+0.092,+0.127}  10.84   +0.145 [+0.119, +0.244]        11.96
+   expression: CD16_Mono                    293  +0.002 [-0.016, +0.032] {-0.019,+0.014}  10.44   +0.011 [-0.036, +0.078]        10.77
+   expression: CD4_CTL                      280  +0.022 [+0.003, +0.060] {+0.008,+0.039}  10.01   +0.056 [-0.000, +0.080]        10.53
+   expression: CD4_Naive                    974  +0.583 [+0.542, +0.622] {+0.579,+0.592}   7.33   +0.609 [+0.579, +0.661]         8.11
+   expression: CD4_TCM                      980  +0.521 [+0.483, +0.551] {+0.514,+0.532}   7.78   +0.550 [+0.516, +0.593]         8.76
+   expression: CD4_TEM                      698  +0.209 [+0.171, +0.253] {+0.201,+0.221}  10.04   +0.287 [+0.263, +0.344]        10.95
+   expression: CD8_Naive                    671  +0.373 [+0.312, +0.429] {+0.361,+0.378}   9.19   +0.464 [+0.396, +0.515]         9.70
+   expression: CD8_TCM                      293  +0.111 [+0.073, +0.136] {+0.096,+0.121}  10.86   +0.278 [+0.207, +0.326]        11.95
+   expression: CD8_TEM                      966  +0.288 [+0.240, +0.323] {+0.282,+0.295}   9.55   +0.365 [+0.318, +0.409]        10.41
+   expression: MAIT                         112  +0.026 [+0.009, +0.047] {+0.016,+0.031}  15.09   +0.089 [-0.059, +0.146]        15.55
+   expression: NK                           977  +0.179 [+0.149, +0.230] {+0.164,+0.191}  10.14   +0.252 [+0.217, +0.317]        11.24
+   expression: Treg                         606  +0.131 [+0.102, +0.172] {+0.114,+0.139}  10.35   +0.202 [+0.175, +0.267]        11.32
+   expression: gdT                          329  +0.118 [+0.046, +0.174] {+0.109,+0.126}  11.84   +0.233 [+0.125, +0.273]        13.12
+
+per-cell-type within-pool R2: median +0.120, range +0.002 .. +0.583 (best: CD4_Naive); naive median +0.217
+within-pool age SD = 14.45 y -> a within-pool MAE of 11.23 y is the 'predict the pool mean' baseline
+
+[B2c] linear recombination of OOF predictions (within-pool; 1-2 in-sample coefficients on 981 donors):
+   age_c ~ comp_pred: R2 = 0.487;  age_c ~ expr_pred: R2 = 0.568;  age_c ~ comp_pred + expr_pred: R2 = 0.599  (gain over composition alone +0.113; over expression alone +0.032); corr(comp_pred, expr_pred) = +0.776
+   paired difference (expression all-type − composition) over 10 repeats: mean -0.011, min -0.016, max -0.005
+
+[B2-shuffle] within-pool donor-level age shuffle (one draw; pipeline sanity, not the Stage D control):
+   shuffled within-pool R2: composition +0.001; expression all-type +0.000; per-type median -0.002 (range -0.018 .. +0.002)
+
+====================================================================================================
+[B3] share of the summed within-pool per-gene age variance by Stage A class (classes UNCHANGED)
+====================================================================================================
+
+all genes:
+   by gene_class_rerun:
+      A                    n=     2  share of Σ unique_age =   0.3%   share of Σ absolute age variance =   0.2%   (prior pooled model, abs:   0.1%)
+      I                    n=  1362  share of Σ unique_age =   6.2%   share of Σ absolute age variance =   8.9%   (prior pooled model, abs:  10.0%)
+      MIXED                n=     1  share of Σ unique_age =   0.2%   share of Σ absolute age variance =   0.4%   (prior pooled model, abs:   0.4%)
+      OTHER                n= 12539  share of Σ unique_age =  93.3%   share of Σ absolute age variance =  90.5%   (prior pooled model, abs:  89.5%)
+   by id_bin:
+      unique_ct<=0.2       n=  9423  share of Σ unique_age =  63.8%   share of Σ absolute age variance =  61.6%   (prior pooled model, abs:  61.6%)
+      0.2<unique_ct<0.5    n=  3052  share of Σ unique_age =  26.3%   share of Σ absolute age variance =  24.8%   (prior pooled model, abs:  25.5%)
+      unique_ct>=0.5       n=  1429  share of Σ unique_age =   9.9%   share of Σ absolute age variance =  13.5%   (prior pooled model, abs:  12.8%)
+
+permutation q<0.05:
+   by gene_class_rerun:
+      A                    n=     2  share of Σ unique_age =   0.7%   share of Σ absolute age variance =   0.5%   (prior pooled model, abs:   0.5%)
+      I                    n=   234  share of Σ unique_age =   8.4%   share of Σ absolute age variance =  11.7%   (prior pooled model, abs:  16.3%)
+      MIXED                n=     1  share of Σ unique_age =   0.6%   share of Σ absolute age variance =   1.1%   (prior pooled model, abs:   1.8%)
+      OTHER                n=   943  share of Σ unique_age =  90.3%   share of Σ absolute age variance =  86.7%   (prior pooled model, abs:  81.4%)
+   by id_bin:
+      unique_ct<=0.2       n=   527  share of Σ unique_age =  46.4%   share of Σ absolute age variance =  43.8%   (prior pooled model, abs:  36.9%)
+      0.2<unique_ct<0.5    n=   352  share of Σ unique_age =  35.9%   share of Σ absolute age variance =  32.8%   (prior pooled model, abs:  34.6%)
+      unique_ct>=0.5       n=   301  share of Σ unique_age =  17.7%   share of Σ absolute age variance =  23.4%   (prior pooled model, abs:  28.4%)
+
+unique_age>=0.002:
+   by gene_class_rerun:
+      A                    n=     2  share of Σ unique_age =   2.7%   share of Σ absolute age variance =   1.7%   (prior pooled model, abs:   2.4%)
+      MIXED                n=     1  share of Σ unique_age =   2.1%   share of Σ absolute age variance =   4.3%   (prior pooled model, abs:   8.0%)
+      OTHER                n=   115  share of Σ unique_age =  95.2%   share of Σ absolute age variance =  94.0%   (prior pooled model, abs:  89.6%)
+   by id_bin:
+      unique_ct<=0.2       n=    42  share of Σ unique_age =  32.3%   share of Σ absolute age variance =  40.7%   (prior pooled model, abs:  21.3%)
+      0.2<unique_ct<0.5    n=    56  share of Σ unique_age =  49.7%   share of Σ absolute age variance =  41.1%   (prior pooled model, abs:  56.6%)
+      unique_ct>=0.5       n=    20  share of Σ unique_age =  18.1%   share of Σ absolute age variance =  18.2%   (prior pooled model, abs:  22.2%)
+
+[B3] clean A-genes (2 genes) hold 0.3% of the summed within-pool per-gene age variance; MIXED+I genes hold 6.4%; genes with unique_ct>=0.5 hold 9.9% (they are 10.3% of genes).
+   Caveat: summed per-gene unique_age is an accounting of marginal effects, not multivariate predictability (that is B2 / Stage C).
+
+Stage B complete (measurement only; no stop condition).

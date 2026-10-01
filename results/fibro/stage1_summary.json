@@ -1,0 +1,41 @@
+{
+ "seed": 20260914,
+ "boot_seed": 20260918,
+ "n_perm": 200,
+ "n_boot": 200,
+ "prereg": "<repo>\\results\\fibro\\PREREG_STAGE1.flag",
+ "gate": {
+  "pass": true,
+  "method": "ridge",
+  "regime": "raw",
+  "rho_B1_to_C1": 0.5291743878674791,
+  "rho_null_B1_to_C1": -0.0043070052295682,
+  "rho_p_B1_to_C1": 0.0049751243781094,
+  "pass_B1_to_C1": true,
+  "rho_ci_B1_to_C1": [
+   0.4175188640985519,
+   0.6117727393990587
+  ],
+  "rho_C1_to_B1": 0.5611771722875578,
+  "rho_null_C1_to_B1": 0.0131131863506437,
+  "rho_p_C1_to_B1": 0.0049751243781094,
+  "pass_C1_to_B1": true,
+  "rho_ci_C1_to_B1": [
+   0.4997254020850796,
+   0.616787407144493
+  ],
+  "r2_B1_to_C1": 0.2887350924387061,
+  "r2_C1_to_B1": 0.2509655416218788,
+  "cal_r2_B1_to_C1": 0.3527837766807199,
+  "cal_r2_C1_to_B1": 0.3120177390275211,
+  "n_perm": 200,
+  "n_boot": 200,
+  "seed": 20260914,
+  "boot_seed": 20260918,
+  "excluded_site": "D1",
+  "reason": "Stage 1 pass: ridge raw \u03c1>0 both ways with null \u2264 0.05 (B1\u2192C1 \u03c1=+0.529 null=-0.004 p=+0.005; C1\u2192B1 \u03c1=+0.561 null=+0.013 p=+0.005).",
+  "pls1_not_used_for_gate": true,
+  "uncalibrated_R2_is_not_a_gate": true
+ },
+ "caveat_age_bin": "GTEx public `AGE` is a 10-year bin, so \u03c1 is against a coarse ordinal target and year-level error is not meaningful."
+}

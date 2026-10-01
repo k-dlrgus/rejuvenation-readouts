@@ -1,0 +1,61 @@
+split,celltype,n_young,n_old,angle_deg,ok,n_donors_young,n_donors_old
+within_H,GABAergic neuron,59,37,88.27135620385017,True,75,45
+within_H,L2/3 intratelencephalic projecting glutamatergic neuron,70,42,87.00335049128095,True,75,45
+within_H,L2/3-6 intratelencephalic projecting glutamatergic neuron,69,42,85.90435929223302,True,75,45
+within_H,L5/6 near-projecting glutamatergic neuron,49,33,87.47443827538974,True,75,45
+within_H,L6 corticothalamic-projecting glutamatergic cortical neuron,52,33,89.01574484731245,True,75,45
+within_H,L6 intratelencephalic projecting glutamatergic neuron,53,33,89.89155810534791,True,75,45
+within_H,L6b glutamatergic neuron of the primary motor cortex,41,32,88.27121440833423,True,75,45
+within_H,VIP GABAergic interneuron,71,41,87.68993681913548,True,75,45
+within_H,astrocyte,72,45,88.30131060435622,True,75,45
+within_H,endothelial cell,70,39,88.75599813010255,True,75,45
+within_H,lamp5 GABAergic interneuron,69,40,89.34942854909377,True,75,45
+within_H,microglial cell,69,43,88.02609645495271,True,75,45
+within_H,oligodendrocyte,75,45,88.58957078604077,True,75,45
+within_H,oligodendrocyte precursor cell,74,45,89.62513471291655,True,75,45
+within_H,pericyte,57,33,89.65221579765341,True,75,45
+within_H,perivascular macrophage,10,12,89.34719325930539,True,75,45
+within_H,pvalb GABAergic interneuron,70,40,88.85544868250153,True,75,45
+within_H,smooth muscle cell,8,4,,False,75,45
+within_H,sst GABAergic interneuron,71,40,88.57857538330478,True,75,45
+within_H,vascular leptomeningeal cell,36,24,87.13576665904374,True,75,45
+within_M,GABAergic neuron,18,65,88.25572491443329,True,27,86
+within_M,L2/3 intratelencephalic projecting glutamatergic neuron,25,83,86.31323047794876,True,27,86
+within_M,L2/3-6 intratelencephalic projecting glutamatergic neuron,23,81,85.9395771732784,True,27,86
+within_M,L5/6 near-projecting glutamatergic neuron,12,30,88.83995576433044,True,27,86
+within_M,L6 corticothalamic-projecting glutamatergic cortical neuron,16,52,89.85408479585787,True,27,86
+within_M,L6 intratelencephalic projecting glutamatergic neuron,13,51,87.72569890096402,True,27,86
+within_M,L6b glutamatergic neuron of the primary motor cortex,7,29,,False,27,86
+within_M,VIP GABAergic interneuron,23,82,87.21949248826716,True,27,86
+within_M,astrocyte,27,85,89.6333717680221,True,27,86
+within_M,endothelial cell,15,36,89.43984261542214,True,27,86
+within_M,lamp5 GABAergic interneuron,21,75,89.308684329824,True,27,86
+within_M,microglial cell,25,82,88.23196405541731,True,27,86
+within_M,oligodendrocyte,26,86,87.23568425965928,True,27,86
+within_M,oligodendrocyte precursor cell,27,86,87.58931923096385,True,27,86
+within_M,pericyte,13,33,89.77616151879246,True,27,86
+within_M,perivascular macrophage,2,7,,False,27,86
+within_M,pvalb GABAergic interneuron,21,78,88.51973080231652,True,27,86
+within_M,smooth muscle cell,1,3,,False,27,86
+within_M,sst GABAergic interneuron,23,72,87.7976003011449,True,27,86
+within_M,vascular leptomeningeal cell,5,16,,False,27,86
+balanced,GABAergic neuron,53,57,85.28454192742598,True,72,72
+balanced,L2/3 intratelencephalic projecting glutamatergic neuron,66,68,81.24206747274214,True,72,72
+balanced,L2/3-6 intratelencephalic projecting glutamatergic neuron,65,68,81.63035524283167,True,72,72
+balanced,L5/6 near-projecting glutamatergic neuron,41,42,89.61395948890782,True,72,72
+balanced,L6 corticothalamic-projecting glutamatergic cortical neuron,49,48,89.2116891804597,True,72,72
+balanced,L6 intratelencephalic projecting glutamatergic neuron,47,47,87.58056928148352,True,72,72
+balanced,L6b glutamatergic neuron of the primary motor cortex,31,43,89.70253426964139,True,72,72
+balanced,VIP GABAergic interneuron,65,67,84.88654599047538,True,72,72
+balanced,astrocyte,69,71,83.8632017558116,True,72,72
+balanced,endothelial cell,57,51,89.3968600333838,True,72,72
+balanced,lamp5 GABAergic interneuron,62,63,86.68698630377895,True,72,72
+balanced,microglial cell,66,67,89.27892448445525,True,72,72
+balanced,oligodendrocyte,71,72,83.5155132221477,True,72,72
+balanced,oligodendrocyte precursor cell,71,72,86.28365845135906,True,72,72
+balanced,pericyte,46,47,89.6026693194933,True,72,72
+balanced,perivascular macrophage,7,16,,False,72,72
+balanced,pvalb GABAergic interneuron,63,66,85.74995163783818,True,72,72
+balanced,smooth muscle cell,7,6,,False,72,72
+balanced,sst GABAergic interneuron,66,61,85.31904225397464,True,72,72
+balanced,vascular leptomeningeal cell,29,30,89.4628071037673,True,72,72

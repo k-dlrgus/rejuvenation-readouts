@@ -1,0 +1,2 @@
+skipped,reason,n_SMCENTER_ge25,center_counts
+True,t2_not_testable: fewer than 3 SMCENTER with ≥25 BA9 samples,2,"{'B1, A1': 149, 'C1, A1': 113, 'D1, A1': 4, 'C1, B1, A1': 3}"

@@ -1,0 +1,33 @@
+Written **before any MD4 cell-level instrument score**, 2026-09-19. No threshold in this block is re-tuned after numbers exist.
+
+Using the src/md2_*.py Louvain clustering already computed (not re-run, not re-tuned). Cell-state labels are the md2 assignment: argmax of mean AddModuleScore of mmc3 Reprog_cell_state_signatures columns Fibroblast / PartialReprog / EarlyPluripotency / Pluripotency / NonReprog. Labels are read from results/md2/t2_cluster_labels_*.csv. Not re-labelled. AddModuleScore for MD and TGF-β is the per-cell vector already stored in data/processed/md2/louvain_ams_*.npz (the md2 computation). Table S3 Age up / Age down are scored with the same AddModuleScore implementation (nbin=24, ctrl=100) on the same LogNormalize Louvain matrix, using the bins stored in that npz. Frozen ruler: results/fibro/frozen_ruler_ridge_raw.npz used as-is. Refit nothing.
+
+Per donor, per timepoint, never pooled across donors or timepoints. A timepoint qualifies for a two-state contrast iff both states have ≥50 Louvain-kept cells at that donor × day. Cell counts and which timepoints qualify are reported before contrasts.
+
+Per cell:
+- frozen ruler score = edgeR log2-CPM (prior.count=2) on that cell's ruler-aligned UMI counts with TMM size factor fixed at 1 (library-size only). TMM is not re-estimated among cells, among states, or among timepoints: a TMM among ~20k cells would be a new size-factor fit on GSE297234 and is not the frozen bulk spec. Frozen μ, σ, w applied as-is; overlap genes that are all-zero in that donor's Louvain ruler matrix are left at z=0.
+- MD score, from md2 louvain_ams (not recomputed).
+- TGF-β score, from md2 louvain_ams (not recomputed).
+- Table S3 age-up minus age-down = AMS(Age up) − AMS(Age down).
+- pluripotency−fibroblast = mean-z(PLURI_ENDOGENOUS) − mean-z(FIBRO_IDENTITY) on the same per-cell Z as the ruler, drop_oskm=False (md2 pluri_primary).
+
+Primary contrast: PartialReprog vs NonReprog. Context rows (same procedure, not pooled into the primary): Fibroblast vs NonReprog; PartialReprog vs Fibroblast.
+
+Per qualifying timepoint, per instrument: Δmean = mean(state_A) − mean(state_B); Δmedian = median(state_A) − median(state_B). Cell-level permutation null: 200 shuffles of the two-state labels among the cells in those two states at that donor × timepoint (group sizes held; timepoint and donor held, so neither can drive the null). Empirical p_lower = (n_null ≤ Δobs + 1) / (n_null + 1); p_two_sided = (n_|null| ≥ |Δobs| + 1) / (n_null + 1). Donor-cell bootstrap 95% percentile CI on Δmean and Δmedian: resample cells within each state independently, B=200, seed 20260918. Effect size: Cohen's d on the mean difference, pooled sd with n−1, same sign as Δmean. Not rank-biserial. Seed 20260914 for permutations with a documented per-(donor, day, contrast) offset.
+
+Sanity check, before any new score: reproduce FINDINGS_MD2.md pooled MD means on the aged donor (PartialReprog +0.150, NonReprog +0.439; t2_reproduction.json). If they do not reproduce, stop. Cell-state labels have drifted.
+
+**Pre-registered reading (only the outcome that fired; each donor separately, never pooled; each qualifying timepoint reported, never pooled):**
+- MD lower in PartialReprog than NonReprog and the frozen ruler lower too, both beating their nulls → both instruments agree that partially reprogrammed cells read younger. Their claim is supported and our earlier negatives reflected the wrong test (a within-state trajectory with no baseline). Say so plainly and quote the sentences superseded.
+- MD lower, ruler not lower (or higher) → the instruments disagree on the population the published claim concerns, in a well-powered comparison. Report both numbers side by side, declare no winner, and name what would settle it.
+- Neither differs → our reproduction does not recover their Figure 3G contrast; report the reproduction failure as the finding, not as a refutation.
+- Ruler lower, MD not → report as an unexplained discrepancy.
+
+“Lower” / “beating their nulls” = Δmean = mean(PartialReprog) − mean(NonReprog) is < 0 and p_lower ≤ 0.05 on that instrument's cell-level permutation null, on that donor × timepoint. GM23815 is tabulated, never pooled with GM00731, never averaged.
+
+If two qualifying timepoints in one donor fire different bullets, report both, do not pick, do not average.
+
+
+This flag was written after cell-count tables, qualify tables, and the md2 MD-mean sanity check, and before any frozen-ruler, Table S3, or pluripotency cell-level score.
+
+sanity_ok=True

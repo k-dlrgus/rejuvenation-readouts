@@ -1,0 +1,17 @@
+{
+ "got": [
+  {
+   "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/suppl/GSE113957_fpkm.txt.gz",
+   "path": "<repo>\\data\\raw\\fibro2\\GSE113957\\GSE113957_fpkm.txt.gz",
+   "size": 7532882
+  }
+ ],
+ "count_like": [],
+ "other": [
+  {
+   "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/suppl/GSE113957_fpkm.txt.gz",
+   "path": "<repo>\\data\\raw\\fibro2\\GSE113957\\GSE113957_fpkm.txt.gz",
+   "size": 7532882
+  }
+ ]
+}

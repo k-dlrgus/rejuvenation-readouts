@@ -1,0 +1,149 @@
+{
+ "DOI": "10.1016/j.cell.2025.07.031",
+ "title": [
+  "Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming"
+ ],
+ "license": [
+  {
+   "start": {
+    "date-parts": [
+     [
+      2025,
+      10,
+      1
+     ]
+    ],
+    "date-time": "2025-10-01T00:00:00Z",
+    "timestamp": 1759276800000
+   },
+   "content-version": "tdm",
+   "delay-in-days": 0,
+   "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+  },
+  {
+   "start": {
+    "date-parts": [
+     [
+      2025,
+      10,
+      1
+     ]
+    ],
+    "date-time": "2025-10-01T00:00:00Z",
+    "timestamp": 1759276800000
+   },
+   "content-version": "tdm",
+   "delay-in-days": 0,
+   "URL": "https://www.elsevier.com/legal/tdmrep-license"
+  },
+  {
+   "start": {
+    "date-parts": [
+     [
+      2025,
+      10,
+      1
+     ]
+    ],
+    "date-time": "2025-10-01T00:00:00Z",
+    "timestamp": 1759276800000
+   },
+   "content-version": "stm-asf",
+   "delay-in-days": 0,
+   "URL": "https://doi.org/10.15223/policy-017"
+  },
+  {
+   "start": {
+    "date-parts": [
+     [
+      2025,
+      10,
+      1
+     ]
+    ],
+    "date-time": "2025-10-01T00:00:00Z",
+    "timestamp": 1759276800000
+   },
+   "content-version": "stm-asf",
+   "delay-in-days": 0,
+   "URL": "https://doi.org/10.15223/policy-037"
+  },
+  {
+   "start": {
+    "date-parts": [
+     [
+      2025,
+      10,
+      1
+     ]
+    ],
+    "date-time": "2025-10-01T00:00:00Z",
+    "timestamp": 1759276800000
+   },
+   "content-version": "stm-asf",
+   "delay-in-days": 0,
+   "URL": "https://doi.org/10.15223/policy-012"
+  },
+  {
+   "start": {
+    "date-parts": [
+     [
+      2025,
+      10,
+      1
+     ]
+    ],
+    "date-time": "2025-10-01T00:00:00Z",
+    "timestamp": 1759276800000
+   },
+   "content-version": "stm-asf",
+   "delay-in-days": 0,
+   "URL": "https://doi.org/10.15223/policy-029"
+  },
+  {
+   "start": {
+    "date-parts": [
+     [
+      2025,
+      10,
+      1
+     ]
+    ],
+    "date-time": "2025-10-01T00:00:00Z",
+    "timestamp": 1759276800000
+   },
+   "content-version": "stm-asf",
+   "delay-in-days": 0,
+   "URL": "https://doi.org/10.15223/policy-004"
+  }
+ ],
+ "link": [
+  {
+   "URL": "https://api.elsevier.com/content/article/PII:S0092867425008530?httpAccept=text/xml",
+   "content-type": "text/xml",
+   "content-version": "vor",
+   "intended-application": "text-mining"
+  },
+  {
+   "URL": "https://api.elsevier.com/content/article/PII:S0092867425008530?httpAccept=text/plain",
+   "content-type": "text/plain",
+   "content-version": "vor",
+   "intended-application": "text-mining"
+  }
+ ],
+ "relation": {},
+ "URL": "https://doi.org/10.1016/j.cell.2025.07.031",
+ "abstract": null,
+ "funder": null,
+ "container-title": [
+  "Cell"
+ ],
+ "published": {
+  "date-parts": [
+   [
+    2025,
+    10
+   ]
+  ]
+ }
+}

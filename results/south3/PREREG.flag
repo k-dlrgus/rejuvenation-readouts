@@ -1,0 +1,22 @@
+TASK: SOUTH3 — patch of SOUTH2. Same data, same prereg, three changes.
+
+Write FINDINGS_SOUTH3.md, PROGRESS_SOUTH3.md, results/south3/*, src/south3_run.py.
+Add one line to the top of FINDINGS_SOUTH2.md marking it superseded; change
+nothing else in it. Touch results/south3/PREREG.flag with this file verbatim
+before any statistic. Seeds unchanged.
+
+1. n_perm = 20000 for the Stage 2A per-factor permutation null, so BH across
+   1,836 factors can resolve q. Report the attainable minimum p. Everything
+   else about the null is unchanged.
+2. Guide agreement is computed on V_all vectors ALWAYS, and that one value is
+   applied to both variants. Report how many factors change label versus SOUTH2
+   because of this.
+3. Report-only, no gate: for each factor report ||d|| and the ratio
+   ||d|| / ||target - origin||, and the Spearman correlation between delta rank
+   and cosine rank as a function of that ratio (quartiles). State the small-
+   displacement identity delta ≈ -||d||cos(theta) and whether the data follow it.
+
+Nothing else changes: same spaces, variants, origins, targets, floors, labels,
+what-does-not-count list, and exploratory titling under coverage_low.
+Report the final toward_young counts per setting, and state plainly whether any
+survivor is distinguishable from the ranking a plain cosine would give.

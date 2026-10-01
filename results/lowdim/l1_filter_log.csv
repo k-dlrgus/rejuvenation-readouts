@@ -1,0 +1,5 @@
+stage,step,n,n_genes,n_donors,usable,min_genes
+L1,pseudobulks,3323,25526.0,233.0,,
+L1,cell_types,20,,,,
+L1,gene_sets_listed,7275,,,4686.0,10.0
+L1,component_rows,17884,,,,

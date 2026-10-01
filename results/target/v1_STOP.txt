@@ -1,0 +1,6 @@
+stop_V1=False
+ridge_median_pairwise_deg=45.07377681100883
+pls_median_pairwise_deg=38.64495600557506
+threshold_deg=60.0
+n_types_above_threshold_ridge=0/20
+reason=age direction stable enough to define a target

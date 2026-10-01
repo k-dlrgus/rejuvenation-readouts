@@ -1,0 +1,81 @@
+celltype,site,r2,mae,n,which
+GABAergic neuron,pooled,-0.19481613716361945,15.636020627399203,179,consensus
+GABAergic neuron,H,-0.956023229259845,17.109333265088377,96,consensus
+GABAergic neuron,M,-0.21374389604458544,13.931948178987623,83,consensus
+GABAergic neuron,mean_of_sites,-0.5848835626522152,15.520640722038,179,consensus
+L2/3 intratelencephalic projecting glutamatergic neuron,pooled,0.38374706536748315,11.297115488470798,220,consensus
+L2/3 intratelencephalic projecting glutamatergic neuron,H,0.06613607026214419,12.097583132123301,112,consensus
+L2/3 intratelencephalic projecting glutamatergic neuron,M,0.30080267315437925,10.467000895053388,108,consensus
+L2/3 intratelencephalic projecting glutamatergic neuron,mean_of_sites,0.18346937170826172,11.282292013588345,220,consensus
+L2/3-6 intratelencephalic projecting glutamatergic neuron,pooled,0.21622634217282344,12.955754275497982,215,consensus
+L2/3-6 intratelencephalic projecting glutamatergic neuron,H,-0.33761648070284966,14.5975423428903,111,consensus
+L2/3-6 intratelencephalic projecting glutamatergic neuron,M,0.24796328470923057,11.203461242031183,104,consensus
+L2/3-6 intratelencephalic projecting glutamatergic neuron,mean_of_sites,-0.04482659799680955,12.90050179246074,215,consensus
+L5/6 near-projecting glutamatergic neuron,pooled,-0.018221737404194194,13.686125715767853,124,consensus
+L5/6 near-projecting glutamatergic neuron,H,-0.5337188010925575,14.306146510595665,82,consensus
+L5/6 near-projecting glutamatergic neuron,M,-0.04976243583313744,12.47560892586594,42,consensus
+L5/6 near-projecting glutamatergic neuron,mean_of_sites,-0.2917406184628475,13.390877718230803,124,consensus
+L6 corticothalamic-projecting glutamatergic cortical neuron,pooled,0.21323085360189153,12.354852473042676,153,consensus
+L6 corticothalamic-projecting glutamatergic cortical neuron,H,-0.15209568041179122,13.095561847951117,85,consensus
+L6 corticothalamic-projecting glutamatergic cortical neuron,M,0.14722840512091384,11.428965754407125,68,consensus
+L6 corticothalamic-projecting glutamatergic cortical neuron,mean_of_sites,-0.002433637645438691,12.26226380117912,153,consensus
+L6 intratelencephalic projecting glutamatergic neuron,pooled,0.26940591922358303,11.9649432871237,150,consensus
+L6 intratelencephalic projecting glutamatergic neuron,H,-0.13041708855903655,12.439617390338976,86,consensus
+L6 intratelencephalic projecting glutamatergic neuron,M,0.12374227235386659,11.327099960928173,64,consensus
+L6 intratelencephalic projecting glutamatergic neuron,mean_of_sites,-0.0033374081025849822,11.883358675633573,150,consensus
+L6b glutamatergic neuron of the primary motor cortex,pooled,0.23795540092736533,11.541242458700866,109,consensus
+L6b glutamatergic neuron of the primary motor cortex,H,0.11847624587362027,10.784170200300963,73,consensus
+L6b glutamatergic neuron of the primary motor cortex,M,-0.11584004103559264,13.076416760456219,36,consensus
+L6b glutamatergic neuron of the primary motor cortex,mean_of_sites,0.0013181024190138113,11.930293480378591,109,consensus
+VIP GABAergic interneuron,pooled,-0.026778720985475957,14.773824889660636,217,consensus
+VIP GABAergic interneuron,H,-0.5708453316949276,15.714241767276402,112,consensus
+VIP GABAergic interneuron,M,-0.11803023907210775,13.770713553537158,105,consensus
+VIP GABAergic interneuron,mean_of_sites,-0.34443778538351766,14.74247766040678,217,consensus
+astrocyte,pooled,-0.2012097351810327,16.397860083284144,229,consensus
+astrocyte,H,-1.0285426954281665,18.200178160316845,117,consensus
+astrocyte,M,-0.26230858958425873,14.515081377812482,112,consensus
+astrocyte,mean_of_sites,-0.6454256425062126,16.357629769064665,229,consensus
+endothelial cell,pooled,-1.3218347389965337,22.744634147871135,160,consensus
+endothelial cell,H,-2.1357160774215562,22.796913467427604,109,consensus
+endothelial cell,M,-1.8107891886941196,22.632899915877914,51,consensus
+endothelial cell,mean_of_sites,-1.973252633057838,22.714906691652757,160,consensus
+lamp5 GABAergic interneuron,pooled,-0.09917765733774564,15.388233089818073,205,consensus
+lamp5 GABAergic interneuron,H,-0.7657740818753214,16.480702853426685,109,consensus
+lamp5 GABAergic interneuron,M,-0.11443069888404223,14.147824712387466,96,consensus
+lamp5 GABAergic interneuron,mean_of_sites,-0.4401023903796818,15.314263782907076,205,consensus
+microglial cell,pooled,-0.7553215934916895,20.33333127549945,219,consensus
+microglial cell,H,-1.532536671962513,20.854897471330567,112,consensus
+microglial cell,M,-1.2522444423495105,19.787392827526688,107,consensus
+microglial cell,mean_of_sites,-1.3923905571560118,20.321145149428627,219,consensus
+oligodendrocyte,pooled,-0.4346078076994977,17.91584161374859,232,consensus
+oligodendrocyte,H,-1.1855530252384683,18.468682833600266,120,consensus
+oligodendrocyte,M,-0.7053579216763948,17.32351173533608,112,consensus
+oligodendrocyte,mean_of_sites,-0.9454554734574315,17.896097284468173,232,consensus
+oligodendrocyte precursor cell,pooled,-0.3496545104458555,17.520591382474556,232,consensus
+oligodendrocyte precursor cell,H,-1.0793853697678966,18.16894386999326,119,consensus
+oligodendrocyte precursor cell,M,-0.5781739730065427,16.837813099158396,113,consensus
+oligodendrocyte precursor cell,mean_of_sites,-0.8287796713872196,17.503378484575826,232,consensus
+pericyte,pooled,-1.0705241238638887,20.11690977780198,136,consensus
+pericyte,H,-1.4747869512025287,19.903223971360138,90,consensus
+pericyte,M,-1.6368774033055646,20.534990703449065,46,consensus
+pericyte,mean_of_sites,-1.5558321772540467,20.2191073374046,136,consensus
+perivascular macrophage,pooled,-2.0714929032227967,29.385308692669216,31,consensus
+perivascular macrophage,H,-6.38860660962298,29.8415242431289,22,consensus
+perivascular macrophage,M,-2.696849619554761,28.27011512487885,9,consensus
+perivascular macrophage,mean_of_sites,-4.54272811458887,29.055819684003875,31,consensus
+pvalb GABAergic interneuron,pooled,-0.08814848894751881,15.292022105827593,209,consensus
+pvalb GABAergic interneuron,H,-0.8036613630462623,16.95440851740866,110,consensus
+pvalb GABAergic interneuron,M,-0.03372858616074326,13.444926092959738,99,consensus
+pvalb GABAergic interneuron,mean_of_sites,-0.4186949746035028,15.1996673051842,209,consensus
+smooth muscle cell,pooled,-3.077047597721104,16.004331914137516,4,consensus
+smooth muscle cell,H,,,0,consensus
+smooth muscle cell,M,-3.077047597721104,16.004331914137516,4,consensus
+smooth muscle cell,mean_of_sites,-3.077047597721104,16.004331914137516,4,consensus
+sst GABAergic interneuron,pooled,0.01823552471108325,14.212754705480796,206,consensus
+sst GABAergic interneuron,H,-0.6248003798402113,16.057552124154885,111,consensus
+sst GABAergic interneuron,M,0.12130738154726728,12.057254563661603,95,consensus
+sst GABAergic interneuron,mean_of_sites,-0.251746499146472,14.057403343908245,206,consensus
+vascular leptomeningeal cell,pooled,-1.330878175741018,25.138895622011642,81,consensus
+vascular leptomeningeal cell,H,-2.582007908406223,25.995965959975482,60,consensus
+vascular leptomeningeal cell,M,-0.9675538180971646,22.69012322782924,21,consensus
+vascular leptomeningeal cell,mean_of_sites,-1.774780863251694,24.343044593902363,81,consensus

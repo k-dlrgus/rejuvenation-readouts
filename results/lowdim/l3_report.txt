@@ -1,0 +1,9 @@
+====================================================================================================
+LOWDIM L3 — TARGET in the winning space  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO perturbation data. No TF Atlas. No candidate interventions.
+Dimensionality reduction is fit on training folds only (no full-cohort PCA/NMF then held-out).
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+k in [20, 50, 100, 150]; variants=['pca', 'curated', 'wgcna']; tech |r| flag=0.5
+[L3] STOP L2 is set — not constructing a TARGET from a non-identifiable direction.

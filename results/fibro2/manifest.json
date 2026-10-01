@@ -1,0 +1,577 @@
+{
+ "seed": 20260914,
+ "boot_seed": 20260918,
+ "files": {},
+ "failures": [
+  {
+   "step": "fail",
+   "message": "TypeError: dict() got multiple values for keyword argument 'accession'",
+   "details": {}
+  },
+  {
+   "step": "fail",
+   "message": "ValueError: Multiple files found in TAR archive. Only one file per TAR archive: ['GSM7067566_SKIN_AGE22_M_GR1_Gt073_circRNA.txt.gz', 'GSM7067566_SKIN_AGE22_M_GR1_Gt073_geneCOUNT.txt.gz', 'GSM7067567_SKIN_AGE23_M_GR1_Gt022_circRNA.txt.gz', 'GSM7067567_SKIN_AGE23_M_GR1_Gt022_geneCOUNT.txt.gz', 'GSM7067568_SKIN_AGE25_F_GR1_Gt085_circRNA.txt.gz', 'GSM7067568_SKIN_AGE25_F_GR1_Gt085_geneCOUNT.txt.gz', 'GSM7067569_SKIN_AGE25_M_GR1_Gt046_circRNA.txt.gz', 'GSM7067569_SKIN_AGE25_M_GR1_Gt046_geneCOUNT.txt.gz', 'GSM7067570_SKIN_AGE26_F_GR1_Gt045_circRNA.txt.gz', 'GSM7067570_SKIN_AGE26_F_GR1_Gt045_geneCOUNT.txt.gz', 'GSM7067571_SKIN_AGE27_F_GR1_Gt055_circRNA.txt.gz', 'GSM7067571_SKIN_AGE27_F_GR1_Gt055_geneCOUNT.txt.gz', 'GSM7067572_SKIN_AGE27_M_GR1_Gt142_circRNA.txt.gz', 'GSM7067572_SKIN_AGE27_M_GR1_Gt142_geneCOUNT.txt.gz', 'GSM7067573_SKIN_AGE28_F_GR1_Gt137_circRNA.txt.gz', 'GSM7067573_SKIN_AGE28_F_GR1_Gt137_geneCOUNT.txt.gz', 'GSM7067574_SKIN_AGE28_M_GR1_Gt001_circRNA.txt.gz', 'GSM7067574_SKIN_AGE28_M_GR1_Gt001_geneCOUNT.txt.gz', 'GSM7067575_SKIN_AGE28_M_GR1_Gt123_circRNA.txt.gz', 'GSM7067575_SKIN_AGE28_M_GR1_Gt123_geneCOUNT.txt.gz', 'GSM7067576_SKIN_AGE29_M_GR1_Gt135_circRNA.txt.gz', 'GSM7067576_SKIN_AGE29_M_GR1_Gt135_geneCOUNT.txt.gz', 'GSM7067577_SKIN_AGE30_M_GR1_Gt122_circRNA.txt.gz', 'GSM7067577_SKIN_AGE30_M_GR1_Gt122_geneCOUNT.txt.gz', 'GSM7067578_SKIN_AGE31_F_GR1_Gt090_circRNA.txt.gz', 'GSM7067578_SKIN_AGE31_F_GR1_Gt090_geneCOUNT.txt.gz', 'GSM7067579_SKIN_AGE31_M_GR1_Gt005_circRNA.txt.gz', 'GSM7067579_SKIN_AGE31_M_GR1_Gt005_geneCOUNT.txt.gz', 'GSM7067580_SKIN_AGE31_M_GR1_Gt025_circRNA.txt.gz', 'GSM7067580_SKIN_AGE31_M_GR1_Gt025_geneCOUNT.txt.gz', 'GSM7067581_SKIN_AGE31_M_GR1_Gt119_circRNA.txt.gz', 'GSM7067581_SKIN_AGE31_M_GR1_Gt119_geneCOUNT.txt.gz', 'GSM7067582_SKIN_AGE31_M_GR1_Gt130_circRNA.txt.gz', 'GSM7067582_SKIN_AGE31_M_GR1_Gt130_geneCOUNT.txt.gz', 'GSM7067583_SKIN_AGE32_F_GR1_Gt144_circRNA.txt.gz', 'GSM7067583_SKIN_AGE32_F_GR1_Gt144_geneCOUNT.txt.gz', 'GSM7067584_SKIN_AGE32_M_GR1_Gt042_circRNA.txt.gz', 'GSM7067584_SKIN_AGE32_M_GR1_Gt042_geneCOUNT.txt.gz', 'GSM7067585_SKIN_AGE35_F_GR2_Gt141_circRNA.txt.gz', 'GSM7067585_SKIN_AGE35_F_GR2_Gt141_geneCOUNT.txt.gz', 'GSM7067586_SKIN_AGE35_M_GR2_Gt104_circRNA.txt.gz', 'GSM7067586_SKIN_AGE35_M_GR2_Gt104_geneCOUNT.txt.gz', 'GSM7067587_SKIN_AGE35_M_GR2_Gt129_circRNA.txt.gz', 'GSM7067587_SKIN_AGE35_M_GR2_Gt129_geneCOUNT.txt.gz', 'GSM7067588_SKIN_AGE37_M_GR2_Gt064_circRNA.txt.gz', 'GSM7067588_SKIN_AGE37_M_GR2_Gt064_geneCOUNT.txt.gz', 'GSM7067589_SKIN_AGE38_F_GR2_Gt016_circRNA.txt.gz', 'GSM7067589_SKIN_AGE38_F_GR2_Gt016_geneCOUNT.txt.gz', 'GSM7067590_SKIN_AGE38_F_GR2_Gt152_circRNA.txt.gz', 'GSM7067590_SKIN_AGE38_F_GR2_Gt152_geneCOUNT.txt.gz', 'GSM7067591_SKIN_AGE38_M_GR2_Gt093_circRNA.txt.gz', 'GSM7067591_SKIN_AGE38_M_GR2_Gt093_geneCOUNT.txt.gz', 'GSM7067592_SKIN_AGE39_M_GR2_Gt126_circRNA.txt.gz', 'GSM7067592_SKIN_AGE39_M_GR2_Gt126_geneCOUNT.txt.gz', 'GSM7067593_SKIN_AGE42_F_GR2_Gt059_circRNA.txt.gz', 'GSM7067593_SKIN_AGE42_F_GR2_Gt059_geneCOUNT.txt.gz', 'GSM7067594_SKIN_AGE42_F_GR2_Gt145_circRNA.txt.gz', 'GSM7067594_SKIN_AGE42_F_GR2_Gt145_geneCOUNT.txt.gz', 'GSM7067595_SKIN_AGE42_M_GR2_Gt024_circRNA.txt.gz', 'GSM7067595_SKIN_AGE42_M_GR2_Gt024_geneCOUNT.txt.gz', 'GSM7067596_SKIN_AGE45_M_GR2_Gt017_circRNA.txt.gz', 'GSM7067596_SKIN_AGE45_M_GR2_Gt017_geneCOUNT.txt.gz', 'GSM7067597_SKIN_AGE45_M_GR2_Gt030_circRNA.txt.gz', 'GSM7067597_SKIN_AGE45_M_GR2_Gt030_geneCOUNT.txt.gz', 'GSM7067598_SKIN_AGE47_F_GR2_Gt078_circRNA.txt.gz', 'GSM7067598_SKIN_AGE47_F_GR2_Gt078_geneCOUNT.txt.gz', 'GSM7067599_SKIN_AGE47_M_GR2_Gt060_circRNA.txt.gz', 'GSM7067599_SKIN_AGE47_M_GR2_Gt060_geneCOUNT.txt.gz', 'GSM7067600_SKIN_AGE48_F_GR2_Gt133_circRNA.txt.gz', 'GSM7067600_SKIN_AGE48_F_GR2_Gt133_geneCOUNT.txt.gz', 'GSM7067601_SKIN_AGE48_F_GR2_Gt149_circRNA.txt.gz', 'GSM7067601_SKIN_AGE48_F_GR2_Gt149_geneCOUNT.txt.gz', 'GSM7067602_SKIN_AGE49_M_GR2_Gt128_circRNA.txt.gz', 'GSM7067602_SKIN_AGE49_M_GR2_Gt128_geneCOUNT.txt.gz', 'GSM7067603_SKIN_AGE51_M_GR3_Gt015_circRNA.txt.gz', 'GSM7067603_SKIN_AGE51_M_GR3_Gt015_geneCOUNT.txt.gz', 'GSM7067604_SKIN_AGE52_F_GR3_Gt027_circRNA.txt.gz', 'GSM7067604_SKIN_AGE52_F_GR3_Gt027_geneCOUNT.txt.gz', 'GSM7067605_SKIN_AGE52_F_GR3_Gt063_circRNA.txt.gz', 'GSM7067605_SKIN_AGE52_F_GR3_Gt063_geneCOUNT.txt.gz', 'GSM7067606_SKIN_AGE52_M_GR3_Gt007_circRNA.txt.gz', 'GSM7067606_SKIN_AGE52_M_GR3_Gt007_geneCOUNT.txt.gz', 'GSM7067607_SKIN_AGE52_M_GR3_Gt056_circRNA.txt.gz', 'GSM7067607_SKIN_AGE52_M_GR3_Gt056_geneCOUNT.txt.gz', 'GSM7067608_SKIN_AGE53_F_GR3_Gt146_circRNA.txt.gz', 'GSM7067608_SKIN_AGE53_F_GR3_Gt146_geneCOUNT.txt.gz', 'GSM7067609_SKIN_AGE54_M_GR3_Gt057_circRNA.txt.gz', 'GSM7067609_SKIN_AGE54_M_GR3_Gt057_geneCOUNT.txt.gz', 'GSM7067610_SKIN_AGE55_M_GR3_Gt136_circRNA.txt.gz', 'GSM7067610_SKIN_AGE55_M_GR3_Gt136_geneCOUNT.txt.gz', 'GSM7067611_SKIN_AGE56_F_GR3_Gt120_circRNA.txt.gz', 'GSM7067611_SKIN_AGE56_F_GR3_Gt120_geneCOUNT.txt.gz', 'GSM7067612_SKIN_AGE57_M_GR3_Gt004_circRNA.txt.gz', 'GSM7067612_SKIN_AGE57_M_GR3_Gt004_geneCOUNT.txt.gz', 'GSM7067613_SKIN_AGE58_F_GR3_Gt011_circRNA.txt.gz', 'GSM7067613_SKIN_AGE58_F_GR3_Gt011_geneCOUNT.txt.gz', 'GSM7067614_SKIN_AGE60_M_GR3_Gt013_circRNA.txt.gz', 'GSM7067614_SKIN_AGE60_M_GR3_Gt013_geneCOUNT.txt.gz', 'GSM7067615_SKIN_AGE61_F_GR3_Gt003_circRNA.txt.gz', 'GSM7067615_SKIN_AGE61_F_GR3_Gt003_geneCOUNT.txt.gz', 'GSM7067616_SKIN_AGE61_F_GR3_Gt102_circRNA.txt.gz', 'GSM7067616_SKIN_AGE61_F_GR3_Gt102_geneCOUNT.txt.gz', 'GSM7067617_SKIN_AGE62_F_GR3_Gt070_circRNA.txt.gz', 'GSM7067617_SKIN_AGE62_F_GR3_Gt070_geneCOUNT.txt.gz', 'GSM7067618_SKIN_AGE63_F_GR3_Gt101_circRNA.txt.gz', 'GSM7067618_SKIN_AGE63_F_GR3_Gt101_geneCOUNT.txt.gz', 'GSM7067619_SKIN_AGE63_M_GR3_Gt092_circRNA.txt.gz', 'GSM7067619_SKIN_AGE63_M_GR3_Gt092_geneCOUNT.txt.gz', 'GSM7067620_SKIN_AGE65_F_GR4_Gt033_circRNA.txt.gz', 'GSM7067620_SKIN_AGE65_F_GR4_Gt033_geneCOUNT.txt.gz', 'GSM7067621_SKIN_AGE66_F_GR3_Gt156_circRNA.txt.gz', 'GSM7067621_SKIN_AGE66_F_GR3_Gt156_geneCOUNT.txt.gz', 'GSM7067622_SKIN_AGE67_F_GR4_Gt080_circRNA.txt.gz', 'GSM7067622_SKIN_AGE67_F_GR4_Gt080_geneCOUNT.txt.gz', 'GSM7067623_SKIN_AGE67_M_GR4_Gt002_circRNA.txt.gz', 'GSM7067623_SKIN_AGE67_M_GR4_Gt002_geneCOUNT.txt.gz', 'GSM7067624_SKIN_AGE67_M_GR4_Gt039_circRNA.txt.gz', 'GSM7067624_SKIN_AGE67_M_GR4_Gt039_geneCOUNT.txt.gz', 'GSM7067625_SKIN_AGE69_F_GR4_Gt095_circRNA.txt.gz', 'GSM7067625_SKIN_AGE69_F_GR4_Gt095_geneCOUNT.txt.gz', 'GSM7067626_SKIN_AGE70_F_GR4_Gt089_circRNA.txt.gz', 'GSM7067626_SKIN_AGE70_F_GR4_Gt089_geneCOUNT.txt.gz', 'GSM7067627_SKIN_AGE70_M_GR4_Gt061_circRNA.txt.gz', 'GSM7067627_SKIN_AGE70_M_GR4_Gt061_geneCOUNT.txt.gz', 'GSM7067628_SKIN_AGE71_F_GR4_Gt138_circRNA.txt.gz', 'GSM7067628_SKIN_AGE71_F_GR4_Gt138_geneCOUNT.txt.gz', 'GSM7067629_SKIN_AGE72_F_GR4_Gt071_circRNA.txt.gz', 'GSM7067629_SKIN_AGE72_F_GR4_Gt071_geneCOUNT.txt.gz', 'GSM7067630_SKIN_AGE72_F_GR4_Gt109_circRNA.txt.gz', 'GSM7067630_SKIN_AGE72_F_GR4_Gt109_geneCOUNT.txt.gz', 'GSM7067631_SKIN_AGE72_M_GR4_Gt014_circRNA.txt.gz', 'GSM7067631_SKIN_AGE72_M_GR4_Gt014_geneCOUNT.txt.gz', 'GSM7067632_SKIN_AGE72_M_GR4_Gt065_circRNA.txt.gz', 'GSM7067632_SKIN_AGE72_M_GR4_Gt065_geneCOUNT.txt.gz', 'GSM7067633_SKIN_AGE72_M_GR4_Gt084_circRNA.txt.gz', 'GSM7067633_SKIN_AGE72_M_GR4_Gt084_geneCOUNT.txt.gz', 'GSM7067634_SKIN_AGE72_M_GR4_Gt114_circRNA.txt.gz', 'GSM7067634_SKIN_AGE72_M_GR4_Gt114_geneCOUNT.txt.gz', 'GSM7067635_SKIN_AGE73_F_GR4_Gt018_circRNA.txt.gz', 'GSM7067635_SKIN_AGE73_F_GR4_Gt018_geneCOUNT.txt.gz', 'GSM7067636_SKIN_AGE76_M_GR4_Gt115_circRNA.txt.gz', 'GSM7067636_SKIN_AGE76_M_GR4_Gt115_geneCOUNT.txt.gz', 'GSM7067637_SKIN_AGE77_F_GR4_Gt113_circRNA.txt.gz', 'GSM7067637_SKIN_AGE77_F_GR4_Gt113_geneCOUNT.txt.gz', 'GSM7067638_SKIN_AGE78_F_GR4_Gt035_circRNA.txt.gz', 'GSM7067638_SKIN_AGE78_F_GR4_Gt035_geneCOUNT.txt.gz', 'GSM7067639_SKIN_AGE80_F_GR5_Gt032_circRNA.txt.gz', 'GSM7067639_SKIN_AGE80_F_GR5_Gt032_geneCOUNT.txt.gz', 'GSM7067640_SKIN_AGE80_F_GR5_Gt083_circRNA.txt.gz', 'GSM7067640_SKIN_AGE80_F_GR5_Gt083_geneCOUNT.txt.gz', 'GSM7067641_SKIN_AGE81_M_GR5_Gt029_circRNA.txt.gz', 'GSM7067641_SKIN_AGE81_M_GR5_Gt029_geneCOUNT.txt.gz', 'GSM7067642_SKIN_AGE81_M_GR5_Gt108_circRNA.txt.gz', 'GSM7067642_SKIN_AGE81_M_GR5_Gt108_geneCOUNT.txt.gz', 'GSM7067643_SKIN_AGE81_M_GR5_Gt110_circRNA.txt.gz', 'GSM7067643_SKIN_AGE81_M_GR5_Gt110_geneCOUNT.txt.gz', 'GSM7067644_SKIN_AGE83_M_GR5_Gt026_circRNA.txt.gz', 'GSM7067644_SKIN_AGE83_M_GR5_Gt026_geneCOUNT.txt.gz', 'GSM7067645_SKIN_AGE85_M_GR5_Gt125_circRNA.txt.gz', 'GSM7067645_SKIN_AGE85_M_GR5_Gt125_geneCOUNT.txt.gz', 'GSM7067646_SKIN_AGE86_M_GR5_Gt111_circRNA.txt.gz', 'GSM7067646_SKIN_AGE86_M_GR5_Gt111_geneCOUNT.txt.gz', 'GSM7067647_SKIN_AGE89_M_GR5_Gt132_circRNA.txt.gz', 'GSM7067647_SKIN_AGE89_M_GR5_Gt132_geneCOUNT.txt.gz']",
+   "details": {}
+  },
+  {
+   "step": "fail",
+   "message": "ValueError: Multiple files found in TAR archive. Only one file per TAR archive: ['GSM7067566_SKIN_AGE22_M_GR1_Gt073_circRNA.txt.gz', 'GSM7067566_SKIN_AGE22_M_GR1_Gt073_geneCOUNT.txt.gz', 'GSM7067567_SKIN_AGE23_M_GR1_Gt022_circRNA.txt.gz', 'GSM7067567_SKIN_AGE23_M_GR1_Gt022_geneCOUNT.txt.gz', 'GSM7067568_SKIN_AGE25_F_GR1_Gt085_circRNA.txt.gz', 'GSM7067568_SKIN_AGE25_F_GR1_Gt085_geneCOUNT.txt.gz', 'GSM7067569_SKIN_AGE25_M_GR1_Gt046_circRNA.txt.gz', 'GSM7067569_SKIN_AGE25_M_GR1_Gt046_geneCOUNT.txt.gz', 'GSM7067570_SKIN_AGE26_F_GR1_Gt045_circRNA.txt.gz', 'GSM7067570_SKIN_AGE26_F_GR1_Gt045_geneCOUNT.txt.gz', 'GSM7067571_SKIN_AGE27_F_GR1_Gt055_circRNA.txt.gz', 'GSM7067571_SKIN_AGE27_F_GR1_Gt055_geneCOUNT.txt.gz', 'GSM7067572_SKIN_AGE27_M_GR1_Gt142_circRNA.txt.gz', 'GSM7067572_SKIN_AGE27_M_GR1_Gt142_geneCOUNT.txt.gz', 'GSM7067573_SKIN_AGE28_F_GR1_Gt137_circRNA.txt.gz', 'GSM7067573_SKIN_AGE28_F_GR1_Gt137_geneCOUNT.txt.gz', 'GSM7067574_SKIN_AGE28_M_GR1_Gt001_circRNA.txt.gz', 'GSM7067574_SKIN_AGE28_M_GR1_Gt001_geneCOUNT.txt.gz', 'GSM7067575_SKIN_AGE28_M_GR1_Gt123_circRNA.txt.gz', 'GSM7067575_SKIN_AGE28_M_GR1_Gt123_geneCOUNT.txt.gz', 'GSM7067576_SKIN_AGE29_M_GR1_Gt135_circRNA.txt.gz', 'GSM7067576_SKIN_AGE29_M_GR1_Gt135_geneCOUNT.txt.gz', 'GSM7067577_SKIN_AGE30_M_GR1_Gt122_circRNA.txt.gz', 'GSM7067577_SKIN_AGE30_M_GR1_Gt122_geneCOUNT.txt.gz', 'GSM7067578_SKIN_AGE31_F_GR1_Gt090_circRNA.txt.gz', 'GSM7067578_SKIN_AGE31_F_GR1_Gt090_geneCOUNT.txt.gz', 'GSM7067579_SKIN_AGE31_M_GR1_Gt005_circRNA.txt.gz', 'GSM7067579_SKIN_AGE31_M_GR1_Gt005_geneCOUNT.txt.gz', 'GSM7067580_SKIN_AGE31_M_GR1_Gt025_circRNA.txt.gz', 'GSM7067580_SKIN_AGE31_M_GR1_Gt025_geneCOUNT.txt.gz', 'GSM7067581_SKIN_AGE31_M_GR1_Gt119_circRNA.txt.gz', 'GSM7067581_SKIN_AGE31_M_GR1_Gt119_geneCOUNT.txt.gz', 'GSM7067582_SKIN_AGE31_M_GR1_Gt130_circRNA.txt.gz', 'GSM7067582_SKIN_AGE31_M_GR1_Gt130_geneCOUNT.txt.gz', 'GSM7067583_SKIN_AGE32_F_GR1_Gt144_circRNA.txt.gz', 'GSM7067583_SKIN_AGE32_F_GR1_Gt144_geneCOUNT.txt.gz', 'GSM7067584_SKIN_AGE32_M_GR1_Gt042_circRNA.txt.gz', 'GSM7067584_SKIN_AGE32_M_GR1_Gt042_geneCOUNT.txt.gz', 'GSM7067585_SKIN_AGE35_F_GR2_Gt141_circRNA.txt.gz', 'GSM7067585_SKIN_AGE35_F_GR2_Gt141_geneCOUNT.txt.gz', 'GSM7067586_SKIN_AGE35_M_GR2_Gt104_circRNA.txt.gz', 'GSM7067586_SKIN_AGE35_M_GR2_Gt104_geneCOUNT.txt.gz', 'GSM7067587_SKIN_AGE35_M_GR2_Gt129_circRNA.txt.gz', 'GSM7067587_SKIN_AGE35_M_GR2_Gt129_geneCOUNT.txt.gz', 'GSM7067588_SKIN_AGE37_M_GR2_Gt064_circRNA.txt.gz', 'GSM7067588_SKIN_AGE37_M_GR2_Gt064_geneCOUNT.txt.gz', 'GSM7067589_SKIN_AGE38_F_GR2_Gt016_circRNA.txt.gz', 'GSM7067589_SKIN_AGE38_F_GR2_Gt016_geneCOUNT.txt.gz', 'GSM7067590_SKIN_AGE38_F_GR2_Gt152_circRNA.txt.gz', 'GSM7067590_SKIN_AGE38_F_GR2_Gt152_geneCOUNT.txt.gz', 'GSM7067591_SKIN_AGE38_M_GR2_Gt093_circRNA.txt.gz', 'GSM7067591_SKIN_AGE38_M_GR2_Gt093_geneCOUNT.txt.gz', 'GSM7067592_SKIN_AGE39_M_GR2_Gt126_circRNA.txt.gz', 'GSM7067592_SKIN_AGE39_M_GR2_Gt126_geneCOUNT.txt.gz', 'GSM7067593_SKIN_AGE42_F_GR2_Gt059_circRNA.txt.gz', 'GSM7067593_SKIN_AGE42_F_GR2_Gt059_geneCOUNT.txt.gz', 'GSM7067594_SKIN_AGE42_F_GR2_Gt145_circRNA.txt.gz', 'GSM7067594_SKIN_AGE42_F_GR2_Gt145_geneCOUNT.txt.gz', 'GSM7067595_SKIN_AGE42_M_GR2_Gt024_circRNA.txt.gz', 'GSM7067595_SKIN_AGE42_M_GR2_Gt024_geneCOUNT.txt.gz', 'GSM7067596_SKIN_AGE45_M_GR2_Gt017_circRNA.txt.gz', 'GSM7067596_SKIN_AGE45_M_GR2_Gt017_geneCOUNT.txt.gz', 'GSM7067597_SKIN_AGE45_M_GR2_Gt030_circRNA.txt.gz', 'GSM7067597_SKIN_AGE45_M_GR2_Gt030_geneCOUNT.txt.gz', 'GSM7067598_SKIN_AGE47_F_GR2_Gt078_circRNA.txt.gz', 'GSM7067598_SKIN_AGE47_F_GR2_Gt078_geneCOUNT.txt.gz', 'GSM7067599_SKIN_AGE47_M_GR2_Gt060_circRNA.txt.gz', 'GSM7067599_SKIN_AGE47_M_GR2_Gt060_geneCOUNT.txt.gz', 'GSM7067600_SKIN_AGE48_F_GR2_Gt133_circRNA.txt.gz', 'GSM7067600_SKIN_AGE48_F_GR2_Gt133_geneCOUNT.txt.gz', 'GSM7067601_SKIN_AGE48_F_GR2_Gt149_circRNA.txt.gz', 'GSM7067601_SKIN_AGE48_F_GR2_Gt149_geneCOUNT.txt.gz', 'GSM7067602_SKIN_AGE49_M_GR2_Gt128_circRNA.txt.gz', 'GSM7067602_SKIN_AGE49_M_GR2_Gt128_geneCOUNT.txt.gz', 'GSM7067603_SKIN_AGE51_M_GR3_Gt015_circRNA.txt.gz', 'GSM7067603_SKIN_AGE51_M_GR3_Gt015_geneCOUNT.txt.gz', 'GSM7067604_SKIN_AGE52_F_GR3_Gt027_circRNA.txt.gz', 'GSM7067604_SKIN_AGE52_F_GR3_Gt027_geneCOUNT.txt.gz', 'GSM7067605_SKIN_AGE52_F_GR3_Gt063_circRNA.txt.gz', 'GSM7067605_SKIN_AGE52_F_GR3_Gt063_geneCOUNT.txt.gz', 'GSM7067606_SKIN_AGE52_M_GR3_Gt007_circRNA.txt.gz', 'GSM7067606_SKIN_AGE52_M_GR3_Gt007_geneCOUNT.txt.gz', 'GSM7067607_SKIN_AGE52_M_GR3_Gt056_circRNA.txt.gz', 'GSM7067607_SKIN_AGE52_M_GR3_Gt056_geneCOUNT.txt.gz', 'GSM7067608_SKIN_AGE53_F_GR3_Gt146_circRNA.txt.gz', 'GSM7067608_SKIN_AGE53_F_GR3_Gt146_geneCOUNT.txt.gz', 'GSM7067609_SKIN_AGE54_M_GR3_Gt057_circRNA.txt.gz', 'GSM7067609_SKIN_AGE54_M_GR3_Gt057_geneCOUNT.txt.gz', 'GSM7067610_SKIN_AGE55_M_GR3_Gt136_circRNA.txt.gz', 'GSM7067610_SKIN_AGE55_M_GR3_Gt136_geneCOUNT.txt.gz', 'GSM7067611_SKIN_AGE56_F_GR3_Gt120_circRNA.txt.gz', 'GSM7067611_SKIN_AGE56_F_GR3_Gt120_geneCOUNT.txt.gz', 'GSM7067612_SKIN_AGE57_M_GR3_Gt004_circRNA.txt.gz', 'GSM7067612_SKIN_AGE57_M_GR3_Gt004_geneCOUNT.txt.gz', 'GSM7067613_SKIN_AGE58_F_GR3_Gt011_circRNA.txt.gz', 'GSM7067613_SKIN_AGE58_F_GR3_Gt011_geneCOUNT.txt.gz', 'GSM7067614_SKIN_AGE60_M_GR3_Gt013_circRNA.txt.gz', 'GSM7067614_SKIN_AGE60_M_GR3_Gt013_geneCOUNT.txt.gz', 'GSM7067615_SKIN_AGE61_F_GR3_Gt003_circRNA.txt.gz', 'GSM7067615_SKIN_AGE61_F_GR3_Gt003_geneCOUNT.txt.gz', 'GSM7067616_SKIN_AGE61_F_GR3_Gt102_circRNA.txt.gz', 'GSM7067616_SKIN_AGE61_F_GR3_Gt102_geneCOUNT.txt.gz', 'GSM7067617_SKIN_AGE62_F_GR3_Gt070_circRNA.txt.gz', 'GSM7067617_SKIN_AGE62_F_GR3_Gt070_geneCOUNT.txt.gz', 'GSM7067618_SKIN_AGE63_F_GR3_Gt101_circRNA.txt.gz', 'GSM7067618_SKIN_AGE63_F_GR3_Gt101_geneCOUNT.txt.gz', 'GSM7067619_SKIN_AGE63_M_GR3_Gt092_circRNA.txt.gz', 'GSM7067619_SKIN_AGE63_M_GR3_Gt092_geneCOUNT.txt.gz', 'GSM7067620_SKIN_AGE65_F_GR4_Gt033_circRNA.txt.gz', 'GSM7067620_SKIN_AGE65_F_GR4_Gt033_geneCOUNT.txt.gz', 'GSM7067621_SKIN_AGE66_F_GR3_Gt156_circRNA.txt.gz', 'GSM7067621_SKIN_AGE66_F_GR3_Gt156_geneCOUNT.txt.gz', 'GSM7067622_SKIN_AGE67_F_GR4_Gt080_circRNA.txt.gz', 'GSM7067622_SKIN_AGE67_F_GR4_Gt080_geneCOUNT.txt.gz', 'GSM7067623_SKIN_AGE67_M_GR4_Gt002_circRNA.txt.gz', 'GSM7067623_SKIN_AGE67_M_GR4_Gt002_geneCOUNT.txt.gz', 'GSM7067624_SKIN_AGE67_M_GR4_Gt039_circRNA.txt.gz', 'GSM7067624_SKIN_AGE67_M_GR4_Gt039_geneCOUNT.txt.gz', 'GSM7067625_SKIN_AGE69_F_GR4_Gt095_circRNA.txt.gz', 'GSM7067625_SKIN_AGE69_F_GR4_Gt095_geneCOUNT.txt.gz', 'GSM7067626_SKIN_AGE70_F_GR4_Gt089_circRNA.txt.gz', 'GSM7067626_SKIN_AGE70_F_GR4_Gt089_geneCOUNT.txt.gz', 'GSM7067627_SKIN_AGE70_M_GR4_Gt061_circRNA.txt.gz', 'GSM7067627_SKIN_AGE70_M_GR4_Gt061_geneCOUNT.txt.gz', 'GSM7067628_SKIN_AGE71_F_GR4_Gt138_circRNA.txt.gz', 'GSM7067628_SKIN_AGE71_F_GR4_Gt138_geneCOUNT.txt.gz', 'GSM7067629_SKIN_AGE72_F_GR4_Gt071_circRNA.txt.gz', 'GSM7067629_SKIN_AGE72_F_GR4_Gt071_geneCOUNT.txt.gz', 'GSM7067630_SKIN_AGE72_F_GR4_Gt109_circRNA.txt.gz', 'GSM7067630_SKIN_AGE72_F_GR4_Gt109_geneCOUNT.txt.gz', 'GSM7067631_SKIN_AGE72_M_GR4_Gt014_circRNA.txt.gz', 'GSM7067631_SKIN_AGE72_M_GR4_Gt014_geneCOUNT.txt.gz', 'GSM7067632_SKIN_AGE72_M_GR4_Gt065_circRNA.txt.gz', 'GSM7067632_SKIN_AGE72_M_GR4_Gt065_geneCOUNT.txt.gz', 'GSM7067633_SKIN_AGE72_M_GR4_Gt084_circRNA.txt.gz', 'GSM7067633_SKIN_AGE72_M_GR4_Gt084_geneCOUNT.txt.gz', 'GSM7067634_SKIN_AGE72_M_GR4_Gt114_circRNA.txt.gz', 'GSM7067634_SKIN_AGE72_M_GR4_Gt114_geneCOUNT.txt.gz', 'GSM7067635_SKIN_AGE73_F_GR4_Gt018_circRNA.txt.gz', 'GSM7067635_SKIN_AGE73_F_GR4_Gt018_geneCOUNT.txt.gz', 'GSM7067636_SKIN_AGE76_M_GR4_Gt115_circRNA.txt.gz', 'GSM7067636_SKIN_AGE76_M_GR4_Gt115_geneCOUNT.txt.gz', 'GSM7067637_SKIN_AGE77_F_GR4_Gt113_circRNA.txt.gz', 'GSM7067637_SKIN_AGE77_F_GR4_Gt113_geneCOUNT.txt.gz', 'GSM7067638_SKIN_AGE78_F_GR4_Gt035_circRNA.txt.gz', 'GSM7067638_SKIN_AGE78_F_GR4_Gt035_geneCOUNT.txt.gz', 'GSM7067639_SKIN_AGE80_F_GR5_Gt032_circRNA.txt.gz', 'GSM7067639_SKIN_AGE80_F_GR5_Gt032_geneCOUNT.txt.gz', 'GSM7067640_SKIN_AGE80_F_GR5_Gt083_circRNA.txt.gz', 'GSM7067640_SKIN_AGE80_F_GR5_Gt083_geneCOUNT.txt.gz', 'GSM7067641_SKIN_AGE81_M_GR5_Gt029_circRNA.txt.gz', 'GSM7067641_SKIN_AGE81_M_GR5_Gt029_geneCOUNT.txt.gz', 'GSM7067642_SKIN_AGE81_M_GR5_Gt108_circRNA.txt.gz', 'GSM7067642_SKIN_AGE81_M_GR5_Gt108_geneCOUNT.txt.gz', 'GSM7067643_SKIN_AGE81_M_GR5_Gt110_circRNA.txt.gz', 'GSM7067643_SKIN_AGE81_M_GR5_Gt110_geneCOUNT.txt.gz', 'GSM7067644_SKIN_AGE83_M_GR5_Gt026_circRNA.txt.gz', 'GSM7067644_SKIN_AGE83_M_GR5_Gt026_geneCOUNT.txt.gz', 'GSM7067645_SKIN_AGE85_M_GR5_Gt125_circRNA.txt.gz', 'GSM7067645_SKIN_AGE85_M_GR5_Gt125_geneCOUNT.txt.gz', 'GSM7067646_SKIN_AGE86_M_GR5_Gt111_circRNA.txt.gz', 'GSM7067646_SKIN_AGE86_M_GR5_Gt111_geneCOUNT.txt.gz', 'GSM7067647_SKIN_AGE89_M_GR5_Gt132_circRNA.txt.gz', 'GSM7067647_SKIN_AGE89_M_GR5_Gt132_geneCOUNT.txt.gz']",
+   "details": {}
+  }
+ ],
+ "columns": {
+  "geo_series_GSE113957": {
+   "source": "GSE113957 SOFT series",
+   "columns": [
+    "Series_contact_address",
+    "Series_contact_city",
+    "Series_contact_country",
+    "Series_contact_department",
+    "Series_contact_email",
+    "Series_contact_institute",
+    "Series_contact_name",
+    "Series_contact_phone",
+    "Series_contact_state",
+    "Series_contact_zip/postal_code",
+    "Series_contributor",
+    "Series_geo_accession",
+    "Series_last_update_date",
+    "Series_overall_design",
+    "Series_platform_id",
+    "Series_platform_organism",
+    "Series_platform_taxid",
+    "Series_pubmed_id",
+    "Series_relation",
+    "Series_sample_id",
+    "Series_sample_organism",
+    "Series_sample_taxid",
+    "Series_status",
+    "Series_submission_date",
+    "Series_summary",
+    "Series_supplementary_file",
+    "Series_title",
+    "Series_type"
+   ]
+  },
+  "geo_gsm": {
+   "source": "SOFT GSM",
+   "columns": [
+    "Sample_channel_count",
+    "Sample_characteristics_ch1",
+    "Sample_contact_address",
+    "Sample_contact_city",
+    "Sample_contact_country",
+    "Sample_contact_institute",
+    "Sample_contact_name",
+    "Sample_contact_state",
+    "Sample_contact_zip/postal_code",
+    "Sample_data_processing",
+    "Sample_data_row_count",
+    "Sample_description",
+    "Sample_extract_protocol_ch1",
+    "Sample_geo_accession",
+    "Sample_growth_protocol_ch1",
+    "Sample_instrument_model",
+    "Sample_last_update_date",
+    "Sample_library_selection",
+    "Sample_library_source",
+    "Sample_library_strategy",
+    "Sample_molecule_ch1",
+    "Sample_organism_ch1",
+    "Sample_platform_id",
+    "Sample_relation",
+    "Sample_series_id",
+    "Sample_source_name_ch1",
+    "Sample_status",
+    "Sample_submission_date",
+    "Sample_supplementary_file_1",
+    "Sample_taxid_ch1",
+    "Sample_title",
+    "Sample_treatment_protocol_ch1",
+    "Sample_type",
+    "gsm"
+   ]
+  },
+  "cxg_obs_a19d1667": {
+   "source": "https://datasets.cellxgene.cziscience.com/8ae4471a-2e70-47b5-bc42-4f0df26a9996.h5ad",
+   "columns": [
+    "cluster_robust",
+    "donor_id",
+    "development_stage_ontology_term_id",
+    "sex_ontology_term_id",
+    "self_reported_ethnicity_ontology_term_id",
+    "disease_ontology_term_id",
+    "tissue_ontology_term_id",
+    "cell_type_ontology_term_id",
+    "assay_ontology_term_id",
+    "suspension_type",
+    "Author",
+    "Accession (Sample)",
+    "Aligner",
+    "Genome",
+    "Donor identifier",
+    "Sample identifier",
+    "Internal sample identifier",
+    "Sequencer",
+    "Age",
+    "Race",
+    "Ethnicity",
+    "Sample location",
+    "Condition",
+    "Condition (other)",
+    "is_primary_data",
+    "tissue_type",
+    "cell_type",
+    "assay",
+    "disease",
+    "sex",
+    "tissue",
+    "self_reported_ethnicity",
+    "development_stage",
+    "observation_joinid"
+   ]
+  },
+  "cxg_cxg_a19d1667": {
+   "source": "<repo>\\data\\raw\\fibro2\\cxg\\8ae4471a-2e70-47b5-bc42-4f0df26a9996.h5ad",
+   "columns": [
+    "cluster_robust",
+    "donor_id",
+    "development_stage_ontology_term_id",
+    "sex_ontology_term_id",
+    "self_reported_ethnicity_ontology_term_id",
+    "disease_ontology_term_id",
+    "tissue_ontology_term_id",
+    "cell_type_ontology_term_id",
+    "assay_ontology_term_id",
+    "suspension_type",
+    "Author",
+    "Accession (Sample)",
+    "Aligner",
+    "Genome",
+    "Donor identifier",
+    "Sample identifier",
+    "Internal sample identifier",
+    "Sequencer",
+    "Age",
+    "Race",
+    "Ethnicity",
+    "Sample location",
+    "Condition",
+    "Condition (other)",
+    "is_primary_data",
+    "tissue_type",
+    "cell_type",
+    "assay",
+    "disease",
+    "sex",
+    "tissue",
+    "self_reported_ethnicity",
+    "development_stage",
+    "observation_joinid"
+   ]
+  },
+  "geo_series_GSE226189": {
+   "source": "GSE226189 SOFT series",
+   "columns": [
+    "Series_contact_address",
+    "Series_contact_city",
+    "Series_contact_country",
+    "Series_contact_department",
+    "Series_contact_institute",
+    "Series_contact_laboratory",
+    "Series_contact_name",
+    "Series_contact_state",
+    "Series_contact_zip/postal_code",
+    "Series_contributor",
+    "Series_geo_accession",
+    "Series_last_update_date",
+    "Series_overall_design",
+    "Series_platform_id",
+    "Series_platform_organism",
+    "Series_platform_taxid",
+    "Series_relation",
+    "Series_sample_id",
+    "Series_sample_organism",
+    "Series_sample_taxid",
+    "Series_status",
+    "Series_submission_date",
+    "Series_summary",
+    "Series_supplementary_file",
+    "Series_title",
+    "Series_type"
+   ]
+  },
+  "geneCOUNT_first": {
+   "source": "GSE226189_RAW.tar:GSM7067566_SKIN_AGE22_M_GR1_Gt073_geneCOUNT.txt.gz",
+   "columns": [
+    "SKIN_AGE22_M_GR1_Gt073_COUNT"
+   ]
+  },
+  "geo_series_GSE307377": {
+   "source": "GSE307377 SOFT series",
+   "columns": [
+    "Series_contact_address",
+    "Series_contact_city",
+    "Series_contact_country",
+    "Series_contact_institute",
+    "Series_contact_name",
+    "Series_contact_state",
+    "Series_contact_zip/postal_code",
+    "Series_contributor",
+    "Series_geo_accession",
+    "Series_last_update_date",
+    "Series_overall_design",
+    "Series_platform_id",
+    "Series_platform_organism",
+    "Series_platform_taxid",
+    "Series_pubmed_id",
+    "Series_relation",
+    "Series_sample_id",
+    "Series_sample_organism",
+    "Series_sample_taxid",
+    "Series_status",
+    "Series_submission_date",
+    "Series_summary",
+    "Series_supplementary_file",
+    "Series_title",
+    "Series_type"
+   ]
+  },
+  "series_matrix_GSE307377_series_matrix.txt": {
+   "source": "<repo>\\data\\raw\\fibro2\\GSE307377\\GSE307377_series_matrix.txt.gz",
+   "columns": [
+    "GSM9222986",
+    "GSM9222987",
+    "GSM9222988",
+    "GSM9222989",
+    "GSM9222990",
+    "GSM9222991",
+    "GSM9222992",
+    "GSM9222993",
+    "GSM9222994"
+   ]
+  },
+  "tb_stage2_geo_samples": {
+   "source": "<repo>\\results\\fibro\\stage2_geo_samples.csv",
+   "columns": [
+    "gsm",
+    "title",
+    "source",
+    "organism",
+    "molecule",
+    "description",
+    "characteristics",
+    "growth_protocol",
+    "cell_line",
+    "cell_type",
+    "tissue",
+    "treatment",
+    "day",
+    "age_from_characteristics",
+    "age_from_growth_protocol",
+    "library_name",
+    "fields_read",
+    "age_years",
+    "age_source"
+   ]
+  },
+  "qc_GSM8986586": {
+   "source": "GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "qc_GSM8986587": {
+   "source": "GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "qc_GSM8986588": {
+   "source": "GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "qc_GSM8986589": {
+   "source": "GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "qc_GSM8986590": {
+   "source": "GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "qc_GSM8986591": {
+   "source": "GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "qc_GSM8986592": {
+   "source": "GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  },
+  "qc_GSM8986593": {
+   "source": "GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5",
+   "columns": [
+    "barcode",
+    "gene_id",
+    "symbol",
+    "feature_type",
+    "genome"
+   ]
+  }
+ },
+ "unusable": [
+  {
+   "accession": "GSE113957",
+   "reason": "no usable count matrix for GSE113957: last error [counts] GSE113957_fpkm.txt.gz: values are not integer counts (cannot apply TMM/log2-CPM). min=0.0 max=249213345.0 mean=1009452.0862567581",
+   "details": {
+    "files": [
+     {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/suppl/GSE113957_fpkm.txt.gz",
+      "path": "<repo>\\data\\raw\\fibro2\\GSE113957\\GSE113957_fpkm.txt.gz",
+      "size": 7532882
+     }
+    ]
+   }
+  },
+  {
+   "accession": "GSE113957",
+   "reason": "no usable count matrix for GSE113957: last error [counts] GSE113957_fpkm.txt.gz: values are not integer counts (cannot apply TMM/log2-CPM). min=0.0 max=249213345.0 mean=1009452.0862567581",
+   "details": {
+    "files": [
+     {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE113nnn/GSE113957/suppl/GSE113957_fpkm.txt.gz",
+      "path": "<repo>\\data\\raw\\fibro2\\GSE113957\\GSE113957_fpkm.txt.gz",
+      "size": 7532882
+     }
+    ]
+   }
+  },
+  {
+   "accession": "GSE307377",
+   "reason": "no usable count matrix for GSE307377: last error [counts] GSE307377_series_matrix.txt.gz: zero-size array to reduction operation fmin which has no identity",
+   "details": {
+    "files": [
+     {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307377/suppl/GSE307377_raw.txt.gz",
+      "path": "<repo>\\data\\raw\\fibro2\\GSE307377\\GSE307377_raw.txt.gz",
+      "size": 1363809
+     },
+     {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307377/suppl/GSE307377_tpm.txt.gz",
+      "path": "<repo>\\data\\raw\\fibro2\\GSE307377\\GSE307377_tpm.txt.gz",
+      "size": 1498390
+     },
+     {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307377/matrix/GSE307377_series_matrix.txt.gz",
+      "path": "<repo>\\data\\raw\\fibro2\\GSE307377\\GSE307377_series_matrix.txt.gz",
+      "size": 2312,
+      "kind": "series_matrix"
+     }
+    ]
+   }
+  }
+ ],
+ "unverified": [],
+ "status": "FIBRO2_DONE",
+ "frozen_ruler": "<repo>\\results\\fibro\\frozen_ruler_ridge_raw.npz",
+ "resolved": [
+  {
+   "accession": "GSE113957",
+   "role": "primary_external",
+   "title": "Predicting age from the transcriptome of human dermal fibroblasts",
+   "kind": "bulk_rnaseq",
+   "usable": true,
+   "unusable_reason": null,
+   "n_gsm": 143,
+   "n_with_age": 135,
+   "n_adult": 111,
+   "n_child": 24,
+   "types": [
+    "Expression profiling by high throughput sequencing"
+   ],
+   "platforms": [
+    "GPL16791",
+    "GPL18573"
+   ]
+  },
+  {
+   "accession": "GSE113957",
+   "role": "primary_external",
+   "title": "Predicting age from the transcriptome of human dermal fibroblasts",
+   "kind": "bulk_rnaseq",
+   "usable": true,
+   "unusable_reason": null,
+   "n_gsm": 143,
+   "n_with_age": 135,
+   "n_adult": 111,
+   "n_child": 24,
+   "types": [
+    "Expression profiling by high throughput sequencing"
+   ],
+   "platforms": [
+    "GPL16791",
+    "GPL18573"
+   ]
+  },
+  {
+   "accession": "a19d1667-a7b5-4556-9e5f-f9bfa690c0f1",
+   "role": "single_cell_external",
+   "title": "Human dermal fibroblast atlas",
+   "kind": "single_cell",
+   "usable": true,
+   "unusable_reason": null,
+   "n_gsm": null,
+   "n_with_age": null,
+   "n_adult": null,
+   "n_child": null,
+   "types": null,
+   "platforms": null
+  },
+  {
+   "accession": "GSE226189",
+   "role": "near_miss_bulk",
+   "title": "Transcriptomes of human primary skin fibroblasts reveal age-associated mRNAs and long noncoding RNAs",
+   "kind": "bulk_rnaseq",
+   "usable": true,
+   "unusable_reason": null,
+   "n_gsm": 82,
+   "n_with_age": 82,
+   "n_adult": null,
+   "n_child": null,
+   "types": [
+    "Expression profiling by high throughput sequencing",
+    "Non-coding RNA profiling by high throughput sequencing"
+   ],
+   "platforms": [
+    "GPL24676"
+   ]
+  },
+  {
+   "accession": "a19d1667-a7b5-4556-9e5f-f9bfa690c0f1",
+   "role": "single_cell_external",
+   "title": "Human dermal fibroblast atlas",
+   "kind": "single_cell",
+   "usable": true,
+   "unusable_reason": null,
+   "n_gsm": null,
+   "n_with_age": null,
+   "n_adult": null,
+   "n_child": null,
+   "types": null,
+   "platforms": null
+  },
+  {
+   "accession": "GSE226189",
+   "role": "near_miss_bulk",
+   "title": "Transcriptomes of human primary skin fibroblasts reveal age-associated mRNAs and long noncoding RNAs",
+   "kind": "bulk_rnaseq",
+   "usable": true,
+   "unusable_reason": null,
+   "n_gsm": 82,
+   "n_with_age": 82,
+   "n_adult": null,
+   "n_child": null,
+   "types": [
+    "Expression profiling by high throughput sequencing",
+    "Non-coding RNA profiling by high throughput sequencing"
+   ],
+   "platforms": [
+    "GPL24676"
+   ]
+  },
+  {
+   "accession": "GSE307377",
+   "role": "near_miss_n9",
+   "title": "Bulk RNA-seq analysis of primary human dermal fibroblasts from young and aged donors",
+   "kind": "bulk_rnaseq",
+   "usable": true,
+   "unusable_reason": null,
+   "n_gsm": 9,
+   "n_with_age": 9,
+   "n_adult": null,
+   "n_child": null,
+   "types": [
+    "Expression profiling by high throughput sequencing"
+   ],
+   "platforms": [
+    "GPL24676"
+   ]
+  }
+ ],
+ "ta_reading": {
+  "key": "primary_unscored",
+  "text": "primary external cell (GSE113957) was not scored: GSE113957_fpkm.txt.gz values are not integer counts (cannot apply TMM/log2-CPM). min=0.0 max=249213345.0 mean=1009452.0862567581. Series matrix HEAD 404. n_gsm=143 n_with_stated_age=135 n_missing_age=8 n_stated_age_<18=24 n_adult>=18=111. The pre-registered primary-cell pass/fail on rho therefore cannot fire. A single-cell external cohort (CELLxGENE Human dermal fibroblast atlas a19d1667-a7b5-4556-9e5f-f9bfa690c0f1, 10x-restricted adult donors) passed rho=+0.455 null=-0.003 p=+0.005 CI=[+0.253, +0.605] n=93 overlap=17047. It is not the pre-registered primary cell, so the primary-cell interpretable bullet does not fire. Stage 2 no_decline must not be reported as a finding about reprogramming until the primary external cell is scored and passes. A 10x cohort was scored; this is not the case no single-cell cohort resolved. Do not substitute the single-cell pass or the GSE226189 bulk pass for GSE113957.",
+  "interpretable": false
+ },
+ "tb_reading": {
+  "key": "d7_unexplained",
+  "text": "d0\u2192d7 gives p \u2264 0.05 with no technical difference at d10 \u2192 the discrepancy is unexplained.",
+  "d10_technical": false,
+  "p7": 0.004975124378109453,
+  "p10": 0.9900497512437811
+ },
+ "tc_reading": {
+  "key": "boosting_below_ridge",
+  "text": "boosting transfer \u03c1 below ridge \u2192 note it and move on.",
+  "linearity_limiting": false,
+  "comps": [
+   {
+    "direction": "B1\u2192C1",
+    "hgb_rho": 0.4521978149424238,
+    "ridge_rho": 0.5291743878674791,
+    "ridge_ci_lo": 0.4175188640985519,
+    "ridge_ci_hi": 0.6117727393990587,
+    "inside": true,
+    "above": false,
+    "below_point": true
+   },
+   {
+    "direction": "C1\u2192B1",
+    "hgb_rho": 0.4560282096972335,
+    "ridge_rho": 0.5611771722875578,
+    "ridge_ci_lo": 0.4997254020850796,
+    "ridge_ci_hi": 0.616787407144493,
+    "inside": false,
+    "above": false,
+    "below_point": true
+   }
+  ]
+ }
+}

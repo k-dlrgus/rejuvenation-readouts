@@ -1,0 +1,37 @@
+{
+ "hitCount": 1,
+ "result": [
+  {
+   "id": "40816266",
+   "pmid": "40816266",
+   "pmcid": null,
+   "doi": "10.1016/j.cell.2025.07.031",
+   "title": "Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming.",
+   "authorString": "Lu JY, Tu WB, Li R, Weng M, Sanketi BD, Yuan B, Reddy P, Rodriguez Esteban C, Izpisua Belmonte JC.",
+   "journalTitle": null,
+   "pubYear": "2025",
+   "isOpenAccess": "N",
+   "inEPMC": "N",
+   "inPMC": "N",
+   "hasPDF": "N",
+   "hasBook": "N",
+   "hasSuppl": "N",
+   "hasData": "Y",
+   "hasPreprint": null,
+   "hasTextMinedTerms": "Y",
+   "license": null,
+   "fullTextUrlList": {
+    "fullTextUrl": [
+     {
+      "availability": "Subscription required",
+      "availabilityCode": "S",
+      "documentStyle": "doi",
+      "site": "DOI",
+      "url": "https://doi.org/10.1016/j.cell.2025.07.031"
+     }
+    ]
+   },
+   "commentCorrectionList": null
+  }
+ ]
+}

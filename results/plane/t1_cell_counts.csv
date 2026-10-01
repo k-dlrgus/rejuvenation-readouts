@@ -1,0 +1,11 @@
+cell_line,label,n_clusters,n_d0,n_d3,n_d7,n_d10,n_all,ge30,scored,reason
+GM00731,Fibroblast,4,4939,5,14,1030,5988,True,True,
+GM00731,PartialReprog,6,3,5220,578,31,5832,True,True,
+GM00731,EarlyPluripotency,4,2,410,3917,85,4414,True,True,
+GM00731,Pluripotency,1,0,5,354,80,439,True,True,
+GM00731,NonReprog,4,65,348,1932,3114,5459,True,True,
+GM23815,Fibroblast,5,7703,46,2233,1373,11355,True,True,
+GM23815,PartialReprog,4,9,6113,309,50,6481,True,True,
+GM23815,EarlyPluripotency,8,56,316,8172,4417,12961,True,True,
+GM23815,Pluripotency,1,0,91,977,181,1249,True,True,
+GM23815,NonReprog,1,0,10,8,1794,1812,True,True,

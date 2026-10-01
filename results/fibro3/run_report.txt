@@ -1,0 +1,656 @@
+====================================================================================================
+FIBRO3 RUN cell=prereg  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+prereg written; FINDINGS_FIBRO3.md skeleton on disk
+[findings] <repo>\FINDINGS_FIBRO3.md
+====================================================================================================
+FIBRO3 RUN cell=t4  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+====================================================================================================
+FIBRO3 TASK4  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Written **before any Task 4 ρ**, 2026-09-18. No threshold in this block is re-tuned after numbers exist. Option (a) is not run.
+
+Choice: **(b)**. The primary external cell is superseded from GSE113957 to CELLxGENE dataset `a19d1667-a7b5-4556-9e5f-f9bfa690c0f1` (Human dermal fibroblast atlas; 10x-restricted adult donors).
+
+Ground: FINDINGS_FIBRO2.md T-A pre-registration already stated that a 10x cohort is worth more than a larger bulk one because the platform shift is the thing under test. Stage 2 projects a GTEx bulk polyA (RNASeQCv2.4.2) frozen ruler onto 10x 3' scRNA-seq pseudobulks. GSE113957 is bulk FPKM; an FPKM rank-transform would be a different transform from the GTEx TMM/log2-CPM spec and would remain bulk-to-bulk, so it would not test the platform shift. The CELLxGENE 10x cohort tests that shift directly.
+
+Take the Stage 1 ridge direction exactly as frozen in `results/fibro/frozen_ruler_ridge_raw.npz`. Refit nothing. Recalibrate nothing. Rescale nothing. Score Spearman ρ vs donor age on the superseded primary.
+
+Freeze-and-project path (FINDINGS_EXTERNAL.md / T-A): TMM/edgeR log2-CPM (`prior.count=2`); genes restricted to the overlap with the frozen ruler; missing overlap genes left at z=0; z uses the frozen train mean and sd. Adult restriction ≥18. Ages from the record column actually used. Do not infer a donor age that the record does not state.
+
+Metric: Spearman ρ vs stated age. Donor-level permutation null n_perm=200 (scores held fixed; shuffle donor ages; fresh Generator on seed `20260914`). Donor-bootstrap 95% percentile CI, B=200, seed `20260918`. Calibrated R² and uncalibrated R² reported; uncalibrated R² is never a gate. Pearson r reported, not a gate.
+
+**Pre-registered reading:** if the superseded primary passes (ρ > 0, null ≤ 0.05), the frozen fibroblast ruler is a validated instrument outside GTEx and the Stage 2 trajectory is interpretable as a statement about the cells. If it fails, Stage 2 remains uninterpretable and every number in Tasks 1–3 is descriptive only.
+
+GSE113957 is not scored in this prompt. Option (a) is not run. GSE226189 is not the superseded primary. GSE325735 is out of scope. Do not report both (a) and (b) and pick the better number.
+
+Option (a) is not run. GSE113957 is not scored. GSE226189 is not the primary.
+[frozen] n_genes=23485 n_donors=652 method=ridge regime=raw path=<repo>\results\fibro\frozen_ruler_ridge_raw.npz
+[task4] scores csv columns actually read: ['sample', 'donor', 'age_years', 'age_source', 'n_cells', 'assay', 'age_score'] path=<repo>\results\fibro2\ta_cxg_a19d1667_scores.csv n=93
+[task4] proj npz keys actually read: ['logcpm', 'pred', 'y', 'donor', 'missing', 'Z'] path=<repo>\data\processed\fibro2\ta_cxg_a19d1667_proj.npz
+[task4] freeze-and-project check: max |Z@w − pred|=2.21419e-07
+[task4] T-A cached result.json keys actually read: ['accession', 'age_max', 'age_min', 'boot_seed', 'cal_r2', 'n_boot', 'n_donors', 'n_ensembl', 'n_excluded_child', 'n_excluded_no_age', 'n_missing_z0', 'n_overlap', 'n_perm', 'n_ruler', 'n_samples', 'n_symbol_fallback', 'n_unique_age', 'pass_rho', 'platform_detail', 'platform_kind', 'r', 'r2', 'rho', 'rho_ci_hi', 'rho_ci_lo', 'rho_null', 'rho_p', 'role', 'seed', 'tag', 'used_10x_only']
+[task4] ρ=+0.455 null=-0.003 p=+0.005 CI=[+0.253, +0.605] calR²=+0.171 R²=-9.664 pass=True n=93 n_donors=93
+[task4 reading] key=instrument_validated interpretable=True the frozen fibroblast ruler is a validated instrument outside GTEx and the Stage 2 trajectory is interpretable as a statement about the cells.
+[findings] <repo>\FINDINGS_FIBRO3.md
+====================================================================================================
+FIBRO3 RUN cell=t1  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+====================================================================================================
+FIBRO3 TASK1  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Written **before any joint-cluster age score**, 2026-09-18. Not swept after numbers exist.
+
+JOINT CLUSTERING (code-listed; chosen before looking at any age score):
+- Scope: all cells of one donor, all timepoints concatenated. Donors clustered separately. Never pooled across donors.
+- Genes: frozen-ruler overlap genes with count-sum > 0 (same gene filter as Stage 2 cluster spec in FINDINGS_FIBRO.md).
+- Transform: log1p(CP10k) on those genes. Library size = row sum of the kept overlap genes (Stage 2).
+- Dimensionality: sklearn.decomposition.IncrementalPCA, n_components=20 (or n_cells−1 if smaller), batch_size=2048. IncrementalPCA is the listed method because the concatenated donor matrix is larger than a single timepoint; it is not a post-hoc substitute. Cell order: libraries concatenated in day order 0, 3, 7, 10.
+- Cluster: sklearn.cluster.KMeans(n_clusters=3, random_state=20260914, n_init=10).
+- k=3 is the Stage 2 frozen k, applied jointly so cluster IDs are comparable across days of the same donor. Resolution is k (not a Leiden resolution). Not swept.
+- Seed `20260914`.
+- MIN_CELLS = 20 (prompt minimum) to score age / pluri / extrapolation / random-direction null at a cluster×timepoint. QC (n, fraction, median UMI, median genes, mito fraction) is reported at all n, including n<20.
+
+Written **before any joint-cluster age score**, 2026-09-18. No threshold in this block is re-tuned after numbers exist.
+
+Using the GSE297234 Cell Ranger `filtered_feature_bc_matrix.h5` matrices already on disk. Cluster cells jointly across all timepoints within each donor (not within timepoint). Clustering settings are in `results/fibro3/CLUSTER_SETTINGS.flag` and are listed before any age score.
+
+Per donor × cluster × timepoint report: n cells, fraction of that timepoint's cells, median UMI, median genes, mito fraction, frozen age score, pluripotency−fibroblast score (frozen lists from FINDINGS_FIBRO.md, with and without OSKM-family genes). Frozen ruler `results/fibro/frozen_ruler_ridge_raw.npz` used as-is. Refit nothing. Missing overlap genes left at z=0.
+
+MIN_CELLS = 20. Do not read a d7–d10 trend off a cluster×timepoint with n < 20.
+
+Operational definitions (frozen before any joint-cluster age score):
+- C_ok(donor) = clusters with n ≥ 20 at both d7 and d10.
+- Cluster reverse = age_score(d10) > age_score(d7) (score increased; older on the ruler).
+- Cluster stable_or_decline = age_score(d10) ≤ age_score(d7).
+- High-age cluster at d7 = cluster with n ≥ 20 at d7 and age_score(d7) equal to the maximum among those.
+- Low-age cluster at d7 = cluster with n ≥ 20 at d7 and age_score(d7) equal to the minimum among those.
+- Fraction = n_cells(cluster, day) / n_cells(donor, day). A missing cluster has fraction 0.
+- Mix shift (reversal-direction) = frac(high-age, d10) > frac(high-age, d7) OR frac(low-age, d10) < frac(low-age, d7).
+- Primary reading is the aged donor GM00731. GM23815 is tabulated as a contrast, never pooled, never the reading.
+
+**Pre-registered reading** (only the outcome that fired; d7 is not the Stage 2 endpoint):
+- **Compositional.** Individual clusters' age scores are stable or keep declining from d7 to d10, but the *mix* shifts — a high-age-score cluster grows, or a low-scoring one shrinks or drops out. Then the all-cell reversal is a composition artifact, the same failure mode as the blood result in `FINDINGS_BRAIN_PHASE1.md` §2. Say so in those words.
+- **Cell-intrinsic.** The same cells' clusters individually reverse from d7 to d10. Then reprogramming genuinely pushes cells back along the age axis after d7, and that is a biological claim worth its own test.
+- **Mixed.** Report which clusters do which. Do not average them into one number.
+- **Unresolvable.** Too few cells per cluster × timepoint (threshold 20 cells) to read either way. Say so and stop rather than reading a trend off thin cells.
+
+Firing rule (aged donor only):
+- Unresolvable if C_ok is empty.
+- Cell-intrinsic if C_ok is non-empty AND every cluster in C_ok reverses.
+- Compositional if C_ok is non-empty AND every cluster in C_ok is stable_or_decline AND mix shift is True.
+- Mixed if C_ok is non-empty AND at least one cluster reverses AND at least one does not.
+- If all C_ok are stable_or_decline and mix shift is False: key=`no_listed_bullet`; report the tables; do not invent a fifth story.
+
+Clusters are not lineage-tracked. "The same cells" is an inference from joint cluster identity, not from barcodes.
+
+[task1] Stage 2 sample table columns actually read: ['gsm', 'title', 'source', 'organism', 'molecule', 'description', 'characteristics', 'growth_protocol', 'cell_line', 'cell_type', 'tissue', 'treatment', 'day', 'age_from_characteristics', 'age_from_growth_protocol', 'library_name', 'fields_read', 'age_years', 'age_source'] path=<repo>\results\fibro\stage2_geo_samples.csv
+   h5 GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5 gsm=GSM8986586 size=29369822
+   h5 GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5 gsm=GSM8986587 size=31628640
+   h5 GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5 gsm=GSM8986588 size=36793388
+   h5 GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5 gsm=GSM8986589 size=25597636
+   h5 GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5 gsm=GSM8986590 size=35497718
+   h5 GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5 gsm=GSM8986591 size=36401517
+   h5 GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5 gsm=GSM8986592 size=46693949
+   h5 GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5 gsm=GSM8986593 size=37056455
+[10x] h5 matrices: 8
+   reading GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5
+   GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5: 5021 cells × 36601 genes gsm=GSM8986586 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D0_S2']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5
+   GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5: 6318 cells × 36601 genes gsm=GSM8986587 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D3_S4']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5
+   GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5: 6915 cells × 36601 genes gsm=GSM8986588 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D7_S6']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5
+   GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5: 4399 cells × 36601 genes gsm=GSM8986589 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D10_S8']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5
+   GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5: 7782 cells × 36601 genes gsm=GSM8986590 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D0_S1']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5
+   GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5: 6738 cells × 36601 genes gsm=GSM8986591 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D3_S3']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5
+   GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5: 12209 cells × 36601 genes gsm=GSM8986592 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D7_S5']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5
+   GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5: 7935 cells × 36601 genes gsm=GSM8986593 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D10_S7']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+[meta] GSM8986586 GM00731 day=0 age=96 n_cells=5021 age_source=Series_overall_design
+[meta] GSM8986587 GM00731 day=3 age=96 n_cells=6318 age_source=Series_overall_design
+[meta] GSM8986588 GM00731 day=7 age=96 n_cells=6915 age_source=Series_overall_design
+[meta] GSM8986589 GM00731 day=10 age=96 n_cells=4399 age_source=Series_overall_design
+[meta] GSM8986590 GM23815 day=0 age=22 n_cells=7782 age_source=Series_overall_design
+[meta] GSM8986591 GM23815 day=3 age=22 n_cells=6738 age_source=Series_overall_design
+[meta] GSM8986592 GM23815 day=7 age=22 n_cells=12209 age_source=Series_overall_design
+[meta] GSM8986593 GM23815 day=10 age=22 n_cells=7935 age_source=Series_overall_design
+[task1] loaded 8 libraries
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d0 n_cells=5021 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d3 n_cells=6318 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d7 n_cells=6915 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d10 n_cells=4399 overlap=20452
+[cluster] GM00731 joint n_cells=22653 n_genes_kept=20354 npc=20 batch=2048 k=3 days=[0, 3, 7, 10]
+====================================================================================================
+FIBRO3 RUN cell=t1  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+====================================================================================================
+FIBRO3 TASK1  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Written **before any joint-cluster age score**, 2026-09-18. Not swept after numbers exist.
+
+JOINT CLUSTERING (code-listed; chosen before looking at any age score):
+- Scope: all cells of one donor, all timepoints concatenated. Donors clustered separately. Never pooled across donors.
+- Genes: frozen-ruler overlap genes with count-sum > 0 (same gene filter as Stage 2 cluster spec in FINDINGS_FIBRO.md).
+- Transform: log1p(CP10k) on those genes. Library size = row sum of the kept overlap genes (Stage 2).
+- Dimensionality: sklearn.decomposition.IncrementalPCA, n_components=20 (or n_cells−1 if smaller), batch_size=2048. IncrementalPCA is the listed method because the concatenated donor matrix is larger than a single timepoint; it is not a post-hoc substitute. Cell order: libraries concatenated in day order 0, 3, 7, 10.
+- Cluster: sklearn.cluster.KMeans(n_clusters=3, random_state=20260914, n_init=10).
+- k=3 is the Stage 2 frozen k, applied jointly so cluster IDs are comparable across days of the same donor. Resolution is k (not a Leiden resolution). Not swept.
+- Seed `20260914`.
+- MIN_CELLS = 20 (prompt minimum) to score age / pluri / extrapolation / random-direction null at a cluster×timepoint. QC (n, fraction, median UMI, median genes, mito fraction) is reported at all n, including n<20.
+
+Written **before any joint-cluster age score**, 2026-09-18. No threshold in this block is re-tuned after numbers exist.
+
+Using the GSE297234 Cell Ranger `filtered_feature_bc_matrix.h5` matrices already on disk. Cluster cells jointly across all timepoints within each donor (not within timepoint). Clustering settings are in `results/fibro3/CLUSTER_SETTINGS.flag` and are listed before any age score.
+
+Per donor × cluster × timepoint report: n cells, fraction of that timepoint's cells, median UMI, median genes, mito fraction, frozen age score, pluripotency−fibroblast score (frozen lists from FINDINGS_FIBRO.md, with and without OSKM-family genes). Frozen ruler `results/fibro/frozen_ruler_ridge_raw.npz` used as-is. Refit nothing. Missing overlap genes left at z=0.
+
+MIN_CELLS = 20. Do not read a d7–d10 trend off a cluster×timepoint with n < 20.
+
+Operational definitions (frozen before any joint-cluster age score):
+- C_ok(donor) = clusters with n ≥ 20 at both d7 and d10.
+- Cluster reverse = age_score(d10) > age_score(d7) (score increased; older on the ruler).
+- Cluster stable_or_decline = age_score(d10) ≤ age_score(d7).
+- High-age cluster at d7 = cluster with n ≥ 20 at d7 and age_score(d7) equal to the maximum among those.
+- Low-age cluster at d7 = cluster with n ≥ 20 at d7 and age_score(d7) equal to the minimum among those.
+- Fraction = n_cells(cluster, day) / n_cells(donor, day). A missing cluster has fraction 0.
+- Mix shift (reversal-direction) = frac(high-age, d10) > frac(high-age, d7) OR frac(low-age, d10) < frac(low-age, d7).
+- Primary reading is the aged donor GM00731. GM23815 is tabulated as a contrast, never pooled, never the reading.
+
+**Pre-registered reading** (only the outcome that fired; d7 is not the Stage 2 endpoint):
+- **Compositional.** Individual clusters' age scores are stable or keep declining from d7 to d10, but the *mix* shifts — a high-age-score cluster grows, or a low-scoring one shrinks or drops out. Then the all-cell reversal is a composition artifact, the same failure mode as the blood result in `FINDINGS_BRAIN_PHASE1.md` §2. Say so in those words.
+- **Cell-intrinsic.** The same cells' clusters individually reverse from d7 to d10. Then reprogramming genuinely pushes cells back along the age axis after d7, and that is a biological claim worth its own test.
+- **Mixed.** Report which clusters do which. Do not average them into one number.
+- **Unresolvable.** Too few cells per cluster × timepoint (threshold 20 cells) to read either way. Say so and stop rather than reading a trend off thin cells.
+
+Firing rule (aged donor only):
+- Unresolvable if C_ok is empty.
+- Cell-intrinsic if C_ok is non-empty AND every cluster in C_ok reverses.
+- Compositional if C_ok is non-empty AND every cluster in C_ok is stable_or_decline AND mix shift is True.
+- Mixed if C_ok is non-empty AND at least one cluster reverses AND at least one does not.
+- If all C_ok are stable_or_decline and mix shift is False: key=`no_listed_bullet`; report the tables; do not invent a fifth story.
+
+Clusters are not lineage-tracked. "The same cells" is an inference from joint cluster identity, not from barcodes.
+
+[task1] Stage 2 sample table columns actually read: ['gsm', 'title', 'source', 'organism', 'molecule', 'description', 'characteristics', 'growth_protocol', 'cell_line', 'cell_type', 'tissue', 'treatment', 'day', 'age_from_characteristics', 'age_from_growth_protocol', 'library_name', 'fields_read', 'age_years', 'age_source'] path=<repo>\results\fibro\stage2_geo_samples.csv
+   h5 GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5 gsm=GSM8986586 size=29369822
+   h5 GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5 gsm=GSM8986587 size=31628640
+   h5 GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5 gsm=GSM8986588 size=36793388
+   h5 GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5 gsm=GSM8986589 size=25597636
+   h5 GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5 gsm=GSM8986590 size=35497718
+   h5 GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5 gsm=GSM8986591 size=36401517
+   h5 GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5 gsm=GSM8986592 size=46693949
+   h5 GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5 gsm=GSM8986593 size=37056455
+[10x] h5 matrices: 8
+   reading GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5
+   GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5: 5021 cells × 36601 genes gsm=GSM8986586 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D0_S2']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5
+   GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5: 6318 cells × 36601 genes gsm=GSM8986587 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D3_S4']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5
+   GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5: 6915 cells × 36601 genes gsm=GSM8986588 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D7_S6']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5
+   GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5: 4399 cells × 36601 genes gsm=GSM8986589 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D10_S8']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5
+   GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5: 7782 cells × 36601 genes gsm=GSM8986590 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D0_S1']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5
+   GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5: 6738 cells × 36601 genes gsm=GSM8986591 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D3_S3']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5
+   GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5: 12209 cells × 36601 genes gsm=GSM8986592 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D7_S5']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5
+   GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5: 7935 cells × 36601 genes gsm=GSM8986593 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D10_S7']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+[meta] GSM8986586 GM00731 day=0 age=96 n_cells=5021 age_source=Series_overall_design
+[meta] GSM8986587 GM00731 day=3 age=96 n_cells=6318 age_source=Series_overall_design
+[meta] GSM8986588 GM00731 day=7 age=96 n_cells=6915 age_source=Series_overall_design
+[meta] GSM8986589 GM00731 day=10 age=96 n_cells=4399 age_source=Series_overall_design
+[meta] GSM8986590 GM23815 day=0 age=22 n_cells=7782 age_source=Series_overall_design
+[meta] GSM8986591 GM23815 day=3 age=22 n_cells=6738 age_source=Series_overall_design
+[meta] GSM8986592 GM23815 day=7 age=22 n_cells=12209 age_source=Series_overall_design
+[meta] GSM8986593 GM23815 day=10 age=22 n_cells=7935 age_source=Series_overall_design
+[task1] loaded 8 libraries
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d0 n_cells=5021 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d3 n_cells=6318 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d7 n_cells=6915 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d10 n_cells=4399 overlap=20452
+[cluster] GM00731 joint n_cells=22653 n_genes_kept=20354 npc=20 batch=2048 k=3 days=[0, 3, 7, 10]
+[cluster] GM00731 column subset via CSC
+[cluster] GM00731 Yk shape=(22653, 20354) nnz=86314115
+[cluster] GM00731 IncrementalPCA partial_fit rows 0:2048
+[cluster] GM00731 IncrementalPCA partial_fit rows 2048:4096
+====================================================================================================
+FIBRO3 RUN cell=t1  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+====================================================================================================
+FIBRO3 TASK1  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Written **before any joint-cluster age score**, 2026-09-18. Not swept after numbers exist.
+
+JOINT CLUSTERING (code-listed; chosen before looking at any age score):
+- Scope: all cells of one donor, all timepoints concatenated. Donors clustered separately. Never pooled across donors.
+- Genes: frozen-ruler overlap genes with count-sum > 0 (same gene filter as Stage 2 cluster spec in FINDINGS_FIBRO.md).
+- Transform: log1p(CP10k) on those genes. Library size = row sum of the kept overlap genes (Stage 2).
+- Dimensionality: sklearn.decomposition.PCA(n_components=20, or n_cells−1 if smaller, svd_solver="randomized", random_state=20260914) on float32 log1p(CP10k). Cell order: libraries concatenated in day order 0, 3, 7, 10.
+- Cluster: sklearn.cluster.KMeans(n_clusters=3, random_state=20260914, n_init=10).
+- k=3 is the Stage 2 frozen k, applied jointly so cluster IDs are comparable across days of the same donor. Resolution is k (not a Leiden resolution). Not swept.
+- Seed `20260914`.
+- MIN_CELLS = 20 (prompt minimum) to score age / pluri / extrapolation / random-direction null at a cluster×timepoint. QC (n, fraction, median UMI, median genes, mito fraction) is reported at all n, including n<20.
+
+Amendment, still before any age score: the first listed dimensionality was IncrementalPCA(n_components=20, batch_size=2048). A run reached IncrementalPCA partial_fit on 2048×20354 and did not finish in usable time (~3 min/batch). No cluster labels and no age scores were written. Dimensionality was replaced by randomized PCA on the same matrix, same n_components, same KMeans k. This is not a k/resolution sweep.
+
+Written **before any joint-cluster age score**, 2026-09-18. No threshold in this block is re-tuned after numbers exist.
+
+Using the GSE297234 Cell Ranger `filtered_feature_bc_matrix.h5` matrices already on disk. Cluster cells jointly across all timepoints within each donor (not within timepoint). Clustering settings are in `results/fibro3/CLUSTER_SETTINGS.flag` and are listed before any age score.
+
+Per donor × cluster × timepoint report: n cells, fraction of that timepoint's cells, median UMI, median genes, mito fraction, frozen age score, pluripotency−fibroblast score (frozen lists from FINDINGS_FIBRO.md, with and without OSKM-family genes). Frozen ruler `results/fibro/frozen_ruler_ridge_raw.npz` used as-is. Refit nothing. Missing overlap genes left at z=0.
+
+MIN_CELLS = 20. Do not read a d7–d10 trend off a cluster×timepoint with n < 20.
+
+Operational definitions (frozen before any joint-cluster age score):
+- C_ok(donor) = clusters with n ≥ 20 at both d7 and d10.
+- Cluster reverse = age_score(d10) > age_score(d7) (score increased; older on the ruler).
+- Cluster stable_or_decline = age_score(d10) ≤ age_score(d7).
+- High-age cluster at d7 = cluster with n ≥ 20 at d7 and age_score(d7) equal to the maximum among those.
+- Low-age cluster at d7 = cluster with n ≥ 20 at d7 and age_score(d7) equal to the minimum among those.
+- Fraction = n_cells(cluster, day) / n_cells(donor, day). A missing cluster has fraction 0.
+- Mix shift (reversal-direction) = frac(high-age, d10) > frac(high-age, d7) OR frac(low-age, d10) < frac(low-age, d7).
+- Primary reading is the aged donor GM00731. GM23815 is tabulated as a contrast, never pooled, never the reading.
+
+**Pre-registered reading** (only the outcome that fired; d7 is not the Stage 2 endpoint):
+- **Compositional.** Individual clusters' age scores are stable or keep declining from d7 to d10, but the *mix* shifts — a high-age-score cluster grows, or a low-scoring one shrinks or drops out. Then the all-cell reversal is a composition artifact, the same failure mode as the blood result in `FINDINGS_BRAIN_PHASE1.md` §2. Say so in those words.
+- **Cell-intrinsic.** The same cells' clusters individually reverse from d7 to d10. Then reprogramming genuinely pushes cells back along the age axis after d7, and that is a biological claim worth its own test.
+- **Mixed.** Report which clusters do which. Do not average them into one number.
+- **Unresolvable.** Too few cells per cluster × timepoint (threshold 20 cells) to read either way. Say so and stop rather than reading a trend off thin cells.
+
+Firing rule (aged donor only):
+- Unresolvable if C_ok is empty.
+- Cell-intrinsic if C_ok is non-empty AND every cluster in C_ok reverses.
+- Compositional if C_ok is non-empty AND every cluster in C_ok is stable_or_decline AND mix shift is True.
+- Mixed if C_ok is non-empty AND at least one cluster reverses AND at least one does not.
+- If all C_ok are stable_or_decline and mix shift is False: key=`no_listed_bullet`; report the tables; do not invent a fifth story.
+
+Clusters are not lineage-tracked. "The same cells" is an inference from joint cluster identity, not from barcodes.
+
+[task1] Stage 2 sample table columns actually read: ['gsm', 'title', 'source', 'organism', 'molecule', 'description', 'characteristics', 'growth_protocol', 'cell_line', 'cell_type', 'tissue', 'treatment', 'day', 'age_from_characteristics', 'age_from_growth_protocol', 'library_name', 'fields_read', 'age_years', 'age_source'] path=<repo>\results\fibro\stage2_geo_samples.csv
+   h5 GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5 gsm=GSM8986586 size=29369822
+   h5 GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5 gsm=GSM8986587 size=31628640
+   h5 GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5 gsm=GSM8986588 size=36793388
+   h5 GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5 gsm=GSM8986589 size=25597636
+   h5 GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5 gsm=GSM8986590 size=35497718
+   h5 GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5 gsm=GSM8986591 size=36401517
+   h5 GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5 gsm=GSM8986592 size=46693949
+   h5 GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5 gsm=GSM8986593 size=37056455
+[10x] h5 matrices: 8
+   reading GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5
+   GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5: 5021 cells × 36601 genes gsm=GSM8986586 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D0_S2']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5
+   GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5: 6318 cells × 36601 genes gsm=GSM8986587 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D3_S4']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5
+   GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5: 6915 cells × 36601 genes gsm=GSM8986588 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D7_S6']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5
+   GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5: 4399 cells × 36601 genes gsm=GSM8986589 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D10_S8']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5
+   GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5: 7782 cells × 36601 genes gsm=GSM8986590 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D0_S1']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5
+   GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5: 6738 cells × 36601 genes gsm=GSM8986591 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D3_S3']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5
+   GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5: 12209 cells × 36601 genes gsm=GSM8986592 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D7_S5']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5
+   GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5: 7935 cells × 36601 genes gsm=GSM8986593 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D10_S7']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+[meta] GSM8986586 GM00731 day=0 age=96 n_cells=5021 age_source=Series_overall_design
+[meta] GSM8986587 GM00731 day=3 age=96 n_cells=6318 age_source=Series_overall_design
+[meta] GSM8986588 GM00731 day=7 age=96 n_cells=6915 age_source=Series_overall_design
+[meta] GSM8986589 GM00731 day=10 age=96 n_cells=4399 age_source=Series_overall_design
+[meta] GSM8986590 GM23815 day=0 age=22 n_cells=7782 age_source=Series_overall_design
+[meta] GSM8986591 GM23815 day=3 age=22 n_cells=6738 age_source=Series_overall_design
+[meta] GSM8986592 GM23815 day=7 age=22 n_cells=12209 age_source=Series_overall_design
+[meta] GSM8986593 GM23815 day=10 age=22 n_cells=7935 age_source=Series_overall_design
+[task1] loaded 8 libraries
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d0 n_cells=5021 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d3 n_cells=6318 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d7 n_cells=6915 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d10 n_cells=4399 overlap=20452
+[cluster] GM00731 joint n_cells=22653 n_genes_kept=20354 npc=20 k=3 days=[0, 3, 7, 10] pca=randomized
+[cluster] GM00731 column subset via CSC
+[cluster] GM00731 Yk shape=(22653, 20354) nnz=86314115
+[cluster] GM00731 log1p-CP10k dense (22653, 20354) dtype=float32
+[cluster] GM00731 PCA done explained_variance_ratio_sum=0.2566
+[cluster] GM00731 joint sizes=[12039, 2570, 8044] inertia=6.659e+06
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM23815 d0 n_cells=7782 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM23815 d3 n_cells=6738 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM23815 d7 n_cells=12209 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM23815 d10 n_cells=7935 overlap=20452
+[cluster] GM23815 joint n_cells=34664 n_genes_kept=20350 npc=20 k=3 days=[0, 3, 7, 10] pca=randomized
+[cluster] GM23815 column subset via CSC
+[cluster] GM23815 Yk shape=(34664, 20350) nnz=108242487
+[cluster] GM23815 log1p-CP10k dense (34664, 20350) dtype=float32
+[cluster] GM23815 PCA done explained_variance_ratio_sum=0.1988
+[cluster] GM23815 joint sizes=[16115, 3085, 15464] inertia=8.592e+06
+[cluster] n clusters per donor (k-means k): {'GM00731': 3, 'GM23815': 3}
+[prereg] wrote <repo>\results\fibro3\DECLARED_BEFORE_SCORES.flag after clustering, before scoring
+[tmm t1_joint_cluster] n_samples=23 n_genes=23485 nf_median=0.9603 prior.count=2
+[score] missing-gene columns set to z=0: 3086
+[pluri endogenous] requested=['POU5F1', 'NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=3 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[pluri endogenous_noOSKM] requested=['NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=2 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[t1 reading] key=cell_intrinsic Cell-intrinsic. The same cells' clusters individually reverse from d7 to d10. Then reprogramming genuinely pushes cells back along the age axis after d7, and that is a biological claim worth its own test. clusters=[0, 1, 2].
+[findings] <repo>\FINDINGS_FIBRO3.md
+====================================================================================================
+FIBRO3 RUN cell=t1  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+====================================================================================================
+FIBRO3 TASK1  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Written **before any joint-cluster age score**, 2026-09-18. Not swept after numbers exist.
+
+JOINT CLUSTERING (code-listed; chosen before looking at any age score):
+- Scope: all cells of one donor, all timepoints concatenated. Donors clustered separately. Never pooled across donors.
+- Genes: frozen-ruler overlap genes with count-sum > 0 (same gene filter as Stage 2 cluster spec in FINDINGS_FIBRO.md).
+- Transform: log1p(CP10k) on those genes. Library size = row sum of the kept overlap genes (Stage 2).
+- Dimensionality: sklearn.decomposition.PCA(n_components=20, or n_cells−1 if smaller, svd_solver="randomized", random_state=20260914) on float32 log1p(CP10k). Cell order: libraries concatenated in day order 0, 3, 7, 10.
+- Cluster: sklearn.cluster.KMeans(n_clusters=3, random_state=20260914, n_init=10).
+- k=3 is the Stage 2 frozen k, applied jointly so cluster IDs are comparable across days of the same donor. Resolution is k (not a Leiden resolution). Not swept.
+- Seed `20260914`.
+- MIN_CELLS = 20 (prompt minimum) to score age / pluri / extrapolation / random-direction null at a cluster×timepoint. QC (n, fraction, median UMI, median genes, mito fraction) is reported at all n, including n<20.
+
+Amendment, still before any age score: the first listed dimensionality was IncrementalPCA(n_components=20, batch_size=2048). A run reached IncrementalPCA partial_fit on 2048×20354 and did not finish in usable time (~3 min/batch). No cluster labels and no age scores were written. Dimensionality was replaced by randomized PCA on the same matrix, same n_components, same KMeans k. This is not a k/resolution sweep.
+
+Written **before any joint-cluster age score**, 2026-09-18. No threshold in this block is re-tuned after numbers exist.
+
+Using the GSE297234 Cell Ranger `filtered_feature_bc_matrix.h5` matrices already on disk. Cluster cells jointly across all timepoints within each donor (not within timepoint). Clustering settings are in `results/fibro3/CLUSTER_SETTINGS.flag` and are listed before any age score.
+
+Per donor × cluster × timepoint report: n cells, fraction of that timepoint's cells, median UMI, median genes, mito fraction, frozen age score, pluripotency−fibroblast score (frozen lists from FINDINGS_FIBRO.md, with and without OSKM-family genes). Frozen ruler `results/fibro/frozen_ruler_ridge_raw.npz` used as-is. Refit nothing. Missing overlap genes left at z=0.
+
+MIN_CELLS = 20. Do not read a d7–d10 trend off a cluster×timepoint with n < 20.
+
+Operational definitions (frozen before any joint-cluster age score):
+- C_ok(donor) = clusters with n ≥ 20 at both d7 and d10.
+- Cluster reverse = age_score(d10) > age_score(d7) (score increased; older on the ruler).
+- Cluster stable_or_decline = age_score(d10) ≤ age_score(d7).
+- High-age cluster at d7 = cluster with n ≥ 20 at d7 and age_score(d7) equal to the maximum among those.
+- Low-age cluster at d7 = cluster with n ≥ 20 at d7 and age_score(d7) equal to the minimum among those.
+- Fraction = n_cells(cluster, day) / n_cells(donor, day). A missing cluster has fraction 0.
+- Mix shift (reversal-direction) = frac(high-age, d10) > frac(high-age, d7) OR frac(low-age, d10) < frac(low-age, d7).
+- Primary reading is the aged donor GM00731. GM23815 is tabulated as a contrast, never pooled, never the reading.
+
+**Pre-registered reading** (only the outcome that fired; d7 is not the Stage 2 endpoint):
+- **Compositional.** Individual clusters' age scores are stable or keep declining from d7 to d10, but the *mix* shifts — a high-age-score cluster grows, or a low-scoring one shrinks or drops out. Then the all-cell reversal is a composition artifact, the same failure mode as the blood result in `FINDINGS_BRAIN_PHASE1.md` §2. Say so in those words.
+- **Cell-intrinsic.** The same cells' clusters individually reverse from d7 to d10. Then reprogramming genuinely pushes cells back along the age axis after d7, and that is a biological claim worth its own test.
+- **Mixed.** Report which clusters do which. Do not average them into one number.
+- **Unresolvable.** Too few cells per cluster × timepoint (threshold 20 cells) to read either way. Say so and stop rather than reading a trend off thin cells.
+
+Firing rule (aged donor only):
+- Unresolvable if C_ok is empty.
+- Cell-intrinsic if C_ok is non-empty AND every cluster in C_ok reverses.
+- Compositional if C_ok is non-empty AND every cluster in C_ok is stable_or_decline AND mix shift is True.
+- Mixed if C_ok is non-empty AND at least one cluster reverses AND at least one does not.
+- If all C_ok are stable_or_decline and mix shift is False: key=`no_listed_bullet`; report the tables; do not invent a fifth story.
+
+Clusters are not lineage-tracked. "The same cells" is an inference from joint cluster identity, not from barcodes.
+
+[task1] Stage 2 sample table columns actually read: ['gsm', 'title', 'source', 'organism', 'molecule', 'description', 'characteristics', 'growth_protocol', 'cell_line', 'cell_type', 'tissue', 'treatment', 'day', 'age_from_characteristics', 'age_from_growth_protocol', 'library_name', 'fields_read', 'age_years', 'age_source'] path=<repo>\results\fibro\stage2_geo_samples.csv
+   h5 GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5 gsm=GSM8986586 size=29369822
+   h5 GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5 gsm=GSM8986587 size=31628640
+   h5 GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5 gsm=GSM8986588 size=36793388
+   h5 GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5 gsm=GSM8986589 size=25597636
+   h5 GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5 gsm=GSM8986590 size=35497718
+   h5 GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5 gsm=GSM8986591 size=36401517
+   h5 GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5 gsm=GSM8986592 size=46693949
+   h5 GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5 gsm=GSM8986593 size=37056455
+[10x] h5 matrices: 8
+   reading GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5
+   GSM8986586_GM00731_D0_filtered_feature_bc_matrix.h5: 5021 cells × 36601 genes gsm=GSM8986586 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D0_S2']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5
+   GSM8986587_GM00731_D3_filtered_feature_bc_matrix.h5: 6318 cells × 36601 genes gsm=GSM8986587 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D3_S4']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5
+   GSM8986588_GM00731_D7_filtered_feature_bc_matrix.h5: 6915 cells × 36601 genes gsm=GSM8986588 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D7_S6']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5
+   GSM8986589_GM00731_D10_filtered_feature_bc_matrix.h5: 4399 cells × 36601 genes gsm=GSM8986589 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM00731_D10_S8']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5
+   GSM8986590_GM23815_D0_filtered_feature_bc_matrix.h5: 7782 cells × 36601 genes gsm=GSM8986590 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D0_S1']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5
+   GSM8986591_GM23815_D3_filtered_feature_bc_matrix.h5: 6738 cells × 36601 genes gsm=GSM8986591 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D3_S3']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5
+   GSM8986592_GM23815_D7_filtered_feature_bc_matrix.h5: 12209 cells × 36601 genes gsm=GSM8986592 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D7_S5']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+   reading GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5
+   GSM8986593_GM23815_D10_filtered_feature_bc_matrix.h5: 7935 cells × 36601 genes gsm=GSM8986593 chemistry=Single Cell 3' v3 software=cellranger-7.1.0 library_ids=['GM23815_D10_S7']
+   columns actually read: matrix/barcodes, matrix/data, matrix/indices, matrix/indptr, matrix/shape, matrix/features/id, matrix/features/name, matrix/features/feature_type, matrix/features/genome, attrs chemistry_description/software_version/library_ids
+[meta] GSM8986586 GM00731 day=0 age=96 n_cells=5021 age_source=Series_overall_design
+[meta] GSM8986587 GM00731 day=3 age=96 n_cells=6318 age_source=Series_overall_design
+[meta] GSM8986588 GM00731 day=7 age=96 n_cells=6915 age_source=Series_overall_design
+[meta] GSM8986589 GM00731 day=10 age=96 n_cells=4399 age_source=Series_overall_design
+[meta] GSM8986590 GM23815 day=0 age=22 n_cells=7782 age_source=Series_overall_design
+[meta] GSM8986591 GM23815 day=3 age=22 n_cells=6738 age_source=Series_overall_design
+[meta] GSM8986592 GM23815 day=7 age=22 n_cells=12209 age_source=Series_overall_design
+[meta] GSM8986593 GM23815 day=10 age=22 n_cells=7935 age_source=Series_overall_design
+[task1] loaded 8 libraries
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d0 n_cells=5021 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d3 n_cells=6318 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d7 n_cells=6915 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM00731 d10 n_cells=4399 overlap=20452
+[cluster] GM00731 joint n_cells=22653 n_genes_kept=20354 npc=20 k=3 days=[0, 3, 7, 10] pca=randomized
+[cluster] GM00731 column subset via CSC
+[cluster] GM00731 Yk shape=(22653, 20354) nnz=86314115
+[cluster] GM00731 log1p-CP10k dense (22653, 20354) dtype=float32
+[cluster] GM00731 PCA done explained_variance_ratio_sum=0.2566
+[cluster] GM00731 joint sizes=[12039, 2570, 8044] inertia=6.659e+06
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM23815 d0 n_cells=7782 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM23815 d3 n_cells=6738 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM23815 d7 n_cells=12209 overlap=20452
+[align] ruler_genes=23485 overlap=20452 (ensembl=20443 symbol_fallback=9) missing=3033
+[cluster-align] GM23815 d10 n_cells=7935 overlap=20452
+[cluster] GM23815 joint n_cells=34664 n_genes_kept=20350 npc=20 k=3 days=[0, 3, 7, 10] pca=randomized
+[cluster] GM23815 column subset via CSC
+[cluster] GM23815 Yk shape=(34664, 20350) nnz=108242487
+[cluster] GM23815 log1p-CP10k dense (34664, 20350) dtype=float32
+[cluster] GM23815 PCA done explained_variance_ratio_sum=0.1988
+[cluster] GM23815 joint sizes=[16115, 3085, 15464] inertia=8.592e+06
+[cluster] n clusters per donor (k-means k): {'GM00731': 3, 'GM23815': 3}
+[prereg] DECLARED_BEFORE_SCORES.flag already exists; not rewriting
+[tmm t1_joint_cluster] n_samples=23 n_genes=23485 nf_median=0.9603 prior.count=2
+[score] missing-gene columns set to z=0: 3086
+[pluri endogenous] requested=['POU5F1', 'NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=3 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[pluri endogenous_noOSKM] requested=['NANOG', 'LIN28A', 'SALL4', 'DPPA4', 'ZFP42', 'DNMT3B'] mapped=2 missing=['NANOG', 'LIN28A', 'DPPA4', 'ZFP42']
+[pluri fibro_identity] requested=['COL1A1', 'COL1A2', 'THY1', 'S100A4', 'FN1', 'VIM', 'POSTN'] mapped=7 missing=[]
+[t1 reading] key=cell_intrinsic Cell-intrinsic. The same cells' clusters individually reverse from d7 to d10. Then reprogramming genuinely pushes cells back along the age axis after d7, and that is a biological claim worth its own test. clusters=[0, 1, 2].
+[findings] <repo>\FINDINGS_FIBRO3.md
+====================================================================================================
+FIBRO3 RUN cell=t2  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+====================================================================================================
+FIBRO3 TASK2  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Written **before any Task 2 distance or correlation**, 2026-09-18.
+
+Report-only, no gate. Per donor × cluster × timepoint with n ≥ 20, report extrapolation distance to the GTEx fibroblast training distribution: PCA k=50 nearest-neighbour Euclidean and Mahalanobis, same measures as FINDINGS_FIBRO2.md. Missing overlap genes at z=0. Frozen ruler used as-is.
+
+Then Spearman ρ, across all donor × cluster × timepoint rows with n ≥ 20, between each distance and frozen age score. Donor-level permutation is not the unit here (the unit is a cluster×timepoint pseudobulk). Permutation null: shuffle age scores, n_perm=200, seed `20260914`. Bootstrap 95% percentile CI on the rows, B=200, seed `20260918`. Per-donor ρ is reported and is not averaged. Uncalibrated R² reported, never a gate.
+
+If age score rises with distance from the training distribution, the ruler is being read outside its calibrated region and the d10 value is an extrapolation artifact rather than a measurement. State this as an observation with its correlation and CI. It is not a gate and does not overturn any verdict.
+
+[task2] GTEx pack X shape=(652, 23485) obs columns actually read: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[task2] GTEx train z n=652 p=23485
+[task2] PCA k=50
+[task2] t1_cluster_z keys actually read: ['Z', 'age', 'pluri_with', 'pluri_without', 'counts', 'logcpm', 'missing', 'cell_line', 'day', 'cluster', 'n_cells', 'below_min_cells']
+[task2] t1_cluster_table columns actually read: ['cell_line', 'day', 'cluster', 'age_years', 'gsm', 'age_source', 'n_cells', 'n_timepoint', 'frac_timepoint', 'median_UMI', 'median_genes', 'mito_frac_median_cell', 'below_min_cells', 'age_score', 'pluri_with_OSKM', 'pluri_without_OSKM', 'pluri_primary', 'pluri_primary_name']
+[task2] nn_euclidean ρ=-0.625 null=+0.014 p=+1.000 CI=[-0.834, -0.320] age_rises_with_distance=False n=22
+[task2] GM00731 nn_euclidean ρ=-0.782 CI=[-0.972, -0.486] n=11
+[task2] GM23815 nn_euclidean ρ=-0.809 CI=[-0.981, -0.424] n=11
+[task2] mahalanobis_pca ρ=-0.572 null=+0.019 p=+0.990 CI=[-0.772, -0.253] age_rises_with_distance=False n=22
+[task2] GM00731 mahalanobis_pca ρ=-0.891 CI=[-1.000, -0.654] n=11
+[task2] GM23815 mahalanobis_pca ρ=-0.773 CI=[-0.944, -0.360] n=11
+[findings] <repo>\FINDINGS_FIBRO3.md
+====================================================================================================
+FIBRO3 RUN cell=t3  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+====================================================================================================
+FIBRO3 TASK3  seed=20260914  boot_seed=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+Frozen ruler: <repo>\results\fibro\frozen_ruler_ridge_raw.npz exists=True
+Primary metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+Refit nothing. Do not open GSE325735. Do not promote d7 to the Stage 2 endpoint.
+d7 was not the pre-registered Stage 2 endpoint. Nothing in this prompt may promote d7 to the primary result. The pre-registered d0→d10 verdict stands as written in `FINDINGS_FIBRO.md`. This prompt characterizes the trajectory; it does not re-decide it.
+Fail loudly: no substitute columns, no inferred ages, no silent coerce.
+Written **before any per-cluster random-direction p**, 2026-09-18.
+
+For each donor × cluster with ≥20 cells at both endpoints, rerun the pre-registered random-direction null (200 permuted-weight directions, seed `20260914`) on d0→d7 and d0→d10 separately. Endpoint decline = age_score(day 0) − age_score(day T). Positive = younger on the ruler. Empirical p = (n_random ≥ real + 1) / (n_random + 1). Joint cluster IDs pair the same cluster across days (not size-rank). Do not average clusters or donors. d7 is not the Stage 2 endpoint.
+
+[task3] t1_cluster_z keys actually read: ['Z', 'age', 'pluri_with', 'pluri_without', 'counts', 'logcpm', 'missing', 'cell_line', 'day', 'cluster', 'n_cells', 'below_min_cells']
+[task3] t1_cluster_table columns actually read: ['cell_line', 'day', 'cluster', 'age_years', 'gsm', 'age_source', 'n_cells', 'n_timepoint', 'frac_timepoint', 'median_UMI', 'median_genes', 'mito_frac_median_cell', 'below_min_cells', 'age_score', 'pluri_with_OSKM', 'pluri_without_OSKM', 'pluri_primary', 'pluri_primary_name']
+[task3] random directions n=200 seed=20260914 Z=(23, 23485)
+[task3] GM00731 c0 d0→d7 decline=-0.5820 p=+0.652 n_ge=130/200 n0=4941 n1=2719
+[task3] GM00731 c0 d0→d10 decline=-4.3711 p=+1.000 n_ge=200/200 n0=4941 n1=3431
+[task3] GM00731 c1 d0→d7 decline=+2.2151 p=+0.144 n_ge=28/200 n0=76 n1=850
+[task3] GM00731 c1 d0→d10 decline=-5.4143 p=+0.881 n_ge=176/200 n0=76 n1=698
+[task3] skip GM00731 c2 d0→d7: n0=4 n1=3346 < 20
+[task3] skip GM00731 c2 d0→d10: n0=4 n1=270 < 20
+[task3] skip GM23815 c0 d0→d7: missing row
+[task3] skip GM23815 c0 d0→d10: missing row
+[task3] GM23815 c1 d0→d7 decline=+6.6780 p=+0.020 n_ge=3/200 n0=68 n1=1662
+[task3] GM23815 c1 d0→d10 decline=+1.7239 p=+0.174 n_ge=34/200 n0=68 n1=761
+[task3] GM23815 c2 d0→d7 decline=+2.9154 p=+0.005 n_ge=0/200 n0=7714 n1=3418
+[task3] GM23815 c2 d0→d10 decline=-0.9114 p=+0.746 n_ge=149/200 n0=7714 n1=3646
+[findings] <repo>\FINDINGS_FIBRO3.md

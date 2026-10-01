@@ -1,0 +1,2 @@
+name,dataset_id,tissue,n_donors,n_batches,batch_column,batch_usable,r2_age_batch,r2_depth_batch,r_age_depth_pooled,r_age_depth_between,r_age_depth_within,age_min,age_max,n_cell_types,n_pseudobulks
+retina_sc,be41a86a-b606-4b1c-8055-32f334898775,retina,16,3,tissue,True,0.1895316804407713,0.013081054842656203,0.16517531607596916,0.9985235582375096,0.08065368709245004,42.0,89.0,8,105

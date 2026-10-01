@@ -1,0 +1,334 @@
+{
+ "seed": 20260914,
+ "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11",
+ "n_types_ok": 20,
+ "n_genes": 25526,
+ "pairwise_median_deg": 86.01445116989976,
+ "pairwise_null_mean": 85.7566150172983,
+ "p_pairwise": 0.7254901960784313,
+ "shared_pc1_frac": 0.17328842367104877,
+ "pc1_null_mean": 0.16222207323591534,
+ "p_pc1": 0.0392156862745098,
+ "n_perm_pair": 50,
+ "joint_median_angle_to_types": 72.0404897286554,
+ "joint_norm_retained": 0.9966579193422725,
+ "v3c": {
+  "loso": {
+   "scheme": "loso",
+   "own_primary_r2": -0.07707800725517489,
+   "cons_primary_r2": -0.14699689725068255,
+   "cons_null_mean": -1.0059384778890392,
+   "cons_p": 0.047619047619047616,
+   "cons_null_p95": -0.7312157890499111,
+   "n_perm": 20,
+   "median_loss": 0.17417635085963445,
+   "median_ratio": 0.5896655255781693,
+   "fold_mean_pc1": 0.17053649734086204,
+   "per_type": [
+    {
+     "celltype": "GABAergic neuron",
+     "r2_own": -0.3560351464767939,
+     "r2_consensus": -0.19481613716361945,
+     "loss": -0.16121900931317446,
+     "ratio": 0.5471823191936401
+    },
+    {
+     "celltype": "L2/3 intratelencephalic projecting glutamatergic neuron",
+     "r2_own": 0.607051862899453,
+     "r2_consensus": 0.38374706536748315,
+     "loss": 0.22330479753196986,
+     "ratio": 0.6321487319626986
+    },
+    {
+     "celltype": "L2/3-6 intratelencephalic projecting glutamatergic neuron",
+     "r2_own": 0.3412742463601225,
+     "r2_consensus": 0.21622634217282344,
+     "loss": 0.12504790418729905,
+     "ratio": 0.633585289481982
+    },
+    {
+     "celltype": "L5/6 near-projecting glutamatergic neuron",
+     "r2_own": -0.3647269010712806,
+     "r2_consensus": -0.018221737404194194,
+     "loss": -0.3465051636670864,
+     "ratio": 0.049959949076070535
+    },
+    {
+     "celltype": "L6 corticothalamic-projecting glutamatergic cortical neuron",
+     "r2_own": 0.027326002158938545,
+     "r2_consensus": 0.21323085360189153,
+     "loss": -0.185904851442953,
+     "ratio": 7.803221721262365
+    },
+    {
+     "celltype": "L6 intratelencephalic projecting glutamatergic neuron",
+     "r2_own": 0.07906349267368595,
+     "r2_consensus": 0.26940591922358303,
+     "loss": -0.19034242654989708,
+     "ratio": 3.407462915096428
+    },
+    {
+     "celltype": "L6b glutamatergic neuron of the primary motor cortex",
+     "r2_own": -0.23862387517811423,
+     "r2_consensus": 0.23795540092736533,
+     "loss": -0.47657927610547957,
+     "ratio": -0.9971986279652447
+    },
+    {
+     "celltype": "VIP GABAergic interneuron",
+     "r2_own": -0.07223522784939918,
+     "r2_consensus": -0.026778720985475957,
+     "loss": -0.04545650686392322,
+     "ratio": 0.37071553288799786
+    },
+    {
+     "celltype": "astrocyte",
+     "r2_own": 0.33398004751293386,
+     "r2_consensus": -0.2012097351810327,
+     "loss": 0.5351897826939666,
+     "ratio": -0.6024603465967246
+    },
+    {
+     "celltype": "endothelial cell",
+     "r2_own": -0.48190261472617646,
+     "r2_consensus": -1.3218347389965337,
+     "loss": 0.8399321242703572,
+     "ratio": 2.742949921007625
+    },
+    {
+     "celltype": "lamp5 GABAergic interneuron",
+     "r2_own": -0.2085999897403159,
+     "r2_consensus": -0.09917765733774564,
+     "loss": -0.10942233240257027,
+     "ratio": 0.47544421004627535
+    },
+    {
+     "celltype": "microglial cell",
+     "r2_own": -0.0819207866609506,
+     "r2_consensus": -0.7553215934916895,
+     "loss": 0.6734008068307389,
+     "ratio": 9.22014575638506
+    },
+    {
+     "celltype": "oligodendrocyte",
+     "r2_own": 0.23212437123025964,
+     "r2_consensus": -0.4346078076994977,
+     "loss": 0.6667321789297573,
+     "ratio": -1.8723058048410661
+    },
+    {
+     "celltype": "oligodendrocyte precursor cell",
+     "r2_own": 0.2443876506742786,
+     "r2_consensus": -0.3496545104458555,
+     "loss": 0.5940421611201341,
+     "ratio": -1.4307372303025132
+    },
+    {
+     "celltype": "pericyte",
+     "r2_own": -0.5637002921648888,
+     "r2_consensus": -1.0705241238638887,
+     "loss": 0.5068238316989999,
+     "ratio": 1.8991015948431478
+    },
+    {
+     "celltype": "perivascular macrophage",
+     "r2_own": -1.7635678157681838,
+     "r2_consensus": -2.0714929032227967,
+     "loss": 0.3079250874546129,
+     "ratio": 1.174603485446623
+    },
+    {
+     "celltype": "pvalb GABAergic interneuron",
+     "r2_own": 0.020935246750667713,
+     "r2_consensus": -0.08814848894751881,
+     "loss": 0.10908373569818652,
+     "ratio": -4.210530212389657
+    },
+    {
+     "celltype": "smooth muscle cell",
+     "r2_own": -0.41422957992439446,
+     "r2_consensus": -3.077047597721104,
+     "loss": 2.6628180177967096,
+     "ratio": 7.428362789259833
+    },
+    {
+     "celltype": "sst GABAergic interneuron",
+     "r2_own": 0.04659999442020779,
+     "r2_consensus": 0.01823552471108325,
+     "loss": 0.02836446970912454,
+     "ratio": 0.3913203196259511
+    },
+    {
+     "celltype": "vascular leptomeningeal cell",
+     "r2_own": -0.656765239014254,
+     "r2_consensus": -1.330878175741018,
+     "loss": 0.674112936726764,
+     "ratio": 2.0264138487879584
+    }
+   ]
+  },
+  "within_site": {
+   "scheme": "within_site",
+   "own_primary_r2": 0.23066389475266602,
+   "cons_primary_r2": 0.0998026490898897,
+   "cons_null_mean": -0.3317169902585414,
+   "cons_p": 0.047619047619047616,
+   "cons_null_p95": -0.2166250925312071,
+   "n_perm": 20,
+   "median_loss": 0.14436532693644064,
+   "median_ratio": 0.6195814740760646,
+   "fold_mean_pc1": 0.17439786266133825,
+   "per_type": [
+    {
+     "celltype": "GABAergic neuron",
+     "r2_own": 0.17286383389644777,
+     "r2_consensus": 0.16833669830431863,
+     "loss": 0.004527135592129139,
+     "ratio": 0.9738109731221103
+    },
+    {
+     "celltype": "L2/3 intratelencephalic projecting glutamatergic neuron",
+     "r2_own": 0.5934798273241109,
+     "r2_consensus": 0.3644909591951154,
+     "loss": 0.22898886812899544,
+     "ratio": 0.6141589695449915
+    },
+    {
+     "celltype": "L2/3-6 intratelencephalic projecting glutamatergic neuron",
+     "r2_own": 0.5818934420650327,
+     "r2_consensus": 0.3728664731174231,
+     "loss": 0.20902696894760958,
+     "ratio": 0.6407813633269154
+    },
+    {
+     "celltype": "L5/6 near-projecting glutamatergic neuron",
+     "r2_own": 0.05894671839198945,
+     "r2_consensus": 0.1035990691284584,
+     "loss": -0.04465235073646895,
+     "ratio": 1.7575035889111847
+    },
+    {
+     "celltype": "L6 corticothalamic-projecting glutamatergic cortical neuron",
+     "r2_own": 0.2000835594524672,
+     "r2_consensus": 0.2383495027132927,
+     "loss": -0.0382659432608255,
+     "ratio": 1.1912498126559776
+    },
+    {
+     "celltype": "L6 intratelencephalic projecting glutamatergic neuron",
+     "r2_own": 0.27063407114488003,
+     "r2_consensus": 0.16914737121219714,
+     "loss": 0.10148669993268289,
+     "ratio": 0.6250039786071375
+    },
+    {
+     "celltype": "L6b glutamatergic neuron of the primary motor cortex",
+     "r2_own": 0.043068683347744996,
+     "r2_consensus": 0.10487370793449946,
+     "loss": -0.061805024586754465,
+     "ratio": 2.4350339918155512
+    },
+    {
+     "celltype": "VIP GABAergic interneuron",
+     "r2_own": 0.29372617325546135,
+     "r2_consensus": 0.1676152771502757,
+     "loss": 0.12611089610518567,
+     "ratio": 0.5706514856764102
+    },
+    {
+     "celltype": "astrocyte",
+     "r2_own": 0.42700981112480085,
+     "r2_consensus": -0.010171074783366096,
+     "loss": 0.43718088590816695,
+     "ratio": -0.023819299974804156
+    },
+    {
+     "celltype": "endothelial cell",
+     "r2_own": 0.08464430942239842,
+     "r2_consensus": -0.2055017010036112,
+     "loss": 0.2901460104260096,
+     "ratio": -2.4278265415115046
+    },
+    {
+     "celltype": "lamp5 GABAergic interneuron",
+     "r2_own": 0.14916480138777466,
+     "r2_consensus": 0.096006229051321,
+     "loss": 0.05315857233645366,
+     "ratio": 0.6436252263142124
+    },
+    {
+     "celltype": "microglial cell",
+     "r2_own": 0.27734760248596996,
+     "r2_consensus": -0.1947521709106439,
+     "loss": 0.47209977339661385,
+     "ratio": -0.7021952566562955
+    },
+    {
+     "celltype": "oligodendrocyte",
+     "r2_own": 0.4403961224434556,
+     "r2_consensus": -0.01245280654221076,
+     "loss": 0.45284892898566637,
+     "ratio": -0.028276376442913913
+    },
+    {
+     "celltype": "oligodendrocyte precursor cell",
+     "r2_own": 0.3385798574333196,
+     "r2_consensus": -0.09518129794230223,
+     "loss": 0.4337611553756218,
+     "ratio": -0.2811191978868601
+    },
+    {
+     "celltype": "pericyte",
+     "r2_own": -0.01655130403474081,
+     "r2_consensus": -0.028084310940441393,
+     "loss": 0.011533006905700582,
+     "ratio": 1.6968035196195457
+    },
+    {
+     "celltype": "perivascular macrophage",
+     "r2_own": -0.06370741470893315,
+     "r2_consensus": -0.001529784217708885,
+     "loss": -0.06217763049122427,
+     "ratio": 0.02401265574341971
+    },
+    {
+     "celltype": "pvalb GABAergic interneuron",
+     "r2_own": 0.26124423005286485,
+     "r2_consensus": 0.12859599659441495,
+     "loss": 0.1326482334584499,
+     "ratio": 0.49224435145760936
+    },
+    {
+     "celltype": "smooth muscle cell",
+     "r2_own": -0.10731516645972872,
+     "r2_consensus": -0.272502691035885,
+     "loss": 0.16518752457615626,
+     "ratio": 2.53927473651308
+    },
+    {
+     "celltype": "sst GABAergic interneuron",
+     "r2_own": 0.391582303786895,
+     "r2_consensus": 0.23549988337246364,
+     "loss": 0.15608242041443138,
+     "ratio": 0.6014058375340328
+    },
+    {
+     "celltype": "vascular leptomeningeal cell",
+     "r2_own": -0.0777335261721619,
+     "r2_consensus": -0.2968287817624008,
+     "loss": 0.2190952555902389,
+     "ratio": 3.818542608050396
+    }
+   ]
+  }
+ },
+ "verdict": "b",
+ "verdict_text": "Type-specific targets \u2014 consensus loses most of the signal. There is no universal rejuvenation direction in cortex; interventions would have to be cell-type-specific.",
+ "verdict_flags": {
+  "ratio": 0.4326756434807671,
+  "loss": 0.14436532693644064,
+  "near": false,
+  "lost": true,
+  "cons_above_null": true
+ }
+}

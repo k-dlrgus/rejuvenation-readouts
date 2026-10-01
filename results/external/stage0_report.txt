@@ -1,0 +1,111 @@
+====================================================================================================
+EXTERNAL Stage 0 — SEA-AD MTG metadata and subclass mapping  seed=20260914  seaad_dataset_id=c2876b1b-06d8-4d96-a56b-5304f815b99a
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO perturbation data. No TF Atlas. No candidate interventions.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+Fail loudly: no substitute columns, no invented cell-type synonyms.
+Cohort: Whole Taxonomy - MTG: Seattle Alzheimer's Disease Atlas (SEA-AD)
+Pass bar: r > 0 with permutation-null r ≤ 0.05 in the primary (no/low pathology) cell.
+n_perm=200  n_boot=200  bootstrap seed=20260918
+[dlpfc] 20 cell types from brain_aging_phase1_obs.csv  donors=233
+[cxg] fetched table title=Whole Taxonomy - MTG: Seattle Alzheimer's Disease Atlas (SEA-AD)
+[cxg] fetched table url=https://datasets.cellxgene.cziscience.com/732b4aa7-e441-4196-b05e-127433425613.h5ad
+[cxg] GET https://api.cellxgene.cziscience.com/curation/v1/collections/1ca90a2d-2943-483d-b678-b809bf464c30
+[cxg] title=Whole Taxonomy - MTG: Seattle Alzheimer's Disease Atlas (SEA-AD)
+[cxg] cells=1378211  donors_api=89  types_api=18
+[cxg] tissues=['middle temporal gyrus']  diseases=['dementia', 'normal']
+[cxg] h5ad_url=https://datasets.cellxgene.cziscience.com/732b4aa7-e441-4196-b05e-127433425613.h5ad
+[cxg] h5ad_bytes=50775398656
+[meta] GET https://brain-map.org/consortia/sea-ad/our-data
+[meta] donor-metadata xlsx hrefs: ['https://cdn.prod.website-files.com/689cfbd308fa7373b604d290/68debdfdd1b8e9f8fd64dab0_sea-ad_cohort_donor_metadata_072524.xlsx']
+[download] donor metadata: https://cdn.prod.website-files.com/689cfbd308fa7373b604d290/68debdfdd1b8e9f8fd64dab0_sea-ad_cohort_donor_metadata_072524.xlsx
+[download] wrote <repo>\data\raw\seaad_mtg\68debdfdd1b8e9f8fd64dab0_sea-ad_cohort_donor_metadata_072524.xlsx size=45189
+[read] 68debdfdd1b8e9f8fd64dab0_sea-ad_cohort_donor_metadata_072524.xlsx: rows=84 cols=66
+[read] 68debdfdd1b8e9f8fd64dab0_sea-ad_cohort_donor_metadata_072524.xlsx columns actually read (66): ['Donor ID', 'Primary Study Name', 'Secondary Study Name', 'Age at Death', 'Sex', 'Race (choice=White)', 'Race (choice=Black/ African American)', 'Race (choice=Asian)', 'Race (choice=American Indian/ Alaska Native)', 'Race (choice=Native Hawaiian or Pacific Islander)', 'Race (choice=Unknown or unreported)', 'Race (choice=Other)', 'specify other race', 'Hispanic/Latino', 'Highest level of education', 'Years of education', 'APOE Genotype', 'Cognitive Status', 'Age of onset cognitive symptoms', 'Age of Dementia diagnosis', 'Known head injury', 'Have they had neuroimaging', 'Consensus Clinical Dx (choice=Alzheimers disease)', 'Consensus Clinical Dx (choice=Alzheimers Possible/ Probable)', 'Consensus Clinical Dx (choice=Ataxia)', 'Consensus Clinical Dx (choice=Corticobasal Degeneration)', 'Consensus Clinical Dx (choice=Control)', 'Consensus Clinical Dx (choice=Dementia with Lewy Bodies/ Lewy Body Disease)', 'Consensus Clinical Dx (choice=Frontotemporal lobar degeneration)', 'Consensus Clinical Dx (choice=Huntingtons disease)', 'Consensus Clinical Dx (choice=Motor Neuron disease)', 'Consensus Clinical Dx (choice=Multiple System Atrophy)', 'Consensus Clinical Dx (choice=Parkinsons disease)', 'Consensus Clinical Dx (choice=Parkinsons Cognitive Impairment - no dementia)', 'Consensus Clinical Dx (choice=Parkinsons Disease Dementia)', 'Consensus Clinical Dx (choice=Prion)', 'Consensus Clinical Dx (choice=Progressive Supranuclear Palsy)', 'Consensus Clinical Dx (choice=Taupathy)', 'Consensus Clinical Dx (choice=Vascular Dementia)', 'Consensus Clinical Dx (choice=Unknown)', 'Consensus Clinical Dx (choice=Other)', 'If other Consensus dx, describe', 'Last CASI Score', 'Interval from last CASI in months', 'Last MMSE Score', 'Interval from last MMSE in months', 'Last MOCA Score', 'Interval from last MOCA in months', 'PMI', 'Rapid Frozen Tissue Type', 'Ex Vivo Imaging', 'Fresh Brain Weight', 'Brain pH', 'Overall AD neuropathological Change', 'Thal', 'Braak', 'CERAD score', 'Overall CAA Score', 'Highest Lewy Body Disease', 'Total Microinfarcts (not observed grossly)', 'Total microinfarcts in screening sections', 'Atherosclerosis', 'Arteriolosclerosis', 'LATE', 'RIN', 'Severely Affected Donor']
+[dlpfc] peeking nucleus subclass×cell_type from <repo>\data\raw\tissue\brain_aging\13e8f1dd-962f-47b7-9cf7-c71d2b21b8a5.h5ad
+[dlpfc] nucleus subclass×cell_type pairs=30  subclasses=27  cell_types=25
+[obs] opening SEA-AD h5ad (obs only): https://datasets.cellxgene.cziscience.com/732b4aa7-e441-4196-b05e-127433425613.h5ad
+[obs] SEA-AD obs columns (40): ['assay_ontology_term_id', 'cell_type_ontology_term_id', 'disease_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'sex_ontology_term_id', 'tissue_ontology_term_id', 'is_primary_data', 'Neurotypical reference', 'Class', 'Subclass', 'Supertype', 'Age at death', 'Years of education', 'Cognitive status', 'ADNC', 'Braak stage', 'Thal phase', 'CERAD score', 'APOE4 status', 'Lewy body disease pathology', 'LATE-NC stage', 'Microinfarct pathology', 'Specimen ID', 'donor_id', 'PMI', 'Number of UMIs', 'Genes detected', 'Fraction mitochrondrial UMIs', 'suspension_type', 'development_stage_ontology_term_id', 'Continuous Pseudo-progression Score', 'tissue_type', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid']
+[obs] subclass column in this file: 'Subclass'
+[obs] read donor_id ...
+[obs] read Subclass ...
+[obs] read cell_type ...
+[obs] read sex ...
+[obs] read development_stage ...
+[obs] read disease ...
+[obs] read tissue ...
+[obs] read assay ...
+[obs] read suspension_type ...
+[obs] read is_primary_data ...
+[obs] read cell_type_ontology_term_id ...
+[obs] read self_reported_ethnicity ...
+[obs] read Neurotypical reference ...
+[obs] read Class ...
+[obs] read Supertype ...
+[obs] read Age at death ...
+[obs] read ADNC ...
+[obs] read Braak stage ...
+[obs] read CERAD score ...
+[obs] n_nuclei=1,378,211
+[obs] SEA-AD subclasses=24  cell_types=18
+[map] subclass='Astrocyte' cell_type='astrocyte of the cerebral cortex' → None (UNMAPPED)
+[map] subclass='Chandelier' cell_type='pvalb chandelier GABAergic interneuron' → None (UNMAPPED)
+[map] subclass='Endothelial' cell_type='cerebral cortex endothelial cell' → None (UNMAPPED)
+[map] subclass='L2/3 IT' cell_type='L2/3-6 intratelencephalic projecting glutamatergic neuron' → 'L2/3-6 intratelencephalic projecting glutamatergic neuron' (cell_type_exact)
+[map] subclass='L4 IT' cell_type='L2/3-6 intratelencephalic projecting glutamatergic neuron' → 'L2/3-6 intratelencephalic projecting glutamatergic neuron' (cell_type_exact)
+[map] subclass='L5 ET' cell_type='L5 extratelencephalic projecting glutamatergic cortical neuron' → None (UNMAPPED)
+[map] subclass='L5 IT' cell_type='L2/3-6 intratelencephalic projecting glutamatergic neuron' → 'L2/3-6 intratelencephalic projecting glutamatergic neuron' (cell_type_exact)
+[map] subclass='L5/6 NP' cell_type='near-projecting glutamatergic cortical neuron' → None (UNMAPPED)
+[map] subclass='L6 CT' cell_type='corticothalamic-projecting glutamatergic cortical neuron' → None (UNMAPPED)
+[map] subclass='L6 IT' cell_type='L2/3-6 intratelencephalic projecting glutamatergic neuron' → 'L2/3-6 intratelencephalic projecting glutamatergic neuron' (cell_type_exact)
+[map] subclass='L6 IT Car3' cell_type='L2/3-6 intratelencephalic projecting glutamatergic neuron' → 'L2/3-6 intratelencephalic projecting glutamatergic neuron' (cell_type_exact)
+[map] subclass='L6b' cell_type='L6b glutamatergic cortical neuron' → None (UNMAPPED)
+[map] subclass='Lamp5' cell_type='lamp5 GABAergic interneuron' → 'lamp5 GABAergic interneuron' (cell_type_exact)
+[map] subclass='Lamp5 Lhx6' cell_type='lamp5 GABAergic interneuron' → 'lamp5 GABAergic interneuron' (cell_type_exact)
+[map] subclass='Microglia-PVM' cell_type='microglial cell' → 'microglial cell' (cell_type_exact)
+[map] subclass='OPC' cell_type='oligodendrocyte precursor cell' → 'oligodendrocyte precursor cell' (cell_type_exact)
+[map] subclass='Oligodendrocyte' cell_type='oligodendrocyte' → 'oligodendrocyte' (cell_type_exact)
+[map] subclass='Pax6' cell_type='caudal ganglionic eminence derived interneuron' → None (UNMAPPED)
+[map] subclass='Pvalb' cell_type='pvalb GABAergic interneuron' → 'pvalb GABAergic interneuron' (cell_type_exact)
+[map] subclass='Sncg' cell_type='sncg GABAergic interneuron' → None (UNMAPPED)
+[map] subclass='Sst' cell_type='sst GABAergic interneuron' → 'sst GABAergic interneuron' (cell_type_exact)
+[map] subclass='Sst Chodl' cell_type='sst GABAergic interneuron' → 'sst GABAergic interneuron' (cell_type_exact)
+[map] subclass='VLMC' cell_type='vascular leptomeningeal cell' → 'vascular leptomeningeal cell' (cell_type_exact)
+[map] subclass='Vip' cell_type='VIP GABAergic interneuron' → 'VIP GABAergic interneuron' (cell_type_exact)
+[map] subclasses mapped=15/24  unmapped=9
+[map] nuclei in mapped subclasses: 1,205,874 / 1,378,211
+[cohort] donors total=89  donors with ≥1 mapped nucleus=89
+[cohort] n donors per DLPFC type (mapped subclasses):
+                                                 dlpfc_type  n_nuclei  n_donors  n_subclasses
+  L2/3-6 intratelencephalic projecting glutamatergic neuron    698416        89             5
+                                  VIP GABAergic interneuron    104514        89             1
+                                lamp5 GABAergic interneuron     64364        89             2
+                                            microglial cell     40000        89             1
+                                            oligodendrocyte    111194        89             1
+                             oligodendrocyte precursor cell     32493        89             1
+                                pvalb GABAergic interneuron     90804        89             1
+                                  sst GABAergic interneuron     59761        89             2
+                               vascular leptomeningeal cell      4328        87             1
+                                           GABAergic neuron         0         0             0
+    L2/3 intratelencephalic projecting glutamatergic neuron         0         0             0
+                  L5/6 near-projecting glutamatergic neuron         0         0             0
+L6 corticothalamic-projecting glutamatergic cortical neuron         0         0             0
+      L6 intratelencephalic projecting glutamatergic neuron         0         0             0
+       L6b glutamatergic neuron of the primary motor cortex         0         0             0
+                                                  astrocyte         0         0             0
+                                           endothelial cell         0         0             0
+                                                   pericyte         0         0             0
+                                    perivascular macrophage         0         0             0
+                                         smooth muscle cell         0         0             0
+[join] CXG donors=89  metadata columns by exact overlap: [(84, 'Donor ID')]
+[join] using metadata column 'Donor ID'
+[join] CXG donors not in metadata=5  metadata donors not in CXG=0
+[join] leftover donors with no h5ad pathology in ['ADNC', 'Braak stage', 'CERAD score']: 0
+[join] leftover 5 donors kept: h5ad already has ['ADNC', 'Braak stage', 'CERAD score']. example=['H18.30.001', 'H18.30.002', 'H19.30.001', 'H19.30.002', 'H200.1023']
+[pathology] columns matching CERAD/Braak/ADNC/overall: ['ADNC', 'Braak stage', 'CERAD score', 'Overall AD neuropathological Change', 'Braak', 'CERAD score_meta']
+[pathology] using 'ADNC' (family=ADNC_or_overall); all hits kept in the manifest
+[pathology] field='ADNC' family=ADNC_or_overall  n_low=26  n_missing=0  observed=['high', 'intermediate', 'low', 'not ad', 'reference']
+[cohort] age min=29.0 max=89.0 nunique=23 missing=0
+[cohort] sex counts: {'female': 53, 'male': 36}
+[stage0] complete. Pre-register before any fit.

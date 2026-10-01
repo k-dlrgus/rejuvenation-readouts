@@ -1,0 +1,10 @@
+{
+ "key": "instruments_disagree",
+ "text": "MD moves per cluster, the frozen ruler does not. The instruments disagree on the same cells. What would settle it: an independent fibroblast age instrument scored on these same Louvain clusters, or the authors' Seurat/sctransform object with the frozen ruler projected onto it. No winner is declared.",
+ "comparison_valid": true,
+ "md_moves_per_cluster": true,
+ "ruler_moved_task1": false,
+ "md_n_pass": 1,
+ "t1_key": "negative_holds",
+ "extra": null
+}

@@ -1,0 +1,311 @@
+====================================================================================================
+LOWDIM L1 — low-dimensional spaces + technical control  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO perturbation data. No TF Atlas. No candidate interventions.
+Dimensionality reduction is fit on training folds only (no full-cohort PCA/NMF then held-out).
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+k in [20, 50, 100, 150]; variants=['pca', 'curated', 'wgcna']; tech |r| flag=0.5
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[filter] tech matrix (3323, 4)  NaNs=0  site H/M=1848/1475 rows
+[filter] log_umi finite=3323  frac_neuronal finite=3323
+[filter] types=20  donors/type min/median/max=16/192/232
+[filter]   smooth muscle cell: n_rows=16 n_donors=16 k_cap={20: 14, 50: 14, 100: 14, 150: 14}
+[filter]   perivascular macrophage: n_rows=31 n_donors=31 k_cap={20: 20, 50: 29, 100: 29, 150: 29}
+[filter]   vascular leptomeningeal cell: n_rows=81 n_donors=81 k_cap={20: 20, 50: 50, 100: 79, 150: 79}
+[filter]   L6b glutamatergic neuron of the primary motor cortex: n_rows=109 n_donors=109 k_cap={20: 20, 50: 50, 100: 100, 150: 107}
+[filter]   L5/6 near-projecting glutamatergic neuron: n_rows=124 n_donors=124 k_cap={20: 20, 50: 50, 100: 100, 150: 122}
+[filter]   pericyte: n_rows=136 n_donors=136 k_cap={20: 20, 50: 50, 100: 100, 150: 134}
+[filter]   L6 intratelencephalic projecting glutamatergic neuron: n_rows=150 n_donors=150 k_cap={20: 20, 50: 50, 100: 100, 150: 148}
+[filter]   L6 corticothalamic-projecting glutamatergic cortical neuron: n_rows=153 n_donors=153 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   endothelial cell: n_rows=160 n_donors=160 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   GABAergic neuron: n_rows=179 n_donors=179 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   lamp5 GABAergic interneuron: n_rows=205 n_donors=205 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   sst GABAergic interneuron: n_rows=206 n_donors=206 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   pvalb GABAergic interneuron: n_rows=209 n_donors=209 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   L2/3-6 intratelencephalic projecting glutamatergic neuron: n_rows=215 n_donors=215 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   VIP GABAergic interneuron: n_rows=217 n_donors=217 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   microglial cell: n_rows=219 n_donors=219 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   L2/3 intratelencephalic projecting glutamatergic neuron: n_rows=220 n_donors=220 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   astrocyte: n_rows=229 n_donors=229 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   oligodendrocyte: n_rows=232 n_donors=232 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   oligodendrocyte precursor cell: n_rows=232 n_donors=232 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter] gene symbols: 25526  unique-upper=25493  dup_skipped=33
+[filter] gene-set library Hallmark: GET MSigDB_Hallmark_2020
+[filter]   wrote MSigDB_Hallmark_2020.txt (44,235 chars)
+[filter]   Hallmark: listed=50  mapped>=10: 50
+[filter] gene-set library Reactome: GET Reactome_2022
+[filter]   wrote Reactome_2022.txt (778,913 chars)
+[filter]   Reactome: listed=1818  mapped>=10: 1377
+[filter] gene-set library GO_BP: GET GO_Biological_Process_2023
+[filter]   wrote GO_Biological_Process_2023.txt (1,374,880 chars)
+[filter]   GO_BP: listed=5407  mapped>=10: 3259
+[filter] wrote <repo>\results\lowdim\genesets_index.json  total_sets=7275  usable=4686
+[L1] global z-score on full cohort (DESCRIPTIVE only): mu finite=1.000
+
+[L1] variant=pca (A_pca)  kmax=150  DESCRIPTIVE
+   GABAergic neuron k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   GABAergic neuron k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   GABAergic neuron k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   GABAergic neuron k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   L2/3 intratelencephalic projecting glutamatergic neuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   L2/3 intratelencephalic projecting glutamatergic neuron k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   L2/3 intratelencephalic projecting glutamatergic neuron k=100 k_eff=100: flagged=1/100  site=1 depth=0 nfrac=0
+   L2/3 intratelencephalic projecting glutamatergic neuron k=150 k_eff=150: flagged=1/150  site=1 depth=0 nfrac=0
+   L2/3-6 intratelencephalic projecting glutamatergic neuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   L2/3-6 intratelencephalic projecting glutamatergic neuron k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   L2/3-6 intratelencephalic projecting glutamatergic neuron k=100 k_eff=100: flagged=1/100  site=1 depth=0 nfrac=0
+   L2/3-6 intratelencephalic projecting glutamatergic neuron k=150 k_eff=150: flagged=1/150  site=1 depth=0 nfrac=0
+   L5/6 near-projecting glutamatergic neuron k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   L5/6 near-projecting glutamatergic neuron k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   L5/6 near-projecting glutamatergic neuron k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   L5/6 near-projecting glutamatergic neuron k=150 k_eff=122: flagged=0/122  site=0 depth=0 nfrac=0
+   L6 corticothalamic-projecting glutamatergic cortical neuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   L6 corticothalamic-projecting glutamatergic cortical neuron k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   L6 corticothalamic-projecting glutamatergic cortical neuron k=100 k_eff=100: flagged=1/100  site=1 depth=0 nfrac=0
+   L6 corticothalamic-projecting glutamatergic cortical neuron k=150 k_eff=150: flagged=1/150  site=1 depth=0 nfrac=0
+   L6 intratelencephalic projecting glutamatergic neuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   L6 intratelencephalic projecting glutamatergic neuron k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   L6 intratelencephalic projecting glutamatergic neuron k=100 k_eff=100: flagged=1/100  site=1 depth=0 nfrac=0
+   L6 intratelencephalic projecting glutamatergic neuron k=150 k_eff=148: flagged=1/148  site=1 depth=0 nfrac=0
+   L6b glutamatergic neuron of the primary motor cortex k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   L6b glutamatergic neuron of the primary motor cortex k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   L6b glutamatergic neuron of the primary motor cortex k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   L6b glutamatergic neuron of the primary motor cortex k=150 k_eff=107: flagged=0/107  site=0 depth=0 nfrac=0
+   VIP GABAergic interneuron k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   VIP GABAergic interneuron k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   VIP GABAergic interneuron k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   VIP GABAergic interneuron k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   astrocyte k=20 k_eff=20: flagged=1/20  site=0 depth=1 nfrac=0
+   astrocyte k=50 k_eff=50: flagged=1/50  site=0 depth=1 nfrac=0
+   astrocyte k=100 k_eff=100: flagged=1/100  site=0 depth=1 nfrac=0
+   astrocyte k=150 k_eff=150: flagged=1/150  site=0 depth=1 nfrac=0
+   endothelial cell k=20 k_eff=20: flagged=2/20  site=2 depth=0 nfrac=0
+   endothelial cell k=50 k_eff=50: flagged=2/50  site=2 depth=0 nfrac=0
+   endothelial cell k=100 k_eff=100: flagged=2/100  site=2 depth=0 nfrac=0
+   endothelial cell k=150 k_eff=150: flagged=2/150  site=2 depth=0 nfrac=0
+   lamp5 GABAergic interneuron k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   lamp5 GABAergic interneuron k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   lamp5 GABAergic interneuron k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   lamp5 GABAergic interneuron k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   microglial cell k=20 k_eff=20: flagged=2/20  site=0 depth=2 nfrac=0
+   microglial cell k=50 k_eff=50: flagged=2/50  site=0 depth=2 nfrac=0
+   microglial cell k=100 k_eff=100: flagged=2/100  site=0 depth=2 nfrac=0
+   microglial cell k=150 k_eff=150: flagged=2/150  site=0 depth=2 nfrac=0
+   oligodendrocyte k=20 k_eff=20: flagged=1/20  site=0 depth=1 nfrac=0
+   oligodendrocyte k=50 k_eff=50: flagged=1/50  site=0 depth=1 nfrac=0
+   oligodendrocyte k=100 k_eff=100: flagged=1/100  site=0 depth=1 nfrac=0
+   oligodendrocyte k=150 k_eff=150: flagged=1/150  site=0 depth=1 nfrac=0
+   oligodendrocyte precursor cell k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   oligodendrocyte precursor cell k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   oligodendrocyte precursor cell k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   oligodendrocyte precursor cell k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   pericyte k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   pericyte k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   pericyte k=100 k_eff=100: flagged=1/100  site=1 depth=0 nfrac=0
+   pericyte k=150 k_eff=134: flagged=1/134  site=1 depth=0 nfrac=0
+   perivascular macrophage k=20 k_eff=20: flagged=1/20  site=0 depth=0 nfrac=1
+   perivascular macrophage k=50 k_eff=29: flagged=1/29  site=0 depth=0 nfrac=1
+   perivascular macrophage k=100 k_eff=29: flagged=1/29  site=0 depth=0 nfrac=1
+   perivascular macrophage k=150 k_eff=29: flagged=1/29  site=0 depth=0 nfrac=1
+   pvalb GABAergic interneuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   pvalb GABAergic interneuron k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   pvalb GABAergic interneuron k=100 k_eff=100: flagged=1/100  site=1 depth=0 nfrac=0
+   pvalb GABAergic interneuron k=150 k_eff=150: flagged=1/150  site=1 depth=0 nfrac=0
+   smooth muscle cell k=20 k_eff=14: flagged=2/14  site=0 depth=0 nfrac=2
+   smooth muscle cell k=50 k_eff=14: flagged=2/14  site=0 depth=0 nfrac=2
+   smooth muscle cell k=100 k_eff=14: flagged=2/14  site=0 depth=0 nfrac=2
+   smooth muscle cell k=150 k_eff=14: flagged=2/14  site=0 depth=0 nfrac=2
+   sst GABAergic interneuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   sst GABAergic interneuron k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   sst GABAergic interneuron k=100 k_eff=100: flagged=1/100  site=1 depth=0 nfrac=0
+   sst GABAergic interneuron k=150 k_eff=150: flagged=1/150  site=1 depth=0 nfrac=0
+   vascular leptomeningeal cell k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   vascular leptomeningeal cell k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   vascular leptomeningeal cell k=100 k_eff=79: flagged=0/79  site=0 depth=0 nfrac=0
+   vascular leptomeningeal cell k=150 k_eff=79: flagged=0/79  site=0 depth=0 nfrac=0
+
+[L1] variant=curated (B_curated)  kmax=150  DESCRIPTIVE
+   GABAergic neuron k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   GABAergic neuron k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   GABAergic neuron k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   GABAergic neuron k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   L2/3 intratelencephalic projecting glutamatergic neuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   L2/3 intratelencephalic projecting glutamatergic neuron k=50 k_eff=50: flagged=2/50  site=2 depth=0 nfrac=0
+   L2/3 intratelencephalic projecting glutamatergic neuron k=100 k_eff=100: flagged=3/100  site=2 depth=1 nfrac=0
+   L2/3 intratelencephalic projecting glutamatergic neuron k=150 k_eff=150: flagged=5/150  site=4 depth=1 nfrac=0
+   L2/3-6 intratelencephalic projecting glutamatergic neuron k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   L2/3-6 intratelencephalic projecting glutamatergic neuron k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   L2/3-6 intratelencephalic projecting glutamatergic neuron k=100 k_eff=100: flagged=27/100  site=0 depth=27 nfrac=0
+   L2/3-6 intratelencephalic projecting glutamatergic neuron k=150 k_eff=150: flagged=36/150  site=0 depth=36 nfrac=0
+   L5/6 near-projecting glutamatergic neuron k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   L5/6 near-projecting glutamatergic neuron k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   L5/6 near-projecting glutamatergic neuron k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   L5/6 near-projecting glutamatergic neuron k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   L6 corticothalamic-projecting glutamatergic cortical neuron k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   L6 corticothalamic-projecting glutamatergic cortical neuron k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   L6 corticothalamic-projecting glutamatergic cortical neuron k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   L6 corticothalamic-projecting glutamatergic cortical neuron k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   L6 intratelencephalic projecting glutamatergic neuron k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   L6 intratelencephalic projecting glutamatergic neuron k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   L6 intratelencephalic projecting glutamatergic neuron k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   L6 intratelencephalic projecting glutamatergic neuron k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   L6b glutamatergic neuron of the primary motor cortex k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   L6b glutamatergic neuron of the primary motor cortex k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   L6b glutamatergic neuron of the primary motor cortex k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   L6b glutamatergic neuron of the primary motor cortex k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   VIP GABAergic interneuron k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   VIP GABAergic interneuron k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   VIP GABAergic interneuron k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   VIP GABAergic interneuron k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   astrocyte k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   astrocyte k=50 k_eff=50: flagged=2/50  site=0 depth=2 nfrac=0
+   astrocyte k=100 k_eff=100: flagged=2/100  site=0 depth=2 nfrac=0
+   astrocyte k=150 k_eff=150: flagged=2/150  site=0 depth=2 nfrac=0
+   endothelial cell k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   endothelial cell k=50 k_eff=50: flagged=2/50  site=2 depth=0 nfrac=0
+   endothelial cell k=100 k_eff=100: flagged=2/100  site=2 depth=0 nfrac=0
+   endothelial cell k=150 k_eff=150: flagged=2/150  site=2 depth=0 nfrac=0
+   lamp5 GABAergic interneuron k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   lamp5 GABAergic interneuron k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   lamp5 GABAergic interneuron k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   lamp5 GABAergic interneuron k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   microglial cell k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   microglial cell k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   microglial cell k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   microglial cell k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   oligodendrocyte k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   oligodendrocyte k=50 k_eff=50: flagged=1/50  site=0 depth=1 nfrac=0
+   oligodendrocyte k=100 k_eff=100: flagged=1/100  site=0 depth=1 nfrac=0
+   oligodendrocyte k=150 k_eff=150: flagged=1/150  site=0 depth=1 nfrac=0
+   oligodendrocyte precursor cell k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   oligodendrocyte precursor cell k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   oligodendrocyte precursor cell k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   oligodendrocyte precursor cell k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   pericyte k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   pericyte k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   pericyte k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   pericyte k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   perivascular macrophage k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   perivascular macrophage k=50 k_eff=50: flagged=2/50  site=1 depth=1 nfrac=0
+   perivascular macrophage k=100 k_eff=100: flagged=2/100  site=1 depth=1 nfrac=0
+   perivascular macrophage k=150 k_eff=150: flagged=5/150  site=2 depth=3 nfrac=0
+   pvalb GABAergic interneuron k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   pvalb GABAergic interneuron k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   pvalb GABAergic interneuron k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   pvalb GABAergic interneuron k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   smooth muscle cell k=20 k_eff=20: flagged=2/20  site=0 depth=1 nfrac=2
+   smooth muscle cell k=50 k_eff=50: flagged=3/50  site=0 depth=2 nfrac=2
+   smooth muscle cell k=100 k_eff=100: flagged=19/100  site=15 depth=3 nfrac=2
+   smooth muscle cell k=150 k_eff=150: flagged=31/150  site=17 depth=8 nfrac=8
+   sst GABAergic interneuron k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   sst GABAergic interneuron k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   sst GABAergic interneuron k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   sst GABAergic interneuron k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+   vascular leptomeningeal cell k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   vascular leptomeningeal cell k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   vascular leptomeningeal cell k=100 k_eff=100: flagged=0/100  site=0 depth=0 nfrac=0
+   vascular leptomeningeal cell k=150 k_eff=150: flagged=0/150  site=0 depth=0 nfrac=0
+
+[L1] variant=wgcna (C_wgcna)  kmax=150  DESCRIPTIVE
+   GABAergic neuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   GABAergic neuron k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   GABAergic neuron k=100 k_eff=100: flagged=2/100  site=2 depth=0 nfrac=0
+   GABAergic neuron k=150 k_eff=150: flagged=2/150  site=2 depth=0 nfrac=0
+   L2/3 intratelencephalic projecting glutamatergic neuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   L2/3 intratelencephalic projecting glutamatergic neuron k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   L2/3 intratelencephalic projecting glutamatergic neuron k=100 k_eff=100: flagged=2/100  site=2 depth=0 nfrac=0
+   L2/3 intratelencephalic projecting glutamatergic neuron k=150 k_eff=150: flagged=3/150  site=3 depth=0 nfrac=0
+   L2/3-6 intratelencephalic projecting glutamatergic neuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   L2/3-6 intratelencephalic projecting glutamatergic neuron k=50 k_eff=50: flagged=2/50  site=2 depth=0 nfrac=0
+   L2/3-6 intratelencephalic projecting glutamatergic neuron k=100 k_eff=100: flagged=2/100  site=2 depth=0 nfrac=0
+   L2/3-6 intratelencephalic projecting glutamatergic neuron k=150 k_eff=150: flagged=2/150  site=2 depth=0 nfrac=0
+   L5/6 near-projecting glutamatergic neuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   L5/6 near-projecting glutamatergic neuron k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   L5/6 near-projecting glutamatergic neuron k=100 k_eff=100: flagged=1/100  site=1 depth=0 nfrac=0
+   L5/6 near-projecting glutamatergic neuron k=150 k_eff=122: flagged=1/122  site=1 depth=0 nfrac=0
+   L6 corticothalamic-projecting glutamatergic cortical neuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   L6 corticothalamic-projecting glutamatergic cortical neuron k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   L6 corticothalamic-projecting glutamatergic cortical neuron k=100 k_eff=100: flagged=3/100  site=3 depth=0 nfrac=0
+   L6 corticothalamic-projecting glutamatergic cortical neuron k=150 k_eff=150: flagged=2/150  site=2 depth=0 nfrac=0
+   L6 intratelencephalic projecting glutamatergic neuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   L6 intratelencephalic projecting glutamatergic neuron k=50 k_eff=50: flagged=3/50  site=3 depth=0 nfrac=0
+   L6 intratelencephalic projecting glutamatergic neuron k=100 k_eff=100: flagged=3/100  site=3 depth=0 nfrac=0
+   L6 intratelencephalic projecting glutamatergic neuron k=150 k_eff=148: flagged=3/148  site=3 depth=0 nfrac=0
+   L6b glutamatergic neuron of the primary motor cortex k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   L6b glutamatergic neuron of the primary motor cortex k=50 k_eff=50: flagged=2/50  site=2 depth=0 nfrac=0
+   L6b glutamatergic neuron of the primary motor cortex k=100 k_eff=100: flagged=3/100  site=2 depth=0 nfrac=1
+   L6b glutamatergic neuron of the primary motor cortex k=150 k_eff=107: flagged=3/107  site=2 depth=0 nfrac=1
+   VIP GABAergic interneuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   VIP GABAergic interneuron k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   VIP GABAergic interneuron k=100 k_eff=100: flagged=2/100  site=2 depth=0 nfrac=0
+   VIP GABAergic interneuron k=150 k_eff=150: flagged=2/150  site=2 depth=0 nfrac=0
+   astrocyte k=20 k_eff=20: flagged=1/20  site=0 depth=1 nfrac=0
+   astrocyte k=50 k_eff=50: flagged=1/50  site=0 depth=1 nfrac=0
+   astrocyte k=100 k_eff=100: flagged=1/100  site=0 depth=1 nfrac=0
+   astrocyte k=150 k_eff=150: flagged=1/150  site=0 depth=1 nfrac=0
+   endothelial cell k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   endothelial cell k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   endothelial cell k=100 k_eff=100: flagged=2/100  site=2 depth=0 nfrac=0
+   endothelial cell k=150 k_eff=150: flagged=1/150  site=1 depth=0 nfrac=0
+   lamp5 GABAergic interneuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   lamp5 GABAergic interneuron k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   lamp5 GABAergic interneuron k=100 k_eff=100: flagged=1/100  site=1 depth=0 nfrac=0
+   lamp5 GABAergic interneuron k=150 k_eff=150: flagged=2/150  site=2 depth=0 nfrac=0
+   microglial cell k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   microglial cell k=50 k_eff=50: flagged=1/50  site=0 depth=1 nfrac=0
+   microglial cell k=100 k_eff=100: flagged=1/100  site=0 depth=1 nfrac=0
+   microglial cell k=150 k_eff=150: flagged=1/150  site=0 depth=1 nfrac=0
+   oligodendrocyte k=20 k_eff=20: flagged=2/20  site=1 depth=1 nfrac=0
+   oligodendrocyte k=50 k_eff=50: flagged=2/50  site=1 depth=1 nfrac=0
+   oligodendrocyte k=100 k_eff=100: flagged=2/100  site=1 depth=1 nfrac=0
+   oligodendrocyte k=150 k_eff=150: flagged=2/150  site=1 depth=1 nfrac=0
+   oligodendrocyte precursor cell k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   oligodendrocyte precursor cell k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   oligodendrocyte precursor cell k=100 k_eff=100: flagged=1/100  site=1 depth=0 nfrac=0
+   oligodendrocyte precursor cell k=150 k_eff=150: flagged=1/150  site=0 depth=1 nfrac=0
+   pericyte k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   pericyte k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   pericyte k=100 k_eff=100: flagged=1/100  site=1 depth=0 nfrac=0
+   pericyte k=150 k_eff=134: flagged=1/134  site=1 depth=0 nfrac=0
+   perivascular macrophage k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   perivascular macrophage k=50 k_eff=29: flagged=1/29  site=1 depth=0 nfrac=0
+   perivascular macrophage k=100 k_eff=29: flagged=1/29  site=1 depth=0 nfrac=0
+   perivascular macrophage k=150 k_eff=29: flagged=1/29  site=1 depth=0 nfrac=0
+   pvalb GABAergic interneuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   pvalb GABAergic interneuron k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   pvalb GABAergic interneuron k=100 k_eff=100: flagged=1/100  site=1 depth=0 nfrac=0
+   pvalb GABAergic interneuron k=150 k_eff=150: flagged=2/150  site=2 depth=0 nfrac=0
+   smooth muscle cell k=20 k_eff=14: flagged=3/14  site=1 depth=1 nfrac=1
+   smooth muscle cell k=50 k_eff=14: flagged=3/14  site=1 depth=1 nfrac=1
+   smooth muscle cell k=100 k_eff=14: flagged=3/14  site=1 depth=1 nfrac=1
+   smooth muscle cell k=150 k_eff=14: flagged=3/14  site=1 depth=1 nfrac=1
+   sst GABAergic interneuron k=20 k_eff=20: flagged=1/20  site=1 depth=0 nfrac=0
+   sst GABAergic interneuron k=50 k_eff=50: flagged=1/50  site=1 depth=0 nfrac=0
+   sst GABAergic interneuron k=100 k_eff=100: flagged=1/100  site=1 depth=0 nfrac=0
+   sst GABAergic interneuron k=150 k_eff=150: flagged=1/150  site=1 depth=0 nfrac=0
+   vascular leptomeningeal cell k=20 k_eff=20: flagged=0/20  site=0 depth=0 nfrac=0
+   vascular leptomeningeal cell k=50 k_eff=50: flagged=0/50  site=0 depth=0 nfrac=0
+   vascular leptomeningeal cell k=100 k_eff=79: flagged=0/79  site=0 depth=0 nfrac=0
+   vascular leptomeningeal cell k=150 k_eff=79: flagged=0/79  site=0 depth=0 nfrac=0
+
+[L1] median-over-types fraction of components flagged (|r|>0.5):
+   A_pca k=20: frac_flagged=0.050  |r_site|=0.162  |r_umi|=0.131  |r_nfrac|=0.107  types_with_flag=13/20
+   A_pca k=50: frac_flagged=0.020  |r_site|=0.100  |r_umi|=0.111  |r_nfrac|=0.093  types_with_flag=13/20
+   A_pca k=100: frac_flagged=0.010  |r_site|=0.067  |r_umi|=0.075  |r_nfrac|=0.071  types_with_flag=13/20
+   A_pca k=150: frac_flagged=0.007  |r_site|=0.057  |r_umi|=0.061  |r_nfrac|=0.060  types_with_flag=13/20
+   B_curated k=20: frac_flagged=0.000  |r_site|=0.120  |r_umi|=0.101  |r_nfrac|=0.073  types_with_flag=3/20
+   B_curated k=50: frac_flagged=0.000  |r_site|=0.104  |r_umi|=0.083  |r_nfrac|=0.096  types_with_flag=6/20
+   B_curated k=100: frac_flagged=0.000  |r_site|=0.087  |r_umi|=0.117  |r_nfrac|=0.060  types_with_flag=7/20
+   B_curated k=150: frac_flagged=0.000  |r_site|=0.083  |r_umi|=0.107  |r_nfrac|=0.059  types_with_flag=7/20
+   C_wgcna k=20: frac_flagged=0.050  |r_site|=0.105  |r_umi|=0.079  |r_nfrac|=0.091  types_with_flag=16/20
+   C_wgcna k=50: frac_flagged=0.020  |r_site|=0.101  |r_umi|=0.076  |r_nfrac|=0.078  types_with_flag=18/20
+   C_wgcna k=100: frac_flagged=0.020  |r_site|=0.100  |r_umi|=0.071  |r_nfrac|=0.072  types_with_flag=19/20
+   C_wgcna k=150: frac_flagged=0.013  |r_site|=0.099  |r_umi|=0.076  |r_nfrac|=0.071  types_with_flag=19/20
+[L1] wrote results/lowdim/l1_*
+[L1] done.

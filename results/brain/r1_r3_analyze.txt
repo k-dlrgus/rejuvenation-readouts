@@ -1,0 +1,120 @@
+====================================================================================================
+BRAIN ANALYZE  name=brain_aging  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+  title=Aging_Cohort  tissue=brain
+  local=<repo>\data\raw\tissue\brain_aging\13e8f1dd-962f-47b7-9cf7-c71d2b21b8a5.h5ad  size=12,421,671,635
+  adult cutoff age>=20 (paper: adolescence 12–19 is developmental; transcriptome stabilizes after 20).  FORCE_BATCH=Source
+  NOTE: this is single-NUCLEUS RNA (10x 3' v3). Fewer transcripts/cell and different gene coverage than blood scRNA. Metrics are comparable; absolute sensitivity is not.
+====================================================================================================
+[load] 1,332,155 nuclei; obs cols=['Source', 'n_genes', 'n_counts', 'class', 'subclass', 'subtype', 'tissue_ontology_term_id', 'tissue_type', 'assay_ontology_term_id', 'cell_type_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'development_stage_ontology_term_id', 'sex_ontology_term_id', 'donor_id', 'suspension_type', 'is_primary_data', 'DLBD_status', 'FTD_status', 'Tauopathy_status', 'Vascular_status', 'Schizophrenia', 'Bipolar_Disorder', 'Parkinson_disease', 'genetic_ancestry', 'disease_ontology_term_id', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid', '_pos']
+[filter] is_primary_data==True would keep 0/1,332,155 (0.0%) — NOT applied (Aging_Cohort cells are marked non-primary because they also sit in the parent cross-disorder collection)
+[filter] is_primary_data (NOT applied; all False)                cells       1,332,155 ->  1,332,155  (removed 0) kept all; flag is collection-duplication not double-counting inside this file
+[R1] Schizophrenia: [('No', 1332155)]
+[R1] Schizophrenia is constant — file is the neurotypical subset for this flag; not used to drop
+[R1] Bipolar_Disorder: [('No', 1332155)]
+[R1] Bipolar_Disorder is constant — file is the neurotypical subset for this flag; not used to drop
+[R1] Parkinson_disease: [('No', 1332155)]
+[R1] Parkinson_disease is constant — file is the neurotypical subset for this flag; not used to drop
+[R1] DLBD_status: [('No', 1332155)]
+[R1] DLBD_status is constant — file is the neurotypical subset for this flag; not used to drop
+[R1] FTD_status: [('No', 1332155)]
+[R1] FTD_status is constant — file is the neurotypical subset for this flag; not used to drop
+[R1] Tauopathy_status: [('Not Evaluated', 1332155)]
+[R1] Tauopathy_status is constant — file is the neurotypical subset for this flag; not used to drop
+[R1] Vascular_status: [('No', 1332155)]
+[R1] Vascular_status is constant — file is the neurotypical subset for this flag; not used to drop
+[filter] neurotypical (no brain-disease flag to drop)            cells       1,332,155 ->  1,332,155  (removed 0) Aging_Cohort is already the neurotypical subset of PsychAD; CXG `disease` is systemic comorbidity (atherosclerosis/diabetes), kept
+[R1] CXG disease (systemic, kept): [('normal', 1156014), ('atherosclerosis', 137799), ('type 1 diabetes mellitus', 24202), ('type 2 diabetes mellitus', 11596), ('type 1 diabetes mellitus || atherosclerosis', 1368), ('type 2 diabetes mellitus || atherosclerosis', 1176)]
+[filter] nuclei with numeric donor age                           cells       1,332,155 ->  1,330,258  (removed 1,897) non-numeric development_stage dropped
+[filter] adult nuclei (age >= 20)                                cells       1,330,258 ->  1,054,845  (removed 275,413) developmental/adolescent nuclei removed=275,413
+[R1] 233 adult control donors; age 20–89 (nunique=64, span=69 y); nuclei/donor median 4430; nuclei total 1,054,845
+[R1] Source (brain bank) donor counts: {'H': 120, 'M': 113}
+               min   max  median  count
+      Source                           
+      H       20.0  85.0    44.5    120
+      M       20.0  89.0    64.0    113
+[R2] batch column FORCED to Source: n_levels=2  donors/level min=113 max=120 median=116.5  aliased_with_donor=False
+     No sequencing-pool / library / run column exists in obs (R0). Hashing pools of 6 described in the methods were not uploaded. Within-batch = within brain bank (H vs M).
+[R2] R2(age ~ C(batch=Source)) = 0.264   n_batches=2
+
+[pseudobulk] min_cells=20  min_donors_per_type=10
+[filter] caller keep_mask (analysis cohort)
+[filter] cells with numeric donor age
+[filter] pseudobulk groups with >= 20 cells
+[filter] cells in retained pseudobulk groups
+[filter] cell types present in >= 10 donors
+[filter] cells in retained cell types
+[filter] pseudobulks of adult analysis donors                    groups          3,323 ->      3,323  (removed 0) 
+[filter] cell types with >= 10 adult donors                      groups          3,323 ->      3,323  (removed 0) types 20 -> 20 dropped={}
+[filter] genes with CPM>1 in >= 10% of pseudobulks   genes  34,176 -> 25,526  (removed 8,650)
+[filter] drop CELLxGENE feature_is_filtered genes                genes  25,526 -> 25,526  (removed 0)
+[filter] donors with >=1 retained pseudobulk                     donors            233 ->        233  (removed 0) 
+[filter] cells of analysis donors                              cells 1,054,845 -> 1,054,845 (removed 0)
+[filter] cell types kept as composition categories (mean prop>=0.005, donors>=10): 18 kept, 7 collapsed to 'other' (5,745 cells, 0.54%) dropped=['B cell', 'L5 extratelencephalic projecting glutamatergic cortical neuron', 'T cell', 'natural killer cell', 'perivascular macrophage', 'plasma cell', 'smooth muscle cell']
+cells/donor for composition: median 4430 (min 61, max 10715); CLR dim=19
+[R2] R2(log mean UMI/nucleus ~ C(batch)) = 0.049
+[R2] corr(age, depth): pooled r=-0.143; between-batch r=+nan (n=2 batches; NaN if only 2 batches); within-batch r=-0.030
+[R2] reference: blood R2(age~batch)=0.23  R2(depth~batch)=0.86  r_between/within=+0.43/−0.03
+[R2] reference: white matter R2(age~batch)=0.272  R2(depth~batch)=0.626  r=+0.625/+0.006
+
+====================================================================================================
+[R3] batch-grouped CV: composition vs within-cell-type expression
+====================================================================================================
+  n_donors=233 n_batches=2 n_outer=2 n_repeats=3
+  [note] n_batches<3: outer CV is leave-one-site-out. Repeats are not independent (fold assignment is determined by the 2 sites). Inner alpha uses donor-grouped CV inside the training site because batch-grouped inner CV is degenerate. A literal tissue_analyze kernel_ridge_oof (accidental alpha=0.01) is also run as a check.
+building per-type kernels:
+   GABAergic neuron                                        n= 179 batches=2
+   L2/3 intratelencephalic projecting glutamatergic neuron n= 220 batches=2
+   L2/3-6 intratelencephalic projecting glutamatergic neuron n= 215 batches=2
+   L5/6 near-projecting glutamatergic neuron               n= 124 batches=2
+   L6 corticothalamic-projecting glutamatergic cortical neuron n= 153 batches=2
+   L6 intratelencephalic projecting glutamatergic neuron   n= 150 batches=2
+   L6b glutamatergic neuron of the primary motor cortex    n= 109 batches=2
+   VIP GABAergic interneuron                               n= 217 batches=2
+   astrocyte                                               n= 229 batches=2
+   endothelial cell                                        n= 160 batches=2
+   lamp5 GABAergic interneuron                             n= 205 batches=2
+   microglial cell                                         n= 219 batches=2
+   oligodendrocyte                                         n= 232 batches=2
+   oligodendrocyte precursor cell                          n= 232 batches=2
+   pericyte                                                n= 136 batches=2
+   perivascular macrophage                                 n=  31 batches=2
+   pvalb GABAergic interneuron                             n= 209 batches=2
+   smooth muscle cell                                      n=  16 batches=2
+   sst GABAergic interneuron                               n= 206 batches=2
+   vascular leptomeningeal cell                            n=  81 batches=2
+   repeat 0: comp R2w=+0.049  expr R2w=+0.444  comp naive=-0.673  expr naive=-0.487  alpha_comp=0.65 alpha_expr=0.01
+   repeat 1: comp R2w=+0.062  expr R2w=+0.444  comp naive=-0.689  expr naive=-0.487  alpha_comp=2 alpha_expr=0.01
+   repeat 2: comp R2w=+0.050  expr R2w=+0.444  comp naive=-0.673  expr naive=-0.487  alpha_comp=6.5 alpha_expr=0.01
+  composition (CLR, 19 categories): within-batch R2=+0.053 [+0.048, +0.049] {+0.049,+0.062}  naive R2=-0.678
+  expression: all 20 cell types jointly: within-batch R2=+0.444 [+0.439, +0.450] {+0.444,+0.444}  naive R2=-0.487
+  [literal T3] composition (CLR, 19 categories): within-batch R2=-0.004 {-0.004,-0.004}
+  [literal T3] expression: all 20 cell types jointly: within-batch R2=+0.444 {+0.444,+0.444}
+  per-type GABAergic neuron: within-batch R2=+0.288 {+0.273,+0.296}
+  per-type L2/3 intratelencephalic projecting glutamatergic neuron: within-batch R2=+0.710 {+0.710,+0.710}
+  per-type L2/3-6 intratelencephalic projecting glutamatergic neuron: within-batch R2=+0.689 {+0.689,+0.689}
+  per-type L5/6 near-projecting glutamatergic neuron: within-batch R2=+0.154 {+0.107,+0.246}
+  per-type L6 corticothalamic-projecting glutamatergic cortical neuron: within-batch R2=+0.364 {+0.364,+0.364}
+  per-type L6 intratelencephalic projecting glutamatergic neuron: within-batch R2=+0.410 {+0.410,+0.410}
+  per-type L6b glutamatergic neuron of the primary motor cortex: within-batch R2=+0.250 {+0.206,+0.271}
+  per-type VIP GABAergic interneuron: within-batch R2=+0.434 {+0.434,+0.434}
+  per-type astrocyte: within-batch R2=+0.487 {+0.487,+0.487}
+  per-type endothelial cell: within-batch R2=+0.050 {+0.050,+0.050}
+  per-type lamp5 GABAergic interneuron: within-batch R2=+0.301 {+0.296,+0.304}
+  per-type microglial cell: within-batch R2=+0.296 {+0.296,+0.296}
+  per-type oligodendrocyte: within-batch R2=+0.356 {+0.356,+0.356}
+  per-type oligodendrocyte precursor cell: within-batch R2=+0.518 {+0.518,+0.518}
+  per-type pericyte: within-batch R2=+0.061 {+0.040,+0.073}
+  per-type perivascular macrophage: within-batch R2=-0.087 {-0.093,-0.079}
+  per-type pvalb GABAergic interneuron: within-batch R2=+0.397 {+0.397,+0.397}
+  per-type smooth muscle cell: within-batch R2=-0.027 {-0.032,-0.017}
+  per-type sst GABAergic interneuron: within-batch R2=+0.511 {+0.500,+0.517}
+  per-type vascular leptomeningeal cell: within-batch R2=+0.059 {+0.031,+0.076}
+
+[R3] DLPFC: composition R2=+0.053  expression R2=+0.444  expr−comp=+0.391
+     expression > composition in 3/3 repeats
+     blood: composition 0.493  expression 0.482
+     white matter: composition -0.290  expression 0.194
+     per-type expression R2: median +0.329  range -0.087 .. +0.710  best=L2/3 intratelencephalic projecting glutamatergic neuron
+     per-type: 18/20 types have mean within-batch R2 > 0
+
+[brain_aging] done. wrote <repo>\results\brain

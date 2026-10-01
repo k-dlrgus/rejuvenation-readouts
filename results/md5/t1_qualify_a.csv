@@ -1,0 +1,9 @@
+scheme,cell_line,day,state_a,state_b,n_a,n_b,min_cells,qualifies,primary,reason
+a,GM00731,0,PartialReprog,Fibroblast,3,4939,30,False,True,n<30 in at least one state
+a,GM00731,3,PartialReprog,Fibroblast,5220,5,30,False,True,n<30 in at least one state
+a,GM00731,7,PartialReprog,Fibroblast,578,14,30,False,True,n<30 in at least one state
+a,GM00731,10,PartialReprog,Fibroblast,31,1030,30,True,True,
+a,GM23815,0,PartialReprog,Fibroblast,9,7703,30,False,True,n<30 in at least one state
+a,GM23815,3,PartialReprog,Fibroblast,6113,46,30,True,True,
+a,GM23815,7,PartialReprog,Fibroblast,309,2233,30,True,True,
+a,GM23815,10,PartialReprog,Fibroblast,50,1373,30,True,True,

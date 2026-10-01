@@ -1,0 +1,30 @@
+python 3.12.7 (CPython, 3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)])
+executable <repo>\.venv\Scripts\python.exe
+platform Windows-11-10.0.26200-SP0
+
+# requested
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.5
+scikit-learn==1.9.1
+anndata==0.13.3.post0
+h5py==3.16.0
+matplotlib==3.11.2
+
+# every third-party top-level module imported under src/ (module -> distribution==version; files)
+anndata -> anndata==0.13.3.post0  [brain_analyze.py, brain_phase1_common.py, brain_phase1_p0.py, brain_phase1_p5.py, decomp.py, profile_dataset.py, ... (+8)]
+fsspec -> NOT INSTALLED in this environment  [tissue_peek_obs.py]
+h5py -> h5py==3.16.0  [brain_phase1_p0.py, fibro_stage2.py, paper_figs_cxg_donor.py, paper_figs_seng_null.py, peek_gz_h5ad.py, profile_dataset.py, ... (+6)]
+matplotlib -> matplotlib==3.11.2  [brain_analyze.py, brain_phase1_p0.py, brain_phase1_p1.py, brain_phase1_p2.py, brain_phase1_p3.py, brain_phase1_p4.py, ... (+28)]
+nbformat -> nbformat==5.11.1  [brain_make_notebook.py, brain_phase1_make_notebooks.py, geometry_make_notebooks.py, gtex_make_notebooks.py, lowdim_make_notebooks.py, make_notebooks.py, ... (+5)]
+networkx -> networkx==3.6.1  [md2_cluster.py]
+numpy -> numpy==2.5.3  [brain_analyze.py, brain_common.py, brain_phase1_common.py, brain_phase1_findings.py, brain_phase1_models.py, brain_phase1_p0.py, ... (+112)]
+pandas -> pandas==3.0.5  [brain_analyze.py, brain_phase1_common.py, brain_phase1_findings.py, brain_phase1_models.py, brain_phase1_p0.py, brain_phase1_p1.py, ... (+122)]
+requests -> requests==2.34.2  [brain_r0.py, download.py, download_parallel.py, ensembl_chrom.py, external_download.py, external_stage0.py, ... (+12)]
+scanpy -> scanpy==1.12.4  [trajectory_g3.py]
+scipy -> scipy==1.18.1  [brain_phase1_common.py, brain_phase1_p0.py, confounds.py, external_project.py, fibro2_ta.py, fibro2_tb.py, ... (+29)]
+sklearn -> scikit-learn==1.9.1  [brain_phase1_models.py, fibro2_tb.py, fibro2_tc.py, fibro3_task1.py, fibro_stage2.py, md2_cluster.py, ... (+1)]
+statsmodels -> statsmodels==0.15.0  [rerun_stageA.py, rerun_stageB.py, run_1a_decomp.py, run_1b_batch_verify.py]
+
+# stdlib modules imported under src/ (versioned with Python)
+__future__, argparse, ast, base64, bz2, collections, concurrent, csv, datetime, gc, gzip, hashlib, importlib, io, json, os, pathlib, platform, re, shutil, struct, subprocess, sys, tarfile, threading, time, urllib, warnings, xml, zipfile

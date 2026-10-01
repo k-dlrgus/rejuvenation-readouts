@@ -1,0 +1,170 @@
+====================================================================================================
+GEOMETRY PART A — leakage audit  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[folds] constructed with seed 20260914: loso=2 within_site=10
+
+--------------------------------------------------------------------------------
+[A2] H1 donor leakage: is any donor's pseudobulks split across folds?
+[P3] loso: 2 folds, no donor in both folds: True
+   loso: n_folds=2 leaked_folds=0
+[P3] within_site: 10 folds, no donor in both folds: True
+   within_site: n_folds=10 leaked_folds=0
+   FIRES? False
+
+--------------------------------------------------------------------------------
+[A2] H2 shuffle granularity
+   donor age is constant across a donor's pseudobulks: True (donors with >1 distinct age: 0)
+   permute_age_within_site_obs: donors with changed age=229/233; donors with non-constant shuffled age=0
+   site mean ages TRUE: {'H': 43.692, 'M': 62.15}
+   site mean ages SHUF: {'H': 43.692, 'M': 62.15}
+   current helper IS donor-level within-site permutation: True
+   FIRES (wrong granularity in current code)? False
+   R²(donor age ~ site) = +0.264  (between-bank age gap)
+
+--------------------------------------------------------------------------------
+[A1] Reproduce within-site shuffle R² under ORIGINAL pooled scoring
+   stored P4 within_site shuffle_age_r2 = +0.195382
+   stored P4 loso shuffle_age_r2        = -0.913164
+   [loso] intercept-only  pooled=-0.760  site_strat=-1.340
+   [loso] intercept-only SHUFFLE pooled=-0.836  site_strat=-1.515
+   [within_site] intercept-only  pooled=+0.217  site_strat=-0.032
+   [within_site] intercept-only SHUFFLE pooled=+0.258  site_strat=-0.025
+   original-ridge A-gene shuffle (one draw, donor-level within site)...
+   [loso] original-ridge shuffle  pooled=-0.839  site_strat=-1.437  (P4 reported pooled=-0.913)
+   [within_site] original-ridge shuffle  pooled=+0.177  site_strat=-0.074  (P4 reported pooled=+0.195)
+
+   empirical shuffle-granularity comparison (SVD-LOO ridge, A-genes)...
+   how=donor_within_site       pooled mean=+0.072  site_strat mean=-0.232  n=20
+   how=per_pseudobulk          pooled mean=-0.215  site_strat mean=-0.219  n=5
+   how=within_donor_rows       pooled mean=+0.435  site_strat mean=+0.250  n=5
+   LOSO donor-level null  pooled mean=-1.005  site_strat mean=-1.743
+
+--------------------------------------------------------------------------------
+[A2] H4 site structure: within-site k-fold + pooled R² recovers the bank age gap
+   intercept-only within-site pooled R²=+0.217 vs R²(age~site)=+0.264
+   intercept-only within-site site_strat R²=-0.032 (should be ~0)
+   FIRES? True
+
+--------------------------------------------------------------------------------
+[A2] H5 target centering: ridge uses training-fold intercept; R² uses eval-set mean
+   P3 A-gene OOF pooled (eval-set mean in ss_tot) R²=+0.376
+   same SS_res but ss_tot vs full-cohort mean: R²=+0.376
+   ridge_predict: StandardScaler+Ridge(fit_intercept=True) fit on TRAIN only — age is NOT centered with the full-cohort mean inside the model.
+   r2_mae uses the evaluation vector's own mean. The leak is that the evaluation vector for within-site CV concatenates TWO sites, each with its own fitted intercept.
+   FIRES as 'full-cohort mean centering'? False  (the real metric bug is H4, not a global-mean subtraction in the estimator)
+
+--------------------------------------------------------------------------------
+[A2] H3 feature-selection leakage: P4c used FROZEN full-data A/I sets
+   P3 nested selection inside each training fold (declared quantile LEVELS + P2 filters).
+   Testing nested vs frozen under BOTH scoring rules.
+   nested gene selection on loso (2 folds)...
+      fold 0 H: nested A=1287 I=1880
+      fold 1 M: nested A=1500 I=1851
+   nested gene selection on within_site (10 folds)...
+      fold 0 H: nested A=1538 I=1876
+      fold 1 H: nested A=1536 I=1901
+      fold 2 H: nested A=1568 I=1935
+      fold 3 H: nested A=1566 I=1866
+      fold 4 H: nested A=1530 I=1808
+      fold 5 M: nested A=1296 I=1847
+      fold 6 M: nested A=1215 I=2014
+      fold 7 M: nested A=1283 I=2030
+      fold 8 M: nested A=1433 I=1796
+      fold 9 M: nested A=1319 I=1878
+
+--------------------------------------------------------------------------------
+[A3] Re-run age models (frozen A, frozen I, nested A, nested I, size-matched I)
+     SVD-LOO ridge; original sklearn ridge used above for A1 reproduction only.
+
+   === scheme loso ===
+   frozen A  pooled=-0.016  site_strat=-0.286
+   frozen I  pooled=+0.289  site_strat=+0.067
+   nested A  pooled=-0.091  site_strat=-0.436  median n_A=1394
+   nested I  pooled=+0.330  site_strat=+0.118  median n_I=1866
+   size-matched I (20 draws, k=1355)...
+   matched I median pooled=+0.279  site_strat=+0.067
+   identity frozen I / A...
+   Acc_I=0.999  Acc_A=0.991  chance=0.070
+   P3 saved nested-A OOF  pooled=-0.102  site_strat=-0.451
+   P3 saved unrest OOF    pooled=+0.096  site_strat=-0.181
+
+   === scheme within_site ===
+   frozen A  pooled=+0.435  site_strat=+0.250
+   frozen I  pooled=+0.571  site_strat=+0.424
+   nested A  pooled=+0.345  site_strat=+0.125  median n_A=1482
+   nested I  pooled=+0.598  site_strat=+0.462  median n_I=1877
+   size-matched I (20 draws, k=1355)...
+   matched I median pooled=+0.562  site_strat=+0.413
+   identity frozen I / A...
+   Acc_I=0.999  Acc_A=0.994  chance=0.070
+   P3 saved nested-A OOF  pooled=+0.345  site_strat=+0.123
+   P3 saved unrest OOF    pooled=+0.483  site_strat=+0.310
+
+   I-gene donor-level shuffle null (10 draws / scheme)...
+   [loso] I-shuffle pooled mean=-0.965  site_strat mean=-1.701
+   [within_site] I-shuffle pooled mean=+0.061  site_strat mean=-0.262
+   nested-A donor-level shuffle (5 draws / scheme)...
+   [loso] nestedA-shuffle pooled mean=-0.828  site_strat mean=-1.475
+   [within_site] nestedA-shuffle pooled mean=+0.070  site_strat mean=-0.244
+
+   frozen A pooled=+0.435 vs nested SVD=+0.345 vs P3 saved=+0.345
+   FIRES (selection saw test folds, inflating frozen vs nested by >0.05)? True
+   (P4c used frozen sets by design so A vs I are size-and-selection comparable; P3 is the leakage-safer A-gene clock.)
+
+[A2] hypothesis summary:
+   H1_donor_leakage: FIRES=False  PASS: no donor in both sides of any fold
+   H2_shuffle_granularity: FIRES=False  PASS: permute_age_within_site_obs remaps a permuted donor-level age onto every pseudobulk of that donor
+   H3_feature_selection_leakage: FIRES=True  frozen pooled A R²=+0.435; nested=+0.345; P3 saved=+0.345
+   H4_site_structure: FIRES=True  intercept-only within-site pooled R²=+0.217 matches R²(age~site)=+0.264; site-stratified=-0.032
+   H5_target_centering: FIRES=False  PASS as a full-cohort-mean bug: Ridge(fit_intercept=True) on train; r2_mae uses the evaluation vector's mean
+
+   FIRED: ['H3_feature_selection_leakage', 'H4_site_structure']
+   FIX: Primary fix: report site-stratified median-over-types R² for the within-site scheme (mean of the two banks' R² per cell type, then median over types). LOSO is left on the original pooled/test-site metric — intercept mismatch across banks is a real transfer failure, not a scoring artifact. P4c frozen vs nested is reported side-by-side; frozen remains the size-matched cross-test.
+
+--------------------------------------------------------------------------------
+[A3] side-by-side: reported-in-P4c vs corrected
+     scheme                                 metric  reported_in_P4c  corrected  permutation_null null_usable
+within_site P3 nested A-gene age R² (median types)           +0.345     +0.123            -0.244       False
+within_site  P3 unrestricted age R² (median types)           +0.483     +0.310               NaN        None
+within_site                P4c R²_A frozen A-genes           +0.423     +0.250            -0.232       False
+within_site                P4c R²_I size-matched I           +0.559     +0.413            -0.262       False
+within_site                    P4c R²_I full I set           +0.571     +0.424            -0.262       False
+within_site                P4c shuffle-age A-genes           +0.195     -0.232            -0.232       False
+within_site                              P4c Acc_I           +0.999     +0.999               NaN        None
+within_site            P4c Acc_A (identity from A)           +0.994     +0.994               NaN        None
+within_site      nested A-gene age R² (this audit)           +0.345     +0.125            -0.244       False
+within_site      nested I-gene age R² (this audit)              NaN     +0.462            -0.262       False
+       loso P3 nested A-gene age R² (median types)           -0.102     -0.102            -0.828       False
+       loso  P3 unrestricted age R² (median types)           +0.096     +0.096               NaN        None
+       loso                P4c R²_A frozen A-genes           -0.019     -0.016            -1.005       False
+       loso                P4c R²_I size-matched I           +0.260     +0.279            -0.965       False
+       loso                    P4c R²_I full I set           +0.267     +0.289            -0.965       False
+       loso                P4c shuffle-age A-genes           -0.913     -1.005            -1.005       False
+       loso                              P4c Acc_I           +0.999     +0.999               NaN        None
+       loso            P4c Acc_A (identity from A)           +0.991     +0.991               NaN        None
+       loso      nested A-gene age R² (this audit)           -0.102     -0.091            -0.828       False
+       loso      nested I-gene age R² (this audit)              NaN     +0.330            -0.965       False
+
+--------------------------------------------------------------------------------
+[STOP A] corrected within-site shuffle null (site-strat mean) = -0.232  threshold 0.05
+         LOSO shuffle null (pooled mean) = -1.005
+         STOP A (do not proceed to B/C)? False
+
+[P4c verdict] within-site reported=soundness-fail  corrected=falsified (not separable)
+              R²_I >= 0.8 × R²_A (1.652); R²_A − R²_I = -0.163 < 0.10; Acc_A >= 0.9 × Acc_I (0.995)
+[P4c verdict] LOSO reported=falsified (not separable)  corrected=falsified (not separable)
+              R²_A − R²_I = -0.294 < 0.10; Acc_A >= 0.9 × Acc_I (0.992)
+[P4c change] STRENGTHEN: soundness-fail cleared; separability still falsified on the cross-test
+   within-site order reported=I_beats_A corrected=I_beats_A (R²_A +0.250 vs R²_I +0.413)
+   LOSO order reported=I_beats_A corrected=I_beats_A (R²_A -0.016 vs R²_I +0.279)
+
+[A] wrote results/geometry/partA_*
+[A] done.

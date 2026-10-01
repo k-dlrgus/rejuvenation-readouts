@@ -1,0 +1,9 @@
+cell_line,day,gsm,age_years,n_cells,median_UMI_per_cell,median_genes_per_cell,mito_read_fraction_library,mito_read_fraction_median_cell,n_mito_genes,mito_rule,chemistry,software,n_cluster_0,n_cluster_1,n_cluster_2
+GM00731,0,GSM8986586,96,5021,14380.0,4078.0,0.02283972351650985,0.02559867877786953,13,symbol upper startswith MT-,Single Cell 3' v3,cellranger-7.1.0,73,2535,2413
+GM00731,3,GSM8986587,96,6318,10199.0,3646.0,0.03883674221277347,0.035639352012409004,13,symbol upper startswith MT-,Single Cell 3' v3,cellranger-7.1.0,2159,915,3244
+GM00731,7,GSM8986588,96,6915,10922.0,3700.0,0.03317215540013561,0.031462860849821604,13,symbol upper startswith MT-,Single Cell 3' v3,cellranger-7.1.0,3054,3011,850
+GM00731,10,GSM8986589,96,4399,13456.0,4187.0,0.03587785418436102,0.03434652906554866,13,symbol upper startswith MT-,Single Cell 3' v3,cellranger-7.1.0,2645,708,1046
+GM23815,0,GSM8986590,22,7782,8140.0,3030.0,0.026711005305762408,0.029267862720616336,13,symbol upper startswith MT-,Single Cell 3' v3,cellranger-7.1.0,2896,3315,1571
+GM23815,3,GSM8986591,22,6738,10662.0,3881.5,0.05094586476819631,0.047800118703156945,13,symbol upper startswith MT-,Single Cell 3' v3,cellranger-7.1.0,2637,3346,755
+GM23815,7,GSM8986592,22,12209,6108.0,2565.0,0.03838899794934119,0.03493621197252208,13,symbol upper startswith MT-,Single Cell 3' v3,cellranger-7.1.0,4407,6163,1639
+GM23815,10,GSM8986593,22,7935,9063.0,3183.0,0.04951283188448647,0.0441306266548985,13,symbol upper startswith MT-,Single Cell 3' v3,cellranger-7.1.0,2910,793,4232

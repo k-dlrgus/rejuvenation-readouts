@@ -1,0 +1,374 @@
+====================================================================================================
+LOWDIM L2 — identifiability in low-dimensional spaces  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO perturbation data. No TF Atlas. No candidate interventions.
+Dimensionality reduction is fit on training folds only (no full-cohort PCA/NMF then held-out).
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+k in [20, 50, 100, 150]; variants=['pca', 'curated', 'wgcna']; tech |r| flag=0.5
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[filter] tech matrix (3323, 4)  NaNs=0  site H/M=1848/1475 rows
+[filter] log_umi finite=3323  frac_neuronal finite=3323
+[filter] types=20  donors/type min/median/max=16/192/232
+[filter]   smooth muscle cell: n_rows=16 n_donors=16 k_cap={20: 14, 50: 14, 100: 14, 150: 14}
+[filter]   perivascular macrophage: n_rows=31 n_donors=31 k_cap={20: 20, 50: 29, 100: 29, 150: 29}
+[filter]   vascular leptomeningeal cell: n_rows=81 n_donors=81 k_cap={20: 20, 50: 50, 100: 79, 150: 79}
+[filter]   L6b glutamatergic neuron of the primary motor cortex: n_rows=109 n_donors=109 k_cap={20: 20, 50: 50, 100: 100, 150: 107}
+[filter]   L5/6 near-projecting glutamatergic neuron: n_rows=124 n_donors=124 k_cap={20: 20, 50: 50, 100: 100, 150: 122}
+[filter]   pericyte: n_rows=136 n_donors=136 k_cap={20: 20, 50: 50, 100: 100, 150: 134}
+[filter]   L6 intratelencephalic projecting glutamatergic neuron: n_rows=150 n_donors=150 k_cap={20: 20, 50: 50, 100: 100, 150: 148}
+[filter]   L6 corticothalamic-projecting glutamatergic cortical neuron: n_rows=153 n_donors=153 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   endothelial cell: n_rows=160 n_donors=160 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   GABAergic neuron: n_rows=179 n_donors=179 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   lamp5 GABAergic interneuron: n_rows=205 n_donors=205 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   sst GABAergic interneuron: n_rows=206 n_donors=206 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   pvalb GABAergic interneuron: n_rows=209 n_donors=209 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   L2/3-6 intratelencephalic projecting glutamatergic neuron: n_rows=215 n_donors=215 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   VIP GABAergic interneuron: n_rows=217 n_donors=217 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   microglial cell: n_rows=219 n_donors=219 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   L2/3 intratelencephalic projecting glutamatergic neuron: n_rows=220 n_donors=220 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   astrocyte: n_rows=229 n_donors=229 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   oligodendrocyte: n_rows=232 n_donors=232 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter]   oligodendrocyte precursor cell: n_rows=232 n_donors=232 k_cap={20: 20, 50: 50, 100: 100, 150: 150}
+[filter] gene symbols: 25526  unique-upper=25493  dup_skipped=33
+[filter] cached gene sets: 7275 from genesets_index.json
+[filter]   Hallmark: 50
+[filter]   Reactome: 1818
+[filter]   GO_BP: 5407
+[filter] sets with >= 10 mapped genes: 4686
+[L2] gene-space baseline: boot=45.1°  V2 within-site=+0.231  G1=+0.317  H→M=-0.213  M→H=-0.499  source=results/target json
+[L2] STOP bars: bootstrap angle ≤ 35° AND at least one transfer R² > 0
+
+[L2a] donor bootstrap n_boot=20  seed=20260914
+   variant=pca
+      pca boot 1/20  (38s)
+      pca boot 5/20  (199s)
+       pca boot 10/20  (1619s)        pca boot 15/20  (2281s)
+      pca boot 20/20  (2964s)
+      A_pca_k020 median-over-types angle=56.9°  n_types=20
+      A_pca_k020_clean median-over-types angle=60.8°  n_types=20
+      A_pca_k050 median-over-types angle=55.5°  n_types=20
+      A_pca_k050_clean median-over-types angle=57.8°  n_types=20
+      A_pca_k100 median-over-types angle=49.6°  n_types=20
+      A_pca_k100_clean median-over-types angle=50.7°  n_types=20
+      A_pca_k150 median-over-types angle=44.6°  n_types=20
+      A_pca_k150_clean median-over-types angle=47.8°  n_types=20
+   variant=curated
+      curated boot 1/20  (3035s)
+      curated boot 5/20  (3213s)
+      curated boot 10/20  (3435s)
+      curated boot 15/20  (3680s)
+      curated boot 20/20  (3842s)
+      B_curated_k020 median-over-types angle=52.6°  n_types=20
+      B_curated_k020_clean median-over-types angle=55.1°  n_types=20
+      B_curated_k050 median-over-types angle=48.5°  n_types=20
+      B_curated_k050_clean median-over-types angle=48.8°  n_types=20
+      B_curated_k100 median-over-types angle=55.6°  n_types=20
+      B_curated_k100_clean median-over-types angle=56.5°  n_types=20
+      B_curated_k150 median-over-types angle=63.1°  n_types=20
+      B_curated_k150_clean median-over-types angle=66.1°  n_types=20
+   variant=wgcna
+      wgcna boot 1/20  (3877s)
+      wgcna boot 5/20  (4008s)
+      wgcna boot 10/20  (4211s)
+      wgcna boot 15/20  (4366s)
+      wgcna boot 20/20  (4520s)
+      C_wgcna_k020 median-over-types angle=83.8°  n_types=20
+      C_wgcna_k020_clean median-over-types angle=84.8°  n_types=20
+      C_wgcna_k050 median-over-types angle=82.2°  n_types=20
+      C_wgcna_k050_clean median-over-types angle=82.8°  n_types=20
+      C_wgcna_k100 median-over-types angle=79.1°  n_types=20
+      C_wgcna_k100_clean median-over-types angle=79.1°  n_types=20
+      C_wgcna_k150 median-over-types angle=85.0°  n_types=20
+      C_wgcna_k150_clean median-over-types angle=84.7°  n_types=20
+[L2a] done in 4522s
+
+[L2b] held-out prediction (train-fold spaces only)
+   scheme=within_site  n_folds=10
+      variant=pca  fitting fold spaces...
+         fold 1/10  (24s)
+         fold 2/10  (49s)
+         fold 3/10  (78s)
+         fold 4/10  (102s)
+         fold 5/10  (127s)
+         fold 6/10  (146s)
+         fold 7/10  (165s)
+         fold 8/10  (185s)
+         fold 9/10  (203s)
+         fold 10/10  (224s)
+      pca permutation null (20)...
+         perm 5/20  (247s)
+         perm 10/20  (270s)
+         perm 15/20  (288s)
+         perm 20/20  (307s)
+      within_site A_pca_k020: site-strat R²=+0.061  pooled=+0.293  null=-0.094  p=0.048
+      within_site A_pca_k020_clean: site-strat R²=+0.057  pooled=+0.296  null=-0.087  p=0.048
+      within_site A_pca_k050: site-strat R²=+0.191  pooled=+0.379  null=-0.147  p=0.048
+      within_site A_pca_k050_clean: site-strat R²=+0.187  pooled=+0.373  null=-0.127  p=0.048
+      within_site A_pca_k100: site-strat R²=-0.147  pooled=+0.165  null=-0.244  p=0.095
+      within_site A_pca_k100_clean: site-strat R²=+0.132  pooled=+0.367  null=-0.173  p=0.048
+      within_site A_pca_k150: site-strat R²=-0.147  pooled=+0.165  null=-0.244  p=0.095
+      within_site A_pca_k150_clean: site-strat R²=+0.132  pooled=+0.367  null=-0.173  p=0.048
+      variant=curated  fitting fold spaces...
+         fold 1/10  (325s)
+         fold 2/10  (338s)
+         fold 3/10  (351s)
+         fold 4/10  (363s)
+         fold 5/10  (376s)
+         fold 6/10  (388s)
+         fold 7/10  (400s)
+         fold 8/10  (412s)
+         fold 9/10  (422s)
+         fold 10/10  (433s)
+      curated permutation null (20)...
+         perm 5/20  (452s)
+         perm 10/20  (466s)
+         perm 15/20  (481s)
+         perm 20/20  (497s)
+      within_site B_curated_k020: site-strat R²=-0.102  pooled=+0.174  null=-0.120  p=0.381
+      within_site B_curated_k020_clean: site-strat R²=-0.120  pooled=+0.161  null=-0.118  p=0.619
+      within_site B_curated_k050: site-strat R²=-0.119  pooled=+0.177  null=-0.177  p=0.143
+      within_site B_curated_k050_clean: site-strat R²=-0.122  pooled=+0.177  null=-0.164  p=0.286
+      within_site B_curated_k100: site-strat R²=-0.104  pooled=+0.169  null=-0.181  p=0.048
+      within_site B_curated_k100_clean: site-strat R²=-0.131  pooled=+0.160  null=-0.168  p=0.238
+      within_site B_curated_k150: site-strat R²=-0.104  pooled=+0.169  null=-0.181  p=0.048
+      within_site B_curated_k150_clean: site-strat R²=-0.131  pooled=+0.160  null=-0.168  p=0.238
+      variant=wgcna  fitting fold spaces...
+         fold 1/10  (513s)
+         fold 2/10  (526s)
+         fold 3/10  (539s)
+         fold 4/10  (551s)
+         fold 5/10  (564s)
+         fold 6/10  (574s)
+         fold 7/10  (584s)
+         fold 8/10  (595s)
+         fold 9/10  (605s)
+         fold 10/10  (615s)
+      wgcna permutation null (20)...
+         perm 5/20  (631s)
+         perm 10/20  (643s)
+         perm 15/20  (656s)
+         perm 20/20  (669s)
+      within_site C_wgcna_k020: site-strat R²=-0.003  pooled=+0.246  null=-0.162  p=0.048
+      within_site C_wgcna_k020_clean: site-strat R²=-0.001  pooled=+0.248  null=-0.160  p=0.048
+      within_site C_wgcna_k050: site-strat R²=-0.033  pooled=+0.214  null=-0.263  p=0.048
+      within_site C_wgcna_k050_clean: site-strat R²=-0.034  pooled=+0.222  null=-0.247  p=0.048
+      within_site C_wgcna_k100: site-strat R²=-0.465  pooled=-0.145  null=-0.830  p=0.286
+      within_site C_wgcna_k100_clean: site-strat R²=-0.314  pooled=-0.011  null=-0.597  p=0.190
+      within_site C_wgcna_k150: site-strat R²=-0.465  pooled=-0.145  null=-0.830  p=0.286
+      within_site C_wgcna_k150_clean: site-strat R²=-0.314  pooled=-0.011  null=-0.597  p=0.190
+   scheme=loso  n_folds=2
+      variant=pca  fitting fold spaces...
+         fold 1/2  (689s)
+         fold 2/2  (711s)
+      pca permutation null (20)...
+         perm 5/20  (715s)
+         perm 10/20  (719s)
+         perm 15/20  (723s)
+         perm 20/20  (727s)
+      loso A_pca_k020: site-strat R²=-0.806  pooled=-0.339  null=-1.513  p=0.048
+      loso A_pca_k020_clean: site-strat R²=-0.800  pooled=-0.348  null=-1.495  p=0.048
+      loso A_pca_k050: site-strat R²=-0.473  pooled=-0.139  null=-1.556  p=0.048
+      loso A_pca_k050_clean: site-strat R²=-0.527  pooled=-0.143  null=-1.529  p=0.048
+      loso A_pca_k100: site-strat R²=-0.386  pooled=-0.072  null=-1.598  p=0.048
+      loso A_pca_k100_clean: site-strat R²=-0.411  pooled=-0.072  null=-1.569  p=0.048
+      loso A_pca_k150: site-strat R²=-0.344  pooled=-0.056  null=-1.610  p=0.048
+      loso A_pca_k150_clean: site-strat R²=-0.384  pooled=-0.056  null=-1.564  p=0.048
+      variant=curated  fitting fold spaces...
+         fold 1/2  (741s)
+         fold 2/2  (755s)
+      curated permutation null (20)...
+         perm 5/20  (760s)
+         perm 10/20  (763s)
+         perm 15/20  (766s)
+         perm 20/20  (770s)
+      loso B_curated_k020: site-strat R²=-0.969  pooled=-0.522  null=-1.571  p=0.048
+      loso B_curated_k020_clean: site-strat R²=-0.996  pooled=-0.509  null=-1.569  p=0.048
+      loso B_curated_k050: site-strat R²=-0.859  pooled=-0.420  null=-1.604  p=0.048
+      loso B_curated_k050_clean: site-strat R²=-0.863  pooled=-0.420  null=-1.601  p=0.048
+      loso B_curated_k100: site-strat R²=-0.874  pooled=-0.451  null=-1.565  p=0.048
+      loso B_curated_k100_clean: site-strat R²=-0.875  pooled=-0.442  null=-1.569  p=0.048
+      loso B_curated_k150: site-strat R²=-0.858  pooled=-0.434  null=-1.567  p=0.048
+      loso B_curated_k150_clean: site-strat R²=-0.858  pooled=-0.433  null=-1.569  p=0.048
+      variant=wgcna  fitting fold spaces...
+         fold 1/2  (786s)
+         fold 2/2  (802s)
+      wgcna permutation null (20)...
+         perm 5/20  (806s)
+         perm 10/20  (810s)
+         perm 15/20  (814s)
+         perm 20/20  (818s)
+      loso C_wgcna_k020: site-strat R²=-0.698  pooled=-0.281  null=-1.554  p=0.048
+      loso C_wgcna_k020_clean: site-strat R²=-0.698  pooled=-0.303  null=-1.549  p=0.048
+      loso C_wgcna_k050: site-strat R²=-0.694  pooled=-0.340  null=-1.629  p=0.048
+      loso C_wgcna_k050_clean: site-strat R²=-0.587  pooled=-0.207  null=-1.607  p=0.048
+      loso C_wgcna_k100: site-strat R²=-0.500  pooled=-0.198  null=-1.699  p=0.048
+      loso C_wgcna_k100_clean: site-strat R²=-0.441  pooled=-0.134  null=-1.683  p=0.048
+      loso C_wgcna_k150: site-strat R²=-0.592  pooled=-0.255  null=-1.724  p=0.048
+      loso C_wgcna_k150_clean: site-strat R²=-0.559  pooled=-0.195  null=-1.703  p=0.048
+[L2b] done in 820s
+
+[L2c] site transfer (fit space + direction on one bank, score the other)
+   train HBCC n_donors=120 → test MSSM n_donors=113
+      pca observed + 20 train-age perms...
+      HBCC→MSSM A_pca_k020: R²=-0.669  null=-1.391  p=0.048
+      HBCC→MSSM A_pca_k020_clean: R²=-0.723  null=-1.378  p=0.048
+      HBCC→MSSM A_pca_k050: R²=-0.255  null=-1.460  p=0.048
+      HBCC→MSSM A_pca_k050_clean: R²=-0.301  null=-1.444  p=0.048
+      HBCC→MSSM A_pca_k100: R²=-0.225  null=-1.508  p=0.048
+      HBCC→MSSM A_pca_k100_clean: R²=-0.225  null=-1.471  p=0.048
+      HBCC→MSSM A_pca_k150: R²=-0.259  null=-1.532  p=0.048
+      HBCC→MSSM A_pca_k150_clean: R²=-0.222  null=-1.485  p=0.048
+      pca H→M done (385s)
+      curated observed + 20 train-age perms...
+      HBCC→MSSM B_curated_k020: R²=-0.872  null=-1.378  p=0.048
+      HBCC→MSSM B_curated_k020_clean: R²=-0.872  null=-1.376  p=0.048
+      HBCC→MSSM B_curated_k050: R²=-0.802  null=-1.406  p=0.048
+      HBCC→MSSM B_curated_k050_clean: R²=-0.802  null=-1.404  p=0.048
+      HBCC→MSSM B_curated_k100: R²=-0.742  null=-1.398  p=0.048
+      HBCC→MSSM B_curated_k100_clean: R²=-0.742  null=-1.397  p=0.048
+      HBCC→MSSM B_curated_k150: R²=-0.601  null=-1.410  p=0.048
+      HBCC→MSSM B_curated_k150_clean: R²=-0.601  null=-1.410  p=0.048
+      curated H→M done (694s)
+      wgcna observed + 20 train-age perms...
+      HBCC→MSSM C_wgcna_k020: R²=-0.604  null=-1.484  p=0.048
+      HBCC→MSSM C_wgcna_k020_clean: R²=-0.604  null=-1.472  p=0.048
+      HBCC→MSSM C_wgcna_k050: R²=-0.453  null=-1.532  p=0.048
+      HBCC→MSSM C_wgcna_k050_clean: R²=-0.496  null=-1.518  p=0.048
+      HBCC→MSSM C_wgcna_k100: R²=-0.390  null=-1.553  p=0.048
+      HBCC→MSSM C_wgcna_k100_clean: R²=-0.390  null=-1.536  p=0.048
+      HBCC→MSSM C_wgcna_k150: R²=-0.412  null=-1.567  p=0.048
+      HBCC→MSSM C_wgcna_k150_clean: R²=-0.412  null=-1.556  p=0.048
+      wgcna H→M done (998s)
+   train MSSM n_donors=113 → test HBCC n_donors=120
+      pca observed + 20 train-age perms...
+      MSSM→HBCC A_pca_k020: R²=-0.903  null=-1.404  p=0.048
+      MSSM→HBCC A_pca_k020_clean: R²=-0.913  null=-1.429  p=0.048
+      MSSM→HBCC A_pca_k050: R²=-0.603  null=-1.487  p=0.048
+      MSSM→HBCC A_pca_k050_clean: R²=-0.603  null=-1.471  p=0.048
+      MSSM→HBCC A_pca_k100: R²=-0.525  null=-1.547  p=0.048
+      MSSM→HBCC A_pca_k100_clean: R²=-0.495  null=-1.535  p=0.048
+      MSSM→HBCC A_pca_k150: R²=-0.525  null=-1.561  p=0.048
+      MSSM→HBCC A_pca_k150_clean: R²=-0.495  null=-1.525  p=0.048
+      pca M→H done (1328s)
+      curated observed + 20 train-age perms...
+      MSSM→HBCC B_curated_k020: R²=-1.146  null=-1.521  p=0.048
+      MSSM→HBCC B_curated_k020_clean: R²=-1.157  null=-1.503  p=0.048
+      MSSM→HBCC B_curated_k050: R²=-0.989  null=-1.531  p=0.048
+      MSSM→HBCC B_curated_k050_clean: R²=-0.989  null=-1.522  p=0.048
+      MSSM→HBCC B_curated_k100: R²=-0.934  null=-1.541  p=0.048
+      MSSM→HBCC B_curated_k100_clean: R²=-0.934  null=-1.562  p=0.048
+      MSSM→HBCC B_curated_k150: R²=-0.933  null=-1.541  p=0.048
+      MSSM→HBCC B_curated_k150_clean: R²=-0.933  null=-1.550  p=0.048
+      curated M→H done (1625s)
+      wgcna observed + 20 train-age perms...
+      MSSM→HBCC C_wgcna_k020: R²=-0.791  null=-1.550  p=0.048
+      MSSM→HBCC C_wgcna_k020_clean: R²=-0.791  null=-1.556  p=0.048
+      MSSM→HBCC C_wgcna_k050: R²=-0.735  null=-1.603  p=0.048
+      MSSM→HBCC C_wgcna_k050_clean: R²=-0.603  null=-1.577  p=0.048
+      MSSM→HBCC C_wgcna_k100: R²=-0.526  null=-1.641  p=0.048
+      MSSM→HBCC C_wgcna_k100_clean: R²=-0.520  null=-1.610  p=0.048
+      MSSM→HBCC C_wgcna_k150: R²=-0.526  null=-1.645  p=0.048
+      MSSM→HBCC C_wgcna_k150_clean: R²=-0.526  null=-1.625  p=0.048
+      wgcna M→H done (1918s)
+[L2c] done in 1918s
+
+[L2d] age-range split, bank-controlled
+[L2d] within HBCC: young donors=75 rows=1143  old donors=45 rows=705
+[L2d] within MSSM: young donors=27 rows=367  old donors=86 rows=1108
+[L2d] balance HBCC: min(young,old)=45 (young=75 old=45)
+[L2d] balance MSSM: min(young,old)=27 (young=27 old=86)
+[L2d] balanced pool: young donors=72 sites={'H': 45, 'M': 27}  old donors=72 sites={'H': 45, 'M': 27}
+   split=within_H
+      within_H A_pca_k020 median angle=86.6°  n_types=18
+      within_H A_pca_k020_clean median angle=86.7°  n_types=18
+      within_H A_pca_k050 median angle=86.6°  n_types=18
+      within_H A_pca_k050_clean median angle=86.4°  n_types=18
+      within_H A_pca_k100 median angle=85.7°  n_types=18
+      within_H A_pca_k100_clean median angle=85.9°  n_types=18
+      within_H A_pca_k150 median angle=85.7°  n_types=18
+      within_H A_pca_k150_clean median angle=85.9°  n_types=18
+      within_H pca done (17s)
+      within_H B_curated_k020 median angle=73.8°  n_types=18
+      within_H B_curated_k020_clean median angle=74.1°  n_types=18
+      within_H B_curated_k050 median angle=71.7°  n_types=18
+      within_H B_curated_k050_clean median angle=70.6°  n_types=18
+      within_H B_curated_k100 median angle=74.9°  n_types=18
+      within_H B_curated_k100_clean median angle=73.3°  n_types=18
+      within_H B_curated_k150 median angle=74.9°  n_types=18
+      within_H B_curated_k150_clean median angle=73.3°  n_types=18
+      within_H curated done (30s)
+      within_H C_wgcna_k020 median angle=88.5°  n_types=18
+      within_H C_wgcna_k020_clean median angle=88.5°  n_types=18
+      within_H C_wgcna_k050 median angle=88.4°  n_types=18
+      within_H C_wgcna_k050_clean median angle=88.7°  n_types=18
+      within_H C_wgcna_k100 median angle=88.2°  n_types=18
+      within_H C_wgcna_k100_clean median angle=88.2°  n_types=18
+      within_H C_wgcna_k150 median angle=88.2°  n_types=18
+      within_H C_wgcna_k150_clean median angle=88.2°  n_types=18
+      within_H wgcna done (46s)
+   split=within_M
+      within_M A_pca_k020 median angle=83.0°  n_types=17
+      within_M A_pca_k020_clean median angle=85.5°  n_types=17
+      within_M A_pca_k050 median angle=85.9°  n_types=17
+      within_M A_pca_k050_clean median angle=87.6°  n_types=17
+      within_M A_pca_k100 median angle=84.7°  n_types=17
+      within_M A_pca_k100_clean median angle=87.5°  n_types=17
+      within_M A_pca_k150 median angle=84.7°  n_types=17
+      within_M A_pca_k150_clean median angle=87.5°  n_types=17
+      within_M pca done (59s)
+      within_M B_curated_k020 median angle=78.2°  n_types=17
+      within_M B_curated_k020_clean median angle=80.8°  n_types=17
+      within_M B_curated_k050 median angle=81.4°  n_types=17
+      within_M B_curated_k050_clean median angle=82.4°  n_types=17
+      within_M B_curated_k100 median angle=83.4°  n_types=17
+      within_M B_curated_k100_clean median angle=83.2°  n_types=17
+      within_M B_curated_k150 median angle=83.4°  n_types=17
+      within_M B_curated_k150_clean median angle=83.2°  n_types=17
+      within_M curated done (69s)
+      within_M C_wgcna_k020 median angle=88.6°  n_types=17
+      within_M C_wgcna_k020_clean median angle=88.7°  n_types=17
+      within_M C_wgcna_k050 median angle=88.0°  n_types=17
+      within_M C_wgcna_k050_clean median angle=87.9°  n_types=17
+      within_M C_wgcna_k100 median angle=88.8°  n_types=17
+      within_M C_wgcna_k100_clean median angle=88.4°  n_types=17
+      within_M C_wgcna_k150 median angle=88.8°  n_types=17
+      within_M C_wgcna_k150_clean median angle=88.4°  n_types=17
+      within_M wgcna done (82s)
+   split=balanced
+      balanced A_pca_k020 median angle=82.6°  n_types=18
+      balanced A_pca_k020_clean median angle=84.3°  n_types=18
+      balanced A_pca_k050 median angle=85.4°  n_types=18
+      balanced A_pca_k050_clean median angle=87.8°  n_types=18
+      balanced A_pca_k100 median angle=85.2°  n_types=18
+      balanced A_pca_k100_clean median angle=86.9°  n_types=18
+      balanced A_pca_k150 median angle=85.2°  n_types=18
+      balanced A_pca_k150_clean median angle=86.9°  n_types=18
+      balanced pca done (104s)
+      balanced B_curated_k020 median angle=79.7°  n_types=18
+      balanced B_curated_k020_clean median angle=79.1°  n_types=18
+      balanced B_curated_k050 median angle=74.0°  n_types=18
+      balanced B_curated_k050_clean median angle=74.3°  n_types=18
+      balanced B_curated_k100 median angle=73.4°  n_types=18
+      balanced B_curated_k100_clean median angle=73.1°  n_types=18
+      balanced B_curated_k150 median angle=73.4°  n_types=18
+      balanced B_curated_k150_clean median angle=73.1°  n_types=18
+      balanced curated done (121s)
+      balanced C_wgcna_k020 median angle=88.7°  n_types=18
+      balanced C_wgcna_k020_clean median angle=88.9°  n_types=18
+      balanced C_wgcna_k050 median angle=88.6°  n_types=18
+      balanced C_wgcna_k050_clean median angle=88.5°  n_types=18
+      balanced C_wgcna_k100 median angle=88.3°  n_types=18
+      balanced C_wgcna_k100_clean median angle=88.3°  n_types=18
+      balanced C_wgcna_k150 median angle=88.3°  n_types=18
+      balanced C_wgcna_k150_clean median angle=88.3°  n_types=18
+      balanced wgcna done (142s)
+[L2d] done in 142s
+[STOP L2] True  winner=NONE
+[L2] wrote results/lowdim/l2_*
+[L2] done.

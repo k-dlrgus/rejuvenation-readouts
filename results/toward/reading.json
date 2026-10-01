@@ -1,0 +1,22 @@
+{
+ "by_donor": {
+  "GM00731": {
+   "key": "away_from_old_only",
+   "cell_line": "GM00731",
+   "is_contrast": false,
+   "text": "GM00731: PartialReprog has cos_S=+0.077 but delta_young=+9.370 (n_cells=5832). Movement is away-from-old only. This is a real negative finding: a 1D age score cannot distinguish toward-young from away-from-old. The frozen-ruler score is not used to rescue this."
+  },
+  "GM23815": {
+   "key": "away_from_old_only",
+   "cell_line": "GM23815",
+   "is_contrast": true,
+   "text": "CONTRAST (young donor GM23815; never the reading): PartialReprog has cos_S=+0.052 but delta_young=+14.189 (n_cells=6481). Movement is away-from-old only. This is a real negative finding: a 1D age score cannot distinguish toward-young from away-from-old. The frozen-ruler score is not used to rescue this."
+  }
+ },
+ "claim": {
+  "key": "away_from_old_only",
+  "cell_line": "GM00731",
+  "is_contrast": false,
+  "text": "GM00731: PartialReprog has cos_S=+0.077 but delta_young=+9.370 (n_cells=5832). Movement is away-from-old only. This is a real negative finding: a 1D age score cannot distinguish toward-young from away-from-old. The frozen-ruler score is not used to rescue this."
+ }
+}

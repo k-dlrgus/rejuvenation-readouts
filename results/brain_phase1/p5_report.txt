@@ -1,0 +1,12 @@
+====================================================================================================
+BRAIN PHASE 1  STAGE P5 — WM replication of FROZEN sets.  seed = 20260914
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+WM dataset_id=c05e6940-729c-47bd-a2a6-6ce3730c4919 (T1 registry; not invented). Nothing re-derived.
+[P5] WM pseudobulk (193, 32902) donors=20 types=11
+[filter] genes with CPM>1 in >= 10% of pseudobulks   genes  32,902 -> 20,578  (removed 12,324)
+[P5] mapped A 893/1355  I 1802/1876
+[P5] SequencingPool-grouped folds=5  pools=6  donors=20
+[P5] Frozen A-genes do **not** retain a clear age association on WM (median-over-types R²=-0.518, n_donors=20). Cross-test cannot confirm DLPFC.
+[findings] wrote <repo>\FINDINGS_BRAIN_PHASE1.md
+[P5] done.

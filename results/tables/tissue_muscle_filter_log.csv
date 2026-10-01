@@ -1,0 +1,7 @@
+step,unit,before,after,removed,note
+cells with numeric donor age,cells,201575,195843,5732,non-numeric development_stage dropped
+is_primary_data==True,cells,195843,165109,30734,
+pseudobulk groups with >= 20 cells,groups,268,221,47,
+cells in retained pseudobulk groups,cells,165109,164760,349,
+cell types present in >= 9 donors,cell types,16,13,3,"dropped: {'adipocyte': np.int64(2), 'erythroid lineage cell': np.int64(1), 'pericyte': np.int64(4)}"
+cells in retained cell types,cells,164760,162982,1778,

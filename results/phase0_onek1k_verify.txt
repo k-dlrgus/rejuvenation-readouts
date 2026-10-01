@@ -1,0 +1,40 @@
+﻿==========================================================================================
+FILE: data\raw\onek1k\1e44db10-b572-46cc-adae-dcc7acd44ca6.h5ad (4.43 GB on disk)
+top-level keys: ['X', 'layers', 'obs', 'obsm', 'obsp', 'uns', 'var', 'varm', 'varp']
+X: sparse group, encoding: {'encoding-type': 'csr_matrix', 'encoding-version': '0.1.0', 'shape': array([1248980,   35528])} data dtype: float32 nnz: 1183532685
+layers: []
+shape (cells, genes): (1248980, 35528)
+obs columns: ['orig.ident', 'nCount_RNA', 'nFeature_RNA', 'percent.mt', 'donor_id', 'pool_number', 'predicted.celltype.l2', 'predicted.celltype.l2.score', 'age', 'tissue_ontology_term_id', 'assay_ontology_term_id', 'disease_ontology_term_id', 'cell_type_ontology_term_id', 'self_reported_ethnicity_ontology_term_id', 'development_stage_ontology_term_id', 'sex_ontology_term_id', 'is_primary_data', 'suspension_type', 'tissue_type', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid']
+var columns: ['vst.mean', 'vst.variance', 'vst.variance.expected', 'vst.variance.standardized', 'vst.variable', 'feature_is_filtered', 'feature_name', 'feature_reference', 'feature_biotype', 'feature_length', 'feature_type']
+uns keys: ['cell_type_ontology_term_id_colors', 'citation', 'default_embedding', 'is_pre_analysis', 'organism', 'organism_ontology_term_id', 'schema_reference', 'schema_version', 'title']
+obsm keys: ['X_azimuth_spca', 'X_azimuth_umap', 'X_harmony', 'X_pca', 'X_umap']
+obs head(3):
+barcode                                                               AAACCTGAGAATGTTG-1   AAACCTGAGAGAACAG-1                                    AAACCTGAGCATGGCA-1
+orig.ident                                                                        onek1k               onek1k                                                onek1k
+nCount_RNA                                                                        4921.0               2523.0                                                2565.0
+nFeature_RNA                                                                        1256                  941                                                   716
+percent.mt                                                                      1.341191             3.606817                                              3.274854
+donor_id                                                                         691_692              693_694                                               688_689
+pool_number                                                                            1                    1                                                     1
+predicted.celltype.l2                                                            CD4 TCM                   NK                                             CD4 Naive
+predicted.celltype.l2.score                                                     0.605378                  1.0                                              0.557355
+age                                                                                   66                   88                                                    66
+tissue_ontology_term_id                                                   UBERON:0000178       UBERON:0000178                                        UBERON:0000178
+assay_ontology_term_id                                                       EFO:0009899          EFO:0009899                                           EFO:0009899
+disease_ontology_term_id                                                    PATO:0000461         PATO:0000461                                          PATO:0000461
+cell_type_ontology_term_id                                                    CL:0000904           CL:0000623                                            CL:0000895
+self_reported_ethnicity_ontology_term_id                                  HANCESTRO:0346       HANCESTRO:0346                                        HANCESTRO:0346
+development_stage_ontology_term_id                                        HsapDv:0000160       HsapDv:0000214                                        HsapDv:0000160
+sex_ontology_term_id                                                        PATO:0000384         PATO:0000383                                          PATO:0000384
+is_primary_data                                                                     True                 True                                                  True
+suspension_type                                                                     cell                 cell                                                  cell
+tissue_type                                                                       tissue               tissue                                                tissue
+cell_type                                 central memory CD4-positive, alpha-beta T cell  natural killer cell  naive thymus-derived CD4-positive, alpha-beta T cell
+assay                                                                          10x 3' v2            10x 3' v2                                             10x 3' v2
+disease                                                                           normal               normal                                                normal
+sex                                                                                 male               female                                                  male
+tissue                                                                             blood                blood                                                 blood
+self_reported_ethnicity                                                       Australian           Australian                                            Australian
+development_stage                                                      66-year-old stage    88-year-old stage                                     66-year-old stage
+observation_joinid                                                            6lGn%bs7=c           lI6AWYFKTJ                                            5quUT(fC3Q
+==========================================================================================

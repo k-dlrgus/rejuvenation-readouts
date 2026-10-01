@@ -1,0 +1,41 @@
+celltype,r2,mae,n_te,n_tr,train_site,test_site
+GABAergic neuron,-1.1398085849210808,19.01520449560947,36,45,H,M
+L2/3 intratelencephalic projecting glutamatergic neuron,-0.3500852464046984,15.960167517223885,44,48,H,M
+L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.17507173517691776,14.363039810006404,40,49,H,M
+L5/6 near-projecting glutamatergic neuron,-0.3605987195921381,15.265171362083773,17,34,H,M
+L6 corticothalamic-projecting glutamatergic cortical neuron,-0.9353746009504387,17.869708997298414,27,39,H,M
+L6 intratelencephalic projecting glutamatergic neuron,-0.9391496695371939,16.931199556905714,28,35,H,M
+L6b glutamatergic neuron of the primary motor cortex,-1.134493516177368,16.777266791967943,17,32,H,M
+VIP GABAergic interneuron,-0.8287486864701463,17.634030436654115,41,49,H,M
+astrocyte,-0.9468364962429459,18.85656320112758,48,50,H,M
+endothelial cell,-1.3486643755069303,20.150789272868092,24,49,H,M
+lamp5 GABAergic interneuron,-0.9882339946810892,17.880962211571042,38,49,H,M
+microglial cell,-1.2055787621319025,20.54792549506396,45,48,H,M
+oligodendrocyte,-0.3036715407993089,15.007570665188442,47,52,H,M
+oligodendrocyte precursor cell,-0.6767343913441177,17.616272523713942,48,51,H,M
+pericyte,-1.965091998095633,20.2596146149912,23,40,H,M
+perivascular macrophage,,,4,6,H,M
+pvalb GABAergic interneuron,-0.8064673326997287,16.617176770753023,38,48,H,M
+smooth muscle cell,,,3,5,H,M
+sst GABAergic interneuron,-0.63688129688575,16.641728763551527,35,48,H,M
+vascular leptomeningeal cell,-4.10606756932826,20.65463261427613,8,24,H,M
+GABAergic neuron,-1.1926284186563283,15.644894574917357,45,36,M,H
+L2/3 intratelencephalic projecting glutamatergic neuron,-0.22802434587201015,11.317765864894419,48,44,M,H
+L2/3-6 intratelencephalic projecting glutamatergic neuron,-0.3478796952506178,11.894244315749203,49,40,M,H
+L5/6 near-projecting glutamatergic neuron,-0.8929279136778197,11.698539536731968,34,17,M,H
+L6 corticothalamic-projecting glutamatergic cortical neuron,-1.3279331038795674,14.671766789317408,39,27,M,H
+L6 intratelencephalic projecting glutamatergic neuron,-1.2145406378038643,15.361903264645356,35,28,M,H
+L6b glutamatergic neuron of the primary motor cortex,-1.8655095175361769,17.48510044391593,32,17,M,H
+VIP GABAergic interneuron,-0.9842059905683531,15.138263053921797,49,41,M,H
+astrocyte,-0.7191870909194769,13.618775687621216,50,48,M,H
+endothelial cell,-2.4532827462297315,19.157958752586346,49,24,M,H
+lamp5 GABAergic interneuron,-1.0549143456411567,14.757517652851243,49,38,M,H
+microglial cell,-1.5738915566243805,16.829156747022584,48,45,M,H
+oligodendrocyte,-1.106837271543799,15.851515653630752,52,47,M,H
+oligodendrocyte precursor cell,-1.360970661015465,16.399623075561873,51,48,M,H
+pericyte,-2.76532366941916,20.162331948905415,40,23,M,H
+perivascular macrophage,,,6,4,M,H
+pvalb GABAergic interneuron,-0.8780912563757592,14.436017408389949,48,38,M,H
+smooth muscle cell,,,5,3,M,H
+sst GABAergic interneuron,-1.07210143815302,14.141706375615614,48,35,M,H
+vascular leptomeningeal cell,-3.6734278505966262,22.385493931524547,24,8,M,H

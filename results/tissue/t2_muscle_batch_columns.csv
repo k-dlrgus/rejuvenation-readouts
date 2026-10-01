@@ -1,0 +1,8 @@
+column,n_levels,n_levels_ge2_donors,frac_donors_in_shared,aliased_with_donor,looks_technical,usable
+assay,3,3,1.0,False,True,True
+suspension_type,2,2,1.0,False,True,True
+Dataset,2,2,1.0,False,True,True
+tissue,1,1,1.0,False,True,False
+age_nunique,1,1,1.0,False,False,False
+disease,1,1,1.0,False,False,False
+self_reported_ethnicity,1,1,1.0,False,False,False

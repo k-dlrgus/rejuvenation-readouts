@@ -1,0 +1,47 @@
+query,accession,n_samples,taxon,title,pdat
+OSK/OSKM + retina/vision (any assay),GSE316614,69,Homo sapiens,Targeting mutation-agnostic disease pathways ameliorates ciliopathy-related mesenchymal drift in RPE,2026/07/30
+OSK/OSKM + retina/vision (any assay),GSE274988,3,Mus musculus,Enhanced liver regeneration via targeted mRNA delivery for partial in vivo reprogramming,2026/07/08
+OSK/OSKM + retina/vision (any assay),GSE304044,120,Homo sapiens; Mus musculus,Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision,2026/06/11
+OSK/OSKM + retina/vision (any assay),GSE304043,7,Mus musculus,Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_6],2026/06/11
+OSK/OSKM + retina/vision (any assay),GSE304042,11,Homo sapiens,Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_5],2026/06/11
+OSK/OSKM + retina/vision (any assay),GSE304041,12,Homo sapiens,Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_4],2026/06/11
+OSK/OSKM + retina/vision (any assay),GSE304040,24,Mus musculus,Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_3],2026/06/11
+OSK/OSKM + retina/vision (any assay),GSE304039,6,Homo sapiens,Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_2],2026/06/11
+OSK/OSKM + retina/vision (any assay),GSE304038,18,Mus musculus,Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_RNA-seq_1],2026/06/11
+OSK/OSKM + retina/vision (any assay),GSE304037,42,Mus musculus,Decoupling oxidative resilience from reprogramming to rejuvenate the RPE and restore vision [GSTA4_ATAC-seq_1],2026/06/11
+OSK/OSKM + retina/vision (any assay),GSE325621,13,Danio rerio,Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mechanisms mediating natural retinal aging [Zebrafish multiome_ATAC],2026/04/02
+OSK/OSKM + retina/vision (any assay),GSE325620,14,Danio rerio,Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mechanisms mediating natural retinal aging [Zebrafish_multiome RNA],2026/04/02
+OSK/OSKM + retina/vision (any assay),GSE325478,18,Mus musculus,Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mechanisms mediating natural retinal aging [Mouse_multiome_scRNA],2026/04/02
+OSK/OSKM + retina/vision (any assay),GSE325477,17,Mus musculus,Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mechanisms mediating natural retinal aging [Mouse_multiome_scATAC],2026/04/02
+OSK/OSKM + retina/vision (any assay),GSE307031,6,Mus musculus,Comparative single-cell multiomic analysis reveals evolutionarily conserved and species-specific cellular mechanisms mediating natural retinal aging [Mouse_Xenium],2025/09/05
+OSK/OSKM + retina/vision (any assay),GSE199576,16,Homo sapiens,Single cell transcriptomic analysis and Epigenomic profiling of human Axioloids,2022/11/17
+OSK/OSKM + retina/vision (any assay),GSE199575,4,Homo sapiens,Epigenomic profiling of human Axioloids with CUT&Tag,2022/11/17
+OSK/OSKM + retina/vision (any assay),GSE198362,14,Homo sapiens,Cell Autonomous Lipid Handling Defects in Stargardt iPS Cell-Derived Retinal Pigment Epithelium Cells,2022/11/16
+OSK/OSKM + retina/vision (any assay),GSE199571,12,Homo sapiens,Single cell transcriptomic analysis of human axioloids,2022/11/15
+OSK/OSKM + retina/vision (any assay),GSE173304,6,Sus scrofa,Gene expression programs between genetically matched PEF and porcine iPSCs,2022/10/19
+partial reprogramming [Title],GSE276656,20,Mus musculus,Gene expression + ATAC multiome profiling of mPFC engram cells after OSK partial reprogramming,2026/02/10
+partial reprogramming [Title],GSE300477,1,Homo sapiens,A Single-Short Partial Reprogramming of the Endothelial Cells in vivo decreases Blood Pressure and Vascular Contractility Through the Attenuation of Endothelial-to-Mesenchymal Transition in Male Hypertensive Mice,2025/08/26
+partial reprogramming [Title],GSE298954,40,Mus musculus,A Single-Short Partial Reprogramming of the Endothelial Cells decreases Blood Pressure via attenuation of EndMT in Hypertensive Mice,2025/08/26
+partial reprogramming [Title],GSE297234,8,Homo sapiens,Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [scRNA-seq],2025/08/14
+partial reprogramming [Title],GSE297233,8,Homo sapiens,Prevalent mesenchymal drift in aging and disease is reversed by partial reprogramming [RNA-seq],2025/08/14
+partial reprogramming [Title],GSE201710,49,Homo sapiens; Mus musculus,Targeted partial reprogramming of age-associated cell states improves markers of health in mouse models of aging,2024/11/12
+partial reprogramming [Title],GSE245385,65,Mus musculus,"Impact of partial reprogramming, aging, and differentiation on primary neural stem cells",2024/02/04
+partial reprogramming [Title],GSE224438,10,Mus musculus,Single-cell gene expression of the subventricular zone (SVZ) neurogenic niche after partial reprogramming,2024/02/04
+partial reprogramming [Title],GSE254389,18,Homo sapiens,NEUROD1 efficiently converts peripheral blood cells into neurons with partial reprogramming by pluripotency factors,2024/02/02
+partial reprogramming [Title],GSE176206,18,Mus musculus,Partial reprogramming restores youthful gene expression through transient suppression of cell identity,2022/06/10
+partial reprogramming [Title],GSE190986,180,Mus musculus,In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice,2022/01/11
+partial reprogramming [Title],GSE190985,60,Mus musculus,In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (10 months; long-term treatment),2022/01/11
+partial reprogramming [Title],GSE190984,60,Mus musculus,In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (1 months; sort-term treatment),2022/01/11
+partial reprogramming [Title],GSE190983,60,Mus musculus,In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (7 months; long-term treatment),2022/01/11
+partial reprogramming [Title],GSE190665,168,Rattus norvegicus; Homo sapiens; Mus musculus,In vivo partial reprogramming in 4F mice,2021/12/10
+partial reprogramming [Title],GSE122763,6,Mus musculus,Partial reprogramming of melanoma cells confers drug resistance and increased vulnerability to calcium channel antagonists,2020/02/21
+partial reprogramming [Title],GSE122402,6,Mus musculus,Partial reprogramming of melanoma cells confers drug resistance and increased vulnerability to calcium channel antagonists [4434 cells],2020/02/21
+partial reprogramming [Title],GSE122399,12,Mus musculus,Partial reprogramming of melanoma cells confers drug resistance and increased vulnerability to calcium channel antagonists [C790 cells],2020/02/21
+in vivo OSK + aging,GSE325735,839,Mus musculus; Homo sapiens,Transcriptomic reprogramming screen identifies SRSF1 as a central regulator of aging and lifespan,2026/08/15
+in vivo OSK + aging,GSE300477,1,Homo sapiens,A Single-Short Partial Reprogramming of the Endothelial Cells in vivo decreases Blood Pressure and Vascular Contractility Through the Attenuation of Endothelial-to-Mesenchymal Transition in Male Hypertensive Mice,2025/08/26
+in vivo OSK + aging,GSE298954,40,Mus musculus,A Single-Short Partial Reprogramming of the Endothelial Cells decreases Blood Pressure via attenuation of EndMT in Hypertensive Mice,2025/08/26
+in vivo OSK + aging,GSE245949,24,Mus musculus; Homo sapiens,Failed reprogramming of transformed cells due to induction of apoptosis and senescence impairs tumor progression in lung cancer,2024/12/05
+in vivo OSK + aging,GSE231853,60,Mus musculus,Initiation Phase Cellular Reprogramming Rejuvenates DNA Damage Repair Defect In The Ercc1 Accelerated Aging Mouse Model,2023/05/11
+in vivo OSK + aging,GSE190985,60,Mus musculus,In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (10 months; long-term treatment),2022/01/11
+in vivo OSK + aging,GSE190984,60,Mus musculus,In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (1 months; sort-term treatment),2022/01/11
+in vivo OSK + aging,GSE190983,60,Mus musculus,In vivo partial reprogramming alters manifestation of age-associated molecular changes in aging mice (7 months; long-term treatment),2022/01/11

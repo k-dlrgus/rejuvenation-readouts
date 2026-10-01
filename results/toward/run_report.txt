@@ -1,0 +1,69 @@
+====================================================================================================
+TOWARD  seed=20260914  boot=20260918  n_perm=200  n_boot=200  n_random=200
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+GSE325735 is out of scope and is not opened.
+Primary statistic: cos_S. Uncalibrated R² is never a gate.
+Frozen ruler is a context column only. Not refit.
+PREREG.flag exists; not rewriting the block.
+Written **before any TOWARD statistic**, 2026-09-21. No threshold in this block is re-tuned after numbers exist.
+
+Question: do partially-reprogrammed cells move TOWARD young fibroblasts, or merely AWAY from old ones?
+
+Primary metric is the cosine cos_S defined below. Uncalibrated R² is never a gate. Spearman ρ is not the statistic here. Frozen ruler score is a context column only. GSE325735 is out ...
+[columns gtex_obs] actually read from <repo>\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[anchors] YOUNG bins ('20-29', '30-39') n=113 (expected 113)
+[anchors] OLD bins ('60-69', '70-79') n=231 (expected 231)
+[anchors] middle bins ('40-49', '50-59') n=308 excluded from both anchors, not dropped silently
+[anchors] per-bin n={'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[anchors] wrote <repo>\results\toward\anchors.npz  ||c_young-c_old||=32.283949
+[nulls] N1 n_random=200 seed=20260914; N2 n_perm=200 n_donors=652 n_half=326 n_degen=0 seed=20260914
+[C3] fold 0 cos=+0.6147 CI=[+0.123, +0.754] n_young_train=94 n_old_train=187 n_old_test=44 pass_bar=True
+[C3] fold 1 cos=+0.8486 CI=[+0.701, +0.835] n_young_train=92 n_old_train=181 n_old_test=50 pass_bar=True
+[C3] fold 2 cos=+0.7145 CI=[+0.300, +0.821] n_young_train=86 n_old_train=180 n_old_test=51 pass_bar=True
+[C3] fold 3 cos=+0.8252 CI=[+0.457, +0.846] n_young_train=87 n_old_train=191 n_old_test=40 pass_bar=True
+[C3] fold 4 cos=+0.8741 CI=[+0.677, +0.844] n_young_train=93 n_old_train=185 n_old_test=46 pass_bar=True
+[C3] pass=True min_cos=+0.615 mean_cos=+0.775 bar=0.5 construction_ok=True
+[columns t2_extrap] actually read from <repo>\results\md4\t2_extrap.csv: ['cell_line', 'day', 'label', 'n_cells', 'age_score', 'nn_euclidean', 'nn_train_index', 'mahalanobis_pca', 'pca_k', 'age_source', 'n_missing_z0']
+[columns louvain_obs_GM00731] actually read from <repo>\results\md2\louvain_obs_GM00731.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM00731] actually read from <repo>\results\md2\t2_cluster_labels_GM00731.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM00731] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM00731] n_cells=22132 n_clusters=19 days=[0, 3, 7, 10]
+[panel GM00731] PartialReprog n=5832 days={0: 3, 3: 5220, 7: 578, 10: 31}
+[panel GM00731] EarlyPluripotency n=4414 days={0: 2, 3: 410, 7: 3917, 10: 85}
+[panel GM00731] Pluripotency n=439 days={0: 0, 3: 5, 7: 354, 10: 80}
+[panel GM00731] NonReprog n=5459 days={0: 65, 3: 348, 7: 1932, 10: 3114}
+[tmm GM00731] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.9522 prior.count=2
+[boot GM00731] 50/200
+[boot GM00731] 100/200
+[boot GM00731] 150/200
+[boot GM00731] 200/200
+[stat GM00731 PartialReprog] n=5832 cos=+0.077 ||d||=+271.686 delta_young=+9.370 delta_old=+10.857 p_N1=0.0050 p_N2=0.3881 toward=False ruler_context=+0.650
+[stat GM00731 EarlyPluripotency] n=4414 cos=+0.117 ||d||=+268.580 delta_young=+30.456 delta_old=+32.695 p_N1=0.0050 p_N2=0.0796 toward=False ruler_context=-2.621
+[stat GM00731 Pluripotency] n=439 cos=+0.126 ||d||=+546.420 delta_young=+184.049 delta_old=+188.313 p_N1=0.0050 p_N2=0.1393 toward=False ruler_context=-10.402
+[stat GM00731 NonReprog] n=5459 cos=+0.063 ||d||=+192.764 delta_young=+8.932 delta_old=+9.818 p_N1=0.0050 p_N2=0.3085 toward=False ruler_context=+6.855
+[columns louvain_obs_GM23815] actually read from <repo>\results\md2\louvain_obs_GM23815.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM23815] actually read from <repo>\results\md2\t2_cluster_labels_GM23815.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM23815] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM23815] n_cells=33858 n_clusters=19 days=[0, 3, 7, 10]
+[panel GM23815] PartialReprog n=6481 days={0: 9, 3: 6113, 7: 309, 10: 50}
+[panel GM23815] EarlyPluripotency n=12961 days={0: 56, 3: 316, 7: 8172, 10: 4417}
+[panel GM23815] Pluripotency n=1249 days={0: 0, 3: 91, 7: 977, 10: 181}
+[panel GM23815] NonReprog n=1812 days={0: 0, 3: 10, 7: 8, 10: 1794}
+[tmm GM23815] n_rows=5 states=['Fibroblast', 'PartialReprog', 'EarlyPluripotency', 'Pluripotency', 'NonReprog'] nf_median=0.9308 prior.count=2
+[boot GM23815] 50/200
+[boot GM23815] 100/200
+[boot GM23815] 150/200
+[boot GM23815] 200/200
+[stat GM23815 PartialReprog] n=6481 cos=+0.052 ||d||=+260.471 delta_young=+14.189 delta_old=+15.210 p_N1=0.0050 p_N2=0.4627 toward=False ruler_context=-4.659
+[stat GM23815 EarlyPluripotency] n=12961 cos=+0.076 ||d||=+272.149 delta_young=+46.322 delta_old=+47.903 p_N1=0.0050 p_N2=0.2139 toward=False ruler_context=-7.959
+[stat GM23815 Pluripotency] n=1249 cos=+0.112 ||d||=+515.120 delta_young=+185.957 delta_old=+189.656 p_N1=0.0050 p_N2=0.1493 toward=False ruler_context=-15.095
+[stat GM23815 NonReprog] n=1812 cos=+0.010 ||d||=+219.796 delta_young=+41.971 delta_old=+42.345 p_N1=0.0398 p_N2=0.4478 toward=False ruler_context=-0.098
+[reading GM00731] key=away_from_old_only
+GM00731: PartialReprog has cos_S=+0.077 but delta_young=+9.370 (n_cells=5832). Movement is away-from-old only. This is a real negative finding: a 1D age score cannot distinguish toward-young from away-from-old. The frozen-ruler score is not used to rescue this.
+[reading GM23815] key=away_from_old_only
+CONTRAST (young donor GM23815; never the reading): PartialReprog has cos_S=+0.052 but delta_young=+14.189 (n_cells=6481). Movement is away-from-old only. This is a real negative finding: a 1D age score cannot distinguish toward-young from away-from-old. The frozen-ruler score is not used to rescue this.
+[run] DONE

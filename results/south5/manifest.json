@@ -1,0 +1,49 @@
+{
+ "failures": [
+  {
+   "step": "control_ambiguous",
+   "message": "control does not separate non-targeting from targeting cells. guide_target value(s) appearing under BOTH control states: ['non']. 'non': control=True 11834 cells / 61 guides, control=False 2179 cells / 17 guides. Value counts before filtering: control={False: 208569, True: 11834}, keep={True: 220403}, single_cell={True: 220403}. The non-targeting label is simultaneously flagged control=True for some cells and control=False for others, so control=True is a strict subset of the non-targeting population and control=False mixes non-targeting cells in with targeting cells. Not guessing the non-targeting set from guide_target strings and not repairing rows.",
+   "details": {
+    "matrix_shape_before": [
+     220403,
+     30395
+    ],
+    "matrix_shape_after": [
+     220403,
+     30395
+    ],
+    "n_before": 220403,
+    "n_after": 220403,
+    "dropped_not_singlet": 0,
+    "dropped_singlet_fails_keep": 0,
+    "control_counts": {
+     "False": 208569,
+     "True": 11834
+    },
+    "keep_counts": {
+     "True": 220403
+    },
+    "single_cell_counts": {
+     "True": 220403
+    },
+    "n_nt_cells": 11834,
+    "n_nt_guides": 61,
+    "spanning_targets": [
+     "non"
+    ],
+    "spanning_detail": {
+     "non": {
+      "control_true_cells": 11834,
+      "control_true_guides": 61,
+      "control_false_cells": 2179,
+      "control_false_guides": 17,
+      "guides_in_both": 0,
+      "guides_total": 78
+     }
+    }
+   }
+  }
+ ],
+ "flags": [],
+ "notes": []
+}

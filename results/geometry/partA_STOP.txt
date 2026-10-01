@@ -1,0 +1,3 @@
+PASS A
+corrected within-site shuffle null is usable
+STRENGTHEN: soundness-fail cleared; separability still falsified on the cross-test

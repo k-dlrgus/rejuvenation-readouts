@@ -1,0 +1,69 @@
+{
+ "result": {
+  "accession": "a19d1667-a7b5-4556-9e5f-f9bfa690c0f1",
+  "role": "superseded_primary_external",
+  "platform_kind": "single_cell",
+  "platform_detail": "10x (restricted)",
+  "tag": "cxg_a19d1667",
+  "choice": "b",
+  "option_a_run": false,
+  "n_samples": 93,
+  "n_donors": 93,
+  "n_excluded_child": 0,
+  "n_overlap": 17047,
+  "n_missing_z0": 6580,
+  "n_ruler": 23485,
+  "rho": 0.45512666633316906,
+  "rho_null": -0.0031957445964874657,
+  "rho_p": 0.004975124378109453,
+  "rho_ci_lo": 0.2526816895220932,
+  "rho_ci_hi": 0.6052676976750401,
+  "r": 0.41361461308425734,
+  "r2": -9.66352590913583,
+  "cal_r2": 0.1710770481568401,
+  "pass_rho": true,
+  "n_perm": 200,
+  "n_boot": 200,
+  "n_boot_ok": 200,
+  "seed": 20260914,
+  "boot_seed": 20260918,
+  "age_min": 18.0,
+  "age_max": 79.0,
+  "n_unique_age": 39,
+  "age_source": [
+   "h5ad_obs:development_stage"
+  ],
+  "assay_counts": {
+   "10x 3' v2": 50,
+   "10x 3' v3": 33,
+   "10x 3' v1": 6,
+   "10x 5' v1": 4
+  },
+  "frozen_ruler": "<repo>\\results\\fibro\\frozen_ruler_ridge_raw.npz",
+  "scores_path": "<repo>\\results\\fibro2\\ta_cxg_a19d1667_scores.csv",
+  "proj_path": "<repo>\\data\\processed\\fibro2\\ta_cxg_a19d1667_proj.npz",
+  "zw_check": {
+   "n": 93,
+   "max_zw_diff": 2.2141873046166438e-07,
+   "npz_keys": [
+    "logcpm",
+    "pred",
+    "y",
+    "donor",
+    "missing",
+    "Z"
+   ]
+  },
+  "used_10x_only": true,
+  "adult_min_age": 18,
+  "note": "freeze-and-project on stored T-A Z; ruler not refit; option (a) not run",
+  "reading_key": "instrument_validated",
+  "interpretable": true
+ },
+ "reading": {
+  "key": "instrument_validated",
+  "text": "the frozen fibroblast ruler is a validated instrument outside GTEx and the Stage 2 trajectory is interpretable as a statement about the cells.",
+  "interpretable": true,
+  "pass_rho": true
+ }
+}

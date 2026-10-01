@@ -1,0 +1,6 @@
+{
+ "key": "instrument_validated",
+ "text": "the frozen fibroblast ruler is a validated instrument outside GTEx and the Stage 2 trajectory is interpretable as a statement about the cells.",
+ "interpretable": true,
+ "pass_rho": true
+}

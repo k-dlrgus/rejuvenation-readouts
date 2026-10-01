@@ -1,0 +1,25 @@
+Written **before any MD3 age / MD / TGF-β / Table S3 / pluripotency score**, 2026-09-19. No threshold in this block is re-tuned after numbers exist.
+
+Using the src/md2_*.py Louvain clustering already computed (19 clusters per donor; not re-run, not re-tuned). Cell-state labels are the md2 assignment: argmax of mean AddModuleScore of mmc3 Reprog_cell_state_signatures columns Fibroblast / PartialReprog / EarlyPluripotency / Pluripotency / NonReprog. Labels are read from results/md2/t2_cluster_labels_*.csv. Not re-labelled.
+
+Three aggregation levels, each reported separately and never averaged together:
+- (a) pooled by cell state — all PartialReprog clusters pooled into one pseudobulk per timepoint, likewise each other state. This is the level their Figure 3G operates at and is the **primary cell**. No MIN_CELLS cutoff is applied to the pool (pooling is the reason this prompt exists); n cells at each timepoint is reported. A state with n=0 at an endpoint is not pairable.
+- (b) per cluster at ≥20 cells (the FINDINGS_MD2.md threshold, reproduced unchanged).
+- (c) per cluster at ≥10 cells, reported as a relaxed-threshold sensitivity check and labelled as such. Not primary.
+
+Per donor, never averaged: frozen ruler score, MD score, TGF-β score, Table S3 age-up score, Table S3 age-down score, and pluripotency−fibroblast score (frozen FINDINGS_FIBRO.md lists, same differentiation_score as md2), at d0/d3/d7/d10, with d0→d7 and d0→d10 endpoint changes.
+
+Nulls (not interchangeable):
+- Frozen ruler: 200 permuted-ruler-weight directions, seed 20260914. Empirical p = (n_random ≥ real + 1) / (n_random + 1). Endpoint decline = score(day 0) − score(day T). Positive = younger on the ruler.
+- Every gene-list score (MD, TGF-β, Age up, Age down): 200 size-matched, expression-bin-matched random gene sets, AddModuleScore nbin=24 ctrl=100, seed 20260914 with a documented per-list offset so MD uses the same stream as md2. Not permuted ruler weights.
+- Pluripotency−fibroblast is the frozen Stage 2 mean-z difference on the same TMM/z as the ruler, not AddModuleScore. Its null is 200 size-matched random gene sets in frozen-ruler gene space on that Z (not AMS bins). The difference is stated.
+
+Donors GM00731 and GM23815 reported separately. d7 is not the Stage 2 endpoint. Frozen ruler results/fibro/frozen_ruler_ridge_raw.npz used as-is. Refit nothing. Louvain resolution, AddModuleScore parameters, and cell filters are inherited from md2 and are not re-tuned.
+
+**Pre-registered reading (only the outcome that fired):**
+- Ruler declines in the pooled PartialReprog state with p ≤ 0.05 → the FINDINGS_MD2.md `negative_holds` reading was limited by cell counts, not by the ruler. Say so plainly and quote the sentence superseded.
+- Ruler does not decline in the pooled PartialReprog state while MD does, both with their own nulls → the instruments disagree on exactly the population the published claim concerns. This is the sharpest form of the disagreement; report both numbers side by side and declare no winner.
+- Neither moves in the pooled state → our reproduction does not recover their Figure 3G at the pooled level; report the reproduction failure as the finding, not as a refutation.
+- Pooled and per-cluster (≥20) levels disagree → report both, say which is which, do not pick.
+
+“Declines” / “moves” = endpoint decline d0→d7 or d0→d10 with p ≤ 0.05 on that instrument's own null, on the aged donor GM00731 pooled PartialReprog state for (a), or on at least one aged-donor Louvain cluster for (b). GM23815 is tabulated as a contrast, never pooled, never the reading.

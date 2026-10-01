@@ -1,0 +1,6 @@
+id,fires,result,note
+H1_donor_leakage,False,PASS: no donor in both sides of any fold,asserted on loso and within_site folds
+H2_shuffle_granularity,False,PASS: permute_age_within_site_obs remaps a permuted donor-level age onto every pseudobulk of that donor,within-donor row shuffle is a no-op because age is donor-constant; per-pseudobulk shuffle is NOT what P4 ran
+H3_feature_selection_leakage,True,frozen pooled A R²=+0.435; nested=+0.345; P3 saved=+0.345,P4c used frozen full-data sets; P3 nested inside folds
+H4_site_structure,True,intercept-only within-site pooled R²=+0.217 matches R²(age~site)=+0.264; site-stratified=-0.032,"within-site k-fold never mixes banks in a fold, so the intercept equals the training bank's mean age; pooled-across-banks R² recovers the bank gap, which the within-site age permutation PRESERVES"
+H5_target_centering,False,PASS as a full-cohort-mean bug: Ridge(fit_intercept=True) on train; r2_mae uses the evaluation vector's mean,the eval vector for within-site CV is two banks concatenated — see H4

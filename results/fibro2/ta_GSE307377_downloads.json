@@ -1,0 +1,28 @@
+{
+ "got": [
+  {
+   "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307377/suppl/GSE307377_raw.txt.gz",
+   "path": "<repo>\\data\\raw\\fibro2\\GSE307377\\GSE307377_raw.txt.gz",
+   "size": 1363809
+  },
+  {
+   "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307377/suppl/GSE307377_tpm.txt.gz",
+   "path": "<repo>\\data\\raw\\fibro2\\GSE307377\\GSE307377_tpm.txt.gz",
+   "size": 1498390
+  }
+ ],
+ "count_like": [
+  {
+   "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307377/suppl/GSE307377_raw.txt.gz",
+   "path": "<repo>\\data\\raw\\fibro2\\GSE307377\\GSE307377_raw.txt.gz",
+   "size": 1363809
+  }
+ ],
+ "other": [
+  {
+   "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE307nnn/GSE307377/suppl/GSE307377_tpm.txt.gz",
+   "path": "<repo>\\data\\raw\\fibro2\\GSE307377\\GSE307377_tpm.txt.gz",
+   "size": 1498390
+  }
+ ]
+}

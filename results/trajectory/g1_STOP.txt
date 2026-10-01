@@ -1,0 +1,4 @@
+stop=False
+null_bad=False
+collapse=False
+reason=

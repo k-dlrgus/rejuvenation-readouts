@@ -1,0 +1,462 @@
+====================================================================================================
+POSCTRL C1 — planted-signal control  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO perturbation data. No TF Atlas. No candidate interventions.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+SUPERSESSION 2026-09-16: 35° angle bar retired for C1/C3.
+C1/C3 primary bar: transfer R² > 0 both directions AND permutation null ≤ 0.05.
+Angle reported against sex reference 41.3°, not 35°.
+Ridge α grid and fold constructor unchanged.
+[C1] P1 superseded 2026-09-16; 35° bar retired; running planted controls.
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[C1] froze age*  donor-mean=52.64  site means={'H': 43.88041125541125, 'M': 62.28067796610169}
+[C1] sparse eligible genes (mean CPM>1.0 in ≥15/20 types): 17749 / 25526
+[C1] wrote planted_w_dense_shared.npz  kind=shared
+[C1] wrote planted_w_dense_typespec.npz  kind=typespec
+[C1] wrote planted_w_sparse_shared.npz  kind=shared
+[C1] wrote planted_w_sparse_typespec.npz  kind=typespec
+[C1] calibrating β for dense_shared_r030  target R²=0.30 ± 0.03
+   cal β=0.0001  cheap within-site R²=-0.174  |err|=0.474
+   cal β=0.00031438  cheap within-site R²=-0.195  |err|=0.495
+   cal β=0.00098836  cheap within-site R²=-0.244  |err|=0.544
+   cal β=0.0031072  cheap within-site R²=-0.159  |err|=0.459
+   cal β=0.0097686  cheap within-site R²=-0.238  |err|=0.538
+   cal β=0.030711  cheap within-site R²=-0.137  |err|=0.437
+   cal β=0.096549  cheap within-site R²=-0.145  |err|=0.445
+   cal β=0.30353  cheap within-site R²=+0.110  |err|=0.190
+   cal β=0.95425  cheap within-site R²=+0.849  |err|=0.549
+   frozen β=0.407242 (target R²=0.30; cheap grid best |err|=0.190)
+[C1] measured full-fold within-site R²=+0.613 at β=0.407242
+[C1] rescale β 0.407242 → 0.211897 (R² +0.613 → want 0.30)
+[C1] after rescale, measured R²=+0.205
+[C1] plant dense_shared target_r2=0.30 β=0.211897  n_boot=20 n_perm=20
+[battery] c1_dense_shared_r030 n_boot=20 n_perm=20 parts=['boot', 'oof_loso', 'oof_ws', 'transfer', 'youngold'] donors=233 genes=25526
+   ridge bootstrap 1/20  (23s)
+   ridge bootstrap 5/20  (115s)
+   ridge bootstrap 10/20  (243s)
+   ridge bootstrap 15/20  (384s)
+   ridge bootstrap 20/20  (520s)
+   median-over-types pairwise bootstrap angle = 42.6°
+   recovery angle (median over boots and types) = 61.3°
+   folds seed=20260914  within_site=10  loso=2
+   OOF ridge scheme=within_site n_folds=10 n_perm=20
+      site-strat R²=+0.205  pooled=+0.428
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      null mean=-0.159  p95=-0.114  p=0.048
+   OOF ridge scheme=loso n_folds=2 n_perm=20
+      site-strat R²=-0.408  pooled=-0.100
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      null mean=-1.640  p95=-1.236  p=0.048
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.286
+      null (20 train-age shuffles)...
+      null mean=-1.600  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.472
+      null (20 train-age shuffles)...
+      null mean=-1.443  p=0.048
+[L2d] within HBCC: young donors=75 rows=1145  old donors=45 rows=703
+[L2d] within MSSM: young donors=27 rows=343  old donors=86 rows=1132
+[L2d] balance HBCC: min(young,old)=45 (young=75 old=45)
+[L2d] balance MSSM: min(young,old)=27 (young=27 old=86)
+[L2d] balanced pool: young donors=72 sites={'H': 45, 'M': 27}  old donors=72 sites={'H': 45, 'M': 27}
+   split=within_H young_rows=1145 old_rows=703
+      within_H median angle=88.3°  n_types=19
+   split=within_M young_rows=343 old_rows=1132
+      within_M median angle=88.1°  n_types=16
+   split=balanced young_rows=1031 old_rows=1062
+      balanced median angle=85.8°  n_types=18
+[battery] c1_dense_shared_r030 done in 1091s  boot=42.6°  ws R²=+0.205  H→M=-0.286  M→H=-0.472
+[C1] wrote <repo>\results\posctrl\c1_dense_shared_r030.json
+[C1] calibrating β for dense_typespec_r030  target R²=0.30 ± 0.03
+   cal β=0.0001  cheap within-site R²=-0.174  |err|=0.474
+   cal β=0.00031438  cheap within-site R²=-0.195  |err|=0.495
+   cal β=0.00098836  cheap within-site R²=-0.244  |err|=0.544
+   cal β=0.0031072  cheap within-site R²=-0.159  |err|=0.459
+   cal β=0.0097686  cheap within-site R²=-0.238  |err|=0.538
+   cal β=0.030711  cheap within-site R²=-0.135  |err|=0.435
+   cal β=0.096549  cheap within-site R²=-0.147  |err|=0.447
+   cal β=0.30353  cheap within-site R²=+0.115  |err|=0.185
+   cal β=0.95425  cheap within-site R²=+0.851  |err|=0.551
+   frozen β=0.404869 (target R²=0.30; cheap grid best |err|=0.185)
+[C1] measured full-fold within-site R²=+0.612 at β=0.404869
+[C1] rescale β 0.404869 → 0.210824 (R² +0.612 → want 0.30)
+[C1] after rescale, measured R²=+0.207
+[C1] plant dense_typespec target_r2=0.30 β=0.210824  n_boot=20 n_perm=20
+[battery] c1_dense_typespec_r030 n_boot=20 n_perm=20 parts=['boot', 'oof_loso', 'oof_ws', 'transfer', 'youngold'] donors=233 genes=25526
+   ridge bootstrap 1/20  (13s)
+   ridge bootstrap 5/20  (75s)
+   ridge bootstrap 10/20  (172s)
+   ridge bootstrap 15/20  (256s)
+   ridge bootstrap 20/20  (351s)
+   median-over-types pairwise bootstrap angle = 42.6°
+   recovery angle (median over boots and types) = 61.3°
+   folds seed=20260914  within_site=10  loso=2
+   OOF ridge scheme=within_site n_folds=10 n_perm=20
+      site-strat R²=+0.207  pooled=+0.429
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      null mean=-0.159  p95=-0.114  p=0.048
+   OOF ridge scheme=loso n_folds=2 n_perm=20
+      site-strat R²=-0.424  pooled=-0.112
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      null mean=-1.642  p95=-1.238  p=0.048
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.307
+      null (20 train-age shuffles)...
+      null mean=-1.602  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.488
+      null (20 train-age shuffles)...
+      null mean=-1.444  p=0.048
+[L2d] within HBCC: young donors=75 rows=1145  old donors=45 rows=703
+[L2d] within MSSM: young donors=27 rows=343  old donors=86 rows=1132
+[L2d] balance HBCC: min(young,old)=45 (young=75 old=45)
+[L2d] balance MSSM: min(young,old)=27 (young=27 old=86)
+[L2d] balanced pool: young donors=72 sites={'H': 45, 'M': 27}  old donors=72 sites={'H': 45, 'M': 27}
+   split=within_H young_rows=1145 old_rows=703
+      within_H median angle=88.2°  n_types=19
+   split=within_M young_rows=343 old_rows=1132
+      within_M median angle=88.0°  n_types=16
+   split=balanced young_rows=1031 old_rows=1062
+      balanced median angle=85.7°  n_types=18
+[battery] c1_dense_typespec_r030 done in 869s  boot=42.6°  ws R²=+0.207  H→M=-0.307  M→H=-0.488
+[C1] wrote <repo>\results\posctrl\c1_dense_typespec_r030.json
+[C1] calibrating β for sparse_shared_r030  target R²=0.30 ± 0.03
+   cal β=0.0001  cheap within-site R²=-0.174  |err|=0.474
+   cal β=0.00031438  cheap within-site R²=-0.195  |err|=0.495
+   cal β=0.00098836  cheap within-site R²=-0.244  |err|=0.544
+   cal β=0.0031072  cheap within-site R²=-0.159  |err|=0.459
+   cal β=0.0097686  cheap within-site R²=-0.238  |err|=0.538
+   cal β=0.030711  cheap within-site R²=-0.135  |err|=0.435
+   cal β=0.096549  cheap within-site R²=-0.148  |err|=0.448
+   cal β=0.30353  cheap within-site R²=+0.013  |err|=0.287
+   cal β=0.95425  cheap within-site R²=+0.433  |err|=0.133
+   cal β=3  cheap within-site R²=+0.693  |err|=0.393
+   frozen β=0.664264 (target R²=0.30; cheap grid best |err|=0.133)
+[C1] measured full-fold within-site R²=+0.574 at β=0.664264
+[C1] rescale β 0.664264 → 0.374693 (R² +0.574 → want 0.30)
+[C1] after rescale, measured R²=+0.366
+[C1] plant sparse_shared target_r2=0.30 β=0.374693  n_boot=20 n_perm=20
+[battery] c1_sparse_shared_r030 n_boot=20 n_perm=20 parts=['boot', 'oof_loso', 'oof_ws', 'transfer', 'youngold'] donors=233 genes=25526
+   ridge bootstrap 1/20  (18s)
+   ridge bootstrap 5/20  (72s)
+   ridge bootstrap 10/20  (143s)
+   ridge bootstrap 15/20  (211s)
+ts=['boot', 'oof_loso', 'oof_ws', 'transfer', 'youngold'] donors=233 genes=25526
+   ridge bootstrap 1/20  (14s)
+   ridge bootstrap 5/20  (83s)
+   ridge bootstrap 10/20  (170s)
+   ridge bootstrap 15/20  (244s)
+   ridge bootstrap 20/20  (318s)
+   median-over-types pairwise bootstrap angle = 40.7°
+   recovery angle (median over boots and types) = 57.9°
+   folds seed=20260914  within_site=10  loso=2
+   OOF ridge scheme=within_site n_folds=10 n_perm=20
+      site-strat R²=+0.291  pooled=+0.490
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      null mean=-0.159  p95=-0.114  p=0.048
+   OOF ridge scheme=loso n_folds=2 n_perm=20
+      site-strat R²=-0.285  pooled=-0.009
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      null mean=-1.643  p95=-1.235  p=0.048
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.121
+      null (20 train-age shuffles)...
+      null mean=-1.606  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.434
+      null (20 train-age shuffles)...
+      null mean=-1.448  p=0.048
+[L2d] within HBCC: young donors=75 rows=1145  old donors=45 rows=703
+[L2d] within MSSM: young donors=27 rows=343  old donors=86 rows=1132
+[L2d] balance HBCC: min(young,old)=45 (young=75 old=45)
+[L2d] balance MSSM: min(young,old)=27 (young=27 old=86)
+[L2d] balanced pool: young donors=72 sites={'H': 45, 'M': 27}  old donors=72 sites={'H': 45, 'M': 27}
+   split=within_H young_rows=1145 old_rows=703
+      within_H median angle=87.6°  n_types=19
+   split=within_M young_rows=343 old_rows=1132
+      within_M median angle=87.7°  n_types=16
+   split=balanced young_rows=1031 old_rows=1062
+      balanced median angle=84.8°  n_types=18
+[battery] c1_dense_typespec_r030 done in 726s  boot=40.7°  ws R²=+0.291  H→M=-0.121  M→H=-0.434
+[C1] wrote <repo>\results\posctrl\c1_dense_typespec_r030.json
+[C1] frozen β[sparse_shared_r030] R²=0.36623055669069904 outside 0.30±0.03; recalibrating
+[C1] calibrating β for sparse_shared_r030  target R²=0.30 ± 0.03
+   cal β=0.0001  cheap within-site R²=-0.174  |err|=0.474
+   cal β=0.00031438  cheap within-site R²=-0.195  |err|=0.495
+   cal β=0.00098836  cheap within-site R²=-0.244  |err|=0.544
+   cal β=0.0031072  cheap within-site R²=-0.159  |err|=0.459
+   cal β=0.0097686  cheap within-site R²=-0.238  |err|=0.538
+   cal β=0.030711  cheap within-site R²=-0.135  |err|=0.435
+   cal β=0.096549  cheap within-site R²=-0.148  |err|=0.448
+   cal β=0.30353  cheap within-site R²=+0.013  |err|=0.287
+   cal β=0.95425  cheap within-site R²=+0.433  |err|=0.133
+   cal β=3  cheap within-site R²=+0.693  |err|=0.393
+   frozen β=0.664264 (target R²=0.30; cheap grid best |err|=0.133)
+[C1] measured full-fold within-site R²=+0.574 at β=0.664264
+[C1] rescale β 0.664264 → 0.374693 (R² +0.574 → want 0.30)
+[C1] measured full-fold within-site R²=+0.366 at β=0.374693
+[C1] rescale β 0.374693 → 0.322682 (R² +0.366 → want 0.30)
+[C1] measured full-fold within-site R²=+0.304 at β=0.322682
+[C1] freeze β=0.322682  full-fold R²=+0.304  in_band=True  target 0.30±0.03
+[C1] plant sparse_shared target_r2=0.30 β=0.322682  n_boot=20 n_perm=20
+[battery] c1_sparse_shared_r030 n_boot=20 n_perm=20 parts=['boot', 'oof_loso', 'oof_ws', 'transfer', 'youngold'] donors=233 genes=25526
+   ridge bootstrap 1/20  (64s)
+   ridge bootstrap 5/20  (124s)
+   ridge bootstrap 10/20  (210s)
+   ridge bootstrap 15/20  (264s)
+   ridge bootstrap 20/20  (314s)
+   median-over-types pairwise bootstrap angle = 41.0°
+   recovery angle (median over boots and types) = 57.4°
+   sparse support in top-200 |coef| (median types) = 0.651
+   folds seed=20260914  within_site=10  loso=2
+   OOF ridge scheme=within_site n_folds=10 n_perm=20
+      site-strat R²=+0.304  pooled=+0.501
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      null mean=-0.159  p95=-0.114  p=0.048
+   OOF ridge scheme=loso n_folds=2 n_perm=20
+      site-strat R²=-0.249  pooled=+0.012
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      null mean=-1.643  p95=-1.229  p=0.048
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.065
+      null (20 train-age shuffles)...
+      null mean=-1.607  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.414
+      null (20 train-age shuffles)...
+      null mean=-1.445  p=0.048
+[L2d] within HBCC: young donors=75 rows=1145  old donors=45 rows=703
+[L2d] within MSSM: young donors=27 rows=343  old donors=86 rows=1132
+[L2d] balance HBCC: min(young,old)=45 (young=75 old=45)
+[L2d] balance MSSM: min(young,old)=27 (young=27 old=86)
+[L2d] balanced pool: young donors=72 sites={'H': 45, 'M': 27}  old donors=72 sites={'H': 45, 'M': 27}
+   split=within_H young_rows=1145 old_rows=703
+      within_H median angle=86.4°  n_types=19
+   split=within_M young_rows=343 old_rows=1132
+      within_M median angle=87.4°  n_types=16
+   split=balanced young_rows=1031 old_rows=1062
+      balanced median angle=83.4°  n_types=18
+[battery] c1_sparse_shared_r030 done in 653s  boot=41.0°  ws R²=+0.304  H→M=-0.065  M→H=-0.414
+[C1] wrote <repo>\results\posctrl\c1_sparse_shared_r030.json
+[C1] calibrating β for sparse_typespec_r030  target R²=0.30 ± 0.03
+   cal β=0.0001  cheap within-site R²=-0.174  |err|=0.474
+   cal β=0.00031438  cheap within-site R²=-0.195  |err|=0.495
+   cal β=0.00098836  cheap within-site R²=-0.244  |err|=0.544
+   cal β=0.0031072  cheap within-site R²=-0.159  |err|=0.459
+   cal β=0.0097686  cheap within-site R²=-0.238  |err|=0.538
+   cal β=0.030711  cheap within-site R²=-0.134  |err|=0.434
+   cal β=0.096549  cheap within-site R²=-0.144  |err|=0.444
+   cal β=0.30353  cheap within-site R²=+0.073  |err|=0.227
+   cal β=0.95425  cheap within-site R²=+0.752  |err|=0.452
+   frozen β=0.445166 (target R²=0.30; cheap grid best |err|=0.227)
+[C1] measured full-fold within-site R²=+0.587 at β=0.445166
+[C1] rescale β 0.445166 → 0.244402 (R² +0.587 → want 0.30)
+[C1] measured full-fold within-site R²=+0.251 at β=0.244402
+[C1] rescale β 0.244402 → 0.266764 (R² +0.251 → want 0.30)
+[C1] measured full-fold within-site R²=+0.296 at β=0.266764
+[C1] freeze β=0.266764  full-fold R²=+0.296  in_band=True  target 0.30±0.03
+[C1] plant sparse_typespec target_r2=0.30 β=0.266764  n_boot=20 n_perm=20
+[battery] c1_sparse_typespec_r030 n_boot=20 n_perm=20 parts=['boot', 'oof_loso', 'oof_ws', 'transfer', 'youngold'] donors=233 genes=25526
+   ridge bootstrap 1/20  (9s)
+   ridge bootstrap 5/20  (44s)
+   ridge bootstrap 10/20  (89s)
+   ridge bootstrap 15/20  (135s)
+   ridge bootstrap 20/20  (181s)
+   median-over-types pairwise bootstrap angle = 40.5°
+   recovery angle (median over boots and types) = 58.0°
+   sparse support in top-200 |coef| (median types) = 0.569
+   folds seed=20260914  within_site=10  loso=2
+   OOF ridge scheme=within_site n_folds=10 n_perm=20
+      site-strat R²=+0.296  pooled=+0.495
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      null mean=-0.159  p95=-0.114  p=0.048
+   OOF ridge scheme=loso n_folds=2 n_perm=20
+      site-strat R²=-0.260  pooled=+0.027
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      null mean=-1.643  p95=-1.235  p=0.048
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.084
+      null (20 train-age shuffles)...
+      null mean=-1.605  p=0.048
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.415
+      null (20 train-age shuffles)...
+      null mean=-1.448  p=0.048
+[L2d] within HBCC: young donors=75 rows=1145  old donors=45 rows=703
+[L2d] within MSSM: young donors=27 rows=343  old donors=86 rows=1132
+[L2d] balance HBCC: min(young,old)=45 (young=75 old=45)
+[L2d] balance MSSM: min(young,old)=27 (young=27 old=86)
+[L2d] balanced pool: young donors=72 sites={'H': 45, 'M': 27}  old donors=72 sites={'H': 45, 'M': 27}
+   split=within_H young_rows=1145 old_rows=703
+      within_H median angle=87.4°  n_types=19
+   split=within_M young_rows=343 old_rows=1132
+      within_M median angle=87.8°  n_types=16
+   split=balanced young_rows=1031 old_rows=1062
+      balanced median angle=84.7°  n_types=18
+[battery] c1_sparse_typespec_r030 done in 520s  boot=40.5°  ws R²=+0.296  H→M=-0.084  M→H=-0.415
+[C1] wrote <repo>\results\posctrl\c1_sparse_typespec_r030.json
+[C1] calibrating β for dense_shared_r015  target R²=0.15 ± 0.03
+   cal β=0.0001  cheap within-site R²=-0.174  |err|=0.324
+   cal β=0.00031438  cheap within-site R²=-0.195  |err|=0.345
+   cal β=0.00098836  cheap within-site R²=-0.244  |err|=0.394
+   cal β=0.0031072  cheap within-site R²=-0.159  |err|=0.309
+   cal β=0.0097686  cheap within-site R²=-0.238  |err|=0.388
+   cal β=0.030711  cheap within-site R²=-0.137  |err|=0.287
+   cal β=0.096549  cheap within-site R²=-0.145  |err|=0.295
+   cal β=0.30353  cheap within-site R²=+0.110  |err|=0.040
+   cal β=0.95425  cheap within-site R²=+0.849  |err|=0.699
+   frozen β=0.322711 (target R²=0.15; cheap grid best |err|=0.040)
+[C1] measured full-fold within-site R²=+0.462 at β=0.322711
+[C1] rescale β 0.322711 → 0.146421 (R² +0.462 → want 0.15)
+[C1] measured full-fold within-site R²=+0.056 at β=0.146421
+[C1] rescale β 0.146421 → 0.175967 (R² +0.056 → want 0.15)
+[C1] measured full-fold within-site R²=+0.116 at β=0.175967
+[C1] rescale β 0.175967 → 0.186669 (R² +0.116 → want 0.15)
+[C1] measured full-fold within-site R²=+0.142 at β=0.186669
+[C1] freeze β=0.186669  full-fold R²=+0.142  in_band=True  target 0.15±0.03
+[C1] plant dense_shared target_r2=0.15 β=0.186669  n_boot=10 (B/2) n_perm=10
+[battery] c1_dense_shared_r015 n_boot=10 n_perm=10 parts=['boot', 'oof_loso', 'oof_ws', 'transfer', 'youngold'] donors=233 genes=25526
+   ridge bootstrap 1/10  (9s)
+   ridge bootstrap 5/10  (43s)
+   ridge bootstrap 10/10  (90s)
+   median-over-types pairwise bootstrap angle = 44.2°
+   recovery angle (median over boots and types) = 64.7°
+   folds seed=20260914  within_site=10  loso=2
+   OOF ridge scheme=within_site n_folds=10 n_perm=10
+      site-strat R²=+0.142  pooled=+0.382
+      permutation null (10 donor-level within-site shuffles)...
+         perm 5/10
+         perm 10/10
+      null mean=-0.138  p95=-0.110  p=0.091
+   OOF ridge scheme=loso n_folds=2 n_perm=10
+      site-strat R²=-0.555  pooled=-0.177
+      permutation null (10 donor-level within-site shuffles)...
+         perm 5/10
+         perm 10/10
+      null mean=-1.692  p95=-1.456  p=0.091
+   fit on HBCC → test MSSM
+      median-over-types R²=-0.450
+      null (10 train-age shuffles)...
+      null mean=-1.531  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.536
+      null (10 train-age shuffles)...
+      null mean=-1.629  p=0.091
+[L2d] within HBCC: young donors=75 rows=1145  old donors=45 rows=703
+[L2d] within MSSM: young donors=27 rows=343  old donors=86 rows=1132
+[L2d] balance HBCC: min(young,old)=45 (young=75 old=45)
+[L2d] balance MSSM: min(young,old)=27 (young=27 old=86)
+[L2d] balanced pool: young donors=72 sites={'H': 45, 'M': 27}  old donors=72 sites={'H': 45, 'M': 27}
+   split=within_H young_rows=1145 old_rows=703
+      within_H median angle=88.6°  n_types=19
+   split=within_M young_rows=343 old_rows=1132
+      within_M median angle=88.2°  n_types=16
+   split=balanced young_rows=1031 old_rows=1062
+      balanced median angle=86.5°  n_types=18
+[battery] c1_dense_shared_r015 done in 266s  boot=44.2°  ws R²=+0.142  H→M=-0.450  M→H=-0.536
+[C1] wrote <repo>\results\posctrl\c1_dense_shared_r015.json
+[C1] calibrating β for dense_shared_r050  target R²=0.50 ± 0.03
+   cal β=0.0001  cheap within-site R²=-0.174  |err|=0.674
+   cal β=0.00031438  cheap within-site R²=-0.195  |err|=0.695
+   cal β=0.00098836  cheap within-site R²=-0.244  |err|=0.744
+   cal β=0.0031072  cheap within-site R²=-0.159  |err|=0.659
+   cal β=0.0097686  cheap within-site R²=-0.238  |err|=0.738
+   cal β=0.030711  cheap within-site R²=-0.137  |err|=0.637
+   cal β=0.096549  cheap within-site R²=-0.145  |err|=0.645
+   cal β=0.30353  cheap within-site R²=+0.110  |err|=0.390
+   cal β=0.95425  cheap within-site R²=+0.849  |err|=0.349
+   frozen β=0.555356 (target R²=0.50; cheap grid best |err|=0.349)
+[C1] measured full-fold within-site R²=+0.782 at β=0.555356
+[C1] rescale β 0.555356 → 0.292993 (R² +0.782 → want 0.50)
+[C1] measured full-fold within-site R²=+0.398 at β=0.292993
+[C1] rescale β 0.292993 → 0.347115 (R² +0.398 → want 0.50)
+[C1] measured full-fold within-site R²=+0.510 at β=0.347115
+[C1] freeze β=0.347115  full-fold R²=+0.510  in_band=True  target 0.50±0.03
+[C1] plant dense_shared target_r2=0.50 β=0.347115  n_boot=10 (B/2) n_perm=10
+[battery] c1_dense_shared_r050 n_boot=10 n_perm=10 parts=['boot', 'oof_loso', 'oof_ws', 'transfer', 'youngold'] donors=233 genes=25526
+   ridge bootstrap 1/10  (9s)
+   ridge bootstrap 5/10  (43s)
+   ridge bootstrap 10/10  (59s)
+   median-over-types pairwise bootstrap angle = 36.2°
+   recovery angle (median over boots and types) = 49.8°
+   folds seed=20260914  within_site=10  loso=2
+   OOF ridge scheme=within_site n_folds=10 n_perm=10
+      site-strat R²=+0.510  pooled=+0.650
+      permutation null (10 donor-level within-site shuffles)...
+         perm 5/10
+         perm 10/10
+      null mean=-0.141  p95=-0.110  p=0.091
+   OOF ridge scheme=loso n_folds=2 n_perm=10
+      site-strat R²=+0.100  pooled=+0.338
+      permutation null (10 donor-level within-site shuffles)...
+         perm 5/10
+         perm 10/10
+      null mean=-1.682  p95=-1.463  p=0.091
+   fit on HBCC → test MSSM
+      median-over-types R²=+0.309
+      null (10 train-age shuffles)...
+      null mean=-1.474  p=0.091
+   fit on MSSM → test HBCC
+      median-over-types R²=-0.004
+      null (10 train-age shuffles)...
+      null mean=-1.673  p=0.091
+[L2d] within HBCC: young donors=75 rows=1145  old donors=45 rows=703
+[L2d] within MSSM: young donors=27 rows=343  old donors=86 rows=1132
+[L2d] balance HBCC: min(young,old)=45 (young=75 old=45)
+[L2d] balance MSSM: min(young,old)=27 (young=27 old=86)
+[L2d] balanced pool: young donors=72 sites={'H': 45, 'M': 27}  old donors=72 sites={'H': 45, 'M': 27}
+   split=within_H young_rows=1145 old_rows=703
+      within_H median angle=83.6°  n_types=19
+   split=within_M young_rows=343 old_rows=1132
+      within_M median angle=85.8°  n_types=16
+   split=balanced young_rows=1031 old_rows=1062
+      balanced median angle=80.6°  n_types=18
+[battery] c1_dense_shared_r050 done in 242s  boot=36.2°  ws R²=+0.510  H→M=+0.309  M→H=-0.004
+[C1] wrote <repo>\results\posctrl\c1_dense_shared_r050.json

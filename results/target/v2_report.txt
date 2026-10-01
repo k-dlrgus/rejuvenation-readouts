@@ -1,0 +1,76 @@
+====================================================================================================
+TARGET V2 — target = age dir minus identity subspace  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO GENE SELECTION: every gene in the Phase-1 matrix enters every model with a weight.
+NO perturbation data. No TF Atlas. Expression space only.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+Working space: global train z-score; ridge coefficients live in that space (no second per-type z-score).
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[filter] V2 uses ALL 25,526 genes.
+[V2] full-cohort TARGET vs raw age direction (ridge):
+   median norm retained = 0.994
+   median angle TARGET vs age = 6.32°
+   median angle age vs identity subspace = 83.68°
+   GABAergic neuron: retained=0.993  ∠(T,age)=6.57°  ∠(age,id)=83.4°
+   L2/3 intratelencephalic projecting glutamatergic neuron: retained=0.991  ∠(T,age)=7.77°  ∠(age,id)=82.2°
+   L2/3-6 intratelencephalic projecting glutamatergic neuron: retained=0.984  ∠(T,age)=10.14°  ∠(age,id)=79.9°
+   L5/6 near-projecting glutamatergic neuron: retained=0.991  ∠(T,age)=7.56°  ∠(age,id)=82.4°
+   L6 corticothalamic-projecting glutamatergic cortical neuron: retained=0.992  ∠(T,age)=7.10°  ∠(age,id)=82.9°
+   L6 intratelencephalic projecting glutamatergic neuron: retained=0.988  ∠(T,age)=8.76°  ∠(age,id)=81.2°
+   L6b glutamatergic neuron of the primary motor cortex: retained=0.990  ∠(T,age)=8.21°  ∠(age,id)=81.8°
+   VIP GABAergic interneuron: retained=0.992  ∠(T,age)=7.13°  ∠(age,id)=82.9°
+   astrocyte: retained=0.996  ∠(T,age)=4.88°  ∠(age,id)=85.1°
+   endothelial cell: retained=0.996  ∠(T,age)=4.84°  ∠(age,id)=85.2°
+   lamp5 GABAergic interneuron: retained=0.993  ∠(T,age)=6.74°  ∠(age,id)=83.3°
+   microglial cell: retained=0.996  ∠(T,age)=4.85°  ∠(age,id)=85.1°
+   oligodendrocyte: retained=0.998  ∠(T,age)=4.01°  ∠(age,id)=86.0°
+   oligodendrocyte precursor cell: retained=0.996  ∠(T,age)=4.83°  ∠(age,id)=85.2°
+   pericyte: retained=0.998  ∠(T,age)=3.97°  ∠(age,id)=86.0°
+   perivascular macrophage: retained=0.997  ∠(T,age)=4.16°  ∠(age,id)=85.8°
+   pvalb GABAergic interneuron: retained=0.994  ∠(T,age)=6.08°  ∠(age,id)=83.9°
+   smooth muscle cell: retained=0.997  ∠(T,age)=4.47°  ∠(age,id)=85.5°
+   sst GABAergic interneuron: retained=0.988  ∠(T,age)=8.87°  ∠(age,id)=81.1°
+   vascular leptomeningeal cell: retained=0.995  ∠(T,age)=6.01°  ∠(age,id)=84.0°
+[V2] wrote target_W.npz  (per-type TARGET matrix for later use)
+[folds] seed=20260914  loso=2  within_site=10
+
+[V2] scheme=loso
+   OOF ridge (age + TARGET in one pass)  scheme=loso
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      ridge age: primary R²=-0.011  MAE=14.85 y  null=-0.857  p=0.048  types≤null=1/20
+      ridge TARGET: primary R²=-0.077  MAE=14.97 y  null=-0.844  p=0.048  types≤null=1/20
+   OOF pls1  target=True  scheme=loso
+      primary R²=-0.329  MAE=16.59 y  pooled=-0.329  strat=-0.740
+      permutation null (20 donor-level within-site shuffles)...
+      null mean=-0.922  p95=-0.748  p=0.048
+      types at-or-below null: 1/20
+
+[V2] scheme=within_site
+   OOF ridge (age + TARGET in one pass)  scheme=within_site
+      permutation null (20 donor-level within-site shuffles)...
+         perm 5/20
+         perm 10/20
+         perm 15/20
+         perm 20/20
+      ridge age: primary R²=+0.222  MAE=10.47 y  null=-0.132  p=0.048  types≤null=0/20
+      ridge TARGET: primary R²=+0.231  MAE=10.58 y  null=-0.112  p=0.048  types≤null=0/20
+   OOF pls1  target=True  scheme=within_site
+      primary R²=+0.025  MAE=11.98 y  pooled=+0.266  strat=+0.025
+      permutation null (20 donor-level within-site shuffles)...
+      null mean=-0.159  p95=-0.102  p=0.048
+      types at-or-below null: 0/20
+
+[STOP V2] False  within-site ridge TARGET types at/below null: 0/20
+          primary R²=+0.231 vs null -0.112
+[V2] wrote results/target/v2_*
+[V2] done.

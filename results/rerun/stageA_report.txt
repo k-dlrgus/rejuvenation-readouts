@@ -1,0 +1,225 @@
+====================================================================================================
+RERUN STAGE A — age axis within batch.  seed = 20260914 | N_PERM = 1000
+====================================================================================================
+[data] log-CPM pseudobulks: 9,623 x 13,904 genes | donors=981 | pools=75 | cell types=16 | every donor in exactly one pool: True
+
+[A0] donors=981, pools=75 (donors/pool: min 9, median 13, max 14)
+[A0] age ~ C(pool): R2=0.234, adj R2=0.172, p=3.81e-21  -> within-pool age variance available to the model = 76.6% of total donor age variance
+[A0] R2( log mean UMI/cell [within-type-centred] ~ C(pool) ) = 0.855
+[A0] R2( log mean genes/cell [within-type-centred] ~ C(pool) ) = 0.812
+[A0] corrected model columns: 16 cell types + 74 pool contrasts + 2 depth + 1 age = 93 parameters on 9,623 pseudobulks
+
+====================================================================================================
+[A1] per-gene variance partition, corrected model
+====================================================================================================
+
+Corrected model — distribution over 13904 genes (fraction of total variance):
+             0.500  0.900  0.950  0.990  0.999  1.000
+unique_ct   0.1248 0.5062 0.6599 0.8336 0.9103 0.9610
+unique_age  0.0001 0.0007 0.0010 0.0019 0.0046 0.0126
+shared      0.0000 0.0011 0.0018 0.0036 0.0059 0.0108
+nuisance    0.0265 0.0733 0.1033 0.2159 0.4599 0.7087
+interaction 0.0024 0.0039 0.0045 0.0058 0.0099 0.0146
+resid       0.8367 0.9271 0.9454 0.9636 0.9746 0.9805
+partial_age 0.0002 0.0010 0.0015 0.0041 0.0153 0.0462
+
+unique_age: prior pooled model vs pool-only vs corrected (pool + depth):
+                                      0.500   0.900   0.950   0.990   0.999   1.000
+pooled (prior run: ct + age)        0.00024 0.00183 0.00291 0.00736 0.02154 0.03500
+pool-only (ct + pool + age)         0.00010 0.00062 0.00092 0.00184 0.00454 0.01262
+corrected (ct + pool + depth + age) 0.00011 0.00066 0.00098 0.00187 0.00457 0.01262
+   genes with unique_age >= 0.001 : pooled= 2730  pool-only= 595  corrected= 666  (in both pooled & corrected: 443)
+   genes with unique_age >= 0.002 : pooled= 1256  pool-only= 116  corrected= 118  (in both pooled & corrected: 87)
+   genes with unique_age >= 0.005 : pooled=  283  pool-only=  10  corrected=   9  (in both pooled & corrected: 8)
+   genes with unique_age >= 0.01  : pooled=   76  pool-only=   2  corrected=   2  (in both pooled & corrected: 1)
+   genes with unique_age >= 0.02  : pooled=   19  pool-only=   0  corrected=   0  (in both pooled & corrected: 0)
+
+Spearman(unique_age pooled, corrected) = 0.329; Spearman(unique_age pool-only, corrected) = 0.982
+Spearman(unique_ct pooled, corrected) = 0.9997; max |diff| = 0.0969 (identity axis unchanged by the correction)
+Mean partition per gene: unique_ct=0.2042, unique_age=0.0003, shared=0.0003, nuisance=0.0384, interaction=0.0025, resid=0.7568
+Fraction of pooled age variance retained under the corrected model, genes with pooled unique_age >= 0.005 (n=283): median 0.044
+
+Top 30 genes by CORRECTED unique_age:
+                   symbol  unique_age  unique_age_pool_only  unique_age_pooled  unique_ct  interaction  age_slope_per_year  mean_logcpm
+gene_id                                                                                                                                
+ENSG00000124766      SOX4      0.0126                0.0123             0.0215     0.4474       0.0129             -0.0166       2.3369
+ENSG00000138326     RPS24      0.0120                0.0126             0.0006     0.3782       0.0051             -0.0018      11.7413
+ENSG00000157514   TSC22D3      0.0096                0.0098             0.0350     0.2463       0.0017              0.0043       9.0306
+ENSG00000173114     LRRN3      0.0080                0.0079             0.0187     0.6023       0.0128             -0.0119       1.4047
+ENSG00000174307    PHLDA3      0.0055                0.0056             0.0090     0.1026       0.0075              0.0040       0.3021
+ENSG00000135919  SERPINE2      0.0053                0.0051             0.0060     0.3283       0.0146             -0.0063       0.7611
+ENSG00000130741    EIF2S3      0.0053                0.0054             0.0136     0.3377       0.0011             -0.0029       7.1708
+ENSG00000010030      ETV7      0.0052                0.0056             0.0091     0.1063       0.0054              0.0064       0.7999
+ENSG00000136490     LIMD2      0.0051                0.0043             0.0064     0.4315       0.0026             -0.0018       8.6846
+ENSG00000180875     GREM2      0.0050                0.0050             0.0098     0.3048       0.0141              0.0045       0.4252
+ENSG00000067082      KLF6      0.0049                0.0055             0.0068     0.5097       0.0035              0.0044       8.5041
+ENSG00000147889    CDKN2A      0.0048                0.0050             0.0100     0.2871       0.0075              0.0084       1.7939
+ENSG00000114631    PODXL2      0.0047                0.0046             0.0042     0.0792       0.0032             -0.0066       1.2196
+ENSG00000206195    DUXAP8      0.0046                0.0047             0.0065     0.0456       0.0027              0.0049       0.5177
+ENSG00000203710       CR1      0.0046                0.0045             0.0054     0.6207       0.0049             -0.0087       1.4010
+ENSG00000125534     PPDPF      0.0044                0.0045             0.0011     0.3338       0.0017              0.0017       9.0728
+ENSG00000100097    LGALS1      0.0043                0.0046             0.0046     0.8208       0.0017              0.0091       7.5339
+ENSG00000263417    GTSCR1      0.0043                0.0044             0.0059     0.5897       0.0094              0.0076       1.1534
+ENSG00000265972     TXNIP      0.0043                0.0045             0.0015     0.2427       0.0055              0.0020       9.6639
+ENSG00000244752    CRYBB2      0.0043                0.0044             0.0033     0.0145       0.0009              0.0050       0.4653
+ENSG00000188404      SELL      0.0043                0.0040             0.0077     0.5687       0.0101             -0.0051       7.1935
+ENSG00000102317      RBM3      0.0043                0.0042             0.0143     0.2640       0.0022              0.0018       8.1285
+ENSG00000197728     RPS26      0.0041                0.0042             0.0020     0.0229       0.0006              0.0054      10.7305
+ENSG00000229807      XIST      0.0041                0.0041             0.0005     0.0117       0.0009             -0.0103       5.7695
+ENSG00000171791      BCL2      0.0041                0.0041             0.0042     0.5984       0.0005              0.0066       5.2641
+ENSG00000125726      CD70      0.0041                0.0043             0.0066     0.4190       0.0057              0.0081       1.4712
+ENSG00000006638    TBXA2R      0.0040                0.0038             0.0035     0.2518       0.0022             -0.0054       0.7523
+ENSG00000064666      CNN2      0.0039                0.0036             0.0065     0.1557       0.0024             -0.0025       6.6874
+ENSG00000198692    EIF1AY      0.0039                0.0041             0.0002     0.0147       0.0016              0.0106       2.7186
+ENSG00000175130  MARCKSL1      0.0039                0.0036             0.0021     0.3697       0.0057             -0.0056       5.3663
+
+----------------------------------------------------------------------------------------------------
+[A1-null] permutation null for unique_age: donor ages permuted WITHIN pool, 1000 draws
+----------------------------------------------------------------------------------------------------
+ t_age  observed  null_mean  null_p95  null_max  empirical_FDR
+0.0010       666    29.2590   47.0000        82         0.0439
+0.0020       118     2.4810   10.0000        20         0.0210
+0.0050         9     0.1220    1.0000         9         0.0136
+0.0100         2     0.0000    0.0000         0         0.0000
+null max unique_age over genes: median 0.00266, 95th pct 0.00525, max 0.00976  -> genes exceeding the FWER-5% threshold: 7
+genes with permutation BH q < 0.05: 1180   (nominal-F BH q < 0.05: 1902 — anti-conservative, orientation only)
+genes with permutation BH q < 0.01: 0   (nominal-F BH q < 0.01: 1020 — anti-conservative, orientation only)
+genes at the permutation floor p = 1/1001 : 694
+
+====================================================================================================
+[A2] gene sets on the corrected partition. PRIMARY thresholds (unchanged): {'t_age': 0.005, 'k_ct': 0.2, 't_ct': 0.5, 'k_age': 0.001}
+====================================================================================================
+class counts (primary): A=2, I=1362, MIXED=1, OTHER=12539
+A-genes (n=2): PHLDA3, ETV7
+MIXED (n=1): LRRN3
+I-genes: n=1362
+
+prior-model A-genes recomputed here: n=140 (FINDINGS.md: 140); overlap with new A: 2; prior A-genes now classed as: {'OTHER': 138, 'A': 2}
+prior-model I-genes: n=1164; new I-genes: 1362; overlap: 1111
+What happened to the genes that pass t_age in the corrected model but are not A:
+   9 genes have corrected unique_age >= 0.005; of these unique_ct <= 0.2 (A): 2, unique_ct in (0.2, 0.5) (neither): 6, unique_ct >= 0.5 (MIXED): 1
+                   symbol  unique_age  unique_ct  age_slope_per_year gene_class_rerun  age_q_BH_perm
+gene_id                                                                                             
+ENSG00000124766      SOX4      0.0126     0.4474             -0.0166            OTHER         0.0200
+ENSG00000138326     RPS24      0.0120     0.3782             -0.0018            OTHER         0.0200
+ENSG00000157514   TSC22D3      0.0096     0.2463              0.0043            OTHER         0.0200
+ENSG00000173114     LRRN3      0.0080     0.6023             -0.0119            MIXED         0.0200
+ENSG00000174307    PHLDA3      0.0055     0.1026              0.0040                A         0.0200
+ENSG00000135919  SERPINE2      0.0053     0.3283             -0.0063            OTHER         0.0200
+ENSG00000130741    EIF2S3      0.0053     0.3377             -0.0029            OTHER         0.0200
+ENSG00000010030      ETV7      0.0052     0.1063              0.0064                A         0.0200
+ENSG00000136490     LIMD2      0.0051     0.4315             -0.0018            OTHER         0.0200
+
+Identity-axis position of genes with a within-pool age association (counts; fractions in the csv):
+           gene_set     n  unique_ct <= 0.2 (A-eligible)  0.2 < unique_ct < 0.5 (neither)  unique_ct >= 0.5 (MIXED-eligible)
+all expressed genes 13904                           9423                             3052                               1429
+ permutation q<0.05  1180                            527                              352                                301
+unique_age >= 0.002   118                             42                               56                                 20
+unique_age >= 0.005     9                              2                                6                                  1
+
+A-gene set size by (t_age, k_ct) [corrected model; I thresholds fixed t_ct=0.5, k_age=0.001]:
+k_ct   0.1  0.2  0.3  0.5
+t_age                    
+0.002   24   42   65   98
+0.005    0    2    3    8
+0.010    0    0    0    2
+0.020    0    0    0    0
+   (prior pooled model, same grid: 328/700/872/1096 | 65/140/170/242 | 13/30/39/64 | 6/10/11/19)
+MIXED by (t_age, t_ct) [k_ct=0.2, k_age=0.001]:
+t_ct   0.3  0.5  0.7
+t_age               
+0.002   53   20    5
+0.005    6    1    0
+0.010    2    0    0
+0.020    0    0    0
+I-genes by (t_ct, k_age) [t_age=0.005, k_ct=0.2]:
+k_age  0.0005  0.0010  0.0020  0.0050
+t_ct                                 
+0.3      2508    2796    2935    2982
+0.5      1237    1362    1409    1428
+0.7       502     535     547     552
+
+====================================================================================================
+[A3] known positives: recovered with the expected direction?
+====================================================================================================
+symbol  expected_sign  slope_corrected  slope_pooled  direction_ok  unique_age_corrected  rank_corrected  unique_age_pooled  rank_pooled  unique_ct  q_perm gene_class  gating                      note
+CDKN2A              1           0.0084        0.0106          True                0.0048         12.0000             0.0100      77.0000     0.2871  0.0200      OTHER    True                       NaN
+ LRRN3             -1          -0.0119       -0.0159          True                0.0080          4.0000             0.0187      21.0000     0.6023  0.0200      MIXED    True                       NaN
+ CD248             -1              NaN           NaN         False                   NaN             NaN                NaN          NaN        NaN     NaN        NaN   False not in expressed gene set
+ NELL2             -1          -0.0004       -0.0003          True                0.0000      12212.0000             0.0000   13001.0000     0.6865  0.8668          I   False                       NaN
+  LEF1             -1          -0.0022       -0.0059          True                0.0002       5560.0000             0.0017    1527.0000     0.7015  0.1381          I   False                       NaN
+  CCR7             -1          -0.0044       -0.0027          True                0.0008        967.0000             0.0004    5259.0000     0.6929  0.0200          I   False                       NaN
+  GZMH              1           0.0027        0.0065          True                0.0002       5890.0000             0.0012    2270.0000     0.7856  0.0671          I   False                       NaN
+B3GAT1              1           0.0024        0.0037          True                0.0007       1379.0000             0.0021    1139.0000     0.5639  0.0308          I   False                       NaN
+ KLRG1              1          -0.0013       -0.0025         False                0.0001       8769.0000             0.0002    6949.0000     0.7463  0.4564          I   False                       NaN
+
+Per-cell-type within-pool Pearson r(expression, age) [both pool-centred within the cell type] for the gating positives:
+symbol          CDKN2A  LRRN3
+celltype                     
+B_intermediate  +0.038 -0.038
+B_memory        -0.064 -0.006
+B_naive         +0.053 -0.100
+CD14_Mono       +0.045 -0.013
+CD16_Mono       +0.088 -0.052
+CD4_CTL         +0.087 +0.014
+CD4_Naive       +0.050 -0.417
+CD4_TCM         +0.135 -0.193
+CD4_TEM         +0.009 -0.104
+CD8_Naive       -0.012 -0.259
+CD8_TCM         +0.238 -0.262
+CD8_TEM         +0.155 -0.155
+MAIT            +0.106 +0.100
+NK              +0.214 -0.018
+Treg            +0.115 -0.176
+gdT             +0.242 -0.227
+
+A3 verdict: gating positives recovered with expected direction and permutation q<0.05: True; worst rank among them = 12.0 of 13904. Classes: {'CDKN2A': 'OTHER', 'LRRN3': 'MIXED'}
+
+====================================================================================================
+[A4] prior-run confound filters applied to the NEW A-gene set
+====================================================================================================
+genome-wide flag counts (all expressed genes): flag_cc_list=144, flag_cc_data=69, flag_ribo=157, flag_mito=13, flag_sex_chrom=462, flag_sex_data=25, flag_depth=236
+
+sequential survival of the 2 primary A-genes:
+                                                     filter  flagged_marginal  removed_incremental  surviving
+             cell-cycle (Tirosh S/G2M + proliferation list)                 0                    0          2
+        cell-cycle (data: |r|>=0.3 with cycling covariates)                 0                    0          2
+                                    ribosomal (RPL/RPS/MRP)                 0                    0          2
+                                        mitochondrial (MT-)                 0                    0          2
+                                     sex-linked (chrX/chrY)                 0                    0          2
+                sex-DE (|d|>=0.5, p<1e-6, within cell type)                 0                    0          2
+depth-correlated (|r|>=0.3 with mean counts/genes per cell)                 0                    0          2
+
+removed (0): (none)
+SURVIVING A-genes (2): PHLDA3(+; ua=0.0055; ct=0.103; q=0.020), ETV7(+; ua=0.0052; ct=0.106; q=0.020)
+
+A-genes surviving all confound filters, across the sweep (t_age rows x k_ct columns):
+k_ct   0.1  0.2  0.3  0.5
+t_age                    
+0.002   16   34   55   82
+0.005    0    2    2    5
+0.010    0    0    0    1
+0.020    0    0    0    0
+   of which permutation q<0.05:
+k_ct   0.1  0.2  0.3  0.5
+t_age                    
+0.002   14   32   53   80
+0.005    0    2    2    5
+0.010    0    0    0    1
+0.020    0    0    0    0
+
+====================================================================================================
+STOP CONDITION A — VERDICT  (primary thresholds {'t_age': 0.005, 'k_ct': 0.2, 't_ct': 0.5, 'k_age': 0.001}; filters = prior run's, unchanged)
+====================================================================================================
+corrected-model A-genes at primary thresholds: 2
+A-genes surviving all confound filters:       2   (STOP A fires if < 10)
+of these with within-pool permutation q<0.05:  2
+genes with unique_age >= t_age=0.005 regardless of cell-type variance: 9 (permutation null mean 0.12)
+genes with ANY within-pool age association (permutation BH q<0.05): 1180
+known positives: CDKN2A slope +0.0084/yr (expected +), rank 12.0, unique_ct 0.287, class OTHER; LRRN3 slope -0.0119/yr (expected -), rank 4.0, unique_ct 0.602, class MIXED
+
+VERDICT: STOP CONDITION A FIRED.
+  Fewer than 10 A-genes survive. Under the corrected within-pool model the within-cell-type transcriptomic age signal in PBMC is
+  too sparse to build a gene-set-restricted age score from at the pre-registered thresholds. Per the operating mode the rerun halts
+  here: Stages B, C and D are NOT run. Thresholds were not relaxed. See FINDINGS_RERUN.md.
+====================================================================================================

@@ -1,0 +1,60 @@
+{
+ "md4_genesets_summary": {
+  "n_MD": 205,
+  "n_TGFB": 54,
+  "n_age_up": 1533,
+  "n_age_down": 2007,
+  "md2_equals_md3_MD": true,
+  "md2_equals_md3_TGFB": true,
+  "mmc3_equals_md2_age_up": true,
+  "mmc3_equals_md2_age_down": true,
+  "used_as_deseq2_rebuild": false,
+  "used_as_published_lists": true,
+  "seed": 20260914,
+  "source_md2": "<repo>\\results\\md2\\genesets.json",
+  "source_md3": "<repo>\\results\\md3\\genesets.json"
+ },
+ "s3_mapped": {
+  "GM00731": {
+   "age_up": {
+    "n_requested": 1533,
+    "n_mapped": 896,
+    "n_missing": 636,
+    "n_ctrl": 24488,
+    "nbin": 24,
+    "ctrl_per_gene": 100,
+    "seed": 20260914
+   },
+   "age_down": {
+    "n_requested": 2007,
+    "n_mapped": 1586,
+    "n_missing": 421,
+    "n_ctrl": 24313,
+    "nbin": 24,
+    "ctrl_per_gene": 100,
+    "seed": 20260914
+   }
+  },
+  "GM23815": {
+   "age_up": {
+    "n_requested": 1533,
+    "n_mapped": 894,
+    "n_missing": 638,
+    "n_ctrl": 24930,
+    "nbin": 24,
+    "ctrl_per_gene": 100,
+    "seed": 20260914
+   },
+   "age_down": {
+    "n_requested": 2007,
+    "n_mapped": 1582,
+    "n_missing": 425,
+    "n_ctrl": 24081,
+    "nbin": 24,
+    "ctrl_per_gene": 100,
+    "seed": 20260914
+   }
+  }
+ },
+ "inherited_from_md4": true
+}

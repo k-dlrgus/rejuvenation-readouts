@@ -1,0 +1,43 @@
+{
+  "anchor_n": {
+    "n_young": 113,
+    "n_old": 231
+  },
+  "n_cells": {
+    "O": 2469,
+    "Y": 3851,
+    "S": 5832,
+    "S_rev": 6481,
+    "Pluri": 439,
+    "NonReprog": 5459
+  },
+  "spaces": {
+    "FULL": 23485,
+    "MD": 205,
+    "AGE": 3089
+  },
+  "mixes": [
+    {
+      "f": 0.0,
+      "n_aged": 2470,
+      "n_young": 0
+    },
+    {
+      "f": 0.1,
+      "n_aged": 2223,
+      "n_young": 247
+    },
+    {
+      "f": 0.25,
+      "n_aged": 1852,
+      "n_young": 618
+    },
+    {
+      "f": 0.5,
+      "n_aged": 1235,
+      "n_young": 1235
+    }
+  ],
+  "max_abs_diff_point": 5.684341886080802e-14,
+  "max_abs_diff_percentiles": 7.105427357601002e-15
+}

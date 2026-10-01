@@ -1,0 +1,15 @@
+====================================================================================================
+FIBRO STAGE 1  seed=20260914  boot_seed=20260918  release=GTEx Analysis V10  pipeline=RNASeQCv2.4.2  phs000424.v10
+====================================================================================================
+FALSIFICATION.md and existing FINDINGS*.md are not modified.
+SMTSD exact: 'Cells - Cultured fibroblasts'  freeze=RNASEQ
+Primary transfer metric: Spearman ρ (n_perm=200); uncalibrated R² is never a gate.
+PLS-1 is reported and is not averaged with ridge.
+Fail loudly: no substitute columns, no silent coerce, no dropping rows to pass an assertion.
+Do not infer a donor age that is not in the record.
+Do not open GSE325735.
+[prereg] wrote/exists <repo>\results\fibro\PREREG_STAGE1.flag
+GTEx public `AGE` is a 10-year bin, so ρ is against a coarse ordinal target and year-level error is not meaningful.
+===== gate start =====
+[gate] pass=True  Stage 1 pass: ridge raw ρ>0 both ways with null ≤ 0.05 (B1→C1 ρ=+0.529 null=-0.004 p=+0.005; C1→B1 ρ=+0.561 null=+0.013 p=+0.005).
+===== gate done 0s =====

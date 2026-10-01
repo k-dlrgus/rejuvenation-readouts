@@ -1,0 +1,19 @@
+{
+ "n_PartialReprog": 5832,
+ "n_NonReprog": 5459,
+ "md_mean_PartialReprog": 0.15047059685308203,
+ "md_mean_NonReprog": 0.4394484253245684,
+ "md_Partial_minus_NonReprog": -0.28897782847148634,
+ "n_cells_by_label": {
+  "EarlyPluripotency": 4414,
+  "Fibroblast": 5988,
+  "NonReprog": 5459,
+  "PartialReprog": 5832,
+  "Pluripotency": 439
+ },
+ "min_cells": 20,
+ "has_both_labels_ge_min": true,
+ "md_partial_lower": true,
+ "matches_reported_direction": true,
+ "criterion": "(a) \u22651 PartialReprog-assigned cluster and \u22651 NonReprog-assigned cluster with \u226520 cells in the aged donor; (b) mean per-cell MD in PartialReprog-assigned clusters < mean per-cell MD in NonReprog-assigned clusters."
+}

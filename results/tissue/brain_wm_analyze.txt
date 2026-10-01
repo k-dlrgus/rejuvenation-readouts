@@ -1,0 +1,97 @@
+====================================================================================================
+TISSUE ANALYZE  name=brain_wm  seed=20260914  dataset_id=c05e6940-729c-47bd-a2a6-6ce3730c4919
+  title=white matter - all cells  tissue=brain
+  local=<repo>\data\raw\tissue\brain_wm\a08ce2b5-813f-4596-832b-088f02efb55d.h5ad  size=434,458,874
+====================================================================================================
+
+==========================================================================================
+PEEK brain_wm
+  source: <repo>\data\raw\tissue\brain_wm\a08ce2b5-813f-4596-832b-088f02efb55d.h5ad
+==========================================================================================
+  matrix X shape=(45528, 32902)
+  obs columns (47): ['mapped_reference_assembly', 'mapped_reference_annotation', 'alignment_software', 'donor_id', 'self_reported_ethnicity_ontology_term_id', 'donor_cause_of_death', 'donor_living_at_sample_collection', 'sample_uuid', 'sample_preservation_method', 'tissue_ontology_term_id', 'development_stage_ontology_term_id', 'sample_derivation_process', 'sample_source', 'suspension_derivation_process', 'suspension_dissociation_reagent', 'suspension_uuid', 'suspension_type', 'tissue_handling_interval', 'library_uuid', 'assay_ontology_term_id', 'library_starting_quantity', 'sequencing_platform', 'is_primary_data', 'cell_type_ontology_term_id', 'author_cell_type', 'disease_ontology_term_id', 'sex_ontology_term_id', 'broad_cell_type', 'nCount_RNA', 'nFeature_RNA', 'CauseOfDeath_category', '10XBatch', 'SequencingPool', 'ID', 'percent.mt', 'scDblFinder_score', 'percent_ribo', 'AgeGroup', 'tissue_type', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid']
+  donor_id: n=45,528  nunique=20  top=[('SD026/16', 3825), ('SD030/18', 3377), ('SD024/17', 3240), ('SD025/17', 3228), ('SD046/16', 3177), ('SD012/17', 3104), ('SD014/13', 2954), ('SD008/17', 2538), ('SD036/17', 2495), ('SD038/17', 2490), ('SD038/16', 2196), ('SD042/14', 2146)]
+  development_stage: n=45,528  nunique=13  top=[('71-year-old stage', 8137), ('63-year-old stage', 5523), ('73-year-old stage', 5058), ('39-year-old stage', 4087), ('40-year-old stage', 4001), ('37-year-old stage', 3825), ('72-year-old stage', 3240), ('42-year-old stage', 3177), ('74-year-old stage', 2954), ('34-year-old stage', 2490), ('44-year-old stage', 2012), ('45-year-old stage', 695)]
+  sex: n=45,528  nunique=2  top=[('male', 26068), ('female', 19460)]
+  cell_type: n=45,528  nunique=15  top=[('oligodendrocyte', 18580), ('cerebellar granule cell', 4766), ('microglial cell', 3690), ('astrocyte', 3596), ('GABAergic neuron', 3363), ('oligodendrocyte precursor cell', 3094), ('glutamatergic neuron', 2500), ('capillary endothelial cell', 1968), ('mural cell', 1899), ('endothelial cell of artery', 750), ('leukocyte', 499), ('committed oligodendrocyte precursor', 294)]
+  assay: n=45,528  nunique=1  top=[("10x 3' v3", 45528)]
+  tissue: n=45,528  nunique=3  top=[('cervical spinal cord white matter', 19650), ('white matter of cerebellum', 15963), ('Brodmann (1909) area 4', 9915)]
+  suspension_type: n=45,528  nunique=1  top=[('nucleus', 45528)]
+  disease: n=45,528  nunique=1  top=[('normal', 45528)]
+  is_primary_data: n=45,528  nunique=1  top=[(True, 45528)]
+  nCount_RNA: n=45,528  nunique=12427  top=[(1170.0, 24), (1525.0, 24), (1184.0, 23), (943.0, 22), (970.0, 22), (1310.0, 22), (966.0, 21), (927.0, 21), (805.0, 21), (1375.0, 21), (1630.0, 21), (1213.0, 21)]
+  nFeature_RNA: n=45,528  nunique=5304  top=[(710, 44), (743, 44), (840, 42), (773, 39), (1067, 38), (718, 38), (776, 38), (817, 37), (775, 37), (708, 36), (820, 36), (719, 35)]
+  suspension_uuid: n=45,528  nunique=48  top=[('0795e14e-28a2-4a8c-94b5-94693a92510f', 2342), ('de84a32d-15b4-4fa9-8dc5-2be1620923c4', 2021), ('dbb27428-8f13-4220-9e34-c2a736f0f668', 1744), ('d55ca4b4-2809-4bff-ad17-a3a4b2e52ce8', 1699), ('e77240d9-a073-4689-ba52-558b0fbb876f', 1636), ('44feb08b-c22c-40f2-a9d0-7affae48aa99', 1577), ('64b94705-ba5c-4974-bc5e-779e50539f55', 1492), ('c1ef00d4-516e-4d48-b2f7-338bf06e3929', 1447), ('f4e4930a-604e-4815-97fa-71d80011d0b0', 1399), ('2d3fbd3f-af5b-4e63-a634-b64ff1597a9e', 1311), ('52cdbb15-b689-48f2-b1a9-11a5c47bbc26', 1310), ('06b27bc9-ef00-4e97-80bf-e62497f9a719', 1254)]
+  assay_ontology_term_id: n=45,528  nunique=1  top=[('EFO:0009922', 45528)]
+  tissue_ontology_term_id: n=45,528  nunique=3  top=[('UBERON:0014614', 19650), ('UBERON:0002317', 15963), ('UBERON:0013535', 9915)]
+  donors: 20  age min=34.0 max=74.0 nunique_age=13  cells/donor median=2343 (min 329, max 3825)
+  candidate batch-like columns present: ['suspension_uuid', 'assay', 'assay_ontology_term_id', 'suspension_type', 'tissue', 'tissue_ontology_term_id']
+[load] 45,528 cells; obs cols=['mapped_reference_assembly', 'mapped_reference_annotation', 'alignment_software', 'donor_id', 'self_reported_ethnicity_ontology_term_id', 'donor_cause_of_death', 'donor_living_at_sample_collection', 'sample_uuid', 'sample_preservation_method', 'tissue_ontology_term_id', 'development_stage_ontology_term_id', 'sample_derivation_process', 'sample_source', 'suspension_derivation_process', 'suspension_dissociation_reagent', 'suspension_uuid', 'suspension_type', 'tissue_handling_interval', 'library_uuid', 'assay_ontology_term_id', 'library_starting_quantity', 'sequencing_platform', 'is_primary_data', 'cell_type_ontology_term_id', 'author_cell_type', 'disease_ontology_term_id', 'sex_ontology_term_id', 'broad_cell_type', 'nCount_RNA', 'nFeature_RNA', 'CauseOfDeath_category', '10XBatch', 'SequencingPool', 'ID', 'percent.mt', 'scDblFinder_score', 'percent_ribo', 'AgeGroup', 'tissue_type', 'cell_type', 'assay', 'disease', 'sex', 'tissue', 'self_reported_ethnicity', 'development_stage', 'observation_joinid', '_pos']
+[filter] is_primary_data==True                               cells 45,528 -> 45,528 (removed 0)
+[filter] cells with numeric donor age                          cells 45,528 -> 45,528 (removed 0)
+[filter] adult cells (age >= 18)                         cells 45,528 -> 45,528 (removed 0)
+[donors] 20 adult donors; age 34–74 (nunique=13, span=40 y); cells/donor median 2343
+
+[T2] donor-level batch-column audit:
+                    column  n_levels  n_levels_ge2_donors  frac_donors_in_shared  aliased_with_donor  looks_technical  usable
+            SequencingPool         7                    7                   1.00               False             True    True
+                    tissue         3                    3                   1.00               False             True    True
+                  10XBatch         9                    6                   0.85               False             True    True
+                  AgeGroup         2                    2                   1.00               False            False    True
+  tissue_handling_interval        18                    2                   0.20               False            False    True
+                     assay         1                    1                   1.00               False             True   False
+           suspension_type         1                    1                   1.00               False             True   False
+sample_preservation_method         1                    1                   1.00               False             True   False
+              library_uuid        20                    0                   0.00                True             True   False
+               sample_uuid        20                    0                   0.00                True             True   False
+               age_nunique         1                    1                   1.00               False            False   False
+                   disease         1                    1                   1.00               False            False   False
+   self_reported_ethnicity         1                    1                   1.00               False            False   False
+       sequencing_platform         1                    1                   1.00               False            False   False
+[T2] selected batch column: SequencingPool
+[T2] R2(age ~ C(batch=SequencingPool)) = 0.272   n_batches=7  donors/batch: median 3.0 (min 2, max 4)
+
+[pseudobulk] min_cells=20  min_donors_per_type=8
+[filter] pseudobulks of adult analysis donors                  groups 193 -> 193 (removed 0)
+[filter] cell types with >= 8 adult donors            groups 193 -> 193  types 11 -> 11  dropped={}
+[filter] genes with CPM>1 in >= 10% of pseudobulks   genes  32,902 -> 20,578  (removed 12,324)
+[filter] donors with at least one retained pseudobulk          donors 20 -> 20
+[filter] cells of analysis donors                              cells 45,528 -> 45,528 (removed 0)
+[filter] cell types kept as composition categories (mean prop>=0.005, donors>=8): 13 kept, 2 collapsed to 'other' (266 cells, 0.58%) dropped=['central nervous system macrophage', 'neuron']
+cells/donor for composition: median 2343 (min 329, max 3825); CLR dim=14
+[T2] R2(log mean UMI/cell ~ C(batch)) = 0.626
+[T2] corr(age, depth): pooled r=+0.298; between-batch r=+0.625 (n=7 batches); within-batch r=+0.006
+
+====================================================================================================
+[T3] batch-grouped CV: composition vs within-cell-type expression
+====================================================================================================
+  n_donors=20 n_batches=7 n_outer=5 n_repeats=10  within-batch metric ON
+building per-type kernels:
+   GABAergic neuron                         n=  20 batches=7
+   astrocyte                                n=  19 batches=7
+   capillary endothelial cell               n=  18 batches=7
+   cerebellar granule cell                  n=  14 batches=5
+   endothelial cell of artery               n=  14 batches=7
+   glutamatergic neuron                     n=  19 batches=7
+   leukocyte                                n=  12 batches=7
+   microglial cell                          n=  19 batches=7
+   mural cell                               n=  18 batches=7
+   oligodendrocyte                          n=  20 batches=7
+   oligodendrocyte precursor cell           n=  20 batches=7
+   repeat 0: comp R2w=-0.001  expr R2w=+0.187  comp naive=-1.536  expr naive=-0.032
+   repeat 1: comp R2w=-0.153  expr R2w=+0.207  comp naive=-0.021  expr naive=+0.103
+   repeat 2: comp R2w=-0.464  expr R2w=+0.205  comp naive=-0.993  expr naive=+0.038
+   repeat 3: comp R2w=-0.692  expr R2w=+0.207  comp naive=-0.615  expr naive=+0.074
+   repeat 4: comp R2w=-0.141  expr R2w=+0.165  comp naive=-0.094  expr naive=+0.044
+   repeat 5: comp R2w=-0.603  expr R2w=+0.207  comp naive=-0.154  expr naive=+0.013
+   repeat 6: comp R2w=+0.075  expr R2w=+0.224  comp naive=-0.116  expr naive=+0.052
+   repeat 7: comp R2w=-0.428  expr R2w=+0.214  comp naive=-0.879  expr naive=+0.070
+   repeat 8: comp R2w=-0.067  expr R2w=+0.107  comp naive=-0.154  expr naive=-0.054
+   repeat 9: comp R2w=-0.427  expr R2w=+0.214  comp naive=-0.897  expr naive=+0.063
+  composition (CLR, 14 categories): within-batch R2=-0.290 [-0.007939921634236407, 0.00113114215003019] {-0.692,+0.075}  naive R2=-0.546 [-3.654,-0.183]
+  expression: all 11 cell types jointly: within-batch R2=+0.194 [0.10756062405028159, 0.2634544644248755] {+0.107,+0.224}  naive R2=+0.037 [-0.439,+0.108]
+
+[T3] brain_wm: composition R2=-0.290  expression R2=+0.194  expr/comp=-0.667  metric=within_batch
+     blood reference: composition 0.493  expression 0.482  expr/comp=0.978
+
+[brain_wm] done.

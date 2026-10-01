@@ -1,0 +1,127 @@
+====================================================================================================
+TRAJECTORY G2 — orthogonality controls  seed=20260914  dataset_id=4442d412-91cb-4261-acca-8adf5fa04c11
+====================================================================================================
+LIMITATION: the source paper describes 6-sample hashing pools; they are not in obs and cannot be corrected for. Source (HBCC/MSSM) is a 2-level brain-bank factor (1 df), not equivalent to OneK1K's 75 multiplexed 10x pools. Barcodekey looks like Donor-{n}-{10x_barcode}-{gem_group} but is not used as a pool ID.
+NO GENE SELECTION: every gene in the Phase-1 matrix enters every model with a weight.
+FALSIFICATION.md and prior FINDINGS*.md are not modified.
+[data] cached log-CPM 3,323 x 25,526 from brain_aging_phase1_logcpm.npy
+[filter] log-CPM matrix: 3,323 pseudobulks x 25,526 genes
+[filter] donors=233  cell_types=20  sites={'H': 120, 'M': 113}  rows=3323
+[filter] frozen A-genes: requested=1355 mapped=1355
+[filter] frozen I-genes: requested=1876 mapped=1876
+[filter] P0 extras on obs: ['p0_cc_umi_frac', 'p0_frac_Oligo', 'p0_frac_Immune']
+[filter] G2 uses ALL 25,526 genes; no threshold.
+
+[G2a] scheme=loso method=pls1
+   loso pls1  median-over-folds angle=74.7°  proj R²=0.070
+   loso pls1 permutation null (50 draws)...
+      perm 10/50
+      perm 20/50
+      perm 30/50
+      perm 40/50
+      perm 50/50
+   loso pls1 null angle=79.5°  p_angle=0.039  p_proj=0.059
+
+[G2a] scheme=loso method=ridge
+   loso ridge  median-over-folds angle=83.5°  proj R²=0.013
+   loso ridge permutation null (50 draws)...
+      perm 10/50
+      perm 20/50
+      perm 30/50
+      perm 40/50
+      perm 50/50
+   loso ridge null angle=85.3°  p_angle=0.020  p_proj=0.020
+
+[G2a] scheme=within_site method=pls1
+   within_site pls1  median-over-folds angle=74.6°  proj R²=0.071
+   within_site pls1 permutation null (50 draws)...
+      perm 10/50
+      perm 20/50
+      perm 30/50
+      perm 40/50
+      perm 50/50
+   within_site pls1 null angle=79.3°  p_angle=0.039  p_proj=0.039
+
+[G2a] scheme=within_site method=ridge
+   within_site ridge  median-over-folds angle=83.2°  proj R²=0.014
+   within_site ridge permutation null (50 draws)...
+      perm 10/50
+      perm 20/50
+      perm 30/50
+      perm 40/50
+      perm 50/50
+   within_site ridge null angle=85.0°  p_angle=0.020  p_proj=0.020
+
+[G2b] identity-subspace coordinates → age   scheme=loso
+   identity-coords age R²=-0.258  (pooled=-0.258  site_strat=-0.644)
+   permutation null (50 draws)...
+      perm 10/50
+      perm 20/50
+      perm 30/50
+      perm 40/50
+      perm 50/50
+   null pooled mean=-0.834  p=0.020
+[G2b/c] age-direction pls1 scheme=loso (recompute, train-only)
+   age-dir pls1 R²=-0.354
+[G2c] residual age direction pls1 scheme=loso
+   residual pls1 R²=-0.329
+   permutation null (50 draws)...
+      perm 10/50
+      perm 20/50
+      perm 30/50
+      perm 40/50
+      perm 50/50
+   residual null pooled mean=-0.931  p=0.020
+[G2b/c] age-direction ridge scheme=loso (recompute, train-only)
+   age-dir ridge R²=+0.101
+[G2c] residual age direction ridge scheme=loso
+   residual ridge R²=+0.063
+   permutation null (50 draws)...
+      perm 10/50
+      perm 20/50
+      perm 30/50
+      perm 40/50
+      perm 50/50
+   residual null pooled mean=-0.886  p=0.020
+   G2b ridge: R²_id=-0.258 vs R²_age=+0.101  ratio=-2.541  redundant=False
+   G2c ridge: R²_resid=+0.063 vs R²_age=+0.101  collapsed=False
+
+[G2b] identity-subspace coordinates → age   scheme=within_site
+   identity-coords age R²=+0.026  (pooled=+0.284  site_strat=+0.026)
+   permutation null (50 draws)...
+      perm 10/50
+      perm 20/50
+      perm 30/50
+      perm 40/50
+      perm 50/50
+   null site_strat mean=-0.049  p=0.020
+[G2b/c] age-direction pls1 scheme=within_site (recompute, train-only)
+   age-dir pls1 R²=+0.016
+[G2c] residual age direction pls1 scheme=within_site
+   residual pls1 R²=+0.025
+   permutation null (50 draws)...
+      perm 10/50
+      perm 20/50
+      perm 30/50
+      perm 40/50
+      perm 50/50
+   residual null site_strat mean=-0.153  p=0.020
+[G2b/c] age-direction ridge scheme=within_site (recompute, train-only)
+   age-dir ridge R²=+0.317
+[G2c] residual age direction ridge scheme=within_site
+   residual ridge R²=+0.300
+   permutation null (50 draws)...
+      perm 10/50
+      perm 20/50
+      perm 30/50
+      perm 40/50
+      perm 50/50
+   residual null site_strat mean=-0.119  p=0.020
+   G2b ridge: R²_id=+0.026 vs R²_age=+0.317  ratio=0.082  redundant=False
+   G2c ridge: R²_resid=+0.300 vs R²_age=+0.317  collapsed=False
+
+[STOP G2] stop=False  redundant_ws=False  collapsed_ws=False
+   G2b not redundant; G2c age signal survives. Proceed to G3.
+[G2] figures written
+[G2] wrote results/trajectory/g2_*
+[G2] done.

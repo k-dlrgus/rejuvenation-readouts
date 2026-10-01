@@ -1,0 +1,288 @@
+{
+ "seed": 20260914,
+ "dataset_id": "4442d412-91cb-4261-acca-8adf5fa04c11",
+ "n_genes": 25526,
+ "n_perm": 50,
+ "g2a": {
+  "loso": {
+   "pls1": {
+    "median_angle_deg": 74.73839308493575,
+    "median_proj_r2": 0.07008962069659255,
+    "null_angle_mean": 79.45311304995269,
+    "null_proj_r2_mean": 0.03523284776750375,
+    "p_angle": 0.0392156862745098,
+    "p_proj": 0.058823529411764705,
+    "n_perm": 50
+   },
+   "ridge": {
+    "median_angle_deg": 83.51450152897661,
+    "median_proj_r2": 0.012876647862888968,
+    "null_angle_mean": 85.29902476971536,
+    "null_proj_r2_mean": 0.006838545385328345,
+    "p_angle": 0.0196078431372549,
+    "p_proj": 0.0196078431372549,
+    "n_perm": 50
+   }
+  },
+  "within_site": {
+   "pls1": {
+    "median_angle_deg": 74.58548840629999,
+    "median_proj_r2": 0.07069470840688752,
+    "null_angle_mean": 79.2657406111503,
+    "null_proj_r2_mean": 0.035565560913651505,
+    "p_angle": 0.0392156862745098,
+    "p_proj": 0.0392156862745098,
+    "n_perm": 50
+   },
+   "ridge": {
+    "median_angle_deg": 83.15385491335833,
+    "median_proj_r2": 0.01421508135382803,
+    "null_angle_mean": 84.98310035198455,
+    "null_proj_r2_mean": 0.007724087269887107,
+    "p_angle": 0.0196078431372549,
+    "p_proj": 0.0196078431372549,
+    "n_perm": 50
+   }
+  }
+ },
+ "g2b": {
+  "loso": {
+   "r2_identity_coords": -0.25751201222909526,
+   "mae": 16.8943086688178,
+   "scores": {
+    "pooled_median_type_r2": -0.25751201222909526,
+    "site_strat_median_type_r2": -0.6438953070972602,
+    "site_cell_median_r2": -0.5569348900857853,
+    "joint_pooled_r2": -0.007438650852101825,
+    "joint_site_strat_r2": -0.3685462607743687,
+    "pooled_median_type_mae": 16.8943086688178,
+    "n_types_pooled": 20,
+    "n_types_strat": 20
+   },
+   "null": {
+    "mean": -0.833931214376794,
+    "median": -0.8189693230028753,
+    "p05": -1.021467499611915,
+    "p95": -0.7448995233345926,
+    "min": -1.0724125569331755,
+    "max": -0.6917175797666664,
+    "n": 50
+   },
+   "p": 0.0196078431372549,
+   "n_perm": 50,
+   "age_dir": {
+    "pls1": {
+     "r2": -0.3536353539833619,
+     "mae": 16.724697564586137,
+     "scores": {
+      "pooled_median_type_r2": -0.3536353539833619,
+      "site_strat_median_type_r2": -0.7525775870222096,
+      "site_cell_median_r2": -0.799481760838372,
+      "joint_pooled_r2": -0.2454171093117794,
+      "joint_site_strat_r2": -0.691645729949426,
+      "pooled_median_type_mae": 16.724697564586137,
+      "n_types_pooled": 20,
+      "n_types_strat": 20
+     }
+    },
+    "ridge": {
+     "r2": 0.10135213614975841,
+     "mae": 13.843758597868668,
+     "scores": {
+      "pooled_median_type_r2": 0.10135213614975841,
+      "site_strat_median_type_r2": -0.1741021391859129,
+      "site_cell_median_r2": -0.13910089777030032,
+      "joint_pooled_r2": 0.24524315952047626,
+      "joint_site_strat_r2": -0.025270383936107366,
+      "pooled_median_type_mae": 13.843758597868668,
+      "n_types_pooled": 20,
+      "n_types_strat": 20
+     }
+    }
+   },
+   "redundant": false,
+   "ratio": -2.540765513304961,
+   "delta": 0.35886414837885366
+  },
+  "within_site": {
+   "r2_identity_coords": 0.02599089986026812,
+   "mae": 12.151227972409874,
+   "scores": {
+    "pooled_median_type_r2": 0.28355333987755216,
+    "site_strat_median_type_r2": 0.02599089986026812,
+    "site_cell_median_r2": 0.03724186774074595,
+    "joint_pooled_r2": 0.47860586209796907,
+    "joint_site_strat_r2": 0.29183704930870275,
+    "pooled_median_type_mae": 11.938645198621206,
+    "n_types_pooled": 20,
+    "n_types_strat": 20
+   },
+   "null": {
+    "mean": -0.04945833558522914,
+    "median": -0.049655784684798615,
+    "p05": -0.07816380388723762,
+    "p95": -0.02795407869700267,
+    "min": -0.08392240742883827,
+    "max": -0.014210754416446092,
+    "n": 50
+   },
+   "p": 0.0196078431372549,
+   "n_perm": 50,
+   "age_dir": {
+    "pls1": {
+     "r2": 0.01644016685578248,
+     "mae": 12.11302045595801,
+     "scores": {
+      "pooled_median_type_r2": 0.25682623286366213,
+      "site_strat_median_type_r2": 0.01644016685578248,
+      "site_cell_median_r2": 0.018872135778362387,
+      "joint_pooled_r2": 0.34177169171963284,
+      "joint_site_strat_r2": 0.10593478530053974,
+      "pooled_median_type_mae": 12.04710229618513,
+      "n_types_pooled": 20,
+      "n_types_strat": 20
+     }
+    },
+    "ridge": {
+     "r2": 0.31664675981668755,
+     "mae": 9.977782975719524,
+     "scores": {
+      "pooled_median_type_r2": 0.488392055801995,
+      "site_strat_median_type_r2": 0.31664675981668755,
+      "site_cell_median_r2": 0.3514217355732464,
+      "joint_pooled_r2": 0.595077123124333,
+      "joint_site_strat_r2": 0.4500248392543143,
+      "pooled_median_type_mae": 9.625403550884455,
+      "n_types_pooled": 20,
+      "n_types_strat": 20
+     }
+    }
+   },
+   "redundant": false,
+   "ratio": 0.08208168583602343,
+   "delta": 0.2906558599564194
+  }
+ },
+ "g2c": {
+  "loso": {
+   "collapsed": false,
+   "residual": {
+    "pls1": {
+     "r2": -0.3288813884457802,
+     "mae": 16.586353514456,
+     "null": {
+      "mean": -0.9308966535734514,
+      "median": -0.9464045715551225,
+      "p05": -1.1121083325601393,
+      "p95": -0.7140508123380489,
+      "min": -1.1509569772424197,
+      "max": -0.5428979244771653,
+      "n": 50
+     },
+     "p": 0.0196078431372549,
+     "n_perm": 50,
+     "scores": {
+      "pooled_median_type_r2": -0.3288813884457802,
+      "site_strat_median_type_r2": -0.7398095498379107,
+      "site_cell_median_r2": -0.7537049155359952,
+      "joint_pooled_r2": -0.22343144614575228,
+      "joint_site_strat_r2": -0.661793056407121,
+      "pooled_median_type_mae": 16.586353514456,
+      "n_types_pooled": 20,
+      "n_types_strat": 20
+     }
+    },
+    "ridge": {
+     "r2": 0.06307110396814924,
+     "mae": 14.070308400142142,
+     "null": {
+      "mean": -0.8862957382725436,
+      "median": -0.8779113105869436,
+      "p05": -1.1370993557416187,
+      "p95": -0.6562294343709714,
+      "min": -1.2210384162359482,
+      "max": -0.5184178284509569,
+      "n": 50
+     },
+     "p": 0.0196078431372549,
+     "n_perm": 50,
+     "scores": {
+      "pooled_median_type_r2": 0.06307110396814924,
+      "site_strat_median_type_r2": -0.21602776692898132,
+      "site_cell_median_r2": -0.1607285325410881,
+      "joint_pooled_r2": 0.19924425462520712,
+      "joint_site_strat_r2": -0.08775169337748595,
+      "pooled_median_type_mae": 14.070308400142142,
+      "n_types_pooled": 20,
+      "n_types_strat": 20
+     }
+    }
+   }
+  },
+  "within_site": {
+   "collapsed": false,
+   "residual": {
+    "pls1": {
+     "r2": 0.025302876454387307,
+     "mae": 11.975465514958543,
+     "null": {
+      "mean": -0.1528058486100143,
+      "median": -0.14985759441493285,
+      "p05": -0.21128142137570816,
+      "p95": -0.08969162341748745,
+      "min": -0.27509396895855565,
+      "max": -0.058757672994297794,
+      "n": 50
+     },
+     "p": 0.0196078431372549,
+     "n_perm": 50,
+     "scores": {
+      "pooled_median_type_r2": 0.2660827805583203,
+      "site_strat_median_type_r2": 0.025302876454387307,
+      "site_cell_median_r2": 0.027676855045536963,
+      "joint_pooled_r2": 0.35189733204637086,
+      "joint_site_strat_r2": 0.11968818565671852,
+      "pooled_median_type_mae": 11.900145620403768,
+      "n_types_pooled": 20,
+      "n_types_strat": 20
+     }
+    },
+    "ridge": {
+     "r2": 0.30001994057778814,
+     "mae": 10.095698783891105,
+     "null": {
+      "mean": -0.11878771138097009,
+      "median": -0.11414609719312818,
+      "p05": -0.18112462464788304,
+      "p95": -0.0824791417272994,
+      "min": -0.21911034054379525,
+      "max": -0.05122170568598153,
+      "n": 50
+     },
+     "p": 0.0196078431372549,
+     "n_perm": 50,
+     "scores": {
+      "pooled_median_type_r2": 0.4727224428654918,
+      "site_strat_median_type_r2": 0.30001994057778814,
+      "site_cell_median_r2": 0.341643406312404,
+      "joint_pooled_r2": 0.5817263530791716,
+      "joint_site_strat_r2": 0.4318889771425444,
+      "pooled_median_type_mae": 9.758008304654949,
+      "n_types_pooled": 20,
+      "n_types_strat": 20
+     }
+    }
+   }
+  }
+ },
+ "stop_G2": false,
+ "stop_reason": "",
+ "redundant_within_site": false,
+ "collapsed_within_site": false,
+ "thresholds": {
+  "g2b_ratio": 0.8,
+  "g2b_delta": 0.1,
+  "g2c_ratio": 0.5
+ },
+ "note": "Directions and identity basis fit on training folds only. All genes."
+}

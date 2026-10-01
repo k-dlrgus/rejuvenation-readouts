@@ -1,0 +1,26 @@
+{
+  "title": "A Transcription Factor Atlas of Directed Differentiation",
+  "summary": "This SuperSeries is composed of the SubSeries listed below.",
+  "overall_design": "Refer to individual Series",
+  "relations": [
+    "SuperSeries of: GSE216457",
+    "SuperSeries of: GSE216463",
+    "SuperSeries of: GSE216477",
+    "SuperSeries of: GSE216479",
+    "SuperSeries of: GSE216595",
+    "SuperSeries of: GSE216601",
+    "SuperSeries of: GSE216602",
+    "SuperSeries of: GSE217066",
+    "SuperSeries of: GSE217215",
+    "SuperSeries of: GSE217460",
+    "SuperSeries of: GSE218506",
+    "SuperSeries of: GSE218562",
+    "SuperSeries of: GSE218789",
+    "SuperSeries of: GSE219000",
+    "SuperSeries of: GSE219058",
+    "BioProject: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA893678"
+  ],
+  "pubmed": [
+    "36608654"
+  ]
+}

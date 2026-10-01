@@ -1,0 +1,8 @@
+filter,flagged_marginal,removed_incremental,surviving
+cell-cycle (Tirosh S/G2M + proliferation list),0,0,2
+cell-cycle (data: |r|>=0.3 with cycling covariates),0,0,2
+ribosomal (RPL/RPS/MRP),0,0,2
+mitochondrial (MT-),0,0,2
+sex-linked (chrX/chrY),0,0,2
+"sex-DE (|d|>=0.5, p<1e-6, within cell type)",0,0,2
+depth-correlated (|r|>=0.3 with mean counts/genes per cell),0,0,2

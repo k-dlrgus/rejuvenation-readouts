@@ -1,0 +1,24 @@
+{
+ "n_PartialReprog": 5832,
+ "n_NonReprog": 5459,
+ "md_mean_PartialReprog": 0.15047059685308203,
+ "md_mean_NonReprog": 0.4394484253245684,
+ "md2_json_n_PartialReprog": 5832,
+ "md2_json_n_NonReprog": 5459,
+ "md2_json_md_mean_PartialReprog": 0.15047059685308203,
+ "md2_json_md_mean_NonReprog": 0.4394484253245684,
+ "findings_printed_PartialReprog": "+0.150",
+ "findings_printed_NonReprog": "+0.439",
+ "abs_delta_md_pr": 0.0,
+ "abs_delta_md_nr": 0.0,
+ "n_match": true,
+ "md_match_1e12": true,
+ "printed_3dp_match": true,
+ "expected_constants": {
+  "n_pr": 5832,
+  "n_nr": 5459,
+  "md_pr": 0.15047059685308203,
+  "md_nr": 0.4394484253245684
+ },
+ "ok": true
+}

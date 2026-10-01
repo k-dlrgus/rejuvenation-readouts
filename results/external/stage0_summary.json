@@ -1,0 +1,53 @@
+{
+ "dataset_id": "c2876b1b-06d8-4d96-a56b-5304f815b99a",
+ "title": "Whole Taxonomy - MTG: Seattle Alzheimer's Disease Atlas (SEA-AD)",
+ "tissue": "middle temporal gyrus",
+ "n_nuclei": 1378211,
+ "n_donors": 89,
+ "n_donors_mapped": 89,
+ "n_subclasses": 24,
+ "n_subclasses_mapped": 15,
+ "n_subclasses_unmapped": 9,
+ "unmapped_subclasses": [
+  "Astrocyte",
+  "Chandelier",
+  "Endothelial",
+  "L5 ET",
+  "L5/6 NP",
+  "L6 CT",
+  "L6b",
+  "Pax6",
+  "Sncg"
+ ],
+ "age_min": 29.0,
+ "age_max": 89.0,
+ "nunique_age": 23,
+ "sex_counts": {
+  "female": 53,
+  "male": 36
+ },
+ "pathology_field": "ADNC",
+ "pathology_family": "ADNC_or_overall",
+ "pathology_source": "seaad_h5ad_obs",
+ "pathology_source_file": "https://datasets.cellxgene.cziscience.com/732b4aa7-e441-4196-b05e-127433425613.h5ad",
+ "pathology_observed": [
+  "high",
+  "intermediate",
+  "low",
+  "not ad",
+  "reference"
+ ],
+ "n_pathology_low": 26,
+ "n_pathology_missing": 0,
+ "pathology_low_levels": [
+  "low",
+  "not ad",
+  "reference"
+ ],
+ "h5ad_url": "https://datasets.cellxgene.cziscience.com/732b4aa7-e441-4196-b05e-127433425613.h5ad",
+ "h5ad_bytes": 50775398656,
+ "donor_metadata_path": "<repo>\\data\\raw\\seaad_mtg\\68debdfdd1b8e9f8fd64dab0_sea-ad_cohort_donor_metadata_072524.xlsx",
+ "donor_join_key": "Donor ID",
+ "min_donors_map_bar": 40,
+ "stop": false
+}

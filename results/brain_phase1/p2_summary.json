@@ -1,0 +1,15 @@
+{
+ "n_A_in": 1578,
+ "n_A_surviving": 1355,
+ "n_I": 1876,
+ "stop": false,
+ "stop_reason": "",
+ "cc_note": "99/1578 declared A-genes are cell-cycle flagged (list=5, data=94). DLPFC is largely post-mitotic; OPCs are the main cycling population. Small CC hit, as expected for post-mitotic cortex.",
+ "n_cc_flagged": 99,
+ "extra_covariates": [
+  "p0_cc_umi_frac",
+  "p0_frac_Oligo",
+  "p0_frac_Immune"
+ ],
+ "seed": 20260914
+}
