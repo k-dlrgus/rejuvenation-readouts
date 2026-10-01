@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the preprint."
+title: "Rejuvenation readouts cannot distinguish younger from less old: code and results"
+type: software
+authors:
+  - family-names: Kwon
+    given-names: Roger
+    affiliation: "Independent researcher, Seoul, Republic of Korea"
+    orcid: "https://orcid.org/0009-0002-0181-3356"
+license: MIT
+repository-code: "https://github.com/k-dlrgus/rejuvenation-readouts"

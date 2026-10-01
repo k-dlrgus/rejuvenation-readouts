@@ -94,7 +94,7 @@ Frozen before any evaluation and applied unchanged thereafter.
 
 | Instrument | File | What it is |
 |---|---|---|
-| Fibroblast age ruler | `results/fibro/frozen_ruler_ridge_raw.npz` freeze | Unit weight vector, un-normalised coefficients, training mean and standard deviation over 23,485 genes, from 652 GTEx fibroblast donors |
+| Fibroblast age ruler | `results/fibro/frozen_ruler_ridge_raw.npz` | Unit weight vector, un-normalised coefficients, training mean and standard deviation over 23,485 genes, from 652 GTEx fibroblast donors |
 | GTEx young and old anchors | `results/toward/anchors.npz` | Mean expression of donors aged 20-39 and 60-79 |
 
 The ruler orders donors. It is not a calibrated age in years, and is never used as an age
