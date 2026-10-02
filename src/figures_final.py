@@ -329,7 +329,7 @@ def fig5():
             f"n = {int(ref.n)} pseudobulks".replace("-", "−"), transform=ax.transAxes, ha="right", va="top",
             fontsize=6.5)
     ax.set_ylim(-20, 10)
-    ax.set_xlabel("Nearest-neighbour distance to GTEx training donors\n(PCA, k = 50)")
+    ax.set_xlabel("Nearest-neighbor distance to GTEx training donors\n(PCA, k = 50)")
     ax.set_ylabel("Frozen-ruler score (a.u.)")
     panel_letter(ax, "B", x=letter_in / (ax.get_position().width * fig.get_figwidth()))
     donor_h = [Line2D([], [], marker="o", ls="none", ms=4.2, mec="none", color=DONOR_COLOR[l], label=donor_word[l])

@@ -7,7 +7,9 @@ A one-dimensional age score falls for any move away from the old state. This rep
 contains the analyses behind the claim that distance to a young target of the same cell
 type tells approach from departure, and a one-dimensional score cannot.
 
-Preprint: `paper/rejuvenation_readouts_preprint_11.docx` · Archived release: [ZENODO DOI]
+Preprint: [paper/rejuvenation_readouts_preprint_12.pdf](paper/rejuvenation_readouts_preprint_12.pdf)
+
+Archived release: [ZENODO DOI]
 
 ---
 
