@@ -9,7 +9,7 @@ type tells approach from departure, and a one-dimensional score cannot.
 
 Preprint: [paper/rejuvenation_readouts_preprint_12.pdf](paper/rejuvenation_readouts_preprint_12.pdf)
 
-Archived release: [ZENODO DOI]
+Archived release: https://doi.org/10.5281/zenodo.23092319
 
 ---
 
@@ -38,7 +38,7 @@ Scripts are run from the repository root and put the root on `sys.path` themselv
 | `src/` | All analysis code. One entry point per analysis (table below). |
 | `results/<name>/` | Output of the analysis named `<name>`, including its pre-registration flag. |
 | `results/figures_final/` | The figures as they appear in the preprint, plus the plotting data for each. |
-| `paper/` | The manuscript, `paper/rejuvenation_readouts_preprint_11.docx`. Earlier drafts (preprint_10, preprint_9, preprint_3 and `paper/PREPRINT_DRAFT.md`) are superseded and kept as history. |
+| `paper/` | paper/ holds the preprint PDF, rejuvenation_readouts_preprint_12.pdf. |
 | `notebooks/` | Exploratory notebooks, outputs stripped. |
 | `FINDINGS_*.md` | The written reading of each analysis, including withdrawn and superseded readings, marked as such. |
 | `PROGRESS_*.md` | Running logs for each analysis. |
@@ -189,7 +189,7 @@ anywhere, and GTEx donor age is handled only as the public decade bin or its mid
 ## Citation
 
 R. Kwon. *Rejuvenation readouts cannot distinguish younger from less old.* Preprint.
-[ZENODO DOI]
+https://doi.org/10.5281/zenodo.23092319
 
 ## Contact
 
