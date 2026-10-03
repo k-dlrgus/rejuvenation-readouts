@@ -1,0 +1,78 @@
+block,item,kind,n,max_abs_diff,max_scaled_diff,tol,stored_example,new_example,n_mismatch,pass,gating
+SAME,stored split equals a fresh split_half draw,categorical,1,,,,True,True,0,True,False
+SAME posctrl.csv,f,numeric,4,0.0,0.0,1e-06,0,0,0,True,True
+SAME posctrl.csv,n_aged,numeric,4,0.0,0.0,1e-06,2470,2470,0,True,True
+SAME posctrl.csv,n_young,numeric,4,0.0,0.0,1e-06,0,0,0,True,True
+SAME posctrl.csv,n_total,numeric,4,0.0,0.0,1e-06,2470,2470,0,True,True
+SAME posctrl.csv,frac,numeric,4,5.551115123125783e-17,5.551115123125783e-17,1e-06,0.1145874459,0.1145874459,0,True,True
+SAME posctrl.csv,delta,numeric,4,4.163336342344337e-17,4.163336342344337e-17,1e-06,0.06805109688,0.06805109688,0,True,True
+SAME posctrl.csv,cos,numeric,4,5.551115123125783e-17,5.551115123125783e-17,1e-06,0.2387908767,0.2387908767,0,True,True
+SAME posctrl.csv,d_norm,numeric,4,7.105427357601002e-15,1.1621085857068429e-16,1e-06,59.61862758,59.61862758,0,True,True
+SAME posctrl.csv,v_norm,numeric,4,0.0,0.0,1e-06,124.2403497,124.2403497,0,True,True
+SAME posctrl.csv,frac_ci_lo,numeric,4,6.938893903907228e-17,6.938893903907228e-17,1e-06,0.09871663348,0.09871663348,0,True,True
+SAME posctrl.csv,frac_ci_hi,numeric,4,6.938893903907228e-17,6.938893903907228e-17,1e-06,0.1209518274,0.1209518274,0,True,True
+SAME posctrl.csv,delta_ci_lo,numeric,4,2.220446049250313e-16,1.1688012848795216e-16,1e-06,5.80704647,5.80704647,0,True,True
+SAME posctrl.csv,delta_ci_hi,numeric,4,1.7763568394002505e-15,1.8953022567242787e-16,1e-06,8.334360669,8.334360669,0,True,True
+SAME posctrl.csv,ruler_score_context,numeric,4,4.440892098500626e-16,1.243005881189498e-16,1e-06,4.376884003,4.376884003,0,True,True
+SAME posctrl_summary.json,P pass,categorical,1,,,,True,True,0,True,True
+SAME stats.csv,n_cells_S,numeric,2,0.0,0.0,1e-06,5832,5832,0,True,True
+SAME stats.csv,cos,numeric,2,9.367506770274758e-17,9.367506770274758e-17,1e-06,0.3231778799,0.3231778799,0,True,True
+SAME stats.csv,frac,numeric,2,6.938893903907228e-18,6.938893903907228e-18,1e-06,0.6744407482,0.6744407482,0,True,True
+SAME stats.csv,delta,numeric,2,0.0,0.0,1e-06,130.8935648,130.8935648,0,True,True
+SAME stats.csv,p_N1,numeric,2,5.2909066017292616e-17,5.2909066017292616e-17,1e-06,0.004975124378,0.004975124378,0,True,True
+SAME stats.csv,frac_ci_lo,numeric,2,0.0,0.0,1e-06,0.6673919963,0.6673919963,0,True,True
+SAME stats.csv,frac_ci_hi,numeric,2,6.245004513516506e-17,6.245004513516506e-17,1e-06,0.680092116,0.680092116,0,True,True
+SAME stats.csv,delta_ci_lo,numeric,2,0.0,0.0,1e-06,130.473493,130.473493,0,True,True
+SAME stats.csv,delta_ci_hi,numeric,2,0.0,0.0,1e-06,133.9181085,133.9181085,0,True,True
+SAME stats.csv,d_norm,numeric,2,0.0,0.0,1e-06,272.7340349,272.7340349,0,True,True
+SAME stats.csv,v_norm,numeric,2,0.0,0.0,1e-06,130.6884369,130.6884369,0,True,True
+SAME stats.csv,ruler_score_S,numeric,2,0.0,0.0,1e-06,0.9288368284,0.9288368284,0,True,True
+SAME summary.json,asymmetry,numeric,1,0.0,0.0,1e-06,0.731715975,0.731715975,0,True,True
+SAME summary.json,asymmetry_ci_lo,numeric,1,0.0,0.0,1e-06,0.7240405163,0.7240405163,0,True,True
+SAME summary.json,asymmetry_ci_hi,numeric,1,0.0,0.0,1e-06,0.7404332564,0.7404332564,0,True,True
+SAME context.csv,n_cells,numeric,4,0.0,0.0,1e-06,5832,5832,0,True,True
+SAME context.csv,ruler_score_context,numeric,4,0.0,0.0,1e-06,0.9288368284,0.9288368284,0,True,True
+SAME context.csv,frac,numeric,4,6.938893903907228e-18,6.938893903907228e-18,1e-06,0.6744407482,0.6744407482,0,True,True
+SAME context.csv,delta,numeric,4,0.0,0.0,1e-06,130.8935648,130.8935648,0,True,True
+SAME context.csv,cos,numeric,4,9.367506770274758e-17,9.367506770274758e-17,1e-06,0.3231778799,0.3231778799,0,True,True
+SAME context.csv,frac_ci_lo,numeric,4,0.0,0.0,1e-06,0.6673919963,0.6673919963,0,True,True
+SAME context.csv,frac_ci_hi,numeric,4,6.245004513516506e-17,6.245004513516506e-17,1e-06,0.680092116,0.680092116,0,True,True
+SAME context.csv,delta_ci_lo,numeric,4,5.684341886080802e-14,1.4508591010599735e-16,1e-06,130.473493,130.473493,0,True,True
+SAME context.csv,delta_ci_hi,numeric,4,0.0,0.0,1e-06,133.9181085,133.9181085,0,True,True
+SAME context.csv,"ruler_score_context (O, Y)",numeric,2,0.0,0.0,1e-06,2.647187283,2.647187283,0,True,True
+SAME reading,key,categorical,1,,,,no_approach_same_platform,no_approach_same_platform,0,True,True
+SAME reading,key is no_approach_same_platform,categorical,1,,,,no_approach_same_platform,no_approach_same_platform,0,True,True
+SAME reading,delta_S (+130.894),numeric,1,0.0,0.0,1e-06,130.894,130.894,0,True,True
+GTEx centroids,"n_young (113), n_old (231)",numeric,2,0.0,0.0,0.0,113,113,0,True,True
+GTEx centroids,B young vs mu + sd * C young,numeric,23485,1.7763568394002505e-15,4.74656186860143e-16,1e-06,-0.3287020015,-0.3287020015,0,True,True
+GTEx centroids,B old vs mu + sd * C old,numeric,23485,1.7763568394002505e-15,8.798216588640475e-16,1e-06,-0.4980007927,-0.4980007927,0,True,True
+GTEx centroids,C young recomputed vs anchors.npz (diagnostic),numeric,23485,0.0,0.0,1e-06,0.2042726421,0.2042726421,0,True,False
+GTEx centroids,C old recomputed vs anchors.npz (diagnostic),numeric,23485,0.0,0.0,1e-06,-0.07194925422,-0.07194925422,0,True,False
+SOUTH6 stage1.npz,panel missing-gene mask,categorical,20264,,,,False,False,0,True,False
+SOUTH6 stage1.npz,"d_g, all factors and genes (diagnostic)",numeric,43118460,0.0,0.0,0.0001,0,0,0,True,False
+SOUTH6 origin_target_distances.csv,||O1 - Y1||,numeric,1,0.0,0.0,0.0001,32.28394905,32.28394905,0,True,True
+SOUTH6 stage2a_floors.npz,per-factor floor,numeric,1836,0.0,0.0,0.0001,113.5562244,113.5562244,0,True,True
+SOUTH6 stage2a_floors.npz,per-factor permutation count le,numeric,1836,0.0,0.0,0.0,4938,4938,0,True,True
+SOUTH6 stage2a_floors.npz,pooled floor,numeric,1,0.0,0.0,0.0001,94.96564484,94.96564484,0,True,True
+SOUTH6 stage2a_floors.npz,median ||d||,numeric,1,0.0,0.0,0.0001,123.3504696,123.3504696,0,True,True
+SOUTH6 stage2c_mda.csv,mda_primary,numeric,1,0.0,0.0,0.0001,0.05,0.05,0,True,True
+SOUTH6 stage2c_mda.csv,delta_at_mda_primary,numeric,1,0.0,0.0,0.0001,-6.167523479,-6.167523479,0,True,True
+SOUTH6 stage2c_mda.csv,pooled_floor,numeric,1,0.0,0.0,0.0001,94.96564484,94.96564484,0,True,True
+SOUTH6 stage2c_mda.csv,mda_stricter,numeric,1,0.0,0.0,0.0001,0.05,0.05,0,True,True
+SOUTH6 stage2c_mda.csv,delta_at_mda_stricter,numeric,1,0.0,0.0,0.0001,-6.167523479,-6.167523479,0,True,True
+SOUTH6 stage2c_mda.csv,stricter_floor,numeric,1,0.0,0.0,0.0001,5.482677376,5.482677376,0,True,True
+SOUTH6 stage2c_mda.csv,mda_margin,numeric,1,0.0,0.0,0.0001,11.65020085,11.65020085,0,True,True
+SOUTH6 stage2c_mda.csv,median_norm,numeric,1,1.4210854715202004e-14,1.1520713917216212e-16,0.0001,123.3504696,123.3504696,0,True,True
+SOUTH6 stage2c_mda.csv,nt_guide_floor,numeric,1,7.105427357601002e-15,1.6979762955103586e-16,0.0001,41.84644613,41.84644613,0,True,True
+SOUTH6 stage2c_mda.csv,split_floor,numeric,1,0.0,0.0,0.0001,5.482677376,5.482677376,0,True,True
+SOUTH6 stage2c_mda.csv,stricter_source,categorical,1,,,,split,split,0,True,True
+SOUTH6 stage3_full_table.csv (S1 O1_Y1),delta,numeric,1836,2.842170943040401e-14,2.1486478122663466e-16,0.0001,114.3636652,114.3636652,0,True,True
+SOUTH6 stage3_full_table.csv (S1 O1_Y1),cos,numeric,1836,9.980080997729068e-17,9.980080997729068e-17,0.0001,-0.01805176229,-0.01805176229,0,True,True
+SOUTH6 stage3_full_table.csv (S1 O1_Y1),frac,numeric,1836,9.974659986866641e-17,9.974659986866641e-17,0.0001,-0.079661992,-0.079661992,0,True,True
+SOUTH6 stage3_full_table.csv (S1 O1_Y1),d_norm,numeric,1836,5.684341886080802e-14,2.787546204658011e-16,0.0001,142.4682893,142.4682893,0,True,True
+SOUTH6 stage3_full_table.csv (S1 O1_Y1),floor_p05,numeric,1836,2.842170943040401e-14,2.2040994914763695e-16,0.0001,113.5562244,113.5562244,0,True,True
+SOUTH6 stage3_full_table.csv (S1 O1_Y1),p_delta,numeric,1836,1.1102230246251565e-16,1.1102230246251565e-16,0.0001,0.9876024795,0.9876024795,0,True,True
+SOUTH6 stage3_full_table.csv (S1 O1_Y1),q_delta,numeric,1836,1.1102230246251565e-16,1.1102230246251565e-16,0.0001,1,1,0,True,True
+SOUTH6 stage3_full_table.csv (S1 O1_Y1),below floor (per factor),categorical,1836,,,,False,False,0,True,True
+SOUTH6 stage3_full_table.csv (S1 O1_Y1),q <= 0.05 (per factor),categorical,1836,,,,False,False,0,True,True
+SOUTH6 stage3_full_table.csv (S1 O1_Y1),toward_young (per factor),categorical,1836,,,,False,False,0,True,True

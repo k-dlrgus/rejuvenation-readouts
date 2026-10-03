@@ -1,0 +1,48 @@
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\coordspace\PREREG.flag bytes=22271
+[run] through-stage=0 workers=5
+==========================================================================================
+STAGE 0 — reproduce space C before any A or B number
+==========================================================================================
+[columns louvain_obs_GM00731] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\louvain_obs_GM00731.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM00731] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\t2_cluster_labels_GM00731.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM00731] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM00731] n_cells=22132 n_clusters=19 days=[0, 3, 7, 10]
+[columns louvain_obs_GM23815] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\louvain_obs_GM23815.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM23815] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\t2_cluster_labels_GM23815.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM23815] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM23815] n_cells=33858 n_clusters=19 days=[0, 3, 7, 10]
+[same] stored split O=2469 aged_B=2470 Y=3851 young_B=3852; equals a fresh split_half draw: True
+[P C] pass(SAME rule)=True pass(COORDSPACE rule)=True monotonic=True frac50_ci_excludes_0=True frac50_ci_valid=True delta50<0=True
+[SAME C] delta_S=130.893565 frac_S=0.674441 asym=0.731716 [0.724041, 0.740433] key(SAME rule)=no_approach_same_platform
+[columns gtex_obs] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[south6] factors=1836 matched=20264 ruler=23485 nt_guides=78 nt_cells=14013; carried flags: guides_disagree=0 identity_loss=0
+[south6 splits] 50/200 (22s)
+[south6 splits] 100/200 (38s)
+[south6 splits] 150/200 (54s)
+[south6 splits] 200/200 (70s)
+[south6 C] ||O1-Y1||=32.283949 median ||d||=123.350470 n_delta<0=0
+[perm C] 100/1836 (145s)
+[perm C] 200/1836 (408s)
+[perm C] 300/1836 (605s)
+[perm C] 400/1836 (863s)
+[perm C] 500/1836 (1127s)
+[perm C] 600/1836 (1201s)
+[perm C] 700/1836 (1309s)
+[perm C] 800/1836 (1476s)
+[perm C] 900/1836 (1597s)
+[perm C] 1000/1836 (1705s)
+[perm C] 1100/1836 (1838s)
+[perm C] 1200/1836 (1945s)
+[perm C] 1300/1836 (2068s)
+[perm C] 1400/1836 (2179s)
+[perm C] 1500/1836 (2303s)
+[perm C] 1600/1836 (2416s)
+[perm C] 1700/1836 (2513s)
+[perm C] 1800/1836 (2613s)
+[perm C] 1836/1836 (2651s)
+[south6 C] pooled floor=94.965645 MDA primary=0.05 stricter=0.05 toward_young=0
+[stage0] gating checks 72/72 passed; diagnostic failures 0
+[run] paused after Stage 0

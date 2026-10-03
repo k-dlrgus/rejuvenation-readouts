@@ -1,0 +1,39 @@
+{
+ "passed": true,
+ "n_checks": 77,
+ "n_gating": 72,
+ "n_gating_failed": 0,
+ "n_diagnostic_failed": 0,
+ "tol_same": 1e-06,
+ "tol_south6": 0.0001,
+ "same_C": {
+  "delta_S": 130.89356478446803,
+  "frac_S": 0.674440748216413,
+  "key": "no_approach_same_platform",
+  "asym": 0.7317159749951458,
+  "asym_ci": [
+   0.7240405163302078,
+   0.7404332563572681
+  ],
+  "p_pass": true,
+  "p_pass_coordspace": true
+ },
+ "south6_C": {
+  "rnorm": 32.28394904985961,
+  "median": 123.35046957433535,
+  "pooled_floor": 94.96564483642578,
+  "mda_primary": 0.05,
+  "mda_stricter": 0.05,
+  "counts": {
+   "n_delta_negative": 0,
+   "n_below_floor": 377,
+   "n_q": 202,
+   "n_toward_young": 0
+  },
+  "floor_min": 42.41550222536879,
+  "floor_median": 94.96449271837866,
+  "floor_max": 363.57363374715686
+ },
+ "failed_items": [],
+ "diagnostic_failed_items": []
+}

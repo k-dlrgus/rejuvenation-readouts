@@ -1,0 +1,4 @@
+space,qualified,monotonic,frac50_ci_excludes_0,frac50_ci_valid,delta50_lt_0,pass_same_rule
+A,True,True,True,True,True,True
+B,True,True,True,True,True,True
+C,True,True,True,True,True,True

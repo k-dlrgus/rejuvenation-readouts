@@ -1,0 +1,270 @@
+{
+ "status": "DONE",
+ "decision": {
+  "rows_fired": [
+   1
+  ],
+  "row3_spaces": [],
+  "row2_spaces": [],
+  "surviving": [
+   "A",
+   "B",
+   "C"
+  ],
+  "disqualified": [],
+  "trivial": false,
+  "wording": [
+   {
+    "row": 1,
+    "text": "In every coordinate space that detected known young-cell mixtures (A, B, C), aged partially reprogrammed cells end farther from the young donor than they started (A: R_S = 2.054, top-10 genes carry 77.3% of the squared final distance; B: R_S = 1.879, top-10 genes carry 3.6% of the squared final distance; C: R_S = 2.002, top-10 genes carry 1.8% of the squared final distance). The same-platform result does not depend on the log or the z-score."
+   }
+  ],
+  "screen": [
+   "Screen, space A: CHANGED. toward_young = 2 (ZNF441;ZNF669) against 0 in space C. Reported immediately; SOUTH6 space C remains the screen's primary.",
+   "Screen, space B: UNCHANGED. toward_young = 0, the same set as space C."
+  ]
+ },
+ "stages": {
+  "stage0": {
+   "passed": true,
+   "n_checks": 77,
+   "n_gating": 72,
+   "n_gating_failed": 0,
+   "n_diagnostic_failed": 0,
+   "tol_same": 1e-06,
+   "tol_south6": 0.0001,
+   "same_C": {
+    "delta_S": 130.89356478446803,
+    "frac_S": 0.674440748216413,
+    "key": "no_approach_same_platform",
+    "asym": 0.7317159749951458,
+    "asym_ci": [
+     0.7240405163302078,
+     0.7404332563572681
+    ],
+    "p_pass": true,
+    "p_pass_coordspace": true
+   },
+   "south6_C": {
+    "rnorm": 32.28394904985961,
+    "median": 123.35046957433535,
+    "pooled_floor": 94.96564483642578,
+    "mda_primary": 0.05,
+    "mda_stricter": 0.05,
+    "counts": {
+     "n_delta_negative": 0,
+     "n_below_floor": 377,
+     "n_q": 202,
+     "n_toward_young": 0
+    },
+    "floor_min": 42.41550222536879,
+    "floor_median": 94.96449271837866,
+    "floor_max": 363.57363374715686
+   },
+   "failed_items": [],
+   "diagnostic_failed_items": []
+  },
+  "stage1": {
+   "qualified": {
+    "A": true,
+    "B": true,
+    "C": true
+   },
+   "conditions": [
+    {
+     "space": "A",
+     "qualified": true,
+     "monotonic": true,
+     "frac50_ci_excludes_0": true,
+     "frac50_ci_valid": true,
+     "delta50_lt_0": true,
+     "pass_same_rule": true
+    },
+    {
+     "space": "B",
+     "qualified": true,
+     "monotonic": true,
+     "frac50_ci_excludes_0": true,
+     "frac50_ci_valid": true,
+     "delta50_lt_0": true,
+     "pass_same_rule": true
+    },
+    {
+     "space": "C",
+     "qualified": true,
+     "monotonic": true,
+     "frac50_ci_excludes_0": true,
+     "frac50_ci_valid": true,
+     "delta50_lt_0": true,
+     "pass_same_rule": true
+    }
+   ]
+  },
+  "stage2": {
+   "readings": {
+    "A": {
+     "key": "no_approach_same_platform",
+     "sign": "HOLDS",
+     "R_S": 2.0542696813155357,
+     "flags": [],
+     "ci_invalid": []
+    },
+    "B": {
+     "key": "no_approach_same_platform",
+     "sign": "HOLDS",
+     "R_S": 1.878511862124971,
+     "flags": [],
+     "ci_invalid": []
+    },
+    "C": {
+     "key": "no_approach_same_platform",
+     "sign": "HOLDS",
+     "R_S": 2.001569594596789,
+     "flags": [],
+     "ci_invalid": []
+    }
+   }
+  },
+  "stage3": {
+   "summary": [
+    {
+     "space": "A",
+     "qualified": true,
+     "outcome": "CHANGED",
+     "gap": 8225.097613806287,
+     "median_d_norm": 3563.583393957777,
+     "floor_min": 106.02288640199376,
+     "floor_median": 719.2494372601791,
+     "floor_max": 10030.506258744608,
+     "pooled_floor": 719.9390258789062,
+     "median_floor_over_gap": 0.0874457022920772,
+     "nt_guide_floor": 23.544107126499878,
+     "split_floor": -14.177973762446618,
+     "stricter_floor": -14.177973762446618,
+     "stricter_source": "split",
+     "mda_primary": 0.05,
+     "mda_stricter": 0.05,
+     "mda_margin": 164.00119593544233,
+     "no_detection_power": false,
+     "n_delta_negative": 2,
+     "n_below_floor": 1292,
+     "n_q": 1272,
+     "n_toward_young": 2,
+     "n_tie_at_min_p": 44,
+     "n_negative_coords_A": 3497133,
+     "n_factors_with_negative_coords_A": 1836,
+     "toward_young_factors": "ZNF441;ZNF669"
+    },
+    {
+     "space": "B",
+     "qualified": true,
+     "outcome": "UNCHANGED",
+     "gap": 29.905619008087747,
+     "median_d_norm": 51.65503908058007,
+     "floor_min": 11.737238096069959,
+     "floor_median": 29.65254548542042,
+     "floor_max": 115.29898085990943,
+     "pooled_floor": 29.641895294189453,
+     "median_floor_over_gap": 0.991537592898549,
+     "nt_guide_floor": 11.592578814101449,
+     "split_floor": 0.8577447811474597,
+     "stricter_floor": 0.8577447811474597,
+     "stricter_source": "split",
+     "mda_primary": 0.05,
+     "mda_stricter": 0.05,
+     "mda_margin": 3.4404967351764633,
+     "no_detection_power": false,
+     "n_delta_negative": 0,
+     "n_below_floor": 1088,
+     "n_q": 1063,
+     "n_toward_young": 0,
+     "n_tie_at_min_p": 838,
+     "n_negative_coords_A": null,
+     "n_factors_with_negative_coords_A": null,
+     "toward_young_factors": ""
+    },
+    {
+     "space": "C",
+     "qualified": true,
+     "outcome": "reference",
+     "gap": 32.28394904985961,
+     "median_d_norm": 123.35046957433535,
+     "floor_min": 42.41550222536879,
+     "floor_median": 94.96449271837866,
+     "floor_max": 363.57363374715686,
+     "pooled_floor": 94.96564483642578,
+     "median_floor_over_gap": 2.9415389230020987,
+     "nt_guide_floor": 41.846446127596444,
+     "split_floor": 5.482677375670157,
+     "stricter_floor": 5.482677375670157,
+     "stricter_source": "split",
+     "mda_primary": 0.05,
+     "mda_stricter": 0.05,
+     "mda_margin": 11.650200854386927,
+     "no_detection_power": false,
+     "n_delta_negative": 0,
+     "n_below_floor": 377,
+     "n_q": 202,
+     "n_toward_young": 0,
+     "n_tie_at_min_p": 63,
+     "n_negative_coords_A": null,
+     "n_factors_with_negative_coords_A": null,
+     "toward_young_factors": ""
+    }
+   ],
+   "rank_agreement": [
+    {
+     "pair": "A-C",
+     "spearman_delta": 0.24097107043399102,
+     "top20_overlap": 1,
+     "toward_young_overlap": 0,
+     "toward_young_a": 2,
+     "toward_young_b": 0
+    },
+    {
+     "pair": "B-C",
+     "spearman_delta": 0.9903697130066317,
+     "top20_overlap": 14,
+     "toward_young_overlap": 0,
+     "toward_young_a": 0,
+     "toward_young_b": 0
+    },
+    {
+     "pair": "A-B",
+     "spearman_delta": 0.2833431942741453,
+     "top20_overlap": 1,
+     "toward_young_overlap": 0,
+     "toward_young_a": 2,
+     "toward_young_b": 0
+    }
+   ]
+  },
+  "stage4": {
+   "n_rows": 24
+  },
+  "decision": {
+   "rows_fired": [
+    1
+   ],
+   "row3_spaces": [],
+   "row2_spaces": [],
+   "surviving": [
+    "A",
+    "B",
+    "C"
+   ],
+   "disqualified": [],
+   "trivial": false,
+   "wording": [
+    {
+     "row": 1,
+     "text": "In every coordinate space that detected known young-cell mixtures (A, B, C), aged partially reprogrammed cells end farther from the young donor than they started (A: R_S = 2.054, top-10 genes carry 77.3% of the squared final distance; B: R_S = 1.879, top-10 genes carry 3.6% of the squared final distance; C: R_S = 2.002, top-10 genes carry 1.8% of the squared final distance). The same-platform result does not depend on the log or the z-score."
+    }
+   ],
+   "screen": [
+    "Screen, space A: CHANGED. toward_young = 2 (ZNF441;ZNF669) against 0 in space C. Reported immediately; SOUTH6 space C remains the screen's primary.",
+    "Screen, space B: UNCHANGED. toward_young = 0, the same set as space C."
+   ]
+  }
+ }
+}

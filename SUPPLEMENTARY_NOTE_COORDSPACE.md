@@ -1,0 +1,43 @@
+# Coordinate-space robustness check: text for the preprint
+
+Source: `FINDINGS_COORDSPACE.md` and `results/coordspace/` (pre-registration `results/coordspace/PREREG.flag`). Every number below is read from those files. Distances are in each space's own units and are compared across spaces only through their sign, progress, and the ratio of final to starting distance.
+
+---
+
+## Main text: paragraph for the Limitations section
+
+Proposed as a new bullet after the bullet on the GTEx-anchored positive control.
+
+> Every distance in this paper is computed in one coordinate system: log2 CPM, z-scored with the GTEx training mean and standard deviation. Both steps are choices. The log compresses a million-fold range of abundance, and the z-score lets a gene that barely varies between donors contribute a large coordinate from a small change. We therefore repeated the same-platform test, pre-registered as a secondary analysis, in counts per million without the log and in log2 CPM without the z-score, holding the panel, the TMM factors, the split, the mixtures and the random draws fixed and refitting nothing. A space counted only if the young-cell mixture control detected known young fractions in it, and all three did. In each, the partially reprogrammed cells end about twice as far from the young donor as they started (final over starting distance 2.05, 1.88 and 2.00), and the reverse test gives a positive asymmetry (Supplementary Note 3). Without the log, ten highly expressed genes carry 77% of the squared final distance, so that space agrees in sign but rests on far fewer genes.
+
+---
+
+## Supplementary Note 3. The same-platform test in three coordinate systems
+
+The same-platform test was repeated in three coordinate systems that differ only in the last step of the transform. In space A, coordinates are TMM-normalized counts per million, with no log and no z-score, so abundant genes dominate. In space B they are log2 CPM with prior count 2, the matrix the main analysis z-scores, so distances are in fold-change units. Space C is the main analysis: log2 CPM z-scored with the frozen GTEx training mean and standard deviation. Everything upstream of that step was shared: the pseudobulk panel, the summed counts, the TMM factors, the day-0 half-split, the young-cell mixtures, and the bootstrap and permutation draws. The frozen ruler was not refit in any space; only the distance test moves. Genes absent from the panel contribute nothing to any within-panel difference in any space. The analysis was pre-registered before any number in space A or B existed, with space C fixed as the primary, the qualification rule below, and a decision table for each outcome. Before any space A or B number was computed, space C was rebuilt with the new code and reproduced every stored statistic of the main analysis to within rounding.
+
+**Qualification.** A space counts only if, in that space, the young-cell mixture control detects known young fractions. The criteria are those used throughout the paper. Progress must rise monotonically across 0, 10, 25 and 50% young cells. The interval on progress at 50% must exclude zero, and must also contain its own point estimate. The change in distance at 50% must be negative. A space that failed would still have been run to the end and reported, with no conclusion drawn from it. All three spaces qualified. The zero-mixture noise floor in progress was 0.039 in A (95% CI −0.009 to 0.085), 0.106 in B and 0.115 in C. In A the zero-mixture change in distance is −498 CPM units, 9% of the change at 50% young cells (−5,402), and is reported as a floor, not subtracted. Qualification was written to a timestamped flag before any partially reprogrammed vector was built in space A or B.
+
+**Supplementary Table S2.** The same-platform test in three coordinate systems, aged donor (GM00731), partially reprogrammed cells pooled across timepoints (n = 5,832). Mixture: progress at 50% young cells, with its interval, and the change in distance at 50%. Change in distance is in the units of each space and is not comparable across rows. Final/start is the distance to the young donor's day-0 cells after, divided by before. Top-10 share is the fraction of the squared final distance carried by the ten genes with the largest squared coordinates.
+
+| Space | Coordinates | Mixture, progress at 50% (95% CI) | Mixture, change in distance at 50% | Progress (95% CI) | Change in distance | Final / start | Reverse progress (95% CI) | Asymmetry (95% CI) | Top-10 share |
+|---|---|---|---|---|---|---|---|---|---|
+| A | CPM | 0.417 (0.371 to 0.459) | −5,402 | 2.045 (2.026 to 2.052) | +17,021 | 2.05 | −1.208 (−1.213 to −1.195) | +3.253 (+3.224 to +3.261) | 77.3% |
+| B | log2 CPM | 0.461 (0.446 to 0.466) | −30.7 | 0.581 (0.574 to 0.583) | +99.4 | 1.88 | +0.074 (+0.070 to +0.078) | +0.507 (+0.498 to +0.511) | 3.6% |
+| C | log2 CPM, z-scored (main analysis) | 0.441 (0.424 to 0.447) | −34.4 | 0.674 (0.667 to 0.680) | +130.9 | 2.00 | −0.057 (−0.063 to −0.054) | +0.732 (+0.724 to +0.740) | 1.8% |
+
+In every space the cells travel a long way along the donor axis and still end farther from the young donor than they started: no space flips the sign. Every interval used as a gate contains its point estimate. In space B the young donor's partially reprogrammed cells move slightly toward the aged donor (reverse progress +0.074), but much less than the aged donor's cells move toward the young one, so the asymmetry stays positive. In the main analysis the reverse movement was absent.
+
+**How many genes carry the distance.** Euclidean distance adds over genes only in its square, so we report the share of the squared distance carried by the ten largest squared coordinates. In space C the starting and final distances are spread across the genome: the top ten genes carry 2.2% and 1.8%, and the leading genes of the final distance are reprogramming genes (POU5F1, SOX2, KLF4). Space B is similar (3.4% and 3.6%). In space A the top ten genes carry 72.7% of the starting distance and 77.3% of the final distance: MALAT1, KLF4, VIM, LGALS1, POU5F1, S100A6, FTL, TMSB10, COL1A2 and TMSB4X. Without the log, the same-platform result is a statement about a handful of highly expressed transcripts. It agrees in sign with the other two spaces, but it does not carry the same weight. The pre-registration predicted this risk for space A in this test, where the cell counts are in the thousands and sequencing depth is not the limiting factor.
+
+**The transcription-factor screen.** The pre-registered check also covered the published CRISPRa screen that the Methods describe as analyzed but not reported here. The same rule applied: the 1,836 perturbations, the shuffled-vector floors, the gates, and the GTEx old-to-young comparison, with space C as the primary. The protocol required any change to be disclosed, so we report it here. In spaces B and C no perturbation is labeled as approaching the young centroid. In space A two are: ZNF441 and ZNF669, with changes in distance of −4.5 and −69.5 CPM units against a GTEx old-to-young distance of 8,225 (q = 0.005 for both). Several diagnostics show what space A does to this test:
+
+- Ten genes carry 94% of the squared GTEx old-to-young distance in space A: FN1, SERPINE1, COL1A2, TGFBI, FTL, MT-ND2, COL1A1, MT2A, COL3A1 and ANXA2. They also carry a median 90% of each perturbation's squared final distance (5th to 95th percentile, 85% to 92%). In space C the same shares are 0.6% and 4%.
+- Every one of the 1,836 endpoints has negative coordinates, 3.5 million in total. This happens because space A adds a CPM difference measured in Hs27 cells to a CPM origin built from GTEx donors. The coordinates were kept as they are, not clipped.
+- The ranking in space A agrees poorly with the main analysis (Spearman 0.24 across all perturbations; 1 of the top 20 shared). Space B agrees closely (0.99; 14 of 20).
+- In space C both perturbations move away from the young centroid (+106.6 and +113.8, q = 1.0), and in space B both end farther from it (+32.9 and +35.1). They have 84 and 82 cells, against a median of 106.
+- ZNF441's change in distance does not clear the non-targeting split floor in space A (−14.2), which is not a gate for the label. ZNF669's does.
+
+Space C remains the screen's pre-registered primary, and in it no perturbation approaches. Because the two space A labels rest on ten genes and on negative coordinates, we do not treat them as candidates.
+
+The pre-registration, the space C reproduction table, the per-space mixture controls, the full per-perturbation table in all three spaces and the decision record are in the repository (`results/coordspace/`).

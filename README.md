@@ -122,6 +122,7 @@ Each analysis writes into `results/<name>/` and has one entry point.
 | NEWSTORY | `python src/newstory.py` | Plotting-data tables behind the narrative figures |
 | PAPER_FIGS | `python src/paper_figs_cxg_donor.py`, `python src/paper_figs_manuscript.py` | The 65-donor regrouping of the atlas (not pre-registered), then the manuscript figure inputs |
 | FINAL FIGURES | `python src/figures_final.py` | Fig1-Fig5 and FigS1 |
+| COORDSPACE | `python src/coordspace_run.py` | Secondary, pre-registered: the same-platform test and the TF screen repeated in CPM, log2 CPM and z-scored log2 CPM. Text for the preprint in `SUPPLEMENTARY_NOTE_COORDSPACE.md` |
 
 ### Analyses in the repository but not in the preprint
 

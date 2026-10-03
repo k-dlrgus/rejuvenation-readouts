@@ -1,0 +1,24 @@
+{
+ "rows_fired": [
+  1
+ ],
+ "row3_spaces": [],
+ "row2_spaces": [],
+ "surviving": [
+  "A",
+  "B",
+  "C"
+ ],
+ "disqualified": [],
+ "trivial": false,
+ "wording": [
+  {
+   "row": 1,
+   "text": "In every coordinate space that detected known young-cell mixtures (A, B, C), aged partially reprogrammed cells end farther from the young donor than they started (A: R_S = 2.054, top-10 genes carry 77.3% of the squared final distance; B: R_S = 1.879, top-10 genes carry 3.6% of the squared final distance; C: R_S = 2.002, top-10 genes carry 1.8% of the squared final distance). The same-platform result does not depend on the log or the z-score."
+  }
+ ],
+ "screen": [
+  "Screen, space A: CHANGED. toward_young = 2 (ZNF441;ZNF669) against 0 in space C. Reported immediately; SOUTH6 space C remains the screen's primary.",
+  "Screen, space B: UNCHANGED. toward_young = 0, the same set as space C."
+ ]
+}
