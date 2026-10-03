@@ -4,11 +4,25 @@ Source: `FINDINGS_COORDSPACE.md` and `results/coordspace/` (pre-registration `re
 
 ---
 
-## Main text: paragraph for the Limitations section
+## Results: new subsection
+
+Placed after "The result does not depend on which genes are read", as its sibling.
+
+### The result does not depend on the coordinate system
+
+A second reading is that the overshoot comes from the coordinates rather than the cells. Every distance so far is computed in log2 CPM, z-scored with the GTEx training mean and standard deviation, and both steps are choices. The log compresses a million-fold range of abundance into a few units. The z-score divides each gene by its spread between donors, so a gene that barely varies between people can contribute a large coordinate from a small change. We repeated the same-platform test, pre-registered as a secondary analysis, in two other coordinate systems: counts per million with no log and no z-score, in which abundant genes dominate, and log2 CPM with no z-score, in which distances are fold changes. The panel, the TMM factors, the day-0 split, the mixtures and the random draws were held fixed, and nothing was refit. A coordinate system counted only if the young-cell mixture control detected known young fractions in it, and all three did.
+
+The answer is the same in each (Supplementary Table S2). The partially reprogrammed cells end 2.05 times farther from the young donor than they started in counts per million, 1.88 times in log2 CPM and 2.00 times in the main analysis. In every system the asymmetry between the forward and reverse tests is positive, so the movement is not mutual convergence in any of them. The coordinates change how far the cells appear to travel along the donor line (progress 2.05, 0.58 and 0.67), but in none of them is the move short enough to end closer to the young donor.
+
+Without the log the agreement is narrower than it looks. Ten highly expressed transcripts, among them MALAT1, VIM and FTL, carry 77% of the squared final distance, against 3.6% in log2 CPM and 1.8% in the main analysis. In that system the result is a statement about a handful of genes, and it agrees in sign with the others without carrying the same weight (Supplementary Note 3).
+
+---
+
+## Limitations: bullet left behind
 
 Proposed as a new bullet after the bullet on the GTEx-anchored positive control.
 
-> Every distance in this paper is computed in one coordinate system: log2 CPM, z-scored with the GTEx training mean and standard deviation. Both steps are choices. The log compresses a million-fold range of abundance, and the z-score lets a gene that barely varies between donors contribute a large coordinate from a small change. We therefore repeated the same-platform test, pre-registered as a secondary analysis, in counts per million without the log and in log2 CPM without the z-score, holding the panel, the TMM factors, the split, the mixtures and the random draws fixed and refitting nothing. A space counted only if the young-cell mixture control detected known young fractions in it, and all three did. In each, the partially reprogrammed cells end about twice as far from the young donor as they started (final over starting distance 2.05, 1.88 and 2.00), and the reverse test gives a positive asymmetry (Supplementary Note 3). Without the log, ten highly expressed genes carry 77% of the squared final distance, so that space agrees in sign but rests on far fewer genes.
+> In counts per million without the log, ten genes carry 77% of the squared final distance in the same-platform test, so its agreement with the main analysis rests on few genes. In that coordinate system two transcription-factor perturbations in the unreported CRISPRa screen were labeled as approaching the young centroid, against none in the main analysis. We report them and do not treat them as candidates (Supplementary Note 3).
 
 ---
 
@@ -26,7 +40,7 @@ The same-platform test was repeated in three coordinate systems that differ only
 | B | log2 CPM | 0.461 (0.446 to 0.466) | −30.7 | 0.581 (0.574 to 0.583) | +99.4 | 1.88 | +0.074 (+0.070 to +0.078) | +0.507 (+0.498 to +0.511) | 3.6% |
 | C | log2 CPM, z-scored (main analysis) | 0.441 (0.424 to 0.447) | −34.4 | 0.674 (0.667 to 0.680) | +130.9 | 2.00 | −0.057 (−0.063 to −0.054) | +0.732 (+0.724 to +0.740) | 1.8% |
 
-In every space the cells travel a long way along the donor axis and still end farther from the young donor than they started: no space flips the sign. Every interval used as a gate contains its point estimate. In space B the young donor's partially reprogrammed cells move slightly toward the aged donor (reverse progress +0.074), but much less than the aged donor's cells move toward the young one, so the asymmetry stays positive. In the main analysis the reverse movement was absent.
+In every space the cells travel a long way along the donor axis and still end farther from the young donor than they started: no space flips the sign. Every interval used as a gate contains its point estimate. The intervals on the change in distance of the mixtures, at every mixing fraction, do not contain their point estimates in spaces B and C, and neither do those of the pluripotent and non-reprogrammed context states. None of these is a gate, and this is the invalid-interval pattern already reported for the main analysis (Supplementary Note 2). In space A all intervals contain their point estimates. The intervals on the change in distance of the partially reprogrammed cells contain their point estimates in all three spaces. In space B the young donor's partially reprogrammed cells move slightly toward the aged donor (reverse progress +0.074), but much less than the aged donor's cells move toward the young one, so the asymmetry stays positive. In the main analysis the reverse movement was absent.
 
 **How many genes carry the distance.** Euclidean distance adds over genes only in its square, so we report the share of the squared distance carried by the ten largest squared coordinates. In space C the starting and final distances are spread across the genome: the top ten genes carry 2.2% and 1.8%, and the leading genes of the final distance are reprogramming genes (POU5F1, SOX2, KLF4). Space B is similar (3.4% and 3.6%). In space A the top ten genes carry 72.7% of the starting distance and 77.3% of the final distance: MALAT1, KLF4, VIM, LGALS1, POU5F1, S100A6, FTL, TMSB10, COL1A2 and TMSB4X. Without the log, the same-platform result is a statement about a handful of highly expressed transcripts. It agrees in sign with the other two spaces, but it does not carry the same weight. The pre-registration predicted this risk for space A in this test, where the cell counts are in the thousands and sequencing depth is not the limiting factor.
 
@@ -38,6 +52,6 @@ In every space the cells travel a long way along the donor axis and still end fa
 - In space C both perturbations move away from the young centroid (+106.6 and +113.8, q = 1.0), and in space B both end farther from it (+32.9 and +35.1). They have 84 and 82 cells, against a median of 106.
 - ZNF441's change in distance does not clear the non-targeting split floor in space A (−14.2), which is not a gate for the label. ZNF669's does.
 
-Space C remains the screen's pre-registered primary, and in it no perturbation approaches. Because the two space A labels rest on ten genes and on negative coordinates, we do not treat them as candidates.
+Space C remains the screen's pre-registered primary, and in it no perturbation approaches. What follows is a post-hoc reading, not a pre-registered conclusion, and it carries no decision rule: the protocol required only that the space A labels be reported and that space C remain the primary. On the diagnostics above, which show that the two space A labels rest on ten genes and on negative coordinates, we do not treat them as candidates.
 
 The pre-registration, the space C reproduction table, the per-space mixture controls, the full per-perturbation table in all three spaces and the decision record are in the repository (`results/coordspace/`).

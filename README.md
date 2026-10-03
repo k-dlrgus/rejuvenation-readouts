@@ -9,7 +9,7 @@ type tells approach from departure, and a one-dimensional score cannot.
 
 Preprint: [paper/rejuvenation_readouts_preprint_12.pdf](paper/rejuvenation_readouts_preprint_12.pdf)
 
-Archived release: https://doi.org/10.5281/zenodo.23092319
+Archived release: https://doi.org/10.5281/zenodo.23092318 (concept DOI, resolves to the latest version)
 
 ---
 
@@ -189,8 +189,17 @@ anywhere, and GTEx donor age is handled only as the public decade bin or its mid
 
 ## Citation
 
+Preprint:
+
 R. Kwon. *Rejuvenation readouts cannot distinguish younger from less old.* Preprint.
-https://doi.org/10.5281/zenodo.23092319
+https://doi.org/10.5281/zenodo.23113817
+
+Code and results:
+
+R. Kwon. *Rejuvenation readouts cannot distinguish younger from less old: code and results.*
+https://doi.org/10.5281/zenodo.23092318
+
+Both are concept DOIs and resolve to the latest version.
 
 ## Contact
 
