@@ -1,0 +1,130 @@
+TASK: SOUTH9 — is the below-floor excess proliferation?
+Written before any SOUTH9 number exists.
+
+Nature: computational. No new data. Reads results/south6/, results/south7/,
+results/south8/ and the Southard singlets file already on disk. Writes only
+results/south9/ and FINDINGS_SOUTH9.md. No earlier findings file is
+regenerated and no earlier results directory is written. Nothing is committed
+or pushed.
+
+--- THE QUESTION ---
+
+SOUTH8's primary reading, after the permutation condition was removed as
+uncalibrated, is 24 of 304 and 125 of 1,836 factors called APPROACHING in
+S2A_k20 under the amended criterion, against 15.2 and 91.8 expected by chance
+at a 5th-percentile floor. SOUTH8 established that this excess is larger than
+chance and is not explained by cell count or by total reads. It did not
+establish what it is.
+
+SOUTH6 already computes a proliferation-residualized displacement
+(`delta_resid`, `cos_resid`) alongside the raw one. In the SOUTH6 basis, across
+all 1,836 factors, the count with a negative raw change in distance is 108 and
+the count with a negative residualized change in distance is 51 — below the 5%
+a chance baseline would give. That is a diagnostic from a stored table, in the
+wrong basis, with no floor attached. This task tests it properly.
+
+A rejuvenation readout that cannot separate approach to young from a change in
+proliferative state is the confound the preprint names, and the preprint's own
+remedy list asks for a proliferation-residualized version to be reported beside
+the headline number. This task runs that remedy at screen scale.
+
+--- STATE THE METHOD BEFORE USING IT ---
+Report, before any SOUTH9 number: exactly how SOUTH6 constructs the
+proliferation axis and the residual — what the axis is, what data it was fit
+on, whether any anchor donor or any Southard cell entered that fit, and whether
+the axis is refit here or carried over frozen. If the axis was fit on the same
+Southard cells the test is applied to, say so plainly and label every SOUTH9
+number as carrying that circularity. Do not refit the axis to remove the
+problem; report it.
+
+--- STAGE 0: REPRODUCE FIRST (gate) ---
+Re-derive with this task's code, from stored files:
+ (a) SOUTH8's amended counts in S2A_k20: 24 of 304, 125 of 1,836, and the
+     below-floor counts 27 and 153;
+ (b) SOUTH8's D2 calibration row for S2A_k20 at 106 cells (0.0350) and S1 at
+     106 cells (0.1200);
+ (c) the 24-factor list in primary_304.
+Pass: counts exact, numeric items within 1e-4 * max(1, |stored|).
+Fail -> STOP `prior_results_not_reproduced`, naming every mismatch.
+
+--- D1. The residualized statistic in the anchor-free space (gated) ---
+
+Build the proliferation-residualized change in distance in S2A_k20, the SOUTH8
+primary space, for all 1,836 factors and for the published 304.
+
+The null must be residualized identically. Every depth-matched non-targeting
+draw from SOUTH7 Stage A1 is put through the same residualization as a factor,
+at the same cell count, and the 5th percentile is recomputed from the
+residualized draws. A raw floor applied to a residualized statistic is not a
+comparison and must not be reported as one.
+
+Report, per factor set, in S2A_k20 and in the three secondary spaces:
+ - below the residualized depth-matched floor;
+ - change in residualized distance < 0;
+ - called APPROACHING under SOUTH8's amended criterion (both of the above);
+ - the same three counts for the raw statistic, side by side;
+ - which of SOUTH8's 24, and of its 125, survive.
+
+Gate, wording fixed now. 5% of 304 is 15.2 with a 95% binomial interval of 8 to
+23; 5% of 1,836 is 91.8 with an interval of 74 to 110.
+ - EXPLAINED (called count falls inside or below the interval, in S2A_k20, on
+   both factor sets): "the excess of factors below their own noise floor is
+   accounted for by proliferation: residualized, <k> of <m> are called, against
+   <e> expected by chance. What the raw statistic scores as approach to young
+   is in this screen a change in proliferative state."
+ - SURVIVES (above the interval on either set): "the excess survives
+   proliferation residualization: <k> of <m> are called against <e> expected.
+   Proliferation does not account for it."
+ - SPLIT (one set inside, one above): report both counts and draw no single
+   conclusion; name which set is which.
+Both the raw and residualized counts are reported whichever fires.
+
+--- D2. Does residualization also remove a real approach? (gated) ---
+Residualization can remove genuine signal as well as confound. The plant
+recovery control answers whether it does.
+Repeat SOUTH6REC's plant recovery in S2A_k20 at 106 cells, 200 draws per dose,
+doses 0/25/50/100% of the measured gap, with the residualization applied to
+plant and null alike.
+Gate, wording fixed now:
+ - RETAINED (power at a 25% plant >= 0.80): "residualization leaves the
+   statistic able to detect a 25% approach, power <p>, so a null result after
+   residualization is a null result and not a loss of sensitivity."
+ - LOST (power < 0.80): "residualization costs the statistic its sensitivity:
+   power at a 25% plant falls from 0.980 to <p>. The residualized counts cannot
+   be read as evidence of absence."
+If LOST fires, D1's reading is reported but carries no conclusion, and that is
+said in the gate sentence.
+
+--- D3. Report-only, no decision rule ---
+ - For the factors called under the residualized criterion: cell count and its
+   percentile, the high_depth_candidate flag, identity drop, guide agreement,
+   and the frozen ruler score change.
+ - The raw-versus-residualized change in distance for SOUTH8's 24 named
+   factors, individually.
+ - Identity: SOUTH8's 24 have a median identity drop of -0.0122 against +0.0408
+   for the screen, so they lose less fibroblast identity than average. Report
+   the same comparison for whichever set survives here.
+ - The count of factors that score younger on the frozen ruler while not being
+   called under the residualized criterion, both factor sets. This is the
+   preprint's thesis in this screen and is a diagnostic, not evidence about any
+   factor.
+
+--- WHAT DOES NOT COUNT ---
+- choosing a space, a criterion, a null or a factor set after seeing a number;
+- treating any surviving factor as a candidate for the pilot panel in this
+  findings file;
+- reading a residualized null as evidence that no transcription factor can
+  rejuvenate aged cells: the screen uses neonatal foreskin fibroblasts with no
+  aged donor and no matched young target;
+- any result from an O2 pair;
+- refitting the proliferation axis to avoid reporting a circularity.
+
+--- STOP RULES ---
+On any STOP: write the findings with the key and exit. Never compute after a
+STOP; never resume a stopped run.
+
+--- OUTPUT ---
+FINDINGS_SOUTH9.md: this text verbatim; the method statement; the Stage 0
+table; D1 and D2 with the gate reading that fired; D3; limitations. Tables in
+results/south9/. Code src/south9_run.py. Hand over files, not summaries. Do not
+regenerate any earlier findings file. Do not commit or push.

@@ -1,0 +1,51 @@
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south9\PREREG.flag bytes=7004
+[method] {'prolif_note': 'built from NT quartiles n_bottom=3504 n_top=3504 ||p||=65.9633', 'source': 'results/south6/stage1.npz p_unit, carried over frozen; not refit here'}
+[tables] primary_304: 304 factors (of 304 requested)
+[tables] all_1836: 1836 factors (of 1836 requested)
+[stage0] checks=11 gating=11 failed=0
+[file] size=8048055098 md5=2c926c7cae2eaab1ed2519b06ca21db5 (20s)
+[nt csr] cells=14013 nnz=31999592 (4s)
+[C_f] rebuilt from cells (74s)
+[panel] transform rebuilt (23s)
+[columns gtex_obs] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[S2] PCA on GTEx donors n=652 p=23485 k=100
+[stage3] per-factor stats compared (0s)
+[stage2b] split floor recomputed (24s)
+[stage0] checks=42 failed=0
+[geometry] frozen proliferation axis carried over: ||p||=1 by construction, 18849 nonzero coordinates, all inside the matched genes
+[geometry] S2A_k20: axis retention ||proj p||=0.5433; cos(r, axis)=0.3384
+[geometry] S2A_k50: axis retention ||proj p||=0.5923; cos(r, axis)=0.2646
+[geometry] S2A_k100: axis retention ||proj p||=0.6020; cos(r, axis)=0.2531
+[geometry] S1: cos(r, axis)=0.1298
+[D1] residualized floors at 212 distinct cell counts, 200 draws each
+[D1] 50/212 depths (122s)
+[D1] 100/212 depths (254s)
+[D1] 150/212 depths (390s)
+[D1] 200/212 depths (529s)
+[D1] 212/212 depths (564s)
+[D1]
+ factor_set    space    m  raw_called  res_called  raw_below_floor  res_below_floor
+primary_304  S2A_k20  304          24          15               27               22
+primary_304  S2A_k50  304           4           1               23               17
+primary_304 S2A_k100  304           1           0               20               14
+primary_304       S1  304           0           0                3                5
+   all_1836  S2A_k20 1836         125          95              153              133
+   all_1836  S2A_k50 1836          19          13              130              120
+   all_1836 S2A_k100 1836           6           4              118              105
+   all_1836       S1 1836           0           0               48               49
+[D2]
+   space  raw_power_25  res_power_25  res_power_50  res_power_100  res_monotone
+ S2A_k20         0.980         0.990          1.00          1.000          True
+ S2A_k50         0.955         0.975          1.00          1.000          True
+S2A_k100         0.930         0.950          1.00          1.000          True
+      S1         0.115         0.115          0.33          0.465          True
+[D3]
+ factor_set    m  n_called  id_drop_median_called  id_drop_median_set  guide_agreement_median_called  guide_agreement_median_set  n_high_depth_called  ruler_younger_total  ruler_younger_not_called
+primary_304  304        15               0.029208            0.051777                       0.179754                    0.193480                    1                  126                       117
+   all_1836 1836        95               0.028430            0.040845                       0.179754                    0.199315                   14                  761                       716
+[gate D1] EXPLAINED {'primary_304': {'k': 15, 'inside_or_below': True, 'm': 304, 'e': 15.2, 'lo': 8, 'hi': 23}, 'all_1836': {'k': 95, 'inside_or_below': True, 'm': 1836, 'e': 91.8, 'lo': 74, 'hi': 110}}
+[gate D2] RETAINED res_power_25=0.990 raw=0.980
+[findings] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\FINDINGS_SOUTH9.md written (113 lines)
