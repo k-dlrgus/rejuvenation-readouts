@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\kih79\Desktop\Immortality Game\Age\u2013Identity Separability Benchmark\src\south8_run.py", line 685, in <module>
+    return tab, vd
+                  ^
+  File "C:\Users\kih79\Desktop\Immortality Game\Age\u2013Identity Separability Benchmark\src\south8_run.py", line 535, in run_d3
+    u = cell_umi(ctx, log)
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kih79\Desktop\Immortality Game\Age\u2013Identity Separability Benchmark\src\south8_run.py", line 479, in cell_umi
+    nnz = int(ctx["nnz"])
+              ~~~^^^^^^^
+KeyError: 'nnz'

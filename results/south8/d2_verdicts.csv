@@ -1,0 +1,5 @@
+space,frac_min,frac_max,verdict,calibrated
+S2A_k20,0.0,0.11,"ANTI-CONSERVATIVE AND CONSERVATIVE (both, at different cell counts)",False
+S2A_k50,0.0,0.07,CONSERVATIVE,False
+S2A_k100,0.0,0.065,CONSERVATIVE,False
+S1,0.09,0.14,ANTI-CONSERVATIVE,False

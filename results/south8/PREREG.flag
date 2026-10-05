@@ -1,0 +1,150 @@
+TASK: SOUTH8 — three diagnostics on the SOUTH7 result, plus the all-1,836
+reading. Written before any SOUTH8 number exists.
+
+Nature: computational. No new data. Reads results/south7/ (including the
+completed results/south7/stage_a2_perm_rest.npz), results/south6/,
+results/south6rec/ and the Southard singlets file already on disk. Writes only
+results/south8/ and FINDINGS_SOUTH8.md. FINDINGS_SOUTH7.md is not regenerated
+and no file in results/south7/ is modified; it stays as the record of the
+primary run. Nothing is committed or pushed.
+
+--- WHY THIS SESSION EXISTS ---
+
+SOUTH7's gate read zero in S2A_k20 on the published 304-factor set. Three things
+about that zero need testing before anything is built on it.
+
+1. The zero has no size attached. SOUTH7 reports that no factor is called, and
+   that a planted 25%-of-gap approach would be detected with power 0.980. It
+   never reports how large the largest apparent approach actually was. Without
+   that, "none" cannot be turned into a bound.
+
+2. Two nulls disagree. In S1, SOUTH7's permutation test passes 51 of 304 factors
+   at q <= 0.05 while the depth-matched empirical floor passes 3. In S2A_k20 the
+   permutation test passes 0 while 27 fall below the empirical floor. Both
+   directions of disagreement cannot be right, and the permutation null — a
+   uniform shuffle of gene coordinates — destroys the correlation structure that
+   real expression vectors carry, which is a known way for such a null to be
+   mis-specified. The permutation test is what produced the zero, so its
+   calibration is load-bearing.
+
+3. The depth-matched null is matched on cell count. Sampling noise is set by
+   total reads, which is cells multiplied by reads per cell. If the 27 factors
+   below the floor simply have richer cells than the control draws of the same
+   cell count, the excess is a depth artifact of the same kind that defeated the
+   original analysis, in a different variable.
+
+--- STAGE 0: REPRODUCE FIRST (gate, before any new number) ---
+Re-derive from the stored SOUTH7 files, with this task's code:
+ (a) the Stage A3 row for primary_304 in each of the four spaces: called, below
+     depth floor, q <= 0.05, SOUTH6 rule, tied at min p, smallest q;
+ (b) that the smallest q in S2A_k20 is 0.0578 and is held by AFF1, EGR3, FOXN3;
+ (c) the MYC row in S1 (cells 99, delta 94.0537, floor 94.3758, q 0.0018);
+ (d) the S2A_k20 basis gap retention 0.8651 and ||O1-Y1|| 27.9292;
+ (e) the R6 recovery rows at 106 cells in all four spaces.
+Pass: counts exact, every numeric item within 1e-4 * max(1, |stored|).
+Fail -> STOP `prior_results_not_reproduced`, naming every mismatch.
+
+--- CRITERION AMENDMENT (declared now, before any SOUTH8 number) ---
+SOUTH7's criterion called MYC APPROACHING in S1 although MYC's change in
+distance is positive: it moved away from the young target, only less far than
+sampling noise usually does. Comparing each factor with its own null rather than
+with zero is the preprint's remedy and is kept, but it is not sufficient on its
+own. From here:
+
+  APPROACHING requires BOTH (i) change in distance below the 5th percentile of
+  the factor's own depth-matched null, AND (ii) change in distance < 0.
+
+SOUTH7's S1 reading is marked superseded, not edited; its text stays in
+results/south7/. Both counts are reported in every space so the effect of the
+amendment is visible.
+
+--- D1. The size of the zero (descriptive; no decision rule) ---
+For each space, on the 304-factor set and on all 1,836:
+ (a) the five most negative changes in distance, with cell count, cell-count
+     percentile, depth-matched floor, p, q, and the high_depth_candidate flag;
+ (b) each one expressed as a fraction of the young-old gap, by linear
+     interpolation against the R6 plant dose-response (0, 25, 50, 100%) rebuilt
+     at that factor's own cell count. State the interpolation method used and
+     report the value as an interval between the two bracketing doses where it
+     falls outside the measured range;
+ (c) the resulting sentence, filled in: "The largest apparent approach anywhere
+     in the screen corresponds to at most <X>% of the young-old gap, measured
+     with a statistic that detects a 25% approach at this depth with power
+     0.980."
+This is descriptive and carries no decision rule. It is not an effect size in
+aged cells: the screen has no aged donor.
+
+--- D2. Is the permutation null calibrated? (gated) ---
+The depth-matched null draws contain, by construction, no effect. Run SOUTH7's
+permutation test on them exactly as on a real factor.
+ - For each of the 200 non-targeting draws at cell counts 50, 106, 180 and 341,
+   in each of the four spaces, permute that draw's displacement vector as
+   SOUTH7's Stage A2 does and compute its p.
+ - 10,000 permutations per draw is sufficient and is permitted here: the
+   question is the rate at 0.05, not a tail at 1e-5. State that it was used.
+ - Report, per space and per cell count, the fraction of true-null draws with
+   p <= 0.05 and with p <= 0.001.
+Gate, wording fixed now:
+ - CALIBRATED: "the permutation null flags <f> of true-null draws at the 0.05
+   level in <space>, consistent with the 0.05 it should flag."  Condition:
+   0.03 <= f <= 0.08 at every cell count tested in that space.
+ - ANTI-CONSERVATIVE (f > 0.08 anywhere): "the permutation null flags <f> of
+   true-null draws at the 0.05 level in <space>, so it cannot be read as
+   evidence that a factor's direction is special."
+ - CONSERVATIVE (f < 0.03 anywhere): "the permutation null flags <f> of
+   true-null draws at the 0.05 level in <space>, so it cannot be used to
+   withhold a call."
+Consequence, fixed now: if the null is not CALIBRATED in S2A_k20, the SOUTH7
+primary call is re-read using the depth-matched floor and the amended criterion
+alone, without the permutation condition. That re-reading is reported as the
+primary reading of SOUTH8, and SOUTH7's is marked superseded, not edited. Both
+are shown side by side.
+
+--- D3. Is the null matched on the right quantity? (gated) ---
+ (a) For every factor, total UMI across its cells, from the counts already used
+     in Stage 0 (b). Report Spearman of total UMI against change in distance,
+     and against cell count, in each space, on the 304 set and on all 1,836.
+ (b) Rebuild the null matched on total UMI rather than on cell count: for each
+     factor, draw 200 non-targeting pseudobulks whose total UMI is within 2% of
+     that factor's, by the SOUTH6REC scheme (disjoint blocks within a
+     permutation, reference = complement). Report how many factors can be
+     matched within tolerance, the realised tolerance distribution, and the
+     cells-per-draw actually used.
+ (c) Recount how many of the 304, and of the 1,836, fall below the UMI-matched
+     5th percentile in each space, and re-run the amended criterion against it.
+Gate, wording fixed now, for S2A_k20 on the 304 set. 15.2 is 5% of 304, and the
+95% binomial interval for 5% of 304 is 8 to 23 inclusive:
+ - EXPLAINED (k <= 23): "the excess of 27 factors below the cell-count-matched
+   floor is accounted for by read depth; matched on total reads, <k> of 304 fall
+   below, which is consistent with chance."
+ - SURVIVES (k > 23): "the excess survives read-depth matching: <k> of 304 fall
+   below a floor matched on total reads, against 15.2 expected by chance."
+Both counts are reported regardless of which fires.
+
+--- D4. The all-1,836 reading (report-only) ---
+From results/south7/stage_a2_perm_rest.npz, compute q over m = 1,836 and report
+SOUTH7's Stage A3 table for the full screen in all four spaces: called under the
+amended criterion, below depth floor, q <= 0.05, SOUTH6 rule, tied at min p,
+smallest q. Add the two factors of SOUTH6's recurring set that fell outside the
+published primary set, CERS3 and REST, to the R3 table. Report whether any
+factor called under the amended criterion in any space carries the
+high_depth_candidate flag.
+
+--- WHAT DOES NOT COUNT ---
+- choosing a space, a criterion, a null or a factor set after seeing a number;
+- reading D1's bound as a biological effect size in aged cells; the screen uses
+  neonatal foreskin fibroblasts with no aged donor and no matched young target;
+- any result from an O2 pair;
+- the SOUTH6 recurring 11, or any earlier shortlist, as a prior;
+- a factor called under the amended criterion being described as a candidate for
+  the pilot panel in this findings file.
+
+--- STOP RULES ---
+On any STOP: write the findings with the key and exit. Never compute after a
+STOP; never resume a stopped run.
+
+--- OUTPUT ---
+FINDINGS_SOUTH8.md: this text verbatim; the Stage 0 reproduction table; D1, D2,
+D3 with the gate reading that fired in each; D4; limitations. Tables in
+results/south8/. Code src/south8_run.py. Hand over files, not summaries. Do not
+regenerate FINDINGS_SOUTH7.md. Do not commit or push.

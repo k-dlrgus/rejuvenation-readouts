@@ -1,0 +1,44 @@
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south8\PREREG.flag bytes=8827
+[stage] 0D
+[file] size=8048055098 md5=2c926c7cae2eaab1ed2519b06ca21db5 (12s)
+[nt csr] cells=14013 nnz=31999592 (4s)
+[C_f] rebuilt from cells (66s)
+[panel] transform rebuilt (13s)
+[columns gtex_obs] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[S2] PCA on GTEx donors n=652 p=23485 k=100
+[stage3] per-factor stats compared (0s)
+[stage2b] split floor recomputed (13s)
+[stage0] checks=42 failed=0
+[tables] primary_304: 304 factors (of 304 requested)
+[tables] all_1836: 1836 factors (of 1836 requested)
+[stage0e] plant curve at 106 cells done
+[stage0] checks=46 gating=46 failed=0
+[D1] plant curves needed at 20 cell counts: [71, 111, 114, 128, 152, 166, 177, 179, 183, 190, 199, 242, 255, 280, 284, 287, 307, 317, 331, 341]
+[D1] plant curve at 71 cells done
+[D1] plant curve at 111 cells done
+[D1] plant curve at 114 cells done
+[D1] plant curve at 128 cells done
+[D1] plant curve at 152 cells done
+[D1] plant curve at 166 cells done
+[D1] plant curve at 177 cells done
+[D1] plant curve at 179 cells done
+[D1] plant curve at 183 cells done
+[D1] plant curve at 190 cells done
+[D1] plant curve at 199 cells done
+[D1] plant curve at 242 cells done
+[D1] plant curve at 255 cells done
+[D1] plant curve at 280 cells done
+[D1] plant curve at 284 cells done
+[D1] plant curve at 287 cells done
+[D1] plant curve at 307 cells done
+[D1] plant curve at 317 cells done
+[D1] plant curve at 331 cells done
+[D1] plant curve at 341 cells done
+[D1] wrote 40 rows
+[D2 draws] 50 cells: 200 true-null vectors
+[D2 draws] 106 cells: 200 true-null vectors
+[D2 draws] 180 cells: 200 true-null vectors
+[D2 draws] 341 cells: 200 true-null vectors
