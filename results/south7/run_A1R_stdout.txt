@@ -1,0 +1,26 @@
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\PREREG.flag bytes=11030
+[stage] A1R
+[file] size=8048055098 md5=2c926c7cae2eaab1ed2519b06ca21db5 (21s)
+[nt csr] cells=14013 nnz=31999592 (4s)
+[C_f] rebuilt from cells (71s)
+[panel] transform rebuilt (24s)
+[columns gtex_obs] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[S2] PCA on GTEx donors n=652 p=23485 k=100
+[stage3] per-factor stats compared (0s)
+[stage2b] split floor recomputed (23s)
+[stage0] checks=42 failed=0
+[R6] recovery at 106 cells done
+[R6] recovery at 390 cells done
+[R6]
+   space  depth           basis  monotone  median_delta_0  median_delta_25  median_delta_50  median_delta_100  power_25  power_50  power_100
+ S2A_k20    106 S2A anchor-free      True        1.830238        -3.940130        -9.849284        -18.288997     0.980      1.00       1.00
+ S2A_k50    106 S2A anchor-free      True        3.758010        -1.710119        -7.179907        -13.851299     0.955      1.00       1.00
+S2A_k100    106 S2A anchor-free      True        5.182762        -0.224404        -5.455624        -11.461449     0.930      1.00       1.00
+      S1    106      gene space      True       93.603018        92.151703        90.692830         89.534843     0.115      0.34       0.47
+ S2A_k20    390 S2A anchor-free      True        0.226686        -5.922686       -12.143473        -23.540612     1.000      1.00       1.00
+ S2A_k50    390 S2A anchor-free      True        0.495680        -5.905891       -12.185606        -23.073173     1.000      1.00       1.00
+S2A_k100    390 S2A anchor-free      True        0.682705        -5.741790       -11.949009        -22.441228     1.000      1.00       1.00
+      S1    390      gene space      True       37.673949        34.797977        32.709929         30.811273     0.955      1.00       1.00

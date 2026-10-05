@@ -1,0 +1,40 @@
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\PREREG.flag bytes=11030
+[stage] A2
+[columns gtex_obs] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[A2] set=primary factors=304 n_perm=100000 workers=6 settings=['S2A_k20', 'S2A_k50', 'S2A_k100', 'S1', 'south6basis_S2_k20', 'south6basis_S2_k50', 'south6basis_S2_k100']
+[A2] null: each factor's own 20,264 matched-gene coordinates permuted uniformly; unmatched ruler coordinates stay 0; ||d|| preserved in gene space; chunk 1000; default_rng([20260914, factor_index]) — the SOUTH6 construction.
+[A2] 10/304 (199s, 19.9s/factor, eta 98m)
+[A2] 20/304 (414s, 20.7s/factor, eta 98m)
+[A2] 30/304 (550s, 18.3s/factor, eta 84m)
+[A2] 40/304 (809s, 20.2s/factor, eta 89m)
+[A2] 50/304 (1068s, 21.4s/factor, eta 90m)
+[A2] 60/304 (1210s, 20.2s/factor, eta 82m)
+[A2] 70/304 (1469s, 21.0s/factor, eta 82m)
+[A2] 80/304 (1719s, 21.5s/factor, eta 80m)
+[A2] 90/304 (1857s, 20.6s/factor, eta 74m)
+[A2] 100/304 (2103s, 21.0s/factor, eta 72m)
+[A2] 110/304 (2358s, 21.4s/factor, eta 69m)
+[A2] 120/304 (2494s, 20.8s/factor, eta 64m)
+[A2] 130/304 (2741s, 21.1s/factor, eta 61m)
+[A2] 140/304 (2993s, 21.4s/factor, eta 58m)
+[A2] 150/304 (3126s, 20.8s/factor, eta 53m)
+[A2] 160/304 (3374s, 21.1s/factor, eta 51m)
+[A2] 170/304 (3626s, 21.3s/factor, eta 48m)
+[A2] 180/304 (3757s, 20.9s/factor, eta 43m)
+[A2] 190/304 (4007s, 21.1s/factor, eta 40m)
+[A2] 200/304 (4255s, 21.3s/factor, eta 37m)
+[A2] 210/304 (4387s, 20.9s/factor, eta 33m)
+[A2] 220/304 (4638s, 21.1s/factor, eta 30m)
+[A2] 230/304 (4889s, 21.3s/factor, eta 26m)
+[A2] 240/304 (5023s, 20.9s/factor, eta 22m)
+[A2] 250/304 (5267s, 21.1s/factor, eta 19m)
+[A2] 260/304 (5514s, 21.2s/factor, eta 16m)
+[A2] 270/304 (5691s, 21.1s/factor, eta 12m)
+[A2] 280/304 (6094s, 21.8s/factor, eta 9m)
+[A2] 290/304 (6431s, 22.2s/factor, eta 5m)
+[A2] 300/304 (6732s, 22.4s/factor, eta 1m)
+[A2] 304/304 (6876s, 22.6s/factor, eta 0m)
+[A2] done 304/304 in 114.6m -> C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\stage_a2_perm_primary.npz

@@ -1,0 +1,5 @@
+setting,south6_row,n_factors,max_abs_floor_diff,floors_bit_identical,le_identical,n_le_mismatch
+S1,0,304,0.0,True,True,0
+south6basis_S2_k20,1,304,7.105427357601002e-15,False,True,0
+south6basis_S2_k50,2,304,7.505107646466058e-14,False,True,0
+south6basis_S2_k100,3,304,8.526512829121202e-14,False,True,0

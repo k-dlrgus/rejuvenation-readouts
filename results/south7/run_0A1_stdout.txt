@@ -1,0 +1,35 @@
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\PREREG.flag bytes=11030
+[stage] 0A1
+[factor set] active_fibro guides=659 genes=212 (paper 212)
+[factor set] expanded_active_fibro guides=106 genes=102 (paper 102)
+[factor set] in both flags=10 union=304
+[file] size=8048055098 md5=2c926c7cae2eaab1ed2519b06ca21db5 (12s)
+[nt csr] cells=14013 nnz=31999592 (4s)
+[C_f] rebuilt from cells (67s)
+[panel] transform rebuilt (14s)
+[columns gtex_obs] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[S2] PCA on GTEx donors n=652 p=23485 k=100
+[stage3] per-factor stats compared (0s)
+[stage2b] split floor recomputed (14s)
+[stage0] checks=42 failed=0
+[rec gate] depth 106 reproduced (6s)
+[rec gate] depth 390 reproduced (7s)
+[rec gate] depth 2500 reproduced (14s)
+[stage0] checks=80 gating=80 failed=0
+[S2A] PCA on the 308 GTEx donors aged 40-59 only; k=100; anchor donors in fit = 0 of 308
+[S2A] gap retention [{'k': 20, 'retention': 0.8651096062734119, 'retention_south6_basis': 0.8872881830599963}, {'k': 50, 'retention': 0.8973367814200255, 'retention_south6_basis': 0.9560251136713489}, {'k': 100, 'retention': 0.9053779713587568, 'retention_south6_basis': 0.9736808598895093}]
+[A1] observed stats for 1836 factors written
+[A1] distinct cell counts 212 spanning 13-341; 42400 draws, exact per n (no interpolation)
+[A1] 25/212 depths (34s)
+[A1] 50/212 depths (69s)
+[A1] 75/212 depths (104s)
+[A1] 100/212 depths (141s)
+[A1] 125/212 depths (179s)
+[A1] 150/212 depths (218s)
+[A1] 175/212 depths (257s)
+[A1] 200/212 depths (296s)
+[A1] 212/212 depths (316s)
+[A1] depth-matched nulls written (316s)

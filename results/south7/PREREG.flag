@@ -1,0 +1,186 @@
+TASK: SOUTH7 — re-rank the Southard CRISPRa screen with a qualified statistic,
+a depth-matched floor, an anchor-free basis, and a permutation floor that does
+not cap the answer.
+Written before any SOUTH7 number exists.
+
+Nature of this task: computational. No lab work, no new data beyond the Southard
+files already on disk. Nothing in results/south6/ or results/south6rec/ is
+modified; every file there is read as stored. The frozen ruler and the TOWARD
+anchors are read, never refit. Existing src/ files are imported unchanged.
+
+Two stages. Stage A is the result and must complete. Stage B is upside and may
+STOP without affecting Stage A.
+
+--- WHY EACH CHANGE IS MADE (fixed now, so no choice is made after seeing data) ---
+
+1. SPACE. SOUTH6REC planted a known approach into real non-targeting pseudobulks
+   at the screen's own depth and measured recovery. At 106 cells, S1 recovered a
+   25%-of-gap approach with power 0.115 and a 100%-of-gap approach with power
+   0.470. S2_k20, S2_k50 and S2_k100 recovered 25% with power 0.990, 0.965 and
+   0.930. S1 at the screen's depth is blind; the compressed spaces are not.
+   SOUTH6's primary was S1. That is the single reason its ranking carried no
+   information.
+
+2. BASIS. The SOUTH6 S2 basis was fit on all 652 GTEx donors, of which 344
+   (52.8%) are the anchor donors averaged into O1 and Y1. SOUTH6REC R5 showed
+   gap retention at k=20 falls only from 0.887 to 0.865 when the basis is refit
+   on the 308 donors aged 40-59, which contains no anchor donor. The cost of
+   removing the circularity is small, so it is removed.
+
+3. FLOOR. SOUTH6's control floor (stage2b) was built from half-splits of the
+   14,013 NT cells, about 7,006 cells per half, against factors with a median of
+   106 cells. Displacement scales as 1/sqrt(cells), so that floor sits at roughly
+   1/8 of the noise the factors carry. A floor at the wrong depth is not a floor.
+   The same arithmetic explains the stored per-guide NT figure of 69 against the
+   factors' 95: the 78 NT guides hold about 180 cells each, and 1273/sqrt(180)
+   against 1273/sqrt(106) reproduces that difference with no biology in it.
+   SOUTH7 builds the floor at each factor's own cell count.
+
+4. PERMUTATIONS. SOUTH6 used 5,000 permutations, so the smallest attainable
+   p is 2e-4. With Benjamini-Hochberg at m = 1,836 a factor can only pass if at
+   least 8 factors are tied at that floor. S2_k20 on the primary pair had 4. That
+   setting could not have reported a hit whatever the biology. SOUTH7 raises the
+   permutation count so the floor cannot bind.
+
+5. CRITERION. SOUTH6 called a factor approaching only if its change in distance
+   was negative outright. The preprint's own remedy list says to report the
+   zero-dose point as the noise floor rather than assuming it is zero. SOUTH7
+   adopts the preprint's rule: a factor is judged against a depth-matched
+   zero-effect null, not against zero. The SOUTH6 rule is reported alongside for
+   every factor so the two can be compared directly.
+
+--- DATA ---
+The SOUTH6 file as analyzed, same md5 check as SOUTH6REC. Counts from SOUTH6's
+matched-gene CSR cache. NT cells: guide_target == 'non' (14,013 cells, 78
+guides). STOP `nt_cells_mismatch` if the obs-derived NT set differs from
+results/south6/stage1.npz nt_cells.
+
+--- SPACES ---
+PRIMARY: S2A_k20. Projection onto the first 20 principal components of a basis
+fit exactly as src/south6_run.py build_spaces does, except on the 308 GTEx
+donors aged 40-59 only. No anchor donor enters the fit. Report the gap retention
+of this basis.
+SECONDARY, reported, never primary: S2A_k50, S2A_k100, and S1 (gene space).
+Origin O1 = GTEx 60-79 centroid, target Y1 = GTEx 20-39 centroid, frozen, as
+stored. The O2 pairs are not run. Their axis is the 468-unit origin-to-anchor
+platform gap, not an age gap, and every SOUTH6 hit came from them.
+
+--- FACTOR SET ---
+PRIMARY: Southard's confirmed-effect factors — the set reported as showing
+strong transcriptional effects in Hs27 cells, and the additional single-guide
+set, taken from the Southard et al. supplementary tables. Record the table, the
+column, the inclusion rule and the resulting count. Do not substitute a
+self-derived list; if the published list cannot be sourced, STOP
+`factor_list_unavailable`, report what was searched, and run nothing further.
+SECONDARY: all 1,836 factors, so the effect of m on multiple testing is visible
+rather than assumed.
+
+--- STAGE 0: REPRODUCE FIRST (gate, before any new number) ---
+Rebuild with this task's code and compare against stored files:
+ (a) the SOUTH6 Stage 0 items that SOUTH6REC already checked (counts, transform,
+     d_f, origin-target distances, per-factor delta/cos/frac/d_norm in S1 and
+     each S2_k on O1_Y1);
+ (b) the SOUTH6REC Stage 1 gate table: the 12 space-by-depth rows, their power
+     at 25%, and the dose-0 median delta in each space at 106 cells.
+Pass: counts exact, every numeric item within 1e-4 * max(1, |stored|).
+Fail -> STOP `prior_results_not_reproduced`, naming every mismatch. No new
+number is computed.
+
+--- STAGE A: THE RE-RANK (gated, must complete) ---
+
+A1. Depth-matched null. For each factor of n cells, draw R = 200 NT pseudobulks
+of exactly n cells with the SOUTH6REC primary scheme: disjoint blocks within a
+permutation, reference = the complement of the draw, never the pool containing
+it. Record the 5th percentile of the null change in distance at that n, in each
+space. For the primary factor set this is computed exactly, per factor. For the
+all-1,836 secondary set, a grid of cell counts with interpolation of the 5th
+percentile in 1/sqrt(n) is permitted; if used, validate it against at least 5
+exactly computed grid points spanning the range and report the maximum
+interpolation error. State which was done.
+
+A2. Permutation null. Unchanged in construction from SOUTH6 — state in the
+findings exactly what is permuted and confirm it is the same null — but with at
+least 100,000 draws, so the attainable minimum p is at most 1e-5. Report the
+attainable minimum p and the number of factors tied at it in every setting.
+
+A3. Call. A factor is APPROACHING if, in the primary space:
+      its change in distance is below the 5th percentile of its own
+      depth-matched null, AND its Benjamini-Hochberg q over the factor set
+      is <= 0.05.
+Report for every factor, alongside: the SOUTH6 rule (change in distance < 0),
+cell count, percentile rank of cell count, guide agreement, identity drop,
+cosine, and the call in S2A_k50, S2A_k100 and S1.
+
+A4. Flags, declared now. Any factor called approaching whose cell count sits
+above the 90th percentile of the factor set is flagged `high_depth_candidate`
+and reported as such, not as a result. SOUTH6's recurring 11 had a median of 183
+cells against the screen's 106, with 8 of 11 above the 90th percentile; that set
+was an artifact of how many cells each guide happened to capture. Any new
+shortlist must be checked the same way before it is believed.
+
+--- GATE WORDING, fixed now ---
+PASS (k = 0): "<set>, S2A_k20: of <m> factors, none is called approaching. Each
+factor is judged against a null built at its own cell count, and SOUTH6REC
+showed this statistic recovers a 25%-of-gap approach at this depth with power
+0.990. The screen contains no transcription factor that moves the reference
+cells a quarter of the way toward young."
+PASS (k > 0): "<set>, S2A_k20: <k> of <m> factors are called approaching:
+<list>. <j> of them carry the high_depth_candidate flag." Each is reported with
+its full row and its call in the three secondary spaces. No factor is described
+as a candidate for the pilot panel in this findings file.
+
+--- STAGE B: FULL DATASET (upside; STOP here does not touch Stage A) ---
+B0. Feasibility probe, before any computation. Confirm the non-singlet Southard
+file is present and readable; confirm Southard's droplet-overloading
+normalization is available or implementable from the published method; report
+the cells per factor achievable and how that compares with the 106 of the
+singlets file. If any of these fails -> STOP `fulldata_infeasible`, write the
+findings with Stage A complete and this stage marked not attempted.
+B1. Measure the information content of recovered cells; do not assume it.
+Compare the null spread of a pseudobulk of n singlets against the null spread of
+a pseudobulk of n cells drawn at the realised singlet-to-recovered ratio, at
+n = 106 and n = 390. Report the ratio, and from it an "effective cells per
+recovered cell" figure. The project has been assuming 1.0; this measures it.
+B2. Re-run A1 to A4 at the achieved depth, in S2A_k20 and in S1. S1 is the point
+of this stage: SOUTH6REC showed S1 recovers a 25% approach at 390 cells with
+power 0.955, so at that depth the finding can be stated in gene space, with no
+basis to defend. Note in the findings that even at 390 cells a full-gap plant
+leaves the S1 change in distance positive, so in S1 the depth-matched criterion
+is the only one that can call an approach; the SOUTH6 rule cannot, at any
+effect size, at that depth.
+
+--- REPORT-ONLY (no decision rule, never a gate) ---
+R1. The SOUTH6 rule (change in distance < 0) for every factor, both sets.
+R2. The all-1,836 run with m = 1,836, to show the multiple-testing effect.
+R3. The SOUTH6 recurring 11 under the new setup, with cell-count percentile.
+R4. Spearman of the new statistic against cell count, and displacement ×
+    sqrt(cells) across cell-count bins, in the new primary space. In S1 that
+    product was flat at 1,273 within 3%, which is the signature of pure sampling
+    error. Report whether it is flat in S2A_k20.
+R5. For every factor, the frozen ruler score change beside the distance call.
+    In SOUTH6, 761 of 1,836 factors scored younger on the ruler while none ended
+    closer in S1. Report the same two columns here. This is the preprint's thesis
+    in a second dataset and is reported as a diagnostic, not as evidence about
+    any factor.
+
+--- WHAT DOES NOT COUNT ---
+- the SOUTH6 recurring 11, or any earlier shortlist, as a prior;
+- any result from an O2 pair;
+- choosing space, criterion, factor set or depth after seeing results;
+- Stage B failing as any reflection on Stage A;
+- reading a zero in Stage A as evidence that no transcription factor can
+  rejuvenate aged cells. The screen uses neonatal foreskin fibroblasts with no
+  aged donor and no matched young target. A zero here says the screen contains
+  no such factor as measured against a GTEx-anchored young reference; it does not
+  test the question in aged cells.
+
+--- STOP RULES ---
+On any STOP: write the findings with the key and exit. Never compute after a
+STOP; never resume a stopped run.
+
+--- OUTPUT ---
+FINDINGS_SOUTH7.md: this text verbatim; the Stage 0 reproduction table; the
+sourcing record for the factor set; Stage A per space and set; the gate reading
+that fired; Stage B or its STOP; report-only readings labeled as such;
+limitations. Tables in results/south7/. Code src/south7_run.py, run from the
+repository root. Hand over files, not summaries.

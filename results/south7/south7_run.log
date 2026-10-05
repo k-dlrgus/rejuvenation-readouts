@@ -1,0 +1,343 @@
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\PREREG.flag bytes=11030
+[stage] 0A1
+[factor set] active_fibro guides=659 genes=212 (paper 212)
+[factor set] expanded_active_fibro guides=106 genes=102 (paper 102)
+[factor set] in both flags=10 union=304
+[file] size=8048055098 md5=2c926c7cae2eaab1ed2519b06ca21db5 (12s)
+[nt csr] cells=14013 nnz=31999592 (4s)
+[C_f] rebuilt from cells (67s)
+[panel] transform rebuilt (14s)
+[columns gtex_obs] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[S2] PCA on GTEx donors n=652 p=23485 k=100
+[stage3] per-factor stats compared (0s)
+[stage2b] split floor recomputed (14s)
+[stage0] checks=42 failed=0
+[rec gate] depth 106 reproduced (6s)
+[rec gate] depth 390 reproduced (7s)
+[rec gate] depth 2500 reproduced (14s)
+[stage0] checks=80 gating=80 failed=0
+[S2A] PCA on the 308 GTEx donors aged 40-59 only; k=100; anchor donors in fit = 0 of 308
+[S2A] gap retention [{'k': 20, 'retention': 0.8651096062734119, 'retention_south6_basis': 0.8872881830599963}, {'k': 50, 'retention': 0.8973367814200255, 'retention_south6_basis': 0.9560251136713489}, {'k': 100, 'retention': 0.9053779713587568, 'retention_south6_basis': 0.9736808598895093}]
+[A1] observed stats for 1836 factors written
+[A1] distinct cell counts 212 spanning 13-341; 42400 draws, exact per n (no interpolation)
+[A1] 25/212 depths (34s)
+[A1] 50/212 depths (69s)
+[A1] 75/212 depths (104s)
+[A1] 100/212 depths (141s)
+[A1] 125/212 depths (179s)
+[A1] 150/212 depths (218s)
+[A1] 175/212 depths (257s)
+[A1] 200/212 depths (296s)
+[A1] 212/212 depths (316s)
+[A1] depth-matched nulls written (316s)
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\PREREG.flag bytes=11030
+[stage] A2
+[columns gtex_obs] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[A2] set=primary factors=304 n_perm=100000 workers=6 settings=['S2A_k20', 'S2A_k50', 'S2A_k100', 'S1', 'south6basis_S2_k20', 'south6basis_S2_k50', 'south6basis_S2_k100']
+[A2] null: each factor's own 20,264 matched-gene coordinates permuted uniformly; unmatched ruler coordinates stay 0; ||d|| preserved in gene space; chunk 1000; default_rng([20260914, factor_index]) — the SOUTH6 construction.
+[A2] 10/304 (199s, 19.9s/factor, eta 98m)
+[A2] 20/304 (414s, 20.7s/factor, eta 98m)
+[A2] 30/304 (550s, 18.3s/factor, eta 84m)
+[A2] 40/304 (809s, 20.2s/factor, eta 89m)
+[A2] 50/304 (1068s, 21.4s/factor, eta 90m)
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\PREREG.flag bytes=11030
+[stage] A3
+[A3] permutation results for 304 of 1836 factors, n_perm=100000
+[A3] same-null check: [{'setting': 'S1', 'south6_row': 0, 'n_factors': 50, 'max_abs_floor_diff': 0.0, 'floors_bit_identical': True, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k20', 'south6_row': 1, 'n_factors': 50, 'max_abs_floor_diff': 3.552713678800501e-15, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k50', 'south6_row': 2, 'n_factors': 50, 'max_abs_floor_diff': 5.651035195342047e-14, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k100', 'south6_row': 3, 'n_factors': 50, 'max_abs_floor_diff': 7.460698725481052e-14, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}]
+[A3] calls
+ factor_set    space   m  n_called  n_south6_rule
+primary_304  S2A_k20 304         4             35
+primary_304  S2A_k50 304         1              4
+primary_304 S2A_k100 304         0              1
+primary_304       S1 304         0              0
+[A3] R3 recurring-set check {'n': 11, 'median_cells': 183.0, 'n_above_screen_p90': 8, 'screen_p90': 167.0, 'prereg_median': 183.0, 'prereg_n_above': 8, 'in_primary_set': 9}
+[A3] Stage B probe {'file': 'data/raw/southard/fibroblast_CRISPRa_final_pop.h5ad', 'present': False, 'zenodo_record': '10.5281/zenodo.15200179', 'zenodo_size_listed': '9.7 GB', 'singlet_median_cells_per_factor': 106.0} -> fulldata_infeasible
+[findings] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\FINDINGS_SOUTH7.md written (177 lines)
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\PREREG.flag bytes=11030
+[stage] A3
+[A3] permutation results for 50 of 1836 factors (50 of 304 in the primary set), n_perm=100000
+[A3] same-null check: [{'setting': 'S1', 'south6_row': 0, 'n_factors': 50, 'max_abs_floor_diff': 0.0, 'floors_bit_identical': True, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k20', 'south6_row': 1, 'n_factors': 50, 'max_abs_floor_diff': 3.552713678800501e-15, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k50', 'south6_row': 2, 'n_factors': 50, 'max_abs_floor_diff': 5.651035195342047e-14, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k100', 'south6_row': 3, 'n_factors': 50, 'max_abs_floor_diff': 7.460698725481052e-14, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}]
+[A3] calls
+ factor_set    space  m  n_called  n_south6_rule
+primary_304  S2A_k20 50         4             10
+primary_304  S2A_k50 50         1              3
+primary_304 S2A_k100 50         0              1
+primary_304       S1 50         0              0
+[A3] R3 recurring-set check {'n': 11, 'median_cells': 183.0, 'n_above_screen_p90': 8, 'screen_p90': 167.0, 'prereg_median': 183.0, 'prereg_n_above': 8, 'in_primary_set': 9}
+[A3] Stage B probe {'file': 'data/raw/southard/fibroblast_CRISPRa_final_pop.h5ad', 'present': False, 'zenodo_record': '10.5281/zenodo.15200179', 'zenodo_size_listed': '9.7 GB', 'singlet_median_cells_per_factor': 106.0} -> fulldata_infeasible
+[findings] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\FINDINGS_SOUTH7.md written (177 lines)
+[A2] 60/304 (1210s, 20.2s/factor, eta 82m)
+[A2] 70/304 (1469s, 21.0s/factor, eta 82m)
+[A2] 80/304 (1719s, 21.5s/factor, eta 80m)
+[A2] 90/304 (1857s, 20.6s/factor, eta 74m)
+[A2] 100/304 (2103s, 21.0s/factor, eta 72m)
+[A2] 110/304 (2358s, 21.4s/factor, eta 69m)
+[A2] 120/304 (2494s, 20.8s/factor, eta 64m)
+[A2] 130/304 (2741s, 21.1s/factor, eta 61m)
+[A2] 140/304 (2993s, 21.4s/factor, eta 58m)
+[A2] 150/304 (3126s, 20.8s/factor, eta 53m)
+[A2] 160/304 (3374s, 21.1s/factor, eta 51m)
+[A2] 170/304 (3626s, 21.3s/factor, eta 48m)
+[A2] 180/304 (3757s, 20.9s/factor, eta 43m)
+[A2] 190/304 (4007s, 21.1s/factor, eta 40m)
+[A2] 200/304 (4255s, 21.3s/factor, eta 37m)
+[A2] 210/304 (4387s, 20.9s/factor, eta 33m)
+[A2] 220/304 (4638s, 21.1s/factor, eta 30m)
+[A2] 230/304 (4889s, 21.3s/factor, eta 26m)
+[A2] 240/304 (5023s, 20.9s/factor, eta 22m)
+[A2] 250/304 (5267s, 21.1s/factor, eta 19m)
+[A2] 260/304 (5514s, 21.2s/factor, eta 16m)
+[A2] 270/304 (5691s, 21.1s/factor, eta 12m)
+[A2] 280/304 (6094s, 21.8s/factor, eta 9m)
+[A2] 290/304 (6431s, 22.2s/factor, eta 5m)
+[A2] 300/304 (6732s, 22.4s/factor, eta 1m)
+[A2] 304/304 (6876s, 22.6s/factor, eta 0m)
+[A2] done 304/304 in 114.6m -> C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\stage_a2_perm_primary.npz
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\PREREG.flag bytes=11030
+[stage] A1R
+[file] size=8048055098 md5=2c926c7cae2eaab1ed2519b06ca21db5 (12s)
+[nt csr] cells=14013 nnz=31999592 (4s)
+[C_f] rebuilt from cells (76s)
+[panel] transform rebuilt (23s)
+[columns gtex_obs] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[S2] PCA on GTEx donors n=652 p=23485 k=100
+[stage3] per-factor stats compared (0s)
+[stage2b] split floor recomputed (22s)
+[stage0] checks=42 failed=0
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\PREREG.flag bytes=11030
+[stage] A1R
+[file] size=8048055098 md5=2c926c7cae2eaab1ed2519b06ca21db5 (21s)
+[nt csr] cells=14013 nnz=31999592 (4s)
+[C_f] rebuilt from cells (71s)
+[panel] transform rebuilt (24s)
+[columns gtex_obs] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[S2] PCA on GTEx donors n=652 p=23485 k=100
+[stage3] per-factor stats compared (0s)
+[stage2b] split floor recomputed (23s)
+[stage0] checks=42 failed=0
+[R6] recovery at 106 cells done
+[R6] recovery at 390 cells done
+[R6]
+   space  depth           basis  monotone  median_delta_0  median_delta_25  median_delta_50  median_delta_100  power_25  power_50  power_100
+ S2A_k20    106 S2A anchor-free      True        1.830238        -3.940130        -9.849284        -18.288997     0.980      1.00       1.00
+ S2A_k50    106 S2A anchor-free      True        3.758010        -1.710119        -7.179907        -13.851299     0.955      1.00       1.00
+S2A_k100    106 S2A anchor-free      True        5.182762        -0.224404        -5.455624        -11.461449     0.930      1.00       1.00
+      S1    106      gene space      True       93.603018        92.151703        90.692830         89.534843     0.115      0.34       0.47
+ S2A_k20    390 S2A anchor-free      True        0.226686        -5.922686       -12.143473        -23.540612     1.000      1.00       1.00
+ S2A_k50    390 S2A anchor-free      True        0.495680        -5.905891       -12.185606        -23.073173     1.000      1.00       1.00
+S2A_k100    390 S2A anchor-free      True        0.682705        -5.741790       -11.949009        -22.441228     1.000      1.00       1.00
+      S1    390      gene space      True       37.673949        34.797977        32.709929         30.811273     0.955      1.00       1.00
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\PREREG.flag bytes=11030
+[stage] A3
+[A3] permutation results for 304 of 1836 factors (304 of 304 in the primary set), n_perm=100000
+[A3] same-null check: [{'setting': 'S1', 'south6_row': 0, 'n_factors': 304, 'max_abs_floor_diff': 0.0, 'floors_bit_identical': True, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k20', 'south6_row': 1, 'n_factors': 304, 'max_abs_floor_diff': 7.105427357601002e-15, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k50', 'south6_row': 2, 'n_factors': 304, 'max_abs_floor_diff': 7.505107646466058e-14, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k100', 'south6_row': 3, 'n_factors': 304, 'max_abs_floor_diff': 8.526512829121202e-14, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}]
+[A3] calls
+ factor_set    space   m  n_called  n_south6_rule
+primary_304  S2A_k20 304         0             35
+primary_304  S2A_k50 304         0              4
+primary_304 S2A_k100 304         0              1
+primary_304       S1 304         1              0
+[A3] R3 recurring-set check {'n': 11, 'median_cells': 183.0, 'n_above_screen_p90': 8, 'screen_p90': 167.0, 'prereg_median': 183.0, 'prereg_n_above': 8, 'in_primary_set': 9}
+[A3] Stage B probe {'file': 'data/raw/southard/fibroblast_CRISPRa_final_pop.h5ad', 'present': False, 'zenodo_record': '10.5281/zenodo.15200179', 'zenodo_size_listed': '9.7 GB', 'singlet_median_cells_per_factor': 106.0} -> fulldata_infeasible
+[findings] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\FINDINGS_SOUTH7.md written (183 lines)
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\PREREG.flag bytes=11030
+[stage] A3
+[A3] permutation results for 304 of 1836 factors (304 of 304 in the primary set), n_perm=100000
+[A3] same-null check: [{'setting': 'S1', 'south6_row': 0, 'n_factors': 304, 'max_abs_floor_diff': 0.0, 'floors_bit_identical': True, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k20', 'south6_row': 1, 'n_factors': 304, 'max_abs_floor_diff': 7.105427357601002e-15, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k50', 'south6_row': 2, 'n_factors': 304, 'max_abs_floor_diff': 7.505107646466058e-14, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k100', 'south6_row': 3, 'n_factors': 304, 'max_abs_floor_diff': 8.526512829121202e-14, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}]
+[A3] calls
+ factor_set    space   m  n_called  n_south6_rule
+primary_304  S2A_k20 304         0             35
+primary_304  S2A_k50 304         0              4
+primary_304 S2A_k100 304         0              1
+primary_304       S1 304         1              0
+[A3] R3 recurring-set check {'n': 11, 'median_cells': 183.0, 'n_above_screen_p90': 8, 'screen_p90': 167.0, 'prereg_median': 183.0, 'prereg_n_above': 8, 'in_primary_set': 9}
+[A3] Stage B probe {'file': 'data/raw/southard/fibroblast_CRISPRa_final_pop.h5ad', 'present': False, 'zenodo_record': '10.5281/zenodo.15200179', 'zenodo_size_listed': '9.7 GB', 'singlet_median_cells_per_factor': 106.0} -> fulldata_infeasible
+[findings] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\FINDINGS_SOUTH7.md written (191 lines)
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\PREREG.flag bytes=11030
+[stage] A3
+[A3] permutation results for 304 of 1836 factors (304 of 304 in the primary set), n_perm=100000
+[A3] same-null check: [{'setting': 'S1', 'south6_row': 0, 'n_factors': 304, 'max_abs_floor_diff': 0.0, 'floors_bit_identical': True, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k20', 'south6_row': 1, 'n_factors': 304, 'max_abs_floor_diff': 7.105427357601002e-15, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k50', 'south6_row': 2, 'n_factors': 304, 'max_abs_floor_diff': 7.505107646466058e-14, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}, {'setting': 'south6basis_S2_k100', 'south6_row': 3, 'n_factors': 304, 'max_abs_floor_diff': 8.526512829121202e-14, 'floors_bit_identical': False, 'le_identical': True, 'n_le_mismatch': 0}]
+[A3] calls
+ factor_set    space   m  n_called  n_south6_rule
+primary_304  S2A_k20 304         0             35
+primary_304  S2A_k50 304         0              4
+primary_304 S2A_k100 304         0              1
+primary_304       S1 304         1              0
+[A3] R3 recurring-set check {'n': 11, 'median_cells': 183.0, 'n_above_screen_p90': 8, 'screen_p90': 167.0, 'prereg_median': 183.0, 'prereg_n_above': 8, 'in_primary_set': 9}
+[A3] Stage B probe {'file': 'data/raw/southard/fibroblast_CRISPRa_final_pop.h5ad', 'present': False, 'zenodo_record': '10.5281/zenodo.15200179', 'zenodo_size_listed': '9.7 GB', 'singlet_median_cells_per_factor': 106.0} -> fulldata_infeasible
+[findings] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\FINDINGS_SOUTH7.md written (191 lines)
+[prereg] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\PREREG.flag bytes=11030
+[stage] A2
+[columns gtex_obs] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[genes] pack ensembl matches frozen-ruler overlap gene set.
+[gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[A2] set=rest factors=1532 n_perm=100000 workers=6 settings=['S2A_k20', 'S2A_k50', 'S2A_k100', 'S1', 'south6basis_S2_k20', 'south6basis_S2_k50', 'south6basis_S2_k100']
+[A2] null: each factor's own 20,264 matched-gene coordinates permuted uniformly; unmatched ruler coordinates stay 0; ||d|| preserved in gene space; chunk 1000; default_rng([20260914, factor_index]) — the SOUTH6 construction.
+[A2] 10/1532 (250s, 25.0s/factor, eta 634m)
+[A2] 20/1532 (529s, 26.5s/factor, eta 667m)
+[A2] 30/1532 (774s, 25.8s/factor, eta 646m)
+[A2] 40/1532 (1165s, 29.1s/factor, eta 724m)
+[A2] 50/1532 (1423s, 28.5s/factor, eta 703m)
+[A2] 60/1532 (1780s, 29.7s/factor, eta 728m)
+[A2] 70/1532 (2146s, 30.7s/factor, eta 747m)
+[A2] 80/1532 (2376s, 29.7s/factor, eta 719m)
+[A2] 90/1532 (2692s, 29.9s/factor, eta 719m)
+[A2] 100/1532 (3064s, 30.6s/factor, eta 731m)
+[A2] 110/1532 (3382s, 30.7s/factor, eta 729m)
+[A2] 120/1532 (3591s, 29.9s/factor, eta 704m)
+[A2] 130/1532 (3864s, 29.7s/factor, eta 695m)
+[A2] 140/1532 (4124s, 29.5s/factor, eta 683m)
+[A2] 150/1532 (4320s, 28.8s/factor, eta 663m)
+[A2] 160/1532 (4586s, 28.7s/factor, eta 655m)
+[A2] 170/1532 (4797s, 28.2s/factor, eta 641m)
+[A2] 180/1532 (5060s, 28.1s/factor, eta 633m)
+[A2] 190/1532 (5321s, 28.0s/factor, eta 626m)
+[A2] 200/1532 (5482s, 27.4s/factor, eta 609m)
+[A2] 210/1532 (5740s, 27.3s/factor, eta 602m)
+[A2] 220/1532 (5989s, 27.2s/factor, eta 595m)
+[A2] 230/1532 (6213s, 27.0s/factor, eta 586m)
+[A2] 240/1532 (6415s, 26.7s/factor, eta 576m)
+[A2] 250/1532 (6686s, 26.7s/factor, eta 571m)
+[A2] 260/1532 (6971s, 26.8s/factor, eta 568m)
+[A2] 270/1532 (7154s, 26.5s/factor, eta 557m)
+[A2] 280/1532 (7402s, 26.4s/factor, eta 552m)
+[A2] 290/1532 (7627s, 26.3s/factor, eta 544m)
+[A2] 300/1532 (7876s, 26.3s/factor, eta 539m)
+[A2] 310/1532 (8117s, 26.2s/factor, eta 533m)
+[A2] 320/1532 (8299s, 25.9s/factor, eta 524m)
+[A2] 330/1532 (8547s, 25.9s/factor, eta 519m)
+[A2] 340/1532 (8789s, 25.9s/factor, eta 514m)
+[A2] 350/1532 (9013s, 25.8s/factor, eta 507m)
+[A2] 360/1532 (9215s, 25.6s/factor, eta 500m)
+[A2] 370/1532 (9479s, 25.6s/factor, eta 496m)
+[A2] 380/1532 (9756s, 25.7s/factor, eta 493m)
+[A2] 390/1532 (9957s, 25.5s/factor, eta 486m)
+[A2] 400/1532 (10210s, 25.5s/factor, eta 482m)
+[A2] 410/1532 (10443s, 25.5s/factor, eta 476m)
+[A2] 420/1532 (10792s, 25.7s/factor, eta 476m)
+[A2] 430/1532 (11133s, 25.9s/factor, eta 476m)
+[A2] 440/1532 (11375s, 25.9s/factor, eta 471m)
+[A2] 450/1532 (11713s, 26.0s/factor, eta 469m)
+[A2] 460/1532 (12069s, 26.2s/factor, eta 469m)
+[A2] 470/1532 (12335s, 26.2s/factor, eta 465m)
+[A2] 480/1532 (12510s, 26.1s/factor, eta 457m)
+[A2] 490/1532 (12783s, 26.1s/factor, eta 453m)
+[A2] 500/1532 (13034s, 26.1s/factor, eta 448m)
+[A2] 510/1532 (13253s, 26.0s/factor, eta 443m)
+[A2] 520/1532 (13561s, 26.1s/factor, eta 440m)
+[A2] 530/1532 (13804s, 26.0s/factor, eta 435m)
+[A2] 540/1532 (14095s, 26.1s/factor, eta 432m)
+[A2] 550/1532 (14383s, 26.2s/factor, eta 428m)
+[A2] 560/1532 (14591s, 26.1s/factor, eta 422m)
+[A2] 570/1532 (14873s, 26.1s/factor, eta 418m)
+[A2] 580/1532 (15176s, 26.2s/factor, eta 415m)
+[A2] 590/1532 (15437s, 26.2s/factor, eta 411m)
+[A2] 600/1532 (15598s, 26.0s/factor, eta 404m)
+[A2] 610/1532 (15865s, 26.0s/factor, eta 400m)
+[A2] 620/1532 (16120s, 26.0s/factor, eta 395m)
+[A2] 630/1532 (16313s, 25.9s/factor, eta 389m)
+[A2] 640/1532 (16562s, 25.9s/factor, eta 385m)
+[A2] 650/1532 (16768s, 25.8s/factor, eta 379m)
+[A2] 660/1532 (17025s, 25.8s/factor, eta 375m)
+[A2] 670/1532 (17284s, 25.8s/factor, eta 371m)
+[A2] 680/1532 (17449s, 25.7s/factor, eta 364m)
+[A2] 690/1532 (17694s, 25.6s/factor, eta 360m)
+[A2] 700/1532 (17935s, 25.6s/factor, eta 355m)
+[A2] 710/1532 (18170s, 25.6s/factor, eta 351m)
+[A2] 720/1532 (18340s, 25.5s/factor, eta 345m)
+[A2] 730/1532 (18598s, 25.5s/factor, eta 341m)
+[A2] 740/1532 (18853s, 25.5s/factor, eta 336m)
+[A2] 750/1532 (19041s, 25.4s/factor, eta 331m)
+[A2] 760/1532 (19300s, 25.4s/factor, eta 327m)
+[A2] 770/1532 (19505s, 25.3s/factor, eta 322m)
+[A2] 780/1532 (19758s, 25.3s/factor, eta 317m)
+[A2] 790/1532 (20022s, 25.3s/factor, eta 313m)
+[A2] 800/1532 (20184s, 25.2s/factor, eta 308m)
+[A2] 810/1532 (20430s, 25.2s/factor, eta 304m)
+[A2] 820/1532 (20677s, 25.2s/factor, eta 299m)
+[A2] 830/1532 (20901s, 25.2s/factor, eta 295m)
+[A2] 840/1532 (21076s, 25.1s/factor, eta 289m)
+[A2] 850/1532 (21336s, 25.1s/factor, eta 285m)
+[A2] 860/1532 (21599s, 25.1s/factor, eta 281m)
+[A2] 870/1532 (21781s, 25.0s/factor, eta 276m)
+[A2] 880/1532 (22037s, 25.0s/factor, eta 272m)
+[A2] 890/1532 (22254s, 25.0s/factor, eta 268m)
+[A2] 900/1532 (22504s, 25.0s/factor, eta 263m)
+[A2] 910/1532 (22759s, 25.0s/factor, eta 259m)
+[A2] 920/1532 (22926s, 24.9s/factor, eta 254m)
+[A2] 930/1532 (23184s, 24.9s/factor, eta 250m)
+[A2] 940/1532 (23430s, 24.9s/factor, eta 246m)
+[A2] 950/1532 (23652s, 24.9s/factor, eta 242m)
+[A2] 960/1532 (23838s, 24.8s/factor, eta 237m)
+[A2] 970/1532 (24089s, 24.8s/factor, eta 233m)
+[A2] 980/1532 (24352s, 24.8s/factor, eta 229m)
+[A2] 990/1532 (24524s, 24.8s/factor, eta 224m)
+[A2] 1000/1532 (24784s, 24.8s/factor, eta 220m)
+[A2] 1010/1532 (25021s, 24.8s/factor, eta 216m)
+[A2] 1020/1532 (25248s, 24.8s/factor, eta 211m)
+[A2] 1030/1532 (25508s, 24.8s/factor, eta 207m)
+[A2] 1040/1532 (25674s, 24.7s/factor, eta 202m)
+[A2] 1050/1532 (25934s, 24.7s/factor, eta 198m)
+[A2] 1060/1532 (26180s, 24.7s/factor, eta 194m)
+[A2] 1070/1532 (26391s, 24.7s/factor, eta 190m)
+[A2] 1080/1532 (26588s, 24.6s/factor, eta 185m)
+[A2] 1090/1532 (26835s, 24.6s/factor, eta 181m)
+[A2] 1100/1532 (27093s, 24.6s/factor, eta 177m)
+[A2] 1110/1532 (27265s, 24.6s/factor, eta 173m)
+[A2] 1120/1532 (27521s, 24.6s/factor, eta 169m)
+[A2] 1130/1532 (27752s, 24.6s/factor, eta 165m)
+[A2] 1140/1532 (27990s, 24.6s/factor, eta 160m)
+[A2] 1150/1532 (28245s, 24.6s/factor, eta 156m)
+[A2] 1160/1532 (28415s, 24.5s/factor, eta 152m)
+[A2] 1170/1532 (28669s, 24.5s/factor, eta 148m)
+[A2] 1180/1532 (28920s, 24.5s/factor, eta 144m)
+[A2] 1190/1532 (29140s, 24.5s/factor, eta 140m)
+[A2] 1200/1532 (29333s, 24.4s/factor, eta 135m)
+[A2] 1210/1532 (29588s, 24.5s/factor, eta 131m)
+[A2] 1220/1532 (29849s, 24.5s/factor, eta 127m)
+[A2] 1230/1532 (30044s, 24.4s/factor, eta 123m)
+[A2] 1240/1532 (30277s, 24.4s/factor, eta 119m)
+[A2] 1250/1532 (30530s, 24.4s/factor, eta 115m)
+[A2] 1260/1532 (30776s, 24.4s/factor, eta 111m)
+[A2] 1270/1532 (31004s, 24.4s/factor, eta 107m)
+[A2] 1280/1532 (31190s, 24.4s/factor, eta 102m)
+[A2] 1290/1532 (31449s, 24.4s/factor, eta 98m)
+[A2] 1300/1532 (31696s, 24.4s/factor, eta 94m)
+[A2] 1310/1532 (31912s, 24.4s/factor, eta 90m)
+[A2] 1320/1532 (32108s, 24.3s/factor, eta 86m)
+[A2] 1330/1532 (32361s, 24.3s/factor, eta 82m)
+[A2] 1340/1532 (32626s, 24.3s/factor, eta 78m)
+[A2] 1350/1532 (32806s, 24.3s/factor, eta 74m)
+[A2] 1360/1532 (33044s, 24.3s/factor, eta 70m)
+[A2] 1370/1532 (33293s, 24.3s/factor, eta 66m)
+[A2] 1380/1532 (33539s, 24.3s/factor, eta 62m)
+[A2] 1390/1532 (33797s, 24.3s/factor, eta 58m)
+[A2] 1400/1532 (33983s, 24.3s/factor, eta 53m)
+[A2] 1410/1532 (34249s, 24.3s/factor, eta 49m)
+[A2] 1420/1532 (34513s, 24.3s/factor, eta 45m)
+[A2] 1430/1532 (34717s, 24.3s/factor, eta 41m)
+[A2] 1440/1532 (34912s, 24.2s/factor, eta 37m)
+[A2] 1450/1532 (35168s, 24.3s/factor, eta 33m)
+[A2] 1460/1532 (35429s, 24.3s/factor, eta 29m)
+[A2] 1470/1532 (35601s, 24.2s/factor, eta 25m)
+[A2] 1480/1532 (35827s, 24.2s/factor, eta 21m)
+[A2] 1490/1532 (36078s, 24.2s/factor, eta 17m)
+[A2] 1500/1532 (36321s, 24.2s/factor, eta 13m)
+[A2] 1510/1532 (36542s, 24.2s/factor, eta 9m)
+[A2] 1520/1532 (36747s, 24.2s/factor, eta 5m)
+[A2] 1530/1532 (36974s, 24.2s/factor, eta 1m)
+[A2] 1532/1532 (37022s, 24.2s/factor, eta 0m)
+[A2] done 1532/1532 in 617.0m -> C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\south7\stage_a2_perm_rest.npz
