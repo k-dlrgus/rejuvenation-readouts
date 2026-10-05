@@ -1,0 +1,4 @@
+depth,pool,m_disjoint_blocks,blocks_used_per_perm,draws_per_dose_per_perm,permutations_used,cells_used_per_perm
+106,14013,132,132,33,7,13992
+390,14013,35,32,8,25,12480
+2500,14013,5,4,1,200,10000

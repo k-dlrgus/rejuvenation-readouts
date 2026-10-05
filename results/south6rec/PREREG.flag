@@ -1,0 +1,160 @@
+TASK: SOUTH6REC — recovery control for the SOUTH6 screen readout, on a depth grid.
+Written 2026-10-04 09:45 +0900, before any SOUTH6REC number exists.
+
+Nature of this task: computational control on data SOUTH6 already analyzed.
+No lab work, no new data, no download. Nothing in results/south6/ is modified;
+every file there is read as stored. The frozen ruler and the TOWARD anchors are
+read, never refit. src/south6_run.py and every other existing src/ file are
+imported unchanged.
+
+QUESTION. SOUTH6 found toward_young = 0 of 1,836 factors in every primary
+(O1 -> Y1) space. Could the readout have recovered a real approach to young at
+the depth the screen had? Plant a displacement of known size along the
+old-to-young direction into non-targeting (NT) pseudobulks of fixed size and
+measure whether the change in distance recovers it.
+
+--- DATA ---
+The SOUTH6 file as analyzed: Southard Hs27 per-cell singlets,
+data/raw/southard/fibroblast_CRISPRa_final_pop_singlets_normalized_log1p.h5ad,
+md5 2c926c7cae2eaab1ed2519b06ca21db5, 8,048,055,098 bytes. The md5 is
+confirmed; STOP `file_mismatch` if it differs. Counts come from SOUTH6's
+matched-gene CSR cache (results/south6/matched_data.f64, matched_indices.i32,
+matched_indptr.npy), which holds layers/counts restricted to the 20,264 matched
+columns. obs is read from the h5ad for guide labels only.
+NT cells: guide_target == 'non', the SOUTH6 definition (14,013 cells, 78
+guides). STOP `nt_cells_mismatch` if the obs-derived NT cell set differs from
+results/south6/stage1.npz nt_cells.
+
+--- SPACES, ORIGIN, TARGET ---
+Four spaces, the SOUTH6 primary settings, origin O1 = GTEx 60-79 centroid
+(c_old), target Y1 = GTEx 20-39 centroid (c_young), from
+results/toward/anchors.npz:
+  S1       gene space: the 23,485 ruler genes, unmatched genes at z = 0.
+  S2_k20   S2_k50   S2_k100: projection onto the first k PCs of the SOUTH6
+           basis, rebuilt exactly as src/south6_run.py build_spaces does
+           (lowdim_common.fit_pca on the 652 GTEx donors' frozen-z matrix,
+           centered on the donor mean). No other basis enters the gate.
+Gap g = c_young - c_old (S1 coordinates). r = O1 - Y1 in each space (projected
+for S2). delta = ||O1 + d - Y1|| - ||O1 - Y1|| in that space, with d projected
+for S2. This is block_delta from src/south6_run.py.
+
+--- STAGE 0: REPRODUCE SOUTH6 FIRST (gate, before any new number) ---
+Rebuild with this task's code, from the CSR cache and obs, and compare with the
+stored files:
+  (a) per-factor counts C_f (1,836 x 20,264) from stage1.npz cell lists, per-NT-
+      guide counts C_nt (78 rows, guides mapped from obs guide_identity), and
+      C_pool: against stage1.npz. Exact (integer sums), tol 0.
+  (b) TMM / log2 CPM (prior 2) / frozen z on the rebuilt panel, d_f = z_f -
+      z_pool: against stage1.npz d_f.
+  (c) ||O1 - Y1|| in S1, S2_k20, S2_k50, S2_k100: against
+      origin_target_distances.csv.
+  (d) per factor, S1 and each S2_k, O1_Y1: delta, cos, frac, d_norm against
+      stage3_full_table.csv.
+  (e) Stage 2B random-split floor and split median, all78 control set, O1_Y1,
+      four spaces: 200 half-splits of the 14,013 NT cells with
+      default_rng(20260914), as split_effects_of does, against
+      stage2b_control_floor.csv.
+  (f) Stage 2C dose-response deltas, O1_Y1, four spaces, against
+      stage2c_dose_response.csv.
+Pass: every numeric item within |new - stored| <= 1e-4 * max(1, |stored|)
+(the SOUTH6 tolerance COORDSPACE used), counts exact. Fail -> STOP
+`south6_not_reproduced`, naming every mismatch; no new number is computed.
+Not recomputed: Stage 2A permutation floors, p and q. This task computes no
+permutation; COORDSPACE reproduced those on 2026-10-03.
+
+--- STAGE 1: RECOVERY CONTROL (the gated experiment) ---
+Depths n = 106 (the observed median cells per factor, stage0_cells_per_target),
+390, 2,500 cells. Doses f = 0, 0.25, 0.50, 1.00 of the gap. R = 200 draws per
+(depth, dose).
+Plant. A real perturbation can only show on genes the panel measures. The
+planted vector is f * g_m, where g_m is g with every coordinate the SOUTH6
+pipeline holds at z = 0 set to 0 (ruler genes outside the 20,264 matched
+columns, and the matched columns with zero counts across the SOUTH6 panel).
+The plant is added in z space after the transform: d = e + f * g_m, where e is
+the null displacement of the draw. ||g_m|| / ||g|| is reported per space.
+Null displacement e (PRIMARY): e = z(draw) - z(complement), where the draw is n
+NT cells and the complement is the other 14,013 - n NT cells, so the draw's
+cells are never in its own reference, as a real factor's cells are never in the
+NT pool. z() is z_of from src/south6_run.py with the TMM cache of the stored
+SOUTH6 panel.
+Draw scheme, per depth, stream default_rng([20260914, n]): repeatedly permute
+the 14,013 NT cells and cut the permutation into m = floor(14013 / n)
+consecutive disjoint blocks of n; assign blocks round-robin to doses in the
+order 0, 0.25, 0.50, 1.00, using 4 * floor(m / 4) blocks per permutation;
+stop when every dose holds 200 draws. All draws from one permutation are
+mutually disjoint, across doses too. Draws from different permutations
+overlap at random.
+Readout per draw: delta in each of the four spaces.
+Per (space, depth, dose) report: median delta with a 95% bootstrap CI (2,000
+resamples of the draws, seed 20260918, one generator per condition), mean, SD,
+5th and 95th percentiles, and the noise-free delta (e = 0).
+Monotone: median delta strictly decreasing across f = 0 < 0.25 < 0.50 < 1.00.
+Separable at dose f: power(f) >= 0.80, where power(f) is the fraction of the
+200 dose-f draws whose delta is below the 5th percentile (numpy default linear
+interpolation) of the 200 dose-0 draws' delta, same space and depth. Power gets
+a 95% bootstrap CI that resamples both the dose-0 and the dose-f draws (2,000
+resamples, seed 20260918); the CI is reported, not gated on.
+Smallest separable effect: the smallest f in {0.25, 0.50, 1.00} that is
+separable; "none" if none is.
+
+--- GATE (declared now, per space and depth) ---
+A space QUALIFIES at depth n if median delta falls monotonically across the four
+doses AND the 25% dose is separable from 0%. The existing-depth answer is
+n = 106; 390 and 2,500 are read with the same rule, each on its own row.
+Never pooled across spaces or depths.
+Wording, fixed now:
+  QUALIFIES: "<space>, <n> cells: recovered. Median delta falls monotonically
+  with dose and a 25% plant is separated from the 0% draws (power <p>)."
+  FAILS: "<space>, <n> cells: not recovered. <monotone: yes/no>; 25% plant
+  power <p> against the 0.80 bar. At this depth and in this space, the readout
+  cannot detect an approach of 25% of the gap."
+
+--- OVERLAP AND VARIANCE, reported explicitly (never a gate) ---
+Per depth: m, disjoint blocks used per permutation, permutations used, and how
+many of each dose's 200 draws are mutually disjoint within the condition (the
+largest set drawn from one permutation). Per (depth, dose): mean and maximum
+pairwise cell overlap between draws in the condition, as a fraction of n,
+against the n/14013 expected for independent draws.
+State plainly: (1) every draw resamples the same 14,013 cells, so the replicate
+spread is the spread of resampling this pool, not of new cells; (2) random
+cells mix all 78 guides, so guide-to-guide variation, which a factor's ~6
+guides carry, is absent from e.
+
+--- REPORT-ONLY READINGS (no decision rule; never a gate) ---
+R1 Guide-structured null. Per draw: guides in random order (stream
+   default_rng([20260914, n, 1])), taken until at least 6 guides are chosen and
+   their cells total >= n; n cells sampled from those guides' cells; reference
+   = all cells of the unchosen guides. 200 draws per (depth, dose), independent
+   draws. Same statistics, same separability rule, reported as report-only.
+R2 Pool reference. e = z(draw) - z_pool, where z_pool is the stored SOUTH6
+   all-NT reference and contains the draw's own cells (n/14013 of it). Same
+   draws as the primary. Reported to show how much that overlap shrinks e.
+R3 Full-gap plant. f * g including coordinates the panel cannot measure, as the
+   stored Stage 2C did. Same draws as the primary.
+R4 Mann-Whitney one-sided p and AUC (P(delta_dose < delta_0)) per condition.
+R5 Basis circularity. The S2 basis is fit on all 652 GTEx donors, which include
+   the 113 young and 231 old donors whose means are Y1 and O1. Report the gap
+   retention ||proj_k g|| / ||g|| in the SOUTH6 basis and in a basis refit
+   (same fit_pca, same centering rule) on the 308 donors aged 40-59 only, which
+   excludes every anchor donor. Diagnostic only; the gate uses the SOUTH6
+   basis.
+
+--- WHAT DOES NOT COUNT ---
+- any report-only reading as a pass or fail of the gate;
+- a separability call from the bootstrap CI instead of the point power;
+- choosing depth, dose, space, reference or plant after seeing results;
+- pooling spaces or depths;
+- reading recovery here as evidence about any factor's effect. A pass says
+  the readout could see a planted effect of that size; it says nothing about
+  whether any factor has one.
+
+--- STOP RULES ---
+On any STOP: write the findings with the key and exit. Never compute after a
+STOP; never resume a stopped run.
+
+--- OUTPUT ---
+FINDINGS_SOUTH6REC.md: this text verbatim; the reconnaissance of the SOUTH6
+space labels, origins, targets and basis; the Stage 0 table; Stage 1 per space
+and depth; the gate reading that fired per row; overlap; report-only readings
+labeled as such; limitations. Tables in results/south6rec/. Code
+src/south6rec_run.py, run from the repository root.
