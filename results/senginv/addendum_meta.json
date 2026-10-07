@@ -1,0 +1,15 @@
+{
+  "seed": 20260914,
+  "block": 2000,
+  "n_cells": 36514,
+  "n_genes": 36601,
+  "nnz": 148239518,
+  "n_guide_cols": 798,
+  "n_nt_positive": 4417,
+  "n_nt_positive_no_targeting": 1182,
+  "n_match_barcode": 6809,
+  "n_match_pd": 581,
+  "n_rows_qc_mismatch": 7113,
+  "qc_count_deficit_max": 22.0,
+  "qc_gene_deficit_max": 5.0
+}

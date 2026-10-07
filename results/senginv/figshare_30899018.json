@@ -1,0 +1,28 @@
+{
+  "id": 30899018,
+  "title": "Systematic identification of single transcription factor perturbations that drive cellular and tissue rejuvenation: Mouse liver RNAseq data",
+  "doi": "10.6084/m9.figshare.30899018.v2",
+  "version": 2,
+  "published_date": "2025-12-25T07:02:58Z",
+  "defined_type_name": "dataset",
+  "size": 1669672,
+  "is_public": true,
+  "url_public_html": "https://figshare.com/articles/dataset/Mouse_liver_RNAseq_data/30899018",
+  "license": "CC BY 4.0",
+  "description_text": "<p dir=\"ltr\">Mouse liver RNAseq data, raw count matrix, samples are from four groups of mice, young_GFP, young_EZH2, aged_GFP, and aged_EZH2. </p>",
+  "files": [
+    {
+      "name": "mouse_rnaseq_sample_name.csv",
+      "size": 233,
+      "computed_md5": "7f43663064a09f8e0e3aadf5918b1f9a",
+      "download_url": "https://ndownloader.figshare.com/files/60428894"
+    },
+    {
+      "name": "mouse_liver_raw_count_figshare.csv",
+      "size": 1669439,
+      "computed_md5": "818a9e405cfe609f7c7f56f0702d6400",
+      "download_url": "https://ndownloader.figshare.com/files/60428897"
+    }
+  ],
+  "downloaded_in_this_session": false
+}

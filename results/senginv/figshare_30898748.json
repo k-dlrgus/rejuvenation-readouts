@@ -1,0 +1,22 @@
+{
+  "id": 30898748,
+  "title": "Systematic identification of single transcription factor perturbations that drive cellular and tissue rejuvenation.",
+  "doi": "10.6084/m9.figshare.30898748.v2",
+  "version": 2,
+  "published_date": "2025-12-25T06:54:05Z",
+  "defined_type_name": "dataset",
+  "size": 1426871504,
+  "is_public": true,
+  "url_public_html": "https://figshare.com/articles/dataset/Single_Cell_Perturb-seq_data_in_h5ad_format_For_the_paper_published_in_PNAS_/30898748",
+  "license": "CC BY 4.0",
+  "description_text": "<p dir=\"ltr\">Data saved in h5ad format, is the combined file from single cell read matrix (from 10x cellranger) and the Perturb-seq UMI counts from individual guides. Each TF was targeted by two guides at the same time, but the guide UMIs are counted separately.</p><p dir=\"ltr\"><br></p>",
+  "files": [
+    {
+      "name": "exp3_merged_not_normalized.h5ad",
+      "size": 1426871504,
+      "computed_md5": "bfccaa94a916c22e4b0793913a04128b",
+      "download_url": "https://ndownloader.figshare.com/files/60428597"
+    }
+  ],
+  "downloaded_in_this_session": false
+}
