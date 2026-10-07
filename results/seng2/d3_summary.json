@@ -1,0 +1,41 @@
+{
+  "gate": "INSENSITIVE",
+  "monotonic": {
+    "160_CRA_i": true,
+    "160_CRA_ii": true,
+    "160_CRI_i": true,
+    "160_CRI_ii": true,
+    "100_CRA_i": true,
+    "100_CRA_ii": true,
+    "100_CRI_i": true,
+    "100_CRI_ii": true
+  },
+  "ci50_excludes_zero": {
+    "160_CRA_i": true,
+    "160_CRA_ii": false,
+    "160_CRI_i": true,
+    "160_CRI_ii": false,
+    "100_CRA_i": true,
+    "100_CRA_ii": false,
+    "100_CRI_i": false,
+    "100_CRI_ii": false
+  },
+  "power_25pct": {
+    "100_CRA_i": 0.0,
+    "100_CRA_ii": 0.0,
+    "100_CRI_i": 0.0,
+    "100_CRI_ii": 0.0,
+    "160_CRA_i": 0.0,
+    "160_CRA_ii": 0.0,
+    "160_CRI_i": 0.04,
+    "160_CRI_ii": 0.01
+  },
+  "power_25_at_100_origin_i_min": 0.0,
+  "a_norm": 82.86715006419293,
+  "n_spike": 291,
+  "gate_inputs": {
+    "mono_160_origin_i": true,
+    "ci50_160_origin_i": true,
+    "power25_100_origin_i": 0.0
+  }
+}

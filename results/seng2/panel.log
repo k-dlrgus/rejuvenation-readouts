@@ -1,0 +1,12 @@
+[     3.2s] [data] md5=bfccaa94a916c22e4b0793913a04128b expected=bfccaa94a916c22e4b0793913a04128b match=True
+[     5.1s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[     5.2s] [align index] overlap=16781 ensembl=0 symbol=16781
+[     5.3s] [align] ruler=23485 present=16781 dup_file_cols=10
+[     5.3s] [panel] qualifying perturbations n>=30: 340
+[     5.3s] [panel] 348 groups
+[     5.9s] [stream] rows 0-2000
+[     8.5s] [stream] rows 10000-12000
+[    11.6s] [stream] rows 20000-22000
+[    14.7s] [stream] rows 30000-32000
+[    19.2s] [panel] wrote panel_counts.npz C=(348, 23485)
+[    21.2s] [raw audit] {'dtype': 'float32', 'integer_dtype': False, 'n_seen': 148239518, 'n_fractional': 0, 'n_negative': 0, 'n_nonfinite': 0, 'min': 1.0, 'max': 2960.0, 'raw_integer_counts': True}

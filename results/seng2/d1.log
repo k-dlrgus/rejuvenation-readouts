@@ -1,0 +1,22 @@
+[     1.1s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[     1.2s] [align index] overlap=16781 ensembl=0 symbol=16781
+[     1.2s] [align] ruler=23485 present=16781 dup_file_cols=10
+[     1.2s] [panel] qualifying perturbations n>=30: 340
+[     4.1s] [stream] rows 0-2000
+[     5.8s] [stream] rows 10000-12000
+[     7.7s] [stream] rows 20000-22000
+[     9.7s] [stream] rows 30000-32000
+[    10.7s] [extra] streamed ['PD14_FULL', 'PD26_FULL', 'PD32_FULL', 'EARLY_B', 'LATE_B'] sizes=[581, 1880, 4348, 291, 2174]
+[    10.7s] [d1] medians={'PD14_FULL': 19853.0, 'PD32_FULL': 9139.5, 'NT_CRA': 19605.5, 'NT_CRI': 22220.0} sizes={'PD14_FULL': 581, 'PD32_FULL': 4348, 'NT_CRA': 666, 'NT_CRI': 1479}
+[    10.7s] [d1 raw] {'a_norm': 82.86715006419293, 'offset_A_norm': 103.18642773956209, 'offset_A_over_a': 1.2452030467999546, 'cos_offset_A_a': 0.13893385523334137, 'cos_t_A_a': 0.5569896933194847, 'angle_t_A_a_deg': 56.15213044278379, 't_A_norm': 123.03829437517096, 'offset_I_norm': 69.66593079645719, 'offset_I_over_a': 0.8406941802932835, 'cos_offset_I_a': 0.07953033031868599, 'cos_t_I_a': 0.7440050233348999, 'angle_t_I_a_deg': 41.92629099025705, 't_I_norm': 103.93289447077409, 'r': 0.7440050233348999}
+[    10.7s] [d1 thin A] target_median=9139.5 factors={'PD14_FULL': 0.4604, 'PD32_FULL': 1.0, 'NT_CRA': 0.4662}
+[    11.4s] [d1 thin A] 50/200
+[    12.1s] [d1 thin A] 100/200
+[    12.9s] [d1 thin A] 150/200
+[    13.6s] [d1 thin A] 200/200
+[    13.6s] [d1 thin I] target_median=9139.5 factors={'PD14_FULL': 0.4604, 'PD32_FULL': 1.0, 'NT_CRI': 0.4113}
+[    14.3s] [d1 thin I] 50/200
+[    15.1s] [d1 thin I] 100/200
+[    15.8s] [d1 thin I] 150/200
+[    16.5s] [d1 thin I] 200/200
+[    16.6s] [d1] gate=USABLE r=0.757055 (0.753166,0.760620) raw_r=0.744005 gate_raw=USABLE cos(a,v)=0.918322

@@ -1,0 +1,173 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "item": "cos_v_p_CRA",
+      "stored": 0.5667444435453722,
+      "got": 0.5667444435453722,
+      "kind": "numeric",
+      "ok": true
+    },
+    {
+      "item": "cos_v_p_CRI",
+      "stored": 0.6337418620832961,
+      "got": 0.6337418620832961,
+      "kind": "numeric",
+      "ok": true
+    },
+    {
+      "item": "cos_v_u",
+      "stored": -0.04027293769593313,
+      "got": -0.04027293769593313,
+      "kind": "numeric",
+      "ok": true
+    },
+    {
+      "item": "v_norm",
+      "stored": 90.14934904214671,
+      "got": 90.14934904214671,
+      "kind": "numeric",
+      "ok": true
+    },
+    {
+      "item": "frac50",
+      "stored": 0.5469054675795995,
+      "got": 0.5469054675795995,
+      "kind": "numeric",
+      "ok": true
+    },
+    {
+      "item": "delta50",
+      "stored": -34.052728101022154,
+      "got": -34.052728101022154,
+      "kind": "numeric",
+      "ok": true
+    },
+    {
+      "item": "frac0",
+      "stored": 0.033645346601332594,
+      "got": 0.033645346601332594,
+      "kind": "numeric",
+      "ok": true
+    },
+    {
+      "item": "delta0",
+      "stored": 20.63359395062885,
+      "got": 20.63359395062885,
+      "kind": "numeric",
+      "ok": true
+    },
+    {
+      "item": "posctrl_n_total",
+      "stored": 291,
+      "got": 291,
+      "kind": "count",
+      "ok": true
+    },
+    {
+      "item": "CRA_n",
+      "stored": 167,
+      "got": 167,
+      "kind": "count",
+      "ok": true
+    },
+    {
+      "item": "CRA_n_cos_q",
+      "stored": 0,
+      "got": 0,
+      "kind": "count",
+      "ok": true
+    },
+    {
+      "item": "CRA_n_toward_young",
+      "stored": 0,
+      "got": 0,
+      "kind": "count",
+      "ok": true
+    },
+    {
+      "item": "CRI_n",
+      "stored": 173,
+      "got": 173,
+      "kind": "count",
+      "ok": true
+    },
+    {
+      "item": "CRI_n_cos_q",
+      "stored": 25,
+      "got": 25,
+      "kind": "count",
+      "ok": true
+    },
+    {
+      "item": "CRI_n_toward_young",
+      "stored": 0,
+      "got": 0,
+      "kind": "count",
+      "ok": true
+    },
+    {
+      "item": "n_cells[CRA_E2F3]",
+      "stored": 128,
+      "got": 128,
+      "kind": "count",
+      "ok": true
+    },
+    {
+      "item": "n_cells[CRA_EZH2]",
+      "stored": 107,
+      "got": 107,
+      "kind": "count",
+      "ok": true
+    },
+    {
+      "item": "n_cells[CRI_STAT3]",
+      "stored": 96,
+      "got": 96,
+      "kind": "count",
+      "ok": true
+    },
+    {
+      "item": "n_cells[CRI_ZFX]",
+      "stored": 157,
+      "got": 157,
+      "kind": "count",
+      "ok": true
+    }
+  ],
+  "by_modality": {
+    "CRA": {
+      "n": 167,
+      "n_cos_q": 0,
+      "n_toward_young": 0
+    },
+    "CRI": {
+      "n": 173,
+      "n_cos_q": 25,
+      "n_toward_young": 0
+    }
+  },
+  "named_n_cells": {
+    "CRA_E2F3": 128,
+    "CRA_EZH2": 107,
+    "CRI_STAT3": 96,
+    "CRI_ZFX": 157
+  },
+  "posctrl": {
+    "frac50": 0.5469054675795995,
+    "delta50": -34.052728101022154,
+    "frac0": 0.033645346601332594,
+    "delta0": 20.63359395062885,
+    "n_total": 291,
+    "monotonic": true,
+    "frac50_ci_excludes_0": true
+  },
+  "axis": {
+    "cos_v_p_CRA": 0.5667444435453722,
+    "cos_v_p_CRI": 0.6337418620832961,
+    "cos_v_u": -0.04027293769593313,
+    "v_norm": 90.14934904214671
+  },
+  "v_max_abs_diff_vs_stored": 0.0,
+  "p_vu": 1.0
+}

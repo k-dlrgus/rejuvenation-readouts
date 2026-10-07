@@ -1,0 +1,11 @@
+{
+  "dtype": "float32",
+  "integer_dtype": false,
+  "n_seen": 148239518,
+  "n_fractional": 0,
+  "n_negative": 0,
+  "n_nonfinite": 0,
+  "min": 1.0,
+  "max": 2960.0,
+  "raw_integer_counts": true
+}

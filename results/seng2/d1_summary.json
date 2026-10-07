@@ -1,0 +1,97 @@
+{
+  "raw": {
+    "a_norm": 82.86715006419293,
+    "offset_A_norm": 103.18642773956209,
+    "offset_A_over_a": 1.2452030467999546,
+    "cos_offset_A_a": 0.13893385523334137,
+    "cos_t_A_a": 0.5569896933194847,
+    "angle_t_A_a_deg": 56.15213044278379,
+    "t_A_norm": 123.03829437517096,
+    "offset_I_norm": 69.66593079645719,
+    "offset_I_over_a": 0.8406941802932835,
+    "cos_offset_I_a": 0.07953033031868599,
+    "cos_t_I_a": 0.7440050233348999,
+    "angle_t_I_a_deg": 41.92629099025705,
+    "t_I_norm": 103.93289447077409,
+    "r": 0.7440050233348999
+  },
+  "thinned": {
+    "a_norm_A_median": 89.85144602795665,
+    "a_norm_A_lo": 89.14175161842336,
+    "a_norm_A_hi": 90.52218111546735,
+    "offset_norm_A_median": 107.97988090350049,
+    "offset_norm_A_lo": 107.48874646921549,
+    "offset_norm_A_hi": 108.6697732552707,
+    "offset_over_a_A_median": 1.2020912776048758,
+    "offset_over_a_A_lo": 1.1900275426227556,
+    "offset_over_a_A_hi": 1.2153523252896488,
+    "cos_offset_a_A_median": 0.11740530308956253,
+    "cos_offset_a_A_lo": 0.1088626401993855,
+    "cos_offset_a_A_hi": 0.1262753024258653,
+    "cos_t_a_A_median": 0.5841553868549711,
+    "cos_t_a_A_lo": 0.5765643455178235,
+    "cos_t_a_A_hi": 0.589673911272483,
+    "t_norm_A_median": 132.1404976087282,
+    "t_norm_A_lo": 131.20203023910418,
+    "t_norm_A_hi": 133.05025172439304,
+    "a_norm_I_median": 89.88498157872422,
+    "a_norm_I_lo": 89.28439831961983,
+    "a_norm_I_hi": 90.55570354524743,
+    "offset_norm_I_median": 73.50853783282702,
+    "offset_norm_I_lo": 72.99442768051934,
+    "offset_norm_I_hi": 73.98182553767991,
+    "offset_over_a_I_median": 0.8177362318613802,
+    "offset_over_a_I_lo": 0.810238963194678,
+    "offset_over_a_I_hi": 0.8247376237323686,
+    "cos_offset_a_I_median": 0.06721064793134646,
+    "cos_offset_a_I_lo": 0.05785680963925331,
+    "cos_offset_a_I_hi": 0.07624593492065287,
+    "cos_t_a_I_median": 0.7570551674959426,
+    "cos_t_a_I_lo": 0.7531662925185686,
+    "cos_t_a_I_hi": 0.7606204195651558,
+    "t_norm_I_median": 112.23638873855657,
+    "t_norm_I_lo": 111.40059371677879,
+    "t_norm_I_hi": 113.02758462308822
+  },
+  "r_primary": 0.7570551674959426,
+  "r_library": "I",
+  "r_ci": [
+    0.7531662925185686,
+    0.7606204195651558
+  ],
+  "r_angle_deg": 40.79472875738915,
+  "gate": "USABLE",
+  "pct_library": 65.33509572715802,
+  "medians": {
+    "PD14_FULL": 19853.0,
+    "PD32_FULL": 9139.5,
+    "NT_CRA": 19605.5,
+    "NT_CRI": 22220.0
+  },
+  "sizes": {
+    "PD14_FULL": 581,
+    "PD32_FULL": 4348,
+    "NT_CRA": 666,
+    "NT_CRI": 1479
+  },
+  "targets": {
+    "A": 9139.5,
+    "I": 9139.5
+  },
+  "factors": {
+    "A": {
+      "PD14_FULL": 0.4603586359744119,
+      "PD32_FULL": 1.0,
+      "NT_CRA": 0.4661702073397771
+    },
+    "I": {
+      "PD14_FULL": 0.4603586359744119,
+      "PD32_FULL": 1.0,
+      "NT_CRI": 0.41131863186318635
+    }
+  },
+  "r_raw": 0.7440050233348999,
+  "gate_raw": "USABLE",
+  "cos_a_v": 0.9183220886250161,
+  "a_vs_v_note": "a is the full-arm axis; v is SENG's half-A axis"
+}

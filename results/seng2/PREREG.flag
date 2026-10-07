@@ -1,0 +1,206 @@
+PREREG written 2026-10-06T06:01:09Z (local 2026-10-06 15:01:09 KST)
+Written before any SENG2 number exists. Reproduced verbatim at the top of
+FINDINGS_SENG2.md. Not edited after this timestamp.
+
+TASK: SENG2 — do Junevity's four factors approach young, once the library
+structure is accounted for?
+Written before any SENG2 number exists.
+
+Nature: computational. No new data. Reads results/seng/, results/seng_why/,
+results/senginv/ and the Sengstack h5ad already on disk
+(data/raw/seng/exp3_merged_not_normalized.h5ad, md5
+bfccaa94a916c22e4b0793913a04128b). Writes only results/seng2/ and
+FINDINGS_SENG2.md. No earlier findings file is regenerated, no earlier
+results directory is written, nothing is committed or pushed.
+
+--- THE QUESTION ---
+
+SENG ran the gated test and recorded n_toward_young = 0 across 340
+perturbations, but its reading is reproduction_pass = False: only 1 of 4
+named hits reproduced Junevity's own direction result, and all four were
+labelled not_interpreted. SENG_WHY tested four explanations for that failure
+(metric, reference, gene space, file) and fired `unexplained`.
+
+SENGINV established a structure neither task had: the cells sit in three
+barcode groups. All 6,809 passage cells (PD14/PD26/PD32, all WT) carry
+suffix -1 and zero guide reads; all 14,333 CRISPRa cells carry _A; all 15,372
+CRISPRi cells carry _I. No cell population appears in more than one group.
+The SENGINV addendum adds two measured signs that the groups were processed
+differently: the stored n_counts/n_genes disagree with .X on 7,113 rows, of
+which 2,349 are _A and 4,764 are _I and 0 are -1; and median n_counts is
+9,140 in PD32 against 19,611 in _A and 21,867 in _I.
+
+The aging axis is therefore fitted entirely inside one group while every
+perturbation displacement is measured in another. If the between-group offset
+is large relative to the aging gap, the vector from a perturbation's own
+control to the young target is mostly library difference, a genuine
+anti-aging displacement is near-orthogonal to it, and no approach can
+register whatever the biology. That is the same failure the preprint
+discloses for its own GTEx-anchored control, in a different dataset. This
+task measures the offset, gates on it, and only then reports the four.
+
+--- STATE THE METHOD BEFORE USING IT ---
+
+Report, before any SENG2 number:
+ (a) exactly what coordinate space SENG used — what the basis is, what it was
+     fit on, whether any anchor cell entered that fit, and whether it is
+     refit here or read frozen. If it was fit on cells the test is applied
+     to, say so plainly and label every SENG2 number as carrying that
+     circularity. Do not refit to remove it; report it.
+ (b) exactly how SENG assigned a cell to a perturbation, including the 804
+     vs 798 guide-column question and the 270 modality disagreements it
+     dropped.
+ (c) the documented source for the claim that the NT control cells are
+     late-passage cells of the same line as PD32. Cite the paper, by
+     section. If no source can be given, STOP `nt_passage_unsourced` — the
+     offset estimate in D1 depends on it entirely.
+
+--- STAGE 0: REPRODUCE FIRST (gate) ---
+
+Re-derive with this task's code, from stored files:
+ (a) SENG's axis numbers: cos(v, p_CRA) = +0.5667444435453722,
+     cos(v, p_CRI) = +0.6337418620832961, cos(v, u) = -0.04027293769593313,
+     ||v|| = 90.14934904214671;
+ (b) SENG's positive control: frac50 = 0.5469054675795995,
+     delta50 = -34.052728101022154, frac0 = 0.033645346601332594,
+     delta0 = +20.63359395062885, n_total 291;
+ (c) SENG's screen counts: CRA n=167 with n_toward_young 0 and n_cos_q 0;
+     CRI n=173 with n_toward_young 0 and n_cos_q 25;
+ (d) the four named hits' cell counts under SENG's own rule: CRA_E2F3 128,
+     CRA_EZH2 107, CRI_STAT3 96, CRI_ZFX 157.
+Pass: counts exact, numerics within 1e-4 * max(1, |stored|).
+Fail -> STOP `prior_results_not_reproduced`, naming every mismatch.
+
+--- D1. How much of the target direction is library offset? (gated) ---
+
+Let a = centroid(PD14) - centroid(PD32), the aging axis, the quantity the
+whole test is scaled against.
+Let offset_A = centroid(NT cells in _A) - centroid(PD32), and offset_I the
+same for _I. Under the assumption sourced in (c) above, NT and PD32 are the
+same biology in different libraries, so each offset estimates its library's
+displacement.
+
+Depth is confounded with group, so compute every centroid twice: raw, and
+with cells subsampled to a common median n_counts across the groups entering
+that comparison, 200 draws, seed 20260914. Report both. Where they disagree,
+the depth-matched version is primary and that is said.
+
+Report:
+ - ||offset_A|| / ||a|| and ||offset_I|| / ||a||;
+ - cos(offset_A, a) and cos(offset_I, a);
+ - the angle between (PD14 - NT_A) and a, and between (PD14 - NT_I) and a.
+   This is the gate quantity: it is how far the apparent target direction
+   from a perturbation's own origin has been rotated away from aging.
+
+Gate, wording fixed now. Let r be the larger of the two cosines between
+(PD14 - NT) and a, over the two libraries, depth-matched.
+ - USABLE (r >= 0.70): "the library offset rotates the target direction by
+   less than 45 degrees (cos <r>); the apparent target direction is
+   dominated by aging and the approach test can be read."
+ - DEGRADED (0.40 <= r < 0.70): "the library offset rotates the target
+   direction substantially (cos <r>). D2 is run and reported, and every
+   number it produces is labelled as carrying a target direction that is
+   <pct>% library difference."
+ - UNUSABLE (r < 0.40): "the vector from a perturbation's control to the
+   young target is mostly library difference, not aging (cos <r>). This
+   dataset cannot answer whether these factors approach young, and SENG's
+   zero is a statement about its own geometry rather than about the
+   factors."
+If UNUSABLE fires, D2 and D3 are still run to the end and reported, and
+nothing in them is a conclusion about any factor. That is said in the
+gate sentence and repeated wherever a factor is named.
+
+--- D2. The approach test, run two ways (gated) ---
+
+For every perturbation, and separately for the four named factors, compute
+the change in distance to the PD14 target, with a depth-matched noise floor
+built at each perturbation's own cell count from NT draws in its own library
+(200 draws, the floor at the 5th percentile), exactly as the Southard work
+builds floors. Report the chance baseline beside every count.
+
+Two pre-specified origins, both reported, neither privileged:
+ (i) as-measured: origin is the NT centroid of the perturbation's own
+     library;
+ (ii) offset-corrected: the perturbation-minus-NT displacement is applied to
+     the PD32 origin, i.e. the library offset of D1 is subtracted. This
+     transplants a displacement onto a different origin within the same cell
+     line and experiment; label it as such wherever it appears.
+
+Report for each: count below floor, count with distance decreased, count
+called approaching (both), against the 5% chance baseline with its binomial
+interval; and the four factors individually, with cell count and its
+percentile in the screen.
+
+Gate, wording fixed now, applied to the four named factors under whichever
+origin D1's reading licenses:
+ - APPROACH (two or more of the four called under both origins): "of
+   Junevity's four validated factors, <k> end closer to early-passage cells
+   than their own controls do, in their own data, with their own
+   perturbations: <list>."
+ - NO APPROACH (fewer than two under both origins): "none of Junevity's
+   four validated factors measurably approaches early-passage cells in their
+   own data, with their own perturbations, against a floor built at each
+   factor's own depth."
+ - SPLIT (the two origins disagree): report both, name which factor is which
+   under each, and draw no single conclusion.
+
+--- D3. Could the statistic have seen an approach across the gap? (gated) ---
+
+SENG's positive control ran entirely inside the -1 group and so never tested
+sensitivity across a library boundary. A null is not a null unless the
+statistic could have seen the effect.
+
+Split PD14 in half by the stored SENG split (A 290, B 291). Half A is the
+target. Half B is the spike material.
+ (a) Mixture control across the gap: mix half B into NT_A cells, and
+     separately into NT_I cells, at 0/10/25/50%, at fixed total cell count,
+     and ask whether progress rises monotonically and distance falls. The
+     zero-dose point is the noise floor and is reported, not subtracted.
+ (b) Plant recovery: displace NT cells along a by 0/25/50/100% of ||a||,
+     200 draws per dose, at 100 cells and at 160 cells, the depths of the
+     four factors.
+
+Gate, wording fixed now:
+ - SENSITIVE (mixture monotonic with the 50% interval excluding zero, AND
+   power at a 25% plant >= 0.80 at 100 cells): "the statistic detects a
+   known approach across the library boundary at the depth of these
+   factors, power <p>, so a null in D2 is a null and not an insensitive
+   assay."
+ - INSENSITIVE (either condition fails): "the statistic cannot reliably
+   detect a 25% approach across the library boundary at <n> cells, power
+   <p>. D2's counts cannot be read as evidence of absence, and that applies
+   to SENG's zero as well."
+If INSENSITIVE fires, D2's reading is reported but carries no conclusion,
+and that is said in the gate sentence.
+
+--- D4. Report-only, no decision rule ---
+ - Proliferation: the stored rho_prolif (+0.828 CRA, +0.862 CRI) beside
+   every result, and a proliferation-residualized version of D2 computed
+   with the null residualized identically. Reported beside the distance
+   result, never in place of it.
+ - Identity: the fibroblast identity score change for the four and for the
+   screen, using the ten identity genes SENG already found present.
+ - The frozen ruler applied to the four: how many of the 340 perturbations
+   score younger on a one-dimensional ruler while not approaching. This is
+   the preprint's thesis in this dataset and is a diagnostic, not evidence
+   about any factor.
+ - The SENG_WHY finding that recomputed R_rej is roughly half the published
+   value for all four, restated with its numbers, labelled post-hoc and
+   unexplained. No claim is made about it in this task.
+
+--- WHAT DOES NOT COUNT ---
+- choosing a space, an origin, a criterion, a null or a factor set after
+  seeing a number;
+- treating any factor called here as validated or as a pilot candidate in
+  this findings file;
+- reading a null as evidence about transcription factors in aged human
+  cells: this dataset is passaged neonatal-line fibroblasts and its "old" is
+  passage number, which this project has already found does not resemble
+  donor aging (cos(v,u) = -0.040, p = 1.0);
+- refitting any axis or offset to avoid reporting a circularity;
+- any claim about Junevity's published numbers being unreproducible.
+
+--- STOP KEYS ---
+prior_results_not_reproduced; nt_passage_unsourced; no_raw_counts.
+Seeds: 20260914 splits/nulls/permutations, 20260918 bootstraps.
+n_null = n_perm = n_boot = 200.

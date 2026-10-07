@@ -1,0 +1,38 @@
+{
+  "A:PD14_FULL": {
+    "factor": 0.4603586359744119,
+    "median_before": 19853.0,
+    "median_expected_after": 9139.5,
+    "target": 9139.5
+  },
+  "A:PD32_FULL": {
+    "factor": 1.0,
+    "median_before": 9139.5,
+    "median_expected_after": 9139.5,
+    "target": 9139.5
+  },
+  "A:NT_CRA": {
+    "factor": 0.4661702073397771,
+    "median_before": 19605.5,
+    "median_expected_after": 9139.5,
+    "target": 9139.5
+  },
+  "I:PD14_FULL": {
+    "factor": 0.4603586359744119,
+    "median_before": 19853.0,
+    "median_expected_after": 9139.5,
+    "target": 9139.5
+  },
+  "I:PD32_FULL": {
+    "factor": 1.0,
+    "median_before": 9139.5,
+    "median_expected_after": 9139.5,
+    "target": 9139.5
+  },
+  "I:NT_CRI": {
+    "factor": 0.41131863186318635,
+    "median_before": 22220.0,
+    "median_expected_after": 9139.5,
+    "target": 9139.5
+  }
+}

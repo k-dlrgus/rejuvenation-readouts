@@ -1,0 +1,16 @@
+[     1.1s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[     1.2s] [align index] overlap=16781 ensembl=0 symbol=16781
+[     1.2s] [align] ruler=23485 present=16781 dup_file_cols=10
+[     1.2s] [panel] qualifying perturbations n>=30: 340
+[     4.1s] [nt dense] CRA (666, 16781)
+[     4.5s] [nt dense] CRI (1479, 16781)
+[     4.6s] [d3] spike material EARLY_B n=291 ||a||=82.8672
+[    22.0s] [d3a] n_tot=160 CRA done
+[    39.5s] [d3a] n_tot=160 CRI done
+[    53.2s] [d3a] n_tot=100 CRA done
+[    67.0s] [d3a] n_tot=100 CRI done
+[    70.9s] [d3b] n=100 CRA done
+[    74.7s] [d3b] n=100 CRI done
+[    79.0s] [d3b] n=160 CRA done
+[    83.4s] [d3b] n=160 CRI done
+[    83.5s] [d3] gate=INSENSITIVE mono=True ci50=True power25@100=0.000

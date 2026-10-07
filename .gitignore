@@ -99,3 +99,10 @@ paper/rejuvenation_readouts_preprint_10.docx
 paper/rejuvenation_readouts_preprint_11.docx
 paper/orphan_images/
 paper/
+
+# SENG2 regenerable numeric packs, each at least 1 MB. Deterministic from the
+# frozen instruments plus data/raw/seng/exp3_merged_not_normalized.h5ad
+# (figshare 10.6084/m9.figshare.30898748 v2).
+# Rebuild: python src/seng2_run.py panel && python src/seng2_run.py stage0
+results/seng2/panel_counts.npz
+results/seng2/stage0_space.npz

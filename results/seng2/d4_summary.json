@@ -1,0 +1,158 @@
+{
+  "rho_prolif_stored": {
+    "CRA": 0.8280530161707566,
+    "CRI": 0.8620017521821158
+  },
+  "n": 340,
+  "ruler_origin_i": {
+    "n_scores_younger": 181,
+    "n_younger_and_not_called": 179,
+    "n_younger_and_called": 2,
+    "n_called": 3,
+    "n_not_younger_and_called": 1
+  },
+  "resid_origin_i": {
+    "called_plain": 3,
+    "called_resid": 0,
+    "called_both": 0
+  },
+  "ruler_origin_ii": {
+    "n_scores_younger": 181,
+    "n_younger_and_not_called": 181,
+    "n_younger_and_called": 0,
+    "n_called": 0,
+    "n_not_younger_and_called": 0
+  },
+  "resid_origin_ii": {
+    "called_plain": 0,
+    "called_resid": 0,
+    "called_both": 0
+  },
+  "identity": {
+    "screen_median": -0.047167622550414595,
+    "screen_lo": -0.3561044980099857,
+    "screen_hi": 0.2714737230852455,
+    "n_identity_loss": 1,
+    "n_genes": 10
+  },
+  "named": {
+    "CRA_E2F3": {
+      "n_cells": 128,
+      "identity_diff": -0.2154453895454258,
+      "ruler_change": -1.0060344574754545,
+      "ruler_scores_younger": true,
+      "prolif_shift": 0.1653617630449885,
+      "delta_i": 0.9256689844563084,
+      "delta_ii": 21.596071259581294,
+      "delta_resid_i": 15.80959140245278,
+      "delta_resid_ii": 35.79392226133784,
+      "called_delta_i": false,
+      "called_delta_ii": false,
+      "called_delta_resid_i": false,
+      "called_delta_resid_ii": false,
+      "cell_pctl_in_screen": 96.47058823529412,
+      "seng_cos": 0.2479484231729093,
+      "seng_delta": 21.596071259581294,
+      "seng_q_cos": 0.0923161967938087
+    },
+    "CRA_EZH2": {
+      "n_cells": 107,
+      "identity_diff": -0.329785420976751,
+      "ruler_change": -0.6785294625103271,
+      "ruler_scores_younger": true,
+      "prolif_shift": 0.1484395660210608,
+      "delta_i": 8.313985302346424,
+      "delta_ii": 24.42608592851072,
+      "delta_resid_i": 19.88332424461659,
+      "delta_resid_ii": 36.25788438899325,
+      "called_delta_i": false,
+      "called_delta_ii": false,
+      "called_delta_resid_i": false,
+      "called_delta_resid_ii": false,
+      "cell_pctl_in_screen": 89.41176470588236,
+      "seng_cos": 0.197268811884924,
+      "seng_delta": 24.42608592851072,
+      "seng_q_cos": 0.0923161967938087
+    },
+    "CRI_STAT3": {
+      "n_cells": 96,
+      "identity_diff": -0.1476652760968552,
+      "ruler_change": -0.9328821173982726,
+      "ruler_scores_younger": true,
+      "prolif_shift": 0.0573722550339372,
+      "delta_i": 16.109180179841644,
+      "delta_ii": 28.007123546787295,
+      "delta_resid_i": 33.36548264613781,
+      "delta_resid_ii": 43.24146108704568,
+      "called_delta_i": false,
+      "called_delta_ii": false,
+      "called_delta_resid_i": false,
+      "called_delta_resid_ii": false,
+      "cell_pctl_in_screen": 82.35294117647058,
+      "seng_cos": 0.154649062764146,
+      "seng_delta": 28.007123546787295,
+      "seng_q_cos": 0.1000809903968529
+    },
+    "CRI_ZFX": {
+      "n_cells": 157,
+      "identity_diff": -0.0380105707094288,
+      "ruler_change": 0.5115861773833217,
+      "ruler_scores_younger": false,
+      "prolif_shift": 0.1287916158894769,
+      "delta_i": -0.337448874807805,
+      "delta_ii": 13.12480896622762,
+      "delta_resid_i": 22.25313401186176,
+      "delta_resid_ii": 32.03208540425105,
+      "called_delta_i": true,
+      "called_delta_ii": false,
+      "called_delta_resid_i": false,
+      "called_delta_resid_ii": false,
+      "cell_pctl_in_screen": 99.41176470588236,
+      "seng_cos": 0.3164788355935884,
+      "seng_delta": 13.12480896622762,
+      "seng_q_cos": 0.0344278606965174
+    }
+  },
+  "rrej_seng_why": [
+    {
+      "perturbation": "CRA_E2F3",
+      "n_cells": 128,
+      "R_rej_recomputed": -0.2809089293905073,
+      "published_table1": -0.53,
+      "ratio": 0.5300168479066175
+    },
+    {
+      "perturbation": "CRA_EZH2",
+      "n_cells": 107,
+      "R_rej_recomputed": -0.2029767939421464,
+      "published_table1": -0.36,
+      "ratio": 0.5638244276170734
+    },
+    {
+      "perturbation": "CRI_STAT3",
+      "n_cells": 96,
+      "R_rej_recomputed": -0.1548712170415503,
+      "published_table1": -0.41,
+      "ratio": 0.3777346757110983
+    },
+    {
+      "perturbation": "CRI_ZFX",
+      "n_cells": 157,
+      "R_rej_recomputed": -0.355302235258252,
+      "published_table1": -0.51,
+      "ratio": 0.6966710495259842
+    }
+  ],
+  "identity_genes_used": [
+    "COL1A1",
+    "COL1A2",
+    "FN1",
+    "LUM",
+    "PDGFRA",
+    "PDGFRB",
+    "POSTN",
+    "PRRX1",
+    "SERPINH1",
+    "VIM"
+  ]
+}

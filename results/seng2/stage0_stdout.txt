@@ -1,0 +1,33 @@
+[     1.3s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[     1.4s] [align index] overlap=16781 ensembl=0 symbol=16781
+[     1.4s] [align] ruler=23485 present=16781 dup_file_cols=10
+[     1.4s] [panel] qualifying perturbations n>=30: 340
+[     4.0s] [panel z] rows=(348, 23485) n_missing_z0=7077 ref=239
+[     4.1s] [axis] max|v_seng2 - v_stored|=0.000e+00
+[     4.1s] [axis] {'cos_v_p_CRA': 0.5667444435453722, 'cos_v_p_CRI': 0.6337418620832961, 'cos_v_u': -0.04027293769593313, 'v_norm': 90.14934904214671}
+[     6.1s] [P boot] 50/200
+[     7.6s] [P boot] 100/200
+[     9.0s] [P boot] 150/200
+[    10.5s] [P boot] 200/200
+[    10.5s] [P] {'frac50': 0.5469054675795995, 'delta50': -34.052728101022154, 'frac0': 0.033645346601332594, 'delta0': 20.63359395062885, 'n_total': 291, 'monotonic': True, 'frac50_ci_excludes_0': True}
+[    10.7s] [NT dense] CRA (666, 16781)
+[    11.2s] [NT dense] CRI (1479, 16781)
+[    59.8s] [screen] 20/340 last=CRA_CREB1
+[   108.9s] [screen] 40/340 last=CRA_FERD3L
+[   157.2s] [screen] 60/340 last=CRA_HMGB1
+[   206.2s] [screen] 80/340 last=CRA_JUND
+[   256.1s] [screen] 100/340 last=CRA_NKX2-2
+[   305.6s] [screen] 120/340 last=CRA_PPARGC1B
+[   354.8s] [screen] 140/340 last=CRA_TFAM
+[   404.5s] [screen] 160/340 last=CRA_ZNF219
+[   455.3s] [screen] 180/340 last=CRI_BSX
+[   506.3s] [screen] 200/340 last=CRI_EGR2
+[   556.5s] [screen] 220/340 last=CRI_GABARAPL1
+[   604.2s] [screen] 240/340 last=CRI_IRF4
+[   654.0s] [screen] 260/340 last=CRI_NFE2L2
+[   702.5s] [screen] 280/340 last=CRI_PGR
+[   750.5s] [screen] 300/340 last=CRI_SOX7
+[   799.2s] [screen] 320/340 last=CRI_TLX2
+[   850.4s] [screen] 340/340 last=CRI_ZNF695
+[   850.5s] [screen] by_modality={'CRA': {'n': 167, 'n_cos_q': 0, 'n_toward_young': 0}, 'CRI': {'n': 173, 'n_cos_q': 25, 'n_toward_young': 0}} named={'CRA_E2F3': 128, 'CRA_EZH2': 107, 'CRI_STAT3': 96, 'CRI_ZFX': 157}
+[   852.1s] [stage0] PASS=True
