@@ -1,3 +1,4 @@
+> Correction notice added 2026-10-07: see results/seng/CORRECTION.md. The text below is unchanged.
 # FINDINGS_SENG — do Sengstack et al. (PNAS 2026) "rejuvenating" TF perturbations move fibroblasts TOWARD young cells?
 
 **Status:** DONE.

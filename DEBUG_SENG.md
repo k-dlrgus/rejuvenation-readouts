@@ -1,3 +1,4 @@
+> Correction notice added 2026-10-07: see results/seng/CORRECTION.md. The text below is unchanged.
 # DEBUG_SENG — why the four named hits missed our cosine gate
 
 Diagnostic only. `FINDINGS_SENG.md` is unchanged. Its fired key `pipeline_disagrees` stands. No gate in that file was re-run, re-tuned, or overturned.
