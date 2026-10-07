@@ -1,0 +1,14 @@
+[     2.5s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[     2.6s] [align index] overlap=16781 ensembl=0 symbol=16781
+[     2.6s] [align] ruler=23485 present=16781 dup_file_cols=10
+[     2.7s] [panel] qualifying perturbations n>=30: 340
+[     7.9s] [basis] S2A_k20 read frozen from results/south7/basis.npz L=(23485, 20) n_mid=308 max|LtL-I|=3.553e-15
+[    13.2s] [d3] half_A S2A_k20 A cos_t_a raw=0.806721 thin=0.811375
+[    18.5s] [d3] half_A S2A_k20 I cos_t_a raw=0.888269 thin=0.887005
+[    24.1s] [d3] half_A S1 A cos_t_a raw=0.587166 thin=0.644549
+[    29.3s] [d3] half_A S1 I cos_t_a raw=0.758489 thin=0.793429
+[    34.5s] [d3] full_arms S2A_k20 A cos_t_a raw=0.807941 thin=0.811142
+[    40.0s] [d3] full_arms S2A_k20 I cos_t_a raw=0.889876 thin=0.888278
+[    45.1s] [d3] full_arms S1 A cos_t_a raw=0.556990 thin=0.584155
+[    50.4s] [d3] full_arms S1 I cos_t_a raw=0.744005 thin=0.757055
+[    50.4s] [d3] gate=USABLE r=0.887005 (I) per_lib={'A': 0.8113749439488713, 'I': 0.8870051421773981} full_arms_r=0.888278

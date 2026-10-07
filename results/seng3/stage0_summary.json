@@ -1,0 +1,152 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "item": "SOUTH8 primary_304 m",
+      "kind": "count",
+      "stored": 304,
+      "got": 304,
+      "ok": true
+    },
+    {
+      "item": "SOUTH8 primary_304 below_depth_floor_S2A_k20",
+      "kind": "count",
+      "stored": 27,
+      "got": 27,
+      "ok": true
+    },
+    {
+      "item": "SOUTH8 primary_304 amended_call_S2A_k20",
+      "kind": "count",
+      "stored": 24,
+      "got": 24,
+      "ok": true
+    },
+    {
+      "item": "SOUTH8 all_1836 m",
+      "kind": "count",
+      "stored": 1836,
+      "got": 1836,
+      "ok": true
+    },
+    {
+      "item": "SOUTH8 all_1836 below_depth_floor_S2A_k20",
+      "kind": "count",
+      "stored": 153,
+      "got": 153,
+      "ok": true
+    },
+    {
+      "item": "SOUTH8 all_1836 amended_call_S2A_k20",
+      "kind": "count",
+      "stored": 125,
+      "got": 125,
+      "ok": true
+    },
+    {
+      "item": "SOUTH8 D2 frac_p_le_05 S2A_k20@106",
+      "kind": "numeric",
+      "stored": 0.035,
+      "got": 0.035,
+      "ok": true
+    },
+    {
+      "item": "SOUTH8 D2 frac_p_le_05 S1@106",
+      "kind": "numeric",
+      "stored": 0.12,
+      "got": 0.12,
+      "ok": true
+    },
+    {
+      "item": "SENG2 D1 cos(PD14-NT_A, a) depth-matched median",
+      "kind": "numeric",
+      "stored": 0.584155,
+      "got": 0.5841553868549711,
+      "ok": true
+    },
+    {
+      "item": "SENG2 D1 cos(PD14-NT_I, a) depth-matched median",
+      "kind": "numeric",
+      "stored": 0.757055,
+      "got": 0.7570551674959426,
+      "ok": true
+    },
+    {
+      "item": "SENG2 D2 n",
+      "kind": "count",
+      "stored": 340,
+      "got": 340,
+      "ok": true
+    },
+    {
+      "item": "SENG2 D2 below_floor origin(i)",
+      "kind": "count",
+      "stored": 131,
+      "got": 131,
+      "ok": true
+    },
+    {
+      "item": "SENG2 D2 called origin(i)",
+      "kind": "count",
+      "stored": 3,
+      "got": 3,
+      "ok": true
+    },
+    {
+      "item": "SENG2 D3 power_25@100 CRA",
+      "kind": "numeric",
+      "stored": 0.0,
+      "got": 0.0,
+      "ok": true
+    },
+    {
+      "item": "SENG2 D3 power_25@100 CRI",
+      "kind": "numeric",
+      "stored": 0.0,
+      "got": 0.0,
+      "ok": true
+    },
+    {
+      "item": "n_cells[CRI_STAT3]",
+      "kind": "count",
+      "stored": 96,
+      "got": 96,
+      "ok": true
+    },
+    {
+      "item": "n_cells[CRA_EZH2]",
+      "kind": "count",
+      "stored": 107,
+      "got": 107,
+      "ok": true
+    },
+    {
+      "item": "n_cells[CRA_E2F3]",
+      "kind": "count",
+      "stored": 128,
+      "got": 128,
+      "ok": true
+    },
+    {
+      "item": "n_cells[CRI_ZFX]",
+      "kind": "count",
+      "stored": 157,
+      "got": 157,
+      "ok": true
+    }
+  ],
+  "south9_raw_power_25_at_106": {
+    "S2A_k20": 0.98,
+    "S2A_k50": 0.955,
+    "S2A_k100": 0.93,
+    "S1": 0.115
+  },
+  "basis_orthonormality_err": 3.552713678800501e-15,
+  "basis_n_mid": 308,
+  "medians": {
+    "PD14_FULL": 19853.0,
+    "PD32_FULL": 9139.5,
+    "NT_CRA": 19605.5,
+    "NT_CRI": 22220.0
+  }
+}

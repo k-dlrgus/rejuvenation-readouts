@@ -1,0 +1,22 @@
+[     2.0s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[     2.2s] [align index] overlap=16781 ensembl=0 symbol=16781
+[     2.2s] [align] ruler=23485 present=16781 dup_file_cols=10
+[     2.2s] [panel] qualifying perturbations n>=30: 340
+[     7.4s] [basis] S2A_k20 read frozen from results/south7/basis.npz L=(23485, 20) n_mid=308 max|LtL-I|=3.553e-15
+[     7.8s] [nt dense] CRA (666, 16781)
+[     8.6s] [nt dense] CRI (1479, 16781)
+[     8.8s] [eb dense] (291, 16781)
+[     8.9s] [d2] ||a|| {"half_A": {"S2A_k20": 40.638003130590455, "S1": 90.14934904214671}, "full_arms": {"S2A_k20": 39.86158730052342, "S1": 82.86715006419293}}
+[    18.5s] [d2 plant] CRA n=96 done
+[    28.3s] [d2 plant] CRA n=107 done
+[    38.9s] [d2 plant] CRA n=128 done
+[    49.5s] [d2 plant] CRA n=157 done
+[    58.9s] [d2 plant] CRI n=96 done
+[    68.5s] [d2 plant] CRI n=107 done
+[    78.2s] [d2 plant] CRI n=128 done
+[    88.7s] [d2 plant] CRI n=157 done
+[   110.0s] [d2 mix] CRA n_tot=96 done
+[   137.0s] [d2 mix] CRA n_tot=157 done
+[   160.2s] [d2 mix] CRI n_tot=96 done
+[   189.0s] [d2 mix] CRI n_tot=157 done
+[   189.0s] [d2] gate=LIMITED (origin ii: LIMITED) p25=0.565 p50=0.940

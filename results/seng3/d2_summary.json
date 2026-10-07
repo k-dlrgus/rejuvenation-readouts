@@ -1,0 +1,26 @@
+{
+  "gate": "LIMITED",
+  "gate_origin_ii": "LIMITED",
+  "origins_agree": true,
+  "p25": 0.565,
+  "p50": 0.94,
+  "p25_origin_ii": 0.755,
+  "p50_origin_ii": 0.995,
+  "a_norms": {
+    "half_A": {
+      "S2A_k20": 40.638003130590455,
+      "S1": 90.14934904214671
+    },
+    "full_arms": {
+      "S2A_k20": 39.86158730052342,
+      "S1": 82.86715006419293
+    }
+  },
+  "mixture_frac_monotonic": {
+    "CRA_96": true,
+    "CRA_157": true,
+    "CRI_96": true,
+    "CRI_157": true
+  },
+  "p25_S1_origin_i": 0.0
+}

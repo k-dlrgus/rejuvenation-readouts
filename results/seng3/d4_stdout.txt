@@ -1,0 +1,18 @@
+[     2.1s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[     2.3s] [align index] overlap=16781 ensembl=0 symbol=16781
+[     2.3s] [align] ruler=23485 present=16781 dup_file_cols=10
+[     2.4s] [panel] qualifying perturbations n>=30: 340
+[     7.5s] [basis] S2A_k20 read frozen from results/south7/basis.npz L=(23485, 20) n_mid=308 max|LtL-I|=3.553e-15
+[     8.1s] [nt dense] CRA (666, 16781)
+[     9.4s] [nt dense] CRI (1479, 16781)
+[     9.4s] [d4] CRA: 81 distinct cell counts 30-187
+[    75.8s] [d4 floors] CRA 20/81
+[   145.8s] [d4 floors] CRA 40/81
+[   228.8s] [d4 floors] CRA 60/81
+[   312.2s] [d4 floors] CRA 80/81
+[   317.8s] [d4] CRI: 80 distinct cell counts 30-194
+[   383.1s] [d4 floors] CRI 20/80
+[   455.0s] [d4 floors] CRI 40/80
+[   529.2s] [d4 floors] CRI 60/80
+[   617.7s] [d4 floors] CRI 80/80
+[   618.1s] [d4] gate=APPROACH k_i=4 k_ii=4 called_i=80 called_ii=73 of 340

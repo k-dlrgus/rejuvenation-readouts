@@ -1,0 +1,18 @@
+[     1.9s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[     2.1s] [align index] overlap=16781 ensembl=0 symbol=16781
+[     2.1s] [align] ruler=23485 present=16781 dup_file_cols=10
+[     2.1s] [panel] qualifying perturbations n>=30: 340
+[     7.7s] [basis] S2A_k20 read frozen from results/south7/basis.npz L=(23485, 20) n_mid=308 max|LtL-I|=3.553e-15
+[     8.0s] [nt dense] CRA (666, 16781)
+[     8.8s] [nt dense] CRI (1479, 16781)
+[     8.8s] [d1] CRA NT=666 half1=333 half2=333
+[    17.4s] [d1] CRA n=96 done
+[    26.2s] [d1] CRA n=107 done
+[    35.9s] [d1] CRA n=128 done
+[    47.2s] [d1] CRA n=157 done
+[    47.2s] [d1] CRI NT=1479 half1=739 half2=740
+[    57.0s] [d1] CRI n=96 done
+[    66.9s] [d1] CRI n=107 done
+[    77.4s] [d1] CRI n=128 done
+[    89.0s] [d1] CRI n=157 done
+[    89.0s] [d1] gate=CALIBRATED f_max=0.0850 at CRA n=107

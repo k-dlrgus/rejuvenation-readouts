@@ -1,0 +1,239 @@
+PREREG written 2026-10-06T09:51:19Z (local 2026-10-06 18:51:19 KST)
+Written before any SENG3 number exists. Reproduced verbatim at the top of
+FINDINGS_SENG3.md. Not edited after this timestamp.
+
+TASK: SENG3 — do Junevity's four factors approach young, measured in the
+compressed space?
+Written before any SENG3 number exists.
+
+Nature: computational. No new data. Reads results/south6/, results/south7/,
+results/south8/, results/south9/, results/seng/, results/seng2/ and the
+Sengstack h5ad already on disk (data/raw/seng/exp3_merged_not_normalized.h5ad,
+md5 bfccaa94a916c22e4b0793913a04128b). Writes only results/seng3/ and
+FINDINGS_SENG3.md. No earlier findings file is regenerated, no earlier
+results directory is written, nothing is committed or pushed.
+
+--- THE QUESTION ---
+
+SENG2 ran the approach test on Junevity's data in the full-gene space and
+fired D3 INSENSITIVE: power at a 25% plant at 100 cells was 0.000, and even
+a plant of the entire aging gap was detected almost never. Its NO APPROACH
+reading therefore carries no conclusion.
+
+The Southard work already established that this is a property of the space
+and not of the cell count. In SOUTH9's calibration the compressed space
+S2A_k20 fires at 0.0350 at 106 cells where the full-gene space S1 fires at
+0.1200, and SOUTH6REC's plant recovery detects a 25% plant at 106 cells with
+power 0.98 in the compressed space against roughly 0.11 in full genes. Same
+cells, same depth, different instrument.
+
+SENG2 used the full-gene space because Stage 0 had to reproduce SENG's
+stored numbers, which live there. That was correct for reproduction and
+wrong for the test. This task rebuilds the compressed instrument on
+Junevity's data, qualifies it by planting before reading any result, and
+only then asks about the four factors.
+
+The order is deliberate. In SENG2 the sensitivity check ran after the
+approach test and retroactively voided it. Here the instrument is qualified
+first and the approach test is not computed at all if it fails.
+
+--- STATE THE METHOD BEFORE USING IT ---
+
+Report, before any SENG3 number:
+
+ (a) Exactly how SOUTH6/SOUTH8 construct the space named S2A_k20. What the
+     basis is, what data it is fit on, how many components, whether the
+     young or old anchors enter the fit, whether any perturbed cell enters
+     the fit, and in what order normalisation and projection are applied.
+     Quote the source lines. If any part of the recipe cannot be read off
+     the committed code, say so and STOP `basis_recipe_unreadable`.
+
+ (b) Whether that recipe can be applied to the Sengstack data unchanged.
+     Name every place it cannot and what is substituted. A substitution is a
+     deviation and is disclosed as one.
+
+ (c) Whether the rebuilt basis is fit on cells the test is later applied to.
+     If it is, say so plainly and label every SENG3 number as carrying that
+     circularity. Do not refit to remove it; report it.
+
+ (d) Confirm the four factors' cell counts under SENG's own assignment rule
+     are unchanged: CRA_E2F3 128, CRA_EZH2 107, CRI_STAT3 96, CRI_ZFX 157.
+
+--- STAGE 0: REPRODUCE FIRST (gate) ---
+
+Re-derive with this task's code, from stored files:
+ (a) SOUTH8's amended counts in S2A_k20: 24 of 304 and 125 of 1,836 called,
+     and the below-floor counts 27 and 153;
+ (b) SOUTH9's D2 calibration rows: S2A_k20 at 106 cells 0.0350 and S1 at
+     106 cells 0.1200;
+ (c) SENG2's D1 depth-matched cosines: cos(PD14 - NT_A, a) = +0.584155 and
+     cos(PD14 - NT_I, a) = +0.757055;
+ (d) SENG2's D2 counts under origin (i): 131 below floor, 3 called, of 340;
+ (e) SENG2's D3 plant recovery at 100 cells, 25% dose: power 0.000 in both
+     libraries.
+Pass: counts exact, numerics within 1e-4 * max(1, |stored|).
+Fail -> STOP `prior_results_not_reproduced`, naming every mismatch.
+
+--- D1. Rebuild the compressed basis, and validate its null (gated) ---
+
+Build the S2A_k20 recipe on the Sengstack data. The basis must not be fit on
+PD14, which is the target, nor on any perturbation group that is later
+tested. State what it is fit on.
+
+Then validate the null in that space, which is the check that the buzzer
+works. Split the NT pool of each library into two disjoint halves. Build the
+floor from 200 draws on half one, at each of the cell counts 96, 107, 128 and
+157. Evaluate the full criterion — delta below floor AND delta negative — on
+200 independent draws from half two, which contain no effect by construction.
+
+Report, per library and per cell count: the observed firing rate, the floor
+value, and the median and 2.5-97.5% range of the null delta. Report the same
+quantities from SENG2's full-gene space side by side, so the change in the
+pedestal is visible.
+
+Gate, wording fixed now. Let f be the largest observed firing rate across the
+eight library-by-cell-count combinations.
+ - CALIBRATED (f <= 0.10): "the criterion fires on effect-free data at <f>,
+   against the 0.05 it is built to give. The null is calibrated in this space
+   and a count above chance can be read as such."
+ - MISCALIBRATED (f > 0.10): STOP `null_miscalibrated`. Report the full table
+   and compute nothing further. A miscalibrated null is what SOUTH8 removed
+   and it is not carried forward here.
+
+--- D2. Can the instrument see a planted approach at these depths? (gated) ---
+
+This gate runs before any approach number is computed and decides whether one
+is computed at all.
+
+Let a be the aging axis in the compressed space, centroid(PD14 half A) minus
+centroid(PD32 half A), matching SENG2's amendment A4. Spike and plant
+material is PD14 half B, which appears in no target.
+
+Plant recovery: displace NT draws along a by 0, 25, 50 and 100% of ||a||,
+200 draws per dose, at each of 96, 107, 128 and 157 cells, in both libraries.
+Power is the fraction of draws the D4 criterion would call.
+
+Mixture control across the library boundary: mix PD14 half B into NT cells at
+0, 10, 25 and 50% at fixed total cell count, 200 draws per dose, at 96 and 157
+cells, in both libraries. The zero-dose point is the noise floor and is
+reported, not subtracted.
+
+Gate, wording fixed now. Let p25 be the lowest power at a 25% plant across
+all library-by-cell-count combinations, and p50 the same at 50%.
+ - QUALIFIED (p25 >= 0.80): "the statistic detects a 25% approach across the
+   library boundary at every one of these factors' own cell counts, lowest
+   power <p25>, so a null in D4 is a null and not an insensitive assay."
+ - LIMITED (p25 < 0.80 and p50 >= 0.80): "the statistic detects a 50%
+   approach but not a 25% one, lowest powers <p50> and <p25>. D3 and D4 are
+   run, and every number in them is labelled as able to speak only to
+   approaches of at least half the aging gap."
+ - BLIND (p50 < 0.80): STOP `instrument_blind`. Report the full power curve
+   and the mixture table and compute no approach number. The finding is that
+   the compressed instrument does not transfer to this dataset at these
+   depths, and that is the task's result.
+
+--- D3. The library offset in the compressed space (gated) ---
+
+Cosines are not comparable between spaces of different dimension, so SENG2's
+D1 reading does not carry over and is recomputed here, not quoted.
+
+Compute, as in SENG2's D1 but in the compressed space: ||offset_A||/||a||,
+||offset_I||/||a||, cos(offset_A, a), cos(offset_I, a), and the gate quantity
+cos(PD14 - NT_L, a) for each library. Depth matching is SENG2's amendment A3:
+binomial thinning to the lowest group median, one common factor per group,
+every cell kept, 200 draws, seed 20260914, thinned primary, with the raw
+version reported beside it. The gate value is the median over draws with its
+2.5-97.5% range.
+
+Gate, wording fixed now. Let r be the larger of the two cosines.
+ - USABLE (r >= 0.70): "the library offset rotates the target direction by
+   less than 45 degrees (cos <r>); the apparent target direction is dominated
+   by aging and the approach test can be read."
+ - DEGRADED (0.40 <= r < 0.70): "the library offset rotates the target
+   direction substantially (cos <r>). D4 is run and reported, and every
+   number in it is labelled as carrying a target direction that is <pct>%
+   not aging."
+ - UNUSABLE (r < 0.40): "the vector from a perturbation's control to the
+   young target is mostly library difference, not aging (cos <r>). This
+   dataset cannot answer whether these factors approach young in this space."
+   D4 is still run to the end and reported, and nothing in it is a conclusion
+   about any factor. That is said in the gate sentence and repeated wherever
+   a factor is named.
+
+Report the per-library cosines separately beside the gate, because the two
+libraries carry different factors: CRA_E2F3 and CRA_EZH2 sit in _A, and
+CRI_STAT3 and CRI_ZFX in _I. In SENG2's full-gene space those cosines fell in
+different bands and the gate was carried entirely by _I. Say whether that is
+still so here.
+
+--- D4. The approach test (gated) ---
+
+Carries D1, D2 and D3's readings, each named.
+
+For all 340 perturbations and separately for the four named factors, compute
+the change in distance to the PD14 half A target in the compressed space,
+with a depth-matched floor built at each perturbation's own cell count from
+NT draws in its own library, 200 draws, floor at the 5th percentile. Called
+approaching means delta below its own floor and delta negative.
+
+Two pre-specified origins, both reported, neither privileged, per SENG2's
+amendment A6:
+ (i) as-measured: target is PD14 half A minus the NT centroid of the
+     perturbation's own library;
+ (ii) offset-corrected: the displacement is applied to the PD32 half A
+      origin. This transplants a displacement onto a different origin within
+      the same cell line and experiment; label it as such wherever it
+      appears.
+
+Report, per origin: below floor, delta negative, called, against the chance
+expectation of 17.0 of 340 with its 95% binomial interval; the same per
+modality; and the four factors individually with cell count and its
+percentile in the screen.
+
+Gate, wording fixed now, per SENG2's amendment A1. Count the four named
+factors called under each origin separately. The branches are mutually
+exclusive.
+ - APPROACH (both origins call two or more): "of Junevity's four validated
+   factors, <k> end closer to early-passage cells than their own controls do,
+   in their own data, with their own perturbations: <list>."
+ - NO APPROACH (both origins call fewer than two): "none of Junevity's four
+   validated factors measurably approaches early-passage cells in their own
+   data, with their own perturbations, against a floor built at each factor's
+   own depth and an instrument qualified at that depth."
+ - SPLIT (one origin calls two or more and the other fewer): report both,
+   name which factor is which under each, draw no single conclusion.
+
+--- D5. Report-only, no decision rule ---
+ - Proliferation: a residualized D4 with the null residualized identically by
+   projecting out the same per-modality proliferation axis, reported beside
+   the distance result and never in place of it, with SENG's stored rho
+   (+0.828 CRA, +0.862 CRI) quoted beside it. Disclose that the proliferation
+   axis is estimated from the same control cells that define the origin and
+   the floors.
+ - Identity: the fibroblast identity change for the four and for the screen,
+   over the ten identity genes SENG found present.
+ - The frozen ruler: how many of the 340 score younger on the one-dimensional
+   ruler while not approaching, under both origins. This is the preprint's
+   thesis in this dataset and is a diagnostic, not evidence about any factor.
+ - The same count restricted to the four.
+ - A side-by-side table of every SENG2 headline number and its SENG3
+   counterpart, so the effect of changing the space alone is visible.
+
+--- WHAT DOES NOT COUNT ---
+- choosing a space, a basis, a component count, an origin, a criterion, a
+  null or a factor set after seeing a number;
+- reading D4 if D2 fired BLIND;
+- treating any factor called here as validated or as a pilot candidate in
+  this findings file;
+- reading a null as evidence about transcription factors in aged human cells:
+  this dataset is passaged neonatal-line fibroblasts and its "old" is passage
+  number, which this project has found does not resemble donor aging
+  (cos(v,u) = -0.040, permutation p = 1.0);
+- refitting any axis, basis or offset to avoid reporting a circularity;
+- any claim about Junevity's published numbers being unreproducible.
+
+--- STOP KEYS ---
+basis_recipe_unreadable; prior_results_not_reproduced; null_miscalibrated;
+instrument_blind; no_raw_counts.
+Seeds: 20260914 splits/nulls/permutations, 20260918 bootstraps.
+n_null = n_perm = n_boot = 200.

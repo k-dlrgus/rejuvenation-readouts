@@ -1,0 +1,11 @@
+{
+  "gate": "CALIBRATED",
+  "f_max": 0.085,
+  "f_max_at": {
+    "library": "CRA",
+    "n_cells": 107
+  },
+  "f_max_origin_ii": 0.11,
+  "f_max_S1_origin_i": 0.0,
+  "n_combos": 8
+}

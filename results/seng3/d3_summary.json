@@ -1,0 +1,36 @@
+{
+  "gate": "USABLE",
+  "r": 0.8870051421773981,
+  "r_library": "I",
+  "r_ci": [
+    0.8806679621120374,
+    0.8927652420721495
+  ],
+  "r_angle_deg": 27.50070615581541,
+  "pct_not_aging": 46.175954538141795,
+  "per_library": {
+    "A": 0.8113749439488713,
+    "I": 0.8870051421773981
+  },
+  "per_library_gate": {
+    "A": "USABLE",
+    "I": "USABLE"
+  },
+  "r_raw": 0.8882691205468142,
+  "gate_raw": "USABLE",
+  "r_full_arms_variant": 0.888278318187918,
+  "gate_full_arms_variant": "USABLE",
+  "variants_agree": true,
+  "S1_per_library": {
+    "A": 0.644548999855285,
+    "I": 0.7934287540456211
+  },
+  "medians": {
+    "PD14_HA": 20330.5,
+    "PD32_HA": 8759.5,
+    "PD14_FULL": 19853.0,
+    "PD32_FULL": 9139.5,
+    "NT_CRA": 19605.5,
+    "NT_CRI": 22220.0
+  }
+}

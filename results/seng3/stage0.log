@@ -1,0 +1,13 @@
+[     0.0s] [s0b] d2_true_null_p.csv cols=['n_cells', 'draw', 'space', 'delta', 'le', 'p'] rows=3200
+[     0.0s] [s0b] SOUTH9 raw_power_25@106 {'S2A_k20': 0.98, 'S2A_k50': 0.955, 'S2A_k100': 0.93, 'S1': 0.115}
+[     2.3s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[     2.5s] [align index] overlap=16781 ensembl=0 symbol=16781
+[     2.5s] [align] ruler=23485 present=16781 dup_file_cols=10
+[     2.6s] [panel] qualifying perturbations n>=30: 340
+[     7.6s] [basis] S2A_k20 read frozen from results/south7/basis.npz L=(23485, 20) n_mid=308 max|LtL-I|=3.553e-15
+[     8.2s] [stream] rows 0-2000
+[    11.3s] [stream] rows 10000-12000
+[    14.9s] [stream] rows 20000-22000
+[    18.7s] [stream] rows 30000-32000
+[    20.3s] [extra] ['PD14_FULL', 'PD32_FULL'] sizes=[581, 4348]
+[    30.7s] [stage0] PASS=True
