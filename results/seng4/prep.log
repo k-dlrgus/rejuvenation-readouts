@@ -1,0 +1,14 @@
+[     1.0s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[     1.1s] [align index] overlap=16781 ensembl=0 symbol=16781
+[     1.1s] [align] ruler=23485 present=16781 dup_file_cols=10
+[     1.1s] [panel] qualifying perturbations n>=30: 340
+[     1.8s] [prep] lib_total over all 36601 file genes; median=19776; vs stored n_counts max abs diff=22
+[     3.0s] [prep] submatrix (4025, 16781) (NT 666+1479, PD26 1880)
+[     3.0s] [prep] S genes used=42/43 missing_file=['MLF1IP'] not_in_ruler=[]
+[     3.0s] [prep] G2M genes used=52/54 missing_file=['FAM64A', 'HN1'] not_in_ruler=[]
+[     3.1s] [prep] NT_CRA half1=333 half2=333 (identical to SENG3's seed-20260914 split)
+[     3.1s] [prep] NT_CRI half1=739 half2=740 (identical to SENG3's seed-20260914 split)
+[     3.1s] [prep] P1_CRA half1=333 bottom=84 top=84 q25=0.1535 q75=0.9764
+[     3.1s] [prep] P1_CRI half1=739 bottom=185 top=185 q25=0.1554 q75=0.9570
+[     3.1s] [prep] P2 PD26 n=1880 bottom=470 top=470 q25=0.2414 q75=1.0168
+[     3.2s] [prep] wrote prep.npz

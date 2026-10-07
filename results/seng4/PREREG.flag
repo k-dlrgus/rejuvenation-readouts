@@ -1,0 +1,220 @@
+PREREG written 2026-10-06T11:45:52Z (local 2026-10-06 20:45:52 KST)
+Written before any SENG4 number exists. Reproduced verbatim at the top of
+FINDINGS_SENG4.md. Not edited after this timestamp.
+
+TASK: SENG4 — does the proliferation adjustment survive an independent
+reference, and can proliferation be separated from passage aging at all?
+Written before any SENG4 number exists.
+
+Nature: computational. No new data. Reads results/south6/, results/south7/,
+results/south9/, results/seng/, results/seng2/, results/seng3/ and the
+Sengstack h5ad already on disk (data/raw/seng/exp3_merged_not_normalized.h5ad,
+md5 bfccaa94a916c22e4b0793913a04128b). Writes only results/seng4/ and
+FINDINGS_SENG4.md. No earlier findings file is regenerated, no earlier
+results directory is written, nothing is committed or pushed.
+
+--- THE QUESTION ---
+
+SENG3 fired D4 APPROACH: all four named factors end closer to early-passage
+cells under both origins, in the compressed space S2A_k20, with a calibrated
+null and an instrument that detects a planted half-gap approach.
+
+Its strongest qualification is unresolved. The approach statistic is
+rank-correlated -0.8639 with the proliferation shift, and residualizing
+proliferation drops the screen from 80 called to 25 and the four from 4 to 1
+under origin (i) and to 0 under origin (ii). But SENG3's proliferation axis
+is estimated from the same NT control cells that define the origin and every
+floor. That circularity was disclosed and not removed, so the residualized
+column is not a clean adjustment and the claim that rests on it — that what
+these screens detect is proliferation — currently cannot be defended.
+
+This task removes the circularity, and asks a prior question SENG3 did not:
+whether proliferation and passage aging are separable directions in this
+dataset at all. If they are not, no residualization can decide anything, and
+that is itself the result.
+
+--- STATE THE METHOD BEFORE USING IT ---
+
+Report, before any SENG4 number:
+ (a) exactly how SENG3 constructs its proliferation axis: what it is fit on,
+     which cells, which genes, whether per-modality, and the line of code.
+     Quote the source. If it cannot be read off committed code, STOP
+     `prolif_recipe_unreadable`.
+ (b) exactly how SENG3 residualizes: what is projected out of what, and
+     whether the null is residualized by the same operation.
+ (c) for each of the three axes defined in D1 below, what cells enter its
+     fit, and confirm in writing that none of those cells enters the origin,
+     the target or any floor of the test the axis is later applied to. If
+     any does, say so plainly and label every number downstream as carrying
+     that circularity. Do not refit to hide it.
+ (d) the four factors' cell counts under SENG's assignment rule are
+     unchanged: CRA_E2F3 128, CRA_EZH2 107, CRI_STAT3 96, CRI_ZFX 157.
+
+--- STAGE 0: REPRODUCE FIRST (gate) ---
+
+Re-derive with this task's code, from stored files:
+ (a) SENG3 D1 firing rates in S2A_k20, origin (i): the maximum 0.0850 and
+     the full eight-row table;
+ (b) SENG3 D2 plant recovery, origin (i): p25 worst 0.565, p50 worst 0.940;
+ (c) SENG3 D3 gate value r = +0.887005 and the per-library pair
+     +0.811375 / +0.887005;
+ (d) SENG3 D4 counts: 80 called origin (i), 73 origin (ii), of 340, and all
+     four named factors called under both;
+ (e) SENG3 D5: rho(proliferation shift, delta origin (i)) = -0.8639, and the
+     residualized counts 80 -> 25 and 73 -> 8;
+ (f) SOUTH9 D2 plant recovery after residualization at 106 cells in S2A_k20:
+     power 0.990 residualized against 0.980 raw.
+Pass: counts exact, numerics within 1e-4 * max(1, |stored|).
+Fail -> STOP `prior_results_not_reproduced`, naming every mismatch.
+
+--- D1. Three proliferation axes, and whether aging is separable from them
+    (gated) ---
+
+All three are built in S2A_k20, the SENG3 primary space, read frozen.
+
+ P1, PRIMARY — disjoint NT halves. Split each library's NT pool in half by
+ cell (seed 20260914), disjoint from the halves SENG3 used for its null
+ validation if that is possible without reusing a cell; if it is not, say so
+ and use a fresh split. Half one is reserved for this axis and for nothing
+ else. Score its cells for cell-cycle activity using the Tirosh S and G2M
+ lists already present at results/seng/seurat_cc.genes_tirosh2016.tsv, and
+ define P1 as the direction from the bottom quartile to the top quartile of
+ that score. Half two, and only half two, defines the origin and every floor
+ in D2 and D3. Per modality.
+
+ P2, SECONDARY — PD26. The 1,880 middle-passage cells enter no origin, no
+ target and no floor anywhere in this project's Sengstack tests. Build the
+ axis the same way inside PD26 alone: bottom-quartile to top-quartile
+ cell-cycle score. One axis, not per modality, since PD26 has no modality.
+
+ P3, SECONDARY — gene-set direction. The unit vector of the Tirosh S and G2M
+ genes with equal weights, positive for cycling, projected into S2A_k20. No
+ Sengstack cell enters this at all.
+
+Report:
+ - pairwise cosines between P1, P2, P3 and SENG3's circular axis, per
+   modality where applicable;
+ - the cosine between each axis and the aging axis a (PD14 half A minus PD32
+   half A), and the fraction of ||a|| that survives projecting each axis out,
+   sqrt(1 - cos^2);
+ - the cosine between a and the GTEx donor-age direction u, re-derived, and
+   the stored Southard equivalent if one exists in results/south6/ or
+   results/south9/, for comparison;
+ - how many cells enter each axis.
+
+Gate, wording fixed now, on the PRIMARY axis P1 and its cosine with a, taken
+as the larger absolute value across the two modalities. This is a reading,
+not a STOP; all branches continue to D2.
+ - SEPARABLE (|cos(P1, a)| < 0.40): "the proliferation direction and the
+   passage-aging direction are substantially distinct in this dataset
+   (cos <c>), so projecting one out leaves <pct>% of the other's length and
+   an adjustment is meaningful."
+ - ENTANGLED (0.40 <= |cos(P1, a)| < 0.70): "the proliferation direction
+   carries a substantial part of the passage-aging direction (cos <c>);
+   projecting it out removes <pct>% of the aging axis's length, and every
+   residualized number below is reduced by that as well as by any confound."
+ - INSEPARABLE (|cos(P1, a)| >= 0.70): "in this dataset passage aging and
+   proliferation are substantially the same direction (cos <c>). Projecting
+   proliferation out removes most of what defines young, so no
+   residualization here can distinguish a proliferation artefact from
+   passage rejuvenation. The question is not answerable in this dataset,
+   and that is the finding."
+If INSEPARABLE fires, D2 and D3 are still run to the end and reported, and
+nothing in D3 is a conclusion about any factor. That is said in the gate
+sentence and repeated wherever a factor is named.
+
+Also report, whichever fires: the angle between a and each axis in degrees,
+and state that this is the quantity the project handoff asked for as a
+measure of how much of Junevity's signal is structurally confounded.
+
+--- D2. Does residualization leave the statistic able to see an approach?
+    (gated) ---
+
+Runs before any residualized approach number and decides whether one can be
+read.
+
+Repeat SENG3's plant recovery with the residualization applied to plant,
+null and floor alike, separately for P1, P2 and P3. Displace draws along a
+by 0, 25, 50 and 100% of ||a||, 200 draws per dose, at 96, 107, 128 and 157
+cells, both libraries, origin (i) per SENG3's amendment B2, with origin (ii)
+reported beside it. Report the unresidualized power from SENG3 in the same
+table.
+
+Gate, wording fixed now, on P1. p50 is the lowest power at a 50% plant
+across the eight library-by-cell-count combinations, p25 the same at 25%.
+SENG3 already fired LIMITED, so 50% is the dose that matters.
+ - RETAINED (p50 >= 0.80): "residualizing an independent proliferation axis
+   leaves the statistic able to detect a planted half-gap approach, lowest
+   power <p50>, so a residualized null is a null and not a loss of
+   sensitivity."
+ - LOST (p50 < 0.80): "residualizing costs the statistic its sensitivity:
+   power at a 50% plant falls from 0.940 to <p50>. The residualized counts
+   in D3 cannot be read as evidence of absence, and neither can SENG3's."
+If LOST fires, D3 is reported but carries no conclusion, and that is said in
+the gate sentence.
+
+--- D3. The residualized approach test (gated) ---
+
+Carries D1 and D2's readings, each named, and SENG3's LIMITED.
+
+For all 340 perturbations and separately for the four named factors, recompute
+the SENG3 D4 approach test with each of P1, P2 and P3 projected out of the
+displacement, the target and the null identically. Floors are rebuilt from the
+reserved NT half at each perturbation's own cell count, 200 draws, 5th
+percentile. Both origins, neither privileged, gate on origin (i).
+
+Report, per axis and per origin: below floor, delta negative, called, against
+the chance expectation of 17.0 of 340 with its 95% binomial interval; per
+modality; the four factors individually with cell count and percentile; and
+the unresidualized SENG3 counts beside every row.
+
+Also report, for the four factors, their delta percentile among the 60
+perturbations in their own 96-157 cell band, residualized, beside SENG3's
+unresidualized percentiles (3.3%, 15.0%, 21.7%, 1.7%).
+
+Gate, wording fixed now, on the PRIMARY axis P1, counting the four named
+factors called under each origin separately. Branches are mutually exclusive.
+ - SURVIVES (both origins call two or more): "<k> of Junevity's four
+   factors still end closer to early-passage cells after an independent
+   proliferation axis is projected out: <list>. The approach is not
+   accounted for by proliferation."
+ - EXPLAINED (both origins call fewer than two): "after an independent
+   proliferation axis is projected out, <k> of the four are called under
+   origin (i) and <k2> under origin (ii), against <e> expected by chance.
+   What the distance statistic scores as approach to early-passage cells is
+   in this dataset a change in proliferative state."
+ - SPLIT (the origins disagree): report both, name which factor is which
+   under each, draw no single conclusion.
+If the secondary axes P2 or P3 would fire a different branch than P1, say so
+prominently beside the gate and report all three branch sentences, with P1's
+as the task's reading.
+
+--- D4. Report-only, no decision rule ---
+ - The screen-wide count under each of P1, P2, P3 and the circular axis side
+   by side, so the effect of the reference choice alone is visible.
+ - rho between the residualized delta and the proliferation shift, per axis.
+ - The cell-count decile table of SENG3's D5, recomputed residualized.
+ - Fibroblast identity for the four and the screen, unchanged recipe.
+ - The frozen ruler count: how many of 340 score younger on the
+   one-dimensional ruler while not approaching, residualized, both origins.
+   A diagnostic, not evidence about any factor.
+ - A single table of every SENG2, SENG3 and SENG4 headline number.
+
+--- WHAT DOES NOT COUNT ---
+- choosing an axis, a space, an origin, a criterion, a null or a factor set
+  after seeing a number;
+- treating the secondary axes as primary because they give a preferred
+  answer;
+- treating any factor called here as validated or as a pilot candidate in
+  this findings file;
+- reading a null as evidence about transcription factors in aged human
+  cells: this dataset is passaged neonatal-line fibroblasts and its "old" is
+  passage number, which this project has found does not resemble donor aging
+  (cos(v,u) = -0.040, permutation p = 1.0);
+- refitting any axis to avoid reporting a circularity;
+- any claim about Junevity's published numbers being unreproducible.
+
+--- STOP KEYS ---
+prolif_recipe_unreadable; prior_results_not_reproduced; no_raw_counts.
+Seeds: 20260914 splits/nulls/permutations, 20260918 bootstraps.
+n_null = n_perm = n_boot = 200.

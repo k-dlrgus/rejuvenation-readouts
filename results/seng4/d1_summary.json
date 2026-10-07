@@ -1,0 +1,68 @@
+{
+  "gate": "INSEPARABLE",
+  "p1_abs_cos": 0.9417078171662363,
+  "p1_modality": "CRA",
+  "p1_cos": 0.9417078171662363,
+  "p1_angle_deg": 19.65963130856505,
+  "p1_frac_a_surviving": 0.33643184612637733,
+  "p1_pct_a_removed": 66.35681538736226,
+  "per_axis": {
+    "P1_CRA": {
+      "cos": 0.9417078171662363,
+      "angle_deg": 19.65963130856505,
+      "frac_surviving": 0.33643184612637733
+    },
+    "P1_CRI": {
+      "cos": 0.93628732581314,
+      "angle_deg": 20.562873439320825,
+      "frac_surviving": 0.351235026046206
+    },
+    "P2_CRA": {
+      "cos": 0.948359948097428,
+      "angle_deg": 18.49344546322952,
+      "frac_surviving": 0.3171961677647505
+    },
+    "P2_CRI": {
+      "cos": 0.948359948097428,
+      "angle_deg": 18.49344546322952,
+      "frac_surviving": 0.3171961677647505
+    },
+    "P3_CRA": {
+      "cos": 0.47438519945414265,
+      "angle_deg": 61.680672026748304,
+      "frac_surviving": 0.880317376029153
+    },
+    "P3_CRI": {
+      "cos": 0.47438519945414265,
+      "angle_deg": 61.680672026748304,
+      "frac_surviving": 0.880317376029153
+    },
+    "CIRC_CRA": {
+      "cos": 0.9372092174280989,
+      "angle_deg": 20.411958395728234,
+      "frac_surviving": 0.3487676630191085
+    },
+    "CIRC_CRI": {
+      "cos": 0.9388744996633057,
+      "angle_deg": 20.13660570791676,
+      "frac_surviving": 0.3442596024542777
+    }
+  },
+  "cos_a_u_full_gene": -0.04027293769593313,
+  "cos_a_u_S2A_k20": -0.19929260116459008,
+  "southard": {
+    "southard_axis_vs_u_full": -0.9999999999999998,
+    "southard_axis_vs_u_k20": -1.0000000000000002,
+    "note": "Southard's own old-minus-young axis is built from GTEx donor age bins, so this is a consistency check, not an independent comparison"
+  },
+  "n_cc_genes_in_P3": 94,
+  "n_cells_in_axis": {
+    "P1_CRA": 333,
+    "P1_CRI": 739,
+    "P2": 1880,
+    "P3": 0,
+    "CIRC_CRA": 666,
+    "CIRC_CRI": 1479
+  },
+  "a_norm_k20": 40.638003130590455
+}

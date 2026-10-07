@@ -1,0 +1,159 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "item": "SENG3 D1 eight rows",
+      "kind": "count",
+      "stored": 8,
+      "got": 8,
+      "ok": true
+    },
+    {
+      "item": "SENG3 D1 max firing rate",
+      "kind": "numeric",
+      "stored": 0.085,
+      "got": 0.085,
+      "ok": true
+    },
+    {
+      "item": "SENG3 D2 p25 worst",
+      "kind": "numeric",
+      "stored": 0.565,
+      "got": 0.565,
+      "ok": true
+    },
+    {
+      "item": "SENG3 D2 p50 worst",
+      "kind": "numeric",
+      "stored": 0.94,
+      "got": 0.94,
+      "ok": true
+    },
+    {
+      "item": "SENG3 D3 r",
+      "kind": "numeric",
+      "stored": 0.887005,
+      "got": 0.8870051421773981,
+      "ok": true
+    },
+    {
+      "item": "SENG3 D3 cos per library A",
+      "kind": "numeric",
+      "stored": 0.811375,
+      "got": 0.8113749439488713,
+      "ok": true
+    },
+    {
+      "item": "SENG3 D3 cos per library I",
+      "kind": "numeric",
+      "stored": 0.887005,
+      "got": 0.8870051421773981,
+      "ok": true
+    },
+    {
+      "item": "SENG3 D4 n",
+      "kind": "count",
+      "stored": 340,
+      "got": 340,
+      "ok": true
+    },
+    {
+      "item": "SENG3 D4 called origin(i)",
+      "kind": "count",
+      "stored": 80,
+      "got": 80,
+      "ok": true
+    },
+    {
+      "item": "SENG3 D4 called origin(ii)",
+      "kind": "count",
+      "stored": 73,
+      "got": 73,
+      "ok": true
+    },
+    {
+      "item": "SENG3 D4 named called origin(i)",
+      "kind": "count",
+      "stored": 4,
+      "got": 4,
+      "ok": true
+    },
+    {
+      "item": "SENG3 D4 named called origin(ii)",
+      "kind": "count",
+      "stored": 4,
+      "got": 4,
+      "ok": true
+    },
+    {
+      "item": "SENG3 D5 rho(prolif_shift, delta_i)",
+      "kind": "numeric",
+      "stored": -0.8639,
+      "got": -0.8639433579468174,
+      "ok": true
+    },
+    {
+      "item": "SENG3 D5 residualized called origin(i)",
+      "kind": "count",
+      "stored": 25,
+      "got": 25,
+      "ok": true
+    },
+    {
+      "item": "SENG3 D5 residualized called origin(ii)",
+      "kind": "count",
+      "stored": 8,
+      "got": 8,
+      "ok": true
+    },
+    {
+      "item": "SOUTH9 res power_25 @106 S2A_k20",
+      "kind": "numeric",
+      "stored": 0.99,
+      "got": 0.99,
+      "ok": true
+    },
+    {
+      "item": "SOUTH9 raw power_25 @106 S2A_k20",
+      "kind": "numeric",
+      "stored": 0.98,
+      "got": 0.98,
+      "ok": true
+    },
+    {
+      "item": "n_cells[CRA_E2F3]",
+      "kind": "count",
+      "stored": 128,
+      "got": 128,
+      "ok": true
+    },
+    {
+      "item": "n_cells[CRA_EZH2]",
+      "kind": "count",
+      "stored": 107,
+      "got": 107,
+      "ok": true
+    },
+    {
+      "item": "n_cells[CRI_STAT3]",
+      "kind": "count",
+      "stored": 96,
+      "got": 96,
+      "ok": true
+    },
+    {
+      "item": "n_cells[CRI_ZFX]",
+      "kind": "count",
+      "stored": 157,
+      "got": 157,
+      "ok": true
+    },
+    {
+      "item": "raw integer counts (no_raw_counts)",
+      "kind": "count",
+      "stored": 0,
+      "got": 0,
+      "ok": true
+    }
+  ]
+}

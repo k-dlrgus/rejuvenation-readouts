@@ -1,0 +1,6 @@
+[     1.1s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[     1.2s] [align index] overlap=16781 ensembl=0 symbol=16781
+[     1.2s] [align] ruler=23485 present=16781 dup_file_cols=10
+[     1.2s] [panel] qualifying perturbations n>=30: 340
+[     3.9s] [basis] S2A_k20 read frozen from results/south7/basis.npz L=(23485, 20) n_mid=308 max|LtL-I|=3.553e-15
+[     3.9s] [stage0] PASS=True

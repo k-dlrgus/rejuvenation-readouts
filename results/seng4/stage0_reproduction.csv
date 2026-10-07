@@ -1,0 +1,23 @@
+item,kind,stored,got,ok
+SENG3 D1 eight rows,count,8.0,8.0,True
+SENG3 D1 max firing rate,numeric,0.085,0.085,True
+SENG3 D2 p25 worst,numeric,0.565,0.565,True
+SENG3 D2 p50 worst,numeric,0.94,0.94,True
+SENG3 D3 r,numeric,0.887005,0.8870051421773981,True
+SENG3 D3 cos per library A,numeric,0.811375,0.8113749439488713,True
+SENG3 D3 cos per library I,numeric,0.887005,0.8870051421773981,True
+SENG3 D4 n,count,340.0,340.0,True
+SENG3 D4 called origin(i),count,80.0,80.0,True
+SENG3 D4 called origin(ii),count,73.0,73.0,True
+SENG3 D4 named called origin(i),count,4.0,4.0,True
+SENG3 D4 named called origin(ii),count,4.0,4.0,True
+"SENG3 D5 rho(prolif_shift, delta_i)",numeric,-0.8639,-0.8639433579468174,True
+SENG3 D5 residualized called origin(i),count,25.0,25.0,True
+SENG3 D5 residualized called origin(ii),count,8.0,8.0,True
+SOUTH9 res power_25 @106 S2A_k20,numeric,0.99,0.99,True
+SOUTH9 raw power_25 @106 S2A_k20,numeric,0.98,0.98,True
+n_cells[CRA_E2F3],count,128.0,128.0,True
+n_cells[CRA_EZH2],count,107.0,107.0,True
+n_cells[CRI_STAT3],count,96.0,96.0,True
+n_cells[CRI_ZFX],count,157.0,157.0,True
+raw integer counts (no_raw_counts),count,0.0,0.0,True
