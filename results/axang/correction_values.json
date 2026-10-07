@@ -1,0 +1,30 @@
+{
+  "lu_present": 20452,
+  "lu_absent": 3033,
+  "pct_gap_sq_unmeasured_corrected": 8.969502554751797,
+  "pct_gap_sq_unmeasured_superseded": 21.97242392036851,
+  "cos_old_new_C1lu": 0.9138710198194707,
+  "angle_old_new_C1lu": 23.954097722518544,
+  "per_donor": {
+    "GM23815": {
+      "n_day0": 7782,
+      "n_bottom": 1946,
+      "n_top": 1946,
+      "cc_genes_found": 94,
+      "present": 20452,
+      "absent": 3033,
+      "by_ensembl": 20443,
+      "by_symbol": 9
+    },
+    "GM00731": {
+      "n_day0": 5021,
+      "n_bottom": 1256,
+      "n_top": 1256,
+      "cc_genes_found": 94,
+      "present": 20452,
+      "absent": 3033,
+      "by_ensembl": 20443,
+      "by_symbol": 9
+    }
+  }
+}

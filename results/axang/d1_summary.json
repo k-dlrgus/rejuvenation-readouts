@@ -1,0 +1,91 @@
+{
+  "gate": "INTERMEDIATE",
+  "d_angle": 144.17495766563073,
+  "d_cos": -0.8108080733827845,
+  "d_ci": [
+    -0.9394478189801856,
+    -0.3398841299909805
+  ],
+  "p_angle": 19.66,
+  "pct_removed": 41.468788827045685,
+  "gate_c2": "SEPARABLE",
+  "d_angle_c2": 131.20570325848777,
+  "gates_agree": false,
+  "triangles": {
+    "T1_A1_A3_C1seng": {
+      "third": "C1_seng_CRA",
+      "angle_A1_A3": 101.49559533129334,
+      "angle_A1_third": 106.80667776907053,
+      "angle_A3_third": 19.659631308565068,
+      "lower": 87.14704646050546,
+      "upper": 126.4663090776356,
+      "consistent": true
+    },
+    "T2_A1_A3_C1gtex": {
+      "third": "C1_gtex",
+      "angle_A1_A3": 101.49559533129334,
+      "angle_A1_third": 144.17495766563073,
+      "angle_A3_third": 55.38294892816264,
+      "lower": 88.79200873746808,
+      "upper": 199.55790659379338,
+      "consistent": true
+    }
+  },
+  "anchors_vs_pack": {
+    "max_abs_c_young": 0.0,
+    "max_abs_c_old": 0.0
+  },
+  "meta": {
+    "cc_on_ruler": 94,
+    "cc_total": 97,
+    "cc_missing_from_ruler": [
+      "MLF1IP",
+      "FAM64A",
+      "HN1"
+    ],
+    "n_gtex_donors": 652,
+    "n_gtex_anchor_donors": 344,
+    "gtex_quartiles": {
+      "q25": 3.171374751041901,
+      "q75": 6.105879962761351,
+      "n_bottom": 163,
+      "n_top": 163
+    },
+    "gtex_anchor_quartiles": {
+      "q25": 3.187580431885819,
+      "q75": 6.125823240330879,
+      "n_bottom": 86,
+      "n_top": 86
+    },
+    "n_south_nt_cells": 14013,
+    "n_seng_half1": {
+      "CRA": 333,
+      "CRI": 739
+    },
+    "lu": {
+      "GM23815": {
+        "n_day0": 7782,
+        "n_bottom": 1946,
+        "n_top": 1946,
+        "cc_genes_found": 94,
+        "ruler_genes_present": 16781
+      },
+      "GM00731": {
+        "n_day0": 5021,
+        "n_bottom": 1256,
+        "n_top": 1256,
+        "cc_genes_found": 94,
+        "ruler_genes_present": 16781
+      }
+    },
+    "stored_a4_cos": 0.038815304035390776,
+    "n_ruler": 23485
+  },
+  "d_angle_magnitude": 35.82504233436928,
+  "d_angle_signed": 144.17495766563073,
+  "frac_surviving": 0.5853121117295431,
+  "d_angle_c2_magnitude": 48.794296741512234,
+  "d_angle_c2_signed": 131.20570325848777,
+  "d_cos_c2": -0.6587643527158994,
+  "gate_rule": "magnitude: arccos|cos| (amendment F10)"
+}

@@ -1,0 +1,15 @@
+item,kind,stored,got,ok
+"SENG4 cos(P1,a) CRA",numeric,0.941708,0.9417078171662362,True
+"SENG4 cos(P1,a) CRI",numeric,0.936287,0.9362873258131401,True
+"SENG4 cos(P3,a)",numeric,0.474385,0.4743851994541426,True
+"SENG4 cos(a,u) full-gene",numeric,-0.040273,-0.04027293769593313,True
+"SENG4 cos(a,u) S2A_k20",numeric,-0.199293,-0.19929260116459008,True
+SOUTH9 res power_25 @106,numeric,0.99,0.99,True
+SOUTH9 raw power_25 @106,numeric,0.98,0.98,True
+SOUTH8 all_1836 m,count,1836.0,1836.0,True
+SOUTH8 all_1836 amended_call_S2A_k20,count,125.0,125.0,True
+SOUTH8 all_1836 below_depth_floor_S2A_k20,count,153.0,153.0,True
+"E1 stored cos(A4, GTEx age axis)",numeric,0.039,0.039,True
+"E1 cos(A4,u) re-derived vs stored",numeric,0.038815304035390776,0.038815304035390776,True
+anchors n_young,count,113.0,113.0,True
+anchors n_old,count,231.0,231.0,True

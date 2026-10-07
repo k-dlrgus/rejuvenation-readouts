@@ -106,3 +106,9 @@ paper/
 # Rebuild: python src/seng2_run.py panel && python src/seng2_run.py stage0
 results/seng2/panel_counts.npz
 results/seng2/stage0_space.npz
+
+# AXANG regenerable axis pack, at least 1 MB. Deterministic from the frozen
+# instruments (results/fibro/, results/south6/, results/south7/,
+# results/toward/, results/same/) plus the Sengstack h5ad and the Lu pack.
+# Rebuild: python src/axang_run.py stage0
+results/axang/axes.npz

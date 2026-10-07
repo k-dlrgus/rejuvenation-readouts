@@ -1,0 +1,19 @@
+[     2.3s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[     2.5s] [align index] overlap=16781 ensembl=0 symbol=16781
+[     2.5s] [align] ruler=23485 present=16781 dup_file_cols=10
+[     2.6s] [panel] qualifying perturbations n>=30: 340
+[     7.5s] [basis] S2A_k20 read frozen from results/south7/basis.npz L=(23485, 20) n_mid=308 max|LtL-I|=3.553e-15
+[     8.1s] [d3] NT CRA (666, 16781)
+[     9.2s] [d3] NT CRI (1479, 16781)
+[    18.1s] [d3a] n=96 done
+[    26.5s] [d3a] n=107 done
+[    35.5s] [d3a] n=128 done
+[    45.8s] [d3a] n=157 done
+[    45.8s] [d3a] gate=QUALIFIED p25=0.945 p50=1.000
+[   135.4s] [d3b floors] CRA 25/81
+[   235.6s] [d3b floors] CRA 50/81
+[   341.1s] [d3b floors] CRA 75/81
+[   461.0s] [d3b floors] CRI 25/80
+[   560.7s] [d3b floors] CRI 50/80
+[   669.9s] [d3b floors] CRI 75/80
+[   696.2s] [d3] gate_a=QUALIFIED gate_b=NO APPROACH k_named=0 called=5 of 340

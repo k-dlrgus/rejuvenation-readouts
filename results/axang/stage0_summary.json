@@ -1,0 +1,149 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "item": "SENG4 cos(P1,a) CRA",
+      "kind": "numeric",
+      "stored": 0.941708,
+      "got": 0.9417078171662362,
+      "ok": true
+    },
+    {
+      "item": "SENG4 cos(P1,a) CRI",
+      "kind": "numeric",
+      "stored": 0.936287,
+      "got": 0.9362873258131401,
+      "ok": true
+    },
+    {
+      "item": "SENG4 cos(P3,a)",
+      "kind": "numeric",
+      "stored": 0.474385,
+      "got": 0.4743851994541426,
+      "ok": true
+    },
+    {
+      "item": "SENG4 cos(a,u) full-gene",
+      "kind": "numeric",
+      "stored": -0.040273,
+      "got": -0.04027293769593313,
+      "ok": true
+    },
+    {
+      "item": "SENG4 cos(a,u) S2A_k20",
+      "kind": "numeric",
+      "stored": -0.199293,
+      "got": -0.19929260116459008,
+      "ok": true
+    },
+    {
+      "item": "SOUTH9 res power_25 @106",
+      "kind": "numeric",
+      "stored": 0.99,
+      "got": 0.99,
+      "ok": true
+    },
+    {
+      "item": "SOUTH9 raw power_25 @106",
+      "kind": "numeric",
+      "stored": 0.98,
+      "got": 0.98,
+      "ok": true
+    },
+    {
+      "item": "SOUTH8 all_1836 m",
+      "kind": "count",
+      "stored": 1836,
+      "got": 1836,
+      "ok": true
+    },
+    {
+      "item": "SOUTH8 all_1836 amended_call_S2A_k20",
+      "kind": "count",
+      "stored": 125,
+      "got": 125,
+      "ok": true
+    },
+    {
+      "item": "SOUTH8 all_1836 below_depth_floor_S2A_k20",
+      "kind": "count",
+      "stored": 153,
+      "got": 153,
+      "ok": true
+    },
+    {
+      "item": "E1 stored cos(A4, GTEx age axis)",
+      "kind": "numeric",
+      "stored": 0.039,
+      "got": 0.039,
+      "ok": true
+    },
+    {
+      "item": "E1 cos(A4,u) re-derived vs stored",
+      "kind": "numeric",
+      "stored": 0.038815304035390776,
+      "got": 0.038815304035390776,
+      "ok": true
+    },
+    {
+      "item": "anchors n_young",
+      "kind": "count",
+      "stored": 113,
+      "got": 113,
+      "ok": true
+    },
+    {
+      "item": "anchors n_old",
+      "kind": "count",
+      "stored": 231,
+      "got": 231,
+      "ok": true
+    }
+  ],
+  "meta": {
+    "cc_on_ruler": 94,
+    "cc_total": 97,
+    "cc_missing_from_ruler": [
+      "MLF1IP",
+      "FAM64A",
+      "HN1"
+    ],
+    "n_gtex_donors": 652,
+    "n_gtex_anchor_donors": 344,
+    "gtex_quartiles": {
+      "q25": 3.171374751041901,
+      "q75": 6.105879962761351,
+      "n_bottom": 163,
+      "n_top": 163
+    },
+    "gtex_anchor_quartiles": {
+      "q25": 3.187580431885819,
+      "q75": 6.125823240330879,
+      "n_bottom": 86,
+      "n_top": 86
+    },
+    "n_south_nt_cells": 14013,
+    "n_seng_half1": {
+      "CRA": 333,
+      "CRI": 739
+    },
+    "lu": {
+      "GM23815": {
+        "n_day0": 7782,
+        "n_bottom": 1946,
+        "n_top": 1946,
+        "cc_genes_found": 94,
+        "ruler_genes_present": 16781
+      },
+      "GM00731": {
+        "n_day0": 5021,
+        "n_bottom": 1256,
+        "n_top": 1256,
+        "cc_genes_found": 94,
+        "ruler_genes_present": 16781
+      }
+    },
+    "stored_a4_cos": 0.038815304035390776,
+    "n_ruler": 23485
+  }
+}

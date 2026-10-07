@@ -1,0 +1,10 @@
+[     2.4s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[     2.6s] [align index] overlap=16781 ensembl=0 symbol=16781
+[     2.6s] [align] ruler=23485 present=16781 dup_file_cols=10
+[     2.6s] [panel] qualifying perturbations n>=30: 340
+[     8.5s] [basis] S2A_k20 read frozen from results/south7/basis.npz L=(23485, 20) n_mid=308 max|LtL-I|=3.553e-15
+[     8.6s] [d2] Sengstack present=16781 absent=6704 pct_gap_sq_unmeasured=21.972
+[     8.6s] [d2] Southard present=20264 absent=3221 pct_gap_sq_unmeasured=10.004
+[     8.6s] [d2] Lu present=16781 absent=6704 pct_gap_sq_unmeasured=21.972
+[     8.6s] [d2] PD32 {'dist_to_young': 465.0438150012951, 'dist_to_old': 461.1028485055745, 'young_old_gap': 32.28394904985961, 'ratio_to_gap_young': 14.404799557918935, 'ratio_to_gap_old': 14.28272754963909}
+[     8.6s] [d2] earlier: 55 of 340 with p<=0.05 on cos(d,u)

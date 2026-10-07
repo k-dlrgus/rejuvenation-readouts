@@ -1,0 +1,36 @@
+{
+  "Sengstack": {
+    "present": 16781,
+    "absent": 6704,
+    "pct_gap_sq_in_unmeasured": 21.97242392036851
+  },
+  "Southard": {
+    "present": 20264,
+    "absent": 3221,
+    "pct_gap_sq_in_unmeasured": 10.004331275851223
+  },
+  "Lu": {
+    "present": 16781,
+    "absent": 6704,
+    "pct_gap_sq_in_unmeasured": 21.97242392036851
+  },
+  "PD32_vs_GTEx": {
+    "dist_to_young": 465.0438150012951,
+    "dist_to_old": 461.1028485055745,
+    "young_old_gap": 32.28394904985961,
+    "ratio_to_gap_young": 14.404799557918935,
+    "ratio_to_gap_old": 14.28272754963909
+  },
+  "earlier_gtex_anchored": {
+    "file": "results/seng/screen.csv",
+    "columns": [
+      "cos_d_u",
+      "p_cos_d_u"
+    ],
+    "n": 340,
+    "n_p_le_05": 55,
+    "median_cos_d_u": -0.0125310594001579,
+    "max_cos_d_u": 0.0852655877551753,
+    "note": "SENG computed the cosine of each displacement with the GTEx donor-age direction u and a permutation p, which is a DIRECTION test against donor age. It did not run an approach/distance test anchored on the GTEx centroids. D3 of this task is the first."
+  }
+}

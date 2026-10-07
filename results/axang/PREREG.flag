@@ -1,0 +1,243 @@
+PREREG written 2026-10-06T23:34:40Z (local 2026-10-07 08:34:40 KST)
+Written before any AXANG number exists. Reproduced verbatim at the top of
+FINDINGS_AXANG.md. Not edited after this timestamp. The amendments E1-E4 at
+the end were supplied with the flag and are part of the pre-registration.
+
+TASK: AXANG — how far is each aging model from a proliferation axis?
+Written before any AXANG number exists.
+
+Nature: computational, descriptive geometry. No new data. Reads
+results/fibro/, results/south6/, results/south7/, results/south9/,
+results/seng3/, results/seng4/ and, only if an axis cannot be read from a
+stored file, the Southard and Sengstack matrices already on disk. Writes only
+results/axang/ and FINDINGS_AXANG.md. Nothing is committed or pushed.
+
+--- THE QUESTION ---
+
+SENG4 fired D1 INSEPARABLE: the Sengstack passage-aging axis sits
+19.66 degrees from a proliferation axis built from that dataset's own
+non-targeting cells (cos +0.941708, CRA), and 61.68 degrees from a
+proliferation axis built from the Tirosh gene list alone (cos +0.474385).
+Projecting the first out removed 66% of the aging axis's length and cost the
+statistic its sensitivity.
+
+SOUTH9 fired D2 RETAINED on the Southard screen, whose aging axis is the GTEx
+donor-age direction: residualizing proliferation there left power at 0.990
+against 0.980 raw. So the separation evidently works against donor age and
+fails against passage. But that is an inference from sensitivity, not a
+measured angle, and no angle exists for the donor-age model.
+
+This task measures the same angle, by the same constructions, for every aging
+model this project uses, so the models can be compared directly on one scale.
+It decides nothing about any transcription factor and names none as a
+candidate.
+
+A geometric expectation is recorded here before any number: this project's
+standing finding is cos(passage axis, GTEx donor-age axis) = -0.040273, i.e.
+the two aging models are near-orthogonal. Combined with SENG4's finding that
+passage is near-parallel to proliferation, the donor-age axis should then be
+near-orthogonal to proliferation as well. If the measured angles do not form
+a consistent triangle, that inconsistency is itself reportable and must be
+stated rather than smoothed.
+
+--- STATE THE METHOD BEFORE USING IT ---
+
+Report, before any AXANG number:
+ (a) for every axis used below, the stored file it is read from, or if it
+     must be rebuilt, exactly what cells or donors enter it and the recipe,
+     quoting the source lines from the committed code;
+ (b) which axes are read frozen and which are rebuilt here. Frozen
+     instruments are read, not refit;
+ (c) the space each comparison is made in, and a statement that cosines are
+     only compared between axes living in the same space and dimension. Any
+     cross-space number is labelled as not comparable;
+ (d) whether any axis is estimated from cells that also define another axis
+     in the same comparison. If so, say so plainly and label the affected
+     numbers. Do not refit to hide it.
+
+--- STAGE 0: REPRODUCE FIRST (gate) ---
+
+Re-derive with this task's code, from stored files:
+ (a) SENG4 D1: cos(P1, a) = +0.941708 (CRA) and +0.936287 (CRI);
+     cos(P3, a) = +0.474385;
+ (b) SENG4 D1: cos(a, u) = -0.040273 in the full-gene space and
+     -0.199293 in S2A_k20;
+ (c) SOUTH9's D2 residualized and raw power at 106 cells in S2A_k20:
+     0.990 and 0.980;
+ (d) SOUTH8's amended counts in S2A_k20: 125 of 1,836 called and 153 below
+     floor.
+Pass: counts exact, numerics within 1e-4 * max(1, |stored|).
+Fail -> STOP `prior_results_not_reproduced`, naming every mismatch.
+
+--- D1. The angles (gated) ---
+
+Three aging axes, each a unit vector:
+ A1, GTEx donor age: the young-minus-old centroid direction, young = GTEx
+     reference donors aged 20-39 (n = 113), old = 60-79 (n = 231), read from
+     the stored anchors, not rebuilt.
+ A2, the frozen ruler direction: the unit-length frozen fibroblast ruler
+     vector, read from results/fibro/, not refit.
+ A3, Sengstack passage: PD14 half A minus PD32 half A, as SENG4 defines it.
+
+Two proliferation axis constructions, each applied wherever the data allows:
+ C1, data-derived: score the units of that dataset for cell-cycle activity
+     with the Tirosh S and G2M lists at
+     results/seng/seurat_cc.genes_tirosh2016.tsv, and take the direction from
+     the bottom quartile to the top quartile of that score. The units are
+     GTEx donors for A1 and A2, Southard non-targeting cells for the Southard
+     comparison, and Sengstack non-targeting cells for A3. State n for each.
+ C2, gene-list: the equal-weight unit direction over the same Tirosh genes,
+     positive for cycling, built from no cell or donor at all.
+
+Report, in S2A_k20 and again in the full-gene space where both axes exist
+there, with every pair labelled by the space it lives in:
+ - cos and angle in degrees between each aging axis and each proliferation
+   construction available to it;
+ - the fraction of the aging axis's length surviving projection of each
+   proliferation axis out, sqrt(1 - cos^2), as a percentage;
+ - cos and angle between every pair of aging axes;
+ - cos and angle between every pair of proliferation axes, including the
+   Southard-derived and Sengstack-derived C1 axes against each other;
+ - n of cells or donors entering each C1 axis;
+ - the three SENG4 values reproduced in Stage 0, in the same table, so the
+   new numbers sit beside the known ones.
+
+Also report, as the triangle consistency check the question section names:
+the angle between A1 and A3, the angle between A3 and its C1, and the angle
+between A1 and its C1, with a statement of whether the three are mutually
+consistent to within the bootstrap intervals below.
+
+Intervals: 200-draw percentile bootstraps, resampling the unit that defines
+each axis (donors for A1 and A2, cells for C1 in each dataset). Report the
+2.5-97.5% range on every cosine. Seed 20260918. Any interval that does not
+contain its point estimate is flagged invalid and is not used as a gate.
+
+Gate, wording fixed now. Let d be the angle between A1 and its data-derived
+proliferation axis C1, in S2A_k20, and let p = 19.66 degrees be the SENG4
+value for A3.
+ - SEPARABLE (d >= 45): "donor aging sits <d> degrees from an independently
+   measured proliferation axis, against <p> degrees for passage aging in the
+   same construction. A rejuvenation signal can be distinguished from a
+   change in proliferative state against donor age and cannot be against
+   passage number."
+ - INTERMEDIATE (25 <= d < 45): "donor aging sits <d> degrees from
+   proliferation, against <p> for passage aging. Donor age is the better
+   separated of the two models but proliferation still carries <pct>% of it,
+   and any donor-age rejuvenation readout must report a
+   proliferation-residualized version beside the headline."
+ - ENTANGLED (d < 25): "donor aging sits <d> degrees from proliferation,
+   close to the <p> of passage aging. Proliferation cannot be separated from
+   either aging model here, and this project's own Southard proliferation
+   finding requires re-reading."
+
+The gate is read on C1, the data-derived construction, because that is the
+construction SENG4's primary axis used and the comparison must be
+like-for-like. If C2 would fire a different branch, say so prominently beside
+the gate and report both branch sentences, with C1's as the task's reading.
+If the ENTANGLED branch fires, state explicitly that SOUTH9's RETAINED
+reading and SOUTH8's residualized count are placed in question by it, and
+name the files, without revising them here.
+
+--- D2. Report-only, no decision rule ---
+ - Whether the Southard-derived and Sengstack-derived C1 axes agree with each
+   other, and what that says about whether the recipe measures the same thing
+   in two datasets.
+ - The fraction of each aging axis's length that survives projecting out C2
+   rather than C1, so the dependence on the construction is visible.
+ - A single table collecting every angle this project has measured between an
+   aging direction and a proliferation direction, across SOUTH9, SENG4 and
+   this task.
+
+--- WHAT DOES NOT COUNT ---
+- choosing an axis, a space or a construction after seeing an angle;
+- naming any transcription factor as a candidate, or reporting any
+  per-factor statistic at all; this task is about directions, not factors;
+- treating C2 as primary because it gives a preferred answer;
+- reading any angle measured in GTEx bulk donors as a statement about single
+  cells, or the reverse;
+- refitting any frozen instrument;
+- any claim about Junevity's published numbers being unreproducible.
+
+--- STOP KEYS ---
+prior_results_not_reproduced; axis_not_readable; space_mismatch.
+Seeds: 20260914 splits and permutations, 20260918 bootstraps.
+n_boot = 200.
+
+--- AMENDMENTS ADDED BEFORE ANY AXANG NUMBER EXISTS ---
+
+These are part of the pre-registration and are written to PREREG.flag with
+the rest.
+
+E1. A fourth aging axis, for the preprint's own data.
+ A4, Lu donor pair: the direction from the 96-year-old donor's (GM00731)
+     day-0 fibroblasts to the 22-year-old donor's (GM23815) day-0
+     fibroblasts in GSE297234, as the preprint defines it, read from stored
+     results if present. Add A4 to every D1 table, with its C1 built from
+     the day-0 fibroblasts of both donors and its C2 as defined. Report the
+     stored preprint value cos(A4, GTEx age axis) = 0.039 in Stage 0 and
+     reproduce it. A4 is reported, not gated; the D1 gate is unchanged.
+
+E2. Additions to D2, report-only:
+ - For each of the three datasets (Lu/GSE297234, Southard, Sengstack), the
+   number of the 23,485 reference-panel genes present and absent, and the
+   share of the GTEx young-minus-old centroid difference's squared length
+   that lies in the genes that dataset does not measure, as a percentage.
+   This bounds how much of any approach is unreachable by construction and
+   is reported, not corrected.
+ - Whether any earlier SENG task computed a GTEx-anchored approach test on
+   the Sengstack data. Report what it found if so; state plainly if not.
+ - The distance from the Sengstack PD32 pseudobulk to the GTEx young and old
+   centroids, against the young-to-old gap, in the same gene space,
+   mirroring Supplementary Note 1 of the preprint. A bound, not a test.
+
+E3. D3 — Junevity's four factors against donor aging (gated).
+ This section is exempt from the line under WHAT DOES NOT COUNT that forbids
+ naming factors or reporting per-factor statistics. That line still applies
+ to D1 and D2.
+
+ Method: the Southard GTEx-anchored test exactly as SOUTH8/SOUTH9 run it —
+ each perturbation's displacement (perturbed minus its own library's NT
+ cells, same machine) applied to the GTEx old centroid, asking whether it
+ ends closer to the GTEx young centroid, with a floor built at each
+ perturbation's own cell count from NT draws in its own library, in
+ S2A_k20 primary. Read the recipe off the committed SOUTH8/SOUTH9 code and
+ quote the lines. If it cannot be read, STOP `south_recipe_unreadable`.
+ State that this transplants a displacement measured on one platform onto a
+ bulk GTEx origin, wherever a number appears.
+
+ D3a, plant gate first, before any factor number. Displace NT draws along
+ the GTEx young-minus-old direction by 25, 50 and 100% of the gap, 200 draws
+ per dose, at 96, 107, 128 and 157 cells, both libraries. p25 and p50 are the
+ lowest powers across the eight combinations.
+  - QUALIFIED (p25 >= 0.80): "the GTEx-anchored test detects a 25% approach
+    toward donor youth at these factors' depths, lowest power <p25>."
+  - LIMITED (p25 < 0.80, p50 >= 0.80): "it detects a 50% approach but not a
+    25% one, lowest powers <p50> and <p25>; every D3b number speaks only to
+    approaches of at least half the donor-age gap."
+  - BLIND (p50 < 0.80): "the GTEx-anchored test cannot see a half-gap
+    approach toward donor youth at these depths, lowest power <p50>; D3b is
+    reported and carries no conclusion about any factor."
+
+ D3b, for all 340 perturbations and for the four individually:
+  - called approaching (below floor and distance decreased), against the
+    chance expectation of 17.0 of 340 with its 95% binomial interval, per
+    modality;
+  - for each of the four: cell count, change in distance, floor, called,
+    and the cosine and angle of its displacement with the GTEx age axis,
+    with the passage axis A3, and with its library's C1 proliferation axis;
+  - SOUTH8's stored result for the same four gene names in the Southard
+    screen beside them, labelled as activation-only and, for STAT3 and ZFX,
+    the opposite perturbation.
+
+ D3 gate, on the four, applied only if D3a did not fire BLIND:
+  - APPROACH (two or more called): "<k> of Junevity's four factors move
+    their own cells toward young human donors as measured against GTEx:
+    <list>."
+  - NO APPROACH (fewer than two called): "none of Junevity's four factors
+    measurably moves their cells toward young human donors as measured
+    against GTEx, with an instrument qualified at their depth."
+
+ No factor named in D3 is validated or a pilot candidate. Passaged
+ neonatal-line cells remain the substrate whatever fires.
+
+E4. Additional STOP key: south_recipe_unreadable.
