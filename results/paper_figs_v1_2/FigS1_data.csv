@@ -1,0 +1,35 @@
+panel,series,label,x,y,n_cells,note
+A,96-y donor (GM00731),PartialReprog,1.0,0.07724629325885633,5832.0,results/toward/stats.csv cos_S
+A,96-y donor (GM00731),EarlyPluripotency,2.0,0.11749386211345066,4414.0,results/toward/stats.csv cos_S
+A,96-y donor (GM00731),Pluripotency,3.0,0.12573888806099967,439.0,results/toward/stats.csv cos_S
+A,96-y donor (GM00731),NonReprog,4.3,0.06314048716167284,5459.0,results/toward/stats.csv cos_S; open marker
+A,22-y donor (GM23815),PartialReprog,1.0,0.05228215639055916,6481.0,results/toward/stats.csv cos_S
+A,22-y donor (GM23815),EarlyPluripotency,2.0,0.0757529481897396,12961.0,results/toward/stats.csv cos_S
+A,22-y donor (GM23815),Pluripotency,3.0,0.11212497165904678,1249.0,results/toward/stats.csv cos_S
+A,22-y donor (GM23815),NonReprog,4.3,0.00993185647907225,1812.0,results/toward/stats.csv cos_S; open marker
+B,96-y donor (GM00731),Fibroblast,0.0,0.0,4939.0,results/toward/stats.csv delta_young
+B,96-y donor (GM00731),PartialReprog,1.0,9.369675854981608,5832.0,results/toward/stats.csv delta_young
+B,96-y donor (GM00731),EarlyPluripotency,2.0,30.45586262454492,4414.0,results/toward/stats.csv delta_young
+B,96-y donor (GM00731),Pluripotency,3.0,184.04936725232898,439.0,results/toward/stats.csv delta_young
+B,96-y donor (GM00731),NonReprog,4.3,8.93175032427473,5459.0,results/toward/stats.csv delta_young; open marker
+B,22-y donor (GM23815),Fibroblast,0.0,0.0,7703.0,results/toward/stats.csv delta_young
+B,22-y donor (GM23815),PartialReprog,1.0,14.189292709447386,6481.0,results/toward/stats.csv delta_young
+B,22-y donor (GM23815),EarlyPluripotency,2.0,46.32172307134368,12961.0,results/toward/stats.csv delta_young
+B,22-y donor (GM23815),Pluripotency,3.0,185.95746874171647,1249.0,results/toward/stats.csv delta_young
+B,22-y donor (GM23815),NonReprog,4.3,41.971458999473384,1812.0,results/toward/stats.csv delta_young; open marker
+C,96-y donor (GM00731),Fibroblast,0.0,3.2223431754797915,4939.0,results/toward/stats.csv ruler_score_context
+C,96-y donor (GM00731),PartialReprog,1.0,0.649671949099142,5832.0,results/toward/stats.csv ruler_score_context
+C,96-y donor (GM00731),EarlyPluripotency,2.0,-2.6214814234252284,4414.0,results/toward/stats.csv ruler_score_context
+C,96-y donor (GM00731),Pluripotency,3.0,-10.401708090903364,439.0,results/toward/stats.csv ruler_score_context
+C,96-y donor (GM00731),NonReprog,4.3,6.854581656061731,5459.0,results/toward/stats.csv ruler_score_context; open marker
+C,22-y donor (GM23815),Fibroblast,0.0,-1.8926624376499435,7703.0,results/toward/stats.csv ruler_score_context
+C,22-y donor (GM23815),PartialReprog,1.0,-4.659217997609221,6481.0,results/toward/stats.csv ruler_score_context
+C,22-y donor (GM23815),EarlyPluripotency,2.0,-7.959129611397984,12961.0,results/toward/stats.csv ruler_score_context
+C,22-y donor (GM23815),Pluripotency,3.0,-15.095105105078696,1249.0,results/toward/stats.csv ruler_score_context
+C,22-y donor (GM23815),NonReprog,4.3,-0.0975391814605947,1812.0,results/toward/stats.csv ruler_score_context; open marker
+D,GTEx fold,fold 0,0.88,0.6146975302850424,,n_train=521; n_test=131
+D,GTEx fold,fold 1,0.94,0.8486163048997541,,n_train=521; n_test=131
+D,GTEx fold,fold 2,1.0,0.7144592461417902,,n_train=522; n_test=130
+D,GTEx fold,fold 3,1.06,0.8251547386232909,,n_train=522; n_test=130
+D,GTEx fold,fold 4,1.12,0.8740972886541529,,n_train=522; n_test=130
+D,pre-registered bar (dashed line),c3 bar,,0.5,,results/toward/summary.json c3.bar

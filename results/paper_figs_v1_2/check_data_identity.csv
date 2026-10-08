@@ -1,0 +1,7 @@
+figure,artist_items_compared,numeric_items,text_items,artist_items_differing,plotting_table_rows,plotting_table_identical,data_csv_bytes_identical_to_figures_final,identical
+Fig1,57,37,20,0,13,True,True,True
+Fig2,77,53,24,0,818,True,True,True
+Fig3,76,47,29,0,153,True,True,True
+Fig4,71,53,18,0,7,True,True,True
+Fig5,49,34,15,0,28,True,True,True
+FigS1,67,39,28,0,34,True,True,True

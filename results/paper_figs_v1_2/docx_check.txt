@@ -1,0 +1,25 @@
+Check of paper/rejuvenation_readouts_preprint_v1.2.docx against paper/rejuvenation_readouts_preprint_v1.2_draft.docx
+(paper/ is git-ignored; these lines are the record of the comparison, run 2026-10-08.)
+
+Zip-level and XML comparison:
+  same entries, same order: True
+  entries whose bytes differ: ['word/document.xml', 'word/media/image4.png', 'word/media/image3.png', 'word/media/image6.png', 'word/media/image5.png', 'word/media/image2.png', 'word/media/image1.png']
+  document.xml identical once picture extents are masked: True
+  extent elements changed: 12
+  text of every XML part identical: True (66307 characters)
+  caption paragraphs: 6 byte-identical XML: True
+
+Word's own reading (COM, both files opened read-only):
+  Word text identical: True (65205 vs 65205 characters)
+  Pages: draft 13, v1.2 14
+  Inline pictures in v1.2: all six 7.50 in wide (2.80, 3.00, 4.50, 2.80, 3.00, 4.50 in tall), scale 100% x 100%
+
+PDF (Word ExportAsFixedFormat, tagged, no bookmarks; same producer as the v12 PDF):
+  paper/rejuvenation_readouts_preprint_v1.2.pdf: 14 pages, 1184753 bytes
+  figure images embedded at 1499 px wide = 200 ppi at 7.5 in (Word downsamples on PDF export;
+  the v12 PDF held them at 1028-1437 px, 137-192 ppi). The docx holds the 300 dpi PNGs unchanged.
+
+SHA-256:
+  4da7d75214041b4fd587a11a956b911b86471e52a253ee16cc7af77c2d03b7a3 *paper/rejuvenation_readouts_preprint_v1.2_draft.docx
+  c784c7859ea5d2b3ce390961135ce0b27ad4281109eed21a568b8a7dde7d8df8 *paper/rejuvenation_readouts_preprint_v1.2.docx
+  779d7d12395f921a675fe9005009663833590d434a62c6eb5586de666bf06135 *paper/rejuvenation_readouts_preprint_v1.2.pdf

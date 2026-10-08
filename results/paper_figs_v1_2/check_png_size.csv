@@ -1,0 +1,7 @@
+figure,rows,width_px,height_px,dpi,width_in,height_in,height_limit_in,passes
+Fig1,1,2250,840,300.0,7.5,2.8,3.0,True
+Fig2,1,2250,900,300.0,7.5,3.0,3.0,True
+Fig3,2,2250,1350,300.0,7.5,4.5,4.5,True
+Fig4,1,2250,840,300.0,7.5,2.8,3.0,True
+Fig5,1,2250,900,300.0,7.5,3.0,3.0,True
+FigS1,2,2250,1350,300.0,7.5,4.5,4.5,True

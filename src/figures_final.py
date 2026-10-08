@@ -17,7 +17,14 @@ Colours: blue = frozen ruler and all genes (23,485); vermillion = MD; reddish pu
 lists and age genes; black and greys = everything else. With both donors in a panel, 96-year-old
 donor = black and 22-year-old donor = mid grey.
 
-Writes only results/figures_final/ (PNG 300 dpi, PDF and plotting-data CSV per figure).
+Preprint v1.2 layout: every figure is drawn at the text width of
+paper/rejuvenation_readouts_preprint_v1.2_draft.docx (7.5 in: US Letter, 0.5 in margins) so it is
+inserted at 100%, at most 3.0 in tall for one row of panels and 4.5 in for two. One style throughout:
+Arial, every label 7 pt, panel letters 9 pt bold, one axis/reference line width, one data line width,
+one marker size. Only size, layout and styling changed from the v12 figures in results/figures_final/
+(src/figures_final.py at 77b74e0); src/paper_figs_v1_2_check.py shows the plotted data are identical.
+
+Writes only results/paper_figs_v1_2/ (PNG 300 dpi, PDF and plotting-data CSV per figure).
 
 Usage: python src/figures_final.py
 """
@@ -37,7 +44,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import RESULTS, ROOT  # noqa: E402
 
-OUT = RESULTS / "figures_final"
+OUT = RESULTS / "paper_figs_v1_2"
 NEWSTORY = RESULTS / "newstory"
 TOWARD = RESULTS / "toward"
 FIBRO3_EXTRAP = RESULTS / "fibro3" / "t2_extrap.csv"
@@ -66,28 +73,68 @@ STATE_WORDS = dict(Fibroblast_d0="Day 0", PartialReprog="Partial\nreprogramming"
 # Fig3 / Fig4: stored true-donor ruler Spearman (results/paper_figs/cxg_true_donor_results.csv).
 ATLAS_RHO = 0.43338041757870716
 
-NEWSTORY_RC = {
-    "font.family": "sans-serif", "font.sans-serif": ["Arial", "Helvetica", "DejaVu Sans"],
-    "font.size": 7, "axes.labelsize": 7, "xtick.labelsize": 6.5, "ytick.labelsize": 6.5,
-    "legend.fontsize": 6.5, "axes.spines.top": False, "axes.spines.right": False,
-    "axes.linewidth": 0.6, "xtick.major.width": 0.6, "ytick.major.width": 0.6,
-    "xtick.major.size": 2.5, "ytick.major.size": 2.5, "lines.linewidth": 0.9,
-    "pdf.fonttype": 42, "ps.fonttype": 42, "savefig.dpi": 300,
-}
-MANUSCRIPT_RC = {
-    "font.family": "Arial", "font.size": 8, "axes.labelsize": 8, "axes.titlesize": 9,
-    "xtick.labelsize": 7.5, "ytick.labelsize": 7.5, "axes.linewidth": 0.8,
-    "axes.spines.top": False, "axes.spines.right": False, "pdf.fonttype": 42, "ps.fonttype": 42,
+TEXT_W = 7.5            # in; figure width = docx text width
+MAX_H = {1: 3.0, 2: 4.5}  # in; height limit by number of panel rows
+FS = 7                  # every label, tick label, title, legend entry and annotation
+FS_LETTER = 9           # panel letters, bold
+LW_AXIS = 0.6           # spines, ticks, and reference lines (zero lines, dashed guides, circle)
+LW_DATA = 1.0           # data lines and error bars
+MS = 4.0                # every data marker (scatter: s = MS ** 2)
+MS_BG = 2.0             # Fig2 background cloud of 400 random gene sets
+MS_STAR = 6.0           # target star in the plane panels; a star at MS reads smaller than a circle
+MEW = 0.8               # edge width of open markers
+CAP = 2.0               # error-bar cap size
+
+STYLE_RC = {
+    "font.family": "Arial", "font.size": FS, "axes.labelsize": FS, "axes.titlesize": FS,
+    "xtick.labelsize": FS, "ytick.labelsize": FS, "legend.fontsize": FS,
+    "axes.spines.top": False, "axes.spines.right": False,
+    "axes.linewidth": LW_AXIS, "xtick.major.width": LW_AXIS, "ytick.major.width": LW_AXIS,
+    "xtick.major.size": 2.5, "ytick.major.size": 2.5, "lines.linewidth": LW_DATA,
+    "lines.markersize": MS, "lines.markeredgewidth": MEW, "errorbar.capsize": CAP,
+    "axes.titlepad": 4, "pdf.fonttype": 42, "ps.fonttype": 42, "savefig.dpi": 300,
     "savefig.facecolor": "white", "figure.facecolor": "white",
 }
 
 
-def use_style(rc):
+def use_style(rc=STYLE_RC):
     matplotlib.rc_file_defaults()
     plt.rcParams.update(rc)
 
 
+def new_figure(height, rows):
+    if height > MAX_H[rows]:
+        raise SystemExit(f"STOP: {height} in is over the {MAX_H[rows]} in limit for {rows} row(s)")
+    return plt.figure(figsize=(TEXT_W, height))
+
+
+def axes_in(fig, left, bottom, width, height):
+    """Axes placed in inches from the lower-left corner of the figure."""
+    w, h = fig.get_size_inches()
+    return fig.add_axes([left / w, bottom / h, width / w, height / h])
+
+
+def panel_letters(fig, rows, pad=0.06):
+    """Letters at the left edge of each panel's labelled area, one baseline per row of panels."""
+    fig.canvas.draw()
+    r = fig.canvas.get_renderer()
+    inv = fig.transFigure.inverted()
+    _, h = fig.get_size_inches()
+    for row in rows:
+        boxes = [ax.get_tightbbox(r) for ax, _ in row]
+        top = max(inv.transform((0, b.y1))[1] for b in boxes)
+        for (ax, s), b in zip(row, boxes):
+            x0 = inv.transform((b.x0, 0))[0]
+            fig.text(x0, top + pad / h, s, fontsize=FS_LETTER, fontweight="bold", ha="left", va="bottom")
+
+
 def save(fig, stem, data):
+    w, h = fig.get_size_inches()
+    if abs(w - TEXT_W) > 1e-9:
+        raise SystemExit(f"STOP: {stem} is {w} in wide, not the text width {TEXT_W} in")
+    bb = fig.get_tightbbox(fig.canvas.get_renderer())
+    if bb.x0 < 0 or bb.y0 < 0 or bb.x1 > w or bb.y1 > h:
+        raise SystemExit(f"STOP: {stem} draws outside the figure: {bb.bounds} vs {w} x {h} in")
     fig.savefig(OUT / f"{stem}.png", dpi=300)
     fig.savefig(OUT / f"{stem}.pdf")
     plt.close(fig)
@@ -96,32 +143,21 @@ def save(fig, stem, data):
 
 
 # --------------------------------------------------------------------------- newstory helpers
-def panel_letter(ax, s, x=-0.2):
-    ax.text(x, 1.04, s, transform=ax.transAxes, fontsize=9, fontweight="bold", va="bottom", ha="left")
-
-
-def aligned_panel_letters(fig, letters, x=-0.3):
-    # Equal-aspect axes shrink inside their gridspec slot, so letters are placed at one figure height.
-    from matplotlib.transforms import blended_transform_factory
-    for ax, _ in letters:
-        ax.apply_aspect()
-    pos = [ax.get_position() for ax, _ in letters]
-    y = max(p.y1 + 0.04 * p.height for p in pos)
-    for ax, s in letters:
-        fig.text(x, y, s, transform=blended_transform_factory(ax.transAxes, fig.transFigure), fontsize=9,
-                 fontweight="bold", va="bottom", ha="left")
+def plane_width(height, xlim, ylim):
+    """Width in inches of an equal-aspect plane panel of the given height."""
+    return height * (xlim[1] - xlim[0]) / (ylim[1] - ylim[0])
 
 
 def draw_plane_frame(ax, xlim, ylim, circle_label_xy=(1.3, 0.5)):
     from matplotlib.patches import Circle
-    ax.add_patch(Circle((1.0, 0.0), 1.0, fill=False, ls=(0, (4, 2.5)), lw=0.8, ec=GREY, zorder=1))
+    ax.add_patch(Circle((1.0, 0.0), 1.0, fill=False, ls=(0, (4, 2.5)), lw=LW_AXIS, ec=GREY, zorder=1))
     if circle_label_xy:
-        ax.text(*circle_label_xy, "closer than\nat start", ha="center", va="center", fontsize=6, color=DARKGREY)
-    ax.axhline(0, color=BLACK, lw=0.5, zorder=0)
-    ax.plot([0], [0], marker="s", ms=4.5, mfc="white", mec=BLACK, mew=0.8, ls="none", zorder=5, clip_on=False)
-    ax.plot([1], [0], marker="*", ms=7.5, mfc=BLACK, mec=BLACK, ls="none", zorder=5, clip_on=False)
-    ax.annotate("start", (0, 0), xytext=(-4, 3), textcoords="offset points", fontsize=5.8, ha="right", va="bottom")
-    ax.annotate("target", (1, 0), xytext=(4.5, 3), textcoords="offset points", fontsize=5.8, ha="left", va="bottom")
+        ax.text(*circle_label_xy, "closer than\nat start", ha="center", va="center", fontsize=FS, color=DARKGREY)
+    ax.axhline(0, color=BLACK, lw=LW_AXIS, zorder=0)
+    ax.plot([0], [0], marker="s", ms=MS, mfc="white", mec=BLACK, mew=MEW, ls="none", zorder=5, clip_on=False)
+    ax.plot([1], [0], marker="*", ms=MS_STAR, mfc=BLACK, mec=BLACK, ls="none", zorder=5, clip_on=False)
+    ax.annotate("start", (0, 0), xytext=(-4, 3), textcoords="offset points", fontsize=FS, ha="right", va="bottom")
+    ax.annotate("target", (1, 0), xytext=(4.5, 3), textcoords="offset points", fontsize=FS, ha="left", va="bottom")
     ax.set_xlim(*xlim)
     ax.set_ylim(*ylim)
     ax.set_aspect("equal", adjustable="box")
@@ -131,27 +167,25 @@ def draw_plane_frame(ax, xlim, ylim, circle_label_xy=(1.3, 0.5)):
 
 # --------------------------------------------------------------------------- Fig1
 def fig1():
-    use_style(NEWSTORY_RC)
+    use_style()
     st = pd.read_csv(NEWSTORY / "partA_md_by_state.csv")
     same = pd.read_csv(NEWSTORY / "partB_same_distances.csv")
     mix = pd.read_csv(NEWSTORY / "partB_mixture.csv")
     data = []
 
-    fig_w, left_in, ax_in, gap_in = 4.8, 0.525, 1.5925, 0.79625
-    fig = plt.figure(figsize=(fig_w, 3.0))
-    gsp = fig.add_gridspec(1, 2, wspace=gap_in / ax_in, left=left_in / fig_w,
-                           right=(left_in + 2 * ax_in + gap_in) / fig_w, bottom=0.27, top=0.92)
+    fig = new_figure(2.8, rows=1)
+    plane_xlim, plane_ylim = (-0.75, 2.05), (0, 4.25)
     # A
-    ax = fig.add_subplot(gsp[0])
+    ax = axes_in(fig, 0.55, 0.95, 3.1, 1.55)
     order = ("Fibroblast_d0", "PartialReprog", "EarlyPluripotency", "Pluripotency")
     aged = st[st.cell_line == AGED_LINE].set_index("state").loc[list(order)]
     young0 = st[(st.cell_line == YOUNG_LINE) & (st.state == "Fibroblast_d0")].iloc[0]
     x = np.arange(len(order))
-    ax.axhline(young0.joint_mean, color=DARKGREY, ls=(0, (4, 2.5)), lw=0.9, zorder=1)
+    ax.axhline(young0.joint_mean, color=DARKGREY, ls=(0, (4, 2.5)), lw=LW_AXIS, zorder=1)
     ax.text(len(order) - 0.55, young0.joint_mean + 0.012, "22-year-old donor, day 0", ha="right", va="bottom",
-            fontsize=6, color=DARKGREY)
+            fontsize=FS, color=DARKGREY)
     ax.errorbar(x, aged.joint_mean, yerr=[aged.joint_mean - aged.joint_ci_lo, aged.joint_ci_hi - aged.joint_mean],
-                fmt="o", ms=4, color=VERMILLION, ecolor=VERMILLION, elinewidth=0.9, capsize=2, zorder=3)
+                fmt="o", ms=MS, color=VERMILLION, ecolor=VERMILLION, elinewidth=LW_DATA, capsize=CAP, zorder=3)
     ax.set_xticks(x)
     ax.set_xticklabels([STATE_WORDS[s].replace("\n", " ") for s in order], rotation=30, ha="right",
                        rotation_mode="anchor")
@@ -159,7 +193,7 @@ def fig1():
     ax.set_ylim(-0.05, 0.6)
     ax.set_ylabel("MD score (mean, 95% CI)")
     ax.set_xlabel("Aged donor's cells")
-    panel_letter(ax, "A", x=-0.3)
+    ax_a = ax
     for s, r in aged.iterrows():
         data.append(dict(panel="A", series="aged donor", label=s, x=float(order.index(s)), y=r.joint_mean,
                          y_lo=r.joint_ci_lo, y_hi=r.joint_ci_hi, n_cells=int(r.n_cells)))
@@ -168,30 +202,31 @@ def fig1():
                      n_cells=int(young0.n_cells)))
 
     # B
-    ax = fig.add_subplot(gsp[1])
-    draw_plane_frame(ax, (-0.75, 2.05), (0, 4.25), circle_label_xy=(1.0, 0.57))
+    plane_h = 2.0
+    ax = axes_in(fig, 4.9, 0.5, plane_width(plane_h, plane_xlim, plane_ylim), plane_h)
+    draw_plane_frame(ax, plane_xlim, plane_ylim, circle_label_xy=(1.0, 0.57))
     md = same[same.space == "MD"].set_index("test")
     mm = mix[mix.space == "MD"].sort_values("f")
     for _, r in mm.iterrows():
-        ax.plot(r.progress, r.perp, marker="o", ms=3.6, ls="none", mec=LIGHTGREY, mew=0.8,
+        ax.plot(r.progress, r.perp, marker="o", ms=MS, ls="none", mec=LIGHTGREY, mew=MEW,
                 mfc="white" if r.f == 0 else LIGHTGREY, zorder=3)
         data.append(dict(panel="B", series="mixture", label=f"f={r.f:.2f}", x=r.progress, y=r.perp))
     ax.annotate("young-cell\nmixtures\n(0–50%)", xy=(mm.progress.iloc[1], mm.perp.iloc[1]), xytext=(-0.22, 0.78),
-                fontsize=5.8, color=DARKGREY, ha="center", va="bottom",
-                arrowprops=dict(arrowstyle="-", color=GREY, lw=0.5, shrinkA=1, shrinkB=3))
+                fontsize=FS, color=DARKGREY, ha="center", va="bottom",
+                arrowprops=dict(arrowstyle="-", color=GREY, lw=LW_AXIS, shrinkA=1, shrinkB=3))
     f = md.loc["forward"]
-    ax.plot(f.progress, f.perp, marker="o", ms=5.5, color=VERMILLION, ls="none", zorder=4)
-    ax.text(f.progress + 0.12, f.perp, "Partial\nreprogramming", fontsize=6, color=BLACK, va="center")
+    ax.plot(f.progress, f.perp, marker="o", ms=MS, color=VERMILLION, ls="none", zorder=4)
+    ax.text(f.progress + 0.12, f.perp, "Partial\nreprogramming", fontsize=FS, color=BLACK, va="center")
     for test, word in (("Pluri", "Pluripotency"), ("NonReprog", "Non-reprogrammed")):
         r = md.loc[test]
-        ax.plot(r.progress, r.perp, marker="o", ms=4.5, mfc="white", mec=BLACK, mew=0.8, ls="none", zorder=4)
+        ax.plot(r.progress, r.perp, marker="o", ms=MS, mfc="white", mec=BLACK, mew=MEW, ls="none", zorder=4)
         ax.text(r.progress + (0.1 if test == "NonReprog" else -0.1), r.perp + (-0.02 if test == "NonReprog" else 0.0),
-                word, fontsize=6, ha="left" if test == "NonReprog" else "right", va="center")
+                word, fontsize=FS, ha="left" if test == "NonReprog" else "right", va="center")
     r = md.loc["reverse"]
-    ax.plot(r.progress, r.perp, marker="o", ms=5.0, color=VERMILLION, ls="none", zorder=4)
-    ax.text(r.progress, r.perp + 0.2, "reverse", fontsize=6, color=BLACK, ha="center", va="bottom")
+    ax.plot(r.progress, r.perp, marker="o", ms=MS, color=VERMILLION, ls="none", zorder=4)
+    ax.text(r.progress, r.perp + 0.2, "reverse", fontsize=FS, color=BLACK, ha="center", va="bottom")
     ax.set_xlabel("Progress toward young donor\n(axis lengths)")
-    panel_letter(ax, "B", x=-0.32)
+    panel_letters(fig, [[(ax_a, "A"), (ax, "B")]])
     for test in ("forward", "reverse", "Pluri", "NonReprog"):
         r = md.loc[test]
         data.append(dict(panel="B", series=test, label=test, x=r.progress, y=r.perp, n_cells=int(r.n_cells),
@@ -201,22 +236,23 @@ def fig1():
 
 # --------------------------------------------------------------------------- Fig2
 def fig2():
-    use_style(NEWSTORY_RC)
+    use_style()
     from matplotlib.lines import Line2D
     same = pd.read_csv(NEWSTORY / "partB_same_distances.csv")
     mix = pd.read_csv(NEWSTORY / "partB_mixture.csv")
     rnd = pd.read_csv(NEWSTORY / "partB_random_sets_per_set.csv")
     data = []
-    rand_style = dict(MD=dict(marker="o", color=LIGHTGREY, ms=2.2, word="random 205-gene sets (200)"),
-                      AGE=dict(marker="^", color=LIGHTGREY, ms=2.2, word="random 3,089-gene sets (200)"))
+    rand_style = dict(MD=dict(marker="o", color=LIGHTGREY, ms=MS_BG, word="random 205-gene sets (200)"),
+                      AGE=dict(marker="^", color=LIGHTGREY, ms=MS_BG, word="random 3,089-gene sets (200)"))
 
-    fig = plt.figure(figsize=(7.0, 3.1))
-    gsp = fig.add_gridspec(1, 3, width_ratios=[1.0, 1.0, 0.95], wspace=0.5, left=0.07, right=0.985,
-                           bottom=0.3, top=0.92)
+    fig = new_figure(3.0, rows=1)
     xlim, ylim = (-1.15, 2.05), (0, 3.05)
+    plane_h, bottom = 1.8, 0.95
+    plane_w = plane_width(plane_h, xlim, ylim)
+    lefts = (0.5, 0.5 + plane_w + 0.5)
     letters = []
     for k, (test, pre, letter) in enumerate((("forward", "fwd", "A"), ("reverse", "rev", "B"))):
-        ax = fig.add_subplot(gsp[k])
+        ax = axes_in(fig, lefts[k], bottom, plane_w, plane_h)
         draw_plane_frame(ax, xlim, ylim)
         for sp in RAND_SPACES:
             rs = rnd[rnd.space_size == sp]
@@ -228,7 +264,7 @@ def fig2():
                                  x=r[f"{pre}_progress"], y=r[f"{pre}_perp"], note=f"delta={r[f'{pre}_delta']:.4f}"))
         for sp in ("FULL", "AGE", "MD"):
             r = same[(same.space == sp) & (same.test == test)].iloc[0]
-            ax.plot(r.progress, r.perp, marker="o", ms=5.5, color=SPACE_COLOR[sp], mec="white", mew=0.5,
+            ax.plot(r.progress, r.perp, marker="o", ms=MS, color=SPACE_COLOR[sp], mec="white", mew=MEW,
                     ls="none", zorder=4)
             data.append(dict(panel=letter, series=f"real {sp}", label=SPACE_WORDS[sp], x=r.progress, y=r.perp,
                              n_cells=int(r.n_cells), note=f"final/start={r.final_over_start:.4f}"))
@@ -236,36 +272,38 @@ def fig2():
             ax.set_xlabel("Progress toward young donor\n(axis lengths)")
         else:
             ax.set_xlabel("Progress toward aged donor\n(axis lengths)")
-            ax.text(0.97, 0.97, "reverse", transform=ax.transAxes, fontsize=6.5, color=BLACK,
+            ax.text(0.97, 0.97, "reverse", transform=ax.transAxes, fontsize=FS, color=BLACK,
                     ha="right", va="top")
         letters.append((ax, letter))
 
-    ax = fig.add_subplot(gsp[2])
+    c_left = lefts[1] + plane_w + 0.75
+    ax = axes_in(fig, c_left, bottom, TEXT_W - 0.1 - c_left, plane_h)
     for sp in ("MD", "AGE", "FULL"):
         mm = mix[mix.space == sp].sort_values("f")
-        ax.plot(mm.f, mm.rel_delta, color=SPACE_COLOR[sp], lw=0.9, zorder=2)
+        ax.plot(mm.f, mm.rel_delta, color=SPACE_COLOR[sp], lw=LW_DATA, zorder=2)
         for _, r in mm.iterrows():
-            ax.plot(r.f, r.rel_delta, marker="o", ms=4, ls="none", mec=SPACE_COLOR[sp], mew=0.8,
+            ax.plot(r.f, r.rel_delta, marker="o", ms=MS, ls="none", mec=SPACE_COLOR[sp], mew=MEW,
                     mfc="white" if r.f == 0 else SPACE_COLOR[sp], zorder=3)
             data.append(dict(panel="C", series=f"mixture {sp}", label=f"f={r.f:.2f}", x=r.f, y=r.rel_delta,
                              note=f"delta={r.delta:.4f}"))
-    ax.axhline(0, color=BLACK, lw=0.5)
+    ax.axhline(0, color=BLACK, lw=LW_AXIS)
     ax.set_xticks(F_VALUES)
     ax.set_xticklabels(["0", "0.10", "0.25", "0.50"])
     ax.set_xlim(-0.03, 0.53)
     ax.set_xlabel("Fraction of young cells in mixture")
     ax.set_ylabel("Change in distance ÷ starting distance")
     letters.append((ax, "C"))
-    aligned_panel_letters(fig, letters, x=-0.3)
+    panel_letters(fig, [letters])
 
-    handles = [Line2D([], [], marker="o", ls="none", ms=5.5, color=SPACE_COLOR[sp], label=SPACE_WORDS[sp])
+    handles = [Line2D([], [], marker="o", ls="none", ms=MS, color=SPACE_COLOR[sp], label=SPACE_WORDS[sp])
                for sp in ("MD", "AGE", "FULL")]
-    handles += [Line2D([], [], marker=rand_style[sp]["marker"], ls="none", ms=3.5, mfc=rand_style[sp]["color"],
+    # Legend symbols for the background cloud at MS: at MS_BG they are too small to read (v12 also enlarged them).
+    handles += [Line2D([], [], marker=rand_style[sp]["marker"], ls="none", ms=MS, mfc=rand_style[sp]["color"],
                        mec="none", label=rand_style[sp]["word"]) for sp in RAND_SPACES]
-    handles += [Line2D([], [], marker="s", ls="none", ms=4.5, mfc="white", mec=BLACK, label="start"),
-                Line2D([], [], marker="*", ls="none", ms=7, color=BLACK, label="target (young donor, day 0; "
+    handles += [Line2D([], [], marker="s", ls="none", ms=MS, mfc="white", mec=BLACK, mew=MEW, label="start"),
+                Line2D([], [], marker="*", ls="none", ms=MS_STAR, color=BLACK, label="target (young donor, day 0; "
                        "reverse: aged donor)"),
-                Line2D([], [], ls=(0, (4, 2.5)), color=GREY, label="closer than at start")]
+                Line2D([], [], ls=(0, (4, 2.5)), lw=LW_AXIS, color=GREY, label="closer than at start")]
     fig.legend(handles=handles, loc="lower center", ncol=4, frameon=False, bbox_to_anchor=(0.5, 0.0),
                columnspacing=1.2, handletextpad=0.4)
     save(fig, "Fig2", data)
@@ -273,7 +311,7 @@ def fig2():
 
 # --------------------------------------------------------------------------- Fig5
 def fig5():
-    use_style(NEWSTORY_RC)
+    use_style()
     from matplotlib.lines import Line2D
     from scipy.stats import spearmanr
     tw = pd.read_csv(TOWARD / "stats.csv", float_precision="round_trip")
@@ -281,19 +319,17 @@ def fig5():
     corr = pd.read_csv(FIBRO3_CORR, float_precision="round_trip")
     data = []
 
-    fig = plt.figure(figsize=(7.0, 3.0))
-    gsp = fig.add_gridspec(1, 2, width_ratios=[1.0, 1.45], wspace=0.35, left=0.075, right=0.985,
-                           bottom=0.27, top=0.92)
+    fig = new_figure(3.0, rows=1)
     # A
-    ax = fig.add_subplot(gsp[0])
+    ax = axes_in(fig, 0.55, 0.85, 2.3, 1.82)
     order = ("Fibroblast", "PartialReprog", "EarlyPluripotency", "Pluripotency")
     aged = tw[tw.cell_line == AGED_LINE].set_index("state").loc[list(order)]
     young0 = tw[(tw.cell_line == YOUNG_LINE) & (tw.state == "Fibroblast")].iloc[0]
     x = np.arange(len(order))
-    ax.axhline(young0.ruler_score_context, color=DARKGREY, ls=(0, (4, 2.5)), lw=0.9, zorder=1)
+    ax.axhline(young0.ruler_score_context, color=DARKGREY, ls=(0, (4, 2.5)), lw=LW_AXIS, zorder=1)
     ax.text(len(order) - 0.55, young0.ruler_score_context + 0.35, "22-year-old donor, day 0", ha="right",
-            va="bottom", fontsize=6, color=DARKGREY)
-    ax.plot(x, aged.ruler_score_context, marker="o", ms=4, ls="none", color=BLUE, zorder=3)
+            va="bottom", fontsize=FS, color=DARKGREY)
+    ax.plot(x, aged.ruler_score_context, marker="o", ms=MS, ls="none", color=BLUE, zorder=3)
     ax.set_xticks(x)
     ax.set_xticklabels([STATE_WORDS["Fibroblast_d0" if s == "Fibroblast" else s].replace("\n", " ") for s in order],
                        rotation=30, ha="right", rotation_mode="anchor")
@@ -301,8 +337,7 @@ def fig5():
     ax.set_ylim(-12, 5)
     ax.set_ylabel("Frozen ruler score (lower = scored younger)")
     ax.set_xlabel("Aged donor's cells")
-    letter_in = -0.48
-    panel_letter(ax, "A", x=letter_in / (ax.get_position().width * fig.get_figwidth()))
+    ax_a = ax
     for s, r in aged.iterrows():
         data.append(dict(panel="A", series="aged donor", label=s, x=float(order.index(s)), y=r.ruler_score_context,
                          n_cells=int(r.n_cells), note="Fibroblast = day-0 cells only" if s == "Fibroblast" else ""))
@@ -310,7 +345,7 @@ def fig5():
                      y=young0.ruler_score_context, n_cells=int(young0.n_cells), note="Fibroblast = day-0 cells only"))
 
     # B
-    ax = fig.add_subplot(gsp[1])
+    ax = axes_in(fig, 3.6, 0.6, TEXT_W - 0.1 - 3.6, 2.07)
     sc = ex[~ex.below_min_cells.astype(bool) & np.isfinite(ex.age_score.to_numpy(float))]
     ref = corr[(corr.distance == "nn_euclidean") & (corr.scope == "all_donor_cluster_timepoint_n_ge_20")].iloc[0]
     rho_chk = float(spearmanr(sc.nn_euclidean, sc.age_score).statistic)
@@ -318,7 +353,7 @@ def fig5():
         raise RuntimeError(f"t2_extrap rows (n={len(sc)}, rho={rho_chk}) do not match t2_correlation.csv")
     donor_word = {AGED_LINE: "96-y donor", YOUNG_LINE: "22-y donor"}
     day_marker = {0: "o", 3: "s", 7: "^", 10: "D"}
-    day_ms = {0: 4.2, 3: 4.0, 7: 4.4, 10: 3.8}
+    day_ms = {d: MS for d in day_marker}
     for _, r in sc.iterrows():
         d = int(r.day)
         ax.plot(r.nn_euclidean, r.age_score, marker=day_marker[d], ms=day_ms[d], ls="none", mec="none",
@@ -327,12 +362,11 @@ def fig5():
                          x=r.nn_euclidean, y=r.age_score, n_cells=int(r.n_cells), note=f"day={d}"))
     ax.text(0.98, 0.98, f"ρ = {ref.rho:.3f}\n95% CI [{ref.rho_ci_lo:.3f}, {ref.rho_ci_hi:.3f}]\n"
             f"n = {int(ref.n)} pseudobulks".replace("-", "−"), transform=ax.transAxes, ha="right", va="top",
-            fontsize=6.5)
+            fontsize=FS)
     ax.set_ylim(-20, 10)
     ax.set_xlabel("Nearest-neighbor distance to GTEx training donors\n(PCA, k = 50)")
     ax.set_ylabel("Frozen-ruler score (a.u.)")
-    panel_letter(ax, "B", x=letter_in / (ax.get_position().width * fig.get_figwidth()))
-    donor_h = [Line2D([], [], marker="o", ls="none", ms=4.2, mec="none", color=DONOR_COLOR[l], label=donor_word[l])
+    donor_h = [Line2D([], [], marker="o", ls="none", ms=MS, mec="none", color=DONOR_COLOR[l], label=donor_word[l])
                for l in LINES]
     day_h = [Line2D([], [], marker=day_marker[d], ls="none", ms=day_ms[d], mec="none", color=LIGHTGREY,
                     label=f"day {d}") for d in day_marker]
@@ -343,18 +377,15 @@ def fig5():
     data.append(dict(panel="B", series="annotation", label="spearman nn_euclidean", x=np.nan, y=float(ref.rho),
                      y_lo=float(ref.rho_ci_lo), y_hi=float(ref.rho_ci_hi), n_cells=np.nan,
                      note=f"n={int(ref.n)}; from {FIBRO3_CORR.relative_to(ROOT).as_posix()}"))
+    panel_letters(fig, [[(ax_a, "A"), (ax, "B")]])
     save(fig, "Fig5", data)
 
 
 # --------------------------------------------------------------------------- manuscript helpers (Fig3, Fig4)
-def _panel(fig, xy, letter):
-    fig.text(xy[0], xy[1], letter, fontsize=12, fontweight="bold", ha="left", va="top")
-
-
 def _open_spines(ax):
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
-    ax.tick_params(direction="out", length=3.0, width=0.8)
+    ax.tick_params(direction="out", length=2.5, width=LW_AXIS)
 
 
 def _signed(x, digits=3):
@@ -413,14 +444,13 @@ def _load_manuscript():
 
 # --------------------------------------------------------------------------- Fig3
 def fig3(d):
-    use_style(MANUSCRIPT_RC)
+    use_style()
     data = []
-    fig = plt.figure(figsize=(7.0, 5.6))
-    _panel(fig, (0.012, 0.985), "A")
-    _panel(fig, (0.012, 0.455), "B")
-    _panel(fig, (0.545, 0.455), "C")
+    # Two rows: A (transfer forest with its n and rho columns) on top, B and C side by side below.
+    fig = new_figure(4.5, rows=2)
 
-    ax = fig.add_axes([0.300, 0.593, 0.440, 0.300])
+    a_left, a_width = 2.0, 3.2
+    ax = axes_in(fig, a_left, 2.85, a_width, 1.3)
     rows = [
         ("GTEx fibroblasts: site B1 \u2192 C1", f"{int(d['b1'].n_train)} \u2192 {int(d['b1'].n_test)}",
          float(d["b1"].rho), float(d["b1"].rho_ci_lo), float(d["b1"].rho_ci_hi)),
@@ -435,11 +465,11 @@ def fig3(d):
     for y, (label, n, rho, lo, hi) in zip(ys, rows):
         ax.errorbar(
             rho, y, xerr=[[rho - lo], [hi - rho]], fmt="o", color=BLUE, ecolor=BLUE,
-            elinewidth=1.5, capsize=3.2, capthick=1.3, ms=5.5, zorder=3,
+            elinewidth=LW_DATA, capsize=CAP, capthick=LW_DATA, ms=MS, zorder=3,
         )
         data.append(dict(panel="A", series="ruler transfer", label=label, x=rho, x_lo=lo, x_hi=hi, y=float(y),
                          note=f"train \u2192 test n: {n}"))
-    ax.axvline(0, color="black", lw=0.8, zorder=1)
+    ax.axvline(0, color="black", lw=LW_AXIS, zorder=1)
     ax.set_yticks(ys)
     ax.set_yticklabels([r[0] for r in rows])
     ax.set_xlim(0.0, 0.80)
@@ -451,17 +481,18 @@ def fig3(d):
     ax.tick_params(axis="y", length=0)
 
     trans = ax.get_yaxis_transform()
-    ax.text(1.06, len(rows) - 0.45, "train \u2192 test n", transform=trans,
-            ha="left", va="bottom", fontsize=7.5, fontweight="bold", clip_on=False)
-    ax.text(1.38, len(rows) - 0.45, "\u03c1", transform=trans,
-            ha="left", va="bottom", fontsize=7.5, fontweight="bold", clip_on=False)
+    col_n, col_rho = 1 + 0.2 / a_width, 1 + 1.1 / a_width  # table columns 0.2 in and 1.1 in right of the axes
+    ax.text(col_n, len(rows) - 0.45, "train \u2192 test n", transform=trans,
+            ha="left", va="bottom", fontsize=FS, fontweight="bold", clip_on=False)
+    ax.text(col_rho, len(rows) - 0.45, "\u03c1", transform=trans,
+            ha="left", va="bottom", fontsize=FS, fontweight="bold", clip_on=False)
     for y, (_label, n, rho, _lo, _hi) in zip(ys, rows):
-        ax.text(1.06, y, n, transform=trans, ha="left", va="center", fontsize=7.5, clip_on=False)
-        ax.text(1.38, y, _signed(rho), transform=trans, ha="left", va="center", fontsize=7.5, clip_on=False)
+        ax.text(col_n, y, n, transform=trans, ha="left", va="center", fontsize=FS, clip_on=False)
+        ax.text(col_rho, y, _signed(rho), transform=trans, ha="left", va="center", fontsize=FS, clip_on=False)
 
-    axb = fig.add_axes([0.0995, 0.0994, 0.3790, 0.3012])
+    axb = axes_in(fig, 0.55, 0.42, 2.95, 1.5)
     g = d["gse_pts"]
-    axb.scatter(g.age_years, g.age_score, s=16, c=BLUE, linewidths=0, zorder=3)
+    axb.scatter(g.age_years, g.age_score, s=MS ** 2, c=BLUE, linewidths=0, zorder=3)
     for _, r in g.iterrows():
         data.append(dict(panel="B", series="GSE226189 donor", label=r["sample"], x=float(r.age_years),
                          y=float(r.age_score)))
@@ -470,23 +501,23 @@ def fig3(d):
     axb.set_xticks([20, 30, 40, 50, 60, 70, 80, 90])
     axb.set_xlabel("Donor age (years)")
     axb.set_ylabel("Frozen fibroblast score (a.u.)")
-    axb.set_title("GSE226189, bulk (82 donors)", pad=4)
-    axb.text(0.03, 0.96, "\u03c1 = 0.549", transform=axb.transAxes, ha="left", va="top", fontsize=8)
+    axb.set_title("GSE226189, bulk (82 donors)")
+    axb.text(0.03, 0.96, "\u03c1 = 0.549", transform=axb.transAxes, ha="left", va="top", fontsize=FS)
     data.append(dict(panel="B", series="annotation", label="ruler spearman", y=float(d["gse_ruler"].rho),
                      y_lo=float(d["gse_ruler"].rho_ci_lo), y_hi=float(d["gse_ruler"].rho_ci_hi),
                      note="results/md3/t2_instruments.csv gse226189_ruler_check"))
     _open_spines(axb)
 
-    axc = fig.add_axes([0.5914, 0.0994, 0.3790, 0.3012])
+    axc = axes_in(fig, 4.3, 0.42, 2.95, 1.5)
     p = d["don_pts"]
     ph = p.true_donor.str.startswith("Reynolds_2021")
     if int(ph.sum()) != 5 or not np.allclose(p.loc[ph, "age_years"], 42.0):
         raise SystemExit("STOP: expected 5 Reynolds donors recorded at age 42")
     other = p.loc[~ph]
-    axc.scatter(other.age_years, other.age_score, s=18, c=BLUE, linewidths=0, zorder=3, label="other donors (60)")
+    axc.scatter(other.age_years, other.age_score, s=MS ** 2, c=BLUE, linewidths=0, zorder=3, label="other donors (60)")
     axc.scatter(
-        p.loc[ph, "age_years"], p.loc[ph, "age_score"], s=28, facecolors="none", edgecolors=BLACK,
-        linewidths=1.15, zorder=4, label="5 donors, age recorded as 42\n(author range 25\u201360)",
+        p.loc[ph, "age_years"], p.loc[ph, "age_score"], s=MS ** 2, facecolors="none", edgecolors=BLACK,
+        linewidths=MEW, zorder=4, label="5 donors, age recorded as 42\n(author range 25\u201360)",
     )
     for _, r in p.iterrows():
         placeholder = r.true_donor.startswith("Reynolds_2021")
@@ -496,31 +527,32 @@ def fig3(d):
     axc.set_xlim(14, 84)
     axc.set_ylim(-11.2, 8.4)
     axc.set_xticks([20, 30, 40, 50, 60, 70, 80])
+    # v12 tick step; at this panel height the automatic locator would switch to steps of 5.
+    axc.yaxis.set_major_locator(matplotlib.ticker.MultipleLocator(2.5))
     axc.set_xlabel("Donor age (years)")
-    axc.set_title("Fibroblast atlas, 10x (65 donors)", pad=4)
-    axc.text(0.03, 0.96, "\u03c1 = 0.433", transform=axc.transAxes, ha="left", va="top", fontsize=8)
+    axc.set_title("Fibroblast atlas, 10x (65 donors)")
+    axc.text(0.03, 0.96, "\u03c1 = 0.433", transform=axc.transAxes, ha="left", va="top", fontsize=FS)
     data.append(dict(panel="C", series="annotation", label="ruler spearman", y=float(d["atlas_rho"].rho),
                      y_lo=float(d["atlas_rho"].rho_ci_lo), y_hi=float(d["atlas_rho"].rho_ci_hi),
                      n=int(d["atlas_rho"].n_units), note="results/paper_figs/cxg_true_donor_results.csv true_donor"))
     leg = axc.legend(
-        frameon=False, fontsize=6.2, loc="lower left", handletextpad=0.4, borderpad=0.15,
+        frameon=False, fontsize=FS, loc="lower left", handletextpad=0.4, borderpad=0.15,
         labelspacing=0.35,
     )
     for t in leg.get_texts():
         t.set_linespacing(1.05)
     _open_spines(axc)
+    panel_letters(fig, [[(ax, "A")], [(axb, "B"), (axc, "C")]])
     save(fig, "Fig3", data)
 
 
 # --------------------------------------------------------------------------- Fig4
 def fig4(d):
-    use_style(MANUSCRIPT_RC)
+    use_style()
     data = []
-    fig = plt.figure(figsize=(7.0, 3.1))
-    _panel(fig, (0.012, 0.985), "A")
-    _panel(fig, (0.500, 0.985), "B")
+    fig = new_figure(2.8, rows=1)
 
-    ax = fig.add_axes([0.0995, 0.1989, 0.2210, 0.6419])
+    ax = axes_in(fig, 0.6, 0.5, 2.0, 1.95)
     specs = [
         (0, "Frozen\nruler", float(d["gse_ruler"].rho), float(d["gse_ruler"].rho_ci_lo),
          float(d["gse_ruler"].rho_ci_hi), BLUE, "0.55"),
@@ -532,22 +564,22 @@ def fig4(d):
     for x, name, rho, lo, hi, color, lab in specs:
         ax.errorbar(
             x, rho, yerr=[[rho - lo], [hi - rho]], fmt="o", color=color, ecolor=color,
-            elinewidth=1.6, capsize=3.5, capthick=1.4, ms=6.5, zorder=3,
+            elinewidth=LW_DATA, capsize=CAP, capthick=LW_DATA, ms=MS, zorder=3,
         )
-        ax.text(x, hi + 0.035, lab, ha="center", va="bottom", fontsize=7.5, color=BLACK)
+        ax.text(x, hi + 0.035, lab, ha="center", va="bottom", fontsize=FS, color=BLACK)
         data.append(dict(panel="A", series=name.replace("\n", " "), label=lab, x=float(x), y=rho, y_lo=lo, y_hi=hi,
                          n=82))
-    ax.axhline(0, color="black", lw=0.8, zorder=1)
+    ax.axhline(0, color="black", lw=LW_AXIS, zorder=1)
     ax.set_xlim(-0.55, 2.55)
     ax.set_xticks([0, 1, 2])
     ax.set_xticklabels(["Frozen\nruler", "MD", "Age-up \u2212\nage-down"])
     ax.set_ylim(-0.32, 0.92)
     ax.set_yticks([-0.2, 0.0, 0.2, 0.4, 0.6, 0.8])
     ax.set_ylabel("Spearman \u03c1 with donor age (95% CI)")
-    ax.set_title("GSE226189, 82 donors", pad=3)
+    ax.set_title("GSE226189, 82 donors")
     _open_spines(ax)
 
-    axb = fig.add_axes([0.575, 0.1989, 0.230, 0.6957])
+    axb = axes_in(fig, 4.35, 0.5, 1.6, 2.1)
     items = [
         ("Ruler \u2013 MD", None),
         ("atlas, 65 donors", d["atlas_md"]),
@@ -567,14 +599,14 @@ def fig4(d):
         est, lo, hi = float(rec.delta_rho), float(rec.delta_ci_lo), float(rec.delta_ci_hi)
         axb.errorbar(
             est, y, xerr=[[est - lo], [hi - est]], fmt="o", color=BLACK, ecolor=BLACK,
-            elinewidth=1.35, capsize=3.0, capthick=1.15, ms=5.2, zorder=3,
+            elinewidth=LW_DATA, capsize=CAP, capthick=LW_DATA, ms=MS, zorder=3,
         )
         axb.text(
             1.03, y, f"{_signed(est)} [{_signed(lo)}, {_signed(hi)}]",
-            transform=axb.get_yaxis_transform(), ha="left", va="center", fontsize=6.3, clip_on=False,
+            transform=axb.get_yaxis_transform(), ha="left", va="center", fontsize=FS, clip_on=False,
         )
         data.append(dict(panel="B", series=group, label=lab, x=est, x_lo=lo, x_hi=hi, y=float(y)))
-    axb.axvline(0, color="0.35", ls=(0, (3, 2)), lw=0.8, zorder=1)
+    axb.axvline(0, color="0.35", ls=(0, (3, 2)), lw=LW_AXIS, zorder=1)
     axb.set_yticks(ys)
     axb.set_yticklabels(labels)
     for tick, (_lab, rec) in zip(axb.get_yticklabels(), items):
@@ -587,12 +619,13 @@ def fig4(d):
     _open_spines(axb)
     axb.tick_params(axis="y", length=0)
     axb.spines["left"].set_visible(False)
+    panel_letters(fig, [[(ax, "A"), (axb, "B")]])
     save(fig, "Fig4", data)
 
 
 # --------------------------------------------------------------------------- FigS1
 def figS1():
-    use_style(MANUSCRIPT_RC)
+    use_style()
     tw = pd.read_csv(TOWARD / "stats.csv", float_precision="round_trip")
     folds = pd.read_csv(TOWARD / "c3_folds.csv", float_precision="round_trip").sort_values("fold")
     c3 = json.loads((TOWARD / "summary.json").read_text(encoding="utf-8"))["c3"]
@@ -607,8 +640,10 @@ def figS1():
     ticks = ["Fibro.\nday 0", "Partial\nreprog.", "Early\npluri.", "Pluri-\npotent", "Non-\nreprog."]
     donor_label = {AGED_LINE: "96-y donor (GM00731)", YOUNG_LINE: "22-y donor (GM23815)"}
 
-    fig, axs = plt.subplots(2, 2, figsize=(7.0, 5.0))
-    fig.subplots_adjust(left=0.10, right=0.98, bottom=0.10, top=0.94, wspace=0.38, hspace=0.55)
+    fig = new_figure(4.5, rows=2)
+    pw, ph = 2.95, 1.4
+    axs = np.array([[axes_in(fig, 0.6, 2.6, pw, ph), axes_in(fig, 4.4, 2.6, pw, ph)],
+                    [axes_in(fig, 0.6, 0.45, pw, ph), axes_in(fig, 4.4, 0.45, pw, ph)]])
     specs = [
         (axs[0, 0], "A", "cos_S", "Alignment with youth axis", "cos(displacement, GTEx young \u2212 old)", 1),
         (axs[0, 1], "B", "delta_young", "Change in distance to young", "\u0394 distance to GTEx young centroid", 0),
@@ -618,43 +653,44 @@ def figS1():
         for line in LINES:
             dl = tw[tw.cell_line == line].set_index("state")
             y = dl.loc[order[first:], col].to_numpy(float)
-            ax.plot(xs[first:], y, "-o", color=DONOR_COLOR[line], lw=1.5, ms=4, mew=1.0, label=donor_label[line])
+            ax.plot(xs[first:], y, "-o", color=DONOR_COLOR[line], lw=LW_DATA, ms=MS, mew=MEW, label=donor_label[line])
             y_non = float(dl.loc["NonReprog", col])
-            ax.plot([x_non], [y_non], "o", mfc="white", mec=DONOR_COLOR[line], ms=4, mew=1.0)
+            ax.plot([x_non], [y_non], "o", mfc="white", mec=DONOR_COLOR[line], ms=MS, mew=MEW)
             for x, st, v in zip(xs[first:] + [x_non], order[first:] + ["NonReprog"], list(y) + [y_non]):
                 data.append(dict(panel=letter, series=donor_label[line], label=st, x=float(x), y=float(v),
                                  n_cells=int(dl.loc[st, "n_cells"]),
                                  note=f"results/toward/stats.csv {col}" + ("; open marker" if st == "NonReprog" else "")))
         if col != "ruler_score_context":
-            ax.axhline(0, color=BLACK, lw=0.8)
+            ax.axhline(0, color=BLACK, lw=LW_AXIS)
         ax.set_xticks(xs + [x_non])
         ax.set_xticklabels(ticks)
-        ax.tick_params(axis="x", labelsize=7)
         ax.set_xlim(-0.4, 4.7)
-        ax.set_title(title, fontsize=8.5)
+        ax.set_title(title)
         ax.set_ylabel(ylabel)
     axs[0, 0].set_ylim(-0.02, 0.16)
     axs[0, 0].set_yticks(np.arange(0, 0.1501, 0.025))
-    axs[0, 0].legend(loc="upper left", frameon=False, fontsize=6.25)
+    axs[0, 0].legend(loc="upper left", frameon=False, fontsize=FS)
 
     ax = axs[1, 1]
     fx = 1 + (folds.fold.to_numpy(float) - 2) * 0.06
-    ax.plot(fx, folds.cos, "o", color="#333333", ms=4, mew=1.0, ls="none")
+    ax.plot(fx, folds.cos, "o", color="#333333", ms=MS, mew=MEW, ls="none")
+    # Same anchor as v12; folds 1, 3 and 4 lie within one text height of each other, so their labels
+    # sit above or below the anchor instead of centred on it.
+    label_va = {1: "bottom", 3: "top", 4: "bottom"}
     for x, (_, r) in zip(fx, folds.iterrows()):
-        ax.text(x + 0.03, r.cos, f"{r.cos:.3f}", va="center", ha="left", fontsize=6.25)
+        ax.text(x + 0.03, r.cos, f"{r.cos:.3f}", va=label_va.get(int(r.fold), "center"), ha="left", fontsize=FS)
         data.append(dict(panel="D", series="GTEx fold", label=f"fold {int(r.fold)}", x=float(x), y=float(r.cos),
                          n_cells=np.nan, note=f"n_train={int(r.n_train)}; n_test={int(r.n_test)}"))
-    ax.axhline(bar, color=DARKGREY, ls="--", lw=0.9)
-    ax.text(1.48, bar - 0.03, f"pre-registered bar {bar:g}", ha="right", va="top", fontsize=6.5, color=DARKGREY)
+    ax.axhline(bar, color=DARKGREY, ls="--", lw=LW_AXIS)
+    ax.text(1.48, bar - 0.03, f"pre-registered bar {bar:g}", ha="right", va="top", fontsize=FS, color=DARKGREY)
     data.append(dict(panel="D", series="pre-registered bar (dashed line)", label="c3 bar", x=np.nan, y=bar,
                      n_cells=np.nan, note="results/toward/summary.json c3.bar"))
     ax.set_xlim(0.5, 1.5)
     ax.set_ylim(0, 1.0)
     ax.set_xticks([])
-    ax.set_title("Positive control within GTEx (5 folds)", fontsize=8.5)
+    ax.set_title("Positive control within GTEx (5 folds)")
     ax.set_ylabel("Fold cosine")
-    for a, letter in zip(axs.ravel(), "ABCD"):
-        a.text(-0.22, 1.15, letter, transform=a.transAxes, fontsize=12, fontweight="bold", va="top", ha="left")
+    panel_letters(fig, [[(axs[0, 0], "A"), (axs[0, 1], "B")], [(axs[1, 0], "C"), (axs[1, 1], "D")]])
     save(fig, "FigS1", data)
 
 

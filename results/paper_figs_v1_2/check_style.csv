@@ -1,0 +1,7 @@
+figure,font_files,text_sizes_pt,letter_sizes_pt,letters_bold,line_widths_pt,marker_sizes_pt,spine_widths_pt
+Fig1,arial.ttf,7.0,9.0,True,0.6,4.0 6.0,0.6
+Fig2,arial.ttf,7.0,9.0,True,0.6 1.0,2.0 4.0 6.0,0.6
+Fig3,arial.ttf,7.0,9.0,True,0.6,4.0,0.6
+Fig4,arial.ttf,7.0,9.0,True,0.6,4.0,0.6
+Fig5,arial.ttf,7.0,9.0,True,0.6,4.0,0.6
+FigS1,arial.ttf,7.0,9.0,True,0.6 1.0,4.0,0.6

@@ -1,0 +1,228 @@
+Reference: src/figures_final.py at 77b74e0. Compared with the working tree.
+ALL FIGURES IDENTICAL IN PLOTTED DATA: True
+
+Fig1: IDENTICAL (57 artist items, 13 table rows)
+  layout items changed (not gated): 26
+    ax0.coll0.style: lw=[np.float64(0.9)] sizes= -> lw=[np.float64(1.0)] sizes=
+    ax0.line0.style: lw=0.9 ms=6.0 mew=1.0 -> lw=0.6 ms=4.0 mew=0.8
+    ax0.line1.style: lw=0.9 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line2.style: lw=0.9 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line3.style: lw=0.9 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.text0.fontsize: 6.0 -> 7.0
+    ax1.line0.style: lw=0.5 ms=6.0 mew=1.0 -> lw=0.6 ms=4.0 mew=0.8
+    ax1.line1.style: lw=0.9 ms=4.5 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line10.style: lw=0.9 ms=5.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line2.style: lw=0.9 ms=7.5 mew=1.0 -> lw=1.0 ms=6.0 mew=0.8
+    ax1.line3.style: lw=0.9 ms=3.6 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line4.style: lw=0.9 ms=3.6 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line5.style: lw=0.9 ms=3.6 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line6.style: lw=0.9 ms=3.6 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line7.style: lw=0.9 ms=5.5 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line8.style: lw=0.9 ms=4.5 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line9.style: lw=0.9 ms=4.5 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.text0.fontsize: 6.0 -> 7.0
+    ax1.text1.fontsize: 5.8 -> 7.0
+    ax1.text2.fontsize: 5.8 -> 7.0
+    ax1.text3.fontsize: 5.8 -> 7.0
+    ax1.text4.fontsize: 6.0 -> 7.0
+    ax1.text5.fontsize: 6.0 -> 7.0
+    ax1.text6.fontsize: 6.0 -> 7.0
+    ax1.text7.fontsize: 6.0 -> 7.0
+    fig.size_in: [4.8, 3.0] -> [7.5, 2.8]
+Fig2: IDENTICAL (77 artist items, 818 table rows)
+  layout items changed (not gated): 40
+    ax0.line0.style: lw=0.5 ms=6.0 mew=1.0 -> lw=0.6 ms=4.0 mew=0.8
+    ax0.line1.style: lw=0.9 ms=4.5 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line2.style: lw=0.9 ms=7.5 mew=1.0 -> lw=1.0 ms=6.0 mew=0.8
+    ax0.line3.style: lw=0.9 ms=2.2 mew=1.0 -> lw=1.0 ms=2.0 mew=0.8
+    ax0.line4.style: lw=0.9 ms=2.2 mew=1.0 -> lw=1.0 ms=2.0 mew=0.8
+    ax0.line5.style: lw=0.9 ms=5.5 mew=0.5 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line6.style: lw=0.9 ms=5.5 mew=0.5 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line7.style: lw=0.9 ms=5.5 mew=0.5 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.text0.fontsize: 6.0 -> 7.0
+    ax0.text1.fontsize: 5.8 -> 7.0
+    ax0.text2.fontsize: 5.8 -> 7.0
+    ax1.line0.style: lw=0.5 ms=6.0 mew=1.0 -> lw=0.6 ms=4.0 mew=0.8
+    ax1.line1.style: lw=0.9 ms=4.5 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line2.style: lw=0.9 ms=7.5 mew=1.0 -> lw=1.0 ms=6.0 mew=0.8
+    ax1.line3.style: lw=0.9 ms=2.2 mew=1.0 -> lw=1.0 ms=2.0 mew=0.8
+    ax1.line4.style: lw=0.9 ms=2.2 mew=1.0 -> lw=1.0 ms=2.0 mew=0.8
+    ax1.line5.style: lw=0.9 ms=5.5 mew=0.5 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line6.style: lw=0.9 ms=5.5 mew=0.5 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line7.style: lw=0.9 ms=5.5 mew=0.5 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.text0.fontsize: 6.0 -> 7.0
+    ax1.text1.fontsize: 5.8 -> 7.0
+    ax1.text2.fontsize: 5.8 -> 7.0
+    ax1.text3.fontsize: 6.5 -> 7.0
+    ax2.line0.style: lw=0.9 ms=6.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line1.style: lw=0.9 ms=4.0 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line10.style: lw=0.9 ms=6.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line11.style: lw=0.9 ms=4.0 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line12.style: lw=0.9 ms=4.0 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line13.style: lw=0.9 ms=4.0 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line14.style: lw=0.9 ms=4.0 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line15.style: lw=0.5 ms=6.0 mew=1.0 -> lw=0.6 ms=4.0 mew=0.8
+    ax2.line2.style: lw=0.9 ms=4.0 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line3.style: lw=0.9 ms=4.0 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line4.style: lw=0.9 ms=4.0 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line5.style: lw=0.9 ms=6.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line6.style: lw=0.9 ms=4.0 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line7.style: lw=0.9 ms=4.0 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line8.style: lw=0.9 ms=4.0 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line9.style: lw=0.9 ms=4.0 mew=0.8 -> lw=1.0 ms=4.0 mew=0.8
+    fig.size_in: [7.0, 3.1] -> [7.5, 3.0]
+Fig3: IDENTICAL (76 artist items, 153 table rows)
+  layout items changed (not gated): 43
+    ax0.coll0.style: lw=[np.float64(1.5)] sizes= -> lw=[np.float64(1.0)] sizes=
+    ax0.coll1.style: lw=[np.float64(1.5)] sizes= -> lw=[np.float64(1.0)] sizes=
+    ax0.coll2.style: lw=[np.float64(1.5)] sizes= -> lw=[np.float64(1.0)] sizes=
+    ax0.coll3.style: lw=[np.float64(1.5)] sizes= -> lw=[np.float64(1.0)] sizes=
+    ax0.line0.style: lw=1.5 ms=5.5 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line1.style: lw=1.5 ms=6.4 mew=1.3 -> lw=1.0 ms=4.0 mew=1.0
+    ax0.line10.style: lw=1.5 ms=6.4 mew=1.3 -> lw=1.0 ms=4.0 mew=1.0
+    ax0.line11.style: lw=1.5 ms=6.4 mew=1.3 -> lw=1.0 ms=4.0 mew=1.0
+    ax0.line12.style: lw=0.8 ms=6.0 mew=1.0 -> lw=0.6 ms=4.0 mew=0.8
+    ax0.line2.style: lw=1.5 ms=6.4 mew=1.3 -> lw=1.0 ms=4.0 mew=1.0
+    ax0.line3.style: lw=1.5 ms=5.5 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line4.style: lw=1.5 ms=6.4 mew=1.3 -> lw=1.0 ms=4.0 mew=1.0
+    ax0.line5.style: lw=1.5 ms=6.4 mew=1.3 -> lw=1.0 ms=4.0 mew=1.0
+    ax0.line6.style: lw=1.5 ms=5.5 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line7.style: lw=1.5 ms=6.4 mew=1.3 -> lw=1.0 ms=4.0 mew=1.0
+    ax0.line8.style: lw=1.5 ms=6.4 mew=1.3 -> lw=1.0 ms=4.0 mew=1.0
+    ax0.line9.style: lw=1.5 ms=5.5 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.text0.fontsize: 7.5 -> 7.0
+    ax0.text0.x_axes: [1.06] -> [1.0625]
+    ax0.text1.fontsize: 7.5 -> 7.0
+    ax0.text1.x_axes: [1.38] -> [1.34375]
+    ax0.text2.fontsize: 7.5 -> 7.0
+    ax0.text2.x_axes: [1.06] -> [1.0625]
+    ax0.text3.fontsize: 7.5 -> 7.0
+    ax0.text3.x_axes: [1.38] -> [1.34375]
+    ax0.text4.fontsize: 7.5 -> 7.0
+    ax0.text4.x_axes: [1.06] -> [1.0625]
+    ax0.text5.fontsize: 7.5 -> 7.0
+    ax0.text5.x_axes: [1.38] -> [1.34375]
+    ax0.text6.fontsize: 7.5 -> 7.0
+    ax0.text6.x_axes: [1.06] -> [1.0625]
+    ax0.text7.fontsize: 7.5 -> 7.0
+    ax0.text7.x_axes: [1.38] -> [1.34375]
+    ax0.text8.fontsize: 7.5 -> 7.0
+    ax0.text8.x_axes: [1.06] -> [1.0625]
+    ax0.text9.fontsize: 7.5 -> 7.0
+    ax0.text9.x_axes: [1.38] -> [1.34375]
+    ax1.coll0.style: lw=[np.int64(0)] sizes=[np.int64(16)] -> lw=[np.int64(0)] sizes=[np.float64(16.0)]
+    ax1.text0.fontsize: 8.0 -> 7.0
+    ax2.coll0.style: lw=[np.int64(0)] sizes=[np.int64(18)] -> lw=[np.int64(0)] sizes=[np.float64(16.0)]
+    ax2.coll1.style: lw=[np.float64(1.15)] sizes=[np.int64(28)] -> lw=[np.float64(0.8)] sizes=[np.float64(16.0)]
+    ax2.text0.fontsize: 8.0 -> 7.0
+    fig.size_in: [7.0, 5.6] -> [7.5, 4.5]
+Fig4: IDENTICAL (71 artist items, 7 table rows)
+  layout items changed (not gated): 38
+    ax0.coll0.style: lw=[np.float64(1.6)] sizes= -> lw=[np.float64(1.0)] sizes=
+    ax0.coll1.style: lw=[np.float64(1.6)] sizes= -> lw=[np.float64(1.0)] sizes=
+    ax0.coll2.style: lw=[np.float64(1.6)] sizes= -> lw=[np.float64(1.0)] sizes=
+    ax0.line0.style: lw=1.5 ms=6.5 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line1.style: lw=1.5 ms=7.0 mew=1.4 -> lw=1.0 ms=4.0 mew=1.0
+    ax0.line2.style: lw=1.5 ms=7.0 mew=1.4 -> lw=1.0 ms=4.0 mew=1.0
+    ax0.line3.style: lw=1.5 ms=6.5 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line4.style: lw=1.5 ms=7.0 mew=1.4 -> lw=1.0 ms=4.0 mew=1.0
+    ax0.line5.style: lw=1.5 ms=7.0 mew=1.4 -> lw=1.0 ms=4.0 mew=1.0
+    ax0.line6.style: lw=1.5 ms=6.5 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line7.style: lw=1.5 ms=7.0 mew=1.4 -> lw=1.0 ms=4.0 mew=1.0
+    ax0.line8.style: lw=1.5 ms=7.0 mew=1.4 -> lw=1.0 ms=4.0 mew=1.0
+    ax0.line9.style: lw=0.8 ms=6.0 mew=1.0 -> lw=0.6 ms=4.0 mew=0.8
+    ax0.text0.fontsize: 7.5 -> 7.0
+    ax0.text1.fontsize: 7.5 -> 7.0
+    ax0.text2.fontsize: 7.5 -> 7.0
+    ax1.coll0.style: lw=[np.float64(1.35)] sizes= -> lw=[np.float64(1.0)] sizes=
+    ax1.coll1.style: lw=[np.float64(1.35)] sizes= -> lw=[np.float64(1.0)] sizes=
+    ax1.coll2.style: lw=[np.float64(1.35)] sizes= -> lw=[np.float64(1.0)] sizes=
+    ax1.coll3.style: lw=[np.float64(1.35)] sizes= -> lw=[np.float64(1.0)] sizes=
+    ax1.line0.style: lw=1.5 ms=5.2 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line1.style: lw=1.5 ms=6.0 mew=1.15 -> lw=1.0 ms=4.0 mew=1.0
+    ax1.line10.style: lw=1.5 ms=6.0 mew=1.15 -> lw=1.0 ms=4.0 mew=1.0
+    ax1.line11.style: lw=1.5 ms=6.0 mew=1.15 -> lw=1.0 ms=4.0 mew=1.0
+    ax1.line12.style: lw=0.8 ms=6.0 mew=1.0 -> lw=0.6 ms=4.0 mew=0.8
+    ax1.line2.style: lw=1.5 ms=6.0 mew=1.15 -> lw=1.0 ms=4.0 mew=1.0
+    ax1.line3.style: lw=1.5 ms=5.2 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line4.style: lw=1.5 ms=6.0 mew=1.15 -> lw=1.0 ms=4.0 mew=1.0
+    ax1.line5.style: lw=1.5 ms=6.0 mew=1.15 -> lw=1.0 ms=4.0 mew=1.0
+    ax1.line6.style: lw=1.5 ms=5.2 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line7.style: lw=1.5 ms=6.0 mew=1.15 -> lw=1.0 ms=4.0 mew=1.0
+    ax1.line8.style: lw=1.5 ms=6.0 mew=1.15 -> lw=1.0 ms=4.0 mew=1.0
+    ax1.line9.style: lw=1.5 ms=5.2 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.text0.fontsize: 6.3 -> 7.0
+    ax1.text1.fontsize: 6.3 -> 7.0
+    ax1.text2.fontsize: 6.3 -> 7.0
+    ax1.text3.fontsize: 6.3 -> 7.0
+    fig.size_in: [7.0, 3.1] -> [7.5, 2.8]
+Fig5: IDENTICAL (49 artist items, 28 table rows)
+  layout items changed (not gated): 27
+    ax0.line0.style: lw=0.9 ms=6.0 mew=1.0 -> lw=0.6 ms=4.0 mew=0.8
+    ax0.line1.style: lw=0.9 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.text0.fontsize: 6.0 -> 7.0
+    ax1.line0.style: lw=0.9 ms=4.2 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line1.style: lw=0.9 ms=4.2 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line10.style: lw=0.9 ms=3.8 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line11.style: lw=0.9 ms=4.2 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line12.style: lw=0.9 ms=4.2 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line13.style: lw=0.9 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line14.style: lw=0.9 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line15.style: lw=0.9 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line16.style: lw=0.9 ms=4.4 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line17.style: lw=0.9 ms=4.4 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line18.style: lw=0.9 ms=4.4 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line19.style: lw=0.9 ms=3.8 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line2.style: lw=0.9 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line20.style: lw=0.9 ms=3.8 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line21.style: lw=0.9 ms=3.8 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line3.style: lw=0.9 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line4.style: lw=0.9 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line5.style: lw=0.9 ms=4.4 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line6.style: lw=0.9 ms=4.4 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line7.style: lw=0.9 ms=4.4 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line8.style: lw=0.9 ms=3.8 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line9.style: lw=0.9 ms=3.8 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.text0.fontsize: 6.5 -> 7.0
+    fig.size_in: [7.0, 3.0] -> [7.5, 3.0]
+FigS1: IDENTICAL (67 artist items, 34 table rows)
+  layout items changed (not gated): 23
+    ax0.line0.style: lw=1.5 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line1.style: lw=1.5 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line2.style: lw=1.5 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line3.style: lw=1.5 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax0.line4.style: lw=0.8 ms=6.0 mew=1.0 -> lw=0.6 ms=4.0 mew=0.8
+    ax1.line0.style: lw=1.5 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line1.style: lw=1.5 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line2.style: lw=1.5 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line3.style: lw=1.5 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax1.line4.style: lw=0.8 ms=6.0 mew=1.0 -> lw=0.6 ms=4.0 mew=0.8
+    ax2.line0.style: lw=1.5 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line1.style: lw=1.5 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line2.style: lw=1.5 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax2.line3.style: lw=1.5 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax3.line0.style: lw=1.5 ms=4.0 mew=1.0 -> lw=1.0 ms=4.0 mew=0.8
+    ax3.line1.style: lw=0.9 ms=6.0 mew=1.0 -> lw=0.6 ms=4.0 mew=0.8
+    ax3.text0.fontsize: 6.25 -> 7.0
+    ax3.text1.fontsize: 6.25 -> 7.0
+    ax3.text2.fontsize: 6.25 -> 7.0
+    ax3.text3.fontsize: 6.25 -> 7.0
+    ax3.text4.fontsize: 6.25 -> 7.0
+    ax3.text5.fontsize: 6.5 -> 7.0
+    fig.size_in: [7.0, 5.0] -> [7.5, 4.5]
+
+Style audit of the new figures (every visible text and line; scatter sizes are in check_report layout lines):
+  Fig1: font_files=arial.ttf; text_sizes_pt=7.0; letter_sizes_pt=9.0; letters_bold=True; line_widths_pt=0.6; marker_sizes_pt=4.0 6.0; spine_widths_pt=0.6
+  Fig2: font_files=arial.ttf; text_sizes_pt=7.0; letter_sizes_pt=9.0; letters_bold=True; line_widths_pt=0.6 1.0; marker_sizes_pt=2.0 4.0 6.0; spine_widths_pt=0.6
+  Fig3: font_files=arial.ttf; text_sizes_pt=7.0; letter_sizes_pt=9.0; letters_bold=True; line_widths_pt=0.6; marker_sizes_pt=4.0; spine_widths_pt=0.6
+  Fig4: font_files=arial.ttf; text_sizes_pt=7.0; letter_sizes_pt=9.0; letters_bold=True; line_widths_pt=0.6; marker_sizes_pt=4.0; spine_widths_pt=0.6
+  Fig5: font_files=arial.ttf; text_sizes_pt=7.0; letter_sizes_pt=9.0; letters_bold=True; line_widths_pt=0.6; marker_sizes_pt=4.0; spine_widths_pt=0.6
+  FigS1: font_files=arial.ttf; text_sizes_pt=7.0; letter_sizes_pt=9.0; letters_bold=True; line_widths_pt=0.6 1.0; marker_sizes_pt=4.0; spine_widths_pt=0.6
+
+PNG size (text width 7.5 in = 2250 px at 300 dpi):
+  Fig1: 2250 x 840 px, 300.0 dpi, 7.500 x 2.800 in, limit 3.0 in, pass
+  Fig2: 2250 x 900 px, 300.0 dpi, 7.500 x 3.000 in, limit 3.0 in, pass
+  Fig3: 2250 x 1350 px, 300.0 dpi, 7.500 x 4.500 in, limit 4.5 in, pass
+  Fig4: 2250 x 840 px, 300.0 dpi, 7.500 x 2.800 in, limit 3.0 in, pass
+  Fig5: 2250 x 900 px, 300.0 dpi, 7.500 x 3.000 in, limit 3.0 in, pass
+  FigS1: 2250 x 1350 px, 300.0 dpi, 7.500 x 4.500 in, limit 4.5 in, pass
