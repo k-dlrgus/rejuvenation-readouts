@@ -70,6 +70,7 @@ PROLIF_STYLE = dict(C1_south=(ff.BLACK, "o"), C1_seng_CRA=(ff.VERMILLION, "o"),
 # targets, and the Fig3C / Fig4 factor labels are placed by place_labels. False draws PAPER2FIGS as committed.
 FIX = False
 FIG4_MANUAL = None  # run 3: name -> (x, y) text anchor in data coordinates, fixed in its PLAN.flag
+FIG3_MANUAL = None  # fix2: name -> (x, y) text anchor in data coordinates, fixed in its PLAN.flag
 LABEL_FALLBACK = False  # run 3: an exhausted Fig3C search keeps the 7a1efb9 offset instead of stopping
 LABEL_CHECK = {}  # filled by place_labels: panel -> list of per-label overlap results
 
@@ -189,7 +190,7 @@ def check_labels(fig, ax, panel, annots, xy_all, avoid=(), r_pt=2.6, pad_pt=1.0,
     LABEL_CHECK[panel] = log
 
 
-def place_labels(fig, ax, panel, labels, xy_all, avoid=(), r_pt=2.6, pad_pt=1.0, fallback=None):
+def place_labels(fig, ax, panel, labels, xy_all, avoid=(), r_pt=2.6, pad_pt=1.0, fallback=None, manual=None):
     """Place each label (name, (x, y)) where its text box overlaps no data point, no earlier label
     and no artist in `avoid`, at the shortest leader from a fixed candidate list (deterministic).
     Points are discs of radius r_pt (the 4 pt open highlight marker, 2 pt + edge, rounded up),
@@ -202,8 +203,16 @@ def place_labels(fig, ax, panel, labels, xy_all, avoid=(), r_pt=2.6, pad_pt=1.0,
              for d in (8, 11, 14, 18, 22, 27, 33, 40, 48) for a in range(0, 360, 15)]
     lead = dict(arrowstyle="-", lw=ff.LW_AXIS * 0.8, color=ff.BLACK, shrinkA=0, shrinkB=1.5)
     placed, annots, how = [], [], []
+    manual = manual or {}
     for name, (x, y) in labels:
         best = None
+        if name in manual:  # fixed by hand in a PLAN.flag; checked, never searched
+            t = ax.annotate(name, (x, y), xytext=manual[name], textcoords="data", ha="left", va="center",
+                            zorder=5, arrowprops=lead)
+            placed.append(_text_box(t, rend))
+            annots.append(t)
+            how.append(f"by hand, text at {manual[name]} (data)")
+            continue
         for dx, dy in cands:
             t = ax.annotate(name, (x, y), xytext=(dx, dy), textcoords="offset points",
                             ha="left" if dx >= 0 else "right", va="center", zorder=5, arrowprops=lead)
@@ -566,7 +575,7 @@ def fig3():
         four = [(f, tuple(t.loc[t.perturbation == f, ["prolif_shift", "delta_i"]].iloc[0])) for f in FOUR]
         place_labels(fig, axC, "Fig3C", four, t[["prolif_shift", "delta_i"]].to_numpy(),
                      avoid=[axC.get_legend(), rho_text],
-                     fallback=dict(zip(FOUR, [(10, -2), (8, 10), (-8, 9), (-10, -4)])) if LABEL_FALLBACK else None)
+                     fallback=dict(zip(FOUR, [(10, -2), (8, 10), (-8, 9), (-10, -4)])) if LABEL_FALLBACK else None, manual=FIG3_MANUAL)
     ff.panel_letters(fig, [[(axA, "A")], [(axB, "B"), (axC, "C")]])
     save(fig, "Fig3", data)
 
