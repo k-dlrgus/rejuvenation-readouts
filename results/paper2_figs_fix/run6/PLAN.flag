@@ -1,0 +1,7 @@
+PLAN written 2026-10-10T08:07:57Z
+Task PAPER2FIGS-fix4. Cosmetic only. Written before any figure is redrawn.
+Changes: (1) Fig 3 panel C x-label "Cell-division shift (perturbation − NT)" -> "Cell-cycle score change (perturbation − NT)".
+(2) US spelling: search of every string literal in src/paper2_figs.py found one British spelling: Fig S2 panel D x-label "grey" -> "gray".
+Redraw: Fig 3 (run5 settings) and Fig S2 (run3 settings: FIX on, LABEL_FALLBACK on) into run6.
+HARD RULE: Fig3_data.csv equals run5's, FigS2_data.csv equals run3's, after CRLF->LF.
+Code beyond the flag: src/paper2_figs_fix4_run.py. Edits to src/paper2_figs.py are the two strings only.

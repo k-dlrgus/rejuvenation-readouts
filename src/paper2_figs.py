@@ -565,7 +565,7 @@ def fig3():
              ha="right", va="top")
     axC.axhline(0, color=ff.BLACK, lw=ff.LW_AXIS, zorder=0)
     axC.axvline(0, color=ff.BLACK, lw=ff.LW_AXIS, zorder=0)
-    axC.set_xlabel("Cell-division shift (perturbation − NT)")
+    axC.set_xlabel("Cell-cycle score change (perturbation − NT)")
     axC.set_ylabel("Change in distance to PD14, origin (i)")
     axC.set_title(f"All {len(t)} perturbations, S2A_k20", loc="left")
     axC.legend(handles=legend_handles([(f"called ({n_called})", CALLED, "o", True),
@@ -759,7 +759,7 @@ def figS2():
     axD.set_ylim(2.6, -0.6)
     axD.set_xlim(0, 23485)
     axD.set_xticks([0, 10000, 20000, 23485], ["0", "10,000", "20,000", "23,485"])
-    axD.set_xlabel("Ruler genes (grey present, white absent)")
+    axD.set_xlabel("Ruler genes (gray present, white absent)")
     axD.set_title("Ruler-gene coverage", loc="left")
     axD.set_clip_on(False)
     ff.panel_letters(fig, [[(axA, "A"), (axB, "B")], [(axC, "C"), (axD, "D")]])
