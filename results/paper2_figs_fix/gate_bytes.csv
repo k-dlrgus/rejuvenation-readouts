@@ -1,0 +1,10 @@
+stage,file,sha256_7a1efb9,sha256_now,bytes_7a1efb9,bytes_now,identical
+reproduce (FIX=False),Fig1_data.csv,a9a128054b94dcd9,0537df8955a8181e,838,852,False
+reproduce (FIX=False),Fig2_data.csv,5572b0e3b06afc49,45ba57a8bd69bd8f,15835,16016,False
+reproduce (FIX=False),Fig3_data.csv,53bb28c6b2804003,d6f13734f1a31ddc,43573,44011,False
+reproduce (FIX=False),Fig4_data.csv,b7aa6b3b83ed2301,194e8aed5a03b996,45631,45975,False
+reproduce (FIX=False),FigS1_data.csv,8549ff622f6d306e,c5ff2c815d86537a,64559,65244,False
+reproduce (FIX=False),FigS2_data.csv,194de7eb651c00d6,12f1ebd62e941f40,22340,22692,False
+reproduce (FIX=False),FigS3_data.csv,f868982d2293a620,f619732a08847ded,1111,1120,False
+reproduce (FIX=False),paper2_numbers.md,46007a700c505fda,2b02f5aabed441dd,13136,13264,False
+reproduce (FIX=False),angle_check.csv,893293dfb7644ef9,a367dfeaaa46dbdd,3776,3801,False

@@ -66,6 +66,13 @@ PROLIF_STYLE = dict(C1_south=(ff.BLACK, "o"), C1_seng_CRA=(ff.VERMILLION, "o"),
                     C1_seng_CRI=(ff.VERMILLION, "s"), C1_lu=(ff.BLUE, "D"),
                     C2=(ff.PURPLE, "^"), C1_gtex=(ff.DARKGREY, "v"))
 
+# PAPER2FIGS-fix (src/paper2_figs_fix_run.py) sets FIX = True: Fig1 routes both libraries to both
+# targets, and the Fig3C / Fig4 factor labels are placed by place_labels. False draws PAPER2FIGS as committed.
+FIX = False
+FIG4_MANUAL = None  # run 3: name -> (x, y) text anchor in data coordinates, fixed in its PLAN.flag
+LABEL_FALLBACK = False  # run 3: an exhausted Fig3C search keeps the 7a1efb9 offset instead of stopping
+LABEL_CHECK = {}  # filled by place_labels: panel -> list of per-label overlap results
+
 
 def stop(key, msg):
     raise SystemExit(f"STOP {key}: {msg}")
@@ -146,6 +153,79 @@ def tidy(ax):
     ax.tick_params(length=2.5, width=ff.LW_AXIS)
 
 
+def _label_geometry(fig, ax, xy_all, r_pt, pad_pt):
+    fig.canvas.draw()
+    rend = fig.canvas.get_renderer()
+    P = ax.transData.transform(np.asarray(xy_all, float))
+    rad = (r_pt + pad_pt) * fig.dpi / 72.0
+
+    def hits_points(bb):
+        cx = np.clip(P[:, 0], bb.x0, bb.x1)
+        cy = np.clip(P[:, 1], bb.y0, bb.y1)
+        return int(((P[:, 0] - cx) ** 2 + (P[:, 1] - cy) ** 2 < rad ** 2).sum())
+    return rend, hits_points
+
+
+def _text_box(t, rend):
+    from matplotlib.text import Text
+    t.update_positions(rend)
+    return Text.get_window_extent(t, rend)  # the text box only, not the leader line
+
+
+def check_labels(fig, ax, panel, annots, xy_all, avoid=(), r_pt=2.6, pad_pt=1.0, how=""):
+    """Log, per label, how many point discs (radius r_pt + pad_pt), other labels and `avoid` artists its
+    text box overlaps, and whether it lies inside the axes. Logged in LABEL_CHECK[panel]; never stops."""
+    rend, hits_points = _label_geometry(fig, ax, xy_all, r_pt, pad_pt)
+    ab = ax.get_window_extent(rend)
+    boxes = [_text_box(t, rend) for t in annots]
+    blocked = [a.get_window_extent(rend) for a in avoid]
+    log = []
+    for i, (t, bb) in enumerate(zip(annots, boxes)):
+        log.append(dict(panel=panel, label=t.get_text(), placement=how[i] if isinstance(how, list) else how,
+                        points_overlapped=hits_points(bb),
+                        labels_overlapped=sum(bb.overlaps(o) for j, o in enumerate(boxes) if j != i),
+                        avoid_overlapped=sum(bb.overlaps(o) for o in blocked),
+                        inside_axes=bool(bb.x0 >= ab.x0 and bb.x1 <= ab.x1 and bb.y0 >= ab.y0 and bb.y1 <= ab.y1)))
+    LABEL_CHECK[panel] = log
+
+
+def place_labels(fig, ax, panel, labels, xy_all, avoid=(), r_pt=2.6, pad_pt=1.0, fallback=None):
+    """Place each label (name, (x, y)) where its text box overlaps no data point, no earlier label
+    and no artist in `avoid`, at the shortest leader from a fixed candidate list (deterministic).
+    Points are discs of radius r_pt (the 4 pt open highlight marker, 2 pt + edge, rounded up),
+    padded by pad_pt. If no candidate clears a label: STOP, or, with `fallback` (name -> (dx, dy)
+    in points), use that offset and log it. The result is checked and logged by check_labels."""
+    rend, hits_points = _label_geometry(fig, ax, xy_all, r_pt, pad_pt)
+    ab = ax.get_window_extent(rend)
+    blocked = [a.get_window_extent(rend) for a in avoid]
+    cands = [(d * np.cos(np.radians(a)), d * np.sin(np.radians(a)))
+             for d in (8, 11, 14, 18, 22, 27, 33, 40, 48) for a in range(0, 360, 15)]
+    lead = dict(arrowstyle="-", lw=ff.LW_AXIS * 0.8, color=ff.BLACK, shrinkA=0, shrinkB=1.5)
+    placed, annots, how = [], [], []
+    for name, (x, y) in labels:
+        best = None
+        for dx, dy in cands:
+            t = ax.annotate(name, (x, y), xytext=(dx, dy), textcoords="offset points",
+                            ha="left" if dx >= 0 else "right", va="center", zorder=5, arrowprops=lead)
+            bb = _text_box(t, rend)
+            if (bb.x0 >= ab.x0 and bb.x1 <= ab.x1 and bb.y0 >= ab.y0 and bb.y1 <= ab.y1
+                    and hits_points(bb) == 0 and not any(bb.overlaps(o) for o in placed + blocked)):
+                best = (t, bb, f"search offset ({dx:.2f}, {dy:.2f}) pt")
+                break
+            t.remove()
+        if best is None:
+            if fallback is None:
+                stop("label_unplaceable", f"{panel}: no candidate offset clears {name}")
+            dx, dy = fallback[name]
+            t = ax.annotate(name, (x, y), xytext=(dx, dy), textcoords="offset points",
+                            ha="left" if dx > 0 else "right", va="center", zorder=5, arrowprops=lead)
+            best = (t, _text_box(t, rend), f"search exhausted; 7a1efb9 offset ({dx}, {dy}) pt")
+        placed.append(best[1])
+        annots.append(best[0])
+        how.append(best[2])
+    check_labels(fig, ax, panel, annots, xy_all, avoid, r_pt, pad_pt, how)
+
+
 # --------------------------------------------------------------------------- Fig1
 def fig1():
     ff.use_style()
@@ -202,8 +282,47 @@ def fig1():
     ax.annotate("", (5.02, 1.75), (2.33, 1.75), arrowprops=kw)
     ax.text(3.65, 1.80, "PD14 and PD32 define the target and the aging axis", ha="center", va="bottom",
             color=ff.DARKGREY)
-    ax.annotate("", (5.02, 1.38), (4.73, 0.85), arrowprops=kw)
-    ax.annotate("", (5.02, 0.55), (4.73, 0.55), arrowprops=kw)
+    if not FIX:
+        ax.annotate("", (5.02, 1.38), (4.73, 0.85), arrowprops=kw)
+        ax.annotate("", (5.02, 0.55), (4.73, 0.55), arrowprops=kw)
+    else:
+        # Both libraries feed one bus at x = 4.88 that leads to both targets.
+        ln = dict(color=ff.BLACK, lw=ff.LW_AXIS, solid_capstyle="butt", solid_joinstyle="miter")
+        bus_x, y_cra, y_cri, y_t1, y_t2 = 4.88, 1.125, 0.55, 1.45, 0.55
+        ax.plot([1.175, 1.175, bus_x], [1.03, y_cra, y_cra], **ln)        # CRA: up from its box, along the gap
+        ax.plot([4.73, bus_x], [y_cri, y_cri], **ln)                     # CRI: out of its right edge
+        ax.plot([bus_x, bus_x], [y_t2, y_t1], **ln)                      # the bus
+        ax.annotate("", (5.02, y_t1), (bus_x, y_t1), arrowprops=kw)      # to Target 1
+        ax.annotate("", (5.02, y_t2), (bus_x, y_t2), arrowprops=kw)      # to Target 2
+        cap = ax.text(3.60, y_cra + 0.02, "displacements go to both targets", ha="center",
+                      va="bottom", color=ff.DARKGREY)
+        # G3: boxes as drawn (pad 0.02), connector segments and the caption must not meet
+        boxes = dict(WT=(0.05, 1.22, 2.25, 0.8), CRA=(0.05, 0.08, 2.25, 0.95), CRI=(2.45, 0.08, 2.25, 0.95),
+                     T1=(5.05, 1.22, 2.4, 0.8), T2=(5.05, 0.08, 2.4, 0.95))
+        boxes = {k: (x - 0.02, y - 0.02, x + w + 0.02, y + h + 0.02) for k, (x, y, w, h) in boxes.items()}
+        segs = dict(CRA_up=((1.175, 1.03), (1.175, y_cra)), CRA_run=((1.175, y_cra), (bus_x, y_cra)),
+                    CRI_out=((4.73, y_cri), (bus_x, y_cri)), bus=((bus_x, y_t2), (bus_x, y_t1)),
+                    to_T1=((bus_x, y_t1), (5.02, y_t1)), to_T2=((bus_x, y_t2), (5.02, y_t2)))
+        allowed = dict(CRA_up={"CRA"}, CRI_out={"CRI"}, to_T1={"T1"}, to_T2={"T2"})  # endpoints at own box edge
+
+        def meets(seg, b, eps=1e-9):
+            (x0, y0), (x1, y1) = seg
+            return min(x0, x1) < b[2] - eps and max(x0, x1) > b[0] + eps and                 min(y0, y1) < b[3] - eps and max(y0, y1) > b[1] + eps
+
+        fig.canvas.draw()
+        cb = cap.get_window_extent().transformed(ax.transData.inverted())
+        cbox = (cb.x0, cb.y0, cb.x1, cb.y1)
+        log = []
+        for k, sg in segs.items():
+            hit = [b for b, e in boxes.items() if meets(sg, e) and b not in allowed.get(k, set())]
+            log.append(dict(panel="Fig1", item=f"connector {k}", crosses=";".join(hit) or "none"))
+        hit = [b for b, e in boxes.items() if cbox[0] < e[2] and cbox[2] > e[0] and cbox[1] < e[3] and cbox[3] > e[1]]
+        hit += [k for k, ((x0, y0), (x1, y1)) in segs.items()
+                if min(x0, x1) < cbox[2] and max(x0, x1) > cbox[0] and min(y0, y1) < cbox[3] and max(y0, y1) > cbox[1]]
+        log.append(dict(panel="Fig1", item="caption 'displacements go to both targets'",
+                        crosses=";".join(hit) or "none",
+                        extent=f"x {cbox[0]:.3f}-{cbox[2]:.3f}, y {cbox[1]:.3f}-{cbox[3]:.3f} in"))
+        LABEL_CHECK["Fig1"] = log
     data = [dict(item=k, value=v, source=s) for k, v, s in [
         ("all cells", n_all, "results/senginv/addendum_meta.json n_cells"),
         ("WT group", n_wt, "results/senginv/addendum_meta.json n_match_barcode"),
@@ -420,9 +539,11 @@ def fig3():
                     lw=0, zorder=3 if called else 2)
     for f, (dx, dy) in zip(FOUR, [(10, -2), (8, 10), (-8, 9), (-10, -4)]):
         r = t[t.perturbation == f].iloc[0]
-        axC.annotate(f, (r.prolif_shift, r.delta_i), xytext=(dx, dy), textcoords="offset points",
-                     ha="left" if dx > 0 else "right", va="center",
-                     arrowprops=dict(arrowstyle="-", lw=ff.LW_AXIS * 0.8, color=ff.BLACK, shrinkA=0, shrinkB=1.5))
+        if not FIX:
+            axC.annotate(f, (r.prolif_shift, r.delta_i), xytext=(dx, dy), textcoords="offset points",
+                         ha="left" if dx > 0 else "right", va="center",
+                         arrowprops=dict(arrowstyle="-", lw=ff.LW_AXIS * 0.8, color=ff.BLACK, shrinkA=0,
+                                         shrinkB=1.5))
         dot(axC, r.prolif_shift, r.delta_i, ff.BLACK, "o", False, zorder=4)
     for _, r in t.iterrows():
         data.append(dict(panel="C", perturbation=r.perturbation, prolif_shift=r.prolif_shift, delta_i=r.delta_i,
@@ -431,7 +552,7 @@ def fig3():
     data.append(dict(panel="C", item="stored Spearman rho", value=rho,
                      source=f"{rel(SENG3 / 'd5_confounds.json')}:{line}"))
     n_called, _ = json_at(SENG3 / "d4_summary.json", "summary", "delta_i", "called")
-    axC.text(0.97, 0.97, f"Spearman ρ = {rho:.4f}\n(stored; n = {len(t)})", transform=axC.transAxes,
+    rho_text = axC.text(0.97, 0.97, f"Spearman ρ = {rho:.4f}\n(stored; n = {len(t)})", transform=axC.transAxes,
              ha="right", va="top")
     axC.axhline(0, color=ff.BLACK, lw=ff.LW_AXIS, zorder=0)
     axC.axvline(0, color=ff.BLACK, lw=ff.LW_AXIS, zorder=0)
@@ -441,6 +562,11 @@ def fig3():
     axC.legend(handles=legend_handles([(f"called ({n_called})", CALLED, "o", True),
                                        ("not called", NOT_CALLED, "o", True)]),
                loc="lower left", frameon=False, handletextpad=0.2, borderaxespad=0.1)
+    if FIX:
+        four = [(f, tuple(t.loc[t.perturbation == f, ["prolif_shift", "delta_i"]].iloc[0])) for f in FOUR]
+        place_labels(fig, axC, "Fig3C", four, t[["prolif_shift", "delta_i"]].to_numpy(),
+                     avoid=[axC.get_legend(), rho_text],
+                     fallback=dict(zip(FOUR, [(10, -2), (8, 10), (-8, 9), (-10, -4)])) if LABEL_FALLBACK else None)
     ff.panel_letters(fig, [[(axA, "A")], [(axB, "B"), (axC, "C")]])
     save(fig, "Fig3", data)
 
@@ -471,9 +597,11 @@ def fig4():
     for f, (dx, dy) in zip(FOUR, [(10, -7), (10, 6), (10, -6), (10, 4)]):
         r = j[j.perturbation == f].iloc[0]
         dot(ax, r.delta_i, r.delta, ff.BLACK, "o", False, zorder=4)
-        ax.annotate(f, (r.delta_i, r.delta), xytext=(dx, dy), textcoords="offset points",
-                    ha="left" if dx > 0 else "right", va="center",
-                    arrowprops=dict(arrowstyle="-", lw=ff.LW_AXIS * 0.8, color=ff.BLACK, shrinkA=0, shrinkB=1.5))
+        if not FIX:
+            ax.annotate(f, (r.delta_i, r.delta), xytext=(dx, dy), textcoords="offset points",
+                        ha="left" if dx > 0 else "right", va="center",
+                        arrowprops=dict(arrowstyle="-", lw=ff.LW_AXIS * 0.8, color=ff.BLACK, shrinkA=0,
+                                        shrinkB=1.5))
     ax.axhline(0, color=ff.BLACK, lw=ff.LW_AXIS, zorder=0)
     ax.axvline(0, color=ff.BLACK, lw=ff.LW_AXIS, zorder=0)
     ax.set_xlabel("Change in distance to early-passage cells (PD14)\nS2A_k20, origin (i); negative = closer")
@@ -492,6 +620,17 @@ def fig4():
              f"GTEx young test: {ax_closer} closer, {ax_called} called\n"
              "The GTEx test transplants a single-cell displacement\nonto a bulk GTEx origin.",
              ha="left", va="bottom")
+    if FIX:
+        four = [(f, tuple(j.loc[j.perturbation == f, ["delta_i", "delta"]].iloc[0])) for f in FOUR]
+        if FIG4_MANUAL is None:
+            place_labels(fig, ax, "Fig4", four, j[["delta_i", "delta"]].to_numpy())
+        else:
+            annots = [ax.annotate(f, xy, xytext=FIG4_MANUAL[f], textcoords="data", ha="left", va="center",
+                                  zorder=5, arrowprops=dict(arrowstyle="-", lw=ff.LW_AXIS * 0.8, color=ff.BLACK,
+                                                            shrinkA=0, shrinkB=1.5))
+                      for f, xy in four]
+            check_labels(fig, ax, "Fig4", annots, j[["delta_i", "delta"]].to_numpy(),
+                         how=[f"by hand, text at {FIG4_MANUAL[f]} (data)" for f, _ in four])
     for _, r in j.iterrows():
         data.append(dict(perturbation=r.perturbation, modality=r.modality_s3, n_cells=r.n_cells_s3,
                          delta_early_passage_i=r.delta_i, called_early_passage_i=bool(r.called_delta_i),

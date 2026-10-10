@@ -1,0 +1,16 @@
+panel,item,crosses,extent,label,placement,points_overlapped,labels_overlapped,avoid_overlapped,inside_axes
+Fig1,connector CRA_up,none,,,,,,,
+Fig1,connector CRA_run,none,,,,,,,
+Fig1,connector CRI_out,none,,,,,,,
+Fig1,connector bus,none,,,,,,,
+Fig1,connector to_T1,none,,,,,,,
+Fig1,connector to_T2,none,,,,,,,
+Fig1,caption 'displacements go to both targets',none,"x 2.840-4.360, y 1.145-1.236 in",,,,,,
+Fig3C,,,,CRA_E2F3,"search offset (-18.00, 0.00) pt",0.0,0.0,0.0,True
+Fig3C,,,,CRA_EZH2,"search offset (11.00, 19.05) pt",0.0,0.0,0.0,True
+Fig3C,,,,CRI_STAT3,"search offset (-19.05, -11.00) pt",0.0,0.0,0.0,True
+Fig3C,,,,CRI_ZFX,"search offset (10.35, 38.64) pt",0.0,0.0,0.0,True
+Fig4,,,,CRA_E2F3,"by hand, text at (-22.0, 3.2) (data)",0.0,0.0,0.0,True
+Fig4,,,,CRA_EZH2,"by hand, text at (-10.0, 21.0) (data)",0.0,0.0,0.0,True
+Fig4,,,,CRI_STAT3,"by hand, text at (-20.0, 0.0) (data)",0.0,0.0,0.0,True
+Fig4,,,,CRI_ZFX,"by hand, text at (-22.0, 21.0) (data)",0.0,0.0,0.0,True

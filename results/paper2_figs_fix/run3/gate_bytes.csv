@@ -1,0 +1,18 @@
+stage,file,bytes_blob,bytes_written,lines_blob,lines_written,crlf_written,sha256_blob,sha256_written_raw,sha256_written_lf,C1_lf_identical,C2_line_count,C3_no_other_cr,PASS
+S1 reproduce (FIX=False),Fig1_data.csv,838,852,14,14,14,a9a128054b94dcd9,0537df8955a8181e,a9a128054b94dcd9,True,True,True,True
+S1 reproduce (FIX=False),Fig2_data.csv,15835,16016,181,181,181,5572b0e3b06afc49,45ba57a8bd69bd8f,5572b0e3b06afc49,True,True,True,True
+S1 reproduce (FIX=False),Fig3_data.csv,43573,44011,438,438,438,53bb28c6b2804003,d6f13734f1a31ddc,53bb28c6b2804003,True,True,True,True
+S1 reproduce (FIX=False),Fig4_data.csv,45631,45975,344,344,344,b7aa6b3b83ed2301,194e8aed5a03b996,b7aa6b3b83ed2301,True,True,True,True
+S1 reproduce (FIX=False),FigS1_data.csv,64559,65244,685,685,685,8549ff622f6d306e,c5ff2c815d86537a,8549ff622f6d306e,True,True,True,True
+S1 reproduce (FIX=False),FigS2_data.csv,22340,22692,352,352,352,194de7eb651c00d6,12f1ebd62e941f40,194de7eb651c00d6,True,True,True,True
+S1 reproduce (FIX=False),FigS3_data.csv,1111,1120,9,9,9,f868982d2293a620,f619732a08847ded,f868982d2293a620,True,True,True,True
+S1 reproduce (FIX=False),paper2_numbers.md,13136,13264,128,128,128,46007a700c505fda,2b02f5aabed441dd,46007a700c505fda,True,True,True,True
+S1 reproduce (FIX=False),angle_check.csv,3776,3801,25,25,25,893293dfb7644ef9,a367dfeaaa46dbdd,893293dfb7644ef9,True,True,True,True
+G1 (FIX=True),Fig1_data.csv,838,852,14,14,14,a9a128054b94dcd9,0537df8955a8181e,a9a128054b94dcd9,True,True,True,True
+G1 (FIX=True),Fig2_data.csv,15835,16016,181,181,181,5572b0e3b06afc49,45ba57a8bd69bd8f,5572b0e3b06afc49,True,True,True,True
+G1 (FIX=True),Fig3_data.csv,43573,44011,438,438,438,53bb28c6b2804003,d6f13734f1a31ddc,53bb28c6b2804003,True,True,True,True
+G1 (FIX=True),Fig4_data.csv,45631,45975,344,344,344,b7aa6b3b83ed2301,194e8aed5a03b996,b7aa6b3b83ed2301,True,True,True,True
+G1 (FIX=True),FigS1_data.csv,64559,65244,685,685,685,8549ff622f6d306e,c5ff2c815d86537a,8549ff622f6d306e,True,True,True,True
+G1 (FIX=True),FigS2_data.csv,22340,22692,352,352,352,194de7eb651c00d6,12f1ebd62e941f40,194de7eb651c00d6,True,True,True,True
+G1 (FIX=True),FigS3_data.csv,1111,1120,9,9,9,f868982d2293a620,f619732a08847ded,f868982d2293a620,True,True,True,True
+G1 angle_check (FIX=True),angle_check.csv,3776,3801,25,25,25,893293dfb7644ef9,a367dfeaaa46dbdd,893293dfb7644ef9,True,True,True,True

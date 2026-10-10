@@ -1,0 +1,74 @@
+PLAN written 2026-10-10T04:55:47Z (local 2026-10-10 13:55:47 KST)
+Written before any figure is re-rendered and before the new count is read.
+Reproduced verbatim at the top of the task README. Not edited after this
+timestamp; any later decision is appended below a dated line, not edited in.
+
+TASK: PAPER2FIGS-fix. Cosmetic only. No plotted value may change.
+
+Author's instruction (verbatim):
+1. Fig 1: draw arrows from the CRA box to both targets, as the CRI box has.
+   Both libraries' displacements go to both targets.
+2. Fig 4 and Fig 3C: move the factor labels so none overlaps another label or
+   a data point.
+3. Add one row to paper2_numbers.md: "of the 80 called against early-passage
+   cells (origin i), number called against GTEx young, and number with
+   delta_gtex_young > 0", from Fig4_data.csv with its source lines.
+   Stated: 0 and 80.
+Re-render, confirm every *_data.csv is byte-identical to commit 7a1efb9, and
+commit locally as one new commit. Do not push.
+
+--- GATES ---
+
+G1 Byte identity. Every *_data.csv written by the re-render (Fig1, Fig2, Fig3,
+   Fig4, FigS1, FigS2, FigS3) is compared byte for byte (SHA-256) with
+   `git show 7a1efb9:results/paper2_figs/<name>`. Any difference: STOP
+   `data_changed`, naming the files. paper2_numbers.md and angle_check.csv
+   are also compared; paper2_numbers.md is expected to differ only by the
+   added row(s) and the MATCH tally line, angle_check.csv not at all.
+G2 Overlap (item 2). Checked from the rendered figure, not by eye alone: for
+   each of the four labels in Fig 4 and in Fig 3C, the label's text bounding
+   box (renderer window extent) must not intersect another label's box, nor
+   the marker extent of any plotted point in that panel (marker radius in
+   display units), nor the panel's legend or in-panel text. Leader lines may
+   cross points. A failure is fixed by moving labels and re-checking; it is
+   not a STOP. The final placement and the check result are reported.
+G3 Fig 1 (item 1). Arrows from the CRA box to Target 1 and to Target 2, not
+   crossing the CRI box or any text. Checked on the rendered PNG.
+
+--- THE NEW ROWS (item 3) ---
+
+Read from the re-rendered Fig4_data.csv (which G1 requires to equal the
+7a1efb9 copy), rows with perturbation != "all".
+ R1 subset = called_early_passage_i == True. Its size must be 80, else
+    MISMATCH is reported on a row "called against early-passage (i)", stated 80.
+ R2 "of those 80, called against GTEx young": count of called_gtex_young ==
+    True in the subset. Stated 0. Exact integer.
+ R3 "of those 80, delta_gtex_young > 0": count of delta_gtex_young > 0
+    (strictly) in the subset. Stated 80. Exact integer.
+Each row cites Fig4_data.csv with the line range of the subset, plus the
+underlying source lines those rows carry (results/seng3/d4_table.csv and
+results/axang/d3b_table.csv, from the `source` column). Rule P12 of the
+PAPER2FIGS plan applies: MATCH only if equal, else MISMATCH with both values;
+nothing adjusted. These are counts over plotted rows (arithmetic on stored
+values) and are labelled as such. The instruction says "one row"; it names two
+numbers, so it is written as one table row holding both stated and both stored
+values, with MATCH only if both agree. (R1 is checked inside that row's note.)
+
+Readings (exactly one is reported):
+ - both match: "Of the 80 perturbations called against early-passage cells
+   (origin i), 0 are called against GTEx young and all 80 move away from GTEx
+   young (delta_gtex_young > 0)." [with the stored numbers]
+ - otherwise: "MISMATCH: stated 0 and 80; stored <a> and <b>." The figure
+   commit still proceeds; the mismatch is reported, not corrected.
+Chance baseline beside the count: the GTEx test's called rate under an
+effect-free null is 5% by construction (chance expectation 17.0 of 340, so
+4.0 of 80). This is stated beside R2.
+
+STOP keys: data_changed; value_not_stored.
+
+--- 2026-10-10T04:58Z, decided by the author before any code change ---
+D1 Directory. CLAUDE.md forbids writing into results/paper2_figs/. Author's
+   choice: every output of this task goes to results/paper2_figs_fix/,
+   including a full paper2_numbers.md (the 75 PAPER2FIGS rows plus the new
+   row). results/paper2_figs/ is not touched. G1 compares the new *_data.csv
+   files against 7a1efb9:results/paper2_figs/.

@@ -1,0 +1,25 @@
+figure,pair,plotted,plotted_2dp,source,findings_s5,findings_line,match_s5,correction,correction_line,match_correction
+Fig3A,A1 vs C1_south,70.21806869641632,70.22,"results/axang/d1_angles.csv:73 min(angle_deg, 180-angle_deg)",70.22,FINDINGS_AXANG.md:574,True,,,
+Fig3A,A2 vs C1_south,80.48624122397987,80.49,"results/axang/d1_angles.csv:83 min(angle_deg, 180-angle_deg)",80.49,FINDINGS_AXANG.md:581,True,,,
+Fig3A,A3 vs C1_south,27.30074776348847,27.30,"results/axang/d1_angles.csv:92 min(angle_deg, 180-angle_deg)",27.30,FINDINGS_AXANG.md:588,True,,,
+Fig3A,A4 vs C1_south,64.48216475445348,64.48,"results/axang/d1_angles.csv:100 min(angle_deg, 180-angle_deg)",64.48,FINDINGS_AXANG.md:595,True,,,
+Fig3A,A1 vs C1_seng_CRA,73.19332223092948,73.19,"results/axang/d1_angles.csv:74 min(angle_deg, 180-angle_deg)",73.19,FINDINGS_AXANG.md:575,True,,,
+Fig3A,A2 vs C1_seng_CRA,76.43963502223622,76.44,"results/axang/d1_angles.csv:84 min(angle_deg, 180-angle_deg)",76.44,FINDINGS_AXANG.md:582,True,,,
+Fig3A,A3 vs C1_seng_CRA,19.659631308565068,19.66,"results/axang/d1_angles.csv:93 min(angle_deg, 180-angle_deg)",19.66,FINDINGS_AXANG.md:589,True,,,
+Fig3A,A4 vs C1_seng_CRA,65.39930490850286,65.40,"results/axang/d1_angles.csv:101 min(angle_deg, 180-angle_deg)",65.40,FINDINGS_AXANG.md:596,True,,,
+Fig3A,A1 vs C1_seng_CRI,74.40123277804254,74.40,"results/axang/d1_angles.csv:75 min(angle_deg, 180-angle_deg)",74.40,FINDINGS_AXANG.md:576,True,,,
+Fig3A,A2 vs C1_seng_CRI,78.04639460016833,78.05,"results/axang/d1_angles.csv:85 min(angle_deg, 180-angle_deg)",78.05,FINDINGS_AXANG.md:583,True,,,
+Fig3A,A3 vs C1_seng_CRI,20.562873439320807,20.56,"results/axang/d1_angles.csv:94 min(angle_deg, 180-angle_deg)",20.56,FINDINGS_AXANG.md:590,True,,,
+Fig3A,A4 vs C1_seng_CRI,71.83245648215495,71.83,"results/axang/d1_angles.csv:102 min(angle_deg, 180-angle_deg)",71.83,FINDINGS_AXANG.md:597,True,,,
+Fig3A,A1 vs C1_lu,70.36151430917049,70.36,results/axang/d1_angles_corrected_C1lu.csv:13 angle_from_parallel_corrected,70.95,FINDINGS_AXANG.md:577,False,70.36,results/axang/CORRECTION.md:77,True
+Fig3A,A2 vs C1_lu,82.45428434808451,82.45,results/axang/d1_angles_corrected_C1lu.csv:14 angle_from_parallel_corrected,81.98,FINDINGS_AXANG.md:584,False,82.45,results/axang/CORRECTION.md:78,True
+Fig3A,A3 vs C1_lu,31.937899901837586,31.94,results/axang/d1_angles_corrected_C1lu.csv:15 angle_from_parallel_corrected,32.63,FINDINGS_AXANG.md:591,False,31.94,results/axang/CORRECTION.md:79,True
+Fig3A,A4 vs C1_lu,57.968032641416265,57.97,results/axang/d1_angles_corrected_C1lu.csv:16 angle_from_parallel_corrected,57.63,FINDINGS_AXANG.md:598,False,57.97,results/axang/CORRECTION.md:80,True
+FigS3,A1 vs C2,48.79429674151223,48.79,"results/axang/d1_angles.csv:77 min(angle_deg, 180-angle_deg)",48.79,FINDINGS_AXANG.md:578,True,,,
+FigS3,A2 vs C2,84.5965775093614,84.60,"results/axang/d1_angles.csv:87 min(angle_deg, 180-angle_deg)",84.60,FINDINGS_AXANG.md:585,True,,,
+FigS3,A3 vs C2,61.68067202674832,61.68,"results/axang/d1_angles.csv:96 min(angle_deg, 180-angle_deg)",61.68,FINDINGS_AXANG.md:592,True,,,
+FigS3,A4 vs C2,77.0633911287597,77.06,"results/axang/d1_angles.csv:104 min(angle_deg, 180-angle_deg)",77.06,FINDINGS_AXANG.md:599,True,,,
+FigS3,A1 vs C1_gtex,35.82504233436927,35.83,"results/axang/d1_angles.csv:71 min(angle_deg, 180-angle_deg)",35.83,FINDINGS_AXANG.md:572,True,,,
+FigS3,A2 vs C1_gtex,85.51294321047219,85.51,"results/axang/d1_angles.csv:81 min(angle_deg, 180-angle_deg)",85.51,FINDINGS_AXANG.md:579,True,,,
+FigS3,A3 vs C1_gtex,55.38294892816264,55.38,"results/axang/d1_angles.csv:90 min(angle_deg, 180-angle_deg)",55.38,FINDINGS_AXANG.md:586,True,,,
+FigS3,A4 vs C1_gtex,83.67909000141087,83.68,"results/axang/d1_angles.csv:98 min(angle_deg, 180-angle_deg)",83.68,FINDINGS_AXANG.md:593,True,,,

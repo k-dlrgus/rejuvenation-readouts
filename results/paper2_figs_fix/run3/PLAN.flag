@@ -1,0 +1,102 @@
+PLAN written 2026-10-10T05:51:06Z (local 2026-10-10 14:51:06 KST)
+Run 3 of PAPER2FIGS-fix. Written before anything is drawn in this run and
+before the new count is read. Reproduced verbatim at the top of
+results/paper2_figs_fix/run3/README.md. Not edited after this timestamp.
+
+CONTEXT. Run 1 (results/paper2_figs_fix/) STOPPED `reproduction_failed`
+(raw-byte comparison; CLAUDE.md key). Run 2 (results/paper2_figs_fix/run2/)
+passed reproduction 9/9 under the CRLF->LF rule, then STOPPED
+`label_unplaceable` in Fig 4 (its own flag key). Neither is resumed or
+edited. This run starts over from step 1.
+
+TASK (author's words, run 1): Fig 1 arrows from the CRA box to both targets;
+Fig 4 and Fig 3C factor labels moved so none overlaps another label or a
+data point; one new paper2_numbers.md row ("of the 80 called against
+early-passage cells (origin i), number called against GTEx young, and number
+with delta_gtex_young > 0", from Fig4_data.csv with its source lines; stated
+0 and 80). Commit locally as one new commit; do not push.
+
+AUTHOR'S INSTRUCTIONS FOR RUN 3 (after run 2's STOP):
+ - Fig 4 labels placed by hand at offsets written here before drawing, each
+   in clear space with a leader line to its point.
+ - Check: label text overlaps no data point and no other label; leader
+   lines may cross points.
+ - Label placement is a drawing choice, not a result. A failed label check is
+   reported with the image; it is not a STOP.
+ - The only hard rule: every data file identical to 7a1efb9 under the
+   CRLF->LF comparison.
+ - Finish Figs 1-4, add the new row, commit.
+
+Writes only: results/paper2_figs_fix/run3/, src/paper2_figs.py,
+src/paper2_figs_fix_run.py.
+
+--- HARD RULE (the only STOP in this run besides CLAUDE.md's) ---
+
+C (as run 2): for a written file F and blob B = `git show 7a1efb9:results/paper2_figs/F`:
+  C1 F with b"\r\n" -> b"\n" equals B exactly; C2 count of b"\n" equal;
+  C3 no lone b"\r" in F, no b"\r" in B. PASS = C1 and C2 and C3.
+"Data files" = the 7 *_data.csv files and angle_check.csv.
+S1 Reproduce PAPER2FIGS as committed (FIX off) in a temporary directory inside
+   run3/ (deleted afterwards); apply C to the 7 *_data.csv, angle_check.csv
+   and paper2_numbers.md. Any FAIL: STOP `reproduction_failed` (CLAUDE.md
+   reproduce-first rule).
+S2 Re-render Fig1-Fig4 and FigS1-FigS3 with FIX on into run3/.
+G1 Apply C to the 8 data files of S2. Any FAIL: STOP `data_changed`.
+
+--- FIG 4 LABELS, fixed here (drawing choice) ---
+
+Each label is placed with its text anchor at the data coordinate given,
+ha = "left", va = "center", textcoords = data, with a straight leader
+(lw = 0.8 x LW_AXIS, shrinkB = 1.5 pt) from the text to the point. Chosen
+from the committed 7a1efb9 Fig4.png (the axes run about x -23..41,
+y -2.8..23.5), in regions with no points there:
+  CRI_ZFX   point (-20.0, 15.3)  text at (-22.0, 21.0)   above the cluster, left
+  CRA_EZH2  point (-13.0,  9.0)  text at (-10.0, 21.0)   above the cluster, right of ZFX's label
+  CRA_E2F3  point (-19.2, 11.5)  text at (-22.0,  3.2)   empty area below-left of the cluster
+  CRI_STAT3 point (-10.3,  5.3)  text at (-20.0,  0.0)   empty area below-left, under E2F3's label
+(The point coordinates are approximate, read off the image. The leader goes to
+the stored point.) These positions are not adjusted after drawing in this run.
+
+--- CHECKS (reported, not STOPs) ---
+
+L  For each label in Fig 4 and Fig 3C: the text's window extent vs (a) every
+   plotted point's marker disc, radius 2.6 pt + 1.0 pt pad, (b) every other
+   label's extent, and (c) for Fig 3C the legend and the rho text. Reported
+   per label as counts in label_check.csv. Any non-zero count is reported in
+   the README with the image. Not a STOP. Labels may lie outside the axes;
+   that is reported too.
+Fig 3C labels: placed by the same deterministic search as run 2 (216 fixed
+   offsets, shortest leader first, inside the axes). If the search finds no
+   clear offset for a label, that label keeps its 7a1efb9 offset and the
+   failure is logged. Not a STOP.
+G3 Fig 1 connectors and caption vs the boxes, checked numerically as in run 2
+   and on the PNG; reported, not a STOP.
+G4 paper2_numbers.md vs the blob after CRLF->LF: only the title line, the
+   "Written by" line, the MATCH tally line and the appended row 76 may differ.
+   Reported, not a STOP (it is not a data file).
+
+--- THE NEW ROW 76 (as run 2's flag) ---
+
+From run3/Fig4_data.csv (G1 must have passed), rows with perturbation != "all".
+ R1 subset = called_early_passage_i == True; size stated 80.
+ R2 count with called_gtex_young == True in the subset; stated 0.
+ R3 count with delta_gtex_young > 0 (strict) in the subset; stated 80.
+One row with both stated and both stored values; MATCH only if R2 = 0 and
+R3 = 80; R1 is checked in the row's note. Cited as Fig4_data.csv line ranges;
+underlying source lines in run3/new_row_sources.csv. Labelled as a count over
+plotted rows.
+Readings (exactly one is reported):
+ - R1 = 80, R2 = 0, R3 = 80: "Of the 80 perturbations called against
+   early-passage cells (origin i), 0 are called against GTEx young and all 80
+   move away from GTEx young (delta_gtex_young > 0)."
+ - otherwise: "MISMATCH: stated 0 and 80 (of 80); stored <R2> and <R3> (of <R1>)."
+Chance baseline beside R2: 5th-percentile floor, 4.0 of 80 expected with no
+effect. Not covered: the GTEx test transplants a single-cell displacement
+onto a bulk GTEx origin (AXANG D3); the cells are a passaged neonatal line;
+nothing transfers to aged donor cells.
+
+STOP keys: reproduction_failed; data_changed.
+
+COMMIT. One new commit carrying run 1, run 2 and run 3 directories (run 2's
+partial figures stay as written, marked ungated in its README), src/paper2_figs.py
+and src/paper2_figs_fix_run.py. CLAUDE.md is untracked and not part of it.
