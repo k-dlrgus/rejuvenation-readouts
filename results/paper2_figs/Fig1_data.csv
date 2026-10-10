@@ -1,0 +1,14 @@
+item,value,source
+all cells,36514,results/senginv/addendum_meta.json n_cells
+WT group,6809,results/senginv/addendum_meta.json n_match_barcode
+CRA group,14333,results/senginv/ADDENDUM_SENGINV.md group table
+CRI group,15372,results/senginv/ADDENDUM_SENGINV.md group table
+PD14,581,results/senginv/ADDENDUM_SENGINV.md group table
+PD26,1880,results/senginv/ADDENDUM_SENGINV.md group table
+PD32,4348,results/senginv/ADDENDUM_SENGINV.md group table
+NT CRA,666,results/seng2/d1_summary.json sizes.NT_CRA
+NT CRI,1479,results/seng2/d1_summary.json sizes.NT_CRI
+perturbations CRA,167,results/seng3/d4_summary.json summary.delta_i.CRA.n
+perturbations CRI,173,results/seng3/d4_summary.json summary.delta_i.CRI.n
+GTEx young 20-39,113,results/axang/stage0_summary.json anchors n_young
+GTEx old 60-79,231,results/axang/stage0_summary.json anchors n_old

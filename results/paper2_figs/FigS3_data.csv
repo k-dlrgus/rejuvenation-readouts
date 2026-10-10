@@ -1,0 +1,9 @@
+panel,aging_axis,prolif_axis,angle_from_parallel,signed_angle,cos,source
+S3,A1,C2,48.79429674151223,131.20570325848777,-0.6587643527158994,"results/axang/d1_angles.csv:77 min(angle_deg, 180-angle_deg)"
+S3,A1,C1_gtex,35.82504233436927,144.17495766563073,-0.8108080733827845,"results/axang/d1_angles.csv:71 min(angle_deg, 180-angle_deg)"
+S3,A2,C2,84.5965775093614,95.4034224906386,-0.0941677817804371,"results/axang/d1_angles.csv:87 min(angle_deg, 180-angle_deg)"
+S3,A2,C1_gtex,85.51294321047219,85.51294321047219,0.0782338884686581,"results/axang/d1_angles.csv:81 min(angle_deg, 180-angle_deg)"
+S3,A3,C2,61.68067202674832,61.68067202674832,0.4743851994541426,"results/axang/d1_angles.csv:96 min(angle_deg, 180-angle_deg)"
+S3,A3,C1_gtex,55.38294892816264,55.38294892816264,0.5680886831016613,"results/axang/d1_angles.csv:90 min(angle_deg, 180-angle_deg)"
+S3,A4,C2,77.0633911287597,77.0633911287597,0.2238728895187761,"results/axang/d1_angles.csv:104 min(angle_deg, 180-angle_deg)"
+S3,A4,C1_gtex,83.67909000141087,83.67909000141087,0.1100970481581808,"results/axang/d1_angles.csv:98 min(angle_deg, 180-angle_deg)"

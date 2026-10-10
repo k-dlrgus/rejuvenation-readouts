@@ -1,0 +1,97 @@
+PLAN written 2026-10-10T04:35:18Z (local 2026-10-10 13:35:18 KST)
+Written before src/paper2_figs.py exists and before any figure or check is run.
+Reproduced verbatim at the top of results/paper2_figs/README.md. Not edited
+after this timestamp.
+
+TASK: PAPER2FIGS. Drawing task only: no new statistic, no recomputation, no
+refitting. Every plotted value is read from a stored result file; if one is
+not stored, STOP `value_not_stored` and list it rather than compute it.
+
+Sources (read only): results/senginv/, results/seng2/, results/seng3/,
+results/seng4/, results/axang/. Any C1_lu angle comes from
+results/axang/d1_angles_corrected_C1lu.csv, never the superseded d1_angles.csv
+rows (results/axang/CORRECTION.md).
+Writes only: src/paper2_figs.py, results/paper2_figs/.
+Style: the constants and helpers of src/figures_final.py (results/paper_figs_v1_2/),
+imported, not copied: 7.5 in wide, <= 3.0 in per row / 4.5 in for two rows,
+Arial 7 pt, letters 9 pt bold, same line widths, marker size and palette.
+
+--- ANSWERS FROM THE AUTHOR, before any code (verbatim) ---
+
+Q1 Fig 2B full-gene rows: "seng3 only". Both spaces are drawn from
+   results/seng3/d2_plant.csv (S1 = full-gene, S2A_k20) at 96/107/128/157
+   cells. results/seng2/d3_plant_summary.csv is not drawn.
+
+Q2 Angle from parallel: "Convert from the CSV: plot min(θ, 180−θ) from
+   d1_angles.csv at full precision, and disclose it as a display conversion
+   (amendment F10's rule). For C1_lu, read angle_from_parallel_corrected
+   straight from the corrected CSV, never the superseded rows. Check every
+   plotted value against the FINDINGS_AXANG.md §5 table to 2 decimal places,
+   and list any value that doesn't match in paper2_numbers.md."
+
+--- DECISIONS THE TASK DID NOT FIX, fixed here before running ---
+
+P1 Origins. Where a stored file holds both origins, both are drawn: origin
+   (i) filled markers, origin (ii) open markers. Neither is privileged in the
+   drawing; (i) is the origin the SENG3/SENG4 gates were read on and is said
+   so in the README. Fig 3C uses delta_i only, because the stored rho
+   (-0.8639) is for delta_i. S1 draws origins (i) and (ii) as two panels.
+P2 Fig 2A. y = null delta median with its stored 2.5-97.5% range, by cell
+   count, per library (marker shape) and origin (fill), colour = space.
+P3 Fig 2B. y = power, at doses 0.25 / 0.50 / 1.00, one dot per
+   library x cell count, colour = space, fill = origin. The 0% dose is not
+   drawn (it is the noise floor, 0.05 or 0.00 by construction) and is
+   written to the data CSV.
+P4 Fig 2C. Grid of the four factors x {full-gene (i), full-gene (ii),
+   S2A_k20 (i), S2A_k20 (ii)}; filled = called, open = not called. Full-gene
+   from results/seng2/d2_table.csv called_delta_i/ii, S2A_k20 from
+   results/seng3/d4_table.csv called_delta_i/ii. Each column carries the
+   stored screen-wide called count of 340 and the chance expectation 17.0
+   (CLAUDE.md: chance baseline beside any count).
+P5 Fig 3A / S3 rows and columns. Space S2A_k20 only. 3A: A1-A4 x {C1_south,
+   C1_seng_CRA, C1_seng_CRI, C1_lu (corrected)}. S3: A1-A4 x {C2, C1_gtex}
+   (the 652-donor primary C1_gtex; the 344-donor anchors variant and the
+   duplicate C2_seng4_P3 rows are not drawn).
+P6 Fig 3B. Power at the 0.50 dose from results/seng4/d2_plant_residualized.csv
+   for axis NONE, P1, P2, P3, one dot per library x cell count, origin (i)
+   filled and (ii) open; SENG3's stored unresidualized power
+   (column seng3_power_unresidualized, origin (i)) drawn as a reference group.
+P7 Fig 3C. x = prolif_shift, y = delta_i, 340 rows of
+   results/seng3/d4_table.csv; colour = called_delta_i; the four labelled.
+   The stored rho is printed in the panel, read from
+   results/seng3/d5_confounds.json, not recomputed.
+P8 Fig 4. x = delta_i from results/seng3/d4_table.csv, y = delta from
+   results/axang/d3b_table.csv, inner join on `perturbation`; the join must
+   give 340 rows with matching modality and n_cells, else STOP
+   `join_mismatch`. Marker = called on each test (both / early-passage only /
+   GTEx only / neither). Stored counts printed with chance 17.0.
+P9 S1. y = ruler_change, x = delta_i (panel A) and delta_ii (panel B), from
+   results/seng3/d4_table.csv; colour = ruler_scores_younger x called.
+P10 S2. (A) library offsets from results/seng3/d3_offset.csv, variant half_A,
+   thinned medians with their stored 2.5-97.5% ranges: offset/||a|| and
+   cos(offset, a), per space and library. (B) cells per perturbation by
+   library, histogram of n_cells in results/seng3/d4_table.csv (binning is
+   display only). (C) ruler-gene coverage present/absent per dataset:
+   Sengstack and Southard from results/axang/d2_summary.json, Lu from
+   results/axang/correction_values.json (corrected), never the superseded
+   Lu row.
+P11 Fig 1 numbers are read from results/senginv/addendum_meta.json,
+   results/senginv/ADDENDUM_SENGINV.md (group table), results/seng2/d1_summary.json
+   (NT 666 / 1,479) and results/axang/stage0_summary.json (GTEx young n).
+P12 paper2_numbers.md. For each listed value: the stored file and line it is
+   read from (a CSV/JSON result file where one holds it; a findings or
+   markdown file only where the value exists nowhere else, said so), the
+   stored value, and MATCH if the stated value equals the stored value
+   rounded to the decimals as stated (integers exact; percentages compared
+   as percentages), else MISMATCH with both values. A stated value that is a
+   ratio of stored numbers is checked by that ratio and labelled as such.
+   No value is adjusted to match.
+P13 Angle check (Q2). Every plotted angle is compared to 2 dp with the
+   FINDINGS_AXANG.md §5 table. The four C1_lu rows are expected to differ
+   there because that table holds the superseded values; they are listed as
+   mismatches and additionally checked against CORRECTION.md's corrected
+   table.
+P14 Every figure writes FigX_data.csv holding each plotted value with its
+   source file and row key.
+
+STOP keys: value_not_stored; join_mismatch.
