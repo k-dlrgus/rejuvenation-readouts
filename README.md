@@ -7,7 +7,7 @@ A one-dimensional age score falls for any move away from the old state. This rep
 contains the analyses behind the claim that distance to a young target of the same cell
 type tells approach from departure, and a one-dimensional score cannot.
 
-Preprint: https://doi.org/10.5281/zenodo.23113817 (PDF also at [paper/rejuvenation_readouts_preprint_12.pdf](paper/rejuvenation_readouts_preprint_12.pdf))
+Preprint: https://doi.org/10.5281/zenodo.23113817 (PDF of the current version also at [paper/rejuvenation_readouts_preprint_v1.2.pdf](paper/rejuvenation_readouts_preprint_v1.2.pdf))
 
 Code and results archive: https://doi.org/10.5281/zenodo.23092318 (concept DOI, resolves to the latest version)
 
@@ -38,7 +38,7 @@ Scripts are run from the repository root and put the root on `sys.path` themselv
 | `src/` | All analysis code. One entry point per analysis (table below). |
 | `results/<name>/` | Output of the analysis named `<name>`, including its pre-registration flag. |
 | `results/figures_final/` | The figures as they appear in the preprint, plus the plotting data for each. |
-| `paper/` | paper/ holds the preprint PDF, rejuvenation_readouts_preprint_12.pdf. |
+| `paper/` | The current preprint PDF, rejuvenation_readouts_preprint_v1.2.pdf, identical to the file on Zenodo. |
 | `notebooks/` | Exploratory notebooks, outputs stripped. |
 | `FINDINGS_*.md` | The written reading of each analysis, including withdrawn and superseded readings, marked as such. |
 | `PROGRESS_*.md` | Running logs for each analysis. |
