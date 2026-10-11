@@ -15,7 +15,7 @@ Code and results archive: https://doi.org/10.5281/zenodo.23092318 (concept DOI, 
 
 ## Second preprint (in preparation)
 
-*Passage number models replicative exhaustion, not donor aging* (R. Kwon). A re-analysis
+*Two definitions of young give opposite answers in a fibroblast rejuvenation screen* (R. Kwon). A re-analysis
 of the Sengstack et al. Perturb-seq screen (Proc. Natl Acad. Sci. USA, 2026) with the
 distance-to-target method of the first preprint. The manuscript is not yet public and is
 available from the author on request.
