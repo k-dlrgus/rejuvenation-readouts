@@ -13,6 +13,31 @@ Code and results archive: https://doi.org/10.5281/zenodo.23092318 (concept DOI, 
 
 ---
 
+## Second preprint (in preparation)
+
+*Passage number models replicative exhaustion, not donor aging* (R. Kwon). A re-analysis
+of the Sengstack et al. Perturb-seq screen (Proc. Natl Acad. Sci. USA, 2026) with the
+distance-to-target method of the first preprint. The manuscript is not yet public and is
+available from the author on request.
+
+| Analysis | Command | What it does |
+|---|---|---|
+| SENGINV | `python src/senginv_run.py`, `python src/senginv_addendum.py` | Inventory of the Sengstack deposit: counts only, no statistic |
+| SENG2 | `python src/seng2_run.py <stage>` | The approach test in the full gene space; its pre-registered sensitivity check failed |
+| SENG3 | `python src/seng3_run.py <stage>` | The approach test in the frozen 20-component space (`results/south7/basis.npz`), with false-call and planted-effect checks |
+| SENG4 | `python src/seng4_run.py <stage>` | The approach test after removing cell-division directions |
+| AXANG | `python src/axang_run.py <stage>` | Angles between definitions of aging and cell-division directions, and the young-donor (GTEx) test |
+
+Stages are listed in each script's docstring. Written readings: `FINDINGS_SENG2.md`,
+`FINDINGS_SENG3.md`, `FINDINGS_SENG4.md`, `FINDINGS_AXANG.md`; correction notice:
+`results/axang/CORRECTION.md`. Figures and Table 1 of the manuscript are in
+`results/paper2_figs_v06/`, re-plotted from stored tables (see its `README.md`).
+
+Raw input (not redistributed): figshare 10.6084/m9.figshare.30898748, placed at
+`data/raw/seng/exp3_merged_not_normalized.h5ad`.
+
+---
+
 ## Quick start
 
 ```bash
@@ -135,7 +160,7 @@ included so the record is complete. Several are declared negatives.
 | POSCTRL | `python src/posctrl_run.py` | Planted-effect positive controls for the brain (DLPFC) identifiability pipeline |
 | SOUTH6 | `python src/south6_run.py` | The TF ranking: 1,836 transcription factors scored in 12 space by origin by target settings |
 | SOUTH, SOUTH2-SOUTH5 | `python src/south_run.py` … | Earlier passes at the same screen. SOUTH halted at Stage 0; SOUTH5 stopped on a pre-registered STOP key |
-| SENG, SENG_WHY | `python src/seng_run.py`, `python src/seng_why.py` | Senescence screen. Its reproduction gate failed 3 of 4 |
+| SENG, SENG_WHY | `python src/seng_run.py`, `python src/seng_why.py` | First pass at the Sengstack et al. screen (directional cosine). Its pre-registered entry check failed; superseded by the second-preprint analyses above |
 | LOWDIM | `python src/lowdim_run.py` | Stopped with `winner = NONE` |
 | BRAIN, BRAIN_PHASE1, EXTERNAL | `python src/brain_r0.py`, `python src/brain_phase1_run.py`, `python src/external_run.py` | Cortex and DLPFC arm |
 | GTEX, GEOMETRY, TARGET, TRAJECTORY, PLANE, RERUN, TISSUE, SCOPING, SURVEY, RELABEL_CHECK | see `src/` | Supporting and exploratory analyses |

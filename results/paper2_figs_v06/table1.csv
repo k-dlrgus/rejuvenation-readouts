@@ -1,0 +1,7 @@
+cell_division_direction,Passage (Sengstack),Donor age (GTEx),"Donor pair (Lu, 96 vs 22 y)",Age ruler (trained on GTEx)
+Southard control cells,27.3 (66.0),70.2 (82.5),64.5 (80.1),80.5 (88.8)
+Sengstack activation-screen control cells (half),19.7 (59.8),73.2 (85.6),65.4 (81.0),76.4 (89.1)
+Sengstack interference-screen control cells (half),20.6 (52.8),74.4 (84.8),71.8 (81.6),78.0 (89.0)
+Lu day-0 fibroblasts,31.9 (70.9),70.4 (82.4),58.0 (74.7),82.5 (88.7)
+"Cell-cycle gene list, equal weights",61.7 (87.1),48.8 (85.0),77.1 (88.4),84.6 (89.1)
+GTEx bulk tissue samples,55.4 (75.0),35.8 (45.1),83.7 (88.2),85.5 (89.6)
