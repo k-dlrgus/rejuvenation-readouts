@@ -1,0 +1,21 @@
+block,item,kind,n,n_mismatch,stored,got,max_scaled_diff,passed
+(a) Southard counts,C_f re-accumulated from cells,array,37204704,0,,,0.0,True
+(a) Southard counts,C_pool equals stored C_pool exactly,count,1,0,0.0,0.0,0.0,True
+(a) Southard counts,C_pool equals the sum of the 78 stored C_nt rows,count,1,0,0.0,0.0,0.0,True
+(b) Southard transform,missing-gene mask size,count,1,0,164.0,164.0,0.0,True
+(b) Southard transform,missing-gene mask identical,count,1,0,0.0,0.0,0.0,True
+(b) Southard transform,z_pool on the matched genes,array,20264,0,,,0.0,True
+(b) Southard transform,z_pool is 0 on the unmatched ruler genes,count,1,0,0.0,0.0,0.0,True
+(b) Southard transform,d_f on the matched genes,array,37204704,0,,,0.0,True
+(b) Southard transform,d_f is 0 on the unmatched ruler genes,count,1,0,0.0,0.0,0.0,True
+(c) Sengstack,qualifying CRA perturbations (n >= 30),count,1,0,167.0,167.0,0.0,True
+(c) Sengstack,every CRA perturbation is a row of seng3/d4_table.csv,count,1,0,0.0,0.0,0.0,True
+(c) Sengstack,n_cells per CRA perturbation,array,167,0,,,0.0,True
+(c) Sengstack,"delta_i in S2A_k20, CRA rows",array,167,0,,,7.105427357601002e-15,True
+(c) Sengstack,"frac_i in S2A_k20, CRA rows",array,167,0,,,2.498001805406602e-16,True
+(c) Sengstack,"delta_ii in S2A_k20, CRA rows",array,167,0,,,7.105427357601002e-15,True
+(c) Sengstack,"frac_ii in S2A_k20, CRA rows",array,167,0,,,3.3306690738754696e-16,True
+(d) assignment rule,n_cells[CRA_E2F3],count,1,0,128.0,128.0,0.0,True
+(d) assignment rule,n_cells[CRA_EZH2],count,1,0,107.0,107.0,0.0,True
+(d) assignment rule,n_cells[CRI_STAT3],count,1,0,96.0,96.0,0.0,True
+(d) assignment rule,n_cells[CRI_ZFX],count,1,0,157.0,157.0,0.0,True

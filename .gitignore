@@ -112,3 +112,5 @@ results/seng2/stage0_space.npz
 # results/toward/, results/same/) plus the Sengstack h5ad and the Lu pack.
 # Rebuild: python src/axang_run.py stage0
 results/axang/axes.npz
+results/transfer/vec_south.npz
+results/transfer/vec_seng.npz

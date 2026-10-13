@@ -1,0 +1,18 @@
+[     0.0s] [basis] S2A_k20 read frozen from results/south7/basis.npz L=(23485, 20) n_mid=308 max|LtL-I|=3.553e-15
+[     0.1s] [south] factors=1836 matched=20264 nt_cells=14013 nnz=498,534,339
+[     0.1s] [s0a] re-accumulating C_f from the matched CSR cache
+[    15.9s] [s0a] C_f 400/1836 (16s)
+[    33.1s] [s0a] C_f 800/1836 (33s)
+[    49.9s] [s0a] C_f 1200/1836 (50s)
+[    65.7s] [s0a] C_f 1600/1836 (66s)
+[    76.8s] [s0a] rebuilding the panel transform
+[    91.8s] [s0a] panel cache written (92s)
+[    94.0s] [seng file] size=1426871504 md5=bfccaa94a916c22e4b0793913a04128b
+[    95.2s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[    95.3s] [align index] overlap=16781 ensembl=0 symbol=16781
+[    95.3s] [align] ruler=23485 present=16781 dup_file_cols=10
+[    95.4s] [panel] qualifying perturbations n>=30: 340
+[    98.2s] [seng] panel rows=348 ruler=23485 present=16781 qual=340
+[    98.2s] [F] shared=154 southard_only=1682 sengstack_cra_only=13
+[    98.2s] [G] |G|=16631 of ruler 23485
+[    98.2s] [stage0] checks=20 failed=0 (98s)

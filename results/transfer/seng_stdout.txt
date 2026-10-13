@@ -1,0 +1,20 @@
+[     0.0s] [basis] S2A_k20 read frozen from results/south7/basis.npz L=(23485, 20) n_mid=308 max|LtL-I|=3.553e-15
+[     2.3s] [seng file] size=1426871504 md5=bfccaa94a916c22e4b0793913a04128b
+[     3.4s] [wide obs] PD=['PD14', 'PD26', 'PD32'] n_WT=6809 n_CRA=14333 n_CRI=15372 guide_cols=804 unique_argmax_TF=24610 unique_argmax_NT=2145 ties=2680 modality_disagreements=270 unassigned=2950
+[     3.5s] [align index] overlap=16781 ensembl=0 symbol=16781
+[     3.5s] [align] ruler=23485 present=16781 dup_file_cols=10
+[     3.5s] [panel] qualifying perturbations n>=30: 340
+[     6.4s] [seng] panel rows=348 ruler=23485 present=16781 qual=340
+[     6.4s] [seng] materialising NT_CRA cells=666 and 10685 factor cells
+[    11.8s] [seng] full-depth displacements built (12s)
+[    51.7s] [seng] splits 10/100 (52s)
+[    90.5s] [seng] splits 20/100 (91s)
+[   130.2s] [seng] splits 30/100 (130s)
+[   173.1s] [seng] splits 40/100 (173s)
+[   214.8s] [seng] splits 50/100 (215s)
+[   257.6s] [seng] splits 60/100 (258s)
+[   299.7s] [seng] splits 70/100 (300s)
+[   343.9s] [seng] splits 80/100 (344s)
+[   388.9s] [seng] splits 90/100 (389s)
+[   432.1s] [seng] splits 100/100 (432s)
+[   432.1s] [seng] done (432s)

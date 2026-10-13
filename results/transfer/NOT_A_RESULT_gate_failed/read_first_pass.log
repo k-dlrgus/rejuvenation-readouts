@@ -1,0 +1,4 @@
+[     0.2s] [gate south] M_same=0.8889 CI=(0.8802,0.9159) n_q=154 specific=37 chance=7.70 p=0.000000 passed=True
+[     0.4s] [gate seng] M_same=0.6845 CI=(0.6252,0.7751) n_q=139 specific=22 chance=6.95 p=0.000002 passed=False
+[     0.8s] [primary] n_q=143 M=0.4994 CI=(0.4218,0.6052) valid=True specific=7 chance=7.15 p=0.576703
+[     0.8s] [reading] UNMEASURABLE

@@ -1,0 +1,42 @@
+{
+  "reading": "UNMEASURABLE",
+  "stop_key": "unmeasurable",
+  "stop_message": "the same-context control did not recover zero-drift agreement in seng (bars: M_same >= 0.85, specificity p < 0.01)",
+  "gate": {
+    "south": {
+      "M_same": 0.8889137744104048,
+      "ci_lo": 0.8802369141508335,
+      "ci_hi": 0.9158663105310332,
+      "ci_valid": true,
+      "n_q": 154,
+      "k_specific": 37,
+      "chance": 7.7,
+      "spec_p": 1.2139511126217772e-15,
+      "median_c_obs": 0.8448658818106118,
+      "passed": true
+    },
+    "seng": {
+      "M_same": 0.6845097078316775,
+      "ci_lo": 0.6251705933845582,
+      "ci_hi": 0.775073592382721,
+      "ci_valid": true,
+      "n_q": 139,
+      "k_specific": 22,
+      "chance": 6.95,
+      "spec_p": 1.7261402306939499e-06,
+      "median_c_obs": 0.5159383393628637,
+      "passed": false
+    }
+  },
+  "gate_passed": false,
+  "gate_failed_in": [
+    "seng"
+  ],
+  "primary": null,
+  "diagnostics": null,
+  "n_F": 154,
+  "n_G": 16631,
+  "min_fq": 20,
+  "bar_M": 0.85,
+  "bar_p": 0.01
+}

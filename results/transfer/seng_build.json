@@ -1,0 +1,9 @@
+{
+  "screen": "seng",
+  "n_factors": 154,
+  "n_G": 16631,
+  "ctrl_cells": 666,
+  "prolif_axis_source": "results/seng/axes.npz key p_CRA",
+  "prolif_axis_norm_in_space": 0.5024650119518009,
+  "runtime_s": 432.1376950740814
+}

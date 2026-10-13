@@ -1,0 +1,68 @@
+{
+  "D1_shuffled_pairing": {
+    "n_perm": 1000,
+    "median": 0.4944044703341037,
+    "lo": 0.42621327913993456,
+    "hi": 0.5598040222877625,
+    "frac_ge_observed": 0.436
+  },
+  "D2_proliferation_removed": {
+    "n_q": 144,
+    "M": 0.6253499943709742,
+    "ci_lo": 0.5601264707501881,
+    "ci_hi": 0.6950659588276648,
+    "ci_valid": true,
+    "angle": 51.292119277734805,
+    "k_specific": 6,
+    "chance": 7.2,
+    "spec_p": 0.7308956033036842
+  },
+  "D2_note": "Both axes are estimated from the same control cells that define each screen's control pool, so this diagnostic is not independent of the displacements it corrects.",
+  "D3_mean_displacement_removed": {
+    "n_q": 92,
+    "M": 0.012741272380580763,
+    "ci_lo": -0.16417758613406047,
+    "ci_hi": 0.16389426432104373,
+    "ci_valid": true,
+    "angle": 89.26995911358193,
+    "k_specific": 5,
+    "chance": 4.6000000000000005,
+    "spec_p": 0.48964876024422255
+  },
+  "D4_full_gene_angles": {
+    "n_G": 16631,
+    "median_deg": 87.37876538391686,
+    "lo_deg": 84.68683681242608,
+    "hi_deg": 89.88421996365328,
+    "median_cos": 0.045733217450203444
+  },
+  "D5_norm_shares": {
+    "share_norm2_kept_by_mask_S": {
+      "median": 0.9492158343234806,
+      "lo": 0.9401893554539082,
+      "hi": 0.9591950874976907
+    },
+    "share_norm2_kept_by_mask_J": {
+      "median": 0.9999567487258256,
+      "lo": 0.9996249466014371,
+      "hi": 0.9999884420255035
+    },
+    "share_norm2_kept_by_proj_S": {
+      "median": 0.009849084589891505,
+      "lo": 0.004183483387041407,
+      "hi": 0.020039451032326985
+    },
+    "share_norm2_kept_by_proj_J": {
+      "median": 0.013314832718715162,
+      "lo": 0.004795686335883294,
+      "hi": 0.04116629294933395
+    }
+  },
+  "D6_cell_count": {
+    "n": 143,
+    "rho_c_corr_vs_n_S": -0.10228027200163196,
+    "p_n_S": 0.2241563275886648,
+    "rho_c_corr_vs_n_J": -0.13006651991213233,
+    "p_n_J": 0.12154931662562689
+  }
+}

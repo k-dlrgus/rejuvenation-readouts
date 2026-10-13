@@ -1,0 +1,9 @@
+{
+  "screen": "south",
+  "n_factors": 154,
+  "n_G": 16631,
+  "ctrl_cells": 14013,
+  "prolif_axis_source": "results/south6/stage1.npz key p_unit",
+  "prolif_axis_norm_in_space": 0.5258157691872971,
+  "runtime_s": 448.359491109848
+}

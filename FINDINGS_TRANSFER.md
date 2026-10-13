@@ -1,0 +1,729 @@
+# FINDINGS — TRANSFER
+
+Reading: **UNMEASURABLE**. STOP key `unmeasurable`: the same-context control did not recover zero-drift agreement in seng (bars: M_same >= 0.85, specificity p < 0.01).
+
+The pre-registered qualification gate failed, so **the primary statistic was not computed and no cross-screen number is reported** (flag section 4). |F| = 154 shared factors, |G| = 16631 shared genes.
+
+## The pre-registration, verbatim
+
+```
+PREREG written 2026-10-13T18:44:34Z (local 2026-10-14 03:44:34 KST).
+Written before any TRANSFER number exists. Reproduced verbatim at the top of
+FINDINGS_TRANSFER.md. Not edited after this timestamp.
+
+Repository state when written: commit 6ecc61b66704075b564b64314546efa8d9c85e52
+("README: update second preprint title"), branch main.
+
+TASK: TRANSFER — does a transcription factor's displacement measured in the
+Southard screen (Hs27 neonatal fibroblasts, CRISPRa) point the same way as the
+same factor's displacement in Sengstack's CRA arm (passaged fibroblasts)?
+
+This is Step 1 of the TF search model blueprint: whether a forward model of
+single-factor geometry can be initialised from Southard's screen at all.
+
+Nature: computational reanalysis of public data already on disk. No new data,
+no lab work. Reads results/south6/, results/south7/, results/seng/,
+results/seng2/, results/seng3/ and the two h5ad files already on disk. Writes
+only results/transfer/, src/transfer_run.py and FINDINGS_TRANSFER.md. No
+earlier findings file is regenerated, no earlier results directory is written.
+
+--- WHAT THIS TASK CAN AND CANNOT CONCLUDE (fixed now) ---
+
+This is a ONE-DIRECTIONAL kill-check, and the asymmetry is declared before any
+number exists.
+
+- A LARGE DRIFT result is informative. The shared factors are the most
+  favourable sample that exists: Sengstack chose their perturbation set from
+  passage- and proliferation-linked modules, so the shared factors are
+  pre-selected to be the ones whose effects are most likely to repeat. If
+  displacement directions do not transfer even here, they do not transfer.
+- A SMALL DRIFT result is close to uninformative. It would hold for the shared
+  factors only, on the most favourable comparison available, in a space chosen
+  for its sensitivity on the Southard data, and it says nothing about the
+  untested remainder of Southard's 1,836 targets. It is declared in advance
+  that a SMALL DRIFT result does not license initialising a forward model from
+  Southard geometry.
+
+Written into this flag verbatim, as required:
+
+  "A SMALL DRIFT result must not be cited as support for initialising the
+  forward model from Southard."
+
+--- EXECUTION RULES (binding) ---
+- src/transfer_run.py runs standalone and refuses to compute if this flag is
+  missing.
+- On a STOP, write FINDINGS_TRANSFER.md with the STOP key and exit. Never
+  compute after a STOP; never resume a stopped run with an adjustment.
+- No checkpoint/resume logic unless resumed random draws are verified
+  bit-identical to an uninterrupted stream and that check is reported.
+- Every failure is printed verbatim. No column is substituted and no row is
+  repaired.
+- Imported modules are not modified: src/south6_run.py, src/south7_run.py,
+  src/seng_run.py, src/seng2_common.py, src/seng3_run.py, src/toward_run.py,
+  src/same_run.py, src/fibro2_common.py, src/fibro_common.py,
+  src/lowdim_common.py. If a module-level output directory must be redirected
+  to results/transfer/ so that no earlier results directory is written, that
+  redirection is done exactly as src/south7_run.py does it for
+  src/south6rec_run.py, and it is reported.
+- Seed 20260914 for every random draw in this task: splits, permutations and
+  the factor bootstrap. This is a deliberate departure from the project's usual
+  20260918 bootstrap seed and is disclosed in the findings.
+- n_split = 100, n_perm_shuffle = 1000, n_boot = 10000, n_null = 200 (the
+  Sengstack floor draws reproduced in Stage 0).
+
+--- 1. INSTRUMENTS: READ, NOT REFIT ---
+
+Nothing below is refit. The frozen ruler, the frozen GTEx mu/sd, the frozen
+20-component basis, the frozen anchors, the SENG split, the SENG proliferation
+quartiles and the SOUTH6 proliferation axis are all read as stored.
+
+(1a) THE RULER AND THE GENE UNIVERSE
+  Frozen ruler: results/fibro/frozen_ruler_ridge_raw.npz, loaded by
+  fibro2_common.load_frozen_ruler() (the path constant is
+  src/fibro_common.py:70, FROZEN_RULER). Keys used: `mu`, `sd`, `symbol`. Its
+  row count is the ruler dimension n_ruler and is reported at run time. `w` is
+  NOT used: this task measures direction agreement, not ruler score.
+
+(1b) SOUTHARD DISPLACEMENT d_S(f) — SOUTH6/SOUTH7 construction, unchanged
+  Source file: data/raw/southard/
+  fibroblast_CRISPRa_final_pop_singlets_normalized_log1p.h5ad
+  (8,048,055,098 bytes, md5 2c926c7cae2eaab1ed2519b06ca21db5, from
+  src/south6_run.py EXPECTED_SIZE / EXPECTED_MD5). Counts come from the matched
+  CSR cache SOUTH6 wrote, not from a re-stream of the h5ad:
+    results/south6/matched_data.f64    (float64, memmap)
+    results/south6/matched_indices.i32 (int32, memmap)
+    results/south6/matched_indptr.npy
+  opened as src/south6_run.py open_matched() does, with `nnz` from
+  results/south6/stage1.npz key `nnz`.
+  Cell lists and the control pool, all from results/south6/stage1.npz:
+    `keep`        factor labels (obs['guide_target'], exact gene symbols)
+    `cell_flat`, `cell_indptr`   the cells of each factor, in `keep` order
+    `nt_cells`    the 'non' control cells (all 78 non-targeting guides)
+    `matched_ruler`  ruler row index of each matched column
+    `missing`     matched columns with no counts anywhere in the panel
+    `C_f`, `C_nt`, `C_pool`, `z_pool`, `d_f`   the stored panel and result
+  Pseudobulk of a cell set: src/south6_run.py gather_sum() over the matched
+  CSR (exact integer accumulation).
+  Transform: the SOUTH6 panel TMM cache, i.e. toward_run.tmm_logcpm_quiet() on
+  the Stage 1 panel (1,836 factor rows + 78 NT guide rows + 1 pooled NT row),
+  then seng_run.tmm_cache_from_panel(), then seng_run.z_from_counts() against
+  the frozen mu/sd with `missing` columns set to 0, exactly as
+  src/south6_run.py z_of()/z_full_from_matched() do. Matched z values are
+  scattered into the full ruler vector; unmatched ruler genes stay 0.
+  Displacement: d_S(f) = z(factor f's cells) - z(pooled non-targeting cells),
+  i.e. the stored `d_f` row for f. Factor minus control. No other control pool
+  is used.
+
+(1c) SENGSTACK DISPLACEMENT d_J(f) — SENG/SENG2/SENG3 construction, unchanged
+  Source file: data/raw/seng/exp3_merged_not_normalized.h5ad
+  (md5 bfccaa94a916c22e4b0793913a04128b, src/seng2_common.py MD5_EXPECT).
+  Context: seng2_common.load_context(), which reads obs from the h5ad and
+  re-derives SENG's own assignment: the 804-column unique-strict-maximum
+  ("argmax") guide call of seng_run.parse_wide_obs() (ties get no winner; a
+  TF-guide call disagreeing with the cell's CRA/CRI indicator is unassigned;
+  file column {TF}_{CRA|CRI}{k} pools to perturbation {CRA|CRI}_{TF}), and the
+  n >= MIN_CELLS = 30 qualifying set `qual` (list of (modality, label, cell
+  indices)).
+  Arm: CRA only. The CRA modality is the "_A library" (seng_run.py:554 maps the
+  _A token to CRA). CRI perturbations are not in F and are not tested.
+  Control: NT cells of the CRA arm, ctx["nt_mod"]["CRA"] — the cells whose
+  unique-argmax call is an NT_* column and whose modality indicator is CRA.
+  Panel and transform: the stored SENG2 panel counts
+  results/seng2/panel_counts.npz (keys `C`, `names`, `dst`), passed through
+  seng2_common.panel_z_from_counts(), which is one joint TMM
+  (toward_run.tmm_logcpm_quiet) over SENG's frozen panel, log2-CPM, then
+  toward_run.zscore_frozen against the frozen GTEx mu/sd with absent ruler
+  genes left at 0. Per-group pseudobulks drawn inside this task are z-scored
+  through the same panel cache via seng_run.tmm_cache_from_panel() and
+  seng_run.z_from_counts(), exactly as src/seng3_run.py space3()/`zf` does.
+  Per-cell counts for the split halves come from
+  seng2_common.submatrix(ctx["f"], rows, ctx["exp"]) and are scattered to ruler
+  columns with seng2_common.to_ruler(..., ctx["dst"], n_ruler).
+  Displacement: d_J(f) = z(perturbation CRA_f's cells) - z(NT cells of the CRA
+  arm), i.e. Z[ni["CRA_f"]] - Z[ni["NT_CRA"]] in SENG3's notation. Factor minus
+  control. SENG3's offset-corrected origin (ii) is NOT used anywhere in this
+  task: this task compares displacement directions and never measures distance
+  to a target, so no origin enters.
+
+(1d) THE SPACE
+  Frozen 20-component basis: results/south7/basis.npz, key `L_mid_full`,
+  columns 0..19 — the PCA loadings of the 308 GTEx donors aged 40-59
+  (src/south7_run.py anchor_free_basis(), MID_BINS = ("40-49","50-59")). No
+  Southard cell, no Sengstack cell and no anchor donor enters this fit. Read,
+  never refit. Orthonormality is checked as src/seng3_run.py load_basis() does
+  (max|L'L - I| <= 1e-8) and reported; failure is STOP `basis_not_orthonormal`.
+  PROJECTION IS LAST AND APPLIED TO DIFFERENCES ONLY (SENG3 amendment B6). Each
+  difference vector is formed in the 23,485-column frozen-z ruler space first
+  and projected afterwards, so the PCA centring vector `center_mid` cancels and
+  never enters.
+
+(1e) THE SHARED GENE SET G
+  G = Southard's matched ruler genes INTERSECT Sengstack's present ruler genes,
+  as ruler row indices:
+    Southard: results/south6/stage1.npz key `matched_ruler`
+    Sengstack: ctx["dst"] from seng2_common.load_context() (the ruler rows the
+               Sengstack var index maps onto)
+  Every difference vector, in both screens, is set to zero outside G and only
+  then projected onto L_mid_full[:, :20]. |G| is reported at run time, together
+  with how many G genes fall in either screen's all-zero `missing` mask (those
+  contribute exactly 0 to any difference either way).
+  No count of |G| is quoted from any earlier findings file. It is computed from
+  the arrays at run time and reported.
+
+--- 2. FACTOR SET ---
+  F = Southard factors INTERSECT Sengstack CRA perturbations with n >= 30, by
+  exact gene symbol.
+  Southard side: all labels in results/south6/stage1.npz `keep` (the full
+  screen, every ranked target, none dropped).
+  Sengstack side: the CRA entries of ctx["qual"], label "CRA_<SYMBOL>", matched
+  by stripping the literal prefix "CRA_" and comparing the remainder to the
+  Southard label with exact equality after str() and .upper(). No alias table,
+  no synonym lookup, no substring matching, no manual rename. A name that does
+  not match exactly is reported as unmatched, not repaired.
+  |F|, the matched names and both unmatched name lists are reported at run time
+  (Stage 0), and no number in this flag depends on them.
+  Reported beside F, as a descriptive column only and never a gate: whether
+  each factor is in SOUTH7's published primary set
+  (results/south7/factor_set.csv, columns in_active_212 / in_expanded_102).
+
+--- 3. PER-FACTOR STATISTICS (20-component space, genes G) ---
+All of the following are computed in the 20-component space after the G mask.
+
+  c_obs(f) = cosine(d_S(f), d_J(f)), reported also as the angle
+             arccos(c_obs) in degrees.
+
+  RELIABILITY, within each screen separately. For factor f in screen X:
+    Split that factor's cells into two disjoint random halves, AND split the
+    screen's control cells into two disjoint random halves. Half A's
+    displacement is z(factor half A) - z(control half A); half B's is
+    z(factor half B) - z(control half B). The two halves share no cell, factor
+    or control. Both are masked to G and projected.
+    c_half_X(f) = mean over 100 splits of cosine(half-A displacement,
+                  half-B displacement).
+    r_X(f) = 2 * c_half_X(f) / (1 + c_half_X(f))   (Spearman-Brown).
+    If c_half_X(f) <= 0, r_X(f) is UNDEFINED and recorded as undefined, not as
+    0 and not clipped.
+    Odd cell counts: the extra cell goes to half A. Control halves are drawn
+    once per split index and shared by every factor in that screen within that
+    split index, so the two screens' split streams are independent of factor
+    ordering. Per-factor random draws use
+    numpy.random.default_rng([20260914, screen_id, factor_index, split_index])
+    with screen_id 1 for Southard and 2 for Sengstack, so every factor's draws
+    are reproducible independently of loop order.
+
+  c_corr(f) = c_obs(f) / sqrt(r_S(f) * r_J(f)).  NOT clipped. c_corr may exceed
+  1 in magnitude, and if it does that is reported as it stands.
+
+  QUALIFYING FACTORS F_q: r_S(f) >= 0.3 AND r_J(f) >= 0.3, with an undefined r
+  failing the test. The number excluded, their names, and their cell counts in
+  both screens are reported.
+
+  SPECIFICITY. For each f in F_q, compare c_obs(f) with the mismatched set
+  { cosine(d_S(f), d_J(g)) : g in F_q, g != f }. f is "specific" if c_obs(f)
+  exceeds the 95th percentile of its own mismatched set (strict >, numpy
+  linear-interpolation percentile). Report the count of specific factors
+  against the chance baseline, which is 5% of |F_q| by construction, and a
+  one-sided exact binomial test (k specific of |F_q|, p0 = 0.05,
+  H1: more than chance). The count is NEVER reported without the chance
+  baseline beside it.
+
+  PRIMARY SUMMARY M = median of c_corr over F_q, with a 95% bootstrap CI over
+  FACTORS (10,000 resamples of F_q with replacement, percentile interval at
+  2.5 and 97.5 as toward_run.percentile_ci() computes it, seed 20260914).
+  Also report arccos(M) in degrees. Factors whose c_corr is non-finite are
+  reported separately and excluded from the median, with their count stated.
+  INTERVAL CHECK: if the bootstrap CI does not contain M, the interval is
+  INVALID (same_run.ci_covers_point), every reading that depends on a CI bound
+  is unavailable, and that is stated prominently.
+
+--- 4. QUALIFICATION GATE (runs before the primary reading) ---
+The gate is the recovery check this project requires beside any null: it
+measures whether the readout can see transfer when the true drift is zero.
+
+  SAME-CONTEXT CONTROL, done separately in each screen. Within one screen,
+  split every factor's cells into two disjoint halves and the control cells
+  into two disjoint halves, and treat half 1 and half 2 as the two "contexts":
+  the "Southard-side" vector is the half-1 displacement and the
+  "Sengstack-side" vector is the half-2 displacement, both from the same
+  screen, same cells, same platform. True drift here is exactly zero.
+  Then run the WHOLE readout on those two contexts: c_obs, reliabilities, the
+  r >= 0.3 qualification, c_corr, specificity, and M_same with its CI. The
+  reliabilities inside the same-context control come from QUARTER splits of the
+  same cells (each half split again into two disjoint quarters, with the
+  control cells quartered the same way), so the correction is estimated at the
+  same depth as the quantity it corrects.
+  The same-context control uses the same factor set F and the same gene set G.
+
+  GATE PASSES only if, in BOTH screens:
+      M_same >= 0.85  AND  the specificity count is above chance at p < 0.01.
+  GATE FAILS otherwise, including if a required interval is INVALID or if
+  either screen's same-context F_q is empty.
+
+  If the gate fails: STOP `unmeasurable`. Reading = UNMEASURABLE. The primary
+  statistic is not computed and no cross-screen number is reported.
+
+--- 5. READINGS: mutually exclusive, exhaustive, wording fixed verbatim ---
+Evaluated in this order; the first branch whose conditions hold is the
+conclusion, and no other branch is reported as a conclusion.
+
+  (R0) UNMEASURABLE — fires if the Stage 4 gate failed, or if |F_q| < 20.
+  Wording, verbatim:
+    "The method could not see transfer. [The same-context control did not
+    recover zero-drift agreement in both screens / Only <|F_q|> factors had
+    sufficient within-screen reliability, fewer than the 20 fixed in advance.]
+    No statement is made about whether factor directions transfer between the
+    Southard and Sengstack screens. This is a statement about the measurement,
+    not about the biology."
+
+  (R1) LARGE DRIFT (the kill fires) — fires if the CI upper bound of M is
+  below 0.5, OR specificity is not above chance (binomial p >= 0.05).
+  Wording, verbatim:
+    "Factor directions measured in Southard do not carry over to another
+    fibroblast screen even for the factors most likely to transfer. The median
+    reliability-corrected cosine between the same factor's displacement in the
+    two screens is <M> (95% CI <lo> to <hi>, <arccos(M)> degrees) over <|F_q|>
+    qualifying factors, and <k> of <|F_q|> factors were specific against a
+    chance baseline of <0.05*|F_q|> (binomial p = <p>). A forward model cannot
+    be initialised from Southard geometry. The combination screen must measure
+    single-factor effects in its own cells.
+    The two screens differ in lab, in guide library and in platform as well as
+    in cell state, so the drift measured here is not attributed to cell state
+    alone. That does not weaken the kill, because any future screen differs
+    from Southard in the same ways."
+
+  (R2) SMALL DRIFT — fires if the CI lower bound of M is at or above 0.7 AND
+  specificity is above chance at p < 0.01.
+  Wording, verbatim:
+    "For these <|F_q|> factors, displacement directions measured in Southard
+    point the same way as in Sengstack's CRA arm: median
+    reliability-corrected cosine <M> (95% CI <lo> to <hi>, <arccos(M)>
+    degrees), with <k> of <|F_q|> factors specific against a chance baseline of
+    <0.05*|F_q|> (binomial p = <p>).
+    This holds only for these <|F_q|> factors, on the most favourable
+    comparison available: the shared factors were chosen by Sengstack from
+    passage- and proliferation-linked modules and are not a random sample of
+    Southard's 1,836 targets. It says nothing about the untested factors. It
+    does NOT justify initialising a forward model from Southard geometry.
+    A SMALL DRIFT result must not be cited as support for initialising the
+    forward model from Southard."
+
+  (R3) INTERMEDIATE — anything else, including an INVALID interval that leaves
+  R1 and R2 unreadable.
+  Wording, verbatim:
+    "The measurement is between the two pre-registered thresholds: median
+    reliability-corrected cosine <M> (95% CI <lo> to <hi>, <arccos(M)>
+    degrees) over <|F_q|> qualifying factors, with <k> of <|F_q|> specific
+    against a chance baseline of <0.05*|F_q|> (binomial p = <p>). This is not
+    evidence for initialising a forward model from Southard. A result in this
+    band leaves the kill-check unresolved and does not license using Southard
+    geometry as a starting point."
+
+--- 6. DIAGNOSTICS (reported, NEVER gated, labelled as not gated) ---
+Each is explicitly labelled "diagnostic, not a gated result" where it appears.
+
+  (D1) Shuffled-identity pairing: M recomputed with d_J randomly re-paired
+  across the factors of F_q, 1,000 permutations, seed 20260914. Reported as the
+  "nothing factor-specific transfers" reference distribution, with its median
+  and 2.5-97.5% range beside the observed M.
+  (D2) Proliferation projected out, each screen using its OWN frozen axis, read
+  and never refit:
+     Southard: results/south6/stage1.npz key `p_unit` (unit vector built from
+       the NT cells' cell-cycle-score quartiles, src/south6_run.py).
+     Sengstack: results/seng/axes.npz key `p_CRA` (the CRA arm's proliferation
+       unit vector; `p_CRI` is not used).
+  Each axis is masked to G and projected into the 20-component space, then
+  renormalised there, and the component along it is removed from that screen's
+  displacements before the readout is rerun. DISCLOSED where it appears: both
+  axes are estimated from the same control cells that define each screen's
+  control pool, so this diagnostic is not independent of the displacements it
+  corrects.
+  (D3) Mean displacement removed: the readout rerun after subtracting, within
+  each screen, the mean displacement over F_q from every factor's displacement.
+  (D4) Full-gene-space angles on G: cosine(d_S(f), d_J(f)) computed in the
+  masked 23,485-column frozen-z space without projection. Expected near 90
+  degrees, and the reason is stated where it is reported: in a space of that
+  dimension two displacement vectors that share no measurement noise are nearly
+  orthogonal whatever their shared signal, which is the property that made the
+  full-gene space blind in SENG2 and SOUTH6REC.
+  (D5) Norm bookkeeping, per factor and per screen: the share of each
+  displacement's squared norm lost to the shared-gene mask G, and the share of
+  the masked vector's squared norm retained by the 20-component projection.
+  (D6) Spearman correlation of c_corr with n_S (Southard cell count) and with
+  n_J (Sengstack cell count) over F_q, with p-values. Required by this
+  project's standing rule that group size in these screens is an accident of
+  the experiment: any shortlist or ranking reported here is checked against
+  cell count, and that check is reported whatever it shows.
+  (D7) Per-factor table, every factor in F: n_S, n_J, r_S, r_J, c_obs, angle,
+  c_corr, qualifying, specific, the mismatched-set 95th percentile, rank by
+  c_corr, and the SOUTH7 primary-set membership column.
+
+--- 7. STAGE 0: REPRODUCE THE STORED NUMBERS FIRST (gate) ---
+Runs before anything new is computed. Tolerance, named: counts exact, and
+numerics |new - stored| <= 1e-4 * max(1, |stored|) — the tolerance SENG3's
+Stage 0 used (src/seng3_run.py, stage0() `num`), which is the same form and the
+same 1e-4 COORDSPACE used for its SOUTH6 half.
+
+  (a) SOUTHARD. Re-accumulate from the matched CSR cache, with this task's
+  code, using the cell lists in stage1.npz: C_f (per factor), C_nt (per NT
+  guide), C_pool (pooled NT), and check C_pool equals the sum of C_nt. Then
+  rebuild the panel transform (joint TMM, log2-CPM, frozen z, `missing`
+  columns zeroed) and compare z_pool and d_f on the matched genes against
+  stage1.npz. Counts exact (tol 0); z and d_f at the named tolerance. Also
+  verify that d_f is exactly 0 on the unmatched ruler genes.
+  (b) SENGSTACK. Re-derive, with this task's code, from the h5ad and the stored
+  SENG2 panel: the number of qualifying CRA perturbations (stored: 167) and
+  every CRA perturbation's n_cells; and, in the 20-component space, the stored
+  values in results/seng3/d4_table.csv for the CRA rows — delta_i, frac_i,
+  delta_ii, frac_ii, floor_delta_i, floor_delta_ii and the boolean columns
+  below_floor_delta_i, decreased_delta_i, called_delta_i and their _ii
+  counterparts. The floors are the 200-draw seeded floors SENG3 built at each
+  perturbation's own cell count; they are recomputed, not read. Counts and
+  booleans exact; numerics at the named tolerance.
+  (c) The four named factors' cell counts under SENG's own assignment rule,
+  unchanged: CRA_E2F3 128, CRA_EZH2 107, CRI_STAT3 96, CRI_ZFX 157 (the two CRI
+  entries are checked as a structural check on the assignment rule even though
+  CRI is not tested).
+
+  Any mismatch: STOP `prior_results_not_reproduced`, naming EVERY mismatch with
+  its stored value, its new value and its scaled difference. Nothing new is
+  computed after that.
+
+--- 8. WHAT THIS DOES NOT COVER (stated in the flag, repeated in the findings) ---
+- NEITHER SCREEN IS AGED DONOR CELLS. Southard is Hs27, a neonatal foreskin
+  fibroblast line. Sengstack's "old" is passage number, not donor age, and this
+  project has already found that passage does not resemble donor aging
+  (cos(v,u) = -0.040, permutation p = 1.0, results/seng/axes.json). Nothing
+  here transfers to aged human cells, in either direction.
+- Transfer is judged ONLY inside the 20-component space the search objective is
+  scored in. A factor pair could agree in some other space and disagree here,
+  or the reverse.
+- The 20-component basis was selected, in SOUTH7 and SOUTH9, because it was the
+  space in which the SOUTHARD screen's statistic recovered planted effects. The
+  space is therefore chosen on Southard's behalf, which makes it more
+  favourable to Southard than to Sengstack. This is disclosed, not corrected.
+- The shared factors are not a random sample of Southard's 1,836 targets.
+  Sengstack selected their perturbation set from passage- and
+  proliferation-linked modules.
+- The specificity test treats factors as independent. They are not: every
+  mismatched cosine is drawn from the same two displacement pools, and the
+  binomial p is therefore approximate. It is reported as approximate.
+- Any reliability estimated from half-splits of the same cells shares the
+  control pool between the halves' displacements only through the disjoint
+  control halves; the control cells are finite, so r is itself an estimate with
+  sampling error, and c_corr inherits it.
+- This task measures direction agreement only. It says nothing about effect
+  magnitude, about whether either displacement is in a useful direction, or
+  about whether any factor approaches young in either screen.
+
+--- WHAT DOES NOT COUNT ---
+- Changing the space, the basis, the component count, the gene set, the factor
+  set, the reliability threshold, the split count, the seeds, the thresholds
+  0.5 / 0.7 / 0.85 / 0.3, or the readings after seeing a number.
+- Clipping c_corr, or dropping a factor because its c_corr is awkward.
+- Refitting the basis, either proliferation axis, the ruler or the anchors.
+- Reading a reading whose conditions did not fire, or reporting a diagnostic as
+  a conclusion.
+- Reporting the specificity count without the chance baseline beside it.
+- Reporting a null without the gate's recovery result beside it.
+- Treating a SMALL DRIFT result as support for initialising the forward model
+  from Southard.
+- Using the Sengstack CRI arm, the offset-corrected origin, or any Sengstack
+  "old"-versus-"young" target anywhere in the primary readout.
+- Adding a second comparison (another screen, another arm, another space) after
+  seeing these results. Any further comparison needs its own dated
+  pre-registration.
+
+--- STOP KEYS ---
+  prior_results_not_reproduced   Stage 0 mismatch
+  basis_not_orthonormal          the frozen basis failed its own check
+  unmeasurable                   the Stage 4 same-context gate failed
+  no_shared_factors              |F| = 0 after exact-symbol matching
+  file_mismatch                  either source file's size or md5 differs
+
+--- OUT OF SCOPE ---
+The reachability bound. Any search over factor combinations. Any forward model
+or its fitting. Any claim about Junevity's or Southard's published numbers. Any
+new data. Any ranking of factors as candidates.
+
+--- OUTPUT ---
+FINDINGS_TRANSFER.md contains, in this order:
+- this flag, verbatim;
+- every deviation from it, including housekeeping ones, and every choice this
+  flag did not fix;
+- the Stage 0 reproduction table;
+- |G|, |F|, the unmatched names, and the norm bookkeeping;
+- the Stage 4 gate table (both screens) and its pass or fail;
+- the primary readout: per-factor table, F_q, the specificity count with its
+  chance baseline, M with its CI and angle;
+- the one pre-registered reading whose conditions fired, in its verbatim
+  wording;
+- the diagnostics, each labelled "diagnostic, not a gated result";
+- what this does not cover, verbatim from section 8.
+results/transfer/ contains PREREG.flag (this file), the per-stage CSVs, the
+summary JSONs and the run log. The stop status is carried in
+FINDINGS_TRANSFER.md; this task writes no PROGRESS file.
+
+--- LIMITATIONS, DECLARED NOW ---
+- A kill-check of this shape can only be run one way. A large drift kills
+  initialisation; a small drift licenses nothing, and that asymmetry is fixed
+  in section 5 before any number exists.
+- The reliability correction can only correct for noise it can see. A factor
+  whose displacement is reproducible within each screen but driven by a
+  screen-specific technical artefact will pass the r >= 0.3 gate and still
+  disagree across screens, and this task cannot tell that apart from true
+  biological drift.
+- With 100 splits, r is estimated at half depth in each screen; both screens
+  have factors near 30 cells, where the half-split displacement is noisy, and
+  that is why the r >= 0.3 gate exists rather than a correction applied to
+  everything.
+- The two screens use different perturbation modalities on the same gene
+  (Southard CRISPRa throughout; Sengstack's CRA arm is also activation, which
+  is why only CRA is used), but guide sequences, dose and induction time all
+  differ, and none of that is measured here.
+```
+
+## The amendments, verbatim
+
+# TRANSFER — amendments to the pre-registration
+
+Written **2026-10-13T19:13Z (local 2026-10-14 04:13 KST), before any TRANSFER
+number existed.** `results/transfer/PREREG.flag` is **not edited**; it stands as
+written at 2026-10-13T18:44:34Z. Everything below is reproduced verbatim in
+`FINDINGS_TRANSFER.md`.
+
+These are the author's answers to the hand-off questions this session raised
+after writing the flag, plus the few definitions the answers required. The flag
+is the primary document; where this file narrows or adds to it, that is marked
+as a deviation and is disclosed again where the affected number appears.
+
+---
+
+## A1 — Reading order (author's answer; flag section 5 unchanged)
+
+The ordered evaluation stands: UNMEASURABLE, then LARGE DRIFT, then SMALL
+DRIFT, then INTERMEDIATE. The kill is evaluated first.
+
+Recorded for the reader: **when the bootstrap interval is valid the branches are
+already mutually exclusive**, so the order changes nothing. SMALL DRIFT requires
+specificity at p < 0.01 while LARGE DRIFT's specificity arm requires p >= 0.05;
+LARGE DRIFT's interval arm requires the CI upper bound below 0.5 while SMALL
+DRIFT requires the lower bound at or above 0.7. The two cannot both hold. The
+order matters only for an INVALID interval, where the CI arms are unreadable and
+the kill may still fire on specificity alone.
+
+## A2 — Stage 0(b) is narrowed (author's answer; **deviation from the flag**)
+
+The flag's Stage 0(b) required the SENG3 floors and the floor-dependent boolean
+columns to be recomputed. **They are not.** Stage 0(b) reproduces:
+
+- the number of qualifying CRA perturbations (stored: 167);
+- every CRA perturbation's `n_cells`;
+- `delta_i`, `frac_i`, `delta_ii`, `frac_ii` for the CRA rows of
+  `results/seng3/d4_table.csv`.
+
+It does **not** recompute `floor_delta_i`, `floor_delta_ii` or the
+`below_floor_*`, `decreased_*` and `called_*` columns.
+
+Reason, as answered: this task never uses the floor machinery. It measures
+direction agreement between two displacements and never compares a distance to a
+null floor. Reproduction should test the path this task actually uses — the
+assignment rule, the panel transform, and the projection into the 20-component
+space — and the four reproduced numerics exercise exactly that path. The
+narrowing is a **deviation from the flag** and is disclosed here, in the Stage 0
+section of the findings, and beside the Stage 0 table.
+
+Consequence to state plainly: Stage 0 no longer re-verifies SENG3's floors.
+Nothing in TRANSFER depends on them, and no TRANSFER number is a check on them.
+
+## A3 — The matched-gene count was already resolved (author's answer)
+
+The apparent conflict this session raised between "20,265 matched genes"
+(`results/coordspace/PREREG.flag`) and "20,264 genes" (the check labels in
+`src/south6rec_run.py`) is **already resolved in `FINDINGS_COORDSPACE.md`**,
+under the deviation headed "matched coordinates": 20,265 ruler genes match the
+Southard file, two of them map to the same source column, SOUTH6 collapses
+duplicate source columns (`src/south6_run.py`, the `seen` dict in
+`stage0_and_1`), and the panel therefore has 20,264 columns. Both texts are
+correct about different quantities. Nothing in TRANSFER changes.
+
+`|G|` is still computed from the arrays at run time exactly as the flag requires
+and is not quoted from any earlier findings file. That note is cited where `|G|`
+is reported.
+
+## A4 — No depth-matched control variant (author's answer)
+
+The flag's `d_J` compares a perturbation of tens to hundreds of cells against
+the pooled NT cells of the whole CRA arm, and `d_S` likewise against the pooled
+78-guide non-targeting set. **No depth-matched variant is added, not even as a
+diagnostic.** Unequal depth between factor and control is precisely what the
+reliability correction in flag section 3 exists to absorb: the control side
+contributes almost no sampling noise, the factor side contributes nearly all of
+it, and the split-half reliability measures that noise at the factor's own
+depth.
+
+Stated as a limitation, not corrected: the reliability correction assumes the
+noise it measures by splitting is the same noise that limits the full-depth
+displacement. Control-side noise, being shared between both halves, is not
+measured by the split and is not corrected for.
+
+## A5 — No separate feasibility probe (author's answer)
+
+No cheap pre-flight probe of whether `|F_q| >= 20` is pre-registered. With A2's
+narrowing, Stage 0 is cheap, and **the Stage 4 same-context gate is itself the
+feasibility check**. If the readout cannot recover zero drift within a single
+screen, or if fewer than 20 factors reach the reliability floor, the result is
+UNMEASURABLE and that is a finding about the instrument, reported as such.
+
+## A6 — The 0.3 reliability floor, and why that number (author's answer)
+
+`r >= 0.3` in both screens stands, and the rationale is recorded now rather than
+left unstated: the correction divides by `sqrt(r_S * r_J)`, so a floor of 0.3 in
+both screens **caps the inflation factor at about 3.3x**
+(`1 / sqrt(0.3 * 0.3) = 3.33`). A factor whose split halves barely agree in
+either screen therefore cannot produce a large corrected cosine out of a small
+observed one. The floor was fixed before any data existed and is not tuned to
+any result.
+
+---
+
+## Carried over unchanged from the hand-off
+
+Accepted as this session fixed them in the flag, with no change: the Southard
+factor universe (all 1,836 `keep` labels, SOUTH7 primary-set membership as a
+descriptive column only); the exact-symbol matching rule with no alias table;
+the half-split displacement convention (factor half against an independent
+control half, which differs from SENG3 amendment B5's within-set paired
+construction and is disclosed as a deviation from it); the pooled 78-guide NT
+control on the Southard side; the split mechanics, the extra cell to half A, the
+shared per-split control halves and the per-factor seed streams; seed 20260914
+for every draw including the bootstrap, departing from the project's usual
+20260918 bootstrap seed; the treatment of non-finite `c_corr`; the specificity
+test details and its disclosure as approximate; the quartering of both factor
+and control cells inside the gate; the real re-accumulation of the Southard
+panel in Stage 0(a); the CRI cell-count checks in Stage 0(c) as a structural
+check on an arm that is not tested; no PROGRESS file; reading the Sengstack
+panel counts from `results/seng2/panel_counts.npz` while re-deriving cell
+assignment and counts from the h5ad; and no activity filter on either screen's
+side, so a shared gene is in `F` whether or not Southard's guides for it were in
+the published active set.
+
+## Implementation definitions fixed here, before computing
+
+These are mechanical and are listed so the record is complete.
+
+1. **Control split stream.** The flag fixes the per-factor stream as
+   `default_rng([20260914, screen_id, factor_index, split_index])` but does not
+   give the form for the control halves, which are shared across factors within
+   a split index. They are drawn from `default_rng([20260914, screen_id,
+   split_index])` — a three-element key, so it cannot collide with any
+   four-element per-factor key.
+2. **The two "contexts" in the Stage 4 gate.** The gate's two context vectors
+   come from split index 0 of a dedicated gate stream
+   (`default_rng([20260914, screen_id, 7, factor_index])` for factor cells and
+   `default_rng([20260914, screen_id, 7])` for control cells); the quarter-split
+   reliabilities of each context are averaged over the same 100 splits the
+   primary readout uses, with quarter streams keyed
+   `[20260914, screen_id, 8, factor_index, split_index]`.
+3. **Per-stage caching.** Each stage writes its own outputs to
+   `results/transfer/` and a later stage may read them. This is not
+   checkpoint/resume of a random stream: every draw stream inside a stage runs
+   uninterrupted from its seed, and re-running a stage re-draws it identically.
+4. **Source-file verification.** The Sengstack h5ad is opened, so its size and
+   md5 are verified against `src/seng2_common.py` `MD5_EXPECT`
+   (`bfccaa94a916c22e4b0793913a04128b`). The **Southard h5ad is never opened by
+   this task** — counts come from the SOUTH6 matched CSR cache — so its md5 is
+   not recomputed; Stage 0(a)'s re-accumulation of `C_f`, `C_nt` and `C_pool`
+   from that cache, compared against the stored panel at tolerance 0, is the
+   check that stands in its place. Disclosed as a deviation from the flag's
+   `file_mismatch` stop key, which can therefore fire only on the Sengstack
+   file.
+
+## Deviations and choices
+
+Everything here is a deviation from the flag, an addition to it, or a choice the flag did not fix. Housekeeping is included.
+
+1. **The flag's stop ordering was violated on the first pass, and this is the most serious deviation in this task.** Flag section 4 says that if the gate fails, the primary statistic is not computed and no cross-screen number is reported. The gate failed, but the first pass of `src/transfer_run.py read` evaluated the gate and then ran the primary readout and the cross-screen diagnostics unconditionally, so those numbers were computed and the session that ran them has seen them. They are quarantined, not deleted, under `results/transfer/NOT_A_RESULT_gate_failed/` with a README stating what they are; no number in them is quoted anywhere in this findings file and no reading is drawn from them. `src/transfer_run.py` was then corrected so that the `read` stage stops at a failed gate, and the corrected stage was re-run: the gate is deterministic at seed 20260914 and its outcome, its numbers and the stop key are unchanged. That re-run changed no threshold and is not a resumption of a stopped run. A reader who wants the gate re-verified from tracked files alone can run `stage0`, `south`, `seng`, `read` in order and will get this same stop.
+2. **Stage 0(b) narrowed** (amendment A2). The SENG3 floors and the floor-dependent boolean columns are NOT recomputed. Stage 0(b) reproduces the CRA count, every CRA `n_cells`, and `delta_i`, `frac_i`, `delta_ii`, `frac_ii` for the CRA rows of `results/seng3/d4_table.csv`. Stage 0 therefore does not re-verify SENG3's floors; nothing in TRANSFER depends on them.
+3. **The Southard h5ad is never opened** (amendment, implementation definition 4). Counts come from the SOUTH6 matched CSR cache, so its md5 is not recomputed and the `file_mismatch` stop key can fire only on the Sengstack file, whose md5 is verified.
+4. **Stage 0(a) does not re-accumulate the 78 per-guide NT rows.** Rebuilding `C_nt` per guide needs the per-cell guide labels, which live in the Southard h5ad obs, excluded by deviation 3. `C_f` (every factor, from its own cells) and `C_pool` (the pooled control, from `nt_cells`) are re-accumulated and compared exactly; `C_pool` is also checked against the sum of the stored `C_nt` rows; and the stored `C_nt` rows are used as panel input when rebuilding the TMM transform. This is weaker than a full panel rebuild and is reported as such.
+5. **The half-split displacement is factor-half minus an independent control-half.** This differs from SENG3 amendment B5's within-set paired construction (`z(draw) - z(pool minus draw)`), which is not the construction `d_S`/`d_J` uses. The complement half's pseudobulk is obtained by subtracting the drawn half's counts from the group total, which is exact in float64 for integer counts.
+6. **Seed 20260914 is used for the factor bootstrap**, per the flag, departing from this project's usual 20260918 bootstrap seed.
+7. **Control split streams** are keyed `default_rng([20260914, screen_id, split_index])`, a three-element key that cannot collide with the flag's four-element per-factor keys. The gate's fixed contexts use key element 7 and its quarter splits key element 8.
+8. **Per-stage caching.** `stage0` writes the Southard panel TMM cache to `results/transfer/south_cache.npz` and the later stages read it instead of rebuilding the panel. Each stage's random streams run uninterrupted from their seeds, so this is not checkpoint/resume of a draw stream.
+9. **No PROGRESS file**, per the flag; the stop status is carried here.
+10. **The Southard factor universe is all 1,836 ranked targets**, not SOUTH7's published 304-gene primary set; membership in that set is carried as a descriptive column only.
+11. **No depth-matched control variant** (amendment A4) and **no feasibility probe** (amendment A5).
+
+## Stage 0 — reproduction of the stored numbers
+
+20 checks, 0 failed. Tolerance: counts and the re-accumulated Southard counts exact; numerics |new - stored| <= 1e-4 * max(1, |stored|), the tolerance SENG3's Stage 0 used.
+
+| block | item | kind | n | mismatches | max scaled diff | passed |
+|---|---|---|---|---|---|---|
+| (a) Southard counts | C_f re-accumulated from cells | array | 37204704 | 0 | 0.000000 | yes |
+| (a) Southard counts | C_pool equals stored C_pool exactly | count | 1 | 0 | 0.000000 | yes |
+| (a) Southard counts | C_pool equals the sum of the 78 stored C_nt rows | count | 1 | 0 | 0.000000 | yes |
+| (b) Southard transform | missing-gene mask size | count | 1 | 0 | 0.000000 | yes |
+| (b) Southard transform | missing-gene mask identical | count | 1 | 0 | 0.000000 | yes |
+| (b) Southard transform | z_pool on the matched genes | array | 20264 | 0 | 0.000000 | yes |
+| (b) Southard transform | z_pool is 0 on the unmatched ruler genes | count | 1 | 0 | 0.000000 | yes |
+| (b) Southard transform | d_f on the matched genes | array | 37204704 | 0 | 0.000000 | yes |
+| (b) Southard transform | d_f is 0 on the unmatched ruler genes | count | 1 | 0 | 0.000000 | yes |
+| (c) Sengstack | qualifying CRA perturbations (n >= 30) | count | 1 | 0 | 0.000000 | yes |
+| (c) Sengstack | every CRA perturbation is a row of seng3/d4_table.csv | count | 1 | 0 | 0.000000 | yes |
+| (c) Sengstack | n_cells per CRA perturbation | array | 167 | 0 | 0.000000 | yes |
+| (c) Sengstack | delta_i in S2A_k20, CRA rows | array | 167 | 0 | 7.11e-15 | yes |
+| (c) Sengstack | frac_i in S2A_k20, CRA rows | array | 167 | 0 | 2.50e-16 | yes |
+| (c) Sengstack | delta_ii in S2A_k20, CRA rows | array | 167 | 0 | 7.11e-15 | yes |
+| (c) Sengstack | frac_ii in S2A_k20, CRA rows | array | 167 | 0 | 3.33e-16 | yes |
+| (d) assignment rule | n_cells[CRA_E2F3] | count | 1 | 0 | 0.000000 | yes |
+| (d) assignment rule | n_cells[CRA_EZH2] | count | 1 | 0 | 0.000000 | yes |
+| (d) assignment rule | n_cells[CRI_STAT3] | count | 1 | 0 | 0.000000 | yes |
+| (d) assignment rule | n_cells[CRI_ZFX] | count | 1 | 0 | 0.000000 | yes |
+
+## The factor set and the gene set
+
+- |F| = 154 shared factors by exact gene symbol. Southard-only: 1682. Sengstack-CRA-only: 13 (ATG3, ATG4C, ATG4D, ATG5, CPEB1, GABARAPL1, HSPA8, MRRF, PLAU, PPARGC1B, PRKRIR, SIRT1, ZNF318).
+- Southard cell counts over F: min 37, median 108, max 307. Sengstack: min 30, median 62, max 187.
+- |G| = 16631 shared ruler genes, computed at run time from the arrays (Southard matched 20264 columns, Sengstack present 16781 of 23485 ruler genes). On the 20,265/20,264 question see the deviation headed "matched coordinates" in FINDINGS_COORDSPACE.md: 20,265 ruler genes match the Southard file, two map to one source column, and SOUTH6 collapses them, so the panel has 20,264 columns.
+- G genes inside a screen's all-zero mask: Southard 120, Sengstack 279. Those contribute exactly 0 to any difference either way.
+- Frozen basis: results/south7/basis.npz L_mid_full[:, :20], PCA of 308 GTEx donors aged 40-59, max|L'L - I| = 3.55e-15. Read, not refit.
+
+## Stage 4 — the same-context gate, and the result
+
+True drift is zero by construction: the two "contexts" are two disjoint halves of the same cells of the same factor in the same screen, each measured against its own half of that screen's control pool. The whole readout — observed cosine, split-half reliabilities from quarter splits, the r floor, the corrected cosine, specificity and the median with its bootstrap CI — is run on those two contexts. This is also the recovery check this project requires beside any null: it asks whether the statistic can see agreement that is certainly there.
+
+| screen | n_q | median raw cosine | M_same | CI lo | CI hi | CI valid | specific | chance | binomial p | passed |
+|---|---|---|---|---|---|---|---|---|---|---|
+| south | 154 | 0.8449 | 0.8889 | 0.8802 | 0.9159 | yes | 37 | 7.7000 | 1.21e-15 | yes |
+| seng | 139 | 0.5159 | 0.6845 | 0.6252 | 0.7751 | yes | 22 | 6.9500 | 1.73e-06 | no |
+
+Bars, fixed in advance: **M_same >= 0.85** and specificity above chance at **p < 0.01**, in both screens. Gate **FAILED** — failed in: seng.
+
+Within-screen context for the gate, from the gate's own tables (`gate_south.csv`, `gate_seng.csv`) and the build logs:
+
+- **Southard**: control pool 14013 cells; factor cells over F min 37, median 108, max 307. Median split-half reliability of context 1 0.9466 and of context 2 0.9452; 0 factors fell below the r >= 0.3 floor on context 1, 0 on context 2; 154 of 154 qualified.
+- **Sengstack CRA**: control pool 666 cells; factor cells over F min 30, median 62, max 187. Median split-half reliability of context 1 0.6888 and of context 2 0.7793; 11 factors fell below the r >= 0.3 floor on context 1, 4 on context 2; 139 of 154 qualified.
+
+What the gate says, and what it does not. Specificity is comfortably above chance in both screens: within a screen, a factor's half-1 displacement is closer to its own half-2 displacement than to other factors' — the readout can tell factors apart. What fails is **magnitude recovery in the Sengstack arm**: on data whose true agreement is 1 by construction, the reliability-corrected cosine recovers only 0.6845 (CI 0.6252 to 0.7751), against 0.8889 in Southard. A corrected cosine that cannot reach 1 where the answer is 1 cannot be read as a measure of how far short of 1 two screens fall.
+
+A likely mechanism, stated as an observation about the instrument and **not** as a tested claim: the Sengstack CRA control pool is 666 cells, against a median of 62 cells per factor. The correction assumes the noise a split can see is the noise that limits the displacement, but control-side noise is shared between the two halves of a split and is not measured by it, and at this control depth that noise is not negligible. Southard's control pool is 14013 cells and its gate recovers 0.8889. Testing that mechanism would need a new pre-registration; nothing here does it.
+
+## The pre-registered reading that fired
+
+**UNMEASURABLE**
+
+"The method could not see transfer. The same-context control did not recover zero-drift agreement in both screens. No statement is made about whether factor directions transfer between the Southard and Sengstack screens. This is a statement about the measurement, not about the biology."
+
+Per flag section 4 the primary statistic was not computed and no cross-screen number is reported. The pre-registered diagnostics D1-D6 are cross-screen and are not reported either. What was computed before the gate's outcome was converted into a stop is quarantined under `results/transfer/NOT_A_RESULT_gate_failed/`, with its own README; see deviation 1.
+
+## What this does not cover
+
+- **The kill-check is unresolved.** UNMEASURABLE is not a weak version of either outcome: LARGE DRIFT did not fire, and neither did SMALL DRIFT. This task establishes neither that Southard's factor directions fail to transfer nor that they transfer. Step 1 of the blueprint is not answered, and nothing here licenses initialising a forward model from Southard geometry or declines to. A further attempt needs a statistic whose zero-drift recovery passes in both screens, pre-registered separately, before any cross-screen number is computed.
+- **Neither screen is aged donor cells.** Southard is Hs27, a neonatal foreskin fibroblast line. Sengstack's "old" is passage number, not donor age, and this project has already found that passage does not resemble donor aging (cos(v,u) = -0.040, permutation p = 1.0, `results/seng/axes.json`). Nothing here transfers to aged human cells, in either direction.
+- Transfer is judged **only inside the 20-component space** the search objective is scored in. A factor pair could agree in some other space and disagree here, or the reverse.
+- The 20-component basis was selected, in SOUTH7 and SOUTH9, because it was the space in which the **Southard** screen's statistic recovered planted effects. The space is chosen on Southard's behalf, which makes it more favourable to Southard than to Sengstack. Disclosed, not corrected.
+- The shared factors are **not a random sample** of Southard's 1,836 targets. Sengstack selected their perturbation set from passage- and proliferation-linked modules.
+- The specificity test treats factors as independent. They are not: every mismatched cosine is drawn from the same two displacement pools, so the binomial p is approximate.
+- The reliability correction measures only the noise a split can see. Control-side noise is shared between the two halves and is not measured or corrected (amendment A4).
+- This task measures **direction agreement only**. It says nothing about effect magnitude, about whether either displacement is in a useful direction, or about whether any factor approaches young in either screen.

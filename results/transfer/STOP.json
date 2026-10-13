@@ -1,0 +1,5 @@
+{
+  "key": "unmeasurable",
+  "message": "the same-context control did not recover zero-drift agreement in seng (bars: M_same >= 0.85, specificity p < 0.01)",
+  "extra": {}
+}

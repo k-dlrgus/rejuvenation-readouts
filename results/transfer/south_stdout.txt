@@ -1,0 +1,14 @@
+[     0.0s] [basis] S2A_k20 read frozen from results/south7/basis.npz L=(23485, 20) n_mid=308 max|LtL-I|=3.553e-15
+[     0.0s] [south] factors=1836 matched=20264 nt_cells=14013 nnz=498,534,339
+[     4.1s] [south] full-depth displacements built (4s)
+[    46.9s] [south] splits 10/100 (47s)
+[    87.4s] [south] splits 20/100 (87s)
+[   128.8s] [south] splits 30/100 (129s)
+[   173.5s] [south] splits 40/100 (173s)
+[   216.7s] [south] splits 50/100 (217s)
+[   260.9s] [south] splits 60/100 (261s)
+[   304.8s] [south] splits 70/100 (305s)
+[   355.7s] [south] splits 80/100 (356s)
+[   405.2s] [south] splits 90/100 (405s)
+[   448.3s] [south] splits 100/100 (448s)
+[   448.4s] [south] done (448s)
