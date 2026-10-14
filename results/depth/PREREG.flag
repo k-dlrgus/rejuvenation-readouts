@@ -1,0 +1,171 @@
+TASK: DEPTH — at what per-sample cell count does the mixing-series positive
+control still detect a young spike-in?
+Written 2026-10-14T04:22:14Z (2026-10-14 13:22 +0900), before any DEPTH number
+exists. No threshold or wording in this block is changed after numbers exist.
+The only stored numbers read so far are the SAME split sizes and P table
+(results/same/split_table.csv, split.json, posctrl.csv, posctrl_summary.json),
+which are prior results, not DEPTH numbers.
+
+QUESTION. FINDINGS_SAME's positive control P mixed aged (GM00731) and young
+(GM23815) half-B day-0 Fibroblast cells at young fractions f = 0, 0.10, 0.25,
+0.50 with n_total = 2,470, and passed. A CRO quote offers ~400 or ~1,200
+recovered cells per sample. Does P still fire at those depths?
+
+--- INSTRUMENTS (read, not refit) ---
+Everything P used, unchanged:
+- Half-A anchors O (GM00731, 2,469 cells) and Y (GM23815, 3,851 cells) and the
+  half-B pools (GM00731 2,470 cells, GM23815 3,852 cells), cell indices read
+  from results/same/split_idx.npz.
+- Per-cell counts data/processed/md4/louvain_rulerY_<line>.npz and md2 labels,
+  loaded by toward_run.load_donor exactly as SAME did.
+- Frozen ruler gene space and frozen GTEx mu/sd (results/fibro/
+  frozen_ruler_ridge_raw.npz) via fibro2_common.load_frozen_ruler.
+- Transform: pseudobulk (sum of cell counts) -> TMM log2-CPM, prior.count=2,
+  across the panel -> frozen z; genes with zero counts in every panel row
+  z=0. Called as same_run.panel_z.
+- Statistics: same_run.axis_stats(z_O, z_Y, z_S) -> frac = dot(d,v)/||v||^2,
+  delta = ||z_S - z_Y|| - ||z_O - z_Y||, cos (diagnostic), with v = z_Y - z_O,
+  d = z_S - z_O.
+No anchor, axis, basis, ruler or mu/sd is refit. src/same_run.py and
+src/toward_run.py are imported, not modified.
+
+--- STAGE 0 (before anything new) ---
+With this task's code:
+(a) Recompute each donor's d0 Fibroblast set and 50/50 split
+    (same_run.d0_fibroblast_idx, same_run.split_half, seed 20260914). Half sizes
+    must equal results/same/split_table.csv exactly (2,469 / 2,470 / 3,851 /
+    3,852). The recomputed index arrays are also checked for exact equality
+    with results/same/split_idx.npz (a check added beyond the task text).
+(b) Re-run P itself: same_run.run_posctrl on the split_idx.npz indices, with
+    same_run's module-level SAME_DIR redirected to results/depth/stage0/ so
+    that nothing is written into results/same/. Compare to
+    results/same/posctrl.csv and results/same/posctrl_summary.json:
+      counts exact: f, n_aged, n_young, n_total at all four f;
+      numerics within 1e-4 * max(1, |stored|): frac, delta, cos at all four f;
+      pass flags exact: pass, monotonic, frac50_ci_excludes_0, delta50_neg.
+    frac50_ci_excludes_0 is a bootstrap flag, so Stage 0 re-runs P's own
+    bootstrap (B=200, seed 20260918) for this comparison only. No DEPTH
+    reading uses a bootstrap. The CI bounds themselves are compared as a
+    diagnostic and are not gated.
+Any gated mismatch: STOP `prior_results_not_reproduced`, naming every one.
+
+--- DESIGN ---
+Depth grid n_total: 400 (n_index 0), 1200 (n_index 1), 2470 (n_index 2).
+f grid: 0, 0.10, 0.25, 0.50 (f_index 0..3), by cell counts as P did:
+  n_young = round(f * n_total) (numpy round), n_aged = n_total - n_young.
+  400:  aged/young = 400/0, 360/40, 300/100, 200/200
+  1200: aged/young = 1200/0, 1080/120, 900/300, 600/600
+  2470: aged/young = 2470/0, 2223/247, 1852/618, 1235/1235
+200 independent draws per (n_total, f). Draw (n_index, f_index, draw_index)
+uses its own generator rng = numpy.random.default_rng([20260914, n_index,
+f_index, draw_index]); aged cells = rng.choice(half-B aged pool, n_aged,
+replace=False) (skipped when n_aged = 0), then young cells = rng.choice(half-B
+young pool, n_young, replace=False) (skipped when n_young = 0). Aged and young
+cells come from their own pools.
+Cells are NOT shared across f within a draw index: each f has its own
+generator and its own independent sample.
+Scoring panel (a decision the task text did not fix): for each (n_total,
+draw_index) one 6-row panel [O, Y, mix f=0, mix f=0.10, mix f=0.25,
+mix f=0.50] is built and transformed jointly, exactly the panel shape P used.
+Each mix row is scored as S in P's forward test against the O, Y rows of that
+same panel. O and Y are the same half-A count vectors in every panel; their z
+moves slightly between panels only through the joint TMM, as in P.
+Per draw, report frac and delta (and cos, d_norm, v_norm as diagnostics).
+Bootstrap CIs are not used; the spread over draws is the uncertainty.
+
+Known properties of this design, stated before any number:
+- At n_total = 2470, f = 0 needs all 2,470 cells of the aged half-B pool, so
+  every f = 0 draw at that depth is the same cell set; its spread comes only
+  from TMM coupling to the other panel rows, not from sampling. f = 0.10 at
+  2470 takes 2,223 of 2,470 aged cells. The 2470 rung is therefore a
+  reproduction / reference rung: its table is reported, but it gets no gated
+  reading and its "floor" is not a sampling noise floor.
+- Only S is subsampled. O and Y stay at half-A depth (2,469 and 3,851 cells).
+  Sampling noise in a shallow S enters delta with a positive sign
+  (||z_S - z_Y|| grows with noise). This is part of what is being measured and
+  is not corrected.
+
+--- DETECTION RULE ---
+At each depth, the 200 f = 0 deltas are the noise floor. floor_p5 =
+numpy.percentile(f=0 deltas, 5) (numpy default linear interpolation).
+A draw at f > 0 is DETECTED iff delta < floor_p5 AND delta < 0 (both strict).
+A non-finite delta is not detected. Detection rate = n_detected / 200.
+Chance baseline, reported beside every rate: the same rule applied to the
+f = 0 draws themselves (at most 5% by construction, since the floor is their
+own 5th percentile; this self-application is in-sample).
+Monotonic: for each (n_total, draw_index), frac at f = 0, 0.10, 0.25, 0.50
+is passed to same_run.monotonic_increasing (non-decreasing; any non-finite
+value -> not monotonic). Report the share of the 200 draw indices that are
+monotonic.
+Per depth and f report: detection rate, median frac, median delta, floor_p5.
+All rates compare with >= 0.80 (i.e. >= 160 of 200).
+
+--- READINGS (per depth; 400 and 1200 each get their own; wording verbatim,
+the only substitution is the depth N) ---
+The task text's three readings could overlap (10% rung and monotonicity pass,
+25% rung fails: USABLE and INSUFFICIENT both true) or leave a gap (both rungs
+pass, monotonicity fails: nothing true). Asked in chat before writing this
+flag; the author chose (2026-10-14): USABLE also requires the 25% rung, and
+the gap gets NO_READING. The four keys below are mutually exclusive and
+exhaustive.
+
+Let det10, det25 = detection rates at f = 0.10, 0.25; mono = monotonic share.
+
+USABLE: det10 >= 0.80 AND det25 >= 0.80 AND mono >= 0.80.
+  "At N cells per sample, this depth preserves the sensitivity the mixing
+  control was validated at."
+
+MARGINAL: det25 >= 0.80 AND det10 < 0.80.
+  "At N cells per sample, the mixing control would detect a quarter-gap
+  approach (a 25% young spike-in) but not a tenth-gap one (a 10% young
+  spike-in). An effect smaller than a quarter of the donor gap would be
+  undetectable by construction at this depth."
+
+INSUFFICIENT: det25 < 0.80.
+  "At N cells per sample, the mixing control does not work: even a 25% young
+  spike-in is not detected in 80% of draws. A null result from an experiment
+  at this depth could not be read."
+
+NO_READING: det10 >= 0.80 AND det25 >= 0.80 AND mono < 0.80.
+  "At N cells per sample, no pre-registered reading fired: both spike-in rungs
+  were detected in at least 80% of draws, but frac was monotonic in f in fewer
+  than 80% of draws. No conclusion about this depth's sensitivity is drawn."
+
+A depth that fails here cannot be rescued by analysis. The reading is about what the experiment could see, not about biology.
+
+Only the reading whose conditions fired is reported as the conclusion for
+each depth. The 2470 rung's table, cos, d_norm, the f = 0.50 rung's rate and
+any spread summaries are diagnostics, labelled as such.
+
+--- STOP KEYS ---
+prior_results_not_reproduced: any gated Stage 0 mismatch (every one named).
+pool_too_small: a half-B pool cannot supply a requested draw (n_aged > 2,470
+  or n_young > 3,852). Checked for the whole grid before any draw.
+After a STOP: write the findings with the STOP key and exit. No computation
+after a STOP, no restart with an adjustment.
+
+--- WHAT THIS DOES NOT COVER ---
+- Two donors, one young and one aged, from a reprogramming dataset
+  (GSE297234: GM00731 aged, GM23815 young), not the six donors of the planned
+  pilot. This measures depth sensitivity only; it says nothing about
+  donor-to-donor variation, which more donors and not more cells would
+  address.
+- Cells here are subsampled from a deeply sequenced run. A CRO's 400
+  recovered cells may also differ in reads per cell, which this cannot model.
+  The result is therefore optimistic for the low-depth rungs.
+- The spike-in is cells of a genuinely younger donor, which is the most
+  favourable possible positive signal.
+- The anchors O and Y stay at half-A depth (~2,500 and ~3,900 cells). In a
+  real experiment at 400 or 1,200 cells per sample the references would also
+  be shallow. This is a second reason the low-depth rungs are optimistic.
+- The f = 0 floor and the spike-in draws come from the same half-B pools and
+  overlap in cells across draws; the floor is estimated from the same cells
+  the rule is applied to (disclosed, not refitted away).
+- Day-0 fibroblasts only, from one aged and one young donor line; nothing here
+  speaks to other cell types or to partially reprogrammed cells.
+
+--- OUTPUTS ---
+src/depth_run.py; results/depth/ (PREREG.flag, stage0/, stage0_reproduction.csv,
+draws.csv, detection.csv, monotonic.csv, readings.json, run.log);
+FINDINGS_DEPTH.md with this block verbatim at the top. One local commit, not
+pushed.

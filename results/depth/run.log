@@ -1,0 +1,53 @@
+==========================================================================================
+DEPTH seed=20260914 N_GRID=(400, 1200, 2470) f=(0.0, 0.1, 0.25, 0.5) n_draws=200
+==========================================================================================
+[frozen] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\fibro\frozen_ruler_ridge_raw.npz n_genes=23485
+[columns louvain_obs_GM00731] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\louvain_obs_GM00731.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM00731] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\t2_cluster_labels_GM00731.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM00731] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM00731] n_cells=22132 n_clusters=19 days=[0, 3, 7, 10]
+[columns louvain_obs_GM23815] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\louvain_obs_GM23815.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM23815] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\t2_cluster_labels_GM23815.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM23815] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM23815] n_cells=33858 n_clusters=19 days=[0, 3, 7, 10]
+[stage0] same_run.SAME_DIR redirected C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\same -> C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\depth\stage0
+[P] n_total=min(n_aged_B, n_young_B)=2470  n_mixes=4 seed=20260914
+[P] f=0.00 n_aged=2470 n_young=0 n_total=2470
+[P] f=0.10 n_aged=2223 n_young=247 n_total=2470
+[P] f=0.25 n_aged=1852 n_young=618 n_total=2470
+[P] f=0.50 n_aged=1235 n_young=1235 n_total=2470
+[P tmm] n_rows=6 names=['O', 'Y', 'mix_f0.00', 'mix_f0.10', 'mix_f0.25', 'mix_f0.50'] nf_median=0.9834 prior.count=2 n_missing_z0=3507
+[P stat] f=0.00 frac=+0.115 delta=+0.068 cos=+0.239
+[P stat] f=0.10 frac=+0.182 delta=-7.870 cos=+0.371
+[P stat] f=0.25 frac=+0.283 delta=-18.913 cos=+0.530
+[P stat] f=0.50 frac=+0.441 delta=-34.443 cos=+0.694
+[P boot] 50/200
+[P boot] 100/200
+[P boot] 150/200
+[P boot] 200/200
+[P CI sanity] f=0.00 frac=+0.115 [+0.099, +0.121] OK
+[P CI sanity] f=0.00 delta=+0.068 [+5.807, +8.334] INVALID
+[P CI sanity] f=0.10 frac=+0.182 [+0.167, +0.191] OK
+[P CI sanity] f=0.10 delta=-7.870 [-1.900, +1.007] INVALID
+[P CI sanity] f=0.25 frac=+0.283 [+0.267, +0.291] OK
+[P CI sanity] f=0.25 delta=-18.913 [-11.793, -9.372] INVALID
+[P CI sanity] f=0.50 frac=+0.441 [+0.424, +0.447] OK
+[P CI sanity] f=0.50 delta=-34.443 [-25.403, -22.414] INVALID
+[P] pass=True monotonic=True frac50_ci_excludes_0=True delta50_neg=True reason=NA
+[stage0] checks=53 gated=37 gated_failures=0 diagnostic_failures=0
+[draws] n_total=400 50/200
+[draws] n_total=400 100/200
+[draws] n_total=400 150/200
+[draws] n_total=400 200/200
+[draws] n_total=1200 50/200
+[draws] n_total=1200 100/200
+[draws] n_total=1200 150/200
+[draws] n_total=1200 200/200
+[draws] n_total=2470 50/200
+[draws] n_total=2470 100/200
+[draws] n_total=2470 150/200
+[draws] n_total=2470 200/200
+[reading] n_total=400 key=INSUFFICIENT rule_outcome=INSUFFICIENT {'det10': 0.0, 'det25': 0.0, 'mono': 1.0, 'det10_ge_080': False, 'det25_ge_080': False, 'mono_ge_080': True}
+[reading] n_total=1200 key=MARGINAL rule_outcome=MARGINAL {'det10': 0.73, 'det25': 1.0, 'mono': 1.0, 'det10_ge_080': False, 'det25_ge_080': True, 'mono_ge_080': True}
+[reading] n_total=2470 key=None rule_outcome=USABLE {'det10': 1.0, 'det25': 1.0, 'mono': 1.0, 'det10_ge_080': True, 'det25_ge_080': True, 'mono_ge_080': True}
+[run] DONE

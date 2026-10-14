@@ -1,0 +1,47 @@
+{
+ "400": {
+  "key": "INSUFFICIENT",
+  "rule_outcome": "INSUFFICIENT",
+  "gated": true,
+  "text": "At 400 cells per sample, the mixing control does not work: even a 25% young spike-in is not detected in 80% of draws. A null result from an experiment at this depth could not be read.",
+  "conditions": {
+   "det10": 0.0,
+   "det25": 0.0,
+   "mono": 1.0,
+   "det10_ge_080": false,
+   "det25_ge_080": false,
+   "mono_ge_080": true
+  },
+  "floor_p5_delta": 23.90194974342085
+ },
+ "1200": {
+  "key": "MARGINAL",
+  "rule_outcome": "MARGINAL",
+  "gated": true,
+  "text": "At 1,200 cells per sample, the mixing control would detect a quarter-gap approach (a 25% young spike-in) but not a tenth-gap one (a 10% young spike-in). An effect smaller than a quarter of the donor gap would be undetectable by construction at this depth.",
+  "conditions": {
+   "det10": 0.73,
+   "det25": 1.0,
+   "mono": 1.0,
+   "det10_ge_080": false,
+   "det25_ge_080": true,
+   "mono_ge_080": true
+  },
+  "floor_p5_delta": 5.559254499106801
+ },
+ "2470": {
+  "key": null,
+  "rule_outcome": "USABLE",
+  "gated": false,
+  "text": "Reference rung; no gated reading (PREREG.flag DESIGN).",
+  "conditions": {
+   "det10": 1.0,
+   "det25": 1.0,
+   "mono": 1.0,
+   "det10_ge_080": true,
+   "det25_ge_080": true,
+   "mono_ge_080": true
+  },
+  "floor_p5_delta": 0.04357938091007796
+ }
+}
