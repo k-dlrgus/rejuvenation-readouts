@@ -1,0 +1,32 @@
+{
+ "400": {
+  "key": "USABLE",
+  "rule_outcome": "USABLE",
+  "gated": true,
+  "text": "At 400 cells per sample, this depth preserves the sensitivity the mixing control was validated at.",
+  "conditions": {
+   "det10": 0.865,
+   "det25": 1.0,
+   "mono": 0.99,
+   "det10_ge_080": true,
+   "det25_ge_080": true,
+   "mono_ge_080": true
+  },
+  "floor_p5_delta": -2.7491147146410313
+ },
+ "1200": {
+  "key": "USABLE",
+  "rule_outcome": "USABLE",
+  "gated": true,
+  "text": "At 1,200 cells per sample, this depth preserves the sensitivity the mixing control was validated at.",
+  "conditions": {
+   "det10": 1.0,
+   "det25": 1.0,
+   "mono": 1.0,
+   "det10_ge_080": true,
+   "det25_ge_080": true,
+   "mono_ge_080": true
+  },
+  "floor_p5_delta": -1.4243942645260537
+ }
+}

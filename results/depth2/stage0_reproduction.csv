@@ -1,0 +1,160 @@
+item,kind,gated,stored,reproduced,abs_diff,ok
+split_idx.npz O indices identical (extra check),exact,True,True,True,,True
+split_idx.npz aged_B indices identical (extra check),exact,True,True,True,,True
+split_idx.npz Y indices identical (extra check),exact,True,True,True,,True
+split_idx.npz young_B indices identical (extra check),exact,True,True,True,,True
+O pool (GM00731 half A) and aged_B disjoint (extra check),exact,True,0,0,,True
+Y pool (GM23815 half A) and young_B disjoint (extra check),exact,True,0,0,,True
+detection n=400 f=0.00 n_aged,exact,True,400,400,,True
+detection n=400 f=0.00 n_young,exact,True,0,0,,True
+detection n=400 f=0.00 n_draws,exact,True,200,200,,True
+detection n=400 f=0.00 n_detected,exact,True,0,0,,True
+detection n=400 f=0.00 detection_rate,tol,True,0.0,0.0,0.0,True
+detection n=400 f=0.00 role,exact,True,chance baseline (f=0 against its own floor),chance baseline (f=0 against its own floor),,True
+detection n=400 f=0.00 floor_p5_delta,tol,True,23.90194974342085,23.90194974342085,0.0,True
+detection n=400 f=0.00 median_frac,tol,True,0.0683745970437417,0.06837459704374177,6.938893903907228e-17,True
+detection n=400 f=0.00 median_delta,tol,True,26.060753216995955,26.060753216995955,0.0,True
+detection n=400 f=0.00 diag_p5_frac,tol,True,0.0485516400443739,0.04855164004437392,2.0816681711721685e-17,True
+detection n=400 f=0.00 diag_p95_frac,tol,True,0.0874302437259712,0.08743024372597123,2.7755575615628914e-17,True
+detection n=400 f=0.00 diag_p5_delta,tol,True,23.90194974342085,23.90194974342085,0.0,True
+detection n=400 f=0.00 diag_p95_delta,tol,True,28.492105721942355,28.492105721942355,0.0,True
+detection n=400 f=0.00 diag_median_cos,tol,True,0.0848110119793038,0.0848110119793038,0.0,True
+detection n=400 f=0.00 diag_share_delta_lt_0,tol,True,0.0,0.0,0.0,True
+detection n=400 f=0.00 diag_share_below_floor,tol,True,0.05,0.05,0.0,True
+detection n=400 f=0.00 diag_p95_frac_f0,tol,True,0.0874302437259712,0.08743024372597123,2.7755575615628914e-17,True
+detection n=400 f=0.00 diag_share_frac_gt_f0_p95,tol,True,0.05,0.05,0.0,True
+detection n=400 f=0.10 n_aged,exact,True,360,360,,True
+detection n=400 f=0.10 n_young,exact,True,40,40,,True
+detection n=400 f=0.10 n_draws,exact,True,200,200,,True
+detection n=400 f=0.10 n_detected,exact,True,0,0,,True
+detection n=400 f=0.10 detection_rate,tol,True,0.0,0.0,0.0,True
+detection n=400 f=0.10 role,exact,True,spike-in,spike-in,,True
+detection n=400 f=0.10 floor_p5_delta,tol,True,23.90194974342085,23.90194974342085,0.0,True
+detection n=400 f=0.10 median_frac,tol,True,0.1399461782342503,0.13994617823425032,2.7755575615628914e-17,True
+detection n=400 f=0.10 median_delta,tol,True,20.44850017103548,20.448500171035477,3.552713678800501e-15,True
+detection n=400 f=0.10 diag_p5_frac,tol,True,0.1153966293678792,0.11539662936787923,2.7755575615628914e-17,True
+detection n=400 f=0.10 diag_p95_frac,tol,True,0.1648768424187326,0.16487684241873268,8.326672684688674e-17,True
+detection n=400 f=0.10 diag_p5_delta,tol,True,17.83905160953385,17.83905160953385,0.0,True
+detection n=400 f=0.10 diag_p95_delta,tol,True,23.00707934224254,23.00707934224254,0.0,True
+detection n=400 f=0.10 diag_median_cos,tol,True,0.1708112984903896,0.17081129849038967,8.326672684688674e-17,True
+detection n=400 f=0.10 diag_share_delta_lt_0,tol,True,0.0,0.0,0.0,True
+detection n=400 f=0.10 diag_share_below_floor,tol,True,0.98,0.98,0.0,True
+detection n=400 f=0.10 diag_p95_frac_f0,tol,True,0.0874302437259712,0.08743024372597123,2.7755575615628914e-17,True
+detection n=400 f=0.10 diag_share_frac_gt_f0_p95,tol,True,1.0,1.0,0.0,True
+detection n=400 f=0.25 n_aged,exact,True,300,300,,True
+detection n=400 f=0.25 n_young,exact,True,100,100,,True
+detection n=400 f=0.25 n_draws,exact,True,200,200,,True
+detection n=400 f=0.25 n_detected,exact,True,0,0,,True
+detection n=400 f=0.25 detection_rate,tol,True,0.0,0.0,0.0,True
+detection n=400 f=0.25 role,exact,True,spike-in,spike-in,,True
+detection n=400 f=0.25 floor_p5_delta,tol,True,23.90194974342085,23.90194974342085,0.0,True
+detection n=400 f=0.25 median_frac,tol,True,0.239145862999553,0.23914586299955307,5.551115123125783e-17,True
+detection n=400 f=0.25 median_delta,tol,True,13.469688319744598,13.469688319744598,0.0,True
+detection n=400 f=0.25 diag_p5_frac,tol,True,0.2163946365409283,0.21639463654092836,5.551115123125783e-17,True
+detection n=400 f=0.25 diag_p95_frac,tol,True,0.2645696098557411,0.26456960985574113,5.551115123125783e-17,True
+detection n=400 f=0.25 diag_p5_delta,tol,True,10.90635674772605,10.90635674772605,0.0,True
+detection n=400 f=0.25 diag_p95_delta,tol,True,15.99828525305128,15.998285253051279,1.7763568394002505e-15,True
+detection n=400 f=0.25 diag_median_cos,tol,True,0.2809507543255569,0.2809507543255569,0.0,True
+detection n=400 f=0.25 diag_share_delta_lt_0,tol,True,0.0,0.0,0.0,True
+detection n=400 f=0.25 diag_share_below_floor,tol,True,1.0,1.0,0.0,True
+detection n=400 f=0.25 diag_p95_frac_f0,tol,True,0.0874302437259712,0.08743024372597123,2.7755575615628914e-17,True
+detection n=400 f=0.25 diag_share_frac_gt_f0_p95,tol,True,1.0,1.0,0.0,True
+detection n=400 f=0.50 n_aged,exact,True,200,200,,True
+detection n=400 f=0.50 n_young,exact,True,200,200,,True
+detection n=400 f=0.50 n_draws,exact,True,200,200,,True
+detection n=400 f=0.50 n_detected,exact,True,1,1,,True
+detection n=400 f=0.50 detection_rate,tol,True,0.005,0.005,0.0,True
+detection n=400 f=0.50 role,exact,True,spike-in,spike-in,,True
+detection n=400 f=0.50 floor_p5_delta,tol,True,23.90194974342085,23.90194974342085,0.0,True
+detection n=400 f=0.50 median_frac,tol,True,0.4161071358735982,0.41610713587359827,5.551115123125783e-17,True
+detection n=400 f=0.50 median_delta,tol,True,3.886322991980684,3.886322991980684,0.0,True
+detection n=400 f=0.50 diag_p5_frac,tol,True,0.3840621179735534,0.3840621179735534,0.0,True
+detection n=400 f=0.50 diag_p95_frac,tol,True,0.4427490066713603,0.4427490066713603,0.0,True
+detection n=400 f=0.50 diag_p5_delta,tol,True,1.4411515075400034,1.4411515075400034,0.0,True
+detection n=400 f=0.50 diag_p95_delta,tol,True,6.98453864293967,6.98453864293967,0.0,True
+detection n=400 f=0.50 diag_median_cos,tol,True,0.4381556583403169,0.4381556583403169,0.0,True
+detection n=400 f=0.50 diag_share_delta_lt_0,tol,True,0.005,0.005,0.0,True
+detection n=400 f=0.50 diag_share_below_floor,tol,True,1.0,1.0,0.0,True
+detection n=400 f=0.50 diag_p95_frac_f0,tol,True,0.0874302437259712,0.08743024372597123,2.7755575615628914e-17,True
+detection n=400 f=0.50 diag_share_frac_gt_f0_p95,tol,True,1.0,1.0,0.0,True
+detection n=1200 f=0.00 n_aged,exact,True,1200,1200,,True
+detection n=1200 f=0.00 n_young,exact,True,0,0,,True
+detection n=1200 f=0.00 n_draws,exact,True,200,200,,True
+detection n=1200 f=0.00 n_detected,exact,True,0,0,,True
+detection n=1200 f=0.00 detection_rate,tol,True,0.0,0.0,0.0,True
+detection n=1200 f=0.00 role,exact,True,chance baseline (f=0 against its own floor),chance baseline (f=0 against its own floor),,True
+detection n=1200 f=0.00 floor_p5_delta,tol,True,5.559254499106801,5.559254499106801,0.0,True
+detection n=1200 f=0.00 median_frac,tol,True,0.0945561021159389,0.09455610211593898,8.326672684688674e-17,True
+detection n=1200 f=0.00 median_delta,tol,True,6.760856243241072,6.760856243241072,0.0,True
+detection n=1200 f=0.00 diag_p5_frac,tol,True,0.0848587978396841,0.08485879783968411,1.3877787807814457e-17,True
+detection n=1200 f=0.00 diag_p95_frac,tol,True,0.1050001960571969,0.10500019605719699,8.326672684688674e-17,True
+detection n=1200 f=0.00 diag_p5_delta,tol,True,5.559254499106801,5.559254499106801,0.0,True
+detection n=1200 f=0.00 diag_p95_delta,tol,True,7.796826575631127,7.796826575631127,0.0,True
+detection n=1200 f=0.00 diag_median_cos,tol,True,0.1704303513775017,0.17043035137750173,2.7755575615628914e-17,True
+detection n=1200 f=0.00 diag_share_delta_lt_0,tol,True,0.0,0.0,0.0,True
+detection n=1200 f=0.00 diag_share_below_floor,tol,True,0.05,0.05,0.0,True
+detection n=1200 f=0.00 diag_p95_frac_f0,tol,True,0.1050001960571969,0.10500019605719699,8.326672684688674e-17,True
+detection n=1200 f=0.00 diag_share_frac_gt_f0_p95,tol,True,0.05,0.05,0.0,True
+detection n=1200 f=0.10 n_aged,exact,True,1080,1080,,True
+detection n=1200 f=0.10 n_young,exact,True,120,120,,True
+detection n=1200 f=0.10 n_draws,exact,True,200,200,,True
+detection n=1200 f=0.10 n_detected,exact,True,146,146,,True
+detection n=1200 f=0.10 detection_rate,tol,True,0.73,0.73,0.0,True
+detection n=1200 f=0.10 role,exact,True,spike-in,spike-in,,True
+detection n=1200 f=0.10 floor_p5_delta,tol,True,5.559254499106801,5.559254499106801,0.0,True
+detection n=1200 f=0.10 median_frac,tol,True,0.1650593455132629,0.16505934551326296,5.551115123125783e-17,True
+detection n=1200 f=0.10 median_delta,tol,True,-0.4620107591254907,-0.4620107591254907,0.0,True
+detection n=1200 f=0.10 diag_p5_frac,tol,True,0.1560073005281476,0.15600730052814765,5.551115123125783e-17,True
+detection n=1200 f=0.10 diag_p95_frac,tol,True,0.176152470734779,0.17615247073477905,5.551115123125783e-17,True
+detection n=1200 f=0.10 diag_p5_delta,tol,True,-1.7229765254069724,-1.7229765254069724,0.0,True
+detection n=1200 f=0.10 diag_p95_delta,tol,True,0.6990867757828686,0.6990867757828686,0.0,True
+detection n=1200 f=0.10 diag_median_cos,tol,True,0.2904429139101483,0.2904429139101483,0.0,True
+detection n=1200 f=0.10 diag_share_delta_lt_0,tol,True,0.73,0.73,0.0,True
+detection n=1200 f=0.10 diag_share_below_floor,tol,True,1.0,1.0,0.0,True
+detection n=1200 f=0.10 diag_p95_frac_f0,tol,True,0.1050001960571969,0.10500019605719699,8.326672684688674e-17,True
+detection n=1200 f=0.10 diag_share_frac_gt_f0_p95,tol,True,1.0,1.0,0.0,True
+detection n=1200 f=0.25 n_aged,exact,True,900,900,,True
+detection n=1200 f=0.25 n_young,exact,True,300,300,,True
+detection n=1200 f=0.25 n_draws,exact,True,200,200,,True
+detection n=1200 f=0.25 n_detected,exact,True,200,200,,True
+detection n=1200 f=0.25 detection_rate,tol,True,1.0,1.0,0.0,True
+detection n=1200 f=0.25 role,exact,True,spike-in,spike-in,,True
+detection n=1200 f=0.25 floor_p5_delta,tol,True,5.559254499106801,5.559254499106801,0.0,True
+detection n=1200 f=0.25 median_frac,tol,True,0.2621620638447243,0.26216206384472435,5.551115123125783e-17,True
+detection n=1200 f=0.25 median_delta,tol,True,-9.848023888356408,-9.848023888356408,0.0,True
+detection n=1200 f=0.25 diag_p5_frac,tol,True,0.2491775315797108,0.2491775315797108,0.0,True
+detection n=1200 f=0.25 diag_p95_frac,tol,True,0.2761345180354062,0.2761345180354062,0.0,True
+detection n=1200 f=0.25 diag_p5_delta,tol,True,-11.315703829286685,-11.315703829286685,0.0,True
+detection n=1200 f=0.25 diag_p95_delta,tol,True,-8.417181266150676,-8.417181266150676,0.0,True
+detection n=1200 f=0.25 diag_median_cos,tol,True,0.435350181033115,0.43535018103311507,5.551115123125783e-17,True
+detection n=1200 f=0.25 diag_share_delta_lt_0,tol,True,1.0,1.0,0.0,True
+detection n=1200 f=0.25 diag_share_below_floor,tol,True,1.0,1.0,0.0,True
+detection n=1200 f=0.25 diag_p95_frac_f0,tol,True,0.1050001960571969,0.10500019605719699,8.326672684688674e-17,True
+detection n=1200 f=0.25 diag_share_frac_gt_f0_p95,tol,True,1.0,1.0,0.0,True
+detection n=1200 f=0.50 n_aged,exact,True,600,600,,True
+detection n=1200 f=0.50 n_young,exact,True,600,600,,True
+detection n=1200 f=0.50 n_draws,exact,True,200,200,,True
+detection n=1200 f=0.50 n_detected,exact,True,200,200,,True
+detection n=1200 f=0.50 detection_rate,tol,True,1.0,1.0,0.0,True
+detection n=1200 f=0.50 role,exact,True,spike-in,spike-in,,True
+detection n=1200 f=0.50 floor_p5_delta,tol,True,5.559254499106801,5.559254499106801,0.0,True
+detection n=1200 f=0.50 median_frac,tol,True,0.4303392249012456,0.43033922490124565,5.551115123125783e-17,True
+detection n=1200 f=0.50 median_delta,tol,True,-24.1968195195136,-24.196819519513596,3.552713678800501e-15,True
+detection n=1200 f=0.50 diag_p5_frac,tol,True,0.416044013380861,0.416044013380861,0.0,True
+detection n=1200 f=0.50 diag_p95_frac,tol,True,0.445558034853455,0.445558034853455,0.0,True
+detection n=1200 f=0.50 diag_p5_delta,tol,True,-25.734150940036788,-25.734150940036788,0.0,True
+detection n=1200 f=0.50 diag_p95_delta,tol,True,-22.78703766454259,-22.78703766454259,0.0,True
+detection n=1200 f=0.50 diag_median_cos,tol,True,0.6121822846404189,0.6121822846404189,0.0,True
+detection n=1200 f=0.50 diag_share_delta_lt_0,tol,True,1.0,1.0,0.0,True
+detection n=1200 f=0.50 diag_share_below_floor,tol,True,1.0,1.0,0.0,True
+detection n=1200 f=0.50 diag_p95_frac_f0,tol,True,0.1050001960571969,0.10500019605719699,8.326672684688674e-17,True
+detection n=1200 f=0.50 diag_share_frac_gt_f0_p95,tol,True,1.0,1.0,0.0,True
+draws.csv 400/1200 rows matched (extra check),exact,True,1600,1600,,True
+draws.csv per-draw n_aged all equal (extra check),exact,True,True,True,,True
+draws.csv per-draw n_young all equal (extra check),exact,True,True,True,,True
+"draws.csv per-draw frac within tol, n_failed (extra check)",exact,True,0,0,9.71445146547012e-17,True
+"draws.csv per-draw delta within tol, n_failed (extra check)",exact,True,0,0,3.552713678800501e-15,True
+monotonic n=400 n_monotonic (extra check),exact,True,200,200,,True
+readings n=400 rule_outcome (extra check),exact,True,INSUFFICIENT,INSUFFICIENT,,True
+monotonic n=1200 n_monotonic (extra check),exact,True,200,200,,True
+readings n=1200 rule_outcome (extra check),exact,True,MARGINAL,MARGINAL,,True

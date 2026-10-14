@@ -1,0 +1,32 @@
+==========================================================================================
+DEPTH2 seed=20260915 N_GRID=(400, 1200) f=(0.0, 0.1, 0.25, 0.5) n_draws=200
+==========================================================================================
+[frozen] C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\fibro\frozen_ruler_ridge_raw.npz n_genes=23485
+[columns louvain_obs_GM00731] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\louvain_obs_GM00731.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM00731] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\t2_cluster_labels_GM00731.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM00731] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM00731] n_cells=22132 n_clusters=19 days=[0, 3, 7, 10]
+[columns louvain_obs_GM23815] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\louvain_obs_GM23815.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[columns labels_GM23815] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\t2_cluster_labels_GM23815.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[cell_scores GM23815] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[donor GM23815] n_cells=33858 n_clusters=19 days=[0, 3, 7, 10]
+[stage0 draws] n_total=400 50/200
+[stage0 draws] n_total=400 100/200
+[stage0 draws] n_total=400 150/200
+[stage0 draws] n_total=400 200/200
+[stage0 draws] n_total=1200 50/200
+[stage0 draws] n_total=1200 100/200
+[stage0 draws] n_total=1200 150/200
+[stage0 draws] n_total=1200 200/200
+[stage0] checks=159 gated=159 gated_failures=0
+[draws] n_total=400 f=0.0 200/200
+[draws] n_total=400 f=0.1 200/200
+[draws] n_total=400 f=0.25 200/200
+[draws] n_total=400 f=0.5 200/200
+[draws] n_total=1200 f=0.0 200/200
+[draws] n_total=1200 f=0.1 200/200
+[draws] n_total=1200 f=0.25 200/200
+[draws] n_total=1200 f=0.5 200/200
+[reading] n_total=400 key=USABLE {'det10': 0.865, 'det25': 1.0, 'mono': 0.99, 'det10_ge_080': True, 'det25_ge_080': True, 'mono_ge_080': True}
+[reading] n_total=1200 key=USABLE {'det10': 1.0, 'det25': 1.0, 'mono': 1.0, 'det10_ge_080': True, 'det25_ge_080': True, 'mono_ge_080': True}
+[run] DONE
