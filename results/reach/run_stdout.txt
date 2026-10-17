@@ -1,0 +1,26 @@
+[      0s] ================================================================================
+[      0s] REACH run seed=20260914 k=('1', '3', '5', '10', '50', 'unlimited') targets=200 workers=16
+[      0s] [stage1] d_f (1836, 23485) keep 1836
+[      0s] [basis] L20 (23485, 20) max|LtL-I| = 3.553e-15
+[      1s] [stage0] checks=15 gated=15 failed=0
+[     32s] [panel] rebuilt from stored counts (22s)
+[     38s] [nt csr] cells=14013 nnz=31999592 (4s)
+[     38s] [stage0] checks=20 gated=20 failed=0
+[     38s] [draws] distinct n = 212 (13-341); max multiplicity 32
+[    100s] [draws] 25/212 depths (62s)
+[    152s] [draws] 50/212 depths (114s)
+[    219s] [draws] 75/212 depths (180s)
+[    295s] [draws] 100/212 depths (257s)
+[    365s] [draws] 125/212 depths (327s)
+[    405s] [draws] 150/212 depths (366s)
+[    441s] [draws] 175/212 depths (402s)
+[    508s] [draws] 200/212 depths (469s)
+[    543s] [draws] 212/212 depths (504s)
+[    543s] [stage0] checks=30 gated=30 failed=0
+[    543s] [stage0] all gated checks pass
+[    543s] [inputs] g = 27.929154; s_f = 0 for 575 of 1836 factors; null bank s = 0 for 1011
+[    544s] [solver check] {'greedy_frac': np.float64(0.9999999999999999), 'greedy_selected': [1836], 'l1_frac': np.float64(0.9999999999999999), 'l1_selected': [1836], 'ok_greedy': True, 'ok_l1': True, 'passed': True}
+[    544s] [A young] k=1: 0.0926, k=3: 0.1771, k=5: 0.1901, k=10: 0.1933, k=50: 0.1933, k=unlimited: 0.1933 ok=True (1s; L1 solves 59)
+[    545s] [B young] k=1: 0.0670, k=3: 0.1487, k=5: 0.1669, k=10: 0.1738, k=50: 0.1738, k=unlimited: 0.1738 ok=True (1s; L1 solves 60)
+[    546s] [C young] k=1: 0.0938, k=3: 0.1861, k=5: 0.1957, k=10: 0.1958, k=50: 0.1958, k=unlimited: 0.1958 ok=True (1s; L1 solves 62)
+[    568s] [STOP] solver_not_converged: set D target 11: a solve failed the duality-gap test (max gap 4.268e-06).

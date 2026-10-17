@@ -1,0 +1,13 @@
+{
+  "greedy_frac": 0.9999999999999999,
+  "greedy_selected": [
+    1836
+  ],
+  "l1_frac": 0.9999999999999999,
+  "l1_selected": [
+    1836
+  ],
+  "ok_greedy": true,
+  "ok_l1": true,
+  "passed": true
+}

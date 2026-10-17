@@ -1,0 +1,4 @@
+{
+  "key": "solver_not_converged",
+  "message": "set D target 11: a solve failed the duality-gap test (max gap 4.268e-06)."
+}

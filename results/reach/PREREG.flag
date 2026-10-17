@@ -1,0 +1,224 @@
+TASK: REACH — the reachability bound. How close to the young anchor can any
+weighted sum of Southard's measured factor displacements get?
+Written 2026-10-17T22:22Z (2026-10-18 07:22 +0900), before any REACH number
+exists. No threshold or wording in this block is changed after numbers exist.
+Stored prior results read so far, all as written by earlier tasks:
+results/south6/origin_target_distances.csv, stage2a_floor_summary.csv,
+stage0_cells_per_target.csv (factor count 1,836; cell counts 13-341, 212
+distinct values, largest multiplicity of one count 32), results/south7/
+basis_retention.csv and the first rows of stage_a1_depth_nulls.csv, and the
+code of src/south6_run.py, south6rec_run.py, south7_run.py, transfer_run.py,
+seng_run.py. Solver behaviour was checked on synthetic random matrices only
+(no project data) to choose the convergence test below.
+results/transfer/NOT_A_RESULT_gate_failed/ is not opened.
+
+--- WHAT THIS IS ---
+The TF search model blueprint calls this the reachability bound and labels it
+"sizing information, never evidence". That label is binding here. The
+calculation assumes Southard's directions are measured rather than
+estimated, and that they transfer to aged cells. Neither is conservative. A
+positive result is an upper bound under optimistic assumptions; a negative
+result does not show unreachability in aged cells.
+
+No reading of this task licenses a claim about aged cells. A positive bound sizes an experiment; it does not support one.
+
+--- INSTRUMENTS (read, never refit) ---
+- d_f: results/south6/stage1.npz key `d_f` (1,836 x 23,485 frozen-z ruler
+  coordinates; 0 off the 20,264 matched genes), labels `keep`.
+- Space S2A_k20: L20 = results/south7/basis.npz `L_mid_full[:, :20]`.
+  Projection is applied last and to differences only (SENG3 amendment B6):
+  b = (c_young - c_old) @ L20; D20 = d_f @ L20; a null displacement E
+  (a difference) is projected the same way. center_mid never enters.
+- c_old, c_young: results/south7/basis.npz (the O1/Y1 GTEx anchor centroids
+  of SOUTH6/SOUTH7).
+- Per-factor cell counts: diff of stage1.npz `cell_indptr`, checked against
+  results/south6/stage0_cells_per_target.csv.
+- Control pool: stage1.npz `nt_cells` (14,013 non-targeting cells), counts
+  read from the SOUTH6 matched-gene CSR cache (results/south6/matched_*);
+  the panel TMM cache rebuilt from stored stage1.npz `C_f`, `C_nt`, `C_pool`
+  exactly as south6rec_run.stage0 / transfer_run.stage0 do; z against the
+  frozen GTEx mu/sd (fibro2_common.load_frozen_ruler), absent genes z = 0.
+- Seed 20260914 everywhere (generators named below).
+
+--- THE OPTIMISATION ---
+g = ||b|| (S2A_k20). For w in [0, 1]^1836 (1 = the dose Southard delivered):
+  frac_closed(w) = (g - ||D20^T w - b||) / g
+(equivalently the predicted state c_old + sum_f w_f d_f, all projected,
+against c_young). w = 0 gives 0, so every optimum is >= 0.
+Sparsity caps k = 1, 3, 5, 10, 50 and unlimited; k caps the number of
+non-zero weights (nnz <= k). No penalty other than the dose cap and k.
+- Unlimited: bounded least squares, scipy.optimize.lsq_linear(method="bvls",
+  bounds (0, 1), tol 1e-12, max_iter 10000). Exact.
+- Greedy (finite k): start w = 0, active set S empty. Each step, for every
+  j not in S, t_j = clip(-(a_j . e)/||a_j||^2, 0, 1) with e = A w - b
+  (A = D20^T, columns a_j), gain_j = ||e||^2 - ||e + t_j a_j||^2. Add the j
+  with the largest gain (lowest index on ties); stop early if no gain > 0.
+  Re-optimise all weights in S by BVLS (same settings). Repeat until nnz(w)
+  reaches k or no candidate gains. At k = 1 this is exhaustive and exact.
+- L1 relaxation (finite k): P(lam): minimise 0.5||A w - b||^2 + lam*sum(w)
+  over [0, 1]^n (sum(w) is the L1 norm since w >= 0), solved by L-BFGS-B
+  (scipy.optimize.minimize, analytic gradient, ftol 1e-16, gtol 1e-12,
+  maxiter 20000, maxcor 30), warm-started. lam_max = max_j (A^T b)_j; if
+  lam_max <= 0 the support is empty. lam is bisected in log space on
+  [lam_max * 1e-10, lam_max] for 60 steps to find nnz == k, nnz counting
+  w_j > 1e-6. If no step gives exactly k, the step with the largest
+  nnz <= k is used (smallest lam among ties); the nnz actually hit is
+  reported. The support's weights are then refit by BVLS with no penalty
+  (relaxed L1), and frac is computed from the refit.
+- Gated value at finite k: max(greedy, L1-refit); both are feasible, so the
+  better is the tighter lower estimate of the k-sparse optimum. Both are
+  reported, with |greedy - L1| and the Jaccard overlap of their supports.
+- Convergence (every solve, BVLS and L1): certified by duality gap. For
+  primal w and y = A w - b, P = 0.5||y||^2 + lam*sum(w), dual
+  D = -0.5||y||^2 - b.y + sum_j min(0, a_j.y + lam) (lam = 0 for BVLS;
+  restricted to the active columns for greedy re-fits). Converged iff
+  P - D <= 1e-8 * max(1, 0.5||b||^2), and for BVLS also status >= 1.
+  L-BFGS-B is restarted from its last point up to 20 times to meet this.
+
+--- FOUR VECTOR SETS, identical optimisation ---
+(A) RAW. D20 as stored.
+(B) SHRUNK. column f scaled by s_f = max(0, 1 - sigma_f^2 / ||D20_f||^2).
+    sigma_f^2: results/south6/stage2a_floors.npz holds gene-label
+    permutation delta floors (keys floors, les, pooled, medians), not indexed
+    by cell count and not squared norms; it does not supply sigma_f^2. So
+    sigma_f^2 is built with this task's code (deviation, stated): for each
+    distinct cell count n, the 200 depth-matched non-targeting draws of
+    south7_run.null_draws(n, 14013) (SOUTH6REC primary scheme: disjoint
+    n-cell blocks of permutations from default_rng([20260914, n])), each
+    turned into E = z(draw counts) - z(C_pool - draw counts) with the SOUTH6
+    panel TMM cache; sigma^2(n) = mean over the 200 draws of ||E @ L20||^2.
+    sigma_f^2 = sigma^2(n_f), exact per n, no interpolation.
+(C) NULL FACTOR BANK. 1,836 displacements from non-targeting cells only,
+    one per factor at that factor's cell count, by the same construction as
+    (B)'s draws. "The SOUTH6 control-draw construction" names no
+    depth-matched draw in src/south6_run.py (its control draws are
+    7,006/7,007-cell half splits and leave-one-guide-out); the construction
+    used is the one SOUTH6REC built for the SOUTH6 readout and SOUTH7 used
+    for its depth-matched floor (fixed here, stated). Factor i with count n
+    takes draw index m_i = number of earlier factors (keep order) with the
+    same n (max 32 < 200). These are the same draws that enter sigma^2(n);
+    sigma enters only (B). (C) is the null analogue of (A): its vectors are
+    NOT shrunk. R0 compares unshrunk (C) with shrunk (B) as the task text
+    writes; this is the stricter comparison for the bound.
+(D) RANDOM TARGETS. (B)'s vectors against 200 targets u_t * g, u_t = z/||z||,
+    z ~ N(0, I_20) from default_rng([20260914, 4]) (one call,
+    standard_normal((200, 20))). Every k, both finite-k methods, same
+    gated value rule.
+
+--- STAGE 0 (before anything new) ---
+Counts exact; numerics within 1e-4 * max(1, |stored|). Any gated mismatch:
+STOP prior_results_not_reproduced, naming every one.
+ (a) factor count: d_f rows = len(keep) = csv factor rows = 1,836; d_f has
+     23,485 columns; cells per factor equal stage0_cells_per_target.csv.
+ (b) basis: max|L20^T L20 - I| <= 1e-8, else STOP basis_not_orthonormal
+     (the threshold TRANSFER used on the same basis).
+ (c) ||O1 - Y1||: S1 (all 23,485 coordinates) against
+     results/south6/origin_target_distances.csv (S1, O1, Y1). S2A_k20:
+     that file has no S2A row (its k20 row is SOUTH6's S2_k20 basis), so the
+     S2A_k20 distance is checked against results/south7/basis_retention.csv
+     (k = 20, origin_target_distance) — deviation from the task text, stated.
+     Extra: basis.npz `rnorm` (S2A_k20 entry) and vector `r_S2A_k20`.
+ (d) 20 per-factor norms: factors default_rng([20260914, 0]).choice(1836,
+     20, replace=False); ||d_f|| (S1) against results/south6/
+     stage3_full_table.csv d_norm (space S1, pair O1_Y1) and ||d_f @ L20||
+     against results/south7/stage_a1_observed.csv dnorm_S2A_k20.
+Extra checks, also gated:
+ (e) the same two norms for all 1,836 factors;
+ (f) panel rebuilt from stored counts: missing-gene mask identical; rebuilt
+     d_f on matched genes within tol of stored; X_nt has 14,013 rows and
+     X_nt.sum(0) equals stored C_pool exactly;
+ (g) the null construction: for all 212 distinct n, this task's draws
+     reproduce results/south7/stage_a1_depth_nulls.csv (floor_p05, median,
+     sd, p95; spaces S2A_k20 and S1), and per-draw deltas in
+     results/south7/stage_a1_null_draws.npz (keys "n|S2A_k20", "n|S1").
+     (g) is checked after the draws are built and before any sigma^2,
+     null bank vector or frac is written or used.
+
+--- SOLVER CHECK (added; the task defines no positive control) ---
+The bound is an optimisation, not a test, so recovery power in the usual
+sense does not apply; (C) and (D) are its comparisons. To show the optimiser
+finds a direction that is there: (B)'s matrix with one extra column equal
+to b. Greedy and L1 at k = 1 must each return frac >= 1 - 1e-6 and select
+that column. Failure is STOP solver_not_converged.
+
+--- READINGS (evaluated in this order; only the one that fires is the
+conclusion) ---
+Let B(k), C(k) be the gated values for sets (B), (C) on the young target at
+k in {1, 3, 5, 10, 50, unlimited}; Dp5(k), Dp95(k) the 5th and 95th
+percentiles (numpy default linear) of the 200 random-target values at k.
+
+(R0) UNINTERPRETABLE fires if, at any k, C(k) >= B(k) - 1e-6 (a tie,
+  including both reaching the target exactly, counts as "at least as far"),
+  or if, at any k, Dp5(k) - 1e-6 <= B(k) <= Dp95(k) + 1e-6. ("At any k" is
+  applied to both clauses; this is the stricter reading.)
+  Wording: "UNINTERPRETABLE. The bound cannot distinguish the measured
+  factors from noise vectors of the same depth, so it carries no
+  information about whether young is reachable, and no number from (A) or
+  (B) may be quoted as a bound. Fired because: {list of clauses and k at
+  which each fired}."
+
+(R1) BOUND REPORTED fires otherwise.
+  Wording: "BOUND REPORTED. In S2A_k20, with Southard's factor
+  displacements shrunk for depth noise (set B), the largest fraction of the
+  O1-Y1 gap closed by any combination with doses between 0 and the
+  delivered dose is {B(k) for k = 1, 3, 5, 10, 50, unlimited}. Beside it:
+  the null factor bank (set C) closes {C(k), same k}; against 200 random
+  targets of the same length (set D) the 5th-95th percentile range is
+  {Dp5(k)-Dp95(k), same k} and the young target sits {above / below} that
+  range at every k. This is an upper bound computed under assumptions known
+  to be optimistic: that these directions are measured rather than
+  estimated, that they add, and that they transfer to aged cells. It is
+  sizing information for the combination screen. It is not evidence that
+  any combination rejuvenates aged cells, and it must not be cited as
+  such."
+
+No reading of this task licenses a claim about aged cells. A positive bound sizes an experiment; it does not support one.
+
+--- DIAGNOSTICS (not gated, labelled) ---
+- frac for (A) beside (B), per k and method: what shrinkage costs.
+- Which factors carry the weight at each k (sets A and B, both methods):
+  factor, weight, cell count, cell-count percentile among the 1,836.
+  Spearman (scipy.stats.spearmanr) between weight and cell count over the
+  selected (non-zero) factors where at least 3 are selected, and over all
+  1,836 (zeros included) at unlimited k. The project's shortlist-versus-
+  depth check.
+- s_f: count of factors shrunk to 0 in (B), with the chance baseline: the
+  count of (C)'s null vectors that the same rule (their own n) shrinks to 0.
+- (C) shrunk by the same rule, and (A) vs (C): not gated.
+- Full gene space S1 (all 23,485 coordinates, b = c_young - c_old): sets A,
+  B (sigma^2 from the same draws, full-space squared norms) and C, same
+  algorithms, run in Gram-reduced form (G = A^T A = U L U^T, A' = L^1/2 U^T
+  over eigenvalues > 1e-10 * max, b' = L^-1/2 U^T A^T b, constant
+  ||b||^2 - ||b'||^2 added back). D is not run in S1. Caveat: S1 includes
+  the 3,221 ruler genes the factors cannot move (z = 0 in d_f) and many
+  noise dimensions; its numbers are not comparable to S2A_k20 and are not
+  gated. A solver failure here is recorded, not a STOP.
+
+--- STOP KEYS ---
+prior_results_not_reproduced: any gated Stage 0 mismatch (every one named).
+basis_not_orthonormal: Stage 0 (b).
+solver_not_converged: any gated solve (sets A-D in S2A_k20, the solver
+  check) fails the convergence test.
+After a STOP: write the findings with the STOP key and exit. No computation
+after a STOP, no restart with an adjustment.
+
+--- WHAT THIS DOES NOT COVER ---
+- Southard is Hs27 neonatal foreskin fibroblasts, not aged donors. Nothing
+  here transfers to aged cells.
+- The transfer check (FINDINGS_TRANSFER.md, commit 7230271) could not
+  measure whether these directions carry to another fibroblast context.
+- Doses above the delivered one are not modelled; w <= 1 is the cap, and
+  any w in (0, 1) assumes a partial dose acts as a scaled displacement,
+  itself an assumption.
+- Additivity of displacements is assumed, not tested.
+- Nothing here models toxicity, identity loss or proliferation.
+- Circularity, disclosed: the null draws, sigma^2 and (C) all come from the
+  same 14,013 non-targeting cells that form d_f's reference pool; (C)'s
+  vectors are among the draws that estimate sigma^2.
+
+--- OUTPUTS ---
+src/reach_run.py; results/reach/ (PREREG.flag, stage0_reproduction.csv,
+null_depths.csv, factors.csv, inputs_k20.npz, frac_table.csv,
+random_targets.csv, weights.csv, spearman.csv, fullspace.csv,
+readings.json, run.log, STOP.json if a STOP fires); FINDINGS_REACH.md with
+this block verbatim at the top. One local commit, not pushed.
