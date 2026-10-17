@@ -1,0 +1,62 @@
+{
+  "B": {
+    "1": 0.06700401263068821,
+    "3": 0.14870747297007844,
+    "5": 0.16688948928663253,
+    "10": 0.17379994694719272,
+    "50": 0.17379994694719272,
+    "unlimited": 0.17379994694719272
+  },
+  "C": {
+    "1": 0.09384071734735533,
+    "3": 0.18606520769520696,
+    "5": 0.1957264903637514,
+    "10": 0.19580773760943104,
+    "50": 0.19580773760943104,
+    "unlimited": 0.19580773760943104
+  },
+  "Dp5": {
+    "1": 0.019720354758760574,
+    "3": 0.027410626433931346,
+    "5": 0.029907657460867848,
+    "10": 0.029907657460867848,
+    "50": 0.029907657460867848,
+    "unlimited": 0.02990765746086797
+  },
+  "Dp95": {
+    "1": 0.175505756501385,
+    "3": 0.29016892276219525,
+    "5": 0.3340530565726472,
+    "10": 0.38709601052680187,
+    "50": 0.394563616857742,
+    "unlimited": 0.3945636168577419
+  },
+  "Dmed": {
+    "1": 0.07771618941747929,
+    "3": 0.13088993858669812,
+    "5": 0.15104028519984927,
+    "10": 0.16759803587992764,
+    "50": 0.16786565562244848,
+    "unlimited": 0.16786565562244843
+  },
+  "c_clause": [
+    "1",
+    "3",
+    "5",
+    "10",
+    "50",
+    "unlimited"
+  ],
+  "d_clause": [
+    "1",
+    "3",
+    "5",
+    "10",
+    "50",
+    "unlimited"
+  ],
+  "fired": "R0",
+  "text": "UNINTERPRETABLE. The bound cannot distinguish the measured factors from noise vectors of the same depth, so it carries no information about whether young is reachable, and no number from (A) or (B) may be quoted as a bound. Fired because: the null bank (C) reaches at least as far as the shrunken real factors (B) at k = 1, 3, 5, 10, 50, unlimited; the young target sits inside the middle 90% of the random-target distribution (D) at k = 1, 3, 5, 10, 50, unlimited.",
+  "g_S2A_k20": 27.929154451474936,
+  "solver_check_passed": true
+}

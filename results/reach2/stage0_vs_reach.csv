@@ -1,0 +1,361 @@
+row,item,column,reach,reach2,ok,gated
+0,(a) factor count: d_f rows,item,(a) factor count: d_f rows,(a) factor count: d_f rows,True,True
+0,(a) factor count: d_f rows,kind,exact,exact,True,True
+0,(a) factor count: d_f rows,gated,True,True,True,True
+0,(a) factor count: d_f rows,extra,False,False,True,True
+0,(a) factor count: d_f rows,n,1,1,True,True
+0,(a) factor count: d_f rows,n_mismatch,0,0,True,True
+0,(a) factor count: d_f rows,ok,True,True,True,True
+0,(a) factor count: d_f rows,stored,1836.0,1836.0,True,True
+0,(a) factor count: d_f rows,reproduced,1836.0,1836.0,True,True
+0,(a) factor count: d_f rows,max_abs_diff,,,True,True
+0,(a) factor count: d_f rows,max_scaled_diff,,,True,True
+0,(a) factor count: d_f rows,note (not gated),nan,nan,True,False
+1,(a) factor count: len(keep),item,(a) factor count: len(keep),(a) factor count: len(keep),True,True
+1,(a) factor count: len(keep),kind,exact,exact,True,True
+1,(a) factor count: len(keep),gated,True,True,True,True
+1,(a) factor count: len(keep),extra,False,False,True,True
+1,(a) factor count: len(keep),n,1,1,True,True
+1,(a) factor count: len(keep),n_mismatch,0,0,True,True
+1,(a) factor count: len(keep),ok,True,True,True,True
+1,(a) factor count: len(keep),stored,1836.0,1836.0,True,True
+1,(a) factor count: len(keep),reproduced,1836.0,1836.0,True,True
+1,(a) factor count: len(keep),max_abs_diff,,,True,True
+1,(a) factor count: len(keep),max_scaled_diff,,,True,True
+1,(a) factor count: len(keep),note (not gated),nan,nan,True,False
+2,(a) factor count: stage0_cells_per_target.csv factor rows,item,(a) factor count: stage0_cells_per_target.csv factor rows,(a) factor count: stage0_cells_per_target.csv factor rows,True,True
+2,(a) factor count: stage0_cells_per_target.csv factor rows,kind,exact,exact,True,True
+2,(a) factor count: stage0_cells_per_target.csv factor rows,gated,True,True,True,True
+2,(a) factor count: stage0_cells_per_target.csv factor rows,extra,False,False,True,True
+2,(a) factor count: stage0_cells_per_target.csv factor rows,n,1,1,True,True
+2,(a) factor count: stage0_cells_per_target.csv factor rows,n_mismatch,0,0,True,True
+2,(a) factor count: stage0_cells_per_target.csv factor rows,ok,True,True,True,True
+2,(a) factor count: stage0_cells_per_target.csv factor rows,stored,1836.0,1836.0,True,True
+2,(a) factor count: stage0_cells_per_target.csv factor rows,reproduced,1836.0,1836.0,True,True
+2,(a) factor count: stage0_cells_per_target.csv factor rows,max_abs_diff,,,True,True
+2,(a) factor count: stage0_cells_per_target.csv factor rows,max_scaled_diff,,,True,True
+2,(a) factor count: stage0_cells_per_target.csv factor rows,note (not gated),nan,nan,True,False
+3,(a) d_f columns (ruler coordinates),item,(a) d_f columns (ruler coordinates),(a) d_f columns (ruler coordinates),True,True
+3,(a) d_f columns (ruler coordinates),kind,exact,exact,True,True
+3,(a) d_f columns (ruler coordinates),gated,True,True,True,True
+3,(a) d_f columns (ruler coordinates),extra,False,False,True,True
+3,(a) d_f columns (ruler coordinates),n,1,1,True,True
+3,(a) d_f columns (ruler coordinates),n_mismatch,0,0,True,True
+3,(a) d_f columns (ruler coordinates),ok,True,True,True,True
+3,(a) d_f columns (ruler coordinates),stored,23485.0,23485.0,True,True
+3,(a) d_f columns (ruler coordinates),reproduced,23485.0,23485.0,True,True
+3,(a) d_f columns (ruler coordinates),max_abs_diff,,,True,True
+3,(a) d_f columns (ruler coordinates),max_scaled_diff,,,True,True
+3,(a) d_f columns (ruler coordinates),note (not gated),nan,nan,True,False
+4,(a) cells per factor equal stage0_cells_per_target.csv,item,(a) cells per factor equal stage0_cells_per_target.csv,(a) cells per factor equal stage0_cells_per_target.csv,True,True
+4,(a) cells per factor equal stage0_cells_per_target.csv,kind,exact,exact,True,True
+4,(a) cells per factor equal stage0_cells_per_target.csv,gated,True,True,True,True
+4,(a) cells per factor equal stage0_cells_per_target.csv,extra,False,False,True,True
+4,(a) cells per factor equal stage0_cells_per_target.csv,n,1836,1836,True,True
+4,(a) cells per factor equal stage0_cells_per_target.csv,n_mismatch,0,0,True,True
+4,(a) cells per factor equal stage0_cells_per_target.csv,ok,True,True,True,True
+4,(a) cells per factor equal stage0_cells_per_target.csv,stored,,,True,True
+4,(a) cells per factor equal stage0_cells_per_target.csv,reproduced,,,True,True
+4,(a) cells per factor equal stage0_cells_per_target.csv,max_abs_diff,,,True,True
+4,(a) cells per factor equal stage0_cells_per_target.csv,max_scaled_diff,,,True,True
+4,(a) cells per factor equal stage0_cells_per_target.csv,note (not gated),nan,nan,True,False
+5,(b) basis orthonormality max|L20^T L20 - I| <= 1e-8,item,(b) basis orthonormality max|L20^T L20 - I| <= 1e-8,(b) basis orthonormality max|L20^T L20 - I| <= 1e-8,True,True
+5,(b) basis orthonormality max|L20^T L20 - I| <= 1e-8,kind,threshold,threshold,True,True
+5,(b) basis orthonormality max|L20^T L20 - I| <= 1e-8,gated,True,True,True,True
+5,(b) basis orthonormality max|L20^T L20 - I| <= 1e-8,extra,False,False,True,True
+5,(b) basis orthonormality max|L20^T L20 - I| <= 1e-8,n,400,400,True,True
+5,(b) basis orthonormality max|L20^T L20 - I| <= 1e-8,n_mismatch,0,0,True,True
+5,(b) basis orthonormality max|L20^T L20 - I| <= 1e-8,ok,True,True,True,True
+5,(b) basis orthonormality max|L20^T L20 - I| <= 1e-8,stored,1e-08,1e-08,True,True
+5,(b) basis orthonormality max|L20^T L20 - I| <= 1e-8,reproduced,3.552713678800501e-15,3.552713678800501e-15,True,True
+5,(b) basis orthonormality max|L20^T L20 - I| <= 1e-8,max_abs_diff,3.552713678800501e-15,3.552713678800501e-15,True,True
+5,(b) basis orthonormality max|L20^T L20 - I| <= 1e-8,max_scaled_diff,,,True,True
+5,(b) basis orthonormality max|L20^T L20 - I| <= 1e-8,note (not gated),"threshold, not a stored value","threshold, not a stored value",True,False
+6,(c) ||O1 - Y1|| S1 vs south6/origin_target_distances.csv,item,(c) ||O1 - Y1|| S1 vs south6/origin_target_distances.csv,(c) ||O1 - Y1|| S1 vs south6/origin_target_distances.csv,True,True
+6,(c) ||O1 - Y1|| S1 vs south6/origin_target_distances.csv,kind,tol,tol,True,True
+6,(c) ||O1 - Y1|| S1 vs south6/origin_target_distances.csv,gated,True,True,True,True
+6,(c) ||O1 - Y1|| S1 vs south6/origin_target_distances.csv,extra,False,False,True,True
+6,(c) ||O1 - Y1|| S1 vs south6/origin_target_distances.csv,n,1,1,True,True
+6,(c) ||O1 - Y1|| S1 vs south6/origin_target_distances.csv,n_mismatch,0,0,True,True
+6,(c) ||O1 - Y1|| S1 vs south6/origin_target_distances.csv,ok,True,True,True,True
+6,(c) ||O1 - Y1|| S1 vs south6/origin_target_distances.csv,stored,32.28394904985961,32.28394904985961,True,True
+6,(c) ||O1 - Y1|| S1 vs south6/origin_target_distances.csv,reproduced,32.28394904985961,32.28394904985961,True,True
+6,(c) ||O1 - Y1|| S1 vs south6/origin_target_distances.csv,max_abs_diff,0.0,0.0,True,True
+6,(c) ||O1 - Y1|| S1 vs south6/origin_target_distances.csv,max_scaled_diff,0.0,0.0,True,True
+6,(c) ||O1 - Y1|| S1 vs south6/origin_target_distances.csv,note (not gated),nan,nan,True,False
+7,(c) ||O1 - Y1|| S2A_k20 vs south7/basis_retention.csv (deviation: not in the south6 file),item,(c) ||O1 - Y1|| S2A_k20 vs south7/basis_retention.csv (deviation: not in the south6 file),(c) ||O1 - Y1|| S2A_k20 vs south7/basis_retention.csv (deviation: not in the south6 file),True,True
+7,(c) ||O1 - Y1|| S2A_k20 vs south7/basis_retention.csv (deviation: not in the south6 file),kind,tol,tol,True,True
+7,(c) ||O1 - Y1|| S2A_k20 vs south7/basis_retention.csv (deviation: not in the south6 file),gated,True,True,True,True
+7,(c) ||O1 - Y1|| S2A_k20 vs south7/basis_retention.csv (deviation: not in the south6 file),extra,False,False,True,True
+7,(c) ||O1 - Y1|| S2A_k20 vs south7/basis_retention.csv (deviation: not in the south6 file),n,1,1,True,True
+7,(c) ||O1 - Y1|| S2A_k20 vs south7/basis_retention.csv (deviation: not in the south6 file),n_mismatch,0,0,True,True
+7,(c) ||O1 - Y1|| S2A_k20 vs south7/basis_retention.csv (deviation: not in the south6 file),ok,True,True,True,True
+7,(c) ||O1 - Y1|| S2A_k20 vs south7/basis_retention.csv (deviation: not in the south6 file),stored,27.929154451474936,27.929154451474936,True,True
+7,(c) ||O1 - Y1|| S2A_k20 vs south7/basis_retention.csv (deviation: not in the south6 file),reproduced,27.929154451474936,27.929154451474936,True,True
+7,(c) ||O1 - Y1|| S2A_k20 vs south7/basis_retention.csv (deviation: not in the south6 file),max_abs_diff,0.0,0.0,True,True
+7,(c) ||O1 - Y1|| S2A_k20 vs south7/basis_retention.csv (deviation: not in the south6 file),max_scaled_diff,0.0,0.0,True,True
+7,(c) ||O1 - Y1|| S2A_k20 vs south7/basis_retention.csv (deviation: not in the south6 file),note (not gated),nan,nan,True,False
+8,(c) ||O1 - Y1|| S2A_k20 vs south7/basis.npz rnorm,item,(c) ||O1 - Y1|| S2A_k20 vs south7/basis.npz rnorm,(c) ||O1 - Y1|| S2A_k20 vs south7/basis.npz rnorm,True,True
+8,(c) ||O1 - Y1|| S2A_k20 vs south7/basis.npz rnorm,kind,tol,tol,True,True
+8,(c) ||O1 - Y1|| S2A_k20 vs south7/basis.npz rnorm,gated,True,True,True,True
+8,(c) ||O1 - Y1|| S2A_k20 vs south7/basis.npz rnorm,extra,True,True,True,True
+8,(c) ||O1 - Y1|| S2A_k20 vs south7/basis.npz rnorm,n,1,1,True,True
+8,(c) ||O1 - Y1|| S2A_k20 vs south7/basis.npz rnorm,n_mismatch,0,0,True,True
+8,(c) ||O1 - Y1|| S2A_k20 vs south7/basis.npz rnorm,ok,True,True,True,True
+8,(c) ||O1 - Y1|| S2A_k20 vs south7/basis.npz rnorm,stored,27.929154451474936,27.929154451474936,True,True
+8,(c) ||O1 - Y1|| S2A_k20 vs south7/basis.npz rnorm,reproduced,27.929154451474936,27.929154451474936,True,True
+8,(c) ||O1 - Y1|| S2A_k20 vs south7/basis.npz rnorm,max_abs_diff,0.0,0.0,True,True
+8,(c) ||O1 - Y1|| S2A_k20 vs south7/basis.npz rnorm,max_scaled_diff,0.0,0.0,True,True
+8,(c) ||O1 - Y1|| S2A_k20 vs south7/basis.npz rnorm,note (not gated),nan,nan,True,False
+9,(c) r_S2A_k20 vector vs south7/basis.npz,item,(c) r_S2A_k20 vector vs south7/basis.npz,(c) r_S2A_k20 vector vs south7/basis.npz,True,True
+9,(c) r_S2A_k20 vector vs south7/basis.npz,kind,tol,tol,True,True
+9,(c) r_S2A_k20 vector vs south7/basis.npz,gated,True,True,True,True
+9,(c) r_S2A_k20 vector vs south7/basis.npz,extra,True,True,True,True
+9,(c) r_S2A_k20 vector vs south7/basis.npz,n,20,20,True,True
+9,(c) r_S2A_k20 vector vs south7/basis.npz,n_mismatch,0,0,True,True
+9,(c) r_S2A_k20 vector vs south7/basis.npz,ok,True,True,True,True
+9,(c) r_S2A_k20 vector vs south7/basis.npz,stored,,,True,True
+9,(c) r_S2A_k20 vector vs south7/basis.npz,reproduced,,,True,True
+9,(c) r_S2A_k20 vector vs south7/basis.npz,max_abs_diff,0.0,0.0,True,True
+9,(c) r_S2A_k20 vector vs south7/basis.npz,max_scaled_diff,0.0,0.0,True,True
+9,(c) r_S2A_k20 vector vs south7/basis.npz,note (not gated),nan,nan,True,False
+10,(c) r_S1 on matched genes vs south7/basis.npz,item,(c) r_S1 on matched genes vs south7/basis.npz,(c) r_S1 on matched genes vs south7/basis.npz,True,True
+10,(c) r_S1 on matched genes vs south7/basis.npz,kind,tol,tol,True,True
+10,(c) r_S1 on matched genes vs south7/basis.npz,gated,True,True,True,True
+10,(c) r_S1 on matched genes vs south7/basis.npz,extra,True,True,True,True
+10,(c) r_S1 on matched genes vs south7/basis.npz,n,20264,20264,True,True
+10,(c) r_S1 on matched genes vs south7/basis.npz,n_mismatch,0,0,True,True
+10,(c) r_S1 on matched genes vs south7/basis.npz,ok,True,True,True,True
+10,(c) r_S1 on matched genes vs south7/basis.npz,stored,,,True,True
+10,(c) r_S1 on matched genes vs south7/basis.npz,reproduced,,,True,True
+10,(c) r_S1 on matched genes vs south7/basis.npz,max_abs_diff,0.0,0.0,True,True
+10,(c) r_S1 on matched genes vs south7/basis.npz,max_scaled_diff,0.0,0.0,True,True
+10,(c) r_S1 on matched genes vs south7/basis.npz,note (not gated),nan,nan,True,False
+11,"(d) ||d_f|| S1, 20 sampled factors, vs south6/stage3_full_table.csv d_norm",item,"(d) ||d_f|| S1, 20 sampled factors, vs south6/stage3_full_table.csv d_norm","(d) ||d_f|| S1, 20 sampled factors, vs south6/stage3_full_table.csv d_norm",True,True
+11,"(d) ||d_f|| S1, 20 sampled factors, vs south6/stage3_full_table.csv d_norm",kind,tol,tol,True,True
+11,"(d) ||d_f|| S1, 20 sampled factors, vs south6/stage3_full_table.csv d_norm",gated,True,True,True,True
+11,"(d) ||d_f|| S1, 20 sampled factors, vs south6/stage3_full_table.csv d_norm",extra,False,False,True,True
+11,"(d) ||d_f|| S1, 20 sampled factors, vs south6/stage3_full_table.csv d_norm",n,20,20,True,True
+11,"(d) ||d_f|| S1, 20 sampled factors, vs south6/stage3_full_table.csv d_norm",n_mismatch,0,0,True,True
+11,"(d) ||d_f|| S1, 20 sampled factors, vs south6/stage3_full_table.csv d_norm",ok,True,True,True,True
+11,"(d) ||d_f|| S1, 20 sampled factors, vs south6/stage3_full_table.csv d_norm",stored,,,True,True
+11,"(d) ||d_f|| S1, 20 sampled factors, vs south6/stage3_full_table.csv d_norm",reproduced,,,True,True
+11,"(d) ||d_f|| S1, 20 sampled factors, vs south6/stage3_full_table.csv d_norm",max_abs_diff,1.9895196601282805e-13,1.9895196601282805e-13,True,True
+11,"(d) ||d_f|| S1, 20 sampled factors, vs south6/stage3_full_table.csv d_norm",max_scaled_diff,1.836304442886082e-15,1.836304442886082e-15,True,True
+11,"(d) ||d_f|| S1, 20 sampled factors, vs south6/stage3_full_table.csv d_norm",note (not gated),"factors AATF,GTF2A1,HMGB1,JDP2,KLF2,LHX6,MAML1,PIAS3,SREBF2,TAF7,THAP10,TOX2,TTF1,VAX2,ZFHX3,ZNF202,ZNF394,ZNF418,ZNF614,ZNF671","factors AATF,GTF2A1,HMGB1,JDP2,KLF2,LHX6,MAML1,PIAS3,SREBF2,TAF7,THAP10,TOX2,TTF1,VAX2,ZFHX3,ZNF202,ZNF394,ZNF418,ZNF614,ZNF671",True,False
+12,"(d) ||d_f L20|| S2A_k20, 20 sampled factors, vs south7/stage_a1_observed.csv",item,"(d) ||d_f L20|| S2A_k20, 20 sampled factors, vs south7/stage_a1_observed.csv","(d) ||d_f L20|| S2A_k20, 20 sampled factors, vs south7/stage_a1_observed.csv",True,True
+12,"(d) ||d_f L20|| S2A_k20, 20 sampled factors, vs south7/stage_a1_observed.csv",kind,tol,tol,True,True
+12,"(d) ||d_f L20|| S2A_k20, 20 sampled factors, vs south7/stage_a1_observed.csv",gated,True,True,True,True
+12,"(d) ||d_f L20|| S2A_k20, 20 sampled factors, vs south7/stage_a1_observed.csv",extra,False,False,True,True
+12,"(d) ||d_f L20|| S2A_k20, 20 sampled factors, vs south7/stage_a1_observed.csv",n,20,20,True,True
+12,"(d) ||d_f L20|| S2A_k20, 20 sampled factors, vs south7/stage_a1_observed.csv",n_mismatch,0,0,True,True
+12,"(d) ||d_f L20|| S2A_k20, 20 sampled factors, vs south7/stage_a1_observed.csv",ok,True,True,True,True
+12,"(d) ||d_f L20|| S2A_k20, 20 sampled factors, vs south7/stage_a1_observed.csv",stored,,,True,True
+12,"(d) ||d_f L20|| S2A_k20, 20 sampled factors, vs south7/stage_a1_observed.csv",reproduced,,,True,True
+12,"(d) ||d_f L20|| S2A_k20, 20 sampled factors, vs south7/stage_a1_observed.csv",max_abs_diff,7.105427357601002e-15,7.105427357601002e-15,True,True
+12,"(d) ||d_f L20|| S2A_k20, 20 sampled factors, vs south7/stage_a1_observed.csv",max_scaled_diff,5.762642116196709e-16,5.762642116196709e-16,True,True
+12,"(d) ||d_f L20|| S2A_k20, 20 sampled factors, vs south7/stage_a1_observed.csv",note (not gated),nan,nan,True,False
+13,"(e) ||d_f|| S1, all 1836 factors, vs south6/stage3_full_table.csv",item,"(e) ||d_f|| S1, all 1836 factors, vs south6/stage3_full_table.csv","(e) ||d_f|| S1, all 1836 factors, vs south6/stage3_full_table.csv",True,True
+13,"(e) ||d_f|| S1, all 1836 factors, vs south6/stage3_full_table.csv",kind,tol,tol,True,True
+13,"(e) ||d_f|| S1, all 1836 factors, vs south6/stage3_full_table.csv",gated,True,True,True,True
+13,"(e) ||d_f|| S1, all 1836 factors, vs south6/stage3_full_table.csv",extra,True,True,True,True
+13,"(e) ||d_f|| S1, all 1836 factors, vs south6/stage3_full_table.csv",n,1836,1836,True,True
+13,"(e) ||d_f|| S1, all 1836 factors, vs south6/stage3_full_table.csv",n_mismatch,0,0,True,True
+13,"(e) ||d_f|| S1, all 1836 factors, vs south6/stage3_full_table.csv",ok,True,True,True,True
+13,"(e) ||d_f|| S1, all 1836 factors, vs south6/stage3_full_table.csv",stored,,,True,True
+13,"(e) ||d_f|| S1, all 1836 factors, vs south6/stage3_full_table.csv",reproduced,,,True,True
+13,"(e) ||d_f|| S1, all 1836 factors, vs south6/stage3_full_table.csv",max_abs_diff,4.263256414560601e-13,4.263256414560601e-13,True,True
+13,"(e) ||d_f|| S1, all 1836 factors, vs south6/stage3_full_table.csv",max_scaled_diff,2.5813447034166112e-15,2.5813447034166112e-15,True,True
+13,"(e) ||d_f|| S1, all 1836 factors, vs south6/stage3_full_table.csv",note (not gated),nan,nan,True,False
+14,"(e) ||d_f L20|| S2A_k20, all 1836 factors, vs south7/stage_a1_observed.csv",item,"(e) ||d_f L20|| S2A_k20, all 1836 factors, vs south7/stage_a1_observed.csv","(e) ||d_f L20|| S2A_k20, all 1836 factors, vs south7/stage_a1_observed.csv",True,True
+14,"(e) ||d_f L20|| S2A_k20, all 1836 factors, vs south7/stage_a1_observed.csv",kind,tol,tol,True,True
+14,"(e) ||d_f L20|| S2A_k20, all 1836 factors, vs south7/stage_a1_observed.csv",gated,True,True,True,True
+14,"(e) ||d_f L20|| S2A_k20, all 1836 factors, vs south7/stage_a1_observed.csv",extra,True,True,True,True
+14,"(e) ||d_f L20|| S2A_k20, all 1836 factors, vs south7/stage_a1_observed.csv",n,1836,1836,True,True
+14,"(e) ||d_f L20|| S2A_k20, all 1836 factors, vs south7/stage_a1_observed.csv",n_mismatch,0,0,True,True
+14,"(e) ||d_f L20|| S2A_k20, all 1836 factors, vs south7/stage_a1_observed.csv",ok,True,True,True,True
+14,"(e) ||d_f L20|| S2A_k20, all 1836 factors, vs south7/stage_a1_observed.csv",stored,,,True,True
+14,"(e) ||d_f L20|| S2A_k20, all 1836 factors, vs south7/stage_a1_observed.csv",reproduced,,,True,True
+14,"(e) ||d_f L20|| S2A_k20, all 1836 factors, vs south7/stage_a1_observed.csv",max_abs_diff,1.4210854715202004e-14,1.4210854715202004e-14,True,True
+14,"(e) ||d_f L20|| S2A_k20, all 1836 factors, vs south7/stage_a1_observed.csv",max_scaled_diff,8.638493400891952e-16,8.638493400891952e-16,True,True
+14,"(e) ||d_f L20|| S2A_k20, all 1836 factors, vs south7/stage_a1_observed.csv",note (not gated),nan,nan,True,False
+15,(f) stage1.npz matched_ruler equals basis.npz matched_ruler,item,(f) stage1.npz matched_ruler equals basis.npz matched_ruler,(f) stage1.npz matched_ruler equals basis.npz matched_ruler,True,True
+15,(f) stage1.npz matched_ruler equals basis.npz matched_ruler,kind,exact,exact,True,True
+15,(f) stage1.npz matched_ruler equals basis.npz matched_ruler,gated,True,True,True,True
+15,(f) stage1.npz matched_ruler equals basis.npz matched_ruler,extra,True,True,True,True
+15,(f) stage1.npz matched_ruler equals basis.npz matched_ruler,n,20264,20264,True,True
+15,(f) stage1.npz matched_ruler equals basis.npz matched_ruler,n_mismatch,0,0,True,True
+15,(f) stage1.npz matched_ruler equals basis.npz matched_ruler,ok,True,True,True,True
+15,(f) stage1.npz matched_ruler equals basis.npz matched_ruler,stored,,,True,True
+15,(f) stage1.npz matched_ruler equals basis.npz matched_ruler,reproduced,,,True,True
+15,(f) stage1.npz matched_ruler equals basis.npz matched_ruler,max_abs_diff,,,True,True
+15,(f) stage1.npz matched_ruler equals basis.npz matched_ruler,max_scaled_diff,,,True,True
+15,(f) stage1.npz matched_ruler equals basis.npz matched_ruler,note (not gated),nan,nan,True,False
+16,(f) missing-gene mask identical to stage1.npz,item,(f) missing-gene mask identical to stage1.npz,(f) missing-gene mask identical to stage1.npz,True,True
+16,(f) missing-gene mask identical to stage1.npz,kind,exact,exact,True,True
+16,(f) missing-gene mask identical to stage1.npz,gated,True,True,True,True
+16,(f) missing-gene mask identical to stage1.npz,extra,True,True,True,True
+16,(f) missing-gene mask identical to stage1.npz,n,20264,20264,True,True
+16,(f) missing-gene mask identical to stage1.npz,n_mismatch,0,0,True,True
+16,(f) missing-gene mask identical to stage1.npz,ok,True,True,True,True
+16,(f) missing-gene mask identical to stage1.npz,stored,,,True,True
+16,(f) missing-gene mask identical to stage1.npz,reproduced,,,True,True
+16,(f) missing-gene mask identical to stage1.npz,max_abs_diff,,,True,True
+16,(f) missing-gene mask identical to stage1.npz,max_scaled_diff,,,True,True
+16,(f) missing-gene mask identical to stage1.npz,note (not gated),nan,nan,True,False
+17,(f) rebuilt d_f on matched genes vs stage1.npz d_f,item,(f) rebuilt d_f on matched genes vs stage1.npz d_f,(f) rebuilt d_f on matched genes vs stage1.npz d_f,True,True
+17,(f) rebuilt d_f on matched genes vs stage1.npz d_f,kind,tol,tol,True,True
+17,(f) rebuilt d_f on matched genes vs stage1.npz d_f,gated,True,True,True,True
+17,(f) rebuilt d_f on matched genes vs stage1.npz d_f,extra,True,True,True,True
+17,(f) rebuilt d_f on matched genes vs stage1.npz d_f,n,37204704,37204704,True,True
+17,(f) rebuilt d_f on matched genes vs stage1.npz d_f,n_mismatch,0,0,True,True
+17,(f) rebuilt d_f on matched genes vs stage1.npz d_f,ok,True,True,True,True
+17,(f) rebuilt d_f on matched genes vs stage1.npz d_f,stored,,,True,True
+17,(f) rebuilt d_f on matched genes vs stage1.npz d_f,reproduced,,,True,True
+17,(f) rebuilt d_f on matched genes vs stage1.npz d_f,max_abs_diff,0.0,0.0,True,True
+17,(f) rebuilt d_f on matched genes vs stage1.npz d_f,max_scaled_diff,0.0,0.0,True,True
+17,(f) rebuilt d_f on matched genes vs stage1.npz d_f,note (not gated),nan,nan,True,False
+18,(f) X_nt rows (non-targeting cells),item,(f) X_nt rows (non-targeting cells),(f) X_nt rows (non-targeting cells),True,True
+18,(f) X_nt rows (non-targeting cells),kind,exact,exact,True,True
+18,(f) X_nt rows (non-targeting cells),gated,True,True,True,True
+18,(f) X_nt rows (non-targeting cells),extra,True,True,True,True
+18,(f) X_nt rows (non-targeting cells),n,1,1,True,True
+18,(f) X_nt rows (non-targeting cells),n_mismatch,0,0,True,True
+18,(f) X_nt rows (non-targeting cells),ok,True,True,True,True
+18,(f) X_nt rows (non-targeting cells),stored,14013.0,14013.0,True,True
+18,(f) X_nt rows (non-targeting cells),reproduced,14013.0,14013.0,True,True
+18,(f) X_nt rows (non-targeting cells),max_abs_diff,,,True,True
+18,(f) X_nt rows (non-targeting cells),max_scaled_diff,,,True,True
+18,(f) X_nt rows (non-targeting cells),note (not gated),nan,nan,True,False
+19,(f) X_nt column sums equal stage1.npz C_pool,item,(f) X_nt column sums equal stage1.npz C_pool,(f) X_nt column sums equal stage1.npz C_pool,True,True
+19,(f) X_nt column sums equal stage1.npz C_pool,kind,exact,exact,True,True
+19,(f) X_nt column sums equal stage1.npz C_pool,gated,True,True,True,True
+19,(f) X_nt column sums equal stage1.npz C_pool,extra,True,True,True,True
+19,(f) X_nt column sums equal stage1.npz C_pool,n,20264,20264,True,True
+19,(f) X_nt column sums equal stage1.npz C_pool,n_mismatch,0,0,True,True
+19,(f) X_nt column sums equal stage1.npz C_pool,ok,True,True,True,True
+19,(f) X_nt column sums equal stage1.npz C_pool,stored,,,True,True
+19,(f) X_nt column sums equal stage1.npz C_pool,reproduced,,,True,True
+19,(f) X_nt column sums equal stage1.npz C_pool,max_abs_diff,,,True,True
+19,(f) X_nt column sums equal stage1.npz C_pool,max_scaled_diff,,,True,True
+19,(f) X_nt column sums equal stage1.npz C_pool,note (not gated),nan,nan,True,False
+20,"(g) SOUTH7 depth nulls S2A_k20 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",item,"(g) SOUTH7 depth nulls S2A_k20 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv","(g) SOUTH7 depth nulls S2A_k20 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",True,True
+20,"(g) SOUTH7 depth nulls S2A_k20 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",kind,tol,tol,True,True
+20,"(g) SOUTH7 depth nulls S2A_k20 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",gated,True,True,True,True
+20,"(g) SOUTH7 depth nulls S2A_k20 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",extra,True,True,True,True
+20,"(g) SOUTH7 depth nulls S2A_k20 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",n,212,212,True,True
+20,"(g) SOUTH7 depth nulls S2A_k20 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",n_mismatch,0,0,True,True
+20,"(g) SOUTH7 depth nulls S2A_k20 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",ok,True,True,True,True
+20,"(g) SOUTH7 depth nulls S2A_k20 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",stored,,,True,True
+20,"(g) SOUTH7 depth nulls S2A_k20 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",reproduced,,,True,True
+20,"(g) SOUTH7 depth nulls S2A_k20 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",max_abs_diff,1.7763568394002505e-15,1.7763568394002505e-15,True,True
+20,"(g) SOUTH7 depth nulls S2A_k20 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",max_scaled_diff,2.2192617630686303e-16,2.2192617630686303e-16,True,True
+20,"(g) SOUTH7 depth nulls S2A_k20 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",note (not gated),nan,nan,True,False
+21,"(g) SOUTH7 depth nulls S2A_k20 median, 212 depths vs south7/stage_a1_depth_nulls.csv",item,"(g) SOUTH7 depth nulls S2A_k20 median, 212 depths vs south7/stage_a1_depth_nulls.csv","(g) SOUTH7 depth nulls S2A_k20 median, 212 depths vs south7/stage_a1_depth_nulls.csv",True,True
+21,"(g) SOUTH7 depth nulls S2A_k20 median, 212 depths vs south7/stage_a1_depth_nulls.csv",kind,tol,tol,True,True
+21,"(g) SOUTH7 depth nulls S2A_k20 median, 212 depths vs south7/stage_a1_depth_nulls.csv",gated,True,True,True,True
+21,"(g) SOUTH7 depth nulls S2A_k20 median, 212 depths vs south7/stage_a1_depth_nulls.csv",extra,True,True,True,True
+21,"(g) SOUTH7 depth nulls S2A_k20 median, 212 depths vs south7/stage_a1_depth_nulls.csv",n,212,212,True,True
+21,"(g) SOUTH7 depth nulls S2A_k20 median, 212 depths vs south7/stage_a1_depth_nulls.csv",n_mismatch,0,0,True,True
+21,"(g) SOUTH7 depth nulls S2A_k20 median, 212 depths vs south7/stage_a1_depth_nulls.csv",ok,True,True,True,True
+21,"(g) SOUTH7 depth nulls S2A_k20 median, 212 depths vs south7/stage_a1_depth_nulls.csv",stored,,,True,True
+21,"(g) SOUTH7 depth nulls S2A_k20 median, 212 depths vs south7/stage_a1_depth_nulls.csv",reproduced,,,True,True
+21,"(g) SOUTH7 depth nulls S2A_k20 median, 212 depths vs south7/stage_a1_depth_nulls.csv",max_abs_diff,1.7763568394002505e-15,1.7763568394002505e-15,True,True
+21,"(g) SOUTH7 depth nulls S2A_k20 median, 212 depths vs south7/stage_a1_depth_nulls.csv",max_scaled_diff,1.9630143624165463e-16,1.9630143624165463e-16,True,True
+21,"(g) SOUTH7 depth nulls S2A_k20 median, 212 depths vs south7/stage_a1_depth_nulls.csv",note (not gated),nan,nan,True,False
+22,"(g) SOUTH7 depth nulls S2A_k20 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",item,"(g) SOUTH7 depth nulls S2A_k20 sd, 212 depths vs south7/stage_a1_depth_nulls.csv","(g) SOUTH7 depth nulls S2A_k20 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",True,True
+22,"(g) SOUTH7 depth nulls S2A_k20 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",kind,tol,tol,True,True
+22,"(g) SOUTH7 depth nulls S2A_k20 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",gated,True,True,True,True
+22,"(g) SOUTH7 depth nulls S2A_k20 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",extra,True,True,True,True
+22,"(g) SOUTH7 depth nulls S2A_k20 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",n,212,212,True,True
+22,"(g) SOUTH7 depth nulls S2A_k20 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",n_mismatch,0,0,True,True
+22,"(g) SOUTH7 depth nulls S2A_k20 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",ok,True,True,True,True
+22,"(g) SOUTH7 depth nulls S2A_k20 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",stored,,,True,True
+22,"(g) SOUTH7 depth nulls S2A_k20 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",reproduced,,,True,True
+22,"(g) SOUTH7 depth nulls S2A_k20 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",max_abs_diff,4.440892098500626e-16,4.440892098500626e-16,True,True
+22,"(g) SOUTH7 depth nulls S2A_k20 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",max_scaled_diff,2.163549940979231e-16,2.163549940979231e-16,True,True
+22,"(g) SOUTH7 depth nulls S2A_k20 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",note (not gated),nan,nan,True,False
+23,"(g) SOUTH7 depth nulls S2A_k20 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",item,"(g) SOUTH7 depth nulls S2A_k20 p95, 212 depths vs south7/stage_a1_depth_nulls.csv","(g) SOUTH7 depth nulls S2A_k20 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",True,True
+23,"(g) SOUTH7 depth nulls S2A_k20 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",kind,tol,tol,True,True
+23,"(g) SOUTH7 depth nulls S2A_k20 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",gated,True,True,True,True
+23,"(g) SOUTH7 depth nulls S2A_k20 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",extra,True,True,True,True
+23,"(g) SOUTH7 depth nulls S2A_k20 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",n,212,212,True,True
+23,"(g) SOUTH7 depth nulls S2A_k20 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",n_mismatch,0,0,True,True
+23,"(g) SOUTH7 depth nulls S2A_k20 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",ok,True,True,True,True
+23,"(g) SOUTH7 depth nulls S2A_k20 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",stored,,,True,True
+23,"(g) SOUTH7 depth nulls S2A_k20 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",reproduced,,,True,True
+23,"(g) SOUTH7 depth nulls S2A_k20 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",max_abs_diff,1.7763568394002505e-15,1.7763568394002505e-15,True,True
+23,"(g) SOUTH7 depth nulls S2A_k20 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",max_scaled_diff,2.4348373432184397e-16,2.4348373432184397e-16,True,True
+23,"(g) SOUTH7 depth nulls S2A_k20 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",note (not gated),nan,nan,True,False
+24,"(g) SOUTH7 per-draw deltas S2A_k20, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",item,"(g) SOUTH7 per-draw deltas S2A_k20, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)","(g) SOUTH7 per-draw deltas S2A_k20, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",True,True
+24,"(g) SOUTH7 per-draw deltas S2A_k20, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",kind,tol,tol,True,True
+24,"(g) SOUTH7 per-draw deltas S2A_k20, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",gated,True,True,True,True
+24,"(g) SOUTH7 per-draw deltas S2A_k20, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",extra,True,True,True,True
+24,"(g) SOUTH7 per-draw deltas S2A_k20, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",n,42400,42400,True,True
+24,"(g) SOUTH7 per-draw deltas S2A_k20, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",n_mismatch,0,0,True,True
+24,"(g) SOUTH7 per-draw deltas S2A_k20, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",ok,True,True,True,True
+24,"(g) SOUTH7 per-draw deltas S2A_k20, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",stored,0.0,0.0,True,True
+24,"(g) SOUTH7 per-draw deltas S2A_k20, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",reproduced,0.0,0.0,True,True
+24,"(g) SOUTH7 per-draw deltas S2A_k20, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",max_abs_diff,,,True,True
+24,"(g) SOUTH7 per-draw deltas S2A_k20, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",max_scaled_diff,0.0,0.0,True,True
+24,"(g) SOUTH7 per-draw deltas S2A_k20, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",note (not gated),nan,nan,True,False
+25,"(g) SOUTH7 depth nulls S1 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",item,"(g) SOUTH7 depth nulls S1 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv","(g) SOUTH7 depth nulls S1 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",True,True
+25,"(g) SOUTH7 depth nulls S1 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",kind,tol,tol,True,True
+25,"(g) SOUTH7 depth nulls S1 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",gated,True,True,True,True
+25,"(g) SOUTH7 depth nulls S1 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",extra,True,True,True,True
+25,"(g) SOUTH7 depth nulls S1 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",n,212,212,True,True
+25,"(g) SOUTH7 depth nulls S1 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",n_mismatch,0,0,True,True
+25,"(g) SOUTH7 depth nulls S1 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",ok,True,True,True,True
+25,"(g) SOUTH7 depth nulls S1 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",stored,,,True,True
+25,"(g) SOUTH7 depth nulls S1 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",reproduced,,,True,True
+25,"(g) SOUTH7 depth nulls S1 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",max_abs_diff,2.8421709430404014e-14,2.8421709430404014e-14,True,True
+25,"(g) SOUTH7 depth nulls S1 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",max_scaled_diff,2.19407772242446e-16,2.19407772242446e-16,True,True
+25,"(g) SOUTH7 depth nulls S1 floor_p05, 212 depths vs south7/stage_a1_depth_nulls.csv",note (not gated),nan,nan,True,False
+26,"(g) SOUTH7 depth nulls S1 median, 212 depths vs south7/stage_a1_depth_nulls.csv",item,"(g) SOUTH7 depth nulls S1 median, 212 depths vs south7/stage_a1_depth_nulls.csv","(g) SOUTH7 depth nulls S1 median, 212 depths vs south7/stage_a1_depth_nulls.csv",True,True
+26,"(g) SOUTH7 depth nulls S1 median, 212 depths vs south7/stage_a1_depth_nulls.csv",kind,tol,tol,True,True
+26,"(g) SOUTH7 depth nulls S1 median, 212 depths vs south7/stage_a1_depth_nulls.csv",gated,True,True,True,True
+26,"(g) SOUTH7 depth nulls S1 median, 212 depths vs south7/stage_a1_depth_nulls.csv",extra,True,True,True,True
+26,"(g) SOUTH7 depth nulls S1 median, 212 depths vs south7/stage_a1_depth_nulls.csv",n,212,212,True,True
+26,"(g) SOUTH7 depth nulls S1 median, 212 depths vs south7/stage_a1_depth_nulls.csv",n_mismatch,0,0,True,True
+26,"(g) SOUTH7 depth nulls S1 median, 212 depths vs south7/stage_a1_depth_nulls.csv",ok,True,True,True,True
+26,"(g) SOUTH7 depth nulls S1 median, 212 depths vs south7/stage_a1_depth_nulls.csv",stored,,,True,True
+26,"(g) SOUTH7 depth nulls S1 median, 212 depths vs south7/stage_a1_depth_nulls.csv",reproduced,,,True,True
+26,"(g) SOUTH7 depth nulls S1 median, 212 depths vs south7/stage_a1_depth_nulls.csv",max_abs_diff,2.8421709430404014e-14,2.8421709430404014e-14,True,True
+26,"(g) SOUTH7 depth nulls S1 median, 212 depths vs south7/stage_a1_depth_nulls.csv",max_scaled_diff,2.191049151798926e-16,2.191049151798926e-16,True,True
+26,"(g) SOUTH7 depth nulls S1 median, 212 depths vs south7/stage_a1_depth_nulls.csv",note (not gated),nan,nan,True,False
+27,"(g) SOUTH7 depth nulls S1 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",item,"(g) SOUTH7 depth nulls S1 sd, 212 depths vs south7/stage_a1_depth_nulls.csv","(g) SOUTH7 depth nulls S1 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",True,True
+27,"(g) SOUTH7 depth nulls S1 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",kind,tol,tol,True,True
+27,"(g) SOUTH7 depth nulls S1 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",gated,True,True,True,True
+27,"(g) SOUTH7 depth nulls S1 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",extra,True,True,True,True
+27,"(g) SOUTH7 depth nulls S1 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",n,212,212,True,True
+27,"(g) SOUTH7 depth nulls S1 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",n_mismatch,0,0,True,True
+27,"(g) SOUTH7 depth nulls S1 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",ok,True,True,True,True
+27,"(g) SOUTH7 depth nulls S1 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",stored,,,True,True
+27,"(g) SOUTH7 depth nulls S1 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",reproduced,,,True,True
+27,"(g) SOUTH7 depth nulls S1 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",max_abs_diff,1.7763568394002505e-15,1.7763568394002505e-15,True,True
+27,"(g) SOUTH7 depth nulls S1 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",max_scaled_diff,2.2517179997582693e-16,2.2517179997582693e-16,True,True
+27,"(g) SOUTH7 depth nulls S1 sd, 212 depths vs south7/stage_a1_depth_nulls.csv",note (not gated),nan,nan,True,False
+28,"(g) SOUTH7 depth nulls S1 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",item,"(g) SOUTH7 depth nulls S1 p95, 212 depths vs south7/stage_a1_depth_nulls.csv","(g) SOUTH7 depth nulls S1 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",True,True
+28,"(g) SOUTH7 depth nulls S1 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",kind,tol,tol,True,True
+28,"(g) SOUTH7 depth nulls S1 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",gated,True,True,True,True
+28,"(g) SOUTH7 depth nulls S1 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",extra,True,True,True,True
+28,"(g) SOUTH7 depth nulls S1 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",n,212,212,True,True
+28,"(g) SOUTH7 depth nulls S1 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",n_mismatch,0,0,True,True
+28,"(g) SOUTH7 depth nulls S1 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",ok,True,True,True,True
+28,"(g) SOUTH7 depth nulls S1 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",stored,,,True,True
+28,"(g) SOUTH7 depth nulls S1 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",reproduced,,,True,True
+28,"(g) SOUTH7 depth nulls S1 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",max_abs_diff,2.8421709430404014e-14,2.8421709430404014e-14,True,True
+28,"(g) SOUTH7 depth nulls S1 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",max_scaled_diff,2.1742553868814663e-16,2.1742553868814663e-16,True,True
+28,"(g) SOUTH7 depth nulls S1 p95, 212 depths vs south7/stage_a1_depth_nulls.csv",note (not gated),nan,nan,True,False
+29,"(g) SOUTH7 per-draw deltas S1, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",item,"(g) SOUTH7 per-draw deltas S1, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)","(g) SOUTH7 per-draw deltas S1, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",True,True
+29,"(g) SOUTH7 per-draw deltas S1, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",kind,tol,tol,True,True
+29,"(g) SOUTH7 per-draw deltas S1, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",gated,True,True,True,True
+29,"(g) SOUTH7 per-draw deltas S1, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",extra,True,True,True,True
+29,"(g) SOUTH7 per-draw deltas S1, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",n,42400,42400,True,True
+29,"(g) SOUTH7 per-draw deltas S1, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",n_mismatch,0,0,True,True
+29,"(g) SOUTH7 per-draw deltas S1, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",ok,True,True,True,True
+29,"(g) SOUTH7 per-draw deltas S1, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",stored,0.0,0.0,True,True
+29,"(g) SOUTH7 per-draw deltas S1, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",reproduced,0.0,0.0,True,True
+29,"(g) SOUTH7 per-draw deltas S1, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",max_abs_diff,,,True,True
+29,"(g) SOUTH7 per-draw deltas S1, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",max_scaled_diff,0.0,0.0,True,True
+29,"(g) SOUTH7 per-draw deltas S1, 212 x 200 draws vs south7/stage_a1_null_draws.npz (n outside tol)",note (not gated),nan,nan,True,False

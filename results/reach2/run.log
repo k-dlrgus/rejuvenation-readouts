@@ -1,0 +1,42 @@
+[      0s] ================================================================================
+[      0s] REACH2 run seed=20260914 k=('1', '3', '5', '10', '50', 'unlimited') targets=200 workers=16 gap <= 1e-06 * max(P, 1); retry BVLS {'tol': 1e-15, 'max_iter': 100000} L-BFGS-B {'maxiter': 200000, 'ftol': 1e-20, 'gtol': 1e-15, 'maxcor': 30, 'maxfun': 200000, 'maxls': 20}
+[      0s] [stage1] d_f (1836, 23485) keep 1836
+[      0s] [basis] L20 (23485, 20) max|LtL-I| = 3.553e-15
+[      0s] [stage0] checks=15 gated=15 failed=0
+[     17s] [panel] rebuilt from stored counts (13s)
+[     23s] [nt csr] cells=14013 nnz=31999592 (4s)
+[     23s] [stage0] checks=20 gated=20 failed=0
+[     23s] [draws] distinct n = 212 (13-341); max multiplicity 32
+[     57s] [draws] 25/212 depths (34s)
+[     91s] [draws] 50/212 depths (68s)
+[    126s] [draws] 75/212 depths (103s)
+[    161s] [draws] 100/212 depths (138s)
+[    197s] [draws] 125/212 depths (175s)
+[    242s] [draws] 150/212 depths (219s)
+[    314s] [draws] 175/212 depths (291s)
+[    384s] [draws] 200/212 depths (362s)
+[    414s] [draws] 212/212 depths (392s)
+[    414s] [stage0] checks=30 gated=30 failed=0
+[    414s] [stage0] row-for-row vs results/reach/stage0_reproduction.csv: 30 REACH rows, 30 REACH2 rows, 330 gated cells, 0 mismatches
+[    414s] [stage0] checks=52 gated=52 failed=0
+[    414s] [stage0] all gated checks pass, (a)-(h) and row-for-row
+[    414s] [inputs] written; s_f = 0 for 575 of 1836 factors; null bank s = 0 for 1011
+[    415s] [solver check] passed=True greedy_selected=[1836] l1_selected=[1836]
+[    437s] [gated] 20/203 problems (22s); solves 1611, retries 0, max gap/tol 0.199
+[    439s] [gated] 40/203 problems (24s); solves 3197, retries 0, max gap/tol 0.199
+[    441s] [gated] 60/203 problems (26s); solves 4763, retries 0, max gap/tol 0.199
+[    442s] [gated] 80/203 problems (27s); solves 6387, retries 0, max gap/tol 0.199
+[    444s] [gated] 100/203 problems (29s); solves 8016, retries 0, max gap/tol 0.199
+[    446s] [gated] 120/203 problems (31s); solves 9619, retries 0, max gap/tol 0.199
+[    448s] [gated] 140/203 problems (33s); solves 11209, retries 0, max gap/tol 0.199
+[    450s] [gated] 160/203 problems (34s); solves 12813, retries 0, max gap/tol 0.199
+[    451s] [gated] 180/203 problems (36s); solves 14438, retries 0, max gap/tol 0.199
+[    453s] [gated] 200/203 problems (38s); solves 16067, retries 0, max gap/tol 0.199
+[    453s] [gated] 203/203 problems (38s); solves 16311, retries 0, max gap/tol 0.199
+[    453s] [reading] R0 c_clause=['1', '3', '5', '10', '50', 'unlimited'] d_clause=['1', '3', '5', '10', '50', 'unlimited']
+[    454s] [diag] C shrunk: converged True
+[    468s] [diag S1 A] converged True rank=1836 (13s)
+[    477s] [diag S1 B] converged True rank=1299 (9s)
+[    495s] [diag S1 C] converged True rank=1836 (18s)
+[    495s] [solver] gated solves 16371, retries 0, max gap 5.088e-05, max gap/tol 0.199
+[    495s] [run] DONE

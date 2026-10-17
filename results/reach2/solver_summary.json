@@ -1,0 +1,48 @@
+{
+  "n_solves_gated": 16371,
+  "n_retries_gated": 0,
+  "n_first_attempt_fail_gated": 0,
+  "n_second_fail_gated": 0,
+  "max_gap_gated": 5.0875929161975364e-05,
+  "max_ratio_gated": 0.1988315212547989,
+  "old_tol": 3.9001883418717116e-06,
+  "pass_new_fail_old": 531,
+  "fail_new_first_pass_old": 0,
+  "n_solves_all": 16689,
+  "n_retries_all": 0,
+  "n_second_fail_all": 0,
+  "by_kind": {
+    "bvls_unlimited": {
+      "n": 203,
+      "max_gap": 1.0231815394945443e-12,
+      "max_ratio": 3.843232683224313e-09,
+      "retries": 0,
+      "median_P": 269.00098876200104,
+      "max_restarts": 0
+    },
+    "greedy_refit": {
+      "n": 2393,
+      "max_gap": 6.110667527536862e-13,
+      "max_ratio": 7.1068719182330485e-09,
+      "retries": 0,
+      "median_P": 267.1760554566762,
+      "max_restarts": 0
+    },
+    "l1_refit": {
+      "n": 1020,
+      "max_gap": 2.1600499167107046e-12,
+      "max_ratio": 9.616694127192293e-09,
+      "retries": 0,
+      "median_P": 300.37891729133696,
+      "max_restarts": 0
+    },
+    "lbfgsb": {
+      "n": 12755,
+      "max_gap": 5.0875929161975364e-05,
+      "max_ratio": 0.1988315212547989,
+      "retries": 0,
+      "median_P": 279.0130154062763,
+      "max_restarts": 1
+    }
+  }
+}

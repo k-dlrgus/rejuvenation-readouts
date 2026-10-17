@@ -1,0 +1,35 @@
+{
+  "diag_solver": {
+    "Cs": {
+      "ok": true
+    },
+    "S1_A": {
+      "ok": true,
+      "rank": 1836,
+      "c0_raw_matched": 786.9174765989819,
+      "c_off": 104.27047949375422,
+      "seconds": 13.272817611694336
+    },
+    "S1_B": {
+      "ok": true,
+      "rank": 1299,
+      "c0_raw_matched": 815.930545659608,
+      "c_off": 104.27047949375422,
+      "seconds": 9.01478624343872
+    },
+    "S1_C": {
+      "ok": true,
+      "rank": 1836,
+      "c0_raw_matched": 797.6280259673952,
+      "c_off": 104.27047949375422,
+      "seconds": 18.020730018615723
+    },
+    "s_f_zero_B_full": 537
+  },
+  "s_f_zero_B": 575,
+  "s_zero_null_bank": 1011,
+  "n_factors": 1836,
+  "s_f_zero_B_full": 537,
+  "n_workers": 16,
+  "diag_rows_not_converged": 0
+}

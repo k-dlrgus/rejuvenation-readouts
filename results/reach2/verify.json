@@ -1,0 +1,9 @@
+{
+  "fired": "R0",
+  "stored": "R0",
+  "mismatches": [],
+  "max_abs_diff_D": 9.71445146547012e-17,
+  "solves": 16311,
+  "retries": 0,
+  "max_ratio": 0.1988315212547989
+}
