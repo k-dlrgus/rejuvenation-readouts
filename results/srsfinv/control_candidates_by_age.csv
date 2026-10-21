@@ -1,0 +1,11 @@
+candidate / group,age 29,age 31,age 36,age 41,age 52,age 55,age 60,age 65,age 66,age 67,age 68,age 69,age 73,age 79,age 86,age 92,age 94,total
+"C1a genotype WT, treatment NT, title says WT/plain line / human fibroblast",2,0,1,1,1,2,1,0,1,0,1,1,1,1,1,1,2,17
+"C1a genotype WT, treatment NT, title says WT/plain line / human iPSC",0,0,3,0,0,0,0,0,1,0,0,0,0,0,0,0,0,4
+"C1b genotype WT, treatment NT, title says NTg transgene / human fibroblast",0,0,0,0,0,4,0,4,0,2,0,0,0,4,0,0,0,14
+"C2 genotype WT, rapamycin / human fibroblast",1,0,3,0,0,3,0,0,0,0,0,0,3,0,0,3,1,14
+"C3 genotype WT, dox (title says NTg transgene) / human fibroblast",0,0,0,0,0,2,0,2,0,0,0,2,0,2,0,0,0,8
+"C4 genotype NTg, dox / human fibroblast",0,0,0,0,0,2,0,2,0,0,2,0,0,2,0,0,0,8
+"C5 reporter (GFP), dox / human iPSC",0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+"C5 reporter (mTagBFP2), dox / human fibroblast",0,0,0,0,0,26,0,5,0,2,8,2,0,30,0,0,0,73
+"C6 other transgene, treatment NT (not induced) / human fibroblast",0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2
+"C6 other transgene, treatment NT (not induced) / human iPSC",0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2

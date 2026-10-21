@@ -1,0 +1,20 @@
+treatment,human fibroblast,human iPSC,mouse,total,n genotypes,genotypes (if <= 6),fibroblast ages
+"Dox_1000ng/mL, 3days",501,0,0,501,99,,55/65/79
+"Dox_2000ng/mL, 3days",118,2,0,120,14,,55/65/67/68/69/79
+NT,33,6,0,39,4,"OTX2, SUMO1, WT, ZGLP1",29/36/41/52/55/60/65/66/67/68/69/73/79/86/92/94
+"Dox_1000ng/mL, 3d-ON",36,0,0,36,3,"OSKM, SRSF1, mTagBFP2",55/68/79
+"Dox_200mg/kg, 1wk-ON/1wk-OFF",0,0,32,32,2,"GFP, SRSF1",-
+"Dox_1000ng/mL, 1d-ON",12,0,0,12,3,"OSKM, SRSF1, mTagBFP2",55/79
+"Dox_1000ng/mL, 1d-ON/16d-OFF",12,0,0,12,3,"OSKM, SRSF1, mTagBFP2",55/79
+"Dox_1000ng/mL, 1d-ON/8d-OFF",12,0,0,12,3,"OSKM, SRSF1, mTagBFP2",55/79
+"Dox_1000ng/mL, 5d-ON/2d-OFF",12,0,0,12,2,"SRSF1, mTagBFP2",55/68/79
+"Dox_1000ng/mL, 2d-ON/8d-OFF",12,0,0,12,3,"OSKM, SRSF1, mTagBFP2",55/79
+"Dox_1000ng/mL, 2d-ON",12,0,0,12,3,"OSKM, SRSF1, mTagBFP2",55/79
+"Dox_1000ng/mL, 3d-ON/16d-OFF",8,0,0,8,2,"SRSF1, mTagBFP2",55/79
+"Dox_1000ng/mL, 3d-ON/8d-OFF",8,0,0,8,2,"SRSF1, mTagBFP2",55/79
+"Dox_1000ng/mL, 2d-ON/16d-OFF",8,0,0,8,2,"SRSF1, mTagBFP2",55/79
+Rapa_100ng/mL_24h,4,0,0,4,1,WT,36/55/73/92
+Rapa_100ng/mL_72h,4,0,0,4,1,WT,36/55/73/92
+Rapa_100ng/mL_48h,4,0,0,4,1,WT,36/55/73/92
+"Rapa_100ng/mL, 3days",2,0,0,2,1,WT,29/94
+"Dox_250ng/mL, 3days",0,1,0,1,1,GFP,-

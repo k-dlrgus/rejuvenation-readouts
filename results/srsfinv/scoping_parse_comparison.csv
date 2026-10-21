@@ -1,0 +1,125 @@
+quantity,stored,this run,match
+n_titles,839,839,True
+n_human_like,799,799,True
+n_mouse_like,32,32,True
+n_other,8,8,True
+n distinct title transgene tokens,103,103,True
+title M29 count,3,3,True
+title M36 count,4,4,True
+title M41 count,1,1,True
+title M52 count,1,1,True
+title M55 count,277,277,True
+title M60 count,1,1,True
+title M65 count,147,147,True
+title M66 count,2,2,True
+title M67 count,22,22,True
+title M68 count,35,35,True
+title M69 count,23,23,True
+title M73 count,4,4,True
+title M79 count,271,271,True
+title M86 count,1,1,True
+title M92 count,4,4,True
+title M94 count,3,3,True
+title token mTagBFP2,73,73,True
+title token SRSF1,72,72,True
+title token OSKM,40,40,True
+title token WT,31,31,True
+title token NTg,30,30,True
+title token OGT,18,18,True
+title token PPP1CB,18,18,True
+title token SIRT1,18,18,True
+title token SLC2A13,18,18,True
+title token WDTC1,18,18,True
+title token HDAC1,16,16,True
+title token RNASEL,16,16,True
+title token SUMO1,10,10,True
+title token MDM2,7,7,True
+title token UBA52,7,7,True
+title token ACTL6A,6,6,True
+title token ATG5,6,6,True
+title token CCNA2,6,6,True
+title token CCNB1,6,6,True
+title token CDC20,6,6,True
+title token CDK1,6,6,True
+title token CDKN2A,6,6,True
+title token CHEK2,6,6,True
+title token CXCR2,6,6,True
+title token CYCS,6,6,True
+title token EEF2,6,6,True
+title token ESR1,6,6,True
+title token GSK3B,6,6,True
+title token HES1,6,6,True
+title token ISG15,6,6,True
+title token KAT7,6,6,True
+title token MAPK7,6,6,True
+title token NFKB1,6,6,True
+title token P4HB,6,6,True
+title token PARK7,6,6,True
+title token PIK3C2A,6,6,True
+title token PIK3CA,6,6,True
+title token PKM,6,6,True
+title token PPIA,6,6,True
+title token PPP1CA,6,6,True
+title token PPP1CC,6,6,True
+title token PPP3CA,6,6,True
+title token PPP4C,6,6,True
+title token PSMC6,6,6,True
+title token PTEN,6,6,True
+title token RAD23B,6,6,True
+title token RPLP0,6,6,True
+title token RPS27A,6,6,True
+title token SLC2A10,6,6,True
+title token SOD1,6,6,True
+title token SOD2,6,6,True
+title token TXN,6,6,True
+title token UBB,6,6,True
+title token UBE2I,6,6,True
+title token UBE2S,6,6,True
+title token UBQLN1,6,6,True
+title token YWHAB,6,6,True
+title token YWHAQ,6,6,True
+title token ACTG1,4,4,True
+title token AKT1,4,4,True
+title token CDC34,4,4,True
+title token CDK2,4,4,True
+title token CDK4,4,4,True
+title token CHEK1,4,4,True
+title token CTNNB1,4,4,True
+title token DDX3X,4,4,True
+title token FAU,4,4,True
+title token GART,4,4,True
+title token HDAC6,4,4,True
+title token HNRNPA2B1,4,4,True
+title token HSP90AB1,4,4,True
+title token HSP90B1,4,4,True
+title token HSPA5,4,4,True
+title token HSPA8,4,4,True
+title token HSPD1,4,4,True
+title token KDM6A,4,4,True
+title token LRRK2,4,4,True
+title token MAPK14,4,4,True
+title token MCM7,4,4,True
+title token NOTCH1,4,4,True
+title token NPM1,4,4,True
+title token PLK1,4,4,True
+title token PPP2CA,4,4,True
+title token PSMD4,4,4,True
+title token RAD51,4,4,True
+title token RRM1,4,4,True
+title token RUVBL2,4,4,True
+title token UBE2A,4,4,True
+title token UBE2N,4,4,True
+title token VCP,4,4,True
+title token XPO1,4,4,True
+title token DICER1,2,2,True
+title token MTOR,2,2,True
+title token PIK3C3,2,2,True
+title token SMARCA4,2,2,True
+title token UBXN7,2,2,True
+"title token UNPARSED:M55 line with Dox-inducible TP53 (DN) transgene, Dox_1000ng/mL, P12, Rep1",1,1,True
+"title token UNPARSED:M55 line with Dox-inducible TP53 (DN) transgene, Dox_1000ng/mL, P12, Rep2",1,1,True
+"title token UNPARSED:M65 line with Dox-inducible TP53 (DN) transgene, Dox_1000ng/mL, P10, Rep1",1,1,True
+"title token UNPARSED:M65 line with Dox-inducible TP53 (DN) transgene, Dox_1000ng/mL, P10, Rep2",1,1,True
+title token UNPARSED:M66 WT iPSC line (isogenic with S39),1,1,True
+"title token UNPARSED:M79 line with Dox-inducible TP53 (DN) transgene, Dox_1000ng/mL, P13, Rep1",1,1,True
+"title token UNPARSED:M79 line with Dox-inducible TP53 (DN) transgene, Dox_1000ng/mL, P13, Rep2",1,1,True

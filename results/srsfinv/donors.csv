@@ -1,0 +1,20 @@
+cell line,cell type,n Fibroblast GSMs,n iPSC GSMs,described age(s),title M-code(s),described passage(s),title P token(s),sex,n GSMs,n batches
+AG04054B,Fibroblast,3,0,29,29,3/4,-,not stated,3,2
+F3,iPSC,0,5,31,-,-,-,not stated,5,2
+B6,iPSC,0,3,36,-,-,P+10/P+2/P0,not stated,3,1
+AG11557A,Fibroblast,4,0,36,36,5,-,not stated,4,1
+AG08906,Fibroblast,1,0,41,41,5,-,not stated,1,1
+AG05186,Fibroblast,1,0,52,52,4,-,not stated,1,1
+AG05192B,Fibroblast,4,0,55,55,5,-,not stated,4,1
+AG12657,Fibroblast,273,0,55,55,6/9/10/11/12/13/14,P10/P11/P12/P13/P14/P9,not stated,273,7
+AG10883,Fibroblast,1,0,60,60,3,-,not stated,1,1
+AG06294A,Fibroblast,147,0,65,65,5/7/8/9/10/11/12/13,P10/P11/P12/P13/P5/P7/P8/P9,not stated,147,5
+AG07141,Fibroblast/iPSC,1,1,66,66,2/4,-,not stated,2,1
+AG09697,Fibroblast,22,0,67,67,5/8,P5/P8,not stated,22,1
+AG13369,Fibroblast,35,0,68,68,9/11/12,P11/P12/P9,not stated,35,3
+AG12587,Fibroblast,23,0,69,69,8/9/12,P12/P9,not stated,23,2
+AG05271B,Fibroblast,4,0,73,73,16,-,not stated,4,1
+AG16359,Fibroblast,271,0,79,79,7/9/10/11/12/13/14/15,P10/P11/P12/P13/P14/P15/P9,not stated,271,7
+AG13349A,Fibroblast,1,0,86,86,12,-,not stated,1,1
+AG04064B,Fibroblast,4,0,92,92,5,-,not stated,4,1
+AG08433C,Fibroblast,3,0,94,94,3/4,-,not stated,3,2

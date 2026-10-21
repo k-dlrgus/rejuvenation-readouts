@@ -1,0 +1,16 @@
+gsm,library_name,title,ch_cell_line,ch_cell_type,age_description,passage_description,ch_genotype,ch_treatment,ch_batch,description_flags,control_candidate
+GSM9611422,S1,M29 WT line,AG04054B,Fibroblast,29.0,3.0,WT,NT,LIB047784,,"C1a genotype WT, treatment NT, title says WT/plain line"
+GSM9611434,S13,"M29 WT line, No Rapa",AG04054B,Fibroblast,29.0,4.0,WT,NT,LIB048130,,"C1a genotype WT, treatment NT, title says WT/plain line"
+GSM9611435,S14,"M29 WT line, Rapa_100, 3 days",AG04054B,Fibroblast,29.0,4.0,WT,"Rapa_100ng/mL, 3days",LIB048130,,"C2 genotype WT, rapamycin"
+GSM9611426,S5,"F3 line with Dox-inducible GFP transgene, Dox_250ng/mL",F3,iPSC,31.0,,GFP,"Dox_250ng/mL, 3days",LIB047784,,"C5 reporter (GFP), dox"
+GSM9611427,S6,"F3 line with Dox-inducible GFP transgene, Dox_2000ng/mL",F3,iPSC,31.0,,GFP,"Dox_2000ng/mL, 3days",LIB047784,,"C5 reporter (GFP), dox"
+GSM9611428,S7,F3 line with Dox-inducible OTX2 transgene,F3,iPSC,31.0,,OTX2,NT,LIB047784,,"C6 other transgene, treatment NT (not induced)"
+GSM9611429,S8,F3 line with Dox-inducible ZGLP1 transgene,F3,iPSC,31.0,,ZGLP1,NT,LIB047784,,"C6 other transgene, treatment NT (not induced)"
+GSM9611433,S12,"F3 line with Dox-inducible ZGLP1 transgene, Dox_2000ng/mL",F3,iPSC,31.0,,ZGLP1,"Dox_2000ng/mL, 3days",LIB048130,,-
+GSM9611438,S17,"M36 WT line, No Rapa",AG11557A,Fibroblast,36.0,5.0,WT,NT,LIB049469,,"C1a genotype WT, treatment NT, title says WT/plain line"
+GSM9611439,S18,"M36 WT line, Rapa_100ng/mL, 24h",AG11557A,Fibroblast,36.0,5.0,WT,Rapa_100ng/mL_24h,LIB049469,,"C2 genotype WT, rapamycin"
+GSM9611440,S19,"M36 WT line, Rapa_100ng/mL, 48h",AG11557A,Fibroblast,36.0,5.0,WT,Rapa_100ng/mL_48h,LIB049469,,"C2 genotype WT, rapamycin"
+GSM9611441,S20,"M36 WT line, Rapa_100ng/mL, 72h",AG11557A,Fibroblast,36.0,5.0,WT,Rapa_100ng/mL_72h,LIB049469,,"C2 genotype WT, rapamycin"
+GSM9611430,S9,"B6 line, P0",B6,iPSC,36.0,,WT,NT,LIB048130,,"C1a genotype WT, treatment NT, title says WT/plain line"
+GSM9611431,S10,"B6 line, P+2",B6,iPSC,36.0,,WT,NT,LIB048130,,"C1a genotype WT, treatment NT, title says WT/plain line"
+GSM9611432,S11,"B6 line, P+10",B6,iPSC,36.0,,WT,NT,LIB048130,,"C1a genotype WT, treatment NT, title says WT/plain line"
