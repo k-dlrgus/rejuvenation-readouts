@@ -1,0 +1,29 @@
+{
+  "file_rows": 58721,
+  "file_rows_unique_unversioned": 58676,
+  "file_rows_duplicate_unversioned": 45,
+  "duplicates_on_ruler": 21,
+  "duplicates_on_ruler_nonzero_in_panel": 2,
+  "ruler_genes": 23485,
+  "ruler_mapped": 22662,
+  "ruler_unmapped": 823,
+  "file_rows_not_on_ruler": 36014,
+  "versioned_exact_matches": 5755,
+  "panel_library_size_all_rows_median": 14488401.0,
+  "panel_library_size_ruler_median": 14466011.5,
+  "panel_share_of_counts_on_ruler_median": 0.9982994480369118,
+  "panel_gsms": 584,
+  "z_zero_columns": 954,
+  "z_zero_columns_mapped_but_all_zero": 131,
+  "tmm_factor_min": 0.616408598860632,
+  "tmm_factor_max": 1.4161905554916374,
+  "split_modes": {
+    "enumerated (2 control pairings)": 283
+  },
+  "eligible_primary_batches": {
+    "LIB052667": 232
+  },
+  "eligible_primary_platforms": {
+    "GPL24676": 232
+  }
+}

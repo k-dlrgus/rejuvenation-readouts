@@ -1,0 +1,175 @@
+gsm,title,ch_cell_line,ch_genotype,ch_treatment,ch_batch,exclusion
+GSM9611423,M69 WT line,AG12587,WT,NT,LIB047784,A12 not polyA; A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9611455,M55 WT line (isogenic with S33),AG12657,WT,NT,LIB050518,A12 not polyA; A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9611457,M68 WT line (isogenic with S35),AG13369,WT,NT,LIB050518,A12 not polyA; A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9611459,M79 WT line (isogenic with S37),AG16359,WT,NT,LIB050518,A12 not polyA; A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9611462,"M65 line with Dox-inducible SUMO1 transgene, Rep1",AG06294A,SUMO1,NT,LIB051945,A5 treatment 'NT' outside the task
+GSM9611463,"M65 line with Dox-inducible SUMO1 transgene, Rep2",AG06294A,SUMO1,NT,LIB051945,A5 treatment 'NT' outside the task
+GSM9611654,"M55 line with Dox-inducible NTg transgene, Dox_1000ng/mL, P9, Rep1",AG12657,WT,"Dox_1000ng/mL, 3days",LIB052667,A3 NTg/WT
+GSM9611655,"M55 line with Dox-inducible NTg transgene, Dox_1000ng/mL, P9, Rep2",AG12657,WT,"Dox_1000ng/mL, 3days",LIB052667,A3 NTg/WT
+GSM9611764,"M65 line with Dox-inducible NTg transgene, Dox_1000ng/mL, P5, Rep1",AG06294A,WT,"Dox_1000ng/mL, 3days",LIB052667,A3 NTg/WT
+GSM9611765,"M65 line with Dox-inducible NTg transgene, Dox_1000ng/mL, P5, Rep2",AG06294A,WT,"Dox_1000ng/mL, 3days",LIB052667,A3 NTg/WT
+GSM9611856,"M79 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P13, Rep1",AG16359,SOX2,"Dox_1000ng/mL, 3days",LIB052667,A7 title token 'OSKM' != genotype 'SOX2'
+GSM9611857,"M79 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P13, Rep2",AG16359,SOX2,"Dox_1000ng/mL, 3days",LIB052667,A7 title token 'OSKM' != genotype 'SOX2'
+GSM9611918,"M79 line with Dox-inducible TP53 (DN) transgene, Dox_1000ng/mL, P13, Rep1",AG16359,TP53,"Dox_1000ng/mL, 3days",LIB052667,A7 title token 'TP53 (DN)' != genotype 'TP53'
+GSM9611919,"M79 line with Dox-inducible TP53 (DN) transgene, Dox_1000ng/mL, P13, Rep2",AG16359,TP53,"Dox_1000ng/mL, 3days",LIB052667,A7 title token 'TP53 (DN)' != genotype 'TP53'
+GSM9611948,"M79 line with Dox-inducible NTg transgene, Dox_1000ng/mL, P10, Rep1",AG16359,WT,"Dox_1000ng/mL, 3days",LIB052667,A3 NTg/WT
+GSM9611949,"M79 line with Dox-inducible NTg transgene, Dox_1000ng/mL, P10, Rep2",AG16359,WT,"Dox_1000ng/mL, 3days",LIB052667,A3 NTg/WT
+GSM9611955,"M65 line with Dox-inducible MDM2 transgene, Dox_1000ng/mL, P10, Rep1, redo",AG06294A,MDM2,"Dox_1000ng/mL, 3days",LIB053449,A11 title P10 != described passage 9
+GSM9611956,"M65 line with Dox-inducible UBA52 transgene, Dox_1000ng/mL, P10, Rep2, redo",AG06294A,UBA52,"Dox_1000ng/mL, 3days",LIB053449,A11 title P10 != described passage 9
+GSM9611975,"M55 line with Dox-inducible NTg transgene, Dox_0ng/mL, P9, Rep1",AG12657,WT,NT,LIB053907,A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9611976,"M55 line with Dox-inducible NTg transgene, Dox_0ng/mL, P9, Rep2",AG12657,WT,NT,LIB053907,A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9612004,"M65 line with Dox-inducible NTg transgene, Dox_0ng/mL, P7, Rep1",AG06294A,WT,NT,LIB053907,A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9612005,"M65 line with Dox-inducible NTg transgene, Dox_0ng/mL, P7, Rep2",AG06294A,WT,NT,LIB053907,A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9612024,"M79 line with Dox-inducible NTg transgene, Dox_0ng/mL, P9, Rep1",AG16359,WT,NT,LIB053907,A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9612025,"M79 line with Dox-inducible NTg transgene, Dox_0ng/mL, P9, Rep2",AG16359,WT,NT,LIB053907,A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9612046,"M67 line with Dox-inducible NTg transgene, Dox_0ng/mL, P5, Rep1",AG09697,WT,NT,LIB054839,A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9612047,"M67 line with Dox-inducible NTg transgene, Dox_0ng/mL, P5, Rep2",AG09697,WT,NT,LIB054839,A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9612048,"M55 line with Dox-inducible NTg transgene, Dox_0ng/mL, P9, Rep3",AG12657,WT,NT,LIB054839,A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9612049,"M55 line with Dox-inducible NTg transgene, Dox_0ng/mL, P9, Rep4",AG12657,WT,NT,LIB054839,A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9612050,"M79 line with Dox-inducible NTg transgene, Dox_0ng/mL, P9, Rep3",AG16359,WT,NT,LIB054839,A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9612051,"M79 line with Dox-inducible NTg transgene, Dox_0ng/mL, P9, Rep4",AG16359,WT,NT,LIB054839,A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9612072,"M68 line with Dox-inducible NTg transgene, Dox_2000ng/mL, P9, Rep1",AG13369,NTg,"Dox_2000ng/mL, 3days",LIB054839,A3 NTg/WT
+GSM9612073,"M68 line with Dox-inducible NTg transgene, Dox_2000ng/mL, P9, Rep2",AG13369,NTg,"Dox_2000ng/mL, 3days",LIB054839,A3 NTg/WT
+GSM9612094,"M69 line with Dox-inducible NTg transgene, Dox_2000ng/mL, P9, Rep1",AG12587,WT,"Dox_2000ng/mL, 3days",LIB054839,A3 NTg/WT
+GSM9612095,"M69 line with Dox-inducible NTg transgene, Dox_2000ng/mL, P9, Rep2",AG12587,WT,"Dox_2000ng/mL, 3days",LIB054839,A3 NTg/WT
+GSM9612096,"M65 line with Dox-inducible NTg transgene, Dox_0ng/mL, P7, Rep3",AG06294A,WT,NT,LIB054839,A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9612097,"M65 line with Dox-inducible NTg transgene, Dox_0ng/mL, P7, Rep4",AG06294A,WT,NT,LIB054839,A3 NTg/WT; A5 treatment 'NT' outside the task
+GSM9612100,"M55 line with Dox-inducible NTg transgene, Dox_1000ng/mL, P9, Rep3",AG12657,NTg,"Dox_1000ng/mL, 3days",LIB054839,A3 NTg/WT
+GSM9612101,"M55 line with Dox-inducible NTg transgene, Dox_1000ng/mL, P9, Rep4",AG12657,NTg,"Dox_1000ng/mL, 3days",LIB054839,A3 NTg/WT
+GSM9612102,"M65 line with Dox-inducible NTg transgene, Dox_1000ng/mL, P5, Rep3",AG06294A,NTg,"Dox_1000ng/mL, 3days",LIB054839,A3 NTg/WT
+GSM9612103,"M65 line with Dox-inducible NTg transgene, Dox_1000ng/mL, P5, Rep4",AG06294A,NTg,"Dox_1000ng/mL, 3days",LIB054839,A3 NTg/WT
+GSM9612104,"M79 line with Dox-inducible NTg transgene, Dox_1000ng/mL, P10, Rep3",AG16359,NTg,"Dox_1000ng/mL, 3days",LIB054839,A3 NTg/WT
+GSM9612105,"M79 line with Dox-inducible NTg transgene, Dox_1000ng/mL, P10, Rep4",AG16359,NTg,"Dox_1000ng/mL, 3days",LIB054839,A3 NTg/WT
+GSM9612106,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P12, 1d-ON, Rep1",AG12657,OSKM,"Dox_1000ng/mL, 1d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON' outside the task"
+GSM9612107,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P12, 1d-ON, Rep2",AG12657,OSKM,"Dox_1000ng/mL, 1d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON' outside the task"
+GSM9612108,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P13, 1d-ON/8d-OFF, Rep1",AG12657,OSKM,"Dox_1000ng/mL, 1d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/8d-OFF' outside the task"
+GSM9612109,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P13, 1d-ON/8d-OFF, Rep2",AG12657,OSKM,"Dox_1000ng/mL, 1d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/8d-OFF' outside the task"
+GSM9612110,"M79 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P13, 1d-ON, Rep1",AG16359,OSKM,"Dox_1000ng/mL, 1d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON' outside the task"
+GSM9612111,"M79 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P13, 1d-ON, Rep2",AG16359,OSKM,"Dox_1000ng/mL, 1d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON' outside the task"
+GSM9612112,"M79 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P14, 1d-ON/8d-OFF, Rep1",AG16359,OSKM,"Dox_1000ng/mL, 1d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/8d-OFF' outside the task"
+GSM9612113,"M79 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P14, 1d-ON/8d-OFF, Rep2",AG16359,OSKM,"Dox_1000ng/mL, 1d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/8d-OFF' outside the task"
+GSM9612114,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P14, 3d-ON/16d-OFF, Rep2",AG12657,mTagBFP2,"Dox_1000ng/mL, 3d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/16d-OFF' outside the task"
+GSM9612115,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P14, 3d-ON/16d-OFF, Rep1",AG12657,mTagBFP2,"Dox_1000ng/mL, 3d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/16d-OFF' outside the task"
+GSM9612116,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P13, 3d-ON/8d-OFF, Rep2",AG12657,mTagBFP2,"Dox_1000ng/mL, 3d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/8d-OFF' outside the task"
+GSM9612117,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P13, 3d-ON/8d-OFF, Rep1",AG12657,mTagBFP2,"Dox_1000ng/mL, 3d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/8d-OFF' outside the task"
+GSM9612118,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P14, 3d-ON/16d-OFF, Rep2",AG12657,SRSF1,"Dox_1000ng/mL, 3d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/16d-OFF' outside the task"
+GSM9612119,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P14, 3d-ON/16d-OFF, Rep1",AG12657,SRSF1,"Dox_1000ng/mL, 3d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/16d-OFF' outside the task"
+GSM9612120,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P13, 3d-ON/8d-OFF, Rep2",AG12657,SRSF1,"Dox_1000ng/mL, 3d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/8d-OFF' outside the task"
+GSM9612121,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P13, 3d-ON/8d-OFF, Rep1",AG12657,SRSF1,"Dox_1000ng/mL, 3d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/8d-OFF' outside the task"
+GSM9612122,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P14, 1d-ON/16d-OFF, Rep1",AG12657,OSKM,"Dox_1000ng/mL, 1d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/16d-OFF' outside the task"
+GSM9612123,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P14, 1d-ON/16d-OFF, Rep2",AG12657,OSKM,"Dox_1000ng/mL, 1d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/16d-OFF' outside the task"
+GSM9612124,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P12, 2d-ON, Rep1",AG12657,OSKM,"Dox_1000ng/mL, 2d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON' outside the task"
+GSM9612125,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P12, 2d-ON, Rep2",AG12657,OSKM,"Dox_1000ng/mL, 2d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON' outside the task"
+GSM9612126,"M79 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P15, 1d-ON/16d-OFF, Rep1",AG16359,OSKM,"Dox_1000ng/mL, 1d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/16d-OFF' outside the task"
+GSM9612127,"M79 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P15, 1d-ON/16d-OFF, Rep2",AG16359,OSKM,"Dox_1000ng/mL, 1d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/16d-OFF' outside the task"
+GSM9612128,"M79 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P13, 2d-ON, Rep1",AG16359,OSKM,"Dox_1000ng/mL, 2d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON' outside the task"
+GSM9612129,"M79 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P13, 2d-ON, Rep2",AG16359,OSKM,"Dox_1000ng/mL, 2d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON' outside the task"
+GSM9612130,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P12, 1d-ON, Rep1",AG12657,SRSF1,"Dox_1000ng/mL, 1d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON' outside the task"
+GSM9612131,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P12, 1d-ON, Rep2",AG12657,SRSF1,"Dox_1000ng/mL, 1d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON' outside the task"
+GSM9612132,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P13, 1d-ON/8d-OFF, Rep1",AG12657,SRSF1,"Dox_1000ng/mL, 1d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/8d-OFF' outside the task"
+GSM9612133,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P13, 1d-ON/8d-OFF, Rep2",AG12657,SRSF1,"Dox_1000ng/mL, 1d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/8d-OFF' outside the task"
+GSM9612134,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P12, 1d-ON, Rep1",AG12657,mTagBFP2,"Dox_1000ng/mL, 1d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON' outside the task"
+GSM9612135,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P12, 1d-ON, Rep2",AG12657,mTagBFP2,"Dox_1000ng/mL, 1d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON' outside the task"
+GSM9612136,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P13, 1d-ON/8d-OFF, Rep1",AG12657,mTagBFP2,"Dox_1000ng/mL, 1d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/8d-OFF' outside the task"
+GSM9612137,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P13, 1d-ON/8d-OFF, Rep2",AG12657,mTagBFP2,"Dox_1000ng/mL, 1d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/8d-OFF' outside the task"
+GSM9612138,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P14, 2d-ON/8d-OFF, Rep1",AG16359,SRSF1,"Dox_1000ng/mL, 2d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/8d-OFF' outside the task"
+GSM9612139,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P14, 2d-ON/8d-OFF, Rep2",AG16359,SRSF1,"Dox_1000ng/mL, 2d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/8d-OFF' outside the task"
+GSM9612140,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P15, 2d-ON/16d-OFF, Rep1",AG16359,SRSF1,"Dox_1000ng/mL, 2d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/16d-OFF' outside the task"
+GSM9612141,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P15, 2d-ON/16d-OFF, Rep2",AG16359,SRSF1,"Dox_1000ng/mL, 2d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/16d-OFF' outside the task"
+GSM9612142,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P14, 2d-ON/8d-OFF, Rep1",AG16359,mTagBFP2,"Dox_1000ng/mL, 2d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/8d-OFF' outside the task"
+GSM9612143,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P14, 2d-ON/8d-OFF, Rep2",AG16359,mTagBFP2,"Dox_1000ng/mL, 2d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/8d-OFF' outside the task"
+GSM9612144,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P15, 2d-ON/16d-OFF, Rep1",AG16359,mTagBFP2,"Dox_1000ng/mL, 2d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/16d-OFF' outside the task"
+GSM9612145,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P15, 2d-ON/16d-OFF, Rep2",AG16359,mTagBFP2,"Dox_1000ng/mL, 2d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/16d-OFF' outside the task"
+GSM9612146,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P15, 1d-ON/16d-OFF, Rep1",AG16359,SRSF1,"Dox_1000ng/mL, 1d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/16d-OFF' outside the task"
+GSM9612147,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P15, 1d-ON/16d-OFF, Rep2",AG16359,SRSF1,"Dox_1000ng/mL, 1d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/16d-OFF' outside the task"
+GSM9612148,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P13, 2d-ON, Rep1",AG16359,SRSF1,"Dox_1000ng/mL, 2d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON' outside the task"
+GSM9612149,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P13, 2d-ON, Rep2",AG16359,SRSF1,"Dox_1000ng/mL, 2d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON' outside the task"
+GSM9612150,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P15, 1d-ON/16d-OFF, Rep1",AG16359,mTagBFP2,"Dox_1000ng/mL, 1d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/16d-OFF' outside the task"
+GSM9612151,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P15, 1d-ON/16d-OFF, Rep2",AG16359,mTagBFP2,"Dox_1000ng/mL, 1d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/16d-OFF' outside the task"
+GSM9612152,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P13, 2d-ON, Rep1",AG16359,mTagBFP2,"Dox_1000ng/mL, 2d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON' outside the task"
+GSM9612153,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P13, 2d-ON, Rep2",AG16359,mTagBFP2,"Dox_1000ng/mL, 2d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON' outside the task"
+GSM9612154,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P14, 1d-ON/16d-OFF, Rep1",AG12657,SRSF1,"Dox_1000ng/mL, 1d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/16d-OFF' outside the task"
+GSM9612155,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P14, 1d-ON/16d-OFF, Rep2",AG12657,SRSF1,"Dox_1000ng/mL, 1d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/16d-OFF' outside the task"
+GSM9612156,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P12, 2d-ON, Rep1",AG12657,SRSF1,"Dox_1000ng/mL, 2d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON' outside the task"
+GSM9612157,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P12, 2d-ON, Rep2",AG12657,SRSF1,"Dox_1000ng/mL, 2d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON' outside the task"
+GSM9612158,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P14, 1d-ON/16d-OFF, Rep1",AG12657,mTagBFP2,"Dox_1000ng/mL, 1d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/16d-OFF' outside the task"
+GSM9612159,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P14, 1d-ON/16d-OFF, Rep2",AG12657,mTagBFP2,"Dox_1000ng/mL, 1d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/16d-OFF' outside the task"
+GSM9612160,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P12, 2d-ON, Rep1",AG12657,mTagBFP2,"Dox_1000ng/mL, 2d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON' outside the task"
+GSM9612161,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P12, 2d-ON, Rep2",AG12657,mTagBFP2,"Dox_1000ng/mL, 2d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON' outside the task"
+GSM9612162,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P13, 2d-ON/8d-OFF, Rep1",AG12657,SRSF1,"Dox_1000ng/mL, 2d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/8d-OFF' outside the task"
+GSM9612163,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P13, 2d-ON/8d-OFF, Rep2",AG12657,SRSF1,"Dox_1000ng/mL, 2d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/8d-OFF' outside the task"
+GSM9612164,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P14, 2d-ON/16d-OFF, Rep1",AG12657,SRSF1,"Dox_1000ng/mL, 2d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/16d-OFF' outside the task"
+GSM9612165,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P14, 2d-ON/16d-OFF, Rep2",AG12657,SRSF1,"Dox_1000ng/mL, 2d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/16d-OFF' outside the task"
+GSM9612166,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P13, 2d-ON/8d-OFF, Rep1",AG12657,mTagBFP2,"Dox_1000ng/mL, 2d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/8d-OFF' outside the task"
+GSM9612167,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P13, 2d-ON/8d-OFF, Rep2",AG12657,mTagBFP2,"Dox_1000ng/mL, 2d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/8d-OFF' outside the task"
+GSM9612168,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P14, 2d-ON/16d-OFF, Rep1",AG12657,mTagBFP2,"Dox_1000ng/mL, 2d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/16d-OFF' outside the task"
+GSM9612169,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P14, 2d-ON/16d-OFF, Rep2",AG12657,mTagBFP2,"Dox_1000ng/mL, 2d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/16d-OFF' outside the task"
+GSM9612170,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P13, 2d-ON/8d-OFF, Rep1",AG12657,OSKM,"Dox_1000ng/mL, 2d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/8d-OFF' outside the task"
+GSM9612171,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P13, 2d-ON/8d-OFF, Rep2",AG12657,OSKM,"Dox_1000ng/mL, 2d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/8d-OFF' outside the task"
+GSM9612172,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P12, 3d-ON, Rep1",AG12657,OSKM,"Dox_1000ng/mL, 3d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612173,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P12, 3d-ON, Rep2",AG12657,OSKM,"Dox_1000ng/mL, 3d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612174,"M79 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P14, 2d-ON/8d-OFF, Rep1",AG16359,OSKM,"Dox_1000ng/mL, 2d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/8d-OFF' outside the task"
+GSM9612175,"M79 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P14, 2d-ON/8d-OFF, Rep2",AG16359,OSKM,"Dox_1000ng/mL, 2d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 2d-ON/8d-OFF' outside the task"
+GSM9612176,"M79 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P13, 3d-ON, Rep1",AG16359,OSKM,"Dox_1000ng/mL, 3d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612177,"M79 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P13, 3d-ON, Rep2",AG16359,OSKM,"Dox_1000ng/mL, 3d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612178,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P12, 3d-ON, Rep1",AG12657,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612179,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P12, 3d-ON, Rep2",AG12657,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612180,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P12, 3d-ON, Rep1",AG12657,mTagBFP2,"Dox_1000ng/mL, 3d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612181,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P12, 3d-ON, Rep2",AG12657,mTagBFP2,"Dox_1000ng/mL, 3d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612182,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P15, 3d-ON/16d-OFF, Rep1",AG16359,SRSF1,"Dox_1000ng/mL, 3d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/16d-OFF' outside the task"
+GSM9612183,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P15, 3d-ON/16d-OFF, Rep2",AG16359,SRSF1,"Dox_1000ng/mL, 3d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/16d-OFF' outside the task"
+GSM9612184,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P15, 3d-ON/16d-OFF, Rep1",AG16359,mTagBFP2,"Dox_1000ng/mL, 3d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/16d-OFF' outside the task"
+GSM9612185,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P15, 3d-ON/16d-OFF, Rep2",AG16359,mTagBFP2,"Dox_1000ng/mL, 3d-ON/16d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/16d-OFF' outside the task"
+GSM9612186,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P13, 1d-ON, Rep1",AG16359,SRSF1,"Dox_1000ng/mL, 1d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON' outside the task"
+GSM9612187,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P13, 1d-ON, Rep2",AG16359,SRSF1,"Dox_1000ng/mL, 1d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON' outside the task"
+GSM9612188,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P14, 1d-ON/8d-OFF, Rep1",AG16359,SRSF1,"Dox_1000ng/mL, 1d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/8d-OFF' outside the task"
+GSM9612189,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P14, 1d-ON/8d-OFF, Rep2",AG16359,SRSF1,"Dox_1000ng/mL, 1d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/8d-OFF' outside the task"
+GSM9612190,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P13, 1d-ON, Rep1",AG16359,mTagBFP2,"Dox_1000ng/mL, 1d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON' outside the task"
+GSM9612191,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P13, 1d-ON, Rep2",AG16359,mTagBFP2,"Dox_1000ng/mL, 1d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON' outside the task"
+GSM9612192,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P14, 1d-ON/8d-OFF, Rep1",AG16359,mTagBFP2,"Dox_1000ng/mL, 1d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/8d-OFF' outside the task"
+GSM9612193,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P14, 1d-ON/8d-OFF, Rep2",AG16359,mTagBFP2,"Dox_1000ng/mL, 1d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 1d-ON/8d-OFF' outside the task"
+GSM9612194,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P13, 3d-ON, Rep1",AG16359,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612195,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P13, 3d-ON, Rep2",AG16359,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612196,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P14, 3d-ON/8d-OFF, Rep1",AG16359,SRSF1,"Dox_1000ng/mL, 3d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/8d-OFF' outside the task"
+GSM9612197,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P14, 3d-ON/8d-OFF, Rep2",AG16359,SRSF1,"Dox_1000ng/mL, 3d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/8d-OFF' outside the task"
+GSM9612198,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P13, 3d-ON, Rep1",AG16359,mTagBFP2,"Dox_1000ng/mL, 3d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612199,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P13, 3d-ON, Rep2",AG16359,mTagBFP2,"Dox_1000ng/mL, 3d-ON",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612200,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P14, 3d-ON/8d-OFF, Rep1",AG16359,mTagBFP2,"Dox_1000ng/mL, 3d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/8d-OFF' outside the task"
+GSM9612201,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P14, 3d-ON/8d-OFF, Rep2",AG16359,mTagBFP2,"Dox_1000ng/mL, 3d-ON/8d-OFF",LIB058979,"A5 treatment 'Dox_1000ng/mL, 3d-ON/8d-OFF' outside the task"
+GSM9612202,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep1",AG12657,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612203,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep2",AG12657,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612204,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep3",AG12657,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612205,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep4",AG12657,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612206,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P11, 3d-ON, Rep1",AG12657,OSKM,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612207,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P11, 3d-ON, Rep2",AG12657,OSKM,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612208,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P11, 3d-ON, Rep3",AG12657,OSKM,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612209,"M55 line with Dox-inducible OSKM transgene, Dox_1000ng/mL, P11, 3d-ON, Rep4",AG12657,OSKM,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612210,"M68 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep1",AG13369,mTagBFP2,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612211,"M68 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep2",AG13369,mTagBFP2,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612212,"M68 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep3",AG13369,mTagBFP2,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612213,"M68 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep4",AG13369,mTagBFP2,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612214,"M68 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep1",AG13369,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612215,"M68 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep2",AG13369,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612216,"M68 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep3",AG13369,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612217,"M68 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep4",AG13369,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612218,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep1",AG16359,mTagBFP2,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612219,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep2",AG16359,mTagBFP2,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612220,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep3",AG16359,mTagBFP2,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612221,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep4",AG16359,mTagBFP2,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612222,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep1",AG16359,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612223,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep2",AG16359,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612224,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep3",AG16359,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612225,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 3d-ON, Rep4",AG16359,SRSF1,"Dox_1000ng/mL, 3d-ON",LIB092645,"A5 treatment 'Dox_1000ng/mL, 3d-ON' outside the task"
+GSM9612226,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 5d-ON/2d-OFF, Rep1",AG12657,SRSF1,"Dox_1000ng/mL, 5d-ON/2d-OFF",LIB092645,"A5 treatment 'Dox_1000ng/mL, 5d-ON/2d-OFF' outside the task"
+GSM9612227,"M55 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 5d-ON/2d-OFF, Rep2",AG12657,SRSF1,"Dox_1000ng/mL, 5d-ON/2d-OFF",LIB092645,"A5 treatment 'Dox_1000ng/mL, 5d-ON/2d-OFF' outside the task"
+GSM9612228,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 5d-ON/2d-OFF, Rep1",AG12657,mTagBFP2,"Dox_1000ng/mL, 5d-ON/2d-OFF",LIB092645,"A5 treatment 'Dox_1000ng/mL, 5d-ON/2d-OFF' outside the task"
+GSM9612229,"M55 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 5d-ON/2d-OFF, Rep2",AG12657,mTagBFP2,"Dox_1000ng/mL, 5d-ON/2d-OFF",LIB092645,"A5 treatment 'Dox_1000ng/mL, 5d-ON/2d-OFF' outside the task"
+GSM9612230,"M68 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 5d-ON/2d-OFF, Rep1",AG13369,mTagBFP2,"Dox_1000ng/mL, 5d-ON/2d-OFF",LIB092645,"A5 treatment 'Dox_1000ng/mL, 5d-ON/2d-OFF' outside the task"
+GSM9612231,"M68 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 5d-ON/2d-OFF, Rep2",AG13369,mTagBFP2,"Dox_1000ng/mL, 5d-ON/2d-OFF",LIB092645,"A5 treatment 'Dox_1000ng/mL, 5d-ON/2d-OFF' outside the task"
+GSM9612232,"M68 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 5d-ON/2d-OFF, Rep1",AG13369,SRSF1,"Dox_1000ng/mL, 5d-ON/2d-OFF",LIB092645,"A5 treatment 'Dox_1000ng/mL, 5d-ON/2d-OFF' outside the task"
+GSM9612233,"M68 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 5d-ON/2d-OFF, Rep2",AG13369,SRSF1,"Dox_1000ng/mL, 5d-ON/2d-OFF",LIB092645,"A5 treatment 'Dox_1000ng/mL, 5d-ON/2d-OFF' outside the task"
+GSM9612234,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 5d-ON/2d-OFF, Rep1",AG16359,mTagBFP2,"Dox_1000ng/mL, 5d-ON/2d-OFF",LIB092645,"A5 treatment 'Dox_1000ng/mL, 5d-ON/2d-OFF' outside the task"
+GSM9612235,"M79 line with Dox-inducible mTagBFP2 transgene, Dox_1000ng/mL, P11, 5d-ON/2d-OFF, Rep2",AG16359,mTagBFP2,"Dox_1000ng/mL, 5d-ON/2d-OFF",LIB092645,"A5 treatment 'Dox_1000ng/mL, 5d-ON/2d-OFF' outside the task"
+GSM9612236,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 5d-ON/2d-OFF, Rep1",AG16359,SRSF1,"Dox_1000ng/mL, 5d-ON/2d-OFF",LIB092645,"A5 treatment 'Dox_1000ng/mL, 5d-ON/2d-OFF' outside the task"
+GSM9612237,"M79 line with Dox-inducible SRSF1 transgene, Dox_1000ng/mL, P11, 5d-ON/2d-OFF, Rep2",AG16359,SRSF1,"Dox_1000ng/mL, 5d-ON/2d-OFF",LIB092645,"A5 treatment 'Dox_1000ng/mL, 5d-ON/2d-OFF' outside the task"

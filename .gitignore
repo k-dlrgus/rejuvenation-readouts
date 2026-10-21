@@ -114,3 +114,8 @@ results/seng2/stage0_space.npz
 results/axang/axes.npz
 results/transfer/vec_south.npz
 results/transfer/vec_seng.npz
+
+# DONOR full z-space displacements (26.6 MB). Deterministic from the frozen ruler
+# plus data/raw/srsfinv/GSE325735_human_raw_counts.txt.gz (GEO GSE325735 suppl).
+# Rebuild: python src/donor_run.py build
+results/donor/displacements_full.npy

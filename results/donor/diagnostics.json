@@ -1,0 +1,94 @@
+{
+  "D1": {
+    "cond": "Dox_1000ng/mL, 3days",
+    "n_candidates": 89,
+    "n_cells": 232,
+    "n_cells_qualifying": 226,
+    "n_q": 89,
+    "n_nonfinite": 0,
+    "M": 0.2195033123114415,
+    "angle_M": 77.32013817888708,
+    "ci_lo": 0.13042961599062436,
+    "ci_hi": 0.2907207848129782,
+    "ci_valid": true,
+    "spec_k": 28,
+    "spec_n": 89,
+    "spec_baseline": 4.45,
+    "spec_p": 1.954246159365819e-15,
+    "spec_untestable": []
+  },
+  "D5": {
+    "cond": "Dox_2000ng/mL, 3days",
+    "n_candidates": 9,
+    "n_cells": 51,
+    "n_cells_qualifying": 50,
+    "n_q": 9,
+    "n_nonfinite": 0,
+    "M": 0.3851065379733419,
+    "angle_M": 67.34964557132236
+  },
+  "D2": {
+    "transgenes": [
+      "HDAC1",
+      "OGT",
+      "OSKM",
+      "PPP1CB",
+      "RNASEL",
+      "SIRT1",
+      "SLC2A13",
+      "SRSF1",
+      "WDTC1"
+    ],
+    "summary": [
+      {
+        "category": "different line / different batch",
+        "n_pairs": 188,
+        "median_c_obs": 0.1615755176579307,
+        "n_corr": 177,
+        "median_c_corr": 0.19390114540341102,
+        "median_angle": 80.70164326368482
+      },
+      {
+        "category": "different line / same batch",
+        "n_pairs": 72,
+        "median_c_obs": 0.39113780466400927,
+        "n_corr": 68,
+        "median_c_corr": 0.5038098742766713,
+        "median_angle": 66.9746845284487
+      },
+      {
+        "category": "same line / different batch",
+        "n_pairs": 22,
+        "median_c_obs": 0.15576874643860286,
+        "n_corr": 21,
+        "median_c_corr": 0.25708260927976495,
+        "median_angle": 81.0386162636593
+      }
+    ]
+  },
+  "D3": {
+    "replicate_counts_in_primary_cells": [
+      2
+    ],
+    "control_counts": [
+      2
+    ],
+    "rho_lib": -0.06523663602315288,
+    "p_lib": 0.5435931077506801,
+    "rho_nlines": -0.0849818521840905,
+    "p_nlines": 0.4284670809778423,
+    "n": 89
+  },
+  "D4": {
+    "n_pairs": 183,
+    "median_c_obs_full": 0.0904107778335992,
+    "median_angle_full": 84.81276072874138,
+    "median_c_obs_20": 0.4126772577797668,
+    "median_angle_20": 65.62687272639594
+  },
+  "D6": {
+    "median_share": 0.13071960340416386,
+    "q05": 0.03946507936963428,
+    "q95": 0.2742764549699659
+  }
+}

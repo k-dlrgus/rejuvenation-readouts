@@ -1,0 +1,29 @@
+===== stage0 2026-10-21T22:21:39Z
+[stage0] compared 210 quantities (192 donors.csv cells); mismatches 0
+[stage0] counts md5 8e3ecb46366730a5f6479147bf57895f (recorded; no stored md5); basis err 3.553e-15
+===== build 2026-10-21T22:21:39Z
+[rules] six-line GSMs 771; kept 597; excluded 174
+  exclusion rule A12: 4 GSM-reasons
+  exclusion rule A3: 34 GSM-reasons
+  exclusion rule A5: 152 GSM-reasons
+  exclusion rule A7: 4 GSM-reasons
+  exclusion rule A11: 2 GSM-reasons
+[cells] 286 (t, L, condition) cells; eligible 283; panel GSMs 584
+[counts] read 58721 rows x 807 columns in 6.5s; dtypes ['int64']
+[align] file rows 58721; ruler genes mapped 22662 of 23485; unmapped 823 (z = 0); duplicate unversioned IDs 45 (on ruler 21, nonzero in panel 2)
+[z] all-zero ruler columns across the panel 954 (131 of them mapped but never counted)
+[build] split modes {'enumerated (2 control pairings)': 283}; primary eligible batches {'LIB052667': 232}; platforms {'GPL24676': 232}
+===== read 2026-10-21T22:22:38Z
+[gate] candidates 89; M_same 0.9340 (bar 0.85); specificity 86 of 89 vs baseline 4.45, p 1.26e-107; passed True
+[primary] n_q 89; M 0.4120 CI 0.3535 to 0.4601 valid True; angle 65.7; specificity 22 of 89 vs 4.45, p 3.64e-10; reading DONOR-SPECIFIC
+[D1 line mean removed] n_q 89; M 0.2195 CI 0.1304 to 0.2907; spec 28 of 89 p 1.95e-15
+[D5 dox2000] n_q 9; M 0.3851
+[D4 full gene space] median angle 84.8 vs 20-comp 65.6
+===== findings 2026-10-21T22:26:06Z
+[findings] wrote C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\FINDINGS_DONOR.md
+===== findings 2026-10-21T22:26:57Z
+[findings] wrote C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\FINDINGS_DONOR.md
+===== findings 2026-10-21T22:27:19Z
+[findings] wrote C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\FINDINGS_DONOR.md
+===== findings 2026-10-21T22:27:36Z
+[findings] wrote C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\FINDINGS_DONOR.md

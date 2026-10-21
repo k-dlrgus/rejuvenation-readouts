@@ -1,0 +1,211 @@
+quantity,stored,new,match
+SOFT md5,6257c37dbec6f49a5cff6f110ca641a4,6257c37dbec6f49a5cff6f110ca641a4,True
+n GSMs,839,839,True
+n GSMs (inventory_meta n_gsm),839,839,True
+n human GSMs,807,807,True
+n human GSMs (inventory_meta n_human),807,807,True
+n human fibroblast GSMs (inventory_meta n_fibroblast),798,798,True
+"n transgene GSMs (human fibroblast, genotype not WT/NTg/mTagBFP2/GFP)",664,664,True
+n transgene genotype values,96,96,True
+n transgenes at more than one described age,89,89,True
+"transgenes at more than one age, names (inventory_meta)",ACTG1;ACTL6A;AKT1;ATG5;CCNA2;CCNB1;CDC20;CDC34;CDK1;CDK2;CDK4;CDKN2A;CHEK1;CHEK2;CTNNB1;CXCR2;CYCS;DDX3X;EEF2;ESR1;FAU;GART;GSK3B;HDAC1;HDAC6;HES1;HNRNPA2B1;HSP90AB1;HSP90B1;HSPA5;HSPA8;HSPD1;ISG15;KAT7;KDM6A;LRRK2;MAPK14;MAPK7;MCM7;MDM2;NFKB1;NOTCH1;NPM1;OGT;OSKM;P4HB;PARK7;PIK3C2A;PIK3CA;PKM;PLK1;PPIA;PPP1CA;PPP1CB;PPP1CC;PPP2CA;PPP3CA;PPP4C;PSMC6;PSMD4;PTEN;RAD23B;RAD51;RNASEL;RPLP0;RPS27A;RRM1;RUVBL2;SIRT1;SLC2A10;SLC2A13;SOD1;SOD2;SRSF1;SUMO1;TP53 (DN);TXN;UBA52;UBB;UBE2A;UBE2I;UBE2N;UBE2S;UBQLN1;VCP;WDTC1;XPO1;YWHAB;YWHAQ,ACTG1;ACTL6A;AKT1;ATG5;CCNA2;CCNB1;CDC20;CDC34;CDK1;CDK2;CDK4;CDKN2A;CHEK1;CHEK2;CTNNB1;CXCR2;CYCS;DDX3X;EEF2;ESR1;FAU;GART;GSK3B;HDAC1;HDAC6;HES1;HNRNPA2B1;HSP90AB1;HSP90B1;HSPA5;HSPA8;HSPD1;ISG15;KAT7;KDM6A;LRRK2;MAPK14;MAPK7;MCM7;MDM2;NFKB1;NOTCH1;NPM1;OGT;OSKM;P4HB;PARK7;PIK3C2A;PIK3CA;PKM;PLK1;PPIA;PPP1CA;PPP1CB;PPP1CC;PPP2CA;PPP3CA;PPP4C;PSMC6;PSMD4;PTEN;RAD23B;RAD51;RNASEL;RPLP0;RPS27A;RRM1;RUVBL2;SIRT1;SLC2A10;SLC2A13;SOD1;SOD2;SRSF1;SUMO1;TP53 (DN);TXN;UBA52;UBB;UBE2A;UBE2I;UBE2N;UBE2S;UBQLN1;VCP;WDTC1;XPO1;YWHAB;YWHAQ,True
+donors.csv n rows (cell lines),19,19,True
+donors.csv columns,cell type;n Fibroblast GSMs;n iPSC GSMs;described age(s);title M-code(s);described passage(s);title P token(s);sex;n GSMs;n batches,cell type;n Fibroblast GSMs;n iPSC GSMs;described age(s);title M-code(s);described passage(s);title P token(s);sex;n GSMs;n batches,True
+donors.csv AG04054B / cell type,Fibroblast,Fibroblast,True
+donors.csv AG04054B / n Fibroblast GSMs,3,3,True
+donors.csv AG04054B / n iPSC GSMs,0,0,True
+donors.csv AG04054B / described age(s),29,29,True
+donors.csv AG04054B / title M-code(s),29,29,True
+donors.csv AG04054B / described passage(s),3/4,3/4,True
+donors.csv AG04054B / title P token(s),-,-,True
+donors.csv AG04054B / sex,not stated,not stated,True
+donors.csv AG04054B / n GSMs,3,3,True
+donors.csv AG04054B / n batches,2,2,True
+donors.csv AG04064B / cell type,Fibroblast,Fibroblast,True
+donors.csv AG04064B / n Fibroblast GSMs,4,4,True
+donors.csv AG04064B / n iPSC GSMs,0,0,True
+donors.csv AG04064B / described age(s),92,92,True
+donors.csv AG04064B / title M-code(s),92,92,True
+donors.csv AG04064B / described passage(s),5,5,True
+donors.csv AG04064B / title P token(s),-,-,True
+donors.csv AG04064B / sex,not stated,not stated,True
+donors.csv AG04064B / n GSMs,4,4,True
+donors.csv AG04064B / n batches,1,1,True
+donors.csv AG05186 / cell type,Fibroblast,Fibroblast,True
+donors.csv AG05186 / n Fibroblast GSMs,1,1,True
+donors.csv AG05186 / n iPSC GSMs,0,0,True
+donors.csv AG05186 / described age(s),52,52,True
+donors.csv AG05186 / title M-code(s),52,52,True
+donors.csv AG05186 / described passage(s),4,4,True
+donors.csv AG05186 / title P token(s),-,-,True
+donors.csv AG05186 / sex,not stated,not stated,True
+donors.csv AG05186 / n GSMs,1,1,True
+donors.csv AG05186 / n batches,1,1,True
+donors.csv AG05192B / cell type,Fibroblast,Fibroblast,True
+donors.csv AG05192B / n Fibroblast GSMs,4,4,True
+donors.csv AG05192B / n iPSC GSMs,0,0,True
+donors.csv AG05192B / described age(s),55,55,True
+donors.csv AG05192B / title M-code(s),55,55,True
+donors.csv AG05192B / described passage(s),5,5,True
+donors.csv AG05192B / title P token(s),-,-,True
+donors.csv AG05192B / sex,not stated,not stated,True
+donors.csv AG05192B / n GSMs,4,4,True
+donors.csv AG05192B / n batches,1,1,True
+donors.csv AG05271B / cell type,Fibroblast,Fibroblast,True
+donors.csv AG05271B / n Fibroblast GSMs,4,4,True
+donors.csv AG05271B / n iPSC GSMs,0,0,True
+donors.csv AG05271B / described age(s),73,73,True
+donors.csv AG05271B / title M-code(s),73,73,True
+donors.csv AG05271B / described passage(s),16,16,True
+donors.csv AG05271B / title P token(s),-,-,True
+donors.csv AG05271B / sex,not stated,not stated,True
+donors.csv AG05271B / n GSMs,4,4,True
+donors.csv AG05271B / n batches,1,1,True
+donors.csv AG06294A / cell type,Fibroblast,Fibroblast,True
+donors.csv AG06294A / n Fibroblast GSMs,147,147,True
+donors.csv AG06294A / n iPSC GSMs,0,0,True
+donors.csv AG06294A / described age(s),65,65,True
+donors.csv AG06294A / title M-code(s),65,65,True
+donors.csv AG06294A / described passage(s),5/7/8/9/10/11/12/13,5/7/8/9/10/11/12/13,True
+donors.csv AG06294A / title P token(s),P10/P11/P12/P13/P5/P7/P8/P9,P10/P11/P12/P13/P5/P7/P8/P9,True
+donors.csv AG06294A / sex,not stated,not stated,True
+donors.csv AG06294A / n GSMs,147,147,True
+donors.csv AG06294A / n batches,5,5,True
+donors.csv AG07141 / cell type,Fibroblast/iPSC,Fibroblast/iPSC,True
+donors.csv AG07141 / n Fibroblast GSMs,1,1,True
+donors.csv AG07141 / n iPSC GSMs,1,1,True
+donors.csv AG07141 / described age(s),66,66,True
+donors.csv AG07141 / title M-code(s),66,66,True
+donors.csv AG07141 / described passage(s),2/4,2/4,True
+donors.csv AG07141 / title P token(s),-,-,True
+donors.csv AG07141 / sex,not stated,not stated,True
+donors.csv AG07141 / n GSMs,2,2,True
+donors.csv AG07141 / n batches,1,1,True
+donors.csv AG08433C / cell type,Fibroblast,Fibroblast,True
+donors.csv AG08433C / n Fibroblast GSMs,3,3,True
+donors.csv AG08433C / n iPSC GSMs,0,0,True
+donors.csv AG08433C / described age(s),94,94,True
+donors.csv AG08433C / title M-code(s),94,94,True
+donors.csv AG08433C / described passage(s),3/4,3/4,True
+donors.csv AG08433C / title P token(s),-,-,True
+donors.csv AG08433C / sex,not stated,not stated,True
+donors.csv AG08433C / n GSMs,3,3,True
+donors.csv AG08433C / n batches,2,2,True
+donors.csv AG08906 / cell type,Fibroblast,Fibroblast,True
+donors.csv AG08906 / n Fibroblast GSMs,1,1,True
+donors.csv AG08906 / n iPSC GSMs,0,0,True
+donors.csv AG08906 / described age(s),41,41,True
+donors.csv AG08906 / title M-code(s),41,41,True
+donors.csv AG08906 / described passage(s),5,5,True
+donors.csv AG08906 / title P token(s),-,-,True
+donors.csv AG08906 / sex,not stated,not stated,True
+donors.csv AG08906 / n GSMs,1,1,True
+donors.csv AG08906 / n batches,1,1,True
+donors.csv AG09697 / cell type,Fibroblast,Fibroblast,True
+donors.csv AG09697 / n Fibroblast GSMs,22,22,True
+donors.csv AG09697 / n iPSC GSMs,0,0,True
+donors.csv AG09697 / described age(s),67,67,True
+donors.csv AG09697 / title M-code(s),67,67,True
+donors.csv AG09697 / described passage(s),5/8,5/8,True
+donors.csv AG09697 / title P token(s),P5/P8,P5/P8,True
+donors.csv AG09697 / sex,not stated,not stated,True
+donors.csv AG09697 / n GSMs,22,22,True
+donors.csv AG09697 / n batches,1,1,True
+donors.csv AG10883 / cell type,Fibroblast,Fibroblast,True
+donors.csv AG10883 / n Fibroblast GSMs,1,1,True
+donors.csv AG10883 / n iPSC GSMs,0,0,True
+donors.csv AG10883 / described age(s),60,60,True
+donors.csv AG10883 / title M-code(s),60,60,True
+donors.csv AG10883 / described passage(s),3,3,True
+donors.csv AG10883 / title P token(s),-,-,True
+donors.csv AG10883 / sex,not stated,not stated,True
+donors.csv AG10883 / n GSMs,1,1,True
+donors.csv AG10883 / n batches,1,1,True
+donors.csv AG11557A / cell type,Fibroblast,Fibroblast,True
+donors.csv AG11557A / n Fibroblast GSMs,4,4,True
+donors.csv AG11557A / n iPSC GSMs,0,0,True
+donors.csv AG11557A / described age(s),36,36,True
+donors.csv AG11557A / title M-code(s),36,36,True
+donors.csv AG11557A / described passage(s),5,5,True
+donors.csv AG11557A / title P token(s),-,-,True
+donors.csv AG11557A / sex,not stated,not stated,True
+donors.csv AG11557A / n GSMs,4,4,True
+donors.csv AG11557A / n batches,1,1,True
+donors.csv AG12587 / cell type,Fibroblast,Fibroblast,True
+donors.csv AG12587 / n Fibroblast GSMs,23,23,True
+donors.csv AG12587 / n iPSC GSMs,0,0,True
+donors.csv AG12587 / described age(s),69,69,True
+donors.csv AG12587 / title M-code(s),69,69,True
+donors.csv AG12587 / described passage(s),8/9/12,8/9/12,True
+donors.csv AG12587 / title P token(s),P12/P9,P12/P9,True
+donors.csv AG12587 / sex,not stated,not stated,True
+donors.csv AG12587 / n GSMs,23,23,True
+donors.csv AG12587 / n batches,2,2,True
+donors.csv AG12657 / cell type,Fibroblast,Fibroblast,True
+donors.csv AG12657 / n Fibroblast GSMs,273,273,True
+donors.csv AG12657 / n iPSC GSMs,0,0,True
+donors.csv AG12657 / described age(s),55,55,True
+donors.csv AG12657 / title M-code(s),55,55,True
+donors.csv AG12657 / described passage(s),6/9/10/11/12/13/14,6/9/10/11/12/13/14,True
+donors.csv AG12657 / title P token(s),P10/P11/P12/P13/P14/P9,P10/P11/P12/P13/P14/P9,True
+donors.csv AG12657 / sex,not stated,not stated,True
+donors.csv AG12657 / n GSMs,273,273,True
+donors.csv AG12657 / n batches,7,7,True
+donors.csv AG13349A / cell type,Fibroblast,Fibroblast,True
+donors.csv AG13349A / n Fibroblast GSMs,1,1,True
+donors.csv AG13349A / n iPSC GSMs,0,0,True
+donors.csv AG13349A / described age(s),86,86,True
+donors.csv AG13349A / title M-code(s),86,86,True
+donors.csv AG13349A / described passage(s),12,12,True
+donors.csv AG13349A / title P token(s),-,-,True
+donors.csv AG13349A / sex,not stated,not stated,True
+donors.csv AG13349A / n GSMs,1,1,True
+donors.csv AG13349A / n batches,1,1,True
+donors.csv AG13369 / cell type,Fibroblast,Fibroblast,True
+donors.csv AG13369 / n Fibroblast GSMs,35,35,True
+donors.csv AG13369 / n iPSC GSMs,0,0,True
+donors.csv AG13369 / described age(s),68,68,True
+donors.csv AG13369 / title M-code(s),68,68,True
+donors.csv AG13369 / described passage(s),9/11/12,9/11/12,True
+donors.csv AG13369 / title P token(s),P11/P12/P9,P11/P12/P9,True
+donors.csv AG13369 / sex,not stated,not stated,True
+donors.csv AG13369 / n GSMs,35,35,True
+donors.csv AG13369 / n batches,3,3,True
+donors.csv AG16359 / cell type,Fibroblast,Fibroblast,True
+donors.csv AG16359 / n Fibroblast GSMs,271,271,True
+donors.csv AG16359 / n iPSC GSMs,0,0,True
+donors.csv AG16359 / described age(s),79,79,True
+donors.csv AG16359 / title M-code(s),79,79,True
+donors.csv AG16359 / described passage(s),7/9/10/11/12/13/14/15,7/9/10/11/12/13/14/15,True
+donors.csv AG16359 / title P token(s),P10/P11/P12/P13/P14/P15/P9,P10/P11/P12/P13/P14/P15/P9,True
+donors.csv AG16359 / sex,not stated,not stated,True
+donors.csv AG16359 / n GSMs,271,271,True
+donors.csv AG16359 / n batches,7,7,True
+donors.csv B6 / cell type,iPSC,iPSC,True
+donors.csv B6 / n Fibroblast GSMs,0,0,True
+donors.csv B6 / n iPSC GSMs,3,3,True
+donors.csv B6 / described age(s),36,36,True
+donors.csv B6 / title M-code(s),-,-,True
+donors.csv B6 / described passage(s),-,-,True
+donors.csv B6 / title P token(s),P+10/P+2/P0,P+10/P+2/P0,True
+donors.csv B6 / sex,not stated,not stated,True
+donors.csv B6 / n GSMs,3,3,True
+donors.csv B6 / n batches,1,1,True
+donors.csv F3 / cell type,iPSC,iPSC,True
+donors.csv F3 / n Fibroblast GSMs,0,0,True
+donors.csv F3 / n iPSC GSMs,5,5,True
+donors.csv F3 / described age(s),31,31,True
+donors.csv F3 / title M-code(s),-,-,True
+donors.csv F3 / described passage(s),-,-,True
+donors.csv F3 / title P token(s),-,-,True
+donors.csv F3 / sex,not stated,not stated,True
+donors.csv F3 / n GSMs,5,5,True
+donors.csv F3 / n batches,2,2,True
+counts file bytes,26007361,26007361,True
+counts header first field,Geneid,Geneid,True
+counts header sample columns (inventory_meta counts_header_cols),807,807,True
+counts header columns == human library names (set),True,True,True
+counts header duplicate columns,0,0,True
+basis max|L'L - I| <= 1e-8,True,True,True
+basis rows (ruler genes),23485,23485,True
+basis n_mid,308,308,True

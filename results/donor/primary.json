@@ -1,0 +1,20 @@
+{
+  "cond": "Dox_1000ng/mL, 3days",
+  "n_candidates": 89,
+  "n_cells": 232,
+  "n_cells_qualifying": 230,
+  "n_q": 89,
+  "n_nonfinite": 0,
+  "M": 0.4120306536942209,
+  "angle_M": 65.66753872183786,
+  "ci_lo": 0.35348570498347165,
+  "ci_hi": 0.4600754543708923,
+  "ci_valid": true,
+  "spec_k": 22,
+  "spec_n": 89,
+  "spec_baseline": 4.45,
+  "spec_p": 3.6417553689005346e-10,
+  "spec_untestable": [],
+  "reading": "DONOR-SPECIFIC",
+  "reading_detail": ""
+}
