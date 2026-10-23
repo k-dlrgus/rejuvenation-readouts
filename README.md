@@ -20,7 +20,7 @@ Code and results archive: https://doi.org/10.5281/zenodo.23092318 (snapshot of t
 of the Sengstack et al. Perturb-seq screen (Proc. Natl Acad. Sci. USA, 2026) with the
 distance-to-target method of the first preprint.
 
-Preprint: https://doi.org/10.5281/zenodo.23591624 (PDF also at [paper/two_definitions_of_young_preprint_v1.pdf](paper/two_definitions_of_young_preprint_v1.pdf))
+Preprint: https://doi.org/10.5281/zenodo.23591623 (PDF also at [paper/two_definitions_of_young_preprint_v1.pdf](paper/two_definitions_of_young_preprint_v1.pdf))
 
 Code and results archive: https://doi.org/10.5281/zenodo.23591315 (snapshot of this repository at tag `paper2-v1`)
 
@@ -231,14 +231,14 @@ https://doi.org/10.5281/zenodo.23092318
 Second preprint:
 
 R. Kwon. *Two definitions of young give opposite answers in a fibroblast rejuvenation screen.*
-Preprint. https://doi.org/10.5281/zenodo.23591624
+Preprint. https://doi.org/10.5281/zenodo.23591623
 
 Code and results for the second preprint:
 
 R. Kwon. *Two definitions of young give opposite answers in a fibroblast rejuvenation screen:
 code and results.* https://doi.org/10.5281/zenodo.23591315
 
-The first preprint's DOI is a concept DOI and resolves to its latest version. Each code
+Both preprint DOIs are concept DOIs and resolve to the latest version. Each code
 archive is a snapshot of this repository as its preprint reports it.
 
 ## Contact
