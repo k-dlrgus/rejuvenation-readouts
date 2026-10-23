@@ -1,7 +1,8 @@
 # Rejuvenation readouts cannot distinguish younger from less old
 
 Code, frozen instruments, pre-registrations and result tables for the preprint
-*Rejuvenation readouts cannot distinguish younger from less old* (R. Kwon).
+*Rejuvenation readouts cannot distinguish younger from less old* (R. Kwon), and for the
+second preprint described below.
 
 A one-dimensional age score falls for any move away from the old state. This repository
 contains the analyses behind the claim that distance to a young target of the same cell
@@ -9,16 +10,19 @@ type tells approach from departure, and a one-dimensional score cannot.
 
 Preprint: https://doi.org/10.5281/zenodo.23113817 (PDF of the current version also at [paper/rejuvenation_readouts_preprint_v1.2.pdf](paper/rejuvenation_readouts_preprint_v1.2.pdf))
 
-Code and results archive: https://doi.org/10.5281/zenodo.23092318 (concept DOI, resolves to the latest version)
+Code and results archive: https://doi.org/10.5281/zenodo.23092318 (snapshot of this repository at release v1.1, the state the first preprint reports)
 
 ---
 
-## Second preprint (in preparation)
+## Second preprint
 
 *Two definitions of young give opposite answers in a fibroblast rejuvenation screen* (R. Kwon). A re-analysis
 of the Sengstack et al. Perturb-seq screen (Proc. Natl Acad. Sci. USA, 2026) with the
-distance-to-target method of the first preprint. The manuscript is not yet public and is
-available from the author on request.
+distance-to-target method of the first preprint.
+
+Preprint: https://doi.org/10.5281/zenodo.23591624 (PDF also at [paper/two_definitions_of_young_preprint_v1.pdf](paper/two_definitions_of_young_preprint_v1.pdf))
+
+Code and results archive: https://doi.org/10.5281/zenodo.23591315 (snapshot of this repository at tag `paper2-v1`)
 
 | Analysis | Command | What it does |
 |---|---|---|
@@ -63,7 +67,7 @@ Scripts are run from the repository root and put the root on `sys.path` themselv
 | `src/` | All analysis code. One entry point per analysis (table below). |
 | `results/<name>/` | Output of the analysis named `<name>`, including its pre-registration flag. |
 | `results/figures_final/` | The figures as they appear in the preprint, plus the plotting data for each. |
-| `paper/` | The current preprint PDF, rejuvenation_readouts_preprint_v1.2.pdf, identical to the file on Zenodo. |
+| `paper/` | The preprint PDFs, identical to the files on Zenodo: rejuvenation_readouts_preprint_v1.2.pdf (first preprint) and two_definitions_of_young_preprint_v1.pdf (second preprint). |
 | `notebooks/` | Exploratory notebooks, outputs stripped. |
 | `FINDINGS_*.md` | The written reading of each analysis, including withdrawn and superseded readings, marked as such. |
 | `PROGRESS_*.md` | Running logs for each analysis. |
@@ -224,7 +228,18 @@ Code and results:
 R. Kwon. *Rejuvenation readouts cannot distinguish younger from less old: code and results.*
 https://doi.org/10.5281/zenodo.23092318
 
-Both are concept DOIs and resolve to the latest version.
+Second preprint:
+
+R. Kwon. *Two definitions of young give opposite answers in a fibroblast rejuvenation screen.*
+Preprint. https://doi.org/10.5281/zenodo.23591624
+
+Code and results for the second preprint:
+
+R. Kwon. *Two definitions of young give opposite answers in a fibroblast rejuvenation screen:
+code and results.* https://doi.org/10.5281/zenodo.23591315
+
+The first preprint's DOI is a concept DOI and resolves to its latest version. Each code
+archive is a snapshot of this repository as its preprint reports it.
 
 ## Contact
 
