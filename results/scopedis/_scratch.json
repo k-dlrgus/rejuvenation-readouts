@@ -1,0 +1,902 @@
+[
+ {
+  "area": "",
+  "label": "esearch Perturb-seq AND T cell AND stimulat*",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=Perturb-seq+AND+T+cell+AND+stimulat%2A&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 6942,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:30:16+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary Perturb-seq AND T cell AND stimulat*",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200314342%2C200274751%2C200278572%2C200271090%2C200249595%2C200247599%2C200203593%2C200203592%2C200190604%2C200119450%2C308549476%2C308549475%2C308549474%2C308549473%2C308549472%2C308549471%2C308549470%2C308549469%2C308549468%2C308549467%2C308549466%2C308549465%2C308549464%2C308549463%2C308549462%2C308549461%2C308549460%2C308549459%2C308549458%2C308549457%2C308549456%2C308549455%2C308549454%2C308549453%2C305726261%2C305726260%2C305726259%2C305726258%2C305726257%2C305726256&retmode=json",
+  "status": 200,
+  "bytes": 161770,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:30:18+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch CROP-seq AND T cells",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=CROP-seq+AND+T+cells&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 1094,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:30:19+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary CROP-seq AND T cells",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200266618%2C200255832%2C200274751%2C200249595%2C200235325%2C200241882%2C200241683%2C200206107%2C200137554%2C200119450%2C200092872%2C308252605%2C308252604%2C308252603%2C308252602%2C308252601%2C308252600%2C308252599%2C308252598%2C308252597%2C308252596%2C308252595%2C308252594%2C308252593%2C308252592%2C308252591%2C308252590%2C308252589%2C308252588%2C308252587%2C308252586%2C308252585%2C308252584%2C308252583%2C308252582%2C308252581%2C308252580%2C308252579%2C308252578%2C308252577&retmode=json",
+  "status": 200,
+  "bytes": 77168,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:30:20+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (CRISPR screen) AND (single-cell) AND (primary human T cells)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28CRISPR+screen%29+AND+%28single-cell%29+AND+%28primary+human+T+cells%29&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 2119,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:30:21+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (CRISPR screen) AND (single-cell) AND (primary human T cells)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200295398%2C200317951%2C200313761%2C200278983%2C200278980%2C200278975%2C200278974%2C200292279%2C200262686%2C200252956%2C200280728%2C200278572%2C200276097%2C200276096%2C200271089%2C200271088%2C200244035%2C200271090%2C200235325%2C200214231%2C200191007%2C200190843%2C200190842%2C200190841%2C200190846%2C200190604%2C200193736%2C200163715%2C200163401%2C200163400%2C200174284%2C200174255%2C200168620%2C200143417%2C200119450&retmode=json",
+  "status": 200,
+  "bytes": 205833,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:30:22+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch Perturb-seq AND macrophage",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=Perturb-seq+AND+macrophage&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 745,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:30:24+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary Perturb-seq AND macrophage",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200312107%2C200327644%2C200327357%2C200327354%2C200327352%2C200327133%2C200327124%2C200327057%2C200301119%2C200221321&retmode=json",
+  "status": 200,
+  "bytes": 48272,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:30:25+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch CRISPR AND single-cell AND macrophage AND LPS AND screen",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=CRISPR+AND+single-cell+AND+macrophage+AND+LPS+AND+screen&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 1261,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:30:26+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary CRISPR AND single-cell AND macrophage AND LPS AND screen",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200312107%2C200319783%2C200263763%2C200221321&retmode=json",
+  "status": 200,
+  "bytes": 23681,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:30:27+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch Perturb-seq AND (resting OR unstimulated) AND stimulated",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=Perturb-seq+AND+%28resting+OR+unstimulated%29+AND+stimulated&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 922,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:30:28+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary Perturb-seq AND (resting OR unstimulated) AND stimulated",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200314342%2C200278572%2C200271090%2C200249595%2C200247599%2C200229505%2C200090063&retmode=json",
+  "status": 200,
+  "bytes": 133312,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:30:30+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (compound OR drug) AND screen AND (PBMC OR T cells) AND stimulat* AND RNA-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28compound+OR+drug%29+AND+screen+AND+%28PBMC+OR+T+cells%29+AND+stimulat%2A+AND+RNA-seq&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 7262,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:31:17+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (compound OR drug) AND screen AND (PBMC OR T cells) AND stimulat* AND RNA-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200347908%2C200311792%2C200282703%2C200261109%2C200253770%2C200185326%2C200094396&retmode=json",
+  "status": 200,
+  "bytes": 24188,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:31:18+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (THP-1 OR monocyte-derived macrophages) AND (Perturb-seq OR CROP-seq OR single-cell CRISPR)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28THP-1+OR+monocyte-derived+macrophages%29+AND+%28Perturb-seq+OR+CROP-seq+OR+single-cell+CRISPR%29&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 1695,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:31:19+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (THP-1 OR monocyte-derived macrophages) AND (Perturb-seq OR CROP-seq OR single-cell CRISPR)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200300552%2C200347281%2C200347278%2C200322972%2C200338997%2C200289365%2C200327962%2C200272755%2C200309120%2C200314549%2C200311488%2C200311343%2C200330159%2C200312107%2C200301573%2C200301541%2C200327644%2C200327357%2C200327354%2C200327352%2C200327133%2C200327124%2C200327057%2C200305094%2C200319783%2C200319779%2C200313005%2C200313004%2C200313003%2C200313002%2C200313001%2C200269026%2C200237782%2C200263582%2C200263581%2C200263580%2C200237980%2C200263763%2C200263761%2C200263760&retmode=json",
+  "status": 200,
+  "bytes": 168354,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:31:20+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch macrophage AND compound screen AND transcriptom*",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=macrophage+AND+compound+screen+AND+transcriptom%2A&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 10566,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:31:21+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary macrophage AND compound screen AND transcriptom*",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200280093%2C200295447%2C200295444%2C200231728%2C200146294%2C200146113%2C200113683%2C100000570&retmode=json",
+  "status": 200,
+  "bytes": 175635,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:31:22+00:00"
+ },
+ {
+  "area": "",
+  "label": "epmc \"Perturb-seq\" AND (\"T cell\" OR \"T cells\") AND (resting OR unstimulated) AND human",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22Perturb-seq%22+AND+%28%22T+cell%22+OR+%22T+cells%22%29+AND+%28resting+OR+unstimulated%29+AND+human&format=json&pageSize=25&resultType=core",
+  "status": 200,
+  "bytes": 248211,
+  "content_type": "application/json;charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:31:33+00:00"
+ },
+ {
+  "area": "",
+  "label": "epmc (\"Perturb-seq\" OR \"CROP-seq\") AND macrophage AND (LPS OR stimulation) AND human",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28%22Perturb-seq%22+OR+%22CROP-seq%22%29+AND+macrophage+AND+%28LPS+OR+stimulation%29+AND+human&format=json&pageSize=25&resultType=core",
+  "status": 200,
+  "bytes": 228110,
+  "content_type": "application/json;charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:31:37+00:00"
+ },
+ {
+  "area": "",
+  "label": "epmc (compound OR drug) screen AND transcriptomic AND (stimulated OR activation) AND (PBMC OR \"T cells\" OR macrophages) AND (DRUG-seq OR PLATE-seq OR \"L1000\")",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28compound+OR+drug%29+screen+AND+transcriptomic+AND+%28stimulated+OR+activation%29+AND+%28PBMC+OR+%22T+cells%22+OR+macrophages%29+AND+%28DRUG-seq+OR+PLATE-seq+OR+%22L1000%22%29&format=json&pageSize=25&resultType=core",
+  "status": 200,
+  "bytes": 275108,
+  "content_type": "application/json;charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:31:41+00:00"
+ },
+ {
+  "area": "",
+  "label": "epmc (TITLE:\"Genome-scale perturb-seq in primary human CD4\" )",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE%3A%22Genome-scale+perturb-seq+in+primary+human+CD4%22+%29&format=json&pageSize=5&resultType=core",
+  "status": 200,
+  "bytes": 13922,
+  "content_type": "application/json;charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:34:01+00:00"
+ },
+ {
+  "area": "",
+  "label": "epmc DOI:\"10.64898/2025.12.23.696273\" OR (TITLE:\"maps context-specific regulators of T cell programs\")",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.64898%2F2025.12.23.696273%22+OR+%28TITLE%3A%22maps+context-specific+regulators+of+T+cell+programs%22%29&format=json&pageSize=5&resultType=core",
+  "status": 200,
+  "bytes": 13965,
+  "content_type": "application/json;charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:34:35+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (Perturb-seq OR CROP-seq OR \"single-cell CRISPR\") AND (isogenic OR corrected) AND (iPSC OR hiPSC)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28Perturb-seq+OR+CROP-seq+OR+%22single-cell+CRISPR%22%29+AND+%28isogenic+OR+corrected%29+AND+%28iPSC+OR+hiPSC%29&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 1565,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:31+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (Perturb-seq OR CROP-seq OR \"single-cell CRISPR\") AND (isogenic OR corrected) AND (iPSC OR hiPSC)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200271445%2C200271444%2C200271447%2C308377111%2C308377110%2C308377108%2C308377107%2C308377106%2C308377105%2C308377104%2C308377103%2C308377102%2C308377101%2C308377100%2C308377099%2C308377098%2C308377097%2C308377096%2C308377095%2C308377094%2C308377093%2C308377092%2C308377091%2C308377090%2C308377089%2C308377088%2C308377087%2C308377086%2C308377085%2C308377084%2C308377083%2C308377082%2C308377081%2C308377080%2C308377079%2C308377078%2C308377077%2C308377076%2C308377075%2C308377074&retmode=json",
+  "status": 200,
+  "bytes": 45832,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:33+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch CRISPR screen AND isogenic AND (patient-derived OR mutant) AND transcriptom*",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=CRISPR+screen+AND+isogenic+AND+%28patient-derived+OR+mutant%29+AND+transcriptom%2A&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 10557,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:33+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary CRISPR screen AND isogenic AND (patient-derived OR mutant) AND transcriptom*",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200266642%2C200193711&retmode=json",
+  "status": 200,
+  "bytes": 5230,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:34+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (Perturb-seq OR CRISPRi screen) AND (disease mutation OR knock-in) AND isogenic control",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28Perturb-seq+OR+CRISPRi+screen%29+AND+%28disease+mutation+OR+knock-in%29+AND+isogenic+control&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 1975,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:35+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (Perturb-seq OR CROP-seq OR \"CRISPR screen\") AND senescen* AND (single-cell OR RNA-seq)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28Perturb-seq+OR+CROP-seq+OR+%22CRISPR+screen%22%29+AND+senescen%2A+AND+%28single-cell+OR+RNA-seq%29&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 4013,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:35+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (Perturb-seq OR CROP-seq OR \"CRISPR screen\") AND senescen* AND (single-cell OR RNA-seq)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200309511%2C200309498%2C200309495%2C200309493%2C200309491%2C200224293%2C200124197%2C200112458&retmode=json",
+  "status": 200,
+  "bytes": 31563,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:36+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch senescence AND compound screen AND transcriptom* AND (proliferating OR young)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=senescence+AND+compound+screen+AND+transcriptom%2A+AND+%28proliferating+OR+young%29&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 10703,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:37+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary senescence AND compound screen AND transcriptom* AND (proliferating OR young)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=100000570&retmode=json",
+  "status": 200,
+  "bytes": 43543,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:38+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch senescent cells AND CRISPR screen AND (oncogene-induced OR replicative OR irradiation)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=senescent+cells+AND+CRISPR+screen+AND+%28oncogene-induced+OR+replicative+OR+irradiation%29&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 1698,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:39+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary senescent cells AND CRISPR screen AND (oncogene-induced OR replicative OR irradiation)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200244914&retmode=json",
+  "status": 200,
+  "bytes": 2962,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:39+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch isogenic AND CRISPR screen AND single-cell",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=isogenic+AND+CRISPR+screen+AND+single-cell&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 931,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:49+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary isogenic AND CRISPR screen AND single-cell",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200322780%2C200271445%2C200271444&retmode=json",
+  "status": 200,
+  "bytes": 13147,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:50+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch Perturb-seq AND iPSC",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=Perturb-seq+AND+iPSC&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 913,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:51+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary Perturb-seq AND iPSC",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200349107%2C200335939%2C200343369%2C200289721%2C200311359%2C200303901%2C200176038%2C200288996%2C200270828%2C200150062%2C310087124%2C310087123%2C310087122%2C310087121%2C310087120%2C310087119%2C310087118%2C310087117%2C310087116%2C310087115%2C310087114%2C310087113%2C310087112%2C310087111%2C309324135%2C309324134%2C309324133%2C309324132%2C309324131%2C309324130%2C309324129%2C305353458%2C305353457%2C305353456%2C305353455%2C305353454%2C305353453%2C305353452%2C305353451%2C305346280&retmode=json",
+  "status": 200,
+  "bytes": 95421,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:52+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch CRISPRi screen AND iPSC-derived AND single-cell RNA-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=CRISPRi+screen+AND+iPSC-derived+AND+single-cell+RNA-seq&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 994,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:53+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary CRISPRi screen AND iPSC-derived AND single-cell RNA-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200207628%2C200173316%2C306304116%2C306304115&retmode=json",
+  "status": 200,
+  "bytes": 6416,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:54+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (hiPSC OR iPSC) AND (mutant AND corrected) AND RNA-seq AND (screen OR library)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28hiPSC+OR+iPSC%29+AND+%28mutant+AND+corrected%29+AND+RNA-seq+AND+%28screen+OR+library%29&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 1610,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:54+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (hiPSC OR iPSC) AND (mutant AND corrected) AND RNA-seq AND (screen OR library)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200309908%2C200304575%2C200302633%2C200296513%2C200126460%2C200126459%2C200126458&retmode=json",
+  "status": 200,
+  "bytes": 22004,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:55+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (trisomy OR duplication OR deletion) AND CROP-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28trisomy+OR+duplication+OR+deletion%29+AND+CROP-seq&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 1121,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:57+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (trisomy OR duplication OR deletion) AND CROP-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200291754%2C200271445%2C200271444%2C200271447%2C200217779&retmode=json",
+  "status": 200,
+  "bytes": 26398,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:58+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch primary human cells AND disease mutation AND Perturb-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=primary+human+cells+AND+disease+mutation+AND+Perturb-seq&retmax=40&retmode=json",
+  "status": 200,
+  "bytes": 1830,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:58+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary primary human cells AND disease mutation AND Perturb-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200215253&retmode=json",
+  "status": 200,
+  "bytes": 14317,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:50:59+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (cystic fibrosis OR Duchenne OR sickle cell OR Rett OR Fragile X OR thalassemia) AND CRISPR screen AND RNA-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28cystic+fibrosis+OR+Duchenne+OR+sickle+cell+OR+Rett+OR+Fragile+X+OR+thalassemia%29+AND+CRISPR+screen+AND+RNA-seq&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 2475,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:51:20+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (cystic fibrosis OR Duchenne OR sickle cell OR Rett OR Fragile X OR thalassemia) AND CRISPR screen AND RNA-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200307350%2C200307348%2C200307347%2C200316416%2C200261876%2C200200675%2C200180869%2C200156170&retmode=json",
+  "status": 200,
+  "bytes": 29645,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:51:21+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (Down syndrome OR trisomy 21) AND (CROP-seq OR Perturb-seq OR CRISPR screen) AND isogenic",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28Down+syndrome+OR+trisomy+21%29+AND+%28CROP-seq+OR+Perturb-seq+OR+CRISPR+screen%29+AND+isogenic&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 1749,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:51:21+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (Down syndrome OR trisomy 21) AND (CROP-seq OR Perturb-seq OR CRISPR screen) AND isogenic",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200271445%2C200271444%2C200271447&retmode=json",
+  "status": 200,
+  "bytes": 17932,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:51:22+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch iPSC AND isogenic AND (CRISPRi OR CRISPRa) AND screen AND (cardiomyocyte OR neuron OR hepatocyte OR microglia)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=iPSC+AND+isogenic+AND+%28CRISPRi+OR+CRISPRa%29+AND+screen+AND+%28cardiomyocyte+OR+neuron+OR+hepatocyte+OR+microglia%29&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 2344,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:51:22+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary iPSC AND isogenic AND (CRISPRi OR CRISPRa) AND screen AND (cardiomyocyte OR neuron OR hepatocyte OR microglia)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200287664&retmode=json",
+  "status": 200,
+  "bytes": 2638,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:51:23+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch gene-corrected isogenic AND RNA-seq AND perturbation library",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=gene-corrected+isogenic+AND+RNA-seq+AND+perturbation+library&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 1029,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:51:24+00:00"
+ },
+ {
+  "area": "",
+  "label": "epmc (\"Perturb-seq\" OR \"CROP-seq\") AND isogenic AND (corrected OR \"knock-in\") AND (iPSC OR \"patient-derived\")",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28%22Perturb-seq%22+OR+%22CROP-seq%22%29+AND+isogenic+AND+%28corrected+OR+%22knock-in%22%29+AND+%28iPSC+OR+%22patient-derived%22%29&format=json&pageSize=20&resultType=core",
+  "status": 200,
+  "bytes": 152365,
+  "content_type": "application/json;charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:51:27+00:00"
+ },
+ {
+  "area": "",
+  "label": "epmc \"CRISPR screen\" AND \"isogenic control\" AND (single-cell OR transcriptomic) AND (disease OR mutant) AND (iPSC OR primary)",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%22CRISPR+screen%22+AND+%22isogenic+control%22+AND+%28single-cell+OR+transcriptomic%29+AND+%28disease+OR+mutant%29+AND+%28iPSC+OR+primary%29&format=json&pageSize=20&resultType=core",
+  "status": 200,
+  "bytes": 216384,
+  "content_type": "application/json;charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:51:30+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (cell village OR multiplexed cell lines OR pooled donors) AND CRISPR screen AND iPSC",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28cell+village+OR+multiplexed+cell+lines+OR+pooled+donors%29+AND+CRISPR+screen+AND+iPSC&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 2213,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:52:07+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (cell village OR multiplexed cell lines OR pooled donors) AND CRISPR screen AND iPSC",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200287664%2C200260532&retmode=json",
+  "status": 200,
+  "bytes": 4835,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:52:08+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch base editing screen AND variant AND (erythroid OR hematopoiesis OR HUDEP) AND single-cell",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=base+editing+screen+AND+variant+AND+%28erythroid+OR+hematopoiesis+OR+HUDEP%29+AND+single-cell&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 1499,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:52:09+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch Perturb-seq AND (patient OR mutant) AND (isogenic OR wild-type) AND same pool",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=Perturb-seq+AND+%28patient+OR+mutant%29+AND+%28isogenic+OR+wild-type%29+AND+same+pool&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 1601,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:52:09+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch senolytic AND (screen OR library) AND RNA-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=senolytic+AND+%28screen+OR+library%29+AND+RNA-seq&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 1306,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:38+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary senolytic AND (screen OR library) AND RNA-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200350288%2C200350330%2C200350286%2C200345407%2C200324363%2C200322654%2C200305646%2C200288940%2C200297990%2C200316754%2C200313494%2C200313462%2C200284342%2C200291046%2C200294565%2C200221104%2C200140961&retmode=json",
+  "status": 200,
+  "bytes": 53211,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:39+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (SASP OR senescence-associated secretory) AND screen AND transcriptom*",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28SASP+OR+senescence-associated+secretory%29+AND+screen+AND+transcriptom%2A&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 10433,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:40+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (SASP OR senescence-associated secretory) AND screen AND transcriptom*",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200305089%2C200275134%2C200299168%2C200299167&retmode=json",
+  "status": 200,
+  "bytes": 9854,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:41+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (oncogene-induced senescence OR replicative senescence OR therapy-induced senescence) AND (CRISPR OR shRNA OR compound) screen",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28oncogene-induced+senescence+OR+replicative+senescence+OR+therapy-induced+senescence%29+AND+%28CRISPR+OR+shRNA+OR+compound%29+screen&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 2490,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:42+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (oncogene-induced senescence OR replicative senescence OR therapy-induced senescence) AND (CRISPR OR shRNA OR compound) screen",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200316868%2C200300879%2C200268569%2C200130306%2C200105951%2C200105935%2C200112458%2C200075207%2C200075627%2C200017118&retmode=json",
+  "status": 200,
+  "bytes": 33170,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:42+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch Perturb-seq AND (senescence OR quiescence OR cell cycle arrest)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=Perturb-seq+AND+%28senescence+OR+quiescence+OR+cell+cycle+arrest%29&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 1032,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:43+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary Perturb-seq AND (senescence OR quiescence OR cell cycle arrest)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200316495%2C200305384%2C200305037%2C200304740%2C200304612%2C200304493%2C200304253%2C200304020%2C200314342&retmode=json",
+  "status": 200,
+  "bytes": 130069,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:44+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch IMR90 AND (RAS OR etoposide OR irradiation) AND screen AND RNA-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=IMR90+AND+%28RAS+OR+etoposide+OR+irradiation%29+AND+screen+AND+RNA-seq&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 1719,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:45+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary IMR90 AND (RAS OR etoposide OR irradiation) AND screen AND RNA-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200105951%2C200103938&retmode=json",
+  "status": 200,
+  "bytes": 6687,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:45+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (AML OR leukemia) AND differentiation AND (Perturb-seq OR CROP-seq OR single-cell CRISPR screen)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28AML+OR+leukemia%29+AND+differentiation+AND+%28Perturb-seq+OR+CROP-seq+OR+single-cell+CRISPR+screen%29&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 2200,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:46+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (AML OR leukemia) AND differentiation AND (Perturb-seq OR CROP-seq OR single-cell CRISPR screen)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200347432%2C200294098%2C200294096%2C200316495%2C200305384%2C200305037%2C200304740%2C200304612%2C200304493%2C200304253%2C200304020%2C200221578%2C200248325%2C200248323%2C200248318%2C200225238%2C200225237%2C200254241%2C200217779%2C200181338%2C200180565%2C200213513%2C200213511%2C200213507%2C200213506%2C200215253%2C200228325%2C200228324%2C200228323%2C200228322&retmode=json",
+  "status": 200,
+  "bytes": 147940,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:47+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch CRISPR screen AND differentiation therapy AND (ATRA OR myeloid) AND single-cell",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=CRISPR+screen+AND+differentiation+therapy+AND+%28ATRA+OR+myeloid%29+AND+single-cell&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 1976,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:48+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary CRISPR screen AND differentiation therapy AND (ATRA OR myeloid) AND single-cell",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200289222%2C200268825%2C200289732%2C200248325%2C200248323%2C200248318%2C200290292%2C200217779%2C200213511%2C200213507%2C200213506%2C200228323%2C200122843%2C200110901%2C200110900%2C200110899%2C200110897%2C200110896%2C200110895%2C200110894&retmode=json",
+  "status": 200,
+  "bytes": 78943,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:49+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (tumor AND normal counterpart) AND Perturb-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28tumor+AND+normal+counterpart%29+AND+Perturb-seq&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 850,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:50+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch organoid AND (tumor AND matched normal) AND CRISPR screen AND RNA-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=organoid+AND+%28tumor+AND+matched+normal%29+AND+CRISPR+screen+AND+RNA-seq&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 1700,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:50+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch iPSC neuron AND CRISPR screen AND single-cell AND (mutant OR isogenic)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=iPSC+neuron+AND+CRISPR+screen+AND+single-cell+AND+%28mutant+OR+isogenic%29&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 1481,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:51+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (Huntington OR Parkinson OR ALS OR Alzheimer OR frontotemporal OR tauopathy) AND CRISPR screen AND iPSC AND RNA-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28Huntington+OR+Parkinson+OR+ALS+OR+Alzheimer+OR+frontotemporal+OR+tauopathy%29+AND+CRISPR+screen+AND+iPSC+AND+RNA-seq&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 2104,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:52+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch iPSC-derived neurons AND Perturb-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=iPSC-derived+neurons+AND+Perturb-seq&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 744,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:52+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary iPSC-derived neurons AND Perturb-seq",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200335939&retmode=json",
+  "status": 200,
+  "bytes": 33778,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:53+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (C9orf72 OR SNCA OR MAPT OR GRN OR LRRK2 OR APOE) AND (CRISPRi OR CRISPR screen) AND isogenic",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28C9orf72+OR+SNCA+OR+MAPT+OR+GRN+OR+LRRK2+OR+APOE%29+AND+%28CRISPRi+OR+CRISPR+screen%29+AND+isogenic&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 2171,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:54+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (C9orf72 OR SNCA OR MAPT OR GRN OR LRRK2 OR APOE) AND (CRISPRi OR CRISPR screen) AND isogenic",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200276559%2C200287664%2C200153658%2C200153657%2C200153655%2C200153654&retmode=json",
+  "status": 200,
+  "bytes": 24968,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:53:55+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch CRISPRi screen AND iPSC-derived neurons",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=CRISPRi+screen+AND+iPSC-derived+neurons&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 1187,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:42+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary CRISPRi screen AND iPSC-derived neurons",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200293246%2C200287664%2C200289235%2C200261878%2C200255904%2C200255902%2C200207099%2C200182307%2C200163323%2C200124703&retmode=json",
+  "status": 200,
+  "bytes": 30425,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:44+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch CROP-seq AND neuron",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=CROP-seq+AND+neuron&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 950,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:44+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary CROP-seq AND neuron",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200334303%2C200289235%2C200276947%2C200272093%2C200250378%2C200225817%2C200225814%2C200207099%2C200182309%2C200182307%2C200152988%2C200142078%2C200124703%2C308787485%2C308392926%2C308392925%2C308392924%2C308392923%2C308392922%2C308392921%2C308392920%2C308392919%2C308392918%2C308392917%2C307056941%2C307056940%2C307056939%2C307056938%2C307056937%2C307056936&retmode=json",
+  "status": 200,
+  "bytes": 53059,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:45+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch single-cell CRISPR screen AND microglia AND iPSC",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=single-cell+CRISPR+screen+AND+microglia+AND+iPSC&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 1302,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:46+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary single-cell CRISPR screen AND microglia AND iPSC",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200306202%2C200306200%2C200289721%2C200178317&retmode=json",
+  "status": 200,
+  "bytes": 9826,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:46+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch iPSC neurons AND CRISPR screen AND tau OR TDP-43",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=iPSC+neurons+AND+CRISPR+screen+AND+tau+OR+TDP-43&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 1749,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:47+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary iPSC neurons AND CRISPR screen AND tau OR TDP-43",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200319563%2C200344875%2C200311948%2C200329332%2C200324010%2C200318515%2C200326885%2C200338930%2C200305500%2C200330574%2C200307945%2C200282668%2C200309858%2C200309857%2C200288365%2C200268995%2C200298758%2C200298756%2C200292953%2C200308462%2C200134332%2C200288106%2C200319347%2C200246657%2C200303077%2C200281126%2C200249059%2C200315972%2C200310723%2C200310722&retmode=json",
+  "status": 200,
+  "bytes": 104893,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:48+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch Perturb-seq AND organoid AND brain",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=Perturb-seq+AND+organoid+AND+brain&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 912,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:49+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (normal AND malignant) AND single-cell CRISPR screen AND same",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28normal+AND+malignant%29+AND+single-cell+CRISPR+screen+AND+same&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 1552,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:50+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (normal AND malignant) AND single-cell CRISPR screen AND same",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200235325&retmode=json",
+  "status": 200,
+  "bytes": 30895,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:51+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch Perturb-seq AND (CD34 OR HSPC) AND leukemia",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=Perturb-seq+AND+%28CD34+OR+HSPC%29+AND+leukemia&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 839,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:52+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary Perturb-seq AND (CD34 OR HSPC) AND leukemia",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200215253&retmode=json",
+  "status": 200,
+  "bytes": 14317,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:52+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch CRISPR screen AND (differentiation state OR dedifferentiation) AND scRNA-seq AND cancer",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=CRISPR+screen+AND+%28differentiation+state+OR+dedifferentiation%29+AND+scRNA-seq+AND+cancer&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 2050,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:54+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary CRISPR screen AND (differentiation state OR dedifferentiation) AND scRNA-seq AND cancer",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200244180%2C200227597%2C200212782&retmode=json",
+  "status": 200,
+  "bytes": 140514,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:55+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch compound screen AND cancer cell line AND normal cell line AND transcriptom* AND (DRUG-seq OR PLATE-seq OR L1000)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=compound+screen+AND+cancer+cell+line+AND+normal+cell+line+AND+transcriptom%2A+AND+%28DRUG-seq+OR+PLATE-seq+OR+L1000%29&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 11585,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:56+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary compound screen AND cancer cell line AND normal cell line AND transcriptom* AND (DRUG-seq OR PLATE-seq OR L1000)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200178201&retmode=json",
+  "status": 200,
+  "bytes": 255354,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:54:58+00:00"
+ },
+ {
+  "area": "",
+  "label": "esearch (Perturb-seq OR CROP-seq) AND (senescent OR senescence)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=gds&term=%28Perturb-seq+OR+CROP-seq%29+AND+%28senescent+OR+senescence%29&retmax=30&retmode=json",
+  "status": 200,
+  "bytes": 932,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:56:24+00:00"
+ },
+ {
+  "area": "",
+  "label": "esummary (Perturb-seq OR CROP-seq) AND (senescent OR senescence)",
+  "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200309511%2C200309498%2C200309495%2C200309493%2C200309491%2C200314342%2C200152988&retmode=json",
+  "status": 200,
+  "bytes": 103733,
+  "content_type": "application/json; charset=UTF-8",
+  "fetched_utc": "2026-10-24T02:56:26+00:00"
+ }
+]

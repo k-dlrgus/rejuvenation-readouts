@@ -1,0 +1,1 @@
+{'condition': ['stimulated', 'stimulated', 'stimulated', 'stimulated', 'stimulated'], 'replicate': ['1', '1', '1', '1', '1'], 'cell': ['TACTTGACCCCN', 'TTACAGCTGAAC', 'CTAAGGCCCTTA', 'CTTGACGCAGGT', 'TAACCCGTACGC'], 'grna': ['CTRL00320', 'Tcrlibrary_JUND_2', 'Tcrlibrary_BACH2_3', 'Tcrlibrary_NFKB2_3', 'Tcrlibrary_JUN_1'], 'gene': ['CTRL', 'JUND', 'BACH2', 'NFKB2', 'JUN']}

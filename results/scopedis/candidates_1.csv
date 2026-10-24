@@ -1,0 +1,13 @@
+rank,accession,title_short,organism,n_samples_listed,stated_count_in_search_text,lead_source,open
+1,GSE314342,Genome-scale perturb-seq in primary human CD4+ T cells,Homo sapiens,577,genome-scale (all expressed genes; 3 stimulation conditions),geo_gds,yes
+2,GSE249595,Genome-scale CRISPRi Perturb-seq on unstimulated and stimulated Jurkat cells,Homo sapiens,16,genome-scale,geo_gds,yes
+3,GSE312107,PerturbPair Perturb-seq 9 h post-LPS,Mus musculus,70,1030 genes,geo_gds,yes
+4,GSE221321,Compressed Perturb-seq LPS immune response,Homo sapiens,4,598 genes,geo_gds,yes
+5,GSE255832,CD8+ T cell metabolic survey CROPseq,Mus musculus,8,83 targets,geo_gds,yes
+6,GSE271090,Central control of dynamic gene circuits governs T cell rest and activation (SuperSeries),Homo sapiens,443,unstated,geo_gds,yes
+7,GSE92872,Pooled CRISPR screening with single-cell transcriptome read-out,Homo sapiens; Mus musculus,100,unstated,geo_gds,yes
+8,GSE266618,Systematic discovery of CRISPR-boosted CAR T cell immunotherapies,Homo sapiens,60,unstated,geo_gds,yes
+9,GSE203593,Genome-wide CRISPR screens of T cell exhaustion,Mus musculus; Homo sapiens,58,unstated,geo_gds,no (cap)
+10,GSE119450,CROP-Seq in Primary Human T Cells,Homo sapiens,8,48 sgRNAs (gene count not stated),geo_gds,no (cap)
+11,GSE190604,CRISPRa Perturb-seq primary human T cells,Homo sapiens,16,unstated,geo_gds,no (cap)
+12,GSE137554,CROP-seq analysis of TCR stimulation,Homo sapiens,2,unstated,geo_gds,no (cap)

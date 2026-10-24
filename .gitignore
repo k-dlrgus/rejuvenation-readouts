@@ -119,3 +119,7 @@ results/transfer/vec_seng.npz
 # plus data/raw/srsfinv/GSE325735_human_raw_counts.txt.gz (GEO GSE325735 suppl).
 # Rebuild: python src/donor_run.py build
 results/donor/displacements_full.npy
+
+# Public GEO supplementary extract opened by SCOPEDIS to resolve bar B/C for GSE92872.
+# ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92872/suppl/GSE92872_CROP-seq_Jurkat_TCR.count_matrix.csv.gz
+results/scopedis/opened/gse92872/count_matrix.csv.gz

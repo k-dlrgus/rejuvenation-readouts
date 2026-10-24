@@ -1,0 +1,9 @@
+rank,accession,title_short,organism,n_samples_listed,stated_count_in_search_text,lead_source,open
+1,GSE307350,HBZ TF CRISPR screen in K562/HUDEP-2 (SKI),Homo sapiens,14,"1,639 transcription factors",geo_gds,yes
+2,GSE215253,Massively parallel base editing of variant effects in human hematopoiesis,Homo sapiens; Mus musculus,106,unstated (variant library),geo_gds,yes
+3,GSE271444,CRISPRa CROP-seq of chromosome 21 genes (Down syndrome),Homo sapiens,49,unstated (chr21 genes),geo_gds,yes
+4,GSE343369,Perturb-seq 225 genes embryoid body formation,Homo sapiens,4,225 genes,geo_gds,yes
+5,GSE150062,Dual genome-wide coding and lncRNA CRISPRi screens in iPSC neural induction,Homo sapiens,42,"18,905 coding + 10,678 lncRNA loci",geo_gds,yes
+6,MED:42062284,Functional impact of genetic background on variable expressivity in neurodevelopmental disorders,Homo sapiens,,unstated,europepmc,yes
+7,GSE288996,Multiomic CRISPR screens (scCRISPR+RNA+ATAC),Homo sapiens,15,unstated,geo_gds,no (cap)
+8,GSE303901,Direct-capture targeted Perturb-seq of distal elements,Homo sapiens,97,unstated,geo_gds,no (cap)
