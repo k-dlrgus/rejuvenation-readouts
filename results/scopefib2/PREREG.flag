@@ -1,0 +1,200 @@
+SCOPEFIB2 pre-registration flag
+Written 2026-10-24T10:47:10+09:00 (2026-10-24T01:47:10Z), before any database query, article
+fetch or web search of any kind in this session (no GSA / GEO / Europe PMC / PMC / publisher /
+web search has been run; the only reads so far are repository files: CLAUDE.md,
+results/scopefib/PREREG.flag, SCOPING_FIBROSIS.md, PROGRESS_SCOPEFIB.md, src/scopefib_run.py).
+Nothing below is re-tuned after any record is seen.
+
+== What this task is ==
+
+SCOPEFIB (commit f93b244) returned, in precedence order:
+  INCOMPLETE: GSE261783 passes A+B; E fails or is unverified. Not GO, not NO-GO.
+  NO-GO: no human dataset passes A+B. Closest near-miss: GSE305412; single missing ingredient:
+  perturbation count (5 distinct knockdown agents applied across TGF-beta activation; bar B
+  needs >=20).
+
+It left one human dataset in `unverified`: the ADAM12 study's patient-derived fibroblast
+CRISPRi/CRISPRa Perturb-seq (Li et al., Cancer Cell 2026, doi 10.1016/j.ccell.2025.12.018,
+PMID 41544628). SCOPEFIB could not read bars A-C: GEO SuperSeries GSE278990 holds mouse data
+only, and the Cancer Cell article page returned HTTP 403. The article's data-availability
+statement names two repositories, NCBI GEO and the GSA (Genome Sequence Archive, China
+National Center for Bioinformation, ngdc.cncb.ac.cn/gsa). SCOPEFIB searched only GEO.
+
+SCOPEFIB2 resolves that one entry and nothing else.
+
+== Scope, fixed now ==
+
+In scope: the ADAM12 study's human fibroblast Perturb-seq, and any sibling human accession
+deposited by the same study.
+
+Out of scope and not to be searched: new disease areas, new tissues, new screens, any dataset
+not deposited by this study. SCOPEFIB's search recall limits (SCOPING_FIBROSIS.md, "What this
+NO-GO does not cover") stand as written; this task does not extend them. A promising unrelated
+dataset seen incidentally is recorded as an accession in a `leads` block and not opened.
+
+Resolution order, fixed now:
+ 1. The GSA search interface, for the study, the project, or the authors.
+ 2. The article's data-availability and key-resources sections, via Europe PMC full text, PMC,
+    or a publisher mirror (SCOPEFIB found cell.com returned content to a search index even
+    though a direct fetch returned 403).
+ 3. The paper's supplementary key-resources table, if under the 50 MB limit.
+Every URL tried and its HTTP status goes in results/scopefib2/url_records.json.
+
+Bar A is read from the record and the methods, to this precise question: do the perturbed cells
+and an unperturbed-or-control-perturbation arm that did NOT receive the activating stimulus
+both appear in the same experiment and batch? D5 governs. The record is also to state whether
+the screen was run on cells already activated by TGF-beta, on cells activated after
+perturbation, or on unstimulated fibroblasts with activation characterised separately. A screen
+run entirely on unstimulated cells fails D6 even at 54 targets.
+
+Bar B: distinct agents per D1, counted across the CRISPRi and CRISPRa arms separately and
+together. Bar C: median cells per agent per D7, computed only if a per-cell guide assignment or
+a per-guide table under 50 MB is available; otherwise `unverified`. Bar D: the named hits and
+the directional readout used (the article uses GSVA on gene modules; that is recorded as the
+readout to disagree with).
+
+If the deposit is controlled-access or request-gated: say so plainly, state what the request
+requires, and stop. No access request is submitted in this session.
+
+Gene-overlap section per D4, only if a reading passes.
+
+== Reproduction of the stored record before anything new (CLAUDE.md) ==
+
+SCOPEFIB produced no statistic, so there is no numeric to reproduce within tolerance. What is
+reproduced instead, before any query, and reported as a table: the row count of
+results/scopefib/datasets.csv against the 23 rows SCOPING_FIBROSIS.md claims; the two readings
+recorded in PROGRESS_SCOPEFIB.md against the two in SCOPING_FIBROSIS.md, character-for-
+character; the presence of the ADAM12 entry in the `unverified` block; and that lines 10-87 of
+results/scopefib/PREREG.flag, spliced verbatim into this flag below, match byte-for-byte.
+Counts exact, strings exact. Any mismatch is a STOP, keyed `reproduction_failed`, and every
+mismatch is named.
+
+== STOP conditions, fixed now ==
+
+ [S1] `bar_ambiguous` - a carried bar, clarification or definition turns out to be ambiguous
+      for this dataset. Write the findings with the STOP key and ask; do not resolve it by
+      picking the reading that lets the run proceed.
+ [S2] `reproduction_failed` - see above.
+ [S3] `access_gated` - the human deposit exists but is controlled-access or request-gated.
+      Record what the request requires and stop. This is a stop on bar reading, not a STOP on
+      the task: the dataset stays in `unverified` and the carried NO-GO stands.
+A STOP is never resumed and never restarted with an adjustment.
+
+== Carried forward from results/scopefib/PREREG.flag, verbatim and unchanged ==
+
+Lines 10-87 of that file follow, byte-for-byte: bars A-E, clarifications C1-C4, definitions
+D1-D7, the four readings with their exact wording, and the mandatory columns. They are not
+restated, reinterpreted, softened or extended anywhere in this task. Where "this task" or
+"the follow-up" appears in the carried text, it refers to SCOPEFIB as written; SCOPEFIB2
+changes none of it.
+
+== Bars (verbatim from the task, fixed now) ==
+
+* (A) In-run target. The dataset contains unactivated or healthy-control cells of the same cells, in the same experiment and the same batch as the perturbed cells. A published external reference does not pass. This bar is not negotiable; it is the thing the aging work could never get for free.
+* (B) Perturbation count. ≥20 distinct perturbations applied to the activated/diseased state, transcriptomic readout.
+* (C) Depth stated. Units per perturbation recoverable from the record. Single-cell passes at a stated or derivable median ≥30 cells per perturbation; bulk passes on depth automatically. If the record does not state it, the dataset goes in `unverified`, not in the pass table.
+* (D) A readout to disagree with. The source publication reports a directional readout (signature reversal, correlation score, module score) with named hits.
+* (E) Human. Human cells. A mouse or rat dataset is recorded separately and never counted toward a pass.
+
+GO = one dataset passes A+B+C+D+E. PARTIAL = A+B+C+E but no published hit list. NO-GO = nothing passes A+B. On NO-GO, say so plainly and name, for the closest near-miss, the single missing ingredient.
+Do not relax a bar after seeing what exists. A dataset that misses by a little goes in a `near_miss` block with the exact shortfall.
+
+Search order: (1) TGF-β-induced activation of human dermal or lung fibroblasts with a perturbation screen; (2) primary fibroblasts from fibrotic human tissue (IPF, cardiac, liver, keloid, scleroderma) with perturbations; (3) hepatic stellate cell activation; (4) any myofibroblast-reversal screen. Also check LINCS/L1000 fibroblast arms explicitly and record what they do and do not contain — SCOPING_TISSUE left that unresolved.
+
+Hard rules: every dataset in a table is resolved from its own record page in this session, nothing assumed or recalled. Download nothing over 50 MB. Compute no statistic. Modify no existing `FINDINGS_*.md`.
+
+== Clarifications fixed by the user in chat before any query (2026-10-24, same session) ==
+
+The session raised four ambiguities in the bars and readings before writing this flag; the user resolved them as follows. Text after each label is the user's ruling.
+
+[C1] Bar (B), perturbation timing.
+Any timing passes bar B. But every dataset in every table carries a mandatory perturbation_timing column with one of: before (prevention — perturbation complete before the activating stimulus), during (co-treatment), after (reversal — perturbation begins after activation is established), or unstated. Resolve it from the record; unstated is not a guess.
+Pre-declared restriction on the follow-up: the follow-up distance analysis will use after designs as its primary and during as secondary, and before designs are inventory only.
+
+[C2] Bar (A), identity of the target cells.
+Same type, healthy donor OK — with a mandatory target_match column on every dataset in every table, one of:
+  isogenic — the control is the same line or donor as the perturbed cells (unstimulated arm, vehicle arm, or corrected isogenic line)
+  cross_donor — the control is a different person's cells of the same tissue and type
+  unstated
+For cross_donor datasets, also record the number of healthy donors and the number of diseased donors. A single healthy donor against a single diseased donor cannot separate disease from individual, so such a dataset is recorded as passing bar A but flagged confounded_with_individual, and the GO verdict must state which match type it rests on. The follow-up distance analysis treats isogenic as primary and cross_donor with at least three donors per side as secondary; cross_donor with fewer goes to inventory only.
+
+[C3] Bar (A), batch evidence.
+Same series unless split — with a mandatory batch_evidence column on every dataset, one of:
+  stated — the record names a shared batch, plate, lane, pool, or the controls sit inside the same pooled screen
+  same_series — same GEO series or run, with nothing in the record indicating a split
+  split — the record shows a different batch, date, plate, chemistry, sequencer or submission between control and perturbed arms
+  unstated
+stated and same_series pass bar A. split fails it. unstated goes to unverified.
+For every dataset reaching the pass table, also record library chemistry, sequencing instrument and submission date for the control arm and the perturbed arm separately, where the record gives them, and flag any difference. (Reason given: FINDINGS_DONOR.md measured a transgene's direction agreeing with itself at 0.26 across batches against 0.50 between two lines measured together, so an unverified batch assumption can exceed the effect size.) The follow-up distance analysis treats stated as primary and same_series as secondary, and must report the batch evidence grade beside the verdict.
+
+[C4] Fourth reading, precedence.
+Add reading INCOMPLETE, with this exact wording fixed now:
+  "INCOMPLETE: <accession> passes A+B; <bar> fails or is unverified. Not GO, not NO-GO."
+Precedence: GO > PARTIAL > INCOMPLETE > NO-GO. Report every reading whose conditions fired, not only the highest. NO-GO fires only when no human dataset passes A+B.
+For each INCOMPLETE dataset, name in one line the single thing that would resolve it (e.g. "per-perturbation cell counts not in the record; resolvable by opening the supplementary table" or "mouse only"). Where resolving it means opening a file under the 50 MB limit, do that and say so; where it does not, leave it unresolved and say which file would settle it.
+
+== Definitions fixed by the session (proposed in chat before any query; user did not override) ==
+
+[D1] Distinct perturbation (bar B): a distinct agent — one gene target (any modality: KO, CRISPRi, CRISPRa, ORF, siRNA) or one compound / biologic. Doses, timepoints, guides or replicates of the same agent count once. Controls (DMSO, vehicle, non-targeting / safe-targeting guides, empty vector, unstimulated) do not count.
+[D2] L1000 counts as a transcriptomic readout for bar B, noted wherever it appears: 978 landmark genes are measured; the rest are inferred.
+[D3] Bar (E): mouse and rat datasets are recorded in a separate block and are excluded from GO and PARTIAL and from the NO-GO test ("no human dataset passes A+B"). Per C4, a non-human dataset that passes A+B may fire INCOMPLETE with <bar> = E.
+[D4] Gene-overlap section: if the record provides a gene list (features file) under 50 MB, report the exact count of its genes that also appear in the frozen 23,485-gene fibroblast panel (set intersection by Ensembl id, symbol fallback — a count, not a statistic). If the record states only a gene count, or nothing, report an estimate and label it "estimate".
+== Definitions added by the session while writing this flag (before any query; NOT shown to the user in chat beforehand — disclosed here) ==
+
+[D5] Bar (A) "unactivated": for induced-activation designs, cells of the same line/donor that did not receive the activating stimulus (e.g. no TGF-β), carrying a control perturbation or none. A perturbed-but-unstimulated arm does not count as the target unless a control-perturbation unstimulated arm is also present.
+[D6] Bar (B) "applied to the activated/diseased state": under C1, satisfied when the perturbed cells also received the activating stimulus (any timing) or are from diseased tissue / are an activated cell type (e.g. activated hepatic stellate cells, LX-2). Perturbations applied only to unstimulated healthy cells do not count toward the ≥20.
+[D7] Bar (C) "median ≥30 cells per perturbation": per distinct agent (D1) in the stimulated / diseased arm, pooling guides of the same agent.
+
+== Readings — exact wording, fixed now ==
+
+GO fires for a human dataset passing A+B+C+D+E. Wording:
+  "GO: <accession> passes A+B+C+D+E. target_match=<isogenic|cross_donor>[ confounded_with_individual]; batch_evidence=<stated|same_series>; perturbation_timing=<before|during|after|unstated>."
+
+PARTIAL fires for a human dataset passing A+B+C+E and failing D. Wording:
+  "PARTIAL: <accession> passes A+B+C+E; no published directional readout with named hits (D fails). target_match=<…>; batch_evidence=<…>; perturbation_timing=<…>."
+
+INCOMPLETE fires for any dataset passing A+B that is neither GO nor PARTIAL (C fails or is unverified, or E fails). Wording (from C4):
+  "INCOMPLETE: <accession> passes A+B; <bar> fails or is unverified. Not GO, not NO-GO."
+
+NO-GO fires only when no human dataset passes A+B. Wording:
+  "NO-GO: no human dataset passes A+B. Closest near-miss: <accession>; single missing ingredient: <ingredient>."
+
+Precedence GO > PARTIAL > INCOMPLETE > NO-GO; every reading that fired is reported, the highest first.
+
+== Mandatory columns on every dataset table ==
+
+accession | organism | cell type / source | design | n distinct perturbations (D1) | readout | units per perturbation | perturbation_timing | target_match (+ n healthy / n diseased donors if cross_donor) | batch_evidence | A | B | C | D | E
+
+Pass-table rows additionally carry, per arm (control vs perturbed): library chemistry, sequencing instrument, submission date, with any difference flagged.
+== Outcome wording for the no-change case (added by this task; disclosed) ==
+
+The four carried readings above are the only conclusions. This task reports which of them fires
+for this dataset. The carried set has no wording for "the unverified entry could not be
+resolved", and the task requires that case to be stated, so one line is fixed now for it. It is
+not a fifth reading and it changes none of the carried four:
+
+  "UNRESOLVED (SCOPEFIB2 scope statement, not a reading): the ADAM12 human Perturb-seq stays in
+  `unverified`; <bars> could not be read because <reason>. SCOPEFIB's NO-GO stands unchanged."
+
+If GO, PARTIAL or INCOMPLETE fires for this dataset, SCOPEFIB's NO-GO is superseded. That is
+said in SCOPING_FIBROSIS2.md and marked there. SCOPING_FIBROSIS.md, PROGRESS_SCOPEFIB.md,
+results/scopefib/ and every FINDINGS_*.md are not modified, per CLAUDE.md ("A reading that is
+superseded is marked superseded, never edited") and the task.
+
+== Honesty obligations carried from CLAUDE.md ==
+
+- No statistic is computed beyond the cell counts bar C requires, so no chance baseline and no
+  recovery power apply. Counts reported here are record inventories, not test results.
+- A null here is a record-reading null, not an experimental one. What this task does not cover
+  is stated explicitly: donor age of the fibroblasts, and whether any result on them transfers
+  to aged cells.
+- Every fact is resolved from its own record page or article text in this session. Nothing is
+  recalled. Where a fact arrives through a tool that returns a model-written summary rather
+  than raw text, that is marked in the source column.
+- Nothing over 50 MB is downloaded.
+
+== Process ==
+
+Deliverables: results/scopefib2/PREREG.flag (this file), SCOPING_FIBROSIS2.md (this flag
+reproduced verbatim at the top), PROGRESS_SCOPEFIB2.md. Raw query responses under
+results/scopefib2/. Code at src/scopefib2_run.py. One local commit, no push.

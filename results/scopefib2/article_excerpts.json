@@ -1,0 +1,128 @@
+{
+ "source_url": "https://www.cell.com/cancer-cell/fulltext/S1535-6108(25)00552-5",
+ "doi": "10.1016/j.ccell.2025.12.018",
+ "pmid": "41544628",
+ "read_how": "Open Access full text read in the Claude desktop app's built-in browser pane on 2026-10-24. A direct urllib fetch of this URL returned HTTP 403, and so did https://www.cell.com/cms/.../mmc*.xlsx; see url_records.json. Offsets are character offsets into the <article> element's innerText, whose total length was 129332.",
+ "excerpts": [
+  {
+   "offsets": "44950-45700",
+   "section": "Data and code availability",
+   "text": "Data and code availability\n•\t\nData generated for this study can be downloaded from NCBI GEO (accession no. GSE278990) and GSA (accession no. PRJCA048014). This paper analyzed existing, publicly available data. The detailed information of all public datasets has been provided in Table S1. The raw FASTQ files of human scRNA-seq data in this study are released on Genome Sequence Archive in compliance with Chinese regulations, under accession no. PRJCA048014.\n•\t\nCodes used to perform analyses can be assessed on GitHub (https://github.com/Qile-Guo/Fibroblast) upon publication of this manuscript.\n•\t\nAny additional information required to reanalyze the data reported in this paper is available from the lead contact upon request."
+  },
+  {
+   "offsets": "8430-8900",
+   "section": "Results - CRISPRi and CRISPRa-based single-cell screenings in patient-derived ex vivo fibroblasts",
+   "bears_on": "bar A, D5. The +/- TGF-beta contrast is stated for the UNPERTURBED cells.",
+   "text": "PDFs from the adjacent tumor (NT) and tumor core (T) regions of colorectal cancer (CRC) patients (Table S1) were obtained using previously established protocols23,28 and then cultured and exposed to TGF-β or alone. Those cells, without any perturbation, were directly subjected to scRNA-seq for the subsequent definition of fibroblast phenotypes (Figure 1D; Table S1)."
+  },
+  {
+   "offsets": "10150-10420",
+   "section": "Results - same subsection",
+   "bears_on": "bar A. The one sentence in the paper that could be read as putting the perturbed cells in both +/- TGF-beta conditions. The STAR Methods excerpt below states one condition.",
+   "text": "We transduced the NT- and T-PDFs with either CRISPRi or CRISPRa vectors, paired with sgRNA libraries, at a low MOI. CRISPRi/a-expressing cells were cultured under the same ex vivo conditions as the aforementioned unperturbed cells and then subjected to scRNA-seq harvesting (Figure 1D)."
+  },
+  {
+   "offsets": "9990-10150",
+   "section": "Results - same subsection",
+   "bears_on": "bar B",
+   "text": "The libraries targeted 590 and 265 genes (4 sgRNAs per gene) for CRISPRi and CRISPRa screenings, respectively, both along with additional non-targeting controls (NTCs) (Table S3)."
+  },
+  {
+   "offsets": "10400-10700",
+   "section": "Results - same subsection",
+   "bears_on": "bars B and C",
+   "text": "After quality control, 67,268 transcriptomes from unperturbed cells were obtained. For Perturb-seq, we retained 34,890 and 39,367 high-quality single cells for the CRISPRi and CRISPRa systems, respectively. 432 CRISPRi and 210 CRISPRa targeting genes were recovered after removing those with insufficient harvested cells (STAR Methods)."
+  },
+  {
+   "offsets": "71930-72600",
+   "section": "STAR Methods - Ex vivo CRISPRi and CRISPRa screenings",
+   "bears_on": "bars A and C1 timing. This is the only description of the screen's culture conditions, and it states a single TGF-beta-treated condition.",
+   "text": "Ex vivo CRISPRi and CRISPRa screenings\nPDFs maintained within four passages were utilized for the screening experiments, with patient information detailed in Table S1. To ascertain the optimal lentiviral titer for transduction, PDFs were seeded in 12-well plates and treated with a range of 100× concentrated lentivirus volumes (0, 1, 2, 4, 8, and 16 μL). Transduction efficiency was assessed three days later by quantifying the proportion of mCherry-positive cells (Data S1). For screening, PDFs were transduced with CRISPRi or CRISPRa lentivirus and their respective gRNA libraries at an optimal multiplicity of infection (MOI) of 0.5. The culture medium was refreshed 16 h later, and TGFβ was added at a final concentration of 10 ng/mL two days post-transduction. PDFs were cultured for another three days and then harvested. CRISPRi- and CRISPRa-expressing cells were sorted using the Aria SORP flow cytometer (BD Biosciences) and subjected to scRNA-seq using the Chromium Next GEM Single Cell 3′ HT kit (v.3.1) and 3' Feature Barcode kit (10× Genomics)."
+  },
+  {
+   "offsets": "85870-86300",
+   "section": "STAR Methods - Single-cell RNA library preparation and sequencing",
+   "bears_on": "C3 batch evidence; CellPlex multiplexing of the ex vivo PDFs",
+   "text": "For the KPC model and ex vivo PDFs, cells were washed and labeled with the 3′ CellPlex Kit Set A (10× Genomics). Post-labeling with different cell multiplexing oligos (CMOs), samples were loaded onto a Chromium X instrument (10× Genomics) following the manufacturer's protocol. Gene expression and the CRISPR screening library were prepared using the Chromium Next GEM Single Cell 3' HT kit with Feature Barcode technology (v.3.1, 10× Genomics)."
+  },
+  {
+   "offsets": "93000-94700",
+   "section": "STAR Methods - Perturb-seq analysis",
+   "bears_on": "bars C and D. The retention threshold is >5 cells per target, not a median.",
+   "text": "Perturb-seq analysis\nRaw sequencing data were processed by the Cell Ranger (v.7.0.1)102 multi command. Gene expression reads were aligned to the human genome GRCh38 and CellPlex data to the CMO reference from 10× Genomics. The sgRNA reads were mapped to the CRISPRi and CRISPRa libraries using the pattern sequence (BC) GTTTAAGAGCTATGCTGGA. CMO labels were assigned to cells using the Seurat's HTODemux function in R and cells with no or more than one CMO assigned were excluded for downstream analyses. The CRISPRi and CRISPRa data were pooled across libraries, separately, followed by the standard scRNA-seq preprocessing (see below). All cells were subjected to unsupervised clustering and clusters with low expression of fibroblast markers (LUM and DCN), were removed. Cells with sgRNA unique molecular identifier (UMI) detected were used in further analyses. For the inference of perturbation effects, we only used cells detected with sgRNAs targeting one single gene and retained those targets detected in more than 5 cells. The on-target efficiency for CRISPRi and CRISPRa was calculated as the proportion of cells showing directional expression changes relative to the median expression of NTCs (suppression for CRISPRi; activation for CRISPRa). The TGFβ response score for each TF-targeting sgRNA (>5 cells per sgRNA) was evaluated using the previously reported gene signature (SERPINE1, ENG, INHBA, LTBP1, TGFB1, SKIL, and THBS1)9 with the AddModuleScore function for each cell containing the corresponding sgRNA under TGFβ treatment. Statistical comparisons of TGFβ pathway activation between individual perturbations and NTCs were performed using a one-tailed Welch's t test, with outliers removed. To define the perturbation effect of each target, we compared the expression profiles of cells infected by sgRNAs from this target to those of control cells infected by the NTCs, using the FindMarker function of Seurat. The resulting log2FoldChange of each perturbation from NTCs was defined as the perturbation effect of each target on individual genes.103 The perturbation effect of each target on the GM was then calculated as the average effect on genes from the GM."
+  },
+  {
+   "offsets": "101190-101420",
+   "section": "STAR Methods - GSVA analysis",
+   "bears_on": "bar D. GSVA is a descriptive module score used in the paper; the screen's own directional statistic is the log2FC of each perturbation against the NTCs, averaged over a gene module.",
+   "text": "GSVA analysis\nGene set variation analysis (GSVA) was performed on single cells or bulk samples using the gsva function in the R package GSVA (v.1.38.2)96 with default parameters. GSVA results were scaled and visualized in radar plots using the R package fmsb (v.0.7.6)."
+  },
+  {
+   "offsets": "62050-62800",
+   "section": "STAR Methods - Human tumor specimens",
+   "bears_on": "C2 donor counts and the aged-cells caveat",
+   "text": "Eleven cancer patients enrolled in this study were pathologically diagnosed with colorectal cancer (CRC) at Beijing Shijitan Hospital, and all samples were obtained from surgical specimens of patients undergoing resection. Tissue specimens were confirmed to be tumors or adjacent-tumor tissues based on the pathologist's assessment. Eight paired adjacent-tumor (NT-) and tumor-core (T-) samples (PDF-1-8) were collected for the isolation of patient-derived fibroblasts (PDFs), and three tumor core samples (PTC-1-3) were obtained for establishing patient-derived tumor-like clusters (PTCs). Age and sex, as well as anonymized clinical information of participants, are listed in Table S1."
+  },
+  {
+   "offsets": "6400-7700",
+   "section": "Results - in silico screening",
+   "bears_on": "the '54 targets' figure named in the task brief: it is the in silico prognostic shortlist, not the Perturb-seq library size",
+   "text": "Using the scRNA-seq data, we examined the potential of all genes in discriminating fibroblasts from non-fibroblasts, retaining 1,358 genes with a discriminative AUC (area under the curve) score across all examined cancer types (median > 0.55). GTEx provided a baseline for gene expression in humans, with 211 of the 1,358 genes barely expressed across different normal tissues (median of log2 (TPM +1) < 3). Further using the TCGA data, we performed a meta-analysis across cancer types to evaluate the expression association of these genes with patient overall survival, resulting in a shortened list of 54 genes (hazard ratio > 1, p value < 0.05)."
+  }
+ ],
+ "supplementary_tables_parsed_in_the_browser_pane": {
+  "mmc2.xlsx (Table S1)": {
+   "bytes": 18108,
+   "sheets": ["Table S1", "Table S1A", "Table S1B", "Table S1C", "Table S1D"],
+   "S1A_this_study_human_rows_verbatim": [
+    "Human | This study | Colon | 10x Chromium (5' kit) | Normal | Ex vivo fibroblasts | 26826 | GEO: GSE278990",
+    "Human | This study | Colon | 10x Chromium (5' kit) | Normal with TGFβ treatment | Ex vivo fibroblasts | 18722 | GEO: GSE278990",
+    "Human | This study | Colon | 10x Chromium (5' kit) | Tumour | Ex vivo fibroblasts | 13127 | GEO: GSE278990",
+    "Human | This study | Colon | 10x Chromium (5' kit) | Tumour with TGFβ treatment | Ex vivo fibroblasts | 8593 | GEO: GSE278990",
+    "Human | This study | Colon | 10x Chromium (3' kit) | CRISPRa screen | Ex vivo fibroblasts | 39367 | GEO: GSE278990",
+    "Human | This study | Colon | 10x Chromium (3' kit) | CRISPRi screen | Ex vivo fibroblasts | 34890 | GEO: GSE278990"
+   ],
+   "S1D_patient_rows_verbatim": [
+    "Patient ID | Sample ID | Age | Sex | Cancer Type | Tumor Stage | Chemotherapy or radiation | Tissue | Related figures",
+    "P1 | PDF-1 | 35 | F | CRC | IV | No | NT/T | Figure 1D, S1E",
+    "P2 | PDF-2 | 79 | M | CRC | III | No | NT/T | Figure 1D, S1E",
+    "P3 | PDF-3 | 74 | F | CRC | IV | No | NT/T | Figure S1G, S1J, S1E",
+    "P4 | PDF-4 | 54 | M | CRC | II | No | NT/T | Figures 3F, S1H, S1K, S4C-D",
+    "P5 | PDF-5 | 59 | M | CRC | IV | No | NT/T | Figures 2C-D, 3D-E, S3H",
+    "P6 | PDF-6 | 68 | M | CRC | II | No | NT/T | Figure 2G",
+    "P7 | PDF-7 | 50 | M | CRC | I | No | NT/T | Figure 3G",
+    "P8 | PDF-8 | 61 | M | CRC | I | No | NT/T | Figures 3H-K, S4G-H",
+    "P9 | PTC-1 | 86 | M | CRC | III | No | NT/T | Figure 2G",
+    "P10 | PTC-2 | 66 | M | CRC | II | No | NT/T | Figure 4A",
+    "P11 | PTC-3 | 77 | F | CRC | II | No | NT/T | Figure 4B"
+   ]
+  },
+  "mmc4.xlsx (Table S3)": {
+   "bytes": 125281,
+   "sheets": ["Table S3", "Table S3A (858 rows)", "Table S3B (3603 rows)"],
+   "counts": {
+    "gene_list_rows": 855,
+    "CRISPRi_distinct_genes": 590,
+    "CRISPRa_distinct_genes": 265,
+    "union": 667,
+    "in_both_libraries": 188,
+    "sgRNA_rows_targeting_CRISPRi": 2450,
+    "sgRNA_rows_targeting_CRISPRa": 1150,
+    "control_guide_labels_excluded": "AAVS1_1 to AAVS1_47 and NonTargetingControl_1 to NonTargetingControl_43, two rows each"
+   },
+   "note": "The sgRNA sheet and the gene-list sheet give the same 590 / 265 / 667 / 188. A handful of gene labels differ in spelling between the two sheets (e.g. ATFs3 vs ATF3), so the union is exact only up to those label differences."
+  },
+  "mmc5.xlsx (Table S4)": {
+   "bytes": 5449018,
+   "sheets": ["Table S4", "Table S4A", "Table S4B", "Table S4C", "Table S4D (156651 rows)", "Table S4E (3213 rows)", "Table S4F"],
+   "counts": {
+    "recovered_CRISPRi_targets": 432,
+    "recovered_CRISPRa_targets": 210,
+    "union_of_recovered": 532,
+    "recovered_in_both": 110,
+    "programmes": ["Cell cycle", "Interferon-responsive", "myCAF-like", "MThigh", "Inflammatory"]
+   },
+   "note": "S4D gives log2FoldChange per perturbation per gene-module gene and S4E the mean per programme. Neither sheet carries a per-target cell count, so neither settles bar C."
+  }
+ }
+}

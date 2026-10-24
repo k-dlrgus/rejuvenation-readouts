@@ -1,0 +1,14 @@
+set,n,source
+"CRISPRi library, distinct gene targets",590,Table S3A gene list and Table S3B sgRNA table agree (mmc4.xlsx)
+"CRISPRa library, distinct gene targets",265,Table S3A gene list and Table S3B sgRNA table agree (mmc4.xlsx)
+"union of the two libraries (D1: one gene = one agent, any modality)",667,Table S3A/S3B (mmc4.xlsx); 188 genes appear in both libraries
+genes in both libraries,188,Table S3A/S3B (mmc4.xlsx)
+"CRISPRi sgRNA rows (targeting, controls excluded)",2450,Table S3B (mmc4.xlsx)
+"CRISPRa sgRNA rows (targeting, controls excluded)",1150,Table S3B (mmc4.xlsx)
+CRISPRi targets recovered after the >5-cell filter,432,article Results and Table S4E (mmc5.xlsx) agree
+CRISPRa targets recovered after the >5-cell filter,210,article Results and Table S4E (mmc5.xlsx) agree
+union of recovered targets,532,Table S4E (mmc5.xlsx); 110 recovered in both arms
+recovered in both arms,110,Table S4E (mmc5.xlsx)
+CRISPRi cells retained after QC,34890,article Results; Table S1A (mmc2.xlsx) agrees
+CRISPRa cells retained after QC,39367,article Results; Table S1A (mmc2.xlsx) agrees
+unperturbed cells retained after QC,67268,article Results; Table S1A rows sum to 26826+18722+13127+8593=67268

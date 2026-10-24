@@ -1,0 +1,5 @@
+url,status,what
+https://www.cell.com/cancer-cell/fulltext/S1535-6108(25)00552-5,200,"article full text (129,332 characters of article innerText)"
+https://www.cell.com/cms/10.1016/j.ccell.2025.12.018/attachment/0d1d4c8e-4950-4aae-a111-77bfb5f2ac76/mmc2.xlsx,200,"Table S1 (18,108 bytes), parsed in the page"
+https://www.cell.com/cms/10.1016/j.ccell.2025.12.018/attachment/c0385583-38d9-4607-9990-d9f3fb8a4ba5/mmc4.xlsx,ok (status not captured),"Table S3 (125,281 bytes), parsed in the page"
+https://www.cell.com/cms/10.1016/j.ccell.2025.12.018/attachment/8d4319d8-73c5-4bd8-bbfc-f8fdc06b430c/mmc5.xlsx,ok (status not captured),"Table S4 (5,449,018 bytes), parsed in the page"

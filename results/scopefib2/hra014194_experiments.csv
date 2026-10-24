@@ -1,0 +1,40 @@
+experiment,title,arm,platform,strategy,sample,individual,individual_name,gender,sample_description,n_runs,n_files,total_GB,run_title_prefixes,release_date
+HRX2334923,CRISPR_1_RNA,"screen (perturbed, TGFb)",Illumina NovaSeq X Plus,RNA-Seq,HRS2102648,HRI1628169,P1_P4,missing,Mixed sample of adjacent-tumor sample from patient P1 and adjacent-tumor and tumor-core sample from patient P4,4,8,162.6,P0926-1;P0926-2,2025-12-16
+HRX2334924,CRISPR_2_RNA,"screen (perturbed, TGFb)",Illumina NovaSeq X Plus,RNA-Seq,HRS2102648,HRI1628169,P1_P4,missing,Mixed sample of adjacent-tumor sample from patient P1 and adjacent-tumor and tumor-core sample from patient P4,12,24,466.2,P0926-3;P0926-4;P0926-5;P0926-6;P0926-7;P0926-8,2025-12-16
+HRX2334925,CRISPR_1_CellPlex,"screen (perturbed, TGFb)",Illumina NovaSeq X Plus,Targeted-Capture,HRS2102648,HRI1628169,P1_P4,missing,Mixed sample of adjacent-tumor sample from patient P1 and adjacent-tumor and tumor-core sample from patient P4,2,4,15.2,Gu0926-1;Gu0926-2,2025-12-16
+HRX2334926,CRISPR_2_CellPlex,"screen (perturbed, TGFb)",Illumina NovaSeq X Plus,Targeted-Capture,HRS2102648,HRI1628169,P1_P4,missing,Mixed sample of adjacent-tumor sample from patient P1 and adjacent-tumor and tumor-core sample from patient P4,6,12,45.6,Gu0926-3;Gu0926-4;Gu0926-5;Gu0926-6;Gu0926-7;Gu0926-8,2025-12-16
+HRX2334927,CRISPR_1_sgRNA,"screen (perturbed, TGFb)",Illumina NovaSeq X Plus,Targeted-Capture,HRS2102648,HRI1628169,P1_P4,missing,Mixed sample of adjacent-tumor sample from patient P1 and adjacent-tumor and tumor-core sample from patient P4,2,4,7.5,Ce0926-1;Ce0926-2,2025-12-16
+HRX2334928,CRISPR_2_sgRNA,"screen (perturbed, TGFb)",Illumina NovaSeq X Plus,Targeted-Capture,HRS2102648,HRI1628169,P1_P4,missing,Mixed sample of adjacent-tumor sample from patient P1 and adjacent-tumor and tumor-core sample from patient P4,6,12,21.4,Ce0926-3;Ce0926-4;Ce0926-5;Ce0926-6;Ce0926-7;Ce0926-8,2025-12-16
+HRX2334929,P1_NT,unperturbed state definition,Illumina NovaSeq X Plus,RNA-Seq,HRS2102642,HRI1628166,P1,female,Adjacent-tumor sample from patient P1,4,8,28.5,20210825-LJN-1,2025-12-16
+HRX2334930,P1_NT_TGFb,unperturbed state definition,Illumina NovaSeq X Plus,RNA-Seq,HRS2102642,HRI1628166,P1,female,Adjacent-tumor sample from patient P1,4,8,28.0,20210825-LJN-2,2025-12-16
+HRX2334931,P1_T,unperturbed state definition,Illumina NovaSeq X Plus,RNA-Seq,HRS2102643,HRI1628166,P1,female,Tumor-core sample from patient P1,4,8,25.5,20210825-LJN-5,2025-12-16
+HRX2334932,P1_T_TGFb,unperturbed state definition,Illumina NovaSeq X Plus,RNA-Seq,HRS2102643,HRI1628166,P1,female,Tumor-core sample from patient P1,4,8,25.8,20210825-LJN-6,2025-12-16
+HRX2334933,P2_NT,unperturbed state definition,Illumina NovaSeq X Plus,RNA-Seq,HRS2102644,HRI1628167,P2,male,Adjacent-tumor sample from patient P2,4,8,29.0,20210825-LJN-9,2025-12-16
+HRX2334934,P2_NT_TGFb,unperturbed state definition,Illumina NovaSeq X Plus,RNA-Seq,HRS2102644,HRI1628167,P2,male,Adjacent-tumor sample from patient P2,4,8,26.2,20210825-LJN-10,2025-12-16
+HRX2334935,P3_NT,unperturbed state definition,Illumina NovaSeq X Plus,RNA-Seq,HRS2102646,HRI1628168,P3,female,Adjacent-tumor sample from patient P3,4,8,28.4,20210825-LJN-17,2025-12-16
+HRX2334936,P3_NT_TGFb,unperturbed state definition,Illumina NovaSeq X Plus,RNA-Seq,HRS2102646,HRI1628168,P3,female,Adjacent-tumor sample from patient P3,4,8,28.0,20210825-LJN-18,2025-12-16
+HRX2334937,P2_T,unperturbed state definition,Illumina NovaSeq X Plus,RNA-Seq,HRS2102645,HRI1628167,P2,male,Tumor-core sample from patient P2,4,8,11.4,20211023-LJN-13,2025-12-16
+HRX2334938,P2_T_TGFb,unperturbed state definition,Illumina NovaSeq X Plus,RNA-Seq,HRS2102645,HRI1628167,P2,male,Tumor-core sample from patient P2,4,8,9.7,20211023-LJN-14,2025-12-16
+HRX2334939,P3_T,unperturbed state definition,Illumina NovaSeq X Plus,RNA-Seq,HRS2102647,HRI1628168,P3,female,Tumor-core sample from patient P3,4,8,11.5,20211023-LJN-21,2025-12-16
+HRX2334940,P3_T_TGFb,unperturbed state definition,Illumina NovaSeq X Plus,RNA-Seq,HRS2102647,HRI1628168,P3,female,Tumor-core sample from patient P3,4,8,10.3,20211023-LJN-22,2025-12-16
+HRX2363326,P5_T_IFNb1_R1,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127694,HRI1646507,P5,female,Tumor-core sample from patient P5,1,2,4.8,P5,2025-12-16
+HRX2363327,P5_T_IFNb1_R2,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127694,HRI1646507,P5,female,Tumor-core sample from patient P5,1,2,5.6,P5,2025-12-16
+HRX2363328,P5_T_IFNb1_R3,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127694,HRI1646507,P5,female,Tumor-core sample from patient P5,1,2,5.4,P5,2025-12-16
+HRX2363329,P5_T_TGFb1_R1,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127694,HRI1646507,P5,female,Tumor-core sample from patient P5,1,2,5.4,P5,2025-12-16
+HRX2363330,P5_T_TGFb1_R2,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127694,HRI1646507,P5,female,Tumor-core sample from patient P5,1,2,6.5,P5,2025-12-16
+HRX2363331,P5_T_TGFb1_R3,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127694,HRI1646507,P5,female,Tumor-core sample from patient P5,1,2,4.4,P5,2025-12-16
+HRX2363332,P5_T_DMSO_R1,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127694,HRI1646507,P5,female,Tumor-core sample from patient P5,1,2,7.0,P5,2025-12-16
+HRX2363333,P5_T_DMSO_R2,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127694,HRI1646507,P5,female,Tumor-core sample from patient P5,1,2,4.2,P5,2025-12-16
+HRX2363334,P5_T_DMSO_R3,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127694,HRI1646507,P5,female,Tumor-core sample from patient P5,1,2,4.6,P5,2025-12-16
+HRX2363335,EV-T1,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127695,HRI1646508,P6,female,Tumor-core sample from patient P6,1,2,3.3,EV-T1,2025-12-16
+HRX2363336,EV-T2,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127695,HRI1646508,P6,female,Tumor-core sample from patient P6,1,2,3.8,EV-T2,2025-12-16
+HRX2363337,EV-T3,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127695,HRI1646508,P6,female,Tumor-core sample from patient P6,1,2,3.9,EV-T3,2025-12-16
+HRX2363338,AAV-T1,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127695,HRI1646508,P6,female,Tumor-core sample from patient P6,1,2,3.5,AAV-T1,2025-12-16
+HRX2363339,AAV-T2,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127695,HRI1646508,P6,female,Tumor-core sample from patient P6,1,2,4.1,AAV-T2,2025-12-16
+HRX2363340,AAV-T3,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127695,HRI1646508,P6,female,Tumor-core sample from patient P6,1,2,3.2,AAV-T3,2025-12-16
+HRX2363341,KO-T1,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127695,HRI1646508,P6,female,Tumor-core sample from patient P6,1,2,3.6,KO-T1,2025-12-16
+HRX2363342,OE-T1,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127695,HRI1646508,P6,female,Tumor-core sample from patient P6,1,2,2.9,OE-T1,2025-12-16
+HRX2363343,KO-T2,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127695,HRI1646508,P6,female,Tumor-core sample from patient P6,1,2,4.6,KO-T2,2025-12-16
+HRX2363344,OE-T2,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127695,HRI1646508,P6,female,Tumor-core sample from patient P6,1,2,2.9,OE-T2,2025-12-16
+HRX2363345,KO-T3,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127695,HRI1646508,P6,female,Tumor-core sample from patient P6,1,2,3.1,KO-T3,2025-12-16
+HRX2363346,OE-T3,downstream validation,Illumina NovaSeq X Plus,RNA-Seq,HRS2127695,HRI1646508,P6,female,Tumor-core sample from patient P6,1,2,3.0,OE-T3,2025-12-16

@@ -1,0 +1,11 @@
+check,expected,observed,match
+R1 datasets.csv data rows,23,23,yes
+R2a n readings in PROGRESS_SCOPEFIB.md,2,2,yes
+R2b reading 1 also in SCOPING_FIBROSIS.md verbatim,True,True,yes
+R2c reading 1 text,"INCOMPLETE: GSE261783 passes A+B; E fails or is unverified. Not GO, not NO-GO.","INCOMPLETE: GSE261783 passes A+B; E fails or is unverified. Not GO, not NO-GO.",yes
+R2b reading 2 also in SCOPING_FIBROSIS.md verbatim,True,True,yes
+R2c reading 2 text,NO-GO: no human dataset passes A+B. Closest near-miss: GSE305412; single missing ingredient: perturbation count (5 distinct knockdown agents applied across TGF-β activation; bar B needs ≥20).,NO-GO: no human dataset passes A+B. Closest near-miss: GSE305412; single missing ingredient: perturbation count (5 distinct knockdown agents applied across TGF-β activation; bar B needs ≥20).,yes
+R3 ADAM12 in unverified block,True,True,yes
+R3b GSE278990 named mouse-only in unverified block,True,True,yes
+R4 carried lines 10-87 byte-identical in SCOPEFIB2 flag,True,True,yes
+R4b carried block n lines,78,78,yes
