@@ -1,0 +1,9 @@
+gse,cell_id,cell_type,cell_lineage,cell_histology,cell_source_id,primary_site,subtype,original_growth_pattern,donor_age,donor_sex,donor_ethnicity,provider_catalog_id
+GSE92742,MCH58,cell line,,,,skin,skin fibroblast,-666,-666,-666,-666,-666
+GSE92742,NPC,differentiated,,,,central nervous system,normal stem fibroblast-derived iPScs,adherent,-666,-666,-666,-666
+GSE92742,NPC.CAS9,differentiated,,,,central nervous system,normal stem fibroblast-derived iPScs,adherent,-666,-666,-666,-666
+GSE92742,NPC.TAK,differentiated,,,,central nervous system,normal stem fibroblast-derived iPScs,adherent,-666,-666,-666,-666
+GSE70138,MCH58,cell line,,,,skin,skin fibroblast,-666,-666,-666,-666,-666
+GSE70138,NPC,differentiated,,,,central nervous system,normal stem fibroblast-derived iPScs,adherent,-666,-666,-666,-666
+GSE70138,NPC.CAS9,differentiated,,,,central nervous system,normal stem fibroblast-derived iPScs,adherent,-666,-666,-666,-666
+GSE70138,NPC.TAK,differentiated,,,,central nervous system,normal stem fibroblast-derived iPScs,adherent,-666,-666,-666,-666
