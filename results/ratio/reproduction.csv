@@ -1,0 +1,11 @@
+check,expected,observed,match,gating
+R1 SOUTH6 S1 O1_Y1 factor count,1836,1836,True,True
+R1 factors matched by name,1836,1836,True,True
+"R1 max relative error, per-factor ratio",<=1e-9,2.604e-15,True,True
+R1 ||gap|| from frozen anchors vs stored v_norm,32.283949049860,32.283949049860,True,True
+R1 median ratio vs stage4_overall,3.820798669451,3.820798669451,True,True
+R1b premise S1 O1_Y1: min ratio; n>=2 of N,descriptive,min=2.0966; 1836 of 1836,True,False
+R1b premise S2_k20 O1_Y1: min ratio; n>=2 of N,descriptive,min=0.1312; 1 of 1836,True,False
+R1b premise S2_k50 O1_Y1: min ratio; n>=2 of N,descriptive,min=0.1940; 2 of 1836,True,False
+R1b premise S2_k100 O1_Y1: min ratio; n>=2 of N,descriptive,min=0.2384; 2 of 1836,True,False
+R2 GSE278572 distinct targeting genes,28,28,True,True

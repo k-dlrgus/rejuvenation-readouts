@@ -1,0 +1,6 @@
+[21:34:57] [prereg] results\ratio\PREREG.flag bytes=22774
+[21:34:59] [314342] 284 per-sample files, 171.2 GB; timing the first 3: GSM9393828_CD4i_R1L01_D1_Rest_sample_filtered_feature_bc_matrix.h5 (0.63 GB), GSM9393828_CD4i_R1L01_D1_Stim8hr_sample_filtered_feature_bc_matrix.h5 (0.67 GB), GSM9393828_CD4i_R1L01_D2_Rest_sample_filtered_feature_bc_matrix.h5 (0.62 GB)
+[21:35:00] [314342] received 2970 of 1917820392 bytes in 1s = 0.00 MB/s; whole deposit (download only) ~13850.3 h against the 24 h limit; workable=False
+[21:35:38] [prereg] results\ratio\PREREG.flag bytes=22774
+[21:35:39] [314342] 284 per-sample files, 171.2 GB; timing the first 3: GSM9393828_CD4i_R1L01_D1_Rest_sample_filtered_feature_bc_matrix.h5 (0.63 GB), GSM9393828_CD4i_R1L01_D1_Stim8hr_sample_filtered_feature_bc_matrix.h5 (0.67 GB), GSM9393828_CD4i_R1L01_D2_Rest_sample_filtered_feature_bc_matrix.h5 (0.62 GB)
+[22:07:04] [314342] received 1917820392 of 1917820392 bytes in 1885s = 1.02 MB/s; whole deposit (download only) ~46.7 h against the 24 h limit; workable=False

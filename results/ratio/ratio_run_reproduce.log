@@ -1,0 +1,12 @@
+[19:31:20] [prereg] results\ratio\PREREG.flag bytes=22774
+[19:31:21] [reproduce] R1 SOUTH6 S1 O1_Y1 factor count: expected=1836 observed=1836 match=True
+[19:31:21] [reproduce] R1 factors matched by name: expected=1836 observed=1836 match=True
+[19:31:21] [reproduce] R1 max relative error, per-factor ratio: expected=<=1e-9 observed=2.604e-15 match=True
+[19:31:21] [reproduce] R1 ||gap|| from frozen anchors vs stored v_norm: expected=32.283949049860 observed=32.283949049860 match=True
+[19:31:21] [reproduce] R1 median ratio vs stage4_overall: expected=3.820798669451 observed=3.820798669451 match=True
+[19:31:21] [reproduce] R1b premise S1 O1_Y1: min ratio; n>=2 of N: expected=descriptive observed=min=2.0966; 1836 of 1836 match=True
+[19:31:21] [reproduce] R1b premise S2_k20 O1_Y1: min ratio; n>=2 of N: expected=descriptive observed=min=0.1312; 1 of 1836 match=True
+[19:31:21] [reproduce] R1b premise S2_k50 O1_Y1: min ratio; n>=2 of N: expected=descriptive observed=min=0.1940; 2 of 1836 match=True
+[19:31:21] [reproduce] R1b premise S2_k100 O1_Y1: min ratio; n>=2 of N: expected=descriptive observed=min=0.2384; 2 of 1836 match=True
+[19:31:21] [reproduce] R2 GSE278572 distinct targeting genes: expected=28 observed=28 match=True
+[19:31:21] [reproduce] 6 gating checks, 0 mismatches

@@ -1,0 +1,4 @@
+[21:35:54] [prereg] results\ratio\PREREG.flag bytes=22774
+[21:35:54]   dataset sub_screen  ratio_over_p95_median  ratio_over_p95_max  noise_corrected_median  noise_corrected_q1  noise_corrected_q3  noise_corrected_max  floor_p50_at_30  floor_p95_at_30
+GSE278572       Treg               1.033252            1.728456                0.146219                 0.0            0.301947             0.625902         1.735654         1.815192
+GSE278572       Teff               1.020058            1.478955                0.128175                 0.0            0.210091             0.413527         1.516525         1.578338

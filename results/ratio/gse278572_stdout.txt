@@ -1,0 +1,18 @@
+[21:18:45] [prereg] results\ratio\PREREG.flag bytes=22774
+[21:18:46] [278572] read cached stream output data\raw\ratio\gse278572\_streamed.npz
+[21:18:46] [278572] R3 (descriptive) targets with >150 cells per condition: {'Resting_Teff': 28, 'Resting_Treg': 27, 'Stimulated_Teff': 28, 'Stimulated_Treg': 28} of 28
+[21:18:47] [278572] gene overlap {'dataset': 'GSE278572', 'features': 36601, 'in_panel_by_ensembl': 20443, 'in_panel_by_symbol_fallback': 16, 'in_panel_total': 20459, 'panel_size': 23485}
+[21:18:47] [GSE278572 Treg] perturbations=28 eligible=28 excluded(<30)=0 act_ctl=5805 rest_ctl=4330
+[21:18:48] [GSE278572 Treg] ||gap||=144.5565; cache-vs-panel logCPM max abs diff=0.00e+00
+[21:25:04] [GSE278572 Treg] floor: 30 sizes (exact) x 1000 draws in 375s
+[21:25:58] [GSE278572 Teff] perturbations=28 eligible=28 excluded(<30)=0 act_ctl=4489 rest_ctl=4377
+[21:25:59] [GSE278572 Teff] ||gap||=151.8335; cache-vs-panel logCPM max abs diff=0.00e+00
+[21:33:01] [GSE278572 Teff] floor: 30 sizes (exact) x 1000 draws in 421s
+[21:33:46] == GSE278572 Treg / full measured-gene space ==
+CONCLUSION  RATIO-OPEN: in GSE278572 Treg, 19 of 19 perturbations have ratio < 2 in full measured-gene space; arrival was geometrically attainable for them. [within_floor = 9]
+            (descriptive) 28 of 28 eligible perturbations have ratio < 2 and therefore could in principle have registered an arrival; 9 of those are within_floor.
+            exceed k = 19 of N_f = 28; chance expectation 1.40; one-sided binomial p = 8.5e-19
+== GSE278572 Teff / full measured-gene space ==
+CONCLUSION  RATIO-OPEN: in GSE278572 Teff, 17 of 17 perturbations have ratio < 2 in full measured-gene space; arrival was geometrically attainable for them. [within_floor = 11]
+            (descriptive) 28 of 28 eligible perturbations have ratio < 2 and therefore could in principle have registered an arrival; 11 of those are within_floor.
+            exceed k = 17 of N_f = 28; chance expectation 1.40; one-sided binomial p = 9.63e-16

@@ -1,0 +1,27 @@
+{
+ "files": 284,
+ "total_bytes": 171154039808,
+ "timed_files": [
+  "GSM9393828_CD4i_R1L01_D1_Rest_sample_filtered_feature_bc_matrix.h5",
+  "GSM9393828_CD4i_R1L01_D1_Stim8hr_sample_filtered_feature_bc_matrix.h5",
+  "GSM9393828_CD4i_R1L01_D2_Rest_sample_filtered_feature_bc_matrix.h5"
+ ],
+ "curl_exit": [
+  0,
+  0,
+  0
+ ],
+ "bytes_expected": 1917820392,
+ "bytes_received": 2970,
+ "seconds": 0.8652284145355225,
+ "bytes_per_s": 3432.619583574789,
+ "est_hours_download_only": 13850.293537638003,
+ "limit_hours": 24.0,
+ "peak_disk_gb_streaming": 2.285885901,
+ "limit_disk_gb": 40.0,
+ "free_disk_gb": 53.194231808,
+ "a_disk_ok": true,
+ "b_time_ok": false,
+ "c_ram": "not assessed: (b) decides",
+ "workable": false
+}

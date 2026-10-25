@@ -1,0 +1,24 @@
+{
+ "guide_calls": {
+  "barcodes": 249799,
+  "zero_calls": 58179,
+  "one_call": 140641,
+  "multi_calls": 50979
+ },
+ "hto": {
+  "assigned": 214773,
+  "unassigned": 35026,
+  "Resting_Treg": 40526,
+  "Stimulated_Treg": 77502,
+  "Resting_Teff": 43176,
+  "Stimulated_Teff": 53569
+ },
+ "hto_rule": "top >= 10 and >= 3.0x second",
+ "R3_targets_over_150_cells_per_condition": {
+  "Resting_Teff": 28,
+  "Resting_Treg": 27,
+  "Stimulated_Teff": 28,
+  "Stimulated_Treg": 28
+ },
+ "n_targets": 28
+}

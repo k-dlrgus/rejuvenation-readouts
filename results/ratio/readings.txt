@@ -1,0 +1,8 @@
+== GSE278572 Treg / full measured-gene space ==
+CONCLUSION  RATIO-OPEN: in GSE278572 Treg, 19 of 19 perturbations have ratio < 2 in full measured-gene space; arrival was geometrically attainable for them. [within_floor = 9]
+            (descriptive) 28 of 28 eligible perturbations have ratio < 2 and therefore could in principle have registered an arrival; 9 of those are within_floor.
+            exceed k = 19 of N_f = 28; chance expectation 1.40; one-sided binomial p = 8.5e-19
+== GSE278572 Teff / full measured-gene space ==
+CONCLUSION  RATIO-OPEN: in GSE278572 Teff, 17 of 17 perturbations have ratio < 2 in full measured-gene space; arrival was geometrically attainable for them. [within_floor = 11]
+            (descriptive) 28 of 28 eligible perturbations have ratio < 2 and therefore could in principle have registered an arrival; 11 of those are within_floor.
+            exceed k = 17 of N_f = 28; chance expectation 1.40; one-sided binomial p = 9.63e-16

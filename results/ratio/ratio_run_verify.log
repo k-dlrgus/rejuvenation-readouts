@@ -1,0 +1,8 @@
+[21:34:29] [prereg] results\ratio\PREREG.flag bytes=22774
+[21:34:29] [verify] GSE278572 Treg: k=19 N_f=28 p=8.5e-19 ge2=0 lt2=19
+[21:34:29] [verify] GSE278572 Teff: k=17 N_f=28 p=9.63e-16 ge2=0 lt2=17
+[21:34:29] [verify] all readings re-derived from tracked CSVs; 0 mismatches
+[22:10:13] [prereg] results\ratio\PREREG.flag bytes=22774
+[22:10:13] [verify] GSE278572 Treg: k=19 N_f=28 p=8.5e-19 ge2=0 lt2=19
+[22:10:13] [verify] GSE278572 Teff: k=17 N_f=28 p=9.63e-16 ge2=0 lt2=17
+[22:10:13] [verify] all readings re-derived from tracked CSVs; 0 mismatches
