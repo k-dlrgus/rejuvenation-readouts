@@ -1,0 +1,314 @@
+FLOORCHK pre-registration flag
+Written 2026-10-25T23:17:26+09:00 (2026-10-25T14:17:26Z), before any statistic of this task
+exists. No floor draw, gate draw, corrected ratio, re-split gap, fit or new pseudobulk has been
+computed. No new code has been run on any expression data.
+
+What had been read or seen before this file was written (disclosed):
+ - Repository files: CLAUDE.md; FINDINGS_SOUTH6.md (lines 1-552 and 743-771); FINDINGS_RATIO.md
+   (lines 1-53 and 344-600); results/ratio/PREREG.flag (whole); FINDINGS_SAME.md (whole);
+   FINDINGS_GENESPACE.md (lines 1-300, which include the stored per-space same-platform table and
+   the per-space f = 0 mixture rows); code in src/south6_run.py, src/same_run.py,
+   src/seng_run.py (tmm_cache_from_panel, z_from_counts), src/toward_run.py (tmm_logcpm_quiet,
+   zscore_frozen, sum_rows, load_donor), src/genespace_run.py (function list); .gitignore.
+ - Paper 1 (paper/rejuvenation_readouts_preprint_v1.2.docx, text extracted to a scratch file, not
+   edited): the passages of the main text (paragraph on the 205 MD genes), the Discussion, the
+   Limitations bullet on the same-platform test, and Supplementary Note 3.
+ - Stored values read from files (these ARE the stored statistics the task asks to confirm; read,
+   not recomputed by new code):
+     results/south6/stage3_full_table.csv, O1_Y1, column d_over_v:
+       S1 1,836 rows, min 2.0966, 1,836 with ratio >= 2, median 3.8208;
+       S2_k20 min 0.1312, 1 >= 2; S2_k50 min 0.1940, 2 >= 2; S2_k100 min 0.2384, 2 >= 2.
+     results/genespace/same_stats.csv, forward rows, d_norm / v_norm:
+       FULL 272.7340 / 130.6884 = 2.0869; MD 33.5800 / 14.5976 = 2.3004;
+       AGE 100.7160 / 48.3385 = 2.0836.
+     results/south6/stage0_cells_per_target.csv (targets other than 'non'): 1,836 targets, cells
+       per target 13..341, 212 distinct counts; numpy-linear percentiles P5/P25/P50/P95 =
+       59 / 84 / 106 / 189.
+     results/same/split.json: aged half A (O) 2,469, aged half B 2,470, young half A (Y) 3,851,
+       young half B 3,852, aged d0 4,939, young d0 7,703. GM00731 PartialReprog 5,832 cells.
+     results/south6/stage1.npz key list and shapes; results/same/panel_z.npz key list.
+ - Outcome-relevant arithmetic done by hand before this file, disclosed because it bears on
+   claim 2: the stored GENESPACE f = 0 mixture row (2,470 aged half-B cells vs O) has progress
+   0.115 and perp 0.466 in FULL, i.e. a noise length of about 0.48 x ||gap||. Squared and
+   subtracted from the stored ||d||, that puts the all-genes corrected ratio within a few percent
+   of 2 (roughly 2.00 to 2.05 depending on the floor size used). For MD the same arithmetic gives
+   about 2.30; for AGE about 2.05. This was stated to the user in chat before the rulings below.
+   It is an estimate from stored numbers, not a result of this task.
+ - Three questions were put to the user in chat; their rulings are reproduced verbatim below
+   (U1-U3).
+
+== Task (verbatim, as given in chat) ==
+
+Read CLAUDE.md first; its rules apply. Then read FINDINGS_SOUTH6.md, FINDINGS_RATIO.md, results/ratio/PREREG.flag, and the paper-1 preprint passages cited below.
+
+Task: `FLOORCHK`. Deliverables: `results/floorchk/PREREG.flag`, `FINDINGS_FLOORCHK.md`, `PROGRESS_FLOORCHK.md`. One local commit, no push. Modify no existing FINDINGS_*.md, no SCOPING_*.md, no file under results/south6/ or results/ratio/, and no preprint source.
+
+## Why this task exists
+
+RATIO (GSE278572) found that the displacement-length ratio ‖d‖/‖gap‖ carries a large sampling-noise component at low cell counts: random control-guide cells with no effect read 1.5–1.8 at 30 cells, and a planted full-gap displacement read 2.4–2.6 at 30 cells. SOUTH6 computed the same kind of ratio and never compared it with a size-matched control floor.
+
+Two published length claims rest on such ratios. This task checks both against a noise floor. It changes no published text; it records whether the claims survive.
+
+Claim 1 (paper 1, Supplementary Note 3; SOUTH6): in space C, for the GTEx old-to-young comparison with origin O1 and target Y1, every one of the 1,836 Southard perturbations moved more than twice the distance between the two centroids (smallest ratio 2.10), "so from that origin no approach to that target could have been registered whatever its direction". Locate the stored per-perturbation values in results/south6/ and confirm the 1,836 and the 2.10 from the files before anything else; if they do not reproduce, STOP and report.
+
+Claim 2 (paper 1, main text and Limitations; the same-platform test on GSE297234): the aged donor's partially reprogrammed cells travel 2.3 times the line between the two donors' day-0 cells, "a move longer than twice that line cannot end closer to the target whichever way it points, so these cells overshoot on length alone". Locate the stored values for MD genes, age genes and all genes, and confirm them from the files before anything else; if they do not reproduce, STOP and report.
+
+## Inputs — no download
+
+Southard data and code are local: data/raw/southard/, the SOUTH6 run script and its stored intermediates under results/south6/. GSE297234 is local under data/raw/gse297234/. Reuse the existing pipelines' functions for normalisation, gene matching and coordinates exactly as they ran — no refit, no new basis, no new gene filter. If an intermediate needed to rebuild a pseudobulk is missing, rebuild it with the original code and show that the stored statistic reproduces to within rounding before using it. Download nothing.
+
+## Pre-register before any statistic
+
+Write the flag before computing anything new, including the statistic, the controls, the gates and the exact wording of every conclusion.
+
+### Floor
+For each perturbation (claim 1) or state (claim 2), draw 200 random samples of control cells at that unit's own cell count, with no effect, using the seeds in CLAUDE.md. Claim 1 controls: Southard non-targeting cells, as SOUTH6 defined them. Claim 2 controls: the aged donor's day-0 fibroblasts, drawn from the half NOT used to build the origin, matching the existing half-split. Compute ‖d0‖ for each draw exactly as ‖d‖ was computed. Report per space: median and P95 of ‖d0‖/‖gap‖ at each group size, beside the observed ratio.
+
+For claim 2 the gap itself is a difference of two single-cell pseudobulks, so it also carries noise: estimate it by repeating the half-split for both day-0 arms (200 draws) and report the spread of ‖gap‖. For claim 1 the gap is between two GTEx bulk centroids; state that it is treated as fixed and why.
+
+### Corrected ratio
+Sampling noise adds approximately in quadrature to an independent effect. Define the noise-corrected ratio as sqrt(max(0, ‖d‖² − median(‖d0‖²))) / ‖gap‖. This is the pre-registered decision statistic. RATIO computed a similar estimate without pre-registration; this task pre-registers it.
+
+### Gate — run before reading any real unit
+Validate the correction with planted effects. Take control samples at four group sizes spanning each claim's range (claim 1: the 5th, 25th, 50th and 95th percentile of Southard cells per perturbation; claim 2: the partially reprogrammed population's own cell count), add a displacement of known length 0.5, 1, 2 and 3 times ‖gap‖ in a random direction (200 draws each), and compute the corrected ratio.
+The gate passes in a space if the median corrected ratio is within ±20% of the planted length at every planted length >= 1, at every group size tested. If the gate fails in a space, the corrected ratio is NOT used there; report only the raw ratio beside the floor, and the conclusions below that require the corrected ratio do not fire in that space.
+
+Spaces: claim 1, every space SOUTH6 reported for O1→Y1 (S1 and the compressed S2_k20/50/100), with S1 primary because it is the space paper 1 reports. Claim 2, the three gene spaces of paper 1 (MD 205, age 3,089, all 23,485), all-genes primary.
+
+### Conclusions, worded now
+Per claim, per space, every reading whose conditions fired:
+
+  "FLOOR-REACHES-2: in <claim>, <space>, the control floor's P95 is >= 2 at <n> of <N> group sizes; at those depths a ratio of 2 is reached by sampling noise alone."
+  "LENGTH-STANDS: in <claim>, <space>, <n> of <N> units have corrected ratio >= 2; the published 'more than twice' holds for them after removing the noise contribution."
+  "LENGTH-DEPTH: in <claim>, <space>, <n> of <N> units have raw ratio >= 2 but corrected ratio < 2; for them the published 'more than twice' was reached partly by sampling noise."
+  "LENGTH-UNRESOLVED: in <claim>, <space>, the correction failed its gate; only raw ratio and floor are reported and no statement about the published claim is made."
+
+For claim 1 additionally, worded now, fires only in S1 if the gate passes there:
+  "CLAIM1-HOLDS" if LENGTH-STANDS counts all 1,836 units; "CLAIM1-PARTIAL: <n> of 1,836" if it counts some; "CLAIM1-FAILS" if it counts none.
+For claim 2 additionally, fires only in all-genes if the gate passes there:
+  "CLAIM2-HOLDS" if the partially reprogrammed corrected ratio is >= 2; "CLAIM2-FAILS" if it is < 2. Report the MD and age spaces beside it, labelled secondary.
+
+If CLAIM1-PARTIAL, CLAIM1-FAILS or CLAIM2-FAILS fires, write in FINDINGS_FLOORCHK.md, in plain words, which sentence of paper 1 no longer holds as written and what the corrected statement would be. Do not edit the preprint.
+
+## Hard rules
+No conclusion about any named factor or gene; this is about the published length claims only.
+Reproduce every stored statistic used before computing anything new, and report the reproduction table.
+Disclose every deviation, including anything decided that the flag did not specify. If a bar or definition is ambiguous, STOP and ask.
+
+== Rulings by the user in chat, before this file was written ==
+
+Questions are paraphrased; the text after "Ruling:" is the user's answer, verbatim.
+
+[U1] Claim 2: the unit (GM00731 PartialReprog) has 5,832 cells but the aged half-B control pool
+has 2,470, so neither the floor nor the gate can be drawn at the unit's own size without
+replacement. How should they be drawn?
+Ruling: Ladder + 1/n, as in the recommended option: draw without replacement from half B at 154, 309, 617, 1,235 and 2,470 cells (200 draws each), fit median ||d0||^2 = a + b/n, read it at 5,832, run the gate at each ladder size, and disclose the model.
+
+Additions, fixed now, because 5,832 is beyond the largest ladder point:
+- Report the fitted a and b, the fit's residuals at all five ladder points, and the floor read at 5,832 beside the floor observed at 2,470. State in the file that the 5,832 value is an extrapolation of roughly 2.4x past the largest size drawn.
+- Compute the corrected ratio twice: once with the extrapolated floor at 5,832, and once with the observed floor at 2,470 used unchanged, which overstates the noise and so biases the corrected ratio against the published claim. Report both.
+- CLAIM2-HOLDS fires only if the corrected ratio is >= 2 under BOTH. If the two disagree, fire LENGTH-UNRESOLVED for claim 2 instead and say that the verdict depends on the extrapolation.
+- If the 1/n fit does not describe the ladder (any ladder point's median off the fitted curve by more than 10%), do not extrapolate: use the observed 2,470 floor alone and say so.
+
+[U2] CLAUDE.md names no seeds. Which seeds?
+Ruling: Fresh 20261027-29 (Recommended) — the option as offered: 20261027 for floors, 20261028
+for the gate, 20261029 for the claim-2 gap re-splits.
+
+[U3] Claim 1: what is each control draw's ||d0|| measured against?
+Ruling: Pool minus the draw (Recommended) — the option as offered: the reference is the 14,013
+label-defined non-targeting cells minus the drawn cells, as RATIO did, so the draw is independent
+of its reference as a real perturbation is.
+
+== Definitions fixed by the session now, because the task and rulings do not specify them
+   (disclosed). Stated to the user in chat before the rulings, without objection: the shared
+   per-size draws (D2), the single claim-2 unit (D1), the uncorrected claim-2 gap (D6), the S2
+   rebuild (D9). Everything else below was NOT shown to the user before this file. ==
+
+[D1] Units, spaces, gaps.
+  Claim 1. Units: the 1,836 ranked factors of SOUTH6 (results/south6/stage1.npz). Unit cell count
+    n_i = the factor's number of cells (stage1.npz cell_indptr; must equal stage0_cells_per_target).
+    Spaces: S1 (full ruler coordinates, 23,485, unmatched ruler genes 0) and S2_k20/k50/k100
+    (d projected on the first k GTEx-donor PCA loadings, as SOUTH6 project_D). Pair O1->Y1 only.
+    ||d_i|| = SOUTH6's d_f row (S1) or its projection (S2). ||gap|| = ||c_old - c_young|| from
+    results/toward/anchors.npz (S1), or ||(c_old - c_young) L_k|| (S2), i.e. SOUTH6's v_norm.
+    The gap is treated as FIXED. Reason: c_old and c_young are means over 231 and 113 GTEx donor
+    bulk profiles, frozen anchors read and not refit; they are not single-cell pseudobulks and
+    carry no cell-sampling noise of the kind this task measures. Their donor-sampling uncertainty
+    is a different quantity and is not estimated here.
+  Claim 2. One unit: GM00731 PartialReprog (5,832 cells), the population claim 2 is about. No
+    other state is a unit (Pluripotency, NonReprog and the reverse test are not tested).
+    Spaces: FULL (all 23,485 ruler columns), MD (205 columns, results/genespace/gene_map.csv
+    in_MD), AGE (3,089 columns, in_AGE), each sliced from the full-gene z, exactly as GENESPACE.
+    d = z(S) - z(O), gap = z(Y) - z(O), from the SAME main panel [O, Y, S, S_rev, Pluri,
+    NonReprog], TMM across that panel, frozen GTEx mu/sd, panel-missing genes z = 0.
+    <space> in the reading wording is filled as "all genes (23,485)", "MD genes (205)",
+    "age genes (3,089)" for claim 2 and "S1", "S2_k20", "S2_k50", "S2_k100" for claim 1;
+    <claim> as "claim 1" / "claim 2".
+
+[D2] Claim-1 floor (implements the task's Floor and U3).
+  Per-cell matched counts: results/south6/matched_{data,indices,indptr} (SOUTH6's own per-cell
+  matrix), summed by south6_run.gather_sum. Pool: the 14,013 label-defined non-targeting cells
+  (stage1.npz nt_cells). For a draw of n cells without replacement from the pool:
+    C_draw = gather_sum(draw); C_ref = C_pool - C_draw;
+    z(.) = SOUTH6's normalisation of one extra pseudobulk: seng_run.z_from_counts against the
+    cached TMM reference of SOUTH6's panel [C_f; C_nt; C_pool] (seng_run.tmm_cache_from_panel),
+    frozen GTEx mu/sd of the matched ruler genes, SOUTH6's missing mask, scattered into the
+    23,485 ruler coordinates with unmatched genes 0 (as south6_run z_of);
+    d0 = z(C_draw) - z(C_ref); S2: d0 L_k.
+  Floor ratio = ||d0|| / ||gap|| per space. Draws are made once per distinct n among the 1,836
+  factors (212 sizes; plus the four gate sizes if any is not among them), 200 draws per size,
+  shared by all factors of that size (a factor's floor depends only on n). Generator per size:
+  numpy default_rng([20261027, 1, n]), so computation order cannot change a number.
+  Reported per space and size: median and P95 (numpy linear) of the floor ratio, and
+  m(n) = median over draws of ||d0||^2.
+
+[D3] Claim-2 floor (implements U1).
+  Pool: aged half B (results/same/split_idx.npz aged_B, 2,470 cells), never half A.
+  Ladder n in {154, 309, 617, 1235, 2470}; 200 draws without replacement per n; generator
+  default_rng([20261027, 2, n]). At n = 2,470 every draw is the whole of half B, so the 200 draws
+  are identical; this is a property of the ruling and is reported, not changed.
+  C_draw = toward_run.sum_rows(Y_aged, draw); z(C_draw) by seng_run.z_from_counts against the
+  cached TMM reference of the SAME main panel, frozen mu/sd of all 23,485 ruler genes, the
+  panel's missing mask; d0 = z(C_draw) - z(O) with z(O) the panel's O row; sliced per space.
+  Fit, per space separately: ordinary least squares of m(n) on (1, 1/n) over the five ladder
+  points, unweighted. Residual check: |m(n) - fit(n)| / fit(n) <= 0.10 at all five points, else
+  "fit_fails" in that space and no extrapolation there (U1). F_ext = a + b/5832 (if fit passes);
+  F_obs = m(2470).
+
+[D4] Corrected ratio (the task's definition).
+  Claim 1: CR_i = sqrt(max(0, ||d_i||^2 - m(n_i))) / ||gap||, per space.
+  Claim 2: CR_ext = sqrt(max(0, ||d||^2 - F_ext)) / ||gap||; CR_obs likewise with F_obs, per space.
+  Raw ratio = ||d|| / ||gap|| as stored.
+
+[D5] Gate (implements the task's Gate and U1).
+  Claim 1: sizes 59, 84, 106, 189 (numpy-linear P5/P25/P50/P95 of the 1,836 factor cell counts,
+  recomputed by the script; a different value is a reproduction failure). Claim 2: the five
+  ladder sizes. Per space and size: 200 fresh control draws (claim 1: default_rng([20261028, 1,
+  n]); claim 2: default_rng([20261028, 2, n])), each d0_j built as in D2/D3. For each draw j and
+  each L in {0.5, 1, 2, 3}: a direction u drawn uniformly on the unit sphere (normalised standard
+  normal) of the space's coordinates that can carry a measurement (S1: matched ruler genes not in
+  the missing mask; S2: R^k; claim 2: that space's columns not in the panel missing mask), from
+  the same generator, after that draw's cells; x = d0_j + L ||gap|| u;
+  CR = sqrt(max(0, ||x||^2 - m(n))) / ||gap||, with m(n) the FLOOR's (D2/D3) median at that n,
+  not the gate draws' own.
+  Gate passes in a space iff, for every L in {1, 2, 3} and every size tested,
+  |median_j CR - L| <= 0.20 L. L = 0.5 is reported and does not gate.
+  For claim 2 the gate validates the subtraction at the ladder sizes. It cannot test the
+  extrapolation to 5,832; U1's two-floor rule is what guards that.
+  Order: the gate is evaluated, and its pass/fail written to file, before any real unit's
+  corrected ratio is computed. Real units' RAW ratios are already known (they are the stored
+  statistics the task requires reproducing first); this is unavoidable and disclosed.
+
+[D6] Claim-2 gap spread (descriptive; gates nothing).
+  200 re-splits, one generator default_rng(20261029); per draw: permute the aged d0 cells
+  (4,939) then the young d0 cells (7,703), half A' = first n//2 (2,469; 3,851) as in
+  same_run.split_half; gap_j = z(Y_A') - z(O_A'), both normalised by z_from_counts against the
+  SAME main panel cache; ||gap_j|| per space. Reported: median, P5, P95, beside the observed
+  ||gap||. Not shown to the user: the spread across re-splits measures how much ||gap|| varies
+  between splits; it does not measure how much cell-sampling noise inflates ||gap|| itself (every
+  split carries that inflation). The findings say so. The corrected ratio uses the observed
+  ||gap||, uncorrected, as the task defines it; noise in ||gap|| makes the corrected ratio biased
+  low, and the findings state that direction.
+
+[D7] Firing rules (implements the task's Conclusions and U1).
+  FLOOR-REACHES-2 fires in a claim x space when the floor P95 is >= 2 at >= 1 size.
+    <N> = number of floor sizes: claim 1, the distinct factor sizes (212); claim 2, the 5 ladder
+    sizes. Gate-only sizes are not counted. It needs no gate.
+  Where the gate passes:
+    claim 1: LENGTH-STANDS fires if n >= 1 factors have CR >= 2; LENGTH-DEPTH fires if n >= 1 have
+      raw >= 2 and CR < 2. <N> = 1,836. Both may fire. Counts of 0 are written as descriptive lines.
+    claim 2 (N = 1): if fit_fails in the space, CR_obs alone decides. Otherwise the unit counts for
+      LENGTH-STANDS only if CR_ext >= 2 AND CR_obs >= 2, and for LENGTH-DEPTH only if raw >= 2 AND
+      CR_ext < 2 AND CR_obs < 2. If CR_ext and CR_obs fall on opposite sides of 2, neither fires
+      and LENGTH-UNRESOLVED fires in that space with this wording, fixed now (not shown to the
+      user; the task's fixed LENGTH-UNRESOLVED sentence says "failed its gate", which would be
+      untrue here, so U1's "fire LENGTH-UNRESOLVED ... and say that the verdict depends on the
+      extrapolation" is implemented as):
+      "LENGTH-UNRESOLVED: in claim 2, <space>, the corrected ratio is <x> with the floor
+      extrapolated to 5,832 cells and <y> with the observed 2,470-cell floor, on opposite sides of
+      2; the verdict depends on the extrapolation and no statement about the published claim is
+      made."
+  Where the gate fails: LENGTH-UNRESOLVED fires with the task's wording; LENGTH-STANDS and
+    LENGTH-DEPTH do not fire; CR is not reported as a result there (computed values, if any, are
+    not written as conclusions).
+  CLAIM1-*: only in S1, only if the S1 gate passes: HOLDS if the LENGTH-STANDS count is 1,836;
+    PARTIAL with <n> if 1 <= n < 1,836; FAILS if 0.
+  CLAIM2-*: only in all genes, only if its gate passes: HOLDS iff the unit counts for
+    LENGTH-STANDS there; FAILS iff CR < 2 under both floors (or under CR_obs alone if fit_fails);
+    if they disagree, neither CLAIM2 key fires and the all-genes LENGTH-UNRESOLVED above stands
+    in its place. MD and AGE readings are reported beside it, labelled secondary.
+  The claim 1 S1 and claim 2 all-genes readings are primary; all others are secondary.
+  Note, not shown to the user: the "2.3" of the main text is the MD-space value; all-genes is
+  2.09. CLAIM2 is decided in all genes as the task fixes. If CLAIM2-FAILS fires, the findings
+  name which sentences fail, including whether the MD "2.3" sentence survives in its own space.
+
+[D8] Tolerances (the task names none; fixed now).
+  Counts exact. Recomputation from stored vectors: relative 1e-9. Rebuilt pseudobulks or rebuilt
+  bases (z rows, PCA projections): max abs difference 1e-8 on z, relative 1e-6 on norms and
+  ratios. Cache normalisation self-check (z_from_counts of a panel row vs the panel's z):
+  max abs 1e-6.
+
+[D9] Rebuilding the S2 basis (prominent: this re-runs a fit).
+  SOUTH6 fit its S2 PCA at run time and did not store it. Per the task ("rebuild it with the
+  original code and show that the stored statistic reproduces"), it is rebuilt with SOUTH6's
+  own steps: toward_run.load_gtex_z, center = column mean, lowdim_common.fit_pca(Zg - center,
+  KMAX) with south6_run's KMAX. Inputs to that fit: the 652 GTEx fibroblast donors' frozen-z
+  matrix only, no Southard or GSE297234 cell. The rebuilt basis is used only if every
+  ||d_f L_k|| / ||(c_old - c_young) L_k|| reproduces the stored S2 d_over_v (D8). south6_run
+  .build_spaces is not called, because its Y2 branch writes to results/south6/.
+
+== STOP conditions, fixed now ==
+
+ [S1] `reproduction_failed` — any gating check below fails. Every mismatch named.
+ [S2] `flag_ambiguous` — the flag is ambiguous or self-contradictory in a way U1-U3 and D1-D9 do
+      not settle. Write the findings with the STOP key, name the ambiguity, ask.
+A STOP is never resumed and never restarted with an adjustment.
+
+== Reproduction of stored numbers before anything new (CLAUDE.md) ==
+
+Run first, by src/floorchk_run.py, into results/floorchk/reproduction.csv. All gating.
+ R1 Claim 1, S1. From stage1.npz d_f and anchors.npz: factor count 1,836 (exact); per-factor
+    ||d_f|| / ||c_old - c_young|| vs stored d_over_v (S1, O1_Y1), rel 1e-9; ||gap|| = stored
+    v_norm 32.2839...; min 2.0966 (which rounds to the published 2.10) and 1,836 of 1,836 >= 2,
+    both from the recomputed values.
+ R2 Claim 1, panel and pool. tmm_logcpm_quiet on [C_f; C_nt; C_pool] from stage1.npz, z as
+    SOUTH6: reproduces stored z_f, z_pool, d_f (max abs 1e-8). gather_sum over the 14,013
+    nt_cells equals C_pool exactly; gather_sum over each factor's cells equals its C_f row
+    exactly; cells per factor equal stage0_cells_per_target (exact). Cache self-check
+    z_from_counts(C_pool) vs z_pool (1e-6).
+ R3 Claim 1, S2. Rebuilt basis (D9): per factor, ratio vs stored d_over_v for S2_k20/50/100
+    (rel 1e-6), and ||gap|| vs stored v_norm (rel 1e-6).
+ R4 Claim 2. load_donor for both lines, split_idx.npz halves, state_idx: n O 2,469, Y 3,851,
+    aged_B 2,470, S 5,832 (exact); SAME main panel rebuilt with same_run.panel_z: Z vs stored
+    results/same/panel_z.npz Z (max abs 1e-8); MD 205 and AGE 3,089 columns (exact); per space
+    ||d||, ||gap|| vs results/genespace/same_stats.csv forward d_norm, v_norm (rel 1e-9); raw
+    ratios 2.300 (MD), 2.084 (AGE), 2.087 (FULL). Cache self-check on rows O and S (1e-6).
+
+== Honesty obligations (CLAUDE.md), applied ==
+
+- Chance baseline beside counts: the floor P95 is by construction exceeded by 5% of control
+  draws; FLOOR-REACHES-2 is about the floor itself. Each LENGTH count is shown beside the floor
+  median ratio at the unit's own size.
+- Recovery power beside any null: the gate is a planted-effect recovery check; its full table
+  (every L, every size, every space) is reported, including L = 0.5.
+- Circularity, disclosed where results appear: claim 1, the non-targeting pool defines zero for
+  every d and is the pool every floor draw comes from. Claim 2, O is one end of the gap, the
+  origin of d and the reference of every floor draw, so O's own sampling noise enters d, d0 and
+  the gap alike.
+- Cell-count check: Spearman of corrected ratio and of raw ratio with n over the 1,836 factors.
+- What this does not cover: the floor measures cell-sampling noise only, not guide-to-guide,
+  batch or biological variation; the quadrature subtraction assumes noise is independent of and
+  roughly orthogonal to the effect; Hs27 is one neonatal line with no aged cells; claim 2 is two
+  donors, one each. Nothing here transfers to other screens or to aged cells.
+- No conclusion about any named factor or gene.
+
+== Process ==
+
+Code: src/floorchk_run.py (modes: run, verify). Interpreter: anaconda python, run with -I.
+Imports, unchanged: toward_run (tmm_logcpm_quiet, sum_rows, load_donor, load_gtex_z,
+ANCHORS_PATH), seng_run (tmm_cache_from_panel, z_from_counts), south6_run (gather_sum,
+open_matched, KMAX, S2_KS), lowdim_common.fit_pca, same_run (d0_fibroblast_idx, state_idx,
+panel_z), fibro2_common.load_frozen_ruler. Results: results/floorchk/ only. Deliverables: this
+file; FINDINGS_FLOORCHK.md with this file reproduced verbatim at the top; PROGRESS_FLOORCHK.md.
+One local commit, no push. Not modified: any FINDINGS_*.md, any SCOPING_*.md, anything under
+results/south6/ or results/ratio/, any preprint source.

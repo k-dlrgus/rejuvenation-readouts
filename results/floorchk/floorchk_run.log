@@ -1,0 +1,114 @@
+[23:24:10] ==========================================================================================
+[23:24:10] FLOORCHK run. PREREG.flag bytes=26168
+[23:24:10] [repro] R1 claim 1 factor count (stage1.npz vs stage3 S1 O1_Y1): expected 1836 observed 1836 / 1836 -> ok
+[23:24:10] [repro] R1 S1 per-factor ratio vs stored d_over_v, max rel err: expected <=1e-9 observed 2.60e-15 -> ok
+[23:24:10] [repro] R1 S1 ||gap|| (anchors.npz, read not refit) vs stored v_norm: expected 32.2839490499 observed 32.2839490499 -> ok
+[23:24:10] [repro] R1 S1 smallest ratio (published 2.10): expected 2.0966 (rounds to 2.10) observed 2.0966 -> ok
+[23:24:10] [repro] R1 S1 factors with ratio >= 2 (published: all 1,836): expected 1836 observed 1836 -> ok
+[23:24:19] [repro] R2 missing mask vs stored: expected equal observed 164 vs 164 -> ok
+[23:24:20] [repro] R2 panel z_f rebuilt vs stored, max abs: expected <=1e-8 observed 0.00e+00 -> ok
+[23:24:20] [repro] R2 panel z_pool rebuilt vs stored, max abs: expected <=1e-8 observed 0.00e+00 -> ok
+[23:24:20] [repro] R2 d_f rebuilt vs stored, max abs: expected <=1e-8 observed 0.00e+00 -> ok
+[23:24:26] [repro] R2 cache self-check z_from_counts(C_pool) vs panel, max abs: expected <=1e-6 observed 0.00e+00 -> ok
+[23:24:30] [repro] R2 sum over the 14,013 non-targeting cells == C_pool (exact): expected 14013 cells, equal observed 14013 cells, max abs diff 0.0 -> ok
+[23:24:30] [repro] R2 cells per factor == stage0_cells_per_target (exact): expected 1836 equal observed 1836 equal -> ok
+[23:24:30] [repro] summing every factor's cells to check C_f (206,390 cells)
+[23:25:43] [repro] R2 per-factor cell sums == C_f rows (exact): expected 0 mismatches observed 0 mismatches -> ok
+[23:25:43] [repro] R2 gate sizes = P5/P25/P50/P95 of cells per factor: expected [59, 84, 106, 189] observed [59.0, 84.0, 106.0, 189.0] -> ok
+[23:25:44] [columns gtex_obs] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\fibro\stage1_obs.csv: ['SAMPID', 'SMATSSCR', 'SMCENTER', 'SMPTHNTS', 'SMRIN', 'SMTS', 'SMTSD', 'SMUBRID', 'SMTSISCH', 'SMTSPAX', 'SMNABTCH', 'SMNABTCHT', 'SMNABTCHD', 'SMGEBTCH', 'SMGEBTCHD', 'SMGEBTCHT', 'ANALYTE_TYPE', 'SMAFRZE', 'SMGTC', 'SMRDTTL', 'SMALTTL', 'SMALTALG', 'SMSUPALG', 'SMRDLGTH', 'SMVQCFL', 'SMLMAPQ', 'SMUMPRD', 'SMUNPDRD', 'SMMPPD', 'SMMAPRT', 'SMMPPDUN', 'SMUNMPRT', 'SMMPDP', 'SMDPMPRT', 'SMMPPDXG', 'SMMPDPXG', 'SMDPRTXG', 'SMCHMRD', 'SMCHMRT', 'SMMPPDPR', 'SMMPHQRD', 'SMMPHQRT', 'SMMPLQRD', 'SMSPLTRT', 'SME1MPRD', 'SME2MPRD', 'SME1MPRT', 'SME2MPRT', 'SME1MMB', 'SME2MMB', 'SME1TTLB', 'SME2TTLB', 'SME1MMRT', 'SME2MMRT', 'SMTTLMM', 'SMTTLB', 'SMBSMMRT', 'SMESTLBS', 'SMEXNCRD', 'SMEXNCRT', 'SMEXPEFF', 'SMNTRNRD', 'SMNTRNRT', 'SMNTRARD', 'SMNTRART', 'SMNTERRD', 'SMNTERRT', 'SMAMBRD', 'SMAMBRT', 'SMNTEXC', 'SMDSCRT', 'SMEXNCRTHQ', 'SMNTRNRTHQ', 'SMNTRARTHQ', 'SMNTERRTHQ', 'SMAMBRTHQ', 'SME1SNSE', 'SME2SNSE', 'SME1ANTI', 'SME2ANTI', 'SME1PCTS', 'SME2PCTS', 'SMGNSDTC', 'SMRRNARD', 'SMRRNART', 'SMMFLGTH', 'SMSFLGTH', 'SMMDFLGTH', 'SMSMFLGTH', 'SMFGCMN', 'SMFGCSD', 'SMFGCSK', 'SMFGCKT', 'SM3PBMN', 'SM3PBSD', 'SM3PBMD', 'SM3PB25P', 'SM3PB75P', 'SM3PBSDM', 'SM3PBGN', 'SMMDMNCV', 'SMMDCVSD', 'SMMDCVCV', 'SMEXCVMD', 'SMEXCVMAD', 'SMMNCV', 'SMUVCRD', 'SMUVCRT', 'SMSHRTRD', 'SMSHRTRT', 'SMSMRDHQ', 'SMSMRTHQ', 'SMPRERDHQ', 'SMPRERTHQ', 'SMSMGNDT', 'SMPREGNDT', 'SMRDLNMN', 'SMRDLNMD', 'SMRDLNSD', 'donor', 'SUBJID', 'SEX', 'AGE', 'DTHHRDY', 'age_mid', 'age_ordinal']
+[23:25:44] [genes] pack ensembl matches frozen-ruler overlap gene set.
+[23:25:44] [gtex] n_donors=652 n_genes=23485 filter>=6 in >=20% ; TMM/log2-CPM prior.count=2 (Stage 0 pack, not rebuilt)
+[23:25:44] [gtex] AGE counts: {'20-29': 60, '30-39': 53, '40-49': 106, '50-59': 202, '60-69': 210, '70-79': 21}
+[23:25:46] [S2] PCA rebuilt on GTEx donors only n=652 p=23485 k=100
+[23:25:46] [repro] R3 S2_k20 per-factor ratio (rebuilt basis) vs stored, max rel err: expected <=1e-6 observed 6.54e-16 -> ok
+[23:25:46] [repro] R3 S2_k20 ||gap|| vs stored v_norm: expected 28.645166 observed 28.645166 -> ok
+[23:25:46] [repro] R3 S2_k20 stored min ratio; n >= 2 (descriptive): expected - observed min 0.1312; 1 of 1836 -> ok
+[23:25:46] [repro] R3 S2_k50 per-factor ratio (rebuilt basis) vs stored, max rel err: expected <=1e-6 observed 6.06e-16 -> ok
+[23:25:46] [repro] R3 S2_k50 ||gap|| vs stored v_norm: expected 30.864266 observed 30.864266 -> ok
+[23:25:46] [repro] R3 S2_k50 stored min ratio; n >= 2 (descriptive): expected - observed min 0.1940; 2 of 1836 -> ok
+[23:25:46] [repro] R3 S2_k100 per-factor ratio (rebuilt basis) vs stored, max rel err: expected <=1e-6 observed 7.81e-16 -> ok
+[23:25:46] [repro] R3 S2_k100 ||gap|| vs stored v_norm: expected 31.434263 observed 31.434263 -> ok
+[23:25:46] [repro] R3 S2_k100 stored min ratio; n >= 2 (descriptive): expected - observed min 0.2384; 2 of 1836 -> ok
+[23:25:46] [columns louvain_obs_GM00731] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\louvain_obs_GM00731.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[23:25:46] [columns labels_GM00731] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\t2_cluster_labels_GM00731.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[23:25:46] [cell_scores GM00731] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[23:25:49] [donor GM00731] n_cells=22132 n_clusters=19 days=[0, 3, 7, 10]
+[23:25:49] [columns louvain_obs_GM23815] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\louvain_obs_GM23815.csv: ['barcode', 'gsm', 'file', 'cell_line', 'day', 'age_years', 'age_source', 'umi', 'n_genes', 'mito_frac', 'cluster', 'louvain_kept', 'percent_mt']
+[23:25:49] [columns labels_GM23815] actually read from C:\Users\kih79\Desktop\Immortality Game\Age–Identity Separability Benchmark\results\md2\t2_cluster_labels_GM23815.csv: ['cell_line', 'cluster', 'n_cells', 'label', 'mean_Fibroblast', 'mean_PartialReprog', 'mean_EarlyPluripotency', 'mean_Pluripotency', 'mean_NonReprog']
+[23:25:49] [cell_scores GM23815] keys actually read: ['frozen_ruler', 'md_score', 'tgfb_score', 'age_up', 'age_down', 'age_up_minus_age_down', 'pluri_primary', 'cluster', 'day', 'label']
+[23:25:52] [donor GM23815] n_cells=33858 n_clusters=19 days=[0, 3, 7, 10]
+[23:25:52] [repro] R4 cells O / Y / aged half B / S / aged d0 / young d0: expected (2469, 3851, 2470, 5832, 4939, 7703) observed (2469, 3851, 2470, 5832, 4939, 7703) -> ok
+[23:25:52] [repro] R4 halves are disjoint and inside d0: expected yes observed True -> ok
+[23:25:52] [repro] R4 SAME main panel z rebuilt vs stored panel_z.npz, max abs: expected <=1e-8 observed 0.00e+00 -> ok
+[23:25:52] [repro] R4 space sizes FULL / MD / AGE: expected (23485, 205, 3089) observed (23485, 205, 3089) -> ok
+[23:25:52] [repro] R4 FULL ||d||, ||gap|| vs genespace same_stats, max rel err: expected <=1e-9 observed 0.00e+00 (||d|| 272.7340, ||gap|| 130.6884, ratio 2.0869) -> ok
+[23:25:52] [repro] R4 MD ||d||, ||gap|| vs genespace same_stats, max rel err: expected <=1e-9 observed 0.00e+00 (||d|| 33.5800, ||gap|| 14.5976, ratio 2.3004) -> ok
+[23:25:52] [repro] R4 AGE ||d||, ||gap|| vs genespace same_stats, max rel err: expected <=1e-9 observed 1.41e-16 (||d|| 100.7160, ||gap|| 48.3385, ratio 2.0836) -> ok
+[23:25:52] [repro] R4 published ratios: MD 2.3 (main text); AGE, FULL > 2 (Limitations): expected 2.30 / >2 / >2 observed 2.300 / 2.084 / 2.087 -> ok
+[23:25:52] [repro] R4 cache self-check z_from_counts(O) vs panel, max abs: expected <=1e-6 observed 0.00e+00 -> ok
+[23:25:52] [repro] R4 cache self-check z_from_counts(S) vs panel, max abs: expected <=1e-6 observed 0.00e+00 -> ok
+[23:25:52] [repro] all gating checks passed
+[23:25:52] [c1 floor] 212 sizes x 200 draws (seed 20261027, stream [seed, 1, n])
+[23:25:55] [c1 floor] size 13 (1/212) S1 median ratio 11.9060
+[23:26:35] [c1 floor] size 51 (21/212) S1 median ratio 5.6249
+[23:27:13] [c1 floor] size 71 (41/212) S1 median ratio 4.7088
+[23:27:52] [c1 floor] size 91 (61/212) S1 median ratio 4.1023
+[23:28:34] [c1 floor] size 111 (81/212) S1 median ratio 3.6797
+[23:29:18] [c1 floor] size 131 (101/212) S1 median ratio 3.3694
+[23:30:03] [c1 floor] size 151 (121/212) S1 median ratio 3.1222
+[23:30:51] [c1 floor] size 171 (141/212) S1 median ratio 2.9242
+[23:31:40] [c1 floor] size 191 (161/212) S1 median ratio 2.7543
+[23:32:31] [c1 floor] size 214 (181/212) S1 median ratio 2.6092
+[23:33:25] [c1 floor] size 263 (201/212) S1 median ratio 2.3472
+[23:33:58] [c1 floor] size 341 (212/212) S1 median ratio 2.0570
+[23:34:01] [c1 gate] size 59 done: S1 medians L0.5=0.452, L1.0=0.988, L2.0=1.975, L3.0=3.001
+[23:34:03] [c1 gate] size 84 done: S1 medians L0.5=0.462, L1.0=0.982, L2.0=1.975, L3.0=2.985
+[23:34:06] [c1 gate] size 106 done: S1 medians L0.5=0.391, L1.0=0.960, L2.0=1.973, L3.0=2.981
+[23:34:09] [c1 gate] size 189 done: S1 medians L0.5=0.507, L1.0=1.000, L2.0=2.001, L3.0=2.999
+[23:34:09] [c1 gate]   space  gate_pass  n_gating_cells  n_failing failing |      S1       True              12          0         |  S2_k20       True              12          0         |  S2_k50       True              12          0         | S2_k100       True              12          0        
+[23:34:10] [c2 floor] n=154 distinct draws 200; FULL median ratio 1.6214
+[23:34:13] [c2 floor] n=309 distinct draws 200; FULL median ratio 1.1718
+[23:34:16] [c2 floor] n=617 distinct draws 200; FULL median ratio 0.8530
+[23:34:21] [c2 floor] n=1235 distinct draws 200; FULL median ratio 0.6404
+[23:34:31] [c2 floor] n=2470 distinct draws 1; FULL median ratio 0.5176
+[23:34:31] [c2 fit] FULL a=1756.9807 b=6651155.61 max|rel resid|=0.0282 pass=True F_ext=2897.4395 F_obs=4575.2529
+[23:34:31] [c2 fit] MD a=-0.8664 b=9595.37 max|rel resid|=0.5018 pass=False F_ext=0.7789 F_obs=4.5330
+[23:34:31] [c2 fit] AGE a=18.0380 b=682876.89 max|rel resid|=0.1975 pass=False F_ext=135.1294 F_obs=352.6673
+[23:34:33] [c2 gate] n=154 FULL medians L0.5=0.494, L1.0=0.998, L2.0=2.000, L3.0=2.998
+[23:34:36] [c2 gate] n=309 FULL medians L0.5=0.499, L1.0=0.998, L2.0=1.998, L3.0=2.999
+[23:34:39] [c2 gate] n=617 FULL medians L0.5=0.495, L1.0=0.997, L2.0=1.998, L3.0=3.000
+[23:34:45] [c2 gate] n=1235 FULL medians L0.5=0.500, L1.0=0.999, L2.0=1.999, L3.0=3.000
+[23:34:56] [c2 gate] n=2470 FULL medians L0.5=0.500, L1.0=1.000, L2.0=2.000, L3.0=2.999
+[23:34:56] [c2 gate] space  gate_pass  n_gating_cells  n_failing failing |  FULL       True              15          0         |    MD       True              15          0         |   AGE       True              15          0        
+[23:35:18] [c2 gap] space  observed_gap     median         p5        p95 |  FULL    130.688437 130.666834 129.417941 131.759623 |    MD     14.597609  14.776126  14.493364  15.061189 |   AGE     48.338475  48.755585  48.114599  49.378456
+[23:35:18] [units] gates are on disk; computing corrected ratios of the real units
+[23:35:19] [reading] == claim 1 / S1 (primary) ==
+[23:35:19] [reading] CONCLUSION  FLOOR-REACHES-2: in claim 1, S1, the control floor's P95 is >= 2 at 212 of 212 group sizes; at those depths a ratio of 2 is reached by sampling noise alone.
+[23:35:19] [reading] CONCLUSION  LENGTH-STANDS: in claim 1, S1, 18 of 1836 units have corrected ratio >= 2; the published 'more than twice' holds for them after removing the noise contribution.
+[23:35:19] [reading] CONCLUSION  LENGTH-DEPTH: in claim 1, S1, 1818 of 1836 units have raw ratio >= 2 but corrected ratio < 2; for them the published 'more than twice' was reached partly by sampling noise.
+[23:35:19] [reading] CONCLUSION  CLAIM1-PARTIAL: 18 of 1,836
+[23:35:19] [reading] == claim 1 / S2_k20 (secondary) ==
+[23:35:19] [reading] CONCLUSION  FLOOR-REACHES-2: in claim 1, S2_k20, the control floor's P95 is >= 2 at 1 of 212 group sizes; at those depths a ratio of 2 is reached by sampling noise alone.
+[23:35:19] [reading]             (descriptive) 0 of 1836 units have corrected ratio >= 2; LENGTH-STANDS did not fire.
+[23:35:19] [reading] CONCLUSION  LENGTH-DEPTH: in claim 1, S2_k20, 1 of 1836 units have raw ratio >= 2 but corrected ratio < 2; for them the published 'more than twice' was reached partly by sampling noise.
+[23:35:19] [reading] == claim 1 / S2_k50 (secondary) ==
+[23:35:19] [reading] CONCLUSION  FLOOR-REACHES-2: in claim 1, S2_k50, the control floor's P95 is >= 2 at 3 of 212 group sizes; at those depths a ratio of 2 is reached by sampling noise alone.
+[23:35:19] [reading]             (descriptive) 0 of 1836 units have corrected ratio >= 2; LENGTH-STANDS did not fire.
+[23:35:19] [reading] CONCLUSION  LENGTH-DEPTH: in claim 1, S2_k50, 2 of 1836 units have raw ratio >= 2 but corrected ratio < 2; for them the published 'more than twice' was reached partly by sampling noise.
+[23:35:19] [reading] == claim 1 / S2_k100 (secondary) ==
+[23:35:19] [reading] CONCLUSION  FLOOR-REACHES-2: in claim 1, S2_k100, the control floor's P95 is >= 2 at 4 of 212 group sizes; at those depths a ratio of 2 is reached by sampling noise alone.
+[23:35:19] [reading]             (descriptive) 0 of 1836 units have corrected ratio >= 2; LENGTH-STANDS did not fire.
+[23:35:19] [reading] CONCLUSION  LENGTH-DEPTH: in claim 1, S2_k100, 2 of 1836 units have raw ratio >= 2 but corrected ratio < 2; for them the published 'more than twice' was reached partly by sampling noise.
+[23:35:19] [reading] == claim 2 / all genes (23,485) (primary) ==
+[23:35:19] [reading]             (descriptive) floor P95 >= 2 at 0 of 5 group sizes; FLOOR-REACHES-2 did not fire.
+[23:35:19] [reading]             corrected ratio 2.0459 (floor extrapolated to 5,832) and 2.0217 (observed 2,470 floor); raw ratio 2.0869
+[23:35:19] [reading] CONCLUSION  LENGTH-STANDS: in claim 2, all genes (23,485), 1 of 1 units have corrected ratio >= 2; the published 'more than twice' holds for them after removing the noise contribution.
+[23:35:19] [reading] CONCLUSION  CLAIM2-HOLDS
+[23:35:19] [reading] == claim 2 / MD genes (205) (secondary) ==
+[23:35:19] [reading]             (descriptive) floor P95 >= 2 at 0 of 5 group sizes; FLOOR-REACHES-2 did not fire.
+[23:35:19] [reading]             corrected ratio 2.2957 (observed 2,470 floor alone: the 1/n fit failed its 10% residual check, so no extrapolation); raw ratio 2.3004
+[23:35:19] [reading] CONCLUSION  LENGTH-STANDS: in claim 2, MD genes (205), 1 of 1 units have corrected ratio >= 2; the published 'more than twice' holds for them after removing the noise contribution.
+[23:35:19] [reading] == claim 2 / age genes (3,089) (secondary) ==
+[23:35:19] [reading]             (descriptive) floor P95 >= 2 at 0 of 5 group sizes; FLOOR-REACHES-2 did not fire.
+[23:35:19] [reading]             corrected ratio 2.0470 (observed 2,470 floor alone: the 1/n fit failed its 10% residual check, so no extrapolation); raw ratio 2.0836
+[23:35:19] [reading] CONCLUSION  LENGTH-STANDS: in claim 2, age genes (3,089), 1 of 1 units have corrected ratio >= 2; the published 'more than twice' holds for them after removing the noise contribution.

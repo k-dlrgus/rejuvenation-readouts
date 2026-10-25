@@ -1,0 +1,30 @@
+== claim 1 / S1 (primary) ==
+CONCLUSION  FLOOR-REACHES-2: in claim 1, S1, the control floor's P95 is >= 2 at 212 of 212 group sizes; at those depths a ratio of 2 is reached by sampling noise alone.
+CONCLUSION  LENGTH-STANDS: in claim 1, S1, 18 of 1836 units have corrected ratio >= 2; the published 'more than twice' holds for them after removing the noise contribution.
+CONCLUSION  LENGTH-DEPTH: in claim 1, S1, 1818 of 1836 units have raw ratio >= 2 but corrected ratio < 2; for them the published 'more than twice' was reached partly by sampling noise.
+CONCLUSION  CLAIM1-PARTIAL: 18 of 1,836
+== claim 1 / S2_k20 (secondary) ==
+CONCLUSION  FLOOR-REACHES-2: in claim 1, S2_k20, the control floor's P95 is >= 2 at 1 of 212 group sizes; at those depths a ratio of 2 is reached by sampling noise alone.
+            (descriptive) 0 of 1836 units have corrected ratio >= 2; LENGTH-STANDS did not fire.
+CONCLUSION  LENGTH-DEPTH: in claim 1, S2_k20, 1 of 1836 units have raw ratio >= 2 but corrected ratio < 2; for them the published 'more than twice' was reached partly by sampling noise.
+== claim 1 / S2_k50 (secondary) ==
+CONCLUSION  FLOOR-REACHES-2: in claim 1, S2_k50, the control floor's P95 is >= 2 at 3 of 212 group sizes; at those depths a ratio of 2 is reached by sampling noise alone.
+            (descriptive) 0 of 1836 units have corrected ratio >= 2; LENGTH-STANDS did not fire.
+CONCLUSION  LENGTH-DEPTH: in claim 1, S2_k50, 2 of 1836 units have raw ratio >= 2 but corrected ratio < 2; for them the published 'more than twice' was reached partly by sampling noise.
+== claim 1 / S2_k100 (secondary) ==
+CONCLUSION  FLOOR-REACHES-2: in claim 1, S2_k100, the control floor's P95 is >= 2 at 4 of 212 group sizes; at those depths a ratio of 2 is reached by sampling noise alone.
+            (descriptive) 0 of 1836 units have corrected ratio >= 2; LENGTH-STANDS did not fire.
+CONCLUSION  LENGTH-DEPTH: in claim 1, S2_k100, 2 of 1836 units have raw ratio >= 2 but corrected ratio < 2; for them the published 'more than twice' was reached partly by sampling noise.
+== claim 2 / all genes (23,485) (primary) ==
+            (descriptive) floor P95 >= 2 at 0 of 5 group sizes; FLOOR-REACHES-2 did not fire.
+            corrected ratio 2.0459 (floor extrapolated to 5,832) and 2.0217 (observed 2,470 floor); raw ratio 2.0869
+CONCLUSION  LENGTH-STANDS: in claim 2, all genes (23,485), 1 of 1 units have corrected ratio >= 2; the published 'more than twice' holds for them after removing the noise contribution.
+CONCLUSION  CLAIM2-HOLDS
+== claim 2 / MD genes (205) (secondary) ==
+            (descriptive) floor P95 >= 2 at 0 of 5 group sizes; FLOOR-REACHES-2 did not fire.
+            corrected ratio 2.2957 (observed 2,470 floor alone: the 1/n fit failed its 10% residual check, so no extrapolation); raw ratio 2.3004
+CONCLUSION  LENGTH-STANDS: in claim 2, MD genes (205), 1 of 1 units have corrected ratio >= 2; the published 'more than twice' holds for them after removing the noise contribution.
+== claim 2 / age genes (3,089) (secondary) ==
+            (descriptive) floor P95 >= 2 at 0 of 5 group sizes; FLOOR-REACHES-2 did not fire.
+            corrected ratio 2.0470 (observed 2,470 floor alone: the 1/n fit failed its 10% residual check, so no extrapolation); raw ratio 2.0836
+CONCLUSION  LENGTH-STANDS: in claim 2, age genes (3,089), 1 of 1 units have corrected ratio >= 2; the published 'more than twice' holds for them after removing the noise contribution.

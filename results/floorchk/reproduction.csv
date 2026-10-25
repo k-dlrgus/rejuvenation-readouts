@@ -1,0 +1,34 @@
+check,expected,observed,match,gating
+R1 claim 1 factor count (stage1.npz vs stage3 S1 O1_Y1),1836,1836 / 1836,yes,yes
+"R1 S1 per-factor ratio vs stored d_over_v, max rel err",<=1e-9,2.60e-15,yes,yes
+"R1 S1 ||gap|| (anchors.npz, read not refit) vs stored v_norm",32.2839490499,32.2839490499,yes,yes
+R1 S1 smallest ratio (published 2.10),2.0966 (rounds to 2.10),2.0966,yes,yes
+"R1 S1 factors with ratio >= 2 (published: all 1,836)",1836,1836,yes,yes
+R2 missing mask vs stored,equal,164 vs 164,yes,yes
+"R2 panel z_f rebuilt vs stored, max abs",<=1e-8,0.00e+00,yes,yes
+"R2 panel z_pool rebuilt vs stored, max abs",<=1e-8,0.00e+00,yes,yes
+"R2 d_f rebuilt vs stored, max abs",<=1e-8,0.00e+00,yes,yes
+"R2 cache self-check z_from_counts(C_pool) vs panel, max abs",<=1e-6,0.00e+00,yes,yes
+"R2 sum over the 14,013 non-targeting cells == C_pool (exact)","14013 cells, equal","14013 cells, max abs diff 0.0",yes,yes
+R2 cells per factor == stage0_cells_per_target (exact),1836 equal,1836 equal,yes,yes
+R2 per-factor cell sums == C_f rows (exact),0 mismatches,0 mismatches,yes,yes
+R2 gate sizes = P5/P25/P50/P95 of cells per factor,"[59, 84, 106, 189]","[59.0, 84.0, 106.0, 189.0]",yes,yes
+"R3 S2_k20 per-factor ratio (rebuilt basis) vs stored, max rel err",<=1e-6,6.54e-16,yes,yes
+R3 S2_k20 ||gap|| vs stored v_norm,28.645166,28.645166,yes,yes
+R3 S2_k20 stored min ratio; n >= 2 (descriptive),-,min 0.1312; 1 of 1836,-,no
+"R3 S2_k50 per-factor ratio (rebuilt basis) vs stored, max rel err",<=1e-6,6.06e-16,yes,yes
+R3 S2_k50 ||gap|| vs stored v_norm,30.864266,30.864266,yes,yes
+R3 S2_k50 stored min ratio; n >= 2 (descriptive),-,min 0.1940; 2 of 1836,-,no
+"R3 S2_k100 per-factor ratio (rebuilt basis) vs stored, max rel err",<=1e-6,7.81e-16,yes,yes
+R3 S2_k100 ||gap|| vs stored v_norm,31.434263,31.434263,yes,yes
+R3 S2_k100 stored min ratio; n >= 2 (descriptive),-,min 0.2384; 2 of 1836,-,no
+R4 cells O / Y / aged half B / S / aged d0 / young d0,"(2469, 3851, 2470, 5832, 4939, 7703)","(2469, 3851, 2470, 5832, 4939, 7703)",yes,yes
+R4 halves are disjoint and inside d0,yes,True,yes,yes
+"R4 SAME main panel z rebuilt vs stored panel_z.npz, max abs",<=1e-8,0.00e+00,yes,yes
+R4 space sizes FULL / MD / AGE,"(23485, 205, 3089)","(23485, 205, 3089)",yes,yes
+"R4 FULL ||d||, ||gap|| vs genespace same_stats, max rel err",<=1e-9,"0.00e+00 (||d|| 272.7340, ||gap|| 130.6884, ratio 2.0869)",yes,yes
+"R4 MD ||d||, ||gap|| vs genespace same_stats, max rel err",<=1e-9,"0.00e+00 (||d|| 33.5800, ||gap|| 14.5976, ratio 2.3004)",yes,yes
+"R4 AGE ||d||, ||gap|| vs genespace same_stats, max rel err",<=1e-9,"1.41e-16 (||d|| 100.7160, ||gap|| 48.3385, ratio 2.0836)",yes,yes
+"R4 published ratios: MD 2.3 (main text); AGE, FULL > 2 (Limitations)",2.30 / >2 / >2,2.300 / 2.084 / 2.087,yes,yes
+"R4 cache self-check z_from_counts(O) vs panel, max abs",<=1e-6,0.00e+00,yes,yes
+"R4 cache self-check z_from_counts(S) vs panel, max abs",<=1e-6,0.00e+00,yes,yes

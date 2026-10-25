@@ -1,0 +1,5 @@
+space,gate_pass,n_gating_cells,n_failing,failing
+S1,True,12,0,
+S2_k20,True,12,0,
+S2_k50,True,12,0,
+S2_k100,True,12,0,
