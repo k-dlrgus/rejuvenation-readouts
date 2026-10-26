@@ -10,6 +10,8 @@ preprint_10 paragraph P89 (1-indexed top-level body paragraphs, the numbering us
 
 > **Updated 2026-10-02 (preprint_11 fixes).** The atlas ruler − MD Δρ on 93 pseudobulks, listed as C1 in the first version of this file, is now marked superseded in the repository. A dated note was appended to every ledger or FINDINGS file that said MD3 Task 2 "stands", and to the file holding the reading. It is now B7, and section C is empty. The counts below were updated to match. preprint_11 P89 now gives these counts (see "Counts used by preprint_11 P89" at the end). The rest of the file is as first written, except where a sentence says it was updated.
 
+> **Updated 2026-10-26 (CORR1).** A statement in paper 1 v1.2, Supplementary Note 3, was corrected: the transcription-factor screen's length statement in space C. The correction notice is `CORRECTIONS_PAPER1.md`; the check behind it is `FINDINGS_FLOORCHK.md`. The statement is descriptive, not a gated reading, so it is listed in section D and the counts below (nine, three) do not change. Nothing else in this file was changed.
+
 ## Result in one paragraph
 
 The repository does not record three. It labels **two** readings *withdrawn* (SOUTH4's stop and MD3 Task 1) and, since the 2026-10-02 update, **seven** *superseded* (SOUTH, SOUTH2, SOUTH3, SOUTH5, MD2 Task 2, POSCTRL P1 and the atlas ruler − MD Δρ on 93 pseudobulks). That makes **nine** readings marked withdrawn or superseded. Before the update, the ninth, the atlas Δρ, was withdrawn only in draft manuscript text, and the repository's ledgers listed its parent reading as standing. No file stores the count three (also found by `FINDINGS_VERIFY.md` item 36 and `PROGRESS_VERIFY.md` line 15). **Three** of the nine concern analyses reported in the manuscript (MD3 Task 1, MD2 Task 2 and the atlas Δρ), but they are not three *withdrawn-and-marked* readings. preprint_10's P89 wording is therefore not accurate. A suggested replacement is at the end of this file. preprint_11 uses a different replacement, which states nine and three.
@@ -50,6 +52,12 @@ None since 2026-10-02. The one reading first listed here (C1, the atlas ruler �
   - MD2 Task 1 would have superseded the FIBRO3 per-cluster reading if a cluster declined (`FINDINGS_MD2.md:77`). It fired `negative_holds` instead (`FINDINGS_MD2.md:333`).
   - MD3 Task 1 would have superseded MD2's `negative_holds` if the ruler declined (`FINDINGS_MD3.md:56`). It fired `instruments_disagree_on_claim_population` instead.
 - Document-level supersessions: `paper/PREPRINT_DRAFT.md:1` ("superseded by the docx"), preprint_3 and preprint_9 (`results/verify/FINDINGS_VERIFY_V9.md:20`).
+- (Added 2026-10-26, CORR1.) Paper 1 v1.2, Supplementary Note 3 (PDF page 13; docx body paragraph 144):
+  - **What it said:** "every one of the 1,836 perturbations moved more than twice the distance between the two centroids (smallest ratio 2.10 …) … it is the same limitation the main text discloses for the same-platform test."
+  - **What FLOORCHK found** (`FINDINGS_FLOORCHK.md`, reading `CLAIM1-PARTIAL: 18 of 1,836`): non-targeting cells with no effect read more than twice the gap at every group size in the screen. After the noise correction, 18 of 1,836 are estimated to move more than twice the gap, against about 5 expected by chance.
+  - **Where it is corrected:** `CORRECTIONS_PAPER1.md` and the revised source v1.3 (diff in `results/corr1/paper1_diff.txt`).
+  - **Why it is not counted:** it is a descriptive statement, not a gated reading. The gated SOUTH6 result, that no perturbation is `toward_young` in S1 O1→Y1, stands.
+  - **What was not edited:** the same raw statement in `FINDINGS_RATIO.md:35-36`, as a reproduction check (R1b), and as a premise at `FINDINGS_RATIO.md:89` and `results/ratio/PREREG.flag:33`.
 
 ## Which of these bear on claims made in preprint_10
 

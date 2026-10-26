@@ -11,6 +11,10 @@ Preprint: https://doi.org/10.5281/zenodo.23113817 (PDF of the current version al
 
 Code and results archive: https://doi.org/10.5281/zenodo.23092318 (concept DOI, resolves to the latest version)
 
+Correction notice (2026-10-26): `CORRECTIONS_PAPER1.md`. One statement in Supplementary Note 3,
+about the transcription-factor screen's displacement lengths, was corrected. The check behind it
+is `FINDINGS_FLOORCHK.md`.
+
 ---
 
 ## Second preprint (in preparation)
