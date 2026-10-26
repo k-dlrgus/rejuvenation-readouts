@@ -1,0 +1,35 @@
+{
+  "a1b": {
+    "m": 4,
+    "supports": 0,
+    "inside_noise": 1,
+    "contradicts": 3,
+    "exp_supports_chance": 0.2,
+    "exp_contradicts_chance": 2.0
+  },
+  "c5": {
+    "m": 80,
+    "supports": 56,
+    "inside_noise": 23,
+    "contradicts": 1,
+    "exp_supports_chance": 4.0,
+    "exp_contradicts_chance": 40.0
+  },
+  "repro_checks": 47,
+  "repro_mismatches": 0,
+  "primary_seed": 20260914,
+  "stability_seed": 20261030,
+  "reps": 200,
+  "a1b_contradicting_units": [
+    "E2F3",
+    "EZH2",
+    "STAT3"
+  ],
+  "c5_contradicting_units": [
+    "CRA_TFCP2"
+  ],
+  "a1b_power_25_range": [
+    0.925,
+    1.0
+  ]
+}

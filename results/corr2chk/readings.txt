@@ -1,0 +1,26 @@
+== A1b (paper 2 paragraph 31) ==
+CONCLUSION  PAPER2-DEPTH: A1b, k20 (paper 2's 20-component space): the statement was reached partly by sampling noise; 0 of 4 units move away further than the 95th percentile of no-effect draws at their own cell count (about 0.2 expected by chance), 1 are inside the no-effect spread, and 3 move away less far than the median no-effect draw (about 2.0 expected by chance). Corrected wording: see FINDINGS_CORR2CHK.md, section "Corrected wording".
+== C5 (paper 2 paragraph 30) ==
+CONCLUSION  PAPER2-DEPTH: C5, k20 (paper 2's 20-component space): the statement was reached partly by sampling noise; 56 of 80 units move away further than the 95th percentile of no-effect draws at their own cell count (about 4.0 expected by chance), 23 are inside the no-effect spread, and 1 move away less far than the median no-effect draw (about 40.0 expected by chance). Corrected wording: see FINDINGS_CORR2CHK.md, section "Corrected wording".
+== the 17 statements not checked ==
+CONCLUSION  PAPER2-NOT-AFFECTED: A1a: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: A2: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: A3: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: A4: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: B4: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: B5: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: C1: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: C2: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: C3: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: C4: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: C6: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: C7: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: C8: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: C9: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: C10: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: C11: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+CONCLUSION  PAPER2-NOT-AFFECTED: C12: its threshold was already matched to group size, so FLOORCHK's correction does not apply.
+            (qualification, flag Part 3) C7 has no threshold of any kind; it is not affected because there is nothing to size-match.
+            (qualification, flag Part 3) A2's quoted numbers are themselves size-matched positive-control powers.
+== B1, B2, B3 ==
+            no size-matched floor exists for these three length ratios; per the ruling they are recorded with the direction of their noise bias and no key fires for them.

@@ -1,0 +1,48 @@
+check,item,expected,observed,tol,match,gating
+R4 Southard table,rows for E2F3,1,1,exact,True,True
+R4 Southard table,rows for EZH2,1,1,exact,True,True
+R4 Southard table,rows for STAT3,1,1,exact,True,True
+R4 Southard table,rows for ZFX,1,1,exact,True,True
+R1 basis,||O1-Y1|| in S2A_k20 (stored rnorm vs ||r||),27.92915445,27.92915445,1e-09,True,True
+R1 E2F3,"change in distance, rebuilt vs stored delta_S2A_k20",1.562149403,1.562149403,1e-09,True,True
+R1 E2F3,stored delta in stage_a1_observed vs d3c table,1.562149403,1.562149403,1e-12,True,True
+R3 E2F3,rows in SOUTH6 stage 0 cells-per-target,1,1,exact,True,True
+R3 E2F3,cells per target vs SOUTH6 stage 0,96,96,exact,True,True
+R2 E2F3,"depth floor, SOUTH7 nulls vs SOUTH8 table",-0.1068623398,-0.1068623398,1e-12,True,True
+R2 E2F3,draws behind the baseline,200,200,exact,True,True
+R1 EZH2,"change in distance, rebuilt vs stored delta_S2A_k20",0.4811212715,0.4811212715,1e-09,True,True
+R1 EZH2,stored delta in stage_a1_observed vs d3c table,0.4811212715,0.4811212715,1e-12,True,True
+R3 EZH2,rows in SOUTH6 stage 0 cells-per-target,1,1,exact,True,True
+R3 EZH2,cells per target vs SOUTH6 stage 0,140,140,exact,True,True
+R2 EZH2,"depth floor, SOUTH7 nulls vs SOUTH8 table",-0.6944363312,-0.6944363312,1e-12,True,True
+R2 EZH2,draws behind the baseline,200,200,exact,True,True
+R1 STAT3,"change in distance, rebuilt vs stored delta_S2A_k20",2.319733597,2.319733597,1e-09,True,True
+R1 STAT3,stored delta in stage_a1_observed vs d3c table,2.319733597,2.319733597,1e-12,True,True
+R3 STAT3,rows in SOUTH6 stage 0 cells-per-target,1,1,exact,True,True
+R3 STAT3,cells per target vs SOUTH6 stage 0,83,83,exact,True,True
+R2 STAT3,"depth floor, SOUTH7 nulls vs SOUTH8 table",0.467660657,0.467660657,1e-12,True,True
+R2 STAT3,draws behind the baseline,200,200,exact,True,True
+R1 ZFX,"change in distance, rebuilt vs stored delta_S2A_k20",2.441499656,2.441499656,1e-09,True,True
+R1 ZFX,stored delta in stage_a1_observed vs d3c table,2.441499656,2.441499656,1e-12,True,True
+R3 ZFX,rows in SOUTH6 stage 0 cells-per-target,1,1,exact,True,True
+R3 ZFX,cells per target vs SOUTH6 stage 0,129,129,exact,True,True
+R2 ZFX,"depth floor, SOUTH7 nulls vs SOUTH8 table",-0.9950479374,-0.9950479374,1e-12,True,True
+R2 ZFX,draws behind the baseline,200,200,exact,True,True
+R7 units,rows in seng3 d4_table,340,340,exact,True,True
+R7 units,rows in axang d3b_table,340,340,exact,True,True
+R7 units,called closer to early-passage cells (own-control start),80,80,exact,True,True
+R7 units,rows surviving the join,340,340,exact,True,True
+R8 axang,"called closer to young donors, of 340",5,5,exact,True,True
+R8 axang,"distance decreased, of 340",17,17,exact,True,True
+R8 CRA_E2F3,stored young-donor change in distance (3 dp),11.448,11.448,1e-09,True,True
+R8 CRA_EZH2,stored young-donor change in distance (3 dp),9.022,9.022,1e-09,True,True
+R8 CRI_STAT3,stored young-donor change in distance (3 dp),5.327,5.327,1e-09,True,True
+R8 CRI_ZFX,stored young-donor change in distance (3 dp),15.336,15.336,1e-09,True,True
+R6 axang,"max relative error, 340 recomputed changes in distance",0,2.457726482e-16,1e-09,True,True
+R5 C5 baseline,"max relative error, re-derived vs stored 5th percentile",0,2.0042975e-16,1e-09,True,True
+R9 CRA 96,"dose-0 median, re-derived vs AXANG d3a",1.066771004,1.066771004,1e-09,True,False
+R9 CRI 96,"dose-0 median, re-derived vs AXANG d3a",1.502393873,1.502393873,1e-09,True,False
+R9 CRA 107,"dose-0 median, re-derived vs AXANG d3a",1.242412619,1.242412619,1e-09,True,False
+R9 CRI 107,"dose-0 median, re-derived vs AXANG d3a",1.050074009,1.050074009,1e-09,True,False
+R9 CRA 128,"dose-0 median, re-derived vs AXANG d3a",1.291713124,1.291713124,1e-09,True,False
+R9 CRI 157,"dose-0 median, re-derived vs AXANG d3a",0.8507320729,0.8507320729,1e-09,True,False

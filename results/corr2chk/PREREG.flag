@@ -1,0 +1,497 @@
+CORR2CHK pre-registration flag
+Written 2026-10-26T11:21:38+09:00 (2026-10-26T02:21:38Z), before any statistic of this task
+exists. No floor draw, no re-derived median, no per-perturbation comparison table and no
+reading has been computed. No new code has been run on any expression data.
+
+================================================================================
+PART 0 — WHAT WAS KNOWN BEFORE THIS FILE WAS WRITTEN (disclosed first, because it
+bears on the outcome)
+================================================================================
+
+This task's step 1 was an inventory of published statements, carried out and reported to the
+user in chat BEFORE this flag was written, at the user's instruction ("Option 2. Finish the
+step-1 inventory and come back before writing the flag"). The inventory read stored result
+files. It therefore established, before this flag existed, what the answer for both checked
+statements is very likely to be. That is disclosed here in full rather than discovered below.
+
+[K1] OUTCOME KNOWLEDGE FOR A1b. The inventory read results/south7/stage_a1_depth_nulls.csv,
+  which stores, per cell count and space, the 5th percentile, median, sd and 95th percentile
+  of the change in distance for 200 no-effect draws. In S2A_k20, at the four factors' own
+  Southard cell counts, it read:
+     83 cells  floor_p05 +0.467661  median +2.694518  sd 1.743163  p95 +5.932085
+     96 cells  floor_p05 -0.106862  median +2.520107  sd 1.787256  p95 +5.643203
+    129 cells  floor_p05 -0.995048  median +1.514257  sd 1.573311  p95 +4.179653
+    140 cells  floor_p05 -0.694436  median +1.294052  sd 1.415215  p95 +3.967368
+  and from results/south8/d3c_all_1836_umi_calls.csv the four factors' stored changes in
+  distance in the same space: STAT3 (83 cells) +2.319734, E2F3 (96) +1.562149,
+  ZFX (129) +2.441500, EZH2 (140) +0.481121.
+  Comparing those by eye — which the inventory did, and reported — three of the four sit
+  BELOW the no-effect median at their own cell count, and none of the four reaches its own
+  P95. So the session already expects PAPER2-DEPTH to fire for A1b. The computation below
+  formalises, tabulates and gates that expectation; it does not discover it.
+
+[K2] OUTCOME KNOWLEDGE FOR C5. The inventory joined results/seng3/d4_table.csv to
+  results/axang/d3b_table.csv and read that the 80 perturbations called closer to
+  early-passage cells have young-donor changes in distance from +0.927 to +18.348, median
+  +8.478, and that exactly one of them (CRA_TFCP2, 120 cells, +0.927422) falls below the
+  largest no-effect median stored for that test (+1.50 at 96 cells, CRI). It also read that
+  55 of the 80 have fewer than 96 cells and 18 fewer than 60, depths at which the young-donor
+  no-effect median is larger and is NOT stored. So the session already expects at least one
+  of the 80 to fall below its own baseline, and expects the count to be small. Whether it
+  stays at one is not known, because the baseline at the smaller depths has never been
+  recorded.
+
+[K3] The exact wording of all four possible conclusions was fixed by the user in the task
+  message, before the inventory ran and before anything in [K1] or [K2] was read. The
+  per-statement rulings Q1-Q4 reproduced in Part 2 were given after the inventory was
+  reported, with [K1] and [K2] in front of the user.
+
+[K4] Everything else read before this file: CLAUDE.md; FINDINGS_FLOORCHK.md (whole);
+  CORRECTIONS_PAPER1.md (whole); PROGRESS_FLOORCHK.md; FINDINGS_AXANG.md (lines 1-60,
+  225-300, 370-520, 560-700, 720-900); FINDINGS_SOUTH8.md (lines 1-130, 180-430, 540-600);
+  FINDINGS_COORDSPACE.md (lines 1-30, 540-600); README.md (lines 15-45); .gitignore;
+  paper/paper2_passage_draft_v0.7.docx (all 117 body paragraphs, text extracted read-only to
+  a scratch file, not edited) and paper/two_definitions_of_young_preprint_v1.pdf (text
+  extracted read-only); paper/rejuvenation_readouts_preprint_v1.2.docx (paragraphs 138-145
+  only, read-only). Code read, none modified: src/corr1_run.py (head), src/axang_run.py,
+  src/seng3_run.py (parts), src/seng4_run.py (parts), src/south7_run.py (parts),
+  src/south8_run.py (parts), src/south6rec_run.py (parts), src/seng2_common.py (seeds).
+  Stored tables read: results/south7/stage_a1_depth_nulls.csv;
+  results/south8/{d3c_all_1836_umi_calls.csv, d1_plant_curves.csv, d1_plant_curves_all.csv,
+  d2_calibration.csv, d2_verdicts.csv}; results/seng3/{d1_null_validation.csv, d2_plant.csv,
+  d4_table.csv}; results/seng4/{d2_plant_residualized.csv, d3_deciles.csv};
+  results/axang/{d3a_plant.csv, d3b_table.csv};
+  results/coordspace/{stage3_south6_factors.csv, stage3_south6_summary.csv};
+  results/paper2_figs_v06/table1.csv.
+
+[K5] Values computed by hand or by one-line reads during the inventory, beyond the stored
+  columns themselves, and so also known before this flag: the count of the 80 called
+  perturbations with fewer than 96 and fewer than 60 cells (55 and 18); the min, 5th
+  percentile, median and max of the 80's young-donor changes in distance; that all 80 of the
+  passage test's called perturbations lie below their own stored null_median_i; that the
+  minima over cell count of SENG4's residualised half-gap powers are 0.895 (nothing removed),
+  0.010 (primary axis), 0.040 (PD26 axis) and 0.885 (gene-list axis) from the own-control
+  start. None of these is a result of this task. They are reported in the findings as
+  inventory readings and are labelled as such.
+
+================================================================================
+PART 1 — TASK, VERBATIM AS GIVEN IN CHAT
+================================================================================
+
+Read CLAUDE.md first; its rules apply. Read FINDINGS_FLOORCHK.md and CORRECTIONS_PAPER1.md.
+
+Task: `CORR2CHK`. Deliverables: `results/corr2chk/PREREG.flag`, `FINDINGS_CORR2CHK.md`,
+`PROGRESS_CORR2CHK.md`. One local commit, no push. Do not modify any existing FINDINGS_*.md,
+CORRECTIONS_PAPER1.md, or any file under results/floorchk/, results/corr1/ or results/south6/.
+
+## The question
+
+FLOORCHK showed that in the Southard screen's full-gene space, displacement length is
+dominated by sampling noise at the screen's cell counts: non-targeting cells with no effect
+read a median 3.76 gap lengths at 106 cells, and after correction the perturbations' median is
+0.61.
+
+Paper 2 ("Two definitions of young give opposite answers in a fibroblast rejuvenation screen")
+states that the four validated factors are uncalled and move away from young donors in the
+Southard screen. This task asks whether that statement, and any other paper-2 statement
+resting on Southard displacement length or on a change in distance computed in a space where
+the floor exceeds the effect, survives the same check.
+
+## Step 1 — inventory before any statistic
+
+List every paper-2 statement that depends on (a) the Southard screen, (b) a displacement
+length or length ratio, or (c) a change in distance to a target, with file, paragraph and
+verbatim quote. Include main text, supplementary notes, figures and tables. For each, record
+which dataset, which coordinate space, and which starting profile it uses.
+
+Paper 2's own tests are in the Sengstack data, which has its own control-sample floor already
+built into its thresholds. Distinguish clearly, for each statement, whether its floor was
+already matched to group size (as the Sengstack call thresholds are) or not (as the Southard
+full-gene ratio was not). A statement whose threshold was already size-matched does NOT need
+the FLOORCHK correction; say so and move on.
+
+## Step 2 — pre-register, then check only what step 1 shows needs checking
+
+Write the flag after step 1 and before any statistic, naming exactly which statements are
+being checked, the statistic, the floor construction, the gate and the exact wording of every
+conclusion.
+
+For each statement needing a check, apply the FLOORCHK method unchanged: a size-matched floor
+from non-targeting cells drawn at the statement's own group size, 200 draws, reference = pool
+minus the draw, the same noise-corrected statistic, and the same validation gate with planted
+displacements. Reuse the FLOORCHK code and the stored Southard intermediates; recompute
+nothing that is already stored, and reproduce every stored number used before computing
+anything new. Seeds: fresh, named in the flag.
+
+Conclusions, worded now, per statement:
+  "PAPER2-STANDS: <statement id>, <space>: the statement survives the size-matched floor;
+   <numbers>."
+  "PAPER2-DEPTH: <statement id>, <space>: the statement was reached partly by sampling noise;
+   <numbers>. Corrected wording: <text>."
+  "PAPER2-NOT-AFFECTED: <statement id>: its threshold was already matched to group size, so
+   FLOORCHK's correction does not apply."
+  "PAPER2-UNRESOLVED: <statement id>, <space>: the correction failed its gate; only raw
+   values and floor are reported."
+
+## Step 3 — if anything fails
+
+Write the corrected wording for each failing statement in FINDINGS_CORR2CHK.md, in the same
+plain style as CORRECTIONS_PAPER1.md. Do not edit the paper-2 source and do not write a
+correction notice in this task; report what one would have to say.
+
+## Step 4 — paper 1, paragraph 142
+
+Separately, report the exact replacement wording for the paragraph-142 bullet that
+CORRECTIONS_PAPER1.md identifies as carrying no information ("In space C both perturbations
+move away from the young centroid (+106.6 and +113.8, q = 1.0)"). Do not edit any file; give
+the wording only, so it can be folded into the paper-1 revision before publication.
+
+## Hard rules
+No conclusion about any named gene or factor beyond what the existing papers already state.
+Compute nothing in a space paper 2 does not use.
+Disclose every deviation. If anything is ambiguous, STOP and ask.
+
+--- second user message, verbatim ---
+
+Option 2. Finish the step-1 inventory and come back before writing the flag.
+
+For every statement you propose as PAPER2-NOT-AFFECTED, give the evidence, not just the
+ruling:
+- the file and line where its floor or threshold is defined, and the group size it was drawn
+  at;
+- whether that floor was built in the same coordinate space and from the same starting profile
+  as the statement;
+- the file and line of the plant gate it relied on, and its numbers.
+
+Also list any statement where you are not sure, separately, with what would settle it.
+
+Write nothing to results/corr2chk/ yet. Step 4 (the paper-1 paragraph-142 wording) does not
+depend on the inventory; include it in the same report.
+
+--- third user message, verbatim ---
+
+Before the rulings: go back over the inventory and show me the full statement list with the
+per-statement floor evidence for the 18 you grouped, not just the four classes.
+
+================================================================================
+PART 2 — RULINGS BY THE USER, VERBATIM, AFTER THE INVENTORY AND BEFORE THIS FILE
+================================================================================
+
+Rulings on Q1-Q4.
+
+Q1 — a statement may take two keys. Split A1 into A1a ("uncalled", NOT-AFFECTED on the
+evidence given) and A1b ("move away from young donors", to be checked). Record both clause
+verdicts against the same source sentence, and say in the findings that the sentence as
+published mixes a size-matched claim with an unmatched one.
+
+Q2 — yes, a change-in-distance comparison against a size-matched no-effect baseline at the
+statement's own cell count substitutes for FLOORCHK's quadrature correction, and is preferred
+where it is available. Reason, stated in the flag: FLOORCHK's correction exists to remove a
+noise contribution to a LENGTH; where the statistic is already a change in distance measured
+against no-effect draws of the same size, the noise is subtracted by construction and the
+quadrature step would double-count it. Where no such baseline exists, use the FLOORCHK
+correction as written. Name in the flag which of the two applies to A1b and to C5.
+
+Q3 — read stored floors where they exist and are keyed to the statement's own cell count;
+draw fresh only where nothing stored fits. Reproduce every stored value used before using it.
+
+Q4 — yes, check C5. Re-deriving AXANG's discarded per-size medians is permitted: it recomputes
+a quantity that was computed and thrown away, not one that is stored, so there is no stored
+value to contradict. Do it by re-running AXANG's existing loop unchanged except for recording
+the median alongside the 5th percentile. Fresh seeds, named in the flag. Before using the
+re-derived values, reproduce AXANG's stored 5th percentiles from the same re-run and report
+the comparison; if they do not reproduce, STOP and report.
+
+Also fixed now, for both A1b and C5: report the result per perturbation at its own cell count,
+not only in aggregate, and state how many move away by less than their own no-effect median.
+
+The three unchanged uncertain statements (B1, B2, B3) are recorded as having no size-matched
+floor, with the direction of the noise bias stated, and are not checked. Say in the findings
+that each strengthens rather than weakens the paper's own caveat.
+
+Proceed to the flag and the run after these rulings.
+
+================================================================================
+PART 3 — THE INVENTORY THIS FLAG RESTS ON (step 1, settled before this file)
+================================================================================
+
+Source of every quote: paper/paper2_passage_draft_v0.7.docx, whose text matches
+paper/two_definitions_of_young_preprint_v1.pdf. Paragraph numbers are docx body-paragraph
+indices, as CORR1 used for paper 1. Table 1 is a docx table and has no body-paragraph index;
+its values are also stored at results/paper2_figs_v06/table1.csv.
+
+21 statements were found in categories (a) Southard, (b) a displacement length or length
+ratio, (c) a change in distance to a target. The full list, with verbatim quotes, dataset,
+space, starting profile and per-statement floor evidence, was reported to the user in chat
+over two messages and is reproduced in FINDINGS_CORR2CHK.md. Space abbreviations below:
+k20 = paper 2's 20-component space = SOUTH6/7/8's S2A_k20 = results/south7/basis.npz key
+L_mid_full, the first 20 PCs of 308 GTEx donors aged 40-59, read frozen by src/seng3_run.py:64,
+src/axang_run.py:87 and src/south8_run.py:439-441 alike; full = the 23,485-gene space = S1 =
+paper 1's "space C".
+
+CHECKED BY THIS TASK (2 of 21):
+ A1b  P2 para 31, the clause "and move away from young donors in the Southard screen".
+      Southard; k20 (the space is not named in the published sentence; the numbers behind it
+      are k20); start = GTEx old centroid, target = GTEx young centroid.
+ C5   P2 para 30, the clause "and all 80 move away from them" (them = young donors).
+      Sengstack; k20; start = GTEx old centroid, target = GTEx young centroid.
+
+NOT CHECKED, PAPER2-NOT-AFFECTED (17 of 21): A1a (para 31 "uncalled"), A2 (paras 18, 77),
+ A3 (Table 1 row 1; paras 48, 80, 101), A4 (para 16), B4 (paras 40, 47, 104), B5 (para 79),
+ C1 (paras 7, 26), C2 (para 26), C3 (paras 19, 60), C4 (paras 7, 29, 30), C6 (para 27),
+ C7 (para 37), C8 (paras 39, 40, 105, 106), C9 (para 54), C10 (para 67), C11 (paras 19, 68),
+ C12 (para 31). The evidence for each — the file and line of its floor, the group size it was
+ drawn at, whether the floor shares the statement's space and starting profile, and the file,
+ line and numbers of its plant gate — is in FINDINGS_CORR2CHK.md and was reported to the user
+ before this flag. Two of the 17 carry a qualification recorded now: C7 has no threshold of
+ any kind and is NOT-AFFECTED because there is nothing to size-match, not because anything was
+ size-matched; A2's quoted numbers are themselves size-matched positive-control powers.
+
+NOT CHECKED, NO SIZE-MATCHED FLOOR EXISTS (3 of 21): B1 (paras 18, 67, "45.1% of the passage
+ gap's length"), B2 (paras 20, 102, the screen-to-PD32 offset as a multiple of the passage
+ gap), B3 (para 70, "14.4 and 14.3 times the donor-age gap"). Per the ruling these are
+ recorded with the direction of their noise bias and are not checked. No key fires for them.
+
+Three findings of the inventory that bear on scope, recorded now:
+ - Paper 2 nowhere repeats paper 1's corrected "more than twice the gap" claim. A search of
+   the source for "twice", "2.10", "1,836" and "overshoot" returns only para 13, "apply that
+   readout to the Sengstack data twice". CORR1's correction does not propagate into paper-2
+   text.
+ - Paper 2 already applies FLOORCHK's own argument to its own full-gene-space result, in
+   paras 19 and 60. A check there would confirm the published text, not correct it.
+ - Paper 2's k20 and the Southard S2A_k20 are the same frozen basis, read not refit, so A1b
+   and C4 are in one space and the "compute nothing in a space paper 2 does not use" rule is
+   satisfied for both.
+
+================================================================================
+PART 4 — THE STATISTIC, FOR BOTH CHECKED STATEMENTS
+================================================================================
+
+[D1] Which of the two corrections applies, as Q2 requires it to be named.
+  A1b: the change-in-distance comparison. A size-matched no-effect baseline exists at the
+    statement's own cell counts (results/south7/stage_a1_depth_nulls.csv, S2A_k20). FLOORCHK's
+    quadrature correction is NOT used and would be wrong here: the statistic is already a
+    change in distance taken against draws of the same size, so the noise is subtracted by
+    construction and a quadrature step would double-count it.
+  C5: the change-in-distance comparison. The baseline does not exist in stored form and is
+    re-derived under Q4, from the same construction, at each perturbation's own cell count.
+    FLOORCHK's quadrature correction is not used, for the same reason.
+  Neither checked statement is a length, so the FLOORCHK correction as written is used in
+  neither. No statement in this task uses it.
+
+[D2] The decision statistic, both statements.
+  For a perturbation with n cells, let d be its stored change in distance to the GTEx young
+  centroid from the GTEx old centroid in k20, and let the no-effect draws at n cells give
+  F5(n) (5th percentile), M(n) (median) and P95(n). The statement under test is of the form
+  "it moves away". The decision statistic is the pair
+      (d - M(n),  whether d >= P95(n)).
+  A perturbation SUPPORTS "moves away" iff d >= P95(n): it moves away further than 95% of
+  no-effect draws of its own size. A perturbation CONTRADICTS "moves away" iff d < M(n): it
+  moves away less far than the median no-effect draw of its own size. A perturbation between
+  M(n) and P95(n) is INSIDE THE NOISE: its sign is the floor's sign and it supports nothing.
+  F5(n) is reported beside these because it is the floor the published calls were made
+  against; it gates nothing here.
+
+[D3] Chance baseline, fixed now (CLAUDE.md).
+  P95 is exceeded by 5% of no-effect draws by construction, and M(n) by 50%. So under a true
+  null of no effect anywhere, 5% of perturbations are expected to SUPPORT and 50% to
+  CONTRADICT. Both expectations are reported beside every count.
+
+[D4] Per-perturbation reporting, as the ruling fixes.
+  Both statements are reported per perturbation at its own cell count, with n, d, F5(n),
+  M(n), P95(n), the verdict of D2, and the count that CONTRADICTS, beside the D3 expectation.
+  A1b's units are the four named factors (the sentence is about them). C5's units are the 80
+  perturbations the published sentence is about.
+
+================================================================================
+PART 5 — WHERE EVERY NUMBER COMES FROM
+================================================================================
+
+[D5] A1b. Nothing is drawn. Per Q3 the stored floor is read.
+  Units: the four gene names paper 2 names, as they appear in the Southard screen: E2F3,
+    EZH2, STAT3, ZFX. Cell counts 96, 140, 83, 129 respectively.
+  d: results/south8/d3c_all_1836_umi_calls.csv column delta_S2A_k20.
+  F5, M, P95: results/south7/stage_a1_depth_nulls.csv, space S2A_k20, at the unit's own
+    n_cells. Built by src/south7_run.py:319-324 from 200 draws (R_NULL, src/south7_run.py:51)
+    of non-targeting cells at that n, with the reference being the non-targeting pool minus
+    the draw (src/south7_run.py:323), which is FLOORCHK's U3 rule and the task's required
+    construction.
+  Recovery power at the unit's own depth: results/south8/d1_plant_curves_all.csv column
+    power_25, space S2A_k20, built by src/south8_run.py:157-193 with the same reference
+    (stated at :160-161, implemented at :176-178). Reported beside every verdict per CLAUDE.md.
+  Space and start: S2A_k20, origin = GTEx old centroid, target = GTEx young centroid, from
+    results/toward/anchors.npz, read not refit.
+
+[D6] C5. The baseline is re-derived, per Q4.
+  Units: the 80 perturbations with called_delta_i true in results/seng3/d4_table.csv. The
+    count must be exactly 80 or STOP (S3).
+  d: results/axang/d3b_table.csv column delta, which is the young-donor change in distance in
+    k20 from the GTEx old centroid.
+  F5, M, P95: re-derived by re-running AXANG's own D3b floor loop (src/axang_run.py:508-518,
+    with draws at :471-478 and the delta at :481-486) with one change only, recording the
+    median and the 95th percentile alongside the 5th percentile. The loop's reference is
+    pool minus draw (src/axang_run.py:476), 200 reps, at every distinct cell count in each
+    screen.
+  How the loop is re-run, disclosed because it is a deviation: axang_run.d3() is a single
+    function that writes into results/axang/, so it is not called. Its prologue and floor loop
+    are repeated line for line in src/corr2chk_run.py with the helpers imported from
+    axang_run, seng3_run and seng2_common unchanged. The proof that the repetition is faithful
+    is R5 below: the re-derived 5th percentiles must equal the stored ones.
+  Space and start: k20 and the GTEx old centroid, identical to A1b's, from the same anchors
+    file and the same frozen basis.
+
+[D7] Seeds, and a tension in the ruling, disclosed.
+  The ruling asks for the loop "unchanged except for recording the median", for "fresh seeds",
+  and for the stored 5th percentiles to reproduce "from the same re-run". Those three cannot
+  all hold at once: a 5th percentile of 200 resampled draws is a random quantity, so a run at
+  a fresh seed cannot reproduce the stored value exactly, while a run that reproduces it
+  exactly is by definition not at a fresh seed. This is resolved as follows, and the
+  resolution is reported prominently in the findings:
+   - PRIMARY re-run, seed unchanged at AXANG's own K.SEED = 20260914 (src/seng2_common.py:38),
+     which is what "the loop unchanged" means, since the seed is an argument of the loop
+     (src/axang_run.py:471). This run supplies M(n) and P95(n) and must reproduce the stored
+     F5(n) exactly (R5). It is the run every C5 number comes from.
+   - STABILITY replicate at a fresh seed, 20261030, named here as the ruling requires. It
+     gates nothing and decides nothing. It is reported so that the Monte Carlo spread of
+     F5, M and P95 at 200 draws is visible, and so that the primary run's agreement with the
+     stored floor is not mistaken for evidence that 200 draws are precise.
+  No other draw is made by this task. A1b draws nothing.
+
+================================================================================
+PART 6 — REPRODUCTION BEFORE ANYTHING NEW (CLAUDE.md; gating)
+================================================================================
+
+Run first, by src/corr2chk_run.py, into results/corr2chk/reproduction.csv. All gating unless
+marked otherwise. Counts exact. Numeric tolerances in D11.
+
+ R1 A1b, the four factors' change in distance. Recompute each from
+    results/south6/stage1.npz (key d_f), results/south7/basis.npz (key L_mid_full) and
+    results/toward/anchors.npz, by SOUTH7's own formula
+      delta = ||(c_old - c_young) L + d L|| - ||(c_old - c_young) L||,
+    and compare with the stored delta_S2A_k20. Also compare with the independent stored copy
+    in results/south7/stage_a1_observed.csv if that file carries it.
+ R2 A1b, the floor. For each of the four, the stored depth_floor_S2A_k20 in
+    results/south8/d3c_all_1836_umi_calls.csv must equal floor_p05 in
+    results/south7/stage_a1_depth_nulls.csv at the same n_cells and space. This is the check
+    that the floor read in D5 is the floor the published call was made against.
+ R3 A1b, cell counts. The four factors' n_cells must equal
+    results/south6/stage0_cells_per_target.csv. Exact.
+ R4 A1b, the four gene names must each appear exactly once in the Southard table. Exact.
+ R5 C5, the re-derived floor. The PRIMARY re-run's 5th percentile at every (modality, cell
+    count) must equal the stored floor in results/axang/d3b_table.csv. Exact to D11's
+    rebuild tolerance. This is the gate the ruling requires; failure is STOP S2.
+ R6 C5, the young-donor changes in distance. The re-run recomputes d for all 340
+    perturbations as AXANG does; every one must equal the stored delta in
+    results/axang/d3b_table.csv.
+ R7 C5, the units. results/seng3/d4_table.csv must have exactly 340 rows and exactly 80 with
+    called_delta_i true, and must join to results/axang/d3b_table.csv on
+    (modality, perturbation, n_cells) with 340 matches and none lost.
+ R8 C5, the published count. results/axang/d3b_table.csv must reproduce AXANG's stored
+    summary: 5 called of 340, 17 with distance decreased, and the four named factors' changes
+    in distance +11.448, +9.022, +5.327, +15.336. Exact to D11.
+ R9 Descriptive, not gating. The stored dose-0 medians in results/axang/d3a_plant.csv at
+    96, 107, 128 and 157 cells are reported beside the re-derived M(n) at the same depths, as
+    a second check that the re-run matches AXANG's own construction.
+
+If any gating check fails: STOP S1, naming every mismatch. A STOP is never resumed and never
+restarted with an adjustment.
+
+================================================================================
+PART 7 — CONCLUSIONS, WORDED NOW
+================================================================================
+
+The four wordings are the user's, fixed in the task message before the inventory ran. They
+are used verbatim, with <statement id>, <space> and <numbers> filled in.
+
+  "PAPER2-STANDS: <statement id>, <space>: the statement survives the size-matched floor;
+   <numbers>."
+  "PAPER2-DEPTH: <statement id>, <space>: the statement was reached partly by sampling noise;
+   <numbers>. Corrected wording: <text>."
+  "PAPER2-NOT-AFFECTED: <statement id>: its threshold was already matched to group size, so
+   FLOORCHK's correction does not apply."
+  "PAPER2-UNRESOLVED: <statement id>, <space>: the correction failed its gate; only raw
+   values and floor are reported."
+
+[D8] Firing rules, fixed now.
+  For a checked statement of the form "these units move away", with m units:
+   - PAPER2-STANDS fires iff every one of the m units SUPPORTS (d >= P95(n)).
+   - PAPER2-DEPTH fires iff at least one unit CONTRADICTS (d < M(n)) or at least one unit is
+     INSIDE THE NOISE. <numbers> gives m, the count SUPPORTING, the count INSIDE THE NOISE,
+     the count CONTRADICTING, the D3 chance expectations, and the recovery power at the
+     depths in question.
+   - The two are exclusive and exhaustive over the m units, so exactly one fires per checked
+     statement.
+   - PAPER2-UNRESOLVED fires instead, for that statement, if its reproduction gate fails in a
+     way Part 6 routes to S2 rather than S1, or if the re-derived baseline cannot be computed.
+   - PAPER2-NOT-AFFECTED fires for each of the 17 statements listed in Part 3, on the evidence
+     recorded there. It is not a computed result and no number of this task gates it.
+  <space> is filled as "k20 (paper 2's 20-component space)" for both checked statements.
+  A1b's and C5's readings are both primary. There is no secondary reading in this task.
+
+[D9] If PAPER2-DEPTH fires, step 3 applies: FINDINGS_CORR2CHK.md carries the corrected
+  wording for that statement, in CORRECTIONS_PAPER1.md's plain style. The paper-2 source is
+  not edited and no correction notice is written, per the task.
+
+[D10] A1a is recorded as PAPER2-NOT-AFFECTED against the same source sentence as A1b, per Q1,
+  and the findings state that paragraph 31's sentence as published mixes a size-matched claim
+  ("uncalled") with an unmatched one ("move away").
+
+================================================================================
+PART 8 — TOLERANCES, STOPS, HONESTY OBLIGATIONS, PROCESS
+================================================================================
+
+[D11] Tolerances. Counts exact. Values read from one stored file and compared with the same
+  value in another stored file: relative 1e-12. Values recomputed from stored vectors or a
+  stored basis: relative 1e-9. Values rebuilt by re-running a seeded resampling loop against
+  the stored output of that same loop at the same seed: relative 1e-9, and 0 expected.
+  Published rounded values quoted in the paper: compared at the precision printed.
+
+STOP conditions, fixed now:
+ [S1] reproduction_failed — any gating check in Part 6 fails. Every mismatch named.
+ [S2] axang_floor_not_reproduced — R5 fails. Named separately because the ruling names this
+      case and its consequence: C5 is then PAPER2-UNRESOLVED and no re-derived median is used.
+ [S3] units_not_identified — R7 fails: the 80 cannot be identified, or the join loses rows.
+ [S4] flag_ambiguous — this flag is ambiguous or self-contradictory in a way Parts 2 to 7 do
+      not settle. Write the findings with the STOP key, name the ambiguity, ask.
+A STOP is never resumed and never restarted with an adjustment.
+
+Honesty obligations (CLAUDE.md), applied:
+ - Chance baseline beside every count: D3 fixes it at 5% SUPPORTING and 50% CONTRADICTING
+   under a true null, and both are printed beside every count.
+ - Recovery power beside any null: the per-unit power_25 at each unit's own depth is reported
+   for A1b, and AXANG's D3a gate (QUALIFIED, p25 = 0.945, p50 = 1.000) for C5. A1a's
+   "uncalled" verdict is reported with the power that qualifies it, never as a bare count.
+ - Shortlist against cell count: both checked statements are reported per unit with n beside
+   every verdict, and the relation between n and the verdict is stated. No unit is presented
+   as a candidate for anything.
+ - Circularity, disclosed where the results appear: for both statements the non-targeting
+   pool of the relevant screen defines zero for every change in distance and is also the pool
+   every no-effect draw is taken from; and for C5 the 80 are selected by a statistic (the
+   passage test) that uses the same control cells as the young-donor statistic being tested.
+ - What this does not cover: cell-sampling noise only, not guide-to-guide, batch or
+   biological variation. Southard and Sengstack are each one neonatal line with no aged
+   donor, so nothing here transfers to aged human cells. Nothing here tests any factor's
+   phenotype. The GTEx-anchored construction transplants a displacement measured in single
+   cells onto a bulk post-mortem origin, as both papers state.
+ - No conclusion about any named gene or factor beyond what the existing papers already
+   state. A1b's units carry gene names because the published sentence names them; the result
+   is about the sentence, not about the genes.
+
+Process:
+ Code: src/corr2chk_run.py (modes: run, verify). Interpreter: Anaconda Python, run with -I.
+ Imports, unchanged and not modified: axang_run, seng3_run, seng2_common, seng_run,
+   south7_run helpers as needed, toward_run. Importing axang_run and seng3_run creates
+   results/axang/ and results/seng3/ if absent via mkdir(exist_ok=True); both already exist
+   and no file in them is written.
+ Results: results/corr2chk/ only. Not modified: any FINDINGS_*.md, CORRECTIONS_PAPER1.md,
+   anything under results/floorchk/, results/corr1/, results/south6/, results/south7/,
+   results/south8/, results/axang/, results/seng3/, results/seng4/, results/coordspace/, or
+   any paper source.
+ Deliverables: this file; FINDINGS_CORR2CHK.md with this file reproduced verbatim at the top;
+   PROGRESS_CORR2CHK.md. One local commit, no push.
+ The pre-existing uncommitted change to CITATION.cff and the untracked
+   results/paper2_figs_plain/ are not this task's work and are left out of its commit.
+ Step 4 of the task (the paper-1 paragraph-142 replacement wording) computes nothing. Every
+   number in it is read from results/coordspace/ and from FINDINGS_FLOORCHK.md and is quoted
+   with its source. It was drafted and reported to the user before this flag was written, and
+   is reproduced unchanged in FINDINGS_CORR2CHK.md.
