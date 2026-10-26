@@ -26,12 +26,15 @@ Run from the repository root:
 """
 from __future__ import annotations
 
+import copy
 import difflib
 import hashlib
 import re
 import sys
 import zipfile
 from pathlib import Path
+
+from lxml import etree
 
 SRC_DIR = Path(__file__).resolve().parent
 if str(SRC_DIR) not in sys.path:
@@ -47,22 +50,11 @@ FINDINGS2CHK = ROOT / "FINDINGS_CORR2CHK.md"
 # --- paper 2: the grammar fix -------------------------------------------------------------
 P2_FIX = ("1 move away less far", "1 moves away less far")
 
-# --- paper 2: the in-document correction note, under the paragraph-28 heading -------------
-# Wording follows paper 1 v1.3's note. Formatting follows it too -- own paragraph, justified,
-# spacing after 160, italic -- except that paper 1's run carries an eastAsia font override that
-# paper 2's body runs do not, so it is left out rather than imported into another document.
-P2_HEADING = (
-    '<w:t xml:space="preserve">Against young donors, all four move away</w:t></w:r></w:p>'
-)
-P2_NOTE = (
-    "Correction (v2): one sentence on the 80 perturbations called closer to early-passage "
-    "cells, and one on the four factors in the Southard screen, both in the paragraphs below, "
-    "were corrected on 26 October 2026; see CORRECTIONS_PAPER2.md in the repository."
-)
-P2_NOTE_PARA = (
-    '<w:p><w:pPr><w:spacing w:after="160"/><w:jc w:val="both"/></w:pPr><w:r><w:rPr>'
-    '<w:i/></w:rPr><w:t>' + P2_NOTE + "</w:t></w:r></w:p>"
-)
+# Neither revision carries an in-document correction note. Earlier runs of this script added
+# one to each paper; they were removed on 2026-10-26 because standard preprint practice is that
+# a new version carries the corrected text only, with the explanation in the Zenodo version
+# notes and the repository notices. Dropping them also returns both papers' paragraph counts,
+# and therefore their paragraph numbering, to the originals'.
 
 # --- paper 1: the paragraph-142 bullet ----------------------------------------------------
 P142_OLD = (
@@ -79,15 +71,6 @@ P142_NEW = (
     "the 1,836 moving closer, and both sit just inside their own cell-count-matched floors "
     "(+33.3 and +35.7), as 1,088 of the 1,836 do. They have 84 and 82 cells, against a "
     "median of 106."
-)
-
-# The v1.3 in-document note, extended to cover the bullet. CORR1's wrapper XML is reused
-# verbatim by substituting only its text, so the paragraph's formatting cannot drift.
-P1_NOTE = (
-    "Correction (v1.3): two sentences on the transcription-factor screen's displacement "
-    "lengths in space C, in the last paragraph of this note, and one bullet above them on "
-    "the two space A labels, were corrected on 26 October 2026; see CORRECTIONS_PAPER1.md "
-    "in the repository."
 )
 
 
@@ -118,6 +101,41 @@ def check_para142_against_findings() -> None:
         "P142_NEW differs from FINDINGS_CORR2CHK.md's blockquote:\n"
         f"findings: {want}\n\nscript  : {norm_ws(P142_NEW)}"
     )
+
+
+def skeletons(xml: str) -> list[bytes]:
+    """Per body paragraph, its XML with every w:t text blanked.
+
+    What survives is the formatting alone: the paragraph's w:pPr, its run order, and each
+    run's w:rPr. Two paragraphs whose skeletons are equal differ only in their text.
+    """
+    body = etree.fromstring(xml.encode("utf8")).find(f"{C1.W}body")
+    out = []
+    for p in body.iterchildren(f"{C1.W}p"):
+        q = copy.deepcopy(p)
+        for t in q.iter(f"{C1.W}t"):
+            t.text = ""
+        out.append(etree.tostring(q))
+    return out
+
+
+def check_formatting(old: str, new: str, label: str) -> list[int]:
+    """Every paragraph this task rewrote must keep its original formatting exactly.
+
+    Returns the 1-indexed positions whose text changed. Asserts that the paragraph count is
+    unchanged (so no paragraph was inserted or removed) and that each changed paragraph's
+    skeleton is byte-identical to the one it replaced.
+    """
+    a, b = skeletons(old), skeletons(new)
+    assert len(a) == len(b), (
+        f"{label}: paragraph count changed, {len(a)} -> {len(b)}; this task inserts none")
+    ta = C1.body_paragraphs(old.encode("utf8"))
+    tb = C1.body_paragraphs(new.encode("utf8"))
+    changed = [i + 1 for i, (x, y) in enumerate(zip(ta, tb)) if x != y]
+    for i in changed:
+        assert a[i - 1] == b[i - 1], (
+            f"{label}: paragraph {i} changed formatting, not just text")
+    return changed
 
 
 def apply_edits(old: str, edits: list[tuple[str, str]], label: str) -> str:
@@ -163,33 +181,37 @@ def diff_text(src: Path, dst: Path, old: str, new: str, header: list[str]) -> st
 
 def paper2() -> str:
     src, dst = C2.SRC, C2.DST
-    edits = list(C2.EDITS) + [P2_FIX, (P2_HEADING, P2_HEADING + P2_NOTE_PARA)]
+    edits = list(C2.EDITS) + [P2_FIX]
     with zipfile.ZipFile(src) as z:
         old = z.read(DOC).decode("utf8")
     new = apply_edits(old, edits, "paper 2")
+    changed = check_formatting(old, new, "paper 2")
     if dst.exists():
         dst.unlink()
     same, others = write_docx(src, dst, new)
     header = [
         "CORR2/CORR3 — paper 2, v0.7 -> v0.8. Paragraph-level diff of the docx body text.",
         "Generated by src/corr3_run.py. REGENERATED by CORR3 on 26 October 2026: CORR2's three",
-        "edits are unchanged; a grammar fix is added in paragraph 30 (\"1 move away less far\" ->",
-        "\"1 moves away less far\"), and the italic correction note described below is inserted.",
-        "CORR2's original version of this file, describing v0.8 with CORR2's three edits alone,",
-        "is in git history at commit 46a05c1.",
+        "edits are unchanged and a grammar fix is added in paragraph 30 (\"1 move away less far\"",
+        "-> \"1 moves away less far\"). CORR2's original version of this file is in git history at",
+        "commit 46a05c1.",
         "Each line is one top-level body paragraph; hunk line numbers are paragraph positions",
         "(1-indexed). Text inside text boxes (figure and table captions) is not listed. v0.7 is",
         "the source of the paper's published v1 (https://doi.org/10.5281/zenodo.23591623) and",
-        "v0.8 is the source of its v2. v2 has one more paragraph, the italic correction note,",
-        "inserted at position 29 under the paragraph-28 heading, so v1 positions 29 and later",
-        "shift by one: the two corrected paragraphs are v1 30 and 31 and v2 31 and 32.",
+        "v0.8 is the source of its v2. No paragraph is inserted or removed and v2 carries no",
+        "in-document correction note, so paragraph numbers are the same in both: the two",
+        "corrected paragraphs are 30 and 31 in each. The explanation of the correction lives in",
+        "the Zenodo version notes and in CORRECTIONS_PAPER2.md, not in the manuscript.",
         "",
         f"v0.7 sha256 {sha(src.read_bytes())}",
         f"v0.8 sha256 {sha(dst.read_bytes())}",
         f"word/document.xml: {len(edits)} string edits (paragraph 30, one sentence replaced and",
         "one word corrected; paragraph 31, the last sentence in two pieces either side of the",
-        "superscript reference run, which is kept; 1 inserted paragraph); undoing them reproduces",
-        f"the v0.7 XML exactly. Other zip members byte-identical: {same} of {others}.",
+        "superscript reference run, which is kept); undoing them reproduces the v0.7 XML exactly.",
+        f"Other zip members byte-identical: {same} of {others}.",
+        f"Paragraphs whose text changed: {', '.join(str(i) for i in changed)}. Each keeps the",
+        "paragraph properties, run order and run properties of the paragraph it replaces, so",
+        "alignment, font and size are untouched; only the text differs.",
         "",
     ]
     out = C2.OUT / "paper2_diff.txt"
@@ -200,34 +222,35 @@ def paper2() -> str:
 
 def paper1() -> str:
     src, dst = C1.SRC, C1.DST
-    note_para = C1.NOTE_PARA.replace(C1.NOTE, P1_NOTE)
-    assert note_para != C1.NOTE_PARA and P1_NOTE in note_para, "note substitution failed"
-    edits = [C1.EDITS[0], C1.EDITS[1], (P142_OLD, P142_NEW),
-             (C1.HEADING, C1.HEADING + note_para)]
+    edits = [C1.EDITS[0], C1.EDITS[1], (P142_OLD, P142_NEW)]
     with zipfile.ZipFile(src) as z:
         old = z.read(DOC).decode("utf8")
     new = apply_edits(old, edits, "paper 1")
+    changed = check_formatting(old, new, "paper 1")
     if dst.exists():
         dst.unlink()
     same, others = write_docx(src, dst, new)
     header = [
         "CORR1/CORR3 — paper 1, v1.2 -> v1.3. Paragraph-level diff of the docx body text.",
         "Generated by src/corr3_run.py. REGENERATED by CORR3 on 26 October 2026: CORR1's two",
-        "sentence replacements in Supplementary Note 3 are unchanged, the paragraph-142 bullet",
-        "is now corrected too, and the inserted correction note is extended to mention it.",
-        "CORR1's original version of this file, describing v1.3 with the note-3 change alone,",
-        "is in git history at commit d8d892a.",
+        "sentence replacements in Supplementary Note 3 are unchanged and the paragraph-142",
+        "bullet is now corrected too. CORR1's original version of this file, describing v1.3",
+        "with the note-3 change alone, is in git history at commit d8d892a.",
         "Each line is one top-level body paragraph; hunk line numbers are paragraph positions",
-        "(1-indexed). Text inside text boxes (figure and table captions) is not listed. v1.3",
-        "has one more paragraph, inserted at position 134, so v1.2 positions 134 and later",
-        "shift by one: the corrected bullet is v1.2 paragraph 142 and v1.3 paragraph 143, and",
-        "the corrected note-3 paragraph is v1.2 144 and v1.3 145.",
+        "(1-indexed). Text inside text boxes (figure and table captions) is not listed. No",
+        "paragraph is inserted or removed and v1.3 carries no in-document correction note, so",
+        "paragraph numbers are the same in v1.2 and v1.3: the corrected bullet is paragraph 142",
+        "and the corrected note-3 paragraph is 144 in each. The explanation of the correction",
+        "lives in the Zenodo version notes and in CORRECTIONS_PAPER1.md, not in the manuscript.",
         "",
         f"v1.2 sha256 {sha(src.read_bytes())}",
         f"v1.3 sha256 {sha(dst.read_bytes())}",
-        f"word/document.xml: {len(edits)} string edits (3 sentence or bullet replacements,",
-        "1 inserted paragraph); undoing them reproduces the v1.2 XML exactly. Other zip",
-        f"members byte-identical: {same} of {others}.",
+        f"word/document.xml: {len(edits)} string edits (2 sentence replacements and 1 bullet",
+        "replacement); undoing them reproduces the v1.2 XML exactly. Other zip members",
+        f"byte-identical: {same} of {others}.",
+        f"Paragraphs whose text changed: {', '.join(str(i) for i in changed)}. Each keeps the",
+        "paragraph properties, run order and run properties of the paragraph it replaces, so",
+        "alignment, font and size are untouched; only the text differs.",
         "",
     ]
     out = C1.OUT / "paper1_diff.txt"

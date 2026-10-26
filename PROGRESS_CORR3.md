@@ -54,12 +54,15 @@ replaced. Paper 2 changes paragraphs 30 and 31 and nothing else.
    `results/verify/WITHDRAWN_READINGS.md` match. `FINDINGS_CORR2.md`, `PROGRESS_CORR2.md` and
    `src/corr2_run.py` keep the old premise as CORR2's record and are marked superseded rather
    than edited.
-4. **The paper-2 in-document correction note was added last, in a fourth commit.** CORR2 added
-   none because it believed the paper unpublished. Once the premise was corrected, the author
-   chose where it goes: a one-line italic "Correction (v2)" paragraph directly under the Results
-   heading "Against young donors, all four move away", which is where both corrected paragraphs
-   sit. v2 now has 118 body paragraphs to v1's 117, and v1 positions 29 and later shift by one,
-   so the corrected paragraphs are 30 and 31 in v1 and 31 and 32 in v2.
+4. **Neither revised paper carries an in-document correction note, after three turns on it.**
+   CORR2 added none to paper 2 because it believed the paper unpublished; CORR1 had added one to
+   paper 1 v1.3; a fourth commit then added one to paper 2 as well, under the Results heading
+   "Against young donors, all four move away". A fifth removed both, on the author's direction
+   that standard preprint practice is for a new version to carry the corrected text only, with
+   the explanation in the Zenodo version notes and the repository notices. Both papers'
+   paragraph counts are therefore back to the originals' — 145 for paper 1 and 117 for paper 2 —
+   so paragraph numbers match the originals again: the corrected paragraphs are 142 and 144 in
+   paper 1 and 30 and 31 in paper 2, in both versions of each.
 
 **Next.** Nothing more within this task. No PDF was produced for either paper, nothing was
 uploaded, and nothing was pushed. Typesetting v1.3 and v0.8, and the timing of any release, are

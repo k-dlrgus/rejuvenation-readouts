@@ -14,13 +14,10 @@ This notice computes nothing. Every number below is copied from those files.
 `paper/paper2_passage_draft_v0.7.docx`, which is unchanged. The paragraph-level diff is
 `results/corr2/paper2_diff.txt`.
 
-v2 carries a one-line italic correction note directly under the Results heading "Against young
-donors, all four move away", in the same form as paper 1 v1.3's: *"Correction (v2): one sentence
-on the 80 perturbations called closer to early-passage cells, and one on the four factors in the
-Southard screen, both in the paragraphs below, were corrected on 26 October 2026; see
-CORRECTIONS_PAPER2.md in the repository."* It is the only paragraph v2 adds, so v1 paragraph
-positions 29 and later shift by one in v2: the two corrected paragraphs are 30 and 31 in v1 and
-31 and 32 in v2. Paragraph numbers in this notice are **v1** positions throughout.
+**v2 carries no in-document correction note.** A new version carries the corrected text only;
+the explanation of the change belongs in the Zenodo version notes and in this notice. No
+paragraph is inserted or removed, so v2's paragraph numbering is v1's: the two corrected
+paragraphs are 30 and 31 in both.
 
 That the v1 source is `paper2_passage_draft_v0.7.docx` was checked before anything else, by
 extracting the posted PDF's text and comparing it with that file's body text: all 99 of its
@@ -235,7 +232,7 @@ reproduced every stored 5th percentile to 2.2e-16.
 
 ## Appendix: all 21 inventoried statements, with verdicts
 
-Paragraph numbers are docx body-paragraph indices in the v1 source. Splitting paragraph 31's sentence into
+Paragraph numbers are docx body-paragraph indices, the same in v1 and v2. Splitting paragraph 31's sentence into
 its two clauses gives 22 clause-level verdicts from 21 statements. **k20** is the paper's
 20-component space; **full** is the 23,485-gene space.
 

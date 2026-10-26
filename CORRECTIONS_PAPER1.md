@@ -225,7 +225,7 @@ Rows 9 to 12 were added by CORR3 for the paragraph-142 bullet, (b). The search l
 | # | file:line | tracked | what it says | action |
 |---|---|---|---|---|
 | 9 | `paper/rejuvenation_readouts_preprint_v1.2.pdf`, page 13 | yes | The published bullet quoted above | Not edited. The PDF is the published record; no v1.3 PDF was produced. |
-| 10 | `paper/rejuvenation_readouts_preprint_v1.2.docx`, body paragraph 142, and `_draft.docx` | no (`paper/` is git-ignored) | Source of #9 | Not edited. The revised copy is v1.3, paragraph 143. |
+| 10 | `paper/rejuvenation_readouts_preprint_v1.2.docx`, body paragraph 142, and `_draft.docx` | no (`paper/` is git-ignored) | Source of #9 | Not edited. The revised copy is v1.3, where it is also paragraph 142. |
 | 11 | **`SUPPLEMENTARY_NOTE_COORDSPACE.md`** | **yes** | The bullet verbatim, in a file whose first line reads "Coordinate-space robustness check: text for the preprint" | **Marked superseded in place; its wording is unedited.** A one-line marker was added directly above the bullet, dated 2026-10-26, naming paper 1 v1.3 paragraph 142 and pointing here to passage (b), and a one-line note under the file's title now states that it is drafted text and that the manuscript is authoritative where the two differ. The bullet itself is untouched, as CLAUDE.md requires of a superseded text. |
 | 12 | `FINDINGS_COORDSPACE.md` (Stage 3 tables and the `toward_young` rows), `results/coordspace/stage3_south6_factors.csv` | yes | The underlying deltas +106.609 and +113.750 with their floors | Not edited. The numbers are correct as measurements and are the source this correction quotes; what failed was the inference drawn from them. |
 
@@ -243,15 +243,20 @@ PDF is tracked.
 The revised source `paper/rejuvenation_readouts_preprint_v1.3.docx` sits beside the original,
 which is unchanged. It was first made by `src/corr1_run.py` and was rebuilt from v1.2 by
 `src/corr3_run.py`, which imports CORR1's edit strings rather than restating them. It differs
-from v1.2 in four ways:
+from v1.2 in three ways:
 
-1. A one-line, italic "Correction (v1.3)" paragraph directly under the Supplementary Note 3
-   heading, naming both corrected passages.
-2. The two sentences of (a), replaced by the corrected text.
-3. The bullet of (b), replaced by the corrected text.
-4. Nothing else. The script checks that each replaced string occurs exactly once, that undoing
-   the four edits reproduces the v1.2 XML exactly, and that the other 53 files in the docx are
-   byte-identical. v1.2's sha256 is recorded in the diff and is unchanged from CORR1's run.
+1. The two sentences of (a), replaced by the corrected text.
+2. The bullet of (b), replaced by the corrected text.
+3. Nothing else. **v1.3 carries no in-document correction note**, and no paragraph is inserted
+   or removed, so its paragraph numbering is v1.2's: the corrected bullet is paragraph 142 and
+   the corrected note-3 paragraph is 144 in both. A new version carries the corrected text
+   only; the explanation of the change belongs in the Zenodo version notes and in this notice.
+
+The script checks that each replaced string occurs exactly once, that undoing the three edits
+reproduces the v1.2 XML exactly, that the other 53 files in the docx are byte-identical, and
+that each replaced paragraph keeps the paragraph properties, run order and run properties of the
+paragraph it replaces, so alignment, font and size are untouched and only the text differs.
+v1.2's sha256 is recorded in the diff and is unchanged from CORR1's run.
 
 The paragraph-level diff is `results/corr1/paper1_diff.txt`, which is tracked. The v1.3 docx
 itself is git-ignored like the rest of `paper/`, so it is not committed. No v1.3 PDF was made, and
