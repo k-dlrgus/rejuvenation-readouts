@@ -5,9 +5,10 @@ away less far" -> "1 moves away less far"). CORR2's original version of this fil
 describing v0.8 before that fix, is in git history at commit 46a05c1.
 Each line is one top-level body paragraph; hunk line numbers are paragraph positions
 (1-indexed). Text inside text boxes (figure and table captions) is not listed. No
-paragraph is inserted or removed, so positions do not shift. Paper 2 is not public:
-this is a pre-publication revision, not a correction notice, and no notice paragraph
-is added to the draft.
+paragraph is inserted or removed, so positions do not shift. v0.7 is the source of the
+paper's published v1 (https://doi.org/10.5281/zenodo.23591623) and v0.8 is the source of
+its v2. No in-document correction note is present: CORR2 omitted one on the belief that
+the paper was unpublished, and whether to add one is open. See CORRECTIONS_PAPER2.md.
 
 v0.7 sha256 74f5c3392a652cd7e4034d65ff9174eefb8a2cf79ba21021168dec29e9deaabd
 v0.8 sha256 10928a4245b452e372f51cb75764a2f66c4360ee79f5456b47ef9ec5d8148182

@@ -18,18 +18,21 @@ comparing two space A labels across the other two coordinate spaces. The checks 
 
 ---
 
-## Second preprint (in preparation)
+## Second preprint
 
 *Two definitions of young give opposite answers in a fibroblast rejuvenation screen* (R. Kwon). A re-analysis
 of the Sengstack et al. Perturb-seq screen (Proc. Natl Acad. Sci. USA, 2026) with the
-distance-to-target method of the first preprint. The manuscript is not yet public and is
-available from the author on request.
+distance-to-target method of the first preprint.
 
-Pre-publication revision (2026-10-26): `CORRECTIONS_PAPER2.md`. Two clauses, one on the Southard
+Preprint: https://doi.org/10.5281/zenodo.23591623 (PDF of v1 also at [paper/two_definitions_of_young_preprint_v1.pdf](paper/two_definitions_of_young_preprint_v1.pdf))
+
+Code and results archive: https://doi.org/10.5281/zenodo.23591315 — this is the archive, not the paper.
+
+Correction notice (2026-10-26): `CORRECTIONS_PAPER2.md`. Two clauses, one on the Southard
 screen and one on the 80 perturbations called against early-passage cells, claimed a departure
 from young donors that a size-matched no-effect baseline does not support. The paper's conclusion,
 which rests on the calls, is unaffected. The check behind it is `FINDINGS_CORR2CHK.md`, and the
-revision is in the draft source beside the original (diff in `results/corr2/paper2_diff.txt`).
+corrected text is the paper's v2 (diff in `results/corr2/paper2_diff.txt`).
 
 | Analysis | Command | What it does |
 |---|---|---|

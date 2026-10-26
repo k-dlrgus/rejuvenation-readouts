@@ -1,7 +1,19 @@
 # FINDINGS_CORR3 — finishing the corrections to both papers
 
 **Task:** CORR3. **Status:** complete. No STOP fired. **Nature:** writing only. No statistic was
-computed. Every number written into either manuscript or either notice is copied from
+computed.
+
+> **Premise corrected, 2026-10-26, in a third commit.** This task and CORR2 before it worked on
+> the belief that paper 2 was unpublished, and wrote their files accordingly. **Paper 2 is
+> published**, as a preprint, v1, 23 October 2026, at https://doi.org/10.5281/zenodo.23591623;
+> the author supplied the DOI and it was confirmed to resolve to that record.
+> https://doi.org/10.5281/zenodo.23591315, which paper 2's own Declarations cite, is its code and
+> results archive, not the paper. `CORRECTIONS_PAPER2.md` is now a correction notice in
+> `CORRECTIONS_PAPER1.md`'s form, the corrected text is the paper's **v2**, and the README and
+> `results/verify/WITHDRAWN_READINGS.md` say so. `FINDINGS_CORR2.md`, `PROGRESS_CORR2.md` and
+> `src/corr2_run.py` still state the old premise; they are CORR2's record and are marked
+> superseded in `WITHDRAWN_READINGS.md` rather than edited. The sections below are left as
+> written, with dated notes where the premise shows. Every number written into either manuscript or either notice is copied from
 `FINDINGS_CORR2CHK.md`, `FINDINGS_FLOORCHK.md` or their `results/` tables, and the script asserts
 the paragraph-142 wording is byte-identical to the blockquote it came from rather than retyped.
 
@@ -46,9 +58,10 @@ original form because they are the record, and the slip is disclosed in them and
 
 ## Step 2 — `CORRECTIONS_PAPER2.md`
 
-Written in the form of `CORRECTIONS_PAPER1.md`, with one substantive difference stated in its
-first paragraph: **paper 2 is not public**, so it is a pre-publication revision and not a
-correction of any record. It covers paragraph 31's Southard clause (A1b) and paragraph 30's
+Written in the form of `CORRECTIONS_PAPER1.md`. *(As first written it said paper 2 was
+unpublished and called itself a pre-publication revision. Corrected 2026-10-26: it is a
+correction notice, its header carries the paper's v1 DOI, and the corrected text is v2.)* It
+covers paragraph 31's Southard clause (A1b) and paragraph 30's
 young-donor clause (C5), keeps their two failures distinct, states prominently that the paper's
 conclusion is unaffected, explains why the Summary's "all four move them away from young donors"
 is a different statement that is not affected, gives the corrected wording for both, discloses how
@@ -105,8 +118,9 @@ the two differ. Row 11 of Appendix A records this. Nothing in the file's own pro
 - `results/verify/WITHDRAWN_READINGS.md`, section D: the paper-1 entry now covers paragraph 142
   as passage (b), with what it said, what was wrong with it, where it is corrected, why it is not
   counted as a reading, and what was not edited. A new dated paper-2 entry follows it in the same
-  shape, and states in its own bullet that paper 2 is not public and that the pre-registration
-  behind the check is weaker than FLOORCHK's.
+  shape, and states in its own bullet that the pre-registration behind the check is weaker than
+  FLOORCHK's. *(As first written that bullet also said paper 2 was not public; corrected
+  2026-10-26 to name the paper's v1 DOI and its v2.)*
 - `README.md`: the paper-1 correction line now says two passages rather than one and cites both
   checks; a new line under the second preprint points at `CORRECTIONS_PAPER2.md`.
 
@@ -156,9 +170,13 @@ replaced, and v1.2 paragraph 144 replaced.
    extended to mention the bullet. CORR1's XML wrapper is reused verbatim by substituting only its
    text, so the paragraph's formatting cannot drift. The task did not ask for this; leaving the
    note inaccurate was the alternative.
-4. **`CORRECTIONS_PAPER2.md` is not titled a correction notice.** Paper 2 is unpublished. The
-   filename follows the task; the title and first paragraph say plainly that this is a
-   pre-publication revision. `CORRECTIONS_PAPER1.md`'s structure is otherwise followed.
+4. **`CORRECTIONS_PAPER2.md` was first written as a pre-publication revision, on a false
+   premise.** This task and CORR2 believed paper 2 was unpublished; it is published. The author
+   corrected the premise on 2026-10-26 and the notice was retitled, given the paper's v1 DOI in
+   its header, and reworded to call the corrected text v2. The error was the session's, not the
+   instruction's: CORR2 inferred "not public" from the repository's own README, which described
+   the manuscript as in preparation and available from the author on request, and no file in the
+   repository carried a DOI for paper 2. That inference was never checked against the author.
 5. **The appendix lists 22 clause-level verdicts for 21 statements**, because paragraph 31's
    sentence is one statement and two clauses. The same arithmetic slip is disclosed in
    `FINDINGS_CORR2CHK.md` deviation 8, where the pre-registration's three counts are each labelled
@@ -172,10 +190,18 @@ replaced, and v1.2 paragraph 144 replaced.
 8. **Nothing was computed, so nothing here confirms any number it carries.** The numbers are
    copied. `FINDINGS_CORR2CHK.md` and `FINDINGS_FLOORCHK.md` are where they are checked, and
    `python -I src/corr2chk_run.py verify` re-derives the paper-2 readings from tracked tables.
-9. **A second commit followed.** This task's work landed in commit `fc37133`. A second commit adds
-   the superseded marker in `SUPPLEMENTARY_NOTE_COORDSPACE.md`, row 11 of Appendix A, and these
-   dated notes. CLAUDE.md says new commits, never amend, so the first commit stands as written.
-10. **Where things were written.** `paper/paper2_passage_draft_v0.8.docx`,
+9. **Two further commits followed.** This task's work landed in commit `fc37133`. A second commit
+   adds the superseded marker in `SUPPLEMENTARY_NOTE_COORDSPACE.md`, row 11 of Appendix A, and
+   those dated notes. A third corrects the publication premise described at the top of this file.
+   CLAUDE.md says new commits, never amend, so each earlier commit stands as written.
+10. **No in-document correction note was added to the paper-2 source, and that is now open.**
+   v1.3 of paper 1 carries a one-line italic "Correction (v1.3)" paragraph under the
+   Supplementary Note 3 heading. The paper-2 source carries no equivalent: CORR2 omitted one
+   deliberately because it believed the paper unpublished, and this task preserved that. Now that
+   paper 2 is known to be published, the parallel step would be a "Correction (v2)" line, but
+   where it should sit is a placement decision in the main text, not a relabel, so it was left to
+   the author. `results/corr2/paper2_diff.txt` records that the note is absent and why.
+11. **Where things were written.** `paper/paper2_passage_draft_v0.8.docx`,
    `paper/rejuvenation_readouts_preprint_v1.3.docx` (both git-ignored),
    `results/corr1/paper1_diff.txt`, `results/corr2/paper2_diff.txt`,
    `results/verify/WITHDRAWN_READINGS.md`, `CORRECTIONS_PAPER1.md`, `CORRECTIONS_PAPER2.md`,

@@ -1,24 +1,25 @@
-# Corrections to paper 2, paragraphs 30 and 31, before publication
+# Correction notice: paper 2, paragraphs 30 and 31
 
 **Paper:** R. Kwon, *Two definitions of young give opposite answers in a fibroblast rejuvenation
-screen*. **Not public.** Its source is `paper/paper2_passage_draft_v0.7.docx`, and
-`paper/two_definitions_of_young_preprint_v1.pdf` is a draft rendering of that file, not a
-deposit. Because nothing has been published, this is a **pre-publication revision, not a
-correction notice**: there is no public record to correct and nobody has been misled. It is
-written in the same form as `CORRECTIONS_PAPER1.md` so that the two read alike and so that the
-change is on the record before, not after, release.
+screen*, v1 (https://doi.org/10.5281/zenodo.23591623; PDF also at
+`paper/two_definitions_of_young_preprint_v1.pdf`). Not to be confused with
+https://doi.org/10.5281/zenodo.23591315, which is the paper's code and results archive, not the
+paper.
 
 **Written:** 2026-10-26, task CORR3. **Basis:** `FINDINGS_CORR2CHK.md` and `results/corr2chk/`.
 This notice computes nothing. Every number below is copied from those files.
 
-**The revision is in `paper/paper2_passage_draft_v0.8.docx`**, beside v0.7, which is unchanged.
-The paragraph-level diff is `results/corr2/paper2_diff.txt`.
+**The corrected text is the paper's v2.** Its source is
+`paper/paper2_passage_draft_v0.8.docx`, beside the v1 source
+`paper/paper2_passage_draft_v0.7.docx`, which is unchanged. The paragraph-level diff is
+`results/corr2/paper2_diff.txt`.
 
-That v0.7 is the source of the posted PDF was checked before anything else, by extracting the
-PDF's text and comparing it with v0.7's body text: all 99 of v0.7's non-empty body paragraphs
-appear in the PDF, verbatim and in the same order, covering 98.2% of its text, and all 52
-non-empty Table 1 cells are present. No paragraph differs. The only normalisation needed was to
-drop hyphens, because `pdftotext` loses a hyphen that falls at a line break.
+That the v1 source is `paper2_passage_draft_v0.7.docx` was checked before anything else, by
+extracting the posted PDF's text and comparing it with that file's body text: all 99 of its
+non-empty body paragraphs appear in the PDF, verbatim and in the same order, covering 98.2% of
+its text, and all 52 non-empty Table 1 cells are present. No paragraph differs. The only
+normalisation needed was to drop hyphens, because `pdftotext` loses a hyphen that falls at a line
+break, so a change that was only a hyphen would not have been detected.
 
 ## What was stated
 
@@ -144,7 +145,7 @@ named here is a candidate for anything.
 
 ## Corrected wording
 
-As in the revised source, v0.8.
+As in v2, whose source is `paper/paper2_passage_draft_v0.8.docx`.
 
 **(a)** Paragraph 31, last sentence:
 
@@ -165,9 +166,9 @@ As in the revised source, v0.8.
 > spread and 1 moves away less far than the median no-effect sample, so the departure is
 > established for 56 of them and not for the rest.
 
-One wording note: as first written into v0.8 by task CORR2, (b) read "1 move away less far", which
-is the form carried by CORR2CHK's own pre-registered conclusion text. CORR2 copied it rather than
-improve pre-registered wording silently, and disclosed it. Task CORR3 corrected the verb in v0.8
+One wording note: as first drafted by task CORR2, (b) read "1 move away less far", which is the
+form carried by CORR2CHK's own pre-registered conclusion text. CORR2 copied it rather than improve
+pre-registered wording silently, and disclosed it. Task CORR3 corrected the verb in the v2 source
 only. `results/corr2chk/readings.txt` and `FINDINGS_CORR2CHK.md` keep the original form, because
 they are the record.
 
@@ -226,7 +227,7 @@ reproduced every stored 5th percentile to 2.2e-16.
 
 ## Appendix: all 21 inventoried statements, with verdicts
 
-Paragraph numbers are docx body-paragraph indices in v0.7. Splitting paragraph 31's sentence into
+Paragraph numbers are docx body-paragraph indices in the v1 source. Splitting paragraph 31's sentence into
 its two clauses gives 22 clause-level verdicts from 21 statements. **k20** is the paper's
 20-component space; **full** is the 23,485-gene space.
 

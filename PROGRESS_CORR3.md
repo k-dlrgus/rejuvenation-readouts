@@ -9,7 +9,7 @@ Writing only. No statistic was computed; every number was copied from `FINDINGS_
 |---|---|
 | 0. Confirm the paper-2 source | **v0.7 is the source of the posted PDF.** 99 of 99 body paragraphs verbatim and in order, 52 of 52 Table 1 cells present, no paragraph differing. Hyphens had to be normalised out of both sides, because `pdftotext` drops a hyphen at a line break. |
 | 1. Grammar fix in v0.8 | "1 move away less far" → "1 moves away less far", paragraph 30, nothing else. `results/corr2chk/readings.txt` and `FINDINGS_CORR2CHK.md` untouched. |
-| 2. `CORRECTIONS_PAPER2.md` | written, in `CORRECTIONS_PAPER1.md`'s form, stating plainly that paper 2 is unpublished so this is a pre-publication revision |
+| 2. `CORRECTIONS_PAPER2.md` | written, in `CORRECTIONS_PAPER1.md`'s form. First drafted as a pre-publication revision on the false premise that paper 2 was unpublished; corrected 2026-10-26 to a correction notice carrying the paper's v1 DOI, with the corrected text as v2 |
 | 3. Paper 1, paragraph 142 | folded into v1.3 beside CORR1's change; `CORRECTIONS_PAPER1.md` updated in seven places; both reversible judgement calls accepted |
 | 4. Repository record | paper-2 entry added to `results/verify/WITHDRAWN_READINGS.md` section D, paper-1 entry extended to paragraph 142, README pointers for both papers |
 
@@ -45,6 +45,19 @@ replaced. Paper 2 changes paragraphs 30 and 31 and nothing else.
    in place, with its wording unedited, and the file's title carries a one-line note that it is
    drafted text and that the manuscript is authoritative where the two differ. Row 11 of
    `CORRECTIONS_PAPER1.md` Appendix A records it.
+
+3. **The publication premise was wrong and was corrected in a third commit.** This task and CORR2
+   believed paper 2 was unpublished, because the README described it as in preparation and no
+   repository file carried a DOI for it. It is published: preprint v1, 23 October 2026,
+   https://doi.org/10.5281/zenodo.23591623, confirmed to resolve. `CORRECTIONS_PAPER2.md` is now
+   a correction notice, the corrected text is the paper's v2, and the README and
+   `results/verify/WITHDRAWN_READINGS.md` match. `FINDINGS_CORR2.md`, `PROGRESS_CORR2.md` and
+   `src/corr2_run.py` keep the old premise as CORR2's record and are marked superseded rather
+   than edited.
+4. **Open, and left to the author:** the paper-2 source carries no in-document correction note.
+   Paper 1's v1.3 has a "Correction (v1.3)" line; CORR2 deliberately added no equivalent because
+   it believed the paper unpublished. Adding a "Correction (v2)" line is new content and a
+   placement decision in the main text, not a relabel, so it was not done.
 
 **Next.** Nothing more within this task. No PDF was produced for either paper, nothing was
 uploaded, and nothing was pushed. Typesetting v1.3 and v0.8, and the timing of any release, are
