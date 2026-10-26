@@ -8,7 +8,7 @@ A one-dimensional age score falls for any move away from the old state. This rep
 contains the analyses behind the claim that distance to a young target of the same cell
 type tells approach from departure, and a one-dimensional score cannot.
 
-Preprint: https://doi.org/10.5281/zenodo.23113817 (PDF of the current version also at [paper/rejuvenation_readouts_preprint_v1.2.pdf](paper/rejuvenation_readouts_preprint_v1.2.pdf))
+Preprint: https://doi.org/10.5281/zenodo.23113817 (PDF of the current version also at [paper/rejuvenation_readouts_preprint_v1.3.pdf](paper/rejuvenation_readouts_preprint_v1.3.pdf))
 
 Code and results archive: https://doi.org/10.5281/zenodo.23092318 (snapshot of this repository at release v1.1, the state the first preprint reports)
 
@@ -25,7 +25,7 @@ comparing two space A labels across the other two coordinate spaces. The checks 
 of the Sengstack et al. Perturb-seq screen (Proc. Natl Acad. Sci. USA, 2026) with the
 distance-to-target method of the first preprint.
 
-Preprint: https://doi.org/10.5281/zenodo.23591623 (PDF also at [paper/two_definitions_of_young_preprint_v1.pdf](paper/two_definitions_of_young_preprint_v1.pdf))
+Preprint: https://doi.org/10.5281/zenodo.23591623 (PDF also at [paper/two_definitions_of_young_preprint_v2.pdf](paper/two_definitions_of_young_preprint_v2.pdf))
 
 Code and results archive: https://doi.org/10.5281/zenodo.23591315 (snapshot of this repository at tag `paper2-v1`)
 
