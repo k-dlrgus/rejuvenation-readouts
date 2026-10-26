@@ -146,6 +146,17 @@ own committed diffs** (`v1.2 5dfeaf0e…` at commit `d8d892a`, `v0.7 74f5c339…
 comparison shows exactly three changes: one inserted paragraph at position 134, v1.2 paragraph 142
 replaced, and v1.2 paragraph 144 replaced.
 
+*(Superseded 2026-10-26. The inline correction notes were removed from both papers; see
+deviation 3. Three rows of the table above no longer describe the artifacts, and the sentence
+immediately above it no longer does either. As rebuilt: paper 1 has **3** string edits, not 4,
+and **145 → 145** body paragraphs, not 145 → 146; paper 2 keeps 4 edits and 117 → 117. Paper 1's
+order-aware comparison now shows exactly two changes, paragraphs 142 and 144 replaced, with no
+insertion. Everything else in the table still holds, and `src/corr3_run.py` gained a check that
+every rewritten paragraph keeps the paragraph properties, run order and run properties of the
+paragraph it replaces — all four changed paragraphs across both papers pass it. The current
+figures are in `results/corr1/paper1_diff.txt` and `results/corr2/paper2_diff.txt`. The table is
+left unedited.)*
+
 ## Deviations and decisions not specified by the task (disclosed)
 
 1. **Two previous tasks' results directories were written into, against CLAUDE.md.** The task
@@ -170,6 +181,13 @@ replaced, and v1.2 paragraph 144 replaced.
    extended to mention the bullet. CORR1's XML wrapper is reused verbatim by substituting only its
    text, so the paragraph's formatting cannot drift. The task did not ask for this; leaving the
    note inaccurate was the alternative.
+   *(Superseded 2026-10-26: the inline correction notes were removed from both papers, on the
+   author's direction that standard preprint practice is for a new version to carry the
+   corrected text only, with the explanation in the Zenodo version notes and the repository
+   notices. v1.3 therefore carries no "Correction (v1.3)" paragraph at all, and its body
+   paragraph count is back to v1.2's 145, so the corrected bullet is paragraph 142 and the
+   corrected note-3 paragraph is 144 in both. The text above records what this task did at the
+   time and is left unedited.)*
 4. **`CORRECTIONS_PAPER2.md` was first written as a pre-publication revision, on a false
    premise.** This task and CORR2 believed paper 2 was unpublished; it is published. The author
    corrected the premise on 2026-10-26 and the notice was retitled, given the paper's v1 DOI in
@@ -205,6 +223,12 @@ replaced, and v1.2 paragraph 144 replaced.
    was left out rather than imported from one document into another; the paragraph properties
    (own paragraph, justified, spacing after 160) and the italic run are identical. v2 therefore
    has 118 body paragraphs to v1's 117, and v1 positions 29 and later shift by one.
+   *(Superseded 2026-10-26, covering both the "Correction (v2)" paragraph described above and
+   the paragraph counts at the end of this item: a fifth commit removed the inline notes from
+   both papers, for the reason given under deviation 3. v2 carries no "Correction (v2)"
+   paragraph, so the formatting difference weighed here no longer arises, and v2's body
+   paragraph count is back to v1's 117 with no position shift — the two corrected paragraphs
+   are 30 and 31 in both. The text above is left unedited.)*
 11. **Where things were written.** `paper/paper2_passage_draft_v0.8.docx`,
    `paper/rejuvenation_readouts_preprint_v1.3.docx` (both git-ignored),
    `results/corr1/paper1_diff.txt`, `results/corr2/paper2_diff.txt`,
