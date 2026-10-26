@@ -85,15 +85,20 @@ the `q = 1.0` is dropped, and the space B floor comparison is added.
 7. **Appendix A** gained rows 9 to 12 for the bullet, and **Appendix B** now describes four edits
    rather than three.
 
-### One row of that appendix needs a decision outside this task
+### One row of that appendix was referred to the author, and then settled
 
-`SUPPLEMENTARY_NOTE_COORDSPACE.md:52` carries the superseded bullet verbatim, in a tracked file
-whose first line reads "Coordinate-space robustness check: text for the preprint". It was **not
-edited**, following CORR1's own convention and CLAUDE.md's rule that superseded text is marked
-elsewhere rather than edited in place. But unlike a findings file it presents itself as preprint
-copy, so the repository now holds drafted text that contradicts the corrected manuscript. It is
-row 11 of Appendix A and is named in `results/verify/WITHDRAWN_READINGS.md`. Whether to revise it
-is not this task's call.
+`SUPPLEMENTARY_NOTE_COORDSPACE.md` carries the superseded bullet verbatim, in a tracked file whose
+first line reads "Coordinate-space robustness check: text for the preprint". The first pass of this
+task left it **not edited**, following CORR1's own convention and CLAUDE.md's rule that superseded
+text is marked elsewhere rather than edited in place, and reported it as a decision outside the
+task — because unlike a findings file it presents itself as preprint copy, so the repository held
+drafted text contradicting the corrected manuscript.
+
+**Settled by the author, 2026-10-26, in a second commit.** The bullet is marked superseded in
+place and its wording is unedited: a one-line marker directly above it names paper 1 v1.3
+paragraph 142 and points to `CORRECTIONS_PAPER1.md` passage (b), and a one-line note under the
+file's title states that the file is drafted text and that the manuscript is authoritative where
+the two differ. Row 11 of Appendix A records this. Nothing in the file's own prose changed.
 
 ## Step 4 — the repository record
 
@@ -138,7 +143,8 @@ replaced, and v1.2 paragraph 144 replaced.
    revision. Each regenerated diff now carries a provenance header naming CORR3, stating what
    changed, and naming the commit (`d8d892a`, `46a05c1`) where the previous version can be read.
    Nothing is lost: git holds both earlier versions. This is the one place this task departed from
-   a standing rule, and it was not put to the author first.
+   a standing rule, and it was not put to the author first. (**Accepted by the author,
+   2026-10-26**, after the fact. The record of it having been decided unilaterally stands.)
 2. **Both revised docx files were rebuilt from their originals, not patched.** The task says to
    change v0.8 and to fold wording into v1.3. Rebuilding from v0.7 and v1.2 achieves the same
    content and makes the reversibility and byte-identity checks meaningful end to end; patching
@@ -157,19 +163,24 @@ replaced, and v1.2 paragraph 144 replaced.
    sentence is one statement and two clauses. The same arithmetic slip is disclosed in
    `FINDINGS_CORR2CHK.md` deviation 8, where the pre-registration's three counts are each labelled
    "of 21" and sum to 22.
-6. **`SUPPLEMENTARY_NOTE_COORDSPACE.md` was found to carry the superseded bullet and was left
-   alone.** See step 3 above. The task did not mention the file; it was found by the Appendix A
-   sweep.
+6. **`SUPPLEMENTARY_NOTE_COORDSPACE.md` was found to carry the superseded bullet.** The task did
+   not mention the file; it was found by the Appendix A sweep. The first pass left it alone and
+   referred it to the author, who directed a minimal in-place marker in a second commit. See step
+   3 above. Its prose is unedited.
 7. **`FINDINGS_CORR3.md` and `PROGRESS_CORR3.md` were written although the task named neither.**
    CLAUDE.md's repository layout calls for them, and every other task here has them.
 8. **Nothing was computed, so nothing here confirms any number it carries.** The numbers are
    copied. `FINDINGS_CORR2CHK.md` and `FINDINGS_FLOORCHK.md` are where they are checked, and
    `python -I src/corr2chk_run.py verify` re-derives the paper-2 readings from tracked tables.
-9. **Where things were written.** `paper/paper2_passage_draft_v0.8.docx`,
+9. **A second commit followed.** This task's work landed in commit `fc37133`. A second commit adds
+   the superseded marker in `SUPPLEMENTARY_NOTE_COORDSPACE.md`, row 11 of Appendix A, and these
+   dated notes. CLAUDE.md says new commits, never amend, so the first commit stands as written.
+10. **Where things were written.** `paper/paper2_passage_draft_v0.8.docx`,
    `paper/rejuvenation_readouts_preprint_v1.3.docx` (both git-ignored),
    `results/corr1/paper1_diff.txt`, `results/corr2/paper2_diff.txt`,
    `results/verify/WITHDRAWN_READINGS.md`, `CORRECTIONS_PAPER1.md`, `CORRECTIONS_PAPER2.md`,
-   `README.md`, `src/corr3_run.py`, `FINDINGS_CORR3.md`, `PROGRESS_CORR3.md`. No `FINDINGS_*.md`
+   `README.md`, `src/corr3_run.py`, `FINDINGS_CORR3.md`, `PROGRESS_CORR3.md`, and in the second
+   commit `SUPPLEMENTARY_NOTE_COORDSPACE.md`. No `FINDINGS_*.md`
    of a previous task was edited, nothing under `results/corr2chk/` or `results/floorchk/` was
    touched, no original docx or PDF was modified, no PDF was produced, nothing was uploaded and
    nothing was pushed. The pre-existing uncommitted change to `CITATION.cff` and the untracked

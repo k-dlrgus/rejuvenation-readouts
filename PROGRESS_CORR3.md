@@ -37,11 +37,14 @@ replaced. Paper 2 changes paragraphs 30 and 31 and nothing else.
    writing into a previous task's results directory; this task regenerated
    `results/corr1/paper1_diff.txt` and `results/corr2/paper2_diff.txt` because each describes a
    docx that changed. Each now carries a provenance header naming CORR3 and the commit where the
-   previous version can be read. Deviation 1.
-2. **`SUPPLEMENTARY_NOTE_COORDSPACE.md:52` still carries the superseded paragraph-142 bullet**, in
-   a tracked file headed "text for the preprint". It was left alone, following CORR1's convention,
-   and is listed as row 11 of `CORRECTIONS_PAPER1.md` Appendix A. Whether to revise it is a
-   decision outside this task.
+   previous version can be read. Deviation 1. (Accepted by the author afterwards, 2026-10-26; the
+   record of it having been decided unilaterally stands.)
+2. **`SUPPLEMENTARY_NOTE_COORDSPACE.md` carries the superseded paragraph-142 bullet**, in a tracked
+   file headed "text for the preprint". The first pass left it alone, following CORR1's convention,
+   and referred it to the author. **Settled in a second commit:** the bullet is marked superseded
+   in place, with its wording unedited, and the file's title carries a one-line note that it is
+   drafted text and that the manuscript is authoritative where the two differ. Row 11 of
+   `CORRECTIONS_PAPER1.md` Appendix A records it.
 
 **Next.** Nothing more within this task. No PDF was produced for either paper, nothing was
 uploaded, and nothing was pushed. Typesetting v1.3 and v0.8, and the timing of any release, are

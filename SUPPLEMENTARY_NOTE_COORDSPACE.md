@@ -1,5 +1,7 @@
 # Coordinate-space robustness check: text for the preprint
 
+*This is drafted text. Where it differs from the manuscript, the manuscript is the authoritative version.*
+
 Source: `FINDINGS_COORDSPACE.md` and `results/coordspace/` (pre-registration `results/coordspace/PREREG.flag`). Every number below is read from those files. Distances are in each space's own units and are compared across spaces only through their sign, progress, and the ratio of final to starting distance.
 
 ---
@@ -49,6 +51,7 @@ In every space the cells travel a long way along the donor axis and still end fa
 - Ten genes carry 94% of the squared GTEx old-to-young distance in space A: FN1, SERPINE1, COL1A2, TGFBI, FTL, MT-ND2, COL1A1, MT2A, COL3A1 and ANXA2. They also carry a median 90% of each perturbation's squared final distance (5th to 95th percentile, 85% to 92%). In space C the same shares are 0.6% and 4%.
 - Every one of the 1,836 endpoints has negative coordinates, 3.5 million in total. This happens because space A adds a CPM difference measured in Hs27 cells to a CPM origin built from GTEx donors. The coordinates were kept as they are, not clipped.
 - The ranking in space A agrees poorly with the main analysis (Spearman 0.24 across all perturbations; 1 of the top 20 shared). Space B agrees closely (0.99; 14 of 20).
+- *Superseded (2026-10-26): the bullet below was corrected in paper 1 v1.3, paragraph 142; see `CORRECTIONS_PAPER1.md`, passage (b). The wording here is left unedited.*
 - In space C both perturbations move away from the young centroid (+106.6 and +113.8, q = 1.0), and in space B both end farther from it (+32.9 and +35.1). They have 84 and 82 cells, against a median of 106.
 - ZNF441's change in distance does not clear the non-targeting split floor in space A (−14.2), which is not a gate for the label. ZNF669's does.
 
