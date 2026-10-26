@@ -190,17 +190,21 @@ replaced, and v1.2 paragraph 144 replaced.
 8. **Nothing was computed, so nothing here confirms any number it carries.** The numbers are
    copied. `FINDINGS_CORR2CHK.md` and `FINDINGS_FLOORCHK.md` are where they are checked, and
    `python -I src/corr2chk_run.py verify` re-derives the paper-2 readings from tracked tables.
-9. **Two further commits followed.** This task's work landed in commit `fc37133`. A second commit
-   adds the superseded marker in `SUPPLEMENTARY_NOTE_COORDSPACE.md`, row 11 of Appendix A, and
-   those dated notes. A third corrects the publication premise described at the top of this file.
-   CLAUDE.md says new commits, never amend, so each earlier commit stands as written.
-10. **No in-document correction note was added to the paper-2 source, and that is now open.**
-   v1.3 of paper 1 carries a one-line italic "Correction (v1.3)" paragraph under the
-   Supplementary Note 3 heading. The paper-2 source carries no equivalent: CORR2 omitted one
-   deliberately because it believed the paper unpublished, and this task preserved that. Now that
-   paper 2 is known to be published, the parallel step would be a "Correction (v2)" line, but
-   where it should sit is a placement decision in the main text, not a relabel, so it was left to
-   the author. `results/corr2/paper2_diff.txt` records that the note is absent and why.
+9. **Three further commits followed.** This task's work landed in commit `fc37133`. A second
+   commit adds the superseded marker in `SUPPLEMENTARY_NOTE_COORDSPACE.md`, row 11 of Appendix A,
+   and those dated notes. A third corrects the publication premise described at the top of this
+   file. A fourth adds the paper-2 in-document correction note described below. CLAUDE.md says
+   new commits, never amend, so each earlier commit stands as written.
+10. **The paper-2 in-document correction note was added last, on the author's placement
+   decision.** CORR2 deliberately added none, because it believed the paper unpublished, and
+   this task preserved that until the premise was corrected. The author then chose the position:
+   a one-line italic "Correction (v2)" paragraph directly under the Results heading "Against
+   young donors, all four move away" (v1 paragraph 28), which is where both corrected paragraphs
+   sit. Its wording follows paper 1 v1.3's note. **One formatting difference, decided here:**
+   paper 1's note run carries an `eastAsia` font override that paper 2's body runs do not, so it
+   was left out rather than imported from one document into another; the paragraph properties
+   (own paragraph, justified, spacing after 160) and the italic run are identical. v2 therefore
+   has 118 body paragraphs to v1's 117, and v1 positions 29 and later shift by one.
 11. **Where things were written.** `paper/paper2_passage_draft_v0.8.docx`,
    `paper/rejuvenation_readouts_preprint_v1.3.docx` (both git-ignored),
    `results/corr1/paper1_diff.txt`, `results/corr2/paper2_diff.txt`,

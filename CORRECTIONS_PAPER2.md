@@ -14,6 +14,14 @@ This notice computes nothing. Every number below is copied from those files.
 `paper/paper2_passage_draft_v0.7.docx`, which is unchanged. The paragraph-level diff is
 `results/corr2/paper2_diff.txt`.
 
+v2 carries a one-line italic correction note directly under the Results heading "Against young
+donors, all four move away", in the same form as paper 1 v1.3's: *"Correction (v2): one sentence
+on the 80 perturbations called closer to early-passage cells, and one on the four factors in the
+Southard screen, both in the paragraphs below, were corrected on 26 October 2026; see
+CORRECTIONS_PAPER2.md in the repository."* It is the only paragraph v2 adds, so v1 paragraph
+positions 29 and later shift by one in v2: the two corrected paragraphs are 30 and 31 in v1 and
+31 and 32 in v2. Paragraph numbers in this notice are **v1** positions throughout.
+
 That the v1 source is `paper2_passage_draft_v0.7.docx` was checked before anything else, by
 extracting the posted PDF's text and comparing it with that file's body text: all 99 of its
 non-empty body paragraphs appear in the PDF, verbatim and in the same order, covering 98.2% of
