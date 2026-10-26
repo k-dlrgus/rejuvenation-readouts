@@ -79,7 +79,7 @@ Scripts are run from the repository root and put the root on `sys.path` themselv
 | `src/` | All analysis code. One entry point per analysis (table below). |
 | `results/<name>/` | Output of the analysis named `<name>`, including its pre-registration flag. |
 | `results/figures_final/` | The figures as they appear in the preprint, plus the plotting data for each. |
-| `paper/` | The preprint PDFs, identical to the files on Zenodo: rejuvenation_readouts_preprint_v1.2.pdf (first preprint) and two_definitions_of_young_preprint_v1.pdf (second preprint). |
+| `paper/` | The preprint PDFs, identical to the files on Zenodo. Current: rejuvenation_readouts_preprint_v1.3.pdf (first preprint, Zenodo version v4) and two_definitions_of_young_preprint_v2.pdf (second preprint, Zenodo version v2). Superseded, kept for the record as earlier Zenodo versions: rejuvenation_readouts_preprint_v1.2.pdf and two_definitions_of_young_preprint_v1.pdf. |
 | `notebooks/` | Exploratory notebooks, outputs stripped. |
 | `FINDINGS_*.md` | The written reading of each analysis, including withdrawn and superseded readings, marked as such. |
 | `PROGRESS_*.md` | Running logs for each analysis. |
