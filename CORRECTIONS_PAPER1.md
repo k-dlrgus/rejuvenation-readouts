@@ -2,12 +2,19 @@
 
 **Paper:** R. Kwon, *Rejuvenation readouts cannot distinguish younger from less old*, v1.2
 (https://doi.org/10.5281/zenodo.23113817; PDF also at `paper/rejuvenation_readouts_preprint_v1.2.pdf`).
-**Written:** 2026-10-26, task CORR1. **Basis:** `FINDINGS_FLOORCHK.md` and `results/floorchk/`.
-This notice computes nothing new. Every number below is copied from those files.
+**Written:** 2026-10-26, task CORR1. **Revised:** 2026-10-26, task CORR3, which added the
+paragraph-142 bullet below to the corrected sentences; CORR1's two sentences are unchanged.
+**Basis:** `FINDINGS_FLOORCHK.md` and `results/floorchk/`, and for the bullet's numbers
+`FINDINGS_CORR2CHK.md` and `results/coordspace/`. This notice computes nothing new. Every number
+below is copied from those files.
+
+Both corrected passages are in Supplementary Note 3. They are treated separately below because
+they fail for different reasons: the sentences overstate what was measured, while the bullet
+states something that could not have come out otherwise.
 
 ## What was stated
 
-Supplementary Note 3, last-but-one paragraph (PDF page 13; docx v1.2 body paragraph 144):
+**(a)** Supplementary Note 3, last-but-one paragraph (PDF page 13; docx v1.2 body paragraph 144):
 
 > In space C, for the GTEx old-to-young comparison, with the GTEx old centroid (60 to 79 years) as
 > the origin and the GTEx young centroid (20 to 39 years) as the target, every one of the 1,836
@@ -17,7 +24,16 @@ Supplementary Note 3, last-but-one paragraph (PDF page 13; docx v1.2 body paragr
 > target, which sit only 32 units apart, and is not a statement about the screen in general; it is
 > the same limitation the main text discloses for the same-platform test.
 
+**(b)** Supplementary Note 3, the fourth bullet of the space A diagnostics (PDF page 13; docx v1.2
+body paragraph 142):
+
+> •  In space C both perturbations move away from the young centroid (+106.6 and +113.8, q = 1.0),
+> and in space B both end farther from it (+32.9 and +35.1). They have 84 and 82 cells, against a
+> median of 106.
+
 ## What is wrong
+
+### (a) the two sentences
 
 The sentence compares each perturbation's displacement with the old-to-young gap. It does not
 compare that ratio with a noise floor matched to the group size. In the Southard screen a
@@ -43,13 +59,43 @@ not a shortlist. The pre-registered reading that fired is `CLAIM1-PARTIAL: 18 of
 The closing comparison also fails. The same-platform length statement survives the same check (see
 below), but the screen statement rests on sampling noise. They are not the same limitation.
 
+### (b) the bullet
+
+The bullet is offered as a diagnostic: it is one of four reasons given for not treating the two
+space A labels as candidates. But neither of its two clauses distinguishes those two
+perturbations from the rest of the screen, so it carries no information about them.
+
+- **In space C no perturbation's change in distance could have been negative.** Every one of the
+  1,836 measured displacements is longer than twice the 32-unit gap (smallest ratio 2.0966;
+  `FINDINGS_FLOORCHK.md`, reproduction check R1), and `n_delta_negative` is 0 of 1,836
+  (`results/coordspace/stage3_south6_summary.csv`). "Both perturbations move away" is therefore
+  true of all 1,836, and the median non-targeting floor in that space is 2.9 gap lengths
+  (`median_floor_over_gap` = 2.9415).
+- **In space B none of the 1,836 moves closer either**, and both of these two sit just *inside*
+  their own cell-count-matched floors: +32.886 against +33.344 and +35.053 against +35.705
+  (`results/coordspace/stage3_south6_factors.csv`), as 1,088 of the 1,836 do
+  (`n_below_floor` = 1088). So they move away by less than sampling noise does at their cell
+  count, which is the opposite of what the clause implies.
+- **The `q = 1.0` should not have been quoted as a gate.** It comes from the permutation null
+  that SOUTH8 found anti-conservative in space C, flagging 0.09 to 0.14 of true-null draws at the
+  0.05 level (`results/south8/d2_calibration.csv`, S1 rows; verdict in `d2_verdicts.csv`).
+
+The only part of the bullet that distinguished these two perturbations was their cell count, 84
+and 82 against a screen median of 106, and that part is kept.
+
 ## What still holds
 
 It is still true that the test could not have registered an approach from that origin to that
 target. Every measured displacement is longer than twice the gap, so no measured change in distance
 could come out negative. The reason is the screen's depth, not the length of the displacements.
 
-Corrected sentences (as in the revised source, v1.3):
+**The decision the bullet supported still stands**, on the other three diagnostics the paragraph
+names: ten genes carry 94% of the squared old-to-young distance in space A, every endpoint there
+has negative coordinates, and the space A ranking agrees poorly with the main analysis. The two
+space A labels are still not treated as candidates. What changes is that the space C and space B
+comparison is no longer offered as a reason, because it was true of the whole screen.
+
+Corrected sentences (a), as in the revised source, v1.3:
 
 > In space C, for the GTEx old-to-young comparison, with the GTEx old centroid (60 to 79 years) as
 > the origin and the GTEx young centroid (20 to 39 years) as the target, every one of the 1,836
@@ -65,6 +111,21 @@ Corrected sentences (as in the revised source, v1.3):
 > instrument that could not see approach at this depth, not evidence that the perturbations
 > overshoot, and it is not the same limitation as the one the main text discloses for the
 > same-platform test, whose length statement survives the same check.
+
+Corrected bullet (b), as in the revised source, v1.3:
+
+> •  Neither of the other spaces separates these two from the rest of the screen. In space C both
+> end farther from the young centroid (+106.6 and +113.8), as do all 1,836 perturbations: there
+> every displacement is longer than twice the 32-unit gap, so no change in distance could have
+> come out negative, and the median non-targeting floor is 2.9 gap lengths. In space B both also
+> end farther (+32.9 and +35.1), again with none of the 1,836 moving closer, and both sit just
+> inside their own cell-count-matched floors (+33.3 and +35.7), as 1,088 of the 1,836 do. They
+> have 84 and 82 cells, against a median of 106.
+
+Two deliberate changes in that bullet, beyond adding the floor comparison: the `q = 1.0` is
+dropped, for the reason given above, and the space B clause now carries its floors, because
+"both end farther" was as uninformative there as in space C and the floors are the part that
+says something.
 
 ## What was rechecked and holds
 
@@ -103,17 +164,20 @@ every passage of the v1.2 text that mentions the transcription-factor screen (do
 - **Every main-text length statement is about the reprogramming cells.** These are paragraphs 22,
   49, 51 and 66, and they rest on claim 2, which holds.
 - **The decision not to treat the two space A labels as candidates is unaffected.** It rests on the
-  diagnostics the paragraph names: ten genes and negative coordinates.
+  diagnostics the paragraph names: ten genes and negative coordinates. One of the four
+  diagnostics, the paragraph-142 bullet, is corrected above and no longer offered as a reason;
+  the other three carry the decision.
 
-One supporting detail loses its force but is not corrected here, because it was not among the
-sentences this notice covers. The bullet in paragraph 142 reads: "In space C both perturbations
-move away from the young centroid (+106.6 and +113.8, q = 1.0)". In space C no perturbation's
-measured change in distance could have been negative, so that clause carries no information about
-those two perturbations. The paper's decision does not cite it.
+(When this notice was first written, as task CORR1, the paragraph-142 bullet was recorded here as
+a supporting detail that "loses its force but is not corrected here, because it was not among the
+sentences this notice covers". Task CORR3 corrected it; it is now section (b) above. Nothing else
+in this notice changed.)
 
 ## Where the check is recorded
 
 In the public repository (https://github.com/k-dlrgus/rejuvenation-readouts):
+
+For (a), the two sentences:
 
 - Pre-registration: `results/floorchk/PREREG.flag`, written 2026-10-25T23:17:26+09:00 before any
   statistic.
@@ -121,7 +185,19 @@ In the public repository (https://github.com/k-dlrgus/rejuvenation-readouts):
 - Tables: `results/floorchk/`, in particular `claim1_floor.csv`, `claim1_units.csv`,
   `claim2_unit.csv` and `readings.txt`.
 - Code: `src/floorchk_run.py`.
-- Revised-source diff: `results/corr1/paper1_diff.txt`.
+
+For (b), the bullet:
+
+- Its wording was written as step 4 of `FINDINGS_CORR2CHK.md`, which computed nothing for it and
+  quotes the source of every number.
+- Tables: `results/coordspace/stage3_south6_factors.csv` and `stage3_south6_summary.csv` for the
+  deltas, floors and counts; `results/south8/d2_calibration.csv` and `d2_verdicts.csv` for the
+  permutation null's calibration; `FINDINGS_FLOORCHK.md` reproduction check R1 for the
+  twice-the-gap statement.
+
+For both: revised-source diff `results/corr1/paper1_diff.txt`; code `src/corr3_run.py`, which
+rebuilt v1.3 from v1.2 and asserts that the bullet's wording is byte-identical to the blockquote
+in `FINDINGS_CORR2CHK.md`.
 
 ---
 
@@ -143,6 +219,16 @@ Numeric matches in data tables that have nothing to do with the claim were dropp
 | 7 | `bundle/RESULTS_SUMMARY.md:77` and `:467`, `bundle/_build/write_report.py:88` | no (`bundle/` is git-ignored, a review package) | "in S1 every factor's ‖d‖ exceeds twice ‖T − O‖ (min ratio 2.097)" | Not edited. Not public. |
 | 8 | `FINDINGS_FLOORCHK.md`, `PROGRESS_FLOORCHK.md`, `results/floorchk/*`, `src/floorchk_run.py` | yes | The check itself, quoting the claim | Not edited. |
 
+Rows 9 to 12 were added by CORR3 for the paragraph-142 bullet, (b). The search looked for
+"106.6 and +113.8", "both perturbations move away", and `ZNF441` / `ZNF669` in prose.
+
+| # | file:line | tracked | what it says | action |
+|---|---|---|---|---|
+| 9 | `paper/rejuvenation_readouts_preprint_v1.2.pdf`, page 13 | yes | The published bullet quoted above | Not edited. The PDF is the published record; no v1.3 PDF was produced. |
+| 10 | `paper/rejuvenation_readouts_preprint_v1.2.docx`, body paragraph 142, and `_draft.docx` | no (`paper/` is git-ignored) | Source of #9 | Not edited. The revised copy is v1.3, paragraph 143. |
+| 11 | **`SUPPLEMENTARY_NOTE_COORDSPACE.md:52`** | **yes** | The bullet verbatim, in a file whose first line reads "Coordinate-space robustness check: text for the preprint" | **Not edited, and this is the one row that may need a separate decision.** It is the COORDSPACE task's own write-up, and CLAUDE.md says a superseded text is marked superseded elsewhere, not edited in place. But unlike a findings file it presents itself as preprint copy, so the repository now holds drafted text that contradicts the corrected manuscript. This notice is the marker; whether to revise that file is a decision outside the task that wrote this. |
+| 12 | `FINDINGS_COORDSPACE.md` (Stage 3 tables and the `toward_young` rows), `results/coordspace/stage3_south6_factors.csv` | yes | The underlying deltas +106.609 and +113.750 with their floors | Not edited. The numbers are correct as measurements and are the source this correction quotes; what failed was the inference drawn from them. |
+
 No hit in `README.md`, `STATE.md`, `CITATION.cff`, `REPO_INVENTORY.md`, `FINDINGS_SOUTH6.md`,
 `FINDINGS_COORDSPACE.md`, `SUPPLEMENTARY_NOTE_COORDSPACE.md`, `paper/PREPRINT_DRAFT.md`,
 `paper_package/`, the earlier preprint drafts (`_3`, `_9`, `_10`, `_11`, `_12`), or the paper-2 drafts
@@ -154,14 +240,18 @@ The preprint source is `paper/rejuvenation_readouts_preprint_v1.2.docx`. It is i
 but **not tracked**, because `paper/` is git-ignored ("review packages, not public"). Only the v1.2
 PDF is tracked.
 
-The revised source `paper/rejuvenation_readouts_preprint_v1.3.docx` was made by
-`src/corr1_run.py`, beside the original, which is unchanged. It differs from v1.2 in three ways:
+The revised source `paper/rejuvenation_readouts_preprint_v1.3.docx` sits beside the original,
+which is unchanged. It was first made by `src/corr1_run.py` and was rebuilt from v1.2 by
+`src/corr3_run.py`, which imports CORR1's edit strings rather than restating them. It differs
+from v1.2 in four ways:
 
 1. A one-line, italic "Correction (v1.3)" paragraph directly under the Supplementary Note 3
-   heading.
-2. The two sentences quoted above, replaced by the corrected text.
-3. Nothing else. The script checks that undoing the three edits reproduces the v1.2 XML exactly,
-   and that the other 53 files in the docx are byte-identical.
+   heading, naming both corrected passages.
+2. The two sentences of (a), replaced by the corrected text.
+3. The bullet of (b), replaced by the corrected text.
+4. Nothing else. The script checks that each replaced string occurs exactly once, that undoing
+   the four edits reproduces the v1.2 XML exactly, and that the other 53 files in the docx are
+   byte-identical. v1.2's sha256 is recorded in the diff and is unchanged from CORR1's run.
 
 The paragraph-level diff is `results/corr1/paper1_diff.txt`, which is tracked. The v1.3 docx
 itself is git-ignored like the rest of `paper/`, so it is not committed. No v1.3 PDF was made, and
